@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>철회</lemma>
+    <comment>Frames file for '철회' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>철회.01</id>
+      <edef>withdraw</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing withdrawn"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>철회하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이스라엘과 시리아는 당시 협상에서 타결이 이뤄지지 않자 올해 1 월 미국에서 다시 협상을 재개키로 했으나 시리아가 갑자기 미국 방문 계획을 철회했다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 이스라엘/NPR+과/PCJ)
+              (NP 시리아/NPR+은/PAU))
+      (VP (S (NP-ADV 당시/NNC
+                     협상/NNC+에서/PAD)
+             (S (NP-SBJ 타결/NNC+이/PCA)
+                (VP (VP (VV 이루/VV+어지/XSV+지/ECS))
+                    않/VX+자/ECS)))
+          (VP (S-COMP (NP-SBJ *pro*)
+		      (VP (NP-ADV 올해/NNC
+				      1/NNU
+				      월/NNX)
+			  (NP-ADV 미국/NPR+에서/PAD)
+			  (ADVP 다시/ADV)
+			  (VP (NP-OBJ 협상/NNC+을/PCA)
+			      (VV 재개/NNC+하/XSV+기/ENM+으로/PAD))))
+              하/VV+었/EPF+으나/ECS)))
+   (S (NP-SBJ 시리아/NPR+이/PCA)
+      (VP (ADVP 갑자기/ADV)
+          (VP (NP-OBJ 미국/NPR
+                      방문/NNC
+                      계획/NNC+을/PCA)
+              (VV 철회/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>시리아</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>갑자기</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>미국 방문 계획</term>
+	    </Arg>
+	    <Rel>
+	      <term>철회했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

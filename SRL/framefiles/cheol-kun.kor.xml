@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>철군</lemma>
+    <comment>Frames file for '철군' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>철군.01</id>
+      <edef>retreat</edef>
+      <roleset>
+	<role argnum="0" argrole="thing retreating"/>
+	<role argnum="1" argrole="start point"/>
+	<role argnum="2" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>철군하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이스라엘 정부는 5 일 지난 18 년간 점령해 온 남부 레바논에서 오는 7 월까지 철군키로 만장일치로 의결했다.</text>
+	  <parse>
+(S (NP-SBJ 이스라엘/NPR
+           정부/NNC+은/PAU)
+   (VP (NP-ADV 5/NNU
+               일/NNX)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-COMP (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *pro*)
+                                      (VP (VP (NP-ADV 지난/DAN
+                                                      18/NNU
+                                                      년/NNX+간/XSF)
+                                              (VP (NP-OBJ *T*-1)
+                                                  (VV 점령/NNC+하/XSV+어/ECS)))
+                                          오/VX+은/EAN)))
+                                (NP 남부/NNC
+                                    레바논/NPR+에서/PAD))
+                       (VP (NP-ADV 오는/DAN
+                                   7/NNU
+                                   월/NNX+까지/PAU)
+                           (VP (VV 철군/NNC+하/XSV+기/ENM+으로/PAD)))))
+           (VP (NP-ADV 만장/NNC+일치/NNC+으로/PAD)
+               (VP (VV 의결/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>지난 18 년간 점령해 온 남부 레바논</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>오는 7 월까지</term>
+	    </Arg>
+	    <Rel>
+	      <term>철군키로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

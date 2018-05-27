@@ -1,0 +1,182 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>처형</lemma>
+    <comment>Frames file for '처형' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>처형.01</id>
+      <edef>punish</edef>
+      <roleset>
+	<role argnum="0" argrole="thing punishing"/>
+	<role argnum="1" argrole="thing punished"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>처형하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중국은 뇌물수수 혐의 등으로 사형이 선고됐던 후창칭(호장청) 장시(강서)성 전 부성장을 8 일 처형했다고 관영 신화 통신이 보도했다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-SBJ 중국/NPR+은/PAU)
+             (VP (NP-OBJ (S (WHNP-1 *op*)
+                            (S (NP-ADV 뇌물/NNC+수수/NNC
+                                       혐의/NNC
+                                       등/NNX+으로/PAD)
+                               (S (NP-SBJ 사형/NNC+이/PCA)
+                                  (VP (NP-COMP *T*-1)
+                                      (VV 선고/NNC+되/XSV+었/EPF+던/EAN)))))
+                         (NP (NP 후창칭/NPR
+                                 (PRN -LRB-/SLQ
+                                      호장청/NPR
+                                      -RRB-/SRQ))
+                             (NP 장시/NPR
+                                 -LRB-/SLQ
+                                 강서/NPR
+                                 -RRB-/SRQ
+                                 성/XSF)
+                             (NP 전/DAN
+                                 부성장/NNC+을/PCA)))
+                 (VP (NP-ADV 8/NNU
+                             일/NNX)
+                     (VP (VV 처형/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))))
+   (S (NP-SBJ 관영/NNC
+              신화/NPR
+              통신/NNC+이/PCA)
+      (VP (S-COMP *T*-2)
+          (VV 보도/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>뇌물수수 혐의 등으로 사형이 선고됐던 후창칭(호장청) 장시(강서)성 전 부성장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>8 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>처형했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>처형되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신화 통신은 후가 난창에서 처형됐다는 사실 외에 그 이상의 구체적인 내용은 전하지 않았다.</text>
+	  <parse>
+(S (NP-SBJ 신화/NPR
+           통신/NNC+은/PAU)
+   (VP (VP (NP-ADV (NP (S (NP-SBJ 후/NPR+이/PCA)
+                          (VP (NP-ADV 난창/NPR+에서/PAD)
+                              (VP (VV 처형/NNC+되/XSV+었/EPF+다는/EAN))))
+                       (NP 사실/NNC))
+                   (NP 외/NNX+에/PAD))
+           (VP (NP-OBJ (NP 그/DAN
+                           이상/NNC+의/PAN)
+                       (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP 구체/NNC+적/XSF+이/CO+은/EAN))))
+                           (NP 내용/NNC+은/PAU)))
+               전하/VV+지/ECS))
+       않/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>후</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>난창에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>처형됐다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>처형당하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이들은 2차대전 당시 레지스탕스의 일원으로 1943 년 도끼로 참수형을 당한 베티 알브레쉬와 여성권리선언의 공동 작성자로 1794 년 기요틴으로 처형당한 올림프 드 구주 등 두여성의 유해를 이곳에 안장할 것을 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPN+들/XSF+은/PAU)
+   (VP (NP-OBJ (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (NP (NP (NP (NP (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (VP (NP-ADV 2/NNU+차/XSF+대전/NNC
+                                                                당시/NNC)
+                                                        (NP-ADV (NP 레지스탕스/NNC+의/PAN)
+                                                                (NP 일원/NNC+으로/PAD))
+                                                        (NP-ADV 1943/NNU
+                                                                년/NNX)
+                                                        (NP-ADV 도끼/NNC+으로/PAD)
+                                                        (VP (NP-OBJ 참수/NNC+형/NNC+을/PCA)
+                                                            당하/VV+은/EAN))))
+                                              (NP 베티/NPR
+                                                  알브레쉬/NPR+과/PCJ))
+                                          (NP (S (WHNP-2 *op*)
+                                                 (S (NP-SBJ *T*-2)
+                                                    (VP (NP-ADV (NP 여성/NNC+권리/NNC+선언/NNC+의/PAN)
+                                                                (NP 공동/NNC
+                                                                    작성자/NNC+으로/PAD))
+                                                        (NP-ADV 1794/NNU
+                                                                년/NNX)
+                                                        (NP-ADV 기요틴/NNC+으로/PAD)
+                                                        (VP (VV 처형/NNC+당하/XSV+은/EAN)))))
+                                              (NP 올림프/NPR
+                                                  드/NPR
+                                                  구주/NPR)))
+                                      (NP 등/NNX))
+                                  (NP 두/NNU+여성/NNC+의/PAN))
+                              (NP 유해/NNC+을/PCA))
+                      (NP-COMP 이곳/NPN+에/PAD)
+                      (VV 안장/NNC+하/XSV+을/EAN)))
+               (NP 것/NNX+을/PCA))
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=올림프 드 구주</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>여성권리선언의 공동 작성자로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>1794 년</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>기요틴으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>처형당한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

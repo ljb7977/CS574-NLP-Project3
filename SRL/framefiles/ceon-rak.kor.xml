@@ -1,0 +1,96 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전락</lemma>
+    <comment>Frames file for '전락' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>전락.01</id>
+      <edef>degrade</edef>
+      <roleset>
+	<role argnum="0" argrole="thing degrading"/>
+	<role argnum="1" argrole="thing degraded"/>
+	<role argnum="2" argrole="degrade to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전락하다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이한구 선대위 정책위원장은 "현 정권 2 년동안 중산층이 붕괴됐고 서민은 빈민으로 전락했다"며 "통계청 자료에 따르면 월소득이 최저생계비 23 만 4 천원 이하인 가구 수가 97 년 195 만 가구에서 99 년 268 만 가구로 급증하는 등 79 년 이후 최고로 소득격차가 벌어졌다"고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 이한구/NPR
+           선대위/NNC
+           정책/NNC+위원장/NNC+은/PAU)
+   (VP (S "/SLQ
+          (NP-ADV 현/DAN
+                  정권/NNC
+                  2/NNU
+                  년/NNX+동안/NNX)
+          (S (NP-SBJ 중산층/NNC+이/PCA)
+             (VP (VV 붕괴/NNC+되/XSV+었/EPF+고/ECS)))
+          (S (NP-SBJ 서민/NNC+은/PAU)
+             (VP (NP-COMP 빈민/NNC+으로/PAD)
+                 (VV 전락/NNC+하/XSV+었/EPF+다/EFN)))
+          "/SRQ
+          며/ECS)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (VP (NP-COMP 통계청/NNC
+                                   자료/NNC+에/PAD)
+                          따르/VV+으면/ECS))
+                   (NP-ADV (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (S (NP-SBJ 월/NNC+소득/NNC+이/PCA)
+                                                   (VP (NP 최저/NNC+생계비/NNC
+                                                           23/NNU
+                                                           만/NNU
+                                                           4/NNU
+                                                           천/NNU+원/NNX
+                                                           이하/NNC+이/CO+은/EAN)))))
+                                          (NP 가구/NNC))
+                                      (NP 수/NNC+이/PCA))
+                              (VP (NP-COMP (NP 97/NNU
+                                               년/NNX)
+                                           (NP 195/NNU
+                                               만/NNU
+                                               가구/NNC+에서/PAD))
+                                  (NP-COMP (NP 99/NNU
+                                               년/NNX)
+                                           (NP 268/NNU
+                                               만/NNU
+                                               가구/NNC+으로/PAD))
+                                  (VV 급증/NNC+하/XSV+는/EAN)))
+                           (NP 등/NNX))
+                   (NP-ADV 79/NNU
+                           년/NNX
+                           이후/NNC)
+                   (NP-ADV 최고/NNC+으로/PAD)
+                   (S (NP-SBJ 소득/NNC+격차/NNC+이/PCA)
+                      (VP 벌어지/VV+었/EPF+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>서민</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>빈민</term>
+	    </Arg>
+	    <Rel>
+	      <term>전락했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

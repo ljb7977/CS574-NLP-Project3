@@ -1,0 +1,99 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>생소하</lemma>
+    <comment>Frames file for '생소하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>생소하.01</id>
+      <edef>strange</edef>
+      <roleset>
+	<role argnum="0" argrole="experiencer"/>
+	<role argnum="1" argrole="thing being strange"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>생소하다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 지도는 저한텐 좀 생소하군요.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           지도/NNC+은/PAU)
+   (ADJP (NP-COMP 저/NPN+한테/PAD+은/PAU)
+         (ADJP (ADVP 좀/ADV)
+               (ADJP 생소하/VJ+군요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>이 지도</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>한텐</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>좀</term>
+	    </Arg>
+	    <Rel>
+	      <term>생소하군요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>생소하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저는 직접 그곳에 가본 일이 없기 때문에 그 지역에 대해선 정말로 생소합니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (ADJP (NP-ADV (NP (S (NP-SBJ (S (NP-SBJ *pro*)
+                                   (VP (VP (ADVP 직접/ADV)
+                                           (VP (NP-COMP 그곳/NPN+에/PAD)
+                                               가/VV+어/ECS))
+                                       보/VX+은/EAN))
+                                (NP 일/NNC+이/PCA))
+                        (ADJP 없/VJ+기/ENM)))
+                 (NP 때문/NNX+에/PAD))
+         (ADJP (S (NP-SBJ *pro*)
+                  (VP (NP-COMP 그/DAN
+                               지역/NNC+에/PAD)
+                      대하/VV+어서/ECS+은/PAU))
+               (ADJP (ADVP 정말로/ADV)
+                     (ADJP 생소하/VJ+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>직접 그곳에 가본 일이 없기 때문에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>그 지역에 대해선</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>정말로</term>
+	    </Arg>
+	    <Rel>
+	      <term>생소합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

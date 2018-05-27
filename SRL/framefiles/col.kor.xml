@@ -1,0 +1,45 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>졸</lemma>
+    <comment>Frames file for '졸' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>졸.01</id>
+      <edef>doze off</edef>
+      <roleset>
+	<role argnum="1" argrole="entity dozing off"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>졸다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 동무는 야간 행군중에 졸다가 강에 거꾸로 떨어졌지요.</text>
+	  <parse>
+(S (NP-SBJ 김/NPR
+           동무/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 야간/NNC
+                      행군/NNC
+                      중/NNX+에/PAD)
+              (VP 졸/VV+다가/ECS)))
+       (VP (NP-COMP 강/NNC+에/PAD)
+           (VP (ADVP 거꾸로/ADV)
+               (VP 떨어지/VV+었/EPF+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>야간 행군중에</term>
+	    </Arg>
+	    <Rel>
+	      <term>졸다가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

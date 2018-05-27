@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>끌어오</lemma>
+    <comment>Frames file for '끌어오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>끌어오.01</id>
+      <edef>bring</edef>
+      <roleset>
+	<role argnum="0" argrole="bringer"/>
+	<role argnum="1" argrole="thing brought"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>끌어오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>대만 신문들은 "리 원장이 특정 후보 지지를 선언할 경우 적어도 3-7 퍼센트의 유권자 표를 끌어올 수 있을 것"으로 보고 있다.</text>
+	  <parse>
+(S (NP-SBJ 대만/NPR
+           신문/NNC+들/XSF+은/PAU)
+   (VP (VP (NP-COMP "/SLQ
+                    (S (NP-SBJ 리/NPR
+                               원장/NNC+이/PCA)
+                       (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                          (VP (NP-OBJ 특정/NNC
+                                                      후보/NNC
+                                                      지지/NNC+을/PCA)
+                                              (VV 선언/NNC+하/XSV+을/EAN)))
+                                       (NP 경우/NNC))
+                               (ADVP 적어도/ADV)
+                               (VP (NP-OBJ (NP 3/NNU+-/SSY+7/NNU
+                                               퍼센트/NNX+의/PAN)
+                                           (NP 유권자/NNC
+                                               표/NNC+을/PCA))
+                                   끌어오/VV+을/EAN))
+                           (VX 수/NNX
+                               있/VJ+을/EAN)))
+                    (NP 것/NNX)
+                    "/SRQ
+                    으로/PAD)
+           보/VV+고/ECS)
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>리 원장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>특정 후보 지지를 선언할 경우</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>적어도</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>3-7 퍼센트의 유권자 표</term>
+	    </Arg>
+	    <Rel>
+	      <term>끌어올</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

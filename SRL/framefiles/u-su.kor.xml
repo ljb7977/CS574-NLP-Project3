@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>우수</lemma>
+    <comment>Frames file for '우수' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>우수.01</id>
+      <edef>excellent</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being excellent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>우수하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 대대 내 다른 포대들처럼 제일 우수한 포반 하나, 정찰반 하나, 무선 전화수 두 명, 그리고 포차 조종병 한 명을 경연에 보냈습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (NP (NP 저희/NPN)
+                   (NP 대대/NNC)
+                   (NP 내/NNC))
+               (NP 다른/DAN
+                   포대/NNC+들/XSF+처럼/PAD))
+       (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP (ADVP 제일/ADV)
+                               (ADJP (VJ 우수/NNC+하/XSJ+은/EAN)))))
+                   (NP (NP 포반/NNC
+                           하나/NNU)
+                       ,/SCM
+                       (NP 정찰반/NNC
+                           하나/NNU)
+                       ,/SCM
+                       (NP (NP 무선/NNC
+                               전화수/NNC)
+                           (NP 두/NNU
+                               명/NNX))
+                       ,/SCM
+                       (ADCP 그리고/ADC)
+                       (NP (NP 포차/NNC
+                               조종병/NNC)
+                           (NP 한/NNU
+                               명/NNX+을/PCA))))
+           (NP-COMP 경연/NNC+에/PAD)
+           보내/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=포반 하나, 정찰반 하나, 무선 전화수 두 명, 그리고 포차 조종병 한 명</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>제일</term>
+	    </Arg>
+	    <Rel>
+	      <term>우수한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

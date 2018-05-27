@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일컫</lemma>
+    <comment>Frames file for '일컫' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>일컫.01</id>
+      <edef>refer to</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing referred"/>
+	<role argnum="2" argrole="refer as"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일컬어지다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>철도와 도로 등 교통망과 전력생산능력 등 산업의 동맥으로 일컬어지는 북한의 모든 사회 간접자본은 매우 열악한 상황으로 북한의 어려운 경제 회복을 가로막고 있다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP (NP (NP (NP (NP 철도/NNC+과/PCJ)
+                               (NP 도로/NNC))
+                           (NP 등/NNX))
+                       (NP 교통망/NNC+과/PCJ))
+                   (NP 전력/NNC+생산/NNC+능력/NNC))
+               (NP 등/NNX))
+           (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-COMP (NP 산업/NNC+의/PAN)
+                                  (NP 동맥/NNC+으로/PAD))
+                         (VV 일컫/VV+어지/XSV+는/EAN))))
+               (NP (NP 북한/NPR+의/PAN)
+                   (NP 모든/DAN
+                       사회/NNC
+                       간접/NNC+자본/NNC+은/PAU))))
+   (VP (VP (NP-ADV (S (WHNP-3 *op*)
+                      (S (NP-SBJ *T*-3)
+                         (ADJP (ADVP 매우/ADV)
+                               (ADJP 열악하/VJ+은/EAN))))
+                   (NP 상황/NNC+으로/PAD))
+           (VP (NP-OBJ (NP (NP 북한/NPR+의/PAN)
+                           (NP (S (WHNP-2 *op*)
+                                  (S (NP-SBJ *T*-2)
+                                     (ADJP 어렵/VJ+은/EAN)))
+                               (NP 경제/NNC)))
+                       (NP 회복/NNC+을/PCA))
+               가로막/VV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=북한의 모든 사회 간접자본</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>산업의 동맥</term>
+	    </Arg>
+	    <Rel>
+	      <term>일컬어지는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

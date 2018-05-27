@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>순조롭</lemma>
+    <comment>Frames file for '순조롭' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>순조롭.01</id>
+      <edef>favorable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being favorable"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>순조롭다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>연구진은 태아가 순조롭게 성장하고 있음을 초음파 검사를 통해 확인했다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 연구진/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (S-OBJ (NP-SBJ 태아/NNC+이/PCA)
+                          (VP (VP (ADVP (ADV 순조롭/VJ+게/ECS))
+                                  (VP (VV 성장/NNC+하/XSV+고/ECS)))
+                              있/VX+음/ENM+을/PCA))
+                   (VP (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ 초음파/NNC
+                                      검사/NNC+을/PCA)
+                              통하/VV+어/ECS))
+                       (VP (VV 확인/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>순조롭게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

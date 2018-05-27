@@ -1,0 +1,109 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탈피</lemma>
+    <comment>Frames file for '탈피' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탈피.01</id>
+      <edef>escape</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing escaped"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탈피하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 이에 따라 실업자, 영세민에 대한 철저한 세부통계 조사 실시 공공근로사업 등 단순 1 회성 취업알선에서 탈피한 폭넓은 구직활동 지원서비스 중소형 임대주택 공급 확대 공기업 민영화, 국유은행 매각 때 국민주 도입으로 저소득층 재산 형성 지원 교육, 교통비 세제 지원 확대 등을 내용으로 하는 국회차원의 `중산층 재건대책' 수립을 적극 추진할 방침이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (NP-COMP (S (NP-SBJ *pro*)
+                   (VP (S (NP-SBJ *pro*)
+                          (VP (NP-COMP 이/NPN+에/PAD)
+                              따르/VV+어/ECS))
+                       (VP (NP-OBJ (S (WHNP-5 *op*)
+                                      (S (NP-SBJ *T*-5)
+                                         (VP (NP-OBJ (NP (NP (NP (S (WHNP-1 *op*)
+                                                                    (S (NP-SBJ *T*-1)
+                                                                       (VP (NP-COMP 실업자/NNC
+                                                                                    ,/SCM
+                                                                                    영세민/NNC+에/PAD)
+                                                                           대하/VV+은/EAN)))
+                                                                 (NP (S (WHNP-2 *op*)
+                                                                        (S (NP-SBJ *T*-2)
+                                                                           (ADJP (VJ 철저/NNC+하/XSJ+은/EAN))))
+                                                                     (NP 세부/NNC+통계/NNC
+                                                                         조사/NNC)))
+                                                             (NP 실시/NNC))
+                                                         (NP (S (WHNP-3 *op*)
+                                                                (S (NP-SBJ *T*-3)
+                                                                   (VP (NP-COMP (NP (NP 공공/NNC+근로/NNC+사업/NNC)
+                                                                                    (NP 등/NNX))
+                                                                                (NP (NP 단순/NNC
+                                                                                        1/NNU
+                                                                                        회/NNX+성/XSF)
+                                                                                    (NP 취업/NNC+알선/NNC+에서/PAD)))
+                                                                       (VV 탈피/NNC+하/XSV+은/EAN))))
+                                                             (NP (S (WHNP-4 *op*)
+                                                                    (S (NP-SBJ *T*-4)
+                                                                       (ADJP 폭넓/VJ+은/EAN)))
+                                                                 (NP 구직/NNC+활동/NNC
+                                                                     지원/NNC+서비스/NNC)))
+                                                         (NP 중소/NNC+형/XSF
+                                                             임대/NNC+주택/NNC
+                                                             공급/NNC
+                                                             확대/NNC)
+                                                         (NP (NP (NP (NP 공기업/NNC
+                                                                         민영화/NNC)
+                                                                     ,/SCM
+                                                                     (NP 국유/NNC+은행/NNC
+                                                                         매각/NNC))
+                                                                 (NP 때/NNC))
+                                                             (NP 국민주/NNC
+                                                                 도입/NNC+으로/PAD)
+                                                             (NP 저/XPF+소득/NNC+층/XSF
+                                                                 재산/NNC
+                                                                 형성/NNC
+                                                                 지원/NNC))
+                                                         (NP (NP 교육/NNC
+                                                                 ,/SCM
+                                                                 교통비/NNC)
+                                                             (NP 세제/NNC
+                                                                 지원/NNC
+                                                                 확대/NNC)))
+                                                     (NP 등/NNX+을/PCA))
+                                             (NP-COMP 내용/NNC+으로/PAD)
+                                             하/VV+는/EAN)))
+                                   (NP (NP 국회/NNC+차원/NNC+의/PAN)
+                                       (NP `/SLQ
+                                           중산층/NNC
+                                           재건/NNC+대책/NNC
+                                           '/SRQ
+                                           수립/NNC+을/PCA)))
+                           (VP (NP-ADV 적극/NNC)
+                               (VP (VV 추진/NNC+하/XSV+을/EAN))))))
+                (NP 방침/NNC+이라고/PAD))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=폭넓은 구직활동 지원서비스</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>공공근로사업 등 단순 1 회성 취업알선</term>
+	    </Arg>
+	    <Rel>
+	      <term>탈피한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

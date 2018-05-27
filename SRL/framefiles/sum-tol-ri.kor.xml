@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>숨돌리</lemma>
+    <comment>Frames file for '숨돌리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>숨돌리.01</id>
+      <edef>take breath</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>숨돌리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>김대중 대통령의 열흘간에 걸친 유럽순방은 과거 순방외교때와 마찬가지로 정상회담, 교민간담회등으로 숨돌릴 틈 없이 진행됐다.</text>
+	  <parse>
+(S (NP-SBJ (NP 김대중/NPR
+               대통령/NNC+의/PAN)
+           (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-COMP 열흘/NNC+간/XSF+에/PAD)
+                         걸치/VV+은/EAN)))
+               (NP 유럽/NPR+순방/NNC+은/PAU)))
+   (VP (NP-ADV (NP-COMP 과거/NNC
+                        순방/NNC+외교/NNC+때/NNC+과/PAD)
+               마찬가지/NNC+으로/PAD)
+       (NP-ADV (NP 정상/NNC+회담/NNC)
+               ,/SCM
+               (NP 교민/NNC+간담회/NNC+등/NNX+으로/PAD))
+       (ADVP (NP-COMP (S (NP-SBJ *pro*)
+                         (VP 숨돌리/VV+을/EAN))
+                      (NP 틈/NNC))
+             없이/ADV)
+       (VP (VV 진행/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>숨돌릴</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

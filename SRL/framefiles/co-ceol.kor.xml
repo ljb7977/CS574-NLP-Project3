@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조절</lemma>
+    <comment>Frames file for '조절' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>조절.01</id>
+      <edef>adjust</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing adjusted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조절하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>무선 전화수가 이것을 조절하면 공중선이 꼿꼿해집니다.</text>
+	  <parse>
+(S (S (NP-SBJ 무선/NNC
+              전화수/NNC+이/PCA)
+      (VP (NP-OBJ 이것/NPN+을/PCA)
+          (VV 조절/NNC+하/XSV+으면/ECS)))
+   (S (NP-SBJ 공중선/NNC+이/PCA)
+      (VP (VV 꼿꼿하/VJ+어지/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>무선 전화수</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이것</term>
+	    </Arg>
+	    <Rel>
+	      <term>조절하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

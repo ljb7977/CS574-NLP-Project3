@@ -1,0 +1,45 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>참조</lemma>
+    <comment>Frames file for '참조' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>참조.01</id>
+      <edef>consult</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="consulted with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>참조하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>뭘 참조하면 그걸 이해할 수 있죠?</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 무엇/NPN+을/PCA)
+          (VV 참조/NNC+하/XSV+으면/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 그것/NPN+을/PCA)
+              (VV 이해/NNC+하/XSV+을/EAN))
+          (VX 수/NNX
+              있/VJ+죠/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>무엇</term>
+	    </Arg>
+	    <Rel>
+	      <term>참조하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

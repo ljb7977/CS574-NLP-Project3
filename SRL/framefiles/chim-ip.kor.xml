@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>침입</lemma>
+    <comment>Frames file for '침입' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>침입.01</id>
+      <edef>penetrate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="place or thing entered"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>침입하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>적이 제2 참호선에 침입할 경우에는 어떻게 하지?</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (S (NP-SBJ 적/NNC+이/PCA)
+                  (VP (NP-COMP 제/XPF+2/NNU
+                               참호선/NNC+에/PAD)
+                      (VV 침입/NNC+하/XSV+을/EAN)))
+               (NP 경우/NNC+에/PAD+은/PAU))
+       (ADVP 어떻게/ADV)
+       (VP 하/VV+지/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>적</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>제2 참호선</term>
+	    </Arg>
+	    <Rel>
+	      <term>침입할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

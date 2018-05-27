@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>저해</lemma>
+    <comment>Frames file for '저해' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>저해.01</id>
+      <edef>impede</edef>
+      <roleset>
+	<role argnum="1" argrole="thing impeding"/>
+	<role argnum="2" argrole="thing impeded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>저해하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 "높은 금융 구조조정 비용과 부실자산 처리 지연 및 민영화 확대가 재정 건전성을 적기에 실현시키기 위한 노력을 저해할 위험이 (여전히) 도사리고 있다"고 덧붙였다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP "/SLQ
+                  (NP-SBJ (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (ADJP 높/VJ+은/EAN)))
+                                         (NP 금융/NNC
+                                             구조/NNC+조정/NNC
+                                             비용/NNC+과/PCJ))
+                                     (NP 부실/NNC+자산/NNC
+                                         처리/NNC
+                                         지연/NNC)
+                                     (ADCP 및/ADC)
+                                     (NP 민영화/NNC
+                                         확대/NNC+이/PCA))
+                             (VP (NP-OBJ (S (WHNP-2 *op*)
+                                            (S (NP-SBJ *T*-2)
+                                               (VP (S-OBJ (NP-SBJ *pro*)
+                                                          (VP (NP-OBJ 재정/NNC
+                                                                      건전성/NNC+을/PCA)
+                                                              (VP (NP-ADV 적기/NNC+에/PAD)
+                                                                  (VP (VV 실현/NNC+시키/XSV+기/ENM)))))
+                                                   위하/VV+은/EAN)))
+                                         (NP 노력/NNC+을/PCA))
+                                 (VV 저해/NNC+하/XSV+을/EAN)))
+                          (NP 위험/NNC+이/PCA))
+                  (VP (VP (PRN -LRB-/SLQ
+                               (ADVP 여전히/ADV)
+                               -RRB-/SRQ)
+                          (VP 도사리/VV+고/ECS))
+                      있/VX+다/EFN)
+                  "/SRQ
+                  고/PAD)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>높은 금융 구조조정 비용과 부실자산 처리 지연 및 민영화 확대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>재정 건전성을 적기에 실현시키기 위한 노력</term>
+	    </Arg>
+	    <Rel>
+	      <term>저해할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

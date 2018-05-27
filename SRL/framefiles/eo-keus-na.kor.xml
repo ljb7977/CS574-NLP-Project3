@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>어긋나</lemma>
+    <comment>Frames file for '어긋나' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>어긋나.01</id>
+      <edef>go wrong</edef>
+      <roleset>
+	<role argnum="1" argrole="thing going wrong"/>
+	<role argnum="2" argrole="gone wrong with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>어긋나다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>불신은 당 교리에 어긋나오.</text>
+	  <parse>
+(S (NP-SBJ 불신/NNC+은/PAU)
+   (VP (NP-COMP 당/NNC
+                교리/NNC+에/PAD)
+       어긋나/VV+으오/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>불신</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>당 교리</term>
+	    </Arg>
+	    <Rel>
+	      <term>어긋나오</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>1 소대가 목표 탈취에 실패했기 때문에 그 작전 계획이 어긋났소.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 1/NNU
+                      소대/NNC+이/PCA)
+              (VP (NP-COMP 목표/NNC
+                           탈취/NNC+에/PAD)
+                  (VV 실패/NNC+하/XSV+었/EPF+기/ENM)))
+           (NP 때문/NNX+에/PAD))
+   (S (NP-SBJ 그/DAN
+              작전/NNC
+              계획/NNC+이/PCA)
+      (VP 어긋나/VV+었/EPF+소/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>1 소대가 목표 탈취에 실패했기 때문에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>그 작전 계획</term>
+	    </Arg>
+	    <Rel>
+	      <term>어긋났소</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

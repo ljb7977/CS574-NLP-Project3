@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>관하</lemma>
+    <comment>Frames file for '관하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>관하.01</id>
+      <edef>regarding</edef>
+      <roleset>
+	<role argnum="1" argrole="thing under consideration"/>
+	<role argnum="2" argrole="with regard to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>관하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저는 개성 탱크 사단에 있는 암호 조립기에 관해선 모릅니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (NP-COMP (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (ADJP (NP-COMP 개성/NPR
+                                                 탱크/NNC
+                                                 사단/NNC+에/PAD)
+                                        있/VJ+는/EAN)))
+                            (NP 암호/NNC
+                                조립기/NNC+에/PAD))
+                   관하/VV+어서/ECS+은/PAU))
+       모르/VV+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>개성 탱크 사단에 있는 암호 조립기</term>
+	    </Arg>
+	    <Rel>
+	      <term>관해선</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

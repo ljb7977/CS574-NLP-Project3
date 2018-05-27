@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>충전</lemma>
+    <comment>Frames file for '충전' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>충전.01</id>
+      <edef>charge</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="battery"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>충전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그리고 축전지가 다 나가서 그걸 충전해야 합니다.</text>
+	  <parse>
+(S (ADCP 그리고/ADC)
+   (S (NP-SBJ 축전지/NNC+가/PCA)
+      (VP (ADVP 다/ADV)
+	  (VP 나가/VV+서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 그것/NPN+을/PCA) 
+	      (VV 충전/NNC+하/XSV+어야/EAU)) 
+	  하/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그리고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>축전지가 다 나가서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Rel>
+	      <term>충전해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>합니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

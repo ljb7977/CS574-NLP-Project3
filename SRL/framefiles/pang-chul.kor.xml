@@ -1,0 +1,164 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>방출</lemma>
+    <comment>Frames file for '방출' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>방출.01</id>
+      <edef>release</edef>
+      <roleset>
+	<role argnum="0" argrole="releaser"/>
+	<role argnum="1" argrole="thing released"/>
+	<role argnum="2" argrole="direction"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>방출하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>"단추만 누르면 대양이나 우림의 냄새를 우리의 거실내에 방출할 가상현실 케이블 박스에 대한 연구작업이 이미 진행되고 있다"고 그녀는 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 "/SLQ
+             (NP-SBJ (S (WHNP-2 *op*)
+                        (S (NP-SBJ *T*-2)
+                           (VP (NP-COMP (S (WHNP-3 *op*)
+                                           (S (S (NP-SBJ *pro*)
+                                                 (VP (NP-OBJ 단추/NNC+만/PAU)
+                                                     누르/VV+으면/ECS))
+                                              (S (NP-SBJ *T*-3)
+                                                 (VP (NP-OBJ (NP (NP 대양/NNC+이나/PCJ)
+                                                                 (NP 우림/NNC+의/PAN))
+                                                             (NP 냄새/NNC+을/PCA))
+                                                     (NP-COMP (NP 우리/NPN+의/PAN)
+                                                              (NP 거실/NNC+내/NNX+에/PAD))
+                                                     (VV 방출/NNC+하/XSV+을/EAN)))))
+                                        (NP 가상/NNC+현실/NNC
+                                            케이블/NNC
+                                            박스/NNC+에/PAD))
+                               대하/VV+은/EAN)))
+                     (NP 연구/NNC+작업/NNC+이/PCA))
+             (VP (VP (ADVP 이미/ADV)
+                     (VP (VV 진행/NNC+되/XSV+고/ECS)))
+                 있/VX+다/EFN)
+             "/SRQ
+             고/PAD)
+   (S (NP-SBJ 그녀/NPN+은/PAU)
+      (VP (S-COMP *T*-1)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>단추만 누르면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <term>*trace*=가상현실 케이블 박스</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대양이나 우림의 냄새</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>우리의 거실내</term>
+	    </Arg>
+	    <Rel>
+	      <term>방출할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>방출되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>KEI 는 지난 95 년 경상가격을 기준으로 할 때 국내 생물다양성의 총가치는 목재생산, 생태관광, 식물로부터 추출되는 의약품, 화장품, 산림에서 방출되는 이산화탄소 등 모두 25 조 6 천 915 억 9 천 400 만원에 이르러 같은해 국내총생산 (GDP) 351 조 9 천 714 억원의 7.3 퍼센트를 차지하는 것으로 분석됐다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ KEI/NFW+은/PAU)
+   (VP (S-COMP (NP-ADV (S (NP-SBJ *pro*)
+                          (VP (NP-COMP (NP-OBJ 지난/DAN
+                                               95/NNU
+                                               년/NNX
+                                               경상/NNC+가격/NNC+을/PCA)
+                                       기준/NNC+으로/PAD)
+                              하/VV+을/EAN))
+                       (NP 때/NNC))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (S (NP-SBJ (NP 국내/NNC
+                                                 생물/NNC+다양성/NNC+의/PAN)
+                                             (NP 총/NNC+가치/NNC+은/PAU))
+                                     (VP (NP-ADV (NP (NP 목재/NNC+생산/NNC)
+                                                     ,/SCM
+                                                     (NP 생태/NNC+관광/NNC)
+                                                     ,/SCM
+                                                     (NP (S (WHNP-1 *op*)
+                                                            (S (NP-SBJ *T*-1)
+                                                               (VP (NP-COMP 식물/NNC+으로부터/PAD)
+                                                                   (VV 추출/NNC+되/XSV+는/EAN))))
+                                                         (NP (NP 의약품/NNC)
+                                                             ,/SCM
+                                                             (NP 화장품/NNC)))
+                                                     ,/SCM
+                                                     (NP (S (WHNP-2 *op*)
+                                                            (S (NP-SBJ *T*-2)
+                                                               (VP (NP-COMP 산림/NNC+에서/PAD)
+                                                                   (VV 방출/NNC+되/XSV+는/EAN))))
+                                                         (NP 이산화탄소/NNC)))
+                                                 (NP 등/NNX))
+                                         (VP (NP-COMP 모두/NNC
+                                                      25/NNU
+                                                      조/NNU
+                                                      6/NNU
+                                                      천/NNU
+                                                      915/NNU
+                                                      억/NNU
+                                                      9/NNU
+                                                      천/NNU
+                                                      400/NNU
+                                                      만/NNU+원/NNX+에/PAD)
+                                             이르/VV+어/ECS)))
+                                  (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ (NP 같은해/NNC
+                                                     국내총생산/NNC
+                                                     (PRN -LRB-/SLQ
+                                                          GDP/NFW
+                                                          -RRB-/SRQ)
+                                                     351/NNU
+                                                     조/NNU
+                                                     9/NNU
+                                                     천/NNU
+                                                     714/NNU
+                                                     억/NNU+원/NNX+의/PAN)
+                                                 (NP 7.3/NNU
+                                                     퍼센트/NNX+을/PCA))
+                                         (VV 차지/NNC+하/XSV+는/EAN))))
+                               (NP 것/NNX+으로/PAD))
+                      (VV 분석/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=이산화탄소</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에서</f>
+	      <term>산림</term>
+	    </Arg>
+	    <Rel>
+	      <term>방출되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

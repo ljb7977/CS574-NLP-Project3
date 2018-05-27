@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자살</lemma>
+    <comment>Frames file for '자살' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>자살.01</id>
+      <edef>kill oneself</edef>
+      <roleset>
+	<role argnum="0" argrole="thing killing oneself"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자살하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>유 목사는 또 이들 탈북자 가운데 절반 이상인 53 퍼센트가 북한으로 강제 송환된다면 차라리 자살하겠다고 대답했으며, 실제로 일부 탈북자는 유사시에 대비해 소지하고 있는 극약을 보여 주기도 했다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 유/NPR
+           목사/NNC+은/PAU)
+   (VP (ADCP 또/ADC)
+       (VP (S-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-ADV (NP 이/NPN+들/XSF
+                                                    탈북자/NNC)
+                                                (NP 가운데/NNC))
+                                        (VP (NP 절반/NNC
+                                                이상/NNC+이/CO+은/EAN)))))
+                              (NP 53/NNU
+                                  퍼센트/NNX+이/PCA))
+                      (VP (S-COMP (S (NP-SBJ *pro*)
+                                     (VP (NP-COMP 북한/NPR+으로/PAD)
+                                         (VP (NP-ADV 강제/NNC)
+                                             (VP (VV 송환/NNC+되/XSV+는다면/ECS)))))
+                                  (S (NP-SBJ *pro*)
+                                     (VP (ADVP 차라리/ADV)
+                                         (VP (VV 자살/NNC+하/XSV+겠/EPF+다/EFN+고/PAD)))))
+                          (VV 대답/NNC+하/XSV+었/EPF+으며/ECS)))
+                   ,/SCM
+                   (S (NP-ADV 실제/NNC+으로/PAD)
+                      (S (NP-SBJ 일부/NNC
+                                 탈북자/NNC+은/PAU)
+                         (VP (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *pro*)
+                                                   (VP (S (NP-SBJ *pro*)
+                                                          (VP (NP-COMP 유사시/NNC+에/PAD)
+                                                              (VV 대비/NNC+하/XSV+어/ECS)))
+                                                       (VP (VP (NP-OBJ *T*-2)
+                                                               (VV 소지/NNC+하/XSV+고/ECS))
+                                                           있/VX+는/EAN))))
+                                             (NP 극약/NNC+을/PCA))
+                                     보이/VV+어/ECS)
+                                 주/VX+기/ENM+도/PAU)
+                             하/VX+었/EPF+다/EFN+고/PAD))))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>북한으로 강제 송환된다면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>차라리</term>
+	    </Arg>
+	    <Rel>
+	      <term>자살하겠다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

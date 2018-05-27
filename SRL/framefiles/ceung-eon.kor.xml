@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>증언</lemma>
+    <comment>Frames file for '증언' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>증언.01</id>
+      <edef>testify</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing testified"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>증언하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>셔먼 자문관은 이어 이탈리아 외에 다른 나라들도 북한과 관계정상화를 추구하고 있다면서 "그러나 이들 나라는 미국 등과 긴밀히 협의를 하는 등 북한과 관계정상화를 매우 느리게 추진하고 있다"고 증언했다고 이 방송은 덧붙였다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 셔먼/NPR
+                     자문관/NNC+은/PAU)
+             (VP (S-COMP (ADVP 이어/ADV)
+                         (S (NP-ADV 이탈리아/NPR
+                                    외/NNC+에/PAD)
+                            (S (NP-SBJ 다른/DAN
+                                       나라/NNC+들/XSF+도/PAU)
+                               (VP (VP (NP-COMP 북한/NPR+과/PAD)
+                                       (NP-OBJ 관계/NNC+정상화/NNC+을/PCA)
+                                       (VV 추구/NNC+하/XSV+고/ECS))
+                                   있/VX+다면서/ECS)))
+                         (S "/SLQ
+                            (ADCP 그러나/ADC)
+                            (S (NP-SBJ 이/NPN+들/XSF
+                                       나라/NNC+은/PAU)
+                               (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                  (VP (NP-COMP 미국/NPR
+                                                               등/NNX+과/PAD)
+                                                      (VP (ADVP 긴밀히/ADV)
+                                                          (VP (NP-OBJ 협의/NNC+을/PCA)
+                                                              하/VV+는/EAN))))
+                                               (NP 등/NNX))
+                                       (VP (NP-COMP 북한/NPR+과/PAD)
+                                           (NP-OBJ 관계/NNC+정상화/NNC+을/PCA)
+                                           (VP (ADVP (ADVP 매우/ADV)
+                                                     (ADVP (ADV 느리/VJ+게/ECS)))
+                                               (VP (VV 추진/NNC+하/XSV+고/ECS)))))
+                                   있/VX+다/EFN))
+                            "/SRQ
+                            고/PAD))
+                 (VV 증언/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))
+   (S (NP-SBJ 이/DAN
+              방송/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>셔먼 자문관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>이어 이탈리아 외에 다른 나라들도 북한과 관계정상화를 추구하고 있다면서 "그러나 이들 나라는 미국 등과 긴밀히 협의를 하는 등 북한과 관계정상화를 매우 느리게 추진하고 있다"</term>
+	    </Arg>
+	    <Rel>
+	      <term>증언했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

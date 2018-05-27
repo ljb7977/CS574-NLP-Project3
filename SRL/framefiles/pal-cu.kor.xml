@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발주</lemma>
+    <comment>Frames file for '발주' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발주.01</id>
+      <edef>order</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing ordered"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발주되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="s" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>또 남북한 철도시설 통합운영 토대를 마련하기 위해 차량과 신호, 전기 등 시스템 통합을 위한 연구용역이 빠르면 이달 중 발주되는 등 남북한 철도연결을 위한 작업이 본격화되고 있다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ (NP (S (S (NP-SBJ *pro*)
+                        (VP (S-OBJ (NP-SBJ *pro*)
+                                   (VP (NP-OBJ 남북한/NPR
+                                               철도/NNC+시설/NNC
+                                               통합/NNC+운영/NNC
+                                               토대/NNC+을/PCA)
+                                       (VV 마련/NNC+하/XSV+기/ENM)))
+                            위하/VV+어/ECS))
+                     (S (NP-SBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (NP-OBJ (NP (NP (NP (NP 차량/NNC+과/PCJ)
+                                                              (NP 신호/NNC)
+                                                              ,/SCM
+                                                              (NP 전기/NNC))
+                                                          (NP 등/NNX))
+                                                      (NP 시스템/NNC))
+                                                  (NP 통합/NNC+을/PCA))
+                                          위하/VV+은/EAN)))
+                                (NP 연구/NNC+용역/NNC+이/PCA))
+                        (VP (S (NP-SBJ *pro*)
+                               (ADJP 빠르/VJ+으면/ECS))
+                            (NP-ADV 이달/NNC
+                                    중/NNX)
+                            (VP (VV 발주/NNC+되/XSV+는/EAN)))))
+                  (NP 등/NNX))
+              (NP (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (VP (NP-OBJ 남북한/NPR
+                                    철도/NNC+연결/NNC+을/PCA)
+                            위하/VV+은/EAN)))
+                  (NP 작업/NNC+이/PCA)))
+      (VP (VP (VV 본격화/NNC+되/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>남북한 철도시설 통합운영 토대를 마련하기 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>차량과 신호, 전기 등 시스템 통합을 위한 연구용역</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>빠르면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이달 중</term>
+	    </Arg>
+	    <Rel>
+	      <term>발주되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

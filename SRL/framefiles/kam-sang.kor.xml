@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>감상</lemma>
+    <comment>Frames file for '감상' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>감상.01</id>
+      <edef>appreciate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing appreciated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>감상하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>금년 영화제에서는 모두 1 만 8 천여 관객이 출품작들을 감상한 것으로 집계됐다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-ADV 금년/NNC
+                           영화제/NNC+에서/PAD+은/PAU)
+                   (S (NP-SBJ 모두/NNC
+                              1/NNU
+                              만/NNU
+                              8/NNU
+                              천/NNU+여/XSF
+                              관객/NNC+이/PCA)
+                      (VP (NP-OBJ 출품작/NNC+들/XSF+을/PCA)
+                          (VV 감상/NNC+하/XSV+은/EAN))))
+                (NP 것/NNX+으로/PAD))
+       (VV 집계/NNC+되/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>금년 영화제에서는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>모두 1 만 8 천여 관객</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>출품작들</term>
+	    </Arg>
+	    <Rel>
+	      <term>감상한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,132 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>팔</lemma>
+    <comment>Frames file for '팔' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>팔.01</id>
+      <edef>sell</edef>
+      <roleset>
+	<role argnum="0" argrole="seller"/>
+	<role argnum="1" argrole="thing sold"/>
+	<role argnum="2" argrole="buyer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>팔다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 중 현대가 858 대, 대우가 642 대를 팔았다.</text>
+	  <parse>
+(S (NP-ADV 이/DAN
+           중/NNX)
+   (S (S (NP-SBJ 현대/NPR+이/PCA)
+         (VP (NP-OBJ 858/NNU
+                     대/NNX)
+             (VV *?*)))
+      ,/SCM
+      (S (NP-SBJ 대우/NPR+이/PCA)
+         (VP (NP-OBJ 642/NNU
+                     대/NNX+을/PCA)
+             팔/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>이 중</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>대우</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>642 대</term>
+	    </Arg>
+	    <Rel>
+	      <term>팔았다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>팔리다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한보철강이 이번주중에 미국 네이버스 컨소시엄에 팔릴 전망이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 한보/NPR+철강/NNC+이/PCA)
+              (VP (NP-ADV 이번주/NNC+중/NNX+에/PAD)
+                  (VP (NP-COMP 미국/NPR
+                               네이버스/NPR
+                               컨소시엄/NPR+에/PAD)
+                      팔리/VV+을/EAN)))
+           (NP 전망/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>한보철강</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이번주중에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>미국 네이버스 컨소시엄</term>
+	    </Arg>
+	    <Rel>
+	      <term>팔릴</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>한편 외국 자동차는 총 7 만 2 천 362 대가 팔려 점유율이 39.8 퍼센트로 떨어졌다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (S (NP-SBJ 외국/NNC
+		     자동차/NNC+은/PAU)
+	 (S (NP-SBJ 총/DAN
+		      7/NNU
+		      만/NNU
+		      2/NNU
+		      천/NNU
+		      362/NNU
+		      대/NNX+이/PCA)
+	    (VP 팔리/VV+어/ECS)))
+      (S (NP-SBJ 점유율/NNC+이/PCA)
+         (VP (NP-ADV 39.8/NNU
+                     퍼센트/NNX+으로/PAD)
+             (VP 떨어지/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>외국 자동차</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>총 7 만 2 천 362 대</term>
+	    </Arg>
+	    <Rel>
+	      <term>팔려</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

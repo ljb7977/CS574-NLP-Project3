@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>회상</lemma>
+    <comment>Frames file for '회상' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>회상.01</id>
+      <edef>recollect</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="memory"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>회상하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김씨는 "방 변호사가 보수도 받지 않고 애써 줘 좋은 미국인 변호사를 만나게 됐다"면서 "변호인이 정해짐에 따라 과거 4 년전에 있었던 일들을 회상하면서 사건을 정리하고 있다"고 근황을 알려왔다.</text>
+	  <parse>
+(S (NP-SBJ 김/NPR+씨/NNX+은/PAU)
+   (VP (S "/SLQ
+          (S (NP-SBJ 방/NPR
+                     변호사/NNC+이/PCA)
+             (VP (VP (VP (NP-OBJ 보수/NNC+도/PAU)
+                         받/VV+지/ECS)
+                     않/VX+고/ECS)
+                 (VP (VP 애쓰/VV+어/ECS)
+                     주/VX+어/ECS)))
+          (S (NP-SBJ *pro*)
+             (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP 좋/VJ+은/EAN)))
+                             (NP 미국인/NNC
+                                 변호사/NNC+을/PCA))
+                     만나/VV+게/ECS)
+                 되/VX+었/EPF+다/EFN))
+          "/SRQ
+          면서/ECS)
+       (S "/SLQ
+          (S (NP-SBJ *pro*)
+             (VP (S-COMP (NP-SBJ 변호인/NNC+이/PCA)
+                         (VP (VV 정하/VV+어지/XSV+음/ENM+에/PAD)))
+                 따르/VV+어/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (WHNP-2 *op*)
+                            (S (NP-SBJ *T*-2)
+                               (ADJP (NP-ADV 과거/NNC
+                                             4/NNU
+                                             년/NNX+전/NNC+에/PAD)
+                                     (ADJP 있/VJ+었/EPF+던/EAN))))
+                         (NP 일/NNC+들/XSF+을/PCA))
+                 (VV 회상/NNC+하/XSV+으면서/ECS)))
+          (S (NP-SBJ *pro*)
+             (VP (VP (NP-OBJ 사건/NNC+을/PCA)
+                     (VV 정리/NNC+하/XSV+고/ECS))
+                 있/VX+다/EFN))
+          "/SRQ
+          고/PAD)
+       (VP (NP-OBJ 근황/NNC+을/PCA)
+           알려오/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>과거 4 년전에 있었던 일들</term>
+	    </Arg>
+	    <Rel>
+	      <term>회상하면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

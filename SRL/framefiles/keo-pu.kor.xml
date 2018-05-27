@@ -1,0 +1,178 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>거부</lemma>
+    <comment>Frames file for '거부' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>거부.01</id>
+      <edef>refuse</edef>
+      <roleset>
+	<role argnum="0" argrole="entity refusing"/>
+	<role argnum="1" argrole="refused action, object"/>
+	<role argnum="2" argrole="anti-benefactive"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>거부하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>레바논 정부는 지난주 이들을 추방해 달라는 일본 정부의 요구를 거부했으나, 오부치 게이조(소연혜삼) 일본 총리는 아직 이들의 신병인도 요구를 굽히지 않고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 레바논/NPR
+              정부/NNC+은/PAU)
+      (VP (NP-ADV 지난주/NNC)
+          (VP (NP-OBJ (S (NP-SBJ *pro*)
+			 (VP (VP (NP-OBJ 이/NPN+들/XSF+을/PCA)
+				 (VV 추방/NNC+하/XSV+어/ECS))
+			     달/VX+라는/EAN))
+		      (NP (NP 일본/NPR
+				  정부/NNC+의/PAN)
+			  (NP 요구/NNC+을/PCA)))
+              (VV 거부/NNC+하/XSV+었/EPF+으나/ECS))))
+   ,/SCM
+   (S (NP-SBJ 오부치/NPR
+              게이조/NPR
+              (PRN -LRB-/SLQ
+                   소연혜삼/NPR
+                   -RRB-/SRQ)
+              일본/NPR
+              총리/NNC+은/PAU)
+      (VP (VP (VP (ADVP 아직/ADV)
+                  (VP (NP-OBJ (NP 이/NPN+들/XSF+의/PAN)
+                              (NP 신병/NNC+인도/NNC
+                                  요구/NNC+을/PCA))
+                      굽히/VV+지/ECS))
+              않/VX+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>레바논 정부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난주</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이들을 추방해 달라는 일본 정부의 요구</term>
+	    </Arg>
+	    <Rel>
+	      <term>거부했으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>거부되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>다른 4 명의 적군파 대원들은 요르단으로 추방됐으나 입국이 거부된 뒤 18 일 일본으로 송환돼 체포됐다.</text>
+	  <parse>
+(S (NP-SBJ (NP 다른/DAN
+               4/NNU
+               명/NNX+의/PAN)
+           (NP 적군파/NPR
+               대원/NNC+들/XSF+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (S (NP-SBJ *pro*)
+                 (VP (NP-COMP 요르단/NPR+으로/PAD)
+                     (VV 추방/NNC+되/XSV+었/EPF+으나/ECS)))
+              (NP-ADV (S (NP-SBJ 입국/NNC+이/PCA)
+                         (VP (VV 거부/NNC+되/XSV+은/EAN)))
+                      (NP 뒤/NNC))
+              (NP-ADV 18/NNU
+                      일/NNX)
+              (VP (NP-COMP 일본/NPR+으로/PAD)
+                  (VV 송환/NNC+되/XSV+어/ECS))))
+       (VP (VV 체포/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>입국</term>
+	    </Arg>
+	    <Rel>
+	      <term>거부된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>거부당하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>선데이 텔레그래프는 지난 90 년 이후 30 만 2 천 970 명이 망명을 신청, 15 만 3 천 970 명이 거부당했으나 이 가운데 2 만 7 천 365 명만이 추방되고 나머지 12 만 6 천명은 잠적해 지하경제에 편입된 것으로 보인다고 보도했다.</text>
+	  <parse>
+(S (NP-SBJ 선데이/NPR
+           텔레그래프/NPR+은/PAU)
+   (VP (S-COMP (NP-ADV 지난/DAN
+                       90/NNU
+                       년/NNX
+                       이후/NNC)
+               (S (NP-SBJ 30/NNU
+                          만/NNU
+                          2/NNU
+                          천/NNU
+                          970/NNU
+                          명/NNX+이/PCA)
+                  (VP (NP-OBJ 망명/NNC+을/PCA)
+                      (VV 신청/NNC)))
+               ,/SCM
+               (S (NP-SBJ 15/NNU
+                          만/NNU
+                          3/NNU
+                          천/NNU
+                          970/NNU
+                          명/NNX+이/PCA)
+                  (VP (VV 거부/NNC+당하/XSV+었/EPF+으나/ECS)))
+               (S (NP-ADV 이/DAN
+                          가운데/NNC)
+                  (S (NP-SBJ 2/NNU
+                             만/NNU
+                             7/NNU
+                             천/NNU
+                             365/NNU
+                             명/NNX+만/PAU+이/PCA)
+                     (VP (VV 추방/NNC+되/XSV+고/ECS))))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-SBJ *pro*)
+                                  (VP (S (NP-SBJ 나머지/NNC
+                                                 12/NNU
+                                                 만/NNU
+                                                 6/NNU
+                                                 천/NNU+명/NNX+은/PAU)
+                                         (VP (VV 잠적/NNC+하/XSV+어/ECS)))
+                                      (VP (NP-COMP 지하/NNC+경제/NNC+에/PAD)
+                                          (VV 편입/NNC+되/XSV+은/EAN))))
+                               (NP 것/NNX+으로/PAD))
+                      보이/VV+는다/EFN+고/PAD)))
+       (VV 보도/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>이</f>
+	      <term>15 만 3 천 970 명</term>
+	    </Arg>
+	    <Rel>
+	      <term>거부당했으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

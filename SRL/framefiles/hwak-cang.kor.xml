@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>확장</lemma>
+    <comment>Frames file for '확장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>확장.01</id>
+      <edef>expand</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing grown"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>확장되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>렝데르 장관은 벨기에 일간 르 수아르와의 회견에서 이번 3 개 증시 통합이 유럽증시 통합 확대를 목표로 하고 있다고 말하고 룩셈부르크 당국이 이미 추가 참여 의사를 보이고 있기 때문에 곧 4 개 증시 통합으로 확장될 것이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 렝데르/NPR
+           장관/NNC+은/PAU)
+   (VP (NP-ADV (NP (NP 벨기에/NPR
+                       일간/NNC)
+                   (NP 르/NPR
+                       수아르/NPR+과/PAD+의/PAN))
+               (NP 회견/NNC+에서/PAD))
+       (VP (VP (S-COMP (NP-SBJ 이번/NNC
+                               3/NNU
+                               개/NNX
+                               증시/NNC
+                               통합/NNC+이/PCA)
+                       (VP (VP (NP-OBJ 유럽/NPR+증시/NNC
+                                       통합/NNC
+                                       확대/NNC+을/PCA)
+                               (NP-COMP 목표/NNC+으로/PAD)
+                               하/VV+고/ECS)
+                           있/VX+다/EFN+고/PAD))
+               말하/VV+고/ECS)
+           (VP (S-COMP (NP-SBJ *pro*)
+                       (VP (VP (NP-ADV (S (NP-SBJ 룩셈부르크/NPR
+							    당국/NNC+이/PCA)
+					  (VP (VP (ADVP 이미/ADV)
+						  (VP (NP-OBJ 추가/NNC
+                                                                  참여/NNC
+                                                                  의사/NNC+을/PCA)
+						      보이/VV+고/ECS))
+					      있/VX+기/ENM))
+                                       (NP 때문/NNX+에/PAD))
+                               (ADVP 곧/ADV)
+                               (VP (NP-COMP 4/NNU
+                                            개/NNX
+                                            증시/NNC
+                                            통합/NNC+으로/PAD)
+                                   (VV 확장/NNC+되/XSV+을/EAN)))
+                           (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+               밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>룩셈부르크 당국이 이미 추가 참여 의사를 보이고 있기 때문에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>곧</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>4 개 증시 통합</term>
+	    </Arg>
+	    <Rel>
+	      <term>확장될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

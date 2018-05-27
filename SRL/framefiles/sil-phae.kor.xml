@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>실패</lemma>
+    <comment>Frames file for '실패' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>실패.01</id>
+      <edef>fail</edef>
+      <roleset>
+	<role argnum="1" argrole="thing failing"/>
+	<role argnum="2" argrole="task"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>실패하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>1 소대가 목표 탈취에 실패했기 때문에 그 작전 계획이 어긋났소.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 1/NNU
+                      소대/NNC+이/PCA)
+              (VP (NP-COMP 목표/NNC
+                           탈취/NNC+에/PAD)
+                  (VV 실패/NNC+하/XSV+었/EPF+기/ENM)))
+           (NP 때문/NNX+에/PAD))
+   (S (NP-SBJ 그/DAN
+              작전/NNC
+              계획/NNC+이/PCA)
+      (VP 어긋나/VV+었/EPF+소/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>1 소대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>목표 탈취</term>
+	    </Arg>
+	    <Rel>
+	      <term>실패했기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

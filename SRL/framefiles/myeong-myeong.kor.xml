@@ -1,0 +1,118 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>명명</lemma>
+    <comment>Frames file for '명명' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>명명.01</id>
+      <edef>name</edef>
+      <roleset>
+	<role argnum="0" argrole="namer"/>
+	<role argnum="1" argrole="named"/>
+	<role argnum="2" argrole="name"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>명명하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>사단장은 이번 작전을 "독립 작전" 이라고 명명했다.</text>
+	  <parse>
+(S (NP-SBJ 사단장/NNC+은/PAU)
+   (VP (NP-OBJ 이번/NNC
+               작전/NNC+을/PCA)
+       (NP-COMP "/SLQ
+                독립/NNC
+                작전/NNC
+                "/SRQ
+                이라고/PAD)
+       (VV 명명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>사단장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이번 작전</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>이라고</f>
+	      <term>"독립 작전"</term>
+	    </Arg>
+	    <Rel>
+	      <term>명명했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>명명되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희들이 문산 공격 시엔 개성 탱크 사단 예하 부대를 지원하고 있었고, 또 서울 공격 시엔 103 보병 사단 예하 부대를 지원하게 돼 있었다는 건 알고 있습니다만, 그 부대들이 얼마나 크고 뭐라고 명명되었는지 모르겠습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (S (NP-SBJ 저희/NPN+들/XSF+이/PCA)
+                            (VP (VP (NP-ADV 문산/NPR
+                                            공격/NNC
+                                            시/NNX+에/PAD+은/PAU)
+                                    (VP (NP-OBJ (NP 개성/NPR
+                                                    탱크/NNC
+                                                    사단/NNC)
+                                                (NP 예하/NNC
+                                                    부대/NNC+을/PCA))
+                                        (VV 지원/NNC+하/XSV+고/ECS)))
+                                있/VX+었/EPF+고/ECS))
+                         ,/SCM
+                         (ADVP 또/ADV)
+                         (S (NP-SBJ *pro*)
+                            (VP (VP (VP (NP-ADV 서울/NPR
+                                                공격/NNC
+                                                시/NNX+에/PAD+은/PAU)
+                                        (VP (NP-OBJ (NP 103/NNU
+                                                        보병/NNC
+                                                        사단/NNC)
+                                                    (NP 예하/NNC
+                                                        부대/NNC+을/PCA))
+                                            (VV 지원/NNC+하/XSV+게/ECS)))
+                                    되/VX+어/ECS)
+                                있/VX+었/EPF+다는/EAN)))
+                      (NP 것/NNX+은/PAU))
+              알/VV+고/ECS)
+          있/VX+습니다만/ECS))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (S-OBJ (S (NP-SBJ 그/DAN
+                            부대/NNC+들/XSF+이/PCA)
+                    (ADJP (ADVP 얼마나/ADV)
+                          (ADJP 크/VJ+고/ECS)))
+                 (S (NP-SBJ *pro*)
+                    (VP (NP-COMP 뭐/NPN+이라고/PAD)
+                        (VV 명명/NNC+되/XSV+었/EPF+는지/EFN))))
+          모르/VV+겠/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>라고</f>
+	      <term>뭐</term>
+	    </Arg>
+	    <Rel>
+	      <term>명명되었는지</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

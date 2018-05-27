@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>동행</lemma>
+    <comment>Frames file for '동행' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>동행.01</id>
+      <edef>accompany</edef>
+      <roleset>
+	<role argnum="0" argrole="accompanier"/>
+	<role argnum="1" argrole="accompanied"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>동행하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 김석준 쌍용건설 회장 등 국내기업 대표 53 명과 주한 외국인 기업 대표 4 명 등으로 구성된 경제사절단도 동행한다.</text>
+	  <parse>
+(S (ADCP 또/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP (NP (NP (NP 김석준/NPR
+                                             쌍용/NPR+건설/NNC
+                                             회장/NNC)
+                                         (NP 등/NNX)
+                                         (NP 국내/NNC+기업/NNC
+                                             대표/NNC
+                                             53/NNU
+                                             명/NNX+과/PCJ))
+                                     (NP 주한/NNC
+                                         외국인/NNC
+                                         기업/NNC
+                                         대표/NNC
+                                         4/NNU
+                                         명/NNX))
+                                 (NP 등/NNX+으로/PAD))
+                        (VV 구성/NNC+되/XSV+은/EAN))))
+              (NP 경제/NNC+사절단/NNC+도/PAU))
+      (VP (VV 동행/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>김석준 쌍용건설 회장 등 국내기업 대표 53 명과 주한 외국인 기업 대표 4 명 등으로 구성된 경제사절단</term>
+	    </Arg>
+	    <Rel>
+	      <term>동행한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

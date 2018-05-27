@@ -1,0 +1,171 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가르</lemma>
+    <comment>Frames file for '가르' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가르.01</id>
+      <edef>split</edef>
+      <roleset>
+	<role argnum="0" argrole="causer of separation"/>
+	<role argnum="1" argrole="thing divided"/>
+	<role argnum="2" argrole="divided between, result"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>갈리다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 또 "63 년 대선때 박정희 대통령이 윤보선 후보에게 지고 있다가 막판에 목포, 신안, 무안서 몰표가 나와 이긴 점을 봐도 당시에는 동서가 갈리지 않았고 지역감정이 없었다"며 "이후 71 년 대선때 영호남 양쪽에서 후보가 나와 '내 고장에서 대통령을 뽑자'고 해 지역대립이 생긴 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (S "/SLQ
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (NP-ADV 63/NNU
+                                    년/NNX
+                                    대선/NNC+때/NNC)
+                            (S (NP-SBJ 박정희/NPR
+                                       대통령/NNC+이/PCA)
+                               (VP (VP (NP-COMP 윤보선/NPR
+                                                후보/NNC+에게/PAD)
+                                       지/VV+고/ECS)
+                                   있/VX+다가/ECS))
+                            (S (NP-ADV 막판/NNC+에/PAD)
+                               (NP-ADV (NP 목포/NPR)
+                                       ,/SCM
+                                       (NP 신안/NPR)
+                                       ,/SCM
+                                       (NP 무안/NPR+서/PAD))
+                               (S (NP-SBJ 몰표/NNC+이/PCA)
+                                  (VP 나오/VV+어/ECS)))
+                            (S (NP-SBJ *pro*)
+                               (VP 이기/VV+은/EAN)))
+                         (NP 점/NNX+을/PCA))
+                 보/VV+어도/ECS))
+          (S (NP-ADV 당시/NNC+에/PAD+은/PAU)
+             (S (NP-SBJ 동서/NNC+이/PCA)
+                (VP (VP 갈리/VV+지/ECS)
+                    않/VX+었/EPF+고/ECS))
+             (S (NP-SBJ 지역/NNC+감정/NNC+이/PCA)
+                (ADJP 없/VJ+었/EPF+다/EFN)))
+          "/SRQ
+          며/ECS)
+       (VP (NP-COMP "/SLQ
+                    (S (NP-ADV 이후/NNC)
+                       (NP-ADV 71/NNU
+                               년/NNX
+                               대선/NNC+때/NNC)
+                       (S (NP-COMP-1 영호남/NPR
+                                     양쪽/NNC+에서/PAD)
+                          (S (NP-SBJ 후보/NNC+이/PCA)
+                             (VP (NP-COMP *T*-1)
+                                 나오/VV+어/ECS)))
+                       (S (NP-SBJ *pro*)
+                          (VP (S-COMP '/SLQ
+                                      (NP-SBJ *pro*)
+                                      (VP (NP-ADV (NP 나/NPN+의/PAN)
+                                                  (NP 고장/NNC+에서/PAD))
+                                          (VP (NP-OBJ 대통령/NNC+을/PCA)
+                                              뽑/VV+자/EFN))
+                                      '/SRQ
+                                      고/PAD)
+                              하/VV+어/ECS))
+                       (S (NP-SBJ 지역/NNC+대립/NNC+이/PCA)
+                          (VP 생기/VV+은/EAN)))
+                    (NP 것/NNX)
+                    "/SRQ
+                    이라고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>63 년 대선때 박정희 대통령이 윤보선 후보에게 지고 있다가 막판에 목포, 신안, 무안서 몰표가 나와 이긴 점을 봐도</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>당시에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>동서</term>
+	    </Arg>
+	    <Rel>
+	      <term>갈리지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>갈라지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>자민련 김종필 명예총재는 7 일 "16 대 총선 후 민주당, 한나라당, 민국당이 갈라지는 것을 잘 조정하고 캐스팅보트 역할을 통해 국정을 잘 이끌어 나갈 책임이 자민련측에 있게 될 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 자민련/NPR
+           김종필/NPR
+           명예/NNC+총재/NNC+은/PAU)
+   (VP (NP-ADV 7/NNU
+               일/NNX)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (S (S (NP-ADV 16/NNU
+                                         대/NNX
+                                         총선/NNC
+                                         후/NNC)
+                                 (NP-OBJ-1 (S (NP-SBJ (NP 민주당/NPR)
+                                                      ,/SCM
+                                                      (NP 한나라당/NPR)
+                                                      ,/SCM
+                                                      (NP 민국당/NPR+이/PCA))
+                                              (VP 갈라지/VV+는/EAN))
+                                           (NP 것/NNX+을/PCA))
+                                 (S (NP-SBJ *pro*)
+                                    (VP (NP-OBJ *T*-1)
+                                        (VP (ADVP 잘/ADV)
+                                            (VP (VV 조정/NNC+하/XSV+고/ECS))))))
+                              (S (S (NP-SBJ *pro*)
+                                    (VP (NP-OBJ 캐스팅보트/NNC
+                                                역할/NNC+을/PCA)
+                                        통하/VV+어/ECS))
+                                 (S (NP-SBJ *pro*)
+                                    (VP (VP (NP-OBJ 국정/NNC+을/PCA)
+                                            (VP (ADVP 잘/ADV)
+                                                (VP 이끌/VV+어/ECS)))
+                                        나가/VX+을/EAN))))
+                           (NP 책임/NNC+이/PCA))
+                   (VP (VP (ADJP (NP-COMP 자민련/NPR+측/XSF+에/PAD)
+                                 있/VJ+게/ECS)
+                           되/VX+을/EAN)
+                       (VX 것/NNX))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>민주당, 한나라당, 민국당</term>
+	    </Arg>
+	    <Rel>
+	      <term>갈라지는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

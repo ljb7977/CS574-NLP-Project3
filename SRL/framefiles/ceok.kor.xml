@@ -1,0 +1,306 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>적</lemma>
+    <comment>Frames file for '적' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>적.01</id>
+      <edef>write down</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing written"/>
+	<role argnum="2" argrole="where written"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>적다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 용지에 적은 숫자들은 무엇을 뜻하오?</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*) 
+	      (S (NP-SBJ *pro*)
+		 (VP (NP-COMP 그/DAN 용지/NNC+에/PAD) 
+		     (NP-OBJ *T*-1)
+		     적/VV+은/EAN)))
+	   (NP 숫자/NNC+들/XSF+은/PAU)) 
+   (VP (NP-OBJ 무엇/NPN+을/PCA)
+       뜻하/VV+오/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>그 용지</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=숫자들</term>
+	    </Arg>
+	    <Rel>
+	      <term>적은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>적다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 관계자는 "북한에 거주하는 가족들은 송금해 준 사람들에게 '보내 준 돈은 잘 받았다'는 내용의 서신만을 보내 올 뿐 정확한 수령액에 대해서는 적고 있지 않다"면서 "아마도 북한당국의 서신 검열을 의식한 것으로 풀이된다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           관계자/NNC+은/PAU)
+   (VP (S-COMP (S "/SLQ
+                  (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-COMP 북한/NPR+에/PAD)
+                                    (VV 거주/NNC+하/XSV+는/EAN))))
+                          (NP 가족/NNC+들/XSF+은/PAU))
+                  (VP (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                         (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                                                             (S (NP-SBJ *T*-2)
+                                                                (VP (VP (NP-OBJ *pro*)
+                                                                        (VV 송금/NNC+하/XSV+어/ECS))
+                                                                    주/VX+은/EAN)))
+                                                          (NP 사람/NNC+들/XSF+에게/PAD))
+                                                 (NP-OBJ (NP (S '/SLQ
+                                                                (NP-SBJ *pro*)
+                                                                (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                                               (S (NP-SBJ *pro*)
+                                                                                  (VP (VP (NP-OBJ *T*-3)
+                                                                                          보내/VV+어/ECS)
+                                                                                      주/VX+은/EAN)))
+                                                                            (NP 돈/NNC+은/PAU))
+                                                                    (VP (ADVP 잘/ADV)
+                                                                        (VP 받/VV+었/EPF+다/EFN)))
+                                                                '/SRQ
+                                                                는/EAN)
+                                                             (NP 내용/NNC+의/PAN))
+                                                         (NP 서신/NNC+만/PAU+을/PCA))
+                                                 보내/VV+어/ECS)
+                                             오/VX+을/EAN))
+                                      (NP 뿐/NNX))
+                              (VP (S-COMP (NP-SBJ *pro*)
+                                          (VP (NP-COMP (S (WHNP-4 *op*)
+                                                          (S (NP-SBJ *T*-4)
+                                                             (ADJP (VJ 정확/NNC+하/XSJ+은/EAN))))
+                                                       (NP 수령액/NNC+에/PAD))
+                                              대하/VV+어서/ECS+은/PAU))
+                                  적/VV+고/ECS))
+                          있/VX+지/ECS)
+                      않/VX+다/EFN)
+                  "/SRQ
+                  면서/ECS)
+               (S "/SLQ
+                  (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-SBJ *pro*)
+                                  (VP (ADVP 아마도/ADV)
+                                      (VP (NP-OBJ (NP 북한/NPR+당국/NNC+의/PAN)
+                                                  (NP 서신/NNC
+                                                      검열/NNC+을/PCA))
+                                          (VV 의식/NNC+하/XSV+은/EAN))))
+                               (NP 것/NNX+으로/PAD))
+                      (VV 풀이/NNC+되/XSV+는다/EFN))
+                  "/SRQ
+                  고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>북한에 거주하는 가족들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>송금해 준 사람들에게 '보내 준 돈은 잘 받았다'는 내용의 서신만을 보내 올 뿐</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에 대해서는</f>
+	      <term>정확한 수령액</term>
+	    </Arg>
+	    <Rel>
+	      <term>적고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있지</term>
+	    </Aux>
+	    <Aux>
+	      <f>지</f>
+	      <term>않다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>적다</rel>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>2 일 월스트리트저널의 보도에 따르면 FRB가 공개한 연방공개시장위원회(FOMC)의 94 년도 회의록은 그린스펀 의장이 당시 3 월 회의에서 "한달 전에 금리인상 조치를 취하면서 주식시장의 거품이 빠질 것이란 기대감을 가졌다"고 말한 것으로 적고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-ADV 2/NNU
+                  일/NNX)
+          (VP (NP-COMP (NP 월스트리트저널/NPR+의/PAN)
+                       (NP 보도/NNC+에/PAD))
+              따르/VV+으면/ECS)))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ FRB/NFW+이/PCA)
+                    (VP (NP-OBJ *T*-1)
+                        (VV 공개/NNC+하/XSV+은/EAN))))
+              (NP (NP 연방/NNC+공개/NNC+시장/NNC+위원회/NNC
+                      (PRN -LRB-/SLQ
+                           FOMC/NFW
+                           -RRB-/SRQ)
+                      의/PAN)
+                  (NP 94/NNU
+                      년도/NNX
+                      회의록/NNC+은/PAU)))
+      (VP (VP (NP-COMP (S (NP-SBJ 그린스펀/NPR
+                                  의장/NNC+이/PCA)
+                          (VP (NP-ADV 당시/NNC
+                                      3/NNU
+                                      월/NNX
+                                      회의/NNC+에서/PAD)
+                              (VP (S-COMP "/SLQ
+                                          (NP-SBJ *pro*)
+                                          (VP (VP (NP-ADV 한/NNU+달/NNX
+                                                          전/NNC+에/PAD)
+                                                  (VP (NP-OBJ 금리/NNC+인상/NNC
+                                                              조치/NNC+을/PCA)
+                                                      취하/VV+으면서/ECS))
+                                              (VP (NP-OBJ (S (NP-SBJ (NP 주식/NNC+시장/NNC+의/PAN)
+                                                                     (NP 거품/NNC+이/PCA))
+                                                             (VP (VP 빠지/VV+을/EAN)
+                                                                 (VX 것/NNX+이/CO+란/EAN)))
+                                                          (NP 기대감/NNC+을/PCA))
+                                                  가지/VV+었/EPF+다/EFN))
+                                          "/SRQ
+                                          고/PAD)
+                                  말하/VV+은/EAN)))
+                       (NP 것/NNX+으로/PAD))
+              적/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>2 일 월스트리트저널의 보도에 따르면</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>FRB가 공개한 연방공개시장위원회(FOMC)의 94 년도 회의록</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>그린스펀 의장이 당시 3 월 회의에서 "한달 전에 금리인상 조치를 취하면서 주식시장의 거품이 빠질 것이란 기대감을 가졌다"고 말한 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>적고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>적히다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>클린턴 대통령이 도착한 직후 다카시의 근교에서는 반미구호가 적힌 수백개의 검은 풍선이 떠올랐다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 클린턴/NPR
+                      대통령/NNC+이/PCA)
+              (VP (VV 도착/NNC+하/XSV+은/EAN)))
+           (NP 직후/NNC))
+   (NP-ADV (NP 다카/NPR+시/NNC+의/PAN)
+           (NP 근교/NNC+에서/PAD+은/PAU))
+   (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ 반/XPF+미/NPR+구호/NNC+이/PCA)
+                    (VP (NP-COMP *T*-2)
+                        적히/VV+은/EAN)))
+              (NP (NP 수백/NNU+개/NNX+의/PAN)
+                  (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (ADJP 검/VJ+은/EAN)))
+                      (NP 풍선/NNC+이/PCA))))
+      (VP 떠오르/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>반미구호</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>*trace*=수백개의 검은 풍선</term>
+	    </Arg>
+	    <Rel>
+	      <term>적힌</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>적.02</id>
+      <edef>little</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being little"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>적다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>군관의 식사도 그렇게 양이 적은가?</text>
+	  <parse>
+(S (NP-SBJ (NP 군관/NNC+의/PAN)
+           (NP 식사/NNC+도/PAU))
+   (S (ADVP 그렇게/ADV)
+      (S (NP-SBJ 양/NNC+이/PCA)
+         적/VJ+은가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>군관의 식사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>그렇게</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>양</term>
+	    </Arg>
+	    <Rel>
+	      <term>적은가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,101 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>나포</lemma>
+    <comment>Frames file for '나포' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>나포.01</id>
+      <edef>seize</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="ship"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>나포하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신문은 러시아 유조선이 유엔의 이라크 경제봉쇄 조치를 어기고 이라크 원유를 운반했다는 이유로 미 해군에 억류됐다고 밝힌 후 "이라크 수역에 이어 페르시아만 전해역까지 저들의 통제하에 두고 감시를 해오던 미국은 한달동안이나 유조선을 감시해오던 끝에 직승기(헬기)까지 동원해 나포한 뒤 큰 범인이나 잡은 것처럼 부산을 피웠다"고 비난했다.</text>
+	  <parse>
+(S (NP-SBJ 신문/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+		  (VP (S-COMP (NP-SBJ 러시아/NPR
+					    유조선/NNC+이/PCA)
+			      (VP (NP-ADV (S (NP-SBJ *pro*)
+					     (VP (VP (NP-OBJ 유엔/NPR
+								 이라크/NPR
+								 경제/NNC+봉쇄/NNC
+								 조치/NNC+을/PCA)
+						     어기/VV+고/ECS)
+						 (VP (NP-OBJ 이라크/NPR
+								   원유/NNC+을/PCA)
+						     (VV 운반/NNC+하/XSV+었/EPF+다는/EAN))))
+					  (NP 이유/NNC+으로/PAD))
+				  (VP (NP-COMP 미/NPR
+						 해군/NNC+에/PAD)
+				      (VV 억류/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))
+		      밝히/VV+은/EAN))
+               (NP 후/NNX))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (S (NP-SBJ *T*-1)
+                                       (VP (VP (ADVP (NP-COMP 이라크/NPR
+                                                              수역/NNC+에/PAD)
+                                                     이어/ADV)
+                                               (VP (NP-OBJ 페르시아만/NPR
+                                                           전/XPF+해역/NNC+까지/PAU)
+                                                   (NP-COMP (NP 저/NPN+들/XSF+의/PAN)
+                                                            (NP 통제/NNC+하/NNX+에/PAD))
+                                                   두/VV+고/ECS)))
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (NP-OBJ 감시/NNC+을/PCA)
+                                              하/VV+어/ECS)
+                                          오/VX+던/EAN))))
+                              (NP 미국/NPR+은/PAU))
+                      (VP (NP-ADV (S (NP-SBJ *pro*)
+                                     (VP (VP (NP-ADV 한달/NNC+동안/NNX+이나/PAU)
+                                             (VP (NP-OBJ 유조선/NNC+을/PCA)
+                                                 (VV 감시/NNC+하/XSV+어/ECS)))
+                                         오/VX+던/EAN))
+                                  (NP 끝/NNC+에/PAD))
+                          (NP-ADV (S (NP-SBJ *pro*)
+                                     (VP (S (NP-SBJ *pro*)
+					    (VP (NP-OBJ 직승기/NNC
+							      (PRN -LRB-/SLQ
+								   헬기/NNC
+								   -RRB-/SRQ)
+							      까지/PAU)
+						(VV 동원/NNC+하/XSV+어/ECS)))
+                                         (VP (NP-OBJ *pro*)
+                                             (VV 나포/NNC+하/XSV+은/EAN))))
+                                  (NP 뒤/NNC))
+                          (NP-ADV (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *T*-2)
+                                                       (ADJP 크/VJ+은/EAN)))
+                                                 (NP 범인/NNC+이나/PAU))
+                                         잡/VV+은/EAN))
+                                  (NP 것/NNX+처럼/PAD))
+                          (VP (NP-OBJ 부산/NNC+을/PCA)
+                              피우/VV+었/EPF+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 비난/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>직승기(헬기)까지 동원해</term>
+	    </Arg>
+	    <Rel>
+	      <term>나포한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

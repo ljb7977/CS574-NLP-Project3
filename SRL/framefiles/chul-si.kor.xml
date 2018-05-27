@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>출시</lemma>
+    <comment>Frames file for '출시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>출시.01</id>
+      <edef>launch</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing launched"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>출시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>세계 최대의 소프트웨어 제조업체인 마이크로소프트(MS)는 10 일 소니의 게임기 `플레이스테이션 2'등에 대한 경쟁제품으로 윈도운영 체제에 바탕을 둔 `X- 박스'를 출시해 일본업체들이 지배하고 있는 게임기 시장에 진출하겠다고 공식 선언했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP (NP 세계/NNC
+                             최대/NNC+의/PAN)
+                         (NP 소프트웨어/NNC
+                             제조/NNC+업체/NNC+이/CO+은/EAN)))))
+           (NP 마이크로소프트/NPR
+               (PRN -LRB-/SLQ
+                    (NP MS/NFW)
+                    -RRB-/SRQ)
+               은/PAU))
+   (VP (NP-ADV 10/NNU
+               일/NNX)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (S (NP-SBJ *pro*)
+                          (VP (NP-ADV (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (VP (NP-COMP (NP (NP 소니/NPR+의/PAN)
+                                                             (NP 게임기/NNC))
+                                                         (NP `/SLQ
+                                                             플레이스테이션/NPR
+                                                             2/NNU
+                                                             '/SRQ
+                                                             등/NNX+에/PAD))
+                                                대하/VV+은/EAN)))
+                                      (NP 경쟁/NNC+제품/NNC+으로/PAD))
+                              (VP (NP-OBJ (S (WHNP-3 *op*)
+                                             (S (NP-SBJ *T*-3)
+                                                (VP (NP-COMP 윈도/NNC+운영/NNC
+                                                             체제/NNC+에/PAD)
+                                                    (NP-OBJ 바탕/NNC+을/PCA)
+                                                    두/VV+은/EAN)))
+                                          (NP `/SLQ
+                                              X/NFW
+                                              -/SSY
+                                              박스/NNC
+                                              '/SRQ
+                                              을/PCA))
+                                  (VV 출시/NNC+하/XSV+어/ECS))))
+                       (VP (NP-COMP (S (WHNP-4 *op*)
+                                       (S (NP-SBJ 일본/NPR+업체/NNC+들/XSF+이/PCA)
+                                          (VP (VP (NP-OBJ *T*-4)
+                                                  (VV 지배/NNC+하/XSV+고/ECS))
+                                              있/VX+는/EAN)))
+                                    (NP 게임기/NNC
+                                        시장/NNC+에/PAD))
+                           (VV 진출/NNC+하/XSV+겠/EPF+다/EFN+고/PAD))))
+           (VP (NP-ADV 공식/NNC)
+               (VP (VV 선언/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>소니의 게임기 `플레이스테이션 2'등에 대한 경쟁제품으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>윈도운영 체제에 바탕을 둔 `X- 박스'</term>
+	    </Arg>
+	    <Rel>
+	      <term>출시해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

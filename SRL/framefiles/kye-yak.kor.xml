@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>계약</lemma>
+    <comment>Frames file for '계약' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>계약.01</id>
+      <edef>contract</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="reason, purpose"/>
+	<role argnum="2" argrole="contracted with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>계약하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>보스턴 레드삭스의 조진호도 롤링사와 기본금 2 천달러에 30 경기 이상 출장시 5 천달러의 보너스를 받기로 계약했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 보스턴/NPR
+               레드삭스/NPR+의/PAN)
+           (NP 조진호/NPR+도/PAU))
+   (VP (NP-COMP 롤링/NPR+사/XSF+과/PAD)
+       (S-COMP (NP-SBJ *pro*)
+               (VP (NP-ADV 기본금/NNC
+                           2/NNU
+                           천/NNU+달러/NNX+에/PAD)
+                   (VP (NP-OBJ (NP 30/NNU
+                                   경기/NNC
+                                   이상/NNC
+                                   출장/NNC+시/NNX)
+                               (NP (NP 5/NNU
+                                       천/NNU+달러/NNX+의/PAN)
+                                   (NP 보너스/NNC+을/PCA)))
+                       받/VV+기/ENM+으로/PAD)))
+       (VV 계약/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>보스턴 레드삭스의 조진호</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>롤링사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>로</f>
+	      <term>기본금 2 천달러에 30 경기 이상 출장시 5 천달러의 보너스를 받기</term>
+	    </Arg>
+	    <Rel>
+	      <term>계약했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

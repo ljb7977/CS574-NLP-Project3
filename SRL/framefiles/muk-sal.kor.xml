@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>묵살</lemma>
+    <comment>Frames file for '묵살' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>묵살.01</id>
+      <edef>ignore</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing ignored"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>묵살하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>TRW는 연구원인 니라 슈워츠 박사가 지난 96 년 요격 미사일이 탄두와 위장 탄두를 식별하는 데 문제가 있다고 지적했으나 이를 묵살하고 시험 결과를 조작한 혐의를 받고 있다.</text>
+	  <parse>
+(S (NP-SBJ TRW/NFW+은/PAU)
+   (VP (VP (NP-OBJ (S (S (NP-SBJ (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP 연구원/NNC+이/CO+은/EAN))))
+                                 (NP 니라/NPR
+                                     슈워츠/NPR
+                                     박사/NNC+이/PCA))
+                         (VP (NP-ADV 지난/DAN
+                                     96/NNU
+                                     년/NNX)
+                             (VP (S-COMP (NP-COMP-2 (S (NP-SBJ 요격/NNC
+                                                               미사일/NNC+이/PCA)
+                                                       (VP (NP-OBJ (NP 탄두/NNC+과/PCJ)
+                                                                   (NP 위장/NNC
+                                                                       탄두/NNC+을/PCA))
+                                                           (VV 식별/NNC+하/XSV+은/EAN)))
+                                                    (NP 데/NNX))
+                                         (S (NP-SBJ 문제/NNC+이/PCA)
+                                            (ADJP (NP-COMP *T*-2)
+                                                  있/VJ+다/EFN+고/PAD)))
+                                 (VV 지적/NNC+하/XSV+었/EPF+으나/ECS))))
+                      (S (NP-SBJ *pro*)
+                         (VP (VP (NP-OBJ 이/NPN+을/PCA)
+                                 (VV 묵살/NNC+하/XSV+고/ECS))
+                             (VP (NP-OBJ 시험/NNC
+                                         결과/NNC+을/PCA)
+                                 (VV 조작/NNC+하/XSV+은/EAN)))))
+                   (NP 혐의/NNC+을/PCA))
+           받/VV+고/ECS)
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>연구원인 니라 슈워츠 박사가 지난 96 년 요격 미사일이 탄두와 위장 탄두를 식별하는 데 문제가 있다고 지적했으나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이</term>
+	    </Arg>
+	    <Rel>
+	      <term>묵살하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

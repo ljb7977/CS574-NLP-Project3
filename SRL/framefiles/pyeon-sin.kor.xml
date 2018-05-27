@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>변신</lemma>
+    <comment>Frames file for '변신' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>변신.01</id>
+      <edef>transform</edef>
+      <roleset>
+	<role argnum="0" argrole="causer of transformation"/>
+	<role argnum="1" argrole="thing changing"/>
+	<role argnum="2" argrole="start state"/>
+	<role argnum="3" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>변신하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>방콕협정은 현재 한국, 인도, 라오스, 스리랑카, 방글라데시 등 아시아 5 개 개도국간 특혜 관세협정이지만 중국이 가입하면 역내 인구가 25 억명에 이르는 세계 최대 시장을 가진 경제협력체의 협정으로 변신한다.</text>
+	  <parse>
+(S (S (NP-SBJ 방콕/NPR+협정/NNC+은/PAU)
+      (VP (NP-ADV 현재/NNC)
+          (VP (NP (NP (NP (NP (NP 한국/NPR)
+                              ,/SCM
+                              (NP 인도/NPR)
+                              ,/SCM
+                              (NP 라오스/NPR)
+                              ,/SCM
+                              (NP 스리랑카/NPR)
+                              ,/SCM
+                              (NP 방글라데시/NPR))
+                          (NP 등/NNX))
+                      (NP 아시아/NPR
+                          5/NNU
+                          개/NNX
+                          개도국/NNC+간/XSF))
+                  (NP 특혜/NNC
+                      관세/NNC+협정/NNC+이/CO+지만/ECS)))))
+   (S (S (NP-SBJ 중국/NPR+이/PCA)
+         (VP (NP-COMP *pro*)
+             (VV 가입/NNC+하/XSV+으면/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-OBJ (S (NP-SBJ 역/NNC+내/NNX
+                                                       인구/NNC+이/PCA)
+                                               (VP (NP-COMP 25/NNU
+                                                            억/NNU+명/NNX+에/PAD)
+                                                   이르/VV+는/EAN))
+                                            (NP 세계/NNC
+                                                최대/NNC
+                                                시장/NNC+을/PCA))
+                                    가지/VV+은/EAN)))
+                          (NP 경제/NNC+협력체/NNC+의/PAN))
+                      (NP 협정/NNC+으로/PAD))
+             (VV 변신/NNC+하/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>중국이 가입하면</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>역내 인구가 25 억명에 이르는 세계 최대 시장을 가진 경제협력체의 협정</term>
+	    </Arg>
+	    <Rel>
+	      <term>변신한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

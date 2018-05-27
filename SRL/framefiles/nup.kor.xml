@@ -1,0 +1,133 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>눕</lemma>
+    <comment>Frames file for '눕' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>눕.01</id>
+      <edef>lie down</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="entity lying down"/>
+	<role argnum="1" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>눕다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>배트맨은 세계를 구한 뒤 자신의 집사인 앨프리드에게서 차거운 우유 한잔을 받아 마시기를 좋아하지만, 아폴로와 미드나이터는 한 침대에 같이 누워 포옹하고 "친구들"이란 TV 프로를 보기를 좋아한다.</text>
+	  <parse>
+(S (S (NP-SBJ 배트맨/NPR+은/PAU)
+      (VP (S-OBJ (NP-SBJ *pro*)
+                 (VP (NP-ADV (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ 세계/NNC+을/PCA)
+                                    구하/VV+은/EAN))
+                             (NP 뒤/NNC))
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-COMP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP (NP 자신/NNC+의/PAN)
+                                                   (NP 집사/NNC+이/CO+은/EAN)))))
+                                     (NP 앨프리드/NPR+에게서/PAD))
+                            (NP-OBJ (S (WHNP-2 *op*)
+                                       (S (NP-SBJ *T*-2)
+                                          (ADJP 차겁/VJ+은/EAN)))
+                                    (NP 우유/NNC
+                                        한/NNU+잔/NNX+을/PCA))
+                            받/VV+어/ECS))
+                     (VP (NP-OBJ *pro*)
+                         마시/VV+기/ENM+을/PCA)))
+          (VV 좋/VJ+어하/XSV+지만/ECS))
+      ,/SCM)
+   (S (NP-SBJ (NP 아폴로/NPR+과/PCJ)
+              (NP 미드나이터/NPR+은/PAU))
+      (VP (S-OBJ (NP-SBJ *pro*)
+                 (VP (VP (S (NP-SBJ *pro*)
+                            (VP (NP-COMP 한/NNU
+                                         침대/NNC+에/PAD)
+                                (VP (ADVP 같이/ADV)
+                                    (VP 눕/VV+어/ECS))))
+                         (VP (VV 포옹/NNC+하/XSV+고/ECS)))
+                     (VP (NP-OBJ (NP "/SLQ
+                                     친구/NNC+들/XSF
+                                     "/SRQ
+                                     이란/PAN)
+                                 (NP TV/NFW
+                                     프로/NNC+을/PCA))
+                         보/VV+기/ENM+을/PCA)))
+          (VV 좋/VJ+어하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>한 침대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>같이</term>
+	    </Arg>
+	    <Rel>
+	      <term>누워</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>뉘다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="obj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>사이토씨는 "1910 년 안의사가 묻힐 당시 중국인들의 매장습관과는 달리 뉜 상태로 십자가등과 함께 목관에 넣어진 것으로 알려져 있어 식별해 내기는 어렵지 않을 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 사이토/NPR+씨/NNX+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ *pro*)
+                  (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                                      (VP (ADVP (NP-COMP (NP (S (NP-ADV 1910/NNU
+                                                                        년/NNX)
+                                                                (S (NP-SBJ 안/NPR+의사/NNC+이/PCA)
+                                                                   (VP 묻히/VV+을/EAN)))
+                                                             (NP 당시/NNC))
+                                                         (NP (NP 중국인/NNC+들/XSF+의/PAN)
+                                                             (NP 매장/NNC+습관/NNC+과/PAD+은/PAU)))
+                                                달리/ADV)
+                                          (NP-ADV (S (NP-SBJ *pro*)
+                                                     (VP (NP-OBJ *pro*)
+                                                         뉘/VV+은/EAN))
+                                                  (NP 상태/NNC+으로/PAD))
+                                          (ADVP (NP-COMP 십자가/NNC+등/NNX+과/PAD)
+                                                함께/ADV)
+                                          (VP (NP-COMP 목관/NNC+에/PAD)
+                                              (VV 넣/VV+어지/XSV+은/EAN))))
+                                   (NP 것/NNX+으로/PAD))
+                          (VV 알리/VV+어지/XSV+어/ECS))
+                      있/VX+어/ECS))
+               (S (S-SBJ (NP-SBJ *pro*)
+                         (VP (VP (NP-OBJ *pro*)
+                                 (VV 식별/NNC+하/XSV+어/ECS))
+                             내/VX+기/ENM+은/PAU))
+                  (VP (VP (ADJP 어렵/VJ+지/ECS)
+                          않/VX+을/EAN)
+                      (VX 것/NNX)))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>뉜</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

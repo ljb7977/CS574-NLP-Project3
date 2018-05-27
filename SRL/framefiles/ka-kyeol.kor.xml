@@ -1,0 +1,148 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가결</lemma>
+    <comment>Frames file for '가결' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가결.01</id>
+      <edef>approve</edef>
+      <roleset>
+	<role argnum="0" argrole="approver"/>
+	<role argnum="1" argrole="thing approved"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가결하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 하원은 9 일 현재 시간당 5.15 달러(약 6 천원)인 최저임금을 앞으로 2 년에 걸쳐 1 달러 인상하는 법안을 282 대 143의 표차로 가결했다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR
+           하원/NNC+은/PAU)
+   (VP (NP-ADV 9/NNU
+               일/NNX)
+       (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (NP-ADV 현재/NNC)
+                                            (VP (NP 시간/NNC+당/XSF
+                                                    5.15/NNU
+                                                    달러/NNX
+                                                    (PRN -LRB-/SLQ
+                                                         (NP 약/DAN
+                                                             6/NNU
+                                                             천/NNU+원/NNX)
+                                                         -RRB-/SRQ)
+                                                    이/CO+은/EAN)))))
+                                  (NP 최저/NNC+임금/NNC+을/PCA))
+                          (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 앞/NNC+으로/PAD)
+                                     (VP (NP-COMP 2/NNU
+                                                  년/NNX+에/PAD)
+                                         걸치/VV+어/ECS)))
+                              (NP-ADV 1/NNU
+                                      달러/NNX)
+                              (VP (VV 인상/NNC+하/XSV+는/EAN)))))
+                   (NP 법안/NNC+을/PCA))
+           (VP (NP-ADV (NP 282/NNU
+                           대/NNX
+                           143/NNU+의/PAN)
+                       (NP 표차/NNC+으로/PAD))
+               (VP (VV 가결/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>미국 하원</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>9 일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>현재 시간당 5.15 달러(약 6 천원)인 최저임금을 앞으로 2 년에 걸쳐 1 달러 인상하는 법안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>282 대 143의 표차로</term>
+	    </Arg>
+	    <Rel>
+	      <term>가결했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>가결되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 바라크 총리가 시리아와의 평화회담 재개를 위해 애쓰는 와중에 이같은 법안이 예비독회에서 가결됨에 따라 바라크 총리의 정치력에 대한 의구심이 야기되고 있으며 이에 따라 시리아와의 평화협상 재개가 더욱 어려워질 것으로 분석되고 있다.</text>
+	  <parse>
+(S (ADCP 또/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-ADV (S (NP-SBJ 바라크/NPR
+                                     총리/NNC+이/PCA)
+                             (VP (S (NP-SBJ *pro*)
+                                    (VP (NP-OBJ (NP (NP 시리아/NPR+과/PAD+의/PAN)
+                                                    (NP 평화/NNC+회담/NNC))
+                                                (NP 재개/NNC+을/PCA))
+                                        위하/VV+어/ECS))
+                                 (VP 애쓰/VV+는/EAN)))
+                          (NP 와중/NNC+에/PAD))
+                  (S (NP-SBJ 이같은/DAN
+                             법안/NNC+이/PCA)
+                     (VP (NP-ADV 예비/NNC+독회/NNC+에서/PAD)
+                         (VP (VV 가결/NNC+되/XSV+음/ENM+에/PAD)))))
+          따르/VV+어/ECS))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP (NP 바라크/NPR
+                                     총리/NNC+의/PAN)
+                                 (NP 정치력/NNC+에/PAD))
+                        대하/VV+은/EAN)))
+              (NP 의구심/NNC+이/PCA))
+      (VP (VP (VV 야기/NNC+되/XSV+고/ECS))
+          있/VX+으며/ECS))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP 이/NPN+에/PAD)
+             따르/VV+어/ECS))
+      (S (NP-SBJ *pro*)
+         (VP (VP (NP-COMP (S (NP-SBJ (NP (NP 시리아/NPR+과/PAD+의/PAN)
+					 (NP 평화/NNC+협상/NNC))
+				     (NP 재개/NNC+이/PCA))
+			     (ADJP (ADVP 더욱/ADV)
+				   (ADJP (VV 어렵/VJ+어지/XSV+을/EAN))))
+			  (NP 것/NNX+으로/PAD))
+                 (VV 분석/NNC+되/XSV+고/ECS))
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>바라크 총리가 시리아와의 평화회담 재개를 위해 애쓰는 와중에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이같은 법안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>예비독회에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>가결됨에</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

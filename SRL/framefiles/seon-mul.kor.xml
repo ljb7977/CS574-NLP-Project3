@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>선물</lemma>
+    <comment>Frames file for '선물' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>선물.01</id>
+      <edef>present</edef>
+      <roleset>
+	<role argnum="0" argrole="giver"/>
+	<role argnum="1" argrole="thing given"/>
+	<role argnum="2" argrole="given to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>선물하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>러시아 남성들은 아내와 어머니 또는 여자친구에게 선물할 수선화와 장미를 사느라 장사진을 쳤으며 일부 여성들은 차가운 모스크바의 강물에 몸을 담그기도 했다.</text>
+	  <parse>
+(S (S (NP-SBJ 러시아/NPR
+              남성/NNC+들/XSF+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (WHNP-1 *op*)
+                            (S (NP-SBJ *pro*)
+                               (VP (NP-COMP (NP 아내/NNC+과/PCJ)
+                                            (NP 어머니/NNC)
+                                            (ADCP 또는/ADC)
+                                            (NP 여자/NNC+친구/NNC+에게/PAD))
+                                   (NP-OBJ *T*-1)
+                                   (VV 선물/NNC+하/XSV+을/EAN))))
+                         (NP (NP 수선화/NNC+과/PCJ)
+                             (NP 장미/NNC+을/PCA)))
+                 사/VV+느라/ECS))
+          (VP (NP-OBJ 장사진/NNC+을/PCA)
+              치/VV+었/EPF+으며/ECS)))
+   (S (NP-SBJ 일부/NNC
+              여성/NNC+들/XSF+은/PAU)
+      (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (ADJP 차갑/VJ+은/EAN)))
+                       (NP (NP 모스크바/NPR+의/PAN)
+                           (NP 강물/NNC+에/PAD)))
+              (NP-OBJ 몸/NNC+을/PCA)
+              담그/VV+기/ENM+도/PAU)
+          하/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>아내와 어머니 또는 여자친구</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=수선화와 장미</term>
+	    </Arg>
+	    <Rel>
+	      <term>선물할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

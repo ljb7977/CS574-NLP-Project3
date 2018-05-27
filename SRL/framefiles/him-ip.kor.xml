@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>힘입</lemma>
+    <comment>Frames file for '힘입' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>힘입.01</id>
+      <edef>owe</edef>
+      <roleset>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="owed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>힘입다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그린스펀 의장은 생산성 향상에 힘입은 증시의 활황이 수요를 공급이 따를 수 없는 정도의 수준으로 증대시켰다고 지적하고 상품과 용역의 전반적인 수요가 장기간에 걸쳐 공급 증가율을 상회할 수는 없다면서 "수요의 팽창이 완화되어야 한다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그린스펀/NPR
+           의장/NNC+은/PAU)
+   (VP (VP (S-COMP (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP-COMP 생산성/NNC
+                                              향상/NNC+에/PAD)
+                                     힘입/VV+은/EAN)))
+                           (NP (NP 증시/NNC+의/PAN)
+                               (NP 활황/NNC+이/PCA)))
+                   (VP (NP-OBJ 수요/NNC+을/PCA)
+                       (NP-COMP (NP (S (NP-SBJ 공급/NNC+이/PCA)
+                                       (VP (VP (NP-OBJ *pro*)
+                                               따르/VV+을/EAN)
+                                           (VX 수/NNX
+                                               없/VJ+는/EAN)))
+                                    (NP 정도/NNC+의/PAN))
+                                (NP 수준/NNC+으로/PAD))
+                       (VV 증대/NNC+시키/XSV+었/EPF+다/EFN+고/PAD)))
+           (VV 지적/NNC+하/XSV+고/ECS))
+       (VP (S (NP-SBJ (NP (NP 상품/NNC+과/PCJ)
+                          (NP 용역/NNC+의/PAN))
+                      (NP (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (NP 전반/NNC+적/XSF+이/CO+은/EAN))))
+                          (NP 수요/NNC+이/PCA)))
+              (VP (VP (S (NP-SBJ *pro*)
+                         (VP (NP-COMP 장기간/NNC+에/PAD)
+                             걸치/VV+어/ECS))
+                      (VP (NP-OBJ 공급/NNC
+                                  증가율/NNC+을/PCA)
+                          (VV 상회/NNC+하/XSV+을/EAN)))
+                  (VX 수/NNX+은/PAU
+                      없/VJ+다면서/ECS)))
+           (VP (S-COMP "/SLQ
+                       (NP-SBJ (NP 수요/NNC+의/PAN)
+                               (NP 팽창/NNC+이/PCA))
+                       (VP (VP (VV 완화/NNC+되/XSV+어야/ECS))
+                           하/VX+는다/EFN)
+                       "/SRQ
+                       고/PAD)
+               말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=증시의 활황</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>생산성 향상</term>
+	    </Arg>
+	    <Rel>
+	      <term>힘입은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

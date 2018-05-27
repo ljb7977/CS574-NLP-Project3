@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유학</lemma>
+    <comment>Frames file for '유학' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유학.01</id>
+      <edef>study abroad</edef>
+      <roleset>
+	<role argnum="0" argrole="thing studying abroad"/>
+	<role argnum="1" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유학하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이박사는 "미국에서 유학하는 동안 연구팀에서 인산화효소를 발견한 것이 계기가 돼 암치료분야를 집중적으로 연구하게 됐다"며 "앞으로 세포예정사 분야를 중점 연구해 국내 암환자의 상당부분을 차지하는 간암과 위암 치료법을 개발하는 데 기여하고 싶다"고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR+박사/NNC+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ *pro*)
+          (VP (VP (S (NP-SBJ (S (NP-ADV (S (NP-SBJ *pro*)
+                                           (VP (NP-ADV 미국/NPR+에서/PAD)
+                                               (VP (VV 유학/NNC+하/XSV+는/EAN))))
+                                        (NP 동안/NNC))
+                                (S (NP-SBJ 연구팀/NNC+에서/PCA)
+                                   (VP (NP-OBJ 인산/NNC+화/XSF+효소/NNC+을/PCA)
+                                       (VV 발견/NNC+하/XSV+은/EAN))))
+                             (NP 것/NNX+이/PCA))
+                     (VP (NP-COMP 계기/NNC+이/PCA)
+                         되/VV+어/ECS))
+                  (VP (NP-OBJ 암/NNC+치료/NNC+분야/NNC+을/PCA)
+                      (VP (NP-ADV 집중/NNC+적/XSF+으로/PAD)
+                          (VP (VV 연구/NNC+하/XSV+게/ECS)))))
+              되/VX+었/EPF+다/EFN)
+          "/SRQ
+          며/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (VP (S (NP-SBJ *pro*)
+                              (VP (NP-ADV 앞/NNC+으로/PAD)
+                                  (VP (NP-OBJ 세포예정사/NNC
+                                              분야/NNC+을/PCA)
+                                      (VP (NP-ADV 중점/NNC)
+                                          (VP (VV 연구/NNC+하/XSV+어/ECS))))))
+                           (VP (NP-COMP (S (NP-SBJ *pro*)
+                                           (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                              (S (NP-SBJ *T*-1)
+                                                                 (VP (NP-OBJ (NP 국내/NNC
+                                                                                 암/NNC+환자/NNC+의/PAN)
+                                                                             (NP 상당/NNC+부분/NNC+을/PCA))
+                                                                     (VV 차지/NNC+하/XSV+는/EAN))))
+                                                           (NP (NP 간암/NNC+과/PCJ)
+                                                               (NP 위암/NNC)))
+                                                       (NP 치료법/NNC+을/PCA))
+                                               (VV 개발/NNC+하/XSV+는/EAN)))
+                                        (NP 데/NNX))
+                               (VV 기여/NNC+하/XSV+고/ECS)))
+                       싶/VX+다/EFN)
+                   "/SRQ
+                   고/PAD)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>미국</term>
+	    </Arg>
+	    <Rel>
+	      <term>유학하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

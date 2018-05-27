@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>갈</lemma>
+    <comment>Frames file for '갈' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>갈.01</id>
+      <edef>replace</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="old thing"/>
+	<role argnum="2" argrole="new thing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>갈다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>건전지가 나가면 그건 쉽사리 갈 수가 있지요.</text>
+	  <parse>
+(S (S (NP-SBJ 건전지/NNC+이/PCA)
+      (VP 나가/VV+으면/ECS))
+   (S (NP-OBJ-1 그것/NPN+은/PAU)
+      (S (NP-SBJ *pro*)
+         (VP (VP (ADVP 쉽사리/ADV)
+                 (VP (NP-OBJ *T*-1)
+                     갈/VV+을/EAN))
+             (VX 수/NNX+이/PCA
+                 있/VJ+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>건전지가 나가면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>쉽사리</term>
+	    </Arg>
+	    <Rel>
+	      <term>갈</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수가 있지요</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

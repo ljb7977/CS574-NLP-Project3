@@ -1,0 +1,42 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>형편없</lemma>
+    <comment>Frames file for '형편없' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>형편없.01</id>
+      <edef>bad</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being bad"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>형편없다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>식사가 아주 형편없어요.</text>
+	  <parse>
+(S (NP-SBJ 식사/NNC+이/PCA)
+   (ADJP (ADVP 아주/ADV) 
+	 (ADJP 형편없/VJ+어요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>식사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>아주</term>
+	    </Arg>
+	    <Rel>
+	      <term>형편없어요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

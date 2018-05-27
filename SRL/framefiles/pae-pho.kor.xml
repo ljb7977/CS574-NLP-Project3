@@ -1,0 +1,149 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>배포</lemma>
+    <comment>Frames file for '배포' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>배포.01</id>
+      <edef>distribute</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing distributed"/>
+	<role argnum="2" argrole="distributed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>배포하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>네덜란드의 헤이그에 소재한 국제전범재판소는 지난해 5 월 코소보 사태와 관련해 밀로세비치 신유고연방 대통령을 기소했으며 미국 정부는 기소직후 현상금을 내걸었으나 그동안 수배전단을 배포하지는 않았었다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-8 *op*)
+                 (S (NP-SBJ *T*-8)
+                    (VP (NP-COMP (NP 네덜란드/NPR+의/PAN)
+                                 (NP 헤이그/NPR+에/PAD))
+                        (VV 소재/NNC+하/XSV+은/EAN))))
+              (NP 국제/NNC+전범/NNC+재판소/NNC+은/PAU))
+      (VP (NP-ADV 지난해/NNC
+                  5/NNU
+                  월/NNX)
+          (S (NP-SBJ *pro*)
+             (VP (NP-COMP 코소보/NPR
+                          사태/NNC+과/PAD)
+                 (VV 관련/NNC+하/XSV+어/ECS)))
+          (VP (NP-OBJ (NP 밀로세비치/NPR)
+                      (NP 신/DAN+유고/NPR+연방/NNC)
+                      (NP 대통령/NNC+을/PCA))
+              (VV 기소/NNC+하/XSV+었/EPF+으며/ECS))))
+   (S (NP-SBJ 미국/NPR
+              정부/NNC+은/PAU)
+      (VP (VP (NP-ADV 기소/NNC+직후/NNC)
+              (VP (NP-OBJ 현상금/NNC+을/PCA)
+                  내걸/VV+었/EPF+으나/ECS))
+          (VP (NP-ADV 그동안/NNC)
+              (VP (VP (NP-OBJ 수배/NNC+전단/NNC+을/PCA)
+                      (VV 배포/NNC+하/XSV+지/EFN+은/PAU))
+                  않/VX+었었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>네덜란드의 헤이그에 소재한 국제전범재판소는 지난해 5 월 코소보 사태와 관련해 밀로세비치 신유고연방 대통령을 기소했으며</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>미국 정부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그동안</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수배전단</term>
+	    </Arg>
+	    <Rel>
+	      <term>배포하지는</term>
+	    </Rel>
+	    <Aux>
+	      <f>지는</f>
+	      <term>않았었다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>배포되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>영어, 독일어, 세르비아어와 크로아티아어로 세르비아와 보스니아-헤르체고비나 등 남부유럽 지역에 배포될 예정인 1 만장의 수배전단에는 지난해 5 월 미국무부가 내건 500 만달러의 현상금이 명시돼 있다고 미국무부 관리들이 전했다.</text>
+	  <parse>
+(S (S-COMP-5 (NP-COMP-1 (S (WHNP-2 *op*)
+                           (S (NP-SBJ *pro*)
+                              (VP (NP (S (NP-SBJ *T*-2)
+                                         (VP (NP-ADV (NP 영어/NNC)
+                                                     ,/SCM
+                                                     (NP 독일어/NNC)
+                                                     ,/SCM
+                                                     (NP 세르비아어/NNC+과/PCJ)
+                                                     (NP 크로아티아어/NNC+으로/PAD))
+                                             (VP (NP-COMP (NP (NP (NP 세르비아/NPR+과/PCJ)
+                                                                  (NP 보스니아/NPR
+                                                                      -/SSY
+                                                                      헤르체고비나/NPR))
+                                                              (NP 등/NNX))
+                                                          (NP 남부/NNC+유럽/NPR
+                                                              지역/NNC+에/PAD))
+                                                 (VV 배포/NNC+되/XSV+을/EAN))))
+                                      (NP 예정/NNC+이/CO+은/EAN)))))
+                        (NP (NP 1/NNU
+                                만/NNU+장/NNX+의/PAN)
+                            (NP 수배/NNC+전단/NNC+에/PAD+은/PAU)))
+             (S (NP-SBJ (S (WHNP-7 *op*)
+                           (S (NP-ADV 지난해/NNC
+                                      5/NNU
+                                      월/NNX)
+                              (S (NP-SBJ 미/NPR+국무부/NNC+이/PCA)
+                                 (VP (NP-OBJ *T*-7)
+                                     내걸/VV+은/EAN))))
+                        (NP (NP 500/NNU
+                                만/NNU+달러/NNX+의/PAN)
+                            (NP 현상금/NNC+이/PCA)))
+                (VP (VP (NP-COMP *T*-1)
+                        (VV 명시/NNC+되/XSV+어/ECS))
+                    있/VX+다/EFN+고/PAD)))
+   (S (NP-SBJ 미/NPR+국무부/NNC
+              관리/NNC+들/XSF+이/PCA)
+      (VP (S-COMP *T*-5)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=1 만장의 수배전단</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>영어, 독일어, 세르비아어와 크로아티아어로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>세르비아와 보스니아-헤르체고비나 등 남부유럽 지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>배포될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

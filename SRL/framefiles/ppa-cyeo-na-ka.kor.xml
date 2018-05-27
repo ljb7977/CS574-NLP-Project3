@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>빠져나가</lemma>
+    <comment>Frames file for '빠져나가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>빠져나가.01</id>
+      <edef>go out</edef>
+      <roleset>
+	<role argnum="0" argrole="entity in motion"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>빠져나가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>투신에서 빠져나간 자금은 은행의 저축성 예금 등 1 금융권에 몰리거나 코스닥 등 주식시장으로 유입된 것으로 분석된다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP-COMP 투신/NNC+에서/PAD)
+                                     빠져나가/VV+은/EAN)))
+                           (NP 자금/NNC+은/PAU))
+                   (VP (VP (NP-COMP (NP (NP (NP 은행/NNC+의/PAN)
+                                            (NP 저축/NNC+성/XSF
+                                                예금/NNC))
+                                        (NP 등/NNX))
+                                    (NP 1/NNU
+                                        금융권/NNC+에/PAD))
+                           몰리/VV+거나/ECS)
+                       (VP (NP-COMP (NP (NP 코스닥/NPR)
+                                        (NP 등/NNX))
+                                    (NP 주식/NNC+시장/NNC+으로/PAD))
+                           (VV 유입/NNC+되/XSV+은/EAN))))
+                (NP 것/NNX+으로/PAD))
+       (VV 분석/NNC+되/XSV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=자금</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>투신</term>
+	    </Arg>
+	    <Rel>
+	      <term>빠져나간</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

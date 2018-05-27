@@ -1,0 +1,117 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기록</lemma>
+    <comment>Frames file for '기록' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기록.01</id>
+      <edef>record</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing recorded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기록하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>정치 군관은 장병들의 동향을 기록하여 둡니다.</text>
+	  <parse>
+(S (NP-SBJ 정치/NNC 군관/NNC+은/PAU) 
+   (VP (VP (NP-OBJ (NP 장병/NNC+들/XSF+의/PCA) 
+		   (NP 동향/NNC+을/PCA))
+	   (VV 기록/NNC+하/XSV+어/EAU))
+       두/VX+습니다/EFN)
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>정치 군관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>장병들의 동향</term>
+	    </Arg>
+	    <Rel>
+	      <term>기록하여</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>둡니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>기록되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한국여자선수가 6 위에 오른 것은 현정화가 93 년 3 위에 기록된 이후 최고 랭킹이다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 한국/NPR+여자/NNC+선수/NNC+이/PCA)
+              (VP (NP-COMP 6/NNU
+                           위/NNX+에/PAD)
+                  오르/VV+은/EAN))
+           (NP 것/NNX+은/PAU))
+   (VP (NP-ADV (S (NP-SBJ 현정화/NPR+이/PCA)
+                  (VP (NP-ADV 93/NNU
+                              년/NNX)
+                      (VP (NP-COMP 3/NNU
+                                   위/NNX+에/PAD)
+                          (VV 기록/NNC+되/XSV+은/EAN))))
+               (NP 이후/NNC))
+       (VP (NP 최고/NNC
+               랭킹/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>현정화</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>93 년</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>3 위</term>
+	    </Arg>
+	    <Rel>
+	      <term>기록된</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>국내기업중 미국 나스닥 상장 1 호인 두루넷이 이번에는 한 미 증시 동시상장 1호로 기록될 전망이다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>국내기업중 미국 나스닥 상장 1 호인 두루넷</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이번에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>로</f>
+	      <term>한 미 증시 동시상장 1호</term>
+	    </Arg>
+	    <Rel>
+	      <term>기록될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

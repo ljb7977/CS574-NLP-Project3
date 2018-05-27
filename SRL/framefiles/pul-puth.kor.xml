@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불붙</lemma>
+    <comment>Frames file for '불붙' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불붙.01</id>
+      <edef>ignite</edef>
+      <roleset>
+	<role argnum="1" argrole="thing burning"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불붙다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>베트남전 참전 군인들의 고엽제 피해에 대한 미 공군의 연구작업이 너무 느리고 지나치게 비밀주의적이라는 비판이 15 일 미 의회에서 제기돼 고엽제 피해 조사의 문제점을 둘러싼 논쟁이 다시 불붙었다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (S (NP-SBJ (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (VP (NP-COMP (NP 베트남/NPR+전/XSF
+                                                   참전/NNC
+                                                   군인/NNC+들/XSF+의/PAN)
+                                               (NP 고엽제/NNC
+                                                   피해/NNC+에/PAD))
+                                      대하/VV+은/EAN)))
+                            (NP (NP 미/NPR
+                                    공군/NNC+의/PAN)
+                                (NP 연구/NNC+작업/NNC+이/PCA)))
+                    (ADJP (ADVP 너무/ADV)
+                          (ADJP 느리/VJ+고/ECS)))
+                 (S (NP-SBJ *pro*)
+                    (VP (ADVP (ADV 지나치/VJ+게/ECS))
+                        (VP (NP 비밀/NNC+주의/NNC+적/XSF+이/CO+라는/EAN)))))
+              (NP 비판/NNC+이/PCA))
+      (VP (NP-ADV 15/NNU
+                  일/NNX)
+          (VP (NP-COMP 미/NPR
+                  의회/NNC+에서/PAD)
+              (VV 제기/NNC+되/XSV+어/ECS))))
+   (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (VP (NP-OBJ (NP 고엽제/NNC
+                                    피해/NNC
+                                    조사/NNC+의/PAN)
+                                (NP 문제점/NNC+을/PCA))
+                        둘러싸/VV+은/EAN)))
+              (NP 논쟁/NNC+이/PCA))
+      (VP (ADVP 다시/ADV)
+          (VP 불붙/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>베트남전 참전 군인들의 고엽제 피해에 대한 미 공군의 연구작업이 너무 느리고 지나치게 비밀주의적이라는 비판이 15 일 미 의회에서 제기돼</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>고엽제 피해 조사의 문제점을 둘러싼 논쟁</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>다시</term>
+	    </Arg>
+	    <Rel>
+	      <term>불붙었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

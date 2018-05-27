@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>서약</lemma>
+    <comment>Frames file for '서약' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>서약.01</id>
+      <edef>pledge</edef>
+      <roleset>
+	<role argnum="0" argrole="promiser"/>
+	<role argnum="1" argrole="thing promised"/>
+	<role argnum="2" argrole="promised to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>서약하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>국무부는 북한이 현재 7 개 테러지원국 중의 하나로 남아 있으나 지난 1987 년 이래 테러활동에 연루된 바 없다면서 만일 북한측이 앞으로 테러행동에 관여하지 않을 것임을 공개적으로 서약하는 등의 조치를 취할 경우 명단에서 제외시킬 용의가 있음을 밝혀 왔다.</text>
+	  <parse>
+(S (NP-SBJ 국무부/NNC+은/PAU)
+   (VP (S (NP-SBJ 북한/NPR+이/PCA)
+          (VP (VP (NP-ADV 현재/NNC)
+                  (VP (NP-COMP (NP 7/NNU
+                                   개/NNX
+                                   테러/NNC+지원/NNC+국/XSF
+                                   중/NNX+의/PAN)
+                               (NP 하나/NNU+으로/PAD))
+                      남/VV+어/ECS))
+              있/VX+으나/ECS))
+       (S (NP-SBJ (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 지난/DAN
+                                 1987/NNU
+                                 년/NNX
+                                 이래/NNX)
+                         (VP (NP-COMP 테러/NNC+활동/NNC+에/PAD)
+                             (VV 연루/NNC+되/XSV+은/EAN))))
+                  (NP 바/NNX))
+          (ADJP 없/VJ+다면서/ECS))
+       (VP (VP (S-OBJ (NP-SBJ (S (NP-SBJ *pro*)
+				 (VP (NP-ADV (S (NP-SBJ *pro*)
+						(VP (ADVP 만일/ADV)
+						    (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+								       (VP (S-OBJ (NP-SBJ 북한/NPR+측/XSF+이/PCA)
+										  (VP (VP (VP (NP-ADV 앞/NNC+으로/PAD)
+											      (VP (NP-COMP 테러/NNC+행동/NNC+에/PAD)
+												  (VV 관여/NNC+하/XSV+지/ECS)))
+											  않/VX+을/EAN)
+										      (VX 것/NNX+이/CO+음/ENM+을/PCA)))
+									   (VP (NP-ADV 공개/NNC+적/XSF+으로/PAD)
+									       (VP (VV 서약/NNC+하/XSV+는/EAN)))))
+								    (NP 등/NNX+의/PAN))
+								(NP 조치/NNC+을/PCA))
+							취하/VV+을/EAN)))
+					     (NP 경우/NNC))
+				     (VP (NP-COMP 명단/NNC+에서/PAD)
+					 (NP-OBJ *pro*)
+					 (VV 제외/NNC+시키/XSV+을/EAN))))
+			      (NP 용의/NNC+이/PCA))
+		      (ADJP 있/VJ+음/ENM+을/PCA))
+               밝히/VV+어/ECS)
+           오/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>북한측이 앞으로 테러행동에 관여하지 않을 것임</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>공개적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>서약하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

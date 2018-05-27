@@ -1,0 +1,212 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주장</lemma>
+    <comment>Frames file for '주장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>주장.01</id>
+      <edef>claim</edef>
+      <roleset>
+	<role argnum="0" argrole="thing claiming"/>
+	<role argnum="1" argrole="thing claimed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>국제통화기금(IMF)은 신속히 신임 총재를 결정해야 하며 이제 여성이 총재직을 맡을 때가 됐다고 1 일 미셸 캉드쉬 전 IMF 총재가 주장했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ 국제/NNC+통화/NNC+기금/NNC
+                        (PRN -LRB-/SLQ
+                             IMF/NFW
+                             -RRB-/SRQ)
+                        은/PAU)
+                (VP (VP (ADVP 신속히/ADV)
+                        (VP (NP-OBJ 신임/NNC
+                                    총재/NNC+을/PCA)
+                            (VV 결정/NNC+하/XSV+어야/ECS)))
+                    하/VX+으며/ECS))
+             (S (ADVP 이제/ADV)
+                (S (NP-SBJ (S (WHNP *op*)
+                              (S (NP-SBJ 여성/NNC+이/PCA)
+                                 (VP (NP-OBJ 총재직/NNC+을/PCA)
+                                     맡/VV+을/EAN)))
+                           (NP 때/NNC+이/PCA))
+                   (VP 되/VV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-ADV 1/NNU
+              일/NNX)
+      (S (NP-SBJ (NP 미셸/NPR
+                     캉드쉬/NPR)
+                 (NP 전/DAN
+                     IMF/NFW
+                     총재/NNC+이/PCA))
+         (VP (S-COMP *T*-1)
+             (VV 주장/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>국제통화기금(IMF)은 신속히 신임 총재를 결정해야 하며 이제 여성이 총재직을 맡을 때가 됐다</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>1 일</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>미셸 캉드쉬 전 IMF 총재</term>
+	    </Arg>
+	    <Rel>
+	      <term>주장했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>주장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>교육부는 외국인 전문인력에 대한 문호개방을 수개월 전부터 주장하는 등 정보통신 분야 인력부족을 타개하는 데 가장 적극적인 태도를 보이고 있다.</text>
+	  <parse>
+(S (NP-SBJ 교육부/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-COMP 외국인/NNC
+                                                 전문/NNC+인력/NNC+에/PAD)
+                                        대하/VV+은/EAN)))
+                              (NP 문호/NNC+개방/NNC+을/PCA))
+                      (VP (NP-ADV 수개월/NNC
+                                  전/NNC+부터/PAU)
+                          (VP (VV 주장/NNC+하/XSV+는/EAN)))))
+               (NP 등/NNX))
+       (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                           (VP (NP-OBJ 정보/NNC+통신/NNC
+                                       분야/NNC
+                                       인력/NNC+부족/NNC+을/PCA)
+                               (VV 타개/NNC+하/XSV+는/EAN)))
+                        (NP 데/NNX))
+               (NP-OBJ (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (VP (ADVP 가장/ADV)
+                                 (VP (NP 적극/NNC+적/XSF+이/CO+은/EAN)))))
+                       (NP 태도/NNC+을/PCA))
+               보이/VV+고/ECS)
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>외국인 전문인력에 대한 문호개방</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>수개월 전부터</term>
+	    </Arg>
+	    <Rel>
+	      <term>주장하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>주장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 "김 대통령은 연초에 언급했듯이 올해 공정한 선거를 해서 공명선거의 원년을 기록해야 한다는 확고한 의지를 갖고 있다"면서 "분명히 말하지만 정치권은 있지도 않은 가공의 환경을 사실인 양 주장하며, 선거분위기를 혼탁하게 만들어서는 안될 것"이라고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ 김/NPR
+                              대통령/NNC+은/PAU)
+                      (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 연초/NNC+에/PAD)
+                                     (VP (NP-OBJ *pro*)
+                                         (VV 언급/NNC+하/XSV+었/EPF+듯이/ECS))))
+                              (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                             (VP (VP (S (NP-SBJ *pro*)
+                                                        (VP (NP-ADV 올해/NNC)
+                                                            (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                                           (S (NP-SBJ *T*-1)
+                                                                              (ADJP (VJ 공정/NNC+하/XSJ+은/EAN))))
+                                                                        (NP 선거/NNC+을/PCA))
+                                                                하/VV+어서/ECS)))
+                                                     (VP (NP-OBJ (NP 공명/NNC+선거/NNC+의/PAN)
+                                                                 (NP 원년/NNC+을/PCA))
+                                                         (VV 기록/NNC+하/XSV+어야/ECS)))
+                                                 하/VX+는다는/EAN))
+                                          (NP (S (WHNP-2 *op*)
+                                                 (S (NP-SBJ *T*-2)
+                                                    (ADJP 확고하/VJ+은/EAN)))
+                                              (NP 의지/NNC+을/PCA)))
+                                  갖/VV+고/ECS))
+                          있/VX+다/EFN)
+                      "/SRQ
+                      으면서/ECS)
+                   (S "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (ADVP 분명히/ADV)
+                                     (VP (NP-OBJ *pro*)
+                                         말하/VV+지만/ECS)))
+                              (VP (S-COMP (S (NP-SBJ 정치권/NNC+은/PAU)
+                                             (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                            (S (NP-SBJ *T*-3)
+                                                               (VP (ADJP 있/VJ+지/ECS+도/PAU)
+                                                                   않/VX+은/EAN)))
+                                                         (NP (NP 가공/NNC+의/PAN)
+                                                             (NP 환경/NNC+을/PCA)))
+                                                 (NP-COMP (S (NP-SBJ *pro*)
+                                                             (VP (NP 사실/NNC+이/CO+은/EAN)))
+                                                          (NP 양/NNX))
+                                                 (VV 주장/NNC+하/XSV+으며/ECS)))
+                                          ,/SCM
+                                          (S (NP-SBJ *pro*)
+                                             (VP (NP-OBJ 선거/NNC+분위기/NNC+을/PCA)
+                                                 (S-COMP (NP-SBJ *pro*)
+                                                         (ADJP (VJ 혼탁/NNC+하/XSJ+게/ECS)))
+                                                 만들/VV+어서/ECS+은/PAU)))
+                                  안되/VV+을/EAN))
+                          (VX 것/NNX))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>정치권</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>있지도 않은 가공의 환경</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>사실인 양</term>
+	    </Arg>
+	    <Rel>
+	      <term>주장하며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

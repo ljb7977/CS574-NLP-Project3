@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대패</lemma>
+    <comment>Frames file for '대패' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대패.01</id>
+      <edef>be defeated utterly</edef>
+      <roleset>
+	<role argnum="1" argrole="entity defeated"/>
+	<role argnum="2" argrole="entity victorious"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대패하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>브래들리 전 의원은 지난 1 월 24 일 첫번째로 실시된 아이오와주 코커스에서 고어 부통령에게 대패한 후 뉴햄프셔 예비선거에서는 4 퍼센트 포인트 차이로 패했으며 이어 지난달 29 일 워싱턴주에서 실시된 인기투표에서도 뒤져 심리적인 타격을 받았다.</text>
+	  <parse>
+(S (NP-SBJ (NP 브래들리/NPR)
+           (NP 전/DAN
+               의원/NNC+은/PAU))
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-ADV (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-ADV 지난/DAN
+                                                1/NNU
+                                                월/NNX
+                                                24/NNU
+                                                일/NNX)
+                                        (NP-ADV 첫/NNU+번째/NNX+으로/PAD)
+                                        (VP (VV 실시/NNC+되/XSV+은/EAN)))))
+                              (NP 아이오와/NPR+주/NNC
+                                  코커스/NPR+에서/PAD))
+                      (VP (NP-COMP 고어/NPR
+                                   부통령/NNC+에게/PAD)
+                          (VV 대패/NNC+하/XSV+은/EAN))))
+               (NP 후/NNC))
+       (S (NP-SBJ *pro*)
+          (VP (NP-ADV 뉴햄프셔/NPR
+                      예비/NNC+선거/NNC+에서/PAD+은/PAU)
+              (NP-ADV (NP 4/NNU
+                          퍼센트/NNX
+                          포인트/NNX)
+                      (NP 차이/NNC+으로/PAD))
+              (VP 패하/VV+었/EPF+으며/ECS)))
+       (S (NP-SBJ *pro*)
+          (VP (NP-ADV (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (ADVP 이어/ADV)
+                                (NP-ADV 지난달/NNC
+                                        29/NNU
+                                        일/NNX)
+                                (NP-ADV 워싱턴/NPR+주/NNC+에서/PAD)
+                                (VP (VV 실시/NNC+되/XSV+은/EAN)))))
+                      (NP 인기/NNC+투표/NNC+에서/PAD+도/PAU))
+              뒤지/VV+어/ECS))
+       (VP (NP-OBJ (S (WHNP-3 *op*)
+                      (S (NP-SBJ *T*-3)
+                         (VP (NP 심리/NNC+적/XSF+이/CO+은/EAN))))
+                   (NP 타격/NNC+을/PCA))
+           받/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>지난 1 월 24 일 첫번째로 실시된 아이오와주 코커스에서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>고어 부통령</term>
+	    </Arg>
+	    <Rel>
+	      <term>대패한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

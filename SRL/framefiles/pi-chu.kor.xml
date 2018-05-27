@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>비추</lemma>
+    <comment>Frames file for '비추' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>비추.01</id>
+      <edef>compare</edef>
+      <roleset>
+	<role argnum="0" argrole="entity making comparison"/>
+	<role argnum="1" argrole="first item in comparison"/>
+	<role argnum="2" argrole="second item in comparison"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>비추다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지난해 소프트뱅크 주가의 급등에 비춰 손 마사요시(손정의) 사장이 세계 최고 갑부인 마이크로소프트사의 빌 게이츠를 누를 수 있다고 미국의 경제전문잡지 포브스가 밝혔다.</text>
+	  <parse>
+(S (S-COMP-2 (S (NP-SBJ *pro*)
+                (VP (NP-COMP (NP 지난해/NNC)
+                             (NP (NP 소프트뱅크/NPR
+                                     주가/NNC+의/PAN)
+                                 (NP 급등/NNC+에/PAD)))
+                    비추/VV+어/ECS))
+             (S (NP-SBJ 손/NPR
+                        마사요시/NPR
+                        (PRN -LRB-/SLQ
+                             손정의/NPR
+                             -RRB-/SRQ)
+                        사장/NNC+이/PCA)
+                (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (NP 세계/NNC
+                                              최고/NNC
+                                              갑부/NNC+이/CO+은/EAN))))
+                                (NP (NP 마이크로소프트/NPR+사/XSF+의/PAN)
+                                    (NP 빌/NPR
+                                        게이츠/NPR+을/PCA)))
+                        누르/VV+을/EAN)
+                    (VX 수/NNX
+                        있/VJ+다/EFN+고/PAD))))
+   (S (NP-SBJ (NP (NP 미국/NPR+의/PAN)
+                  (NP 경제/NNC+전문/NNC+잡지/NNC))
+              (NP 포브스/NPR+이/PCA))
+      (VP (S-COMP *T*-2)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>지난해 소프트뱅크 주가의 급등</term>
+	    </Arg>
+	    <Rel>
+	      <term>비춰</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

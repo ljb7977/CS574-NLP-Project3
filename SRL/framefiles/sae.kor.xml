@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>새</lemma>
+    <comment>Frames file for '새' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>새.01</id>
+      <edef>leak</edef>
+      <roleset>
+	<role argnum="1" argrole="thing leaking"/>
+	<role argnum="2" argrole="where from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>새다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>차 한 대는 제동기가 고장이 났고 또 한 대는 라지에타에서 물이 샙니다.</text>
+	  <parse>
+(S (S (NP-SBJ 차/NNC
+              한/NNU
+              대/NNX+은/PAU)
+      (S (NP-COMP-2 제동기/NNC+이/PCA)
+         (S (NP-SBJ 고장/NNC+이/PCA)
+            (VP (NP-COMP *T*-2)
+                나/VV+었/EPF+고/ECS))))
+   (S (ADVP 또/ADV)
+      (S (NP-SBJ 한/NNU
+                 대/NNX+은/PAU)
+         (S (NP-COMP-1 라지에타/NNC+에서/PAD)
+            (S (NP-SBJ 물/NNC+이/PCA)
+               (VP (NP-COMP *T*-1)
+                   새/VV+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>는</f>
+	      <term>한 대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>라지에타</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>물</term>
+	    </Arg>
+	    <Rel>
+	      <term>샙니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>새다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>라지에타가 새게 되면 어디로 후송하는가?</text>
+	  <parse>
+(S (S (NP-SBJ 라지에타/NNC+이/PCA)
+      (VP (VP 새/VV+게/ECS)
+          되/VX+으면/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 어디/NPN+으로/PAD)
+          (NP-OBJ *pro*)
+          (VV 후송/NNC+하/XSV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>가</f>
+	      <term>라지에타</term>
+	    </Arg>
+	    <Rel>
+	      <term>새게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>되면</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

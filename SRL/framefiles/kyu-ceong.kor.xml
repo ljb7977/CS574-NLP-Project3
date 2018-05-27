@@ -1,0 +1,194 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>규정</lemma>
+    <comment>Frames file for '규정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>규정.01</id>
+      <edef>regulate</edef>
+      <roleset>
+	<role argnum="0" argrole="regulator"/>
+	<role argnum="1" argrole="thing regulated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>규정하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저는 포반 성원들이 각종 임무에 대한 각자의 특정 직무에 숙달된 다음에야 "포수 교대" 훈련 방법에서 규정한 대로 성원들의 직책을 교대시켰죠.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ 포반/NNC
+                          성원/NNC+들/XSF+이/PCA)
+                  (VP (NP-COMP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (NP-COMP 각종/NNC
+                                                  임무/NNC+에/PAD)
+                                         대하/VV+은/EAN)))
+                               (NP (NP 각자/NNC+의/PAN)
+                                   (NP 특정/NNC
+                                       직무/NNC+에/PAD)))
+                      (VV 숙달/NNC+되/XSV+은/EAN)))
+               (NP 다음/NNC+에/PAD+이야/PAU))
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-ADV "/SLQ
+                              포수/NNC
+                              교대/NNC
+                              "/SRQ
+                              훈련/NNC
+                              방법/NNC+에서/PAD)
+                      (VP (NP-OBJ *pro*)
+                          (VV 규정/NNC+하/XSV+은/EAN))))
+               (NP 대로/NNX))
+       (VP (NP-OBJ (NP 성원/NNC+들/XSF+의/PAN)
+                   (NP 직책/NNC+을/PCA))
+           (VV 교대/NNC+시키/XSV+었/EPF+죠/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>"포수 교대" 훈련 방법에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>규정한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>규정되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>공시 제도의 경우, 우리는 사업연도 종료후 90 일이내에 사업보고서를 공시해야 하는 데 비해 미국은 180 일 이내로 규정돼 있는 등 우리가 대체로 미국보다 더 엄격한 기준을 적용하고 있어 별다른 문제가 없다는 판단이 내려졌다.</text>
+	  <parse>
+(S (S (NP-ADV (NP 공시/NNC
+                  제도/NNC+의/PAN)
+              (NP 경우/NNC))
+      ,/SCM
+      (NP-ADV (S (S (NP-SBJ *pro*)
+                    (VP (NP-COMP (S (NP-SBJ 우리/NPN+은/PAU)
+                                    (VP (VP (NP-ADV (NP 사업/NNC+연도/NNC
+                                                        종료/NNC+후/NNC)
+                                                    (NP 90/NNU
+                                                        일/NNX+이내/NNC+에/PAD))
+                                            (VP (NP-OBJ 사업/NNC+보고서/NNC+을/PCA)
+                                                (VV 공시/NNC+하/XSV+어야/ECS)))
+                                        하/VX+는/EAN))
+                                 (NP 데/NNX))
+                        비하/VV+어/ECS))
+                 (S (NP-SBJ 미국/NPR+은/PAU)
+                    (VP (VP (NP-COMP 180/NNU
+                                     일/NNX
+                                     이내/NNC+으로/PAD)
+                            (VV 규정/NNC+되/XSV+어/ECS))
+                        있/VX+는/EAN)))
+              (NP 등/NNX))
+      (S (NP-SBJ 우리/NPN+이/PCA)
+         (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (ADJP (ADVP 대체로/ADV)
+                                     (NP-ADV 미국/NPR+보다/PAD)
+                                     (ADVP 더/ADV)
+                                     (ADJP 엄격하/VJ+은/EAN))))
+                         (NP 기준/NNC+을/PCA))
+                 (VV 적용/NNC+하/XSV+고/ECS))
+             있/VX+어/ECS)))
+   (S (NP-SBJ (S (NP-SBJ 별다른/DAN
+                         문제/NNC+이/PCA)
+                 (ADJP 없/VJ+다는/EAN))
+              (NP 판단/NNC+이/PCA))
+      (VP (VV 내리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>우리는 사업연도 종료후 90 일이내에 사업보고서를 공시해야 하는 데 비해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>미국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>로</f>
+	      <term>180 일 이내</term>
+	    </Arg>
+	    <Rel>
+	      <term>규정돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>규정되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>박준영 청와대 대변인은 20 일 "김대중 대통령은 대통령과 여당의 총재로서 법에 규정된 대로 엄정하게 업무를 수행하고 있다"면서 "여당 총재로서 당무를 관장하고 있지만 선거에 일절 개입하지 않고 있다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 박준영/NPR
+           청와대/NPR
+           대변인/NNC+은/PAU)
+   (VP (NP-ADV 20/NNU
+               일/NNX)
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ 김대중/NPR
+                              대통령/NNC+은/PAU)
+                      (VP (VP (NP-ADV (NP 대통령/NNC+과/PCJ)
+                                      (NP (NP 여당/NNC+의/PAN)
+                                          (NP 총재/NNC+으로서/PAD)))
+                              (NP-ADV (S (NP-SBJ *pro*)
+                                         (VP (NP-COMP 법/NNC+에/PAD)
+                                             (VV 규정/NNC+되/XSV+은/EAN)))
+                                      (NP 대로/NNX))
+                              (ADVP (ADV 엄정하/VJ+게/ECS))
+                              (VP (NP-OBJ 업무/NNC+을/PCA)
+                                  (VV 수행/NNC+하/XSV+고/ECS)))
+                          있/VX+다/EFN)
+                      "/SRQ
+                      면서/ECS)
+                   (S "/SLQ
+                      (S (NP-SBJ *pro*)
+                         (VP (VP (NP-ADV 여당/NNC
+                                         총재/NNC+으로서/PAD)
+                                 (VP (NP-OBJ 당무/NNC+을/PCA)
+                                     (VV 관장/NNC+하/XSV+고/ECS)))
+                             있/VX+지만/ECS))
+                      (S (NP-SBJ *pro*)
+                         (VP (VP (VP (NP-COMP 선거/NNC+에/PAD)
+                                     (VP (ADVP 일절/ADV)
+                                         (VP (VV 개입/NNC+하/XSV+지/ECS))))
+                                 않/VX+고/ECS)
+                             있/VX+다/EFN))
+                      "/SRQ
+                      고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>법</term>
+	    </Arg>
+	    <Rel>
+	      <term>규정된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

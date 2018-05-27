@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>정들</lemma>
+    <comment>Frames file for '정들' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>정들.01</id>
+      <edef>become familiar with</edef>
+      <roleset>
+	<role argnum="1" argrole="thing becoming familiar"/>
+	<role argnum="2" argrole="familiar with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>정들다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>바클리는 지난해 12 월 필라델피아 세븐티식서스와의 경기중 무릎을 다치자 16 년간 정들었던 코트를 떠났었다.</text>
+	  <parse>
+(S (NP-SBJ 바클리/NPR+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 지난해/NNC
+                      12/NNU
+                      월/NNX)
+              (NP-ADV (NP 필라델피아/NPR
+                          세븐티식서스/NPR+과/PAD+의/PAN)
+                      (NP 경기/NNC+중/NNX))
+              (VP (NP-OBJ 무릎/NNC+을/PCA)
+                  다치/VV+자/ECS)))
+       (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *pro*)
+                         (VP (NP-ADV 16/NNU
+                                     년/NNX+간/XSF)
+                             (VP (NP-COMP *T*-1)
+                                 정들/VV+었/EPF+던/EAN))))
+                   (NP 코트/NNC+을/PCA))
+           떠나/VV+었었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>16 년간</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>*trace*=코트</term>
+	    </Arg>
+	    <Rel>
+	      <term>정들었던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

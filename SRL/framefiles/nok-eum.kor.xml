@@ -1,0 +1,96 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>녹음</lemma>
+    <comment>Frames file for '녹음' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>녹음.01</id>
+      <edef>record</edef>
+      <roleset>
+	<role argnum="0" argrole="recorder"/>
+	<role argnum="1" argrole="record"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>녹음하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>다만 사생활침해 방지 등을 위해 권유대상자를 사전에 동의한 자나 기존 보험계약자, 적법절차에 따라 개인정보를 제공받은 자, 개인정보의 활용에 대해 서면동의를 한 자등으로 제한하고 이 경우에도 동의 및 청약, 약정내용등을 음성 녹음해 분쟁발생 가능성을 차단키로 했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (S (NP-SBJ *pro*)
+                      (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (ADVP 다만/ADV)
+                                     (VP (NP-OBJ (NP 사생활/NNC+침해/NNC
+                                                     방지/NNC)
+                                                 (NP 등/NNX+을/PCA))
+                                         위하/VV+어/ECS)))
+                              (VP (NP-OBJ 권유/NNC+대상자/NNC+을/PCA)
+                                  (VP (NP-ADV (NP (S (WHNP-1 *op*)
+                                                     (S (NP-SBJ *T*-1)
+                                                        (VP (NP-ADV 사전/NNC+에/PAD)
+                                                            (VP (VV 동의/NNC+하/XSV+은/EAN)))))
+                                                  (NP 자/NNC+이나/PCJ))
+                                              (NP 기존/NNC
+                                                  보험/NNC+계약자/NNC)
+                                              ,/SCM
+                                              (NP (S (WHNP-2 *op*)
+                                                     (S (NP-SBJ *pro*)
+                                                        (VP (S (NP-SBJ *pro*)
+                                                               (VP (NP-COMP 적법/NNC+절차/NNC+에/PAD)
+                                                                   따르/VV+어/ECS))
+                                                            (VP (NP-OBJ *T*-2)
+                                                                (VP (NP-OBJ 개인/NNC+정보/NNC+을/PCA)
+                                                                    (VV 제공/NNC+받/XSV+은/EAN))))))
+                                                  (NP 자/NNC))
+                                              ,/SCM
+                                              (NP (S (WHNP-3 *op*)
+                                                     (S (NP-SBJ *T*-3)
+                                                        (VP (S (NP-SBJ *pro*)
+                                                               (VP (NP-COMP (NP 개인/NNC+정보/NNC+의/PAN)
+                                                                            (NP 활용/NNC+에/PAD))
+                                                                   대하/VV+어/ECS))
+                                                            (VP (NP-OBJ 서면/NNC+동의/NNC+을/PCA)
+                                                                하/VV+은/EAN))))
+                                                  (NP 자/NNC+등/NNX+으로/PAD)))
+                                      (VP (VV 제한/NNC+하/XSV+고/ECS)))))
+                          (VP (NP-ADV 이/DAN
+                                      경우/NNC+에/PAD+도/PAU)
+                              (VP (NP-OBJ (NP (NP 동의/NNC)
+                                              (ADCP 및/ADC)
+                                              (NP 청약/NNC))
+                                          ,/SCM
+                                          (NP 약정/NNC+내용/NNC+등/NNX+을/PCA))
+                                  (VP (NP-ADV 음성/NNC)
+                                      (VP (VV 녹음/NNC+하/XSV+어/ECS)))))))
+                   (VP (NP-OBJ 분쟁/NNC+발생/NNC
+                               가능성/NNC+을/PCA)
+                       (VV 차단/NNC+하/XSV+기/ENM+으로/PAD))))
+       하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이 경우에도</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>동의 및 청약, 약정내용등</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>음성</term>
+	    </Arg>
+	    <Rel>
+	      <term>녹음해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

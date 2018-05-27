@@ -1,0 +1,45 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>절단</lemma>
+    <comment>Frames file for '절단' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>절단.01</id>
+      <edef>cut</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing cut"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>절단하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 절단기는 적의 철조망을 절단하는 데 사용됩니다.</text>
+	  <parse>
+(S (NP-SBJ 그/DAN
+           절단기/NNC+은/PAU)
+   (VP (NP-COMP (S (NP-SBJ *pro*)
+                   (VP (NP-OBJ (NP 적/NNC+의/PAN)
+                               (NP 철조망/NNC+을/PCA))
+                       (VV 절단/NNC+하/XSV+는/EAN)))
+                (NP 데/NNX))
+       (VV 사용/NNC+되/XSV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적의 철조망</term>
+	    </Arg>
+	    <Rel>
+	      <term>절단하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

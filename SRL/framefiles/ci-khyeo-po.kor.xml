@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지켜보</lemma>
+    <comment>Frames file for '지켜보' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>지켜보.01</id>
+      <edef>watch</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing watched"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지켜보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>정부는 10 일 김대중 대통령의 베를린선언과 관련해 북측 반응을 일단 지켜본 뒤 관련 부처와의 협의를 통해 후속 대책을 마련키로 했다.</text>
+	  <parse>
+(S (NP-SBJ 정부/NNC+은/PAU)
+   (VP (NP-ADV 10/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (NP 김대중/NPR
+                           대통령/NNC+의/PAN)
+                       (NP 베를린/NPR+선언/NNC+과/PAD))
+              (VV 관련/NNC+하/XSV+어/ECS)))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-ADV (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ 북/NPR+측/XSF
+                                              반응/NNC+을/PCA)
+                                      (VP (ADVP 일단/ADV)
+                                          (VP 지켜보/VV+은/EAN))))
+                               (NP 뒤/NNC))
+                       (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ (NP 관련/NNC
+                                          부처/NNC+과/PAD+의/PAN)
+                                      (NP 협의/NNC+을/PCA))
+                              통하/VV+어/ECS))
+                       (VP (NP-OBJ 후속/NNC
+                                   대책/NNC+을/PCA)
+                           (VV 마련/NNC+하/XSV+기/ENM+으로/PAD))))
+           하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>북측 반응</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>일단</term>
+	    </Arg>
+	    <Rel>
+	      <term>지켜본</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

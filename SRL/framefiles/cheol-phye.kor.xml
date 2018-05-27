@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>철폐</lemma>
+    <comment>Frames file for '철폐' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>철폐.01</id>
+      <edef>abolish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing abolished"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>철폐하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 남한정부에 대해 "진실로 화해와 협력을 바란다면 국가보안법을 철폐하고 각종 군사훈련을 즉시 중지해야 한다"는 주장을 펼치기도 했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (ADVP 또/ADV)
+           (S (NP-SBJ *pro*)
+              (VP (NP-COMP 남한/NPR+정부/NNC+에/PAD)
+                  대하/VV+어/ECS))
+           (VP (NP-OBJ (S "/SLQ
+                          (S (NP-SBJ *pro*)
+                             (VP (ADVP 진실로/ADV)
+                                 (VP (NP-OBJ (NP 화해/NNC+과/PCJ)
+                                             (NP 협력/NNC+을/PCA))
+                                     바라/VV+는다면/ECS)))
+                          (S (NP-SBJ *pro*)
+                             (VP (VP (NP-OBJ 국가/NNC+보안법/NNC+을/PCA)
+                                     (VV 철폐/NNC+하/XSV+고/ECS))
+                                 (VP (VP (NP-OBJ 각종/NNC
+                                                 군사/NNC+훈련/NNC+을/PCA)
+                                         (VP (ADVP 즉시/ADV)
+                                             (VP (VV 중지/NNC+하/XSV+어야/ECS))))
+                                     하/VX+는다/EFN)))
+                          "/SRQ
+                          는/EAN)
+                       (NP 주장/NNC+을/PCA))
+               펼치/VV+기/ENM+도/PAU))
+       하/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>진실로 화해와 협력을 바란다면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>국가보안법</term>
+	    </Arg>
+	    <Rel>
+	      <term>철폐하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

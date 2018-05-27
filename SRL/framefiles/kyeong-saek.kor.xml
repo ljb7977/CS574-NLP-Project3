@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>경색</lemma>
+    <comment>Frames file for '경색' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>경색.01</id>
+      <edef>tighten</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing tightened"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>경색되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보고서는 또 "경색된 노동시장은 숙련노동자에서 초보 노동자에 이르는 다양한 노동 유형에 걸쳐 임금인상 압력으로 작용했으나 다행히 소비자 물가와 서비스 가격은 전반적으로 제한됐다"고 평가했다.</text>
+	  <parse>
+(S (NP-SBJ 보고서/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (VV 경색/NNC+되/XSV+은/EAN))))
+                              (NP 노동/NNC+시장/NNC+은/PAU))
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-COMP (S (WHNP-3 *op*)
+                                             (S (NP-SBJ *T*-3)
+                                                (VP (NP-COMP 숙련/NNC+노동자/NNC+에서/PAD)
+                                                    (NP-COMP 초보/NNC
+                                                             노동자/NNC+에/PAD)
+                                                    이르/VV+는/EAN)))
+                                          (NP (S (WHNP-2 *op*)
+                                                 (S (NP-SBJ *T*-2)
+                                                    (ADJP (VJ 다양/NNC+하/XSJ+은/EAN))))
+                                              (NP 노동/NNC
+                                                  유형/NNC+에/PAD)))
+                                 걸치/VV+어/ECS))
+                          (VP (NP-COMP 임금/NNC+인상/NNC
+                                       압력/NNC+으로/PAD)
+                              (VV 작용/NNC+하/XSV+었/EPF+으나/ECS))))
+                   (S (ADVP 다행히/ADV)
+                      (S (NP-SBJ (NP 소비자/NNC
+                                     물가/NNC+과/PCJ)
+                                 (NP 서비스/NNC
+                                     가격/NNC+은/PAU))
+                         (VP (ADVP (ADV 전반/NNC+적/XSF+으로/PAD))
+                             (VP (VV 제한/NNC+되/XSV+었/EPF+다/EFN)))))
+                   "/SRQ
+                   고/PAD)
+           (VV 평가/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=노동시장</term>
+	    </Arg>
+	    <Rel>
+	      <term>경색된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

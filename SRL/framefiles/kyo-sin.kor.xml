@@ -1,0 +1,115 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>교신</lemma>
+    <comment>Frames file for '교신' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>교신.01</id>
+      <edef>communicate</edef>
+      <roleset>
+	<role argnum="0" argrole="first communicator"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="other communicator"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>교신하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희 소대장이나 사격 진지 담당 군관은 떼아이-43 야전 전화기를 사용해서 포대 지휘 감시소와 교신했습니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 저희/NPN
+               소대장/NNC+이나/PCJ)
+           (NP 사격/NNC
+               진지/NNC
+               담당/NNC
+               군관/NNC+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 떼아이-43/NNC
+                      야전/NNC
+                      전화기/NNC+을/PCA)
+              (VV 사용/NNC+하/XSV+어서/ECS)))
+       (VP (NP-COMP 포대/NNC
+                    지휘/NNC
+                    감시소/NNC+과/PAD)
+           (VV 교신/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>저희 소대장이나 사격 진지 담당 군관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>떼아이-43 야전 전화기를 사용해서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>포대 지휘 감시소</term>
+	    </Arg>
+	    <Rel>
+	      <term>교신했습니다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+	<example>
+	  <text>이 무전기로 일선 소대는 본부와 직접 교신할 수 있다.</text>
+	  <relation>
+	    <Arg n="M">
+	      <f>로</f>
+	      <term>이 무전기</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>일선 소대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>본부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>직접</term>
+	    </Arg>
+	    <Rel>
+	      <term>교신할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다</term>
+	    </Aux>
+	  </relation>    
+	</example>
+	<example>
+	  <text>이 무전기로 본부와 일선 소대는 직접 교신할 수 있다.</text>
+	  <relation>
+	    <Arg n="M">
+	      <f>로</f>
+	      <term>이 무전기</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>본부와 일선 소대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>직접</term>
+	    </Arg>
+	    <Rel>
+	      <term>교신할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다</term>
+	    </Aux>
+	  </relation>    
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>
+

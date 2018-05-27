@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>남용</lemma>
+    <comment>Frames file for '남용' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>남용.01</id>
+      <edef>abuse</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity abused"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>남용하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>노동당의 유권자 여론조사 결과 망명희망자 급증이 보건과 교육에 이은 3 번째 당면과제로 나타난 가운데 발표된 이같은 정부방침에 대해 인권단체들은 정부가 난민관련법을 남용하고 있다고 비난했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (WHNP-2 *op*)
+                      (S (NP-SBJ *T*-2)
+                         (VP (NP-ADV (S (NP-ADV (NP (NP 노동당/NNC+의/PAN)
+                                                    (NP 유권자/NNC
+                                                        여론/NNC+조사/NNC))
+                                                (NP 결과/NNC))
+                                        (S (NP-SBJ 망명/NNC+희망자/NNC
+                                                   급증/NNC+이/PCA)
+                                           (VP (NP-COMP (S (WHNP-1 *op*)
+                                                           (S (NP-SBJ *T*-1)
+                                                              (VP (NP-COMP (NP 보건/NNC+과/PCJ)
+                                                                           (NP 교육/NNC+에/PAD))
+                                                                  잇/VV+은/EAN)))
+                                                        (NP 3/NNU
+                                                            번/NNX+째/XSF
+                                                            당면/NNC+과제/NNC+으로/PAD))
+                                               나타나/VV+은/EAN)))
+                                     (NP 가운데/NNC))
+                             (VP (VV 발표/NNC+되/XSV+은/EAN)))))
+                   (NP 이같은/DAN
+                       정부/NNC+방침/NNC+에/PAD))
+          대하/VV+어/ECS))
+   (S (NP-SBJ 인권/NNC+단체/NNC+들/XSF+은/PAU)
+      (VP (S-COMP (NP-SBJ 정부/NNC+이/PCA)
+                  (VP (VP (NP-OBJ 난민/NNC+관련/NNC+법/NNC+을/PCA)
+                          (VV 남용/NNC+하/XSV+고/ECS))
+                      있/VX+다/EFN+고/PAD))
+          (VV 비난/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>정부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>난민관련법</term>
+	    </Arg>
+	    <Rel>
+	      <term>남용하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

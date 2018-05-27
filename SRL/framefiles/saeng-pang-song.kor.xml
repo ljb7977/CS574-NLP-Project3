@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>생방송</lemma>
+    <comment>Frames file for '생방송' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>생방송.01</id>
+      <edef>broadcast live</edef>
+      <roleset>
+	<role argnum="0" argrole="broadcaster"/>
+	<role argnum="1" argrole="thing broadcasted"/>
+	<role argnum="2" argrole="broadcasted to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>생방송되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>클린턴 대통령의 도착 장면이 전국에 생방송된 가운데 이른 아침부터 수천명의 초등학생들이 대통령을 환영하기 위해 공항에서 도심간 도로변에 도열했다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ (NP 클린턴/NPR
+                          대통령/NNC+의/PAN)
+                      (NP 도착/NNC
+                          장면/NNC+이/PCA))
+              (VP (NP-COMP 전국/NNC+에/PAD)
+                  (VV 생방송/NNC+되/XSV+은/EAN)))
+           (NP 가운데/NNC))
+   (NP-ADV 이른/DAN
+           아침/NNC+부터/PAU)
+   (S (NP-SBJ (NP 수/XPF+천/NNU+명/NNX+의/PAN)
+              (NP 초등/NNC+학생/NNC+들/XSF+이/PCA))
+      (VP (S (NP-SBJ *pro*)
+             (VP (S-OBJ (NP-SBJ *pro*)
+			(VP (NP-OBJ 대통령/NNC+을/PCA)
+			    (VV 환영/NNC+하/XSV+기/ENM)))
+                 위하/VV+어/ECS))
+          (VP (NP-COMP (NP (NP 공항/NNC+에서/PAD)
+                           (NP 도심/NNC+간/XSF))
+                       (NP 도로/NNC+변/NNC+에/PAD))
+              (VV 도열/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>클린턴 대통령의 도착 장면</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>전국</term>
+	    </Arg>
+	    <Rel>
+	      <term>생방송된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

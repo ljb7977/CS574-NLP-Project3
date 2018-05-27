@@ -1,0 +1,43 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>글로벌화</lemma>
+    <comment>Frames file for '글로벌화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>글로벌화.01</id>
+      <edef>globalize</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing golbalized"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>글로벌화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>첫번째는 한국경제를 글로벌화하는 것이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 첫/NNU+번/NNX+째/XSF+은/PAU)
+       (VP (NP (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 한국/NPR+경제/NNC+을/PCA)
+                      (VV 글로벌화/NNC+하/XSV+는/EAN)))
+               (NP 것/NNX+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>한국경제</term>
+	    </Arg>
+	    <Rel>
+	      <term>글로벌화하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

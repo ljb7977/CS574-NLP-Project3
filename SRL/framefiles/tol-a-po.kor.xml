@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌아보</lemma>
+    <comment>Frames file for '돌아보' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>돌아보.01</id>
+      <edef>visit round</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="where visited round"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌아보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 21 일부터 인도 방문 공식 일정에 돌입, 뉴델리를 비롯해 타지마할의 도시 아그라와 자이푸르, 하이데 라바드, 봄베이 등을 돌아본 뒤 25 일 인도를 떠날 계획이다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (VP (VP (NP-ADV 21/NNU
+                       일/NNX+부터/PAU)
+               (VP (NP-COMP 인도/NPR
+                            방문/NNC
+                            공식/NNC
+                            일정/NNC+에/PAD)
+                   (VV 돌입/NNC)))
+           ,/SCM
+           (VP (NP (S (NP-SBJ *pro*)
+                      (VP (NP-ADV (S (NP-SBJ *pro*)
+                                     (VP (S (NP-SBJ *pro*)
+                                            (VP (NP-OBJ 뉴델리/NPR+을/PCA)
+                                                비롯하/VV+어/ECS))
+                                         (VP (NP-OBJ (NP (NP (NP (NP 타지마할/NPR+의/PAN)
+                                                                 (NP 도시/NNC))
+                                                             (NP 아그라/NPR+과/PCJ))
+                                                         (NP 자이푸르/NPR)
+                                                         ,/SCM
+                                                         (NP 하이데/NPR
+                                                             라바드/NPR)
+                                                         ,/SCM
+                                                         (NP 봄베이/NPR))
+                                                     (NP 등/NNX+을/PCA))
+                                             돌아보/VV+은/EAN)))
+                                  (NP 뒤/NNC))
+                          (NP-ADV 25/NNU
+                                  일/NNX)
+                          (VP (NP-OBJ 인도/NPR+을/PCA)
+                              떠나/VV+을/EAN)))
+                   (NP 계획/NNC+이/CO+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>뉴델리를 비롯해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>타지마할의 도시 아그라와 자이푸르, 하이데 라바드, 봄베이 등</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌아본</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

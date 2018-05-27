@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>경계</lemma>
+    <comment>Frames file for '경계' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>경계.01</id>
+      <edef>beware</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing wary of"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>경계하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 연구팀을 지휘한 세실 델쿠르 박사는 태양광선속의 자외선이 수정체의 혼탁을 가속화시키는 것으로 생각된다고 말하고 백내장은 태양 노출이 오래동안 축적되어 발생하기 때문에 어린시절의 과다한 햇빛 노출도 경계해야 한다고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-OBJ 이/DAN
+                             연구/NNC+팀/NNC+을/PCA)
+                     (VV 지휘/NNC+하/XSV+은/EAN))))
+           (NP 세실/NPR
+               델쿠르/NPR
+               박사/NNC+은/PAU))
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-COMP (S (NP-SBJ (NP 태양/NNC+광선/NNC+속/NNC+의/PAN)
+                                           (NP 자외선/NNC+이/PCA))
+                                   (VP (NP-OBJ (NP 수정체/NNC+의/PAN)
+                                               (NP 혼탁/NNC+을/PCA))
+                                       (VV 가속화/NNC+시키/XSV+는/EAN)))
+                                (NP 것/NNX+으로/PAD))
+                       (VV 생각/NNC+되/XSV+는다/EFN+고/PAD)))
+           말하/VV+고/ECS)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV (S (NP-SBJ 백내장/NNC+은/PAU)
+				      (VP (S (NP-SBJ 태양/NNC
+							 노출/NNC+이/PCA)
+					     (VP (NP-ADV 오래/NNC+동안/NNX)
+						 (VP (VV 축적/NNC+되/XSV+어/ECS))))
+					  (VP (VV 발생/NNC+하/XSV+기/ENM))))
+                                   (NP 때문/NNX+에/PAD))
+                           (VP (NP-OBJ (NP 어린/NNC+시절/NNC+의/PAN)
+                                       (NP (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (ADJP (VJ 과다/NNC+하/XSJ+은/EAN))))
+                                           (NP 햇빛/NNC
+                                               노출/NNC+도/PAU)))
+                               (VV 경계/NNC+하/XSV+어야/ECS)))
+                       하/VX+는다/EFN+고/PAD))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>백내장은 태양 노출이 오래동안 축적되어 발생하기 때문에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>어린시절의 과다한 햇빛 노출</term>
+	    </Arg>
+	    <Rel>
+	      <term>경계해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

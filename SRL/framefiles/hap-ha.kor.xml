@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>합하</lemma>
+    <comment>Frames file for '합하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>합하.01</id>
+      <edef>unite</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing(s) unified"/>
+	<role argnum="2" argrole="other thing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>합하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>에, 봅시다... 전부 합해서 아마 450 정도 된다고 말할 수 있겠지요.</text>
+	  <parse>
+(S (INTJ 에/IJ)
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ *pro*)
+          보/VV+읍시다/EFN))
+   .../SSY
+   (S (NP-SBJ *pro*)
+      (VP (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ 전부/NNC)
+                                 합하/VV+어서/ECS))
+                          (ADVP 아마/ADV)
+                          (VP (NP-COMP 450/NNU
+                                       정도/NNC)
+                              되/VV+는다/EFN+고/PAD)))
+              말하/VV+을/EAN)
+          (VX 수/NNX
+              있/VJ+겠/EPF+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>전부</term>
+	    </Arg>
+	    <Rel>
+	      <term>합해서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

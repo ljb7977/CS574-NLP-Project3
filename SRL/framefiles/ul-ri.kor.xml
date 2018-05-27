@@ -1,0 +1,129 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>울리</lemma>
+    <comment>Frames file for '울리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>울리.01</id>
+      <edef>sound</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing sounded"/>
+	<role argnum="2" argrole="sound to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>울리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>크루그먼은 또 민주당측에서 임명한 제프리 삭스 교수가 보고서에 서명함으로써 외형상 초당적 지지를 받는 것으로 돼 있으나 이는 IMF의 단견에 경종을 울릴 필요가 있고 구체적인 것은 추후에 바로잡을 수 있다는 믿음에서 지지를 한 것이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 크루그먼/NPR+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (S (NP-SBJ *pro*)
+                      (VP (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ 민주당/NPR+측/XSF+에서/PCA)
+                                               (VP (NP-OBJ *T*-1)
+                                                   (VV 임명/NNC+하/XSV+은/EAN))))
+                                         (NP 제프리/NPR
+                                             삭스/NPR
+                                             교수/NNC+이/PCA))
+                                 (VP (NP-COMP 보고서/NNC+에/PAD)
+                                     (VV 서명/NNC+하/XSV+음/ENM+으로써/PAD)))
+                              (VP (NP-COMP (S (NP-SBJ *pro*)
+                                              (VP (NP-ADV 외형/NNC+상/XSF)
+                                                  (VP (NP-OBJ 초/XPF+당/NNC+적/XSF
+                                                              지지/NNC+을/PCA)
+                                                      받/VV+는/EAN)))
+                                           (NP 것/NNX+으로/PAD))
+                                  되/VV+어/ECS))
+                          있/VX+으나/ECS))
+                   (S (NP-SBJ 이/NPN+은/PAU)
+                      (VP (NP (S (NP-SBJ *pro*)
+                                 (VP (S (NP-SBJ (S (NP-SBJ *pro*)
+                                                   (VP (NP-COMP (NP IMF/NFW+의/PAN)
+                                                                (NP 단견/NNC+에/PAD))
+                                                       (VP (NP-OBJ 경종/NNC+을/PCA)
+                                                           울리/VV+을/EAN)))
+                                                (NP 필요/NNC+이/PCA))
+                                        (ADJP 있/VJ+고/ECS))
+                                     (NP-ADV (S (NP-SBJ *pro*)
+                                                (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                   (S (NP-SBJ *T*-2)
+                                                                      (VP (NP 구체/NNC+적/XSF+이/CO+은/EAN))))
+                                                                (NP 것/NNX+은/PAU))
+                                                        (VP (NP-ADV 추후/NNC+에/PAD)
+                                                            (VP 바로잡/VV+을/EAN)))
+                                                    (VX 수/NNX
+                                                        있/VJ+다는/EAN)))
+                                             (NP 믿음/NNC+에서/PAD))
+                                     (VP (NP-OBJ 지지/NNC+을/PCA)
+                                         하/VV+은/EAN)))
+                              (NP 것/NNX+이/CO+라/EFN+고/PAD)))))
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>IMF의 단견</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>경종</term>
+	    </Arg>
+	    <Rel>
+	      <term>울릴</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>울리다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이들이 난입하던 과정에서 총성이 울렸으나 부상자는 발생하지 않았으며 인질도 없는 것으로 전해졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (S (NP-ADV (S (NP-SBJ 이/NPN+들/XSF+이/PCA)
+                                 (VP (NP-COMP *pro*)
+                                     (VV 난입/NNC+하/XSV+던/EAN)))
+                              (NP 과정/NNC+에서/PAD))
+                      (S (NP-SBJ 총성/NNC+이/PCA)
+                         (VP 울리/VV+었/EPF+으나/ECS)))
+                   (S (NP-SBJ 부상자/NNC+은/PAU)
+                      (VP (VP (VV 발생/NNC+하/XSV+지/ECS))
+                          않/VX+었/EPF+으며/ECS))
+                   (S (NP-SBJ 인질/NNC+도/PAU)
+                      (ADJP 없/VJ+는/EAN)))
+                (NP 것/NNX+으로/PAD))
+       (VV 전하/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term> 이들이 난입하던 과정에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>총성</term>
+	    </Arg>
+	    <Rel>
+	      <term>울렸으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

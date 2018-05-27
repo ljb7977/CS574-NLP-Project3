@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탄압</lemma>
+    <comment>Frames file for '탄압' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탄압.01</id>
+      <edef>suppress</edef>
+      <roleset>
+	<role argnum="0" argrole="suppressor"/>
+	<role argnum="1" argrole="thing suppressed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탄압하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>압두라만 와히드 인도네시아 대통령은 과거 수하르토 전대통령이 정적들을 탄압하기 위해 이용해 온 군부의 막강한 2 개 기관을 해체하도록 지시했다고 유스릴 이자 마헨드라 법무-법제장관이 8 일 발표했다.</text>
+	  <parse>
+(S (S-COMP-3 (NP-SBJ (NP 압두라만/NPR
+                         와히드/NPR)
+                     (NP 인도네시아/NPR
+                         대통령/NNC+은/PAU))
+             (VP (S-COMP (NP-SBJ *pro*)
+                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                        (S (NP-ADV 과거/NNC)
+                                           (S (NP-SBJ 수하르토/NPR
+                                                      전/XPF+대통령/NNC+이/PCA)
+                                              (VP (VP (S (NP-SBJ *pro*)
+                                                         (VP (S-OBJ (NP-SBJ *pro*)
+                                                                    (VP (NP-OBJ 정적/NNC+들/XSF+을/PCA)
+                                                                        (VV 탄압/NNC+하/XSV+기/ENM)))
+                                                             위하/VV+어/ECS))
+                                                      (VP (NP-OBJ *T*-2)
+                                                          (VV 이용/NNC+하/XSV+어/ECS)))
+                                                  오/VX+은/EAN))))
+                                     (NP (NP 군부/NNC+의/PAN)
+                                         (NP (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (ADJP (VJ 막강/NNC+하/XSJ+은/EAN))))
+                                             (NP 2/NNU
+                                                 개/NNX
+                                                 기관/NNC+을/PCA))))
+                             (VV 해체/NNC+하/XSV+도록/ECS)))
+                 (VV 지시/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))
+   (S (NP-SBJ (NP 유스릴/NPR
+                  이자/NPR
+                  마헨드라/NPR)
+              (NP 법무/NNC
+                  -/SSY
+                  법제/NNC+장관/NNC+이/PCA))
+      (VP (NP-ADV 8/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-3)
+              (VV 발표/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>정적들</term>
+	    </Arg>
+	    <Rel>
+	      <term>탄압하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

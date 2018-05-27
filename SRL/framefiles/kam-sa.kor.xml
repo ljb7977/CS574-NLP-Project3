@@ -1,0 +1,40 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>감사</lemma>
+    <comment>Frames file for '감사' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>감사.01</id>
+      <edef>thank</edef>
+      <roleset>
+	<role argnum="0" argrole="thanker"/>
+	<role argnum="1" argrole="thanked"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>감사하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대단히 감사합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (ADVP 대단히/ADV)
+       (VP (VV 감사/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>대단히</term>
+	    </Arg>
+	    <Rel>
+	      <term>감사합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

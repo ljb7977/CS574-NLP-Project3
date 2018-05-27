@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>함구</lemma>
+    <comment>Frames file for '함구' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>함구.01</id>
+      <edef>keep silent</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>함구하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그렇지만 특사파견에 대해서는 여전히 함구했다.</text>
+	  <parse>
+(S (ADCP 그렇지만/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*)
+		  (VP (NP-COMP 특사/NNC+파견/NNC+에/PAD)
+		      대하/VV+어서/ECS+은/PAU))
+          (VP (ADVP 여전히/ADV)
+	      (VP (VV 함구/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그렇지만</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에 대해서는</f>
+	      <term>특사파견</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>여전히</term>
+	    </Arg>
+	    <Rel>
+	      <term>함구했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

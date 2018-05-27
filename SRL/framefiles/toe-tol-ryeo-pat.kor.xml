@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>되돌려받</lemma>
+    <comment>Frames file for '되돌려받' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>되돌려받.01</id>
+      <edef>take back</edef>
+      <roleset>
+	<role argnum="0" argrole="taker"/>
+	<role argnum="1" argrole="thing taken back"/>
+	<role argnum="2" argrole="taken from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>되돌려받다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지난 80 년 2 월 영국 감시하의 총선을 통해 취임한 로버트 무가베 대통령은 백인 식민주의자들이 짐바브웨 영토를 강탈한 만큼 다수의 흑인들은 무상으로 이 땅을 되돌려받아야 한다고 말해 왔다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 지난/DAN
+                             80/NNU
+                             년/NNX
+                             2/NNU
+                             월/NNX)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP 영국/NPR
+                                        감시/NNC+하/XSF+의/PAN)
+                                    (NP 총선/NNC+을/PCA))
+                            통하/VV+어/ECS))
+                     (VP (VV 취임/NNC+하/XSV+은/EAN)))))
+           (NP 로버트/NPR
+               무가베/NPR
+               대통령/NNC+은/PAU))
+   (VP (VP (S-COMP (NP-ADV (S (NP-SBJ 백인/NNC
+                                      식민/NNC+주의자/NNC+들/XSF+이/PCA)
+                              (VP (NP-OBJ 짐바브웨/NPR
+                                          영토/NNC+을/PCA)
+                                  (VV 강탈/NNC+하/XSV+은/EAN)))
+                           (NP 만큼/NNX))
+                   (S (NP-SBJ (NP 다수/NNC+의/PAN)
+                              (NP 흑인/NNC+들/XSF+은/PAU))
+                      (VP (VP (NP-ADV 무상/NNC+으로/PAD)
+                              (VP (NP-OBJ 이/DAN
+                                          땅/NNC+을/PCA)
+                                  되돌려받/VV+어야/ECS))
+                          하/VX+는다/EFN+고/PAD)))
+           말하/VV+어/ECS)
+       오/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>백인 식민주의자들이 짐바브웨 영토를 강탈한 만큼</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>다수의 흑인들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>무상으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 땅</term>
+	    </Arg>
+	    <Rel>
+	      <term>되돌려받아야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

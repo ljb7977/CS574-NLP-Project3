@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>파묻</lemma>
+    <comment>Frames file for '파묻' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>파묻.01</id>
+      <edef>bury</edef>
+      <roleset>
+	<role argnum="0" argrole="burier"/>
+	<role argnum="1" argrole="thing buried"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>파묻히다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>노근리 사건은 한국전 종전 이후 오랫동안 파묻혀 있다가 AP 통신의 보도로 국제사회에 알려지게 됐다.</text>
+	  <parse>
+(S (S (NP-SBJ 노근리/NPR
+              사건/NNC+은/PAU)
+      (VP (VP (NP-ADV 한국전/NPR
+                      종전/NNC
+                      이후/NNC)
+              (NP-ADV 오랫동안/NNC)
+              (VP 파묻히/VV+어/ECS))
+          있/VX+다가/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (NP AP/NFW
+                          통신/NNC+의/PAN)
+                      (NP 보도/NNC+으로/PAD))
+              (VP (NP-COMP 국제/NNC+사회/NNC+에/PAD)
+                  (VV 알리/VV+어지/XSV+게/ECS)))
+          되/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>노근리 사건</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>한국전 종전 이후</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>오랫동안</term>
+	    </Arg>
+	    <Rel>
+	      <term>파묻혀</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다가</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

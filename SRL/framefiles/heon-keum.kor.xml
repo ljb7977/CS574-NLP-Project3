@@ -1,0 +1,114 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>헌금</lemma>
+    <comment>Frames file for '헌금' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>헌금.01</id>
+      <edef>donate</edef>
+      <roleset>
+	<role argnum="0" argrole="giver"/>
+	<role argnum="1" argrole="money"/>
+	<role argnum="2" argrole="given to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>헌금하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>헬무트 마우헤르 사장은 이 신문의 독일판과 가진 회견에서 "콜씨의 요청에 따라 책임 있는 시민의 도리로, 그리고 CDU 당원으로서 헌금하기로 결정했다"고 말하고 부정자금 사용에 대한 벌금을 내기 위해 애쓰는 당을 돕기로 한 결정은 네슬레와 아무런 관계가 없으며 다른 시 헌금을 유도할 수 있는 모범이 되기를 바라고 있다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 헬무트/NPR
+           마우헤르/NPR
+           사장/NNC+은/PAU)
+   (VP (VP (NP-ADV (S (WHNP-1 *op*)
+                      (S (NP-SBJ *pro*)
+                         (VP (NP-COMP (NP 이/DAN
+                                          신문/NNC+의/PAN)
+                                      (NP 독일/NPR+판/NNC+과/PAD))
+                             (NP-OBJ *T*-1)
+                             가지/VV+은/EAN)))
+                   (NP 회견/NNC+에서/PAD))
+           (VP (S-COMP "/SLQ
+                       (NP-SBJ *pro*)
+                       (VP (S-COMP (NP-SBJ *pro*)
+				   (VP (S (NP-SBJ *pro*)
+					  (VP (NP-COMP (NP 콜/NPR+씨/NNX+의/PAN)
+						       (NP 요청/NNC+에/PAD))
+					      따르/VV+어/ECS))
+				       (NP-ADV (NP (NP (S (WHNP-2 *op*)
+							  (S (NP-SBJ *T*-2)
+							     (ADJP (NP-COMP 책임/NNC)
+								   있/VJ+는/EAN)))
+						       (NP 시민/NNC+의/PAN))
+						   (NP 도리/NNC+으로/PAD))
+					       ,/SCM
+					       (ADCP 그리고/ADC)
+					       (NP CDU/NFW
+						   당원/NNC+으로서/PAD))
+				       (VP (VV 헌금/NNC+하/XSV+기/ENM+으로/PAD))))
+                           (VV 결정/NNC+하/XSV+었/EPF+다/EFN))
+                       "/SRQ
+                       고/PAD)
+               말하/VV+고/ECS))
+       (VP (S-COMP (S (NP-SBJ (S (NP-SBJ *pro*)
+                                 (VP (S-COMP (NP-SBJ *pro*)
+					     (VP (NP-OBJ (S (WHNP-4 *op*)
+							    (S (NP-SBJ *T*-4)
+							       (VP (S (NP-SBJ *pro*)
+								      (VP (S-OBJ (NP-SBJ *pro*)
+										 (VP (NP-OBJ (S (WHNP-3 *op*)
+												(S (NP-SBJ *T*-3)
+												   (VP (NP-COMP 부정/NNC+자금/NNC
+														    사용/NNC+에/PAD)
+												       대하/VV+은/EAN)))
+											     (NP 벌금/NNC+을/PCA))
+										     내/VV+기/ENM))
+									  위하/VV+어/ECS))
+								   (VP 애쓰/VV+는/EAN))))
+							 (NP 당/NNC+을/PCA))
+						 돕/VV+기/ENM+으로/PAD))
+                                     하/VV+은/EAN))
+                              (NP 결정/NNC+은/PAU))
+                      (ADJP (NP-COMP 네슬레/NPR+과/PAD)
+                            (NP-COMP 아무런/DAN
+                                     관계/NNC+이/PCA)
+                            없/VJ+으며/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (S-OBJ (NP-SBJ *pro*)
+				     (VP (NP-COMP (S (WHNP-5 *op*)
+						     (S (NP-SBJ *T*-5)
+							(VP (VP (NP-OBJ 다른/DAN
+									    시/NNC
+									    헌금/NNC+을/PCA)
+								(VV 유도/NNC+하/XSV+을/EAN))
+							    (VX 수/NNX
+								  있/VJ+는/EAN))))
+						  (NP 모범/NNC+이/PCA))
+					 되/VV+기/ENM+을/PCA))
+                              바라/VV+고/ECS)
+                          있/VX+다/EFN+고/PAD)))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>콜씨의 요청에 따라</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>책임 있는 시민의 도리로, 그리고 CDU 당원으로서</term>
+	    </Arg>
+	    <Rel>
+	      <term>헌금하기로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

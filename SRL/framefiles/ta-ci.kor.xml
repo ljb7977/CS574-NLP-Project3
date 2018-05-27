@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>다지</lemma>
+    <comment>Frames file for '다지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>다지.01</id>
+      <edef>strengthen</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing strengthening"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>다지다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>116 년간의 수교기간에 국가원수로는 처음 이탈리아를 방문한 김대중 대통령은 3 일 새벽(한국시간, 현지시간 2 일 저녁) 부인 이희호 여사와 함께 대통령궁 훼스테홀에서 카를로 아첼리오 참피 대통령이 주최한 국빈만찬에 참석, 양국간 우의를 다졌다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (NP-ADV (NP 116/NNU
+                                 년/NNX+간/XSF+의/PAN)
+                             (NP 수교/NNC+기간/NNC+에/PAD))
+                     (NP-ADV 국가/NNC+원수/NNC+으로/PAD+은/PAU)
+                     (NP-ADV 처음/NNC)
+                     (VP (NP-OBJ 이탈리아/NPR+을/PCA)
+                         (VV 방문/NNC+하/XSV+은/EAN)))))
+           (NP 김대중/NPR
+               대통령/NNC+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+	  (VP (NP-ADV 3/NNU
+		      일/NNX
+		      새벽/NNC
+		      (PRN -LRB-/SLQ
+			   (NP 한국/NPR+시간/NNC)
+			   ,/SCM
+			   (NP 현지/NNC+시간/NNC
+				   2/NNU
+				   일/NNX
+				   저녁/NNC)
+			   -RRB-/SRQ))
+	      (ADVP (NP-COMP 부인/NNC
+				 이희호/NPR
+				 여사/NNC+과/PAD)
+		    함께/ADV)
+	      (VP (NP-COMP (S (WHNP-1 *op*)
+			      (S (NP-ADV 대통령/NNC+궁/NNC
+					       훼스테홀/NPR+에서/PAD)
+				 (S (NP-SBJ 카를로/NPR
+						  아첼리오/NPR
+						  참피/NPR
+						  대통령/NNC+이/PCA)
+				    (VP (NP-OBJ *T*-1)
+					(VV 주최/NNC+하/XSV+은/EAN)))))
+			   (NP 국빈/NNC+만찬/NNC+에/PAD))
+		  (VV 참석/NNC))))
+       ,/SCM
+       (VP (NP-OBJ 양국/NNC+간/XSF
+                       우의/NNC+을/PCA)
+	   다지/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>116 년간의 수교기간에 국가원수로는 처음 이탈리아를 방문한 김대중 대통령</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>3 일 새벽(한국시간, 현지시간 2 일 저녁) 부인 이희호 여사와 함께 대통령궁 훼스테홀에서 카를로 아첼리오 참피 대통령이 주최한 국빈만찬에 참석</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>양국간 우의</term>
+	    </Arg>
+	    <Rel>
+	      <term>다졌다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

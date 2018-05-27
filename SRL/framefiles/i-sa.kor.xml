@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이사</lemma>
+    <comment>Frames file for '이사' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>이사.01</id>
+      <edef>move</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="start point"/>
+	<role argnum="2" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그녀는 경찰관이 자신의 관할지역에 거주하는 것을 의무로 하는 새로운 규정이 필요하다면서 "경찰관이 관할지역을 이해하기 위해서는 그 지역으로 이사해 거주하는 것이 가장 좋은 방법"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그녀/NPN+은/PAU)
+   (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-OBJ (S (NP-SBJ 경찰관/NNC+이/PCA)
+                                       (VP (NP-COMP (NP 자신/NNC+의/PAN)
+                                                    (NP 관할/NNC+지역/NNC+에/PAD))
+                                           (VV 거주/NNC+하/XSV+는/EAN)))
+                                    (NP 것/NNX+을/PCA))
+                            (NP-COMP 의무/NNC+으로/PAD)
+                            하/VV+는/EAN)))
+                  (NP (S (WHNP-3 *op*)
+                         (S (NP-SBJ *T*-3)
+                            (ADJP 새롭/VJ+은/EAN)))
+                      (NP 규정/NNC+이/PCA)))
+          (ADJP (VJ 필요/NNC+하/XSJ+다면서/ECS)))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 경찰관/NNC+이/PCA)
+                      (VP (S-OBJ (NP-SBJ *pro*)
+                                 (VP (NP-OBJ 관할/NNC+지역/NNC+을/PCA)
+                                     (VV 이해/NNC+하/XSV+기/ENM)))
+                          위하/VV+어서/ECS+은/PAU))
+                   (S (NP-SBJ *pro*)
+                      (VP (NP (S (NP-SBJ (S (NP-SBJ *pro*)
+                                            (VP (S (NP-SBJ *pro*)
+                                                   (VP (NP-COMP 그/DAN
+                                                                지역/NNC+으로/PAD)
+                                                       (VV 이사/NNC+하/XSV+어/ECS)))
+                                                (VP (NP-COMP *pro*)
+                                                    (VV 거주/NNC+하/XSV+는/EAN))))
+                                         (NP 것/NNX+이/PCA))
+                                 (ADJP (ADVP 가장/ADV)
+                                       (ADJP 좋/VJ+은/EAN)))
+                              (NP 방법/NNC))))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>그 지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>이사해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>위치</lemma>
+    <comment>Frames file for '위치' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>위치.01</id>
+      <edef>be located</edef>
+      <roleset>
+	<role argnum="1" argrole="thing located"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>위치하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>제23 통신중대는 어디에 위치하고 있는가?</text>
+	  <parse>
+(S (NP-SBJ 제/XPF+23/NNU 
+	   통신/NNC 
+	   중대/NNC+는/PAU)
+   (VP (VP (NP-COMP 어디/NPN+에/PAD) 
+	   (VV 위치/NNC+하/XSV+고/EAU)) 
+       있/VX+는가/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>제23 통신중대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>어디</term>
+	    </Arg>
+	    <Rel>
+	      <term>위치하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는가</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

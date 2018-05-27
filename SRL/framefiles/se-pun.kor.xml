@@ -1,0 +1,99 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>세분</lemma>
+    <comment>Frames file for '세분' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>세분.01</id>
+      <edef>break down</edef>
+      <roleset>
+	<role argnum="0" argrole="breaker"/>
+	<role argnum="1" argrole="thing broken"/>
+	<role argnum="2" argrole="pieces"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>세분하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>조선 인민군에서는 탱크 부대를 소대급 이하로는 세분하지 않습니다.</text>
+	  <parse>
+(S (NP-SBJ 조선/NPR
+           인민군/NNC+에서/PCA+은/PAU)
+   (VP (VP (NP-OBJ 탱크/NNC
+                   부대/NNC+을/PCA)
+           (NP-COMP (NP-ADV 소대/NNC+급/XSF
+                            이하/NNC+으로/PAD+은/PAU))
+           (VV 세분/NNC+하/XSV+지/ECS))
+       않/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>조선 인민군</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>탱크 부대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로는</f>
+	      <term>소대급 이하</term>
+	    </Arg>
+	    <Rel>
+	      <term>세분하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>세분되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>조선 인민군에서 탱크 중대가 다시 소대로 세분된다는 건 상식이지요.</text>
+	  <parse>
+(S (NP-ADV 조선/NPR
+           인민군/NNC+에서/PAD)
+   (S (NP-SBJ (S (NP-SBJ 탱크/NNC
+                         중대/NNC+이/PCA)
+                 (VP (ADVP 다시/ADV)
+                     (VP (NP-COMP 소대/NNC+으로/PAD)
+                         (VV 세분/NNC+되/XSV+는다는/EAN))))
+              (NP 것/NNX+은/PAU))
+      (VP (NP 상식/NNC+이/CO+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>탱크 중대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>다시</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>소대</term>
+	    </Arg>
+	    <Rel>
+	      <term>세분된다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

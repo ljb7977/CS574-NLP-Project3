@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>종사</lemma>
+    <comment>Frames file for '종사' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>종사.01</id>
+      <edef>engage in</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing engaged in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>종사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조 중사는 포병에서 운영하는 임시 공급소에서 공급 업무에 종사하고 있습니다.</text>
+	  <parse>
+(S (NP-SBJ 조/NPR
+           중사/NNC+은/PAU)
+   (VP (VP (NP-ADV (S (WHNP-1 *op*)
+                      (S (NP-SBJ 포병/NNC+에서/PCA)
+                         (VP (NP-OBJ *T*-1)
+                             (VV 운영/NNC+하/XSV+는/EAN))))
+                   (NP 임시/NNC
+                       공급소/NNC+에서/PAD))
+           (VP (NP-COMP 공급/NNC
+                        업무/NNC+에/PAD)
+               (VV 종사/NNC+하/XSV+고/ECS)))
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>조 중사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>포병에서 운영하는 임시 공급소에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>공급 업무</term>
+	    </Arg>
+	    <Rel>
+	      <term>종사하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

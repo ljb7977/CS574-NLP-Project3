@@ -1,0 +1,200 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지목</lemma>
+    <comment>Frames file for '지목' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>지목.01</id>
+      <edef>select</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing selected"/>
+	<role argnum="2" argrole="select as"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지목하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>민주당은 그러나 한나라당의 공천헌금 의혹논란에 대해선 `명백한 정치자금법 위반'이라며 이회창 총재와 하순봉 사무총장을 `처벌대상'으로 지목하고, 중앙선거관리위원회에도 이 문제에 대한 입장 표명을 촉구하는 등 이슈확산 방침을 분명히 했다.</text>
+	  <parse>
+(S (NP-SBJ 민주당/NPR+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (VP (S (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (NP 한나라당/NPR+의/PAN)
+                                  (NP 공천/NNC+헌금/NNC
+                                      의혹/NNC+논란/NNC+에/PAD))
+                         대하/VV+어서/ECS+은/PAU))
+                  (S (NP-SBJ *pro*)
+                     (VP `/SLQ
+                         (NP (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP 명백하/VJ+은/EAN)))
+                             (NP 정치/NNC+자금/NNC+법/NNC
+                                 위반/NNC))
+                         '/SRQ
+                         이/CO+라며/ECS)))
+               (VP (NP-OBJ (NP 이회창/NPR
+                               총재/NNC+과/PCJ)
+                           (NP 하순봉/NPR
+                               사무총장/NNC+을/PCA))
+                   (NP-COMP `/SLQ
+                            처벌/NNC+대상/NNC
+                            '/SRQ
+                            으로/PAD)
+                   (VV 지목/NNC+하/XSV+고/ECS)))
+           ,/SCM
+           (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                              (VP (NP-COMP 중앙/NNC+선거/NNC+관리/NNC+위원회/NNC+에/PAD+도/PAU)
+                                  (NP-OBJ (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP-COMP 이/DAN
+                                                             문제/NNC+에/PAD)
+                                                    대하/VV+은/EAN)))
+                                          (NP 입장/NNC
+                                              표명/NNC+을/PCA))
+                                  (VV 촉구/NNC+하/XSV+는/EAN)))
+                           (NP 등/NNX))
+                       (NP 이슈/NNC+확산/NNC
+                           방침/NNC+을/PCA))
+               (ADVP-COMP 분명히/ADV)
+               하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>한나라당의 공천헌금 의혹논란에 대해선 `명백한 정치자금법 위반'이라며</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이회창 총재와 하순봉 사무총장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>처벌대상</term>
+	    </Arg>
+	    <Rel>
+	      <term>지목하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>지목되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국 로스앤젤레스 경찰은 야후, 아마존 등 유명 인터넷 사이트의 해킹 용의자 중 하나로 지목된 `쿨리오'라는 인터넷 이름을 사용하는 10 대 해커를 신문했다고 2 일 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR
+           로스앤젤레스/NPR
+           경찰/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (NP-OBJ (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (VP (VP (NP-COMP (NP (NP (NP (NP (NP (NP 야후/NPR)
+                                                                      ,/SCM
+                                                                      (NP 아마존/NPR))
+                                                                  (NP 등/NNX))
+                                                              (NP 유명/NNC
+                                                                  인터넷/NNC
+                                                                  사이트/NNC+의/PAN))
+                                                          (NP 해킹/NNC
+                                                              용의자/NNC))
+                                                      (NP 중/NNX))
+                                                  (NP 하나/NNU+으로/PAD))
+                                         (VV 지목/NNC+되/XSV+은/EAN))
+                                     (VP (NP-OBJ (NP `/SLQ
+                                                     쿨리오/NPR
+                                                     '/SRQ
+                                                     이라는/PAN)
+                                                 (NP 인터넷/NNC
+                                                     이름/NNC+을/PCA))
+                                         (VV 사용/NNC+하/XSV+는/EAN)))))
+                           (NP 10/NNU
+                               대/NNX
+                               해커/NNC+을/PCA))
+                   (VV 신문/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))
+       (VP (NP-ADV 2/NNU
+                   일/NNX)
+           (VP 밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=10 대 해커</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>야후, 아마존 등 유명 인터넷 사이트의 해킹 용의자 중 하나</term>
+	    </Arg>
+	    <Rel>
+	      <term>지목된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>지목받다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>호주 정보당국은 국제 테러 분자로 지목받고 있는 오사마 빈 라덴의 연계 조직을 2000 년 시드니 올림픽의 최대 위협으로 간주했다.</text>
+	  <parse>
+(S (NP-SBJ 호주/NPR
+           정보/NNC+당국/NNC+은/PAU)
+   (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (VP (NP-COMP 국제/NNC
+                                          테러/NNC
+                                          분자/NNC+으로/PAD)
+                                 (VV 지목/NNC+받/XSV+고/ECS))
+                             있/VX+는/EAN)))
+                   (NP 오사마/NPR
+                       빈/NPR
+                       라덴/NPR+의/PAN))
+               (NP 연계/NNC
+                   조직/NNC+을/PCA))
+       (NP-COMP (NP 2000/NNU
+                    년/NNX
+                    시드니/NPR
+                    올림픽/NNC+의/PAN)
+                (NP 최대/NNC
+                    위협/NNC+으로/PAD))
+       (VV 간주/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=오사마 빈 라덴</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>국제 테러 분자</term>
+	    </Arg>
+	    <Rel>
+	      <term>지목받고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

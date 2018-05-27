@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>맞서</lemma>
+    <comment>Frames file for '맞서' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>맞서.01</id>
+      <edef>oppose</edef>
+      <roleset>
+	<role argnum="0" argrole="opposer"/>
+	<role argnum="1" argrole="thing opposed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>맞서다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>70 년대 백인통치에 맞서 게릴라전을 펼친 참전용사 그룹은 헌법개정안이 부결된 뒤 도끼를 휘두르며 백인 소유의 농장 70 곳을 침범하는 등 무력시위를 벌였으며 정부는 이를 묵인했다는 비난을 받고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (S (NP-SBJ *T*-1)
+                       (VP (NP-COMP 70/NNU
+                                    년대/NNX
+                                    백인/NNC+통치/NNC+에/PAD)
+                           맞서/VV+어/ECS))
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-OBJ 게릴라전/NNC+을/PCA)
+                           펼치/VV+은/EAN))))
+              (NP 참전/NNC+용사/NNC
+                  그룹/NNC+은/PAU))
+      (VP (NP-ADV (S (NP-SBJ 헌법/NNC+개정안/NNC+이/PCA)
+                     (VP (VV 부결/NNC+되/XSV+은/EAN)))
+                  (NP 뒤/NNC))
+          (VP (NP-OBJ (NP (S (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ 도끼/NNC+을/PCA)
+                                    휘두르/VV+으며/ECS))
+                             (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ (NP (NP 백인/NNC
+                                                    소유/NNC+의/PAN)
+                                                (NP 농장/NNC))
+                                            (NP 70/NNU
+                                                곳/NNX+을/PCA))
+                                    (VV 침범/NNC+하/XSV+는/EAN))))
+                          (NP 등/NNX))
+                      (NP 무력/NNC+시위/NNC+을/PCA))
+              벌이/VV+었/EPF+으며/ECS)))
+   (S (NP-SBJ 정부/NNC+은/PAU)
+      (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ 이/NPN+을/PCA)
+                             (VV 묵인/NNC+하/XSV+었/EPF+다는/EAN)))
+                      (NP 비난/NNC+을/PCA))
+              받/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=참전용사 그룹</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>70 년대 백인통치</term>
+	    </Arg>
+	    <Rel>
+	      <term>맞서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

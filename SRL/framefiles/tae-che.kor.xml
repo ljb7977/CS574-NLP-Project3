@@ -1,0 +1,120 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대체</lemma>
+    <comment>Frames file for '대체' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대체.01</id>
+      <edef>replace</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="old thing"/>
+	<role argnum="2" argrole="new thing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대체하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인민군에서는 구식 화기를 점차 신형 화기로 대체하고 있지요.</text>
+	  <parse>
+(S (NP-SBJ 인민군/NNC+에서/PCA+은/PAU)
+   (VP (VP (NP-OBJ 구식/NNC
+		   화기/NNC+을/PCA)
+	   (VP (ADVP 점차/ADV) 
+	       (VP (NP-COMP 신형/NNC
+			    화기/NNC+으로/PAD)
+		   (VV 대체/NNC+하/XSV+고/EAU))))
+       있/VX+지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>인민군</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>구식 화기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>점차</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>신형 화기</term>
+	    </Arg>
+	    <Rel>
+	      <term>대체하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있지요</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>대체되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>원유가 급등으로 국내 석유제품 가격이 높은 수준을 유지함에 따라 지난 1 월 중 에너지소비 증가세가 대폭 둔화됐으며 특히 석유 수요가 전기, 도시가스등으로 대체되는 현상을 나타냈다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-ADV 원유/NNC+가/XSF
+                          급등/NNC+으로/PAD)
+                  (S (NP-SBJ 국내/NNC
+                             석유/NNC+제품/NNC
+                             가격/NNC+이/PCA)
+                     (VP (NP-OBJ (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (ADJP 높/VJ+은/EAN)))
+                                 (NP 수준/NNC+을/PCA))
+                         (VV 유지/NNC+하/XSV+음/ENM+에/PAD))))
+          따르/VV+어/ECS))
+   (S (NP-ADV 지난/DAN
+              1/NNU
+              월/NNX
+              중/NNX)
+      (S (NP-SBJ 에너지/NNC+소비/NNC
+                 증가세/NNC+이/PCA)
+         (VP (ADVP 대폭/ADV)
+             (VP (VV 둔화/NNC+되/XSV+었/EPF+으며/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 특히/ADV)
+          (VP (NP-OBJ (S (NP-SBJ 석유/NNC
+                                 수요/NNC+이/PCA)
+                         (VP (NP-COMP 전기/NNC
+                                      ,/SCM
+                                      도시/NNC+가스/NNC+등/NNX+으로/PAD)
+                             (VV 대체/NNC+되/XSV+는/EAN)))
+                      (NP 현상/NNC+을/PCA))
+              나타내/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>석유 수요</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>전기, 도시가스등</term>
+	    </Arg>
+	    <Rel>
+	      <term>대체되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

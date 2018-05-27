@@ -1,0 +1,97 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조성</lemma>
+    <comment>Frames file for '조성' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>조성.01</id>
+      <edef>create</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing created"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조성하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>공격 시 지원화기의 역할은 적의 지탱점들 사이의 간격을 조성하고 중요한 목표를 제압하는 것입니다.</text>
+	  <parse>
+(S (NP-ADV 공격/NNC
+           시/NNX)
+   (S (NP-SBJ (NP 지원/NNC
+                  화기/NNC+의/PAN)
+              (NP 역할/NNC+은/PAU))
+      (VP (NP (S (NP-SBJ *pro*)
+                 (VP (VP (NP-OBJ (NP (NP (NP 적/NNC+의/PAN)
+                                         (NP 지탱점/NNC+들/XSF))
+                                     (NP 사이/NNC+의/PAN))
+                                 (NP 간격/NNC+을/PCA))
+                         (VV 조성/NNC+하/XSV+고/ECS))
+                     (VP (NP-OBJ (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (ADJP (VJ 중요/NNC+하/XSJ+은/EAN))))
+                                 (NP 목표/NNC+을/PCA))
+                         (VV 제압/NNC+하/XSV+는/EAN))))
+              (NP 것/NNX+이/CO+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적의 지탱점들 사이의 간격</term>
+	    </Arg>
+	    <Rel>
+	      <term>조성하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>조성되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 신문은 세금 면제로 조성된 비자금이 무기 중개상 칼하인츠 슈라이버를 통해 정치권에 전달됐다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           신문/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP-ADV 세금/NNC
+                                         면제/NNC+으로/PAD)
+                                 (VP (VV 조성/NNC+되/XSV+은/EAN)))))
+                       (NP 비자금/NNC+이/PCA))
+               (VP (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ 무기/NNC
+                                  중개상/NNC
+                                  칼하인츠/NPR
+                                  슈라이버/NPR+을/PCA)
+                          통하/VV+어/ECS))
+                   (VP (NP-COMP 정치권/NNC+에/PAD)
+                       (VV 전달/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))
+       덧붙이/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=비자금</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>세금 면제로</term>
+	    </Arg>
+	    <Rel>
+	      <term>조성된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

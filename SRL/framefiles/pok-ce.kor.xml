@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>복제</lemma>
+    <comment>Frames file for '복제' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>복제.01</id>
+      <edef>clone</edef>
+      <roleset>
+	<role argnum="0" argrole="cloner"/>
+	<role argnum="1" argrole="original"/>
+	<role argnum="2" argrole="copy"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>복제되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>정자를 제공한 소는 일본소의 등뒤 근육세포를 토대로 복제됐는데, 이번 임신으로 태어날 송아지는 복제소와 어미소 양측의 유전정보를 이어받게 될 것으로 알려졌다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-OBJ 정자/NNC+을/PCA)
+                        (VV 제공/NNC+하/XSV+은/EAN))))
+              (NP 소/NNC+은/PAU))
+      (VP (NP-ADV (NP-OBJ (NP 일본/NPR+소/NNC+의/PAN)
+                          (NP 등/NNC+뒤/NNC
+                              근육/NNC+세포/NNC+을/PCA))
+                  토대/NNC+으로/PAD)
+          (VP (VV 복제/NNC+되/XSV+었/EPF+는데/ECS))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP-ADV 이번/NNC
+                                                임신/NNC+으로/PAD)
+                                        (VP 태어나/VV+을/EAN))))
+                              (NP 송아지/NNC+은/PAU))
+                      (VP (VP (NP-OBJ (NP (NP (NP 복제/NNC+소/NNC+과/PCJ)
+                                              (NP 어미/NNC+소/NNC))
+                                          (NP 양측/NNC+의/PAN))
+                                      (NP 유전/NNC+정보/NNC+을/PCA))
+                              이어받/VV+게/ECS)
+                          되/VX+을/EAN))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>정자를 제공한 소</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>일본소의 등뒤 근육세포를 토대로</term>
+	    </Arg>
+	    <Rel>
+	      <term>복제됐는데</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

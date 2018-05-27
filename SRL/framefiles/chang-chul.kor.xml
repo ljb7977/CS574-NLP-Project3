@@ -1,0 +1,135 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>창출</lemma>
+    <comment>Frames file for '창출' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>창출.01</id>
+      <edef>create</edef>
+      <roleset>
+	<role argnum="0" argrole="thing creating"/>
+	<role argnum="1" argrole="thing created"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>참출하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 기업의 이익을 대변하고 있는 경제부도 외국인 전문인력의 유입은 독일인의 일자리를 빼앗는 것이 아니라 오히려 새로운 일자리를 창출하는 효과가 있을 것이라고 주장하고 나서 적어도 한시적으로는 외국인 전문인력이 독일내 기업에 고용될 기회가 주어질 것으로 예상된다.</text>
+	  <parse>
+(S (S (ADVP 또/ADV)
+      (S (NP-SBJ (S (WHNP-1 *op*)
+		    (S (NP-SBJ *T*-1)
+		       (VP (VP (NP-OBJ (NP 기업/NNC+의/PAN)
+				       (NP 이익/NNC+을/PCA))
+			       (VV 대변/NNC+하/XSV+고/ECS))
+			   있/VX+는/EAN)))
+		 (NP 경제부/NNC+도/PAU))
+	 (VP (S-COMP (NP-SBJ *pro*)
+		     (VP (S-COMP (S (NP-SBJ (NP 외국인/NNC
+						      전문/NNC+인력/NNC+의/PAN)
+					    (NP 유입/NNC+은/PAU))
+				    (ADJP (NP-COMP (S (NP-SBJ *pro*)
+						      (VP (NP-OBJ (NP 독일인/NNC+의/PAN)
+								  (NP 일자리/NNC+을/PCA))
+							  빼앗/VV+는/EAN))
+						   (NP 것/NNX+이/PCA))
+					  아니/VJ+라/EFN))
+				 (S (ADVP 오히려/ADV)
+				    (S (NP-SBJ (S (NP-SBJ *pro*)
+						  (VP (NP-OBJ (S (WHNP-2 *op*)
+								 (S (NP-SBJ *T*-2)
+								    (ADJP 새롭/VJ+은/EAN)))
+							      (NP 일자리/NNC+을/PCA))
+						      (VV 창출/NNC+하/XSV+는/EAN)))
+					       (NP 효과/NNC+이/PCA))
+				       (VP (ADJP 있/VJ+을/EAN)
+					   (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+			 (VV 주장/NNC+하/XSV+고/ECS)))
+	     나서/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (ADVP 적어도/ADV)
+		      (NP-ADV 한시/NNC+적/XSF+으로/PAD+은/PAU)
+		      (S (NP-SBJ (S (NP-SBJ 외국인/NNC
+						  전문/NNC+인력/NNC+이/PCA)
+				    (VP (NP-COMP 독일/NPR+내/NNX
+						     기업/NNC+에/PAD)
+					(VV 고용/NNC+되/XSV+을/EAN)))
+				 (NP 기회/NNC+이/PCA))
+			 (VP (VV 주/VV+어지/XSV+을/EAN))))
+		   (NP 것/NNX+으로/PAD))
+	  (VV 예상/NNC+되/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>새로운 일자리</term>
+	    </Arg>
+	    <Rel>
+	      <term>창출하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>창출되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신문은 인터넷 벤처 산업의 폭발적 증가로 향후 5 년간 정보 통신업계에 43 만개의 일자리가 창출될 것으로 한국정부가 예상하고 있다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 신문/NNC+은/PAU)
+   (VP (S-COMP (NP-COMP-1 (S (NP-ADV (NP 인터넷/NNC
+                                         벤처/NNC
+                                         산업/NNC+의/PAN)
+                                     (NP 폭발/NNC+적/XSF
+                                         증가/NNC+으로/PAD))
+                             (NP-ADV 향후/NNC
+                                     5/NNU
+                                     년/NNX+간/XSF)
+                             (NP-ADV 정보/NNC
+                                     통신/NNC+업계/NNC+에/PAD)
+                             (S (NP-SBJ (NP 43/NNU
+                                            만/NNU+개/NNX+의/PAN)
+                                        (NP 일자리/NNC+이/PCA))
+                                (VP (VV 창출/NNC+되/XSV+을/EAN))))
+                          (NP 것/NNX+으로/PAD))
+               (S (NP-SBJ 한국/NPR+정부/NNC+이/PCA)
+                  (VP (VP (NP-COMP *T*-1)
+                          (VV 예상/NNC+하/XSV+고/ECS))
+                      있/VX+다/EFN+고/PAD)))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>인터넷 벤처 산업의 폭발적 증가로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>향후 5 년간</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>정보 통신업계에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>43 만개의 일자리</term>
+	    </Arg>
+	    <Rel>
+	      <term>창출될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

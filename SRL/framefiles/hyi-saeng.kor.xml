@@ -1,0 +1,129 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>희생</lemma>
+    <comment>Frames file for '희생' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>희생.01</id>
+      <edef>sacrifice</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, causer"/>
+	<role argnum="1" argrole="entity sacrificed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>희생되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 워싱턴시 인근 버지니아주 그레이트 폴스에서 뺑소니차에 희생된 한인 여고생 윤나은(15)양의 유가족에게 이웃 미국 주민들이 자발적으로 따뜻한 정을 베풀고 있어 주변을 감동시키고 있다.</text>
+	  <parse>
+(S (S (NP-COMP-3 (NP (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (NP-ADV 미국/NPR
+                                       워싱턴/NPR+시/NNC
+                                       인근/NNC
+                                       버지니아/NPR+주/NNC
+                                       그레이트/NPR
+                                       폴스/NPR+에서/PAD)
+                               (VP (NP-COMP 뺑소니차/NNC+에/PAD)
+                                   (VV 희생/NNC+되/XSV+은/EAN)))))
+                     (NP 한인/NNC
+                         여고생/NNC
+                         윤나은/NPR
+                         (PRN -LRB-/SLQ
+                              (NP 15/NNU)
+                              -RRB-/SRQ)
+                         양/NNX+의/PAN))
+                 (NP 유가족/NNC+에게/PAD))
+      (S (NP-SBJ 이웃/NNC
+                 미국/NPR
+                 주민/NNC+들/XSF+이/PCA)
+         (VP (VP (NP-ADV 자발/NNC+적/XSF+으로/PAD)
+                 (VP (NP-COMP *T*-3)
+                     (NP-OBJ (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (ADJP 따뜻하/VJ+은/EAN)))
+                             (NP 정/NNC+을/PCA))
+                     베풀/VV+고/ECS))
+             있/VX+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 주변/NNC+을/PCA)
+              (VV 감동/NNC+시키/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=한인 여고생 윤나은(15)양</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>미국 워싱턴시 인근 버지니아주 그레이트 폴스에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>뺑소니차</term>
+	    </Arg>
+	    <Rel>
+	      <term>희생된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>희생시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보급품 자체에 우선 순위를 부여하는 것 외에도, 비차적인 작전 부대를 희생시키고까지 주 전투 작전 부대를 위해서 유지하는 우선 순위도 있다.</text>
+	  <parse>
+(S (NP-ADV (NP (S (NP-SBJ *pro*)
+                  (VP (NP-COMP 보급품/NNC
+                               자체/NNC+에/PAD)
+                      (NP-OBJ 우선/NNC
+                              순위/NNC+을/PCA)
+                      (VV 부여/NNC+하/XSV+는/EAN)))
+               (NP 것/NNX))
+           (NP 외/NNC+에/PAD+도/PAU))
+   ,/SCM
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *pro*)
+                    (VP (S (NP-SBJ *pro*)
+                           (VP (NP-OBJ (S (WHNP-2 *op*)
+                                          (S (NP-SBJ *T*-2)
+                                             (VP (NP 비차/NNC+적/XSF+이/CO+은/EAN))))
+                                       (NP 작전/NNC
+                                           부대/NNC+을/PCA))
+                               (VV 희생/NNC+시키/XSV+고/ECS+까지/PAU)))
+                        (S (NP-SBJ *pro*)
+                           (VP (NP-OBJ 주/DAN
+                                       전투/NNC
+                                       작전/NNC
+                                       부대/NNC+을/PCA)
+                               위하/VV+어서/ECS))
+                        (VP (NP-OBJ *T*-1)
+                            (VV 유지/NNC+하/XSV+는/EAN)))))
+              (NP 우선/NNC
+                  순위/NNC+도/PAU))
+      (ADJP 있/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>비차적인 작전 부대</term>
+	    </Arg>
+	    <Rel>
+	      <term>희생시키고까지</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

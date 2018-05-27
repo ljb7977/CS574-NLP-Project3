@@ -1,0 +1,149 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>빌리</lemma>
+    <comment>Frames file for '빌리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>빌리.01</id>
+      <edef>borrow</edef>
+      <roleset>
+	<role argnum="0" argrole="borrower"/>
+	<role argnum="1" argrole="thing borrowed"/>
+	<role argnum="2" argrole="loaner"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>빌리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 포대에는 교환기가 한 대밖에 없기 때문에, 이렇게 하기 위해선 교환기 한 대를 대대로부터 빌려야 하겠죠.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (NP-ADV (NP (S (NP-COMP-1 포대/NNC+에/PAD+은/PAU)
+                  (S (NP-SBJ 교환기/NNC+이/PCA)
+                     (ADJP (NP-ADV 한/NNU
+                                   대/NNX+밖에/PAU)
+                           (ADJP (NP-COMP *T*-1)
+                                 없/VJ+기/ENM)))))
+           (NP 때문/NNX+에/PAD))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ *pro*)
+                     (VP (ADVP 이렇게/ADV)
+                         (VP (NP-OBJ *pro*)
+                             하/VV+기/ENM))))
+          위하/VV+어서/ECS+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 교환기/NNC
+                      한/NNU
+                      대/NNX+을/PCA)
+              (NP-COMP 대대/NNC+으로/PAD+부터/PAU)
+              빌리/VV+어야/ECS)
+          하/VX+겠/EPF+죠/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>포대에는 교환기가 한 대밖에 없기 때문에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>이렇게 하기 위해선</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>교환기 한 대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로부터</f>
+	      <term>대대</term>
+	    </Arg>
+	    <Rel>
+	      <term>빌려야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>하겠죠</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>빌다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>고어 부통령은 이날 ABC 방송의 아침 뉴스 프로그램 `굿모닝 아메리카'에 출연, 부시 지사와 공화당 후보를 놓고 다퉜던 존 매케인 상원의원의 말을 빌어 부시 지사가 낙태에 반대했으며 전국총기협회(NRA)를 강력히 지지하고 있다고 비난했다.</text>
+	  <parse>
+(S (S (NP-SBJ 고어/NPR
+              부통령/NNC+은/PAU)
+      (VP (NP-ADV 이날/NNC)
+          (VP (NP-COMP (NP (NP ABC/NFW
+                               방송/NNC+의/PAN)
+                           (NP 아침/NNC
+                               뉴스/NNC
+                               프로그램/NNC))
+                       (PRN `/SLQ
+                            굿모닝/NNC
+                            아메리카/NPR
+                            '/SRQ)
+                       에/PAD)
+              (VV 출연/NNC))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-COMP 부시/NPR
+                                         지사/NNC+과/PAD)
+                                (VP (S (NP-SBJ *pro*)
+				       (VP (NP-OBJ 공화당/NPR
+							 후보/NNC+을/PCA)
+					   놓/VV+고/ECS))
+                                    (VP 다투/VV+었/EPF+던/EAN)))))
+                      (NP 존/NPR
+                          매케인/NPR
+                          상원/NNC+의원/NNC+의/PAN))
+                  (NP 말/NNC+을/PCA))
+          빌/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (S (NP-SBJ 부시/NPR
+                             지사/NNC+이/PCA)
+                     (VP (NP-COMP 낙태/NNC+에/PAD)
+                         (VV 반대/NNC+하/XSV+었/EPF+으며/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-OBJ 전국/NNC+총기/NNC+협회/NNC
+                                     (PRN -LRB-/SLQ
+                                          NRA/NFW
+                                          -RRB-/SRQ)
+                                     을/PCA)
+                             (VP (ADVP 강력히/ADV)
+                                 (VP (VV 지지/NNC+하/XSV+고/ECS))))
+                         있/VX+다/EFN+고/PAD)))
+          (VV 비난/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>부시 지사와 공화당 후보를 놓고 다퉜던 존 매케인 상원의원의 말</term>
+	    </Arg>
+	    <Rel>
+	      <term>빌어</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

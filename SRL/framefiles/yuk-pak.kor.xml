@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>육박</lemma>
+    <comment>Frames file for '육박' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>육박.01</id>
+      <edef>approach</edef>
+      <roleset>
+	<role argnum="1" argrole="thing approaching"/>
+	<role argnum="2" argrole="approach at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>육박하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>올 들어 주식시장에서 기록한 외국인 순매수 자금이 3 조원에 육박하고 외국인의 매매 비중도 지난해보다 크게 확대됐다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 올/NNC)
+          들/VV+어/ECS))
+   (S (S (NP-SBJ (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-ADV 주식/NNC+시장/NNC+에서/PAD)
+                           (VP (NP-OBJ *pro*)
+                               (VV 기록/NNC+하/XSV+은/EAN)))))
+                 (NP 외국인/NNC
+                     순매수/NNC
+                     자금/NNC+이/PCA))
+         (VP (NP-COMP 3/NNU
+                      조/NNU+원/NNX+에/PAD)
+             (VV 육박/NNC+하/XSV+고/ECS)))
+      (S (NP-SBJ (NP 외국인/NNC+의/PAN)
+                 (NP 매매/NNC
+                     비중/NNC+도/PAU))
+         (VP (NP-ADV 지난해/NNC+보다/PAD)
+             (ADVP (ADV 크/VJ+게/ECS))
+             (VP (VV 확대/NNC+되/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올 들어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>주식시장에서 기록한 외국인 순매수 자금</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>3 조원</term>
+	    </Arg>
+	    <Rel>
+	      <term>육박하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

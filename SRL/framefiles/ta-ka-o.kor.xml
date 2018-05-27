@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>다가오</lemma>
+    <comment>Frames file for '다가오' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>다가오.01</id>
+      <edef>approach</edef>
+      <roleset>
+	<role argnum="0" argrole="entity in motion"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>다가오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>적이 우리 방어 전연 전방 약 500 미터 지점에 다가왔습니다.</text>
+	  <parse>
+(S (NP-SBJ 적/NNC+이/PCA)
+   (VP (NP-COMP (NP 우리/NPN
+                    방어/NNC
+                    전연/NNC
+                    전방/NNC)
+                (NP 약/DAN
+                    500/NNU
+                    미터/NNX
+                    지점/NNC+에/PAD))
+       다가오/VV+었/EPF+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>적</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>우리 방어 전연 전방 약 500 미터 지점</term>
+	    </Arg>
+	    <Rel>
+	      <term>다가왔습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>시험 날짜가 하루 앞으로 다가왔다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>시험 날짜</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>하루 앞</term>
+	    </Arg>
+	    <Rel>
+	      <term>다가왔다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>그의 선행은 모두에게 신선한 충격으로 다가왔다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>그의 선행</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에게</f>
+	      <term>모두</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>신선한 충격으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>다가왔다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,159 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>완성</lemma>
+    <comment>Frames file for '완성' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>완성.01</id>
+      <edef>accomplish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing accomplished"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>완성하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>집행위는 이날 발표한 "E- 에듀케이션" 프로그램을 통해 유럽의 모든 학생들이 인터넷과 멀티미디어 등 정보화 기반 설비를 활용할 수 있는 디지털 능력을 학교에서 완전히 배우고 졸업할 수 있도록 하는 교육 체제를 2003 년까지 완성토록 할 방침이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 집행위/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *pro*)
+                            (VP (NP-ADV 이날/NNC)
+                                (VP (NP-OBJ *T*-1)
+                                    (VV 발표/NNC+하/XSV+은/EAN)))))
+                      (NP "/SLQ
+                          E/NFW
+                          -/SSY
+                          에듀케이션/NNC
+                          "/SRQ
+                          프로그램/NNC+을/PCA))
+              통하/VV+어/ECS))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP (S (NP-SBJ *pro*)
+                              (VP (S-COMP (NP-SBJ *pro*)
+                                          (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                         (VP (S-COMP (NP-SBJ 유럽/NPR+의/PAN
+                                                                             모든/DAN
+                                                                             학생/NNC+들/XSF+이/PCA)
+                                                                     (VP (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                                                            (VP (VP (NP-OBJ (NP (NP (NP 인터넷/NNC+과/PCJ)
+                                                                                                                    (NP 멀티미디어/NNC))
+                                                                                                                (NP 등/NNX))
+                                                                                                            (NP 정보화/NNC
+                                                                                                                기반/NNC
+                                                                                                                설비/NNC+을/PCA))
+                                                                                                    (VV 활용/NNC+하/XSV+을/EAN))
+                                                                                                (VX 수/NNX
+                                                                                                    있/VJ+는/EAN)))
+                                                                                         (NP 디지털/NNC
+                                                                                             능력/NNC+을/PCA))
+                                                                                 (VP (NP-ADV 학교/NNC+에서/PAD)
+                                                                                     (ADVP 완전히/ADV)
+                                                                                     (VP 배우/VV+고/ECS)))
+                                                                             (VP (VV 졸업/NNC+하/XSV+을/EAN)))
+                                                                         (VX 수/NNX
+                                                                             있/VJ+도록/ECS)))
+                                                             하/VV+는/EAN))
+                                                      (NP 교육/NNC
+                                                          체제/NNC+을/PCA))
+                                              (VP (NP-ADV 2003/NNU
+                                                          년/NNX+까지/PAU)
+                                                  (VP (VV 완성/NNC+하/XSV+도록/ECS)))))
+                                  하/VV+을/EAN))
+                           (NP 방침/NNC+이/CO+라/EFN+고/PAD))))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>유럽의 모든 학생들이 인터넷과 멀티미디어 등 정보화 기반 설비를 활용할 수 있는 디지털 능력을 학교에서 완전히 배우고 졸업할 수 있도록 하는 교육 체제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>2003 년까지</term>
+	    </Arg>
+	    <Rel>
+	      <term>완성토록</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>완성되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 유럽통합이 완성되는 시점과 맞물려 전후세대가 독일 정치를 이끌어 가게 됨에 따라 외교에서도 제몫을 찾으려는 움직임이 나타나고 있으며 이를 통해 국제외교에서 미국이 독점하고 있는 중재자의 역할을 자임하고 나설 것으로 보여 향후 독일의 외교 행보가 주목되고 있다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (S (S (NP-SBJ *pro*)
+            (VP (NP-COMP (S (WHNP *op*)
+                            (S (NP-SBJ 유럽/NPR+통합/NNC+이/PCA)
+                               (VP (VV 완성/NNC+되/XSV+는/EAN))))
+                         (NP 시점/NNC+과/PAD))
+                맞물리/VV+어/ECS))
+         (S (NP-SBJ *pro*)
+            (VP (S-COMP (NP-SBJ 전후/NNC+세대/NNC+이/PCA)
+			(VP (VP (VP (NP-OBJ 독일/NPR
+						정치/NNC+을/PCA)
+				    이끌/VV+어/ECS)
+				가/VX+게/ECS)
+			    되/VX+음/ENM+에/PAD))
+                따르/VV+어/ECS))
+         (S (NP-SBJ (S (NP-SBJ *pro*)
+                       (VP (NP-ADV 외교/NNC+에서/PAD+도/PAU)
+                           (VP (NP-OBJ 제몫/NNC+을/PCA)
+                               찾/VV+으려는/EAN)))
+                    (NP 움직임/NNC+이/PCA))
+            (VP (VP 나타나/VV+고/ECS)
+                있/VX+으며/ECS)))
+      (S (S (NP-SBJ *pro*)
+            (VP (NP-COMP (S (S (NP-SBJ *pro*)
+			       (VP (NP-OBJ 이/NPN+을/PCA)
+				   통하/VV+어/ECS))
+			    (S (NP-SBJ *pro*)
+			       (VP (S-COMP (NP-SBJ *pro*)
+					   (VP (NP-OBJ (S (WHNP-1 *op*)
+							  (S (NP-ADV 국제/NNC+외교/NNC+에서/PAD)
+							     (S (NP-SBJ 미국/NPR+이/PCA)
+								(VP (VP (NP-OBJ *T*-1)
+									(VV 독점/NNC+하/XSV+고/ECS))
+								    있/VX+는/EAN))))
+						       (NP (NP 중재자/NNC+의/PAN)
+							   (NP 역할/NNC+을/PCA)))
+					       (VV 자임/NNC+하/XSV+고/ECS)))
+				   나서/VV+을/EAN)))
+			 (NP 것/NNX+으로/PAD))
+                보이/VV+어/ECS))
+         (S (NP-SBJ (NP 향후/NNC)
+                    (NP (NP 독일/NPR+의/PAN)
+                        (NP 외교/NNC
+                            행보/NNC+이/PCA)))
+            (VP (VP (VV 주목/NNC+되/XSV+고/ECS))
+                있/VX+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>유럽통합</term>
+	    </Arg>
+	    <Rel>
+	      <term>완성되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

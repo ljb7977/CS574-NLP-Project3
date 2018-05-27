@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지나가</lemma>
+    <comment>Frames file for '지나가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>지나가.01</id>
+      <edef>pass</edef>
+      <roleset>
+	<role argnum="0" argrole="entity passing"/>
+	<role argnum="1" argrole="thing passed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지나가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 지역을 네가 마지막으로 지나간 게 언젠가?</text>
+	  <parse>
+(S (NP-SBJ (S (NP-OBJ-1 그/DAN 지역/NNC+을/PCA)
+	      (S (NP-SBJ  네/NPN+가/PCA)
+		 (VP (NP-ADV 마지막/NNC+으로/PAD)
+		     (VP (NP-OBJ *T*-1)
+			 지나가/VV+은/EAN))))
+	   (NP 것/NNX+이/PCA))
+   (VP (NP 언제/NPN+이/CO+은가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그 지역</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>네</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>마지막으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>지나간</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>1년이 깜박 지나갔습니다.</text>
+	  <parse>
+(S (NP-SBJ 1/NNU 년/NNX+이/PCA) 
+   (VP (ADVP 깜박/ADV) 
+       (VP 지나가/VV+았/EPF+습니다/EFN)) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>1년</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>깜박</term>
+	    </Arg>
+	    <Rel>
+	      <term>지나갔습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>입찰</lemma>
+    <comment>Frames file for '입찰' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>입찰.01</id>
+      <edef>bid</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing bidded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입찰하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>	  
+	</mapping>
+	<example>
+	  <text>그러나 한국의 대우와 극동 등이 4 천 600 만달러와 4 천 800 만달러에 입찰할 것이라는 정보가 나오자 일본업체가 정상입찰가 5 천 800 만달러보다 1 천 600 만달러를 줄인 4 천 200 만달러에 디스카운트 오퍼를 내 공사권이 일본의 하자마에 넘어갔다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ (S (NP-SBJ (NP 한국/NPR+의/PAN)
+                         (NP (NP (NP 대우/NPR+과/PCJ)
+                                 (NP 극동/NPR))
+                             (NP 등/NNX+이/PCA)))
+                 (VP (VP (NP-ADV (NP 4/NNU
+                                     천/NNU
+                                     600/NNU
+                                     만/NNU+달러/NNX+과/PCJ)
+                                 (NP 4/NNU
+                                     천/NNU
+                                     800/NNU
+                                     만/NNU+달러/NNX+에/PAD))
+                         (VP (VV 입찰/NNC+하/XSV+을/EAN)))
+                     (VX 것/NNX+이/CO+라는/EAN)))
+              (NP 정보/NNC+이/PCA))
+      (VP 나오/VV+자/ECS))
+   (S (NP-SBJ 일본/NPR+업체/NNC+이/PCA)
+      (VP (NP-ADV (S (WHNP *op*)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-ADV 정상/NNC+입찰가/NNC
+                                    5/NNU
+                                    천/NNU
+                                    800/NNU
+                                    만/NNU+달러/NNX+보다/PAD)
+                            (VP (NP-OBJ 1/NNU
+                                        천/NNU
+                                        600/NNU
+                                        만/NNU+달러/NNX+을/PCA)
+                                줄이/VV+은/EAN))))
+                  (NP 4/NNU
+                      천/NNU
+                      200/NNU
+                      만/NNU+달러/NNX+에/PAD))
+          (VP (NP-OBJ 디스카운트/NNC
+                      오퍼/NNC+을/PCA)
+              내/VV+어/ECS)))
+   (S (NP-SBJ 공사권/NNC+이/PCA)
+      (VP (NP-COMP (NP 일본/NPR+의/PAN)
+                   (NP 하자마/NPR+에/PAD))
+          넘어가/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>한국의 대우와 극동 등</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>4 천 600 만달러와 4 천 800 만달러에</term>
+	    </Arg>
+	    <Rel>
+	      <term>입찰할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

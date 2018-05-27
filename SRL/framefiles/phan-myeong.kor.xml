@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>판명</lemma>
+    <comment>Frames file for '판명' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>판명.01</id>
+      <edef>ascertain</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing ascertained"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>판명되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>피노체트 의원은 형사소추를 당하지 않을 면책특권을 박탈당한다 해도 정신상태가 재판을 받을 수 없는 경우로 판명될 경우 재판을 면할 수도 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ 피노체트/NPR
+                          의원/NNC+은/PAU)
+                  (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-OBJ 형사/NNC+소추/NNC+을/PCA)
+                                         당하/VV+지/ECS)
+                                     않/VX+을/EAN))
+                              (NP 면책/NNC+특권/NNC+을/PCA))
+                      (VV 박탈/NNC+당하/XSV+는다/EFN)))
+          하/VV+어도/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (S (NP-SBJ 정신/NNC+상태/NNC+이/PCA)
+                         (VP (NP-COMP (S (NP-SBJ *pro*)
+                                         (VP (VP (NP-OBJ 재판/NNC+을/PCA)
+                                                 받/VV+을/EAN)
+                                             (VX 수/NNX
+                                                 없/VJ+는/EAN)))
+                                      (NP 경우/NNC+으로/PAD))
+                             (VV 판명/NNC+되/XSV+을/EAN)))
+                      (NP 경우/NNC))
+              (VP (NP-OBJ 재판/NNC+을/PCA)
+                  면하/VV+을/EAN))
+          (VX 수/NNX+도/PAU
+              있/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>정신상태</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>로</f>
+	      <term>재판을 받을 수 없는 경우</term>
+	    </Arg>
+	    <Rel>
+	      <term>판명될</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

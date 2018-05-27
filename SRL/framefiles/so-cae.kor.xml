@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소재</lemma>
+    <comment>Frames file for '소재' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>소재.01</id>
+      <edef>locate</edef>
+      <roleset>
+	<role argnum="1" argrole="institution"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소재하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>네덜란드의 헤이그에 소재한 국제전범재판소는 지난해 5 월 코소보 사태와 관련해 밀로세비치 신유고연방 대통령을 기소했으며 미국 정부는 기소직후 현상금을 내걸었으나 그동안 수배전단을 배포하지는 않았었다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-8 *op*)
+                 (S (NP-SBJ *T*-8)
+                    (VP (NP-COMP (NP 네덜란드/NPR+의/PAN)
+                                 (NP 헤이그/NPR+에/PAD))
+                        (VV 소재/NNC+하/XSV+은/EAN))))
+              (NP 국제/NNC+전범/NNC+재판소/NNC+은/PAU))
+      (VP (NP-ADV 지난해/NNC
+                  5/NNU
+                  월/NNX)
+          (S (NP-SBJ *pro*)
+             (VP (NP-COMP 코소보/NPR
+                          사태/NNC+과/PAD)
+                 (VV 관련/NNC+하/XSV+어/ECS)))
+          (VP (NP-OBJ (NP 밀로세비치/NPR)
+                      (NP 신/DAN+유고/NPR+연방/NNC)
+                      (NP 대통령/NNC+을/PCA))
+              (VV 기소/NNC+하/XSV+었/EPF+으며/ECS))))
+   (S (NP-SBJ 미국/NPR
+              정부/NNC+은/PAU)
+      (VP (VP (NP-ADV 기소/NNC+직후/NNC)
+              (VP (NP-OBJ 현상금/NNC+을/PCA)
+                  내걸/VV+었/EPF+으나/ECS))
+          (VP (NP-ADV 그동안/NNC)
+              (VP (VP (NP-OBJ 수배/NNC+전단/NNC+을/PCA)
+                      (VV 배포/NNC+하/XSV+지/EFN+은/PAU))
+                  않/VX+었었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=국제전범재판소</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>네덜란드의 헤이그</term>
+	    </Arg>
+	    <Rel>
+	      <term>소재한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

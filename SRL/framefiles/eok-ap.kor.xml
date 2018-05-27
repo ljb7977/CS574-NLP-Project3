@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>억압</lemma>
+    <comment>Frames file for '억압' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>억압.01</id>
+      <edef>oppress</edef>
+      <roleset>
+	<role argnum="0" argrole="thing oppressing"/>
+	<role argnum="1" argrole="thing oppressed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>억압하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>메리 로빈슨 유엔인권고등판무관은 2 일 중국의 인권 상황이 더욱 악화되고 있으며 기본적인 자유를 억압하는 데 대한 비난들이 증대하고 있다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 메리/NPR
+           로빈슨/NPR
+           유엔/NPR+인권/NNC+고등/NNC+판무관/NNC+은/PAU)
+   (VP (NP-ADV 2/NNU
+               일/NNX)
+       (VP (S-COMP (S (NP-SBJ (NP 중국/NPR+의/PAN)
+                              (NP 인권/NNC
+                                  상황/NNC+이/PCA))
+                      (VP (VP (ADVP 더욱/ADV)
+                              (VP (VV 악화/NNC+되/XSV+고/ECS)))
+                          있/VX+으며/ECS))
+                   (S (NP-SBJ (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP-COMP (S (NP-SBJ *pro*)
+                                                    (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                                   (S (NP-SBJ *T*-1)
+                                                                      (VP (NP 기본/NNC+적/XSF+이/CO+은/EAN))))
+                                                                (NP 자유/NNC+을/PCA))
+                                                        (VV 억압/NNC+하/XSV+는/EAN)))
+                                                 (NP 데/NNX))
+                                        대하/VV+은/EAN)))
+                              (NP 비난/NNC+들/XSF+이/PCA))
+                      (VP (VP (VV 증대/NNC+하/XSV+고/ECS))
+                          있/VX+다/EFN+고/PAD)))
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>기본적인 자유</term>
+	    </Arg>
+	    <Rel>
+	      <term>억압하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

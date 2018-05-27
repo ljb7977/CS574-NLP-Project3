@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가용</lemma>
+    <comment>Frames file for '가용' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>가용.01</id>
+      <edef>available</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being available"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가용하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>연대장은 화염 방사기조를 파견하고 공중 지원이 가용하면 공중 폭격도 요구할 겁니다.</text>
+	  <parse>
+(S (S (NP-SBJ 연대장/NNC+은/PAU)
+      (VP (NP-OBJ 화염/NNC
+                  방사기조/NNC+을/PCA)
+          (VV 파견/NNC+하/XSV+고/ECS)))
+   (S (S (NP-SBJ 공중/NNC
+                 지원/NNC+이/PCA)
+         (ADJP (VJ 가용/NNC+하/XSJ+으면/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (VP (NP-OBJ 공중/NNC
+                         폭격/NNC+도/PAU)
+                 (VV 요구/NNC+하/XSV+을/EAN))
+             (VX 것/NNX+이/CO+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>공중 지원</term>
+	    </Arg>
+	    <Rel>
+	      <term>가용하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

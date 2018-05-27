@@ -1,0 +1,102 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>낭비</lemma>
+    <comment>Frames file for '낭비' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>낭비.01</id>
+      <edef>waste</edef>
+      <roleset>
+	<role argnum="0" argrole="waster"/>
+	<role argnum="1" argrole="thing wasted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>낭비하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>야전에서 탄약을 낭비하면 어떻게 되는가?</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-ADV 야전/NNC+에서/PAD)
+          (VP (NP-OBJ 탄약/NNC+을/PCA)
+              (VV 낭비/NNC+하/XSV+으면/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP-COMP 어떻게/ADV)
+          되/VV+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>야전에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>탄약</term>
+	    </Arg>
+	    <Rel>
+	      <term>낭비하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>낭비되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 사람들이 어리석게도 너무 쉽게 패스워드 등의 접속 암호를 내주기 때문에 기업들이 컴퓨터 보안에 지출하는 수백만 달러의 돈이 낭비될 수 있다고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (NP-ADV (S (NP-SBJ 사람/NNC+들/XSF+이/PCA)
+			  (VP (ADVP (ADV 어리석/VJ+게/ECS+도/PAU))
+			      (ADVP (ADVP 너무/ADV)
+				    (ADVP (ADV 쉽/VJ+게/ECS)))
+			      (VP (NP-OBJ (NP 패스워드/NNC
+						      등/NNX+의/PAN)
+					  (NP 접속/NNC
+                                                  암호/NNC+을/PCA))
+				  내주/VV+기/ENM)))
+                       (NP 때문/NNX+에/PAD))
+               (S (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ 기업/NNC+들/XSF+이/PCA)
+                                (VP (NP-COMP 컴퓨터/NNC
+                                             보안/NNC+에/PAD)
+                                    (NP-OBJ *T*-1)
+                                    (VV 지출/NNC+하/XSV+는/EAN))))
+                          (NP (NP 수/XPF+백만/NNU
+                                  달러/NNX+의/PAN)
+                              (NP 돈/NNC+이/PCA)))
+                  (VP (VP (VV 낭비/NNC+되/XSV+을/EAN))
+                      (VX 수/NNX
+                          있/VJ+다/EFN+고/PAD))))
+       (VV 지적/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>사람들이 어리석게도 너무 쉽게 패스워드 등의 접속 암호를 내주기 때문에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>기업들이 컴퓨터 보안에 지출하는 수백만 달러의 돈</term>
+	    </Arg>
+	    <Rel>
+	      <term>낭비될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

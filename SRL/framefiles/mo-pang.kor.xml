@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>모방</lemma>
+    <comment>Frames file for '모방' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>모방.01</id>
+      <edef>imitate</edef>
+      <roleset>
+	<role argnum="0" argrole="imitator"/>
+	<role argnum="1" argrole="entity imitated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>모방하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조선 인민군의 전투 차량은 소련군의 전투 차량을 모방했습니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 조선/NPR
+	       인민군/NNC+의/PCA)
+	   (NP 전투/NNC
+	       차량/NNC+은/PAU))
+   (VP (NP-OBJ (NP 소련군/NNC+의/PCA)
+	       (NP 전투/NNC
+		   차량/NNC+을/PCA))
+       (VV 모방/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>조선 인민군의 전투 차량</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>소련군의 전투 차량</term>
+	    </Arg>
+	    <Rel>
+	      <term>모방했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

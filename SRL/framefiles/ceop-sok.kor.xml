@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>접속</lemma>
+    <comment>Frames file for '접속' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>접속.01</id>
+      <edef>connect</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing connected"/>
+	<role argnum="2" argrole="connect with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>접속하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한국통신 관계자는 "유럽지역 인터넷 접속시 프랑스 텔레콤사와 한국통신 광화문국제관문국간을 직접 접속할 수 있어 이 지역 인터넷(코넷) 접속품질이 한층 향상될 것"이라며 말했다.</text>
+	  <parse>
+(S (NP-SBJ 한국/NPR+통신/NNC
+           관계자/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ *pro*)
+                  (VP (VP (NP-ADV 유럽/NPR+지역/NNC
+                                  인터넷/NNC
+                                  접속/NNC+시/XSF)
+                          (VP (NP-COMP 프랑스/NPR
+                                       텔레콤/NPR+사/XSF+과/PAD)
+                              (NP-OBJ 한국/NPR+통신/NNC
+                                      광화문/NPR+국제/NNC+관문국/NNC+간/XSF+을/PCA)
+                              (VP (ADVP 직접/ADV)
+                                  (VP (VV 접속/NNC+하/XSV+을/EAN)))))
+                      (VX 수/NNX
+                          있/VJ+어/ECS)))
+               (S (NP-SBJ 이/DAN
+                          지역/NNC
+                          인터넷/NNC
+                          (PRN -LRB-/SLQ
+                               (NP 코넷/NPR)
+                               -RRB-/SRQ)
+                          접속/NNC+품질/NNC+이/PCA)
+                  (VP (VP (ADVP 한층/ADV)
+                          (VP (VV 향상/NNC+되/XSV+을/EAN)))
+                      (VX 것/NNX)))
+               "/SRQ
+               이/CO+라며/ECS)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>유럽지역 인터넷 접속시</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>프랑스 텔레콤사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>한국통신 광화문국제관문국간</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>직접</term>
+	    </Arg>
+	    <Rel>
+	      <term>접속할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있어</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>급등</lemma>
+    <comment>Frames file for '급등' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>급등.01</id>
+      <edef>rise suddenly</edef>
+      <roleset>
+	<role argnum="1" argrole="thing rising"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>급등하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>그러나 1 월중 원유수입단가가 배럴당 25.0 달러로 작년 1 월의 11.0 달러에 비해 127 퍼센트나 급등함에 따라 총에너지수입액은 32 억 4 천만달러로 작년 동기의 16 억달러에 비해 103 퍼센트나 늘었다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ (NP 1/NNU
+                              월/NNX+중/NNX)
+                          (NP 원유/NNC+수입/NNC+단가/NNC+이/PCA))
+                  (VP (NP-COMP 배럴/NNC+당/XSF
+				   25.0/NNU
+				   달러/NNX+으로/PAD)
+                      (VP (S (NP-SBJ *pro*)
+			     (VP (NP-COMP (NP 작년/NNC
+						  1/NNU
+						  월/NNX+의/PAN)
+					  (NP 11.0/NNU
+					      달러/NNX+에/PAD))
+				 비하/VV+어/ECS))
+			  (NP-ADV 127/NNU
+				  퍼센트/NNX+이나/PAU)
+			  (VP (VV 급등/NNC+하/XSV+음/ENM+에/PAD)))))
+          따르/VV+어/ECS))
+   (S (NP-SBJ 총/XPF+에너지/NNC+수입액/NNC+은/PAU)
+      (VP (NP-COMP 32/NNU
+		   억/NNU
+		   4/NNU
+		   천만/NNU+달러/NNX+으로/PAD)
+          (VP (S (NP-SBJ *pro*)
+		 (VP (NP-COMP (NP 작년/NNC
+				      동기/NNC+의/PAN)
+			      (NP 16/NNU
+				  억/NNU+달러/NNX+에/PAD))
+		     비하/VV+어/ECS))
+	      (NP-ADV 103/NNU
+		      퍼센트/NNX+이나/PAU)
+	      (VP 늘/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>1 월중 원유수입단가</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>배럴당 25.0 달러</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>작년 1 월의 11.0 달러에 비해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>127 퍼센트나</term>
+	    </Arg>
+	    <Rel>
+	      <term>급등함에</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

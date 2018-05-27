@@ -1,0 +1,172 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>야기</lemma>
+    <comment>Frames file for '야기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>야기.01</id>
+      <edef>induce</edef>
+      <roleset>
+	<role argnum="0" argrole="thing inducing"/>
+	<role argnum="1" argrole="thing induced"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>야기하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 샤울 모파즈 이스라엘군 참모총장은 팔레스타인의 일방적 독립국 선포가 역내에 심각한 분쟁을 야기할 것이라고 거듭 경고했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ (NP 샤울/NPR
+                  모파즈/NPR)
+              (NP 이스라엘/NPR+군/NNC
+                  참모/NNC+총장/NNC+은/PAU))
+      (VP (S-COMP (NP-SBJ (NP 팔레스타인/NPR+의/PAN)
+                          (NP 일방/NNC+적/XSF
+                              독립국/NNC
+                              선포/NNC+이/PCA))
+                  (VP (VP (NP-ADV 역내/NNC+에/PAD)
+                          (VP (NP-OBJ (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (ADJP 심각하/VJ+은/EAN)))
+                                      (NP 분쟁/NNC+을/PCA))
+                              (VV 야기/NNC+하/XSV+을/EAN)))
+                      (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+          (VP (ADVP 거듭/ADV)
+              (VP (VV 경고/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>팔레스타인의 일방적 독립국 선포</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>역내에 심각한 분쟁</term>
+	    </Arg>
+	    <Rel>
+	      <term>야기할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>야기되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인도네시아 환경당국은 지난 97 년과 98 년 발생했던 것 같은 대규모 연무로 인한 재해가 또다시 야기될 위험이 있다고 6 일 경고했다.</text>
+	  <parse>
+(S (NP-SBJ 인도네시아/NPR
+           환경/NNC+당국/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ (S (NP-SBJ (S (WHNP-3 *op*)
+                                     (S (NP-SBJ *T*-3)
+                                        (VP (NP-COMP (S (WHNP-2 *op*)
+                                                        (S (NP-SBJ *T*-2)
+                                                           (ADJP (NP-COMP (S (WHNP-1 *op*)
+                                                                             (S (NP-SBJ *T*-1)
+                                                                                (VP (NP-ADV (NP 지난/DAN
+                                                                                                97/NNU
+                                                                                                년/NNX+과/PCJ)
+                                                                                            (NP 98/NNU
+                                                                                                년/NNX))
+                                                                                    (VP (VV 발생/NNC+하/XSV+었/EPF+던/EAN)))))
+                                                                          (NP 것/NNX))
+                                                                 같/VJ+은/EAN)))
+                                                     (NP 대규모/NNC
+                                                         연무/NNC+으로/PAD))
+                                            인하/VV+은/EAN)))
+                                  (NP 재해/NNC+이/PCA))
+                          (VP (ADVP 또다시/ADV)
+                              (VP (VV 야기/NNC+되/XSV+을/EAN))))
+                       (NP 위험/NNC+이/PCA))
+               (ADJP 있/VJ+다/EFN+고/PAD))
+       (VP (NP-ADV 6/NNU
+                   일/NNX)
+           (VP (VV 경고/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>지난 97 년과 98 년 발생했던 것 같은 대규모 연무로 인한 재해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>또다시</term>
+	    </Arg>
+	    <Rel>
+	      <term>야기될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>야기시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>물론, 다음날 리오넬 조스팽 총리와의 회담에서 이 문제가 거론되긴 했지만 정상회담을 적극 홍보해 보려는 보좌팀의 지나친 의욕이 문제를 야기시켰다는 자성의 목소리도 나왔다.</text>
+	  <parse>
+(S (S (ADVP 물론/ADV)
+      ,/SCM
+      (NP-ADV 다음날/NNC)
+      (NP-ADV (NP 리오넬/NPR
+                  조스팽/NPR
+                  총리/NNC+과/PAD+의/PAN)
+              (NP 회담/NNC+에서/PAD))
+      (S (NP-SBJ 이/DAN
+                 문제/NNC+이/PCA)
+         (VP (VP (VV 거론/NNC+되/XSV+기/ENM+은/PAU))
+             하/VX+었/EPF+지만/ECS)))
+   (S (NP-SBJ (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (VP (VP (NP-OBJ 정상/NNC+회담/NNC+을/PCA)
+                                           (VP (ADVP 적극/ADV)
+                                               (VP (VV 홍보/NNC+하/XSV+어/ECS))))
+                                       보/VX+으려는/EAN)))
+                             (NP 보좌팀/NNC+의/PAN))
+                         (NP (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (VP 지나치/VV+은/EAN)))
+                             (NP 의욕/NNC+이/PCA)))
+                 (VP (NP-OBJ 문제/NNC+을/PCA)
+                     (VV 야기/NNC+시키/XSV+었/EPF+다는/EAN)))
+              (NP (NP 자성/NNC+의/PAN)
+                  (NP 목소리/NNC+도/PAU)))
+      (VP 나오/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>정상회담을 적극 홍보해 보려는 보좌팀의 지나친 의욕</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>야기시켰다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

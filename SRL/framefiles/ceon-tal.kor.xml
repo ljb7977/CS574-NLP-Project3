@@ -1,0 +1,138 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전달</lemma>
+    <comment>Frames file for '전달' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>전달.01</id>
+      <edef>transmit</edef>
+      <roleset>
+	<role argnum="0" argrole="sender"/>
+	<role argnum="1" argrole="thing sent"/>
+	<role argnum="2" argrole="sent to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전달하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전투시에 주파수를 명문으로 전달하는 일은 없읍니다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+              (VP (NP-ADV 전투/NNC
+                          시/NNX+에/PAD)
+                  (VP (NP-OBJ 주파수/NNC+을/PCA)
+                      (VP (NP-ADV 명문/NNC+으로/PAD)
+                          (VP (VV 전달/NNC+하/XSV+는/EAN))))))
+           (NP 일/NNC+은/PAU))
+   (ADJP 없/VJ+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전투시에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>주파수</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>명문으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>전달하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전달되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>예비 주파수로 바꾸라는 명령은 어떻게 전달되지?</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+              (VP (NP-OBJ *pro*)
+                  (NP-COMP 예비/NNC
+                           주파수/NNC+으로/PAD)
+                  바꾸/VV+으라는/EAN))
+           (NP 명령/NNC+은/PAU))
+   (VP (ADVP 어떻게/ADV)
+       (VP (VV 전달/NNC+되/XSV+지/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>예비 주파수로 바꾸라는 명령</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어떻게</term>
+	    </Arg>
+	    <Rel>
+	      <term>전달되지</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전달받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>맥파커 대변인은 BAe 측으로부터 기금을 전달받는 대로 연구소 건물을 착공할 예정이며 몇년안에 완공을 보게 될 것이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 맥파커/NPR
+           대변인/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP (S (NP-SBJ *pro*)
+                             (VP (NP-ADV (S (NP-SBJ *pro*)
+                                            (VP (NP-COMP BAe/NFW
+                                                         측/NNX+으로부터/PAD)
+                                                (NP-OBJ 기금/NNC+을/PCA)
+                                                (VV 전달/NNC+받/XSV+는/EAN)))
+                                         (NP 대로/NNX))
+                                 (VP (NP-OBJ 연구소/NNC
+                                             건물/NNC+을/PCA)
+                                     (VV 착공/NNC+하/XSV+을/EAN))))
+                          (NP 예정/NNC+이/CO+으며/ECS))))
+               (S (NP-SBJ *pro*)
+                  (VP (VP (VP (NP-ADV 몇/NNU+년/NNX+안/NNX+에/PAD)
+			      (VP (NP-OBJ 완공/NNC+을/PCA)
+				  보/VV+게/ECS))
+			  되/VX+을/EAN)
+                      (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>으로부터</f>
+	      <term>BAe 측</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>기금</term>
+	    </Arg>
+	    <Rel>
+	      <term>전달받는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

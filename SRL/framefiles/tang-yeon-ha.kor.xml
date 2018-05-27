@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>당연하</lemma>
+    <comment>Frames file for '당연하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>당연하.01</id>
+      <edef>natural</edef>
+      <roleset>
+	<role argnum="1" argrole="proposition"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>당연하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>재일 한국인의 군인, 군무원을 지원하고 있는 시민단체들은 "일본인과 동등한 보상을 받는 것이 당연하다"며 일본정부의 성의있는 태도를 촉구하고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-OBJ (NP 재/XPF+일/NPR
+                                     한국인/NNC+의/PAN)
+                                 (NP (NP 군인/NNC)
+                                     ,/SCM
+                                     (NP 군무원/NNC+을/PCA)))
+                         (VV 지원/NNC+하/XSV+고/ECS))
+                     있/VX+는/EAN)))
+           (NP 시민/NNC+단체/NNC+들/XSF+은/PAU))
+   (VP (VP (S "/SLQ
+              (NP-SBJ (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (ADJP (NP-COMP 일본인/NNC+과/PAD)
+                                                 (VJ 동등/NNC+하/XSJ+은/EAN))))
+                                     (NP 보상/NNC+을/PCA))
+                             받/VV+는/EAN))
+                      (NP 것/NNX+이/PCA))
+              (ADJP 당연하/VJ+다/EFN)
+              "/SRQ
+              며/ECS)
+           (VP (NP-OBJ (NP 일본/NPR+정부/NNC+의/PAN)
+                       (NP (S (WHNP-3 *op*)
+                              (S (NP-SBJ *T*-3)
+                                 (ADJP (NP-COMP 성의/NNC)
+                                       있/VJ+는/EAN)))
+                           (NP 태도/NNC+을/PCA)))
+               (VV 촉구/NNC+하/XSV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>일본인과 동등한 보상을 받는 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>당연하다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

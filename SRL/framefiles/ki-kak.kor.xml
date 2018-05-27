@@ -1,0 +1,121 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기각</lemma>
+    <comment>Frames file for '기각' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기각.01</id>
+      <edef>dismiss</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="suit"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기각하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 로스앤젤레스 민사지법은 14 일 지난달 회장선거에서 패한 스카렛 엄씨가 제기한 LA 한인회(회장 서영석) 업무정지 가처분 신청을 기각했다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR
+           로스앤젤레스/NPR
+           민사/NNC+지법/NNC+은/PAU)
+   (VP (NP-ADV 14/NNU
+               일/NNX)
+       (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP (NP-ADV 지난달/NNC
+                                                   회장/NNC+선거/NNC+에서/PAD)
+                                           (VP 패하/VV+은/EAN))))
+                                 (NP 스카렛/NPR
+                                     엄/NPR+씨/NNX+이/PCA))
+                         (VP (NP-OBJ *T*-1)
+                             (VV 제기/NNC+하/XSV+은/EAN))))
+                   (NP LA/NFW
+                       한인회/NPR
+                       (PRN -LRB-/SLQ
+                            회장/NNC
+                            서영석/NPR
+                            -RRB-/SRQ)
+                       업무/NNC+정지/NNC
+                       가처분/NNC
+                       신청/NNC+을/PCA))
+           (VV 기각/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>미국 로스앤젤레스 민사지법</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>14 일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지난달 회장선거에서 패한 스카렛 엄씨가 제기한 LA 한인회(회장 서영석) 업무정지 가처분 신청</term>
+	    </Arg>
+	    <Rel>
+	      <term>기각했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>기각되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>스트로 장관은 또 망명이 기각된 사람들을 아프가니스탄으로 강제송환하지 않고 귀국을 원할 경우, 귀국할 수 있도록 지원키로 했다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 스트로/NPR
+           장관/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (S-COMP (NP-SBJ *pro*)
+                               (VP (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                      (S (NP-SBJ *T*-1)
+                                                         (S (NP-SBJ 망명/NNC+이/PCA)
+                                                            (VP (VV 기각/NNC+되/XSV+은/EAN)))))
+                                                   (NP 사람/NNC+들/XSF+을/PCA))
+                                           (NP-COMP 아프가니스탄/NPR+으로/PAD)
+                                           (VP (NP-ADV 강제/NNC)
+                                               (VP (VV 송환/NNC+하/XSV+지/ECS))))
+                                       않/VX+고/ECS)
+                                   (VP (S-COMP (NP-ADV (S (NP-SBJ *pro*)
+                                                          (VP (NP-OBJ 귀국/NNC+을/PCA)
+                                                              원하/VV+을/EAN))
+                                                       (NP 경우/NNC))
+                                               ,/SCM
+                                               (S (NP-SBJ *pro*)
+                                                  (VP (VP (VV 귀국/NNC+하/XSV+을/EAN))
+                                                      (VX 수/NNX
+                                                          있/VJ+도록/ECS))))
+                                       (VV 지원/NNC+하/XSV+기/ENM+으로/PAD))))
+                       하/VV+었/EPF+다/EFN+고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=사람들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>망명</term>
+	    </Arg>
+	    <Rel>
+	      <term>기각된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

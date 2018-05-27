@@ -1,0 +1,93 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>저지</lemma>
+    <comment>Frames file for '저지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>저지.01</id>
+      <edef>block</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing blocked"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>저지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>1 대대는 최대한의 긴장 사격으로 적의 돌파를 저지했습니다.</text>
+	  <parse>
+(S (NP-SBJ 1/NNU
+           대대/NNC+은/PAU)
+   (VP (NP-ADV (NP 최대한/NNC+의/PAN)
+               (NP 긴장/NNC
+                   사격/NNC+으로/PAD))
+       (VP (NP-OBJ (NP 적/NNC+의/PAN)
+                   (NP 돌파/NNC+을/PCA))
+           (VV 저지/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>1 대대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>최대한의 긴장 사격으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>적의 돌파</term>
+	    </Arg>
+	    <Rel>
+	      <term>저지했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>저지되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>만약 어떤 이유로 공격이 저지되면 우리는 보통 측면 이동을 실시합니다.</text>
+	  <parse>
+(S (S (ADVP 만약/ADV)
+      (NP-ADV 어떤/DAN
+              이유/NNC+으로/PAD)
+      (S (NP-SBJ 공격/NNC+이/PCA)
+         (VP (VV 저지/NNC+되/XSV+으면/ECS))))
+   (S (NP-SBJ 우리/NPN+은/PAU)
+      (VP (ADVP 보통/ADV)
+          (VP (NP-OBJ 측면/NNC
+                      이동/NNC+을/PCA)
+              (VV 실시/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>만약</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>어떤 이유로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>공격</term>
+	    </Arg>
+	    <Rel>
+	      <term>저지되면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,96 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>취합</lemma>
+    <comment>Frames file for '취합' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>취합.01</id>
+      <edef>collect</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing collected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>취합하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>FRB가 전국 12 개 주에서 1 월 중순 - 2 월 29 일 사이에 취합한 경제관련 정보를 토대로 분석한 보고서에 따르면, 미국 경제는 지난 1 월 말과 2 월에 실질적인 성장세를 보인 가운데 노동력 부족현상으로 인한 임금인상 압박을 받았다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ FRB/NFW+이/PCA)
+                      (VP (NP-ADV (NP-OBJ (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *pro*)
+                                                (VP (NP-ADV 전국/NNC
+                                                            12/NNU
+                                                            개/NNX
+                                                            주/NNC+에서/PAD)
+                                                    (NP-ADV 1/NNU
+                                                            월/NNX
+                                                            중순/NNC
+                                                            -/SSY
+                                                            2/NNU
+                                                            월/NNX
+                                                            29/NNU
+                                                            일/NNX
+                                                            사이/NNC+에/PAD)
+                                                    (VP (NP-OBJ *T*-1)
+                                                        (VV 취합/NNC+하/XSV+은/EAN)))))
+                                          (NP 경제/NNC+관련/NNC
+                                              정보/NNC+을/PCA))
+                                  토대/NNC+으로/PAD)
+                          (VP (NP-OBJ *pro*)
+                              (VV 분석/NNC+하/XSV+은/EAN))))
+                   (NP 보고서/NNC+에/PAD))
+          따르/VV+으면/ECS))
+   ,/SCM
+   (S (NP-SBJ 미국/NPR
+              경제/NNC+은/PAU)
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (NP-ADV (NP 지난/DAN
+                                     1/NNU
+                                     월/NNX
+                                     말/NNX+과/PCJ)
+                                 (NP 2/NNU
+                                     월/NNX+에/PAD))
+                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (VP (NP 실질/NNC+적/XSF+이/CO+은/EAN))))
+                                     (NP 성장세/NNC+을/PCA))
+                             보이/VV+은/EAN)))
+                  (NP 가운데/NNC))
+          (VP (NP-OBJ (S (WHNP-3 *op*)
+                         (S (NP-SBJ *T*-3)
+                            (VP (NP-COMP 노동력/NNC
+                                         부족/NNC+현상/NNC+으로/PAD)
+                                인하/VV+은/EAN)))
+                      (NP 임금/NNC+인상/NNC
+                          압박/NNC+을/PCA))
+              받/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>전국 12 개 주에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>1 월 중순 - 2 월 29 일 사이에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=경제관련 정보</term>
+	    </Arg>
+	    <Rel>
+	      <term>취합한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

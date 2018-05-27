@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>단언</lemma>
+    <comment>Frames file for '단언' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>단언.01</id>
+      <edef>affirm</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing affirmed, statement or proposition"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>단언하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>세계 석유시장은 수급의 통상적인 규칙이 제대로 작용하지 않는 곳으로 고유가 현상이 단기간에 그칠 것이라고 단언할 수는 없다고 폴 크루그먼 매사추세츠공대(MIT) 교수가 5 일 지적했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ 세계/NNC
+                        석유/NNC+시장/NNC+은/PAU)
+                (VP (NP (S (WHNP *op*)
+                           (S (NP-SBJ (NP 수급/NNC+의/PAN)
+                                      (NP (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP 통상/NNC+적/XSF+이/CO+은/EAN))))
+                                          (NP 규칙/NNC+이/PCA)))
+                              (VP (VP (ADVP 제대로/ADV)
+                                      (VP (VV 작용/NNC+하/XSV+지/ECS)))
+                                  않/VX+는/EAN)))
+                        (NP 곳/NNC+으로/PAD))))
+             (S (NP-SBJ *pro*)
+                (VP (VP (S-COMP (NP-SBJ 고유가/NNC
+                                        현상/NNC+이/PCA)
+                                (VP (VP (NP-ADV 단기간/NNC+에/PAD)
+                                        (VP 그치/VV+을/EAN))
+                                    (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+                        (VV 단언/NNC+하/XSV+을/EAN))
+                    (VX 수/NNX+은/PAU
+                        없/VJ+다/EFN+고/PAD))))
+   (S (NP-SBJ 폴/NPR
+              크루그먼/NPR
+              매사추세츠/NPR+공대/NNC
+              (PRN -LRB-/SLQ
+                   MIT/NFW
+                   -RRB-/SRQ)
+              교수/NNC+이/PCA)
+      (VP (NP-ADV 5/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              (VV 지적/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>세계 석유시장은 수급의 통상적인 규칙이 제대로 작용하지 않는 곳으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>고유가 현상이 단기간에 그칠 것이라</term>
+	    </Arg>
+	    <Rel>
+	      <term>단언할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수는 없다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

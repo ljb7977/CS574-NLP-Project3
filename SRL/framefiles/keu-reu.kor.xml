@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>그르</lemma>
+    <comment>Frames file for '그르' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>그르.01</id>
+      <edef>wrong</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being wrong"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>그르다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>고어 부통령은 신념이나 가치와 관련, 진실을 파악하고 있다는 확신이 설 경우에만 그 옳고 그름을 말하며 그의 세계에 본능이나 충동이 차지할 자리는 없다는 설명이다.</text>
+	  <parse>
+(S (S (NP-SBJ 고어/NPR
+              부통령/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP (NP 신념/NNC+이나/PCJ)
+                          (NP 가치/NNC+과/PAD))
+                 (VV 관련/NNC)))
+          ,/SCM
+          (NP-ADV (S (NP-SBJ (S (NP-SBJ *pro*)
+                                (VP (VP (NP-OBJ 진실/NNC+을/PCA)
+                                        (VV 파악/NNC+하/XSV+고/ECS))
+                                    있/VX+다는/EAN))
+                             (NP 확신/NNC+이/PCA))
+                     (VP 서/VV+을/EAN))
+                  (NP 경우/NNC+에/PAD+만/PAU))
+          (VP (S-OBJ (NP-SBJ 그/NPN)
+		     (ADJP (ADJP 옳/VJ+고/ECS)
+			   (ADJP 그르/VJ+음/ENM+을/PCA)))
+              말하/VV+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-COMP-2 그/NPN+의/PAN
+                            세계/NNC+에/PAD)
+                 (S (NP-SBJ (S (WHNP-1 *op*)
+                               (S (NP-SBJ (NP 본능/NNC+이나/PCJ)
+                                          (NP 충동/NNC+이/PCA))
+                                  (VP (NP-OBJ *T*-1)
+                                      (VV 차지/NNC+하/XSV+을/EAN))))
+                            (NP 자리/NNC+은/PAU))
+                    (ADJP (NP-COMP *T*-2)
+                          없/VJ+다는/EAN)))
+              (NP 설명/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>그</term>
+	    </Arg>
+	    <Rel>
+	      <term>그름을</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

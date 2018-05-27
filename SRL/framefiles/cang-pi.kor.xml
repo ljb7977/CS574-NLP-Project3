@@ -1,0 +1,172 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>장비</lemma>
+    <comment>Frames file for '장비' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>장비.01</id>
+      <edef>equip</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="equipment"/>
+	<role argnum="2" argrole="entity getting equipment"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>장비하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희 중대는 하전사마다 7.62mm AKM (아까엠) 보총을 장비했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+           중대/NNC+은/PAU)
+   (VP (NP-ADV 하전사/NNC+마다/PAU)
+       (VP (NP-OBJ 7.62/NNU
+                   mm/NFW
+                   AKM/NFW
+                   (PRN -LRB-/SLQ
+                        아까엠/NNC
+                        -RRB-/SRQ)
+                   보총/NNC+을/PCA)
+           (VV 장비/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저희 중대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>마다</f>
+	      <term>하전사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>7.62mm AKM (아까엠) 보총</term>
+	    </Arg>
+	    <Rel>
+	      <term>장비했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>장비하다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조 대위, 귀관이 조금 전에 귀관의 탱크가 에르-130과 에르-123 무전기를 장비했다고 말했죠.</text>
+	  <parse>
+(S (NP-VOC 조/NPR
+           대위/NNC)
+   ,/SCM
+   (S (NP-SBJ 귀관/NPN+이/PCA)
+      (VP (NP-ADV 조금/NNC
+                  전/NNC+에/PAD)
+          (VP (S-COMP (NP-SBJ (NP 귀관/NPN+의/PAN)
+                              (NP 탱크/NNC+이/PCA))
+                      (VP (NP-OBJ (NP 에르-130/NNC+과/PCJ)
+                                  (NP 에르-123/NNC
+                                      무전기/NNC+을/PCA))
+                          (VV 장비/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))
+              말하/VV+었/EPF+죠/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>가</f>
+	      <term>귀관의 탱크</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>에르-130과 에르-123 무전기</term>
+	    </Arg>
+	    <Rel>
+	      <term>장비했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>장비되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>예, 3개 포대는 37 미리와 57 미리 자동 고사포 두 가지로 장비되어 있습니다.</text>
+	  <parse>
+(S (INTJ 예/IJ)
+   ,/SCM
+   (S (NP-SBJ 3/NNU
+	      개/NNX
+	      포대/NNC+는/PAU)
+      (VP (VP (NP-COMP (NP (NP 37/NNU
+		 	       미리/NNX+와/PCJ)
+		           (NP 57/NNU
+			       미리/NNX
+			       자동/NNC
+			       고사포/NNC))
+		       (NP 두/NNU
+			   가지/NNX+로/PAD))
+	      (VV 장비/NNC+되/XSV+어/EAU))
+	  있/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>예</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>는</f>
+	      <term>3개 포대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>로</f>
+	      <term>37 미리와 57 미리 자동 고사포 두 가지</term>
+	    </Arg>
+	    <Rel>
+	      <term>장비되어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>장비되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>잠수함에 장비된 미사일이 발사되었다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=미사일</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>잠수함</term>
+	    </Arg>
+	    <Rel>
+	      <term>장비된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

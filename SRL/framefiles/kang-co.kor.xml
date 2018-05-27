@@ -1,0 +1,144 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>강조</lemma>
+    <comment>Frames file for '강조' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>강조.01</id>
+      <edef>emphasize</edef>
+      <roleset>
+	<role argnum="0" argrole="emphasizer"/>
+	<role argnum="1" argrole="thing emphasized"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>강조하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>공격 시엔 후방 지원이 전술 상황에 신속히 적응할 것을 강조한다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 공격/NNC
+               시/NNX+에/PAD+은/PAU)
+       (VP (NP-OBJ (S (NP-SBJ 후방/NNC
+                              지원/NNC+이/PCA)
+                      (VP (NP-COMP 전술/NNC
+                                   상황/NNC+에/PAD)
+                          (VP (ADVP 신속히/ADV)
+                              (VP (VV 적응/NNC+하/XSV+을/EAN)))))
+                   (NP 것/NNX+을/PCA))
+           (VV 강조/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>공격 시엔</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>후방 지원이 전술 상황에 신속히 적응할 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>강조한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>야당은 국민들에게 정부의 대북 정책의 실패를 강조했다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>야당</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>국민들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>정부의 대북 정책의 실패</term>
+	    </Arg>
+	    <Rel>
+	      <term>강조했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>강조하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>야당은 국민들에게 정부의 대북 정책이 실패했다고 강조했다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>야당</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>국민들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>정부의 대북 정책이 실패했다</term>
+	    </Arg>
+	    <Rel>
+	      <term>강조했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>강조되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>포병의 임무를 논할 때는 지원 임무가 특히 강조된다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (NP 포병/NNC+의/PAN)
+                             (NP 임무/NNC+을/PCA))
+                     논하/VV+을/EAN)))
+           (NP 때/NNC+은/PAU))
+   (S (NP-SBJ 지원/NNC
+              임무/NNC+이/PCA)
+      (VP (ADVP 특히/ADV)
+          (VP (VV 강조/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>포병의 임무를 논할 때는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>지원 임무</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Rel>
+	      <term>강조된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>
+

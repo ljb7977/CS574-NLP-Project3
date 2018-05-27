@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불용</lemma>
+    <comment>Frames file for '불용' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불용.01</id>
+      <edef>disallow</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="action or thing forbidden"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불용하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 대통령은 이와 함께 대통령에 취임한 후 북한의 무력도발은 불용하되 흡수통일을 추구하지 않으며 남북한이 화해와 협력을 하자는 대북 3 원칙을 지켜 왔다면서 "이러한 제안은 북한에도 도움이 되고 우리에 이익이 되는 윈-윈 정책"이라고 강조했다.</text>
+	  <parse>
+(S (S (NP-SBJ 김/NPR
+              대통령/NNC+은/PAU)
+      (VP (VP (ADVP (NP-COMP 이/NPN+과/PAD)
+                    함께/ADV)
+              (NP-ADV (S (NP-SBJ *pro*)
+                         (VP (NP-COMP 대통령/NNC+에/PAD)
+                             (VV 취임/NNC+하/XSV+은/EAN)))
+                      (NP 후/NNC))
+              (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ (NP 북한/NPR+의/PAN)
+                                            (NP 무력/NNC+도발/NNC+은/PAU))
+                                    (VV 불용/NNC+하/XSV+으되/ECS)))
+                             (S (NP-SBJ *pro*)
+                                (VP (VP (NP-OBJ 흡수/NNC+통일/NNC+을/PCA)
+                                        (VV 추구/NNC+하/XSV+지/ECS))
+                                    않/VX+으며/ECS))
+                             (S (NP-SBJ 남북한/NPR+이/PCA)
+                                (VP (NP-OBJ (NP 화해/NNC+과/PCJ)
+                                            (NP 협력/NNC+을/PCA))
+                                    하/VV+자는/EAN)))
+                          (NP 대/XPF+북/NPR
+                              3/NNU
+                              원칙/NNC+을/PCA))
+                  지키/VV+어/ECS))
+          오/VX+었/EPF+다면서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP "/SLQ
+                  (NP-SBJ 이러한/DAN
+                          제안/NNC+은/PAU)
+                  (VP (NP (S (S (NP-COMP-1 북한/NPR+에/PAD+도/PAU)
+                                (S (NP-SBJ 도움/NNC+이/PCA)
+                                   (VP (NP-COMP *T*-1)
+                                       되/VV+고/ECS)))
+                             (S (NP-COMP-2 우리/NPN+에/PAD)
+                                (S (NP-SBJ 이익/NNC+이/PCA)
+                                   (VP (NP-COMP *T*-2)
+                                       되/VV+는/EAN))))
+                          (NP 윈/NNC
+                              -/SSY
+                              윈/NNC
+                              정책/NNC)))
+                  "/SRQ
+                  이/CO+라/EFN+고/PAD)
+          (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>북한의 무력도발</term>
+	    </Arg>
+	    <Rel>
+	      <term>불용하되</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>입대</lemma>
+    <comment>Frames file for '입대' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>입대.01</id>
+      <edef>enter the military</edef>
+      <roleset>
+	<role argnum="0" argrole="person"/>
+	<role argnum="1" argrole="the military"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입대하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한에서는 시민들이 군에 입대하기 전에 무슨 군사 훈련을 받는가?</text>
+	  <parse>
+(S (NP-ADV 북한/NPR+에서/PAD+은/PAU)
+   (S (NP-SBJ 시민/NNC+들/XSF+이/PCA)
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 군/NNC+에/PAD)
+                         (VV 입대/NNC+하/XSV+기/ENM)))
+                  (NP 전/NNC+에/PAD))
+          (VP (NP-OBJ-LV 무슨/DAN
+                         군사/NNC
+                         훈련/NNC+을/PCA)
+              (LV 받/VV+는가/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>군</term>
+	    </Arg>
+	    <Rel>
+	      <term>입대하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

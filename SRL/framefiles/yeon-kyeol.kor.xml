@@ -1,0 +1,97 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>연결</lemma>
+    <comment>Frames file for '연결' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>연결.01</id>
+      <edef>connect</edef>
+      <roleset>
+	<role argnum="0" argrole="entity connecting"/>
+	<role argnum="1" argrole="thing connected"/>
+	<role argnum="2" argrole="connected with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>연결하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>분대 진지를 인접 분대 진지와 연결하기 위해 연결호를 구축합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-OBJ (NP-SBJ *pro*)
+                     (VP (NP-OBJ 분대/NNC
+                                 진지/NNC+을/PCA)
+                         (NP-COMP 인접/NNC
+                                  분대/NNC
+                                  진지/NNC+과/PAD)
+                         (VV 연결/NNC+하/XSV+기/ENM)))
+              위하/VV+어/ECS))
+       (VP (NP-OBJ 연결호/NNC+을/PCA)
+           (VV 구축/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>분대 진지</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>인접 분대 진지</term>
+	    </Arg>
+	    <Rel>
+	      <term>연결하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>연결되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>피지원 부대는 어느 부대들과 지선으로 연결돼 있는가?</text>
+	  <parse>
+(S (NP-SBJ 피지원/NNC
+           부대/NNC+은/PAU)
+   (VP (VP (NP-COMP 어느/DAN
+                    부대/NNC+들/XSF+과/PAD)
+           (VP (NP-ADV 지선/NNC+으로/PAD)
+               (VP (VV 연결/NNC+되/XSV+어/ECS))))
+       있/VX+는가/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>피지원 부대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>어느 부대들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>지선으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>연결돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는가</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

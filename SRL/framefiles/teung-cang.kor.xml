@@ -1,0 +1,134 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>등장</lemma>
+    <comment>Frames file for '등장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>등장.01</id>
+      <edef>appear</edef>
+      <roleset>
+	<role argnum="1" argrole="entity appearing"/>
+	<role argnum="2" argrole="location"/>
+	<role argnum="3" argrole="attribute of Arg1"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>등장하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>전문가들은 북한의 개방은 4.13 한국총선이나 11 월의 미국 대통령선거에서 북한의 핵무기 계획 및 호전적 태도가 선거이슈로 등장하는 것을 막기 위한 단기적 책략이라고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 전문가/NNC+들/XSF+은/PAU)
+   (VP (S-COMP (NP-SBJ (NP 북한/NPR+의/PAN)
+                       (NP 개방/NNC+은/PAU))
+               (VP (NP (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (S-OBJ (NP-SBJ *pro*)
+                                        (VP (NP-OBJ (S (NP-ADV (NP 4.13/NNU
+                                                                   한국/NPR+총선/NNC+이나/PCJ)
+                                                               (NP (NP 11/NNU
+                                                                       월/NNX+의/PAN)
+                                                                   (NP 미국/NPR
+                                                                       대통령/NNC+선거/NNC+에서/PAD)))
+                                                       (S (NP-SBJ (NP 북한/NPR+의/PAN)
+                                                                  (NP (NP 핵무기/NNC
+                                                                          계획/NNC)
+                                                                      (ADCP 및/ADC)
+                                                                      (NP 호전/NNC+적/XSF
+                                                                          태도/NNC+이/PCA)))
+                                                          (VP (NP-COMP 선거/NNC+이슈/NNC+으로/PAD)
+                                                              (VV 등장/NNC+하/XSV+는/EAN))))
+                                                    (NP 것/NNX+을/PCA))
+                                            막/VV+기/ENM))
+                                 위하/VV+은/EAN)))
+                       (NP 단기/NNC+적/XSF
+                           책략/NNC+이/CO+라/EFN+고/PAD))))
+       (VV 지적/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>4.13 한국총선이나 11 월의 미국 대통령선거에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>북한의 핵무기 계획 및 호전적 태도</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>선거이슈</term>
+	    </Arg>
+	    <Rel>
+	      <term>등장하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>공화당측 이번 선거에서 플로리다주 1 석만 신인이 등장하고 나머지 의석에서는 기존 의원들이 재출마에 도전하지만 미시간과 펜실베이니아, 워싱턴 등 9 개주에서 현역의원들이 공화당 내부나 민주당측의 강력한 도전을 받아 당선이 불투명한 상태에 있는 것으로 전해졌다.</text>
+	  <parse>
+(S (NP-SBJ 공화당/NPR+측/XSF)
+   (VP (NP-COMP (S (NP-ADV 이번/NNC
+                           선거/NNC+에서/PAD)
+                   (S (NP-COMP-2 플로리다/NPR+주/NNC
+                                 1/NNU
+                                 석/NNX+만/PAU)
+                      (S (NP-SBJ 신인/NNC+이/PCA)
+                         (VP (NP-COMP *T*-2)
+                             (VV 등장/NNC+하/XSV+고/ECS))))
+                   (S (NP-ADV 나머지/NNC
+                              의석/NNC+에서/PAD+은/PAU)
+                      (S (NP-SBJ 기존/NNC
+                                 의원/NNC+들/XSF+이/PCA)
+                         (VP (NP-COMP 재출마/NNC+에/PAD)
+                             (VV 도전/NNC+하/XSV+지만/ECS))))
+                   (S (NP-ADV (NP (NP (NP 미시간/NPR+과/PCJ)
+                                      (NP 펜실베이니아/NPR)
+                                      ,/SCM
+                                      (NP 워싱턴/NPR))
+                                  (NP 등/NNX))
+                              (NP 9/NNU
+                                  개/NNX+주/NNC+에서/PAD))
+                      (S (NP-SBJ 현역/NNC+의원/NNC+들/XSF+이/PCA)
+                         (ADJP (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ (NP (NP 공화당/NPR
+                                                      내부/NNC+이나/PCJ)
+                                                  (NP 민주당/NPR+측/XSF+의/PAN))
+                                              (NP (S (WHNP-1 *op*)
+                                                     (S (NP-SBJ *T*-1)
+                                                        (ADJP 강력하/VJ+은/EAN)))
+                                                  (NP 도전/NNC+을/PCA)))
+                                      받/VV+어/ECS))
+                               (ADJP (NP-COMP (S (NP-SBJ 당선/NNC+이/PCA)
+                                                 (ADJP (VJ 불투명/NNC+하/XSJ+은/EAN)))
+                                              (NP 상태/NNC+에/PAD))
+                                     있/VJ+는/EAN)))))
+                (NP 것/NNX+으로/PAD))
+       (VV 전하/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>이번 선거에서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>만</f>
+	      <term>플로리다주 1 석</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>신인</term>
+	    </Arg>
+	    <Rel>
+	      <term>등장하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

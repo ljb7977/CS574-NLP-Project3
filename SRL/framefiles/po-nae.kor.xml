@@ -1,0 +1,206 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보내</lemma>
+    <comment>Frames file for '보내' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보내.01</id>
+      <edef>send</edef>
+      <roleset>
+	<role argnum="0" argrole="sender"/>
+	<role argnum="1" argrole="sent"/>
+	<role argnum="2" argrole="sent to"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>보내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러면 대대 후방부장이 연료 트럭을 탱크가 위치한 장소로 보냅니다.</text>
+	  <parse>
+(S (ADCP 그러면/ADC)
+   (S (NP-SBJ 대대/NNC
+              후방/NNC
+              부장/NNC+이/PCA)
+      (VP (NP-OBJ 연료/NNC
+                  트럭/NNC+을/PCA)
+          (NP-COMP (S (WHNP-1 *op*)
+                      (S (NP-SBJ 탱크/NNC+이/PCA)
+                         (VP (NP-COMP *T*-1)
+                             (VV 위치/NNC+하/XSV+은/EAN))))
+                   (NP 장소/NNC+으로/PAD))
+          보내/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>대대 후방부장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>연료 트럭</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>탱크가 위치한 장소</term>
+	    </Arg>
+	    <Rel>
+	      <term>보냅니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보내지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이번에 북한에 보내지는 계란은 축협과 우리민족서로돕기운동이 북송키로 한 계란 2 천만개중 마지막 3 차분으로 7 일께 북측 상대기관인 조선아시아태평양평화위원회에 전달될 예정이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-ADV 이번/NNC+에/PAD)
+                                (VP (NP-COMP 북한/NPR+에/PAD)
+                                    (VV 보내/VV+어지/XSV+는/EAN)))))
+                      (NP 계란/NNC+은/PAU))
+              (VP (NP-ADV (NP (S (WHNP-2 *op*)
+                                 (S (NP-SBJ (NP 축협/NPR+과/PCJ)
+                                            (NP 우리민족서로돕기/NPR+운동/NNC+이/PCA))
+                                    (VP (S-COMP (NP-SBJ *pro*)
+                                                (VP (NP-OBJ *T*-2)
+                                                    (VV 북송/NNC+하/XSV+기/ENM+으로/PAD)))
+                                        하/VV+은/EAN)))
+                              (NP (NP 계란/NNC)
+                                  (NP 2/NNU
+                                      천만/NNU+개/NNX+중/NNX)))
+                          (NP 마지막/NNC
+                              3/NNU
+                              차분/NNC+으로/PAD))
+                  (NP-ADV 7/NNU
+                          일/NNX+께/XSF)
+                  (VP (NP-COMP (S (WHNP-3 *op*)
+                                  (S (NP-SBJ *T*-3)
+                                     (VP (NP 북/NPR+측/NNX
+                                             상대/NNC+기관/NNC+이/CO+은/EAN))))
+                               (NP 조선/NPR+아시아/NPR+태평양/NPR+평화/NNC+위원회/NNC+에/PAD))
+                      (VV 전달/NNC+되/XSV+을/EAN))))
+           (NP 예정/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=계란</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이번에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Rel>
+	      <term>보내지는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>보내.02</id>
+      <edef>spend</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="time"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 주간지는 중국 소식통을 인용, `국제사회의 문을 노크하는 김정일'이라는 제하의 기사에서 "김정일 총비서는 북한주재 중국대사관에서 꼬박 4 시간을 보내면서 양국간 유대를 한껏 찬양하고 올해 베이징을 방문키로 원칙적인 동의를 했다"고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           주간지/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 중국/NPR
+                      소식통/NNC+을/PCA)
+              (VV 인용/NNC)))
+       ,/SCM
+       (NP-ADV (NP (NP `/SLQ
+                       (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP-OBJ (NP 국제/NNC+사회/NNC+의/PAN)
+                                         (NP 문/NNC+을/PCA))
+                                 (VV 노크/NNC+하/XSV+는/EAN))))
+                       (NP 김정일/NPR)
+                       '/SRQ
+                       이라는/PAN)
+                   (NP 제하/NNC+의/PAN))
+               (NP 기사/NNC+에서/PAD))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 김정일/NPR
+                              총비서/NNC+은/PAU)
+                      (VP (NP-ADV 북한/NPR+주재/NNC
+                                  중국/NPR+대사관/NNC+에서/PAD)
+                          (ADVP 꼬박/ADV)
+                          (VP (NP-OBJ 4/NNU
+                                      시간/NNX+을/PCA)
+                              보내/VV+으면서/ECS)))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ 양국/NNC+간/XSF
+                                      유대/NNC+을/PCA)
+                              (VP (ADVP 한껏/ADV)
+                                  (VP (VV 찬양/NNC+하/XSV+고/ECS))))
+                          (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 올해/NNC)
+                                     (VP (NP-OBJ 베이징/NPR+을/PCA)
+                                         (VV 방문/NNC+하/XSV+기/ENM+으로/PAD))))
+                              (VP (NP-OBJ (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP 원칙/NNC+적/XSF+이/CO+은/EAN))))
+                                          (NP 동의/NNC+을/PCA))
+                                  하/VV+었/EPF+다/EFN))))
+                   "/SRQ
+                   고/PAD)
+           전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>김정일 총비서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>북한주재 중국대사관에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>꼬박</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>4 시간</term>
+	    </Arg>
+	    <Rel>
+	      <term>보내면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>
+

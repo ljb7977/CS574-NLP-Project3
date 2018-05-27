@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>얼룩지</lemma>
+    <comment>Frames file for '얼룩지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>얼룩지.01</id>
+      <edef>become stained</edef>
+      <roleset>
+	<role argnum="1" argrole="thing stained"/>
+	<role argnum="2" argrole="stained with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>얼룩지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 문건은 피로 얼룩진 십자군 원정과 중세의 종교재판소 및 각종 고문형, 반유대주의, 신대륙원주민 학살등의 과오에 대해 털어놓고 있다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           문건/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP (NP (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (NP-COMP 피/NNC+으로/PAD)
+                                         얼룩지/VV+은/EAN)))
+                               (NP 십자군/NNC
+                                   원정/NNC+과/PCJ))
+                           (NP (NP 중세/NNC+의/PAN)
+                               (NP 종교/NNC+재판소/NNC))
+                           (ADCP 및/ADC)
+                           (NP 각종/NNC
+                               고문/NNC+형/NNC)
+                           ,/SCM
+                           (NP 반유대주의/NNC)
+                           ,/SCM
+                           (NP 신대륙/NNC+원주민/NNC
+                               학살/NNC+등/NNX+의/PAN))
+                       (NP 과오/NNC+에/PAD))
+              대하/VV+어/ECS))
+       (VP (VP 털어놓/VV+고/ECS)
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=십자군 원정</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>피</term>
+	    </Arg>
+	    <Rel>
+	      <term>얼룩진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

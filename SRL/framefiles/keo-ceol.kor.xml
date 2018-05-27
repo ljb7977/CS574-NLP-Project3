@@ -1,0 +1,145 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>거절</lemma>
+    <comment>Frames file for '거절' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>거절.01</id>
+      <edef>refuse</edef>
+      <roleset>
+	<role argnum="0" argrole="entity refusing"/>
+	<role argnum="1" argrole="refused action, object"/>
+	<role argnum="2" argrole="anti-benefactive"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>거절하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 "기지 사용의 안보적 필요성은 인위적인 제한이 아닌 주변 환경을 고려해 결정돼야 한다"면서 일본의 제안을 단호히 거절했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ (NP 기지/NNC
+                      사용/NNC+의/PAN)
+                  (NP 안보/NNC+적/XSF
+                      필요성/NNC+은/PAU))
+          (VP (VP (S (NP-SBJ *pro*)
+                     (ADJP (NP-COMP (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (NP 인위/NNC+적/XSF+이/CO+은/EAN))))
+                                    (NP 제한/NNC+이/PCA))
+                           아니/VJ+은/EAN))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ 주변/NNC
+                                 환경/NNC+을/PCA)
+                         (VV 고려/NNC+하/XSV+어/ECS)))
+                  (VP (VV 결정/NNC+되/XSV+어야/ECS)))
+              하/VX+는다/EFN)
+          "/SRQ
+          면서/ECS)
+       (VP (NP-OBJ (NP 일본/NPR+의/PAN)
+                   (NP 제안/NNC+을/PCA))
+           (VP (ADVP 단호히/ADV)
+               (VP (VV 거절/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>"기지 사용의 안보적 필요성은 인위적인 제한이 아닌 주변 환경을 고려해 결정돼야 한다"면서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>일본의 제안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>단호히</term>
+	    </Arg>
+	    <Rel>
+	      <term>거절했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>거절당하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 나토가 창설된 지난 49 년 이후 당시 소련도 나토 가입 의사를 표시했지만 거절당했으며 그 결과로 바르샤바조약기구가 창설됐다는 점을 상기시킨 뒤 "현재 공산당이 러시아의 권력을 독점하고 있지도 않으며, 소련이나 바르샤바조약기구도 없지만 나토는 계속 자신의 영역과 책임지역을 넓혀 가고 있다"고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (S (S (S (NP-ADV (NP (S (NP-SBJ 나토/NPR+이/PCA)
+						      (VP (VV 창설/NNC+되/XSV+은/EAN)))
+						   (NP 지난/DAN
+							   49/NNU
+							   년/NNX))
+					       (NP 이후/NNC))
+				       (S (NP-SBJ 당시/NNC
+						      소련/NPR+도/PAU)
+					  (VP (NP-OBJ 나토/NPR
+							  가입/NNC
+							  의사/NNC+을/PCA)
+					      (VV 표시/NNC+하/XSV+었/EPF+지만/ECS))))
+				    (S (NP-SBJ *pro*)
+				       (VP (NP-OBJ *pro*)
+					   (VV 거절/NNC+당하/XSV+었/EPF+으며/ECS))))
+                                 (S (NP-ADV 그/DAN
+                                            결과/NNC+으로/PAD)
+                                    (S (NP-SBJ 바르샤바/NPR+조약/NNC+기구/NNC+이/PCA)
+                                       (VP (VV 창설/NNC+되/XSV+었/EPF+다는/EAN)))))
+                              (NP 점/NNX+을/PCA))
+                      (VV 상기/NNC+시키/XSV+은/EAN)))
+               (NP 뒤/NNC))
+       (VP (S-COMP "/SLQ
+                   (S (S (NP-ADV 현재/NNC)
+			 (S (NP-SBJ 공산당/NPR+이/PCA)
+			    (VP (VP (VP (NP-OBJ (NP 러시아/NPR+의/PAN)
+						(NP 권력/NNC+을/PCA))
+					(VV 독점/NNC+하/XSV+고/ECS))
+				    있/VX+지/EFN+도/PAU)
+				않/VX+으며/ECS)))
+		      ,/SCM
+		      (S (NP-SBJ (NP 소련/NPR+이나/PCJ)
+				 (NP 바르샤바/NPR+조약/NNC+기구/NNC+도/PAU))
+			 (ADJP 없/VJ+지만/ECS)))
+		   (S (NP-SBJ 나토/NPR+는/EAN)
+		      (VP (NP-ADV 계속/NNC)
+			  (VP (VP (VP (NP-OBJ (NP (NP 자신/NNC+의/PAN)
+						  (NP 영역/NNC+과/PCJ))
+					      (NP 책임/NNC+지역/NNC+을/PCA))
+				      넓히/VV+어/ECS)
+				  가/VX+고/ECS)
+			      있/VX+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>나토가 창설된 지난 49 년 이후 당시 소련도 나토 가입 의사를 표시했지만</term>
+	    </Arg>
+	    <Rel>
+	      <term>거절당했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

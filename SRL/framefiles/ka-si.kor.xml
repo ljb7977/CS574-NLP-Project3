@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가시</lemma>
+    <comment>Frames file for '가시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가시.01</id>
+      <edef>disappear</edef>
+      <roleset>
+	<role argnum="1" argrole="thing disappeared"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가시다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전날 미시간주에서 초등학교 1 학년인 6 살짜리 남학생이 같은 반의 여학생을 총으로 살해한 사건의 충격이 채 가시기도 전에 또 다시 총기 사고가 발생해 충격의 도를 더하고 있다.</text>
+	  <parse>
+(S (S (NP-ADV (S (NP-SBJ (NP (S (NP-ADV 전날/NNC)
+                                (NP-ADV 미시간/NPR+주/NNC+에서/PAD)
+                                (S (NP-SBJ (S (WHNP-1 *op*)
+                                              (S (NP-SBJ *T*-1)
+                                                 (VP (NP 초등학교/NNC
+                                                         1/NNU
+                                                         학년/NNX+이/CO+은/EAN))))
+                                           (NP 6/NNU
+                                               살/NNX+짜리/XSF
+                                               남학생/NNC+이/PCA))
+                                   (VP (NP-OBJ (NP 같은/DAN
+                                                   반/NNC+의/PAN)
+                                               (NP 여학생/NNC+을/PCA))
+                                       (VP (NP-ADV 총/NNC+으로/PAD)
+                                           (VP (VV 살해/NNC+하/XSV+은/EAN))))))
+                             (NP 사건/NNC+의/PAN))
+                         (NP 충격/NNC+이/PCA))
+                 (VP (ADVP 채/ADV)
+                     (VP 가시/VV+기/ENM+도/PAU)))
+              (NP 전/NNC+에/PAD))
+      (ADVP (ADVP 또/ADV)
+            (ADVP 다시/ADV))
+      (S (NP-SBJ 총기/NNC
+                 사고/NNC+이/PCA)
+         (VP (VV 발생/NNC+하/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP *pro*)
+              (NP-OBJ (NP 충격/NNC+의/PAN)
+                      (NP 도/NNC+을/PCA))
+              더하/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>전날 미시간주에서 초등학교 1 학년인 6 살짜리 남학생이 같은 반의 여학생을 총으로 살해한 사건의 충격</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>채</term>
+	    </Arg>
+	    <Rel>
+	      <term>가시기도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

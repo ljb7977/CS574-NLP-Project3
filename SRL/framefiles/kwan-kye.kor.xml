@@ -1,0 +1,168 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>관계</lemma>
+    <comment>Frames file for '관계' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>관계.01</id>
+      <edef>concern</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="thing concerned"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>관계하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>만약 그들이 저희와 같다면 원래 약 50명 쯤 됩니다만, 제가 저희 부대 외에 타부대에는 전혀 관계하지 않았기 때문에, 몇 사람이 여기 있고 몇 사람이 거기 있는지, 몇 사람이 손실됐는지 등에 대해 전혀 더 알지 못합니다.</text>
+	  <parse>
+(S (S (S (ADVP 만약/ADV)
+         (S (NP-SBJ 그/NPN+들/XSF+이/PCA)
+            (ADJP (NP-COMP 저희/NPN+과/PCJ)
+                  같/VJ+다면/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (ADVP 원래/ADV)
+             (VP (NP-COMP 약/DAN
+                          50/NNU
+                          명/NNX
+                          쯤/NNX)
+                 되/VV+습니다만/ECS))))
+   ,/SCM
+   (S (NP-ADV (S (NP-SBJ 제/NPN+이/PCA)
+                 (VP (VP (NP-ADV 저희/NPN
+                                 부대/NNC
+                                 외/NNC+에/PAD)
+                         (VP (NP-COMP 타/XPF+부대/NNC+에/PAD+은/PAU)
+                             (VP (ADVP 전혀/ADV)
+                                 (VP (VV 관계/NNC+하/XSV+지/ECS)))))
+                     않/VX+었/EPF+기/ENM))
+              (NP 때문/NNX+에/PAD))
+      ,/SCM
+      (S (NP-SBJ *pro*)
+         (VP (VP (S-COMP (NP-SBJ *pro*)
+                         (VP (NP-COMP (S (S (NP-SBJ 몇/NNU
+                                                    사람/NNC+이/PCA)
+                                            (ADJP (NP-COMP 여기/NPN)
+                                                  있/VJ+고/ECS))
+                                         (S (NP-SBJ 몇/NNU
+                                                    사람/NNC+이/PCA)
+                                            (ADJP (NP-COMP 거기/NPN)
+                                                  있/VJ+는지/EFN))
+                                         ,/SCM
+                                         (S (NP-SBJ 몇/NNU
+                                                    사람/NNC+이/PCA)
+                                            (VP (VV 손실/NNC+되/XSV+었/EPF+는지/EFN))))
+                                      (NP 등/NNX+에/PAD))
+                             대하/VV+어/ECS))
+                 (VP (ADVP 전혀/ADV)
+                     (ADVP 더/ADV)
+                     (VP 알/VV+지/ECS)))
+             못하/VX+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>저희 부대 외에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>타부대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>전혀</term>
+	    </Arg>
+	    <Rel>
+	      <term>관계하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>관계.02</id>
+      <edef>relate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing under consideration"/>
+	<role argnum="2" argrole="related to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>관계되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>물론 저는 탄약 부족의 원인을 추측하고 있는 것뿐인데, 왜냐하면 저는 저희 포반에 직접 관계되지 않는 일에 대해서는 아무 것도 들어본 적이 없기 때문입니다.</text>
+	  <parse>
+(S (S (ADVP 물론/ADV)
+      (S (NP-SBJ *pro*)
+         (VP (NP (S (NP-SBJ 저/NPN+은/PAU)
+                    (VP (VP (NP-OBJ (NP 탄약/NNC
+                                        부족/NNC+의/PAN)
+                                    (NP 원인/NNC+을/PCA))
+                            (VV 추측/NNC+하/XSV+고/ECS))
+                        있/VX+는/EAN))
+                 (NP 것/NNX+뿐/XSF+이/CO+는데/ECS)))))
+   ,/SCM
+   (S (ADCP 왜냐하면/ADC)
+      (S (NP-SBJ *pro*)
+         (VP (NP (S (NP-SBJ (S (NP-SBJ 저/NPN+은/PAU)
+                               (VP (VP (S (NP-SBJ *pro*)
+                                          (VP (NP-COMP (S (WHNP-1 *op*)
+                                                          (S (NP-SBJ *T*-1)
+                                                             (VP (VP (NP-COMP 저희/NPN
+                                                                              포반/NNC+에/PAD)
+                                                                     (VP (ADVP 직접/ADV)
+                                                                         (VP (VV 관계/NNC+되/XSV+지/ECS))))
+                                                                 않/VX+는/EAN)))
+                                                       (NP 일/NNC+에/PAD))
+                                              대하/VV+어서/ECS+은/PAU))
+                                       (VP (NP-OBJ 아무/DAN
+                                                   것/NNX+도/PAU)
+                                           듣/VV+어/ECS))
+                                   보/VX+은/EAN))
+                            (NP 적/NNX+이/PCA))
+                    (ADJP 없/VJ+기/ENM))
+                 (NP 때문/NNX+이/CO+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=일</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>저희 포반</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>직접</term>
+	    </Arg>
+	    <Rel>
+	      <term>관계되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

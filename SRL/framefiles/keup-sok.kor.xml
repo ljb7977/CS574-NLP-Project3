@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>급속</lemma>
+    <comment>Frames file for '급속' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>급속.01</id>
+      <edef>rapid</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being rapid"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>급속하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 관계자는 "따라서 정부는 가능한 한 모든 수단을 동원해 환율의 급속한 하락을 막을 방침"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           관계자/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (ADCP 따라서/ADC)
+               (S (NP-SBJ *pro*)
+                  (VP (NP (S (NP-SBJ 정부/NNC+은/PAU)
+                             (VP (S (NP-SBJ *pro*)
+                                    (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                   (ADJP (VJ 가능/NNC+하/XSJ+은/EAN)))
+                                                (NP 한/NNX))
+                                        (VP (NP-OBJ 모든/DAN
+                                                    수단/NNC+을/PCA)
+                                            (VV 동원/NNC+하/XSV+어/ECS))))
+                                 (VP (NP-OBJ (NP 환율/NNC+의/PAN)
+                                             (NP (S (WHNP-1 *op*)
+                                                    (S (NP-SBJ *T*-1)
+                                                       (ADJP (VJ 급속/NNC+하/XSJ+은/EAN))))
+                                                 (NP 하락/NNC+을/PCA)))
+                                     막/VV+을/EAN)))
+                          (NP 방침/NNC))))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=하락</term>
+	    </Arg>
+	    <Rel>
+	      <term>급속한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

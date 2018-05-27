@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>건전</lemma>
+    <comment>Frames file for '건전' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>건전.01</id>
+      <edef>sound</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being sound"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>건전하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>금융감독위원회는 8 일 2 단계 금융 및 기업개혁방안의 추진과제로 이달 중 이같은 내용의 '건전한 서민금융기관 육성 종합방안'을 마련, 시행할 계획이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 금융/NNC+감독/NNC+위원회/NNC+은/PAU)
+   (VP (NP-ADV 8/NNU
+               일/NNX)
+       (VP (NP-COMP (S (NP-SBJ *pro*)
+                       (VP (NP-ADV (NP 2/NNU
+                                       단계/NNC)
+                                   (NP (NP (NP 금융/NNC)
+                                           (ADCP 및/ADC)
+                                           (NP 기업/NNC+개혁/NNC+방안/NNC+의/PAN))
+                                       (NP 추진/NNC+과제/NNC+으로/PAD)))
+                           (NP-ADV 이달/NNC
+                                   중/NNX)
+                           (VP (NP-OBJ (NP 이같은/DAN
+                                           내용/NNC+의/PAN)
+                                       (NP '/SLQ
+                                           (NP (S (WHNP-1 *op*)
+                                                  (S (NP-SBJ *T*-1)
+                                                     (ADJP (VJ 건전/NNC+하/XSJ+은/EAN))))
+                                               (NP 서민/NNC+금융/NNC+기관/NNC))
+                                           (NP 육성/NNC
+                                               종합/NNC+방안/NNC)
+                                           '/SRQ
+                                           을/PCA))
+                               (VV (VV 마련/NNC)
+                                   ,/SCM
+                                   (VV 시행/NNC+하/XSV+을/EAN)))))
+                    (NP 계획/NNC+이라고/PAD))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=서민금융기관</term>
+	    </Arg>
+	    <Rel>
+	      <term>건전한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발병</lemma>
+    <comment>Frames file for '발병' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발병.01</id>
+      <edef>arise</edef>
+      <roleset>
+	<role argnum="1" argrole="disease"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발병하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>국립 보건소의 호르헤 삼브라노 국장은 최근 수주간 7 만 6 천건 이상의 말라리아 검진을 실시한 결과 1 만 4 천 192 명이 감염돼 6 명이 숨진 것으로 확인됐으며, 뎅기열은 220 건이 발병해 8 명이 숨졌다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 국립/NNC
+               보건소/NNC+의/PAN)
+           (NP 호르헤/NPR
+               삼브라노/NPR
+               국장/NNC+은/PAU))
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP-ADV (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 최근/NNC
+                                             수/XPF+주/NNX+간/XSF)
+                                     (VP (NP-OBJ (NP 7/NNU
+                                                     만/NNU
+                                                     6/NNU
+                                                     천/NNU+건/NNX
+                                                     이상/NNC+의/PAN)
+                                                 (NP 말라리아/NNC
+                                                     검진/NNC+을/PCA))
+                                         (VV 실시/NNC+하/XSV+은/EAN))))
+                              (NP 결과/NNC))
+                      (VP (NP-COMP (S (S (NP-SBJ 1/NNU
+                                                 만/NNU
+                                                 4/NNU
+                                                 천/NNU
+                                                 192/NNU
+                                                 명/NNX+이/PCA)
+                                         (VP (VV 감염/NNC+되/XSV+어/ECS)))
+                                      (S (NP-SBJ 6/NNU
+                                                 명/NNX+이/PCA)
+                                         (VP 숨지/VV+은/EAN)))
+                                   (NP 것/NNX+으로/PAD))
+                          (VV 확인/NNC+되/XSV+었/EPF+으며/ECS))))
+               ,/SCM
+               (S (S (NP-SBJ 뎅기열/NNC+은/PAU)
+                     (VP (NP-ADV 220/NNU
+                                 건/NNX+이/PCA)
+                         (VP (VV 발병/NNC+하/XSV+어/ECS))))
+                  (S (NP-SBJ 8/NNU
+                             명/NNX+이/PCA)
+                     (VP 숨지/VV+었/EPF+다/EFN+고/PAD))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>뎅기열</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>220 건</term>
+	    </Arg>
+	    <Rel>
+	      <term>발병해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

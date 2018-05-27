@@ -1,0 +1,125 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불식</lemma>
+    <comment>Frames file for '불식' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불식.01</id>
+      <edef>eradicate</edef>
+      <roleset>
+	<role argnum="0" argrole="remover"/>
+	<role argnum="1" argrole="thing removed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불식하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대부분의 경제전문가들은 `앨런 글린스펀주식회사(FRB)'가 잠재적인 인플레 증가 가능성을 불식하기 위해 오는 21 일 열리는 연방공개시장위원회 회의에서 연방기금 금리를 0.25 퍼센트 포인트까지 인상할 것으로 추정하고 있다.</text>
+	  <parse>
+(S (NP-SBJ (NP 대부분/NNC+의/PAN)
+           (NP 경제/NNC+전문가/NNC+들/XSF+은/PAU))
+   (VP (VP (NP-COMP (S (NP-SBJ `/SLQ
+                               앨런/NPR
+                               글린스펀/NPR+주식회사/NNC
+                               (PRN -LRB-/SLQ
+                                    (NP FRB/NFW)
+                                    -RRB-/SRQ)
+                               '/SRQ
+                               이/PCA)
+                       (VP (S (NP-SBJ *pro*)
+                              (VP (S-OBJ (NP-SBJ *pro*)
+                                         (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                        (S (NP-SBJ *T*-1)
+                                                           (VP (NP 잠재/NNC+적/XSF+이/CO+은/EAN))))
+                                                     (NP 인플레/NNC
+                                                         증가/NNC
+                                                         가능성/NNC+을/PCA))
+                                             (VV 불식/NNC+하/XSV+기/ENM)))
+                                  위하/VV+어/ECS))
+                           (NP-ADV (S (WHNP-2 *op*)
+                                      (S (NP-SBJ *T*-2)
+                                         (VP (NP-ADV 오는/DAN
+                                                     21/NNU
+                                                     일/NNX)
+                                             (VP 열리/VV+는/EAN))))
+                                   (NP 연방/NNC+공개/NNC+시장/NNC+위원회/NNC
+                                       회의/NNC+에서/PAD))
+                           (VP (NP-OBJ 연방/NNC+기금/NNC
+                                       금리/NNC+을/PCA)
+                               (VP (NP-ADV 0.25/NNU
+                                           퍼센트/NNX
+                                           포인트/NNC+까지/PAU)
+                                   (VP (VV 인상/NNC+하/XSV+을/EAN))))))
+                    (NP 것/NNX+으로/PAD))
+           (VV 추정/NNC+하/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>잠재적인 인플레 증가 가능성</term>
+	    </Arg>
+	    <Rel>
+	      <term>불식하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>불식시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>파키스탄은 클린턴 대통령의 방문을 맞아 파키스탄에 거점을 둔 회교 군사단체들에 대한 미국의 우려를 불식시키고 우호적인 모습을 보이기 위해 노력해 왔다.</text>
+	  <parse>
+(S (NP-SBJ 파키스탄/NPR+은/PAU)
+   (VP (VP (S (NP-SBJ *pro*)
+              (VP (NP-OBJ (NP 클린턴/NPR
+				    대통령/NNC+의/PAN)
+                          (NP 방문/NNC+을/PCA))
+                  맞/VV+어/ECS))
+           (VP (S-COMP (NP-SBJ *pro*)
+		       (VP (S-COMP (NP-SBJ *pro*)
+				   (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+						      (S (NP-SBJ *T*-2)
+							 (VP (NP-COMP (S (WHNP-3 *op*)
+									 (S (NP-SBJ *T*-3)
+									    (VP (NP-COMP 파키스탄/NPR+에/PAD)
+										(NP-OBJ 거점/NNC+을/PCA)
+										두/VV+은/EAN)))
+								      (NP 회교/NNC
+									      군사/NNC+단체/NNC+들/XSF+에/PAD))
+							     대하/VV+은/EAN)))
+						   (NP (NP 미국/NPR+의/PAN)
+						       (NP 우려/NNC+을/PCA)))
+					   (VV 불식/NNC+시키/XSV+고/ECS))
+				       (VP (NP-OBJ (S (WHNP-1 *op*)
+						      (S (NP-SBJ *T*-1)
+							 (VP (NP 우호/NNC+적/XSF+이/CO+은/EAN))))
+						   (NP 모습/NNC+을/PCA))
+					   보이/VV+기/ENM)))
+			   위하/VV+어/ECS))
+	       (VV 노력/NNC+하/XSV+어/ECS)))
+       오/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>파키스탄에 거점을 둔 회교 군사단체들에 대한 미국의 우려</term>
+	    </Arg>
+	    <Rel>
+	      <term>불식시키고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

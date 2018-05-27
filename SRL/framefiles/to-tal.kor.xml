@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>도달</lemma>
+    <comment>Frames file for '도달' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>도달.01</id>
+      <edef>attain</edef>
+      <roleset>
+	<role argnum="1" argrole="reacher"/>
+	<role argnum="2" argrole="entity attained"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>도달하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>포대는 1년에 한번씩 훈련 목표에 도달했는가를 평가받습니다.</text>
+	  <parse>
+(S (NP-SBJ 포대/NNC+은/PAU)
+   (VP (NP-ADV (NP 1/NNU
+		   년/NNX+에/PAD)
+	       (NP 한/NNU
+		   번/NNX+씩/XSF))
+       (VP (S-OBJ (NP-SBJ *pro*)
+		  (VP (NP-COMP 훈련/NNC
+			       목표/NNC+에/PAD)
+		      (VV 도달/NNC+하/XSV+었/EPF+는가/EFN+을/PCA)))
+	   (VV 평가/NNC+받/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>훈련 목표</term>
+	    </Arg>
+	    <Rel>
+	      <term>도달했는가를</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

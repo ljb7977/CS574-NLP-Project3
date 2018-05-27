@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>시험재배</lemma>
+    <comment>Frames file for '시험재배' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>시험재배.01</id>
+      <edef>cultivate by way of trial</edef>
+      <roleset>
+	<role argnum="0" argrole="grower"/>
+	<role argnum="1" argrole="thing prospering"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>시험재배하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 "지난해 북한의 일부 시험농장에서 기존 종자에 비해 50 퍼센트 가량 증산 가능한 우수 종자를 개발한 데 이어 올해 일반 농가에서 이 종자를 시험재배할 것"이라며 "우수 종자가 일반 농가에서 안정적으로 재배되면 연 2 억-5 억달러의 지원 효과가 있을 것"이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (S "/SLQ
+          (ADVP (NP-COMP (S (NP-ADV 지난해/NNC)
+                            (S (NP-SBJ (NP 북한/NPR+의/PAN)
+                                       (NP 일부/NNC
+                                           시험/NNC+농장/NNC+에서/PCA))
+                               (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+                                                 (VP (NP-COMP 기존/NNC
+                                                              종자/NNC+에/PAD)
+                                                     비하/VV+어/ECS))
+                                              (S (NP-SBJ (NP 50/NNU
+                                                             퍼센트/NNX
+                                                             가량/NNC)
+                                                         (NP 증산/NNC))
+                                                 (ADJP (VJ 가능/NNC+하/XSJ+은/EAN))))
+                                           (NP 우수/NNC
+                                               종자/NNC+을/PCA))
+                                   (VV 개발/NNC+하/XSV+은/EAN))))
+                         (NP 데/NNX))
+                이어/ADV)
+          (S (NP-ADV 올해/NNC)
+             (S (NP-SBJ 일반/NNC
+                        농가/NNC+에서/PCA)
+                (VP (VP (NP-OBJ 이/DAN
+				  종자/NNC+을/PCA)
+                        (VV 시험재배/NNC+하/XSV+을/EAN))
+                    (VX 것/NNX))))
+          "/SRQ
+          이/CO+라며/ECS)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 우수/NNC
+                              종자/NNC+이/PCA)
+                      (VP (NP-ADV 일반/NNC
+                                  농가/NNC+에서/PAD)
+                          (NP-ADV 안정/NNC+적/XSF+으로/PAD)
+                          (VP (VV 재배/NNC+되/XSV+으면/ECS))))
+                   (S (NP-SBJ (NP 연/DAN
+                                  2/NNU
+                                  억/NNU
+                                  -/SSY
+                                  5/NNU
+                                  억/NNU+달러/NNX+의/PAN)
+                              (NP 지원/NNC
+                                  효과/NNC+이/PCA))
+                      (VP (ADJP 있/VJ+을/EAN)
+                          (VX 것/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해 북한의 일부 시험농장에서 기존 종자에 비해 50 퍼센트 가량 증산 가능한 우수 종자를 개발한 데 이어</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올해</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에서</f>
+	      <term>일반 농가</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이 종자</term>
+	    </Arg>
+	    <Rel>
+	      <term>시험재배할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

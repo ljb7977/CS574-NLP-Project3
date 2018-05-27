@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>판결</lemma>
+    <comment>Frames file for '판결' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>판결.01</id>
+      <edef>judge</edef>
+      <roleset>
+	<role argnum="0" argrole="judge"/>
+	<role argnum="1" argrole="judgement"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>판결하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>알라 바크슈 란자 판사는 이날 이크발을 라호르 광장에서 피해자 가족들이 지켜보는 가운데 공개처형한 뒤 육신을 100 등분해 산 용액에 넣어 없애 버리라고 판결했다.</text>
+	  <parse>
+(S (NP-SBJ 알라/NPR
+           바크슈/NPR
+           란자/NPR
+           판사/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (VP (S-COMP (NP-ADV (S (NP-SBJ *pro*)
+			      (VP (NP-OBJ 이크발/NPR+을/PCA)
+				  (VP (NP-ADV 라호르/NPR
+						    광장/NNC+에서/PAD)
+				      (NP-ADV (S (NP-SBJ 피해자/NNC
+							       가족/NNC+들/XSF+이/PCA)
+						 (VP (NP-OBJ *pro*)
+						     지켜보/VV+는/EAN))
+					      (NP 가운데/NNC))
+				      (VP (VV 공개처형/NNC+하/XSV+은/EAN)))))
+			   (NP 뒤/NNC))
+		   (S (NP-SBJ *pro*)
+		      (VP (NP-OBJ 육신/NNC+을/PCA)
+			  (NP-COMP 100/NNU)
+			  (VV 등분/NNC+하/XSV+어/ECS)))
+		   (S (NP-SBJ *pro*)
+		      (VP (NP-COMP 산/NNC
+				     용액/NNC+에/PAD)
+			  (NP-OBJ *pro*)
+			  넣/VV+어/ECS))
+		   (S (NP-SBJ *pro*)
+		      (VP (VP (NP-OBJ *pro*)
+			      없애/VV+어/ECS)
+			  버리/VX+으라/EFN+고/PAD)))
+	   (VV 판결/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>알라 바크슈 란자 판사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>이크발을 라호르 광장에서 피해자 가족들이 지켜보는 가운데 공개처형한 뒤 육신을 100 등분해 산 용액에 넣어 없애 버리라</term>
+	    </Arg>
+	    <Rel>
+	      <term>판결했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>놀아나</lemma>
+    <comment>Frames file for '놀아나' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>놀아나.01</id>
+      <edef>act imprudently</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing acting imprudently"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>놀아나다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>쑹 후보 지원차 출마했음을 공언해 온 신당의 리아오(이오) 후보는 리 원장이 `정당 교체'론 등으로 사실상 천 후보 지원에 나선 것에 대해 "그는 천수이볜의 손에 놀아나는 여인네처럼 찍소리도 못하는 인물"이라고 독설을 퍼부었다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (S-OBJ (NP-SBJ *pro*)
+                                (VP (NP-ADV 쑹/NPR
+                                            후보/NNC
+                                            지원/NNC+차/XSF)
+                                    (VP (VV 출마/NNC+하/XSV+었/EPF+음/ENM+을/PCA))))
+                         (VV 공언/NNC+하/XSV+어/ECS))
+                     오/VX+은/EAN)))
+           (NP (NP 신당/NNC+의/PAN)
+               (NP 리아오/NPR
+                   (PRN -LRB-/SLQ
+                        (NP 이오/NPR)
+                        -RRB-/SRQ)
+                   후보/NNC+은/PAU)))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (NP-SBJ 리/NPR
+                                  원장/NNC+이/PCA)
+                          (VP (NP-ADV (NP `/SLQ
+                                          정당/NNC
+                                          교체/NNC
+                                          '/SRQ
+                                          론/XSF)
+                                      (NP 등/NNX+으로/PAD))
+                              (NP-ADV 사실상/NNC)
+                              (VP (NP-COMP 천/NPR
+                                           후보/NNC
+                                           지원/NNC+에/PAD)
+                                  나서/VV+은/EAN)))
+                       (NP 것/NNX+에/PAD))
+              대하/VV+어/ECS))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ 그/NPN+은/PAU)
+                   (VP (NP (S (WHNP-3 *op*)
+                              (S (NP-SBJ *T*-3)
+                                 (VP (NP-ADV (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (VP (NP-COMP (NP 천수이볜/NPR+의/PAN)
+                                                                (NP 손/NNC+에/PAD))
+                                                       놀아나/VV+는/EAN)))
+                                             (NP 여인네/NNC+처럼/PAD))
+                                     (VP (NP-OBJ 찍소리/NNC+도/PAU)
+                                         못하/VV+는/EAN))))
+                           (NP 인물/NNC)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VP (NP-OBJ 독설/NNC+을/PCA)
+               퍼붓/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=여인네</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>천수이볜의 손</term>
+	    </Arg>
+	    <Rel>
+	      <term>놀아나는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대동</lemma>
+    <comment>Frames file for '대동' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>대동.01</id>
+      <edef>accompany</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity accompanied"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대동하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>접적 행군 시에 중대장은 누구를 대동하는가?</text>
+	  <parse>
+(S (NP-ADV 접적/NNC 행군/NNC 시/NNX+에/PAD) 
+   (S (NP-SBJ 중대장/NNC+은/PAU) 
+      (VP (NP-OBJ 누구/NPN+을/PCA) 
+	  (VV 대동/NNC+하/XSV+는가/EFN))) 
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>접적 행군 시에</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>중대장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>누구</term>
+	    </Arg>
+	    <Rel>
+	      <term>대동하는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

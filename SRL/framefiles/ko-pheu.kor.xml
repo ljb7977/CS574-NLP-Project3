@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고프</lemma>
+    <comment>Frames file for '고프' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>고프.01</id>
+      <edef>hungry</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being hungry"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고프다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조 대위, 사실은 나도 배가 고프오.</text>
+	  <parse>
+(S (NP-VOC 조/NPR 대위/NNC)
+   ,/SCM
+   (NP-ADV 사실/NNC+은/PAU) 
+   (S (NP-SBJ 나/NPN+도/PAU) 
+      (S (NP-SBJ 배/NNC+이/PCA) 
+	 고프/VJ+오/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>조 대위</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>사실은</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>배</term>
+	    </Arg>
+	    <Rel>
+	      <term>고프오</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

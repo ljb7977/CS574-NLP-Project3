@@ -1,0 +1,40 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지체</lemma>
+    <comment>Frames file for '지체' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>지체.01</id>
+      <edef>delay</edef>
+      <roleset>
+	<role argnum="1" argrole="event delayed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지체되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>건전지를 보충받는 데는 지체되는 일이 없지요.</text>
+	  <parse>
+(S (NP-COMP-1 (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 건전지/NNC+을/PCA)
+                     (VV 보충/NNC+받/XSV+는/EAN)))
+              (NP 데/NNX+은/PAU))
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (VV 지체/NNC+되/XSV+는/EAN)))
+              (NP 일/NNC+이/PCA))
+      (ADJP (NP-COMP *T*-1)
+            없/VJ+지요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>지체되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

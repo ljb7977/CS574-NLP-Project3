@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>징계</lemma>
+    <comment>Frames file for '징계' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>징계.01</id>
+      <edef>punish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing punished"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>징계하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>고위공직자들의 직무관련 업체 주식보유에 대해 정부 공직자윤리위원회가 심사를 통해 해당 공무원을 징계하고 나아가 증권감독원의 조사를 통해 검찰에 고발, 사법처리까지 할 수 있도록 공직자윤리법이 개정된다.</text>
+	  <parse>
+(S (S (S (NP-SBJ *pro*)
+	 (VP (NP-COMP (NP 고위/NNC+공직자/NNC+들/XSF+의/PAN)
+		      (NP 직무/NNC+관련/NNC
+			      업체/NNC
+			      주식/NNC+보유/NNC+에/PAD))
+	     대하/VV+어/ECS))
+      (S (NP-SBJ 정부/NNC
+		     공직자/NNC+윤리/NNC+위원회/NNC+이/PCA)
+	 (VP (VP (VP (S (NP-SBJ *pro*)
+			(VP (NP-OBJ 심사/NNC+을/PCA)
+			    통하/VV+어/ECS))
+		     (VP (NP-OBJ 해당/NNC
+				     공무원/NNC+을/PCA)
+			 (VV 징계/NNC+하/XSV+고/ECS)))
+		 (VP (ADVP 나아가/ADV)
+		     (S (NP-SBJ *pro*)
+			(VP (NP-OBJ (NP 증권/NNC+감독원/NNC+의/PAN)
+				    (NP 조사/NNC+을/PCA))
+			    통하/VV+어/ECS))
+		     (VP (VP (NP-OBJ *pro*)
+			     (NP-COMP 검찰/NNC+에/PAD)
+			     (VV 고발/NNC))
+			 ,/SCM
+			 (VP (NP-OBJ 사법/NNC+처리/NNC+까지/PAU)
+			     하/VV+을/EAN))))
+	     (VX 수/NNX
+		   있/VJ+도록/ECS))))
+   (S (NP-SBJ 공직자윤리법/NNC+이/PCA)
+      (VP (VV 개정/NNC+되/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>정부 공직자윤리위원회</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>심사를 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>해당 공무원</term>
+	    </Arg>
+	    <Rel>
+	      <term>징계하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

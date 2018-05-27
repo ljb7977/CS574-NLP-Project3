@@ -1,0 +1,111 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>공존</lemma>
+    <comment>Frames file for '공존' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>공존.01</id>
+      <edef>coexist</edef>
+      <roleset>
+	<role argnum="1" argrole="thing existing"/>
+	<role argnum="2" argrole="existing with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>공존하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 "통일이 될 때까지 북한과 평화적으로 공존하며, 서로 화해하고 인적, 물적 교류를 해가는 것이 현명한 대북정책"이라고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (VP (NP-ADV (S (WHNP *op*)
+                                                 (S (NP-SBJ 통일/NNC+이/PCA)
+                                                    (VP 되/VV+을/EAN)))
+                                              (NP 때/NNC+까지/PAU))
+                                      (S (NP-SBJ *pro*)
+                                         (VP (NP-COMP 북한/NPR+과/PAD)
+                                             (VP (ADVP (ADV 평화/NNC+적/XSF+으로/PAD))
+                                                 (VP (VV 공존/NNC+하/XSV+으며/ECS)))))
+                                      ,/SCM
+                                      (VP (VP (ADVP 서로/ADV)
+                                              (VP (VV 화해/NNC+하/XSV+고/ECS)))
+                                          (VP (NP-OBJ (NP (NP 인/NNC+적/XSF)
+                                                          ,/SCM
+                                                          (NP 물/NNC+적/XSF))
+                                                      (NP 교류/NNC+을/PCA))
+                                              하/VV+어/ECS)))
+                                  가/VX+는/EAN))
+                           (NP 것/NNX+이/PCA))
+                   (VP (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (ADJP (VJ 현명/NNC+하/XSJ+은/EAN))))
+                           (NP 대/XPF+북/NPR+정책/NNC)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>평화적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>공존하며</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>여성단체들은 "정부가 여성정책을 진지하게 추진할 의사가 없음을 이미 보여줬다"고 지적하고 "인종차별주의와 여성차별은 공존한다는 점에서 여성들은 항의해야 한다"고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 여성/NNC+단체/NNC+들/XSF+은/PAU)
+   (VP (VP (S-COMP "/SLQ
+                   (NP-SBJ 정부/NNC+이/PCA)
+                   (VP (S-OBJ (NP-SBJ (S (NP-SBJ *pro*)
+                                         (VP (NP-OBJ 여성/NNC+정책/NNC+을/PCA)
+                                             (VP (ADVP (ADV (VJ 진지/NNC+하/XSJ+게/ECS)))
+                                                 (VP (VV 추진/NNC+하/XSV+을/EAN)))))
+                                      (NP 의사/NNC+이/PCA))
+                              (ADJP 없/VJ+음/ENM+을/PCA))
+                       (VP (VP (ADVP 이미/ADV)
+                               (VP 보이/VV+어/ECS))
+                           주/VX+었/EPF+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           (VV 지적/NNC+하/XSV+고/ECS))
+       (VP (S-COMP "/SLQ
+                   (NP-ADV (S (NP-SBJ (NP 인종/NNC+차별/NNC+주의/NNC+과/PCJ)
+                                      (NP 여성/NNC+차별/NNC+은/PAU))
+                              (VP (VV 공존/NNC+하/XSV+는다는/EAN)))
+                           (NP 점/NNX+에서/PAD))
+                   (S (NP-SBJ 여성/NNC+들/XSF+은/PAU)
+                      (VP (VP (VV 항의/NNC+하/XSV+어야/ECS))
+                          하/VX+는다/EFN))
+                   "/SRQ
+                   고/PAD)
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>인종차별주의와 여성차별</term>
+	    </Arg>
+	    <Rel>
+	      <term>공존한다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>봉쇄</lemma>
+    <comment>Frames file for '봉쇄' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>봉쇄.01</id>
+      <edef>block</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing blocked"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>봉쇄되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>4 만여개에 달하는 대만 기업은 현재까지 약 400 억달러(한화 약 45 조 1 천억원)를 중국에 투자해 왔으나 중국내 소매, 보건, 교육, 수출입, 그리고 공학등의 분야에는 여전히 진출이 봉쇄돼 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP 4/NNU
+                                 만/NNU+여/XSF+개/NNX+에/PAD)
+                        달하/VV+는/EAN)))
+              (NP 대만/NPR
+                  기업/NNC+은/PAU))
+      (VP (VP (NP-ADV 현재/NNC+까지/PAU)
+              (VP (NP-OBJ 약/DAN
+                          400/NNU
+                          억/NNU+달러/NNX
+                          (PRN -LRB-/SLQ
+                               한화/NNC
+                               약/DAN
+                               45/NNU
+                               조/NNU
+                               1/NNU
+                               천억/NNU+원/NNX
+                               -RRB-/SRQ)
+                          을/PCA)
+                  (NP-COMP 중국/NPR+에/PAD)
+                  (VV 투자/NNC+하/XSV+어/ECS)))
+          오/VX+었/EPF+으나/ECS))
+   (S (NP-ADV (NP (NP 중국/NPR+내/NNX)
+                  (NP (NP 소매/NNC)
+                      ,/SCM
+                      (NP 보건/NNC)
+                      ,/SCM
+                      (NP 교육/NNC)
+                      ,/SCM
+                      (NP 수출입/NNC)
+                      ,/SCM
+                      (ADCP 그리고/ADC)
+                      (NP 공학/NNC+등/NNX+의/PAN)))
+              (NP 분야/NNC+에/PAD+은/PAU))
+      (ADVP 여전히/ADV)
+      (S (NP-SBJ 진출/NNC+이/PCA)
+         (VP (VP (VV 봉쇄/NNC+되/XSV+어/ECS))
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에는</f>
+	      <term>중국내 소매, 보건, 교육, 수출입, 그리고 공학등의 분야</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>여전히</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>진출</term>
+	    </Arg>
+	    <Rel>
+	      <term>봉쇄돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

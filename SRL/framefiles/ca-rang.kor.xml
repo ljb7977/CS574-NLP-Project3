@@ -1,0 +1,190 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자랑</lemma>
+    <comment>Frames file for '자랑' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>자랑.01</id>
+      <edef>proud</edef>
+      <roleset>
+	<role argnum="0" argrole="thing proud"/>
+	<role argnum="1" argrole="proud of"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자랑하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>영국 로버자동차의 매각에 나선 BMW는 적자에 허덕이는 로버 승용차부문을 영국의 벤처캐피탈 업체인 알케미 파트너스에 매각한 데 이어 세계적인 명성을 자랑하는 랜드로버를 미국 포드사에 매각하기 위해 협상 중이라고 파이낸셜 타임스가 17 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-6 (NP-SBJ (S (WHNP-1 *op*)
+			(S (NP-SBJ *T*-1)
+			   (VP (NP-COMP (NP 영국/NPR
+						로버/NPR+자동차/NNC+의/PAN)
+					(NP 매각/NNC+에/PAD))
+			       나서/VV+은/EAN)))
+		     (NP BMW/NFW+은/PAU))
+	     (VP (VP (ADVP (NP-COMP (S (NP-SBJ *pro*)
+				       (VP (NP-OBJ (S (WHNP-2 *op*)
+						      (S (NP-SBJ *T*-2)
+							 (VP (NP-COMP 적자/NNC+에/PAD)
+							     허덕이/VV+는/EAN)))
+						   (NP 로버/NPR
+							   승용차/NNC+부문/NNC+을/PCA))
+					   (NP-COMP (S (WHNP-3 *op*)
+						       (S (NP-SBJ *T*-3)
+							  (VP (NP (NP 영국/NPR+의/PAN)
+								  (NP 벤처/NNC+캐피탈/NNC
+									  업체/NNC+이/CO+은/EAN)))))
+						    (NP 알케미/NPR
+							      파트너스/NPR+에/PAD))
+					   (VV 매각/NNC+하/XSV+은/EAN)))
+				    (NP 데/NNX))
+			   이어/ADV)
+		     (S (NP-SBJ *pro*)
+			(VP (S-OBJ (NP-SBJ *pro*)
+				   (VP (NP-OBJ (S (WHNP-5 *op*)
+						  (S (NP-SBJ *T*-5)
+						     (VP (NP-OBJ (S (WHNP-4 *op*)
+								    (S (NP-SBJ *T*-4)
+								       (VP (NP 세계/NNC+적/XSF+이/CO+은/EAN))))
+								 (NP 명성/NNC+을/PCA))
+							 (VV 자랑/NNC+하/XSV+는/EAN))))
+					       (NP 랜드로버/NPR+을/PCA))
+				       (NP-COMP 미국/NPR
+						    포드/NPR+사/XSF+에/PAD)
+				       (VV 매각/NNC+하/XSV+기/ENM)))
+			    위하/VV+어/ECS))
+		     (VP (VV 협상/NNC)))
+		 (VX 중/NNX+이/CO+라/EFN+고/PAD)))
+   (S (NP-SBJ 파이낸셜/NPR
+              타임스/NPR+이/PCA)
+      (VP (NP-ADV 17/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-6)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=랜드로버</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>세계적인 명성</term>
+	    </Arg>
+	    <Rel>
+	      <term>자랑하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>자랑하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 새 고속열차가 철도여행의 안락함에 비행기 승객을 매료시킬 만한 속도를 느끼게 될 것이라고 자랑했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (VP (VP (NP-OBJ (S (NP-SBJ 새/DAN
+						고속/NNC+열차/NNC+이/PCA)
+				      (VP (VP (NP-ADV (NP 철도/NNC+여행/NNC+의/PAN)
+						      (NP 안락함/NNC+에/PAD))
+					      (VP (NP-OBJ 비행기/NNC
+								승객/NNC+을/PCA)
+						  (VV 매료/NNC+시키/XSV+을/EAN)))
+					  만하/VX+은/EAN))
+				   (NP 속도/NNC+을/PCA))
+			   느끼/VV+게/ECS)
+                       되/VX+을/EAN)
+                   (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+       (VV 자랑/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>새 고속열차가 철도여행의 안락함에 비행기 승객을 매료시킬 만한 속도를 느끼게 될 것이라</term>
+	    </Arg>
+	    <Rel>
+	      <term>자랑했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>자랑스럽다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>앞서 올브라이트는 자신의 차기 대통령 출마설에 대해 "그렇게 중요한 자리에 내 이름이 거론된다는 사실만으로도 자랑스럽게 생각한다"면서 "그러나 나는 대통령 자리에 오를 자격이 없으며 그럴 의사도 없다"고 단호히 부인했었다.</text>
+	  <parse>
+(S (ADVP 앞서/ADV)
+   (S (NP-SBJ 올브라이트/NPR+은/PAU)
+      (VP (S-COMP (NP-SBJ *pro*)
+		  (VP (NP-COMP (NP 자신/NNC+의/PAN)
+			       (NP (NP 차기/NNC
+					   대통령/NNC)
+				   (NP 출마/NNC+설/NNC+에/PAD)))
+		      대하/VV+어/ECS))
+          (VP (S (S "/SLQ
+		    (NP-SBJ *pro*)
+		    (VP (S-COMP (NP-SBJ *pro*)
+				(ADJP (NP-ADV (S (NP-ADV (S (WHNP-1 *op*)
+							    (S (NP-SBJ *T*-1)
+							       (ADJP (ADVP 그렇게/ADV)
+								     (ADJP (VJ 중요/NNC+하/XSJ+은/EAN)))))
+							 (NP 자리/NNC+에/PAD))
+						 (S (NP-SBJ (NP 나/NPN+의/PAN)
+							    (NP 이름/NNC+이/PCA))
+						    (VP (VV 거론/NNC+되/XSV+는다는/EAN))))
+					      (NP 사실/NNC+만/PAU+으로/PAD+도/PAU))
+				      (ADJP (VJ 자랑/NNC+스럽/XSJ+게/ECS))))
+			(VV 생각/NNC+하/XSV+는다/EFN))
+		    "/SRQ
+		    면서/ECS)
+		 (S "/SLQ
+		    (ADCP 그러나/ADC)
+		    (S (NP-SBJ 나/NPN+은/PAU)
+		       (ADJP (ADJP (NP-COMP (S (NP-SBJ *pro*)
+					       (VP (NP-COMP 대통령/NNC
+								  자리/NNC+에/PAD)
+						   오르/VV+을/EAN))
+					    (NP 자격/NNC+이/PCA))
+				   없/VJ+으며/ECS)
+			     (ADJP (NP-COMP 그럴/DAN
+						의사/NNC+도/PAU)
+				   없/VJ+다/EFN)))
+		    "/SRQ
+		    고/PAD))
+              (ADVP 단호히/ADV)
+	      (VP (VV 부인/NNC+하/XSV+었었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>그렇게 중요한 자리에 내 이름이 거론된다는 사실만으로도</term>
+	    </Arg>
+	    <Rel>
+	      <term>자랑스럽게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

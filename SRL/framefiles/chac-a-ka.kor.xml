@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>찾아가</lemma>
+    <comment>Frames file for '찾아가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>찾아가.01</id>
+      <edef>visit</edef>
+      <roleset>
+	<role argnum="0" argrole="thing visiting"/>
+	<role argnum="1" argrole="thing visited"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>찾아가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>방-코번 변호사는 지난 9 일 김씨가 수감된 펜실베이니아주 앨런우드 교도소를 찾아가 김씨의 승락을 받았다.</text>
+	  <parse>
+(S (S (NP-SBJ 방/NPR
+              -/SSY
+              코번/NPR
+              변호사/NNC+은/PAU)
+      (VP (NP-ADV 지난/DAN
+                  9/NNU
+                  일/NNX)
+          (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ 김/NPR+씨/NNX+이/PCA)
+                            (VP (NP-COMP *T*-1)
+				(VV 수감/NNC+되/XSV+은/EAN))))
+                      (NP 펜실베이니아/NPR+주/NNC
+                          앨런우드/NPR
+                          교도소/NNC+을/PCA))
+              찾아가/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP 김/NPR+씨/NNX+의/PAN)
+                  (NP 승락/NNC+을/PCA))
+          받/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>방-코번 변호사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 9 일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>김씨가 수감된 펜실베이니아주 앨런우드 교도소</term>
+	    </Arg>
+	    <Rel>
+	      <term>찾아가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

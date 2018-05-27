@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>동조</lemma>
+    <comment>Frames file for '동조' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>동조.01</id>
+      <edef>support</edef>
+      <roleset>
+	<role argnum="0" argrole="supporter"/>
+	<role argnum="1" argrole="thing supported"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>동조하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이스라엘 정보 당국자들은 아사드의 핵심 측근과 집권세력이 이스라엘과의 평화협정을 바라고 있으며 평화협정 후 아사드가 곧 죽는다 해도 그의 후계자가 이를 준수할 것으로 보고 있으며 이집트와 요르단 등 아랍국가들도 이 견해에 동조하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 이스라엘/NPR
+              정보/NNC
+              당국자/NNC+들/XSF+은/PAU)
+      (VP (VP (NP-COMP (S (S (NP-SBJ (NP (NP 아사드/NPR+의/PAN)
+                                         (NP 핵심/NNC
+                                             측근/NNC+과/PCJ))
+                                     (NP 집권/NNC+세력/NNC+이/PCA))
+                             (VP (VP (NP-OBJ (NP 이스라엘/NPR+과/PAD+의/PAN)
+                                             (NP 평화/NNC+협정/NNC+을/PCA))
+                                     바라/VV+고/ECS)
+                                 있/VX+으며/ECS))
+                          (S (S (NP-SBJ *pro*)
+                                (VP (S-COMP (NP-ADV 평화/NNC+협정/NNC
+                                                    후/NNC)
+                                            (S (NP-SBJ 아사드/NPR+이/PCA)
+                                               (VP (ADVP 곧/ADV)
+                                                   (VP 죽/VV+는다/EFN))))
+                                    하/VV+어도/ECS))
+                             (S (NP-SBJ (NP 그/NPN+의/PAN)
+                                        (NP 후계자/NNC+이/PCA))
+                                (VP (NP-OBJ 이/NPN+을/PCA)
+                                    (VV 준수/NNC+하/XSV+을/EAN)))))
+                       (NP 것/NNX+으로/PAD))
+              보/VV+고/ECS)
+          있/VX+으며/ECS))
+   (S (NP-SBJ (NP (NP (NP 이집트/NPR+과/PCJ)
+                      (NP 요르단/NPR))
+                  (NP 등/NNX))
+              (NP 아랍/NPR+국가/NNC+들/XSF+도/PAU))
+      (VP (VP (NP-COMP 이/DAN
+                       견해/NNC+에/PAD)
+              (VV 동조/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이스라엘 정보 당국자들은 아사드의 핵심 측근과 집권세력이 이스라엘과의 평화협정을 바라고 있으며 평화협정 후 아사드가 곧 죽는다 해도 그의 후계자가 이를 준수할 것으로 보고 있으며</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>이집트와 요르단 등 아랍국가들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>이 견해</term>
+	    </Arg>
+	    <Rel>
+	      <term>동조하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

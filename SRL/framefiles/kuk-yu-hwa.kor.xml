@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>국유화</lemma>
+    <comment>Frames file for '국유화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>국유화.01</id>
+      <edef>nationalize</edef>
+      <roleset>
+	<role argnum="0" argrole="government"/>
+	<role argnum="1" argrole="property"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>국유화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 "한국정부가 은행 회생을 위해 공적자금을 과도하게 투입, 은행을 국유화하는 것은 바람직하지 못하다"면서 "한국정부의 은행 민영화 과정을 세계가 치밀하게 지켜보고 있다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ (S (NP-SBJ 한국/NPR+정부/NNC+이/PCA)
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (S (NP-SBJ *pro*)
+                                   (VP (NP-OBJ 은행/NNC
+                                               회생/NNC+을/PCA)
+                                       위하/VV+어/ECS))
+                                (VP (NP-OBJ 공적/NNC+자금/NNC+을/PCA)
+                                    (VP (ADVP (ADV (VJ 과도/NNC+하/XSJ+게/ECS)))
+                                        (VP (VV 투입/NNC))))))
+                         ,/SCM
+                         (VP (NP-OBJ 은행/NNC+을/PCA)
+                             (VV 국유화/NNC+하/XSV+는/EAN))))
+                  (NP 것/NNX+은/PAU))
+          (VP (ADJP (VJ 바람직/NNC+하/XSJ+지/ECS))
+              못하/VX+다/EFN)
+          "/SRQ
+          면서/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-OBJ-1 (NP 한국/NPR+정부/NNC+의/PAN)
+                             (NP (NP 은행/NNC
+                                     민영화/NNC)
+                                 (NP 과정/NNC+을/PCA)))
+                   (S (NP-SBJ 세계/NNC+이/PCA)
+                      (VP (VP (ADVP (ADV (VJ 치밀/NNC+하/XSJ+게/ECS)))
+                              (VP (NP-OBJ *T*-1)
+                                  지켜보/VV+고/ECS))
+                          있/VX+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>한국정부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>은행 회생을 위해 공적자금을 과도하게 투입</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>은행</term>
+	    </Arg>
+	    <Rel>
+	      <term>국유화하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

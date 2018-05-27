@@ -1,0 +1,169 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>듣</lemma>
+    <comment>Frames file for '듣' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>듣.01</id>
+      <edef>hear</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing heard"/>
+	<role argnum="2" argrole="heard from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>듣다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인민군 장병들은 세계 여론이 자기들 편이란 걸 정치 군관한테서 매일 들었기 때문이지요.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 인민군/NNC
+                      장병/NNC+들/XSF+은/PAU)
+              (VP (NP-OBJ (S (NP-SBJ 세계/NNC
+                                     여론/NNC+이/PCA)
+                             (VP (NP (NP 자기/NPN+들/XSF)
+                                     (NP 편/NNC+이/CO+으란/EAN))))
+                          (NP 것/NNX+을/PCA))
+                  (NP-COMP 정치/NNC
+                           군관/NNC+한테서/PAD)
+                  (VP (ADVP 매일/ADV)
+                      (VP 듣/VV+었/EPF+기/ENM))))
+           (NP 때문/NNX+이/CO+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>인민군 장병들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>세계 여론이 자기들 편이란 것</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>한테서</f>
+	      <term>정치 군관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>매일</term>
+	    </Arg>
+	    <Rel>
+	      <term>들었기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>듣다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 떼아이-43 전화기가 까-10 야전 교환기에 동력을 공급한다고 들었습니다만 확실히는 모르겠습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ 이/DAN
+                          떼아이-43/NNC
+                          전화기/NNC+이/PCA)
+                  (VP (NP-COMP 까-10/NNC
+                               야전/NNC
+                               교환기/NNC+에/PAD)
+                      (NP-OBJ 동력/NNC+을/PCA)
+                      (VV 공급/NNC+하/XSV+는다/EFN+고/PAD)))
+          듣/VV+었/EPF+습니다만/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ *pro*)
+          (VP (ADVP 확실히/ADV+은/PAU)
+              (VP 모르/VV+겠/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>이 떼아이-43 전화기가 까-10 야전 교환기에 동력을 공급한다</term>
+	    </Arg>
+	    <Rel>
+	      <term>들었습니다만</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>교체 계획에 대해선 전혀 들어 본 적이 없읍니다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+              (VP (VP (S-COMP (NP-SBJ *pro*)
+                              (VP (NP-COMP 교체/NNC
+                                           계획/NNC+에/PAD)
+                                  대하/VV+어서/ECS+은/PAU))
+                      (VP (ADVP 전혀/ADV)
+                          (VP 듣/VV+어/ECS)))
+                  보/VX+은/EAN))
+           (NP 적/NNX+이/PCA))
+   (ADJP 없/VJ+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>교체 계획에 대해선</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>전혀</term>
+	    </Arg>
+	    <Rel>
+	      <term>들어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>본</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>들리다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이따금 포 소리가 들려 왔다.</text>
+	  <parse>
+(S (ADVP 이따금/ADV) 
+   (S (NP-SBJ 포/NNC 소리/NNC+이/PCA) 
+      (VP (VP 들리/VV+어/EAU) 
+	  오/VX+았/EPF+다/EFN))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이따금</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>포 소리</term>
+	    </Arg>
+	    <Rel>
+	      <term>들려</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

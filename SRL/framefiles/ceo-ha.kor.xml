@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>저하</lemma>
+    <comment>Frames file for '저하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>저하.01</id>
+      <edef>deteriorate</edef>
+      <roleset>
+	<role argnum="0" argrole="thing deteriorating"/>
+	<role argnum="1" argrole="thing deteriorated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>저하되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이와 관련, 합참의 한 관계자는 "북한이 서해교전에서 참패한 후 인민군 병사들의 사기가 저하된 만큼 국군의 월북을 유도해 이를 만회하려는 의도로 분석된다"고 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+과/PAD)
+          (VV 관련/NNC)))
+   ,/SCM
+   (S (NP-SBJ (NP 합참/NNC+의/PAN)
+              (NP 한/NNU
+                  관계자/NNC+은/PAU))
+      (VP (S-COMP "/SLQ
+                  (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-SBJ 북한/NPR+이/PCA)
+                                  (VP (NP-ADV (S (NP-ADV (S (NP-SBJ *pro*)
+                                                            (VP (NP-ADV 서해/NPR+교전/NNC+에서/PAD)
+                                                                (VP (VV 참패/NNC+하/XSV+은/EAN))))
+                                                         (NP 후/NNC))
+                                                 (S (NP-SBJ (NP 인민군/NNC
+                                                                병사/NNC+들/XSF+의/PAN)
+                                                            (NP 사기/NNC+이/PCA))
+                                                    (VP (VV 저하/NNC+되/XSV+은/EAN))))
+                                              (NP 만큼/NNX))
+                                      (S (NP-SBJ *pro*)
+                                         (VP (NP-OBJ (NP 국군/NNC+의/PAN)
+                                                     (NP 월북/NNC+을/PCA))
+                                             (VV 유도/NNC+하/XSV+어/ECS)))
+                                      (VP (NP-OBJ 이/NPN+을/PCA)
+                                          (VV 만회/NNC+하/XSV+으려는/EAN))))
+                               (NP 의도/NNC+으로/PAD))
+                      (VV 분석/NNC+되/XSV+는다/EFN))
+                  "/SRQ
+                  고/PAD)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>서해교전에서 참패한 후</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>인민군 병사들의 사기</term>
+	    </Arg>
+	    <Rel>
+	      <term>저하된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

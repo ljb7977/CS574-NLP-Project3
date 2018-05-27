@@ -1,0 +1,105 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>운용</lemma>
+    <comment>Frames file for '운용' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>운용.01</id>
+      <edef>use</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing used"/>
+	<role argnum="2" argrole="purpose"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>운용하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>2 대대에서는 연대망에 무전소를 몇 군데나 운용하고 있는가?</text>
+	  <parse>
+(S (NP-SBJ 2/NNU
+           대대/NNC+에서/PCA+은/PAU)
+   (VP (VP (NP-ADV 연대망/NNC+에/PAD)
+           (VP (NP-OBJ 무전소/NNC+을/PCA)
+               (VP (NP-ADV 몇/NNU
+                           군데/NNX+이나/PAU)
+                   (VP (VV 운용/NNC+하/XSV+고/ECS)))))
+       있/VX+는가/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>2 대대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>연대망에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>무전소</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>나</f>
+	      <term>몇 군데</term>
+	    </Arg>
+	    <Rel>
+	      <term>운용하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는가</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>운용되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>박격포와 다연식 방사포도 역시 그런 사격 임무를 수행하는 데 운용됩니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 박격포/NNC+와/PCJ) 
+	   (NP 다연/NNC+식/XSF 
+	       방사포/NNC+도/PAU))
+   (VP (ADVP 역시/ADV) 
+       (NP-COMP (S (NP-SBJ *pro*)
+		   (VP (NP-OBJ 그런/DAN 
+			       사격/NNC 
+			       임무/NNC+를/PCA) 
+		       (VV 수행/NNC+하/XSV+는/EAN))) 
+	        (NP 데/NNX))
+       (VP (VV 운용/NNC+되/XSV+습니다/EFN))) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>박격포와 다연식 방사포</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>역시</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>그런 사격 임무를 수행하는 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>운용됩니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

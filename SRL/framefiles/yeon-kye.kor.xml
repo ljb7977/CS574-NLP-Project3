@@ -1,0 +1,139 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>연계</lemma>
+    <comment>Frames file for '연계' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>연계.01</id>
+      <edef>connect</edef>
+      <roleset>
+	<role argnum="0" argrole="thing making connect"/>
+	<role argnum="1" argrole="thing connected"/>
+	<role argnum="2" argrole="connect with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>연계되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>해양부는 또 "양국 어선의 타방국 배타적경제수역 입어는 상호주의의 원칙하에서 이뤄지는 것으로 우리 어선의 동중국해 입어문제는 중국어선의 우리 수역 입어문제와 연계돼 결정될 것"이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 해양부/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP "/SLQ
+                   (NP-ADV (S (NP-SBJ (NP 양국/NNC
+                                          어선/NNC+의/PAN)
+                                      (NP 타방국/NNC
+                                          배타/NNC+적/XSF+경제/NNC+수역/NNC
+                                          입어/NNC+은/PAU))
+                              (VP (NP-ADV (NP 상호/NNC+주의/NNC+의/PAN)
+                                          (NP 원칙/NNC+하/XSF+에서/PAD))
+                                  (VP (VV 이루/VV+어지/XSV+는/EAN))))
+                           (NP 것/NNX+으로/PAD))
+                   (S (NP-SBJ (NP 우리/NPN
+                                  어선/NNC+의/PAN)
+                              (NP 동중국해/NPR
+                                  입어/NNC+문제/NNC+은/PAU))
+                      (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-COMP (NP 중국/NPR+어선/NNC+의/PAN)
+                                              (NP 우리/NPN
+                                                  수역/NNC
+                                                  입어/NNC+문제/NNC+과/PAD))
+                                     (VV 연계/NNC+되/XSV+어/ECS)))
+                              (VP (VV 결정/NNC+되/XSV+을/EAN)))
+                          (VX 것/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>중국어선의 우리 수역 입어문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>연계되어</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>연계시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일본에서는 자민당을 중심으로 식량지원을 일본인 납치의혹 등 다른 현안과 연계시켜야 한다는 신중론이 있으나 정부의 지원 방침은 미국 등의 요청이 있는 데다 쌀 지원을 지렛대로 수교협상을 진척시키는 것이 여타 현안의 해결에도 기여한다는 판단을 내렸기 때문이라고 신문은 말했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-ADV 일본/NPR+에서/PAD+은/PAU)
+                (NP-ADV (NP-OBJ 자민당/NPR+을/PCA)
+                        중심/NNC+으로/PAD)
+                (S (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (VP (NP-OBJ 식량/NNC+지원/NNC+을/PCA)
+                                      (NP-COMP (NP (NP 일본인/NNC
+                                                       납치/NNC+의혹/NNC)
+                                                   (NP 등/NNX))
+                                               (NP 다른/DAN
+                                                   현안/NNC+과/PAD))
+                                      (VV 연계/NNC+시키/XSV+어야/ECS))
+                                  하/VX+는다는/EAN))
+                           (NP 신중/NNC+론/XSF+이/PCA))
+                   (ADJP 있/VJ+으나/ECS)))
+             (S (NP-SBJ (NP 정부/NNC+의/PAN)
+                        (NP 지원/NNC
+                            방침/NNC+은/PAU))
+                (VP (NP (S (NP-ADV (S (NP-SBJ (NP 미국/NPR
+					          등/NNX+의/PAN)
+				              (NP 요청/NNC+이/PCA))
+			              (ADJP 있/VJ+는/EAN))
+			           (NP 데/NNX+에다/PAD))
+			   (S (NP-SBJ *pro*)
+			      (VP (NP-OBJ (S (NP-SBJ (S (NP-SBJ *pro*)
+							(VP (NP-ADV (NP-OBJ 쌀/NNC
+									      지원/NNC+을/PCA)
+								    지렛대/NNC+으로/PAD)
+							    (VP (NP-OBJ 수교/NNC+협상/NNC+을/PCA)
+								(VV 진척/NNC+시키/XSV+는/EAN))))
+						     (NP 것/NNX+이/PCA))
+					     (VP (NP-COMP (NP 여타/NNC
+								  현안/NNC+의/PAN)
+							  (NP 해결/NNC+에/PAD+도/PAU))
+						 (VV 기여/NNC+하/XSV+는다는/EAN)))
+					  (NP 판단/NNC+을/PCA))
+				  내리/VV+었/EPF+기/ENM)))
+                        (NP 때문/NNX+이/CO+라/EFN+고/PAD)))))
+   (S (NP-SBJ 신문/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>식량지원</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>일본인 납치의혹 등 다른 현안</term>
+	    </Arg>
+	    <Rel>
+	      <term>연계시켜야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

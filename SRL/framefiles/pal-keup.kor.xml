@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발급</lemma>
+    <comment>Frames file for '발급' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발급.01</id>
+      <edef>issue</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing issued"/>
+	<role argnum="2" argrole="issued to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발급하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>제이크 시워트 백악관 대변인은 "외국인 기술자들에게 비자를 많이 발급해도 미국 노동자들에게 별다른 악영향을 미치지 않고 미국 노동력에 도움이 되는 범위내에서 H1B 비자 발급수를 합리적으로 늘리는 방안을 지지할 용의가 있다"고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ (NP 제이크/NPR
+               시워트/NPR)
+           (NP 백악관/NPR
+               대변인/NNC+은/PAU))
+   (VP (S-COMP "/SLQ
+               (NP-SBJ (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                         (VP (NP-ADV (S (S (NP-SBJ *pro*)
+                                                           (VP (NP-COMP 외국인/NNC
+                                                                        기술자/NNC+들/XSF+에게/PAD)
+                                                               (NP-OBJ 비자/NNC+을/PCA)
+                                                               (VP (ADVP 많이/ADV)
+                                                                   (VP (VV 발급/NNC+하/XSV+어도/ECS)))))
+                                                        (S (NP-SBJ *pro*)
+                                                           (VP (VP (NP-COMP 미국/NPR
+                                                                            노동자/NNC+들/XSF+에게/PAD)
+                                                                   (NP-OBJ (S (WHNP-1 *op*)
+                                                                              (S (NP-SBJ *T*-1)
+                                                                                 (ADJP 별다르/VJ+은/EAN)))
+                                                                           (NP 악영향/NNC+을/PCA))
+                                                                   미치/VV+지/ECS)
+                                                               않/VX+고/ECS))
+                                                        (S (NP-COMP-2 미국/NPR
+                                                                      노동력/NNC+에/PAD)
+                                                           (S (NP-SBJ 도움/NNC+이/PCA)
+                                                              (VP (NP-COMP *T*-2)
+                                                                  되/VV+는/EAN))))
+                                                     (NP 범위/NNC+내/NNX+에서/PAD))
+                                             (VP (NP-OBJ H1B/NFW
+                                                         비자/NNC
+                                                         발급/NNC+수/NNC+을/PCA)
+                                                 (VP (ADVP (ADV 합리/NNC+적/XSF+으로/PAD))
+                                                     (VP 늘리/VV+는/EAN)))))
+                                      (NP 방안/NNC+을/PCA))
+                              (VV 지지/NNC+하/XSV+을/EAN)))
+                       (NP 용의/NNC+이/PCA))
+               (ADJP 있/VJ+다/EFN)
+               "/SRQ
+               고/PAD)
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>외국인 기술자들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>비자</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>많이</term>
+	    </Arg>
+	    <Rel>
+	      <term>발급해도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

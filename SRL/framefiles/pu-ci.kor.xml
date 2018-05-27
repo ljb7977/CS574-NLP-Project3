@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부지</lemma>
+    <comment>Frames file for '부지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부지.01</id>
+      <edef>bear</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing borne"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 4 주 전 시작된 이번 홍수로 모잠비크, 남아프리카공화국, 보츠와나, 짐바브웨에서 최소한 350 명이 목숨을 잃었으며, 아직도 1 만여명이 나무와 지붕 위에 매달려 목숨을 부지하고 있는 것으로 알려지고 있다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (S (S (NP-ADV (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP-ADV 4/NNU
+                                                       주/NNX
+                                                       전/NNC)
+                                               (VP (VV 시작/NNC+되/XSV+은/EAN)))))
+                                     (NP 이번/NNC
+                                         홍수/NNC+으로/PAD))
+                             (NP-ADV (NP 모잠비크/NPR)
+                                     ,/SCM
+                                     (NP 남아프리카/NPR+공화국/NNC)
+                                     ,/SCM
+                                     (NP 보츠와나/NPR)
+                                     ,/SCM
+                                     (NP 짐바브웨/NPR+에서/PAD))
+                             (S (NP-SBJ 최소한/NNC
+                                        350/NNU
+                                        명/NNX+이/PCA)
+                                (VP (NP-OBJ 목숨/NNC+을/PCA)
+                                    잃/VV+었/EPF+으며/ECS)))
+                          ,/SCM
+                          (S (NP-ADV 아직/NNC+도/PAU)
+                             (S (NP-SBJ 1/NNU
+                                        만/NNU+여/XSF+명/NNX+이/PCA)
+                                (VP (VP (S (NP-SBJ *pro*)
+					   (VP (NP-COMP (NP 나무/NNC+과/PCJ)
+							(NP 지붕/NNC
+								위/NNC+에/PAD))
+					       매달리/VV+어/ECS))
+					(VP (NP-OBJ 목숨/NNC+을/PCA)
+					    (VV 부지/NNC+하/XSV+고/ECS)))
+				    있/VX+는/EAN))))
+                       (NP 것/NNX+으로/PAD))
+              (VV 알리/VV+어지/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>아직도</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>1 만여명</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>나무와 지붕 위에 매달려</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>목숨</term>
+	    </Arg>
+	    <Rel>
+	      <term>부지하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

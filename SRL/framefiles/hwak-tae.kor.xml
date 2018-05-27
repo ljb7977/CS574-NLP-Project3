@@ -1,0 +1,188 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>확대</lemma>
+    <comment>Frames file for '확대' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>확대.01</id>
+      <edef>expand</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing grown"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>확대하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>보통 2 제대는 1 제대의 전과를 확대하고 아까 말씀드렸던 것처럼 1 제대의 공격력을 강화해 줍니다.</text>
+	  <parse>
+(S (ADVP 보통/ADV)
+   (S (NP-SBJ 2/NNU
+              제대/NNC+은/PAU)
+      (VP (NP-OBJ (NP 1/NNU
+                      제대/NNC+의/PAN)
+                  (NP 전과/NNC+을/PCA))
+          (VV 확대/NNC+하/XSV+고/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (S (WHNP-1 *op*)
+                         (S (NP-SBJ *pro*)
+                            (VP (ADVP 아까/ADV)
+                                (VP (NP-OBJ *T*-1)
+                                    말씀드리/VV+었/EPF+던/EAN))))
+                      (NP 것/NNX+처럼/PAD))
+              (VP (NP-OBJ (NP 1/NNU
+                              제대/NNC+의/PAN)
+                          (NP 공격력/NNC+을/PCA))
+                  (VV 강화/NNC+하/XSV+어/ECS)))
+          주/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>보통</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>2 제대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>1 제대의 전과</term>
+	    </Arg>
+	    <Rel>
+	      <term>확대하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>확대되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>지난 4 일 보스턴 칼리지와의 경기에서 2 이닝동안 삼진 3 개를 뽑고 1 안타 무실점으로 막았던 김선우는 메이저리그 엔트리가 25 명에서 40 명으로 확대되는 9 월쯤 빅리그 진입이 예상됐다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-ADV 지난/DAN
+                         4/NNU
+                         일/NNX)
+                 (NP-ADV (NP 보스턴/NPR
+                             칼리지/NNC+과/PAD+의/PAN)
+                         (NP 경기/NNC+에서/PAD))
+                 (NP-ADV 2/NNU
+                         이닝/NNX+동안/NNX)
+                 (S (NP-SBJ *T*-1)
+                    (VP (VP (NP-OBJ 삼진/NNC
+                                    3/NNU
+                                    개/NNX+을/PCA)
+                            뽑/VV+고/ECS)
+                        (VP (NP-ADV 1/NNU
+                                    안타/NNC
+                                    무실점/NNC+으로/PAD)
+                            (VP (NP-OBJ *pro*)
+                                막/VV+었/EPF+던/EAN))))))
+           (NP 김선우/NPR+은/PAU))
+   (S (NP-ADV (S (WHNP *op*)
+                 (S (NP-SBJ 메이저리그/NPR
+                            엔트리/NNC+이/PCA)
+                    (VP (NP-COMP 25/NNU
+                                 명/NNX+에서/PAD)
+                        (NP-COMP 40/NNU
+                                 명/NNX+으로/PAD)
+                        (VV 확대/NNC+되/XSV+는/EAN))))
+              (NP 9/NNU
+                  월/NNX+쯤/XSF))
+      (S (NP-SBJ 빅리그/NNC
+                 진입/NNC+이/PCA)
+         (VP (VV 예상/NNC+되/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>메이저리그 엔트리</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>25 명</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>40 명</term>
+	    </Arg>
+	    <Rel>
+	      <term>확대되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>확대시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이에 따라 첨단업체들은 의회를 상대로 `H1B'로 알려진 비자 프로그램을 추가로 확대시켜 주도록 집중 로비를 벌여 왔다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          따르/VV+어/ECS))
+   (S (NP-SBJ 첨단/NNC+업체/NNC+들/XSF+은/PAU)
+      (VP (VP (NP-ADV (NP-OBJ 의회/NNC+을/PCA)
+                      상대/NNC+으로/PAD)
+              (S (NP-SBJ *pro*)
+		 (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+				    (S (NP-SBJ *T*-1)
+				       (VP (NP-COMP `/SLQ
+						    H1B/NFW
+						    '/SRQ
+						    으로/PAD)
+					   (VV 알리/VV+어지/XSV+은/EAN))))
+				 (NP 비자/NNC
+					 프로그램/NNC+을/PCA))
+			 (VP (NP-ADV 추가/NNC+으로/PAD)
+			     (VP (VV 확대/NNC+시키/XSV+어/ECS))))
+		     주/VX+도록/ECS))
+	      (VP (NP-OBJ 집중/NNC
+                              로비/NNC+을/PCA)
+		  벌이/VV+어/ECS))
+          오/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>`H1B'로 알려진 비자 프로그램</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>추가로</term>
+	    </Arg>
+	    <Rel>
+	      <term>확대시켜</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>주도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,154 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>낫</lemma>
+    <comment>Frames file for '낫' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>낫.01</id>
+      <edef>recover</edef>
+      <roleset>
+	<role argnum="1" argrole="illness"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>낫다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>상처가 다 나은 전사는 어디로 가게 되는가?</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (S (NP-SBJ 상처/NNC+이/PCA)
+                    (VP (ADVP 다/ADV)
+                        (VP 낫/VV+은/EAN)))))
+           (NP 전사/NNC+은/PAU))
+   (VP (VP (NP-COMP 어디/NPN+으로/PAD)
+           가/VV+게/ECS)
+       되/VX+는가/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=전사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>상처</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>다</term>
+	    </Arg>
+	    <Rel>
+	      <term>나은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>낫.02</id>
+      <edef>better than</edef>
+      <roleset>
+	<role argnum="1" argrole="thing under consideration"/>
+	<role argnum="2" argrole="compared with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>낫다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>국방부가 이런 반응을 보인 것은 TRW사가 성능이 실제보다 나아 보이도록 미사일 감지장치 비행실험과 컴퓨터 실험결과를 조작했다는 전 TRW사 엔지니어 니나 슈바르츠의 주장을 뉴욕타임스지가 이날 보도했기 때문.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 국방부/NNC+이/PCA)
+              (VP (NP-OBJ 이런/DAN
+                          반응/NNC+을/PCA)
+                  보이/VV+은/EAN))
+           (NP 것/NNX+은/PAU))
+   (VP (NP (S (NP-OBJ-1 (S (NP-SBJ TRW/NFW+사/XSF+이/PCA)
+			   (VP (S (NP-SBJ 성능/NNC+이/PCA)
+				  (VP (S-COMP (NP-SBJ *pro*)
+					      (VP (NP-COMP 실제/NNC+보다/PAD)
+						  낫/VJ+어/ECS))
+				      보이/VV+도록/ECS))
+			       (VP (NP-OBJ (NP 미사일/NNC
+						     감지/NNC+장치/NNC
+						     비행/NNC+실험/NNC+과/PCJ)
+					   (NP 컴퓨터/NNC
+						     실험/NNC+결과/NNC+을/PCA))
+				   (VV 조작/NNC+하/XSV+었/EPF+다는/EAN))))
+			(NP (NP (NP 전/DAN
+				      TRW/NFW+사/XSF
+				      엔지니어/NNC)
+				(NP 니나/NPR
+                                        슈바르츠/NPR+의/PAN))
+			    (NP 주장/NNC+을/PCA)))
+	      (S (NP-SBJ 뉴욕타임스/NPR+지/XSF+이/PCA)
+		 (VP (NP-ADV 이날/NNC)
+		     (VP (NP-OBJ *T*-1)
+			 (VV 보도/NNC+하/XSV+었/EPF+기/ENM)))))
+           (NP 때문/NNX)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>보다</f>
+	      <term>실제</term>
+	    </Arg>
+	    <Rel>
+	      <term>나아</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>나아지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>슈워르츠 사령관은 이날 하원 군사위원회 증언을 통해 북한의 경제는 계속 악화되고 있지만 군사력은 나아지고 있다면서 이같이 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 슈워르츠/NPR
+           사령관/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 하원/NNC
+                      군사/NNC+위원회/NNC
+                      증언/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (S (NP-SBJ 북한/NPR+의/PAN
+                  (NP 경제/NNC+은/PAU))
+          (VP (VP (ADVP 계속/ADV)
+                  (VP (VV 악화/NNC+되/XSV+고/ECS)))
+              있/VX+지만/ECS))
+       (S (NP-SBJ 군사력/NNC+은/PAU)
+          (VP (VP 나아지/VV+고/ECS)
+              있/VX+다면서/ECS))
+       (ADVP 이같이/ADV)
+       (VP (NP-OBJ *pro*)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>군사력</term>
+	    </Arg>
+	    <Rel>
+	      <term>나아지고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다면서</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

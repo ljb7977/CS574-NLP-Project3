@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대치</lemma>
+    <comment>Frames file for '대치' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>대치.01</id>
+      <edef>confront</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity confronted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대치하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 연대는 강을 사이에 두고 적과 대치하고 있습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+           연대/NNC+은/PAU)
+   (VP (VP (S (NP-SBJ *pro*)
+              (VP (NP-OBJ 강/NNC+을/PCA)
+                  (NP-COMP 사이/NNC+에/PAD)
+                  두/VV+고/ECS))
+           (VP (NP-COMP 적/NNC+과/PAD)
+               (VV 대치/NNC+하/XSV+고/ECS)))
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>저희 연대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>강을 사이에 두고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>과</f>
+	      <term>적</term>
+	    </Arg>
+	    <Rel>
+	      <term>대치하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

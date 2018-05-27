@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>»¡°²</lemma>
+    <comment>Frames file for '»¡°²' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>»¡°².01</id>
+      <edef>red</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being red"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>»¡°²´Ù</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>±× Áöµµ¿¡¼­ 1µî µµ·Î´Â »¡°£ ½Ç¼±À¸·Î Ç¥½ÃµÆ½À´Ï´Ù.</text>
+	  <parse>
+(S (NP-ADV ±×/DAN
+	   Áöµµ/NNC+¿¡¼­/PAD)
+   (S (NP-SBJ 1/NNU
+	      µî/NNX
+	      µµ·Î/NNC+Àº/PAU)
+      (VP (NP-COMP (S (WHNP-1 *op*)
+		      (S (NP-SBJ *T*-1)
+			 (ADJP »¡°²/VJ+Àº/EAN)))
+		   (NP ½Ç¼±/NNC+À¸·Î/PAD))
+	  (VV Ç¥½Ã/NNC+µÇ/XSV+¾ú/EPF+½À´Ï´Ù/EFN)))
+   ./SFN )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=½Ç¼±</term>
+	    </Arg>
+	    <Rel>
+	      <term>»¡°£</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

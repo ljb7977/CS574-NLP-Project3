@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>작전</lemma>
+    <comment>Frames file for '작전' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>작전.01</id>
+      <edef>operate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>작전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>저희 중대는 대대의 일부로서 작전하고 있었기 때문에 준비된 진지를 공격할 때는 대대가 사용하는 표준 공격 전술을 사용했습니다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 저희/NPN
+                      중대/NNC+은/PAU)
+              (VP (VP (NP-ADV (NP 대대/NNC+의/PAN)
+                              (NP 일부/NNC+으로서/PAD))
+                      (VP (VV 작전/NNC+하/XSV+고/ECS)))
+                  있/VX+었/EPF+기/ENM))
+           (NP 때문/NNX+에/PAD))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (WHNP *op*)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (VV 준비/NNC+되/XSV+은/EAN))))
+                                    (NP 진지/NNC+을/PCA))
+                            (VV 공격/NNC+하/XSV+을/EAN))))
+                  (NP 때/NNC+은/PAU))
+          (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (NP-SBJ 대대/NNC+이/PCA)
+                            (VP (NP-OBJ *T*-2)
+                                (VV 사용/NNC+하/XSV+는/EAN))))
+                      (NP 표준/NNC
+                          공격/NNC
+                          전술/NNC+을/PCA))
+              (VV 사용/NNC+하/XSV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>저희 중대</f>
+	      <term>는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>대대의 일부로서</term>
+	    </Arg>
+	    <Rel>
+	      <term>작전하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있었기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

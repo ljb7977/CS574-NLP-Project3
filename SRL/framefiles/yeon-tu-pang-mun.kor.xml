@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>연두방문</lemma>
+    <comment>Frames file for '연두방문' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>연두방문.01</id>
+      <edef>visit at the beginning of the year</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing visited"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>연두방문하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>박총장은 이날 수원지검을 연두방문한 자리에서 기자들과 만나 9 일 제주도의회 개인택시 조합원들의 도지사 폭행사건과 관련, 이렇게 밝히고 "바람직한 선거풍토 조성을 위해 검찰권을 적극적으로 행사하겠다"고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 박/NPR+총장/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 수원/NPR+지검/NNC+을/PCA)
+                      (VV 연두방문/NNC+하/XSV+은/EAN)))
+               (NP 자리/NNC+에서/PAD))
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP 기자/NNC+들/XSF+과/PAD)
+              만나/VV+어/ECS))
+       (VP (VP (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (NP 9/NNU
+                                   일/NNX)
+                               (NP (NP 제주도/NPR+의회/NNC
+					     개인/NNC+택시/NNC
+					     조합원/NNC+들/XSF+의/PAN)
+                                   (NP 도지사/NNC
+					     폭행/NNC+사건/NNC+과/PAD)))
+                      (VV 관련/NNC)))
+               ,/SCM
+               (ADVP 이렇게/ADV)
+	       (VP 밝히/VV+고/ECS))
+           (VP (S-COMP "/SLQ
+                       (NP-SBJ *pro*)
+                       (VP (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (ADJP 바람직하/VJ+은/EAN)))
+                                              (NP 선거/NNC+풍토/NNC))
+                                          (NP 조성/NNC+을/PCA))
+                                  위하/VV+어/ECS))
+                           (VP (NP-OBJ 검찰권/NNC+을/PCA)
+                               (VP (NP-ADV 적극/NNC+적/XSF+으로/PAD)
+                                   (VP (VV 행사/NNC+하/XSV+겠/EPF+다/EFN)))))
+                       "/SRQ
+                       고/PAD)
+               덧붙이/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수원지검</term>
+	    </Arg>
+	    <Rel>
+	      <term>연두방문한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

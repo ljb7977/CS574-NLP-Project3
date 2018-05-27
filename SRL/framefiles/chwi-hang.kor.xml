@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>취항</lemma>
+    <comment>Frames file for '취항' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>취항.01</id>
+      <edef>enter sevice</edef>
+      <roleset>
+	<role argnum="0" argrole="thing entering service"/>
+	<role argnum="1" argrole="enter service for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>취항하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 오는 6 월말에는 서울-충칭(중경) 노선에 취항하는 한편 내년 상반기중에도 4-5 개 신규 노선에 취항해 중국 취항도시를 현재 6 개 도시에서 13-14 개 도시로 크게 늘릴 방침이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (S (NP-SBJ *pro*)
+                 (VP (NP-ADV (S (NP-SBJ *pro*)
+                                (VP (ADVP 또/ADV)
+                                    (NP-ADV 오는/DAN
+                                            6/NNU
+                                            월/NNX+말/NNX+에/PAD+은/PAU)
+                                    (VP (NP-COMP (NP (NP 서울/NPR)
+                                                     -/SSY
+                                                     (NP 충칭/NPR
+                                                         (PRN -LRB-/SLQ
+                                                              (NP 중경/NPR)
+                                                              -RRB-/SRQ)))
+                                                 (NP 노선/NNC+에/PAD))
+                                        (VV 취항/NNC+하/XSV+는/EAN))))
+                             (NP 한편/NNC))
+                     (NP-ADV 내년/NNC
+                             상반기/NNC+중/NNX+에/PAD+도/PAU)
+                     (VP (NP-COMP 4-5/NNU
+                                  개/NNX
+                                  신규/NNC
+                                  노선/NNC+에/PAD)
+                         (VV 취항/NNC+하/XSV+어/ECS))))
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 중국/NPR
+				 취항/NNC+도시/NNC+을/PCA)
+                     (NP-COMP 현재/NNC
+				  6/NNU
+				  개/NNX
+				  도시/NNC+에서/PAD)
+		     (NP-COMP 13-14/NNU
+			      개/NNX
+			      도시/NNC+으로/PAD)
+		     (VP (ADVP (ADV 크/VJ+게/ECS))
+			 (VP 늘리/VV+을/EAN)))))
+           (NP 방침/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>오는 6 월말에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>서울-충칭(중경) 노선</term>
+	    </Arg>
+	    <Rel>
+	      <term>취항하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

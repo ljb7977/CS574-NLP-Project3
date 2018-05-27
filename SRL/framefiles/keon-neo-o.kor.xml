@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>건너오</lemma>
+    <comment>Frames file for '건너오' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>건너오.01</id>
+      <edef>come over</edef>
+      <roleset>
+	<role argnum="0" argrole="entity in motion"/>
+	<role argnum="1" argrole="barrier"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>건너오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이게 귀관이 건너온 교량이고 여기에 저수지가 있고 귀관이 설명한 고지 두 개가 여기에 있소.</text>
+	  <parse>
+(S (S (NP-SBJ 이것/NPN+이/PCA)
+      (VP (NP (S (WHNP-1 *op*)
+                 (S (NP-SBJ 귀관/NPN+이/PCA)
+                    (VP (NP-OBJ *T*-1)
+                        건너오/VV+은/EAN)))
+              (NP 교량/NNC+이/CO+고/ECS))))
+   (S (NP-COMP-3 여기/NPN+에/PAD)
+      (S (NP-SBJ 저수지/NNC+이/PCA)
+         (ADJP (NP-COMP *T*-3)
+               있/VJ+고/ECS)))
+   (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ 귀관/NPN+이/PCA)
+                    (VP (NP-OBJ *T*-2)
+                        (VV 설명/NNC+하/XSV+은/EAN))))
+              (NP 고지/NNC
+                  두/NNU
+                  개/NNX+이/PCA))
+      (ADJP (NP-COMP 여기/NPN+에/PAD)
+            있/VJ+소/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>귀관</term>
+	    </Arg>
+	    <Rel>
+	      <term>건너온</term>
+	    </Rel>
+	    <Arg n="1">
+	      <term>*trace*=교량</term>
+	    </Arg>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

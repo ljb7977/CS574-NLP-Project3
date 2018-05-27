@@ -1,0 +1,240 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잇</lemma>
+    <comment>Frames file for '잇' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>잇.01</id>
+      <edef>connect</edef>
+      <roleset>
+	<role argnum="1" argrole="thing connecting"/>
+	<role argnum="2" argrole="thing connected"/>
+	<role argnum="3" argrole="connect to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잇다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>영종도와 서울역을 잇는 인천신공항철도(61.5 KM) 사업이 올 상반기내 착수될 수 있을 것으로 보인다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (NP (NP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (VP (NP-COMP 영종도/NPR+과/PCJ)
+                                             (NP-OBJ 서울역/NPR+을/PCA)
+                                             잇/VV+는/EAN)))
+                                   (NP 인천/NPR+신공항/NNC+철도/NNC))
+                               (PRN -LRB-/SLQ
+                                    61.5/NNU
+                                    KM/NFW
+                                    -RRB-/SRQ))
+                           (NP 사업/NNC+이/PCA))
+                   (VP (VP (NP-ADV 올/DAN
+                                   상반기/NNC+내/NNX)
+                           (VP (VV 착수/NNC+되/XSV+을/EAN)))
+                       (VX 수/NNX
+                           있/VJ+을/EAN)))
+                (NP 것/NNX+으로/PAD))
+       보이/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=인천신공항철도</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>과</f>
+	      <term>영종도</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>서울역</term>
+	    </Arg>
+	    <Rel>
+	      <term>잇는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>잇.02</id>
+      <edef>follow</edef>
+      <roleset>
+	<role argnum="1" argrole="thing following"/>
+	<role argnum="2" argrole="thing followed"/>
+	<role argnum="3" argrole="follow to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잇다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>왕난과 리주(이상 중국)는 1, 2 위를 그대로 지켰고 첸징(대만), 선진(중국), 치안홍 고치(독일)가 뒤를 이었다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 왕난/NPR+과/PCJ)
+              (NP 리주/NPR)
+              (PRN -LRB-/SLQ
+                   (NP (NP 이상/NNC)
+                       (NP 중국/NPR))
+                   -RRB-/SRQ)
+              은/PAU)
+      (VP (NP-OBJ 1/NNU
+                  ,/SCM
+                  2/NNU
+                  위/NNX+을/PCA)
+          (VP (ADVP 그대로/ADV)
+              (VP 지키/VV+었/EPF+고/ECS))))
+   (S (NP-SBJ (NP 첸징/NPR
+                  (PRN -LRB-/SLQ
+                       (NP 대만/NPR)
+                       -RRB-/SRQ))
+              ,/SCM
+              (NP 선진/NPR
+                  (PRN -LRB-/SLQ
+                       (NP 중국/NPR)
+                       -RRB-/SRQ))
+              ,/SCM
+              (NP 치안홍/NPR
+                  고치/NPR
+                  (PRN -LRB-/SLQ
+                       (NP 독일/NPR)
+                       -RRB-/SRQ)
+                  이/PCA))
+      (VP (NP-OBJ 뒤/NNC+을/PCA)
+          잇/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>첸징(대만), 선진(중국), 치안홍 고치(독일)</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>뒤</term>
+	    </Arg>
+	    <Rel>
+	      <term>이었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>잇다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>AP 통신은 한국전 초기 참전 미군들에 의해 저질러진 노근리 양민학살 사건을 특종 보도한 데 이은 일련의 기사로 조지 포크 국제보도상 수상작으로 선정됐다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (S (WHNP-2 *op*)
+                  (S (NP-SBJ *T*-2)
+                     (VP (NP-COMP (S (NP-SBJ AP/NFW
+                                             통신/NNC+은/PAU)
+                                     (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                    (S (NP-SBJ *T*-1)
+                                                       (VP (S (NP-SBJ *pro*)
+                                                              (VP (NP-COMP 한국전/NPR
+                                                                           초기/NNC
+                                                                           참전/NNC
+                                                                           미군/NNC+들/XSF+에/PAD)
+                                                                  의하/VV+어/ECS))
+                                                           (VP (VV 저지르/VV+어지/XSV+은/EAN)))))
+                                                 (NP 노근리/NPR
+                                                     양민/NNC+학살/NNC
+                                                     사건/NNC+을/PCA))
+                                         (VP (NP-ADV 특종/NNC)
+                                             (VP (VV 보도/NNC+하/XSV+은/EAN)))))
+                                  (NP 데/NNX))
+                         잇/VV+은/EAN)))
+               (NP (NP 일련/NNC+의/PAN)
+                   (NP 기사/NNC+으로/PAD)))
+       (VP (NP-COMP 조지/NPR
+                    포크/NPR
+                    국제/NNC+보도/NNC+상/NNC
+                    수상작/NNC+으로/PAD)
+           (VV 선정/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=일련의 기사</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>AP 통신은 한국전 초기 참전 미군들에 의해 저질러진 노근리 양민학살 사건을 특종 보도한 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>이은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>이어지다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>모처럼 찾아온 정권획득 기회가 피 터지는 당후보 지명전으로 손상을 입고 지지표 이탈로 이어질 경우 11 월 본선 승리를 장담하기 어렵기 때문이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (S-SBJ (NP-SBJ *pro*)
+		     (VP (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+					       (S (NP-SBJ *T*-1)
+						  (VP (ADVP 모처럼/ADV)
+						      (VP 찾아오/VV+은/EAN))))
+					    (NP 정권/NNC+획득/NNC
+						    기회/NNC+이/PCA))
+				    (VP (VP (NP-ADV (S (WHNP *op*)
+						       (S (NP-SBJ 피/NNC)
+							  (VP 터지/VV+은/EAN)))
+						    (NP 당/NNC+후보/NNC
+							  지명전/NNC+으로/PAD))
+					    (VP (NP-OBJ 손상/NNC+을/PCA)
+						입/VV+고/ECS))
+					(VP (NP-COMP 지지표/NNC
+							   이탈/NNC+으로/PAD)
+					    (VV 잇/VV+어지/XSV+을/EAN))))
+				 (NP 경우/NNC))
+			 (VP (NP-OBJ 11/NNU
+				     월/NNX
+				     본선/NNC
+				     승리/NNC+을/PCA)
+			     (VV 장담/NNC+하/XSV+기/ENM))))
+	      (ADJP 어렵/VJ+기/ENM))
+	   (NP 때문/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>가</f>
+	      <term>모처럼 찾아온 정권획득 기회</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>지지표 이탈</term>
+	    </Arg>
+	    <Rel>
+	      <term>이어질</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>
+

@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보증</lemma>
+    <comment>Frames file for '보증' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>보증.01</id>
+      <edef>guarantee</edef>
+      <roleset>
+	<role argnum="0" argrole="entity making guarantee"/>
+	<role argnum="1" argrole="guarantee"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보증하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북조선에서 생산한 포탄은 그 질을 보증할 수 없습니다.</text>
+	  <parse>
+(S (NP-OBJ-3 (S (WHNP-1 *op*)
+                (S (NP-SBJ 북조선/NPR+에서/PCA)
+                   (VP (NP-OBJ *T*-1)
+                       (VV 생산/NNC+하/XSV+은/EAN))))
+             (NP 포탄/NNC+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ *T*-3)
+              (VP (NP-OBJ 그/DAN
+                          질/NNC+을/PCA)
+                  (VV 보증/NNC+하/XSV+을/EAN)))
+          (VX 수/NNX
+              없/VJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=북조선에서 생산한 포탄은</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그 질</term>
+	    </Arg>
+	    <Rel>
+	      <term>보증할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

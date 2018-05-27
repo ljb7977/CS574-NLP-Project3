@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>못하</lemma>
+    <comment>Frames file for '못하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>못하.01</id>
+      <edef>be unable to do</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="task"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>못하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그리고 (지도를 보면서)...또 우리는 대대 집합지역으로 돌아가는 길에 (CT6638 방안을 지나 동서로 달리는 도로를 가리키며) 이 도로 상에서 지뢰를 탐지하기로 되어 있었는데, 날이 밝아 와서 그건 못했습니다.</text>
+	  <parse>
+(S (ADCP 그리고/ADC) 
+   (PRN LRB/SLQ 
+	(S (NP-SBJ *pro*) 
+	   (VP (NP-OBJ 지도/NNC+를/PCA)
+	       보/VV+면서/ECS)) 
+	RRB/SRQ)
+   .../SSY 
+   (S (ADVP 또/ADV)
+      (S (NP-SBJ 우리/NPN+는/PAU) 
+         (VP (VP (VP (NP-ADV (S (WHNP 0) 
+		  	        (S (NP-SBJ *pro*) 
+				   (VP (NP-COMP 대대/NNC 
+					        집합/NNC 
+					        지역/NNC+으로/PAD)
+				       돌아가/VV+는/EAN))) 
+			     (NP 길/NNC+에/PAD)) 
+		     (PRN LRB/SLQ 
+		          (S (NP-SBJ *pro*) 
+			     (VP (NP-OBJ (S (WHNP-2 0) 
+				  	    (S (S (NP-SBJ *T*-2)
+					          (VP (NP-OBJ CT6638/NFW 
+						   	      방안/NNC+을/PCA)
+						      지나/VV+아/ECS)) 
+					       (S (NP-SBJ *T*-2)
+					          (VP (NP-COMP 동서/NNC+로/PAD)
+						      달리/VV+는/EAN)))) 
+				         (NP 도로/NNC+를/PCA))
+			         가리키/VV+며/ECS))
+		          RRB/SRQ)
+		     (NP-ADV 이/DAN 도로/NNC 
+			     상/NNC+에서/PAD) 
+		     (VP (NP-OBJ 지뢰/NNC+를/PCA) 
+		         (VV 탐지/NNC+하/XSV+기/ENM+로/PAD))) 
+	         되/VX+어/EAU) 
+	     있/VX+었/EPF+는데/ECS)))
+   ,/SCM 
+   (S (S (NP-SBJ 날/NNC+이/PCA) 
+	 (VP (ADJP 밝/VJ+아/EAU) 
+	     오/VX+아서/ECS)) 
+      (S (NP-SBJ *pro*) 
+	 (VP (NP-OBJ 그것/NPN+은/PAU)
+	     못하/VV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그리고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>(지도를 보면서)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또 우리는 대대 집합지역으로 돌아가는 길에 (CT6638 방안을 지나 동서로 달리는 도로를 가리키며) 이 도로 상에서 지뢰를 탐지하기로 되어 있었는데</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>날이 밝아 와서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Rel>
+	      <term>못했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

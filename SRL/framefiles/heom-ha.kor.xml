@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>험하</lemma>
+    <comment>Frames file for '험하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>험하.01</id>
+      <edef>rugged</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being rugged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>험하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한국 반도의 지세는 대단히 험하다.</text>
+	  <parse>
+(S (NP-SBJ (NP 한국/NPR
+	       반도/NNC+의/PCA)
+           (NP 지세/NNC+은/PAU)) 
+   (ADJP (ADVP 대단히/ADV) 
+	 (ADJP 험하/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>한국 반도의 지세</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>대단히</term>
+	    </Arg>
+	    <Rel>
+	      <term>험하다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>겸하</lemma>
+    <comment>Frames file for '겸하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>겸하.01</id>
+      <edef>hold concurrently</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="role"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>겸하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저는 중대 탄약 공급소장을 겸하고 있었습니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (VP (NP-OBJ 중대/NNC
+                   탄약/NNC
+                   공급소장/NNC+을/PCA)
+           겸하/VV+고/ECS)
+       있/VX+었/EPF+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>중대 탄약 공급소장</term>
+	    </Arg>
+	    <Rel>
+	      <term>겸하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있었습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유의</lemma>
+    <comment>Frames file for '유의' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유의.01</id>
+      <edef>attend to</edef>
+      <roleset>
+	<role argnum="0" argrole="thing attending"/>
+	<role argnum="1" argrole="attend to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유의하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한보철강은 그러나 자산매각이 완료되면 한보철강은 상장 폐지 또는 청산 절차를 밟을 가능성이 있으므로 투자에 각별히 유의해야 한다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 한보/NPR+철강/NNC+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S-COMP (S (NP-SBJ 자산/NNC+매각/NNC+이/PCA)
+                      (VP (VV 완료/NNC+되/XSV+으면/ECS)))
+                   (S (NP-SBJ (S (NP-SBJ 한보/NPR+철강/NNC+은/PAU)
+                                 (VP (NP-OBJ (NP 상장/NNC
+                                                 폐지/NNC)
+                                             (ADCP 또는/ADC)
+                                             (NP 청산/NNC
+                                                 절차/NNC+을/PCA))
+                                     밟/VV+을/EAN))
+                              (NP 가능성/NNC+이/PCA))
+                      (ADJP 있/VJ+으므로/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-COMP 투자/NNC+에/PAD)
+                              (VP (ADVP 각별히/ADV)
+                                  (VP (VV 유의/NNC+하/XSV+어야/ECS))))
+                          하/VX+는다/EFN+고/PAD)))
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>투자</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>각별히</term>
+	    </Arg>
+	    <Rel>
+	      <term>유의하여야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

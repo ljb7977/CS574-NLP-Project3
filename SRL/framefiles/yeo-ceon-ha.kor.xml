@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>여전하</lemma>
+    <comment>Frames file for '여전하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>여전하.01</id>
+      <edef>remain the same</edef>
+      <roleset>
+	<role argnum="1" argrole="thing remaining the same"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>여전하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>브르코의 안정화를 위해서는 내전 당시 추방당한 회교계와 크로아티아계 주민들의 복귀가 이뤄져야 할 것으로 지적됐지만 그동안 이곳에 정착해 온 세르비아계 주민들이 반발하고 있는 데다 주택과 취업사정도 열악해 불안요인이 여전한 것으로 평가되고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (NP 브르코/NPR+의/PAN)
+                                     (NP 안정화/NNC+을/PCA))
+                             위하/VV+어서/ECS+은/PAU))
+                      (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP-ADV 내전/NNC
+                                                       당시/NNC)
+                                               (VP (VV 추방/NNC+당하/XSV+은/EAN)))))
+                                     (NP (NP (NP 회교/NNC+계/XSF+과/PCJ)
+                                             (NP 크로아티아/NPR+계/XSF))
+                                         (NP 주민/NNC+들/XSF+의/PAN)))
+                                 (NP 복귀/NNC+이/PCA))
+                         (VP (VP (VV 이루/VV+어지/XSV+어야/ECS))
+                             하/VX+을/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          (VV 지적/NNC+되/XSV+었/EPF+지만/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (S (NP-ADV (S (NP-SBJ (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (VP (VP (NP-ADV 그동안/NNC)
+                                                           (VP (NP-COMP 이곳/NPN+에/PAD)
+                                                               (VV 정착/NNC+하/XSV+어/ECS)))
+                                                       오/VX+은/EAN)))
+                                             (NP 세르비아/NPR+계/XSF
+                                                 주민/NNC+들/XSF+이/PCA))
+                                     (VP (VP (VV 반발/NNC+하/XSV+고/ECS))
+                                         있/VX+는/EAN))
+                                  (NP 데/NNX+다/PAU))
+                          (S (NP-SBJ (NP 주택/NNC+과/PCJ)
+                                     (NP 취업/NNC+사정/NNC+도/PAU))
+                             (ADJP 열악하/VJ+어/ECS))
+                          (S (NP-SBJ 불안/NNC+요인/NNC+이/PCA)
+                             (ADJP 여전하/VJ+은/EAN)))
+                       (NP 것/NNX+으로/PAD))
+              (VV 평가/NNC+되/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>그동안 이곳에 정착해 온 세르비아계 주민들이 반발하고 있는 데다</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>주택과 취업사정도 열악해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>불안요인</term>
+	    </Arg>
+	    <Rel>
+	      <term>여전한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,217 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전망</lemma>
+    <comment>Frames file for '전망' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>전망.01</id>
+      <edef>predict</edef>
+      <roleset>
+	<role argnum="0" argrole="thing predicting"/>
+	<role argnum="1" argrole="thing predicted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전망하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보고서는 특히 "김정일 당총비서가 중국처럼 '사회주의도 시장경제를 실시할 수 있다'라는 인식을 갖게 되면 북한 유일의 시장 메커니즘 기능을 수행하는 농민시장은 북한 유통체계의 중심적 기구로 발전하게 될 것"이라고 전망했다.</text>
+	  <parse>
+(S (NP-SBJ 보고서/NNC+은/PAU)
+   (VP (ADVP 특히/ADV)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 김정일/NPR
+                              당/NNC+총비서/NNC+이/PCA)
+                      (VP (VP (NP-OBJ (S (NP-ADV 중국/NPR+처럼/PAD)
+                                         (S '/SLQ
+                                            (NP-SBJ 사회주의/NNC+도/PAU)
+                                            (VP (VP (NP-OBJ 시장/NNC+경제/NNC+을/PCA)
+                                                    (VP (VV 실시/NNC+하/XSV+을/EAN)))
+                                                (VX 수/NNX
+                                                    있/VJ+다/EFN))
+                                            '/SRQ
+                                            이라는/PAN))
+                                      (NP 인식/NNC+을/PCA))
+                              갖/VV+게/ECS)
+                          되/VX+으면/ECS))
+                   (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-OBJ (NP 북한/NPR
+                                                    유일/NNC+의/PAN)
+                                                (NP 시장/NNC
+                                                    메커니즘/NNC
+                                                    기능/NNC+을/PCA))
+                                        (VV 수행/NNC+하/XSV+는/EAN))))
+                              (NP 농민/NNC+시장/NNC+은/PAU))
+                      (VP (VP (VP (NP-COMP (NP 북한/NPR
+                                               유통/NNC+체계/NNC+의/PAN)
+                                           (NP 중심/NNC+적/XSF
+                                               기구/NNC+으로/PAD))
+                                  (VV 발전/NNC+하/XSV+게/ECS))
+                              되/VX+을/EAN)
+                          (VX 것/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VV 전망/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>보고서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>"김정일 당총비서가 중국처럼 '사회주의도 시장경제를 실시할 수 있다'라는 인식을 갖게 되면 북한 유일의 시장 메커니즘 기능을 수행하는 농민시장은 북한 유통체계의 중심적 기구로 발전하게 될 것"이라</term>
+	    </Arg>
+	    <Rel>
+	      <term>전망했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전망하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>로스 차관보는 이날 오후 싱가포르 `뉴스 아시아' 방송의 `미국과 새 아시아'라는 프로그램에 출연하여 대선 후에도 "미국의 대아시아 정책에는 연속성이 많을 것으로 본다"며 이같이 전망했다.</text>
+	  <parse>
+(S (S (NP-SBJ 로스/NPR
+              차관보/NNC+은/PAU)
+      (VP (NP-ADV 이날/NNC
+                  오후/NNC)
+          (VP (NP-COMP (NP 싱가포르/NPR
+                           `/SLQ
+                           뉴스/NNC
+                           아시아/NPR
+                           '/SRQ
+                           방송/NNC+의/PAN)
+                       (NP (NP `/SLQ
+                               (NP 미국/NPR+과/PCJ)
+                               (NP 새/DAN
+                                   아시아/NPR)
+                               '/SRQ
+                               이라는/PAN)
+                           (NP 프로그램/NNC+에/PAD)))
+              (VV 출연/NNC+하/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP (S (NP-ADV 대선/NNC
+                                     후/NNC+에/PAD+도/PAU)
+                             "/SLQ
+                             (S (NP-COMP-1 (NP 미국/NPR+의/PAN)
+                                           (NP 대/XPF+아시아/NPR
+                                               정책/NNC+에/PAD+은/PAU))
+                                (S (NP-SBJ 연속성/NNC+이/PCA)
+                                   (ADJP (NP-COMP *T*-1)
+                                         많/VJ+을/EAN))))
+                          (NP 것/NNX+으로/PAD))
+                 보/VV+는다/EFN
+                 "/SRQ
+                 며/ECS))
+          (ADVP 이같이/ADV)
+          (VP (NP-OBJ *pro*)
+              (VV 전망/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>로스 차관보는 이날 오후 싱가포르 `뉴스 아시아' 방송의 `미국과 새 아시아'라는 프로그램에 출연하여</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>대선 후에도 "미국의 대아시아 정책에는 연속성이 많을 것으로 본다"며</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>이같이</term>
+	    </Arg>
+	    <Rel>
+	      <term>전망했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>전망되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 이번에 민간 기업의 전세기를 타고 휴양지로 여행한 사실이 드러나고 민간 항공기의 이착륙이 금지된 군용 비행장을 자신의 지위를 이용해 사적으로 이용한 사실이 확인될 경우 치명적인 타격을 입을 것으로 전망된다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-ADV (S (NP-ADV 이번/NNC+에/PAD)
+                 (S (S (NP-SBJ (S (NP-SBJ *pro*)
+                                  (VP (VP (NP-OBJ (NP 민간/NNC
+                                                      기업/NNC+의/PAN)
+                                                  (NP 전세기/NNC+을/PCA))
+                                          타/VV+고/ECS)
+                                      (VP (NP-COMP 휴양지/NNC+으로/PAD)
+                                          (VV 여행/NNC+하/XSV+은/EAN))))
+                               (NP 사실/NNC+이/PCA))
+                       (VP 드러나/VV+고/ECS))
+                    (S (NP-SBJ (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ (S (WHNP *op*)
+                                                 (S (NP-SBJ (NP 민간/NNC
+                                                                항공기/NNC+의/PAN)
+                                                            (NP 이착륙/NNC+이/PCA))
+                                                    (VP (VV 금지/NNC+되/XSV+은/EAN))))
+                                              (NP 군용/NNC
+                                                  비행장/NNC+을/PCA))
+                                      (VP (S (NP-SBJ *pro*)
+                                             (VP (NP-OBJ (NP 자신/NNC+의/PAN)
+                                                         (NP 지위/NNC+을/PCA))
+                                                 (VV 이용/NNC+하/XSV+어/ECS)))
+                                          (NP-ADV 사적/NNC+으로/PAD)
+                                          (VP (VV 이용/NNC+하/XSV+은/EAN)))))
+                               (NP 사실/NNC+이/PCA))
+                       (VP (VV 확인/NNC+되/XSV+을/EAN)))))
+              (NP 경우/NNC))
+      (S (NP-SBJ *pro*)
+         (VP (NP-COMP (S (NP-SBJ *pro*)
+			 (VP (NP-OBJ (S (WHNP-1 *op*)
+					(S (NP-SBJ *T*-1)
+					   (VP (NP 치명/NNC+적/XSF+이/CO+은/EAN))))
+				     (NP 타격/NNC+을/PCA))
+			     입/VV+을/EAN))
+		      (NP 것/NNX+으로/PAD))
+             (VV 전망/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>이번에 민간 기업의 전세기를 타고 휴양지로 여행한 사실이 드러나고 민간 항공기의 이착륙이 금지된 군용 비행장을 자신의 지위를 이용해 사적으로 이용한 사실이 확인될 경우</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>치명적인 타격을 입을 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>전망된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

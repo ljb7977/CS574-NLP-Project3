@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상승</lemma>
+    <comment>Frames file for '상승' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>상승.01</id>
+      <edef>ascend</edef>
+      <roleset>
+	<role argnum="1" argrole="thing rising"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상승하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이와 함께 주식 거래에서 외국계 자금이 차지하는 비중도 점차 확대, 외국인의 매매비중이 작년의 연간 5.2 퍼센트에서 올해는 8.1 퍼센트로 상승했다.</text>
+	  <parse>
+(S (ADVP (NP-COMP 이/NPN+과/PAD)
+         함께/ADV)
+   (S (S (NP-SBJ (S (WHNP-1 *op*)
+                    (S (NP-ADV 주식/NNC
+                               거래/NNC+에서/PAD)
+                       (S (NP-SBJ 외국/NNC+계/XSF
+                                  자금/NNC+이/PCA)
+                          (VP (NP-OBJ *T*-1)
+                              (VV 차지/NNC+하/XSV+는/EAN)))))
+                 (NP 비중/NNC+도/PAU))
+         (VP (ADVP 점차/ADV)
+             (VP (VV 확대/NNC))))
+      ,/SCM
+      (S (NP-SBJ (NP 외국인/NNC+의/PAN)
+                 (NP 매매/NNC+비중/NNC+이/PCA))
+         (VP (NP-COMP (NP 작년/NNC+의/PAN)
+                      (NP 연/NNC+간/XSF
+                          5.2/NNU
+                          퍼센트/NNX+에서/PAD))
+             (VP (NP-ADV 올해/NNC+은/PAU)
+                 (VP (NP-COMP 8.1/NNU
+                              퍼센트/NNX+으로/PAD)
+                     (VV 상승/NNC+하/XSV+었/EPF+다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>이와 함께</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>주식 거래에서 외국계 자금이 차지하는 비중도 점차 확대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>외국인의 매매비중</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>작년의 연간 5.2 퍼센트</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올해는</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>8.1 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>상승했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

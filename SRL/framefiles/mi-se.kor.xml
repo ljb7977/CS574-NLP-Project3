@@ -1,0 +1,163 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>미세</lemma>
+    <comment>Frames file for '미세' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>미세.01</id>
+      <edef>fine</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being fine"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>미세하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이날 선거대책위 회의에서도 참석자들은 "전반적인 지지도는 상승하고 있으나 선거구 단위에선 미세한 차이로 경합하는 지역이 많은 만큼 여론조사 결과를 곧이곧대로 믿어선 안되고 전반적으로 더욱 겸손한 자세로 접근해야 한다"는 데 의견을 모았다고 정동영 대변인이 전했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-ADV 이날/NNC
+                     선거/NNC+대책위/NNC
+                     회의/NNC+에서/PAD+도/PAU)
+             (S (NP-SBJ 참석자/NNC+들/XSF+은/PAU)
+                (VP (NP-COMP (S "/SLQ
+                                (S (NP-SBJ (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (VP (NP 전반/NNC+적/XSF+이/CO+은/EAN))))
+                                           (NP 지지도/NNC+은/PAU))
+                                   (VP (VP (VV 상승/NNC+하/XSV+고/ECS))
+                                       있/VX+으나/ECS))
+                                (S (S (NP-ADV (S (NP-ADV 선거구/NNC
+                                                         단위/NNC+에서/PAD+은/PAU)
+                                                 (S (NP-SBJ (S (NP-SBJ *pro*)
+                                                               (VP (NP-ADV (S (WHNP-4 *op*)
+                                                                              (S (NP-SBJ *T*-4)
+                                                                                 (ADJP (VJ 미세/NNC+하/XSJ+은/EAN))))
+                                                                           (NP 차이/NNC+으로/PAD))
+                                                                   (VP (VV 경합/NNC+하/XSV+는/EAN))))
+                                                            (NP 지역/NNC+이/PCA))
+                                                    (ADJP 많/VJ+은/EAN)))
+                                              (NP 만큼/NNX))
+                                      (S (S (NP-SBJ *pro*)
+                                            (VP (NP-OBJ 여론/NNC+조사/NNC
+                                                        결과/NNC+을/PCA)
+                                                (VP (ADVP 곧이곧대로/ADV)
+                                                    (VP 믿/VV+어서/ECS+은/PAU))))
+                                         (S (NP-SBJ *pro*)
+                                            (VP 안되/VV+고/ECS))))
+                                   (S (NP-SBJ *pro*)
+                                      (VP (VP (NP-ADV 전반/NNC+적/XSF+으로/PAD)
+                                              (NP-ADV (S (WHNP-5 *op*)
+                                                         (S (NP-SBJ *T*-5)
+                                                            (ADJP (ADVP 더욱/ADV)
+                                                                  (ADJP (VJ 겸손/NNC+하/XSJ+은/EAN)))))
+                                                      (NP 자세/NNC+으로/PAD))
+                                              (VP (VV 접근/NNC+하/XSV+어야/ECS)))
+                                          하/VX+는다/EFN)))
+                                "/SRQ
+                                은/EAN)
+                             (NP 데/NNX))
+                    (NP-OBJ 의견/NNC+을/PCA)
+                    모으/VV+었/EPF+다/EFN+고/PAD)))
+   (S (NP-SBJ 정동영/NPR
+              대변인/NNC+이/PCA)
+      (VP (S-COMP *T*-1)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=차이</term>
+	    </Arg>
+	    <Rel>
+	      <term>미세한</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>특히 종전에는 30 이하의 알루미늄 금속 섬유개발이 어려웠으나 이번에 새로운 금속가공법이 개발됨에 따라 5까지 미세한 금속섬유를 양산하게 됐다.</text>
+	  <parse>
+(S (ADVP 특히/ADV)
+   (S (NP-ADV 종전/NNC+에/PAD+은/PAU)
+      (S (NP-SBJ (NP 30/NNU
+                     이하/NNC+의/PAN)
+                 (NP 알루미늄/NNC
+                     금속/NNC
+                     섬유/NNC+개발/NNC+이/PCA))
+         (ADJP 어렵/VJ+었/EPF+으나/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (S-COMP (NP-ADV 이번/NNC+에/PAD)
+                             (S (NP-SBJ (S (WHNP-1 *op*)
+                                           (S (NP-SBJ *T*-1)
+                                              (ADJP 새롭/VJ+은/EAN)))
+                                        (NP 금속/NNC+가공법/NNC+이/PCA))
+                                (VP (VV 개발/NNC+되/XSV+음/ENM+에/PAD))))
+                     따르/VV+어/ECS))
+              (VP (NP-OBJ (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (ADJP (NP-ADV 5/NNU+까지/PAU)
+                                      (ADJP (VJ 미세/NNC+하/XSJ+은/EAN)))))
+                          (NP 금속/NNC+섬유/NNC+을/PCA))
+                  (VV 양산/NNC+하/XSV+게/ECS)))
+          되/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=금속섬유</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>5까지</term>
+	    </Arg>
+	    <Rel>
+	      <term>미세한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>미세해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>D 램의 집적화는 3 년마다 4 배씩 증가해 왔으나 집적도가 향상되고 회로의 선폭이 미세해질수록 회로패턴이 붕괴하는 한계를 낳는다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP D/NFW
+                  램/NNC+의/PAN)
+              (NP 집적/NNC+화/XSF+은/PAU))
+      (VP (VP (NP-ADV (NP 3/NNU
+                          년/NNX+마다/PAU)
+                      (NP 4/NNU
+                          배/NNX+씩/XSF))
+              (VP (VV 증가/NNC+하/XSV+어/ECS)))
+          오/VX+었/EPF+으나/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S (S (NP-SBJ 집적/NNC+도/XSF+이/PCA)
+                (VP (VV 향상/NNC+되/XSV+고/ECS)))
+             (S (NP-SBJ (NP 회로/NNC+의/PAN)
+                        (NP 선폭/NNC+이/PCA))
+                (VP (VV (VJ 미세/NNC+하/XSJ+어지/XSV+을수록/ECS)))))
+          (VP (NP-OBJ (S (NP-SBJ 회로/NNC+패턴/NNC+이/PCA)
+                         (VP (VV 붕괴/NNC+하/XSV+는/EAN)))
+                      (NP 한계/NNC+을/PCA))
+              낳/VV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>회로의 선폭</term>
+	    </Arg>
+	    <Rel>
+	      <term>미세해질수록</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

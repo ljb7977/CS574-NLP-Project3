@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>냉담</lemma>
+    <comment>Frames file for '냉담' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>냉담.01</id>
+      <edef>indifferent</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being indifferent"/>
+	<role argnum="2" argrole="indifferent to what"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>냉담하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>유로 가입에 냉담한 영국조차도 유로 동참에 대비, 전산 업무를 조정하기 위해 예산을 배정했다고 발표했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (ADJP (NP-COMP 유로/NNC
+                                가입/NNC+에/PAD)
+                       (VJ 냉담/NNC+하/XSJ+은/EAN))))
+           (NP 영국/NPR+조차/PAU+도/PAU))
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (S (NP-SBJ *pro*)
+                      (VP (NP-COMP 유로/NNC
+                                   동참/NNC+에/PAD)
+                          (VV 대비/NNC)))
+                   ,/SCM
+                   (S (NP-SBJ *pro*)
+                      (VP (S-OBJ (NP-SBJ *pro*)
+                                 (VP (NP-OBJ 전산/NNC
+                                             업무/NNC+을/PCA)
+                                     (VV 조정/NNC+하/XSV+기/ENM)))
+                          위하/VV+어/ECS))
+                   (VP (NP-OBJ 예산/NNC+을/PCA)
+                       (VV 배정/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+       (VV 발표/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=영국</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>유로 가입</term>
+	    </Arg>
+	    <Rel>
+	      <term>냉담한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

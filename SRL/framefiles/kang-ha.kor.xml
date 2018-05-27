@@ -1,0 +1,97 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>강하</lemma>
+    <comment>Frames file for '강하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>강하.01</id>
+      <edef>strong</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being strong"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>강하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북조선 인민들은 자주 정신이 아주 강합니다.</text>
+	  <parse>
+(S (NP-SBJ 북조선/NPR
+           인민/NNC+들/XSF+은/PAU)
+   (S (NP-SBJ 자주/NNC
+              정신/NNC+이/PCA)
+      (ADJP (ADVP 아주/ADV)
+            (ADJP 강하/VJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>북조선 인민들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>자주 정신</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>아주</term>
+	    </Arg>
+	    <Rel>
+	      <term>강합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>강해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>고어 부통령은 또 자신은 지난 96 년의 선거자금 모금과정에서 저지른 실수로 선거자금법 개혁 의지가 더 강해졌다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 고어/NPR
+           부통령/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (NP-ADV (S (WHNP-1 *op*)
+                              (S (NP-SBJ 자신/NNC+은/PAU)
+                                 (VP (NP-ADV (NP 지난/DAN
+                                                 96/NNU
+                                                 년/NNX+의/PAN)
+                                             (NP 선거/NNC+자금/NNC
+                                                 모금/NNC+과정/NNC+에서/PAD))
+                                     (VP (NP-OBJ *T*-1)
+                                         저지르/VV+은/EAN))))
+                           (NP 실수/NNC+으로/PAD))
+                   (S (NP-SBJ 선거/NNC+자금/NNC+법/NNC
+                              개혁/NNC
+                              의지/NNC+이/PCA)
+                      (VP (ADVP 더/ADV)
+                          (VP (VV 강하/VJ+어지/XSV+었/EPF+다/EFN+고/PAD)))))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>자신은 지난 96 년의 선거자금 모금과정에서 저지른 실수로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>선거자금법 개혁 의지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더</term>
+	    </Arg>
+	    <Rel>
+	      <term>강해졌다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>맺</lemma>
+    <comment>Frames file for '맺' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>맺.01</id>
+      <edef>enter into</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="relation, treaty"/>
+	<role argnum="2" argrole="other party"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>맺다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국과 남한은 어떤 종류의 독해물도 생산하지 않는다는 호상 협약을 맺었어.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR+과/PCJ
+	   남한/NPR+은/PAU)
+   (VP (NP-OBJ (S (NP-SBJ *pro*)
+		  (VP (VP (NP-OBJ (NP 어떤/DAN
+				      종류/NNC+의/PCA)
+				  (NP 독해물/NNC+도/PAU))
+			  (VV 생산/NNC+하/XSV+지/EAU))
+		      않/VX+는다는/EAN))
+	       (NP 호상/NNC
+		   협약/NNC+을/PCA))
+       맺/VV+었/EPF+어/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>미국과 남한</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>어떤 종류의 독해물도 생산하지 않는다는 호상 협약</term>
+	    </Arg>
+	    <Rel>
+	      <term>맺었어</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>북한은 어느 나라와 호상 원조 조약을 맺었는가?</text>
+	  <parse>
+(S (NP-SBJ 북한/NPR+은/PAU)
+   (VP (NP-COMP 어느/DAN
+		나라/NNC+와/PAD)
+       (NP-OBJ 호상/NNC
+	       원조/NNC
+	       조약/NNC+을/PCA)
+       맺/VV+었/EPF+는가/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>어느 나라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>호상 원조 조약</term>
+	    </Arg>
+	    <Rel>
+	      <term>맺었는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

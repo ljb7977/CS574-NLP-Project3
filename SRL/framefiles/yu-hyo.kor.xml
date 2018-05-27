@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유효</lemma>
+    <comment>Frames file for '유효' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>유효.01</id>
+      <edef>effective</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being effective"/>
+	<role argnum="2" argrole="effective for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유효하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>기본 주파수는 24시간 유효합니다.</text>
+	  <parse>
+(S (NP-SBJ 기본/NNC
+           주파수/NNC+은/PAU)
+   (ADJP (NP-ADV 24/NNU
+                 시간/NNX)
+         (ADJP (VJ 유효/NNC+하/XSJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>기본 주파수</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>24시간</term>
+	    </Arg>
+	    <Rel>
+	      <term>유효합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

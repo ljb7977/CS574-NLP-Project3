@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>취사</lemma>
+    <comment>Frames file for '취사' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>취사.01</id>
+      <edef>cook</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>취사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>대대에서 취사하기가 어려울 경우에는 중대 자체에서 화식병 3,4 명을 뽑아서 취사를 합니다.</text>
+	  <parse>
+(S (NP-ADV (S (S-SBJ (NP-SBJ 대대/NNC+에서/PCA)
+                     (VP (VV 취사/NNC+하/XSV+기/ENM+이/PCA)))
+              (ADJP 어렵/VJ+을/EAN))
+           (NP 경우/NNC+에/PAD+은/PAU))
+   (S (NP-SBJ 중대/NNC
+              자체/NNC+에서/PCA)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 화식병/NNC
+                         3/NNU
+                         ,/SCM
+                         4/NNU
+                         명/NNX+을/PCA)
+                 뽑/VV+어서/ECS))
+          (VP (NP-OBJ-LV 취사/NNC+을/PCA)
+              (LV 하/VV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서</f>
+	      <term>대대</term>
+	    </Arg>
+	    <Rel>
+	      <term>취사하기가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일정</lemma>
+    <comment>Frames file for '일정' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>일정.01</id>
+      <edef>constant</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being constant"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일정하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전투 시에 먹는 식사는 일정하지 않습니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (NP-ADV 전투/NNC
+                             시/NNX+에/PAD)
+                     (VP (NP-OBJ *T*-1)
+                         먹/VV+는/EAN))))
+           (NP 식사/NNC+은/PAU))
+   (VP (ADJP (VJ 일정/NNC+하/XSJ+지/ECS))
+       않/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>전투 시에 먹는 식사</term>
+	    </Arg>
+	    <Rel>
+	      <term>일정하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>내려오</lemma>
+    <comment>Frames file for '내려오' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>내려오.01</id>
+      <edef>come down</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내려오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>보통 석 달에 한번씩 이동 수리반이 사단에서 연대 내 각 구분대로 내려옵니다.</text>
+	  <parse>
+(S (ADVP 보통/ADV)
+   (NP-ADV (NP 석/NNU
+               달/NNC+에/PAD)
+           (NP 한번/NNC+씩/XSF))
+   (S (NP-SBJ 이동/NNC
+              수리반/NNC+이/PCA)
+      (VP (NP-COMP 사단/NNC+에서/PAD)
+          (NP-COMP (NP 연대/NNC
+                       내/NNC)
+                   (NP 각/DAN
+                       구분대/NNC+으로/PAD))
+          내려오/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>보통</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>석 달에 한번씩</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>이동 수리반</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>사단</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>연대 내 각 구분대</term>
+	    </Arg>
+	    <Rel>
+	      <term>내려옵니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

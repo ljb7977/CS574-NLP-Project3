@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>양도</lemma>
+    <comment>Frames file for '양도' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>양도.01</id>
+      <edef>transfer</edef>
+      <roleset>
+	<role argnum="0" argrole="thing transferring"/>
+	<role argnum="1" argrole="thing transferred"/>
+	<role argnum="2" argrole="transfer to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>양도하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>베르텔스만과 AOL은 AOL 유럽의 주식을 각각 50 퍼센트 보유하고 있으며 AOL이 베르텔스만의 강력한 경쟁자인 타임 워너를 합병한 뒤 베르텔스만이 AOL에 AOL 유럽의 주식을 양도할 것이라는 관측이 제기돼 왔다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 베르텔스만/NPR+과/PCJ)
+              (NP AOL/NFW+은/PAU))
+      (VP (VP (NP-OBJ (NP AOL/NFW
+                          유럽/NPR+의/PAN)
+                      (NP 주식/NNC+을/PCA))
+              (VP (NP-ADV 각각/NNC)
+                  (NP-ADV 50/NNU
+                          퍼센트/NNX)
+                  (VP (VV 보유/NNC+하/XSV+고/ECS))))
+          있/VX+으며/ECS))
+   (S (NP-SBJ (S (NP-ADV (S (NP-SBJ AOL/NFW+이/PCA)
+                            (VP (NP-OBJ (S (WHNP-2 *op*)
+                                           (S (NP-SBJ *T*-2)
+                                              (VP (NP (NP 베르텔스만/NPR+의/PAN)
+                                                      (NP (S (WHNP-1 *op*)
+                                                             (S (NP-SBJ *T*-1)
+                                                                (ADJP 강력하/VJ+은/EAN)))
+                                                          (NP 경쟁자/NNC+이/CO+은/EAN))))))
+                                        (NP 타임/NPR
+                                            워너/NPR+을/PCA))
+                                (VV 합병/NNC+하/XSV+은/EAN)))
+                         (NP 뒤/NNC))
+                 (S (NP-SBJ 베르텔스만/NPR+이/PCA)
+                    (VP (VP (NP-COMP AOL/NFW+에/PAD)
+                            (NP-OBJ (NP AOL/NFW
+                                        유럽/NPR+의/PAN)
+                                    (NP 주식/NNC+을/PCA))
+                            (VV 양도/NNC+하/XSV+을/EAN))
+                        (VX 것/NNX+이/CO+라는/EAN))))
+              (NP 관측/NNC+이/PCA))
+      (VP (VP (VV 제기/NNC+되/XSV+어/ECS))
+          오/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>AOL이 베르텔스만의 강력한 경쟁자인 타임 워너를 합병한 뒤</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>베르텔스만</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>AOL</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>AOL 유럽의 주식</term>
+	    </Arg>
+	    <Rel>
+	      <term>양도할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

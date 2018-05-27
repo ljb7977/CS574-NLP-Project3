@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>난입</lemma>
+    <comment>Frames file for '난입' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>난입.01</id>
+      <edef>break into</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="where broken into"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>난입하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이들이 난입하던 과정에서 총성이 울렸으나 부상자는 발생하지 않았으며 인질도 없는 것으로 전해졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (S (NP-ADV (S (NP-SBJ 이/NPN+들/XSF+이/PCA)
+                                 (VP (NP-COMP *pro*)
+                                     (VV 난입/NNC+하/XSV+던/EAN)))
+                              (NP 과정/NNC+에서/PAD))
+                      (S (NP-SBJ 총성/NNC+이/PCA)
+                         (VP 울리/VV+었/EPF+으나/ECS)))
+                   (S (NP-SBJ 부상자/NNC+은/PAU)
+                      (VP (VP (VV 발생/NNC+하/XSV+지/ECS))
+                          않/VX+었/EPF+으며/ECS))
+                   (S (NP-SBJ 인질/NNC+도/PAU)
+                      (ADJP 없/VJ+는/EAN)))
+                것/NNX+으로/PAD)
+       (VV 전하/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>이들</term>
+	    </Arg>
+	    <Rel>
+	      <term>난입하던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

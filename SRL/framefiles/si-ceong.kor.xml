@@ -1,0 +1,101 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>시정</lemma>
+    <comment>Frames file for '시정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>시정.01</id>
+      <edef>correct</edef>
+      <roleset>
+	<role argnum="0" argrole="corrector"/>
+	<role argnum="1" argrole="thing that was wrong"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>시정하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리는 장비 결함을 시정할 수 있는 시간이 충분히 없었습니다.</text>
+	  <parse>
+(S (NP-COMP-1 우리/NPN+은/PAU)
+   (S (NP-SBJ (S (WHNP *op*)
+                 (S (NP-SBJ *pro*)
+                    (VP (VP (NP-OBJ 장비/NNC
+                                    결함/NNC+을/PCA)
+                            (VV 시정/NNC+하/XSV+을/EAN))
+                        (VX 수/NNX
+                            있/VJ+는/EAN))))
+              (NP 시간/NNC+이/PCA))
+      (ADJP (ADVP 충분히/ADV)
+            (ADJP (NP-COMP *T*-1)
+                  없/VJ+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>을</f>
+	      <term>장비 결함</term>
+	    </Arg>
+	    <Rel>
+	      <term>시정할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>시정되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 여전히 시정되지 않고 있는 일본 교과서의 한국사 왜곡 문제는 회담의제에서 제외됐다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (VP (VP (ADVP 여전히/ADV)
+                                (VP (VV 시정/NNC+되/XSV+지/ECS)))
+                            않/VX+고/ECS)
+                        있/VX+는/EAN)))
+              (NP (NP 일본/NPR
+                      교과서/NNC+의/PAN)
+                  (NP 한국사/NNC
+                      왜곡/NNC
+                      문제/NNC+은/PAU)))
+      (VP (NP-COMP 회담/NNC+의제/NNC+에서/PAD)
+          (VV 제외/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=일본 교과서의 한국사 왜곡 문제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>여전히</term>
+	    </Arg>
+	    <Rel>
+	      <term>시정되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않고</term>
+	    </Aux>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

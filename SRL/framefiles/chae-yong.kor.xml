@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>채용</lemma>
+    <comment>Frames file for '채용' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>채용.01</id>
+      <edef>employ</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing employed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>채용하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>영국 정부는 학생들의 학업성적이 바닥권인 중등학교의 교육수준 개선을 위해 연봉 20 만파운드(약 2 억원)의 '슈퍼교장'을 채용할 계획이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 영국/NPR
+                      정부/NNC+은/PAU)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (S (NP-SBJ (NP 학생/NNC+들/XSF+의/PAN)
+                                                      (NP 학업/NNC+성적/NNC+이/PCA))
+                                              (VP (NP 바닥/NNC+권/XSF+이/CO+은/EAN)))))
+                                     (NP 중등/NNC+학교/NNC+의/PAN))
+                                 (NP 교육/NNC+수준/NNC
+                                     개선/NNC+을/PCA))
+                         위하/VV+어/ECS))
+                  (VP (NP-OBJ (NP 연봉/NNC
+                                  20/NNU
+                                  만/NNU+파운드/NNX
+                                  (PRN -LRB-/SLQ
+                                       약/DAN
+                                       2/NNU
+                                       억/NNU+원/NNX
+                                       -RRB-/SRQ)
+                                  의/PAN)
+                              (NP '/SLQ
+                                  슈퍼/NNC+교장/NNC
+                                  '/SRQ
+                                  을/PCA))
+                      (VV 채용/NNC+하/XSV+을/EAN))))
+           (NP 계획/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>영국 정부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>학생들의 학업성적이 바닥권인 중등학교의 교육수준 개선을 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>연봉 20 만파운드(약 2 억원)의 '슈퍼교장'</term>
+	    </Arg>
+	    <Rel>
+	      <term>채용할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

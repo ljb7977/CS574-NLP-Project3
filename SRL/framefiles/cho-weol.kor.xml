@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>초월</lemma>
+    <comment>Frames file for '초월' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>초월.01</id>
+      <edef>transcend</edef>
+      <roleset>
+	<role argnum="0" argrole="thing transcending"/>
+	<role argnum="1" argrole="thing transcended"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>초월하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이는 시공간을 초월해 어떠한 수단을 통해서도 유니텔을 만날 수 있도록 하겠다는 `차세대 미디어'로서의 유니텔과 임직원 모두가 자신의 꿈을 실현할 수 있다는 `백만장자 고용인', `건강한 사이버 사회' 등이다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPN+은/PAU)
+   (VP (NP (NP (NP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (S-COMP (NP-SBJ *pro*)
+                                     (VP (VP (VP (NP-OBJ 시공간/NNC+을/PCA)
+                                                 (VV 초월/NNC+하/XSV+어/ECS))
+                                             (VP (NP-OBJ 어떠한/DAN
+                                                         수단/NNC+을/PCA)
+                                                 통하/VV+어서/ECS+도/PAU)
+                                             (VP (NP-OBJ 유니텔/NPR+을/PCA)
+                                                 만나/VV+을/EAN))
+                                         (VX 수/NNX
+                                             있/VJ+도록/ECS)))
+                             하/VV+겠/EPF+다는/EAN)))
+                   (NP (NP `/SLQ
+                           차세대/NNC
+                           미디어/NNC
+                           '/SRQ
+                           으로서/PAD+의/PAN)
+                       (NP 유니텔/NPR+과/PCJ)))
+               (NP (S (NP-SBJ 임직원/NNC
+                              모두/NNC+이/PCA)
+                      (VP (VP (NP-OBJ (NP 자신/NNC+의/PAN)
+                                      (NP 꿈/NNC+을/PCA))
+                              (VV 실현/NNC+하/XSV+을/EAN))
+                          (VX 수/NNX
+                              있/VJ+다는/EAN)))
+                   (NP `/SLQ
+                       백만장자/NNC
+                       고용인/NNC
+                       '/SRQ))
+               ,/SCM
+               (NP `/SLQ
+                   (NP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (ADJP (VJ 건강/NNC+하/XSJ+은/EAN))))
+                       (NP 사이버/NNC
+                           사회/NNC))
+                   '/SRQ))
+           (NP 등/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>시공간</term>
+	    </Arg>
+	    <Rel>
+	      <term>초월해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

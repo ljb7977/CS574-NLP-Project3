@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>특별관리</lemma>
+    <comment>Frames file for '특별관리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>특별관리.01</id>
+      <edef>supervise specially</edef>
+      <roleset>
+	<role argnum="0" argrole="supervisor"/>
+	<role argnum="1" argrole="thing supervised"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>특별관리하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>시는 이를 위해 택시운전자 개인별 면허번호와 주민번호, 주소 등을 전산화해 상습적, 고질적 불법 운전자에 대해서는 회사별로 명단을 공개하는 등 특별관리할 방침이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 시/NNC+은/PAU)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ 이/NPN+을/PCA)
+                         위하/VV+어/ECS))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP (NP 택시/NNC+운전자/NNC
+					     개인/NNC+별/XSF)
+                                     (NP 면허/NNC+번호/NNC+과/PCJ
+					     주민/NNC+번호/NNC
+					     ,/SCM
+					     주소/NNC))
+                                 (NP 등/NNX+을/PCA))
+                         (VV 전산화/NNC+하/XSV+어/ECS)))
+                  (NP-ADV (S (NP-SBJ *pro*)
+                             (VP (S (NP-SBJ *pro*)
+                                    (VP (NP-COMP (NP 상습/NNC+적/XSF
+							 ,/SCM
+							 고질/NNC+적/XSF)
+                                                 (NP 불법/NNC
+							 운전자/NNC+에/PAD))
+                                        대하/VV+어서/ECS+은/PAU))
+                                 (NP-ADV 회사/NNC+별/XSF+으로/PAD)
+                                 (VP (NP-OBJ 명단/NNC+을/PCA)
+                                     (VV 공개/NNC+하/XSV+는/EAN))))
+                          (NP 등/NNX))
+                  (VP (VV 특별관리/NNC+하/XSV+을/EAN))))
+           (NP 방침/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>시</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>이를 위해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>택시운전자 개인별 면허번호와 주민번호, 주소 등을 전산화해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>상습적, 고질적 불법 운전자에 대해서는 회사별로 명단을 공개하는 등</term>
+	    </Arg>
+	    <Rel>
+	      <term>특별관리할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

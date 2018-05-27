@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>달하</lemma>
+    <comment>Frames file for '달하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>달하.01</id>
+      <edef>amount to</edef>
+      <roleset>
+	<role argnum="1" argrole="thing counted"/>
+	<role argnum="2" argrole="count, total"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>달하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>외국과의 공조사건은 88 년 범죄인인도법과 91 년 국제 형사사법공조법이 제정된 이래 3 백여건에 달한다.</text>
+	  <parse>
+(S (NP-SBJ (NP 외국/NNC+과/PAD+의/PAN)
+           (NP 공조/NNC+사건/NNC+은/PAU))
+   (VP (NP-ADV (S (NP-SBJ (NP 88/NNU
+                              년/NNX
+                              범죄인/NNC+인도/NNC+법/NNC+과/PCJ)
+                          (NP 91/NNU
+                              년/NNX
+                              국제/NNC
+                              형사/NNC+사법/NNC+공조/NNC+법/NNC+이/PCA))
+                  (VP (VV 제정/NNC+되/XSV+은/EAN)))
+               (NP 이래/NNX))
+       (VP (NP-COMP 3/NNU
+                    백/NNU+여/XSF+건/NNX+에/PAD)
+           달하/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>외국과의 공조사건</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>88 년 범죄인인도법과 91 년 국제 형사사법공조법이 제정된 이래</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>3 백여건</term>
+	    </Arg>
+	    <Rel>
+	      <term>달한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

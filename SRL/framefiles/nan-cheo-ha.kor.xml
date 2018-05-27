@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>난처하</lemma>
+    <comment>Frames file for '난처하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>난처하.01</id>
+      <edef>embarrassed</edef>
+      <roleset>
+	<role argnum="1" argrole="entity embarrassed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>난처하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>윌리엄 코언 미국 국방장관은 최근 영국의 제프 훈 국방장관에게 편지를 보내 영국 공군의 유로파이터 전투기에 장착할 미사일 발주를 미국측 컨소시엄에 해 주도록 요청, 영국 정부를 난처하게 만들고 있다고 파이낸셜 타임스가 10 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-2 (S (NP-SBJ (NP 윌리엄/NPR
+                            코언/NPR)
+                        (NP 미국/NPR
+                            국방장관/NNC+은/PAU))
+                (VP (S (NP-SBJ *pro*)
+                       (VP (NP-ADV 최근/NNC)
+                           (VP (NP-COMP (NP 영국/NPR+의/PAN)
+                                        (NP (NP 제프/NPR
+                                                훈/NPR)
+                                            (NP 국방장관/NNC+에게/PAD)))
+                               (NP-OBJ 편지/NNC+을/PCA)
+                               보내/VV+어/ECS)))
+                    (VP (S-COMP (NP-SBJ *pro*)
+                                (VP (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                       (S (NP-SBJ *pro*)
+                                                          (VP (NP-COMP (NP 영국/NPR
+                                                                           공군/NNC+의/PAN)
+                                                                       (NP 유로파이터/NPR
+                                                                           전투기/NNC+에/PAD))
+                                                              (NP-OBJ *T*-1)
+                                                              (VV 장착/NNC+하/XSV+을/EAN))))
+                                                    (NP 미사일/NNC))
+                                                (NP 발주/NNC+을/PCA))
+                                        (NP-COMP 미국/NPR+측/XSF
+                                                 컨소시엄/NNC+에/PAD)
+                                        하/VV+어/ECS)
+                                    주/VX+도록/ECS))
+                        (VV 요청/NNC))))
+             ,/SCM
+             (S (NP-SBJ *pro*)
+                (VP (VP (NP-OBJ 영국/NPR
+                                정부/NNC+을/PCA)
+                        (S-COMP (NP-SBJ *pro*)
+                                (ADJP 난처하/VJ+게/ECS))
+                        만들/VV+고/ECS)
+                    있/VX+다/EFN+고/PAD)))
+   (S (NP-SBJ 파이낸셜/NPR
+              타임스/NPR+이/PCA)
+      (VP (NP-ADV 10/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-2)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>난처하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

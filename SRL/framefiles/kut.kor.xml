@@ -1,0 +1,165 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>굳</lemma>
+    <comment>Frames file for '굳' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>굳.01</id>
+      <edef>hard</edef>
+      <roleset>
+	<role argnum="0" argrole="causal agent"/>
+	<role argnum="1" argrole="thing becoming hard"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>굳다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 "이로 인해 북한이 남반부 해방과 남조선 인민민주혁명이란 혁명과업이 궁극적으로 승리할 것으로 굳게 믿고 있다"고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP 이/NPN+으로/PAD)
+                      인하/VV+어/ECS))
+               (S (NP-SBJ 북한/NPR+이/PCA)
+                  (VP (VP (NP-COMP (S (NP-SBJ (NP (NP 남반부/NNC
+                                                      해방/NNC+과/PCJ)
+                                                  (NP 남조선/NPR
+                                                      인민/NNC+민주/NNC+혁명/NNC+이란/PAN))
+                                              (NP 혁명/NNC+과업/NNC+이/PCA))
+                                      (VP (ADVP (ADV 궁극/NNC+적/XSF+으로/PAD))
+                                          (VP (VV 승리/NNC+하/XSV+을/EAN))))
+                                   (NP 것/NNX+으로/PAD))
+                          (VP (ADVP (ADV 굳/VJ+게/ECS))
+                              (VP 믿/VV+고/ECS)))
+                      있/VX+다/EFN))
+               "/SRQ
+               고/PAD)
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>굳게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>굳히다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 삼성차측은 르노의 30 퍼센트 지분참여 요구에 대해 지분참여율이 20 퍼센트를 넘을 수 없다는 입장을 굳힌 것으로 알려졌다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 삼성차/NPR+측/XSF+은/PAU)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-COMP (NP (NP 르노/NPR+의/PAN)
+                                              (NP 30/NNU
+                                                  퍼센트/NNX
+                                                  지분/NNC+참여/NNC))
+                                          (NP 요구/NNC+에/PAD))
+                                 대하/VV+어/ECS))
+                          (VP (NP-OBJ (S (NP-SBJ 지분참여율/NNC+이/PCA)
+                                         (VP (VP (NP-OBJ 20/NNU
+                                                         퍼센트/NNX+을/PCA)
+                                                 넘/VV+을/EAN)
+                                             (VX 수/NNX
+                                                 없/VJ+다는/EAN)))
+                                      (NP 입장/NNC+을/PCA))
+                              굳히/VV+은/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>삼성차측</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>르노의 30 퍼센트 지분참여 요구에 대해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지분참여율이 20 퍼센트를 넘을 수 없다는 입장</term>
+	    </Arg>
+	    <Rel>
+	      <term>굳힌</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>굳어지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한나라당은 당초 우려했던 민국당 바람이 주춤해지면서 수도권에서 민주당과의 양당 대결구도가 굳어지고 있다고 보고 대여 공세의 고삐를 더 바짝 죄면서 수도권 선거전을 양당싸움으로 몰고가기로 했다.</text>
+	  <parse>
+(S (NP-SBJ 한나라당/NPR+은/PAU)
+   (VP (VP (S-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *pro*)
+                                    (VP (NP-ADV 당초/NNC)
+                                        (VP (NP-OBJ *T*-1)
+                                            (VV 우려/NNC+하/XSV+었/EPF+던/EAN)))))
+                              (NP 민국당/NPR
+                                  바람/NNC+이/PCA))
+                      (VP (VV (VV 주춤/NNC+하/XSV+어지/XSV+으면서/ECS))))
+                   (S (NP-ADV 수도권/NNC+에서/PAD)
+                      (S (NP-SBJ (NP 민주당/NPR+과/PAD+의/PAN)
+                                 (NP 양당/NNC
+                                     대결/NNC+구도/NNC+이/PCA))
+                         (VP (VP (VV 굳/VJ+어지/XSV+고/ECS))
+                             있/VX+다/EFN+고/PAD))))
+           보/VV+고/ECS)
+       (VP (S-COMP (S (NP-SBJ *pro*)
+		      (VP (NP-OBJ (NP 대여/NNC
+				      공세/NNC+의/PAN)
+				  (NP 고삐/NNC+을/PCA))
+			  (VP (ADVP 더/ADV)
+			      (ADVP 바짝/ADV)
+			      (VP 죄/VV+으면서/ECS))))
+		   (S (NP-SBJ *pro*)
+		      (VP (NP-OBJ 수도권/NNC
+				  선거전/NNC+을/PCA)
+			  (NP-COMP 양당/NNC+싸움/NNC+으로/PAD)
+			  몰고가/VV+기/ENM+으로/PAD)))
+           하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>당초 우려했던 민국당 바람이 주춤해지면서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>수도권에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>민주당과의 양당 대결구도</term>
+	    </Arg>
+	    <Rel>
+	      <term>굳어지고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

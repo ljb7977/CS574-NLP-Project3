@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>합당</lemma>
+    <comment>Frames file for '합당' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>합당.01</id>
+      <edef>merge the parties</edef>
+      <roleset>
+	<role argnum="0" argrole="one party"/>
+	<role argnum="1" argrole="other party"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>합당하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 "민주당은 특정지역의 정당, 김 대통령의 정당이 아닌 전국적 국민정당"이라면서 "민주당은 국민회의와 대선 때 500 만표의 고른 득표를 얻은 국민신당이 합당해 만든 정당"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S (ADVP 이어/ADV)
+          (S "/SLQ
+             (NP-SBJ 민주당/NPR+은/PAU)
+             (VP (NP (S (NP-SBJ *pro*)
+                        (ADJP (NP-COMP (NP (NP 특정/NNC+지역/NNC+의/PAN)
+					   (NP 정당/NNC))
+				       ,/SCM
+				       (NP (NP 김/NPR
+						 대통령/NNC+의/PAN)
+					   (NP 정당/NNC+이/PCA)))
+			      아니/VJ+은/EAN))
+                     (NP 전국/NNC+적/XSF
+			     국민/NNC+정당/NNC)))
+	     "/SRQ
+	     이/CO+라면서/ECS))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ 민주당/NPR+은/PAU)
+                   (VP (NP (S (WHNP-3 *op*)
+                              (S (NP-SBJ (NP 국민/NNC+회의/NNC+과/PCJ)
+                                         (NP (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (VP (NP-ADV 대선/NNC
+								   때/NNC)
+                                                       (VP (NP-OBJ (NP 500/NNU
+                                                                       만/NNU+표/NNC+의/PAN)
+                                                                   (NP (S (WHNP-2 *op*)
+                                                                          (S (NP-SBJ *T*-2)
+                                                                             (ADJP 고르/VJ+은/EAN)))
+                                                                       (NP 득표/NNC+을/PCA)))
+                                                           얻/VV+은/EAN))))
+                                             (NP 국민신당/NPR+이/PCA)))
+                                 (VP (VP (VV 합당/NNC+하/XSV+어/ECS))
+                                     (VP (NP-OBJ *T*-3)
+                                         만들/VV+은/EAN))))
+                           (NP 정당/NNC)))
+		   "/SRQ
+		   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>국민회의와 대선 때 500 만표의 고른 득표를 얻은 국민신당</term>
+	    </Arg>
+	    <Rel>
+	      <term>합당해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

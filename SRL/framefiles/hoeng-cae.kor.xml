@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>횡재</lemma>
+    <comment>Frames file for '횡재' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>횡재.01</id>
+      <edef>realize a windfall profit</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="windfall"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>횡재하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>LSE는 이에 따라 앞으로 회원제가 아닌 유한책임회사(limited company)에 의해 운영되며 주주가 되는 298 개 회원 중개업체들과 다른 기관투자가들은 각각 10 만주씩을 배정받아 수백만 파운드를 횡재하게 됐다.</text>
+	  <parse>
+(S (S (NP-SBJ LSE/NFW+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 이/NPN+에/PAD)
+                 따르/VV+어/ECS))
+          (VP (NP-ADV 앞/NNC+으로/PAD)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (S (NP-SBJ *pro*)
+                                     (ADJP (NP-COMP 회원제/NNC+이/PCA)
+                                           아니/VJ+은/EAN))
+                                  (NP 유한/NNC+책임/NNC+회사/NNC
+                                      (PRN -LRB-/SLQ
+                                           limited/NFW
+                                           company/NFW
+                                           -RRB-/SRQ)
+                                      에/PAD))
+                         의하/VV+어/ECS))
+                  (VP (VV 운영/NNC+되/XSV+으며/ECS))))))
+   (S (S (NP-SBJ (S (WHNP-1 *op*)
+		    (S (NP-SBJ *T*-1)
+		       (VP (NP-COMP 주주/NNC+이/PCA)
+			   되/VV+는/EAN)))
+		 (NP (NP 298/NNU
+			 개/NNX
+			 회원/NNC
+			 중개/NNC+업체/NNC+들/XSF+과/PCJ)
+		     (NP 다른/DAN
+			     기관/NNC+투자가/NNC+들/XSF+은/PAU)))
+	 (VP (ADVP 각각/ADV)
+	     (VP (NP-OBJ 10/NNU
+			 만/NNU+주/NNC+씩/XSF+을/PCA)
+		 (VV 배정/NNC+받/XSV+어/ECS))))
+      (S (NP-SBJ *pro*)
+	 (VP (VP (NP-OBJ 수백만/NNU
+			       파운드/NNX+을/PCA)
+		 (VV 횡재/NNC+하/XSV+게/ECS))
+	     되/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>주주가 되는 298 개 회원 중개업체들과 다른 기관투자가들은 각각 10 만주씩을 배정받아</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>수백만 파운드</term>
+	    </Arg>
+	    <Rel>
+	      <term>횡재하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>됐다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

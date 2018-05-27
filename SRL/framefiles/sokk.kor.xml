@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>솎</lemma>
+    <comment>Frames file for '솎' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>솎.01</id>
+      <edef>cull</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing culled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>솎다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>등판 예정이 없다가 투수 코치의 지시로 갑자기 출전한 김병현은 첫 타자에게 빗맞은 안타를 허용한 뒤 폭투로 무사 2 루의 위기에 몰렸지만 이후 3 타자를 모두 범타로 솎아 내 이닝을 마무리했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (S (NP-SBJ *T*-1)
+                    (ADJP (NP-COMP 등판/NNC
+                                   예정/NNC+이/PCA)
+                          없/VJ+다가/ECS))
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-ADV (NP 투수/NNC
+                                    코치/NNC+의/PAN)
+                                (NP 지시/NNC+으로/PAD))
+                        (ADVP 갑자기/ADV)
+                        (VP (VV 출전/NNC+하/XSV+은/EAN))))))
+           (NP 김병현/NPR+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV (S (NP-SBJ *pro*)
+                         (VP (NP-COMP 첫/DAN
+                                      타자/NNC+에게/PAD)
+                             (NP-OBJ (S (NP-SBJ *pro*)
+                                        (VP 빗맞/VV+은/EAN))
+                                     (NP 안타/NNC+을/PCA))
+                             (VV 허용/NNC+하/XSV+은/EAN)))
+                      (NP 뒤/NNC))
+              (NP-ADV 폭투/NNC+으로/PAD)
+              (VP (NP-COMP (NP 무사/NNC
+                               2/NNU
+                               루/NNX+의/PAN)
+                           (NP 위기/NNC+에/PAD))
+                  몰리/VV+었/EPF+지만/ECS)))
+       (S (NP-SBJ *pro*)
+          (VP (VP (NP-ADV 이후/NNC)
+                  (VP (NP-OBJ 3/NNU
+                              타자/NNC+을/PCA)
+                      (VP (ADVP 모두/ADV)
+                          (NP-ADV 범타/NNC+으로/PAD)
+                          (VP 솎/VV+어/ECS))))
+              내/VX+어/ECS))
+       (VP (NP-OBJ 이닝/NNX+을/PCA)
+           (VV 마무리/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이후</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>3 타자</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>모두</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>범타로</term>
+	    </Arg>
+	    <Rel>
+	      <term>솎아</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>내</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,126 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>입각</lemma>
+    <comment>Frames file for '입각' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>입각.01</id>
+      <edef>be based on</edef>
+      <roleset>
+	<role argnum="1" argrole="thing in focus"/>
+	<role argnum="2" argrole="based on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입각하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>모하마드 하타미 이란 대통령은 지난 1 일 테헤란에서 이집트 주재 이익대표부 대표를 만나 이란과 이집트는 역사적으로 중요한 이해관계를 가지고 있으며 두나라가 상호 존중의 정신에 입각해 관계를 강화하는 것이 중요하다고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 모하마드/NPR
+           하타미/NPR
+           이란/NPR
+           대통령/NNC+은/PAU)
+   (VP (VP (NP-ADV 지난/DAN
+                   1/NNU
+                   일/NNX)
+           (NP-ADV 테헤란/NPR+에서/PAD)
+           (VP (NP-OBJ 이집트/NPR
+                       주재/NNC
+                       이익/NNC+대표부/NNC
+                       대표/NNC+을/PCA)
+               만나/VV+어/ECS))
+       (VP (S-COMP (S (NP-SBJ (NP 이란/NPR+과/PCJ)
+                              (NP 이집트/NPR+은/PAU))
+                      (VP (VP (ADVP (ADV 역사/NNC+적/XSF+으로/PAD))
+                              (VP (NP-OBJ (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (ADJP (VJ 중요/NNC+하/XSJ+은/EAN))))
+                                          (NP 이해/NNC+관계/NNC+을/PCA))
+                                  가지/VV+고/ECS))
+                          있/VX+으며/ECS))
+                   (S (NP-SBJ (S (NP-SBJ 두/NNU+나라/NNC+이/PCA)
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-COMP (NP 상호/NNC
+                                                         존중/NNC+의/PAN)
+                                                     (NP 정신/NNC+에/PAD))
+                                            (VV 입각/NNC+하/XSV+어/ECS)))
+                                     (VP (NP-OBJ 관계/NNC+을/PCA)
+                                         (VV 강화/NNC+하/XSV+는/EAN))))
+                              (NP 것/NNX+이/PCA))
+                      (ADJP (VJ 중요/NNC+하/XSJ+다/EFN+고/PAD))))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>상호 존중의 정신</term>
+	    </Arg>
+	    <Rel>
+	      <term>입각해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>입각.02</id>
+      <edef>join the Cabinet of</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="goal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입각하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>루빈 전 장관은 골드만 삭스의 회장을 역임하다 지난 93 년 클린턴 행정부에 입각해 6 년여에 걸쳐 재무장관을 지냈다.</text>
+	  <parse>
+(S (S (NP-SBJ 루빈/NPR
+              전/DAN
+              장관/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (NP 골드만/NPR
+				   삭스/NPR+의/PAN)
+                         (NP 회장/NNC+을/PCA))
+                 (VV 역임/NNC+하/XSV+다/ECS)))
+          (NP-ADV 지난/DAN
+		      93/NNU
+		      년/NNX)
+          (VP (NP-COMP 클린턴/NPR
+			     행정부/NNC+에/PAD)
+	      (VV 입각/NNC+하/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 6/NNU
+                          년/NNX+여/XSF+에/PAD)
+                 걸치/VV+어/ECS))
+          (VP (NP-OBJ 재무/NNC+장관/NNC+을/PCA)
+              지내/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 93 년</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>클린턴 행정부</term>
+	    </Arg>
+	    <Rel>
+	      <term>입각해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

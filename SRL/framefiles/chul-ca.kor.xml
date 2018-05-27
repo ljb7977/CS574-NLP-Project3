@@ -1,0 +1,131 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>출자</lemma>
+    <comment>Frames file for '출자' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>출자.01</id>
+      <edef>invest</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing invested"/>
+	<role argnum="2" argrole="invest for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>출자하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>송계선 LG 투자증권 애널리스트는 "미래와 사람은 자체 사업보다는 출자한 벤처기업의 평가차익 등 영업외적 요인으로 주가가 오르내렸던 종목"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 송계선/NPR
+           LG/NFW
+           투자/NNC+증권/NNC
+           애널리스트/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (NP-SBJ 미래/NNC+과/PCJ
+                       사람/NNC+은/PAU)
+               (VP (NP-ADV 자체/NNC
+                           사업/NNC+보다/PAD+은/PAU)
+                   (NP-ADV (NP (NP (NP (S (WHNP-1 *op*)
+                                          (S (NP-SBJ *T*-1)
+                                             (VP (VV 출자/NNC+하/XSV+은/EAN))))
+                                       (NP 벤처/NNC+기업/NNC+의/PAN))
+                                   (NP 평가/NNC+차익/NNC))
+                               (NP 등/NNX))
+                           (NP 영업/NNC+외적/NNC
+                               요인/NNC+으로/PAD))
+                   (VP (NP (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (S (NP-SBJ 주가/NNC+이/PCA)
+                                    (VP 오르내리/VV+었/EPF+던/EAN))))
+                           (NP 종목/NNC))))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=벤처기업</term>
+	    </Arg>
+	    <Rel>
+	      <term>출자한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>출자되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이후 정부가 음성적인 자금을 양성화하기 위해 창업투자사와 투자조합에 출자된 자금은 자금출처조사를 면제한다는 내용이 담긴 금융실명거래 및 비밀보장에 관한 법률을 한시적으로 시행하자 98 년 한해동안 12 개 업체가 추가됐다.</text>
+	  <parse>
+(S (S (NP-ADV 이후/NNC)
+      (S (NP-SBJ 정부/NNC+이/PCA)
+         (VP (S (NP-SBJ *pro*)
+                (VP (S-OBJ (NP-SBJ *pro*)
+                           (VP (NP-OBJ (S (WHNP-1 *op*)
+                                          (S (NP-SBJ *T*-1)
+                                             (VP (NP 음성/NNC+적/XSF+이/CO+은/EAN))))
+                                       (NP 자금/NNC+을/PCA))
+                               (VV 양성화/NNC+하/XSV+기/ENM)))
+                    위하/VV+어/ECS))
+             (VP (NP-OBJ (S (WHNP-3 *op*)
+                            (S (NP-SBJ (S (NP-SBJ *pro*)
+                                          (VP (NP-ADV (S (WHNP-2 *op*)
+                                                         (S (NP-SBJ *T*-2)
+                                                            (VP (NP-COMP (NP 창업투자사/NNC+과/PCJ)
+                                                                         (NP 투자/NNC+조합/NNC+에/PAD))
+                                                                (VV 출자/NNC+되/XSV+은/EAN))))
+                                                      (NP 자금/NNC+은/PAU))
+                                              (VP (NP-OBJ 자금/NNC+출처/NNC+조사/NNC+을/PCA)
+                                                  (VV 면제/NNC+하/XSV+는다는/EAN))))
+                                       (NP 내용/NNC+이/PCA))
+                               (VP (NP-COMP *T*-3)
+                                   담기/VV+은/EAN)))
+                         (NP (S (WHNP-4 *op*)
+                                (S (NP-SBJ *T*-4)
+                                   (VP (NP-COMP (NP 금융/NNC+실명/NNC+거래/NNC)
+                                                (ADCP 및/ADC)
+                                                (NP 비밀/NNC+보장/NNC+에/PAD))
+                                       관하/VV+은/EAN)))
+                             (NP 법률/NNC+을/PCA)))
+                 (VP (NP-ADV 한시/NNC+적/XSF+으로/PAD)
+                     (VP (VV 시행/NNC+하/XSV+자/ECS)))))))
+   (S (NP-ADV 98/NNU
+              년/NNX
+              한해/NNC+동안/NNX)
+      (S (NP-SBJ 12/NNU
+                 개/NNX
+                 업체/NNC+이/PCA)
+         (VP (VV 추가/NNC+되/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=자금</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>창업투자사와 투자조합</term>
+	    </Arg>
+	    <Rel>
+	      <term>출자된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

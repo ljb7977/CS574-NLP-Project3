@@ -1,0 +1,118 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>밑돌</lemma>
+    <comment>Frames file for '밑돌' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>밑돌.01</id>
+      <edef>be less than</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being less than"/>
+	<role argnum="2" argrole="thing being more than"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>밑돌다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>에너지소비량을 부문별로 보면 산업부문이 2.2 퍼센트 증가, 작년 동기의 증가율 5.2 퍼센트보다 훨씬 낮았으며 수송부문도 5.2 퍼센트 증가에 그쳐 작년 동기의 증가율 7.1 퍼센트를 밑돌았다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 에너지/NNC+소비량/NNC+을/PCA)
+          (VP (ADVP (ADV 부문/NNC+별/XSF+으로/PAD))
+              (VP 보/VV+으면/ECS))))
+   (S (NP-SBJ 산업/NNC+부문/NNC+이/PCA)
+      (ADJP (S (NP-SBJ *pro*)
+               (VP (NP-OBJ 2.2/NNU
+                           퍼센트/NNX)
+                   (VV 증가/NNC)))
+            ,/SCM
+            (NP-ADV (NP (NP 작년/NNC
+                            동기/NNC+의/PAN)
+                        (NP 증가율/NNC))
+                    (NP 5.2/NNU
+                        퍼센트/NNX+보다/PAD))
+            (ADVP 훨씬/ADV)
+            (ADJP 낮/VJ+었/EPF+으며/ECS)))
+   (S (NP-SBJ 수송/NNC+부문/NNC+도/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 5.2/NNU
+                          퍼센트/NNX
+                          증가/NNC+에/PAD)
+                 그치/VV+어/ECS))
+          (VP (NP-OBJ (NP (NP 작년/NNC
+                              동기/NNC+의/PAN)
+                          (NP 증가율/NNC))
+                      (NP 7.1/NNU
+                          퍼센트/NNX+을/PCA))
+              밑돌/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>수송부문</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>5.2 퍼센트 증가에 그쳐</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>작년 동기의 증가율 7.1 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>밑돌았다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>밑돌다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이런 까닭에 각 업체들은 실적을 남기기 위해 통상적으로 최저한도로 불리는 수주가의 60 퍼센트에도 밑도는 출혈입찰을 하고 있다.</text>
+	  <parse>
+(S (NP-ADV 이런/DAN
+           까닭/NNC+에/PAD)
+   (S (NP-SBJ 각/DAN
+              업체/NNC+들/XSF+은/PAU)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (S-OBJ (NP-SBJ *pro*)
+			    (VP (NP-OBJ 실적/NNC+을/PCA)
+				남기/VV+기/ENM))
+                     위하/VV+어/ECS))
+              (VP (NP-OBJ-LV (S (NP-SBJ *pro*)
+                                (VP (NP-COMP (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (VP (NP-ADV 통상/NNC+적/XSF+으로/PAD)
+                                                       (VP (NP-COMP 최저/NNC+한도/NNC+으로/PAD)
+                                                           불리/VV+는/EAN))))
+                                             (NP (NP 수주가/NNC+의/PAN)
+                                                 (NP 60/NNU
+                                                     퍼센트/NNX+에/PAD+도/PAU)))
+                                    밑돌/VV+는/EAN))
+                             (NP 출혈/NNC+입찰/NNC+을/PCA))
+                  (LV 하/VV+고/ECS)))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에도</f>
+	      <term>통상적으로 최저한도로 불리는 수주가의 60 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>밑도는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

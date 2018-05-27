@@ -1,0 +1,186 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>인하</lemma>
+    <comment>Frames file for '인하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>인하.01</id>
+      <edef>lower</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing lowered"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>인하하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>피셔 부대표는 5 년간 접속료를 22.5 퍼센트 인하하겠다는 일본측 제안은 받아들일 수 없다고 말하고 진전된 제안이 나오기를 기대하고 있다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 피셔/NPR
+           부/XPF+대표/NNC+은/PAU)
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+					  (S (NP-SBJ *T*-2)
+					     (VP (NP-ADV 5/NNU
+							 년/NNX+간/XSF)
+						 (VP (NP-OBJ 접속료/NNC+을/PCA)
+						     (VP (NP-ADV 22.5/NNU
+								 퍼센트/NNX)
+							 (VP (VV 인하/NNC+하/XSV+겠/EPF+다는/EAN)))))))
+				       (NP 일본/NPR+측/XSF))
+				   (NP 제안/NNC+은/PAU))
+                           받아들이/VV+을/EAN)
+                       (VX 수/NNX
+                           없/VJ+다/EFN+고/PAD)))
+           말하/VV+고/ECS)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (S-OBJ (NP-SBJ (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (VV 진전/NNC+되/XSV+은/EAN))))
+                                          (NP 제안/NNC+이/PCA))
+                                  (VP 나오/VV+기/ENM+을/PCA))
+                           (VV 기대/NNC+하/XSV+고/ECS))
+                       있/VX+다/EFN+고/PAD))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=일본측</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>5 년간</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>접속료</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>22.5 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>인하하겠다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>인하되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 중국은 한국으로부터 섬유류, 원피 등 221 개 품목에 대해 평균 30 퍼센트 인하된 특혜관세를 적용받을 수 있게 돼 양국간 교역이 크게 증대될 것으로 보인다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 중국/NPR+은/PAU)
+      (VP (VP (VP (NP-COMP 한국/NPR+으로부터/PAD)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-COMP (NP (NP (NP 섬유/NNC+류/XSF)
+                                              ,/SCM
+                                              (NP 원피/NNC))
+                                          (NP 등/NNX))
+                                      (NP 221/NNU
+                                          개/NNX
+                                          품목/NNC+에/PAD))
+                             대하/VV+어/ECS))
+                      (VP (NP-OBJ (S (NP-SBJ 평균/NNC
+                                             30/NNU
+                                             퍼센트/NNX)
+                                     (VP (VV 인하/NNC+되/XSV+은/EAN)))
+                                  (NP 특혜/NNC+관세/NNC+을/PCA))
+                          (VV 적용/NNC+받/XSV+을/EAN))))
+              (VX 수/NNX
+                  있/VJ+게/ECS))
+          되/VX+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ (NP 양국/NNC+간/XSF)
+                              (NP 교역/NNC+이/PCA))
+                      (VP (ADVP (ADV 크/VJ+게/ECS))
+                          (VP (VV 증대/NNC+되/XSV+을/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>평균 30 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>인하된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>인하.02</id>
+      <edef>cause</edef>
+      <roleset>
+	<role argnum="1" argrole="thing causing"/>
+	<role argnum="2" argrole="thing caused"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>인하다</rel>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>아프리카 남부 모잠비크의 홍수로 수천명의 사망자와 100 만명의 이재민이 발생한 것으로 추정되고 있는 가운데 기아와 전염병, 탈수 증세 등으로 인해 희생자가 더욱 늘어날 것으로 우려되고 있다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ *pro*)
+              (VP (VP (NP-COMP (S (NP-ADV (NP 아프리카/NPR
+                                              남부/NNC
+                                              모잠비크/NPR+의/PAN)
+                                          (NP 홍수/NNC+으로/PAD))
+                                  (S (NP-SBJ (NP (NP 수천/NNU+명/NNX+의/PAN)
+                                                 (NP 사망자/NNC+과/PCJ))
+                                             (NP (NP 100/NNU
+                                                     만/NNU+명/NNX+의/PAN)
+                                                 (NP 이재민/NNC+이/PCA)))
+                                     (VP (VV 발생/NNC+하/XSV+은/EAN))))
+                               (NP 것/NNX+으로/PAD))
+                      (VV 추정/NNC+되/XSV+고/ECS))
+                  있/VX+는/EAN))
+           (NP 가운데/NNC))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (S (S (NP-SBJ *pro*)
+			     (VP (NP-COMP (NP (NP 기아/NNC+과/PCJ)
+					      (NP 전염병/NNC)
+					      ,/SCM
+					      (NP 탈수/NNC
+						      증세/NNC))
+					  (NP 등/NNX+으로/PAD))
+				 인하/VV+어/ECS))
+			  (S (NP-SBJ 희생자/NNC+이/PCA)
+			     (VP (ADVP 더욱/ADV)
+				 (VP 늘어나/VV+을/EAN))))
+		       (NP 것/NNX+으로/PAD))
+              (VV 우려/NNC+되/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>기아와 전염병, 탈수 증세 등</term>
+	    </Arg>
+	    <Rel>
+	      <term>인해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

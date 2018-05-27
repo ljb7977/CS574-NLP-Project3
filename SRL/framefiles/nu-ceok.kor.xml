@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>누적</lemma>
+    <comment>Frames file for '누적' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>누적.01</id>
+      <edef>accumulate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing accumulated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>누적되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>로버자동차 전체는 적자가 누적돼 왔으나 랜드로버와 신형 미니 모델 부문만은 흑자를 기록했었다.</text>
+	  <parse>
+(S (S (NP-SBJ 로버/NPR+자동차/NNC
+              전체/NNC+은/PAU)
+      (S (NP-SBJ 적자/NNC+이/PCA)
+         (VP (VP (VV 누적/NNC+되/XSV+어/ECS))
+             오/VX+었/EPF+으나/ECS)))
+   (S (NP-SBJ (NP 랜드로버/NPR+과/PCJ)
+              (NP 신형/NNC
+                  미니/NNC
+                  모델/NNC
+                  부문/NNC+만/PAU+은/PAU))
+      (VP (NP-OBJ 흑자/NNC+을/PCA)
+          (VV 기록/NNC+하/XSV+었었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>로버자동차 전체</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>적자</term>
+	    </Arg>
+	    <Rel>
+	      <term>누적돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔으나</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

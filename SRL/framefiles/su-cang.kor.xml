@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수장</lemma>
+    <comment>Frames file for '수장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수장.01</id>
+      <edef>sink</edef>
+      <roleset>
+	<role argnum="0" argrole="causer of sinking"/>
+	<role argnum="1" argrole="thing sinking"/>
+	<role argnum="2" argrole="direction"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수장되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>해수면의 급상승으로 국토 전체가 수장될 위기에 처해 있는 남태평양의 작은 섬나라 투발루에서 9 일 중학교 화재사건으로 학생과 교직원 등 19 명이 숨지는 사고가 발생했다.</text>
+	  <parse>
+(S (NP-COMP-3 (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (VP (NP-ADV (NP 해수면/NNC+의/PAN)
+                                    (NP 급상승/NNC+으로/PAD))
+                            (VP (NP-COMP (S (NP-SBJ 국토/NNC
+                                                    전체/NNC+이/PCA)
+                                            (VP (VV 수장/NNC+되/XSV+을/EAN)))
+                                         (NP 위기/NNC+에/PAD))
+                                처하/VV+어/ECS))
+                        있/VX+는/EAN)))
+              (NP (NP (NP 남태평양/NPR+의/PAN)
+                      (NP (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (ADJP 작/VJ+은/EAN)))
+                          (NP 섬나라/NNC)))
+                  (NP 투발루/NPR+에서/PAD)))
+   (S (NP-ADV 9/NNU
+              일/NNX)
+      (S (NP-SBJ (S (NP-ADV 중학교/NNC
+                            화재/NNC+사건/NNC+으로/PAD)
+                    (S (NP-SBJ (NP (NP (NP 학생/NNC+과/PCJ)
+                                       (NP 교직원/NNC))
+                                   (NP 등/NNX))
+                               (NP 19/NNU
+                                   명/NNX+이/PCA))
+                       (VP 숨지/VV+는/EAN)))
+                 (NP 사고/NNC+이/PCA))
+         (VP (NP-COMP *T*-3)
+             (VV 발생/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>국토 전체</term>
+	    </Arg>
+	    <Rel>
+	      <term>수장될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

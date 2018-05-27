@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>명확하</lemma>
+    <comment>Frames file for '명확하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>명확하.01</id>
+      <edef>clear</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being clear"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>명확하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>수사 관계자는 "소환에 불응하더라도 혐의가 특정되거나 명확한 증거가 포착되지 않는 한 긴급체포 등 관련자에 대한 강제수사 계획은 없다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 수사/NNC
+           관계자/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP 소환/NNC+에/PAD)
+                      (VV 불응/NNC+하/XSV+더라도/ECS)))
+               (NP-ADV (S (S (NP-SBJ 혐의/NNC+이/PCA)
+                             (VP (VV 특정/NNC+되/XSV+거나/ECS)))
+                          (S (NP-SBJ (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (ADJP 명확하/VJ+은/EAN)))
+                                     (NP 증거/NNC+이/PCA))
+                             (VP (VP (VV 포착/NNC+되/XSV+지/ECS))
+                                 않/VX+는/EAN)))
+                       (NP 한/NNX))
+               (S (NP-SBJ (NP (NP 긴급/NNC+체포/NNC)
+                              (NP 등/NNX)
+                              (NP (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (VP (NP-COMP 관련자/NNC+에/PAD)
+                                            대하/VV+은/EAN)))
+                                  (NP 강제/NNC+수사/NNC)))
+                          (NP 계획/NNC+은/PAU))
+                  (ADJP 없/VJ+다/EFN))
+               "/SRQ
+               고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=증거</term>
+	    </Arg>
+	    <Rel>
+	      <term>명확한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

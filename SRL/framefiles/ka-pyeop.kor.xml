@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가볍</lemma>
+    <comment>Frames file for '가볍' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>가볍.01</id>
+      <edef>light</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being light"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가볍다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그것이 일반 보병 중대의 경기관총보다 가볍다는 건 압니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-OBJ (S (NP-SBJ 그것/NPN+이/PCA)
+		  (ADJP (NP-ADV (NP 일반/NNC
+				    보병/NNC
+				    중대/NNC+의/PCA)
+				(NP 경기관총/NNC+보다/PAD))
+			(ADJP 가볍/VJ+다는/EAN)))
+	       (NP 것/NNX+은/PAU))
+       알/VV+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>일반 보병 중대의 경기관총보다</term>
+	    </Arg>
+	    <Rel>
+	      <term>가볍다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

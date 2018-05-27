@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>특수</lemma>
+    <comment>Frames file for '특수' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>특수.01</id>
+      <edef>special</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being special"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>특수하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 고기는 맛이 좀 특수하다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           고기/NNC+은/PAU)
+   (S (NP-SBJ 맛/NNC+이/PCA)
+      (ADJP (ADVP 좀/ADV)
+            (ADJP (VJ 특수/NNC+하/XSJ+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>이 고기</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>맛</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>좀</term>
+	    </Arg>
+	    <Rel>
+	      <term>특수하다</term>
+	    </Rel>
+	  </relation>
+	  <comment>double nominative</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

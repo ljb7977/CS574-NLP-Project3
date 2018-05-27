@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>되살</lemma>
+    <comment>Frames file for '되살' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>되살.01</id>
+      <edef>revive</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity revived"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>되살리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 위원장은 이날 대전지역 3 개 지구당 개편대회에 참석, 전날 자민련 김종필 명예총재의 `지역감정' 관련 발언을 겨냥해 "어떤 정당의 어떤 지도자가 또 지역감정의 망령을 되살리려는 노력을 하고 있다"며 이같이 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           위원장/NNC+은/PAU)
+   (VP (VP (NP-ADV 이날/NNC)
+           (VP (NP-COMP 대전/NPR+지역/NNC
+                        3/NNU
+                        개/NNX
+                        지구당/NNC
+                        개편/NNC+대회/NNC+에/PAD)
+               (VV 참석/NNC)))
+       ,/SCM
+       (VP (NP-OBJ (NP 전날/NNC)
+                   (NP 자민련/NPR
+                       김종필/NPR
+                       명예/NNC+총재/NNC+의/PAN)
+                   (NP `/SLQ
+                       지역/NNC+감정/NNC
+                       '/SRQ
+                       관련/NNC
+                       발언/NNC+을/PCA))
+           (VV 겨냥/NNC+하/XSV+어/ECS))
+       (VP (S "/SLQ
+              (S (NP-SBJ (NP 어떤/DAN
+                             정당/NNC+의/PAN)
+                         (NP 어떤/DAN
+                             지도자/NNC+이/PCA))
+                 (VP (VP (ADVP 또/ADV)
+                         (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                        (VP (NP-OBJ (NP 지역/NNC+감정/NNC+의/PAN)
+                                                    (NP 망령/NNC+을/PCA))
+                                            되살리/VV+으려는/EAN))
+                                     (NP 노력/NNC+을/PCA))
+                             하/VV+고/ECS)
+                         있/VX+다/EFN)))
+              "/SRQ
+              며/ECS)
+           (VP (ADVP 이같이/ADV)
+               (VP 밝히/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지역감정의 망령</term>
+	    </Arg>
+	    <Rel>
+	      <term>되살리려는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

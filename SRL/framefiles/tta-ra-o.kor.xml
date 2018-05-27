@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>따라오</lemma>
+    <comment>Frames file for '따라오' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>따라오.01</id>
+      <edef>follow</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing followed"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>따라오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이 붉은 사각형 지역까지 어느 진로를 따라왔는가?</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (DANP 이/DAN)
+	        (NP (S (WHNP-1 *op*)
+		       (S (NP-SBJ *T*-1)
+			  (ADJP 붉/VJ+은/EAN)))
+		    (NP 사각형/NNC))
+	        (NP 지역/NNC+까지/PAU))
+       (NP-OBJ 어느/DAN
+	       진로/NNC+을/PCA)
+       따라오/VV+았/EPF+는가/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="3">
+	      <f>까지</f>
+	      <term>이 붉은 사각형 지역</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>어느 진로</term>
+	    </Arg>
+	    <Rel>
+	      <term>따라왔는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

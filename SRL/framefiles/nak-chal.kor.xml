@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>낙찰</lemma>
+    <comment>Frames file for '낙찰' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>낙찰.01</id>
+      <edef>bid successfully</edef>
+      <roleset>
+	<role argnum="0" argrole="bidder"/>
+	<role argnum="1" argrole="target, goods"/>
+	<role argnum="2" argrole="buyer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>낙찰되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이에 따라 최근의 하이반 터널공사 A 구간은 7 천만달러짜리 공사가 4 천 257 만달러에 일본회사에 넘어가고 B 구간은 4 천만달러짜리가 2 천 600 만달러에 한국의 동아건설에 낙찰됐다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          따르/VV+어/ECS))
+   (S (NP-SBJ (NP 최근/NNC+의/PAN)
+              (NP 하이반/NPR
+                  터널/NNC+공사/NNC
+                  A/NFW
+                  구간/NNC+은/PAU))
+      (S (NP-SBJ (NP 7/NNU
+                     천만/NNU+달러/NNX+짜리/XSF)
+                 (NP 공사/NNC+이/PCA))
+         (VP (NP-ADV 4/NNU
+                     천/NNU
+                     257/NNU
+                     만/NNU+달러/NNX+에/PAD)
+             (VP (NP-COMP 일본/NPR+회사/NNC+에/PAD)
+                 넘어가/VV+고/ECS))))
+   (S (NP-SBJ B/NFW
+              구간/NNC+은/PAU)
+      (S (NP-SBJ 4/NNU
+                 천만/NNU+달러/NNX+짜리/XSF+이/PCA)
+         (VP (NP-ADV 2/NNU
+                     천/NNU
+                     600/NNU
+                     만/NNU+달러/NNX+에/PAD)
+             (VP (NP-COMP (NP 한국/NPR+의/PAN)
+                          (NP 동아/NPR+건설/NNC+에/PAD))
+                 (VV 낙찰/NNC+되/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이에 따라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>B 구간</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>4 천만달러짜리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>2 천 600 만달러에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>한국의 동아건설</term>
+	    </Arg>
+	    <Rel>
+	      <term>낙찰됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

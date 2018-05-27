@@ -1,0 +1,138 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>선보이</lemma>
+    <comment>Frames file for '선보이' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>선보이.01</id>
+      <edef>show</edef>
+      <roleset>
+	<role argnum="0" argrole="shower"/>
+	<role argnum="1" argrole="thing shown"/>
+	<role argnum="2" argrole="seer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>선보이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>여권운동이 본격화된 그 20 년후 마케팅 전문가들은 "찰리", "블레이저", "우먼" 등과 같은 향수를 선보였다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ 여권/NNC+운동/NNC+이/PCA)
+                 (VP (VV 본격화/NNC+되/XSV+은/EAN))))
+           (NP 그/DAN
+               20/NNU
+               년/NNX+후/NNC))
+   (S (NP-SBJ 마케팅/NNC
+              전문가/NNC+들/XSF+은/PAU)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP (NP-COMP (NP (NP "/SLQ
+                                               찰리/NPR
+                                               "/SRQ)
+                                           ,/SCM
+                                           (NP "/SLQ
+                                               블레이저/NPR
+                                               "/SRQ)
+                                           ,/SCM
+                                           (NP "/SLQ
+                                               우먼/NPR
+                                               "/SRQ))
+                                       (NP 등/NNX+과/PAD))
+                              같/VJ+은/EAN)))
+                  (NP 향수/NNC+을/PCA))
+          선보이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>여권운동이 본격화된 그 20 년후</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>마케팅 전문가들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>"찰리", "블레이저", "우먼" 등과 같은 향수</term>
+	    </Arg>
+	    <Rel>
+	      <term>선보였다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>선보이다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>1 천 500 평 규모로 선보일 ASIC 산업지원센터는 업계가 가장 애로를 겪고 있는 고가의 ASIC 설계용 툴과 시험장비를 지원하고 IP 개발과 DB 구축, 제품전시 및 홍보, 판로알선 등을 통해 기술개발과 마케팅을 종합 지원하게 된다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV (NP 1/NNU
+                                 천/NNU
+                                 500/NNU
+                                 평/NNX)
+                             (NP 규모/NNC+으로/PAD))
+                     (VP 선보이/VV+을/EAN))))
+           (NP ASIC/NFW
+               산업/NNC+지원/NNC+센터/NNC+은/PAU))
+   (VP (VP (VP (NP-OBJ (S (WHNP *op*)
+                          (S (NP-SBJ 업계/NNC+이/PCA)
+                             (VP (VP (ADVP 가장/ADV)
+                                     (VP (NP-OBJ 애로/NNC+을/PCA)
+                                         겪/VV+고/ECS))
+                                 있/VX+는/EAN)))
+                       (NP (NP 고가/NNC+의/PAN)
+                           (NP (NP ASIC/NFW
+                                   설계/NNC+용/XSF
+                                   툴/NNC+과/PCJ)
+                               (NP 시험/NNC+장비/NNC+을/PCA))))
+               (VV 지원/NNC+하/XSV+고/ECS))
+           (VP (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (NP (NP (NP IP/NFW
+                                          개발/NNC+과/PCJ)
+                                      (NP DB/NFW
+                                          구축/NNC))
+                                  ,/SCM
+                                  (NP (NP 제품/NNC+전시/NNC)
+                                      (ADCP 및/ADC)
+                                      (NP 홍보/NNC))
+                                  ,/SCM
+                                  (NP 판로/NNC+알선/NNC))
+                              (NP 등/NNX+을/PCA))
+                      통하/VV+어/ECS))
+               (VP (NP-OBJ (NP 기술/NNC+개발/NNC+과/PCJ)
+                           (NP 마케팅/NNC+을/PCA))
+                   (VP (NP-ADV 종합/NNC)
+                       (VP (VV 지원/NNC+하/XSV+게/ECS))))))
+       되/VX+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=ASIC 산업지원센터</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>1 천 500 평 규모로</term>
+	    </Arg>
+	    <Rel>
+	      <term>선보일</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

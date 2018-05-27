@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>표절</lemma>
+    <comment>Frames file for '표절' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>표절.01</id>
+      <edef>plagiarize</edef>
+      <roleset>
+	<role argnum="0" argrole="copyist"/>
+	<role argnum="1" argrole="original"/>
+	<role argnum="2" argrole="copy"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>표절하다</rel>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>스투퍼는 지난 84 년 독자 출판한 `라와 머글스의 전설'을 해리 포터 시리즈가 표절했다고 주장하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 스투퍼/NPR+은/PAU)
+   (VP (VP (S-COMP (NP-OBJ-2 (S (WHNP-1 *op*)
+                                (S (NP-SBJ *pro*)
+                                   (VP (NP-ADV 지난/DAN
+                                               84/NNU
+                                               년/NNX)
+                                       (NP-ADV 독자/NNC)
+                                       (VP (NP-OBJ *T*-1)
+                                           (VV 출판/NNC+하/XSV+은/EAN)))))
+                             (NP `/SLQ
+                                 (NP 라와/NPR
+                                     머글스/NPR+의/PAN)
+                                 (NP 전설/NNC)
+                                 '/SRQ
+                                 을/PCA))
+                   (S (NP-SBJ 해리/NPR
+                              포터/NPR
+                              시리즈/NNC+이/PCA)
+                      (VP (NP-OBJ *T*-2)
+                          (VV 표절/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+           (VV 주장/NNC+하/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지난 84 년 독자 출판한 `라와 머글스의 전설'</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>가</f>
+	      <term>해리 포터 시리즈</term>
+	    </Arg>
+	    <Rel>
+	      <term>표절했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

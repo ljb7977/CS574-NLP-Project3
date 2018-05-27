@@ -1,0 +1,112 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>면담</lemma>
+    <comment>Frames file for '면담' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>면담.01</id>
+      <edef>talk</edef>
+      <roleset>
+	<role argnum="0" argrole="talker"/>
+	<role argnum="1" argrole="talked with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>면담하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김대중 대통령은 4 일 한국 국가 정상으로는 처음으로 로마 교황청을 방문, 교황 요한 바오로 2 세를 면담한다.</text>
+	  <parse>
+(S (NP-SBJ 김대중/NPR
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV 4/NNU
+               일/NNX)
+       (NP-ADV (NP-COMP 한국/NPR
+                        국가/NNC
+                        정상/NNC+으로/PAD+은/PAU)
+               처음/NNC+으로/PAD)
+       (VP (VP (NP-OBJ 로마/NPR
+                       교황청/NNC+을/PCA)
+               (VV 방문/NNC))
+           ,/SCM
+           (VP (NP-OBJ 교황/NNC
+                       요한/NPR
+                       바오로/NPR
+                       2/NNU
+                       세/NNX+을/PCA)
+               (VV 면담/NNC+하/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>김대중 대통령</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>4 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>한국 국가 정상으로는 처음으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>교황 요한 바오로 2 세</term>
+	    </Arg>
+	    <Rel>
+	      <term>면담한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>면담하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 장관은 또 샌디 버그 대통령 안보보좌관 등 미국 행정부 고위 인사들과도 면담할 예정이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 이/NPR
+                      장관/NNC+은/PAU)
+              (VP (ADVP 또/ADV)
+                  (VP (NP-COMP (NP (NP 샌디/NPR
+                                       버그/NPR
+                                       대통령/NNC
+                                       안보/NNC+보좌관/NNC)
+                                   (NP 등/NNX))
+                               (NP 미국/NPR
+                                   행정부/NNC
+                                   고위/NNC
+                                   인사/NNC+들/XSF+과/PAD+도/PAU))
+                      (VV 면담/NNC+하/XSV+을/EAN))))
+           (NP 예정/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이 장관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>과도</f>
+	      <term>샌디 버그 대통령 안보보좌관 등 미국 행정부 고위 인사들</term>
+	    </Arg>
+	    <Rel>
+	      <term>면담할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

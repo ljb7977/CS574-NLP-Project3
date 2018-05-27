@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>요망</lemma>
+    <comment>Frames file for '요망' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>요망.01</id>
+      <edef>desire</edef>
+      <roleset>
+	<role argnum="0" argrole="wanter"/>
+	<role argnum="1" argrole="wanted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>요망되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 두 가지 경우에 요망되는 사격 밀도는 매 분당 1헥타아르에 27발이다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 이/DAN
+                             두/NNU
+                             가지/NNX
+                             경우/NNC+에/PAD)
+                     (VP (VV 요망/NNC+되/XSV+는/EAN)))))
+           (NP 사격/NNC
+               밀도/NNC+은/PAU))
+   (VP (NP-ADV 매/DAN
+               분/NNX+당/XSF)
+       (NP-ADV 1/NNU
+               헥타아르/NNX+에/PAD)
+       (VP (NP 27/NNU
+               발/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=사격 밀도</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>이 두 가지 경우에</term>
+	    </Arg>
+	    <Rel>
+	      <term>요망되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

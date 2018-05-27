@@ -1,0 +1,245 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>증가</lemma>
+    <comment>Frames file for '증가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>증가.01</id>
+      <edef>increase</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing increasing"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>증가하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이 중 폴크스바겐이 1 만 7 천 593 대를 팔아 판매가 10.2 퍼센트가 증가했으나 지난 1 월 증가세를 보였던 피아트는 오히려 17.2 퍼센트가 감소, 1 만 388 대를 판매하는 데 그쳤다.</text>
+	  <parse>
+(S (S (NP-ADV 이/DAN
+              중/NNX)
+      (S (S (NP-SBJ 폴크스바겐/NPR+이/PCA)
+            (VP (NP-OBJ 1/NNU
+                        만/NNU
+                        7/NNU
+                        천/NNU
+                        593/NNU
+                        대/NNX+을/PCA)
+                팔/VV+어/ECS))
+         (S (NP-SBJ 판매/NNC+이/PCA)
+            (VP (NP-ADV 10.2/NNU
+                        퍼센트/NNX+이/PCA)
+                (VP (VV 증가/NNC+하/XSV+었/EPF+으나/ECS))))))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-ADV 지난/DAN
+                                1/NNU
+                                월/NNX)
+                        (VP (NP-OBJ 증가세/NNC+을/PCA)
+                            보이/VV+었/EPF+던/EAN))))
+              (NP 피아트/NPR+은/PAU))
+      (VP (S (NP-SBJ *pro*)
+             (VP (ADVP 오히려/ADV)
+                 (NP-ADV 17.2/NNU
+                         퍼센트/NNX+이/PCA)
+                 (VP (VV 감소/NNC))))
+          ,/SCM
+          (VP (NP-COMP (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ 1/NNU
+                                      만/NNU
+                                      388/NNU
+                                      대/NNX+을/PCA)
+                              (VV 판매/NNC+하/XSV+은/EAN)))
+                       (NP 데/NNX))
+              그치/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>이 중</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>폴크스바겐이 1 만 7 천 593 대를 팔아</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>판매</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>10.2 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>증가했으나</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+	<example>
+	  <text>6 일 증권거래소에 따르면 작년 말 대비 지난 3 일 현재 외국인투자자의 보유주식수가 가장 많이 늘어난 종목은 현대전자로 3 천 982 만 4 천주에서 9 천 933 만 5 천주로 5 천 951 만 1 천주나 증가했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-ADV 6/NNU
+                  일/NNX)
+          (VP (NP-COMP 증권/NNC+거래소/NNC+에/PAD)
+              따르/VV+으면/ECS)))
+   (S (NP-ADV 작년/NNC
+              말/NNX
+              대비/NNC)
+      (NP-ADV 지난/DAN
+              3/NNU
+              일/NNX
+              현재/NNC)
+      (S (S (NP-SBJ (S (WHNP-1 *op*)
+                       (S (NP-SBJ *T*-1)
+                          (S (NP-SBJ (NP 외국인/NNC+투자자/NNC+의/PAN)
+                                     (NP 보유/NNC+주식수/NNC+이/PCA))
+                             (VP (ADVP (ADVP 가장/ADV)
+                                       (ADVP 많이/ADV))
+                                 (VP 늘어나/VV+은/EAN)))))
+                    (NP 종목/NNC+은/PAU))
+            (VP (NP 현대/NPR+전자/NNC+으로/PAD)))
+         (S (NP-COMP-2 3/NNU
+                       천/NNU
+                       982/NNU
+                       만/NNU
+                       4/NNU
+                       천/NNU+주/NNC+에서/PAD)
+            (NP-COMP-3 9/NNU
+                       천/NNU
+                       933/NNU
+                       만/NNU
+                       5/NNU
+                       천/NNU+주/NNC+으로/PAD)
+            (S (NP-SBJ 5/NNU
+                       천/NNU
+                       951/NNU
+                       만/NNU
+                       1/NNU
+                       천/NNU+주/NNC+이나/PAU)
+               (VP (NP-COMP *T*-2)
+                   (NP-COMP *T*-3)
+                   (VV 증가/NNC+하/XSV+었/EPF+다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>6 일 증권거래소에 따르면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>작년 말 대비</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 3 일 현재</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>3 천 982 만 4 천주</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>9 천 933 만 5 천주</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>나</f>
+	      <term>5 천 951 만 1 천주</term>
+	    </Arg>
+	    <Rel>
+	      <term>증가했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>증가시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>T-54 탱크의 신형 전기식 오일 펌프는 연료의 효율을 증가시키지 못했습니다.</text>
+	  <parse>
+(S (NP-SBJ (NP T-54/NFW
+               탱크/NNC+의/PAN)
+           (NP 신형/NNC
+               전기/NNC+식/XSF
+               오일/NNC
+               펌프/NNC+은/PAU))
+   (VP (VP (NP-OBJ (NP 연료/NNC+의/PAN)
+                   (NP 효율/NNC+을/PCA))
+           (VV 증가/NNC+시키/XSV+지/ECS))
+       못하/VX+었/EPF+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>T-54 탱크의 신형 전기식 오일 펌프</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>연료의 효율</term>
+	    </Arg>
+	    <Rel>
+	      <term>증가시키지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못했습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>증가되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>전방에 보급품 수량이 많이 증가됐다.</text>
+	  <parse>
+(S (NP-ADV 전방/NNC+에/PAD)
+   (S (NP-SBJ 보급품/NNC
+              수량/NNC+이/PCA)
+      (VP (ADVP 많이/ADV)
+          (VP (VV 증가/NNC+되/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>전방에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>보급품 수량</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>많이</term>
+	    </Arg>
+	    <Rel>
+	      <term>증가됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>신성</lemma>
+    <comment>Frames file for '신성' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>신성.01</id>
+      <edef>holy</edef>
+      <roleset>
+	<role argnum="0" argrole="thing being holy"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>신성하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>자민련 이한동 총재는 군포 등 경기지역 지구당 개편대회에서 "총선을 코앞에 두고 수사에 나선 것은 그 저의가 아주 불순하다"면서 "신성한 병역문제가 특정 정파의 이해에 의해 이용되는 것은 국민들도 용납하지 않을 것"이라며 수사연기를 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 자민련/NPR
+           이한동/NPR
+           총재/NNC+은/PAU)
+   (VP (NP-ADV 군포/NPR
+               등/NNX
+               경기/NNC+지역/NNC
+               지구당/NNC
+               개편/NNC+대회/NNC+에서/PAD)
+       (VP (S (S "/SLQ
+                 (NP-SBJ (S (NP-SBJ *pro*)
+			    (VP (S (NP-SBJ *pro*)
+				   (VP (NP-OBJ 총선/NNC+을/PCA)
+				       (NP-COMP 코앞/NNC+에/PAD)
+				       두/VV+고/ECS))
+				(VP (NP-COMP 수사/NNC+에/PAD)
+				    나서/VV+은/EAN)))
+                         (NP 것/NNX+은/PAU))
+                 (S (NP-SBJ 그/DAN
+			      저의/NNC+이/PCA)
+		    (ADJP (ADVP 아주/ADV)
+			  (ADJP (VJ 불순/NNC+하/XSJ+다/EFN))))
+                 "/SRQ
+                 면서/ECS)
+              (S "/SLQ
+                 (NP-OBJ-1 (S (NP-SBJ (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (ADJP (VJ 신성/NNC+하/XSJ+은/EAN))))
+                                      (NP 병역/NNC+문제/NNC+이/PCA))
+                              (VP (S (NP-SBJ *pro*)
+                                     (VP (NP-COMP (NP 특정/NNC
+						      정파/NNC+의/PAN)
+                                                  (NP 이해/NNC+에/PAD))
+                                         의하/VV+어/ECS))
+                                  (VP (VV 이용/NNC+되/XSV+는/EAN))))
+                           (NP 것/NNX+은/PAU))
+                 (S (NP-SBJ 국민/NNC+들/XSF+도/PAU)
+		    (VP (VP (VP (NP-OBJ *T*-1)
+				(VV 용납/NNC+하/XSV+지/ECS))
+			    않/VX+을/EAN)
+			(VX 것/NNX)))
+		 "/SRQ
+		 이/CO+라며/ECS))
+           (VP (NP-OBJ 수사/NNC+연기/NNC+을/PCA)
+               (VV 주장/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=병역문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>신성한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

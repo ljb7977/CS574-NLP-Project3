@@ -1,0 +1,199 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>강요</lemma>
+    <comment>Frames file for '강요' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>강요.01</id>
+      <edef>force</edef>
+      <roleset>
+	<role argnum="0" argrole="forcer"/>
+	<role argnum="1" argrole="impelled thing"/>
+	<role argnum="2" argrole="impelled agent"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>강요하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>아군은 적에게 항복을 강요했다.</text>
+	  <parse>
+(S (NP-SBJ 아군/NNC+은/PAU) 
+   (VP (NP-COMP 적/NNC+에게/PAD) 
+       (NP-OBJ 항복/NNC+을/PCA) 
+       (VV 강요/NNC+하/XSV+었/EPF+다/EFN)) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>아군</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>적</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>항복</term>
+	    </Arg>
+	    <Rel>
+	      <term>강요했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>강요하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>정부가 많은 기업들에 기부금을 내라고 강요했다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>정부</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>많은 기업들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>기부금을 내라</term>
+	    </Arg>
+	    <Rel>
+	      <term>강요했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>강요받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 일본의 경우 20 명의 기혼 여성들이 남편들로부터 생명의 위협을 느낀 적이 있다고 고백했고 5 명중 1 명꼴로 의사에 상관 없이 성행위를 강요받았다고 말한 것으로 정부 조사에서 나타났다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (ADVP 또/ADV)
+       (NP-ADV (NP 일본/NPR+의/PAN)
+               (NP 경우/NNC))
+       (VP (NP-COMP (S (S (NP-SBJ (NP 20/NNU
+                                      명/NNX+의/PAN)
+                                  (NP 기혼/NNC
+                                      여성/NNC+들/XSF+이/PCA))
+                          (VP (S-COMP (NP-SBJ (S (NP-SBJ *pro*)
+                                                 (VP (NP-ADV 남편/NNC+들/XSF+으로부터/PAD)
+                                                     (VP (NP-OBJ (NP 생명/NNC+의/PAN)
+                                                                 (NP 위협/NNC+을/PCA))
+                                                         느끼/VV+은/EAN)))
+                                              (NP 적/NNX+이/PCA))
+                                      (ADJP 있/VJ+다/EFN+고/PAD))
+                              (VV 고백/NNC+하/XSV+었/EPF+고/ECS)))
+                       (S (NP-SBJ *pro*)
+                          (VP (NP-ADV (NP 5/NNU
+                                          명/NNX+중/NNX)
+                                      (NP 1/NNU
+                                          명/NNX+꼴/XSF+으로/PAD))
+                              (VP (S-COMP (NP-SBJ *pro*)
+                                          (VP (ADVP (NP-COMP 의사/NNC+에/PAD)
+                                                    상관없이/ADV)
+                                              (VP (NP-OBJ 성행위/NNC+을/PCA)
+                                                  (VV 강요/NNC+받/XSV+었/EPF+다/EFN+고/PAD))))
+                                  말하/VV+은/EAN))))
+                    (NP 것/NNX+으로/PAD))
+           (VP (NP-ADV 정부/NNC
+                       조사/NNC+에서/PAD)
+               (VP 나타나/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>의사에 상관 없이</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>성행위</term>
+	    </Arg>
+	    <Rel>
+	      <term>강요받았다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>강요당하다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>12 세짜리 어린 소녀들을 포함해 여성들은 밤마다 군인 및 민병대 전사들과의 강제 성행위에 시달렸고, 집단 강간 및 고문을 당했으며, 종종 강제 출산을 강요당했다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+	      (VP (NP-OBJ (NP 12/NNU
+			      세/NNX+짜리/XSF)
+			  (NP (S (WHNP-1 *op*)
+				 (S (NP-SBJ *T*-1)
+				    (ADJP 어리/VJ+은/EAN)))
+			      (NP 소녀/NNC+들/XSF+을/PCA)))
+		  (VV 포함/NNC+하/XSV+어/ECS)))
+	   (NP 여성/NNC+들/XSF+은/PAU))
+   (VP (VP (NP-ADV 밤/NNC+마다/PAU)
+	   (VP (NP-COMP (NP (NP 군인/NNC)
+			    (ADCP 및/ADC)
+			    (NP 민병대/NNC
+				      전사/NNC+들/XSF+과/PAD+의/PAN))
+			(NP 강제/NNC
+				성행위/NNC+에/PAD))
+	       시달리/VV+었/EPF+고/ECS))
+       ,/SCM
+       (VP (NP-OBJ (NP 집단/NNC
+			   강간/NNC)
+		   (ADCP 및/ADC)
+		   (NP 고문/NNC+을/PCA))
+	   당하/VV+었/EPF+으며/ECS)
+       ,/SCM
+       (VP (ADVP 종종/ADV)
+	   (VP (NP-OBJ 강제/NNC
+			   출산/NNC+을/PCA)
+	       (VV 강요/NNC+당하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>12 세짜리 어린 소녀들을 포함해 여성들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>종종</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>강제 출산</term>
+	    </Arg>
+	    <Rel>
+	      <term>강요당했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>
+

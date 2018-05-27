@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>임대</lemma>
+    <comment>Frames file for '임대' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>임대.01</id>
+      <edef>lease out</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing leased"/>
+	<role argnum="2" argrole="lease to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>임대하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>야당은 천연가스층을 외국회사에 임대하고 인도에 천연가스를 수출하라는 미국의 압력에 굴복하는 일은 경제주권을 파는 행위가 될 것이라고 비난하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 야당/NNC+은/PAU)
+   (VP (VP (S-COMP (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (NP-COMP (S (NP-SBJ *pro*)
+                                              (VP (VP (NP-OBJ 천연/NNC+가스층/NNC+을/PCA)
+                                                      (NP-COMP 외국/NNC+회사/NNC+에/PAD)
+                                                      (VV 임대/NNC+하/XSV+고/ECS))
+                                                  (VP (NP-COMP 인도/NPR+에/PAD)
+                                                      (NP-OBJ 천연가스/NNC+을/PCA)
+                                                      (VV 수출/NNC+하/XSV+으라는/EAN))))
+                                           (NP (NP 미국/NPR+의/PAN)
+                                               (NP 압력/NNC+에/PAD)))
+                                  (VV 굴복/NNC+하/XSV+는/EAN)))
+                           (NP 일/NNX+은/PAU))
+                   (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                                       (VP (NP-OBJ 경제/NNC+주권/NNC+을/PCA)
+                                           팔/VV+는/EAN))
+                                    (NP 행위/NNC+이/PCA))
+                           되/VV+을/EAN)
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+           (VV 비난/NNC+하/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>천연가스층</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>외국회사</term>
+	    </Arg>
+	    <Rel>
+	      <term>임대하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

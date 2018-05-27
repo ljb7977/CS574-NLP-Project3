@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>날아가</lemma>
+    <comment>Frames file for '날아가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>날아가.01</id>
+      <edef>fly away</edef>
+      <roleset>
+	<role argnum="0" argrole="thing projected"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>날아가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>돌폭뢰가 폭발하면 돌이 사방으로 40 미터까지 날아갑니다.</text>
+	  <parse>
+(S (S (NP-SBJ 돌폭뢰/NNC+이/PCA)
+      (VP (VV 폭발/NNC+하/XSV+으면/ECS)))
+   (S (NP-SBJ 돌/NNC+이/PCA)
+      (VP (NP-COMP 사방/NNC+으로/PAD)
+          (VP (NP-ADV 40/NNU
+                      미터/NNX+까지/PAU)
+              (VP 날아가/VV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>돌폭뢰가 폭발하면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>돌</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>사방</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>40 미터까지</term>
+	    </Arg>
+	    <Rel>
+	      <term>날아갑니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

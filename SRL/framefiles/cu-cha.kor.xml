@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주차</lemma>
+    <comment>Frames file for '주차' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>주차.01</id>
+      <edef>park</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing parked"/>
+	<role argnum="2" argrole="parking place"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주차하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그리고 이 부근에 주차한 트럭 몇 대도 보았습니다.</text>
+	  <parse>
+(S (ADCP 그리고/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-ADV 이/DAN
+                                    부근/NNC+에/PAD)
+                            (VP (VV 주차/NNC+하/XSV+은/EAN)))))
+                  (NP (NP 트럭/NNC)
+                      (NP 몇/NNU
+                          대/NNX+도/PAU)))
+          보/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=트럭 몇 대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>이 부근</term>
+	    </Arg>
+	    <Rel>
+	      <term>주차한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

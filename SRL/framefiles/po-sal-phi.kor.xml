@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보살피</lemma>
+    <comment>Frames file for '보살피' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>보살피.01</id>
+      <edef>look after</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="patient"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보살피다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>너의 부대에서는 누가 성원들의 건강을 보살피는가?</text>
+	  <parse>
+(S (NP-ADV (NP 너/NPN+의/PAN)
+           (NP 부대/NNC+에서/PAD+은/PAU))
+   (S (NP-SBJ 누구/NPN+이/PCA)
+      (VP (NP-OBJ (NP 성원/NNC+들/XSF+의/PAN)
+                  (NP 건강/NNC+을/PCA))
+          보살피/VV+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>너의 부대</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>누구</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>성원들의 건강</term>
+	    </Arg>
+	    <Rel>
+	      <term>보살피는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

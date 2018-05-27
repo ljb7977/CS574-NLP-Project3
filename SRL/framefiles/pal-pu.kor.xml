@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발부</lemma>
+    <comment>Frames file for '발부' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발부.01</id>
+      <edef>issue</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing issued"/>
+	<role argnum="2" argrole="issued to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발부하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>대상자는 가까운 읍, 면, 동사무소에서 발부하는 부재자 신고서에 성명, 주민등록번호, 주소 등을 기재한 뒤 자신의 주민등록지 구, 시, 읍, 면장에게 26 일 오후 6 시까지 도착하도록 발송해야 한다.</text>
+	  <parse>
+(S (NP-SBJ 대상자/NNC+은/PAU)
+   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (S (WHNP-2 *op*)
+                                      (S (NP-SBJ (S (WHNP-1 *op*)
+                                                    (S (NP-SBJ *T*-1)
+                                                       (ADJP 가깝/VJ+은/EAN)))
+                                                 (NP 읍/NNC
+                                                     ,/SCM
+                                                     면/NNC
+                                                     ,/SCM
+                                                     동사무소/NNC+에서/PCA))
+                                         (VP (NP-OBJ *T*-2)
+                                             (VV 발부/NNC+하/XSV+는/EAN))))
+                                   (NP 부재자/NNC
+                                       신고서/NNC+에/PAD))
+                          (NP-OBJ (NP 성명/NNC
+                                      ,/SCM
+                                      주민등록번호/NNC
+                                      ,/SCM
+                                      주소/NNC)
+                                  (NP 등/NNX+을/PCA))
+                          (VV 기재/NNC+하/XSV+은/EAN)))
+                   (NP 뒤/NNC))
+           (VP (NP-COMP (NP (NP 자신/NNC+의/PAN)
+                            (NP 주민등록지/NNC))
+                        (NP 구/NNC
+                            ,/SCM
+                            시/NNC
+                            ,/SCM
+                            읍/NNC
+                            ,/SCM
+                            면장/NNC+에게/PAD))
+               (VP (S (NP-SBJ *pro*)
+                      (VP (NP-ADV 26/NNU
+                                  일/NNX
+                                  오후/NNC
+                                  6/NNU
+                                  시/NNX+까지/PAU)
+                          (VP (VV 도착/NNC+하/XSV+도록/ECS))))
+                   (VP (NP-OBJ *pro*)
+                       (VV 발송/NNC+하/XSV+어야/ECS)))))
+       하/VX+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서</f>
+	      <term>가까운 읍, 면, 동사무소</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=부재자 신고서</term>
+	    </Arg>
+	    <Rel>
+	      <term>발부하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

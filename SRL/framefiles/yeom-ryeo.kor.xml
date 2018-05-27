@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>염려</lemma>
+    <comment>Frames file for '염려' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>염려.01</id>
+      <edef>be concerned about</edef>
+      <roleset>
+	<role argnum="0" argrole="causer of concern"/>
+	<role argnum="1" argrole="worried entity"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>염려하다</rel>
+	  <mapitem src="obj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>어느 도로로 어떤 교량을 건너가야 하느냐 하는 그런 문제는 제 포대장이 염려할 일이었습니다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+              (VP (S-COMP (NP-SBJ *pro*)
+                          (VP (VP (NP-ADV 어느/DAN
+                                          도로/NNC+으로/PAD)
+                                  (VP (NP-OBJ 어떤/DAN
+                                              교량/NNC+을/PCA)
+                                      건너가/VV+어야/ECS))
+                              하/VX+느냐/EFN))
+                  하/VV+는/EAN))
+           (NP 그런/DAN
+               문제/NNC+은/PAU))
+   (VP (NP (S (WHNP-1 *op*)
+              (S (NP-SBJ (NP 저/NPN+의/PAN)
+                         (NP 포대장/NNC+이/PCA))
+                 (VP (NP-OBJ *T*-1)
+                     (VV 염려/NNC+하/XSV+을/EAN))))
+           (NP 일/NNC+이/CO+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>제 포대장</term>
+	    </Arg>
+	    <Arg n="0">
+	      <term>*trace*=일</term>
+	    </Arg>
+	    <Rel>
+	      <term>염려할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

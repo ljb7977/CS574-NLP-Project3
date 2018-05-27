@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>꺾</lemma>
+    <comment>Frames file for '꺾' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>꺾.01</id>
+      <edef>beat</edef>
+      <roleset>
+	<role argnum="0" argrole="winner"/>
+	<role argnum="1" argrole="loser"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>꺾다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이날 경기는 보스턴이 장단 15 안타를 몰아쳐 피츠버그를 13-2로 꺾었다</text>
+	  <parse>
+(S (NP-ADV 이날/NNC
+           경기/NNC+은/PAU)
+   (S (NP-SBJ 보스턴/NPR+이/PCA)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 장단/NNC
+                         15/NNU
+                         안타/NNC+을/PCA)
+                 몰아치/VV+어/ECS))
+          (VP (NP-OBJ 피츠버그/NPR+을/PCA)
+              (VP (NP-ADV 13-2/NNU+으로/PAD)
+                  (VP 꺾/VV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>이날 경기는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>보스턴</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>장단 15 안타를 몰아쳐</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>피츠버그</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>13-2로</term>
+	    </Arg>
+	    <Rel>
+	      <term>꺾었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

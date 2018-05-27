@@ -1,0 +1,145 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가두</lemma>
+    <comment>Frames file for '가두' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가두.01</id>
+      <edef>confine</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity confined"/>
+	<role argnum="2" argrole="confined to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가두다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 프로그램 방영에 앞서 일부 방송에서 토끼, 햄스터 등 동물을 가둬 놓고 관찰하는 프로그램을 방영해 `빅 브라더'가 인간을 동물 취급하고 있다는 야유성 메시지를 보내기도 했다.</text>
+	  <parse>
+(S (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP 이/DAN
+                      프로그램/NNC
+                      방영/NNC+에/PAD)
+             앞서/VV+어/ECS))
+      (S (NP-ADV 일부/NNC
+                 방송/NNC+에서/PAD)
+         (S (NP-SBJ *pro*)
+            (VP (NP-OBJ (S (NP-SBJ *pro*)
+                           (VP (VP (VP (NP-OBJ (NP (NP 토끼/NNC
+                                                       ,/SCM
+                                                       햄스터/NNC)
+                                                   (NP 등/NNX))
+                                               (NP 동물/NNC+을/PCA))
+                                       가두/VV+어/ECS)
+                                   놓/VX+고/ECS)
+                               (VP (NP-OBJ *pro*)
+                                   (VV 관찰/NNC+하/XSV+는/EAN))))
+                        (NP 프로그램/NNC+을/PCA))
+                (VV 방영/NNC+하/XSV+어/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (NP-SBJ `/SLQ
+                                 빅/NNC
+                                 브라더/NNC
+                                 '/SRQ
+                                 이/PCA)
+                         (VP (VP (NP-OBJ 인간/NNC+을/PCA)
+                                 (NP-COMP 동물/NNC)
+                                 (VV 취급/NNC+하/XSV+고/ECS))
+                             있/VX+다는/EAN))
+                      (NP 야유성/NNC
+                          메시지/NNC+을/PCA))
+              보내/VV+기/ENM+도/PAU)
+          하/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>토끼, 햄스터 등 동물</term>
+	    </Arg>
+	    <Rel>
+	      <term>가둬</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>놓고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>갇히다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>모잠비크의 공식통계로는 지난달 초부터 계속된 이번 집중호우로 인한 사망자는 2 백여명으로 집계되고 있으나 현지 구호기관들은 이미 수천명이 사망해 사체가 오두막 안에 갇혀 있거나 물밑에 가라앉아 있는 것으로 추정하고 있다.</text>
+	  <parse>
+(S (S (NP-ADV (NP 모잠비크/NPR+의/PAN)
+              (NP 공식/NNC+통계/NNC+으로/PAD+은/PAU))
+      (S (NP-SBJ (S (WHNP-2 *op*)
+                    (S (NP-SBJ *T*-2)
+                       (VP (NP-COMP (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (NP-ADV 지난달/NNC
+                                                      초/NNX+부터/PAU)
+                                              (VP (VV 계속/NNC+되/XSV+은/EAN)))))
+                                    (NP 이번/NNC
+                                        집중/NNC+호우/NNC+으로/PAD))
+                           인하/VV+은/EAN)))
+                 (NP 사망자/NNC+은/PAU))
+         (VP (VP (NP-COMP 2/NNU
+                          백/NNU+여/XSF+명/NNX+으로/PAD)
+                 (VV 집계/NNC+되/XSV+고/ECS))
+             있/VX+으나/ECS)))
+   (S (NP-SBJ 현지/NNC
+              구호/NNC+기관/NNC+들/XSF+은/PAU)
+      (VP (VP (NP-COMP (S (S (ADVP 이미/ADV)
+                             (S (NP-SBJ 수천/NNU+명/NNX+이/PCA)
+                                (VP (VV 사망/NNC+하/XSV+어/ECS))))
+                          (S (NP-SBJ 사체/NNC+이/PCA)
+                             (VP (VP (VP (NP-COMP 오두막/NNC
+                                                  안/NNC+에/PAD)
+                                         갇히/VV+어/ECS)
+                                     있/VX+거나/ECS)
+                                 (VP (VP (NP-COMP 물/NNC+밑/NNC+에/PAD)
+                                         가라앉/VV+어/ECS)
+                                     있/VX+는/EAN))))
+                       (NP 것/NNX+으로/PAD))
+              (VV 추정/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이미 수천명이 사망해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>사체</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>오두막 안</term>
+	    </Arg>
+	    <Rel>
+	      <term>갇혀</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있거나</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

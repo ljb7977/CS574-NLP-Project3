@@ -1,0 +1,156 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조달</lemma>
+    <comment>Frames file for '조달' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>조달.01</id>
+      <edef>supply</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing supplied"/>
+	<role argnum="2" argrole="supply to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조달하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이어 "금감원이 은행들의 수신금리 동향을 주기적으로 점검하는 한편 은행들이 자금을 조달하고 운용하는 과정에 대한 감독을 보다 강화하는 등 수신금리를 지나치게 올리지 않도록 지도할 예정"이라고 밝혔다.</text>
+	  <parse>
+(S (ADVP 이어/ADV)
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP "/SLQ
+                   (S (NP-SBJ 금감원/NNC+이/PCA)
+                      (VP (NP-ADV (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ (NP 은행/NNC+들/XSF+의/PAN)
+                                                 (NP 수신/NNC+금리/NNC
+                                                     동향/NNC+을/PCA))
+                                         (VP (NP-ADV 주기/NNC+적/XSF+으로/PAD)
+                                             (VP (VV 점검/NNC+하/XSV+는/EAN)))))
+                                  (NP 한편/NNC))
+                          (NP-ADV (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                    (S (NP-SBJ *T*-1)
+                                                       (VP (NP-COMP (S (NP-SBJ 은행/NNC+들/XSF+이/PCA)
+                                                                       (VP (NP-OBJ 자금/NNC+을/PCA)
+                                                                           (VV (VV 조달/NNC+하/XSV+고/ECS)
+                                                                               (VV 운용/NNC+하/XSV+는/EAN))))
+                                                                    (NP 과정/NNC+에/PAD))
+                                                           대하/VV+은/EAN)))
+                                                 (NP 감독/NNC+을/PCA))
+                                         (VP (ADVP 보다/ADV)
+                                             (VP (VV 강화/NNC+하/XSV+는/EAN)))))
+                                  (NP 등/NNX))
+                          (VP (S-COMP (NP-SBJ *pro*)
+                                      (VP (VP (NP-OBJ 수신/NNC+금리/NNC+을/PCA)
+                                              (VP (ADVP (ADV 지나치/VJ+게/ECS))
+                                                  (VP 올리/VV+지/ECS)))
+                                          않/VX+도록/ECS))
+                              (VV 지도/NNC+하/XSV+을/EAN))))
+                   (NP 예정/NNC)
+                   "/SRQ
+                   이라고/PAD)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>은행들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자금</term>
+	    </Arg>
+	    <Rel>
+	      <term>조달하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>조달되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>봉합장비와 점적제, 주입기구, 도뇨관 등과 함께 건강한 사람이 산모의 분만을 도와 제왕절개를 한 뒤 성병을 방지하고 영아의 원기를 회복시킬 수 있도록 한 출산보조도구 20 세트는 앞서 모잠비크에 이미 조달됐다고 UNFPA는 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 (ADVP (NP-COMP (NP (NP 봉합/NNC+장비/NNC+과/PCJ)
+                                (NP 점적제/NNC)
+                                ,/SCM
+                                (NP 주입/NNC+기구/NNC)
+                                ,/SCM
+                                (NP 도뇨관/NNC))
+                            (NP 등/NNX+과/PAD))
+                   함께/ADV)
+             (S (NP-SBJ (S (WHNP *op*)
+                           (S (NP-SBJ *pro*)
+                              (VP (S-COMP (NP-SBJ (S (WHNP-2 *op*)
+                                                     (S (NP-SBJ *T*-2)
+                                                        (ADJP (VJ 건강/NNC+하/XSJ+은/EAN))))
+                                                  (NP 사람/NNC+이/PCA))
+                                          (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                             (VP (VP (NP-OBJ (NP 산모/NNC+의/PAN)
+                                                                             (NP 분만/NNC+을/PCA))
+                                                                     돕/VV+어/ECS)
+                                                                 (VP (NP-OBJ 제왕/NNC+절개/NNC+을/PCA)
+                                                                     하/VV+은/EAN)))
+                                                          (NP 뒤/NNC))
+                                                  (VP (VP (NP-OBJ 성병/NNC+을/PCA)
+                                                          (VV 방지/NNC+하/XSV+고/ECS))
+                                                      (VP (NP-OBJ 영아/NNC+의/PAN
+                                                                  원기/NNC+을/PCA)
+                                                          (VV 회복/NNC+시키/XSV+을/EAN))))
+                                              (VX 수/NNX
+                                                  있/VJ+도록/ECS)))
+                                  하/VV+은/EAN)))
+                        (NP 출산/NNC+보조/NNC+도구/NNC
+                            20/NNU
+                            세트/NNX+은/PAU))
+                (VP (ADVP 앞서/ADV)
+                    (VP (NP-COMP 모잠비크/NPR+에/PAD)
+                        (VP (ADVP 이미/ADV)
+                            (VP (VV 조달/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))))))
+   (S (NP-SBJ UNFPA/NFW+은/PAU)
+      (VP (S-COMP *T*-1)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>봉합장비와 점적제, 주입기구, 도뇨관 등과 함께</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>건강한 사람이 산모의 분만을 도와 제왕절개를 한 뒤 성병을 방지하고 영아의 원기를 회복시킬 수 있도록 한 출산보조도구 20 세트</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>앞서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>모잠비크</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이미</term>
+	    </Arg>
+	    <Rel>
+	      <term>조달됐다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>위배</lemma>
+    <comment>Frames file for '위배' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>위배.01</id>
+      <edef>violate</edef>
+      <roleset>
+	<role argnum="1" argrole="thing violating"/>
+	<role argnum="2" argrole="thing violated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>위배되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>2 일 산업자원부에 따르면 한국 산자부와 일본 통상산업성은 최근 일본에서 양국 철강과장회의를 갖고 미국이 지난달 수입강관에 대해 세이프가드 조치를 취하기로 한 것이 정당성과 공정성을 결여하고 국제규범에도 위배된다고 보고 공동으로 WTO 제소등의 조치를 취하기로 합의했다.</text>
+	  <parse>
+(S (NP-ADV 2/NNU
+           일/NNX)
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 산업/NNC+자원부/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   (S (NP-SBJ (NP (NP 한국/NPR)
+                  (NP 산자부/NPR+과/PCJ))
+              (NP (NP 일본/NPR)
+                  (NP 통상/NNC+산업성/NNC+은/PAU)))
+      (VP (VP (ADVP 최근/ADV)
+              (NP-ADV 일본/NPR+에서/PAD)
+              (VP (NP-OBJ (NP 양국/NNC)
+                          (NP 철강/NNC+과장/NNC+회의/NNC+을/PCA))
+                  갖/VV+고/ECS))
+          (VP (S-COMP (NP-SBJ (S (NP-SBJ 미국/NPR+이/PCA)
+                                 (VP (NP-ADV 지난달/NNC)
+                                     (VP (S-COMP (NP-SBJ *pro*)
+                                                 (VP (S (NP-SBJ *pro*)
+                                                        (VP (NP-COMP 수입/NNC+강관/NNC+에/PAD)
+                                                            대하/VV+어/ECS))
+                                                     (VP (NP-OBJ 세이프가드/NNC
+                                                                 조치/NNC+을/PCA)
+                                                         취하/VV+기/ENM+으로/PAD)))
+                                         하/VV+은/EAN)))
+                              (NP 것/NNX+이/PCA))
+                      (VP (VP (NP-OBJ (NP 정당성/NNC+과/PCJ)
+                                      (NP 공정성/NNC+을/PCA))
+                              (VV 결여/NNC+하/XSV+고/ECS))
+                          (VP (NP-COMP 국제/NNC+규범/NNC+에/PAD+도/PAU)
+                              (VV 위배/NNC+되/XSV+는다/EFN+고/PAD))))
+              보/VV+고/ECS)
+          (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (NP-ADV 공동/NNC+으로/PAD)
+                          (VP (NP-OBJ (NP WTO/NFW
+                                          제소/NNC+등/NNX+의/PAN)
+                                      (NP 조치/NNC+을/PCA))
+                              취하/VV+기/ENM+으로/PAD)))
+              (VV 합의/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>미국이 지난달 수입강관에 대해 세이프가드 조치를 취하기로 한 것이</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에도</f>
+	      <term>국제규범</term>
+	    </Arg>
+	    <Rel>
+	      <term>위배된다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

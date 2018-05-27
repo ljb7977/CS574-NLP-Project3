@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>임하</lemma>
+    <comment>Frames file for '임하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>임하.01</id>
+      <edef>face</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing faced"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>임하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한은 미국의 군사력에 대해 잘 알고 있는 듯 하며 최근 미국과의 관계정상화에 임하는 북한의 자세는 이를 입증해 주고 있다고 그는 말했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ 북한/NPR+은/PAU)
+                (VP (VP (VP (S-COMP (NP-SBJ *pro*)
+                                    (VP (NP-COMP (NP 미국/NPR+의/PAN)
+                                                 (NP 군사력/NNC+에/PAD))
+                                        대하/VV+어/ECS))
+                            (VP (ADVP 잘/ADV)
+                                (VP 알/VV+고/ECS)))
+                        있/VX+는/EAN)
+                    (VX 듯/NNX
+                        하/VV+으며/ECS)))
+             (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                               (S (NP-SBJ *T*-2)
+                                  (VP (NP-ADV 최근/NNC)
+                                      (VP (NP-COMP (NP 미국/NPR+과/PAD+의/PAN)
+                                                   (NP 관계/NNC+정상화/NNC+에/PAD))
+                                          임하/VV+는/EAN))))
+                            (NP 북한/NPR+의/PAN))
+                        (NP 자세/NNC+은/PAU))
+                (VP (VP (VP (NP-OBJ 이/NPN+을/PCA)
+                            (VV 입증/NNC+하/XSV+어/ECS))
+                        주/VX+고/ECS)
+                    있/VX+다/EFN+고/PAD)))
+   (S (NP-SBJ 그/NPN+은/PAU)
+      (VP (S-COMP *T*-1)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=북한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>최근</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>미국과의 관계정상화</term>
+	    </Arg>
+	    <Rel>
+	      <term>임하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

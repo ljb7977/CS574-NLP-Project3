@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대응</lemma>
+    <comment>Frames file for '대응' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대응.01</id>
+      <edef>cope with</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="coping with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대응하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>민주당은 이날 오전 선거대책위 확대간부회의에서 지역감정 문제제기에 대한 반박 등 적극대응은 이 문제를 더욱 악화시킬 우려가 있다고 보고 야당들이 제기하는 지역감정 문제에 대응하지 않고 정책과 비전제시에 주력키로 했다.</text>
+	  <parse>
+(S (NP-SBJ 민주당/NPR+은/PAU)
+   (VP (NP-ADV 이날/NNC
+               오전/NNC)
+       (NP-ADV 선거/NNC+대책위/NNC
+               확대/NNC+간부/NNC+회의/NNC+에서/PAD)
+       (VP (VP (S-COMP (NP-SBJ (S (NP-SBJ (NP (NP (S (WHNP-1 *op*)
+                                                     (S (NP-SBJ *T*-1)
+                                                        (VP (NP-COMP 지역/NNC+감정/NNC
+                                                                     문제/NNC+제기/NNC+에/PAD)
+                                                            대하/VV+은/EAN)))
+                                                  (NP 반박/NNC))
+                                              (NP 등/NNX))
+                                          (NP 적극/NNC+대응/NNC+은/PAU))
+                                  (VP (NP-OBJ 이/DAN
+                                              문제/NNC+을/PCA)
+                                      (VP (ADVP 더욱/ADV)
+                                          (VP (VV 악화/NNC+시키/XSV+을/EAN)))))
+                               (NP 우려/NNC+이/PCA))
+                       (ADJP 있/VJ+다/EFN+고/PAD))
+               보/VV+고/ECS)
+           (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                               (S (NP-SBJ 야당/NNC+들/XSF+이/PCA)
+                                  (VP (NP-OBJ *T*-2)
+                                      (VV 제기/NNC+하/XSV+는/EAN))))
+                            (NP 지역/NNC+감정/NNC
+                                문제/NNC+에/PAD))
+                   (VV 대응/NNC+하/XSV+지/ECS))
+               않/VX+고/ECS)
+           (VP (S-COMP (NP-SBJ *pro*)
+                       (VP (NP-COMP (NP 정책/NNC+과/PCJ)
+                                    (NP 비전/NNC+제시/NNC+에/PAD))
+                           (VV 주력/NNC+하/XSV+기/ENM+으로/PAD)))
+               하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>민주당</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날 오전</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>선거대책위 확대간부회의에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>야당들이 제기하는 지역감정 문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>대응하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

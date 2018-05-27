@@ -1,0 +1,242 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>바꾸</lemma>
+    <comment>Frames file for '바꾸' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>바꾸.01</id>
+      <edef>change, replace</edef>
+      <roleset>
+	<role argnum="0" argrole="causer of transformation"/>
+	<role argnum="1" argrole="thing changing"/>
+	<role argnum="2" argrole="start state"/>
+	<role argnum="3" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>바꾸다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>2 대대는 언제 그 트럭들을 새 것으로 바꿀 예정인가?</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 2/NNU
+                      대대/NNC+은/PAU)
+              (VP (ADVP 언제/ADV)
+                  (VP (NP-OBJ 그/DAN
+                              트럭/NNC+들/XSF+을/PCA)
+                      (NP-COMP 새/DAN
+                               것/NNX+으로/PAD)
+                      바꾸/VV+을/EAN)))
+           (NP 예정/NNC+이/CO+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>2 대대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>언제</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그 트럭들</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>새 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>바꿀</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>바뀌다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>적의 전파 방해가 있으면 예비 주파수로 바뀌게 됩니다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 적/NNC+의/PAN)
+              (NP 전파/NNC
+                  방해/NNC+이/PCA))
+      (ADJP 있/VJ+으면/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP 예비/NNC
+                       주파수/NNC+으로/PAD)
+              바뀌/VV+게/ECS)
+          되/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>적의 전파 방해가 있으면</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>예비 주파수</term>
+	    </Arg>
+	    <Rel>
+	      <term>바뀌게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>됩니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>모든 호출 대호는 매일 밤 12시에 바뀌지요.</text>
+	  <parse>
+(S (NP-SBJ 모든/DAN
+           호출/NNC
+           대호/NNC+은/PAU)
+   (VP (NP-ADV 매일/NNC
+               밤/NNC)
+       (NP-ADV 12/NNU
+               시/NNX+에/PAD)
+       (VP 바뀌/VV+지요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>모든 호출 대호</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>매일 밤</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>12시에</term>
+	    </Arg>
+	    <Rel>
+	      <term>바뀌지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>바꾸.02</id>
+      <edef>exchange, switch</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing being traded"/>
+	<role argnum="2" argrole="other exchanger"/>
+	<role argnum="3" argrole="other item in exchange"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>바꾸다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>철수는 영희와 자리를 서로 바꾸었다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>철수</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>영희</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>자리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>서로</term>
+	    </Arg>
+	    <Rel>
+	      <term>바꾸었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>철수와 영희는 자리를 서로 바꾸었다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>철수와 영희</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>자리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>서로</term>
+	    </Arg>
+	    <Rel>
+	      <term>바꾸었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>어머니는 찌그러진 그릇을 강냉이와 서로 바꾸었다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>어머니</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>찌그러진 그릇</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>와</f>
+	      <term>강냉이</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>서로</term>
+	    </Arg>
+	    <Rel>
+	      <term>바꾸었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>어머니는 찌그러진 그릇과 강냉이를 서로 바꾸었다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>어머니</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>찌그러진 그릇과 강냉이</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>서로</term>
+	    </Arg>
+	    <Rel>
+	      <term>바꾸었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

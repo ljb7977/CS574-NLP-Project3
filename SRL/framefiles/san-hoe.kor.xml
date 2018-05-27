@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>산회</lemma>
+    <comment>Frames file for '산회' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>산회.01</id>
+      <edef>break up</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>산회하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>양측은 오후 1 시께 정회한 뒤 3 시 30 분부터 5 시까지 추가회의를 갖고 산회했다.</text>
+	  <parse>
+(S (NP-SBJ 양측/NNC+은/PAU)
+   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                      (VP (NP-ADV 오후/NNC
+                                  1/NNU
+                                  시/NNX+께/XSF)
+                          (VP (VV 정회/NNC+하/XSV+은/EAN))))
+                   (NP 뒤/NNC))
+           (NP-ADV (NP 3/NNU
+                       시/NNX
+                       30/NNU
+                       분/NNX+부터/PAU)
+                   (NP 5/NNU
+                       시/NNX+까지/PAU))
+           (VP (NP-OBJ 추가/NNC+회의/NNC+을/PCA)
+               갖/VV+고/ECS))
+       (VP (VV 산회/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>양측</term>
+	    </Arg>
+	    <Rel>
+	      <term>산회했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

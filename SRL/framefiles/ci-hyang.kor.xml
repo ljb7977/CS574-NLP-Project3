@@ -1,0 +1,144 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지향</lemma>
+    <comment>Frames file for '지향' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>지향.01</id>
+      <edef>point</edef>
+      <roleset>
+	<role argnum="0" argrole="pointer"/>
+	<role argnum="1" argrole="thing pointed"/>
+	<role argnum="2" argrole="pointed at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지향시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 부호의 반대편 끝은 포를 지향시킬 방향을 가리켜 주고 있죠.</text>
+	  <parse>
+(S (NP-SBJ (NP 이/DAN
+               부호/NNC+의/PAN)
+           (NP 반대편/NNC
+               끝/NNC+은/PAU))
+   (VP (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ 포/NNC+을/PCA)
+                                 (NP-COMP *T*-1)
+                                 (VV 지향/NNC+시키/XSV+을/EAN))))
+                       (NP 방향/NNC+을/PCA))
+               가리키/VV+어/ECS)
+           주/VX+고/ECS)
+       있/VX+죠/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>포</term>
+	    </Arg>
+	    <Arg n="2">
+	      <term>*trace*=방향</term>
+	    </Arg>
+	    <Rel>
+	      <term>지향시킬</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>지향되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>주:그 부호는 지엠 각 130도 방향으로 지향돼 있으며, 이건 포가 서울을 지향하고 있음을 의미함.</text>
+	  <parse>
+(S (NP 주/NNC)
+   :/SSY
+   (NP (S (S (NP-SBJ 그/DAN
+                     부호/NNC+은/PAU)
+             (VP (VP (NP-COMP 지엠/NNC
+                              각/NNC
+                              130/NNU
+                              도/NNX
+                              방향/NNC+으로/PAD)
+                     (VV 지향/NNC+되/XSV+어/ECS))
+                 있/VX+으며/ECS))
+          ,/SCM
+          (S (NP-SBJ 이것/NPN+은/PAU)
+             (VP (S-OBJ (NP-SBJ 포/NNC+이/PCA)
+                        (VP (VP (NP-OBJ 서울/NPR+을/PCA)
+                                (VV 지향/NNC+하/XSV+고/ECS))
+                            있/VX+음/ENM+을/PCA))
+                 (VV 의미/NNC+하/XSV+음/ENM)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>그 부호</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>지엠 각 130도 방향</term>
+	    </Arg>
+	    <Rel>
+	      <term>지향돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있으며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>지향하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그때 저희 포는 서울을 지향하고 있었죠.</text>
+	  <parse>
+(S (NP-ADV 그때/NNC)
+   (S (NP-SBJ 저희/NPN
+              포/NNC+은/PAU)
+      (VP (VP (NP-OBJ 서울/NPR+을/PCA)
+              (VV 지향/NNC+하/XSV+고/ECS))
+          있/VX+었/EPF+죠/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그때</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>저희 포</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>서울</term>
+	    </Arg>
+	    <Rel>
+	      <term>지향하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있었죠</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이주</lemma>
+    <comment>Frames file for '이주' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>이주.01</id>
+      <edef>move</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="start point"/>
+	<role argnum="2" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이주하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>국정원에 따르면 중국에서 출생한 김씨는 지난 58 년 가족을 따라 북한으로 이주해 고등중학교를 졸업하고 군복무를 마친 후 외화벌이원으로 일하다 98 년 7 월 북한을 탈출, 제 3 국에서 은신해 왔다고 진술하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 국정원/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-ADV 중국/NPR+에서/PAD)
+                        (VP (VV 출생/NNC+하/XSV+은/EAN)))))
+              (NP 김/NPR+씨/NNX+은/PAU))
+      (VP (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 지난/DAN
+                                             58/NNU
+                                             년/NNX)
+                                     (S (NP-SBJ *pro*)
+                                        (VP (NP-OBJ 가족/NNC+을/PCA)
+                                            따르/VV+어/ECS))
+                                     (VP (NP-COMP 북한/NPR+으로/PAD)
+                                         (VV 이주/NNC+하/XSV+어/ECS))))
+                              (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ 고등/NNC+중학교/NNC+을/PCA)
+                                     (VV 졸업/NNC+하/XSV+고/ECS)))
+                              (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                (VP (NP-OBJ 군/NNC+복무/NNC+을/PCA)
+                                                    마치/VV+은/EAN))
+                                             (NP 후/NNC))
+                                     (VP (NP-COMP 외화벌이원/NNC+으로/PAD)
+                                         일하/VV+다/ECS)))
+                              (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 98/NNU
+                                             년/NNX
+                                             7/NNU
+                                             월/NNX)
+                                     (VP (NP-OBJ 북한/NPR+을/PCA)
+                                         (VV 탈출/NNC))))
+                              ,/SCM
+                              (VP (NP-ADV 제/DAN
+                                          3/NNU
+                                          국/NNC+에서/PAD)
+                                  (VP (VV 은신/NNC+하/XSV+어/ECS))))
+                          오/VX+었/EPF+다/EFN+고/PAD))
+              (VV 진술/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 58 년</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>가족을 따라</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Rel>
+	      <term>이주하여</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

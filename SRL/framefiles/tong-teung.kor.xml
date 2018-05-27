@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>동등</lemma>
+    <comment>Frames file for '동등' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>동등.01</id>
+      <edef>same</edef>
+      <roleset>
+	<role argnum="1" argrole="one party"/>
+	<role argnum="2" argrole="other party"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>동등하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이와 동등한 급의 사단 지휘부 부서로는 정치부, 정치 보위부, 후방부, 포병부가 있다.</text>
+	  <parse>
+(S (NP-COMP-2 (NP (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP (NP-COMP 이/NPN+과/PAD)
+                              (VJ 동등/NNC+하/XSJ+은/EAN))))
+                  (NP 급/NNC+의/PAN))
+              (NP 사단/NNC
+                  지휘부/NNC
+                  부서/NNC+으로/PAD+은/PAU))
+   (S (NP-SBJ (NP 정치부/NNC)
+              ,/SCM
+              (NP 정치/NNC
+                  보위부/NNC)
+              ,/SCM
+              (NP 후방부/NNC)
+              ,/SCM
+              (NP 포병부/NNC+이/PCA))
+      (ADJP (NP-COMP *T*-2)
+            있/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=급</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>이</term>
+	    </Arg>
+	    <Rel>
+	      <term>동등한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

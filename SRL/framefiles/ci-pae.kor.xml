@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지배</lemma>
+    <comment>Frames file for '지배' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>지배.01</id>
+      <edef>rule</edef>
+      <roleset>
+	<role argnum="0" argrole="thing ruling"/>
+	<role argnum="1" argrole="thing ruled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지배하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>카다피는 지난 69 년부터 리비아를 지배했으며 리비아인들과 외교관들은 카다피가 맏아들 세이프 알-이슬람(29)에게 혁명지도자 역을 물려주기 위한 준비를 하고 있을 것으로 추정하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 카다피/NPR+은/PAU)
+      (VP (NP-ADV 지난/DAN
+                  69/NNU
+                  년/NNX+부터/PAU)
+          (VP (NP-OBJ 리비아/NPR+을/PCA)
+              (VV 지배/NNC+하/XSV+었/EPF+으며/ECS))))
+   (S (NP-SBJ (NP 리비아/NPR+인/XSF+들/XSF+과/PCJ)
+              (NP 외교관/NNC+들/XSF+은/PAU))
+      (VP (VP (NP-COMP (S (NP-SBJ 카다피/NPR+이/PCA)
+			  (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+					     (S (NP-SBJ *T*-1)
+						(VP (S-OBJ (NP-SBJ *pro*)
+							   (VP (NP-COMP 맏아들/NNC
+									      세이프/NPR
+									      알/NPR
+									      -/SSY
+									      이슬람/NPR
+									      (PRN -LRB-/SLQ
+										   (NP 29/NNU)
+										   -RRB-/SRQ)
+									      에게/PAD)
+							       (NP-OBJ 혁명/NNC+지도자/NNC
+									   역/NNC+을/PCA)
+							       물려주/VV+기/ENM))
+						    위하/VV+은/EAN)))
+					  (NP 준비/NNC+을/PCA))
+				  하/VV+고/ECS)
+			      있/VX+을/EAN))
+		       (NP 것/NNX+으로/PAD))
+              (VV 추정/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>카다피</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 69 년부터</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>리비아</term>
+	    </Arg>
+	    <Rel>
+	      <term>지배했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

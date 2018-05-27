@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부양</lemma>
+    <comment>Frames file for '부양' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부양.01</id>
+      <edef>float</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing floating"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부양시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 일본은행이 장기채 매입을 통해 경기를 부양시키는 방법을 취해서도 안된다면서 이것이 단기채 매입보다 더 위험한 결과를 초래할 수 있다고 경고했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (S-COMP (NP-SBJ 일본/NPR+은행/NNC+이/PCA)
+                              (VP (NP-OBJ (S (WHNP *op*)
+                                             (S (NP-SBJ *pro*)
+                                                (VP (S (NP-SBJ *pro*)
+                                                       (VP (NP-OBJ 장기채/NNC
+                                                                   매입/NNC+을/PCA)
+                                                           통하/VV+어/ECS))
+                                                    (VP (NP-OBJ 경기/NNC+을/PCA)
+                                                        (VV 부양/NNC+시키/XSV+는/EAN)))))
+                                          (NP 방법/NNC+을/PCA))
+                                  취하/VV+어서/ECS+도/PAU))
+                      안되/VV+는다면서/ECS))
+               (S (NP-SBJ 이것/NPN+이/PCA)
+                  (VP (VP (NP-OBJ (S (WHNP *op*)
+                                     (S (NP-SBJ *pro*)
+                                        (ADJP (NP-ADV 단기채/NNC
+                                                      매입/NNC+보다/PAD)
+                                              (ADVP 더/ADV)
+                                              (ADJP (VJ 위험/NNC+하/XSJ+은/EAN)))))
+                                  (NP 결과/NNC+을/PCA))
+                          (VV 초래/NNC+하/XSV+을/EAN))
+                      (VX 수/NNX
+                          있/VJ+다/EFN+고/PAD))))
+       (VV 경고/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>장기채 매입을 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>경기</term>
+	    </Arg>
+	    <Rel>
+	      <term>부양시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

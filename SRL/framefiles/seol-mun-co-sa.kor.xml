@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>설문조사</lemma>
+    <comment>Frames file for '설문조사' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>설문조사.01</id>
+      <edef>survey</edef>
+      <roleset>
+	<role argnum="0" argrole="examiner"/>
+	<role argnum="1" argrole="surveyed about"/>
+	<role argnum="2" argrole="entity surveyed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>설문조사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일본 경제기획청은 경제 각 부문 종사자들을 대상으로 지난 2 월 25 일부터 3 월 1 일까지 2 월의 경기 체감 실태를 설문조사한 결과 경기체감지수가 48.6으로 1 월의 45.3에 비해 호전됐다고 발표했다.</text>
+	  <parse>
+(S (NP-SBJ 일본/NPR
+           경제기획청/NNC+은/PAU)
+   (VP (S-COMP (NP-ADV (S (NP-SBJ *pro*)
+                          (VP (NP-COMP (NP-OBJ 경제/NNC
+						   각/DAN
+						   부문/NNC
+						   종사자/NNC+들/XSF+을/PCA)
+				       대상/NNC+으로/PAD)
+                              (VP (NP-ADV (NP 지난/DAN
+						  2/NNU
+						  월/NNX
+						  25/NNU
+						  일/NNX+부터/PAU)
+					  (NP 3/NNU
+					      월/NNX
+					      1/NNU
+					      일/NNX+까지/PAU))
+                                  (VP (NP-OBJ (NP 2/NNU
+                                                  월/NNX+의/PAN)
+                                              (NP 경기/NNC
+                                                  체감/NNC
+                                                  실태/NNC+을/PCA))
+                                      (VV 설문조사/NNC+하/XSV+은/EAN)))))
+                       (NP 결과/NNC))
+               (S (NP-SBJ 경기/NNC+체감/NNC+지수/NNC+이/PCA)
+                  (VP (NP-ADV 48.6/NNU+으로/PAD)
+                      (S (NP-SBJ *pro*)
+			 (VP (NP-COMP (NP 1/NNU
+					  월/NNX+의/PAN)
+				      (NP 45.3/NNU+에/PAD))
+			     비하/VV+어/ECS))
+		      (VP (VV 호전/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))))
+       (VV 발표/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>경제 각 부문 종사자들을 대상</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 2 월 25 일부터 3 월 1 일까지</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>2 월의 경기 체감 실태</term>
+	    </Arg>
+	    <Rel>
+	      <term>설문조사한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

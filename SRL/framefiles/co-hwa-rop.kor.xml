@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조화롭</lemma>
+    <comment>Frames file for '조화롭' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>조화롭.01</id>
+      <edef>harmonious</edef>
+      <roleset>
+	<role argnum="1" argrole="thing harmonious"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조화롭다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 지난 88 년 양국이 임명한 전문가들이 현재 고문서를 임대방식으로 반환하고 한국측이 이에 상응하는 조치를 취하는 계획을 마련 중이라면서 "양국 전문가들이 조화로운 해결책을 찾아낼 것이라는 점을 의심치 않는다"고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                     (S (NP-ADV 지난/DAN
+                                88/NNU
+                                년/NNX)
+                        (S (NP-SBJ 양국/NNC+이/PCA)
+                           (VP (NP-OBJ *T*-1)
+                               (VV 임명/NNC+하/XSV+은/EAN)))))
+                  (NP 전문가/NNC+들/XSF+이/PCA))
+          (VP (VP (NP-ADV 현재/NNC)
+                  (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+                                    (VP (NP-OBJ 고문서/NNC+을/PCA)
+                                        (VP (NP-ADV 임대/NNC+방식/NNC+으로/PAD)
+                                            (VP (VV 반환/NNC+하/XSV+고/ECS)))))
+                                 (S (NP-SBJ 한국/NPR+측/NNX+이/PCA)
+                                    (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                   (S (NP-SBJ *T*-2)
+                                                      (VP (NP-COMP 이/NPN+에/PAD)
+                                                          (VV 상응/NNC+하/XSV+는/EAN))))
+                                                (NP 조치/NNC+을/PCA))
+                                        취하/VV+는/EAN)))
+                              (NP 계획/NNC+을/PCA))
+                      (VV 마련/NNC)))
+              (VX 중/NNX+이/CO+라면서/ECS)))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (VP (NP-OBJ (S (NP-SBJ 양국/NNC
+                                              전문가/NNC+들/XSF+이/PCA)
+                                      (VP (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                         (S (NP-SBJ *T*-3)
+                                                            (ADJP 조화롭/VJ+은/EAN)))
+                                                      (NP 해결책/NNC+을/PCA))
+                                              찾아내/VV+을/EAN)
+                                          (VX 것/NNX+이/CO+라는/EAN)))
+                                   (NP 점/NNC+을/PCA))
+                           (VV 의심/NNC+하/XSV+지/ECS))
+                       않/VX+는다/EFN)
+                   "/SRQ
+                   고/PAD)
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=해결책</term>
+	    </Arg>
+	    <Rel>
+	      <term>조화로운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

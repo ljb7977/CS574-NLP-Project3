@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>해치</lemma>
+    <comment>Frames file for '해치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>해치.01</id>
+      <edef>harm</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="entity damaged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>해치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 방송은 루이스 텔레스 멕시코 에너지장관이 BBC와의 단독 인터뷰에서 산유국들이 곧 열리는 OPEC 회의에서 합의에 이르기를 바란다며 그러나 멕시코는 현재의 고유가가 멕시코의 국익을 해치고 있다고 생각한다며 멕시코에게 최선인 방안을 택하겠다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           방송/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ 루이스/NPR
+                          텔레스/NPR
+                          멕시코/NPR
+                          에너지/NNC+장관/NNC+이/PCA)
+                  (VP (NP-ADV (NP BBC/NFW+과/PAD+의/PAN)
+                              (NP 단독/NNC
+                                  인터뷰/NNC+에서/PAD))
+                      (VP (S-OBJ (NP-SBJ 산유국/NNC+들/XSF+이/PCA)
+                                 (VP (NP-ADV (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (VP (ADVP 곧/ADV)
+                                                       (VP 열리/VV+는/EAN))))
+                                             (NP OPEC/NFW
+                                                 회의/NNC+에서/PAD))
+                                     (VP (NP-COMP 합의/NNC+에/PAD)
+                                         이르/VV+기/ENM+을/PCA)))
+                          바라/VV+는다며/ECS)))
+               (ADCP 그러나/ADC)
+               (S (NP-SBJ 멕시코/NPR+은/PAU)
+                  (VP (S-COMP (NP-SBJ (NP 현재/NNC+의/PAN)
+                                      (NP 고/XPF+유가/NNC+이/PCA))
+                              (VP (VP (NP-OBJ (NP 멕시코/NPR+의/PAN)
+                                              (NP 국익/NNC+을/PCA))
+                                      해치/VV+고/ECS)
+                                  있/VX+다/EFN+고/PAD))
+                      (VV 생각/NNC+하/XSV+는다며/ECS)))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP-ADV 멕시코/NPR+에게/PAD)
+                                        (VP (NP 최선/NNC+이/CO+은/EAN)))))
+                              (NP 방안/NNC+을/PCA))
+                      택하/VV+겠/EPF+다/EFN+고/PAD)))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>현재의 고유가</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>멕시코의 국익</term>
+	    </Arg>
+	    <Rel>
+	      <term>해치고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

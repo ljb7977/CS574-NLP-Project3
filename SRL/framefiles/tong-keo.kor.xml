@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>동거</lemma>
+    <comment>Frames file for '동거' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>동거.01</id>
+      <edef>live with</edef>
+      <roleset>
+	<role argnum="0" argrole="one person"/>
+	<role argnum="1" argrole="other person"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>동거하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>21 세기의 동성애권 주창자로 나설 이들 주인공의 이름은 '아폴로'와 '미드나이터', 이들은 한 거대한 우주선에서 동거하는 사랑스런 커플이라고 선데이 타임스는 만화산업계 소식통들을 인용해 전했다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-COMP (NP 21/NNU
+                                         세기/NNX+의/PAN)
+                                     (NP 동성애권/NNC
+                                         주창자/NNC+으로/PAD))
+                            나서/VV+을/EAN)))
+                  (NP 이/NPN+들/XSF
+                      주인공/NNC+의/PAN))
+              (NP 이름/NNC+은/PAU))
+      (VP (NP (NP '/SLQ
+                  아폴로/NPR
+                  '/SRQ
+                  과/PCJ)
+              (NP '/SLQ
+                  미드나이터/NPR
+                  '/SRQ))))
+   ,/SCM
+   (S (S-COMP-5 (NP-SBJ 이/NPN+들/XSF+은/PAU)
+                (VP (NP (S (WHNP-2 *op*)
+                           (S (NP-SBJ *T*-2)
+                              (VP (NP-ADV (NP 한/NNU)
+                                          (NP (S (WHNP-3 *op*)
+                                                 (S (NP-SBJ *T*-3)
+                                                    (ADJP (VJ 거대/NNC+하/XSJ+은/EAN))))
+                                              (NP 우주선/NNC+에서/PAD)))
+                                  (VP (VV 동거/NNC+하/XSV+는/EAN)))))
+                        (NP (S (WHNP-4 *op*)
+                               (S (NP-SBJ *T*-4)
+                                  (ADJP (VJ 사랑/NNC+스럽/XSJ+은/EAN))))
+                            (NP 커플/NNC+이/CO+라/EFN+고/PAD)))))
+      (S (NP-SBJ 선데이/NPR
+                 타임스/NPR+은/PAU)
+         (VP (VP (NP-OBJ 만화/NNC+산업계/NNC
+                         소식통/NNC+들/XSF+을/PCA)
+                 (VV 인용/NNC+하/XSV+어/ECS))
+             (VP (S-COMP *T*-5)
+                 전하/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=사랑스런 커플</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>한 거대한 우주선에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>동거하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

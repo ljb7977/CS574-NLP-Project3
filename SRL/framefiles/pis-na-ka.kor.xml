@@ -1,0 +1,41 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>빗나가</lemma>
+    <comment>Frames file for '빗나가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>빗나가.01</id>
+      <edef>stray</edef>
+      <roleset>
+	<role argnum="1" argrole="entity in motion"/>
+	<role argnum="2" argrole="source, path"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>빗나가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>로케트는 전차를 맞고 빗나갔다.</text>
+	  <parse>
+(S (NP-SBJ 로케트/NNC+은/PAU) 
+   (VP (VP (NP-OBJ 전차/NNC+을/PCA) 
+	   맞/VV+고/ECS))
+       (VP 빗나가/VV+었/EPF+다/EFN))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>로케트</term>
+	    </Arg>
+	    <Rel>
+	      <term>빗나갔다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

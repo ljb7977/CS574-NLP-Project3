@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>낙관</lemma>
+    <comment>Frames file for '낙관' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>낙관.01</id>
+      <edef>look on the bright side</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing looked on the bright side of"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>낙관하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>허경만 부사장을 팀장으로 하는 자산관리공사 투자설명회 대표단은 미국 투자기관을 접촉한 결과 이들 투자기관이 한국 금융기관이나 공기업의 해외채권발행에 높은 관심을 보이고 있어 채권발행조건이 작년에 비해 훨씬 호전될 것으로 낙관했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-OBJ 허경만/NPR
+                             부사장/NNC+을/PCA)
+                     (NP-COMP 팀장/NNC+으로/PAD)
+                     하/VV+는/EAN)))
+           (NP 자산관리공사/NPR
+               투자/NNC+설명회/NNC
+               대표단/NNC+은/PAU))
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 미국/NPR
+                              투자/NNC+기관/NNC+을/PCA)
+                      (VV 접촉/NNC+하/XSV+은/EAN)))
+               (NP 결과/NNC))
+       (S (NP-SBJ 이/NPN+들/XSF
+                  투자/NNC+기관/NNC+이/PCA)
+          (VP (VP (NP-COMP (NP (NP 한국/NPR
+                                   금융/NNC+기관/NNC+이나/PCJ)
+                               (NP 공기업/NNC+의/PAN))
+                           (NP 해외/NNC+채권/NNC+발행/NNC+에/PAD))
+                  (NP-OBJ (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (ADJP 높/VJ+은/EAN)))
+                          (NP 관심/NNC+을/PCA))
+                  보이/VV+고/ECS)
+              있/VX+어/ECS))
+       (VP (NP-COMP (S (NP-SBJ 채권/NNC+발행/NNC+조건/NNC+이/PCA)
+                       (VP (S (NP-SBJ *pro*)
+                              (VP (NP-COMP 작년/NNC+에/PAD)
+                                  비하/VV+어/ECS))
+                           (ADVP 훨씬/ADV)
+                           (VP (VV 호전/NNC+되/XSV+을/EAN))))
+                    (NP 것/NNX+으로/PAD))
+           (VV 낙관/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>허경만 부사장을 팀장으로 하는 자산관리공사 투자설명회 대표단</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>미국 투자기관을 접촉한 결과</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이들 투자기관이 한국 금융기관이나 공기업의 해외채권발행에 높은 관심을 보이고 있어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>채권발행조건이 작년에 비해 훨씬 호전될 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>낙관했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

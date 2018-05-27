@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>제소</lemma>
+    <comment>Frames file for '제소' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>제소.01</id>
+      <edef>present a case</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing presented"/>
+	<role argnum="2" argrole="present to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>제소하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또한 일본도 미국을 상대로 WTO에 제소한 일본산 열연강판 고율 반덤핑관세 부과건에 대해 한국측에 `제 3 자 참여'를 요청, 한국이 이를 수락함으로써 WTO의 심의과정에 양국이 공동보조를 맞추기로 했다.</text>
+	  <parse>
+(S (ADVP 또한/ADV)
+   (S (S (NP-SBJ 일본/NPR+도/PAU)
+         (VP (S (NP-SBJ *pro*)
+                (VP (NP-COMP (S (WHNP-1 *op*)
+                                (S (NP-SBJ *pro*)
+                                   (VP (NP-ADV (NP-OBJ 미국/NPR+을/PCA)
+                                               상대/NNC+으로/PAD)
+                                       (VP (NP-COMP WTO/NFW+에/PAD)
+                                           (NP-OBJ *T*-1)
+                                           (VV 제소/NNC+하/XSV+은/EAN)))))
+                             (NP (NP 일본/NPR+산/XSF)
+                                 (NP 열연/NNC+강판/NNC)
+                                 (NP 고율/NNC
+                                     반덤핑/NNC+관세/NNC
+                                     부과/NNC+건/NNC+에/PAD)))
+                    대하/VV+어/ECS))
+             (VP (NP-COMP 한국/NPR+측/XSF+에/PAD)
+                 (NP-OBJ `/SLQ
+                         (NP 제/DAN
+                             3/NNU
+                             자/NNX)
+                         (NP 참여/NNC)
+                         '/SRQ
+                         을/PCA)
+                 (VV 요청/NNC))))
+      ,/SCM
+      (S (NP-SBJ 한국/NPR+이/PCA)
+         (VP (NP-OBJ 이/NPN+을/PCA)
+             (VV 수락/NNC+하/XSV+음/ENM+으로써/PAD))))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-ADV (NP WTO/NFW+의/PAN)
+                          (NP 심의/NNC+과정/NNC+에/PAD))
+                  (S (NP-SBJ 양국/NNC+이/PCA)
+                     (VP (NP-OBJ 공동/NNC+보조/NNC+을/PCA)
+                         맞추/VV+기/ENM+으로/PAD)))
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>미국을 상대로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>WTO</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=일본산 열연강판 고율 반덤핑관세 부과건</term>
+	    </Arg>
+	    <Rel>
+	      <term>제소한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

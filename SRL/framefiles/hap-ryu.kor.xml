@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>합류</lemma>
+    <comment>Frames file for '합류' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>합류.01</id>
+      <edef>join</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing joined"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>합류하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리는 어젯밤 9시에 6 중대와 합류했습니다.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN+은/PAU)
+   (VP (NP-ADV (NP 어젯밤/NNC)
+               (NP 9/NNU
+                   시/NNX+에/PAD))
+       (VP (NP-COMP 6/NNU
+                    중대/NNC+과/PAD)
+           (VV 합류/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>우리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>어젯밤 9시에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>와</f>
+	      <term>6 중대</term>
+	    </Arg>
+	    <Rel>
+	      <term>합류했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

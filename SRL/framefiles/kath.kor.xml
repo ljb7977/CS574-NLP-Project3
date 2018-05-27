@@ -1,0 +1,99 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>같</lemma>
+    <comment>Frames file for '같' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>같.01</id>
+      <edef>equal</edef>
+      <roleset>
+	<role argnum="1" argrole="focus of equation"/>
+	<role argnum="2" argrole="other side of equation"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>같다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 군관 4명과 하사관 17명의 직책은 다음과 같다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP 그/DAN
+		   군관/NNC
+		   4/NNU
+		   명/NNC+과/PCJ)
+	       (NP 하사관/NNC
+		   17/NNU
+		   명/NNX+의/PCA))
+	   (NP 직책/NNC+은/PAU))
+   (ADJP (NP-COMP 다음/NNC+과/PAD)
+	 (ADJP 같/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그 군관 4명과 하사관 17명의 직책</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>다음</term>
+	    </Arg>
+	    <Rel>
+	      <term>같다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>같아지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>세계적으로 과체중 인구가 계속 늘어나 처음으로 영양부족 인구 숫자와 같아졌다고 세계환경단체 월드워치 보고서가 6 일 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-ADV 세계/NNC+적/XSF+으로/PAD)
+                (S (NP-SBJ 과/XPF+체중/NNC
+                           인구/NNC+이/PCA)
+                   (VP (ADVP 계속/ADV)
+                       (VP 늘어나/VV+어/ECS))))
+             (S (NP-SBJ *pro*)
+                (VP (NP-ADV 처음/NNC+으로/PAD)
+                    (VP (NP-COMP 영양/NNC+부족/NNC
+                                 인구/NNC
+                                 숫자/NNC+과/PAD)
+                        (VV 같/VJ+어지/XSV+었/EPF+다/EFN+고/PAD)))))
+   (S (NP-SBJ 세계/NNC+환경/NNC+단체/NNC
+              월드워치/NPR
+              보고서/NNC+이/PCA)
+      (VP (NP-ADV 6/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>세계적으로 과체중 인구가 계속 늘어나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>처음으로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>영양부족 인구 숫자</term>
+	    </Arg>
+	    <Rel>
+	      <term>같아졌다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

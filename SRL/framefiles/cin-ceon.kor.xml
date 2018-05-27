@@ -1,0 +1,123 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>진전</lemma>
+    <comment>Frames file for '진전' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>진전.01</id>
+      <edef>develop</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing developed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>진전되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또한 이 사격은 공격이 진전되고 임기 표적이 확인될 때 공격 부대를 지원하기 위해 사격을 전환한다.</text>
+	  <parse>
+(S (ADVP 또한/ADV)
+   (S (NP-SBJ 이/DAN
+              사격/NNC+은/PAU)
+      (VP (NP-ADV (S (WHNP *op*)
+                     (S (S (NP-SBJ 공격/NNC+이/PCA)
+                           (VP (VV 진전/NNC+되/XSV+고/ECS)))
+                        (S (NP-SBJ 임기/NNC
+                                   표적/NNC+이/PCA)
+                           (VP (VV 확인/NNC+되/XSV+을/EAN)))))
+                  (NP 때/NNC))
+          (S (NP-SBJ *pro*)
+             (VP (S-OBJ (NP-SBJ *pro*)
+                        (VP (NP-OBJ 공격/NNC
+                                    부대/NNC+을/PCA)
+                            (VV 지원/NNC+하/XSV+기/ENM)))
+                 위하/VV+어/ECS))
+          (VP (NP-OBJ 사격/NNC+을/PCA)
+              (VV 전환/NNC+하/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>공격</term>
+	    </Arg>
+	    <Rel>
+	      <term>진전되고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>진전시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>아오키 관방장관은 발표에서 "인도적 관점에서 일조 관계를 진전시킴으로써 제반 현안에 대한 북한측의 전향적인 대응을 얻을 수 있기를 강력히 기대하면서 북한에 대해 WFP를 통해 식량 지원을 하기로 했다"고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 아오키/NPR
+           관방/NNC+장관/NNC+은/PAU)
+   (VP (NP-ADV 발표/NNC+에서/PAD)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+			     (VP (NP-ADV 인도/NNC+적/XSF
+					     관점/NNC+에서/PAD)
+				 (VP (NP-OBJ 일/NPR+조/NPR
+					       관계/NNC+을/PCA)
+				     (VV 진전/NNC+시키/XSV+음/ENM+으로써/PAD))))
+                          (VP (S-OBJ (NP-SBJ *pro*)
+				     (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+							(S (NP-SBJ *T*-2)
+							   (VP (NP-COMP 제반/NNC
+									    현안/NNC+에/PAD)
+							       대하/VV+은/EAN)))
+						     (NP (NP 북한/NPR+측/XSF+의/PAN)
+							 (NP (S (WHNP-1 *op*)
+								(S (NP-SBJ *T*-1)
+								   (VP (NP 전향/NNC+적/XSF+이/CO+은/EAN))))
+							     (NP 대응/NNC+을/PCA))))
+					     얻/VV+을/EAN)
+					 (VX 수/NNX
+					       있/VJ+기/ENM+을/PCA)))
+                              (VP (ADVP 강력히/ADV)
+                                  (VP (VV 기대/NNC+하/XSV+으면서/ECS))))))
+                   (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-COMP 북한/NPR+에/PAD)
+                                 대하/VV+어/ECS))
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ WFP/NFW+을/PCA)
+                                 통하/VV+어/ECS))
+                          (VP (S-COMP (NP-SBJ *pro*)
+				      (VP (NP-OBJ 식량/NNC
+						      지원/NNC+을/PCA)
+					  (LV 하/VV+기/ENM+으로/PAD)))
+                              하/VV+었/EPF+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>인도적 관점에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>일조 관계</term>
+	    </Arg>
+	    <Rel>
+	      <term>진전시킴으로써</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>열악하</lemma>
+    <comment>Frames file for '열악하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>열악하.01</id>
+      <edef>poor</edef>
+      <roleset>
+	<role argnum="1" argrole="thing poor"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>열악하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한은 미국 국무부가 최근 발표한 '연례인권보고서'에서 북한의 인권상황이 열악함을 지적한 것에 대해 반발하면서 미국은 세계 각국의 인권상황을 운운할 자격이 없다고 반박했다.</text>
+	  <parse>
+(S (S (NP-SBJ 북한/NPR+은/PAU)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-SBJ 미국/NPR
+                                          국무부/NNC+이/PCA)
+                                  (VP (NP-ADV (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *pro*)
+                                                    (VP (NP-ADV 최근/NNC)
+                                                        (VP (NP-OBJ *T*-1)
+                                                            (VV 발표/NNC+하/XSV+은/EAN)))))
+                                              (NP '/SLQ
+                                                  연례/NNC+인권/NNC+보고서/NNC
+                                                  '/SRQ
+                                                  에서/PAD))
+                                      (VP (S-OBJ (NP-SBJ (NP 북한/NPR+의/PAN)
+                                                         (NP 인권/NNC+상황/NNC+이/PCA))
+                                                 (ADJP 열악하/VJ+음/ENM+을/PCA))
+                                          (VV 지적/NNC+하/XSV+은/EAN))))
+                               (NP 것/NNX+에/PAD))
+                      대하/VV+어/ECS))
+          (VV 반발/NNC+하/XSV+으면서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ 미국/NPR+은/PAU)
+                  (S (NP-SBJ (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ (NP 세계/NNC
+                                                각국/NNC+의/PAN)
+                                            (NP 인권/NNC+상황/NNC+을/PCA))
+                                    (VV 운운/NNC+하/XSV+을/EAN)))
+                             (NP 자격/NNC+이/PCA))
+                     (ADJP 없/VJ+다/EFN+고/PAD)))
+          (VV 반박/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>북한의 인권상황</term>
+	    </Arg>
+	    <Rel>
+	      <term>열악함을</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

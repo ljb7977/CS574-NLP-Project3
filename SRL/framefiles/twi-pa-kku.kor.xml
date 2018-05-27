@@ -1,0 +1,139 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뒤바꾸</lemma>
+    <comment>Frames file for '뒤바꾸' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뒤바꾸.01</id>
+      <edef>reverse</edef>
+      <roleset>
+	<role argnum="0" argrole="causer of reverse"/>
+	<role argnum="1" argrole="thing turning around"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뒤바꾸다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보고서는 전세계적인 추세가 전통적인 경향을 뒤바꾸고 있기 때문에 미국에 유입되는 자본의 유입이 줄어들 것이며 이에 따라 경상수지도 조정을 겪을 것이라고 예견했다.</text>
+	  <parse>
+(S (NP-SBJ 보고서/NNC+은/PAU)
+   (VP (S-COMP (S (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP 전세계/NNC+적/XSF+이/CO+은/EAN))))
+                                     (NP 추세/NNC+이/PCA))
+                             (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (VP (NP 전통/NNC+적/XSF+이/CO+은/EAN))))
+                                             (NP 경향/NNC+을/PCA))
+                                     뒤바꾸/VV+고/ECS)
+                                 있/VX+기/ENM))
+                          (NP 때문/NNX+에/PAD))
+                  (S (NP-SBJ (NP (S (WHNP-3 *op*)
+                                    (S (NP-SBJ *T*-3)
+                                       (VP (NP-COMP 미국/NPR+에/PAD)
+                                           (VV 유입/NNC+되/XSV+는/EAN))))
+                                 (NP 자본/NNC+의/PAN))
+                             (NP 유입/NNC+이/PCA))
+                     (VP (VP 줄어들/VV+을/EAN)
+                         (VX 것/NNX+이/CO+으며/ECS))))
+               (S (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 이/NPN+에/PAD)
+                         따르/VV+어/ECS))
+                  (S (NP-SBJ 경상/NNC+수지/NNC+도/PAU)
+                     (VP (VP (NP-OBJ 조정/NNC+을/PCA)
+                             겪/VV+을/EAN)
+                         (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+       (VV 예견/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>전세계적인 추세</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>전통적인 경향</term>
+	    </Arg>
+	    <Rel>
+	      <term>뒤바꾸고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>뒤바뀌다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포스트지는 한국의 젊은이들이 예전 같으면 대기업에 들어가 많지도 않은 월급을 받으면서도 수 십년 후에는 자신들도 회사의 중역이 될 수 있다는 기대 하나로 오랜 시간을 버텨 왔지만 이제 판도는 완전히 뒤바뀌었다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 포스트/NPR+지/XSF+은/PAU)
+   (VP (S-COMP (S (NP-SBJ (NP 한국/NPR+의/PAN)
+                          (NP 젊은이/NNC+들/XSF+이/PCA))
+                  (VP (VP (S (NP-SBJ *pro*)
+                             (ADJP (NP-COMP 예전/NNC)
+                                   같/VJ+으면/ECS))
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-COMP 대기업/NNC+에/PAD)
+                                 들어가/VV+어/ECS))
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (ADJP 많/VJ+지/ECS+도/PAU)
+                                                   않/VX+은/EAN)))
+                                         (NP 월급/NNC+을/PCA))
+                                 받/VV+으면서/ECS+도/PAU))
+                          (NP-ADV (S (NP-ADV 수/DAN
+                                             십/NNU+년/NNX
+                                             후/NNC+에/PAD+은/PAU)
+                                     (S (NP-SBJ 자신/NNC+들/XSF+도/PAU)
+                                        (VP (VP (NP-COMP (NP 회사/NNC+의/PAN)
+                                                         (NP 중역/NNC+이/PCA))
+                                                되/VV+을/EAN)
+                                            (VX 수/NNX
+                                                있/VJ+다는/EAN))))
+                                  (NP 기대/NNC
+                                      하나/NNU+으로/PAD))
+                          (VP (NP-OBJ 오랜/DAN
+                                      시간/NNC+을/PCA)
+                              버티/VV+어/ECS))
+                      오/VX+었/EPF+지만/ECS))
+               (S (ADVP 이제/ADV)
+                  (S (NP-SBJ 판도/NNC+은/PAU)
+                     (VP (ADVP 완전히/ADV)
+                         (VP 뒤바뀌/VV+었/EPF+다/EFN+고/PAD)))))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이제</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>판도</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>완전히</term>
+	    </Arg>
+	    <Rel>
+	      <term>뒤바뀌었다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

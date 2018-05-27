@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>할애</lemma>
+    <comment>Frames file for '할애' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>할애.01</id>
+      <edef>spare</edef>
+      <roleset>
+	<role argnum="0" argrole="savior"/>
+	<role argnum="1" argrole="thing spared"/>
+	<role argnum="2" argrole="spared for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>할애하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>유럽 4 개국 순방에 나선 김대중 대통령은 로마 도착 첫날인 2 일 오후(이하 현지시간) 대통령궁에서 카를로 아첼리아 참피 대통령과 1 시간동안 가진 회담에서 특히 남북문제에 많은 시간을 할애했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (NP-COMP 유럽/NPR
+                              4/NNU
+                              개/NNX+국/NNX
+                              순방/NNC+에/PAD)
+                     나서/VV+은/EAN)))
+           (NP 김대중/NPR
+               대통령/NNC+은/PAU))
+   (VP (NP-ADV (S (WHNP-3 *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-ADV (S (WHNP-4 *op*)
+                                    (S (NP-SBJ *T*-4)
+                                       (VP (NP 로마/NPR
+						   도착/NNC
+						   첫날/NNC+이/CO+은/EAN))))
+                                 (NP 2/NNU
+                                     일/NNX
+                                     오후/NNC
+                                     (PRN -LRB-/SLQ
+                                          (NP 이하/NNC
+						  현지/NNC+시간/NNC)
+                                          -RRB-/SRQ)))
+                         (NP-ADV 대통령/NNC+궁/NNC+에서/PAD)
+                         (VP (NP-COMP 카를로/NPR
+					    아첼리아/NPR
+					    참피/NPR
+					    대통령/NNC+과/PAD)
+                             (VP (NP-ADV 1/NNU
+                                         시간/NNX+동안/NNX)
+                                 (VP (NP-OBJ *T*-3)
+                                     가지/VV+은/EAN))))))
+               (NP 회담/NNC+에서/PAD))
+       (ADVP 특히/ADV)
+       (VP (NP-COMP 남북/NNC+문제/NNC+에/PAD)
+	   (NP-OBJ (S (WHNP-1 *op*)
+		      (S (NP-SBJ *T*-1)
+			 (ADJP 많/VJ+은/EAN)))
+		   (NP 시간/NNC+을/PCA))
+	   (VV 할애/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>유럽 4 개국 순방에 나선 김대중 대통령</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>로마 도착 첫날인 2 일 오후(이하 현지시간) 대통령궁에서 카를로 아첼리아 참피 대통령과 1 시간동안 가진 회담에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>남북문제</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>많은 시간</term>
+	    </Arg>
+	    <Rel>
+	      <term>할애했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

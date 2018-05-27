@@ -1,0 +1,99 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>방중</lemma>
+    <comment>Frames file for '방중' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>방중.01</id>
+      <edef>visit China</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>방중하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>잡지는 특히 김 총비서의 중국 방문 일정은 18 일 방중할 백남순 북한 외무상과 중국 관계자 사이에 합의될 것으로 예상된다며 "김 총비서는 김일성과 달리 공식적으로 국가주석 지위를 갖고 있지 않기 때문에 국빈방문을 할 수 없어 중국 제 2 인자인 리펑(리붕) 총리의 영접을 받게 되는 등 의전문제는 벌써 마무리됐다"고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 잡지/NNC+은/PAU)
+   (VP (ADVP 특히/ADV)
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (NP-SBJ (NP 김/NPR
+                                      총비서/NNC+의/PAN)
+                                  (NP 중국/NPR
+                                      방문/NNC
+                                      일정/NNC+은/PAU))
+                          (VP (NP-ADV (NP (NP (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (VP (NP-ADV 18/NNU
+                                                                일/NNX)
+                                                        (VP (VV 방중/NNC+하/XSV+을/EAN)))))
+                                              (NP 백남순/NPR
+                                                  북한/NPR
+                                                  외무상/NNC+과/PCJ))
+                                          (NP 중국/NPR
+                                              관계자/NNC))
+                                      (NP 사이/NNC+에/PAD))
+                              (VP (VV 합의/NNC+되/XSV+을/EAN))))
+                       (NP 것/NNX+으로/PAD))
+              (VV 예상/NNC+되/XSV+는다며/ECS)))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (NP (S (S (NP-SBJ 김/NPR
+                                             총비서/NNC+은/PAU)
+                                     (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                        (VP (ADVP (NP-COMP 김일성/NPR+과/PAD)
+								  달리/ADV)
+							    (VP (VP (VP (ADVP (ADV 공식/NNC+적/XSF+으로/PAD))
+									(VP (NP-OBJ 국가/NNC+주석/NNC
+											지위/NNC+을/PCA)
+									    갖/VV+고/ECS))
+								    있/VX+지/ECS)
+								않/VX+기/ENM)))
+                                                     (NP 때문/NNX+에/PAD))
+                                             (VP (NP-OBJ 국빈/NNC+방문/NNC+을/PCA)
+                                                 하/VV+을/EAN))
+                                         (VX 수/NNX
+                                             없/VJ+어/ECS)))
+                                  (S (NP-SBJ *pro*)
+                                     (VP (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+                                                            (S (NP-SBJ *T*-2)
+                                                               (VP (NP 중국/NPR
+                                                                       제/DAN
+                                                                       2/NNU
+                                                                       인자/NNX+이/CO+은/EAN))))
+                                                         (NP 리펑/NPR
+                                                             (PRN -LRB-/SLQ
+                                                                  (NP 리붕/NPR)
+                                                                  -RRB-/SRQ)
+                                                             총리/NNC+의/PAN))
+                                                     (NP 영접/NNC+을/PCA))
+                                             받/VV+게/ECS)
+                                         되/VX+는/EAN)))
+                               (NP 등/NNX))
+                           (NP 의전/NNC+문제/NNC+은/PAU))
+                   (VP (ADVP 벌써/ADV)
+                       (VP (VV 마무리/NNC+되/XSV+었/EPF+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=백남순 북한 외무상</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>18 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>방중할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

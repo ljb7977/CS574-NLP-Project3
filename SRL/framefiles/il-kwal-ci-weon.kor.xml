@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일괄지원</lemma>
+    <comment>Frames file for '일괄지원' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>일괄지원.01</id>
+      <edef>support totally</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing supported"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일괄지원하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중점관리사업으로 선정되면 프로젝트를 일관되게 추진할 수 있도록 사업별 전담제도를 도입, 사업의 상품화에서부터 마케팅까지의 과정과 내외자유치협상을 일괄지원할 계획이다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 중점/NNC+관리/NNC+사업/NNC+으로/PAD)
+          (VV 선정/NNC+되/XSV+으면/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 프로젝트/NNC+을/PCA)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (VV 일관/NNC+되/XSV+게/ECS)))
+                  (VP (VV 추진/NNC+하/XSV+을/EAN))))
+          (VX 수/NNX
+              있/VJ+도록/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ *pro*)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 사업/NNC+별/XSF
+                                    전담/NNC+제도/NNC+을/PCA)
+                            (VV 도입/NNC)))
+                     ,/SCM
+                     (VP (NP-OBJ (NP (NP 사업/NNC+의/PAN)
+                                     (NP (NP (NP 상품화/NNC+에서부터/PAD)
+                                             (NP 마케팅/NNC+까지/PAU+의/PAN))
+                                         (NP 과정/NNC+과/PCJ)))
+                                 (NP 내외자/NNC+유치/NNC+협상/NNC+을/PCA))
+                         (VV 일괄지원/NNC+하/XSV+을/EAN))))
+              (NP 계획/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>사업별 전담제도를 도입</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>사업의 상품화에서부터 마케팅까지의 과정과 내외자유치협상</term>
+	    </Arg>
+	    <Rel>
+	      <term>일괄지원할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

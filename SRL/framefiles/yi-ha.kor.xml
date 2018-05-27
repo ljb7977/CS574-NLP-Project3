@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>의하</lemma>
+    <comment>Frames file for '의하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>의하.01</id>
+      <edef>by means of</edef>
+      <roleset>
+	<role argnum="1" argrole="thing"/>
+	<role argnum="2" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>의하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>무전기의 형은 식별판에 의해서 알 수 있다.</text>
+	  <parse>
+(S (NP-OBJ-1 무전기/NNC+의/PAN
+             형/NNC+은/PAU)
+   (S (NP-SBJ *pro*)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-COMP 식별판/NNC+에/PAD)
+                     의하/VV+어서/ECS))
+              (VP (NP-OBJ *T*-1)
+                  (VP 알/VV+을/EAN)))
+          (VX 수/NNX
+              있/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>식별판</term>
+	    </Arg>
+	    <Rel>
+	      <term>의해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,109 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>암호화</lemma>
+    <comment>Frames file for '암호화' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>암호화.01</id>
+      <edef>encrypt</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="information"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>암호화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희들은 무선 송신을 암호화하기 위해서 암호 조립기를 사용합니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN+들/XSF+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (S-OBJ (NP-SBJ *pro*)
+                          (VP (NP-OBJ 무선/NNC
+                                      송신/NNC+을/PCA)
+                              (VV 암호화/NNC+하/XSV+기/ENM)))
+                   위하/VV+어서/ECS))
+       (NP-OBJ 암호/NNC
+               조립기/NNC+을/PCA)
+       (VV 사용/NNC+하/XSV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>무선 송신</term>
+	    </Arg>
+	    <Rel>
+	      <term>암호화하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>암호화되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>제가 송신하거나 수신하는 모든 무선 통신은 암호화되지 않거나 또는 미리 지정된 암호표에 따라 암호화되죠.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ 제/NPN+이/PCA)
+                 (VP (NP-OBJ *T*-1)
+                     (VV (VV 송신/NNC+하/XSV+거나/ECS)
+                         (VV 수신/NNC+하/XSV+는/EAN)))))
+           (NP 모든/DAN
+               무선/NNC
+               통신/NNC+은/PAU))
+   (VP (VP (VP (VV 암호화/NNC+되/XSV+지/ECS))
+           않/VX+거나/ECS)
+       (ADCP 또는/ADC)
+       (VP (S (NP-SBJ *pro*)
+              (VP (NP-COMP (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (VP (ADVP 미리/ADV)
+                                     (VP (VV 지정/NNC+되/XSV+은/EAN)))))
+                           (NP 암호표/NNC+에/PAD))
+                  따르/VV+어/ECS))
+           (VP (VV 암호화/NNC+되/XSV+죠/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>제가 송신하거나 수신하는 모든 무선 통신</term>
+	    </Arg>
+	    <Rel>
+	      <term>암호화되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않거나</term>
+	    </Aux>
+	  </relation>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>제가 송신하거나 수신하는 모든 무선 통신</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>미리 지정된 암호표에 따라</term>
+	    </Arg>
+	    <Rel>
+	      <term>암호화되죠</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

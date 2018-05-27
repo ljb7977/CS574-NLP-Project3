@@ -1,0 +1,137 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>거래</lemma>
+    <comment>Frames file for '거래' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>거래.01</id>
+      <edef>transact</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing transacted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>거래하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>LSE 주주들은 4 월말이나 5 월초부터 카제노브 증권중개사를 통해 주식을 거래할 수 있게 되나 동일인 소유지분은 4.9 퍼센트를 넘을 수 없도록 돼 있다.</text>
+	  <parse>
+(S (S (NP-SBJ LSE/NFW
+              주주/NNC+들/XSF+은/PAU)
+      (VP (VP (VP (NP-ADV (NP 4/NNU
+                              월/NNX+말/NNX+이나/PCJ)
+                          (NP 5/NNU
+                              월/NNX+초/NNX+부터/PAU))
+                  (S (NP-SBJ *pro*)
+		     (VP (NP-OBJ 카제노브/NPR
+					 증권/NNC+중개사/NNC+을/PCA)
+			 통하/VV+어/ECS))
+		  (VP (NP-OBJ 주식/NNC+을/PCA)
+		      (VV 거래/NNC+하/XSV+을/EAN)))
+              (VX 수/NNX
+                  있/VJ+게/ECS))
+          되/VX+으나/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S-COMP (NP-SBJ 동일인/NNC
+                              소유/NNC+지분/NNC+은/PAU)
+                      (VP (VP (NP-OBJ 4.9/NNU
+                                      퍼센트/NNX+을/PCA)
+                              넘/VV+을/EAN)
+                          (VX 수/NNX
+                              없/VJ+도록/ECS)))
+              되/VV+어/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>LSE 주주들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>4 월말이나 5 월초부터</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>카제노브 증권중개사를 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>주식</term>
+	    </Arg>
+	    <Rel>
+	      <term>거래할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있게</term>
+	    </Aux>
+	    <Aux>
+	      <f>게</f>
+	      <term>되나</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>거래되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>4 월 인도분 북해산 브렌트유는 이날 오전 (현지 시간) 런던 시장에서 전날보다 배럴당 47 센트가 떨어진 27.06 달러에 거래됐다.</text>
+	  <parse>
+(S (NP-SBJ 4/NNU
+           월/NNX
+           인도/NNC+분/NNC
+           북해/NPR+산/NNC
+           브렌트유/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC
+               오전/NNC
+               (PRN -LRB-/SLQ
+                    현지/NNC
+                    시간/NNC
+                    -RRB-/SRQ))
+       (NP-ADV 런던/NPR
+               시장/NNC+에서/PAD)
+       (NP-ADV (S (NP-ADV 전날/NNC+보다/PAD)
+                  (S (NP-SBJ (NP 배럴/NNC+당/NNX)
+                             (NP 47/NNU
+                                 센트/NNX+이/PCA))
+                     (VP 떨어지/VV+은/EAN)))
+               (NP 27.06/NNU
+                   달러/NNX+에/PAD))
+       (VP (VV 거래/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>4 월 인도분 북해산 브렌트유</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날 오전 (현지 시간)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>런던 시장에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>전날보다 배럴당 47 센트가 떨어진 27.06 달러에</term>
+	    </Arg>
+	    <Rel>
+	      <term>거래됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

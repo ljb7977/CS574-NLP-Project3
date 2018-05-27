@@ -1,0 +1,45 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>승소</lemma>
+    <comment>Frames file for '승소' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>승소.01</id>
+      <edef>win a suit</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>승소하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>하 당선자가 승소할 경우 4 월 1 일부터 공식임기가 시작된다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 하/NPR
+                      당선자/NNC+이/PCA)
+              (VP (VV 승소/NNC+하/XSV+을/EAN)))
+           (NP 경우/NNC))
+   (S (NP-ADV 4/NNU
+              월/NNX
+              1/NNU
+              일/NNX+부터/PAU)
+      (S (NP-SBJ 공식/NNC+임기/NNC+이/PCA)
+         (VP (VV 시작/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>하 당선자</term>
+	    </Arg>
+	    <Rel>
+	      <term>승소할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>진부하</lemma>
+    <comment>Frames file for '진부하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>진부하.01</id>
+      <edef>banal</edef>
+      <roleset>
+	<role argnum="1" argrole="thing banal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>진부하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>남성 동성애자에 대한 진부한 사고에서 벗어나기 위한 시도의 하나로, 밀러와 이 만화의 그림을 담당하고 있는 프랭크 콰이틀리는 아폴로와 미드나이터에게 어떠한 여성적 특징도 부여하지 않는다.</text>
+	  <parse>
+(S (NP-ADV (NP (S (WHNP-3 *op*)
+                  (S (NP-SBJ *T*-3)
+                     (VP (S-OBJ (NP-SBJ *pro*)
+				(VP (NP-COMP (S (NP-SBJ *pro*)
+						(VP (NP-COMP 남성/NNC
+								 동성애자/NNC+에/PAD)
+						    대하/VV+은/EAN))
+					     (NP (S (WHNP-1 *op*)
+						    (S (NP-SBJ *T*-1)
+						       (ADJP 진부하/VJ+은/EAN)))
+						 (NP 사고/NNC+에서/PAD)))
+				    벗어나/VV+기/ENM))
+                         위하/VV+는/EAN)))
+               (NP 시도/NNC+의/PAN))
+           (NP 하나/NNU+으로/PAD))
+   ,/SCM
+   (S (NP-SBJ (NP 밀러/NPR+과/PCJ)
+              (NP (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (VP (VP (NP-OBJ (NP 이/DAN
+                                            만화/NNC+의/PAN)
+                                        (NP 그림/NNC+을/PCA))
+                                (VV 담당/NNC+하/XSV+고/ECS))
+                            있/VX+는/EAN)))
+                  (NP 프랭크/NPR
+                      콰이틀리/NPR+은/PAU)))
+      (VP (VP (NP-COMP (NP 아폴로/NPR+과/PCJ)
+                       (NP 미드나이터/NPR+에게/PAD))
+              (NP-OBJ 어떠한/DAN
+                      여성/NNC+적/XSF
+                      특징/NNC+도/PAU)
+              (VV 부여/NNC+하/XSV+지/ECS))
+          않/VX+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=사고</term>
+	    </Arg>
+	    <Rel>
+	      <term>진부한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,126 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>승계</lemma>
+    <comment>Frames file for '승계' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>승계.01</id>
+      <edef>succeed</edef>
+      <roleset>
+	<role argnum="0" argrole="entity succeeding"/>
+	<role argnum="1" argrole="task"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>승계하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>르노는 또 삼성자동차의 직원을 전원 승계하고 처음에는 SM 시리즈 차를 생산하되 점차 한국형 르노나 닛산차로 차종을 늘려 갈 계획이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 르노/NPR+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (NP-COMP (S (NP-SBJ *pro*)
+                       (VP (VP (NP-OBJ (NP 삼성/NPR+자동차/NNC+의/PAN)
+                                       (NP 직원/NNC+을/PCA))
+                               (VP (NP-ADV 전원/NNC)
+                                   (VP (VV 승계/NNC+하/XSV+고/ECS))))
+                           (VP (VP (S (NP-SBJ *pro*)
+                                      (VP (NP-ADV 처음/NNC+에/PAD+은/PAU)
+                                          (VP (NP-OBJ SM/NFW
+                                                      시리즈/NNC
+                                                      차/NNC+을/PCA)
+                                              (VV 생산/NNC+하/XSV+으되/ECS))))
+                                   (ADVP 점차/ADV)
+                                   (VP (NP-COMP (NP 한국/NPR+형/XSF
+							르노/NPR+이나/PCJ)
+						(NP 닛산/NPR+차/NNC+으로/PAD))
+				       (NP-OBJ 차종/NNC+을/PCA)
+				       늘리/VV+어/ECS))
+                               가/VX+을/EAN)))
+                    (NP 계획/NNC+이라고/PAD))
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>삼성자동차의 직원</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>전원</term>
+	    </Arg>
+	    <Rel>
+	      <term>승계하고</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>승계되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>본계약이 종결되면 한보철강의 자산은 모두 네이버스 컨소시엄이 국내에 설립할 회사로 이전하게 되며 한보철강의 근로자는 새로운 회사에 전원 고용 승계된다.</text>
+	  <parse>
+(S (S (NP-SBJ 본/XPF+계약/NNC+이/PCA)
+      (VP (VV 종결/NNC+되/XSV+으면/ECS)))
+   (S (S (NP-SBJ *pro*)
+         (VP (VP (NP-OBJ (NP 한보/NPR+철강/NNC+의/PAN)
+                         (NP 자산/NNC+은/PAU))
+                 (VP (ADVP 모두/ADV)
+                     (VP (NP-COMP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ 네이버스/NPR
+                                                컨소시엄/NNC+이/PCA)
+                                        (VP (NP-COMP 국내/NNC+에/PAD)
+                                            (NP-OBJ *T*-1)
+                                            (VV 설립/NNC+하/XSV+을/EAN))))
+                                  (NP 회사/NNC+으로/PAD))
+                         (VV 이전/NNC+하/XSV+게/ECS))))
+             되/VX+으며/ECS))
+      (S (NP-SBJ (NP 한보/NPR+철강/NNC+의/PAN)
+                 (NP 근로자/NNC+은/PAU))
+         (VP (NP-COMP (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (ADJP 새롭/VJ+은/EAN)))
+                      (NP 회사/NNC+에/PAD))
+             (VP (NP-ADV 전원/NNC)
+                 (VP (VV (VV 고용/NNC)
+                         (VV 승계/NNC+되/XSV+는다/EFN)))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>본계약이 종결되면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>한보철강의 자산은 모두 네이버스 컨소시엄이 국내에 설립할 회사로 이전하게 되며</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>한보철강의 근로자</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>새로운 회사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>전원</term>
+	    </Arg>
+	    <Rel>
+	      <term>승계된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

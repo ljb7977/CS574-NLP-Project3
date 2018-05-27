@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>구매</lemma>
+    <comment>Frames file for '구매' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>구매.01</id>
+      <edef>purchase</edef>
+      <roleset>
+	<role argnum="0" argrole="buyer"/>
+	<role argnum="1" argrole="thing bought"/>
+	<role argnum="2" argrole="seller"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>구매하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>GM은 최근 4 년간 자사가 한국 자동차 부품업체의 제품 10 억달러어치를 구매했으며 중소기업과의 기술교환, 품질관리 등의 기회를 늘려 갈 예정이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ GM/NFW+은/PAU)
+   (VP (S-COMP (S (NP-ADV 최근/NNC
+                          4/NNU
+                          년/NNX+간/XSF)
+                  (S (NP-SBJ 자사/NNC+이/PCA)
+                     (VP (NP-OBJ (NP (NP 한국/NPR
+                                         자동차/NNC
+                                         부품/NNC+업체/NNC+의/PAN)
+                                     (NP 제품/NNC))
+                                 (NP 10/NNU
+                                     억/NNU+달러/NNX+어치/XSF+을/PCA))
+                         (VV 구매/NNC+하/XSV+었/EPF+으며/ECS))))
+               (S (NP-SBJ *pro*)
+                  (VP (NP (S (NP-SBJ *pro*)
+                             (VP (VP (NP-OBJ (NP (NP (NP 중소기업/NNC+과/PAD+의/PAN)
+                                                     (NP (NP 기술/NNC+교환/NNC)
+                                                         ,/SCM
+                                                         (NP 품질/NNC+관리/NNC)))
+                                                 (NP 등/NNX+의/PAN))
+                                             (NP 기회/NNC+을/PCA))
+                                     늘리/VV+어/ECS)
+                                 가/VX+을/EAN))
+                          (NP 예정/NNC+이/CO+라/EFN+고/PAD)))))
+       덧붙이/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>최근 4 년간</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>자사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>한국 자동차 부품업체의 제품 10 억달러어치</term>
+	    </Arg>
+	    <Rel>
+	      <term>구매했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

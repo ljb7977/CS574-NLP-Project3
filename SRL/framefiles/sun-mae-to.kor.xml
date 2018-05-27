@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>순매도</lemma>
+    <comment>Frames file for '순매도' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>순매도.01</id>
+      <edef>sell a net amount</edef>
+      <roleset>
+	<role argnum="0" argrole="seller"/>
+	<role argnum="1" argrole="thing sold"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>순매도하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>반면 외국인투자자들은 올들어 한빛은행 주식을 3 천 634 만 2 천주, 외환은행 주식을 1 천 276 만 5 천주나 순매도한 것으로 집계됐다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (ADCP 반면/ADC)
+                   (S (NP-SBJ 외국인/NNC+투자자/NNC+들/XSF+은/PAU)
+                      (VP (ADVP 올들어/ADV)
+                          (VP (VP (NP-OBJ 한빛/NPR+은행/NNC
+                                          주식/NNC+을/PCA)
+                                  (VP (NP-ADV 3/NNU
+                                              천/NNU
+                                              634/NNU
+                                              만/NNU
+                                              2/NNU
+                                              천/NNU+주/NNC)
+                                      (VP *?*)))
+                              ,/SCM
+                              (VP (NP-OBJ 외환/NNC+은행/NNC
+                                          주식/NNC+을/PCA)
+                                  (VP (NP-ADV 1/NNU
+                                              천/NNU
+                                              276/NNU
+                                              만/NNU
+                                              5/NNU
+                                              천/NNU+주/NNC+이나/PAU)
+                                      (VP (VV 순매도/NNC+하/XSV+은/EAN))))))))
+                (NP 것/NNX+으로/PAD))
+       (VV 집계/NNC+되/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>반면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>외국인투자자들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올들어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>외환은행 주식</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>나</f>
+	      <term>1 천 276 만 5 천주</term>
+	    </Arg>
+	    <Rel>
+	      <term>순매도한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

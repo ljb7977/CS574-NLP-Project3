@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일임</lemma>
+    <comment>Frames file for '일임' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>일임.01</id>
+      <edef>entrust</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entrust with"/>
+	<role argnum="2" argrole="thing entrusted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일임받다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>당국의 한 관계자는 창립 당시 임원내정을 일임받은 무라야마 회장이 노나카 자민당 간사장 대리와 소노다 전 관방부장관을 각각 연맹 간사장과 사무국장으로 지목했었다면서 이번 임원회에서 이들이 공식 선임된 것으로 보인다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 당국/NNC+의/PAN)
+           (NP 한/NNU
+               관계자/NNC+은/PAU))
+   (VP (S-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-ADV 창립/NNC
+                                            당시/NNC)
+                                    (VP (NP-OBJ 임원/NNC+내정/NNC+을/PCA)
+                                        (VV 일임/NNC+받/XSV+은/EAN)))))
+                          (NP 무라야마/NPR
+                              회장/NNC+이/PCA))
+                  (VP (NP-OBJ (NP 노나카/NPR
+                                  자민당/NPR
+                                  간사장/NNC
+                                  대리/NNC+과/PCJ)
+                              (NP 소노다/NPR
+                                  전/DAN
+                                  관방부/NNC+장관/NNC+을/PCA))
+                      (VP (ADVP 각각/ADV)
+                          (VP (NP-COMP (NP 연맹/NNC
+                                           간사장/NNC+과/PCJ)
+                                       (NP 사무/NNC+국장/NNC+으로/PAD))
+                              (VV 지목/NNC+하/XSV+었었/EPF+다면서/ECS)))))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-ADV 이번/NNC
+                                          임원회/NNC+에서/PAD)
+                                  (S (NP-SBJ 이/NPN+들/XSF+이/PCA)
+                                     (VP (NP-ADV 공식/NNC)
+                                         (VP (VV 선임/NNC+되/XSV+은/EAN)))))
+                               (NP 것/NNX+으로/PAD))
+                      보이/VV+는다/EFN+고/PAD)))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f></f>
+	      <term>*trace*=무라야마 회장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>창립 당시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>임원내정</term>
+	    </Arg>
+	    <Rel>
+	      <term>일임받은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

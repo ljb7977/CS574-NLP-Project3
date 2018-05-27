@@ -1,0 +1,131 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>택하</lemma>
+    <comment>Frames file for '택하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>택하.01</id>
+      <edef>select</edef>
+      <roleset>
+	<role argnum="0" argrole="selector"/>
+	<role argnum="1" argrole="thing selected"/>
+	<role argnum="2" argrole="selected from"/>
+	<role argnum="3" argrole="selected for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>택하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>중국 당국은 전국 인민대표 대회(전인대)가 열리는 시점을 택해 후에 대한 처형을 서둘러 강행함으로써 부패 척결 의지를 상징적으로 보여 준 것으로 풀이된다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ 중국/NPR
+                           당국/NNC+은/PAU)
+                   (VP (VP (S (NP-SBJ *pro*)
+                              (VP (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ (S (WHNP *op*)
+                                                    (S (NP-SBJ 전국/NNC
+                                                               인민/NNC+대표/NNC
+                                                               대회/NNC
+                                                               (PRN -LRB-/SLQ
+                                                                    전인대/NPR
+                                                                    -RRB-/SRQ)
+                                                               이/PCA)
+                                                       (VP 열리/VV+는/EAN)))
+                                                 (NP 시점/NNC+을/PCA))
+                                         택하/VV+어/ECS))
+                                  (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (VP (NP-COMP 후/NPR+에/PAD)
+                                                        대하/VV+은/EAN)))
+                                              (NP 처형/NNC+을/PCA))
+                                      (VP (S (NP-SBJ *pro*)
+					     (VP (NP-OBJ *pro*)
+						 서두르/VV+어/ECS))
+					  (VP (VV 강행/NNC+하/XSV+음/ENM+으로써/PAD))))))
+                           (VP (NP-OBJ 부패/NNC
+                                       척결/NNC
+                                       의지/NNC+을/PCA)
+                               (VP (NP-ADV 상징/NNC+적/XSF+으로/PAD)
+                                   (VP 보이/VV+어/ECS))))
+                       주/VX+은/EAN))
+                (NP 것/NNX+으로/PAD))
+       (VV 풀이/NNC+되/XSV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>전국 인민대표 대회(전인대)가 열리는 시점</term>
+	    </Arg>
+	    <Rel>
+	      <term>택해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>택하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="obj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이 연구팀이 조사대상 지역을 세테로 택한 것은 지중해 연변에 있어 일조량이 많은 데다 주민들의 생업이 어업과 패류 채취여서 햇빛에 노출되는 시간이 많기 때문이다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 이/DAN
+                      연구/NNC+팀/NNC+이/PCA)
+              (VP (NP-OBJ 조사/NNC+대상/NNC
+                          지역/NNC+을/PCA)
+                  (NP-COMP 세테/NPR+으로/PAD)
+                  택하/VV+은/EAN))
+           (NP 것/NNX+은/PAU))
+   (VP (NP (S-COMP (NP-ADV (S (S (NP-SBJ *pro*)
+                                 (ADJP (NP-ADV 지중해/NPR
+                                               연변/NNC+에/PAD)
+                                       (ADJP 있/VJ+어/ECS)))
+                              (S (NP-SBJ 일조량/NNC+이/PCA)
+                                 (ADJP 많/VJ+은/EAN)))
+			   (NP 데/NNX+에다/PAD))
+                   (S (NP-SBJ 주민/NNC+들/XSF+의/PAN
+                              생업/NNC+이/PCA)
+                      (VP (NP (NP (NP 어업/NNC+과/PCJ)
+                                  (NP 패류/NNC))
+                              (NP 채취/NNC+이/CO+어서/ECS))))
+                   (S (NP-SBJ (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 햇빛/NNC+에/PAD)
+                                     (VP (VV 노출/NNC+되/XSV+는/EAN))))
+                              (NP 시간/NNC+이/PCA))
+                      (ADJP 많/VJ+기/ENM)))
+           (NP 때문/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>이 연구팀</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>을</f>
+	      <term>조사대상 지역</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>로</f>
+	      <term>세테</term>
+	    </Arg>
+	    <Rel>
+	      <term>택한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

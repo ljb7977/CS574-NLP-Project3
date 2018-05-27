@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>완강하</lemma>
+    <comment>Frames file for '완강하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>완강하.01</id>
+      <edef>stubborn</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being stubborn"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>완강하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 탱크들은 작전 중에 적의 완강한 저항에 부딪혔습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+           탱크/NNC+들/XSF+은/PAU)
+   (VP (NP-ADV 작전/NNC
+               중/NNX+에/PAD)
+       (VP (NP-COMP (NP 적/NNC+의/PAN)
+                    (NP (S (WHNP-1 *op*)
+                           (S (NP-SBJ *T*-1)
+                              (ADJP 완강하/VJ+은/EAN)))
+                        (NP 저항/NNC+에/PAD)))
+           부딪히/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=저항</term>
+	    </Arg>
+	    <Rel>
+	      <term>완강한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

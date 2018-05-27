@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>쉬</lemma>
+    <comment>Frames file for '쉬' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>쉬.01</id>
+      <edef>take a break</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>쉬다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>5분간 쉬고 나서 또 계속하자.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV 5/NNU
+                      분/NNX
+                      간/NNX)
+              (VP 쉬/VV+고/ECS))
+          나/VX+어서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 또/ADV)
+          (VP (NP-OBJ *pro*)
+              (VV 계속/NNC+하/XSV+자/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>5분간</term>
+	    </Arg>
+	    <Rel>
+	      <term>쉬고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>나서</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

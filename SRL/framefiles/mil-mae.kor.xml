@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>밀매</lemma>
+    <comment>Frames file for '밀매' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>밀매.01</id>
+      <edef>smuggle</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing smuggled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>밀매하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이라크가 걸프지역에서 밀매하는 석유의 거래규모가 1 개월당 최고 40 만 t(280 만배럴)에 이르러 최고치를 기록했다고 미국 해군 제 5 함대 사령관 윌리엄 무어 제독이 5 일 밝혔다.</text>
+	  <parse>
+(S (S-COMP-2 (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                               (S (NP-SBJ 이라크/NPR+이/PCA)
+                                  (VP (NP-ADV 걸프/NPR+지역/NNC+에서/PAD)
+                                      (VP (NP-OBJ *T*-1)
+                                          (VV 밀매/NNC+하/XSV+는/EAN)))))
+                            (NP 석유/NNC+의/PAN))
+                        (NP 거래/NNC+규모/NNC+이/PCA))
+                (VP (NP-ADV 1/NNU
+                            개월/NNX+당/XSF)
+                    (VP (NP-COMP 최고/NNC
+                                 40/NNU
+                                 만/NNU
+                                 t/NFW
+                                 (PRN -LRB-/SLQ
+                                      (NP 280/NNU
+                                          만/NNU+배럴/NNX)
+                                      -RRB-/SRQ)
+                                 에/PAD)
+                        이르/VV+어/ECS)))
+             (S (NP-SBJ *pro*)
+                (VP (NP-OBJ 최고치/NNC+을/PCA)
+                    (VV 기록/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ (NP 미국/NPR
+                  해군/NNC
+                  제/DAN
+                  5/NNU
+                  함대/NNC
+                  사령관/NNC)
+              (NP 윌리엄/NPR
+                  무어/NPR
+                  제독/NNC+이/PCA))
+      (VP (NP-ADV 5/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-2)
+              밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>이라크</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>걸프지역에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=석유</term>
+	    </Arg>
+	    <Rel>
+	      <term>밀매하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>안장</lemma>
+    <comment>Frames file for '안장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>안장.01</id>
+      <edef>bury</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing buried"/>
+	<role argnum="2" argrole="goal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>안장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이들은 2차대전 당시 레지스탕스의 일원으로 1943 년 도끼로 참수형을 당한 베티 알브레쉬와 여성권리선언의 공동 작성자로 1794 년 기요틴으로 처형당한 올림프 드 구주 등 두여성의 유해를 이곳에 안장할 것을 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPN+들/XSF+은/PAU)
+   (VP (NP-OBJ (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (NP (NP (NP (NP (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (VP (NP-ADV 2/NNU+차/XSF+대전/NNC
+                                                                당시/NNC)
+                                                        (NP-ADV (NP 레지스탕스/NNC+의/PAN)
+                                                                (NP 일원/NNC+으로/PAD))
+                                                        (NP-ADV 1943/NNU
+                                                                년/NNX)
+                                                        (NP-ADV 도끼/NNC+으로/PAD)
+                                                        (VP (NP-OBJ 참수/NNC+형/NNC+을/PCA)
+                                                            당하/VV+은/EAN))))
+                                              (NP 베티/NPR
+                                                  알브레쉬/NPR+과/PCJ))
+                                          (NP (S (WHNP-2 *op*)
+                                                 (S (NP-SBJ *T*-2)
+                                                    (VP (NP-ADV (NP 여성/NNC+권리/NNC+선언/NNC+의/PAN)
+                                                                (NP 공동/NNC
+                                                                    작성자/NNC+으로/PAD))
+                                                        (NP-ADV 1794/NNU
+                                                                년/NNX)
+                                                        (NP-ADV 기요틴/NNC+으로/PAD)
+                                                        (VP (VV 처형/NNC+당하/XSV+은/EAN)))))
+                                              (NP 올림프/NPR
+                                                  드/NPR
+                                                  구주/NPR)))
+                                      (NP 등/NNX))
+                                  (NP 두/NNU+여성/NNC+의/PAN))
+                              (NP 유해/NNC+을/PCA))
+                      (NP-COMP 이곳/NPN+에/PAD)
+                      (VV 안장/NNC+하/XSV+을/EAN)))
+               (NP 것/NNX+을/PCA))
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>2차대전 당시 레지스탕스의 일원으로 1943 년 도끼로 참수형을 당한 베티 알브레쉬와 여성권리선언의 공동 작성자로 1794 년 기요틴으로 처형당한 올림프 드 구주 등 두여성의 유해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>이곳</term>
+	    </Arg>
+	    <Rel>
+	      <term>안장할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

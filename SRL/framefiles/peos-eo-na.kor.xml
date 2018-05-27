@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>벗어나</lemma>
+    <comment>Frames file for '벗어나' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>벗어나.01</id>
+      <edef>get out of</edef>
+      <roleset>
+	<role argnum="0" argrole="entity escaping"/>
+	<role argnum="1" argrole="place or thing escaped"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>벗어나다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>바로 여기쯤에 이 길을 벗어나서 동쪽으로 약 100 미터 가게 되지요.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-ADV 바로/DAN 여기/NPN+쯤/XSF+에/PAD)
+	  (VP (NP-OBJ 이/DAN 길/NNC+을/PCA)
+	      벗어나/VV+서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV 동쪽/NNC+으로/PAD)
+	      (VP (NP-ADV 약/DAN 100/NNU 미터/NNX)
+		  (VP 가/VV+게/EAU)))
+	  되/VX+지요/EFN))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>바로 여기쯤에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 길</term>
+	    </Arg>
+	    <Rel>
+	      <term>벗어나서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

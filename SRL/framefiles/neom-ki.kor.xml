@@ -1,0 +1,161 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>넘기</lemma>
+    <comment>Frames file for '넘기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>넘기.01</id>
+      <edef>transfer</edef>
+      <roleset>
+	<role argnum="0" argrole="sender"/>
+	<role argnum="1" argrole="thing sent"/>
+	<role argnum="2" argrole="sent from"/>
+	<role argnum="3" argrole="sent to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>넘기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>반면 로열 더치나 필립스 등 굵직한 종목을 파리 증시로 넘겨야 하는 암스테르담은 통합에 따른 반사 이익이 상대적으로 약할 것으로 지적됐다.</text>
+	  <parse>
+(S (ADCP 반면/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+		 (S (NP-SBJ *T*-1)
+		    (VP (VP (NP-OBJ (NP (NP 로열/NPR
+						더치/NPR+이나/PCJ)
+					(NP 필립스/NPR)
+					(NP 등/NNX))
+				    (NP (S (WHNP-2 *op*)
+					   (S (NP-SBJ *T*-2)
+					      (ADJP 굵직하/VJ+은/EAN)))
+					(NP 종목/NNC+을/PCA)))
+			    (NP-COMP 파리/NPR
+					 증시/NNC+으로/PAD)
+			    넘기/VV+어야/ECS)
+			하/VX+는/EAN)))
+	      (NP 암스테르담/NPR+은/PAU))
+      (VP (NP-COMP (S (NP-SBJ (S (WHNP-3 *op*)
+				 (S (NP-SBJ *T*-3)
+				    (VP (NP-COMP 통합/NNC+에/PAD)
+					따르/VV+은/EAN)))
+			      (NP 반사/NNC
+				      이익/NNC+이/PCA))
+		      (ADJP (NP-ADV 상대/NNC+적/XSF+으로/PAD)
+			    (ADJP 약하/VJ+을/EAN)))
+		   (NP 것/NNX+으로/PAD))
+	  (VV 지적/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=암스테르담</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>로열 더치나 필립스 등 굵직한 종목</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>파리 증시</term>
+	    </Arg>
+	    <Rel>
+	      <term>넘겨야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>하는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>참아 넘기</lemma>
+    <comment>Frames file for '참아 넘기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>넘기.02</id>
+      <edef>tolerate-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="tolerater"/>
+	<role argnum="1" argrole="thing tolerated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>참아 넘기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한은 미국이 적군파 추방을 조건으로 북한을 테러지원국 명단에서 빼는 문제를 북한과 논의하고 있다는 보도와 관련해 "이는 참아 넘길 수 없는 조작이며 폭력주의를 반대하고 인권을 존중하는 조선민주주의인민공화국에 대한 모욕"이라면서 이같이 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 북한/NPR+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (NP-SBJ 미국/NPR+이/PCA)
+                          (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                             (VP (NP-ADV (NP-OBJ 적군파/NPR
+                                                                 추방/NNC+을/PCA)
+                                                         조건/NNC+으로/PAD)
+                                                 (VP (NP-OBJ 북한/NPR+을/PCA)
+                                                     (NP-COMP 테러/NNC+지원/NNC+국/XSF
+                                                              명단/NNC+에서/PAD)
+                                                     빼/VV+는/EAN)))
+                                          (NP 문제/NNC+을/PCA))
+                                  (NP-COMP 북한/NPR+과/PAD)
+                                  (VV 논의/NNC+하/XSV+고/ECS))
+                              있/VX+다는/EAN))
+                       (NP 보도/NNC+과/PAD))
+              (VV 관련/NNC+하/XSV+어/ECS)))
+       (S "/SLQ
+          (S (NP-SBJ 이/NPN+은/PAU)
+             (VP (NP (S (WHNP-1 *op*)
+                        (S (NP-SBJ *pro*)
+                           (VP (VP (NP-OBJ *T*-1)
+                                   (CV 참/VV+어/ECS
+				       넘기/VV+을/EAN))
+                               (VX 수/NNX
+                                   없/VJ+는/EAN))))
+                     (NP 조작/NNC+이/CO+으며/ECS))))
+          (S (NP-SBJ *pro*)
+             (VP (NP (S (WHNP-3 *op*)
+                        (S (NP-SBJ *T*-3)
+                           (VP (NP-COMP (S (WHNP-2 *op*)
+                                           (S (NP-SBJ *T*-2)
+                                              (VP (VP (NP-OBJ 폭력/NNC+주의/NNC+을/PCA)
+                                                      (VV 반대/NNC+하/XSV+고/ECS))
+                                                  (VP (NP-OBJ 인권/NNC+을/PCA)
+                                                      (VV 존중/NNC+하/XSV+는/EAN)))))
+                                        (NP 조선/NPR+민주주의/NNC+인민공화국/NNC+에/PAD))
+                               대하/VV+은/EAN)))
+                     (NP 모욕/NNC))))
+          "/SRQ
+          이/CO+라면서/ECS)
+       (ADVP 이같이/ADV)
+       (VP (NP-OBJ *pro*)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=조작</term>
+	    </Arg>
+	    <Rel>
+	      <term>참아 넘길</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

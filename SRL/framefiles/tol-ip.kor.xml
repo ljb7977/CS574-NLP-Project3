@@ -1,0 +1,97 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌입</lemma>
+    <comment>Frames file for '돌입' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>돌입.01</id>
+      <edef>rush</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="path or action"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌입하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>방어 지원: 인민군 포병 부대는 피지원 지상군이 방어 작전을 개시할 때 이 단계로 돌입한다.</text>
+	  <parse>
+(S (NP 방어/NNC
+       지원/NNC)
+   :/SSY
+   (S (NP-SBJ 인민군/NNC
+              포병/NNC
+              부대/NNC+은/PAU)
+      (VP (NP-ADV (S (WHNP *op*)
+                     (S (NP-SBJ 피지원/NNC
+                                지상군/NNC+이/PCA)
+                        (VP (NP-OBJ 방어/NNC
+                                    작전/NNC+을/PCA)
+                            (VV 개시/NNC+하/XSV+을/EAN))))
+                  (NP 때/NNC))
+          (VP (NP-COMP 이/DAN
+                       단계/NNC+으로/PAD)
+              (VV 돌입/NNC+하/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>방어 지원</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>인민군 포병 부대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>피지원 지상군이 방어 작전을 개시할 때</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>이 단계</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌입한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>우리 구분대는 지정된 시간에 적 진지에 돌입했습니다.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN
+           구분대/NNC+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (VV 지정/NNC+되/XSV+은/EAN))))
+               (NP 시간/NNC+에/PAD))
+       (VP (NP-COMP 적/NNC
+                    진지/NNC+에/PAD)
+           (VV 돌입/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>우리 구분대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지정된 시간에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>적 진지</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌입했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

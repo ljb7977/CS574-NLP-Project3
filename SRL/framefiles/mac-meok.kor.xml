@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>맞먹</lemma>
+    <comment>Frames file for '맞먹' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>맞먹.01</id>
+      <edef>equal</edef>
+      <roleset>
+	<role argnum="1" argrole="focus of equation"/>
+	<role argnum="2" argrole="other side of equation"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>맞먹다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>신문은 국내총생산(GDP) 성장률을 당초 연평균 2 퍼센트로 상정한 이 예측에 따라 16-20 곳의 원전을 더 건설할 계획이었으나 현재의 경기상황을 감안할 때 2010 회계연도에 에너지 수요가 원유 4 억과 맞먹는 량에 이를 것이라는 예측은 너무 높게 잡았다고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 신문/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ 국내/NNC+총생산/NNC
+                                             (PRN -LRB-/SLQ
+                                                  (NP GDP/NFW)
+                                                  -RRB-/SRQ)
+                                             성장률/NNC+을/PCA)
+                                     (VP (NP-ADV 당초/NNC)
+                                         (VP (NP-COMP 연/XPF+평균/NNC
+                                                      2/NNU
+                                                      퍼센트/NNX+으로/PAD)
+                                             (VV 상정/NNC+하/XSV+은/EAN)))))
+                              (NP 이/DAN
+                                  예측/NNC+에/PAD))
+                     따르/VV+어/ECS))
+              (VP (NP (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (NP 16-20/NNU
+                                         곳/NNX+의/PAN)
+                                     (NP 원전/NNC+을/PCA))
+                             (VP (ADVP 더/ADV)
+                                 (VP (VV 건설/NNC+하/XSV+을/EAN)))))
+                      (NP 계획/NNC+이/CO+었/EPF+으나/ECS)))))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-ADV (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ (NP 현재/NNC+의/PAN)
+                                              (NP 경기/NNC+상황/NNC+을/PCA))
+                                      (VV 감안/NNC+하/XSV+을/EAN)))
+                               (NP 때/NNC))
+                       (VP (NP-OBJ (S (NP-ADV 2010/NNU
+                                              회계/NNC+연도/NNC+에/PAD)
+                                      (S (NP-SBJ 에너지/NNC
+                                                 수요/NNC+이/PCA)
+                                         (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                                             (S (NP-SBJ *T*-1)
+                                                                (VP (NP-COMP 원유/NNC
+                                                                             4/NNU
+                                                                             억/NNU+과/PAD)
+                                                                    맞먹/VV+는/EAN)))
+                                                          (NP 량/NNC+에/PAD))
+                                                 이르/VV+을/EAN)
+                                             (VX 것/NNX+이/CO+라는/EAN))))
+                                   (NP 예측/NNC+은/PAU))
+                           (S-COMP (NP-SBJ *pro*)
+                                   (ADJP (ADVP 너무/ADV)
+                                         (ADJP 높/VJ+게/ECS)))
+                           잡/VV+었/EPF+다/EFN+고/PAD)))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=량</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>원유 4 억</term>
+	    </Arg>
+	    <Rel>
+	      <term>맞먹는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

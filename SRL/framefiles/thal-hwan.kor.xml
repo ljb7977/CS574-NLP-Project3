@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탈환</lemma>
+    <comment>Frames file for '탈환' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>탈환.01</id>
+      <edef>retake</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing gotten"/>
+	<role argnum="2" argrole="gotten from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탈환하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>17 보병 연대는 동두천의 일부를 이미 탈환했다.</text>
+	  <parse>
+(S (NP-SBJ 17/NNU
+           보병/NNC
+           연대/NNC+은/PAU)
+   (VP (NP-OBJ (NP 동두천/NPR+의/PAN)
+               (NP 일부/NNC+을/PCA))
+       (VP (ADVP 이미/ADV)
+           (VP (VV 탈환/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>17 보병 연대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>동두천의 일부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이미</term>
+	    </Arg>
+	    <Rel>
+	      <term>탈환했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

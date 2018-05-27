@@ -1,0 +1,98 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>연설</lemma>
+    <comment>Frames file for '연설' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>연설.01</id>
+      <edef>speak</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="speak to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>연설하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>브래들리 전 의원은 이날 밤 9 시 30 분(한국시간 8 일 오전 11 시 30 분께) 뉴욕에서 지지자들에게 연설하는 가운데 "방금 앨 고어 부통령에게 승리를 축하한다고 전화했다"고 말하고 8 일 중으로 전국의 선거운동 관계자들과 "앞으로의 진로를 협의할 계획"이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 브래들리/NPR
+           전/DAN
+           의원/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-ADV 이날/NNC
+                              밤/NNC
+                              9/NNU
+                              시/NNX
+                              30/NNU
+                              분/NNX
+                              (PRN -LRB-/SLQ
+                                   (NP (NP 한국/NPR+시간/NNC)
+                                       (NP 8/NNU
+                                           일/NNX
+                                           오전/NNC
+                                           11/NNU
+                                           시/NNX
+                                           30/NNU
+                                           분/NNX+께/XSF))
+                                   -RRB-/SRQ))
+                      (NP-ADV 뉴욕/NPR+에서/PAD)
+                      (VP (NP-COMP 지지자/NNC+들/XSF+에게/PAD)
+                          (VV 연설/NNC+하/XSV+는/EAN))))
+               (NP 가운데/NNC))
+       (VP (VP (S-COMP "/SLQ
+                       (NP-SBJ *pro*)
+                       (VP (ADVP 방금/ADV)
+                           (VP (NP-COMP 앨/NPR
+                                        고어/NPR
+                                        부통령/NNC+에게/PAD)
+                               (S-COMP (NP-SBJ *pro*)
+                                       (VP (NP-OBJ 승리/NNC+을/PCA)
+                                           (VV 축하/NNC+하/XSV+는다/EFN+고/PAD)))
+                               (VV 전화/NNC+하/XSV+었/EPF+다/EFN)))
+                       "/SRQ
+                       고/PAD)
+               말하/VV+고/ECS)
+           (VP (NP-COMP (S (NP-SBJ *pro*)
+                           (VP (NP-ADV 8/NNU
+                                       일/NNX
+                                       중/NNX+으로/PAD)
+                               (VP (NP-COMP (NP 전국/NNC+의/PAN)
+                                            (NP 선거/NNC+운동/NNC
+                                                관계자/NNC+들/XSF+과/PAD))
+                                   "/SLQ
+                                   (NP-OBJ (NP 앞/NNC+으로/PAD+의/PAN)
+                                           (NP 진로/NNC+을/PCA))
+                                   (VV 협의/NNC+하/XSV+을/EAN))))
+                        (NP 계획/NNC
+                            "/SRQ
+                            이라고/PAD))
+               덧붙이/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날 밤 9 시 30 분(한국시간 8 일 오전 11 시 30 분께)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>뉴욕에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에게</f>
+	      <term>지지자</term>
+	    </Arg>
+	    <Rel>
+	      <term>연설하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

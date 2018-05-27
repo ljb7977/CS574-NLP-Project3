@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>확실하</lemma>
+    <comment>Frames file for '확실하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>확실하.01</id>
+      <edef>sure</edef>
+      <roleset>
+	<role argnum="1" argrole="event"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>확실하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>오늘 아침 교전에서 1 소대장 박 중위 동지가 전사한 건 확실합니다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-ADV 오늘/NNC
+                      아침/NNC
+                      교전/NNC+에서/PAD)
+              (S (NP-SBJ (NP 1/NNU
+                             소대장/NNC)
+                         (NP 박/NPR
+                             중위/NNC)
+                         (NP 동지/NNC+이/PCA))
+                 (VP (VV 전사/NNC+하/XSV+은/EAN))))
+           (NP 것/NNX+은/PAU))
+   (ADJP 확실하/VJ+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>오늘 아침 교전에서 1 소대장 박 중위 동지가 전사한 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>확실합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

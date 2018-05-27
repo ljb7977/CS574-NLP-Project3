@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>빼앗</lemma>
+    <comment>Frames file for '빼앗' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>빼앗.01</id>
+      <edef>take by force</edef>
+      <roleset>
+	<role argnum="0" argrole="taker"/>
+	<role argnum="1" argrole="thing taken"/>
+	<role argnum="2" argrole="taken from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>빼앗다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 기업의 이익을 대변하고 있는 경제부도 외국인 전문인력의 유입은 독일인의 일자리를 빼앗는 것이 아니라 오히려 새로운 일자리를 창출하는 효과가 있을 것이라고 주장하고 나서 적어도 한시적으로는 외국인 전문인력이 독일내 기업에 고용될 기회가 주어질 것으로 예상된다.</text>
+	  <parse>
+(S (S (ADVP 또/ADV)
+      (S (NP-SBJ (S (WHNP-1 *op*)
+		    (S (NP-SBJ *T*-1)
+		       (VP (VP (NP-OBJ (NP 기업/NNC+의/PAN)
+				       (NP 이익/NNC+을/PCA))
+			       (VV 대변/NNC+하/XSV+고/ECS))
+			   있/VX+는/EAN)))
+		 (NP 경제부/NNC+도/PAU))
+	 (VP (S-COMP (NP-SBJ *pro*)
+		     (VP (S-COMP (S (NP-SBJ (NP 외국인/NNC
+						      전문/NNC+인력/NNC+의/PAN)
+					    (NP 유입/NNC+은/PAU))
+				    (ADJP (NP-COMP (S (NP-SBJ *pro*)
+						      (VP (NP-OBJ (NP 독일인/NNC+의/PAN)
+								  (NP 일자리/NNC+을/PCA))
+							  빼앗/VV+는/EAN))
+						   (NP 것/NNX+이/PCA))
+					  아니/VJ+라/EFN))
+				 (S (ADVP 오히려/ADV)
+				    (S (NP-SBJ (S (NP-SBJ *pro*)
+						  (VP (NP-OBJ (S (WHNP-2 *op*)
+								 (S (NP-SBJ *T*-2)
+								    (ADJP 새롭/VJ+은/EAN)))
+							      (NP 일자리/NNC+을/PCA))
+						      (VV 창출/NNC+하/XSV+는/EAN)))
+					       (NP 효과/NNC+이/PCA))
+				       (VP (ADJP 있/VJ+을/EAN)
+					   (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+			 (VV 주장/NNC+하/XSV+고/ECS)))
+	     나서/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (ADVP 적어도/ADV)
+		      (NP-ADV 한시/NNC+적/XSF+으로/PAD+은/PAU)
+		      (S (NP-SBJ (S (NP-SBJ 외국인/NNC
+						  전문/NNC+인력/NNC+이/PCA)
+				    (VP (NP-COMP 독일/NPR+내/NNX
+						     기업/NNC+에/PAD)
+					(VV 고용/NNC+되/XSV+을/EAN)))
+				 (NP 기회/NNC+이/PCA))
+			 (VP (VV 주/VV+어지/XSV+을/EAN))))
+		   (NP 것/NNX+으로/PAD))
+	  (VV 예상/NNC+되/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>독일인의 일자리</term>
+	    </Arg>
+	    <Rel>
+	      <term>빼앗는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

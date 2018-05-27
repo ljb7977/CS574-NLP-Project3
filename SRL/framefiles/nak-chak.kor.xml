@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>낙착</lemma>
+    <comment>Frames file for '낙착' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>낙착.01</id>
+      <edef>come to an end</edef>
+      <roleset>
+	<role argnum="1" argrole="thing coming to an end"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>낙착되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>당시 회원국들이 후임 사무총장 선출에 합의하지 못해 결국 두 사람이 순서대로 임기를 나누는 것으로 낙착됐다.</text>
+	  <parse>
+(S (S (NP-ADV 당시/NNC)
+      (S (NP-SBJ 회원국/NNC+들/XSF+이/PCA)
+         (VP (VP (NP-COMP 후임/NNC
+                          사무총장/NNC
+                          선출/NNC+에/PAD)
+                 (VV 합의/NNC+하/XSV+지/ECS))
+             못하/VX+어/ECS)))
+   (ADVP 결국/ADV)
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 두/NNU
+                              사람/NNC+이/PCA)
+                      (VP (NP-ADV 순서/NNC+대로/PAU)
+                          (VP (NP-OBJ 임기/NNC+을/PCA)
+                              나누/VV+는/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          (VV 낙착/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>당시 회원국들이 후임 사무총장 선출에 합의하지 못해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>결국</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>두 사람이 순서대로 임기를 나누는 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>낙착됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

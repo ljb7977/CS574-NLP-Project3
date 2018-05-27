@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>원활</lemma>
+    <comment>Frames file for '원활' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>원활.01</id>
+      <edef>smooth</edef>
+      <roleset>
+	<role argnum="1" argrole="thing smooth"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>원활하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>합수반은 이에 따라 원활한 수사진행을 위해 해외에 체류 중인 조사대상자에 대해서는 가족들을 통해 가급적 조기 귀국해 줄 것으로 종용하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 합수반/NNC+은/PAU)
+   (VP (VP (S (NP-SBJ *pro*)
+              (VP (NP-COMP 이/NPN+에/PAD)
+                  따르/VV+어/ECS))
+           (S (NP-SBJ *pro*)
+              (VP (NP-OBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (ADJP (VJ 원활/NNC+하/XSJ+은/EAN))))
+                          (NP 수사/NNC+진행/NNC+을/PCA))
+                  위하/VV+어/ECS))
+           (S (NP-SBJ *pro*)
+              (VP (NP-COMP (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (VP (VP (NP-COMP 해외/NNC+에/PAD)
+                                         (VV 체류/NNC))
+                                     (VX 중/NNX+이/CO+은/EAN))))
+                           (NP 조사/NNC+대상자/NNC+에/PAD))
+                  대하/VV+어서/ECS+은/PAU))
+           (S (NP-SBJ *pro*)
+              (VP (NP-OBJ 가족/NNC+들/XSF+을/PCA)
+                  통하/VV+어/ECS))
+           (VP (NP-COMP (S (NP-SBJ *pro*)
+                           (VP (VP (ADVP 가급적/ADV)
+                                   (NP-ADV 조기/NNC)
+                                   (VP (VV 귀국/NNC+하/XSV+어/ECS)))
+                               주/VX+을/EAN))
+                        (NP 것/NNX+으로/PAD))
+               (VV 종용/NNC+하/XSV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=수사진행</term>
+	    </Arg>
+	    <Rel>
+	      <term>원활한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

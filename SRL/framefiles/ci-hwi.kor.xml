@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지휘</lemma>
+    <comment>Frames file for '지휘' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>지휘.01</id>
+      <edef>control</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="project or group controlled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지휘하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>사단장이 때로는 전투를 직접 지휘한다.</text>
+	  <parse>
+(S (NP-SBJ 사단장/NNC+이/PCA)
+   (VP (ADVP 때로/ADV+은/PAU)
+       (VP (NP-OBJ 전투/NNC+을/PCA)
+           (VP (ADVP 직접/ADV)
+               (VP (VV 지휘/NNC+하/XSV+는다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>사단장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>때로는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>전투</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>직접</term>
+	    </Arg>
+	    <Rel>
+	      <term>지휘한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>우선 1 소대 부소대장이 자기 소대를 즉시 지휘하게 되겠지요.</text>
+	  <parse>
+(S (ADVP 우선/ADV)
+   (S (NP-SBJ (NP 1/NNU
+                  소대/NNC)
+              (NP 부소대장/NNC+이/PCA))
+      (VP (VP (NP-OBJ 자기/NPN
+                      소대/NNC+을/PCA)
+              (VP (ADVP 즉시/ADV)
+                  (VP (VV 지휘/NNC+하/XSV+게/ECS))))
+          되/VX+겠/EPF+지요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>우선</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>1 소대 부소대장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>자기 소대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>즉시</term>
+	    </Arg>
+	    <Rel>
+	      <term>지휘하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>되겠지요</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

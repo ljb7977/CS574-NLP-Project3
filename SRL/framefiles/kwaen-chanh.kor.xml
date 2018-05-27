@@ -1,0 +1,33 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>±¦Âú</lemma>
+    <comment>Frames file for '±¦Âú' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>±¦Âú.01</id>
+      <edef>all right</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being all right"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>±¦Âú´Ù</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>±¦Âú½À´Ï´Ù.</text>
+	  <parse>
+(S (NP-SBJ *pro*) 
+   (ADJP ±¦Âú/VJ+½À´Ï´Ù/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>±¦Âú½À´Ï´Ù</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

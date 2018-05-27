@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>거르</lemma>
+    <comment>Frames file for '거르' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>거르.01</id>
+      <edef>filter</edef>
+      <roleset>
+	<role argnum="0" argrole="filterer, agent or instrument"/>
+	<role argnum="1" argrole="thing removed"/>
+	<role argnum="2" argrole="source, removed-from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>거르다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>PAZ 장치는 공기에서 유독 화학 가스를 걸러 낼 수 없을 것입니다.</text>
+	  <parse>
+(S (NP-SBJ PAZ/NFW
+           장치/NNC+은/PAU)
+   (VP (VP (VP (VP (NP-COMP 공기/NNC+에서/PAD)
+                   (NP-OBJ 유독/NNC
+                           화학/NNC
+                           가스/NNC+을/PCA)
+                   거르/VV+어/ECS)
+               내/VX+을/EAN)
+           (VX 수/NNX
+               없/VJ+을/EAN))
+       (VX 것/NNX+이/CO+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>PAZ 장치</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>공기</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>유독 화학 가스</term>
+	    </Arg>
+	    <Rel>
+	      <term>걸러</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>낼</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것입니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

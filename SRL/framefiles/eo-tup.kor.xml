@@ -1,0 +1,96 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>어둡</lemma>
+    <comment>Frames file for '어둡' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>어둡.01</id>
+      <edef>dark</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being dark"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>어둡다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 크리스티언 노예르 유럽중앙은행 부총재는 8 일 현재 유로화 가치는 유럽의 부진한 경제실적과 어두운 경제 전망이 아닌 호조를 보이고 있는 미국의 경제상황을 반영하고 있다고 밝혔다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ (NP 크리스티언/NPR
+                  노예르/NPR)
+              (NP 유럽/NPR+중앙/NNC+은행/NNC
+                  부총재/NNC+은/PAU))
+      (VP (S-COMP (NP-SBJ (NP (NP 8/NNU
+                                  일/NNX)
+                              (NP 현재/NNC))
+                          (NP 유로화/NNC
+                              가치/NNC+은/PAU))
+                  (VP (VP (NP-OBJ (S (WHNP-3 *op*)
+                                     (S (NP-SBJ *T*-3)
+                                        (ADJP (NP-COMP (NP 유럽/NPR+의/PAN)
+                                                       (NP (NP (S (WHNP-1 *op*)
+                                                                  (S (NP-SBJ *T*-1)
+                                                                     (ADJP (VJ 부진/NNC+하/XSJ+은/EAN))))
+                                                               (NP 경제/NNC+실적/NNC+과/PCJ))
+                                                           (NP (S (WHNP-2 *op*)
+                                                                  (S (NP-SBJ *T*-2)
+                                                                     (ADJP 어둡/VJ+은/EAN)))
+                                                               (NP 경제/NNC
+                                                                   전망/NNC+이/PCA))))
+                                              아니/VJ+은/EAN)))
+                                  (NP (S (WHNP-4 *op*)
+                                         (S (NP-SBJ *T*-4)
+                                            (VP (VP (NP-OBJ 호조/NNC+을/PCA)
+                                                    보이/VV+고/ECS)
+                                                있/VX+는/EAN)))
+                                      (NP (NP 미국/NPR+의/PAN)
+                                          (NP 경제/NNC+상황/NNC+을/PCA))))
+                          (VV 반영/NNC+하/XSV+고/ECS))
+                      있/VX+다/EFN+고/PAD))
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=경제 전망</term>
+	    </Arg>
+	    <Rel>
+	      <term>어두운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>어두워지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보통 어두워진 다음에나 시정이 감소될 때 합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (ADVP 보통/ADV)
+       (NP-ADV (NP (S (NP-SBJ *pro*)
+                      (VP (VV 어둡/VJ+어지/XSV+은/EAN)))
+                   (NP 다음/NNC+에/PAD+이나/PCJ))
+               (NP (S (WHNP *op*)
+                      (S (NP-SBJ 시정/NNC+이/PCA)
+                         (VP (VV 감소/NNC+되/XSV+을/EAN))))
+                   (NP 때/NNC)))
+       (VP (NP-OBJ *pro*)
+           하/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>어두워진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

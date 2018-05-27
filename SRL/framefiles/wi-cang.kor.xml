@@ -1,0 +1,102 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>위장</lemma>
+    <comment>Frames file for '위장' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>위장.01</id>
+      <edef>camouflage</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing disguised"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>위장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인발선은 철조망에 위장해 놓기가 아주 쉽죠.</text>
+	  <parse>
+(S (S-SBJ (NP-SBJ *pro*)
+          (VP (VP (NP-OBJ 인발선/NNC+은/PAU)
+                  (VP (NP-ADV 철조망/NNC+에/PAD)
+                      (VP (VV 위장/NNC+하/XSV+어/ECS))))
+              놓/VX+기/ENM+이/PCA))
+   (ADJP (ADVP 아주/ADV)
+         (ADJP 쉽/VJ+죠/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>인발선</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>철조망에</term>
+	    </Arg>
+	    <Rel>
+	      <term>위장해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>놓기가</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>위장되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>각 분대 진지는 철저히 위장되고 분대 정면에서 움직이는 모든 목표에 각종 사격을 가할 수 있는 장소라야만 합니다.</text>
+	  <parse>
+(S (NP-SBJ 각/DAN
+           분대/NNC
+           진지/NNC+은/PAU)
+   (VP (VP (NP (S (WHNP-2 *op*)
+                  (S (S (NP-SBJ *T*-2)
+                        (VP (ADVP 철저히/ADV)
+                            (VP (VV 위장/NNC+되/XSV+고/ECS))))
+                     (S (NP-SBJ *pro*)
+                        (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (NP-ADV 분대/NNC
+                                                           정면/NNC+에서/PAD)
+                                                   (VP 움직이/VV+는/EAN))))
+                                         (NP 모든/DAN
+                                             목표/NNC+에/PAD))
+                                (NP-OBJ 각종/NNC
+                                        사격/NNC+을/PCA)
+                                가하/VV+을/EAN)
+                            (VX 수/NNX
+                                있/VJ+는/EAN)))))
+               (NP 장소/NNC+이/CO+라야/ECS+만/PAU)))
+       하/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=장소</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>철저히</term>
+	    </Arg>
+	    <Rel>
+	      <term>위장되고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

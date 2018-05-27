@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뻗치</lemma>
+    <comment>Frames file for '뻗치' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>뻗치.01</id>
+      <edef>extend</edef>
+      <roleset>
+	<role argnum="1" argrole="thing getting longer"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뻗치다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이 네모꼴 부호는 좌표 CS061596 지점에서 CS065601 지점까지 뻗친다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           네모꼴/NNC
+           부호/NNC+은/PAU)
+   (VP (NP-COMP 좌표/NNC
+                CS061596/NFW
+                지점/NNC+에서/PAD)
+       (NP-COMP CS065601/NFW
+                지점/NNC+까지/PAU)
+       뻗치/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>이 네모꼴 부호</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>좌표 CS061596 지점</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>까지</f>
+	      <term>CS065601 지점</term>
+	    </Arg>
+	    <Rel>
+	      <term>뻗친다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

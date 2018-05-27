@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>연하</lemma>
+    <comment>Frames file for '연하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>연하.01</id>
+      <edef>be along</edef>
+      <roleset>
+	<role argnum="1" argrole="one thing"/>
+	<role argnum="2" argrole="other thing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>연하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러고는 대대의 일부가 전선에 연한 적과 교전하는 동안에 주력 부대는 적을 포위하고 측방과 후방에서 공격합니다.</text>
+	  <parse>
+(S (ADCP 그러고는/ADC)
+   (NP-ADV (S (NP-SBJ (NP 대대/NNC+의/PAN)
+                      (NP 일부/NNC+이/PCA))
+              (VP (NP-COMP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP-COMP 전선/NNC+에/PAD)
+                                     연하/VV+은/EAN)))
+                           (NP 적/NNC+과/PAD))
+                  (VV 교전/NNC+하/XSV+는/EAN)))
+           (NP 동안/NNX+에/PAD))
+   (S (NP-SBJ 주력/NNC
+              부대/NNC+은/PAU)
+      (VP (VP (NP-OBJ 적/NNC+을/PCA)
+              (VV 포위/NNC+하/XSV+고/ECS))
+          (VP (NP-ADV (NP 측방/NNC+과/PCJ)
+                      (NP 후방/NNC+에서/PAD))
+              (VP (NP-OBJ *pro*)
+                  (VV 공격/NNC+하/XSV+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=적</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>전선</term>
+	    </Arg>
+	    <Rel>
+	      <term>연한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

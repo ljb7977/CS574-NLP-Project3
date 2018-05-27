@@ -1,0 +1,176 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>축소</lemma>
+    <comment>Frames file for '축소' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>축소.01</id>
+      <edef>curtail</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing curtailed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>축소하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>니혼게이자이 신문은 정부가 원전건설 계획을 축소하면서 2010 회계연도까지의 에너지 수요 증가율 예측도 하향조정할 계획이라고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 니혼게이자이/NPR
+           신문/NNC+은/PAU)
+   (VP (NP-COMP (S (S (NP-SBJ 정부/NNC+이/PCA)
+                      (VP (NP-OBJ 원전/NNC+건설/NNC
+                                  계획/NNC+을/PCA)
+                          (VV 축소/NNC+하/XSV+으면서/ECS)))
+                   (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ (NP (NP 2010/NNU
+                                          회계/NNC+연도/NNC+까지/PAU+의/PAN)
+                                      (NP 에너지/NNC
+                                          수요/NNC
+                                          증가율/NNC))
+                                  (NP 예측/NNC+도/PAU))
+                          (VV 하향조정/NNC+하/XSV+을/EAN))))
+                (NP 계획/NNC+이라고/PAD))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>정부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>원전건설 계획</term>
+	    </Arg>
+	    <Rel>
+	      <term>축소하면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>축소되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대형우량주가 강세를 보인 반면 개별종목군은 상승폭이 크게 축소됐는데 삼애실업에 인수된 뒤 정보통신 분야 진출이 기대되는 레이디가구가 3 일째 상한가를 기록했고 삼보컴퓨터로의 피인수설이 나도는 오리온전기도 상한가로 마쳤다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 대형/NNC+우량주/NNC+이/PCA)
+              (VP (NP-OBJ 강세/NNC+을/PCA)
+                  보이/VV+은/EAN))
+           (NP 반면/NNC))
+   (S (NP-SBJ 개별/NNC+종목/NNC+군/XSF+은/PAU)
+      (S (NP-SBJ 상승폭/NNC+이/PCA)
+         (VP (ADVP (ADV 크/VJ+게/ECS))
+             (VP (VV 축소/NNC+되/XSV+었/EPF+는데/ECS)))))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (S (NP-ADV (S (NP-SBJ *pro*)
+                                  (VP (NP-COMP 삼애/NPR+실업/NNC+에/PAD)
+                                      (VV 인수/NNC+되/XSV+은/EAN)))
+                               (NP 뒤/NNC))
+                       (S (NP-SBJ 정보/NNC+통신/NNC
+                                  분야/NNC
+                                  진출/NNC+이/PCA)
+                          (VP (VV 기대/NNC+되/XSV+는/EAN))))))
+              (NP 레이디/NPR+가구/NNC+이/PCA))
+      (VP (NP-ADV 3/NNU
+                  일/NNX+째/XSF)
+          (VP (NP-OBJ 상한가/NNC+을/PCA)
+              (VV 기록/NNC+하/XSV+었/EPF+고/ECS))))
+   (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (S (NP-SBJ (NP 삼보/NPR+컴퓨터/NNC+으로/PAD+의/PAN)
+                               (NP 피/XPF+인수/NNC+설/XSF+이/PCA))
+                       (VP 나돌/VV+는/EAN))))
+              (NP 오리온/NPR+전기/NNC+도/PAU))
+      (VP (NP-ADV 상한가/NNC+으로/PAD)
+          (VP 마치/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>대형우량주가 강세를 보인 반면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>개별종목군</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>상승폭</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>크게</term>
+	    </Arg>
+	    <Rel>
+	      <term>축소됐는데</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>축소시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>최 변호사는 피해자 대표의 조사과정 참여에 반대하지 않는 한국과 달리 미국은 아무런 반응을 보이지 않고 있다며 미국 정부가 사건의 진상을 축소시키려는 의도를 갖고 있다는 의혹을 강력히 제기했다.</text>
+	  <parse>
+(S (NP-SBJ 최/NPR
+           변호사/NNC+은/PAU)
+   (VP (S (ADVP (NP-COMP (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (VP (VP (NP-COMP (NP 피해자/NNC
+                                                    대표/NNC+의/PAN)
+                                                (NP 조사/NNC+과정/NNC
+                                                    참여/NNC+에/PAD))
+                                       (VV 반대/NNC+하/XSV+지/ECS))
+                                   않/VX+는/EAN)))
+                         (NP 한국/NPR+과/PAD))
+                달리/ADV)
+          (S (NP-SBJ 미국/NPR+은/PAU)
+             (VP (VP (VP (NP-OBJ 아무런/DAN
+                                 반응/NNC+을/PCA)
+                         보이/VV+지/ECS)
+                     않/VX+고/ECS)
+                 있/VX+다며/ECS)))
+       (VP (NP-OBJ (S (NP-SBJ 미국/NPR
+                              정부/NNC+이/PCA)
+                      (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                         (VP (NP-OBJ (NP 사건/NNC+의/PAN)
+                                                     (NP 진상/NNC+을/PCA))
+                                             (VV 축소/NNC+시키/XSV+으려는/EAN)))
+                                      (NP 의도/NNC+을/PCA))
+                              갖/VV+고/ECS)
+                          있/VX+다는/EAN))
+                   (NP 의혹/NNC+을/PCA))
+           (VP (ADVP 강력히/ADV)
+               (VP (VV 제기/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>사건의 진상</term>
+	    </Arg>
+	    <Rel>
+	      <term>축소시키려는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,117 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조정</lemma>
+    <comment>Frames file for '조정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>조정.01</id>
+      <edef>adjust</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing adjusted"/>
+	<role argnum="2" argrole="adjusted to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조정하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>탱크 대대에 대한 화력 지원은 사단에서 공급하지만 보통 연대장이 이를 조정합니다.</text>
+	  <parse>
+(S (S (NP-OBJ-2 (S (WHNP-1 *op*)
+                   (S (NP-SBJ *T*-1)
+                      (VP (NP-COMP 탱크/NNC
+                                   대대/NNC+에/PAD)
+                          대하/VV+은/EAN)))
+                (NP 화력/NNC
+                    지원/NNC+은/PAU))
+      (S (NP-SBJ 사단/NNC+에서/PCA)
+         (VP (NP-OBJ *T*-2)
+             (VV 공급/NNC+하/XSV+지만/ECS))))
+   (S (ADVP 보통/ADV)
+      (S (NP-SBJ 연대장/NNC+이/PCA)
+         (VP (NP-OBJ 이/NPN+을/PCA)
+             (VV 조정/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>보통</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>연대장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이</term>
+	    </Arg>
+	    <Rel>
+	      <term>조정합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>조정되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>쉬셀 총리는 정상 회담 준비를 위해 유럽 각국 순방에 나서는 구테레스 총리가 오스트리아를 방문 일정에서 제외함에 따라 브뤼셀에서 구테레스 총리와 만나는 것으로 장소가 조정됐다.</text>
+	  <parse>
+(S (NP-COMP-2 (S (NP-SBJ 쉬셀/NPR
+			     총리/NNC+은/PAU)
+		 (VP (S (NP-SBJ *pro*)
+			(VP (S-COMP (NP-SBJ (S (WHNP-1 *op*)
+					       (S (NP-SBJ *T*-1)
+						  (VP (S (NP-SBJ *pro*)
+							 (VP (NP-OBJ 정상/NNC
+									 회담/NNC
+									 준비/NNC+을/PCA)
+							     위하/VV+어/ECS))
+						      (VP (NP-COMP 유럽/NPR
+								       각국/NNC
+								       순방/NNC+에/PAD)
+							  나서/VV+는/EAN))))
+					    (NP 구테레스/NPR
+							총리/NNC+이/PCA))
+				    (VP (NP-OBJ 오스트리아/NPR+을/PCA)
+					(NP-COMP 방문/NNC
+						     일정/NNC+에서/PAD)
+					(VV 제외/NNC+하/XSV+음/ENM+에/PAD)))
+			    따르/VV+어/ECS))
+		     (VP (NP-ADV 브뤼셀/NPR+에서/PAD)
+			 (VP (NP-COMP 구테레스/NPR
+					      총리/NNC+과/PAD)
+			     만나/VV+는/EAN))))
+	      (NP 것/NNX+으로/PAD))
+   (S (NP-SBJ 장소/NNC+이/PCA)
+      (VP (NP-COMP *T*-2)
+	  (VV 조정/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>쉬셀 총리는 정상 회담 준비를 위해 유럽 각국 순방에 나서는 구테레스 총리가 오스트리아를 방문 일정에서 제외함에 따라 브뤼셀에서 구테레스 총리와 만나는 것</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>장소</term>
+	    </Arg>
+	    <Rel>
+	      <term>조정됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

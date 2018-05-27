@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>따지</lemma>
+    <comment>Frames file for '따지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>따지.01</id>
+      <edef>reckon</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing under consideration"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>따지다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>교보증권 이해린 선임연구원은 '나산 등 일부 법정관리종목들의 실적이 뚜렷하게 개선되자 다른 종목들로 기대감이 확산되고 있는 것으로 보인다'며 '그러나 이들 종목은 하락세로 돌아서면 반대로 폭락하는 성향이 있는 만큼 기업의 실적들을 면밀하게 따져 보고 투자하는 것이 바람직하다'고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 교보/NPR+증권/NNC
+           이해린/NPR
+           선임/NNC+연구원/NNC+은/PAU)
+   (VP (S '/SLQ
+          (NP-SBJ *pro*)
+          (VP (NP-COMP (S (S (NP-SBJ (NP (NP (NP 나산/NPR)
+                                             (NP 등/NNX))
+                                         (NP 일부/NNC
+                                             법정/NNC+관리/NNC+종목/NNC+들/XSF+의/PAN))
+                                     (NP 실적/NNC+이/PCA))
+                             (VP (ADVP (ADV 뚜렷하/VJ+게/ECS))
+                                 (VP (VV 개선/NNC+되/XSV+자/ECS))))
+                          (S (NP-COMP-1 다른/DAN
+                                        종목/NNC+들/XSF+으로/PAD)
+                             (S (NP-SBJ 기대감/NNC+이/PCA)
+                                (VP (VP (NP-COMP *T*-1)
+                                        (VV 확산/NNC+되/XSV+고/ECS))
+                                    있/VX+는/EAN))))
+                       (NP 것/NNX+으로/PAD))
+              보이/VV+는다/EFN)
+          '/SRQ
+          이며/ECS)
+       (VP (S-COMP '/SLQ
+                   (ADCP 그러나/ADC)
+                   (NP-ADV (S (S (NP-SBJ 이/NPN+들/XSF
+                                         종목/NNC+은/PAU)
+                                 (VP (NP-COMP 하락세/NNC+으로/PAD)
+                                     돌아서/VV+으면/ECS))
+                              (S (NP-ADV 반대/NNC+으로/PAD)
+				 (S (NP-SBJ (S (NP-SBJ *pro*)
+					       (VP (VV 폭락/NNC+하/XSV+는/EAN)))
+					    (NP 성향/NNC+이/PCA))
+				    (ADJP 있/VJ+는/EAN))))
+                           (NP 만큼/NNX))
+                   (S (NP-SBJ (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-OBJ (NP 기업/NNC+의/PAN)
+                                                 (NP 실적/NNC+들/XSF+을/PCA))
+                                         (VP (VP (ADVP (ADV 면밀하/VJ+게/ECS))
+                                                 (VP 따지/VV+어/ECS))
+                                             보/VX+고/ECS))
+                                     (VP (VV 투자/NNC+하/XSV+는/EAN))))
+                              (NP 것/NNX+이/PCA))
+                      (ADJP 바람직하/VJ+다/EFN))
+                   '/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>기업의 실적들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>면밀하게</term>
+	    </Arg>
+	    <Rel>
+	      <term>따져</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>보고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

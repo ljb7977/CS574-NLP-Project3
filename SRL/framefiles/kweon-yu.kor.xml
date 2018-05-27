@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>권유</lemma>
+    <comment>Frames file for '권유' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>권유.01</id>
+      <edef>recommend</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing recommended"/>
+	<role argnum="2" argrole="recommended to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>권유하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>펀드 투자가들은 퀵 앤드 레일리사의 중개인들이 여유자금을 얼라이언스 캐피털 매니지먼트사의 머니 마켓 펀드(MMF)에 투자하도록 권유한 대가로 받는 수당에 대한 적절한 정보를 얻지 못했다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 펀드/NNC
+           투자가/NNC+들/XSF+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                  (S (NP-SBJ *T*-2)
+                                     (VP (NP-COMP (S (WHNP-3 *op*)
+                                                     (S (NP-SBJ (NP 퀵/NPR
+                                                                    앤드/NPR
+                                                                    레일리사/NPR+의/PAN)
+                                                                (NP 중개인/NNC+들/XSF+이/PCA))
+                                                        (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                                       (VP (S-COMP (NP-SBJ *pro*)
+                                                                                   (VP (NP-OBJ 여유/NNC+자금/NNC+을/PCA)
+                                                                                       (NP-COMP (NP 얼라이언스/NPR
+                                                                                                    캐피털/NPR
+                                                                                                    매니지먼트사/NPR+의/PAN)
+                                                                                                (NP 머니/NPR
+                                                                                                    마켓/NPR
+                                                                                                    펀드/NPR
+                                                                                                    (PRN -LRB-/SLQ
+                                                                                                         MMF/NFW
+                                                                                                         -RRB-/SRQ)
+                                                                                                    에/PAD))
+                                                                                       (VV 투자/NNC+하/XSV+도록/ECS)))
+                                                                           (VV 권유/NNC+하/XSV+은/EAN)))
+                                                                    (NP 대가/NNC+으로/PAD))
+                                                            (VP (NP-OBJ *T*-3)
+                                                                받/VV+는/EAN))))
+                                                  (NP 수당/NNC+에/PAD))
+                                         대하/VV+은/EAN)))
+                               (NP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (ADJP 적절하/VJ+은/EAN)))
+                                   (NP 정보/NNC+을/PCA)))
+                       얻/VV+지/ECS)
+                   못하/VX+었/EPF+다/EFN+고/PAD))
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>도록</f>
+	      <term>여유자금을 얼라이언스 캐피털 매니지먼트사의 머니 마켓 펀드(MMF)에 투자하</term>
+	    </Arg>
+	    <Rel>
+	      <term>권유한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기인</lemma>
+    <comment>Frames file for '기인' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>기인.01</id>
+      <edef>be due to</edef>
+      <roleset>
+	<role argnum="1" argrole="thing arising"/>
+	<role argnum="2" argrole="source"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기인하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일선 부대의 탄약 부족은 수송력 제한에 기인했습니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 일선/NNC
+               부대/NNC+의/PAN)
+           (NP 탄약/NNC
+               부족/NNC+은/PAU))
+   (VP (NP-COMP 수송력/NNC
+                제한/NNC+에/PAD)
+       (VV 기인/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>일선 부대의 탄약 부족</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>수송력 제한</term>
+	    </Arg>
+	    <Rel>
+	      <term>기인했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>그 이유는 계속해서 탄약을 재공급해줄 트럭이 충분히 없는 데 기인했습니다.</text>
+	  <parse>
+(S (NP-SBJ 그/DAN
+           이유/NNC+은/PAU)
+   (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (VP (S (NP-SBJ *pro*)
+                                            (VP (NP-OBJ *pro*)
+                                                (VV 계속/NNC+하/XSV+어서/ECS)))
+                                         (VP (NP-OBJ 탄약/NNC+을/PCA)
+                                             (VV 재공급/NNC+하/XSV+어/ECS)))
+                                     주/VX+을/EAN)))
+                           (NP 트럭/NNC+이/PCA))
+                   (ADJP (ADVP 충분히/ADV)
+                         (ADJP 없/VJ+는/EAN)))
+                (NP 데/NNX))
+       (VV 기인/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>그 이유</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>계속해서 탄약을 재공급해줄 트럭이 충분히 없는 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>기인했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

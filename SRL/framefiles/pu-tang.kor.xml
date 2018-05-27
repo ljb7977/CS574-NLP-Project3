@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부당</lemma>
+    <comment>Frames file for '부당' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부당.01</id>
+      <edef>unfair</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being unfair"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부당하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>관례적으로 IMF 총재직은 유럽인이, 세계은행 총재직은 미국인이 맡아왔으나 미국은 이미 독일인인 코흐-베저를 인정할 수 없다는 입장을 밝혔으며 일본과 다른 국가들은 이러한 배분이 부당하다며 미국과 유럽외 지역에서도 총재가 나올 수 있어야 한다고 주장하고 있다.</text>
+	  <parse>
+(S (S (ADVP (ADV 관례/NNC+적/XSF+으로/PAD))
+      (S (S (NP-OBJ-1 IMF/NFW
+                      총재/NNC+직/XSF+은/PAU)
+            (S (NP-SBJ 유럽인/NNC+이/PCA)
+               (VP (VP (NP-OBJ *T*-1)
+                       (VV *?*))
+                   (VX *?*))
+               ,/SCM)
+            (S (NP-OBJ-2 세계/NPR+은행/NNC
+                         총재/NNC+직/XSF+은/PAU)
+               (S (NP-SBJ 미국인/NNC+이/PCA)
+                  (VP (VP (NP-OBJ *T*-2)
+                          맡/VV+어/ECS)
+                      오/VX+었/EPF+으나/ECS))))))
+   (S (NP-SBJ 미국/NPR+은/PAU)
+      (VP (ADVP 이미/ADV)
+          (VP (NP-OBJ (S (NP-SBJ *pro*)
+                         (VP (VP (NP-OBJ (S (WHNP-3 *op*)
+                                            (S (NP-SBJ *T*-3)
+                                               (VP (NP 독일인/NNC+이/CO+은/EAN))))
+                                         (NP 코흐/NPR
+                                             -/SSY
+                                             베저/NPR+을/PCA))
+                                 (VV 인정/NNC+하/XSV+을/EAN))
+                             (VX 수/NNX
+                                 없/VJ+다는/EAN)))
+                      (NP 입장/NNC+을/PCA))
+              밝히/VV+었/EPF+으며/ECS)))
+   (S (NP-SBJ (NP 일본/NPR+과/PCJ)
+              (NP 다른/DAN
+                  국가/NNC+들/XSF+은/PAU))
+      (VP (VP (S-COMP (S (NP-SBJ 이러한/DAN
+                                 배분/NNC+이/PCA)
+                         (ADJP (VJ 부당/NNC+하/XSJ+다며/ECS)))
+                      (S (NP-COMP-5 (NP (NP 미국/NPR+과/PCJ)
+                                        (NP 유럽/NPR+외/NNC))
+                                    (NP 지역/NNC+에서/PAD+도/PAU))
+                         (S (NP-SBJ 총재/NNC+이/PCA)
+                            (VP (VP (VP (NP-COMP *T*-5)
+                                        나오/VV+을/EAN)
+                                    (VX 수/NNX
+                                        있/VJ+어야/ECS))
+                                하/VX+는다/EFN+고/PAD))))
+              (VV 주장/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이러한 배분</term>
+	    </Arg>
+	    <Rel>
+	      <term>부당하다며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

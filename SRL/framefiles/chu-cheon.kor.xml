@@ -1,0 +1,237 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>추천</lemma>
+    <comment>Frames file for '추천' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>추천.01</id>
+      <edef>recommend</edef>
+      <roleset>
+	<role argnum="0" argrole="thing recommending"/>
+	<role argnum="1" argrole="thing recommended"/>
+	<role argnum="2" argrole="recommend as"/>
+	<role argnum="3" argrole="recommend for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>추천하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>코흐-베저를 공식후보로 추천한 EU의 로마노 프로디 집행위원장도 이날 코흐-베저에 대한 지지 철회가능성을 시사했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-OBJ 코흐/NPR
+                             -/SSY
+                             베저/NPR+을/PCA)
+                     (NP-COMP 공식/NNC+후보/NNC+으로/PAD)
+                     (VV 추천/NNC+하/XSV+은/EAN))))
+           (NP (NP EU/NFW+의/PAN)
+               (NP 로마노/NPR
+                   프로디/NPR
+                   집행/NNC+위원장/NNC+도/PAU)))
+   (VP (NP-ADV 이날/NNC)
+       (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (VP (NP-COMP 코흐/NPR
+                                          -/SSY
+                                          베저/NPR+에/PAD)
+                                 대하/VV+은/EAN)))
+                       (NP 지지/NNC))
+                   (NP 철회/NNC+가능성/NNC+을/PCA))
+           (VV 시사/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=EU의 로마노 프로디 집행위원장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>코흐-베저</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>공식후보</term>
+	    </Arg>
+	    <Rel>
+	      <term>추천한</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>또한 내년부터는 소액주주들이 사외이사 후보적임자를 사외이사 후보추천위원회에 추천할 수 있도록 정관을 개정키로 했다.</text>
+	  <parse>
+(S (ADVP 또한/ADV)
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*) 
+		  (VP (S (NP-ADV 내년/NNC+부터/PAU+은/PAU)
+			 (S (NP-SBJ 소액/NNC+주주/NNC+들/XSF+이/PCA)
+			    (VP (VP (NP-OBJ 사외/NNC+이사/NNC
+						후보/NNC+적임자/NNC+을/PCA)
+				    (NP-COMP 사외/NNC+이사/NNC
+						 후보/NNC+추천/NNC+위원회/NNC+에/PAD)
+				    (VV 추천/NNC+하/XSV+을/EAN))
+				(VX 수/NNX
+				      있/VJ+도록/ECS))))
+		      (VP (NP-OBJ 정관/NNC+을/PCA)
+			  (VV 개정/NNC+하/XSV+기/ENM+으로/PAD))))
+	  하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>내년부터는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>소액주주들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>사외이사 후보적임자</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>사외이사 후보추천위원회</term>
+	    </Arg>
+	    <Rel>
+	      <term>추천할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>추천되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>방 변호사는 "미국의 권위 있는 변호사 및 법률학자에게 자문을 구한 결과 코번 변호사가 김씨 사건을 맡아 가장 열정적으로 일할 사람으로 추천됐다"고 선임이유를 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 방/NPR
+           변호사/NNC+은/PAU)
+   (VP (S "/SLQ
+	  (NP-ADV (S (NP-SBJ *pro*)
+		     (VP (NP-COMP (NP 미국/NPR+의/PAN)
+				  (NP (S (WHNP-1 *op*)
+					 (S (NP-SBJ *T*-1)
+					    (S (NP-SBJ 권위/NNC)
+					       (ADJP 있/VJ+는/EAN))))
+				      (NP (NP 변호사/NNC)
+					  (ADCP 및/ADC)
+					  (NP 법률학자/NNC+에게/PAD))))
+			 (NP-OBJ 자문/NNC+을/PCA)
+			 구하/VV+은/EAN))
+		  (NP 결과/NNC))
+	  (S (NP-SBJ 코번/NPR
+			 변호사/NNC+이/PCA)
+	     (VP (NP-COMP (S (WHNP-2 *op*)
+			     (S (NP-SBJ *T*-2)
+				(VP (S (NP-SBJ *pro*)
+				       (VP (NP-OBJ 김/NPR+씨/NNX
+						     사건/NNC+을/PCA)
+					   맡/VV+어/ECS))
+				    (NP-ADV (ADVP 가장/ADV)
+					    (NP 열정/NNC+적/XSF+으로/PAD))
+				    (VP 일하/VV+을/EAN))))
+			  (NP 사람/NNC+으로/PAD))
+		 (VV 추천/NNC+되/XSV+었/EPF+다/EFN)))
+	  "/SRQ
+	  고/PAD)
+       (VP (NP-OBJ 선임/NNC+이유/NNC+을/PCA)
+	   밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>미국의 권위 있는 변호사 및 법률학자에게 자문을 구한 결과</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>코번 변호사</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>김씨 사건을 맡아 가장 열정적으로 일할 사람</term>
+	    </Arg>
+	    <Rel>
+	      <term>추천됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>추천받다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	  <mapitem src="sbj" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>개선안에 따르면 올해부터 이사회의 절반이상을 사외이사로 선임하고 우리사주조합을 비롯한 소액주주의 의견을 수렴해 사외이사 후보를 추천받아 최적임자가 사외이사로 선임될 수 있도록 했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 개선/NNC+안/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-ADV 올해/NNC+부터/PAU)
+             (VP (NP-OBJ (NP 이사회/NNC+의/PAN)
+                         (NP 절반/NNC+이상/NNC+을/PCA))
+                 (NP-COMP 사외/NNC+이사/NNC+으로/PAD)
+                 (VV 선임/NNC+하/XSV+고/ECS))))
+      (S (NP-SBJ *pro*)
+         (VP (S-COMP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+					   (S (NP-SBJ *T*-1)
+					      (VP (NP-OBJ 우리/NNC+사주/NNC+조합/NNC+을/PCA)
+						  비롯하/VV+은/EAN)))
+					(NP 소액/NNC+주주/NNC+의/PAN))
+				    (NP 의견/NNC+을/PCA))
+                            (VV 수렴/NNC+하/XSV+어/ECS)))
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 사외/NNC+이사/NNC
+                                    후보/NNC+을/PCA)
+                            (VV 추천/NNC+받/XSV+어/ECS)))
+                     (S (NP-SBJ 최적임자/NNC+이/PCA)
+                        (VP (VP (NP-COMP 사외/NNC+이사/NNC+으로/PAD)
+                                (VV 선임/NNC+되/XSV+을/EAN))
+                            (VX 수/NNX
+                                있/VJ+도록/ECS))))
+             하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>우리사주조합을 비롯한 소액주주의 의견을 수렴해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>사외이사 후보</term>
+	    </Arg>
+	    <Rel>
+	      <term>추천받아</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

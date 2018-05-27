@@ -1,0 +1,252 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>몰</lemma>
+    <comment>Frames file for '몰' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>몰.01</id>
+      <edef>drive</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing driven"/>
+	<role argnum="2" argrole="direction"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>몰다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>왜냐하면 우리가 다시 전진할 때, 제 운전병이 제 트럭을 그곳으로 몰지 않도록 해야 했기 때문이죠.</text>
+	  <parse>
+(S (ADCP 왜냐하면/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-ADV (S (WHNP *op*)
+                            (S (NP-SBJ 우리/NPN+이/PCA)
+                               (VP (ADVP 다시/ADV)
+                                   (VP (VV 전진/NNC+하/XSV+을/EAN)))))
+                         (NP 때/NNC))
+                 ,/SCM
+                 (S (NP-SBJ *pro*)
+                    (VP (VP (S-COMP (NP-SBJ (NP 저/NPN+의/PAN)
+                                            (NP 운전병/NNC+이/PCA))
+                                    (VP (VP (NP-OBJ (NP 저/NPN+의/PAN)
+                                                    (NP 트럭/NNC+을/PCA))
+                                            (NP-COMP 그곳/NPN+으로/PAD)
+                                            몰/VV+지/ECS)
+                                        않/VX+도록/ECS))
+                            하/VV+어야/ECS)
+                        하/VX+었/EPF+기/ENM)))
+              (NP 때문/NNX+이/CO+죠/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>제 운전병</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>제 트럭</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>그곳</term>
+	    </Arg>
+	    <Rel>
+	      <term>몰지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>몰리다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 주식형 수익증권 만기에 몰린 투신권을 중심으로 한 기관투자가 및 개인투자자들의 차익매물이 이어지면서 상승폭이 둔화돼 결국 850 대로 밀린 채 마쳤다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ (NP (NP (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-OBJ (S (WHNP-1 *op*)
+                                           (S (NP-SBJ *T*-1)
+                                              (VP (NP-COMP 주식/NNC+형/XSF
+                                                           수익/NNC+증권/NNC
+                                                           만기/NNC+에/PAD)
+                                                  몰리/VV+은/EAN)))
+                                        (NP 투신/NNC+권/XSF+을/PCA))
+                                (NP-COMP 중심/NNC+으로/PAD)
+                                하/VV+은/EAN)))
+                      (NP 기관/NNC+투자가/NNC))
+                  (ADCP 및/ADC)
+                  (NP 개인/NNC+투자자/NNC+들/XSF+의/PAN))
+              (NP 차익/NNC+매물/NNC+이/PCA))
+      (VP (VV 잇/VV+어지/XSV+으면서/ECS)))
+   (S (NP-SBJ 상승폭/NNC+이/PCA)
+      (VP (VV 둔화/NNC+되/XSV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 결국/ADV)
+          (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 850/NNU
+                                  대/NNX+으로/PAD)
+                         밀리/VV+은/EAN))
+                  (NP 채/NNX))
+          (VP 마치/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=투신권</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>주식형 수익증권 만기</term>
+	    </Arg>
+	    <Rel>
+	      <term>몰린</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>공화당 입장에서는 민주당의 의사진행 방해를 무력화할 수 있는 60 석 이상 확보를 목표로 삼았던 지난 98 년 선거 때와 비교할 때 상당한 수세에 몰려 있는 입장이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 공화당/NPR
+               입장/NNC+에서/PAD+은/PAU)
+       (VP (NP (S (NP-SBJ *pro*)
+                  (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                     (VP (NP-COMP (S (WHNP *op*)
+                                                     (S (NP-SBJ *pro*)
+                                                        (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                                           (S (NP-SBJ *T*-1)
+                                                                              (VP (VP (NP-OBJ (NP 민주당/NPR+의/PAN)
+                                                                                              (NP 의사/NNC+진행/NNC
+                                                                                                  방해/NNC+을/PCA))
+                                                                                      (VV 무력화/NNC+하/XSV+을/EAN))
+                                                                                  (VX 수/NNX
+                                                                                      있/VJ+는/EAN))))
+                                                                        (NP 60/NNU
+                                                                            석/NNX
+                                                                            이상/NNC))
+                                                                    (NP 확보/NNC+을/PCA))
+                                                            (NP-COMP 목표/NNC+으로/PAD)
+                                                            삼/VV+었/EPF+던/EAN)))
+                                                  (NP 지난/DAN
+                                                      98/NNU
+                                                      년/NNX
+                                                      선거/NNC
+                                                      때/NNC+과/PAD))
+                                         (VV 비교/NNC+하/XSV+을/EAN)))
+                                  (NP 때/NNC))
+                          (VP (NP-COMP (S (WHNP-2 *op*)
+                                          (S (NP-SBJ *T*-2)
+                                             (ADJP (VJ 상당/NNC+하/XSJ+은/EAN))))
+                                       (NP 수세/NNC+에/PAD))
+                              몰리/VV+어/ECS))
+                      있/VX+는/EAN))
+               (NP 입장/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>민주당의 의사진행 방해를 무력화할 수 있는 60 석 이상 확보를 목표로 삼았던 지난 98 년 선거 때와 비교할 때</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>상당한 수세</term>
+	    </Arg>
+	    <Rel>
+	      <term>몰려</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>몰.02</id>
+      <edef>gather</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity gathered"/>
+	<role argnum="2" argrole="gathered into"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>몰리다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>대형우량주 가운데 미국 증시에 상장된 주식예탁증서(ADR) 가격이 폭등한 한국통신과 포항제철에 매수세가 몰리고 있으나 SK 텔레콤, 한국전력, 현대전자는 약세를 보이고 있다.</text>
+	  <parse>
+(S (S (NP-COMP-3 (NP (NP 대형/NNC+우량주/NNC)
+                     (NP 가운데/NNC))
+                 (NP (S (WHNP-2 *op*)
+                        (S (NP-SBJ *T*-2)
+                           (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (NP-COMP 미국/NPR
+                                                             증시/NNC+에/PAD)
+                                                    (VV 상장/NNC+되/XSV+은/EAN))))
+                                          (NP 주식/NNC+예탁/NNC+증서/NNC
+                                              (PRN -LRB-/SLQ
+                                                   (NP ADR/NFW)
+                                                   -RRB-/SRQ)))
+                                      (NP 가격/NNC+이/PCA))
+                              (VP (VV 폭등/NNC+하/XSV+은/EAN)))))
+                     (NP (NP 한국/NPR+통신/NNC+과/PCJ)
+                         (NP 포항/NPR+제철/NNC+에/PAD))))
+      (S (NP-SBJ 매수세/NNC+이/PCA)
+         (VP (VP (NP-COMP *T*-3)
+                 몰리/VV+고/ECS)
+             있/VX+으나/ECS)))
+   (S (NP-SBJ (NP SK/NFW
+                  텔레콤/NPR)
+              ,/SCM
+              (NP 한국/NPR+전력/NNC)
+              ,/SCM
+              (NP 현대/NPR+전자/NNC+은/PAU))
+      (VP (VP (NP-OBJ 약세/NNC+을/PCA)
+              보이/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>대형우량주 가운데 미국 증시에 상장된 주식예탁증서(ADR) 가격이 폭등한 한국통신과 포항제철</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>매수세</term>
+	    </Arg>
+	    <Rel>
+	      <term>몰리고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있으나</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

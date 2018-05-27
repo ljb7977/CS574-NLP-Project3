@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>구체화</lemma>
+    <comment>Frames file for '구체화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>구체화.01</id>
+      <edef>embody</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing enbodied"/>
+	<role argnum="2" argrole="embodied in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>구체화되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이어 "이탈리아의 경우 지난 1 월에 북한과 수교를 맺은 만큼 북한 진출에 대해 깊은 관심을 갖고 있으나 아직 구체화된 단계는 아니다"라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (ADVP 이어/ADV)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-ADV (NP 이탈리아/NPR+의/PAN)
+                                      (NP 경우/NNC))
+                              (NP-ADV (S (NP-SBJ *pro*)
+                                         (VP (NP-ADV 지난/DAN
+                                                     1/NNU
+                                                     월/NNX+에/PAD)
+                                             (VP (NP-COMP 북한/NPR+과/PAD)
+                                                 (NP-OBJ 수교/NNC+을/PCA)
+                                                 맺/VV+은/EAN)))
+                                      (NP 만큼/NNX))
+                              (S (NP-SBJ *pro*)
+                                 (VP (NP-COMP 북한/NPR
+                                              진출/NNC+에/PAD)
+                                     대하/VV+어/ECS))
+                              (VP (NP-OBJ (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (ADJP 깊/VJ+은/EAN)))
+                                          (NP 관심/NNC+을/PCA))
+                                  갖/VV+고/ECS))
+                          있/VX+으나/ECS))
+                   (S (ADVP 아직/ADV)
+                      (S (NP-SBJ (S (NP-SBJ *pro*)
+				    (VP (VV 구체화/NNC+되/XSV+은/EAN)))
+                                 (NP 단계/NNC+은/PAU))
+                         (ADJP 아니/VJ+다/EFN)))
+                   "/SRQ
+                   이라고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>구체화된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,237 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>달리</lemma>
+    <comment>Frames file for '달리' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>달리.01</id>
+      <edef>run</edef>
+      <roleset>
+	<role argnum="0" argrole="thing running"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>달리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>거기엔 서북방으로 나가다가 약 2 킬로 정도 북방으로 달리는 도로가 있지요.</text>
+	  <parse>
+(S (NP-COMP-2 거기/NPN+에/PAD+은/PAU)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (S (NP-SBJ *T*-1)
+                       (VP (NP-COMP 서북방/NNC+으로/PAD)
+                           나가/VV+다가/ECS))
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-OBJ 약/DAN
+                                   2/NNU
+                                   킬로/NNX
+                                   정도/NNC)
+                           (NP-COMP 북방/NNC+으로/PAD)
+                           달리/VV+는/EAN))))
+              (NP 도로/NNC+이/PCA))
+      (ADJP (NP-COMP *T*-2)
+            있/VJ+지요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>서북방으로 나가다가</term>
+	    </Arg>
+	    <Arg n="0">
+	      <term>*trace*=도로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>약 2 킬로 정도</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>북방</term>
+	    </Arg>
+	    <Rel>
+	      <term>달리는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>달리.02</id>
+      <edef>depend</edef>
+      <roleset>
+	<role argnum="1" argrole="thing depending"/>
+	<role argnum="2" argrole="depend on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>달리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그건 얼마나 많이 쓰는가에 달려 있지요.</text>
+	  <parse>
+(S (NP-SBJ 그것/NPN+은/PAU) 
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+	           (VP (NP-OBJ *pro*)
+		       (VP (ADVP (ADVP 얼마나/ADV) 
+				 (ADVP 많이/ADV)) 
+		           (VP 쓰/VV+는가/EFN+에/PAD)))) 
+	   달리/VV+어/EAU) 
+       있/VX+지요/EFN) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>얼마나 많이 쓰는가</term>
+	    </Arg>
+	    <Rel>
+	      <term>달려</term>
+	    </Rel>
+	    <AUX>
+	      <f>어</f>
+	      <term>있지요</term>
+	    </AUX>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>달리.03</id>
+      <edef>be not enough</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being not enough"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>달리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대한항공과 아시아나항공은 해외여행 붐이 일어 좌석 공급이 달리는 데다 유가인상으로 원가부담이 커져 성수기인 내달부터 국제선 요금을 최고 9.4 퍼센트 인상키로 했다고 3 일 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ (NP 대한/NPR+항공/NNC+과/PCJ)
+           (NP 아시아나/NPR+항공/NNC+은/PAU))
+   (VP (S-COMP (NP-ADV (S (S (NP-SBJ 해외/NNC+여행/NNC
+                                     붐/NNC+이/PCA)
+                             (VP 일/VV+어/ECS))
+                          (S (NP-SBJ 좌석/NNC
+                                     공급/NNC+이/PCA)
+                             (VP 달리/VV+은/EAN)))
+                       (NP 데/NNX+에다/PAD))
+               (S (NP-ADV 유가/NNC+인상/NNC+으로/PAD)
+                  (S (NP-SBJ 원가/NNC+부담/NNC+이/PCA)
+                     (VP (VV 크/VJ+어지/XSV+어/ECS))))
+               (S (NP-SBJ *pro*)
+                  (VP (S-COMP (NP-SBJ *pro*)
+			      (VP (NP-ADV (S (WHNP-1 *op*)
+					     (S (NP-SBJ *T*-1)
+						(VP (NP 성수기/NNC+이/CO+은/EAN))))
+					  (NP 내달/NNC+부터/PAU))
+				  (VP (NP-OBJ 국제선/NNC
+						    요금/NNC+을/PCA)
+				      (VP (NP-ADV 최고/NNC
+						      9.4/NNU
+						      퍼센트/NNX)
+					  (VP (VV 인상/NNC+하/XSV+기/ENM+으로/PAD))))))
+                      하/VV+었/EPF+다/EFN+고/PAD)))
+       (VP (NP-ADV 3/NNU
+                   일/NNX)
+           (VP 밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>해외여행 붐이 일어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>좌석 공급</term>
+	    </Arg>
+	    <Rel>
+	      <term>달리는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>달리.04</id>
+      <edef>differ</edef>
+      <roleset>
+	<role argnum="0" argrole="entity being different"/>
+	<role argnum="1" argrole="topic"/>
+	<role argnum="2" argrole="different from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>달리하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>패리시의 이같은 언급은 담배에 대한 어떠한 형태의 정부 규제도 받아들일 수 없다는 담배 업계의 종전 입장과는 궤를 달리하는 것이다.</text>
+	  <parse>
+(S (NP-SBJ (NP 패리시/NPR+의/PAN)
+           (NP 이같은/DAN
+               언급/NNC+은/PAU))
+   (VP (NP (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (NP-COMP (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                    (S (NP-SBJ *T*-1)
+                                                       (VP (NP-COMP 담배/NNC+에/PAD)
+                                                           대하/VV+은/EAN)))
+                                                 (NP (NP 어떠한/DAN
+                                                         형태/NNC+의/PAN)
+                                                     (NP 정부/NNC
+                                                         규제/NNC+도/PAU)))
+                                         받아들이/VV+을/EAN)
+                                     (VX 수/NNX
+                                         없/VJ+다는/EAN)))
+                              (NP (NP 담배/NNC
+                                      업계/NNC+의/PAN)
+                                  (NP 종전/NNC
+                                      입장/NNC+과/PAD+은/PAU)))
+                     (NP-OBJ 궤/NNC+을/PCA)
+                     (VV 달리/NNC+하/XSV+은/EAN))))
+           (NP 것/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=것</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과는</f>
+	      <term>담배에 대한 어떠한 형태의 정부 규제도 받아들일 수 없다는 담배 업계의 종전 입장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>궤</term>
+	    </Arg>
+	    <Rel>
+	      <term>달리하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

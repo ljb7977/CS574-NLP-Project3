@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>구사</lemma>
+    <comment>Frames file for '구사' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>구사.01</id>
+      <edef>use</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing used"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>구사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>군부는 군 기관지인 해방군보 논평을 통해 대만과의 평화적 재통일을 지지한다고 거듭 밝히면서 그러나 대만이 자꾸 지연전술을 구사하면 전쟁을 각오해야 할 것이라고 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ 군부/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (VP (NP 군/NNC
+                                           기관지/NNC+이/CO+은/EAN))))
+                             (NP 해방군보/NPR))
+                         (NP 논평/NNC+을/PCA))
+                 통하/VV+어/ECS))
+          (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (NP-OBJ (NP 대만/NPR+과/PAD+의/PAN)
+                                  (NP (NP 평화/NNC+적/XSF)
+                                      (NP 재통일/NNC+을/PCA)))
+                          (VV 지지/NNC+하/XSV+는다/EFN+고/PAD)))
+              (VP (ADVP 거듭/ADV)
+                  (VP 밝히/VV+으면서/ECS)))))
+   (ADCP 그러나/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (S (NP-SBJ 대만/NPR+이/PCA)
+                     (VP (ADVP 자꾸/ADV)
+                         (VP (NP-OBJ 지연/NNC+전술/NNC+을/PCA)
+                             (VV 구사/NNC+하/XSV+으면/ECS))))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (VP (NP-OBJ 전쟁/NNC+을/PCA)
+                                 (VV 각오/NNC+하/XSV+어야/ECS))
+                             하/VX+을/EAN)
+                         (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>대만</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>자꾸</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지연전술</term>
+	    </Arg>
+	    <Rel>
+	      <term>구사하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

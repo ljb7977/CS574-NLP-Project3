@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>싸우</lemma>
+    <comment>Frames file for '싸우' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>싸우.01</id>
+      <edef>conflict</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="conflicted with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>싸우다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>과거에는 망토를 걸친 전사가 진실과 정의를 위해 싸웠지만, 이제는 남성동성애 권리가 근육질 주인공들의 활약 이유들중에 포함된다.</text>
+	  <parse>
+(S (S (NP-ADV 과거/NNC+에/PAD+은/PAU)
+      (S (NP-SBJ (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-OBJ 망토/NNC+을/PCA)
+                           걸치/VV+은/EAN)))
+                 (NP 전사/NNC+이/PCA))
+         (VP (S (NP-SBJ *pro*)
+                (VP (NP-OBJ (NP 진실/NNC+과/PCJ)
+                            (NP 정의/NNC+을/PCA))
+                    위하/VV+어/ECS))
+             (VP 싸우/VV+었/EPF+지만/ECS))))
+   ,/SCM
+   (S (NP-ADV 이제/NNC+은/PAU)
+      (S (NP-SBJ 남성/NNC+동성애/NNC
+                 권리/NNC+이/PCA)
+         (VP (NP-COMP (NP 근육질/NNC
+                          주인공/NNC+들/XSF+의/PAN)
+                      (NP 활약/NNC
+                          이유/NNC+들/XSF+중/NNX+에/PAD))
+             (VV 포함/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>과거에는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>망토를 걸친 전사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>진실과 정의를 위해</term>
+	    </Arg>
+	    <Rel>
+	      <term>싸웠지만</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

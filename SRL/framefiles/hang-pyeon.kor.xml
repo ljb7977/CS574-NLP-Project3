@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>항변</lemma>
+    <comment>Frames file for '항변' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>항변.01</id>
+      <edef>protest</edef>
+      <roleset>
+	<role argnum="0" argrole="speaker"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>항변하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 이들 3 명의 피고는 종신형을 선고받을 수 있는 이같은 반인륜범죄를 저지르지 않았다고 항변했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ (NP 이/NPN+들/XSF
+                  3/NNU
+                  명/NNX+의/PAN)
+              (NP 피고/NNC+은/PAU))
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (VP (NP-OBJ (S (WHNP *op*)
+                                     (S (NP-SBJ *pro*)
+                                        (VP (VP (NP-OBJ 종신형/NNC+을/PCA)
+                                                (VV 선고/NNC+받/XSV+을/EAN))
+                                            (VX 수/NNX
+                                                있/VJ+는/EAN))))
+                                  (NP 이같은/DAN
+                                      반/XPF+인륜/NNC+범죄/NNC+을/PCA))
+                          저지르/VV+지/ECS)
+                      않/VX+었/EPF+다/EFN+고/PAD))
+          (VV 항변/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>이들 3 명의 피고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>종신형을 선고받을 수 있는 이같은 반인륜범죄를 저지르지 않았다</term>
+	    </Arg>
+	    <Rel>
+	      <term>항변했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

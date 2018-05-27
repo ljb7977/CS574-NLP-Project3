@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>차단</lemma>
+    <comment>Frames file for '차단' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>차단.01</id>
+      <edef>cut</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing cut"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>차단하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>어떤 부대가 적의 퇴로를 차단했는가?</text>
+	  <parse>
+(S (NP-SBJ 어떤/DAN
+           부대/NNC+이/PCA)
+   (VP (NP-OBJ (NP 적/NNC+의/PAN)
+               (NP 퇴로/NNC+을/PCA))
+       (VV 차단/NNC+하/XSV+었/EPF+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>어떤 부대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>적의 퇴로</term>
+	    </Arg>
+	    <Rel>
+	      <term>차단했는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

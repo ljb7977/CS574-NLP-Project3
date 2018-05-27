@@ -1,0 +1,105 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소망스럽</lemma>
+    <comment>Frames file for '소망스럽' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>소망스럽.01</id>
+      <edef>desirable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being desirable"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소망스럽다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 또 "유가와 관련, 현재 진행중인 여러 상황에 대해 만족하며 오는 27 일 빈에서 열리는 OPEC 회의 때 소망스런 결과가 나오기를 희망한다"며 현재의 고유가 현상이 곧 해소될 것임을 확신하면서 그러나 "천정부지로 치솟아 온 유가에 적절히 대응키 위해 미국 스스로도 해야 할 일들이 많이 있다고 본다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADCP 또/ADC)
+       (VP (VP (S "/SLQ
+		  (S (NP-SBJ *pro*)
+		     (VP (NP-COMP 유가/NNC+과/PAD)
+			 (VV 관련/NNC)))
+		  ,/SCM
+		  (S (S (NP-SBJ *pro*)
+			(VP (S-COMP (NP-SBJ *pro*)
+				    (VP (NP-COMP (S (WHNP-3 *op*)
+						    (S (NP-SBJ *T*-3)
+						       (VP (NP 현재/NNC
+							       진행/NNC+중/XSF+이/CO+은/EAN))))
+						 (NP 여러/DAN
+						     상황/NNC+에/PAD))
+					대하/VV+어/ECS))
+			    (VV 만족/NNC+하/XSV+으며/ECS)))
+		     (S (NP-SBJ *pro*)
+			(VP (S-OBJ (NP-ADV (NP (S (WHNP-4 *op*)
+						  (S (NP-SBJ *T*-4)
+						     (VP (NP-ADV 오는/DAN
+								 27/NNU
+								 일/NNX)
+							 (NP-ADV 빈/NPR+에서/PAD)
+							 (VP 열리/VV+는/EAN))))
+					       (NP OPEC/NFW
+						   회의/NNC))
+					   (NP 때/NNC))
+				   (S (NP-SBJ (S (WHNP-5 *op*)
+						 (S (NP-SBJ *T*-5)
+						    (ADJP (VJ 소망/NNC+스럽/XSJ+은/EAN))))
+					      (NP 결과/NNC+이/PCA))
+				      (VP 나오/VV+기/ENM+을/PCA)))
+			    (VV 희망/NNC+하/XSV+는다/EFN))))
+		  "/SRQ
+		  며/PAD)
+	       (VP (S-OBJ (NP-SBJ (NP 현재/NNC+의/PAN)
+				  (NP 고유가/NNC
+				      현상/NNC+이/PCA))
+			  (VP (VP (ADVP 곧/ADV)
+				  (VP (VV 해소/NNC+되/XSV+을/EAN)))
+			      (VX 것/NNX+이/CO+음/ENM+을/PCA)))
+		   (VV 확신/NNC+하/XSV+으면서/ECS)))
+	   (VP (ADCP 그러나/ADC)
+	       (VP (S-COMP "/SLQ
+			   (NP-SBJ *pro*)
+			   (VP (S-COMP (NP-SBJ (S (WHNP-2 *op*)
+						  (S (S (NP-SBJ *pro*)
+							(VP (S-OBJ (NP-SBJ *pro*)
+								   (VP (NP-COMP (S (WHNP-1 *op*)
+										   (S (NP-SBJ *T*-1)
+										      (VP (VP (NP-ADV 천정부지/NNC+으로/PAD)
+											      (VP 치솟/VV+어/ECS))
+											  오/VX+은/EAN)))
+										(NP 유가/NNC+에/PAD))
+								       (ADVP 적절히/ADV)
+								       (VP (VV 대응/NNC+하/XSV+기/ENM))))
+							    위하/VV+어/ECS))
+						     (S (NP-SBJ 미국/NPR
+								스스로/NNC+도/PAU)
+							(VP (VP (NP-OBJ *T*-2)
+								하/VV+어야/ECS)
+							    하/VX+을/EAN))))
+					       (NP 일/NNC+들/XSF+이/PCA))
+				       (ADJP (ADVP 많이/ADV)
+					     (ADJP 있/VJ+다/EFN+고/PAD)))
+			       보/VV+는다/EFN)
+			   "/SRQ
+			   고/PAD)
+		   말하/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=결과</term>
+	    </Arg>
+	    <Rel>
+	      <term>소망스런</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

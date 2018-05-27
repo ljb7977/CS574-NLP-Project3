@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>반응</lemma>
+    <comment>Frames file for '반응' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>반응.01</id>
+      <edef>respond</edef>
+      <roleset>
+	<role argnum="1" argrole="agent"/>
+	<role argnum="2" argrole="in response to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>반응하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>쿠웨이트는 이후 사담 후세인 이라크 대통령과 협상하기를 거부하는 등 대 이라크 강경노선을 유지하면서 이라크 내의 예상하기 힘든 정국 변화에 예민하게 반응해 왔다.</text>
+	  <parse>
+(S (NP-SBJ 쿠웨이트/NPR+은/PAU)
+   (VP (VP (NP-ADV 이후/NNC)
+	   (S (NP-SBJ *pro*)
+	      (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+				 (VP (S-OBJ (NP-SBJ *pro*)
+					    (VP (NP-COMP 사담/NPR
+							     후세인/NPR
+							     이라크/NPR
+							     대통령/NNC+과/PAD)
+						(VV 협상/NNC+하/XSV+기/ENM+을/PCA)))
+				     (VV 거부/NNC+하/XSV+는/EAN)))
+			      (NP 등/NNX))
+			  (NP 대/DAN
+				이라크/NPR
+				강경/NNC+노선/NNC+을/PCA))
+		  (VV 유지/NNC+하/XSV+으면서/ECS)))
+	   (VP (NP-COMP (NP 이라크/NPR
+				  내/NNX+의/PAN)
+			(NP (S (WHNP-1 *op*)
+			       (S (S-SBJ (NP-SBJ *pro*)
+					 (VP (NP-OBJ *T*-1)
+					     (VV 예상/NNC+하/XSV+기/ENM)))
+				  (ADJP 힘들/VJ+은/EAN)))
+			    (NP 정국/NNC
+				    변화/NNC+에/PAD)))
+	       (VP (ADVP (ADV 예민하/VJ+게/ECS))
+		   (VP (VV 반응/NNC+하/XSV+어/ECS)))))
+       오/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>쿠웨이트</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이후</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>사담 후세인 이라크 대통령과 협상하기를 거부하는 등 대 이라크 강경노선을 유지하면서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>이라크 내의 예상하기 힘든 정국 변화</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>예민하게</term>
+	    </Arg>
+	    <Rel>
+	      <term>반응해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기다랗</lemma>
+    <comment>Frames file for '기다랗' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기다랗.01</id>
+      <edef>long</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being long"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기다랗다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 박물관은 250 개의 각종 향기 향수병들을 전시하고 있을 뿐 아니라, 각종 향기 향수들이 지난 1949 년부터 1990 년대까지 도입된 역사를 상세히 기록한 전장 7.6M의 기다란 시간표를 제시하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-SBJ 이/DAN
+                         박물관/NNC+은/PAU)
+                 (VP (VP (NP-OBJ (NP 250/NNU
+                                     개/NNX+의/PAN)
+                                 (NP 각종/NNC
+                                     향기/NNC
+                                     향수병/NNC+들/XSF+을/PCA))
+                         (VV 전시/NNC+하/XSV+고/ECS))
+                     있/VX+을/EAN))
+              (NP 뿐/NNX))
+      (ADJP 아니/VJ+라/EFN))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-OBJ (S (NP-SBJ 각종/NNC
+                                                   향기/NNC
+                                                   향수/NNC+들/XSF+이/PCA)
+                                           (VP (NP-ADV 지난/DAN
+                                                       1949/NNU
+                                                       년/NNX+부터/PAD)
+                                               (NP-ADV 1990/NNU
+                                                       년대/NNX+까지/PAU)
+                                               (VP (VV 도입/NNC+되/XSV+은/EAN))))
+                                        (NP 역사/NNC+을/PCA))
+                                (VP (ADVP 상세히/ADV)
+                                    (VP (VV 기록/NNC+하/XSV+은/EAN))))))
+                      (NP (NP 전장/NNC
+                              7.6/NNU+M/NFW+의/PAN)
+                          (NP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (ADJP 기다랗/VJ+은/EAN)))
+                              (NP 시간표/NNC+을/PCA))))
+              (VV 제시/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=시간표</term>
+	    </Arg>
+	    <Rel>
+	      <term>기다란</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

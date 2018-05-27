@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>게시</lemma>
+    <comment>Frames file for '게시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>게시.01</id>
+      <edef>post</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing posted"/>
+	<role argnum="2" argrole="posted to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>게시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>홍 위원장은 "이미 선대본부장과도 협의를 마친 것"이라고 말해 당내 논의를 통해 결정된 것임을 밝힌 후 당사 9 층에 마련키로 한 선거상황실 상황판에 이런 개념을 게시할 것을 지시했다.</text>
+	  <parse>
+(S (NP-SBJ 홍/NPR
+           위원장/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-COMP "/SLQ
+                                      (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *pro*)
+                                            (VP (ADVP 이미/ADV)
+                                                (VP (NP-COMP 선대/NNC+본부장/NNC+과/PAD+도/PAU)
+                                                    (NP-OBJ *T*-1)
+                                                    (VP (NP-OBJ 협의/NNC+을/PCA)
+                                                        마치/VV+은/EAN)))))
+                                      (NP 것/NNX)
+                                      "/SRQ
+                                      이라고/PAD)
+                             말하/VV+어/ECS))
+                      (VP (S-OBJ (NP-SBJ *pro*)
+                                 (VP (NP (S (WHNP-2 *op*)
+                                            (S (NP-SBJ *T*-2)
+                                               (VP (S (NP-SBJ *pro*)
+                                                      (VP (NP-OBJ 당내/NNC
+                                                                  논의/NNC+을/PCA)
+                                                          통하/VV+어/ECS))
+                                                   (VP (VV 결정/NNC+되/XSV+은/EAN)))))
+                                         (NP 것/NNX+이/CO+음/ENM+을/PCA))))
+                          밝히/VV+은/EAN)))
+               (NP 후/NNC))
+       (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (NP (S (WHNP-3 *op*)
+                                          (S (NP-SBJ *pro*)
+                                             (VP (S-COMP (NP-SBJ *pro*)
+                                                         (VP (NP-ADV 당사/NNC
+                                                                     9/NNU
+                                                                     층/NNX+에/PAD)
+                                                             (VP (NP-OBJ *T*-3)
+                                                                 (VV 마련/NNC+하/XSV+기/ENM+으로/PAD))))
+                                                 하/VV+은/EAN)))
+                                       (NP 선거/NNC+상황실/NNC))
+                                   (NP 상황판/NNC+에/PAD))
+                          (NP-OBJ 이런/DAN
+                                  개념/NNC+을/PCA)
+                          (VV 게시/NNC+하/XSV+을/EAN)))
+                   (NP 것/NNX+을/PCA))
+           (VV 지시/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>당사 9 층에 마련키로 한 선거상황실 상황판</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이런 개념</term>
+	    </Arg>
+	    <Rel>
+	      <term>게시할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

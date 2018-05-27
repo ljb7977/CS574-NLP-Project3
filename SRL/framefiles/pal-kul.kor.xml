@@ -1,0 +1,154 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발굴</lemma>
+    <comment>Frames file for '발굴' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발굴.01</id>
+      <edef>unearth</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing unearthed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발굴하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>AP 통신 외에도 일리노이주에서 발행되는 데일리 사우스타운의 케빈 카모디 기자는 수십년 전 원자폭탄 제조공장 근로자들이 독성 금속물질에 노출돼 다수가 죽거나 병에 걸린 사실을 정부가 알고도 은폐했음을 폭로하는 기사를 발굴해 지역보도상을 받았다.</text>
+	  <parse>
+(S (NP-ADV AP/NFW
+           통신/NNC
+           외/NNC+에/PAD+도/PAU)
+   (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-ADV 일리노이/NPR+주/NNC+에서/PAD)
+                            (VP (VV 발행/NNC+되/XSV+는/EAN)))))
+                  (NP 데일리/NPR
+                      사우스타운/NPR+의/PAN))
+              (NP 케빈/NPR
+                  카모디/NPR
+                  기자/NNC+은/PAU))
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (WHNP-3 *op*)
+                            (S (NP-SBJ *T*-3)
+                               (VP (S-OBJ (NP-OBJ-2 (S (S (NP-ADV 수십/NNU+년/NNX
+                                                                  전/NNC)
+                                                          (S (NP-SBJ 원자/NNC+폭탄/NNC
+                                                                     제조/NNC+공장/NNC
+                                                                     근로자/NNC+들/XSF+이/PCA)
+                                                             (VP (NP-COMP 독성/NNC
+                                                                          금속/NNC+물질/NNC+에/PAD)
+                                                                 (VV 노출/NNC+되/XSV+어/ECS))))
+                                                       (S (NP-SBJ 다수/NNC+이/PCA)
+                                                          (VP (VP 죽/VV+거나/ECS)
+                                                              (VP (NP-COMP 병/NNC+에/PAD)
+                                                                  걸리/VV+은/EAN))))
+                                                    (NP 사실/NNC+을/PCA))
+                                          (S (NP-SBJ 정부/NNC+이/PCA)
+                                             (VP (NP-OBJ *T*-2)
+                                                 (VV 알/VV+고/ECS+도/PAU
+                                                     (VV 은폐/NNC+하/XSV+었/EPF+음/ENM+을/PCA)))))
+                                   (VV 폭로/NNC+하/XSV+는/EAN))))
+                         (NP 기사/NNC+을/PCA))
+                 (VV 발굴/NNC+하/XSV+어/ECS)))
+          (VP (NP-OBJ 지역/NNC+보도/NNC+상/NNC+을/PCA)
+              받/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수십년 전 원자폭탄 제조공장 근로자들이 독성 금속물질에 노출돼 다수가 죽거나 병에 걸린 사실을 정부가 알고도 은폐했음을 폭로하는 기사</term>
+	    </Arg>
+	    <Rel>
+	      <term>발굴해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>발굴되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>송국장은 "안의사의 유해발굴은 한-일 양국의 책무일 뿐만 아니라 한-일 양국이 할 수 있는 가장 아름다운 국제사회적 공헌"이라면서 "안의사의 유해가 발굴되면 고향인 북한쪽이 아니라 휴전선에 안장, 휴전선이 이산가족의 `만남의 장'이 되도록 하는 것이 이상적"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 송/NPR+국장/NNC+은/PAU)
+   (VP (S "/SLQ
+          (S (NP-SBJ (S (NP-SBJ (NP 안/NPR+의사/NNC+의/PAN)
+                                (NP 유해/NNC+발굴/NNC+은/PAU))
+                        (VP (NP (NP 한/NPR
+                                    -/SSY
+                                    일/NPR
+                                    양국/NNC+의/PAN)
+                                (NP 책무/NNC+이/CO+을/EAN))))
+                     (NP 뿐/NNX+만/PAU))
+             (ADJP 아니/VJ+라/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP (S (WHNP-1 *op*)
+                        (S (NP-SBJ 한/NPR
+                                   -/SSY
+                                   일/NPR
+                                   양국/NNC+이/PCA)
+                           (VP (VP (NP-OBJ *T*-1)
+                                   하/VV+을/EAN)
+                               (VX 수/NNC
+                                   있/VJ+는/EAN))))
+                     (NP (S (WHNP-2 *op*)
+                            (S (NP-SBJ *T*-2)
+                               (ADJP (ADVP 가장/ADV)
+                                     (ADJP 아름답/VJ+은/EAN))))
+                         (NP 국제/NNC+사회/NNC+적/XSF
+                             공헌/NNC)))))
+          "/SRQ
+          이/CO+라면서/ECS)
+       (VP (S-COMP "/SLQ
+		   (NP-SBJ (S (NP-SBJ *pro*)
+			      (VP (S-COMP (S (NP-SBJ (NP 안/NPR+의사/NNC+의/PAN)
+						     (NP 유해/NNC+이/PCA))
+					     (VP (VV 발굴/NNC+되/XSV+으면/ECS)))
+					  (S (S (NP-SBJ (S (WHNP-3 *op*)
+							   (S (NP-SBJ *T*-3)
+							      (VP (NP 고향/NNC+이/CO+은/EAN))))
+							(NP 북한/NPR+쪽/NNX+이/PCA))
+						(ADJP 아니/VJ+라/ECS))
+					     (S (NP-SBJ *pro*)
+						(VP (NP-ADV 휴전선/NNC+에/PAD)
+						    (VP (NP-OBJ *pro*)
+							(VV 안장/NNC))))
+					     ,/SCM)
+					  (S (NP-SBJ 휴전선/NNC+이/PCA)
+					     (VP (NP-COMP (NP 이산/NNC+가족/NNC+의/PAN)
+							  (NP `/SLQ
+							      (NP 만남/NNC+의/PAN)
+							      (NP 장/NNC)
+							      '/SRQ
+							      이/PCA))
+						 되/VV+도록/ECS)))
+				  하/VV+는/EAN))
+			   (NP 것/NNX+이/PCA))
+		   (VP (NP 이상/NNC+적/XSF))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>안의사의 유해</term>
+	    </Arg>
+	    <Rel>
+	      <term>발굴되면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

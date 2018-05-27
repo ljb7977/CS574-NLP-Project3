@@ -1,0 +1,53 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>두</lemma>
+    <comment>Frames file for '두' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>두.01</id>
+      <edef>put</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>두다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>탄약의 할당과 수송은 하기 요소에 기초를 두고 한다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-OBJ-LV (NP 탄약/NNC+의/PAN)
+                    (NP (NP 할당/NNC+과/PCJ)
+                        (NP 수송/NNC+은/PAU)))
+       (VP (S (NP-SBJ *pro*)
+              (VP (NP-COMP 하기/NNC
+                           요소/NNC+에/PAD)
+                  (NP-OBJ 기초/NNC+을/PCA)
+                  두/VV+고/ECS))
+           (VP (LV 하/VV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>하기 요소</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>기초</term>
+	    </Arg>
+	    <Rel>
+	      <term>두고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>노크</lemma>
+    <comment>Frames file for '노크' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>노크.01</id>
+      <edef>knock</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="door"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>노크하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 주간지는 중국 소식통을 인용, `국제사회의 문을 노크하는 김정일'이라는 제하의 기사에서 "김정일 총비서는 북한주재 중국대사관에서 꼬박 4 시간을 보내면서 양국간 유대를 한껏 찬양하고 올해 베이징을 방문키로 원칙적인 동의를 했다"고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           주간지/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 중국/NPR
+                      소식통/NNC+을/PCA)
+              (VV 인용/NNC)))
+       ,/SCM
+       (NP-ADV (NP (NP `/SLQ
+                       (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP-OBJ (NP 국제/NNC+사회/NNC+의/PAN)
+                                         (NP 문/NNC+을/PCA))
+                                 (VV 노크/NNC+하/XSV+는/EAN))))
+                       (NP 김정일/NPR)
+                       '/SRQ
+                       이라는/PAN)
+                   (NP 제하/NNC+의/PAN))
+               (NP 기사/NNC+에서/PAD))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 김정일/NPR
+                              총비서/NNC+은/PAU)
+                      (VP (NP-ADV 북한/NPR+주재/NNC
+                                  중국/NPR+대사관/NNC+에서/PAD)
+                          (ADVP 꼬박/ADV)
+                          (VP (NP-OBJ 4/NNU
+                                      시간/NNX+을/PCA)
+                              보내/VV+으면서/ECS)))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ 양국/NNC+간/XSF
+                                      유대/NNC+을/PCA)
+                              (VP (ADVP 한껏/ADV)
+                                  (VP (VV 찬양/NNC+하/XSV+고/ECS))))
+                          (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 올해/NNC)
+                                     (VP (NP-OBJ 베이징/NPR+을/PCA)
+                                         (VV 방문/NNC+하/XSV+기/ENM+으로/PAD))))
+                              (VP (NP-OBJ (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP 원칙/NNC+적/XSF+이/CO+은/EAN))))
+                                          (NP 동의/NNC+을/PCA))
+                                  하/VV+었/EPF+다/EFN))))
+                   "/SRQ
+                   고/PAD)
+           전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=김정일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>국제사회의 문</term>
+	    </Arg>
+	    <Rel>
+	      <term>노크하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

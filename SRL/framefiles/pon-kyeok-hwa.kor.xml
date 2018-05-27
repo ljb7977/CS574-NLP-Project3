@@ -1,0 +1,213 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>본격화</lemma>
+    <comment>Frames file for '본격화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>본격화.01</id>
+      <edef>begin in full force</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing beginning"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>본격화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>특히 여야는 동시다발적 지구당 개편대회나 창당대회 등을 통해 실질적 선거운동을 본격화하고 있으나 이는 선거법상 사전선거운동에 해당되지 않는 합법적 `정당활동'의 일환으로 보장되고 있어 사실상 규제나 감시의 손길이 미치지 못하고 있다.</text>
+	  <parse>
+(S (S (ADVP 특히/ADV)
+      (S (NP-SBJ 여야/NNC+은/PAU)
+         (VP (VP (S (NP-SBJ *pro*)
+                    (VP (NP-OBJ (NP (NP (NP 동시다발/NNC+적/XSF)
+                                        (NP 지구당/NNC
+                                            개편/NNC+대회/NNC+이나/PCJ))
+                                    (NP 창당/NNC+대회/NNC))
+                                (NP 등/NNX+을/PCA))
+                        통하/VV+어/ECS))
+                 (VP (NP-OBJ (NP 실질/NNC+적/XSF)
+                             (NP 선거/NNC+운동/NNC+을/PCA))
+                     (VV 본격화/NNC+하/XSV+고/ECS)))
+             있/VX+으나/ECS)))
+   (S (NP-SBJ 이/NPN+은/PAU)
+      (VP (VP (NP-ADV (NP (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (VP (NP-COMP (NP 선거법/NNC+상/XSF)
+                                                 (NP 사전/NNC+선거/NNC+운동/NNC+에/PAD))
+                                        (VV 해당/NNC+되/XSV+지/ECS))
+                                    않/VX+는/EAN)))
+                          (NP (NP 합법/NNC+적/XSF)
+                              (NP `/SLQ
+                                  정당/NNC+활동/NNC
+                                  '/SRQ
+                                  의/PAN)))
+                      (NP 일환/NNC+으로/PAD))
+              (VP (VV 보장/NNC+되/XSV+고/ECS)))
+          있/VX+어/ECS))
+   (S (NP-SBJ (NP (NP 사실/NNC+상/XSF)
+                  (NP (NP 규제/NNC+이나/PCJ)
+                      (NP 감시/NNC+의/PAN)))
+              (NP 손길/NNC+이/PCA))
+      (VP (VP (VP (NP-COMP *pro*)
+                  미치/VV+지/ECS)
+              못하/VX+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>여야</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>동시다발적 지구당 개편대회나 창당대회 등을 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>실질적 선거운동</term>
+	    </Arg>
+	    <Rel>
+	      <term>본격화하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있으나</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>본격화하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>간첩죄로 미국 교도소에서 5 년째 복역 중인 재미교포 로버트 김(60, 한국명:김채곤)씨를 변호할 미국인 변호사가 선임됨으로써 김씨의 형량재심청구 작업이 본격화하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (VP (NP-OBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (VP (NP-ADV 간첩죄/NNC+으로/PAD)
+                                              (NP-ADV 미국/NPR
+                                                      교도소/NNC+에서/PAD)
+                                              (NP-ADV 5/NNU
+                                                      년/NNX+째/XSF)
+                                              (VP (VV 복역/NNC)))
+                                          (VX 중/NNX+이/CO+은/EAN))))
+                                (NP 재미/NNC+교포/NNC
+                                    로버트/NPR
+                                    김/NPR
+                                    (PRN -LRB-/SLQ
+                                         (NP 60/NNU)
+                                         ,/SCM
+                                         (NP 한국/NPR+명/XSF
+                                             :/SSY
+                                             김채곤/NPR)
+                                         -RRB-/SRQ)
+                                    씨/NNX+을/PCA))
+                        (VV 변호/NNC+하/XSV+을/EAN))))
+              (NP 미국인/NNC
+                  변호사/NNC+이/PCA))
+      (VP (VV 선임/NNC+되/XSV+음/ENM+으로써/PAD)))
+   (S (NP-SBJ (NP 김/NPR+씨/NNX+의/PAN)
+              (NP 형량/NNC+재심/NNC+청구/NNC
+                  작업/NNC+이/PCA))
+      (VP (VP (VV 본격화/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>간첩죄로 미국 교도소에서 5 년째 복역 중인 재미교포 로버트 김(60, 한국명:김채곤)씨를 변호할 미국인 변호사가 선임됨으로써</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>김씨의 형량재심청구 작업</term>
+	    </Arg>
+	    <Rel>
+	      <term>본격화하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>본격화되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 남북한 철도시설 통합운영 토대를 마련하기 위해 차량과 신호, 전기 등 시스템 통합을 위한 연구용역이 빠르면 이달 중 발주되는 등 남북한 철도연결을 위한 작업이 본격화되고 있다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ (NP (S (S (NP-SBJ *pro*)
+                        (VP (S-OBJ (NP-SBJ *pro*)
+                                   (VP (NP-OBJ 남북한/NPR
+                                               철도/NNC+시설/NNC
+                                               통합/NNC+운영/NNC
+                                               토대/NNC+을/PCA)
+                                       (VV 마련/NNC+하/XSV+기/ENM)))
+                            위하/VV+어/ECS))
+                     (S (NP-SBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (NP-OBJ (NP (NP (NP (NP 차량/NNC+과/PCJ)
+                                                              (NP 신호/NNC)
+                                                              ,/SCM
+                                                              (NP 전기/NNC))
+                                                          (NP 등/NNX))
+                                                      (NP 시스템/NNC))
+                                                  (NP 통합/NNC+을/PCA))
+                                          위하/VV+은/EAN)))
+                                (NP 연구/NNC+용역/NNC+이/PCA))
+                        (VP (S (NP-SBJ *pro*)
+                               (ADJP 빠르/VJ+으면/ECS))
+                            (NP-ADV 이달/NNC
+                                    중/NNX)
+                            (VP (VV 발주/NNC+되/XSV+는/EAN)))))
+                  (NP 등/NNX))
+              (NP (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (VP (NP-OBJ 남북한/NPR
+                                    철도/NNC+연결/NNC+을/PCA)
+                            위하/VV+은/EAN)))
+                  (NP 작업/NNC+이/PCA)))
+      (VP (VP (VV 본격화/NNC+되/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>남북한 철도시설 통합운영 토대를 마련하기 위해 차량과 신호, 전기 등 시스템 통합을 위한 연구용역이 빠르면 이달 중 발주되는 등 남북한 철도연결을 위한 작업</term>
+	    </Arg>
+	    <Rel>
+	      <term>본격화되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,98 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부응</lemma>
+    <comment>Frames file for '부응' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부응.01</id>
+      <edef>suit</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="purpose"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부응하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조 본부장은 이어 "망국적인 지역감정 해소 및 공명선거에 대한 국민의 기대와 여망에 부응하겠다는 총선연대의 충정은 이해한다"며 "그러나 공당이 특정 시민단체 앞에 서명하는 행위는 있을 수 없으며, 사리에 맞지 않는 일"이라고 말해 총선연대의 서명요구에 대한 불응 입장을 분명히 했다.</text>
+	  <parse>
+(S (S (NP-SBJ 조/NPR
+              본부장/NNC+은/PAU)
+      (VP (ADVP 이어/ADV)
+          (S "/SLQ
+             (NP-SBJ *pro*)
+             (VP (NP-OBJ (NP (S (WHNP-3 *op*)
+				(S (NP-SBJ *T*-3)
+				   (VP (NP-COMP (S (WHNP-2 *op*)
+						   (S (NP-SBJ *T*-2)
+						      (VP (NP-COMP (NP (NP (S (WHNP-1 *op*)
+									      (S (NP-SBJ *T*-1)
+										 (VP (NP 망국/NNC+적/XSF+이/CO+은/EAN))))
+									   (NP 지역/NNC+감정/NNC))
+								       (NP 해소/NNC))
+								   (ADCP 및/ADC)
+								   (NP 공명/NNC+선거/NNC+에/PAD))
+							  대하/VV+은/EAN)))
+						(NP (NP 국민/NNC+의/PAN)
+						    (NP (NP 기대/NNC+과/PCJ)
+							(NP 여망/NNC+에/PAD))))
+				       (VV 부응/NNC+하/XSV+겠/EPF+다는/EAN))))
+			     (NP 총선/NNC+연대/NNC+의/PAN))
+			 (NP 충정/NNC+은/PAU))
+                 (VV 이해/NNC+하/XSV+는다/EFN))
+             "/SRQ
+             며/ECS)
+          (VP (S-COMP "/SLQ
+                      (ADCP 그러나/ADC)
+                      (S (NP-SBJ (S (NP-SBJ 공당/NNC+이/PCA)
+                                    (VP (NP-COMP (NP 특정/NNC
+                                                     시민/NNC+단체/NNC)
+                                                 (NP 앞/NNC+에/PAD))
+                                        (VV 서명/NNC+하/XSV+는/EAN)))
+                                 (NP 행위/NNC+은/PAU))
+                         (VP (ADJP 있/VJ+을/EAN)
+                             (VX 수/NNX
+                                 없/VJ+으며/ECS)))
+                      ,/SCM
+                      (S (NP-SBJ *pro*)
+                         (VP (NP (S (WHNP-4 *op*)
+                                    (S (NP-SBJ *T*-4)
+                                       (VP (VP (NP-COMP 사리/NNC+에/PAD)
+                                               맞/VV+지/ECS)
+                                           않/VX+는/EAN)))
+                                 (NP 일/NNC))))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD)
+              말하/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-5 *op*)
+                     (S (NP-SBJ *T*-5)
+                        (VP (NP-COMP (NP 총선/NNC+연대/NNC+의/PAN)
+                                     (NP 서명/NNC+요구/NNC+에/PAD))
+                            대하/VV+은/EAN)))
+                  (NP 불응/NNC
+                      입장/NNC+을/PCA))
+          (ADVP-COMP 분명히/ADV)
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=총선연대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>망국적인 지역감정 해소 및 공명선거에 대한 국민의 기대와 여망</term>
+	    </Arg>
+	    <Rel>
+	      <term>부응하겠다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

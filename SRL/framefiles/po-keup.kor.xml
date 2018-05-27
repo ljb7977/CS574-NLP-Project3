@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보급</lemma>
+    <comment>Frames file for '보급' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보급.01</id>
+      <edef>spread</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing spreaded"/>
+	<role argnum="2" argrole="location, direction"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보급하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>회사관계자는 "유에스웨스트는 우리 제품을 본사에서 시범적으로 사용한 뒤 하반기에 전 계열사에 보급하고 일반 가입자를 대상으로 무선인터넷 서비스를 본격화할 예정"이라고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 회사/NNC+관계자/NNC+은/PAU)
+   (VP (NP-COMP "/SLQ
+                (S (NP-SBJ 유에스웨스트/NPR+은/PAU)
+                   (VP (NP-ADV (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ 우리/NPN
+                                              제품/NNC+을/PCA)
+                                      (VP (NP-ADV 본사/NNC+에서/PAD)
+                                          (ADVP (ADV 시범/NNC+적/XSF+으로/PAD))
+                                          (VP (VV 사용/NNC+하/XSV+은/EAN)))))
+                               (NP 뒤/NNC))
+                       (VP (VP (NP-ADV 하반기/NNC+에/PAD)
+                               (VP (NP-COMP 전/DAN
+                                            계열사/NNC+에/PAD)
+                                   (NP-OBJ *pro*)
+                                   (VV 보급/NNC+하/XSV+고/ECS)))
+                           (VP (NP-ADV (NP-OBJ 일반/NNC
+                                               가입자/NNC+을/PCA)
+                                       대상/NNC+으로/PAD)
+                               (VP (NP-OBJ 무선/NNC+인터넷/NNC
+                                           서비스/NNC+을/PCA)
+                                   (VV 본격화/NNC+하/XSV+을/EAN))))))
+                (NP 예정/NNC)
+                "/SRQ
+                이라고/PAD)
+       (VV 설명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>유에스웨스트</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>우리 제품을 본사에서 시범적으로 사용한 뒤</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>하반기에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>전 계열사</term>
+	    </Arg>
+	    <Rel>
+	      <term>보급하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,299 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>열</lemma>
+    <comment>Frames file for '열' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>열.01</id>
+      <edef>hold</edef>
+      <roleset>
+	<role argnum="0" argrole="thing holding"/>
+	<role argnum="1" argrole="thing held"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>열다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 브라히미 의장 내정자는 "오는 21 일 위원회 첫번째 회의를 열어 유엔 회원국 및 안전보장이사회 이사국들과 권고안 작성문제를 논의할 예정"이라고 밝혔다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ 브라히미/NPR
+              의장/NNC
+              내정자/NNC+은/PAU)
+      (VP (NP-COMP "/SLQ
+		   (S (NP-SBJ *pro*)
+		      (S (NP-SBJ *pro*)
+			 (VP (NP-ADV 오는/DAN
+					 21/NNU
+					 일/NNX)
+			     (VP (NP-OBJ 위원회/NNC
+					       첫/NNU+번째/NNX
+					       회의/NNC+을/PCA)
+				 열/VV+어/ECS)))
+		      (VP (NP-COMP (NP 유엔/NPR
+					   회원국/NNC)
+				   (ADCP 및/ADC)
+				   (NP 안전/NNC+보장/NNC+이사회/NNC
+					   이사국/NNC+들/XSF+과/PAD))
+			  (NP-OBJ 권고/NNC+안/NNC
+				      작성/NNC+문제/NNC+을/PCA)
+			  (VV 논의/NNC+하/XSV+을/EAN)))
+		   (NP 예정/NNC)
+		   "/SRQ
+		   이라고/PAD)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>오는 21 일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>위원회 첫번째 회의</term>
+	    </Arg>
+	    <Rel>
+	      <term>열어</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>열리다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>통일연구원 김학성 연구위원은 3 일 오후 서울 양재동 외교안보연구원에서 통일연구원 주최로 열린 `대북 포용정책 중간평가 학술회의'에서 주제발표를 통해 이같이 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 통일/NNC+연구원/NNC
+           김학성/NPR
+           연구/NNC+위원/NNC+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-ADV 3/NNU
+                                 일/NNX
+                                 오후/NNC)
+                         (NP-ADV 서울/NPR
+                                 양재동/NPR
+                                 외교/NNC+안보/NNC+연구원/NNC+에서/PAD)
+                         (NP-ADV 통일/NNC+연구원/NNC
+                                 주최/NNC+으로/PAD)
+                         (VP 열리/VV+은/EAN))))
+               (NP `/SLQ
+                   (NP 대/XPF+북/NPR
+                       포용/NNC+정책/NNC
+                       중간/NNC+평가/NNC
+                       학술/NNC+회의/NNC)
+                   '/SRQ
+                   에서/PAD))
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 주제/NNC+발표/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (VP (ADVP 이같이/ADV)
+           (VP (VV 주장/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*='대북 포용정책 중간평가 학술회의'</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>3 일 오후</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>서울 양재동 외교안보연구원에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>통일연구원 주최로</term>
+	    </Arg>
+	    <Rel>
+	      <term>열린</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>열.02</id>
+      <edef>open</edef>
+      <roleset>
+	<role argnum="0" argrole="thing opening"/>
+	<role argnum="1" argrole="thing opened"/>
+      </roleset>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>열다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이한동 총재가 지난 6 일 "총선 전이라도 보수의 이념과 내각책임제 실현에 뜻을 같이한다면 어느 정당, 정파, 세력, 정치인과도 손을 잡을 수 있다"고 말한 데 이어 김종필 명예총재도 8 일 "내각제에 뜻을 같이하는 사람이라면 누구와도 제휴할 것"이라며 다른 정파와의 제휴 또는 합당 가능성을 열어 놓았기 때문이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (ADVP (NP-COMP (S (NP-SBJ 이한동/NPR
+                                        총재/NNC+이/PCA)
+                                (VP (NP-ADV 지난/DAN
+                                            6/NNU
+                                            일/NNX)
+                                    (VP (S-COMP "/SLQ
+                                                (NP-SBJ *pro*)
+                                                (VP (VP (NP-ADV 총선/NNC
+                                                                전/NNC+이라도/PAU)
+                                                        (S (NP-SBJ *pro*)
+                                                           (VP (NP-COMP (NP (NP 보수/NNC+의/PAN)
+                                                                            (NP 이념/NNC+과/PCJ))
+                                                                        (NP 내각책임제/NNC
+                                                                            실현/NNC+에/PAD))
+                                                               (NP-OBJ 뜻/NNC+을/PCA)
+                                                               (VV 같이/NNC+하/XSV+는다면/ECS)))
+                                                        (NP-ADV (DANP 어느/DAN)
+                                                                (NP 정당/NNC
+                                                                    ,/SCM
+                                                                    정파/NNC
+                                                                    ,/SCM
+                                                                    세력/NNC
+                                                                    ,/SCM
+                                                                    정치인/NNC+과/PAD+도/PAU))
+                                                        (VP (NP-OBJ 손/NNC+을/PCA)
+                                                            잡/VV+을/EAN))
+                                                    (VX 수/NNX
+                                                        있/VJ+다/EFN))
+                                                "/SRQ
+                                                고/PAD)
+                                        말하/VV+은/EAN)))
+                             (NP 데/NNX))
+                    이어/ADV)
+              (S (NP-SBJ 김종필/NPR
+                         명예/NNC+총재/NNC+도/PAU)
+                 (VP (VP (NP-ADV 8/NNU
+                                 일/NNX)
+                         (S (NP-SBJ *pro*)
+                            (VP "/SLQ
+                                (VP (S (NP-SBJ *pro*)
+                                       (VP (NP (S (WHNP-1 *op*)
+                                                  (S (NP-SBJ *T*-1)
+                                                     (VP (NP-COMP 내각제/NNC+에/PAD)
+                                                         (NP-OBJ 뜻/NNC+을/PCA)
+                                                         (VV 같이/NNC+하/XSV+는/EAN))))
+                                               (NP 사람/NNC+이/CO+라면/ECS))))
+                                    (VP (NP-COMP 누구/NPN+과/PAD+도/PAU)
+                                        (VV 제휴/NNC+하/XSV+을/EAN)))
+                                (VX 것/NNX)
+                                "/SRQ
+                                이/CO+라며/ECS))
+                         (VP (NP-OBJ (NP (NP 다른/DAN
+                                             정파/NNC+과/PAD+의/PAN)
+                                         (NP (NP 제휴/NNC)
+                                             (ADCP 또는/ADC)
+                                             (NP 합당/NNC)))
+                                     (NP 가능성/NNC+을/PCA))
+                             열/VV+어/ECS))
+                     놓/VX+었/EPF+기/ENM)))
+           (NP 때문/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>김종필 명예총재</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>8 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>"내각제에 뜻을 같이하는 사람이라면 누구와도 제휴할 것"이라며 </term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>다른 정파와의 제휴 또는 합당 가능성</term>
+	    </Arg>
+	    <Rel>
+	      <term>열어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>놓았기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <!-- one of (comment roleset) -->
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>열리다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 날 법원문이 열리자마자 소장을 낸 여성들 가운데 한 명인 니르민 모하메디는 남편의 상습적인 구타를 견디다 못해 첫 아기를 임신하고 있음에도 불구하고 이혼 서류를 접수시켰다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (NP (NP (NP (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP-ADV 이/DAN
+                                                   날/NNC)
+                                           (S (NP-SBJ 법원/NNC+문/NNC+이/PCA)
+                                              (VP 열리/VV+자마자/ECS))
+                                           (VP (NP-OBJ 소장/NNC+을/PCA)
+                                               내/VV+은/EAN))))
+                                 (NP 여성/NNC+들/XSF))
+                             (NP 가운데/NNC))
+                         (NP 한/NNU
+                             명/NNX+이/CO+은/EAN)))))
+           (NP 니르민/NPR
+               모하메디/NPR+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+	  (VP (VP (NP-OBJ (NP 남편/NNC+의/PAN)
+			  (NP (S (WHNP-3 *op*)
+				 (S (NP-SBJ *T*-3)
+				    (VP (NP 상습/NNC+적/XSF+이/CO+은/EAN))))
+			      (NP 구타/NNC+을/PCA)))
+		  견디/VV+다/EFN)
+	      못하/VX+어/ECS))
+       (S (NP-SBJ *pro*)
+	  (VP (S-COMP (NP-SBJ *pro*)
+		      (VP (VP (NP-OBJ 첫/NNU
+					아기/NNC+을/PCA)
+			      (VV 임신/NNC+하/XSV+고/ECS))
+			  있/VX+음/ENM+에/PAD+도/PAU))
+	      불구하/VV+고/ECS))
+       (VP (NP-OBJ 이혼/NNC
+                       서류/NNC+을/PCA)
+	   (VV 접수/NNC+시키/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이 날</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>법원문</term>
+	    </Arg>
+	    <Rel>
+	      <term>열리자마자</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

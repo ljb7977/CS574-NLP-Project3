@@ -1,0 +1,104 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>반복</lemma>
+    <comment>Frames file for '반복' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>반복.01</id>
+      <edef>repeat</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing repeated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>반복하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>알리 로드리게스 베네수엘라 석유장관도 알 누아이미 장관의 발언내용을 반복했다.</text>
+	  <parse>
+(S (NP-SBJ 알리/NPR
+           로드리게스/NPR
+           베네수엘라/NPR
+           석유/NNC+장관/NNC+도/PAU)
+   (VP (NP-OBJ (NP 알/NPR
+                   누아이미/NPR
+                   장관/NNC+의/PAN)
+               (NP 발언/NNC+내용/NNC+을/PCA))
+       (VV 반복/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>알리 로드리게스 베네수엘라 석유장관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>알 누아이미 장관의 발언내용</term>
+	    </Arg>
+	    <Rel>
+	      <term>반복했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>반복되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>개장 초반 한 때 12 포인트 이상 급등하며 930 선에도 근접했으나 이후 매매공방이 벌어지며 상승폭이 좁혀졌다 넓혀졌다 반복되고 있다.</text>
+	  <parse>
+(S (S (NP-ADV (NP 개장/NNC
+                  초반/NNC)
+              (NP 한/NNU
+                  때/NNC))
+      (S (NP-SBJ 12/NNU
+                 포인트/NNX
+                 이상/NNC)
+         (VP (VV 급등/NNC+하/XSV+으며/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 930/NNU
+                   선/NNC+에/PAD+도/PAU)
+          (VV 근접/NNC+하/XSV+었/EPF+으나/ECS)))
+   (S (NP-ADV 이후/NNC)
+      (S (NP-SBJ 매매/NNC+공방/NNC+이/PCA)
+         (VP 벌어지/VV+으며/ECS)))
+   (S (S-SBJ (NP-SBJ 상승/NNC+폭/NNC+이/PCA)
+             (VP (VP (VV 좁히/VV+어지/XSV+었/EPF+다/ECS))
+                 (VP (VV 넓히/VV+어지/XSV+었/EPF+다/ECS))))
+      (VP (VP (VV 반복/NNC+되/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>개장 초반 한 때 12 포인트 이상 급등하며 930 선에도 근접했으나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이후 매매공방이 벌어지며</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>상승폭이 좁혀졌다 넓혀졌다</term>
+	    </Arg>
+	    <Rel>
+	      <term>반복되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

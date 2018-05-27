@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>몰고가</lemma>
+    <comment>Frames file for '몰고가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>몰고가.01</id>
+      <edef>drive</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing in motion"/>
+	<role argnum="2" argrole="direction"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>몰고가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한나라당은 당초 우려했던 민국당 바람이 주춤해지면서 수도권에서 민주당과의 양당 대결구도가 굳어지고 있다고 보고 대여 공세의 고삐를 더 바짝 죄면서 수도권 선거전을 양당싸움으로 몰고가기로 했다.</text>
+	  <parse>
+(S (NP-SBJ 한나라당/NPR+은/PAU)
+   (VP (VP (S-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *pro*)
+                                    (VP (NP-ADV 당초/NNC)
+                                        (VP (NP-OBJ *T*-1)
+                                            (VV 우려/NNC+하/XSV+었/EPF+던/EAN)))))
+                              (NP 민국당/NPR
+                                  바람/NNC+이/PCA))
+                      (VP (VV (VV 주춤/NNC+하/XSV+어지/XSV+으면서/ECS))))
+                   (S (NP-ADV 수도권/NNC+에서/PAD)
+                      (S (NP-SBJ (NP 민주당/NPR+과/PAD+의/PAN)
+                                 (NP 양당/NNC
+                                     대결/NNC+구도/NNC+이/PCA))
+                         (VP (VP (VV 굳/VJ+어지/XSV+고/ECS))
+                             있/VX+다/EFN+고/PAD))))
+           보/VV+고/ECS)
+       (VP (S-COMP (S (NP-SBJ *pro*)
+		      (VP (NP-OBJ (NP 대여/NNC
+				      공세/NNC+의/PAN)
+				  (NP 고삐/NNC+을/PCA))
+			  (VP (ADVP 더/ADV)
+			      (ADVP 바짝/ADV)
+			      (VP 죄/VV+으면서/ECS))))
+		   (S (NP-SBJ *pro*)
+		      (VP (NP-OBJ 수도권/NNC
+				  선거전/NNC+을/PCA)
+			  (NP-COMP 양당/NNC+싸움/NNC+으로/PAD)
+			  몰고가/VV+기/ENM+으로/PAD)))
+           하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>대여 공세의 고삐를 더 바짝 죄면서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수도권 선거전</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>양당싸움</term>
+	    </Arg>
+	    <Rel>
+	      <term>몰고가기로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

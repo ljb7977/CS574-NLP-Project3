@@ -1,0 +1,144 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조이</lemma>
+    <comment>Frames file for '조이' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>조이.01</id>
+      <edef>tighten</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing tightened"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이와 함께 일부 여론은 "미국이 이라크를 둘러싼 사태를 의도적으로 악화시켜 이라크의 숨통을 더욱 조이는 동시에 새로 등장한 러시아지도부를 떠보려는 목적으로 나포라는 충격적인 사건을 꾸몄다"고 풀이하고 있다고 이 신문은 덧붙였다.</text>
+	  <parse>
+(S (S-COMP-1 (ADVP (NP-COMP 이/NPN+과/PAD)
+                   함께/ADV)
+             (S (NP-SBJ 일부/NNC
+                        여론/NNC+은/PAU)
+                (VP (VP (S-COMP "/SLQ
+                                (NP-SBJ 미국/NPR+이/PCA)
+                                (VP (NP-ADV (S (S (NP-SBJ *pro*)
+                                                  (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                 (S (NP-SBJ *T*-2)
+                                                                    (VP (NP-OBJ 이라크/NPR+을/PCA)
+                                                                        둘러싸/VV+은/EAN)))
+                                                              (NP 사태/NNC+을/PCA))
+                                                      (VP (NP-ADV 의도/NNC+적/XSF+으로/PAD)
+                                                          (VP (VV 악화/NNC+시키/XSV+어/ECS)))))
+                                               (NP-ADV (S (NP-SBJ *pro*)
+                                                          (VP (NP-OBJ (NP 이라크/NPR+의/PAN)
+                                                                      (NP 숨통/NNC+을/PCA))
+                                                              (VP (ADVP 더욱/ADV)
+                                                                  (VP 조이/VV+는/EAN))))
+                                                       (NP 동시/NNC+에/PAD))
+                                               (S (NP-SBJ *pro*)
+                                                  (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                                 (S (NP-SBJ *T*-3)
+                                                                    (VP (ADVP 새로/ADV)
+                                                                        (VP (VV 등장/NNC+하/XSV+은/EAN)))))
+                                                              (NP 러시아/NPR+지도부/NNC+을/PCA))
+                                                      떠보/VV+으려는/EAN)))
+                                            (NP 목적/NNC+으로/PAD))
+                                    (VP (NP-OBJ (NP 나포/NNC+이라는/PAN)
+                                                (NP (S (WHNP-4 *op*)
+                                                       (S (NP-SBJ *T*-4)
+                                                          (VP (NP 충격/NNC+적/XSF+이/CO+은/EAN))))
+                                                    (NP 사건/NNC+을/PCA)))
+                                        꾸미/VV+었/EPF+다/EFN))
+                                "/SRQ
+                                고/PAD)
+                        (VV 풀이/NNC+하/XSV+고/ECS))
+                    있/VX+다/EFN+고/PAD)))
+   (S (NP-SBJ 이/DAN
+              신문/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이라크의 숨통</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더욱</term>
+	    </Arg>
+	    <Rel>
+	      <term>조이는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>죄다</rel>
+	  <comment>contracted form</comment>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한나라당은 당초 우려했던 민국당 바람이 주춤해지면서 수도권에서 민주당과의 양당 대결구도가 굳어지고 있다고 보고 대여 공세의 고삐를 더 바짝 죄면서 수도권 선거전을 양당싸움으로 몰고가기로 했다.</text>
+	  <parse>
+(S (NP-SBJ 한나라당/NPR+은/PAU)
+   (VP (VP (S-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *pro*)
+                                    (VP (NP-ADV 당초/NNC)
+                                        (VP (NP-OBJ *T*-1)
+                                            (VV 우려/NNC+하/XSV+었/EPF+던/EAN)))))
+                              (NP 민국당/NPR
+                                  바람/NNC+이/PCA))
+                      (VP (VV (VV 주춤/NNC+하/XSV+어지/XSV+으면서/ECS))))
+                   (S (NP-ADV 수도권/NNC+에서/PAD)
+                      (S (NP-SBJ (NP 민주당/NPR+과/PAD+의/PAN)
+                                 (NP 양당/NNC
+                                     대결/NNC+구도/NNC+이/PCA))
+                         (VP (VP (VV 굳/VJ+어지/XSV+고/ECS))
+                             있/VX+다/EFN+고/PAD))))
+           보/VV+고/ECS)
+       (VP (S-COMP (S (NP-SBJ *pro*)
+		      (VP (NP-OBJ (NP 대여/NNC
+				      공세/NNC+의/PAN)
+				  (NP 고삐/NNC+을/PCA))
+			  (VP (ADVP 더/ADV)
+			      (ADVP 바짝/ADV)
+			      (VP 죄/VV+으면서/ECS))))
+		   (S (NP-SBJ *pro*)
+		      (VP (NP-OBJ 수도권/NNC
+				  선거전/NNC+을/PCA)
+			  (NP-COMP 양당/NNC+싸움/NNC+으로/PAD)
+			  몰고가/VV+기/ENM+으로/PAD)))
+           하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대여 공세의 고삐</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>바짝</term>
+	    </Arg>
+	    <Rel>
+	      <term>죄면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

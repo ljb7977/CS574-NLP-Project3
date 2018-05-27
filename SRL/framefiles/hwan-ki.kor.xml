@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>환기</lemma>
+    <comment>Frames file for '환기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>환기.01</id>
+      <edef>evoke</edef>
+      <roleset>
+	<role argnum="0" argrole="evoker"/>
+	<role argnum="1" argrole="thing evoked"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>환기시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>앞서 국제 사면 위원회(앰네스티 인터내셔널)는 지난 3 일 후에 대한 처형이 임박했다고 국제 사회에 주의를 환기시킨 바 있다.</text>
+	  <parse>
+(S (ADVP 앞서/ADV)
+   (S (NP-SBJ (S (NP-SBJ 국제/NNC
+                         사면/NNC
+                         위원회/NNC
+                         (PRN -LRB-/SLQ
+                              앰네스티/NPR
+                              인터내셔널/NNC
+                              -RRB-/SRQ)
+                         은/PAU)
+                 (VP (NP-ADV 지난/DAN
+				 3/NNU
+				 일/NNX)
+                     (S (NP-SBJ (S (WHNP-1 *op*)
+				   (S (NP-SBJ *T*-1)
+				      (VP (NP-COMP 후/NPR+에/PAD)
+					  대하/VV+은/EAN)))
+				(NP 처형/NNC+이/PCA))
+			(VP 임박하/VV+었/EPF+다/EFN+고/PAD))
+		     (VP (NP-COMP 국제/NNC
+				      사회/NNC+에/PAD)
+			 (NP-OBJ 주의/NNC+을/PCA)
+			 (VV 환기/NNC+시키/XSV+은/EAN))))
+              (NP 바/NNX))
+      (ADJP 있/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>국제 사면 위원회(앰네스티 인터내셔널)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 3 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>후에 대한 처형이 임박했다고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>국제 사회</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>주의</term>
+	    </Arg>
+	    <Rel>
+	      <term>환기시킨</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,397 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>오</lemma>
+    <comment>Frames file for '오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>오.01</id>
+      <edef>come</edef>
+      <roleset>
+	<role argnum="0" argrole="entity coming"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>한미 협약에 의해서 미군이 한국에 와 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 한미/NPR
+                   협약/NNC+에/PAD)
+          의하/VV+어서/ECS))
+   (S (NP-SBJ 미군/NNC+이/PCA)
+      (VP (VP (NP-COMP 한국/NPR+에/PAD)
+              오/VV+어/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>한미 협약에 의해서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>미군</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>한국</term>
+	    </Arg>
+	    <Rel>
+	      <term>와</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>오.02</id>
+      <edef>come</edef>
+      <roleset>
+	<role argnum="1" argrole="entity coming"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>오다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>근본적으로 조선 인민군 탱크 전술은 소련에서 왔습니다.</text>
+	  <parse>
+(S (NP-ADV 근본/NNC+적/XSF+으로/PAD)
+   (S (NP-SBJ (NP 조선/NPR
+		  인민군/NNC)
+	      (NP 탱크/NNC
+		  전술/NNC+은/PAU))
+      (VP (NP-COMP 소련/NNC+에서/PAD)
+	  (VP 오/VV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>근본적으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>조선 인민군 탱크 전술</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>소련</term>
+	    </Arg>
+	    <Rel>
+	      <term>왔습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>몰고 오</lemma>
+    <comment>Frames file for '몰고 오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>오.03</id>
+      <edef>bring about-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing brought about"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>몰고 오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>슈라이버는 앞서 디 벨트와의 인터뷰에서 기민당 뿐 아니라 사민당에도 정치자금을 전달했다고 주장한 바 있어 이번 수사를 통해 사민당에도 뇌물이 건네진 것으로 드러날 경우 독일 정치권 전체가 뇌물 스캔들에 휘말리는 엄청난 파장을 몰고 올 것으로 우려되고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-SBJ 슈라이버/NPR+은/PAU)
+		 (VP (ADVP 앞서/ADV)
+		     (NP-ADV (NP 디/NPR
+				   벨트/NPR+과/PAD+의/PAN)
+			     (NP 인터뷰/NNC+에서/PAD))
+		     (VP (S-COMP (NP-SBJ *pro*)
+				 (VP (S (NP-SBJ 기민당/NPR
+						      뿐/NNX)
+					(ADJP 아니/VJ+라/EFN))
+				     (VP (NP-COMP 사민당/NPR+에/PAD+도/PAU)
+					 (NP-OBJ 정치/NNC+자금/NNC+을/PCA)
+					 (VV 전달/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+			 (VV 주장/NNC+하/XSV+은/EAN))))
+	      (NP 바/NNX))
+      (ADJP 있/VJ+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+			 (VP (S (NP-SBJ *pro*)
+				(VP (NP-OBJ 이번/NNC
+						수사/NNC+을/PCA)
+				    통하/VV+어/ECS))
+			     (VP (NP-COMP (S (NP-COMP-1 사민당/NPR+에/PAD+도/PAU)
+					     (S (NP-SBJ 뇌물/NNC+이/PCA)
+						(VP (NP-COMP *T*-1)
+						    (VV 건네/VV+어지/XSV+은/EAN))))
+					  (NP 것/NNX+으로/PAD))
+				 드러나/VV+을/EAN)))
+		      (NP 경우/NNC))
+	      (VP (NP-COMP (S (NP-SBJ *pro*)
+			      (VP (NP-OBJ (S (NP-SBJ 독일/NPR
+							 정치권/NNC
+							 전체/NNC+이/PCA)
+					     (VP (NP-COMP 뇌물/NNC
+							      스캔들/NNC+에/PAD)
+						 휘말리/VV+은/EAN))
+					  (NP (S (WHNP-2 *op*)
+						 (S (NP-SBJ *T*-2)
+						    (ADJP 엄청나/VJ+은/EAN)))
+					      (NP 파장/NNC+을/PCA)))
+				  (CV 몰/VV+고/ECS
+					오/VV+을/EAN)))
+			   (NP 것/NNX+으로/PAD))
+		  (VP (VV 우려/NNC+되/XSV+고/ECS))))
+	  있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>독일 정치권 전체가 뇌물 스캔들에 휘말리는 엄청난 파장</term>
+	    </Arg>
+	    <Rel>
+	      <term>몰고 올</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>재운송해 오</lemma>
+    <comment>Frames file for '재운송해 오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>오.04</id>
+      <edef>send back-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="sender"/>
+	<role argnum="1" argrole="thing sent"/>
+	<role argnum="2" argrole="sent to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재운송해 오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>당초 이 산업폐기물들은 거대 석유화학 업체인 포모사가 처리를 위해 캄보디아로 운송한 것이었으나 폐기물로 인해 캄보디아 주민 7 명이 사망하자 대만으로 재운송해 왔다.</text>
+	  <parse>
+(S (S (NP-ADV 당초/NNC)
+      (S (NP-SBJ 이/DAN
+                 산업/NNC+폐기물/NNC+들/XSF+은/PAU)
+         (VP (NP (S (WHNP-2 *op*)
+                    (S (NP-SBJ (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (NP 거대/NNC
+                                             석유/NNC+화학/NNC
+                                             업체/NNC+이/CO+은/EAN))))
+                               (NP 포모/NPR+사/XSF+이/PCA))
+                       (VP (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ 처리/NNC+을/PCA)
+                                  위하/VV+어/ECS))
+                           (VP (NP-OBJ *T*-2)
+                               (NP-COMP 캄보디아/NPR+으로/PAD)
+                               (VV 운송/NNC+하/XSV+은/EAN)))))
+                 (NP 것/NNX+이/CO+었/EPF+으나/ECS)))))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP 폐기물/NNC+으로/PAD)
+             인하/VV+어/ECS))
+      (S (NP-SBJ 캄보디아/NPR
+                 주민/NNC
+                 7/NNU
+                 명/NNX+이/PCA)
+         (VP (VV 사망/NNC+하/XSV+자/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 대만/NPR+으로/PAD)
+          (NP-OBJ *pro*)
+          (CV (VV 재운송/NNC+하/XSV+어/ECS)
+              오/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>폐기물로 인해 캄보디아 주민 7 명이 사망하자</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>대만</term>
+	    </Arg>
+	    <Rel>
+	      <term>재운송해 왔다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>송금돼 오</lemma>
+    <comment>Frames file for '송금돼 오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>오.05</id>
+      <edef>remit-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="sender"/>
+	<role argnum="1" argrole="money"/>
+	<role argnum="2" argrole="sent to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>송금돼 오다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 중앙은행은 외국으로부터 송금돼 온 돈을 받은 사람은 그동안 상당액의 수입세를 물었으나 이것 또한 폐지하기로 했다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 중앙/NNC+은행/NNC+은/PAU)
+      (VP (S-COMP (S (NP-SBJ (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                  (S (NP-SBJ *T*-1)
+                                                     (VP (NP-COMP 외국/NNC+으로부터/PAD)
+                                                         (CV (VV 송금/NNC+되/XSV+어/ECS)
+							     오/VV+은/EAN))))
+                                               (NP 돈/NNC+을/PCA))
+                                       받/VV+은/EAN)))
+                             (NP 사람/NNC+은/PAU))
+                     (VP (NP-ADV 그동안/NNC)
+                         (VP (NP-OBJ (NP 상당액/NNC+의/PAN)
+                                     (NP 수입세/NNC+을/PCA))
+                             물/VV+었/EPF+으나/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ 이것/NPN)
+                         (VP (ADVP 또한/ADV)
+                             (VP (VV 폐지/NNC+하/XSV+기/ENM+으로/PAD))))))
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=돈</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>으로부터</f>
+	      <term>외국</term>
+	    </Arg>
+	    <Rel>
+	      <term>송금돼 온</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>들려 오</lemma>
+    <comment>Frames file for '들려 오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>오.06</id>
+      <edef>hear-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing heard"/>
+	<role argnum="2" argrole="heard from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>들려 오다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 "정상들의 우호적인 태도로 양국간 평화회담 재개를 기대할 수 있게 됐다"면서 "곧 좋은 소식이 들려 오기를 바란다"고 말해 회담을 통해 새로운 돌파구가 마련됐음을 시사했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S "/SLQ
+          (NP-ADV (NP 정상/NNC+들/XSF+의/PAN)
+                  (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP 우호/NNC+적/XSF+이/CO+은/EAN))))
+                      (NP 태도/NNC+으로/PAD)))
+          (VP (NP-SBJ *pro*)
+              (VP (VP (VP (NP-OBJ 양국/NNC+간/XSF
+				      평화/NNC+회담/NNC
+				      재개/NNC+을/PCA)
+                          (VV 기대/NNC+하/XSV+을/EAN))
+                      (VX 수/NNX
+			    있/VJ+게/ECS))
+                  되/VX+었/EPF+다/EFN))
+	  "/SRQ
+	  면서/ECS)
+       (S (NP-SBJ *pro*)
+          (VP (S-COMP "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (S-OBJ (ADVP 곧/ADV)
+                                 (S (NP-SBJ (S (WHNP-2 *op*)
+                                               (S (NP-SBJ *T*-2)
+                                                  (ADJP 좋/VJ+은/EAN)))
+                                            (NP 소식/NNC+이/PCA))
+                                    (VP (CV 들리/VV+어/ECS
+                                            오/VV+기/ENM+을/PCA))))
+                          바라/VV+는다/EFN)
+                      "/SRQ
+                      고/PAD)
+              말하/VV+어/ECS))
+       (VP (S-OBJ (S (NP-SBJ *pro*)
+		     (VP (NP-OBJ 회담/NNC+을/PCA)
+			 통하/VV+어/ECS))
+		  (S (NP-SBJ (S (WHNP-3 *op*)
+				(S (NP-SBJ *T*-3)
+				   (ADJP 새롭/VJ+은/EAN)))
+			     (NP 돌파구/NNC+이/PCA))
+		     (VP (VV 마련/NNC+되/XSV+었/EPF+음/ENM+을/PCA))))
+	   (VV 시사/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>곧</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>좋은 소식</term>
+	    </Arg>
+	    <Rel>
+	      <term>들려 오기를</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

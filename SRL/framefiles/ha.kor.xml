@@ -1,0 +1,521 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>하</lemma>
+    <comment>Frames file for '하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>하.01</id>
+      <edef>do</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>무전 통신에 혼신이 생기면 어떻게 하는가?</text>
+	  <parse>
+(S (S (NP-COMP-3 무전/NNC
+                 통신/NNC+에/PAD)
+      (S (NP-SBJ 혼신/NNC+이/PCA)
+         (VP (NP-COMP *T*-3)
+             생기/VV+으면/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 어떻게/ADV)
+          (VP (NP-OBJ *pro*)
+              하/VV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>무전 통신에 혼신이 생기면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어떻게</term>
+	    </Arg>
+	    <Rel>
+	      <term>하는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>피노체트의 아들인 마리오 안토니오 피노체트는 5 일 피노체트가 거주 중인 저택 앞에서 기자들에게 "아버지가 자신을 괴롭혀 온 사람들을 용서했고 친척과 우리들도 그렇게 했다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP (NP 피노체트/NPR+의/PAN)
+                         (NP 아들/NNC+이/CO+은/EAN)))))
+           (NP 마리오/NPR
+               안토니오/NPR
+               피노체트/NPR+은/PAU))
+   (VP (NP-ADV 5/NNU
+               일/NNX)
+       (NP-ADV (NP (S (WHNP-2 *op*)
+                      (S (NP-SBJ 피노체트/NPR+이/PCA)
+                         (VP (VP (NP-COMP *T*-2)
+                                 (VV 거주/NNC))
+                             (VX 중/NNX+이/CO+은/EAN))))
+                   (NP 저택/NNC))
+               (NP 앞/NNC+에서/PAD))
+       (VP (NP-COMP 기자/NNC+들/XSF+에게/PAD)
+           (S-COMP "/SLQ
+                   (S (NP-SBJ 아버지/NNC+이/PCA)
+                      (VP (NP-OBJ (S (WHNP-3 *op*)
+                                     (S (NP-SBJ *T*-3)
+                                        (VP (VP (NP-OBJ 자신/NNC+을/PCA)
+                                                괴롭히/VV+어/ECS)
+                                            오/VX+은/EAN)))
+                                  (NP 사람/NNC+들/XSF+을/PCA))
+                          (VV 용서/NNC+하/XSV+었/EPF+고/ECS)))
+                   (S (NP-SBJ (NP 친척/NNC+과/PCJ)
+                              (NP 우리/NPN+들/XSF+도/PAU))
+                      (VP (ADVP-COMP 그렇게/ADV)
+                          하/VV+었/EPF+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>친척과 우리들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>그렇게</term>
+	    </Arg>
+	    <Rel>
+	      <term>했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>하.02</id>
+      <edef>say</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing said"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>왜 "미록산 1이었다" 고 하지?</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (ADVP 왜/ADV) 
+       (VP (S-COMP (NP-SBJ *pro*) 
+		   (VP "/SLQ 
+		       (NP 미록산/NPR 
+			   1/NNU+이/CO+었/EPF+다/EFN) 
+		       "/SRQ 
+		       고/PQO)) 
+	   하/VV+지/EFN)) 
+   ?/SFN )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>왜</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>미록산 1이었다</term>
+	    </Arg>
+	    <Rel>
+	      <term>하지</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한 민간단체 관계자는 "북한 사람 7 명이 러시아로 탈출했다 지난 1 월 북한으로 송환되면서 탈북자 문제에 지나친 관심이 쏠리고 있다"며 "우리의 경우도 남한을 떠난 사람, 즉 '탈남자'라고 할 수 있는 사람들이 다수임을 상기할 필요가 있다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 한/NNU
+           민간/NNC+단체/NNC
+           관계자/NNC+은/PAU)
+   (VP (S-COMP (S "/SLQ
+                  (S (NP-SBJ 북한/NPR
+                             사람/NNC
+                             7/NNU
+                             명/NNX+이/PCA)
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (NP-ADV 러시아/NPR+으로/PAD)
+                                (VP (VV 탈출/NNC+하/XSV+었/EPF+다/ECS))))
+                         (NP-ADV 지난/DAN
+                                 1/NNU
+                                 월/NNX)
+                         (VP (NP-COMP 북한/NPR+으로/PAD)
+                             (VV 송환/NNC+되/XSV+으면서/ECS))))
+                  (S (NP-COMP-2 탈북자/NNC
+                                문제/NNC+에/PAD)
+                     (S (NP-SBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (ADJP 지나치/VJ+은/EAN)))
+                                (NP 관심/NNC+이/PCA))
+                        (VP (VP (NP-COMP *T*-2)
+                                쏠리/VV+고/ECS)
+                            있/VX+다/EFN)))
+                  "/SRQ
+                  며/ECS)
+               (S "/SLQ
+                  (NP-SBJ (S (NP-SBJ *pro*)
+                             (VP (S-OBJ (NP-ADV (NP 우리/NPN+의/PAN)
+                                                (NP 경우/NNC+도/PAU))
+                                        (S (NP-SBJ (NP (S (WHNP-3 *op*)
+                                                          (S (NP-SBJ *T*-3)
+                                                             (VP (NP-OBJ 남한/NPR+을/PCA)
+                                                                 떠나/VV+은/EAN)))
+                                                       (NP 사람/NNC))
+                                                   ,/SCM
+                                                   (ADCP 즉/ADC)
+                                                   (NP (S (WHNP-4 *op*)
+                                                          (S (NP-SBJ *pro*)
+                                                             (VP (VP (NP-COMP '/SLQ
+                                                                              탈남자/NNC
+                                                                              '/SRQ
+                                                                              이라고/PAD)
+                                                                     (NP-OBJ *T*-4)
+                                                                     하/VV+을/EAN)
+                                                                 (VX 수/NNX
+                                                                     있/VJ+는/EAN))))
+                                                       (NP 사람/NNC+들/XSF+이/PCA)))
+                                           (VP (NP 다수/NNC+이/CO+음/ENM+을/PCA))))
+                                 (VV 상기/NNC+하/XSV+을/EAN)))
+                          (NP 필요/NNC+이/PCA))
+                  (ADJP 있/VJ+다/EFN)
+                  "/SRQ
+                  고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>'탈남자'라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=사람들</term>
+	    </Arg>
+	    <Rel>
+	      <term>할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있는</term>
+	    </Aux>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>하.03</id>
+      <edef>regard</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>어느 방위선이 경도선을 기준으로 하고 있소?</text>
+	  <parse>
+(S (NP-SBJ 어느/DAN
+	   방위선/NNC+이/PCA)
+   (VP (VP (NP-OBJ 경도선/NNC+을/PCA)
+	   (NP-COMP 기준/NNC+으로/PAD)
+	   하/VV+고/EAU)
+       있/VX+소/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>어느 방위선</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>경도선</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>기준</term>
+	    </Arg>
+	    <Rel>
+	      <term>하고</term>
+	    </Rel>
+	    <AUX>
+	      <f>고</f>
+	      <term>있소</term>
+	    </AUX>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>하.04</id>
+      <edef>make</edef>
+      <roleset>
+	<role argnum="0" argrole="impeller to action"/>
+	<role argnum="1" argrole="impelled action"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>특히 런던시장 선거 후보들의 선거유인물 발송비용을 정부가 부담하도록 하는 법안이 내주 중 의회에서 확정될 예정이어서 이때까지는 뚜렷한 결정이 내려지지 않을 것으로 보인다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (ADVP 특히/ADV)
+          (VP (NP (S (NP-SBJ (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (VP (S-COMP (NP-OBJ-1 (NP 런던/NPR+시장/NNC
+                                                             선거/NNC
+                                                             후보/NNC+들/XSF+의/PAN)
+                                                         (NP 선거/NNC+유인물/NNC
+                                                             발송/NNC+비용/NNC+을/PCA))
+                                               (S (NP-SBJ 정부/NNC+이/PCA)
+                                                  (VP (NP-OBJ *T*-1)
+                                                      (VV 부담/NNC+하/XSV+도록/ECS))))
+                                       하/VV+는/EAN)))
+                             (NP 법안/NNC+이/PCA))
+                     (VP (NP-ADV 내주/NNC
+                                 중/NNX)
+                         (NP-ADV 의회/NNC+에서/PAD)
+                         (VP (VV 확정/NNC+되/XSV+을/EAN))))
+                  (NP 예정/NNC+이/CO+어서/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-ADV 이때/NNC+까지/PAU+은/PAU)
+                      (S (NP-SBJ (S (WHNP-3 *op*)
+                                    (S (NP-SBJ *T*-3)
+                                       (ADJP 뚜렷하/VJ+은/EAN)))
+                                 (NP 결정/NNC+이/PCA))
+                         (VP (VP (VV 내리/VV+어지/XSV+지/ECS))
+                             않/VX+을/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=법안</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도록</f>
+	      <term>런던시장 선거 후보들의 선거유인물 발송비용을 정부가 부담하</term>
+	    </Arg>
+	    <Rel>
+	      <term>하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>에델가르트 불만 교육부 장관은 외국인 고용을 어렵게 하는 독일 이민법 규정을 개정할 것을 주장하고 있으며 외국 유학생도 더 많이 받아들일 것을 요구하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 에델가르트/NPR
+           불만/NPR
+           교육부/NNC
+           장관/NNC+은/PAU)
+   (VP (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+			  (VP (NP-OBJ (S (WHNP-1 *op*)
+					 (S (NP-SBJ *T*-1)
+					    (VP (NP-OBJ 외국인/NNC
+							고용/NNC+을/PCA)
+						(S-COMP (NP-SBJ *pro*)
+							(ADJP 어렵/VJ+게/ECS))
+						하/VV+는/EAN)))
+				      (NP 독일/NPR
+					  이민법/NNC
+					  규정/NNC+을/PCA))
+			      (VV 개정/NNC+하/XSV+을/EAN)))
+		       (NP 것/NNX+을/PCA))
+               (VV 주장/NNC+하/XSV+고/ECS))
+           있/VX+으며/ECS)
+       (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ 외국/NNC
+                                      유학생/NNC+도/PAU)
+                              (VP (ADVP 더/ADV
+                                        많이/ADV)
+                                  (VP 받아들이/VV+을/EAN))))
+                       (NP 것/NNX+을/PCA))
+               (VV 요구/NNC+하/XSV+고/ECS))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=독일 이민법 규정</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>외국인 고용</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>어렵게</term>
+	    </Arg>
+	    <Rel>
+	      <term>하는</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>하.05</id>
+      <edef>decide</edef>
+      <roleset>
+	<role argnum="0" argrole="decider"/>
+	<role argnum="1" argrole="decision"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>시리아는 6 일 남부 레바논에서 병력을 철수하기로 한 이스라엘 정부 결정과 관련, 그 진의와 이행 가능성에 대해 의문을 표시했다.</text>
+	  <parse>
+(S (NP-SBJ 시리아/NPR+은/PAU)
+   (VP (NP-ADV 6/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (S-COMP (NP-SBJ *pro*)
+                                             (VP (NP-COMP 남부/NNC
+                                                          레바논/NPR+에서/PAD)
+                                                 (NP-OBJ 병력/NNC+을/PCA)
+                                                 (VV 철수/NNC+하/XSV+기/ENM+으로/PAD)))
+                                     하/VV+은/EAN)))
+                           (NP 이스라엘/NPR
+                               정부/NNC))
+                       (NP 결정/NNC+과/PAD))
+              (VV 관련/NNC)))
+       ,/SCM
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (NP 그/DAN
+                           진의/NNC+과/PCJ)
+                       (NP 이행/NNC
+                           가능성/NNC+에/PAD))
+              대하/VV+어/ECS))
+       (VP (NP-OBJ 의문/NNC+을/PCA)
+           (VV 표시/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=이스라엘 정부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>기로</f>
+	      <term>남부 레바논에서 병력을 철수하</term>
+	    </Arg>
+	    <Rel>
+	      <term>한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>하.06</id>
+      <edef>at</edef>
+      <roleset>
+	<role argnum="1" argrole="time"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>하다</rel>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국의 향기, 향수산업은 지난 1950 년만 해도 연간소매고가 25 만달러에 불과했지만 오늘날에는 60 억달러 규모로 급신장했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 미국/NPR+의/PAN)
+           (NP 향기/NNC
+               ,/SCM
+               향수/NNC+산업/NNC+은/PAU))
+   (VP (S (S (NP-SBJ *pro*)
+             (VP (NP-COMP 지난/DAN
+			      1950/NNU
+			      년/NNX+만/PAU)
+                 하/VV+어도/ECS))
+          (S (NP-SBJ 연간/NNC+소매고/NNC+이/PCA)
+             (ADJP (NP-COMP 25/NNU
+                            만/NNU+달러/NNX+에/PAD)
+                   (ADJP (VJ 불과/NNC+하/XSJ+었/EPF+지만/ECS)))))
+       (NP-ADV 오늘날/NNC+에/PAD+은/PAU)
+       (VP (NP-COMP 60/NNU
+		    억/NNU+달러/NNX
+		    규모/NNC+으로/PAD)
+	   (VV 급신장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>만</f>
+	      <term>지난 1950 년</term>
+	    </Arg>
+	    <Rel>
+	      <term>해도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>쐬</lemma>
+    <comment>Frames file for '쐬' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>쐬.01</id>
+      <edef>expose oneself to</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>쐬다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>나는 지금 너무나 화가 나서 바람을 쐬러 나간다.</text>
+	  <parse>
+(S (NP-SBJ 나/NPN+은/PAU)
+   (VP (S (NP-ADV 지금/NNC)
+          (ADVP 너무나/ADV)
+          (S (NP-SBJ 화/NNC+이/PCA)
+             (VP 나/VV+어서/ECS)))
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 바람/NNC+을/PCA)
+              쐬/VV+으러/ECS))
+       (VP 나가/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>바람</term>
+	    </Arg>
+	    <Rel>
+	      <term>쐬러</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

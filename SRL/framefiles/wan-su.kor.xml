@@ -1,0 +1,98 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>완수</lemma>
+    <comment>Frames file for '완수' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>완수.01</id>
+      <edef>accomplish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="task"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>완수하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 포대는 상기 임무를 완수하지 못했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+           포대/NNC+은/PAU)
+   (VP (VP (NP-OBJ 상기/NNC
+                   임무/NNC+을/PCA)
+           (VV 완수/NNC+하/XSV+지/ECS))
+       못하/VX+었/EPF+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저희 포대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>상기 임무</term>
+	    </Arg>
+	    <Rel>
+	      <term>완수하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못했습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>완수되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>작전 계획관과 군수 지원 계획관은 계획된 임무가 성공적으로 완수될 수 있도록 서로 긴밀하게 협조해야 한다.</text>
+	  <parse>
+(S (NP-SBJ (NP 작전/NNC
+               계획관/NNC+과/PCJ)
+           (NP 군수/NNC
+               지원/NNC
+               계획관/NNC+은/PAU))
+   (VP (VP (S (NP-SBJ (S (WHNP-27 *op*)
+                         (S (NP-SBJ *T*-27)
+                            (VP (VV 계획/NNC+되/XSV+은/EAN))))
+                      (NP 임무/NNC+이/PCA))
+              (VP (VP (ADVP (ADV 성공/NNC+적/XSF+으로/PAD))
+                      (VP (VV 완수/NNC+되/XSV+을/EAN)))
+                  (VX 수/NNX
+                      있/VJ+도록/ECS)))
+           (ADVP 서로/ADV)
+           (ADVP (ADV 긴밀하/VJ+게/ECS))
+           (VP (VV 협조/NNC+하/XSV+어야/ECS)))
+       하/VX+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>계획된 임무</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>성공적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>완수될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

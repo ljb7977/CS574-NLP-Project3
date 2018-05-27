@@ -1,0 +1,135 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>붕괴</lemma>
+    <comment>Frames file for '붕괴' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>붕괴.01</id>
+      <edef>collapse</edef>
+      <roleset>
+	<role argnum="0" argrole="causer of collapse"/>
+	<role argnum="1" argrole="thing collapsing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>붕괴하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이스라엘군이 비상 철군계획을 세운 것은 에후드 바라크 이스라엘 총리가 약속한 오는 7 월 철군 이전에 SLA가 붕괴할 수도 있다는 우려 때문인 것으로 알려지고 있다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-COMP (S (NP-SBJ (S (NP-SBJ 이스라엘/NPR+군/NNC+이/PCA)
+                                  (VP (NP-OBJ 비상/NNC
+                                              철군/NNC+계획/NNC+을/PCA)
+                                      세우/VV+은/EAN))
+                               (NP 것/NNX+은/PAU))
+                       (VP (NP (NP (S (NP-ADV (NP (S (WHNP-1 *op*)
+                                                     (S (NP-SBJ 에후드/NPR
+                                                                바라크/NPR
+                                                                이스라엘/NPR
+                                                                총리/NNC+이/PCA)
+                                                        (VP (NP-OBJ *T*-1)
+                                                            (VV 약속/NNC+하/XSV+은/EAN))))
+                                                  (NP 오는/DAN
+                                                      7/NNU
+                                                      월/NNX
+                                                      철군/NNC))
+                                              (NP 이전/NNC+에/PAD))
+                                      (S (NP-SBJ SLA/NFW+이/PCA)
+                                         (VP (VP (VV 붕괴/NNC+하/XSV+을/EAN))
+                                             (VX 수/NNX+도/PAU
+                                                 있/VJ+다는/EAN))))
+                                   (NP 우려/NNC))
+                               (NP 때문/NNX+이/CO+은/EAN))))
+                    (NP 것/NNX+으로/PAD))
+           (VV 알리/VV+어지/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>에후드 바라크 이스라엘 총리가 약속한 오는 7 월 철군 이전에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>SLA</term>
+	    </Arg>
+	    <Rel>
+	      <term>붕괴할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수도 있다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>붕괴되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>유럽 조선업계는 올해 말에 자국 조선소에 대한 정부의 보조금 지급이 종료되면 노동집약적인 조선산업 기반이 붕괴된다고 주장하면서 이를 연장하기 위해 한국을 겨냥, 불공정 관행을 문제 삼을 것이라고 외교부는 분석했다.</text>
+	  <parse>
+(S (S-COMP-3 (S (NP-SBJ 유럽/NPR
+                        조선/NNC+업계/NNC+은/PAU)
+                (VP (S-COMP (S (NP-ADV 올해/NNC
+                                       말/NNX+에/PAD)
+                               (S (NP-SBJ (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (NP-COMP 자국/NNC
+                                                             조선소/NNC+에/PAD)
+                                                    대하/VV+은/EAN)))
+                                          (NP (NP 정부/NNC+의/PAN)
+                                              (NP 보조금/NNC
+                                                  지급/NNC+이/PCA)))
+                                  (VP (VV 종료/NNC+되/XSV+으면/ECS))))
+                            (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (VP (NP 노동/NNC+집약/NNC+적/XSF+이/CO+은/EAN))))
+                                           (NP 조선/NNC+산업/NNC))
+                                       (NP 기반/NNC+이/PCA))
+                               (VP (VV 붕괴/NNC+되/XSV+는다/EFN+고/PAD))))
+                    (VV 주장/NNC+하/XSV+으면서/ECS)))
+             (S (S (NP-SBJ *pro*)
+                   (VP (S-OBJ (NP-SBJ *pro*)
+                              (VP (NP-OBJ 이/NPN+을/PCA)
+                                  (VV 연장/NNC+하/XSV+기/ENM)))
+                       위하/VV+어/ECS))
+                (S (NP-SBJ *pro*)
+                   (VP (NP-OBJ 한국/NPR+을/PCA)
+                       (VV 겨냥/NNC)))
+                ,/SCM
+                (S (NP-SBJ *pro*)
+                   (VP (VP (NP-OBJ 불공정/NNC
+                                   관행/NNC+을/PCA)
+                           (NP-COMP 문제/NNC)
+                           삼/VV+을/EAN)
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+   (S (NP-SBJ 외교부/NNC+은/PAU)
+      (VP (S-COMP *T*-3)
+          (VV 분석/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>올해 말에 자국 조선소에 대한 정부의 보조금 지급이 종료되면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>노동집약적인 조선산업 기반</term>
+	    </Arg>
+	    <Rel>
+	      <term>붕괴된다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

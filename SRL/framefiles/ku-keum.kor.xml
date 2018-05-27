@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>구금</lemma>
+    <comment>Frames file for '구금' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>구금.01</id>
+      <edef>detain</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity detained"/>
+	<role argnum="2" argrole="where detained"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>구금되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>칠레정부는 2 일 전 독재자 아우구스토 피노체트가 영국에서 16 개월의 가택구금 끝에 석방된 데 대해 그가 구금돼 칠레의 이미지를 손상시킨 것은 그 자신의 책임이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 칠레/NPR+정부/NNC+은/PAU)
+   (VP (NP-ADV 2/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (NP-SBJ 전/DAN
+                                  독재자/NNC
+                                  아우구스토/NPR
+                                  피노체트/NPR+이/PCA)
+                          (VP (NP-ADV 영국/NPR+에서/PAD)
+                              (NP-ADV (NP (NP 16/NNU
+                                              개월/NNX+의/PAN)
+                                          (NP 가택/NNC+구금/NNC))
+                                      (NP 끝/NNC+에/PAD))
+                              (VP (VV 석방/NNC+되/XSV+은/EAN))))
+                       (NP 데/NNX))
+              대하/VV+어/ECS))
+       (VP (S-COMP (NP-SBJ (S (S (NP-SBJ 그/NPN+이/PCA)
+                                 (VP (VV 구금/NNC+되/XSV+어/ECS)))
+                              (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ (NP 칠레/NPR+의/PAN)
+                                             (NP 이미지/NNC+을/PCA))
+                                     (VV 손상/NNC+시키/XSV+은/EAN))))
+                           (NP 것/NNX+은/PAU))
+                   (VP (NP (NP 그/NPN
+                               자신/NNC+의/PAN)
+                           (NP 책임/NNC+이/CO+라/EFN+고/PAD))))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>그</term>
+	    </Arg>
+	    <Rel>
+	      <term>구금돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

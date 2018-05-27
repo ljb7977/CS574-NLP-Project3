@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>매</lemma>
+    <comment>Frames file for '매' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>매.01</id>
+      <edef>tie</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing tied"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>매다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>무전병은 무전기를 등에서 내린 다음 철선을 전주에다 맸습니다.</text>
+	  <parse>
+(S (NP-SBJ 무전병/NNC+은/PAU) 
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+		  (VP (NP-OBJ 무전기/NNC+을/PCA) 
+		      (VP (NP-ADV 등/NNC+에서/PAD) 
+			  (VP 내리/VV+은/EAN)))) 
+	       (NP 다음/NNC)) 
+       (VP (NP-OBJ 철선/NNC+을/PCA) 
+	   (NP-COMP 전주/NNC+에다/PAD) 
+	   매/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>무전병</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>무전기를 등에서 내린 다음</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>철선</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에다</f>
+	      <term>전주</term>
+	    </Arg>
+	    <Rel>
+	      <term>맸습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

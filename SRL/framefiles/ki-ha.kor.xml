@@ -1,0 +1,96 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기하</lemma>
+    <comment>Frames file for '기하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기하.01</id>
+      <edef>aim at</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="action"/>
+	<role argnum="2" argrole="target"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 FAO는 이런 혜택에도 불구하고 "FAO 는 생물공학이 인간과 동물의 건강과 환경에 가져다줄 잠재적 위험에 대해 우려하고 있다"고 밝히고 "생명체간 독소의 전이, 신종 독소의 등장, 알레르기 유발 화합물의 생물종간 전이 등의 위험을 감소시키기 위해 신중을 기할 필요가 있다"고 강조했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ FAO/NFW+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 이런/DAN
+                          혜택/NNC+에/PAD+도/PAU)
+                 (VV 불구/NNC+하/XSV+고/ECS)))
+          (VP (VP (S-COMP "/SLQ
+                          (NP-SBJ FAO/NFW+은/PAU)
+                          (VP (VP (S-COMP (NP-SBJ *pro*)
+					  (VP (NP-COMP (S (WHNP-1 *op*)
+							  (S (NP-SBJ 생물/NNC+공학/NNC+이/PCA)
+							     (VP (NP-COMP (NP (NP (NP 인간/NNC+과/PCJ)
+										  (NP 동물/NNC+의/PAN))
+									      (NP 건강/NNC+과/PCJ))
+									  (NP 환경/NNC+에/PAD))
+								 (NP-OBJ *T*-1)
+								 가져다주/VV+을/EAN)))
+						       (NP 잠재/NNC+적/XSF
+							       위험/NNC+에/PAD))
+					      대하/VV+어/ECS))
+                                  (VV 우려/NNC+하/XSV+고/ECS))
+                              있/VX+다/EFN)
+                          "/SRQ
+                          고/PAD)
+                  밝히/VV+고/ECS)
+              (VP (S-COMP "/SLQ
+                          (NP-SBJ (S (NP-SBJ *pro*)
+                                     (VP (S (NP-SBJ *pro*)
+					    (VP (S-OBJ (NP-SBJ *pro*)
+						       (VP (NP-OBJ (NP (NP (NP (NP 생명체/NNC+간/XSF)
+									       (NP (NP 독소/NNC+의/PAN)
+										   (NP 전이/NNC)))
+									   ,/SCM
+									   (NP (NP 신종/NNC
+										       독소/NNC+의/PAN)
+									       (NP 등장/NNC))
+									   ,/SCM
+									   (NP 알레르기/NNC
+										       유발/NNC
+										       화합물/NNC+의/PAN)
+									   (NP 생물/NNC+종/NNC+간/XSF
+										   전이/NNC))
+								       (NP 등/NNX+의/PAN))
+								   (NP 위험/NNC+을/PCA))
+							   (VV 감소/NNC+시키/XSV+기/ENM)))
+						위하/VV+어/ECS))
+                                         (VP (NP-OBJ 신중/NNC+을/PCA)
+					     기하/VV+을/EAN)))
+                                  (NP 필요/NNC+이/PCA))
+                          (ADJP 있/VJ+다/EFN)
+                          "/SRQ
+                          고/PAD)
+                  (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>생명체간 독소의 전이, 신종 독소의 등장, 알레르기 유발 화합물의 생물종간 전이 등의 위험을 감소시키기 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>신중</term>
+	    </Arg>
+	    <Rel>
+	      <term>기할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

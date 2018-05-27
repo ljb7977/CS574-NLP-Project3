@@ -1,0 +1,187 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발전</lemma>
+    <comment>Frames file for '발전' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발전.01</id>
+      <edef>develop</edef>
+      <roleset>
+	<role argnum="0" argrole="developer"/>
+	<role argnum="1" argrole="thing developed"/>
+	<role argnum="2" argrole="secondary predication"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발전하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>보고서는 특히 "김정일 당총비서가 중국처럼 '사회주의도 시장경제를 실시할 수 있다'라는 인식을 갖게 되면 북한 유일의 시장 메커니즘 기능을 수행하는 농민시장은 북한 유통체계의 중심적 기구로 발전하게 될 것"이라고 전망했다.</text>
+	  <parse>
+(S (NP-SBJ 보고서/NNC+은/PAU)
+   (VP (ADVP 특히/ADV)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 김정일/NPR
+                              당/NNC+총비서/NNC+이/PCA)
+                      (VP (VP (NP-OBJ (S (NP-ADV 중국/NPR+처럼/PAD)
+                                         (S '/SLQ
+                                            (NP-SBJ 사회주의/NNC+도/PAU)
+                                            (VP (VP (NP-OBJ 시장/NNC+경제/NNC+을/PCA)
+                                                    (VP (VV 실시/NNC+하/XSV+을/EAN)))
+                                                (VX 수/NNX
+                                                    있/VJ+다/EFN))
+                                            '/SRQ
+                                            이라는/PAN))
+                                      (NP 인식/NNC+을/PCA))
+                              갖/VV+게/ECS)
+                          되/VX+으면/ECS))
+                   (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-OBJ (NP 북한/NPR
+                                                    유일/NNC+의/PAN)
+                                                (NP 시장/NNC
+                                                    메커니즘/NNC
+                                                    기능/NNC+을/PCA))
+                                        (VV 수행/NNC+하/XSV+는/EAN))))
+                              (NP 농민/NNC+시장/NNC+은/PAU))
+                      (VP (VP (VP (NP-COMP (NP 북한/NPR
+                                               유통/NNC+체계/NNC+의/PAN)
+                                           (NP 중심/NNC+적/XSF
+                                               기구/NNC+으로/PAD))
+                                  (VV 발전/NNC+하/XSV+게/ECS))
+                              되/VX+을/EAN)
+                          (VX 것/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VV 전망/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>김정일 당총비서가 중국처럼 '사회주의도 시장경제를 실시할 수 있다'라는 인식을 갖게 되면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>북한 유일의 시장 메커니즘 기능을 수행하는 농민시장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>북한 유통체계의 중심적 기구</term>
+	    </Arg>
+	    <Rel>
+	      <term>발전하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>될</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>발전되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 "지금 단계에서 불필요한 것은 몰래 숨어 우리를 찍어 대는 사람들이다. 관계가 발전되기를 원한다면 두 사람에게 기회를 달라"고 호소했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ (S (NP-SBJ *pro*)
+                             (ADJP (NP-ADV 지금/NNC
+                                           단계/NNC+에서/PAD)
+                                   (ADJP (VJ 불필요/NNC+하/XSJ+은/EAN))))
+                          (NP 것/NNX+은/PAU))
+                  (VP (NP (S (WHNP-1 *op*)
+                             (S (S (NP-SBJ *T*-1)
+                                   (VP (ADVP 몰래/ADV)
+                                       (VP 숨/VV+어/ECS)))
+                                (S (NP-SBJ *T*-1)
+                                   (VP (VP (NP-OBJ 우리/NPN+을/PCA)
+                                           찍/VV+어/ECS)
+                                       대/VX+는/EAN))))
+                          (NP 사람/NNC+들/XSF+이/CO+다/EFN)))
+                  ./SFN)
+               (S (S (NP-SBJ *pro*)
+                     (VP (S-OBJ (NP-SBJ 관계/NNC+이/PCA)
+                                (VP (VV 발전/NNC+되/XSV+기/ENM+을/PCA)))
+                         원하/VV+는다면/ECS))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 두/NNU
+                                  사람/NNC+에게/PAD)
+                         (NP-OBJ 기회/NNC+을/PCA)
+                         달/VV+으라/EFN)))
+               "/SRQ
+               고/PAD)
+       (VV 호소/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>관계</term>
+	    </Arg>
+	    <Rel>
+	      <term>발전되기를</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>발전시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>조선 인민군에서는 계속적으로 새로운 전술 교리를 발전시키려고 하죠.</text>
+	  <parse>
+(S (NP-SBJ 조선/NPR
+           인민군/NNC+에서/PCA+은/PAU)
+   (VP (VP (ADVP (ADV 계속/NNC+적/XSF+으로/PAD))
+           (VP (NP-OBJ (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (ADJP 새롭/VJ+은/EAN)))
+                       (NP 전술/NNC
+                           교리/NNC+을/PCA))
+               (VV 발전/NNC+시키/XSV+으려고/ECS)))
+       하/VX+죠/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>조선 인민군</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>계속적으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>새로운 전술 교리</term>
+	    </Arg>
+	    <Rel>
+	      <term>발전시키려고</term>
+	    </Rel>
+	    <Aux>
+	      <f>려고</f>
+	      <term>하죠</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

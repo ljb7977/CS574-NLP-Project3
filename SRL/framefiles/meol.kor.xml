@@ -1,0 +1,96 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>멀</lemma>
+    <comment>Frames file for '멀' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>멀.01</id>
+      <edef>be far from</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being faraway"/>
+	<role argnum="2" argrole="which from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>멀다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 부락에서 귀관 대대 집합 지역까지 얼마나 먼가?</text>
+	  <parse>
+(S (NP-COMP-1 그/DAN
+              부락/NNC+에서/PAD)
+   (S (NP-SBJ 귀관/NPN
+              대대/NNC
+              집합/NNC
+              지역/NNC+까지/PAU)
+      (ADJP (ADVP 얼마나/ADV)
+            (ADJP (NP-COMP *T*-1)
+                  멀/VJ+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>그 부락</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>까지</f>
+	      <term>귀관 대대 집합 지역</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>얼마나</term>
+	    </Arg>
+	    <Rel>
+	      <term>먼가</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>그 지역은 적이 알아내지 못할 만큼 적으로부터 충분히 멀고 대대 전체가 전개할 만큼 충분히 넓습니다.</text>
+	  <parse>
+(S (NP-SBJ 그/DAN
+           지역/NNC+은/PAU)
+   (ADJP (ADJP (NP-ADV (S (NP-SBJ 적/NNC+이/PCA)
+                          (VP (VP 알아내/VV+지/ECS)
+                              못하/VX+을/EAN))
+                       (NP 만큼/NNX))
+               (ADJP (NP-COMP 적/NNC+으로부터/PAD)
+                     (ADJP (ADVP 충분히/ADV)
+                           (ADJP 멀/VJ+고/ECS))))
+         (ADJP (NP-ADV (S (NP-SBJ 대대/NNC
+                                  전체/NNC+이/PCA)
+                          (VP (VV 전개/NNC+하/XSV+을/EAN)))
+                       (NP 만큼/NNX))
+               (ADVP 충분히/ADV)
+               (ADJP 넓/VJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그 지역</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>적이 알아내지 못할 만큼</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로부터</f>
+	      <term>적</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>충분히</term>
+	    </Arg>
+	    <Rel>
+	      <term>멀고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

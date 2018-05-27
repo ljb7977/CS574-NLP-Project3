@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>젖</lemma>
+    <comment>Frames file for '젖' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>젖.01</id>
+      <edef>get wet</edef>
+      <roleset>
+	<role argnum="1" argrole="thing getting wet"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>젖다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>사고 당시 활주로는 주말에 내린 비로 노면이 젖어 있었던 것으로 알려졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-ADV 사고/NNC
+                           당시/NNC)
+                   (S (NP-SBJ 활주로/NNC+은/PAU)
+                      (S (NP-ADV (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP-ADV 주말/NNC+에/PAD)
+                                           (VP 내리/VV+은/EAN))))
+                                 (NP 비/NNC+으로/PAD))
+                         (S (NP-SBJ 노면/NNC+이/PCA)
+                            (VP (VP 젖/VV+어/ECS)
+                                있/VX+었/EPF+던/EAN)))))
+                (NP 것/NNX+으로/PAD))
+       (VV 알리/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>사고 당시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>활주로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>주말에 내린 비로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>노면</term>
+	    </Arg>
+	    <Rel>
+	      <term>젖어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있었던</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

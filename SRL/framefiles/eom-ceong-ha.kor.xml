@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>엄정하</lemma>
+    <comment>Frames file for '엄정하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>엄정하.01</id>
+      <edef>strict</edef>
+      <roleset>
+	<role argnum="1" argrole="thing strict"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>엄정하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>박준영 청와대 대변인은 20 일 "김대중 대통령은 대통령과 여당의 총재로서 법에 규정된 대로 엄정하게 업무를 수행하고 있다"면서 "여당 총재로서 당무를 관장하고 있지만 선거에 일절 개입하지 않고 있다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 박준영/NPR
+           청와대/NPR
+           대변인/NNC+은/PAU)
+   (VP (NP-ADV 20/NNU
+               일/NNX)
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ 김대중/NPR
+                              대통령/NNC+은/PAU)
+                      (VP (VP (NP-ADV (NP 대통령/NNC+과/PCJ)
+                                      (NP (NP 여당/NNC+의/PAN)
+                                          (NP 총재/NNC+으로서/PAD)))
+                              (NP-ADV (S (NP-SBJ *pro*)
+                                         (VP (NP-COMP 법/NNC+에/PAD)
+                                             (VV 규정/NNC+되/XSV+은/EAN)))
+                                      (NP 대로/NNX))
+                              (ADVP (ADV 엄정하/VJ+게/ECS))
+                              (VP (NP-OBJ 업무/NNC+을/PCA)
+                                  (VV 수행/NNC+하/XSV+고/ECS)))
+                          있/VX+다/EFN)
+                      "/SRQ
+                      면서/ECS)
+                   (S "/SLQ
+                      (S (NP-SBJ *pro*)
+                         (VP (VP (NP-ADV 여당/NNC
+                                         총재/NNC+으로서/PAD)
+                                 (VP (NP-OBJ 당무/NNC+을/PCA)
+                                     (VV 관장/NNC+하/XSV+고/ECS)))
+                             있/VX+지만/ECS))
+                      (S (NP-SBJ *pro*)
+                         (VP (VP (VP (NP-COMP 선거/NNC+에/PAD)
+                                     (VP (ADVP 일절/ADV)
+                                         (VP (VV 개입/NNC+하/XSV+지/ECS))))
+                                 않/VX+고/ECS)
+                             있/VX+다/EFN))
+                      "/SRQ
+                      고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>엄정하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

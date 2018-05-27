@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>엇갈리</lemma>
+    <comment>Frames file for '엇갈리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>엇갈리.01</id>
+      <edef>cross</edef>
+      <roleset>
+	<role argnum="1" argrole="thing crossing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>엇갈리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>파키스탄 군사정부 내무부는 금지령이 전국적으로 즉각 발효한다고 밝혔으나 유효기간에 대해서는 무기한이라는 보도와 특별히 기한이 언급되지 않았다는 보도가 엇갈리고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 파키스탄/NPR
+              군사/NNC+정부/NNC
+              내무부/NNC+은/PAU)
+      (VP (S-COMP (NP-SBJ 금지령/NNC+이/PCA)
+                  (VP (NP-ADV 전국/NNC+적/XSF+으로/PAD)
+                      (ADVP 즉각/ADV)
+                      (VP (VV 발효/NNC+하/XSV+는다/EFN+고/PAD))))
+          밝히/VV+었/EPF+으나/ECS))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP 유효/NNC+기간/NNC+에/PAD)
+             대하/VV+어서/ECS+은/PAU))
+      (S (NP-SBJ (NP (S (NP-SBJ *pro*)
+                        (VP (NP 무기한/NNC+이/CO+라는/EAN)))
+                     (NP 보도/NNC+과/PCJ))
+                 (NP (S (ADVP 특별히/ADV)
+                        (S (NP-SBJ 기한/NNC+이/PCA)
+                           (VP (VP (VV 언급/NNC+되/XSV+지/ECS))
+                               않/VX+었/EPF+다는/EAN)))
+                     (NP 보도/NNC+이/PCA)))
+         (VP (VP 엇갈리/VV+고/ECS)
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TOC</f>
+	      <term>유효기간에 대해서는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>무기한이라는 보도와 특별히 기한이 언급되지 않았다는 보도</term>
+	    </Arg>
+	    <Rel>
+	      <term>엇갈리고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

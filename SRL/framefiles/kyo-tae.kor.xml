@@ -1,0 +1,124 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>교대</lemma>
+    <comment>Frames file for '교대' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>교대.01</id>
+      <edef>rotate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="old thing"/>
+	<role argnum="2" argrole="new thing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>교대하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 포반은 제1 포반과 제2 포반의 성원들이 하루 24시간씩 자기들 포에 배치되어 있지 않아도 되도록 이 두 포반 성원들과 교대하는 데 운용되었습니다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           포반/NNC+은/PAU)
+   (VP (S (NP-SBJ (NP (NP 제/XPF+1/NNU
+                          포반/NNC+과/PCJ)
+                      (NP 제/XPF+2/NNU
+                          포반/NNC+의/PAN))
+                  (NP 성원/NNC+들/XSF+이/PCA))
+          (VP (VP (VP (VP (NP-ADV 하루/NNC
+                                  24/NNU
+                                  시간/NNX+씩/XSF)
+                          (VP (NP-COMP 자기/NPN+들/XSF
+                                       포/NNC+에/PAD)
+                              (VV 배치/NNC+되/XSV+어/ECS)))
+                      있/VX+지/ECS)
+                  않/VX+어도/ECS)
+              되/VX+도록/ECS))
+       (VP (NP-COMP (S (NP-SBJ *pro*)
+                       (VP (NP-COMP 이/DAN
+                                    두/NNU
+                                    포반/NNC
+                                    성원/NNC+들/XSF+과/PAD)
+                           (VV 교대/NNC+하/XSV+는/EAN)))
+                    (NP 데/NNX))
+           (VV 운용/NNC+되/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>이 두 포반 성원들</term>
+	    </Arg>
+	    <Rel>
+	      <term>교대하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>교대시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저는 포반 성원들이 각종 임무에 대한 각자의 특정 직무에 숙달된 다음에야 "포수 교대" 훈련 방법에서 규정한 대로 성원들의 직책을 교대시켰죠.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ 포반/NNC
+                          성원/NNC+들/XSF+이/PCA)
+                  (VP (NP-COMP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (NP-COMP 각종/NNC
+                                                  임무/NNC+에/PAD)
+                                         대하/VV+은/EAN)))
+                               (NP (NP 각자/NNC+의/PAN)
+                                   (NP 특정/NNC
+                                       직무/NNC+에/PAD)))
+                      (VV 숙달/NNC+되/XSV+은/EAN)))
+               (NP 다음/NNC+에/PAD+이야/PAU))
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-ADV "/SLQ
+                              포수/NNC
+                              교대/NNC
+                              "/SRQ
+                              훈련/NNC
+                              방법/NNC+에서/PAD)
+                      (VP (NP-OBJ *pro*)
+                          (VV 규정/NNC+하/XSV+은/EAN))))
+               (NP 대로/NNX))
+       (VP (NP-OBJ (NP 성원/NNC+들/XSF+의/PAN)
+                   (NP 직책/NNC+을/PCA))
+           (VV 교대/NNC+시키/XSV+었/EPF+죠/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>포반 성원들이 각종 임무에 대한 각자의 특정 직무에 숙달된 다음에야</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>"포수 교대" 훈련 방법에서 규정한 대로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>성원들의 직책</term>
+	    </Arg>
+	    <Rel>
+	      <term>교대시켰죠</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상환</lemma>
+    <comment>Frames file for '상환' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>상환.01</id>
+      <edef>refund</edef>
+      <roleset>
+	<role argnum="0" argrole="refunder"/>
+	<role argnum="1" argrole="thing refunded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상환하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>외환보유액이 증가한 것은 금융기관들이 한국은행 외화예탁금을 상환하고 외환당국이 환율안정을 위해 시장에서 달러를 사들였기 때문이다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 외환/NNC+보유액/NNC+이/PCA)
+              (VP (VV 증가/NNC+하/XSV+은/EAN)))
+           (NP 것/NNX+은/PAU))
+   (VP (NP (S (S (NP-SBJ 금융/NNC+기관/NNC+들/XSF+이/PCA)
+                 (VP (NP-OBJ 한국/NPR+은행/NNC
+                             외화/NNC+예탁금/NNC+을/PCA)
+                     (VV 상환/NNC+하/XSV+고/ECS)))
+              (S (NP-SBJ 외환/NNC+당국/NNC+이/PCA)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 환율/NNC+안정/NNC+을/PCA)
+                            위하/VV+어/ECS))
+                     (NP-ADV 시장/NNC+에서/PAD)
+		     (VP (NP-OBJ 달러/NNC+을/PCA)
+			 사들이/VV+었/EPF+기/ENM))))
+           (NP 때문/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>금융기관들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>한국은행 외화예탁금</term>
+	    </Arg>
+	    <Rel>
+	      <term>상환하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

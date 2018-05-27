@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>아프</lemma>
+    <comment>Frames file for '아프' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>아프.01</id>
+      <edef>painful</edef>
+      <roleset>
+	<role argnum="1" argrole="thing painful"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>아프다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 "요즘 난민(탈북자)들을 만나다 보면 아무리 정황을 잘 따져 보아도 누가 거짓말을 하고 누가 진실을 이야기하는지 모르겠다"면서 "난민들이 (살기 위해) 뻔한 거짓말을 할 때마다 가슴이 아프다"고 보고서는 밝혔다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (S-COMP-2 (S "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-ADV 요즘/NNC)
+                              (VP (NP-OBJ 난민/NNC
+                                          (PRN -LRB-/SLQ
+                                               (NP 탈북자/NNC)
+                                               -RRB-/SRQ)
+                                          들/XSF+을/PCA)
+                                  만나/VV+다/ECS))
+                          보/VX+으면/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (ADVP 아무리/ADV)
+                              (VP (NP-OBJ 정황/NNC+을/PCA)
+                                  (VP (ADVP 잘/ADV)
+                                      (VP 따지/VV+어/ECS))))
+                          보/VX+어도/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (S-OBJ (S (NP-SBJ 누구/NPN+이/PCA)
+                                    (VP (NP-OBJ 거짓말/NNC+을/PCA)
+                                        하/VV+고/ECS))
+                                 (S (NP-SBJ 누구/NPN+이/PCA)
+                                    (VP (NP-OBJ 진실/NNC+을/PCA)
+                                        (VV 이야기/NNC+하/XSV+는지/EFN))))
+                          모르/VV+겠/EPF+다/EFN))
+                   "/SRQ
+                   면서/ECS)
+                (S "/SLQ
+                   (NP-ADV (S (WHNP *op*)
+                              (S (NP-SBJ 난민/NNC+들/XSF+이/PCA)
+                                 (VP (PRN -LRB-/SLQ
+                                          (S (NP-SBJ *pro*)
+                                             (VP (S-OBJ (NP-SBJ *pro*)
+						        (VP 살/VV+기/ENM))
+                                                 위하/VV+어/ECS))
+                                          -RRB-/SRQ)
+                                     (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                    (S (NP-SBJ *T*-1)
+                                                       (ADJP 뻔하/VJ+은/EAN)))
+                                                 (NP 거짓말/NNC+을/PCA))
+                                         하/VV+을/EAN))))
+                           (NP 때/NNC+마다/PAU))
+                   (S (NP-SBJ 가슴/NNC+이/PCA)
+                      (ADJP 아프/VJ+다/EFN))
+                   "/SRQ
+                   고/PAD))
+      (S (NP-SBJ 보고서/NNC+은/PAU)
+         (VP (S-COMP *T*-2)
+             밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>가슴</term>
+	    </Arg>
+	    <Rel>
+	      <term>아프다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

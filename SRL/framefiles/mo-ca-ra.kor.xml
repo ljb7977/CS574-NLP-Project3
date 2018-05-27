@@ -1,0 +1,39 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>모자라</lemma>
+    <comment>Frames file for '모자라' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>모자라.01</id>
+      <edef>be insufficient</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being insufficient"/>
+	<role argnum="2" argrole="insufficient to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>모자라다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>탄약이 모자랐거든요.</text>
+	  <parse>
+(S (NP-SBJ 탄약/NNC+이/PCA) 
+   (VP 모자라/VV+았/EPF+거든요/EFN) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>탄약</term>
+	    </Arg>
+	    <Rel>
+	      <term>모자랐거든요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

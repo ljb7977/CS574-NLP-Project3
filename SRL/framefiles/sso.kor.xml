@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>쏘</lemma>
+    <comment>Frames file for '쏘' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>쏘.01</id>
+      <edef>shoot</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing shooted"/>
+	<role argnum="2" argrole="target"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>쏘다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희들이 연신 사격이나 집중 사격 임무를 수행했을 때는 적에게 탄약을 꽤 많이 쏘았습니다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ 저희/NPN+들/XSF+이/PCA)
+                 (VP (NP-OBJ (NP 연신/NNC
+                                 사격/NNC+이나/PCJ)
+                             (NP 집중/NNC
+                                 사격/NNC
+                                 임무/NNC+을/PCA))
+                     (VV 수행/NNC+하/XSV+었/EPF+을/EAN))))
+           (NP 때/NNC+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 적/NNC+에게/PAD)
+          (NP-OBJ 탄약/NNC+을/PCA)
+          (VP (ADVP (ADVP 꽤/ADV)
+                    (ADVP 많이/ADV))
+              (VP 쏘/VV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>저희들이 연신 사격이나 집중 사격 임무를 수행했을 때는</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>적</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>탄약</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>꽤 많이</term>
+	    </Arg>
+	    <Rel>
+	      <term>쏘았습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

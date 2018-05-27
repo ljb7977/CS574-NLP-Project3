@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>타당하</lemma>
+    <comment>Frames file for '타당하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>타당하.01</id>
+      <edef>appropriate</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being appropriate"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>타당하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>시라크 대통령은 이날 엘리제궁에서 열린 김대중 대통령을 위한 국빈만찬에서 "프랑스 국립도서관에 보존 중인 한국 고문서에 관한 미묘한 문제의 해결책을 찾는 것은 타당한 일일 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 시라크/NPR
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (NP-ADV (S (WHNP-1 *op*)
+                  (S (S (NP-SBJ *T*-1)
+                        (VP (NP-ADV 엘리제/NPR+궁/NNC+에서/PAD)
+                            (VP 열리/VV+은/EAN)))
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-OBJ 김대중/NPR
+                                    대통령/NNC+을/PCA)
+                            위하/VV+은/EAN))))
+               (NP 국빈/NNC+만찬/NNC+에서/PAD))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ (NP (S (WHNP-4 *op*)
+                                                 (S (NP-SBJ *T*-4)
+                                                    (VP (NP-COMP (S (WHNP-5 *op*)
+                                                                    (S (NP-SBJ *T*-5)
+                                                                       (VP (VP (NP-ADV 프랑스/NPR
+                                                                                       국립/NNC+도서관/NNC+에/PAD)
+                                                                               (VP (VV 보존/NNC)))
+                                                                           (VX 중/NNX+이/CO+은/EAN))))
+                                                                 (NP 한국/NPR
+                                                                     고문서/NNC+에/PAD))
+                                                        관하/VV+은/EAN)))
+                                              (NP (S (WHNP-3 *op*)
+                                                     (S (NP-SBJ *T*-3)
+                                                        (ADJP 미묘하/VJ+은/EAN)))
+                                                  (NP 문제/NNC+의/PAN)))
+                                          (NP 해결책/NNC+을/PCA))
+                                  찾/VV+는/EAN))
+                           (NP 것/NNX+은/PAU))
+                   (VP (VP (NP (S (WHNP-2 *op*)
+                                  (S (NP-SBJ *T*-2)
+                                     (ADJP 타당하/VJ+은/EAN)))
+                               (NP 일/NNC+이/CO+을/EAN)))
+                       (VX 것/NNX))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=일</term>
+	    </Arg>
+	    <Rel>
+	      <term>타당한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

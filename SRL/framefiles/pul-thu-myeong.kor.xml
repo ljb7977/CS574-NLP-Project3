@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불투명</lemma>
+    <comment>Frames file for '불투명' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불투명.01</id>
+      <edef>vague</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being vague"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불투명하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일-북 양국은 당초 1-2 월중에 제 2 차 예비회담을 갖기로 합의했었으나 그후 비공식 접촉에서 북한측이 식량지원의 실시를 요구한 데 대해 일본측은 납치의혹을 포함한 인도문제의 진전을 촉구하는 등 대립 양상을 보여, 회담의 재개 전망이 불투명했다.</text>
+	  <parse>
+(S (S (NP-SBJ 일/NPR
+              -/SSY
+              북/NPR
+              양국/NNC+은/PAU)
+      (VP (VP (NP-ADV 당초/NNC)
+              (VP (S-COMP (NP-SBJ *pro*)
+                          (VP (NP-ADV 1/NNU+-/SSY+2/NNU
+                                      월/NNX+중/NNX+에/PAD)
+                              (VP (NP-OBJ 제/DAN
+                                          2/NNU
+                                          차/NNX
+                                          예비/NNC+회담/NNC+을/PCA)
+                                  갖/VV+기/ENM+으로/PAD)))
+                  (VV 합의/NNC+하/XSV+었었/EPF+으나/ECS)))
+          (VP (NP-OBJ (NP (S (S (NP-SBJ *pro*)
+                                (VP (NP-COMP (S (NP-ADV 그후/NNC)
+                                                (NP-ADV 비공식/NNC
+                                                        접촉/NNC+에서/PAD)
+                                                (S (NP-SBJ 북한/NPR+측/XSF+이/PCA)
+                                                   (VP (NP-OBJ (NP 식량/NNC+지원/NNC+의/PAN)
+                                                               (NP 실시/NNC+을/PCA))
+                                                       (VV 요구/NNC+하/XSV+은/EAN))))
+                                             (NP 데/NNX))
+                                    대하/VV+어/ECS))
+                             (S (NP-SBJ 일본/NPR+측/XSF+은/PAU)
+                                (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                   (S (NP-SBJ *T*-1)
+                                                      (VP (NP-OBJ 납치/NNC+의혹/NNC+을/PCA)
+                                                          (VV 포함/NNC+하/XSV+은/EAN))))
+                                                (NP 인도/NNC+문제/NNC+의/PAN))
+                                            (NP 진전/NNC+을/PCA))
+                                    (VV 촉구/NNC+하/XSV+는/EAN))))
+                          (NP 등/NNX))
+                      (NP 대립/NNC
+                          양상/NNC+을/PCA))
+              보이/VV+어/ECS)))
+   ,/SCM
+   (S (NP-SBJ (NP 회담/NNC+의/PAN)
+              (NP 재개/NNC
+                  전망/NNC+이/PCA))
+      (ADJP (VJ 불투명/NNC+하/XSJ+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>일-북 양국은 당초 1-2 월중에 제 2 차 예비회담을 갖기로 합의했었으나 그후 비공식 접촉에서 북한측이 식량지원의 실시를 요구한 데 대해 일본측은 납치의혹을 포함한 인도문제의 진전을 촉구하는 등 대립 양상을 보여</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>회담의 재개 전망</term>
+	    </Arg>
+	    <Rel>
+	      <term>불투명했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

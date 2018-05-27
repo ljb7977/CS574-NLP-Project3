@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자르</lemma>
+    <comment>Frames file for '자르' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>자르.01</id>
+      <edef>cut</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing cut"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자르다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>T-54 전차와 소련제 T-62 전차의 주요한 차이는 T-54 전차의 포탑 후면의 밑을 잘라 버린 점이다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP T-54/NFW
+                   전차/NNC+과/PAD)
+               (NP 소련/NPR+제/XSF
+                   T-62/NFW
+                   전차/NNC+의/PAN))
+           (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (ADJP (VJ 주요/NNC+하/XSJ+은/EAN))))
+               (NP 차이/NNC+은/PAU)))
+   (VP (NP (S (NP-SBJ *pro*)
+              (VP (VP (NP-OBJ (NP (NP T-54/NFW
+				      전차/NNC+의/PAN)
+				  (NP 포탑/NNC
+					  후면/NNC+의/PAN))
+			      (NP 밑/NNC+을/PCA))
+		      자르/VV+어/ECS)
+		  버리/VX+은/EAN))
+           (NP 점/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>T-54 전차의 포탑 후면의 밑</term>
+	    </Arg>
+	    <Rel>
+	      <term>잘라</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>버린</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

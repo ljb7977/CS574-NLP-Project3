@@ -1,0 +1,154 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상영</lemma>
+    <comment>Frames file for '상영' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>상영.01</id>
+      <edef>show</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="movie"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상영하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 관계자는 또 현재 북한영화는 부산, 광주, 창원, 인천, 제주 등 5 개도시의 자유총연맹 산하 북한관에서 수시로 감상할 수 있으며 북한관이 없는 도시에서는 상영요청이 있을 경우 북한자료센터에서 파견 나가 영화를 상영할 예정이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           관계자/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (S (NP-SBJ *pro*)
+          (VP (VP (NP-ADV 현재/NNC)
+                  (VP (NP-OBJ 북한/NPR+영화/NNC+은/PAU)
+                      (VP (NP-ADV (NP (NP (NP (NP 부산/NPR)
+                                              ,/SCM
+                                              (NP 광주/NPR)
+                                              ,/SCM
+                                              (NP 창원/NPR)
+                                              ,/SCM
+                                              (NP 인천/NPR)
+                                              ,/SCM
+                                              (NP 제주/NPR))
+                                          (NP 등/NNX))
+                                      (NP 5/NNU
+                                          개/NNX+도시/NNC+의/PAN))
+                                  (NP 자유/NNC+총연맹/NNC
+                                      산하/NNC
+                                      북한관/NNC+에서/PAD))
+                          (ADVP 수시로/ADV)
+                          (VP (VV 감상/NNC+하/XSV+을/EAN)))))
+              (VX 수/NNX
+                  있/VJ+으며/ECS)))
+       (VP (NP-COMP (S (NP-SBJ *pro*)
+                       (VP (NP-ADV (S (NP-ADV (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ 북한관/NNC+이/PCA)
+                                                    (ADJP (NP-COMP *T*-1)
+                                                          없/VJ+는/EAN)))
+                                              (NP 도시/NNC+에서/PAD+은/PAU))
+                                      (S (NP-SBJ 상영/NNC+요청/NNC+이/PCA)
+                                         (ADJP 있/VJ+을/EAN)))
+                                   (NP 경우/NNC))
+                           (S (NP-SBJ 북한/NPR+자료/NNC+센터/NNC+에서/PCA)
+                              (VP (NP-OBJ-LV 파견/NNC)
+                                  (LV 나가/VV+어/ECS)))
+                           (VP (NP-OBJ 영화/NNC+을/PCA)
+                               (VV 상영/NNC+하/XSV+을/EAN))))
+                    (NP 예정/NNC+이라고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>북한관이 없는 도시에서는 상영요청이 있을 경우</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>북한자료센터에서 파견 나가</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>영화</term>
+	    </Arg>
+	    <Rel>
+	      <term>상영할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>상영되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이러한 조치는 인력부족 및 정부의 북한자료공개 확대차원에서 실시하고 있는 것이라면서 지난해의 경우 각 지방에서 모두 132 회에 걸쳐 북한영화가 상영됐으며 관람인원은 1 만 8 천여명에 이른다고 이 관계자는 덧붙였다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ 이러한/DAN
+                        조치/NNC+은/PAU)
+                (VP (NP (S (WHNP-2 *op*)
+                           (S (NP-SBJ *pro*)
+                              (VP (VP (NP-ADV (NP 인력/NNC+부족/NNC)
+                                              (ADCP 및/ADC)
+                                              (NP (NP 정부/NNC+의/PAN)
+                                                  (NP 북한/NPR+자료/NNC+공개/NNC
+                                                      확대/NNC+차원/NNC+에서/PAD)))
+                                      (VP (NP-OBJ *T*-2)
+                                          (VV 실시/NNC+하/XSV+고/ECS)))
+                                  있/VX+는/EAN)))
+                        (NP 것/NNX+이/CO+라면서/ECS))))
+             (S (NP-ADV (NP 지난해/NNC+의/PAN)
+                        (NP 경우/NNC))
+                (NP-ADV 각/DAN
+                        지방/NNC+에서/PAD)
+                (S (NP-SBJ *pro*)
+                   (VP (NP-COMP 모두/NNC
+                                132/NNU
+                                회/NNX+에/PAD)
+                       걸치/VV+어/ECS))
+                (S (NP-SBJ 북한/NPR+영화/NNC+이/PCA)
+                   (VP (VV 상영/NNC+되/XSV+었/EPF+으며/ECS))))
+             (S (NP-SBJ 관람/NNC+인원/NNC+은/PAU)
+                (VP (NP-COMP 1/NNU
+                             만/NNU
+                             8/NNU
+                             천/NNU+여/XSF+명/NNX+에/PAD)
+                    이르/VV+는다/EFN+고/PAD)))
+   (S (NP-SBJ 이/DAN
+              관계자/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해의 경우</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>각 지방에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>모두 132 회에 걸쳐</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>북한영화</term>
+	    </Arg>
+	    <Rel>
+	      <term>상영됐으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

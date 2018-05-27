@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돋보이</lemma>
+    <comment>Frames file for '돋보이' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>돋보이.01</id>
+      <edef>look better</edef>
+      <roleset>
+	<role argnum="1" argrole="thing looking better"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돋보이다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>특히 수준급의 조크를 통해 좌중의 마음을 편하게 만드는 김 대통령의 연설이 돋보였다.</text>
+	  <parse>
+(S (ADVP 특히/ADV)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (S (NP-SBJ *pro*)
+                           (VP (NP-OBJ (NP 수준/NNC+급/XSF+의/PAN)
+                                       (NP 조크/NNC+을/PCA))
+                               통하/VV+어/ECS))
+                        (VP (NP-OBJ (NP 좌중/NNC+의/PAN)
+                                    (NP 마음/NNC+을/PCA))
+                            (S-COMP (NP-SBJ *pro*)
+                                    (ADJP 편하/VJ+게/ECS))
+                            만들/VV+는/EAN))))
+              (NP (NP 김/NPR
+                      대통령/NNC+의/PAN)
+                  (NP 연설/NNC+이/PCA)))
+      (VP 돋보이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>수준급의 조크를 통해 좌중의 마음을 편하게 만드는 김 대통령의 연설</term>
+	    </Arg>
+	    <Rel>
+	      <term>돋보였다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,132 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>의심</lemma>
+    <comment>Frames file for '의심' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>의심.01</id>
+      <edef>doubt</edef>
+      <roleset>
+	<role argnum="0" argrole="disbelief"/>
+	<role argnum="1" argrole="disbeliever"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>의심스럽다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지금도 거기에 어떤 부대가 있는지는 의심스럽습니다.</text>
+	  <parse>
+(S (NP-ADV 지금/NNC+도/PAU)
+   (S (S-SBJ (NP-COMP-1 거기/NPN+에/PAD)
+             (S (NP-SBJ 어떤/DAN
+                        부대/NNC+이/PCA)
+                (ADJP (NP-COMP *T*-1)
+                      있/VJ+는지/EFN+은/PAU)))
+      (ADJP (VJ 의심/NNC+스럽/XSJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지금도</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>거기에 어떤 부대가 있는지</term>
+	    </Arg>
+	    <Rel>
+	      <term>의심스럽습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>의심하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 김 대통령은 "현 단계에서 우리의 당면 목표는 통일보다는 냉전종식과 평화정착"이라면서 "우리 정부는 진정한 화해와 협력의 정신으로 힘이 닿는 대로 북한을 도와 주려고 하므로 북한은 우리의 참뜻을 조금도 의심하지 말고 화해와 협력 제안에 적극 호응하길 바란다"고 강조했다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 김/NPR
+              대통령/NNC+은/PAU)
+      (VP (S "/SLQ
+             (NP-ADV 현/DAN
+                     단계/NNC+에서/PAD)
+             (S (NP-SBJ (NP 우리/NPN+의/PAN)
+                        (NP 당면/NNC
+                            목표/NNC+은/PAU))
+                (VP (NP-ADV 통일/NNC+보다/PAD+은/PAU)
+                    (VP (NP (NP 냉전/NNC+종식/NNC+과/PCJ)
+                            (NP 평화/NNC+정착/NNC)))))
+             "/SRQ
+             이/CO+라면서/ECS)
+          (VP (S-COMP "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (S-OBJ (S (NP-SBJ 우리/NPN
+                                            정부/NNC+은/PAU)
+                                    (VP (VP (NP-ADV (NP (S (WHNP-1 *op*)
+                                                           (S (NP-SBJ *T*-1)
+                                                              (ADJP 진정하/VJ+은/EAN)))
+                                                        (NP 화해/NNC+과/PCJ))
+                                                    (NP (NP 협력/NNC+의/PAN)
+                                                        (NP 정신/NNC+으로/PAD)))
+                                            (NP-ADV (S (NP-SBJ 힘/NNC+이/PCA)
+                                                       (VP 닿/VV+는/EAN))
+                                                    (NP 대로/NNX))
+                                            (VP (VP (NP-OBJ 북한/NPR+을/PCA)
+                                                    돕/VV+어/ECS)
+                                                주/VX+으려고/ECS))
+                                        하/VX+으므로/ECS))
+                                 (S (NP-SBJ 북한/NPR+은/PAU)
+                                    (VP (VP (VP (NP-OBJ (NP 우리/NPN+의/PAN)
+                                                        (NP 참/NNC+뜻/NNC+을/PCA))
+                                                (VP (ADVP 조금/ADV+도/PAU)
+                                                    (VP (VV 의심/NNC+하/XSV+지/ECS))))
+                                            말/VX+고/ECS)
+                                        (VP (NP-COMP (NP (NP 화해/NNC+과/PCJ)
+                                                         (NP 협력/NNC))
+                                                     (NP 제안/NNC+에/PAD))
+                                            (VP (ADVP 적극/ADV)
+                                                (VP (VV 호응/NNC+하/XSV+기/ENM+을/PCA)))))))
+                          바라/VV+는다/EFN)
+                      "/SRQ
+                      고/PAD)
+              (VV 강조/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>우리 정부는 진정한 화해와 협력의 정신으로 힘이 닿는 대로 북한을 도와 주려고 하므로</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>우리의 참뜻</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>조금도</term>
+	    </Arg>
+	    <Rel>
+	      <term>의심하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>말고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

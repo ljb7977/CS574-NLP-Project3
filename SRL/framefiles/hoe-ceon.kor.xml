@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>회전</lemma>
+    <comment>Frames file for '회전' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>회전.01</id>
+      <edef>rotate</edef>
+      <roleset>
+	<role argnum="1" argrole="thing rotating"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>회전하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포탑이 한번 회전하는 데 시간이 얼마나 걸리는가?</text>
+	  <parse>
+(S (NP-COMP-1 (S (NP-SBJ 포탑/NNC+이/PCA)
+                 (VP (NP-ADV 한번/NNC)
+                     (VP (VV 회전/NNC+하/XSV+는/EAN))))
+              (NP 데/NNX))
+   (S (NP-SBJ 시간/NNC+이/PCA)
+      (VP (ADVP 얼마나/ADV)
+          (VP (NP-COMP *T*-1)
+              걸리/VV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>포탑</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>한번</term>
+	    </Arg>
+	    <Rel>
+	      <term>회전하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

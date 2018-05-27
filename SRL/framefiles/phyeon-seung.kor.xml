@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>편승</lemma>
+    <comment>Frames file for '편승' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>편승.01</id>
+      <edef>take advantage of</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>편승하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>박순용 검찰총장은 10 일 "이익단체들이 선거분위기에 편승해 폭력적 방법으로 자신들의 의사를 관철하려는 풍조에 엄중 대처하라고 전국 검찰에 지시했다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 박순용/NPR
+           검찰/NNC+총장/NNC+은/PAU)
+   (VP (NP-ADV 10/NNU
+               일/NNX)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (S-COMP (NP-SBJ *pro*)
+                               (VP (NP-COMP (S (S (NP-SBJ 이익/NNC+단체/NNC+들/XSF+이/PCA)
+                                                  (VP (NP-COMP 선거/NNC+분위기/NNC+에/PAD)
+                                                      (VV 편승/NNC+하/XSV+어/ECS)))
+                                               (S (NP-SBJ *pro*)
+                                                  (VP (NP-ADV 폭력/NNC+적/XSF
+                                                              방법/NNC+으로/PAD)
+                                                      (VP (NP-OBJ (NP 자신/NNC+들/XSF+의/PAN)
+                                                                  (NP 의사/NNC+을/PCA))
+                                                          (VV 관철/NNC+하/XSV+으려는/EAN)))))
+                                            (NP 풍조/NNC+에/PAD))
+                                   (VP (NP-ADV 엄중/NNC)
+                                       (VP (VV 대처/NNC+하/XSV+으라/EFN+고/PAD)))))
+                       (NP-COMP 전국/NNC
+                                검찰/NNC+에/PAD)
+                       (VV 지시/NNC+하/XSV+었/EPF+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>이익단체들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>선거분위기</term>
+	    </Arg>
+	    <Rel>
+	      <term>편승해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>사양</lemma>
+    <comment>Frames file for '사양' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>사양.01</id>
+      <edef>decline</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing declined"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>사양하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조 위원장은 전국규모의 선거지원을 위해 전국구로 돌아섰고, 이 고문은 지역구 출마를 사양했다고 김 대변인이 전했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ 조/NPR
+                        위원장/NNC+은/PAU)
+                (VP (S (NP-SBJ *pro*)
+                       (VP (NP-OBJ (NP 전국/NNC+규모/NNC+의/PAN)
+                                   (NP 선거/NNC+지원/NNC+을/PCA))
+                           위하/VV+어/ECS))
+                    (VP (NP-COMP 전국구/NNC+으로/PAD)
+                        돌아서/VV+었/EPF+고/ECS)))
+             ,/SCM
+             (S (NP-SBJ 이/NPR
+                        고문/NNC+은/PAU)
+                (VP (NP-OBJ 지역구/NNC
+                            출마/NNC+을/PCA)
+                    (VV 사양/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 김/NPR
+              대변인/NNC+이/PCA)
+      (VP (S-COMP *T*-1)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이 고문</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>지역구 출마</term>
+	    </Arg>
+	    <Rel>
+	      <term>사양했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

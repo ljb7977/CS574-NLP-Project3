@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전투</lemma>
+    <comment>Frames file for '전투' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>전투.01</id>
+      <edef>combat</edef>
+      <roleset>
+	<role argnum="0" argrole="one fighter"/>
+	<role argnum="1" argrole="other fighter"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전투하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>상기 정보를 통해서 알 수 있는 바와 같이, 어떤 지형에서 전투해야 하며, 어떤 부대와 전투해야 할 것인지를 아는 것은, 포병의 군수 지원 계획을 작성하는 데 대단히 중요하다.</text>
+	  <parse>
+(S (ADVP (NP-COMP (S (NP-SBJ *pro*)
+                     (VP (VP (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ 상기/NNC
+                                            정보/NNC+을/PCA)
+                                    통하/VV+어서/ECS))
+                             (VP (NP-OBJ *pro*)
+                                 알/VV+을/EAN))
+                         (VX 수/NNX
+                             있/VJ+는/EAN)))
+                  (NP 바/NNX+과/PAD))
+         같이/ADV)
+   ,/SCM
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (S-OBJ (NP-SBJ *pro*)
+                            (VP (VP (VP (VP (NP-ADV 어떤/DAN
+                                                    지형/NNC+에서/PAD)
+                                            (VP (VV 전투/NNC+하/XSV+어야/ECS)))
+                                        하/VX+으며/ECS)
+                                    ,/SCM
+                                    (VP (VP (NP-COMP 어떤/DAN
+                                                     부대/NNC+과/PAD)
+                                            (VV 전투/NNC+하/XSV+어야/ECS))
+                                        하/VX+을/EAN))
+                                (VX 것/NNX+이/CO+는지/EFN+을/PCA)))
+                     알/VV+는/EAN))
+              (NP 것/NNX+은/PAU))
+      ,/SCM
+      (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP 포병/NNC+의/PAN)
+                                    (NP 군수/NNC
+                                        지원/NNC
+                                        계획/NNC+을/PCA))
+                            (VV 작성/NNC+하/XSV+는/EAN)))
+                     (NP 데/NNX))
+            (ADJP (ADVP 대단히/ADV)
+                  (ADJP (VJ 중요/NNC+하/XSJ+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>어떤 지형에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>전투해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>하며</term>
+	    </Aux>
+	  </relation>
+	  <relation>
+	    <Arg n="1">
+	      <f>와</f>
+	      <term>어떤 부대</term>
+	    </Arg>
+	    <Rel>
+	      <term>전투해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>할</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것인지를</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

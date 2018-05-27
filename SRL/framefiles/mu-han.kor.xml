@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>무한</lemma>
+    <comment>Frames file for '무한' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>무한.01</id>
+      <edef>unlimited</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being unlimited"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>무한하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난 71 년 2 월 8 일 개장된 나스닥 시장은 뉴욕 증권거래소 상장기준을 충족시키지는 못하지만 무한한 성장성을 가진 중소기업 주식의 거래소로 첫발을 내딛었지만 현재는 첨단기술주와 인터넷주, 생명공학주 등 이른바 `신경제' 주식이 주류를 형성하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-ADV 지난/DAN
+                                71/NNU
+                                년/NNX
+                                2/NNU
+                                월/NNX
+                                8/NNU
+                                일/NNX)
+                        (VP (VV 개장/NNC+되/XSV+은/EAN)))))
+              (NP 나스닥/NPR
+                  시장/NNC+은/PAU))
+      (VP (NP-ADV (NP (NP (S (WHNP-3 *op*)
+                             (S (S (NP-SBJ *T*-3)
+                                   (VP (VP (NP-OBJ 뉴욕/NPR
+                                                   증권/NNC+거래소/NNC
+                                                   상장/NNC+기준/NNC+을/PCA)
+                                           (VV 충족/NNC+시키/XSV+지/ECS+은/PAU))
+                                       못하/VX+지만/ECS))
+                                (S (NP-SBJ *T*-3)
+                                   (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                  (S (NP-SBJ *T*-2)
+                                                     (ADJP (VJ 무한/NNC+하/XSJ+은/EAN))))
+                                               (NP 성장성/NNC+을/PCA))
+                                       가지/VV+은/EAN))))
+                          (NP 중소기업/NNC))
+                      (NP 주식/NNC+의/PAN))
+                  (NP 거래소/NNC+으로/PAD))
+          (VP (NP-OBJ 첫/NNU+발/NNX+을/PCA)
+              내딛/VV+었/EPF+지만/ECS)))
+   (S (NP-ADV 현재/NNC+은/PAU)
+      (S (NP-SBJ (NP (NP (NP 첨단기술주/NNC+과/PCJ)
+                         (NP 인터넷주/NNC)
+                         ,/SCM
+                         (NP 생명공학주/NNC))
+                     (NP 등/NNX))
+                 (NP (ADVP 이른바/ADV)
+                     (NP `/SLQ
+                         신/XPF+경제/NNC
+                         '/SRQ
+                         주식/NNC+이/PCA)))
+         (VP (VP (NP-OBJ 주류/NNC+을/PCA)
+                 (VV 형성/NNC+하/XSV+고/ECS))
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=성장성</term>
+	    </Arg>
+	    <Rel>
+	      <term>무한한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

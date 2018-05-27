@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>안내</lemma>
+    <comment>Frames file for '안내' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>안내.01</id>
+      <edef>escort</edef>
+      <roleset>
+	<role argnum="0" argrole="accompanier"/>
+	<role argnum="1" argrole="accompanied"/>
+	<role argnum="2" argrole="accompanied to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>안내하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>경비병이 귀관을 식당에 안내할 것이요.</text>
+	  <parse>
+(S (NP-SBJ 경비병/NNC+이/PCA) 
+   (VP (VP (NP-OBJ 귀관/NPN+을/PCA) 
+	   (NP-COMP 식당/NNC+에/PAD) 
+	   (VV 안내/NNC+하/XSV+을/EAN)) 
+       (VX 것/NNX+이/CO+요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>경비병</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>귀관</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>식당</term>
+	    </Arg>
+	    <Rel>
+	      <term>안내할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이요</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

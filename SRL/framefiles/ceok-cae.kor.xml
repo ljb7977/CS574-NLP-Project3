@@ -1,0 +1,101 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>적재</lemma>
+    <comment>Frames file for '적재' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>적재.01</id>
+      <edef>load</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing loaded"/>
+	<role argnum="2" argrole="vehicle"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>적재하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>연대급에서는 공급품을 연대 공급소의 차량에 적재해 둡니다.</text>
+	  <parse>
+(S (NP-SBJ 연대/NNC+급/XSF+에서/PCA+은/PAU)
+   (VP (VP (NP-OBJ 공급품/NNC+을/PCA)
+           (NP-COMP (NP 연대/NNC
+                        공급소/NNC+의/PAN)
+                    (NP 차량/NNC+에/PAD))
+           (VV 적재/NNC+하/XSV+어/ECS))
+       두/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>연대급</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>공급품</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>연대 공급소의 차량</term>
+	    </Arg>
+	    <Rel>
+	      <term>적재해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>둡니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>적재되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>거의 모든 공급품이 사단 공급창에서는 차량에 적재돼 있습니다.</text>
+	  <parse>
+(S (NP-SBJ (DANP (ADVP 거의/ADV)
+                 (DANP 모든/DAN))
+           공급품/NNC+이/PCA)
+   (VP (VP (NP-ADV 사단/NNC
+                   공급창/NNC+에서/PAD+은/PAU)
+           (VP (NP-COMP 차량/NNC+에/PAD)
+               (VV 적재/NNC+되/XSV+어/ECS)))
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>거의 모든 공급품</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>사단 공급창에서는</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>차량</term>
+	    </Arg>
+	    <Rel>
+	      <term>적재돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

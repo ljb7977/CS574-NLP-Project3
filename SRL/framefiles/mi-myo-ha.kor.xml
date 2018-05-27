@@ -1,0 +1,122 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>미묘하</lemma>
+    <comment>Frames file for '미묘하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>미묘하.01</id>
+      <edef>subtle</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being subtle"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>미묘하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>시라크 대통령은 이날 엘리제궁에서 열린 김대중 대통령을 위한 국빈만찬에서 "프랑스 국립도서관에 보존중인 한국 고문서에 관한 미묘한 문제의 해결책을 찾는 것은 타당한 일일 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 시라크/NPR
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (NP-ADV (S (WHNP-1 *op*)
+                  (S (S (NP-SBJ *T*-1)
+                        (VP (NP-ADV 엘리제/NPR+궁/NNC+에서/PAD)
+                            (VP 열리/VV+은/EAN)))
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-OBJ 김대중/NPR
+                                    대통령/NNC+을/PCA)
+                            위하/VV+은/EAN))))
+               (NP 국빈/NNC+만찬/NNC+에서/PAD))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ (NP (S (WHNP-4 *op*)
+                                                 (S (NP-SBJ *T*-4)
+                                                    (VP (NP-COMP (S (WHNP-5 *op*)
+                                                                    (S (NP-SBJ *T*-5)
+                                                                       (VP (VP (NP-ADV 프랑스/NPR
+                                                                                       국립/NNC+도서관/NNC+에/PAD)
+                                                                               (VP (VV 보존/NNC)))
+                                                                           (VX 중/NNX+이/CO+은/EAN))))
+                                                                 (NP 한국/NPR
+                                                                     고문서/NNC+에/PAD))
+                                                        관하/VV+은/EAN)))
+                                              (NP (S (WHNP-3 *op*)
+                                                     (S (NP-SBJ *T*-3)
+                                                        (ADJP 미묘하/VJ+은/EAN)))
+                                                  (NP 문제/NNC+의/PAN)))
+                                          (NP 해결책/NNC+을/PCA))
+                                  찾/VV+는/EAN))
+                           (NP 것/NNX+은/PAU))
+                   (VP (VP (NP (S (WHNP-2 *op*)
+                                  (S (NP-SBJ *T*-2)
+                                     (ADJP (VJ 타당/NNC+하/XSJ+은/EAN))))
+                               (NP 일/NNC+이/CO+을/EAN)))
+                       (VX 것/NNX))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>미묘한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>미묘해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 "미국의 입장이 갈수록 미묘해지고 있다"면서 그러나 "워싱턴측도 연내 협상 재개를 지지한다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ (NP 미국/NPR+의/PAN)
+                  (NP 입장/NNC+이/PCA))
+          (VP (VP (ADVP 갈수록/ADV)
+                  (VP (VV 미묘하/VJ+어지/XSV+고/ECS)))
+              있/VX+다/EFN)
+          "/SRQ
+          면서/ECS)
+       (ADCP 그러나/ADC)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ 워싱턴/NPR+측/XSF+도/PAU)
+                   (VP (NP-ADV 연/NNC+내/NNX)
+                       (VP (NP-OBJ 협상/NNC
+                                   재개/NNC+을/PCA)
+                           (VV 지지/NNC+하/XSV+는다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>미국의 입장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>갈수록</term>
+	    </Arg>
+	    <Rel>
+	      <term>미묘해지고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,144 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보장</lemma>
+    <comment>Frames file for '보장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보장.01</id>
+      <edef>guarantee</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing guaranteed"/>
+	<role argnum="2" argrole="guaranteed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전방 부대의 효율적인 보급품 수송을 보장하기 위해 도로망의 점검과 보수를 실시한다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-OBJ (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP 전방/NNC
+                                     부대/NNC+의/PAN)
+                                 (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP 효율/NNC+적/XSF+이/CO+은/EAN))))
+                                     (NP 보급품/NNC
+                                         수송/NNC+을/PCA)))
+                         (VV 보장/NNC+하/XSV+기/ENM)))
+              위하/VV+어/ECS))
+       (VP (NP-OBJ (NP 도로망/NNC+의/PAN)
+                   (NP (NP 점검/NNC+과/PCJ)
+                       (NP 보수/NNC+을/PCA)))
+           (VV 실시/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>전방 부대의 효율적인 보급품 수송</term>
+	    </Arg>
+	    <Rel>
+	      <term>보장하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전투 중 전방 부대에 탄약을 계속 공급해서 그들이 전투를 계속할 수 있도록 보장한다.</text>
+	  <parse>
+(S (S (NP-ADV 전투/NNC
+              중/NNX)
+      (S (NP-SBJ *pro*)
+         (VP (NP-COMP 전방/NNC
+                      부대/NNC+에/PAD)
+             (NP-OBJ 탄약/NNC+을/PCA)
+             (VP (ADVP 계속/ADV)
+                 (VP (VV 공급/NNC+하/XSV+어서/ECS))))))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ 그/NPN+들/XSF+이/PCA)
+                  (VP (VP (NP-OBJ 전투/NNC+을/PCA)
+                          (VV 계속/NNC+하/XSV+을/EAN))
+                      (VX 수/NNX
+                          있/VJ+도록/ECS)))
+          (VV 보장/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>전투 중 전방 부대에 탄약을 계속 공급해서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도록</f>
+	      <term>그들이 전투를 계속할 수 있</term>
+	    </Arg>
+	    <Rel>
+	      <term>보장한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보장되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 중국의 군사력이 강력해질수록 국가 안보와 재통일이 더욱 굳건히 보장될 것이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-SBJ (NP 중국/NPR+의/PAN)
+                          (NP 군사력/NNC+이/PCA))
+                  (VP (VV 강력하/VJ+어지/XSV+을수록/ECS)))
+               (S (NP-SBJ (NP 국가/NNC
+                              안보/NNC+과/PCJ)
+                          (NP 재/XPF+통일/NNC+이/PCA))
+                  (VP (ADVP (ADVP 더욱/ADV)
+                            (ADVP 굳건히/ADV))
+                      (VP (VP (VV 보장/NNC+되/XSV+을/EAN))
+                          (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+       덧붙이/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>중국의 군사력이 강력해질수록</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>국가 안보와 재통일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더욱 굳건히</term>
+	    </Arg>
+	    <Rel>
+	      <term>보장될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

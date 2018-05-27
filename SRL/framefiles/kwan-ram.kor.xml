@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>관람</lemma>
+    <comment>Frames file for '관람' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>관람.01</id>
+      <edef>see</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing viewed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>관람하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이어 엘리자베스 2 세 영국여왕이 들렀던 담연재에서 안동시 관계자들과 오찬을 함께 하고 하회별신굿탈놀이 공연을 20 여분간 관람했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (ADVP 이어/ADV)
+       (VP (VP (NP-ADV (S (WHNP-1 *op*)
+                          (S (NP-SBJ (NP 엘리자베스/NPR
+                                         2/NNU
+                                         세/NNX)
+                                     (NP 영국/NPR+여왕/NNC+이/PCA))
+                             (VP (NP-OBJ *T*-1)
+                                 들르/VV+었/EPF+던/EAN)))
+                       (NP 담연재/NPR+에서/PAD))
+               (NP-ADV 안동/NPR+시/NNC
+                       관계자/NNC+들/XSF+과/PAD)
+               (VP (NP-OBJ 오찬/NNC+을/PCA)
+                   (VP (ADVP 함께/ADV)
+                       (VP 하/VV+고/ECS))))
+           (VP (NP-OBJ 하회/NPR+별신굿/NNC+탈놀이/NNC
+                       공연/NNC+을/PCA)
+               (VP (NP-ADV 20/NNU
+                           여/XSF+분/NNX+간/XSF)
+                   (VP (VV 관람/NNC+하/XSV+었/EPF+다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>하회별신굿탈놀이 공연</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>20 여분간</term>
+	    </Arg>
+	    <Rel>
+	      <term>관람했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

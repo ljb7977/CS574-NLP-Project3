@@ -1,0 +1,45 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>담당</lemma>
+    <comment>Frames file for '담당' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>담당.01</id>
+      <edef>be in charge of</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing charged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>담당하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>누가 공장 보위를 담당하는가?</text>
+	  <parse>
+(S (NP-SBJ 누구/NPN+이/PCA)
+   (VP (NP-OBJ 공장/NNC
+	       보위/NNC+을/PCA)
+       (VV 담당/NNC+하/XSV+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>누구</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>공장 보위</term>
+	    </Arg>
+	    <Rel>
+	      <term>담당하는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

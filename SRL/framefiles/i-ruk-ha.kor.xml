@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이룩하</lemma>
+    <comment>Frames file for '이룩하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>이룩하.01</id>
+      <edef>achieve</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing achieved"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이룩하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>서 소장은 특히 "남북한 정부는 과거 일방적인 통일방안을 내놓고 독선적으로 자신들의 제의 관철만을 고집해 왔다"면서 "이제 통일을 논하기에 앞서 먼저 민족의 화해와 화합을 이룩해야 한다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 서/NPR
+           소장/NNC+은/PAU)
+   (VP (ADVP 특히/ADV)
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ 남북한/NPR
+                              정부/NNC+은/PAU)
+                      (VP (VP (NP-ADV 과거/NNC)
+                              (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (VP (NP 일방/NNC+적/XSF+이/CO+은/EAN))))
+                                              (NP 통일/NNC+방안/NNC+을/PCA))
+                                      내놓/VV+고/ECS)
+                                  (VP (NP-ADV 독선/NNC+적/XSF+으로/PAD)
+                                      (VP (NP-OBJ (NP 자신/NNC+들/XSF+의/PAN)
+                                                  (NP 제의/NNC
+                                                      관철/NNC+만/PAU+을/PCA))
+                                          (VV 고집/NNC+하/XSV+어/ECS)))))
+                          오/VX+었/EPF+다/EFN)
+                      "/SRQ
+                      면서/ECS)
+                   (S "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (VP (ADVP 이제/ADV)
+                              (ADVP (S-COMP (NP-SBJ *pro*)
+					    (VP (NP-OBJ 통일/NNC+을/PCA)
+						논하/VV+기/ENM+에/PAD))
+                                    앞서/ADV)
+                              (ADVP 먼저/ADV)
+                              (VP (NP-OBJ (NP 민족/NNC+의/PAN)
+                                          (NP (NP 화해/NNC+과/PCJ)
+                                              (NP 화합/NNC+을/PCA)))
+                                  이룩하/VV+어야/ECS))
+                          하/VX+는다/EFN)
+                      "/SRQ
+                      고/PAD))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>통일을 논하기에 앞서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>먼저</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>민족의 화해와 화합</term>
+	    </Arg>
+	    <Rel>
+	      <term>이룩해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

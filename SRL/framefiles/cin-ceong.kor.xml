@@ -1,0 +1,149 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>진정</lemma>
+    <comment>Frames file for '진정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>진정.01</id>
+      <edef>soothe</edef>
+      <roleset>
+	<role argnum="0" argrole="thing soothing"/>
+	<role argnum="1" argrole="thing soothed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>진정되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>클린턴 대통령은 유가의 안정이 석유수출국기구(OPEC)에도 이익이 될 것이라면서 오는 27 일 OPEC 회의가 열리고 나면 유가가 약간 진정될 것으로 기대된다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 클린턴/NPR
+           대통령/NNC+은/PAU)
+   (VP (S (NP-SBJ (NP 유가/NNC+의/PAN)
+		  (NP 안정/NNC+이/PCA))
+	  (VP (VP (NP-ADV 석유/NNC+수출/NNC+기구/NNC
+			      (PRN -LRB-/SLQ
+				   OPEC/NFW
+				   -RRB-/SRQ)
+			      에/PAD+도/PAU)
+		  (VP (NP-COMP 이익/NNC+이/PCA)
+		      되/VV+을/EAN))
+	      (VX 것/NNX+이/CO+라면서/ECS)))
+       (VP (S-COMP (NP-SBJ *pro*)
+		   (VP (NP-COMP (S (S (NP-ADV 오는/DAN
+						  27/NNU
+						  일/NNX)
+				      (S (NP-SBJ OPEC/NFW
+						 회의/NNC+이/PCA)
+					 (VP (VP 열리/VV+고/ECS)
+					     나/VX+으면/ECS)))
+				   (S (NP-SBJ 유가/NNC+이/PCA)
+				      (VP (ADVP 약간/ADV)
+					  (VP (VV 진정/NNC+되/XSV+을/EAN)))))
+				(NP 것/NNX+으로/PAD))
+		       (VV 기대/NNC+되/XSV+는다/EFN+고/PAD)))
+	   덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>유가</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>약간</term>
+	    </Arg>
+	    <Rel>
+	      <term>진정될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>진정시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>클린턴은 갤런당 평균 1.54 달러에 달하는 무연가스 가격을 진정시키기 위해 미 행정부가 어떤 조치를 취할 것인지는 구체적으로 밝히지 않은 채 자신은 백악관에서 빌 리처드슨 에너지 장관을 만나 고유가 등 미국이 처해 있는 현재의 어려운 상황과 미국이 취해야 할 장단기 정책에 대해 의견을 교환했다고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 클린턴/NPR+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*) 
+		  (VP (VP (S-OBJ (S (NP-SBJ *pro*)
+				    (VP (S-OBJ (NP-SBJ *pro*)
+					       (VP (NP-OBJ (S (WHNP-1 *op*)
+							      (S (NP-SBJ *T*-1)
+								 (VP (NP-COMP 갤런/NNC+당/XSF
+										  평균/NNC
+										  1.54/NNU
+										  달러/NNX+에/PAD)
+								     달하/VV+는/EAN)))
+							   (NP 무연/NNC+가스/NNC
+								   가격/NNC+을/PCA))
+						   (VV 진정/NNC+시키/XSV+기/ENM)))
+					위하/VV+어/ECS))
+				 (S (NP-SBJ 미/NPR
+					    행정부/NNC+이/PCA)
+				    (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+						       (S (NP-SBJ *T*-2)
+							  (ADJP 어떻/VJ+은/EAN)))
+						    (NP 조치/NNC+을/PCA))
+					    취하/VV+을/EAN)
+					(VX 것/NNX+이/CO+은지/EFN+은/PAU))))
+			  (VP (NP-ADV 구체/NNC+적/XSF+으로/PAD)
+			      (VP 밝히/VV+지/ECS)))
+		      않/VX+은/EAN))
+	       (NP 채/NNX))
+       (VP (S-COMP (NP-SBJ 자신/NNC+은/PAU)
+		   (VP (S (NP-SBJ *pro*)
+			  (VP (NP-ADV 백악관/NPR+에서/PAD)
+			      (VP (NP-OBJ 빌/NPR
+					  리처드슨/NPR
+					  에너지/NNC
+					  장관/NNC+을/PCA)
+				  만나/VV+어/ECS)))
+		       (S (NP-SBJ *pro*)
+			  (VP (NP-COMP (NP (NP 고유가/NNC
+					       등/NNX)
+					   (NP (S (WHNP-5 *op*)
+						  (S (NP-SBJ 미국/NPR+이/PCA)
+						     (VP (VP (NP-COMP *T*-5)
+							     처하/VV+어/ECS)
+							 있/VX+는/EAN)))
+					       (NP (NP 현재/NNC+의/PAN)
+						   (NP (S (WHNP-3 *op*)
+							  (S (NP-SBJ *T*-3)
+							     (ADJP 어렵/VJ+은/EAN)))
+						       (NP 상황/NNC+과/PCJ)))))
+				       (NP (S (WHNP-4 *op*)
+					      (S (NP-SBJ 미국/NPR+이/PCA)
+						 (VP (VP (NP-OBJ *T*-4)
+							 취하/VV+어야/ECS)
+						     하/VX+을/EAN)))
+					   (NP 장단기/NNC
+					       정책/NNC+에/PAD)))
+			      대하/VV+어/ECS))
+		       (VP (NP-OBJ 의견/NNC+을/PCA)
+			   (VV 교환/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+	   (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>갤런당 평균 1.54 달러에 달하는 무연가스 가격</term>
+	    </Arg>
+	    <Rel>
+	      <term>진정시키기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

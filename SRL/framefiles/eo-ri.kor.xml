@@ -1,0 +1,123 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>어리</lemma>
+    <comment>Frames file for '어리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>어리.01</id>
+      <edef>young</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being young"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>어리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>예, 북조선에서는 모든 인민들이 거의 다 어릴 때부터 사격술을 배우고 대열 훈련을 받고 합니다.</text>
+	  <parse>
+(S (INTJ 예/IJ)
+   ,/SCM
+   (NP-ADV 북조선/NPR+에서/PAD+은/PAU)
+   (S (S (NP-SBJ 모든/DAN
+                 인민/NNC+들/XSF+이/PCA)
+         (VP (ADVP (ADVP 거의/ADV)
+                   (ADVP 다/ADV))
+             (NP-ADV (S (WHNP *op*)
+                        (S (NP-SBJ *pro*)
+                           (ADJP 어리/VJ+을/EAN)))
+                     (NP 때/NNC+부터/PAU))
+             (VP (NP-OBJ 사격술/NNC+을/PCA)
+                 배우/VV+고/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (VP (NP-OBJ-LV 대열/NNC
+                            훈련/NNC+을/PCA)
+                 (LV 받/VV+고/ECS))
+             하/VX+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>어릴</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>어리.02</id>
+      <edef>be fraught with</edef>
+      <roleset>
+	<role argnum="1" argrole="substance"/>
+	<role argnum="2" argrole="container"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel></rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>주민들의 인정 어린 행동은 사고 후 뺑소니를 치고도 계속 발뺌만 하고 있는 29 세의 미국인 여변호사의 태도와는 너무 대조적이어서 '추악한 미국인과 선한 미국인'의 정형을 적나라하게 보여 주고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 주민/NNC+들/XSF+의/PAN)
+              (NP (S (WHNP-1 *op*)
+                     (S (NP-SBJ 인정/NNC)
+                        (VP (NP-COMP *T*-1)
+			    어리/VV+은/EAN)))
+                  (NP 행동/NNC+은/PAU)))
+      (VP (NP-COMP (NP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (VP (VP (NP-ADV 사고/NNC
+                                             후/NNC)
+                                     (VP (NP-OBJ 뺑소니/NNC+을/PCA)
+                                         치/VV+고/ECS+도/PAU))
+                                 (VP (VP (ADVP 계속/ADV)
+                                         (VP (NP-OBJ 발뺌/NNC+만/PAU)
+                                             하/VV+고/ECS))
+                                     있/VX+는/EAN))))
+                       (NP (NP 29/NNU
+                               세/NNX+의/PAN)
+                           (NP 미국/NPR+인/XSF
+                               여/XPF+변호사/NNC+의/PAN)))
+                   (NP 태도/NNC+과/PAD+은/PAU))
+          (VP (ADVP 너무/ADV)
+              (VP (NP 대조/NNC+적/XSF+이/CO+어서/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (VP (NP-OBJ (NP '/SLQ
+                              (NP (S (WHNP-3 *op*)
+                                     (S (NP-SBJ *T*-3)
+                                        (ADJP 추악하/VJ+은/EAN)))
+                                  (NP 미국/NPR+인/XSF+과/PCJ))
+                              (NP (S (WHNP-4 *op*)
+                                     (S (NP-SBJ *T*-4)
+                                        (ADJP 선하/VJ+은/EAN)))
+                                  (NP 미국/NPR+인/XSF))
+                              '/SRQ
+                              의/PAN)
+                          (NP 정형/NNC+을/PCA))
+                  (VP (ADVP (ADV 적나라하/VJ+게/ECS))
+                      (VP 보이/VV+어/ECS)))
+              주/VX+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>인정</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>*trace*=행동</term>
+	    </Arg>
+	    <Rel>
+	      <term>어린</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

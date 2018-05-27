@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>마손</lemma>
+    <comment>Frames file for '마손' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>마손.01</id>
+      <edef>wear out</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing worn out"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>마손되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중기관총에서는 어느 부분이 잘 마손되는가?</text>
+	  <parse>
+(S (NP-ADV 중기관총/NNC+에서/PAD+은/PAU)
+   (S (NP-SBJ 어느/DAN
+              부분/NNC+이/PCA)
+      (VP (ADVP 잘/ADV)
+          (VP (VV 마손/NNC+되/XSV+는가/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>중기관총에서는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>어느 부분</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>잘</term>
+	    </Arg>
+	    <Rel>
+	      <term>마손되는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

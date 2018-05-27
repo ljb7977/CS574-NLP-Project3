@@ -1,0 +1,41 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이상</lemma>
+    <comment>Frames file for '이상' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>이상.01</id>
+      <edef>strange</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being strange"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이상하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>좀 이상한데, 조 대위.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (ADJP (ADVP 좀/ADV)
+            (ADJP (VJ 이상/NNC+하/XSJ+은데/EFN))))
+   ,/SCM
+   (NP-VOC 조/NPR
+           대위/NNC)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>좀</term>
+	    </Arg>
+	    <Rel>
+	      <term>이상한데</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

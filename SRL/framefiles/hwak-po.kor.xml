@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>확보</lemma>
+    <comment>Frames file for '확보' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>확보.01</id>
+      <edef>secure</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing secured"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>확보하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신속히 이동하는 공격 작전에서 보통 연대급 이하에서는 유류나 탄약을 대량으로 확보하고 있지 않습니다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ *pro*)
+              (VP (ADVP 신속히/ADV)
+                  (VP (VV 이동/NNC+하/XSV+는/EAN))))
+           (NP 공격/NNC
+               작전/NNC+에서/PAD))
+   (ADVP 보통/ADV)
+   (S (NP-SBJ 연대/NNC+급/XSF
+              이하/NNC+에서/PCA+은/PAU)
+      (VP (VP (VP (NP-OBJ (NP 유류/NNC+이나/PCJ)
+                          (NP 탄약/NNC+을/PCA))
+                  (VP (NP-ADV 대량/NNC+으로/PAD)
+                      (VP (VV 확보/NNC+하/XSV+고/ECS))))
+              있/VX+지/ECS)
+          않/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>신속히 이동하는 공격 작전에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>보통</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>연대급 이하</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>유류나 탄약</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>대량으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>확보하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있지</term>
+	    </Aux>
+	    <Aux>
+	      <f>지</f>
+	      <term>않습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

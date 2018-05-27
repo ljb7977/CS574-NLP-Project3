@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상봉</lemma>
+    <comment>Frames file for '상봉' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>상봉.01</id>
+      <edef>meet</edef>
+      <roleset>
+	<role argnum="0" argrole="meeter"/>
+	<role argnum="1" argrole="person met"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상봉하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이산가족들은 재북 가족들에게 1 회 평균 은행 및 인편을 통할 경우 500 달러, 직접 상봉할 경우에는 2 천달러 정도를 지원하는 것으로 전해졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ 이산/NNC+가족/NNC+들/XSF+은/PAU)
+                   (VP (NP-COMP 재/XPF+북/NPR
+                                가족/NNC+들/XSF+에게/PAD)
+                       (VP (NP-ADV 1/NNU
+                                   회/NNX
+                                   평균/NNC)
+                           (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                              (VP (NP-OBJ (NP 은행/NNC)
+                                                          (ADCP 및/ADC)
+                                                          (NP 인편/NNC+을/PCA))
+                                                  통하/VV+을/EAN))
+                                           (NP 경우/NNC))
+                                   (VP (NP-OBJ 500/NNU
+                                               달러/NNX)
+                                       (VV *?*)))
+                               ,/SCM
+                               (VP (NP-ADV (S (NP-SBJ *pro*)
+                                              (VP (ADVP 직접/ADV)
+                                                  (VP (NP-OBJ *pro*)
+                                                      (VV 상봉/NNC+하/XSV+을/EAN))))
+                                           (NP 경우/NNC+에/PAD+은/PAU))
+                                   (VP (NP-OBJ 2/NNU
+                                               천/NNU+달러/NNX
+                                               정도/NNC+을/PCA)
+                                       (VV 지원/NNC+하/XSV+는/EAN)))))))
+                (NP 것/NNX+으로/PAD))
+       (VV 전하/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>직접</term>
+	    </Arg>
+	    <Rel>
+	      <term>상봉할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

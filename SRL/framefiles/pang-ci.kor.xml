@@ -1,0 +1,53 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>방지</lemma>
+    <comment>Frames file for '방지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>방지.01</id>
+      <edef>prevent</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>방지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인민군은 탄약의 낭비를 방지하기 위하여 시사 임무의 엄격한 통제를 중요하게 고려하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 인민군/NNC+은/PAU)
+   (VP (VP (S (NP-SBJ *pro*)
+              (VP (S-OBJ (NP-SBJ *pro*)
+                         (VP (NP-OBJ (NP 탄약/NNC+의/PAN)
+                                     (NP 낭비/NNC+을/PCA))
+                             (VV 방지/NNC+하/XSV+기/ENM)))
+                  위하/VV+어/ECS))
+           (VP (NP-OBJ (NP 시사/NNC
+                           임무/NNC+의/PAN)
+                       (NP (S (WHNP-18 *op*)
+                              (S (NP-SBJ *T*-18)
+                                 (ADJP 엄격하/VJ+은/EAN)))
+                           (NP 통제/NNC+을/PCA)))
+               (VP (ADVP (ADV (VJ 중요/NNC+하/XSJ+게/ECS)))
+                   (VP (VV 고려/NNC+하/XSV+고/ECS)))))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>탄약의 낭비</term>
+	    </Arg>
+	    <Rel>
+	      <term>방지하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

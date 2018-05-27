@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>나</lemma>
+    <comment>Frames file for '나' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>나.01</id>
+      <edef>happen</edef>
+      <roleset>
+	<role argnum="1" argrole="thing happening"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>나다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전사자 2명, 부상자 7명, 도합 9명의 사상자가 났다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP 전사자/NNC
+                   2/NNU
+                   명/NNX)
+               ,/SCM
+               (NP 부상자/NNC
+                   7/NNU
+                   명/NNX)
+               ,/SCM
+               (NP 도합/NNC
+                   9/NNU
+                   명/NNX+의/PAN))
+           (NP 사상자/NNC+이/PCA))
+   (VP 나/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>전사자 2명, 부상자 7명, 도합 9명의 사상자</term>
+	    </Arg>
+	    <Rel>
+	      <term>났다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>군사부중대장 동지가 어느 날 학습장에서 그렇게 말하는 걸 들은 기억이 납니다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+              (VP (NP-OBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ 군사부/NNC
+                                        중대장/NNC
+                                        동지/NNC+이/PCA)
+                                (VP (NP-ADV 어느/DAN
+                                            날/NNC)
+                                    (NP-ADV 학습장/NNC+에서/PAD)
+                                    (ADVP 그렇게/ADV)
+                                    (VP (NP-OBJ *T*-1)
+                                        말하/VV+는/EAN))))
+                          (NP 것/NNX+을/PCA))
+                  듣/VV+은/EAN))
+           (NP 기억/NNC+이/PCA))
+   (VP 나/VV+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>군사부중대장 동지가 어느 날 학습장에서 그렇게 말하는 걸 들은 기억</term>
+	    </Arg>
+	    <Rel>
+	      <term>납니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

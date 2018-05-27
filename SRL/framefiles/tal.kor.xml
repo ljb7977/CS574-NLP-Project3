@@ -1,0 +1,118 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>달</lemma>
+    <comment>Frames file for '달' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>달.01</id>
+      <edef>give</edef>
+      <roleset>
+	<role argnum="0" argrole="giver"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="receiver"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>달다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그저 귀관이 기억하고 있는 첩보를 가능한 한 정확하게 달라는 것 뿐이요.</text>
+	  <parse>
+(S (ADVP 그저/ADV) 
+   (S (NP-SBJ *pro*)
+      (VP (NP (NP (S (NP-SBJ *pro*)
+		     (VP (NP-COMP *pro*)
+			 (NP-OBJ (S (WHNP-1 0)
+				    (S (NP-SBJ 귀관/NNC+이/PCA)
+				       (VP (VP (NP-OBJ *T*-1) 
+					       (VV 기억/NNC+하/XSV+고/EAU)) 
+					   있/VX+는/EAN))) 
+				 (NP 첩보/NNC+를/PCA))
+			 (VP (NP-ADV (S (NP-SBJ *pro*)
+					(ADJP (VJ 가능/NNC+하/XSJ+은/EAN))) 
+				     (NP 한/NNX)) 
+			     (ADVP (ADV (VJ 정확/NNC+하/XSJ+게/ECS))) 
+			     (VP 달/VV+라는/EAN))))  
+		  (NP 것/NNX)) 
+	      (NP 뿐/NNX+이/CO+요/EFN)))) 
+   ./SFN ) 
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>귀관이 기억하고 있는 첩보</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>가능한 한 정확하게</term>
+	    </Arg>
+	    <Rel>
+	      <term>달라는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>달.02</id>
+      <edef>hang</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>달다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지휘관의 탐조등은 그의 전망 포탑 위에 있고 사수의 탐조등은 포탑의 정면 오른쪽에 수직으로 단 선반에 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 지휘관/NNC+의/PAN)
+              (NP 탐조등/NNC+은/PAU))
+      (ADJP (NP-COMP (NP 그/NPN+의/PAN)
+                     (NP 전망/NNC
+                         포탑/NNC
+                         위/NNC+에/PAD))
+            있/VJ+고/ECS))
+   (S (NP-SBJ (NP 사수/NNC+의/PAN)
+              (NP 탐조등/NNC+은/PAU))
+      (ADJP (NP-COMP (S (WHNP-1 *op*)
+                        (S (NP-SBJ *pro*)
+                           (VP (NP-COMP (NP 포탑/NNC+의/PAN)
+					(NP 정면/NNC
+						오른쪽/NNC+에/PAD))
+                               (VP (NP-ADV 수직/NNC+으로/PAD)
+				   (VP (NP-OBJ *T*-1)
+				       달/VV+은/EAN)))))
+                     (NP 선반/NNC+에/PAD))
+            있/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>포탑의 정면 오른쪽</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>수직으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=선반</term>
+	    </Arg>
+	    <Rel>
+	      <term>단</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

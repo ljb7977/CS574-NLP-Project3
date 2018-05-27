@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가만두</lemma>
+    <comment>Frames file for '가만두' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가만두.01</id>
+      <edef>let alone</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing let alone"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가만두다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>부시 지사는 이어 미국민들은 그러한 말과 현실의 차이에 우롱당하지 않을 것이라면서 고어 부통령을 향해 "나는 당신이 그렇게 하도록 가만두지 않을 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 부시/NPR
+           지사/NNC+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (S (NP-SBJ 미국민/NNC+들/XSF+은/PAU)
+          (VP (VP (VP (NP-COMP (NP (NP 그러한/DAN
+                                       말/NNC+과/PCJ)
+                                   (NP 현실/NNC+의/PAN))
+                               (NP 차이/NNC+에/PAD))
+                      (VV 우롱/NNC+당하/XSV+지/ECS))
+                  않/VX+을/EAN)
+              (VX 것/NNX+이/CO+라면서/ECS)))
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 고어/NPR
+                      부통령/NNC+을/PCA)
+              향하/VV+어/ECS))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ 나/NPN+은/PAU)
+                   (VP (VP (VP (S (NP-SBJ 당신/NPN+이/PCA)
+                                  (VP (ADVP 그렇게/ADV)
+                                      (VP (NP-OBJ *pro*)
+                                          하/VV+도록/ECS)))
+                               (VP (NP-OBJ *pro*)
+                                   가만두/VV+지/ECS))
+                           않/VX+을/EAN)
+                       (VX 것/NNX))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>당신이 그렇게 하도록</term>
+	    </Arg>
+	    <Rel>
+	      <term>가만두지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

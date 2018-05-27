@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>야심차</lemma>
+    <comment>Frames file for '야심차' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>야심차.01</id>
+      <edef>ambitious</edef>
+      <roleset>
+	<role argnum="1" argrole="thing ambitious"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>야심차다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보수파가 장악하고 있는 이란 의회는 지난 5 일 모하마드 하타미 대통령의 야심찬 민영화 계획에 대한 최근의 지지 결정을 사실상 철회했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-3 *op*)
+              (S (NP-SBJ 보수파/NNC+이/PCA)
+                 (VP (VP (NP-OBJ *T*-3)
+                         (VV 장악/NNC+하/XSV+고/ECS))
+                     있/VX+는/EAN)))
+           (NP 이란/NPR
+               의회/NNC+은/PAU))
+   (VP (NP-OBJ (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-COMP (NP 지난/DAN
+                                      5/NNU
+                                      일/NNX)
+                                  (NP 모하마드/NPR
+                                      하타미/NPR
+                                      대통령/NNC+의/PAN)
+                                  (NP (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (ADJP 야심차/VJ+은/EAN)))
+                                      (NP 민영화/NNC
+                                          계획/NNC+에/PAD)))
+                         대하/VV+은/EAN)))
+               (NP (NP 최근/NNC+의/PAN)
+                   (NP 지지/NNC
+                       결정/NNC+을/PCA)))
+       (VP (NP-ADV 사실상/NNC)
+           (VP (VV 철회/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=민영화 계획</term>
+	    </Arg>
+	    <Rel>
+	      <term>야심찬</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

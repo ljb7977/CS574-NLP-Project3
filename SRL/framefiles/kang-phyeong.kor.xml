@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>강평</lemma>
+    <comment>Frames file for '강평' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>강평.01</id>
+      <edef>comment</edef>
+      <roleset>
+	<role argnum="0" argrole="commentor"/>
+	<role argnum="1" argrole="thing commented on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>강평하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포대 작전에 대한 모든 훈련이 끝나면 대대장이 그걸 강평합니다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP 포대/NNC
+                                 작전/NNC+에/PAD)
+                        대하/VV+은/EAN)))
+              (NP 모든/DAN
+                  훈련/NNC+이/PCA))
+      (VP 끝나/VV+으면/ECS))
+   (S (NP-SBJ 대대장/NNC+이/PCA)
+      (VP (NP-OBJ 그것/NPN+을/PCA)
+          (VV 강평/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>포대 작전에 대한 모든 훈련이 끝나면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>대대장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Rel>
+	      <term>강평합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

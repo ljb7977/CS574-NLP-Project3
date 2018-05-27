@@ -1,0 +1,185 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>공격</lemma>
+    <comment>Frames file for '공격' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>공격.01</id>
+      <edef>attack</edef>
+      <roleset>
+	<role argnum="0" argrole="attacker"/>
+	<role argnum="1" argrole="entity attacked"/>
+	<role argnum="2" argrole="attacked for"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>공격하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리 중대는 표준 공격 전술을 사용해서 적을 공격했습니다.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN
+           중대/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 표준/NNC
+                      공격/NNC
+                      전술/NNC+을/PCA)
+              (VV 사용/NNC+하/XSV+어서/ECS)))
+       (VP (NP-OBJ 적/NNC+을/PCA)
+           (VV 공격/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>우리 중대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>표준 공격 전술을 사용해서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적</term>
+	    </Arg>
+	    <Rel>
+	      <term>공격했습니다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>공격하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>의원들은 외무부 장관에게 외교 정책의 미숙함을 공격하였다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>의원들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>외무부 장관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>외교 정책의 미숙함</term>
+	    </Arg>
+	    <Rel>
+	      <term>공격하였다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>공격하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	  <mapitem src="s-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그녀는 친구에게 이번 일의 실패가 그의 실수라고 공격하였다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>그녀</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>친구</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>이번 일의 실패가 그의 실수라</term>
+	    </Arg>
+	    <Rel>
+	      <term>공격하였다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>공격하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	  <mapitem src="np-obj" trg="arg2"/>
+	  <mapitem src="s-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그녀는 친구에게 이번 일의 실패를 그의 실수라고 공격하였다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>그녀</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>친구</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이번 일의 실패</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>그의 실수라</term>
+	    </Arg>
+	    <Rel>
+	      <term>공격하였다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>공격받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 타이완이 당장 공격받는다고 가정할 경우 클린턴 행정부가 타이완을 방어하러 나서겠느냐며 의구심을 표시했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (S-COMP (NP-SBJ 타이완/NPR+이/PCA)
+                                 (VP (ADVP 당장/ADV)
+                                     (VP (VV 공격/NNC+받/XSV+는다/EFN+고/PAD))))
+                         (VV 가정/NNC+하/XSV+을/EAN)))
+                  (NP 경우/NNC))
+          (S (NP-SBJ 클린턴/NPR
+                     행정부/NNC+이/PCA)
+             (VP (S-COMP (NP-SBJ *pro*)
+                         (VP (NP-OBJ 타이완/NPR+을/PCA)
+                             (VV 방어/NNC+하/XSV+으러/ECS)))
+                 나서/VV+겠/EPF+느냐며/ECS)))
+       (VP (NP-OBJ 의구심/NNC+을/PCA)
+           (VV 표시/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>타이완</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>당장</term>
+	    </Arg>
+	    <Rel>
+	      <term>공격받는다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

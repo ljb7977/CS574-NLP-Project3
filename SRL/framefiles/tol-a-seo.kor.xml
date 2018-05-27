@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌아서</lemma>
+    <comment>Frames file for '돌아서' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>돌아서.01</id>
+      <edef>turn around</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌아서다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이제 와서는 돌아서서 나에게 거짓말을 하다니!</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-ADV 이제/NNC)
+          (VP 오/VV+어서/ECS+은/PAU)))
+   (S (NP-SBJ *pro*)
+      (VP 돌아서/VV+어서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 나/NPN+에게/PAD)
+          (VP (NP-OBJ-LV 거짓말/NNC+을/PCA)
+              (LV 하/VV+다니/EFN))))
+   !/SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>돌아서서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>장악</lemma>
+    <comment>Frames file for '장악' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>장악.01</id>
+      <edef>control</edef>
+      <roleset>
+	<role argnum="0" argrole="controller"/>
+	<role argnum="1" argrole="thing controlled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>장악하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인민군에는 군사 작전 업무를 수행하기 위한 군사 참모 지휘 체제와 당이 군을 장악하기 위한 정치기구가 있다.</text>
+	  <parse>
+(S (NP-COMP-1 인민군/NNC+에/PAD+은/PAU)
+   (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (VP (S-OBJ (NP-SBJ *pro*)
+                                   (VP (NP-OBJ 군사/NNC
+                                               작전/NNC
+                                               업무/NNC+을/PCA)
+                                       (VV 수행/NNC+하/XSV+기/ENM)))
+                            위하/VV+은/EAN)))
+                  (NP 군사/NNC
+                      참모/NNC
+                      지휘/NNC
+                      체제/NNC+과/PCJ))
+              (NP (S (WHNP-3 *op*)
+                     (S (NP-SBJ *T*-3)
+                        (VP (S-OBJ (NP-SBJ 당/NNC+이/PCA)
+                                   (VP (NP-OBJ 군/NNC+을/PCA)
+                                       (VV 장악/NNC+하/XSV+기/ENM)))
+                            위하/VV+은/EAN)))
+                  (NP 정치/NNC
+                      기구/NNC+이/PCA)))
+      (ADJP (NP-COMP *T*-1)
+            있/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>당</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>군</term>
+	    </Arg>
+	    <Rel>
+	      <term>장악하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,45 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>비축</lemma>
+    <comment>Frames file for '비축' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>비축.01</id>
+      <edef>stock</edef>
+      <roleset>
+	<role argnum="0" argrole="storer"/>
+	<role argnum="1" argrole="commodity"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>비축하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>탄약 전투 정량을 준비하고 예비 보급품을 비축한다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-OBJ 탄약/NNC 
+		   전투/NNC 
+		   정량/NNC+을/PCA) 
+	   (VV 준비/NNC+하/XSV+고/ECS))
+       (VP (NP-OBJ 예비/NNC 
+		   보급품/NNC+을/PCA) 
+	   (VV 비축/NNC+하/XSV+는다/EFN)))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>예비 보급품</term>
+	    </Arg>
+	    <Rel>
+	      <term>비축한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

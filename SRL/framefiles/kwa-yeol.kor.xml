@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>과열</lemma>
+    <comment>Frames file for '과열' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>과열.01</id>
+      <edef>overheat</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing overheated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>과열하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>엔진이 장시간 과열하면 무리가 간다.</text>
+	  <parse>
+(S (S (NP-SBJ 엔진/NNC+이/PCA)
+      (VP (NP-ADV 장시간/NNC)
+          (VP (VV 과열/NNC+하/XSV+으면/ECS))))
+   (S (NP-SBJ 무리/NNC+이/PCA)
+      (VP (NP-COMP *pro*)
+          가/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>엔진</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>장시간</term>
+	    </Arg>
+	    <Rel>
+	      <term>과열하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>과열되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>무전기는 기온 몇 도에서 보통 과열되는가?</text>
+	  <parse>
+(S (NP-SBJ 무전기/NNC+은/PAU)
+   (VP (NP-ADV 기온/NNC
+               몇/NNU
+               도/NNX+에서/PAD)
+       (ADVP 보통/ADV)
+       (VP (VV 과열/NNC+되/XSV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>무전기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>기온 몇 도에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>보통</term>
+	    </Arg>
+	    <Rel>
+	      <term>과열되는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

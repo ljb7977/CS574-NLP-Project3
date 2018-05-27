@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>챙기</lemma>
+    <comment>Frames file for '챙기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>챙기.01</id>
+      <edef>pack</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing packed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>챙기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>만약 잇단 폭우로 인해 또다시 수위가 높아질 경우 홍수로 파괴된 집과 가재도구를 챙기기 위해 거주지로 복귀한 이재민들의 안전이 위태로울 전망이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-ADV (S (ADVP 만약/ADV)
+                         (S (NP-SBJ *pro*)
+                            (VP (NP-COMP (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP 잇달/VV+은/EAN)))
+                                         (NP 폭우/NNC+으로/PAD))
+                                인하/VV+어/ECS))
+                         (ADVP 또다시/ADV)
+                         (S (NP-SBJ 수위/NNC+이/PCA)
+                            (VP (VV 높/VJ+어지/XSV+을/EAN))))
+                      (NP 경우/NNC))
+              (S (NP-SBJ (NP (S (WHNP-3 *op*)
+                                (S (NP-SBJ *T*-3)
+                                   (VP (S (NP-SBJ *pro*)
+                                          (VP (S-OBJ (NP-SBJ *pro*)
+                                                     (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                    (S (NP-SBJ *T*-2)
+                                                                       (VP (NP-ADV 홍수/NNC+으로/PAD)
+                                                                           (VP (VV 파괴/NNC+되/XSV+은/EAN)))))
+                                                                 (NP (NP 집/NNC+과/PCJ)
+                                                                     (NP 가재/NNC+도구/NNC+을/PCA)))
+                                                         챙기/VV+기/ENM))
+                                              위하/VV+어/ECS))
+                                       (VP (NP-COMP 거주지/NNC+으로/PAD)
+                                           (VV 복귀/NNC+하/XSV+은/EAN)))))
+                             (NP 이재민/NNC+들/XSF+의/PAN))
+                         (NP 안전/NNC+이/PCA))
+                 (ADJP 위태롭/VJ+을/EAN)))
+           (NP 전망/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>홍수로 파괴된 집과 가재도구</term>
+	    </Arg>
+	    <Rel>
+	      <term>챙기기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

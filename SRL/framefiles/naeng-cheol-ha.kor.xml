@@ -1,0 +1,45 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>냉철하</lemma>
+    <comment>Frames file for '냉철하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>냉철하.01</id>
+      <edef>cool-headed</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being cool-headed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>냉철하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>고어 부통령은 정적의 문제이든 아니면 모종의 제안이든 간에 냉철하게 분석하는 것으로 유명하다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (ADJP (NP-COMP (S (NP-SBJ 고어/NPR
+                             부통령/NNC+은/PAU)
+                     (VP (NP-ADV (NP (NP (NP 정적/NNC+의/PAN)
+                                         (NP 문제/NNC+이든/PAU))
+                                     (ADCP 아니면/ADC)
+                                     (NP (NP 모종/NNC+의/PAN)
+                                         (NP 제안/NNC+이든/PAU)))
+                                 (NP 간/NNX+에/PAD))
+                         (ADVP (ADV 냉철하/VJ+게/ECS))
+                         (VP (NP-OBJ *pro*)
+			     (VV 분석/NNC+하/XSV+는/EAN))))
+                  (NP 것/NNX+으로/PAD))
+         (VJ 유명/NNC+하/XSJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>냉철하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뒤쫓</lemma>
+    <comment>Frames file for '뒤쫓' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뒤쫓.01</id>
+      <edef>pursue</edef>
+      <roleset>
+	<role argnum="0" argrole="thing following"/>
+	<role argnum="1" argrole="thing followed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뒤쫓다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>세계 비디오 게임기 시장은 소니와 세가, 닌텐도 등 3 개 업체가 주도하고 있으며 세가가 소니와 닌텐도를 뒤쫓는 판도로 짜여져 있다.</text>
+	  <parse>
+(S (S (NP-OBJ-1 세계/NNC
+                비디오/NNC
+                게임기/NNC
+                시장/NNC+은/PAU)
+      (S (NP-SBJ (NP (NP (NP 소니/NPR+과/PCJ)
+                         (NP 세가/NPR)
+                         ,/SCM
+                         (NP 닌텐도/NPR))
+                     (NP 등/NNX))
+                 (NP 3/NNU
+                     개/NNX
+                     업체/NNC+이/PCA))
+         (VP (VP (NP-OBJ *T*-1)
+                 (VV 주도/NNC+하/XSV+고/ECS))
+             있/VX+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (S (NP-SBJ 세가/NPR+이/PCA)
+                          (VP (NP-OBJ (NP 소니/NPR+과/PCJ)
+                                      (NP 닌텐도/NPR+을/PCA))
+                              뒤쫓/VV+는/EAN))
+                       (NP 판도/NNC+으로/PAD))
+              짜이/VV+어지/XSV+어/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>세가</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>소니와 닌텐도</term>
+	    </Arg>
+	    <Rel>
+	      <term>뒤쫓는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

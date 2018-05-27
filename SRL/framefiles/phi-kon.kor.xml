@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>피곤</lemma>
+    <comment>Frames file for '피곤' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>피곤.01</id>
+      <edef>tired</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being tired"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>피곤하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저는 생포될 때 몹시 피곤했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (ADJP (NP-ADV (S (WHNP *op*)
+                    (S (NP-SBJ *pro*)
+                       (VP (VV 생포/NNC+되/XSV+을/EAN))))
+                 (NP 때/NNC))
+         (ADVP 몹시/ADV)
+         (ADJP (VJ 피곤/NNC+하/XSJ+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>생포될 때</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>몹시</term>
+	    </Arg>
+	    <Rel>
+	      <term>피곤했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

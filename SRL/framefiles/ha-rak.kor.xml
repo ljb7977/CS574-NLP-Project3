@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>하락</lemma>
+    <comment>Frames file for '하락' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>하락.01</id>
+      <edef>decline</edef>
+      <roleset>
+	<role argnum="1" argrole="thing declining"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>하락하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>쥬가노프 당수의 지지도도 지난주 26.5 퍼센트였다가 24 퍼센트로 하락했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 쥬가노프/NPR
+               당수/NNC+의/PAN)
+           (NP 지지도/NNC+도/PAU))
+   (VP (S-COMP (NP-SBJ *pro*)
+	       (VP (NP-ADV 지난주/NNC)
+		   (VP (NP 26.5/NNU
+			   퍼센트/NNX+이/CO+었/EPF+다가/ECS))))
+       (NP-COMP 24/NNU
+		퍼센트/NNX+으로/PAD)
+       (VV 하락/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>쥬가노프 당수의 지지도</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>지난주 26.5 퍼센트였다가</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>24 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>하락했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

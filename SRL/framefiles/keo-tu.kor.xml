@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>거두</lemma>
+    <comment>Frames file for '거두' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>거두.01</id>
+      <edef>get</edef>
+      <roleset>
+	<role argnum="0" argrole="receiver"/>
+	<role argnum="1" argrole="thing gotten"/>
+	<role argnum="2" argrole="received from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>거두다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국 공화당 대통령 후보로 사실상 확정된 조지 부시 텍사스주지사가 지난 7 일의 `슈퍼 화요일' 대회전에서 승리를 거두기는 했지만 과다한 '출혈'로 당장 자금 걱정부터 해야 할 입장이다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP 미국/NPR
+                                 공화당/NPR
+                                 대통령/NNC
+                                 후보/NNC+으로/PAD)
+                        (VP (NP-ADV 사실상/NNC)
+                            (VP (VV 확정/NNC+되/XSV+은/EAN))))))
+              (NP 조지/NPR
+                  부시/NPR
+                  텍사스/NPR+주지사/NNC+이/PCA))
+      (VP (VP (NP-ADV (NP 지난/DAN
+                          7/NNU
+                          일/NNX+의/PAN)
+                      (NP `/SLQ
+                          슈퍼/NNC
+                          화요일/NNC
+                          '/SRQ
+                          대회전/NNC+에서/PAD))
+              (VP (NP-OBJ 승리/NNC+을/PCA)
+                  거두/VV+기/ENM+은/PAU))
+          하/VX+었/EPF+지만/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (ADJP (VJ 과다/NNC+하/XSJ+은/EAN))))
+                  (NP '/SLQ
+                      출혈/NNC
+                      '/SRQ
+                      으로/PAD))
+          (VP (NP (S (NP-SBJ *pro*)
+                     (VP (VP (ADVP 당장/ADV)
+                             (VP (NP-OBJ 자금/NNC
+                                         걱정/NNC+부터/PAU)
+                                 하/VV+어야/ECS))
+                         하/VX+을/EAN))
+                  (NP 입장/NNC+이/CO+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>미국 공화당 대통령 후보로 사실상 확정된 조지 부시 텍사스주지사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 7 일의 `슈퍼 화요일' 대회전에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>승리</term>
+	    </Arg>
+	    <Rel>
+	      <term>거두기는</term>
+	    </Rel>
+	    <Aux>
+	      <f>기는</f>
+	      <term>했지만</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

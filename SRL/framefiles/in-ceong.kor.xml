@@ -1,0 +1,457 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>인정</lemma>
+    <comment>Frames file for '인정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>인정.01</id>
+      <edef>admit</edef>
+      <roleset>
+	<role argnum="0" argrole="thing admitting"/>
+	<role argnum="1" argrole="thing admitted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>인정하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>BBC는 타이베이의 한 관리가 폐기물을 실은 32 개의 컨테이너가 일단 네덜란드로 선적된 사실을 인정했다면서 그러나 이 관리는 최종 운송지가 어디인지에 대해서는 밝히지 않았다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ BBC/NFW+은/PAU)
+   (VP (S (NP-SBJ (NP 타이베이/NPR+의/PAN)
+                  (NP 한/NNU
+                      관리/NNC+이/PCA))
+          (VP (NP-OBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP-OBJ 폐기물/NNC+을/PCA)
+                                           싣/VV+은/EAN)))
+                                 (NP (NP 32/NNU
+                                         개/NNX+의/PAN)
+                                     (NP 컨테이너/NNC+이/PCA)))
+                         (VP (ADVP 일단/ADV)
+                             (VP (NP-COMP 네덜란드/NPR+으로/PAD)
+                                 (VV 선적/NNC+되/XSV+은/EAN))))
+                      (NP 사실/NNC+을/PCA))
+              (VV 인정/NNC+하/XSV+었/EPF+다면서/ECS)))
+       (VP (ADCP 그러나/ADC)
+           (VP (S-COMP (NP-SBJ 이/DAN
+                               관리/NNC+은/PAU)
+                       (VP (VP (S-COMP (NP-SBJ *pro*)
+				       (VP (S-COMP (NP-SBJ 최종/NNC
+							       운송지/NNC+이/PCA)
+						   (VP (NP 어디/NPN+이/CO+은지/EFN+에/PAD)))
+					   대하/VV+어서/ECS+은/PAU))
+                               밝히/VV+지/ECS)
+                           않/VX+었/EPF+다/EFN+고/PAD))
+               전하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>타이베이의 한 관리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>폐기물을 실은 32 개의 컨테이너가 일단 네덜란드로 선적된 사실</term>
+	    </Arg>
+	    <Rel>
+	      <term>인정했다면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>인정하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>국내적으로 최근 시민단체의 활동이 활발해진 데 대해 이는 세계적인 추세라며 시민단체가 4 월 총선을 앞두고 공천에 있어서 주장하는 바를 다 이루지는 못했지만 상당한 영향을 준 것은 사실이라고 인정하고 시민단체의 움직임으로부터 많은 교훈을 받고 정치를 개혁해 나가야 할 것이라고 단언했다.</text>
+	  <parse>
+(S (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP (S (NP-ADV 국내/NNC+적/XSF+으로/PAD)
+                         (NP-ADV 최근/NNC)
+                         (S (NP-SBJ (NP 시민/NNC+단체/NNC+의/PAN)
+                                    (NP 활동/NNC+이/PCA))
+                            (VP (VV 활발하/VJ+어지/XSV+은/EAN))))
+                      (NP 데/NNX))
+             대하/VV+어/ECS))
+      (S (NP-SBJ 이/NPN+은/PAU)
+         (VP (NP (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP 세계/NNC+적/XSF+이/CO+은/EAN))))
+                 (NP 추세/NNC+이/CO+라며/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S-COMP (NP-SBJ (S (NP-SBJ 시민/NNC+단체/NNC+이/PCA)
+                                 (VP (VP (VP (S (NP-SBJ *pro*)
+						(VP (NP-OBJ (NP 4/NNU
+								월/NNX)
+							    (NP 총선/NNC+을/PCA))
+						    앞두/VV+고/ECS))
+					     (VP (NP-OBJ (S (WHNP-4 *op*)
+							    (S (NP-SBJ *pro*)
+							       (VP (S (NP-SBJ *pro*)
+								      (ADJP (NP-COMP 공천/NNC+에/PAD)
+									    있/VJ+어서/ECS))
+								   (VP (NP-OBJ *T*-4)
+								       (VV 주장/NNC+하/XSV+는/EAN)))))
+							 (NP 바/NNX+을/PCA))
+						 (VP (ADVP 다/ADV)
+						     (VP 이루/VV+지/ECS+은/PAU))))
+					 못하/VX+었/EPF+지만/ECS)
+                                     (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *T*-2)
+                                                       (ADJP (VJ 상당/NNC+하/XSJ+은/EAN))))
+                                                 (NP 영향/NNC+을/PCA))
+                                         주/VV+은/EAN)))
+                              (NP 것/NNX+은/PAU))
+                      (VP (NP 사실/NNC+이/CO+라/EFN+고/PAD)))
+              (VV 인정/NNC+하/XSV+고/ECS))
+          (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (VP (VP (VP (VP (NP-COMP (NP 시민/NNC+단체/NNC+의/PAN)
+                                                   (NP 움직임/NNC+으로부터/PAD))
+                                          (NP-OBJ (S (WHNP-3 *op*)
+                                                     (S (NP-SBJ *T*-3)
+                                                        (ADJP 많/VJ+은/EAN)))
+                                                  (NP 교훈/NNC+을/PCA))
+                                          받/VV+고/ECS)
+                                      (VP (NP-OBJ 정치/NNC+을/PCA)
+                                          (VV 개혁/NNC+하/XSV+어/ECS)))
+                                  나가/VX+어야/ECS)
+                              하/VX+을/EAN)
+                          (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+              (VV 단언/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>시민단체가 4 월 총선을 앞두고 공천에 있어서 주장하는 바를 다 이루지는 못했지만 상당한 영향을 준 것은 사실이라</term>
+	    </Arg>
+	    <Rel>
+	      <term>인정하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>인정하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한나라당 김홍신 의원에 대해 법원이 형법상 모욕죄와 공직선거 및 선거부정방지법상 후보자 비방죄를 모두 유죄로 인정했지만 김 의원의 피선거권은 유지될 것으로 보인다.</text>
+	  <parse>
+(S (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP 한나라당/NPR
+                      김홍신/NPR
+                      의원/NNC+에/PAD)
+             대하/VV+어/ECS))
+      (S (NP-SBJ 법원/NNC+이/PCA)
+         (VP (NP-OBJ (NP 형법/NNC+상/XSF
+                         모욕죄/NNC+과/PCJ)
+                     (NP (NP (NP 공직/NNC+선거/NNC)
+                             (ADCP 및/ADC)
+                             (NP 선거/NNC+부정/NNC+방지/NNC+법/NNC+상/XSF))
+                         (NP 후보자/NNC
+                             비방죄/NNC+을/PCA)))
+             (VP (ADVP 모두/ADV)
+                 (VP (NP-COMP 유죄/NNC+으로/PAD)
+                     (VV 인정/NNC+하/XSV+었/EPF+지만/ECS))))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ (NP 김/NPR
+                                  의원/NNC+의/PAN)
+                              (NP 피선거권/NNC+은/PAU))
+                      (VP (VV 유지/NNC+되/XSV+을/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>한나라당 김홍신 의원에 대해</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>법원</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>형법상 모욕죄와 공직선거 및 선거부정방지법상 후보자 비방죄</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>모두</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>유죄</term>
+	    </Arg>
+	    <Rel>
+	      <term>인정했지만</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>인정되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>사설은 또 5 일 이스라엘 각의에서 승인된 철군 계획은 단지 병력 철수를 명문화한 것에 불과하다면서 "이스라엘이 국제적으로 인정된 국경선 뒤로 완전 철군하지 않고 남부 레바논의 전략 지역들을 계속 장악하려 하고 있음을 의미한다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 사설/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (S (NP-SBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-ADV 5/NNU
+                                    일/NNX)
+                            (NP-ADV 이스라엘/NPR
+                                    각의/NNC+에서/PAD)
+                            (VP (VV 승인/NNC+되/XSV+은/EAN)))))
+                  (NP 철군/NNC
+                      계획/NNC+은/PAU))
+          (ADJP (ADVP 단지/ADV)
+                (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ 병력/NNC
+                                              철수/NNC+을/PCA)
+                                      (VV 명문화/NNC+하/XSV+은/EAN)))
+                               (NP 것/NNX+에/PAD))
+                      (VJ 불과/NNC+하/XSJ+다면서/ECS))))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (S-OBJ (NP-SBJ 이스라엘/NPR+이/PCA)
+                              (VP (VP (VP (NP-COMP (NP (S (WHNP-2 *op*)
+                                                          (S (NP-SBJ *T*-2)
+                                                             (VP (NP-ADV 국제/NNC+적/XSF+으로/PAD)
+                                                                 (VP (VV 인정/NNC+되/XSV+은/EAN)))))
+                                                       (NP 국경선/NNC))
+                                                   (NP 뒤/NNC+으로/PAD))
+                                          (VP (NP-ADV 완전/NNC)
+                                              (VP (VV 철군/NNC+하/XSV+지/ECS))))
+                                      않/VX+고/ECS)
+                                  (VP (VP (VP (NP-OBJ (NP 남부/NNC
+                                                          레바논/NPR+의/PAN)
+                                                      (NP 전략/NNC
+                                                          지역/NNC+들/XSF+을/PCA))
+                                              (VP (ADVP 계속/ADV)
+                                                  (VP (VV 장악/NNC+하/XSV+으려/ECS))))
+                                          하/VX+고/ECS)
+                                      있/VX+음/ENM+을/PCA)))
+                       (VV 의미/NNC+하/XSV+는다/EFN))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=국경선</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>국제적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>인정된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>인정되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>현행 선거법상 허위사실유포죄가 유죄로 인정될 경우 벌금 500 만원 이상의 형을 선고하도록 돼 있으며 현행법상 선거법 위반죄로 벌금 100 만원 이상, 그 밖의 죄로 징역형 이상의 형이 확정될 경우 피선거권이 박탈된다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV 현행/NNC
+                      선거법/NNC+상/XSF)
+              (VP (S-COMP (NP-SBJ *pro*)
+                          (VP (NP-ADV (S (NP-SBJ 허위/NNC+사실/NNC+유포죄/NNC+이/PCA)
+                                         (VP (NP-COMP 유죄/NNC+으로/PAD)
+                                             (VV 인정/NNC+되/XSV+을/EAN)))
+                                      (NP 경우/NNC))
+                              (VP (NP-OBJ (NP 벌금/NNC
+                                              500/NNU
+                                              만/NNU+원/NNX
+                                              이상/NNC+의/PAN)
+                                          (NP 형/NNC+을/PCA))
+                                  (VV 선고/NNC+하/XSV+도록/ECS))))
+                  되/VV+어/ECS))
+          있/VX+으며/ECS))
+   (S (NP-ADV 현행법/NNC+상/XSF)
+      (NP-ADV (S (S (NP-ADV 선거법/NNC
+                            위반죄/NNC+으로/PAD)
+                    (S (NP-SBJ 벌금/NNC
+                               100/NNU
+                               만/NNU+원/NNX
+                               이상/NNC)
+                       (VP *?*)))
+                 ,/SCM
+                 (S (NP-ADV (NP 그/DAN
+                                밖/NNX+의/PAN)
+                            (NP 죄/NNC+으로/PAD))
+                    (S (NP-SBJ (NP 징역형/NNC
+                                   이상/NNC+의/PAN)
+                               (NP 형/NNC+이/PCA))
+                       (VP (VV 확정/NNC+되/XSV+을/EAN)))))
+              (NP 경우/NNC))
+      (S (NP-SBJ 피선거권/NNC+이/PCA)
+         (VP (VV 박탈/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>허위사실유포죄</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>유죄</term>
+	    </Arg>
+	    <Rel>
+	      <term>인정될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>인정받다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>"사상 처음으로, 후각이 영향력 있는 감각으로 인정받고 있다"고 그녀는 덧붙였다.</text>
+	  <parse>
+(S (S-COMP-2 "/SLQ
+             (NP-ADV 사상/NNC
+                     처음/NNC+으로/PAD)
+             ,/SCM
+             (S (NP-SBJ 후각/NNC+이/PCA)
+                (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (ADJP (NP-COMP 영향력/NNC)
+                                             있/VJ+는/EAN)))
+                                 (NP 감각/NNC+으로/PAD))
+                        (VV 인정/NNC+받/XSV+고/ECS))
+                    있/VX+다/EFN))
+             "/SRQ
+             고/PAD)
+   (S (NP-SBJ 그녀/NPN+은/PAU)
+      (VP (S-COMP *T*-2)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>사상 처음으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>후각</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>영향력 있는 감각</term>
+	    </Arg>
+	    <Rel>
+	      <term>인정받고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>인정받다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 유명한 기업들에서도 이런 일이 일어나고 있다면서 "하루 장사하고 사라지는 기업이 아니라 전국적으로 명성을 인정받는 회사들도 이런 나쁜 관행에 빠져 있다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S (NP-ADV (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP (VJ 유명/NNC+하/XSJ+은/EAN))))
+                  (NP 기업/NNC+들/XSF+에서/PAD+도/PAU))
+          (S (NP-SBJ 이런/DAN
+                     일/NNC+이/PCA)
+             (VP (VP 일어나/VV+고/ECS)
+                 있/VX+다면서/ECS)))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (S (WHNP-3 *op*)
+                              (S (S (NP-SBJ *T*-3)
+                                    (ADJP (NP-COMP (S (WHNP-2 *op*)
+                                                      (S (NP-SBJ *T*-2)
+                                                         (VP (VP (NP-ADV 하루/NNC)
+                                                                 (VP (VV 장사/NNC+하/XSV+고/ECS)))
+                                                             (VP 사라지/VV+는/EAN))))
+                                                   (NP 기업/NNC+이/PCA))
+                                          아니/VJ+라/EFN))
+                                 (S (NP-SBJ *T*-3)
+                                    (VP (NP-ADV 전국/NNC+적/XSF+으로/PAD)
+                                        (VP (NP-OBJ 명성/NNC+을/PCA)
+                                            (VV 인정/NNC+받/XSV+는/EAN))))))
+                           (NP 회사/NNC+들/XSF+도/PAU))
+                   (VP (VP (NP-COMP (DANP 이런/DAN)
+                                    (NP (S (WHNP-4 *op*)
+                                           (S (NP-SBJ *T*-4)
+                                              (ADJP 나쁘/VJ+은/EAN)))
+                                        (NP 관행/NNC+에/PAD)))
+                           빠지/VV+어/ECS)
+                       있/VX+다/EFN)
+                   "/SRQ
+                   고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=회사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>전국적으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>명성</term>
+	    </Arg>
+	    <Rel>
+	      <term>인정받는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

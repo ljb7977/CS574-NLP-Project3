@@ -1,0 +1,217 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>내려가</lemma>
+    <comment>Frames file for '내려가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>내려가.01</id>
+      <edef>go down</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내려가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>약 십일 전에 저는 그런 트럭 아홉 대가 남쪽으로 내려가는 걸 봤습니다.</text>
+	  <parse>
+(S (NP-ADV 약/DAN
+           십/NNU
+           일/NNX
+           전/NNC+에/PAD)
+   (S (NP-SBJ 저/NPN+은/PAU)
+      (VP (NP-OBJ (S (NP-SBJ 그런/DAN
+                             트럭/NNC
+                             아홉/NNU
+                             대/NNX+이/PCA)
+                     (VP (NP-COMP 남쪽/NNC+으로/PAD)
+                         내려가/VV+는/EAN))
+                  (NP 것/NNX+을/PCA))
+          보/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>그런 트럭 아홉 대</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>남쪽</term>
+	    </Arg>
+	    <Rel>
+	      <term>내려가는</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>그 길을 약 1킬로 정도 내려가서 저는 76.2 미리 야포 2문을 본 기억이 납니다.</text>
+	  <parse>
+(S (NP-SBJ (S (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 그/DAN
+                             길/NNC+을/PCA)
+                     (VP (NP-ADV 약/DAN
+                                 1/NNU
+                                 킬로/NNX
+                                 정도/NNC)
+                         (VP 내려가/VV+어서/ECS))))
+              (S (NP-SBJ 저/NPN+은/PAU)
+                 (VP (NP-OBJ (NP 76.2/NNU
+                                 미리/NNX
+                                 야포/NNC)
+                             (NP 2/NNU
+                                 문/NNX+을/PCA))
+                     보/VV+은/EAN)))
+           (NP 기억/NNC+이/PCA))
+   (VP 나/VV+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그 길</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>약 1킬로 정도</term>
+	    </Arg>
+	    <Rel>
+	      <term>내려가서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>뻗어 내려가</lemma>
+    <comment>Frames file for '뻗어 내려가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>내려가.02</id>
+      <edef>go down straight-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="thing going down"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뻗어 내려가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>또 한 지뢰원은 3 소대의 우측면에서부터 경사지대를 따라 약 300 미터 뻗어 내려갑니다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 한/NNU
+              지뢰원/NNC+은/PAU)
+      (VP (NP-COMP (NP 3/NNU
+                       소대/NNC+의/PAN)
+                   (NP 우측/NNC
+                       면/NNC+에서/PAD+부터/PAU))
+          (VP (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 경사/NNC
+                             지대/NNC+을/PCA)
+                     따르/VV+어/ECS))
+              (VP (NP-OBJ 약/DAN
+                      300/NNU
+                      미터/NNX)
+                  (CV 뻗/VV+어/ECS
+                      내려가/VV+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>한 지뢰원</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서부터</f>
+	      <term>3 소대의 우측면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>경사지대를 따라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>약 300 미터</term>
+	    </Arg>
+	    <Rel>
+	      <term>뻗어 내려갑니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>밀고 내려가</lemma>
+    <comment>Frames file for '밀고 내려가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>내려가.03</id>
+      <edef>go down forcefully-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>밀고 내려가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>그리고 아군이 남쪽으로 밀고 내려갈 때에는 공중 지원이 가용할 겁니다.</text>
+	  <parse>
+(S (ADCP 그리고/ADC)
+   (NP-ADV (S (WHNP 0) 
+	      (S (NP-SBJ 아군/NNC+이/PCA)
+		 (VP (NP-COMP 남쪽/NNC+으로/PAD)
+		     (VV 밀/VV+고/ECS
+			 내려가/VV+을/EAN))))
+	   (NP 때/NNC+에/PAD+는/PAU))
+   (S (NP-SBJ 공중/NNC
+	      지원/NNC+이/PCA)
+      (VP (VP (VV 가용/NNC+하/XSV+을/ECS))
+	  (VX 것/NNX+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>아군</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>남쪽</term>
+	    </Arg>
+	    <Rel>
+	      <term>밀고 내려갈</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>증명</lemma>
+    <comment>Frames file for '증명' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>증명.01</id>
+      <edef>prove</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing proved"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>증명하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난달 논란 속에 의회를 통과한 개정 이혼법률은 남편으로부터 부당한 대우를 받았음을 법정에서 증명해야 했던 기존의 이혼요건을 대폭 완화, 남편으로부터 받은 지참금과 선물, 위자료를 포기하면 이혼이 가능하도록 규정하고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 지난달/NNC)
+                     (NP-ADV 논란/NNC
+                             속/NNC+에/PAD)
+                     (VP (NP-OBJ 의회/NNC+을/PCA)
+                         (VV 통과/NNC+하/XSV+은/EAN)))))
+           (NP 개정/NNC
+               이혼/NNC+법률/NNC+은/PAU))
+   (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (VP (S-OBJ (NP-SBJ *pro*)
+				     (VP (NP-COMP 남편/NNC+으로부터/PAD)
+					 (NP-OBJ (S (WHNP-2 *op*)
+						    (S (NP-SBJ *T*-2)
+						       (ADJP (VJ 부당/NNC+하/XSJ+은/EAN))))
+						 (NP 대우/NPR+을/PCA))
+					 받/VV+었/EPF+음/ENM+을/PCA))
+                              (VP (NP-ADV 법정/NNC+에서/PAD)
+                                  (VP (VV 증명/NNC+하/XSV+어야/ECS))))
+                          하/VX+었/EPF+던/EAN))
+                   (NP (NP 기존/NNC+의/PAN)
+                       (NP 이혼/NNC+요건/NNC+을/PCA)))
+           (VP (ADVP 대폭/ADV)
+               (VP (VV 완화/NNC))))
+       ,/SCM
+       (VP (VP (S-COMP (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ (NP (S (WHNP-3 *op*)
+                                             (S (NP-SBJ *pro*)
+                                                (VP (NP-COMP 남편/NNC+으로부터/PAD)
+                                                    (NP-OBJ *T*-3)
+                                                    받/VV+은/EAN)))
+                                          (NP (NP 지참금/NNC+과/PCJ)
+                                              (NP 선물/NNC)))
+                                      ,/SCM
+                                      (NP 위자료/NNC+을/PCA))
+                              (VV 포기/NNC+하/XSV+으면/ECS)))
+                       (S (NP-SBJ 이혼/NNC+이/PCA)
+                          (ADJP (VJ 가능/NNC+하/XSJ+도록/ECS))))
+               (VV 규정/NNC+하/XSV+고/ECS))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>남편으로부터 부당한 대우를 받았음</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>법정에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>증명해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>했던</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

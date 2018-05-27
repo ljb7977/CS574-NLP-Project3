@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>현저하</lemma>
+    <comment>Frames file for '현저하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>현저하.01</id>
+      <edef>distinctive</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being distinctive"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>현저하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 형의 현저한 특징은 새로운 D-10TG 주포에 설치한 안정 장치다.</text>
+	  <parse>
+(S (NP-SBJ (NP 이/DAN
+               형/NNC+의/PAN)
+           (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (ADJP 현저하/VJ+은/EAN)))
+               (NP 특징/NNC+은/PAU)))
+   (VP (NP (S (WHNP-2 *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (S (WHNP-3 *op*)
+                                 (S (NP-SBJ *T*-3)
+                                    (ADJP 새롭/VJ+은/EAN)))
+                              (NP D-10TG/NFW
+                                  주포/NNC+에/PAD))
+                     (NP-OBJ *T*-2)
+                     (VV 설치/NNC+하/XSV+은/EAN))))
+           (NP 안정/NNC
+               장치/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=특징</term>
+	    </Arg>
+	    <Rel>
+	      <term>현저한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

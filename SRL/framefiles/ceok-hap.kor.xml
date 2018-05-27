@@ -1,0 +1,53 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>적합</lemma>
+    <comment>Frames file for '적합' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>적합.01</id>
+      <edef>suitable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being suitable"/>
+	<role argnum="2" argrole="suitable to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>적합하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 이 방침엔 융통성이 있어서 전술적인 상황에 적합하도록 수정될 수 있다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-COMP-2 이/DAN
+                 방침/NNC+에/PAD+은/PAU)
+      (S (NP-SBJ 융통성/NNC+이/PCA)
+         (ADJP (NP-COMP *T*-2)
+               있/VJ+어서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S-COMP (NP-SBJ *pro*)
+                      (ADJP (NP-COMP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP 전술/NNC+적/XSF+이/CO+은/EAN))))
+                                     (NP 상황/NNC+에/PAD))
+                            (VJ 적합/NNC+하/XSJ+도록/ECS)))
+              (VV 수정/NNC+되/XSV+을/EAN))
+          (VX 수/NNX
+              있/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>전술적인 상황</term>
+	    </Arg>
+	    <Rel>
+	      <term>적합하도록</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

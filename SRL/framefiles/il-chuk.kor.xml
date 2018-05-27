@@ -1,0 +1,144 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일축</lemma>
+    <comment>Frames file for '일축' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>일축.01</id>
+      <edef>reject</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing rejected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일축하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 중국은 자국의 인민해방군이 대만을 침공할 능력을 갖고 있다고 말함으로써 인민해방군이 대만을 침공할 수 있기까지는 최소한 5 년이 걸릴 것이라는 서방 군사분석가들의 견해를 일축했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 중국/NPR+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+	     (VP (S-COMP (NP-SBJ (NP 자국/NNC+의/PAN)
+				 (NP 인민/NNC+해방군/NNC+이/PCA))
+			 (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+					    (VP (NP-OBJ 대만/NPR+을/PCA)
+						(VV 침공/NNC+하/XSV+을/EAN)))
+					 (NP 능력/NNC+을/PCA))
+				 갖/VV+고/ECS)
+			     있/VX+다/EFN+고/PAD))
+		 말하/VV+음/ENM+으로써/PAD))
+          (VP (NP-OBJ (S (S (NP-SBJ 인민/NNC+해방군/NNC+이/PCA)
+			    (VP (VP (NP-OBJ 대만/NPR+을/PCA)
+				    (VV 침공/NNC+하/XSV+을/EAN))
+				(VX 수/NNX
+				      있/VJ+기/ENM+까지/PAU+은/PAU)))
+                         (S (NP-SBJ 최소한/NNC
+					  5/NNU
+					  년/NNX+이/PCA)
+                            (VP (VP 걸리/VV+을/EAN)
+                                (VX 것/NNX+이/CO+라는/EAN))))
+                      (NP (NP 서방/NNC
+				  군사/NNC+분석가/NNC+들/XSF+의/PAN)
+                          (NP 견해/NNC+을/PCA)))
+              (VV 일축/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="D">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>자국의 인민해방군이 대만을 침공할 능력을 갖고 있다고 말함으로써</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>인민해방군이 대만을 침공할 수 있기까지는 최소한 5 년이 걸릴 것이라는 서방 군사분석가들의 견해</term>
+	    </Arg>
+	    <Rel>
+	      <term>일축했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>일축하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한은 8 일 관영 중앙통신 논평을 통해 미 국무부의 '연례인권보고서'는 전도된 가치관과 흑백전도의 논리로 일관돼 있다며 재론할 일고의 가치도 없다고 일축했다.</text>
+	  <parse>
+(S (NP-SBJ 북한/NPR+은/PAU)
+   (VP (NP-ADV 8/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 관영/NNC
+                      중앙/NNC+통신/NNC
+                      논평/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (S (NP-SBJ (NP 미/NPR
+                      국무부/NNC+의/PAN)
+                  (NP '/SLQ
+                      연례/NNC+인권/NNC+보고서/NNC
+                      '/SRQ
+                      은/PAU))
+          (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (VV 전도/NNC+되/XSV+은/EAN))))
+                               (NP 가치관/NNC+과/PCJ))
+                           (NP (NP 흑백/NNC+전도/NNC+의/PAN)
+                               (NP 논리/NNC+으로/PAD)))
+                  (VV 일관/NNC+되/XSV+어/ECS))
+              있/VX+다며/ECS))
+       (VP (S-COMP (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ *pro*)
+                                  (VV 재론/NNC+하/XSV+을/EAN)))
+                           (NP (NP 일고/NNC+의/PAN)
+                               (NP 가치/NNC+도/PAU)))
+                   (ADJP 없/VJ+다/EFN+고/PAD))
+           (VV 일축/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>8 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>관영 중앙통신 논평을 통해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>미 국무부의 '연례인권보고서'는 전도된 가치관과 흑백전도의 논리로 일관돼 있다며</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>재론할 일고의 가치도 없다</term>
+	    </Arg>
+	    <Rel>
+	      <term>일축했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

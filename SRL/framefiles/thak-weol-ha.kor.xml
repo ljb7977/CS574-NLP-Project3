@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탁월하</lemma>
+    <comment>Frames file for '탁월하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탁월하.01</id>
+      <edef>outstanding</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being outstanding"/>
+	<role argnum="2" argrole="outstanding for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탁월하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이번 도하 작전에서 강 대위는 탁월한 통솔력을 발휘했지요.</text>
+	  <parse>
+(S (NP-ADV (NP 이번/NNC)
+           (NP 도하/NNC
+               작전/NNC+에서/PAD))
+   (S (NP-SBJ 강/NPR
+              대위/NNC+은/PAU)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP 탁월하/VJ+은/EAN)))
+                  (NP 통솔력/NNC+을/PCA))
+          (VV 발휘/NNC+하/XSV+었/EPF+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=통솔력</term>
+	    </Arg>
+	    <Rel>
+	      <term>탁월한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

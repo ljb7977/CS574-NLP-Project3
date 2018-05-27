@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>창궐</lemma>
+    <comment>Frames file for '창궐' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>창궐.01</id>
+      <edef>thrive</edef>
+      <roleset>
+	<role argnum="1" argrole="thing thriving"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>창궐하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난 주말부터 범람 수위가 낮아지면서 익사체들이 속속 발견돼 지금까지의 사망자만도 수천명에 달하는 데다 말라리아와 콜레라 등 전염병마저 창궐하고 있는 상황이어서 이번 물난리의 피해는 더욱 더 커질 위험에 처해 있다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-ADV (S (S (S (NP-ADV 지난/DAN
+					주말/NNC+부터/PAU)
+			    (S (NP-SBJ 범람/NNC
+					   수위/NNC+이/PCA)
+			       (VP (VV 낮/VJ+어지/XSV+으면서/ECS))))
+			 (S (NP-SBJ 익사체/NNC+들/XSF+이/PCA)
+			    (VP (ADVP 속속/ADV)
+				(VP (VV 발견/NNC+되/XSV+어/ECS)))))
+		      (S (NP-SBJ (NP 지금/NNC+까지/PAU+의/PAN)
+                                 (NP 사망자/NNC+만/PAU+도/PAU))
+                         (VP (NP-COMP 수천/NNU+명/NNX+에/PAD)
+                             달하/VV+는/EAN)))
+                   (NP 데/NNX+다/PAU))
+           (S (NP-SBJ *pro*)
+              (VP (NP (S (NP-SBJ (NP (NP (NP 말라리아/NNC+과/PCJ)
+                                         (NP 콜레라/NNC))
+                                     (NP 등/NNX))
+                                 (NP 전염병/NNC+마저/PAU))
+                         (VP (VP (VV 창궐/NNC+하/XSV+고/ECS))
+                             있/VX+는/EAN))
+                      (NP 상황/NNC+이/CO+어서/ECS))))
+           (VP (NP-COMP (S (NP-SBJ (NP 이번/NNC
+                                       물난리/NNC+의/PAN)
+                                   (NP 피해/NNC+은/PAU))
+                           (VP (ADVP (ADVP 더욱/ADV)
+                                     (ADVP 더/ADV))
+                               (VP (VV 크/VJ+어지/XSV+을/EAN))))
+                        (NP 위험/NNC+에/PAD))
+               처하/VV+어/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>마저</f>
+	      <term>말라리아와 콜레라 등 전염병</term>
+	    </Arg>
+	    <Rel>
+	      <term>창궐하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

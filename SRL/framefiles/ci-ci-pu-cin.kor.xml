@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지지부진</lemma>
+    <comment>Frames file for '지지부진' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>지지부진.01</id>
+      <edef>slow</edef>
+      <roleset>
+	<role argnum="1" argrole="thing slow"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지지부진하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>정부와 채권단은 당초 대우증권을 이르면 작년중, 늦어도 올 상반기에 매각키로 했으나 서울투신과 대우 콜지원 문제가 걸려 있는 데다 좋은 조건의 원매자가 나타나지 않아 매각작업이 지지부진한 상태다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 정부/NNC+과/PCJ)
+              (NP 채권단/NNC+은/PAU))
+      (VP (NP-ADV 당초/NNC)
+          (VP (S-COMP (NP-SBJ *pro*)
+		      (VP (NP-OBJ 대우/NPR+증권/NNC+을/PCA)
+			  (VP (S (NP-SBJ *pro*)
+				 (ADJP 이르/VJ+으면/ECS))
+			      (NP-ADV 작년/NNC+중/NNX)
+			      ,/SCM
+			      (S (NP-SBJ *pro*)
+				 (ADJP 늦/VJ+어도/ECS))
+			      (NP-ADV 올/DAN
+					상반기/NNC+에/PAD)
+			      (VP (VV 매각/NNC+하/XSV+기/ENM+으로/PAD)))))
+              하/VV+었/EPF+으나/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (NP-COMP-1 서울투신/NPR+과/PAD)
+                     (S (NP-SBJ 대우/NPR
+                                콜지원/NNC
+                                문제/NNC+이/PCA)
+                        (VP (VP (NP-COMP *T*-1)
+                                걸리/VV+어/ECS)
+                            있/VX+는/EAN)))
+                  (NP 데/NNX+다/PAU))
+          (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                            (S (NP-SBJ *T*-2)
+                               (ADJP 좋/VJ+은/EAN)))
+                         (NP 조건/NNC+의/PAN))
+                     (NP 원매자/NNC+이/PCA))
+             (VP (VP 나타나/VV+지/ECS)
+                 않/VX+어/ECS))
+          (VP (NP (S (NP-SBJ 매각/NNC+작업/NNC+이/PCA)
+                     (VP (VV 지지부진/NNC+하/XSV+은/EAN)))
+                  (NP 상태/NNC+이/CO+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>매각작업</term>
+	    </Arg>
+	    <Rel>
+	      <term>지지부진한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

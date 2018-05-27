@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>피력</lemma>
+    <comment>Frames file for '피력' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>피력.01</id>
+      <edef>express</edef>
+      <roleset>
+	<role argnum="0" argrole="speaker"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>피력하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>피노체트를 상대로 소송을 제기한 알폰소 인순자 변호사는 "우리는 피노체트를 기소할 수 있는 충분한 증거가 있는 것으로 믿고 있다"고 밝혀 그에 대한 사법처리에 자신감을 피력했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV (NP-OBJ 피노체트/NPR+을/PCA)
+                             상대/NNC+으로/PAD)
+                     (VP (NP-OBJ 소송/NNC+을/PCA)
+                         (VV 제기/NNC+하/XSV+은/EAN)))))
+           (NP 알폰소/NPR
+               인순자/NPR
+               변호사/NNC+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-COMP "/SLQ
+                      (NP-SBJ 우리/NPN+은/PAU)
+                      (VP (VP (NP-COMP (S (NP-SBJ (S (NP-SBJ *pro*)
+                                                     (VP (VP (NP-OBJ 피노체트/NPR+을/PCA)
+                                                             (VV 기소/NNC+하/XSV+을/EAN))
+                                                         (VX 수/NNX
+                                                             있/VJ+는/EAN)))
+                                                  (NP (S (WHNP-2 *op*)
+                                                         (S (NP-SBJ *T*-2)
+                                                            (ADJP 충분하/VJ+은/EAN)))
+                                                      (NP 증거/NNC+이/PCA)))
+                                          (ADJP 있/VJ+는/EAN))
+                                       (NP 것/NNX+으로/PAD))
+                              믿/VV+고/ECS)
+                          있/VX+다/EFN)
+                      "/SRQ
+                      고/PAD)
+              밝히/VV+어/ECS))
+       (NP-ADV (S (WHNP-3 *op*)
+                  (S (NP-SBJ *T*-3)
+                     (VP (NP-COMP 그/NPN+에/PAD)
+                         대하/VV+은/EAN)))
+               (NP 사법/NNC+처리/NNC+에/PAD))
+           (VP (NP-OBJ 자신감/NNC+을/PCA)
+               (VV 피력/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>피노체트를 상대로 소송을 제기한 알폰소 인순자 변호사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>"우리는 피노체트를 기소할 수 있는 충분한 증거가 있는 것으로 믿고 있다"고 밝혀</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>그에 대한 사법처리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자신감</term>
+	    </Arg>
+	    <Rel>
+	      <term>피력했다</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

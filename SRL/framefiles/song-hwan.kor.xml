@@ -1,0 +1,112 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>송환</lemma>
+    <comment>Frames file for '송환' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>송환.01</id>
+      <edef>repatriate</edef>
+      <roleset>
+	<role argnum="0" argrole="sender"/>
+	<role argnum="1" argrole="expatriate"/>
+	<role argnum="2" argrole="homeland"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>송환하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>중국은 예의 탈북 난민들이 경제적 이유로 중국에 밀입국했기 때문에 난민 자격이 없다며 지난 1 월 중순 북한으로 강제 송환했다.</text>
+	  <parse>
+(S (NP-SBJ 중국/NPR+은/PAU)
+   (VP (S (NP-ADV (S (NP-SBJ (NP 예/NNC+의/PAN)
+			     (NP 탈북/NNC
+				     난민/NNC+들/XSF+이/PCA))
+		     (VP (NP-ADV 경제/NNC+적/XSF
+				     이유/NNC+으로/PAD)
+			 (VP (NP-COMP 중국/NPR+에/PAD)
+			     (VV 밀입국/NNC+하/XSV+었/EPF+기/ENM))))
+		  (NP 때문/NNX+에/PAD))
+	  (S (NP-SBJ 난민/NNC
+			 자격/NNC+이/PCA)
+	     (ADJP 없/VJ+다며/ECS)))
+       (NP-ADV 지난/DAN
+               1/NNU
+               월/NNX
+               중순/NNC)
+       (VP (NP-COMP 북한/NPR+으로/PAD)
+           (VP (NP-ADV 강제/NNC)
+               (VP (NP-OBJ *pro*)
+                   (VV 송환/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>예의 탈북 난민들이 경제적 이유로 중국에 밀입국했기 때문에 난민 자격이 없다며</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 1 월 중순</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>강제</term>
+	    </Arg>
+	    <Rel>
+	      <term>송환했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>송환되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>나는 귀관이 될 수 있는 대로 빨리 송환되기를 바라오.</text>
+	  <parse>
+(S (NP-SBJ 나/NPN+은/PAU)
+   (VP (S-OBJ (NP-SBJ 귀관/NPN+이/PCA)
+              (VP (ADVP (NP-ADV (S (NP-SBJ *pro*)
+                                   (VP (VP 되/VV+을/EAN)
+                                       (VX 수/NNX
+                                           있/VJ+는/EAN)))
+                                (NP 대로/NNX))
+                        (ADVP 빨리/ADV))
+                  (VP (VV 송환/NNC+되/XSV+기/ENM+을/PCA))))
+       바라/VV+으오/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>귀관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>될 수 있는 대로 빨리</term>
+	    </Arg>
+	    <Rel>
+	      <term>송환되기를</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>휴대</lemma>
+    <comment>Frames file for '휴대' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>휴대.01</id>
+      <edef>carry</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing carried"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>휴대하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 무전병은 중대와 대대간의 통신을 위해 R-106 무전기 한 대를 휴대합니다.</text>
+	  <parse>
+(S (NP-SBJ 그/DAN
+           무전병/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (NP (NP 중대/NNC+과/PCJ)
+                          (NP 대대/NNC+간/XSF+의/PAN))
+                      (NP 통신/NNC+을/PCA))
+              위하/VV+어/ECS))
+       (VP (NP-OBJ (NP R-106/NFW
+                       무전기/NNC)
+                   (NP 한/NNU
+                       대/NNX+을/PCA))
+           (VV 휴대/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>그 무전병</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>중대와 대대간의 통신을 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>R-106 무전기 한 대</term>
+	    </Arg>
+	    <Rel>
+	      <term>휴대합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,107 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지내</lemma>
+    <comment>Frames file for '지내' based on sentences in Virginia and Newswire corpus</comment>
+    <frameset>
+      <id>지내.01</id>
+      <edef>get along</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="got along with"/>
+	<role argnum="2" argrole="manner"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>정치 군관은 자기들끼리도 원만히 지내지 못합니다.</text>
+	  <parse>
+(S (NP-SBJ 정치/NNC
+	   군관/NNC+은/PAU) 
+   (VP (VP (NP-COMP 자기/NPN+들/XSF+끼리/XSF+도/PAU)
+	   (ADVP-COMP 원만히/ADV) 
+	   지내/VV+지/EAU) 
+       못하/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>정치 군관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>자기들끼리</term>
+	    </Arg>
+	    <Arg n="2">
+	      <term>원만히</term>
+	    </Arg>
+	    <Rel>
+	      <term>지내지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못합니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>지내.02</id>
+      <edef>serve</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="job, position"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>정부는 3 일 조국통일 범민족연합 남측본부 부의장을 지낸 김양무씨의 미망인 양은찬씨의 방북 승인 신청을 불허했다.</text>
+	  <parse>
+(S (NP-SBJ 정부/NNC+은/PAU)
+   (VP (NP-ADV 3/NNU
+               일/NNX)
+       (VP (NP-OBJ (NP (NP (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (NP-OBJ 조국/NNC+통일/NNC
+                                                 범/XPF+민족/NNC+연합/NNC
+                                                 남측/NNC+본부/NNC
+                                                 부의장/NNC+을/PCA)
+                                         지내/VV+은/EAN)))
+                               (NP 김양무/NPR+씨/XSF+의/PAN))
+                           (NP 미망인/NNC))
+                       (NP 양은찬/NPR+씨/XSF+의/PAN))
+                   (NP 방북/NNC
+                       승인/NNC
+                       신청/NNC+을/PCA))
+           (VV 불허/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*tracee*=김양무씨</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>조국통일 범민족연합 남측본부 부의장</term>
+	    </Arg>
+	    <Rel>
+	      <term>지낸</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

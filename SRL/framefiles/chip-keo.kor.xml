@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>칩거</lemma>
+    <comment>Frames file for '칩거' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>칩거.01</id>
+      <edef>keep indoors</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>칩거하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>압두라만 와히드 인도네시아 대통령은 8 일 당국의 수사요구를 거부하며 자택에서 칩거하고 있는 수하르토 전 대통령을 전격 방문했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 압두라만/NPR
+		       와히드/NPR)
+	   (NP 인도네시아/NPR
+			 대통령/NNC+은/PAU))
+   (VP (NP-ADV 8/NNU
+               일/NNX)
+       (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (VP (S (NP-SBJ *pro*)
+                                    (VP (NP-OBJ (NP 당국/NNC+의/PAN)
+                                                (NP 수사/NNC+요구/NNC+을/PCA))
+                                        (VV 거부/NNC+하/XSV+으며/ECS)))
+                                 (NP-ADV 자택/NNC+에서/PAD)
+                                 (VP (VV 칩거/NNC+하/XSV+고/ECS)))
+                             있/VX+는/EAN)))
+                   (NP 수하르토/NPR
+                       전/DAN
+                       대통령/NNC+을/PCA))
+           (VP (NP-ADV 전격/NNC)
+               (VP (VV 방문/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=수하르토 전 대통령</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>당국의 수사요구를 거부하며</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>자택에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>칩거하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

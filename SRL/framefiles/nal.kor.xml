@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>날</lemma>
+    <comment>Frames file for '날' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>날.01</id>
+      <edef>fly</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>날다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>우리 경보병들은 나는 새도 쏘아 맞힐 수 있었지요.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN 경보병/NNC+들/XSF+은/PAU) 
+   (VP (VP (NP-OBJ (S (WHNP-1 0) 
+		      (S (NP-SBJ *T*-1)
+			 (VP 날/VV+는/EAN))) 
+		   (NP 새/NNC+도/PAU)) 
+	   (VV 쏘/VV+어/ECS 
+	       맞히/VV+을/EAN)) 
+       (VX 수/NNX
+           있/VJ+었/EPF+지요/EFN)) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=새</term>
+	    </Arg>
+	    <Rel>
+	      <term>나는</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>그걸 폭발시키면 돌이 사방으로 날게 돼 있습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 그것/NPN+을/PCA)
+          (VV 폭발/NNC+시키/XSV+으면/ECS)))
+   (S (NP-SBJ 돌/NNC+이/PCA)
+      (VP (VP (VP (NP-COMP 사방/NNC+으로/PAD)
+                  날/VV+게/ECS)
+              되/VX+어/ECS)
+          있/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>그걸 폭발시키면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>돌</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>사방</term>
+	    </Arg>
+	    <Rel>
+	      <term>날게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>돼</term>
+	    </Aux>
+	    <Aux>
+	      <f>어</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

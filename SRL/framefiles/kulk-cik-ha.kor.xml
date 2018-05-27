@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>굵직하</lemma>
+    <comment>Frames file for '굵직하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>굵직하.01</id>
+      <edef>thick, big</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being thick"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>굵직하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>반면 로열 더치나 필립스 등 굵직한 종목을 파리 증시로 넘겨야 하는 암스테르담은 통합에 따른 반사 이익이 상대적으로 약할 것으로 지적됐다.</text>
+	  <parse>
+(S (ADCP 반면/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+		 (S (NP-SBJ *T*-1)
+		    (VP (VP (NP-OBJ (NP (NP 로열/NPR
+						더치/NPR+이나/PCJ)
+					(NP 필립스/NPR)
+					(NP 등/NNX))
+				    (NP (S (WHNP-2 *op*)
+					   (S (NP-SBJ *T*-2)
+					      (ADJP 굵직하/VJ+은/EAN)))
+					(NP 종목/NNC+을/PCA)))
+			    (NP-OBJ 파리/NPR
+					증시/NNC+으로/PAD)
+			    넘기/VV+어야/ECS)
+			하/VX+는/EAN)))
+	      (NP 암스테르담/NPR+은/PAU))
+      (VP (NP-COMP (S (NP-SBJ (S (WHNP-3 *op*)
+				 (S (NP-SBJ *T*-3)
+				    (VP (NP-COMP 통합/NNC+에/PAD)
+					따르/VV+은/EAN)))
+			      (NP 반사/NNC
+				      이익/NNC+이/PCA))
+		      (ADJP (NP-ADV 상대/NNC+적/XSF+으로/PAD)
+			    (ADJP 약하/VJ+을/EAN)))
+		   (NP 것/NNX+으로/PAD))
+	  (VV 지적/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=종목</term>
+	    </Arg>
+	    <Rel>
+	      <term>굵직한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

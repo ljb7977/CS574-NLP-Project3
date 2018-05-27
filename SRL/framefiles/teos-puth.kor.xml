@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>덧붙</lemma>
+    <comment>Frames file for '덧붙' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>덧붙.01</id>
+      <edef>add</edef>
+      <roleset>
+	<role argnum="0" argrole="adder"/>
+	<role argnum="1" argrole="thing added"/>
+	<role argnum="2" argrole="added to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>덧붙이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>여기에 덧붙여 불법 이민 노동자는 1 천만 - 1 천 500 만명에 이를 것으로 ILO는 추산했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ *pro*)
+	  (NP-COMP 여기/NPN+에/PAD)
+	  덧붙이/VV+어/ECS))
+   (S (NP-COMP-1 (S (NP-SBJ 불법/NNC
+				이민/NNC
+				노동자/NNC+은/PAU)
+		    (VP (NP-COMP (NP 1/NNU
+				     천만/NNU)
+				 -/SSY
+				 (NP 1/NNU
+				     천/NNU
+				     500/NNU
+				     만/NNU+명/NNX+에/PAD))
+			이르/VV+을/EAN))
+		 (NP 것/NNX+으로/PAD))
+      (S (NP-SBJ ILO/NFW+은/PAU)
+	 (VP (NP-COMP *T*-1)
+	     (VV 추산/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>여기</term>
+	    </Arg>
+	    <Rel>
+	      <term>덧붙여</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>덧붙이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 르노가 3 월말까지 인수제의 시한을 갖고 있다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (NP-SBJ 르노/NPR+이/PCA)
+               (VP (VP (NP-ADV 3/NNU
+                               월/NNX+말/NNX+까지/PAU)
+                       (VP (NP-OBJ 인수/NNC+제의/NNC
+                                   시한/NNC+을/PCA)
+                           갖/VV+고/ECS))
+                   있/VX+다/EFN+고/PAD))
+       덧붙이/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>르노가 3 월말까지 인수제의 시한을 갖고 있다</term>
+	    </Arg>
+	    <Rel>
+	      <term>덧붙였다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

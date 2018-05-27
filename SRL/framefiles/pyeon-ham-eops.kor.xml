@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>변함없</lemma>
+    <comment>Frames file for '변함없' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>변함없.01</id>
+      <edef>unchanged</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being unchanged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>변함없다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 그는 "나는 현실정치에 참여하지 않으며, 전직 대통령 문화창조에 주력한다는 기본방침에는 앞으로도 변함없다"면서 "나는 어느 정당이나 개인을 편드는 일은 안할 것"이라고 강조했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 그/NPN+은/PAU)
+      (VP (S "/SLQ
+             (NP-SBJ 나/NPN+은/PAU)
+             (ADJP (NP-ADV (S (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-COMP 현실/NNC+정치/NNC+에/PAD)
+                                         (VV 참여/NNC+하/XSV+지/ECS))
+                                     않/VX+으며/ECS))
+                              ,/SCM
+                              (S (NP-SBJ *pro*)
+                                 (VP (NP-COMP 전직/NNC
+                                              대통령/NNC
+                                              문화/NNC+창조/NNC+에/PAD)
+                                     (VV 주력/NNC+하/XSV+는다는/EAN))))
+                           (NP 기본/NNC+방침/NNC+에/PAD+은/PAU))
+                   (NP-ADV 앞/NNC+으로/PAD+도/PAU)
+                   (ADJP 변함없/VJ+다/EFN))
+             "/SRQ
+             면서/ECS)
+          (VP (S-COMP "/SLQ
+                      (NP-SBJ 나/NPN+은/PAU)
+                      (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                         (VP (NP-OBJ (NP 어느/DAN
+                                                         정당/NNC+이나/PCJ)
+                                                     (NP 개인/NNC+을/PCA))
+                                             편들/VV+는/EAN))
+                                      (NP 일/NNX+은/PAU))
+                              안하/VV+을/EAN)
+                          (VX 것/NNX))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD)
+              (VV 강조/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에는</f>
+	      <term>현실정치에 참여하지 않으며, 전직 대통령 문화창조에 주력한다는 기본방침에는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>앞으로도</term>
+	    </Arg>
+	    <Rel>
+	      <term>변함없다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

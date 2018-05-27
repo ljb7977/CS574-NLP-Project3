@@ -1,0 +1,145 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고백</lemma>
+    <comment>Frames file for '고백' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>고백.01</id>
+      <edef>confess</edef>
+      <roleset>
+	<role argnum="0" argrole="speaker"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고백하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>교황 요한 바오로 2 세가 오는 12 일 미사를 통해 기독교가 저지른 역사적 과오를 고백할 예정이며 이 고백으로 기독교 교파간 화해와 대화의 기회가 마련될 것이라고 요제프 라칭거 추기경이 7 일 말했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ *pro*)
+                (VP (NP (S (NP-SBJ 교황/NNC
+                                   요한/NPR
+                                   바오로/NPR
+                                   2/NNU
+                                   세/NNX+이/PCA)
+                           (VP (NP-ADV 오는/DAN
+                                       12/NNU
+                                       일/NNX)
+                               (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ 미사/NNC+을/PCA)
+                                      통하/VV+어/ECS))
+                               (VP (NP-OBJ (S (WHNP-2 *op*)
+                                              (S (NP-SBJ 기독교/NNC+이/PCA)
+                                                 (VP (NP-OBJ *T*-2)
+                                                     저지르/VV+은/EAN)))
+                                           (NP 역사/NNC+적/XSF
+                                               과오/NNC+을/PCA))
+                                   (VV 고백/NNC+하/XSV+을/EAN))))
+                        (NP 예정/NNC+이/CO+으며/ECS))))
+             (S (NP-ADV 이/DAN
+                        고백/NNC+으로/PAD)
+                (S (NP-SBJ (NP (NP 기독교/NNC
+                                   교파/NNC+간/XSF)
+                               (NP (NP 화해/NNC+과/PCJ)
+                                   (NP 대화/NNC+의/PAN)))
+                           (NP 기회/NNC+이/PCA))
+                   (VP (VP (VV 마련/NNC+되/XSV+을/EAN))
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+   (S (NP-SBJ 요제프/NPR
+              라칭거/NPR
+              추기경/NNC+이/PCA)
+      (VP (NP-ADV 7/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>교황 요한 바오로 2 세</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>오는 12 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>미사를 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>기독교가 저지른 역사적 과오</term>
+	    </Arg>
+	    <Rel>
+	      <term>고백할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>고백하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 일본의 경우 20 명의 기혼 여성들이 남편들로부터 생명의 위협을 느낀 적이 있다고 고백했고 5 명중 1 명꼴로 의사에 상관없이 성행위를 강요받았다고 말한 것으로 정부 조사에서 나타났다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (ADVP 또/ADV)
+       (NP-ADV (NP 일본/NPR+의/PAN)
+               (NP 경우/NNC))
+       (VP (NP-COMP (S (S (NP-SBJ (NP 20/NNU
+                                      명/NNX+의/PAN)
+                                  (NP 기혼/NNC
+                                      여성/NNC+들/XSF+이/PCA))
+                          (VP (S-COMP (NP-SBJ (S (NP-SBJ *pro*)
+                                                 (VP (NP-ADV 남편/NNC+들/XSF+으로부터/PAD)
+                                                     (VP (NP-OBJ (NP 생명/NNC+의/PAN)
+                                                                 (NP 위협/NNC+을/PCA))
+                                                         느끼/VV+은/EAN)))
+                                              (NP 적/NNX+이/PCA))
+                                      (ADJP 있/VJ+다/EFN+고/PAD))
+                              (VV 고백/NNC+하/XSV+었/EPF+고/ECS)))
+                       (S (NP-SBJ *pro*)
+                          (VP (NP-ADV (NP 5/NNU
+                                          명/NNX+중/NNX)
+                                      (NP 1/NNU
+                                          명/NNX+꼴/XSF+으로/PAD))
+                              (VP (S-COMP (NP-SBJ *pro*)
+                                          (VP (ADVP (NP-ADV 의사/NNC+에/PAD)
+                                                    (ADVP 상관/NNC+없이/ADV))
+                                              (VP (NP-OBJ 성행위/NNC+을/PCA)
+                                                  (VV 강요/NNC+받/XSV+었/EPF+다/EFN+고/PAD))))
+                                  말하/VV+은/EAN))))
+                    (NP 것/NNX+으로/PAD))
+           (VP (NP-ADV 정부/NNC
+                       조사/NNC+에서/PAD)
+               (VP 나타나/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>20 명의 기혼 여성들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>남편들로부터 생명의 위협을 느낀 적이 있다</term>
+	    </Arg>
+	    <Rel>
+	      <term>고백했고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,313 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지</lemma>
+    <comment>Frames file for '지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>지.01</id>
+      <edef>bear</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="back"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>무전병은 거의 언제나 무전기를 등에 지고 다녔는데, 무전기를 등에서 내리지 않고는 철선을 설치할 수 없었습니다.</text>
+	  <parse>
+(S (S (NP-SBJ 무전병/NNC+은/PAU)
+      (VP (ADVP (ADVP 거의/ADV)
+                (ADVP 언제나/ADV))
+          (S (NP-SBJ *pro*)
+	     (VP (NP-OBJ 무전기/NNC+을/PCA)
+		 (NP-COMP 등/NNC+에/PAD)
+		 지/VV+고/ECS))
+	  (VP 다니/VV+었/EPF+는데/ECS)))
+   ,/SCM
+   (S (S (NP-SBJ *pro*)
+         (VP (VP (NP-OBJ 무전기/NNC+을/PCA)
+                 (NP-COMP 등/NNC+에서/PAD)
+		 내리/VV+지/ECS)
+             않/VX+고/ECS+은/PAU))
+      (S (NP-SBJ *pro*)
+         (VP (VP (NP-OBJ 철선/NNC+을/PCA)
+                 (VV 설치/NNC+하/XSV+을/EAN))
+             (VX 수/NNX
+                 없/VJ+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>무전기</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>등</term>
+	    </Arg>
+	    <Rel>
+	      <term>지고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>지.02</id>
+      <edef>do-light verb</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="deverbal noun"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대대 공급반이 저희 포대에 탄약을 가져다주는 데 책임을 지고 있습니다.</text>
+	  <parse>
+(S (NP-SBJ 대대/NNC
+           공급반/NNC+이/PCA)
+   (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                       (VP (NP-COMP 저희/NPN
+                                    포대/NNC+에/PAD)
+                           (NP-OBJ 탄약/NNC+을/PCA)
+                           가져다주/VV+는/EAN))
+                    (NP 데/NNX))
+           (VP (NP-OBJ-LV 책임/NNC+을/PCA)
+               (LV 지/VV+고/ECS)))
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>대대 공급반</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>저희 포대에 탄약을 가져다주는 데</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>책임</term>
+	    </Arg>
+	    <Rel>
+	      <term>지고</term>
+	    </Rel>
+	    <Rel>
+	      <f>고</f>
+	      <term>있습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>지.03</id>
+      <edef>set</edef>
+      <roleset>
+	<role argnum="1" argrole="thing setting"/>
+	<role argnum="2" argrole="direction"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>명동성당 농성 5 일째인 총선연대는 결의문에서 "이회창 한나라당 총재는 대구를 `마음의 고향'이라 하고 민주당 이인제 선대위원장은 `뜨는 해 지는 해'를 되풀이하고 있으며 김종필씨는 `지역감정 책임론'을 들어 충청도민을 현혹하고 있다"면서 이런 입장을 밝혔다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=해</term>
+	    </Arg>
+	    <Rel>
+	      <term>지는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>지.04</id>
+      <edef>lose</edef>
+      <roleset>
+	<role argnum="0" argrole="loser"/>
+	<role argnum="1" argrole="winner"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 또 "63 년 대선때 박정희 대통령이 윤보선 후보에게 지고 있다가 막판에 목포, 신안, 무안서 몰표가 나와 이긴 점을 봐도 당시에는 동서가 갈리지 않았고 지역감정이 없었다"며 "이후 71 년 대선때 영호남 양쪽에서 후보가 나와 '내 고장에서 대통령을 뽑자'고 해 지역대립이 생긴 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (S "/SLQ
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (NP-ADV 63/NNU
+                                    년/NNX
+                                    대선/NNC+때/NNC)
+                            (S (NP-SBJ 박정희/NPR
+                                       대통령/NNC+이/PCA)
+                               (VP (VP (NP-COMP 윤보선/NPR
+                                                후보/NNC+에게/PAD)
+                                       지/VV+고/ECS)
+                                   있/VX+다가/ECS))
+                            (S (NP-ADV 막판/NNC+에/PAD)
+                               (NP-ADV (NP 목포/NPR)
+                                       ,/SCM
+                                       (NP 신안/NPR)
+                                       ,/SCM
+                                       (NP 무안/NPR+서/PAD))
+                               (S (NP-SBJ 몰표/NNC+이/PCA)
+                                  (VP 나오/VV+어/ECS)))
+                            (S (NP-SBJ *pro*)
+                               (VP 이기/VV+은/EAN)))
+                         (NP 점/NNX+을/PCA))
+                 보/VV+어도/ECS))
+          (S (NP-ADV 당시/NNC+에/PAD+은/PAU)
+             (S (NP-SBJ 동서/NNC+이/PCA)
+                (VP (VP 갈리/VV+지/ECS)
+                    않/VX+었/EPF+고/ECS))
+             (S (NP-SBJ 지역/NNC+감정/NNC+이/PCA)
+                (ADJP 없/VJ+었/EPF+다/EFN)))
+          "/SRQ
+          며/ECS)
+       (VP (NP-COMP "/SLQ
+                    (S (NP-ADV 이후/NNC)
+                       (NP-ADV 71/NNU
+                               년/NNX
+                               대선/NNC+때/NNC)
+                       (S (NP-COMP-1 영호남/NPR
+                                     양쪽/NNC+에서/PAD)
+                          (S (NP-SBJ 후보/NNC+이/PCA)
+                             (VP (NP-COMP *T*-1)
+                                 나오/VV+어/ECS)))
+                       (S (NP-SBJ *pro*)
+                          (VP (S-COMP '/SLQ
+                                      (NP-SBJ *pro*)
+                                      (VP (NP-ADV (NP 나/NPN+의/PAN)
+                                                  (NP 고장/NNC+에서/PAD))
+                                          (VP (NP-OBJ 대통령/NNC+을/PCA)
+                                              뽑/VV+자/EFN))
+                                      '/SRQ
+                                      고/PAD)
+                              하/VV+어/ECS))
+                       (S (NP-SBJ 지역/NNC+대립/NNC+이/PCA)
+                          (VP 생기/VV+은/EAN)))
+                    (NP 것/NNX)
+                    "/SRQ
+                    이라고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>63 년 대선때</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>박정희 대통령</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에게</f>
+	      <term>윤보선 후보</term>
+	    </Arg>
+	    <Rel>
+	      <term>지고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다가</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>지.05</id>
+      <edef>be in debt</edef>
+      <roleset>
+	<role argnum="0" argrole="recipient"/>
+	<role argnum="1" argrole="debt"/>
+	<role argnum="2" argrole="giver"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>위원회는 이에 따라 IMF는 빈곤국을 대상으로 한 장기 대출을 중단해야 하며 대신 세계은행 및 미국과 함께 해당 국가들이 IMF로부터 진 빚을 탕감해 줘야 할 것이라고 제안했다.</text>
+	  <parse>
+(S (NP-SBJ 위원회/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP 이/NPN+에/PAD)
+              따르/VV+어/ECS))
+       (VP (S-COMP (S (NP-SBJ IMF/NFW+은/PAU)
+                      (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (NP-OBJ 빈곤/NNC+국/XSF+을/PCA)
+                                                (NP-COMP 대상/NNC+으로/PAD)
+                                                하/VV+은/EAN)))
+                                      (NP 장기/NNC
+                                          대출/NNC+을/PCA))
+                              (VV 중단/NNC+하/XSV+어야/ECS))
+                          하/VX+으며/ECS))
+                   (S (NP-ADV 대신/NNC)
+                      (S (NP-SBJ (NP 세계/NPR+은행/NNC)
+                                 (ADCP 및/ADC)
+                                 (NP (ADVP (NP-COMP 미국/NPR+과/PAD)
+                                           함께/ADV)
+                                     (NP 해당/NNC
+                                         국가/NNC+들/XSF+이/PCA)))
+                         (VP (VP (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *pro*)
+                                                       (VP (NP-COMP IMF/NFW+으로부터/PAD)
+                                                           (NP-OBJ *T*-2)
+                                                           지/VV+은/EAN)))
+                                                 (NP 빚/NNC+을/PCA))
+                                         (VV 탕감/NNC+하/XSV+어/ECS))
+                                     주/VX+어야/ECS)
+                                 하/VX+을/EAN)
+                             (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+           (VV 제안/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>로부터</f>
+	      <term>IMF</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=빚</term>
+	    </Arg>
+	    <Rel>
+	      <term>진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

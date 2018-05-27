@@ -1,0 +1,111 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>그러</lemma>
+    <comment>Frames file for '그러' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>그러.01</id>
+      <edef>say</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>그러다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>김 특무장, 아까 김 특무장이 지난 2주 동안 공병들이 대대 지역에서 열심히 작업을 해 왔다고 그랬다.</text>
+	  <parse>
+(S (NP-VOC 김/NPR
+           특무장/NNC)
+   ,/SCM
+   (ADVP 아까/ADV)
+   (S (NP-SBJ 김/NPR
+              특무장/NNC+이/PCA)
+      (VP (S-COMP (NP-ADV 지난/DAN
+                          2/NNU
+                          주/NNX
+                          동안/NNX)
+                  (S (NP-SBJ 공병/NNC+들/XSF+이/PCA)
+                     (VP (VP (NP-ADV 대대/NNC
+                                     지역/NNC+에서/PAD)
+                             (ADVP 열심히/ADV)
+                             (VP (NP-OBJ-LV 작업/NNC+을/PCA)
+                                 (LV 하/VV+어/ECS)))
+                         오/VX+었/EPF+다/EFN+고/PAD)))
+          그러/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>김 특무장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>아까</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>김 특무장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>지난 2주 동안 공병들이 대대 지역에서 열심히 작업을 해 왔다</term>
+	    </Arg>
+	    <Rel>
+	      <term>그랬다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>그러.02</id>
+      <edef>do so</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>그러다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>그러고 나면 차상급 부대 지휘부에서 예하 부대에 대한 탄약 재공급을 지시합니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP 그러/VV+고/ECS)
+          나/VX+으면/ECS))
+   (S (NP-SBJ 차상/NNC+급/XSF
+              부대/NNC
+              지휘부/NNC+에서/PCA)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-COMP 예하/NNC
+                                     부대/NNC+에/PAD)
+                            대하/VV+은/EAN)))
+                  (NP 탄약/NNC
+                      재공급/NNC+을/PCA))
+          (VV 지시/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>그러고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>나면</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

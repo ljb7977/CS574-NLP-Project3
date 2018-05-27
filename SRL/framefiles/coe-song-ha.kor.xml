@@ -1,0 +1,39 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>죄송하</lemma>
+    <comment>Frames file for '죄송하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>죄송하.01</id>
+      <edef>sorry</edef>
+      <roleset>
+	<role argnum="0" argrole="sorry for"/>
+	<role argnum="1" argrole="experiencer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>죄송하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>죄송하지만 정말로 모릅니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (ADJP 죄송하/VJ+지만/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 정말로/ADV)
+          (VP (NP-OBJ *pro*)
+              모르/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>죄송하지만</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

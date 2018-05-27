@@ -1,0 +1,112 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>개봉</lemma>
+    <comment>Frames file for '개봉' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>개봉.01</id>
+      <edef>open</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing opened"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>개봉하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>영국 외무부는 짐바브웨 공항 세관이 영국의 외교행낭을 강제로 개봉한 것에 항의해 9 일 짐바브웨 주재 대사를 소환했다.</text>
+	  <parse>
+(S (S (NP-SBJ 영국/NPR
+              외무부/NNC+은/PAU)
+      (VP (NP-COMP (S (NP-SBJ 짐바브웨/NPR
+                              공항/NNC
+                              세관/NNC+이/PCA)
+                      (VP (NP-OBJ (NP 영국/NPR+의/PAN)
+                                  (NP 외교/NNC+행낭/NNC+을/PCA))
+                          (VP (ADVP 강제/NNC+으로/PAD)
+                              (VP (VV 개봉/NNC+하/XSV+은/EAN)))))
+                   (NP 것/NNX+에/PAD))
+          (VV 항의/NNC+하/XSV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 9/NNU
+                일/NNX)
+          (VP (NP-OBJ 짐바브웨/NPR
+                      주재/NNC
+                      대사/NNC+을/PCA)
+              (VV 소환/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>짐바브웨 공항 세관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>영국의 외교행낭</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>강제로</term>
+	    </Arg>
+	    <Rel>
+	      <term>개봉한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>개봉되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이에 앞서 소식통들은 전체 8 천 442 개 투표소 가운데 700 개 투표함이 개봉된 초반 개표 결과 와데 당수가 약 65 퍼센트를 지지를 얻은 것으로 집계됐다고 전했다.</text>
+	  <parse>
+(S (ADVP (NP-COMP 이/NPN+에/PAD)
+         앞서/ADV)
+   (S (NP-SBJ 소식통/NNC+들/XSF+은/PAU)
+      (VP (S-COMP (NP-SBJ (S (NP-SBJ (NP (NP 전체/NNC
+                                             8/NNU
+                                             천/NNU
+                                             442/NNU
+                                             개/NNX
+                                             투표소/NNC)
+                                         (NP 가운데/NNC))
+                                     (NP 700/NNU
+                                         개/NNX
+                                         투표함/NNC+이/PCA))
+                             (VP (VV 개봉/NNC+되/XSV+은/EAN)))
+                          (NP 초반/NNC
+                              개표/NNC
+                              결과/NNC))
+                  (VP (NP-COMP (S (NP-SBJ 와데/NPR
+                                          당수/NNC+이/PCA)
+                                  (VP (NP-ADV 약/DAN
+                                              65/NNU
+                                              퍼센트/NNX+을/PCA)
+                                      (VP (NP-OBJ 지지/NNC+을/PCA)
+                                          얻/VV+은/EAN)))
+                               (NP 것/NNX+으로/PAD))
+                      (VV 집계/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>전체 8 천 442 개 투표소 가운데 700 개 투표함</term>
+	    </Arg>
+	    <Rel>
+	      <term>개봉된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

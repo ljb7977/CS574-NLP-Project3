@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>정밀분석</lemma>
+    <comment>Frames file for '정밀분석' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>정밀분석.01</id>
+      <edef>analyze thoroughly</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing analyzed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>정밀분석하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>코번 변호사는 "재심청구를 위해 현재 광범위한 김씨 관련 서류를 정밀분석하고 있다"면서 "김씨의 형기단축을 위해 최선을 다하겠다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 코번/NPR
+           변호사/NNC+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ *pro*)
+          (VP (VP (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ 재심/NNC+청구/NNC+을/PCA)
+                         위하/VV+어/ECS))
+                  (NP-ADV 현재/NNC)
+                  (VP (NP-OBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (ADJP (VJ 광범위/NNC+하/XSJ+은/EAN))))
+                              (NP 김/NPR+씨/NNX
+				    관련/NNC
+				    서류/NNC+을/PCA))
+                      (VV 정밀분석/NNC+하/XSV+고/ECS)))
+              있/VX+다/EFN)
+          "/SRQ
+          면서/ECS)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP 김/NPR+씨/NNX+의/PAN)
+                                         (NP 형기/NNC+단축/NNC+을/PCA))
+                                 위하/VV+어/ECS))
+                          (VP (NP-OBJ 최선/NNC+을/PCA)
+                              다하/VV+겠/EPF+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>재심청구를 위해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현재</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>광범위한 김씨 관련 서류</term>
+	    </Arg>
+	    <Rel>
+	      <term>정밀분석하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

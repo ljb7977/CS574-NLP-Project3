@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>파병</lemma>
+    <comment>Frames file for '파병' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>파병.01</id>
+      <edef>dispatch troops</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity dispatched"/>
+	<role argnum="2" argrole="dispatched to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>파병하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>김 대통령은 또 "우리 국민은 한국전 당시 헌신적으로 봉사했던 이탈리아 적십자 부대의 젊은이들을 잊지 않고 있다"며 6.25 때 의료부대를 파병해 준 사실에 감사를 표시한 뒤 "이런 친밀감을 바탕으로 두 나라의 우호협력관계를 새천년의 동반자관계로 발전시켜 나가야 한다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 김/NPR
+           대통령/NNC+은/PAU)
+   (VP (ADCP 또/ADC)
+       (S "/SLQ
+          (NP-SBJ 우리/NPN
+                  국민/NNC+은/PAU)
+          (VP (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                 (S (NP-ADV 한국전/NPR
+                                            당시/NNC)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP-ADV 헌신/NNC+적/XSF+으로/PAD)
+                                           (VP (VV 봉사/NNC+하/XSV+었/EPF+던/EAN))))))
+                              (NP (NP 이탈리아/NPR
+                                      적십자/NNC
+                                      부대/NNC+의/PAN)
+                                  (NP 젊은이/NNC+들/XSF+을/PCA)))
+                      잊/VV+지/ECS)
+                  않/VX+고/ECS)
+              있/VX+다/EFN)
+          "/SRQ
+          며/PAD)
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-SBJ *pro*)
+                                  (VP (VP (NP-ADV 6.25/NNU
+						  때/NNC)
+					  (VP (NP-OBJ 의료/NNC+부대/NNC+을/PCA)
+					      (VV 파병/NNC+하/XSV+어/ECS)))
+				      주/VX+은/EAN))
+                               (NP 사실/NNC+에/PAD))
+                      (NP-OBJ 감사/NNC+을/PCA)
+                      (VV 표시/NNC+하/XSV+은/EAN)))
+               (NP 뒤/NNC))
+       (VP (S-COMP "/SLQ
+                   (NP-ADV (NP 이런/DAN
+                               친밀감/NNC+을/PCA)
+                           (NP 바탕/NNC+으로/PAD))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (VP (NP-OBJ (NP 두/NNU
+                                              나라/NNC+의/PAN)
+                                          (NP 우호/NNC+협력/NNC+관계/NNC+을/PCA))
+                                  (NP-COMP (NP 새/DAN+천/NNU+년/NNX+의/PAN)
+                                           (NP 동반자/NNC+관계/NNC+으로/PAD))
+                                  (VV 발전/NNC+시키/XSV+어/ECS))
+                              나가/VX+어야/ECS)
+                          하/VX+는다/EFN))
+                   "/SRQ
+                   고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>6.25 때</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>의료부대</term>
+	    </Arg>
+	    <Rel>
+	      <term>파병해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>준</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

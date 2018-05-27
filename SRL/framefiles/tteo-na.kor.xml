@@ -1,0 +1,98 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>떠나</lemma>
+    <comment>Frames file for '떠나' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>떠나.01</id>
+      <edef>depart</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>떠나다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>귀관이 생포되기 바로 전에 제2 탱크 중대가 연대 목표 4 지역에서 떠났다고 아까 말했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-COMP (NP-ADV (S (NP-SBJ 귀관/NPN+이/PCA)
+                          (VP (VV 생포/NNC+되/XSV+기/ENM)))
+                       (NP 바로/DAN
+                           전/NNC+에/PAD))
+               (S (NP-SBJ 제/XPF+2/NNU
+                          탱크/NNC
+                          중대/NNC+이/PCA)
+                  (VP (NP-COMP 연대/NNC
+                               목표/NNC
+                               4/NNU
+                               지역/NNC+에서/PAD)
+                      떠나/VV+었/EPF+다/EFN+고/PAD)))
+       (VP (ADVP 아까/ADV)
+           (VP 말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>귀관이 생포되기 바로 전에</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>제2 탱크 중대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>연대 목표 4 지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>떠났다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>떠나다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>제가 그 지역을 떠날 땐 5 중대가 여기에 있었습니다.</text>
+        <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ 제/NPN+이/PCA)
+                 (VP (NP-OBJ 그/DAN
+                             지역/NNC+을/PCA)
+                     떠나/VV+을/EAN)))
+           (NP 때/NNC+은/PAU))
+   (S (NP-SBJ 5/NNU
+              중대/NNC+이/PCA)
+      (ADJP (NP-COMP 여기/NPN+에/PAD)
+            있/VJ+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그 지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>떠날</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

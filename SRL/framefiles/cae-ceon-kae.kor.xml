@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재전개</lemma>
+    <comment>Frames file for '재전개' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>재전개.01</id>
+      <edef>redeploy</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start state"/>
+	<role argnum="3" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재전개하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>일단 이렇게 되면 탱크 중대는 새 사격 진지로 재전개합니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (ADVP 일단/ADV)
+          (VP (ADVP-COMP 이렇게/ADV)
+              되/VV+으면/ECS)))
+   (S (NP-SBJ 탱크/NNC
+              중대/NNC+은/PAU)
+      (VP (NP-COMP 새/DAN
+                   사격/NNC
+                   진지/NNC+으로/PAD)
+          (VV 재전개/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>일단 이렇게 되면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>탱크 중대</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>새 사격 진지</term>
+	    </Arg>
+	    <Rel>
+	      <term>재전개합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

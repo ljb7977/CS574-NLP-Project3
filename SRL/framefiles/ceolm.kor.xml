@@ -1,0 +1,41 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>젊</lemma>
+    <comment>Frames file for '젊' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>젊.01</id>
+      <edef>young</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being young"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>젊다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>젊은 군인들은 다 사로청 성원이다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+	      (S (NP-SBJ *T*-1)
+		 (ADJP 젊/VJ+은/EAN)))
+	   (NP 군인/NNC+들/XSF+은/PAU))
+   (VP (ADVP 다/ADV)
+       (VP (NP (NP 사로청/NNC)
+	       (NP 성원/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=군인들</term>
+	    </Arg>
+	    <Rel>
+	      <term>젊은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

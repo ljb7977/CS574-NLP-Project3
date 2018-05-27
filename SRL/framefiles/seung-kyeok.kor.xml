@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>승격</lemma>
+    <comment>Frames file for '승격' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>승격.01</id>
+      <edef>promote</edef>
+      <roleset>
+	<role argnum="0" argrole="causer of motion"/>
+	<role argnum="1" argrole="thing in motion"/>
+	<role argnum="2" argrole="destination"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>승격시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일본 자민당의 국방 3 부회는 7 일 2001 년부터 중앙성청 개편계획에 의해 내각부의 외청이 될 방위청을 국방성으로 승격시키기 위한 법안을 의원 입법으로 이번 정기국회에 제출, 통과시킨다는 방침을 굳혔다고 도쿄(동경) 신문이 8 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP 일본/NPR
+                         자민당/NPR+의/PAN)
+                     (NP 국방/NNC
+                         3/NNU
+                         부회/NNX+은/PAU))
+             (VP (NP-ADV 7/NNU
+                         일/NNX)
+                 (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ (S (WHNP-2 *op*)
+                                               (S (NP-SBJ *T*-2)
+                                                  (VP (S-OBJ (NP-SBJ *pro*)
+							     (VP (NP-OBJ (S (WHNP-3 *op*)
+									    (S (NP-SBJ *T*-3)
+									       (VP (NP-ADV 2001/NNU
+											   년/NNX+부터/PAU)
+										   (S (NP-SBJ *pro*)
+										      (VP (NP-COMP 중앙성청/NNC
+													   개편/NNC+계획/NNC+에/PAD)
+											  의하/VV+어/ECS))
+										   (VP (NP-COMP (NP 내각부/NPR+의/PAN)
+												(NP 외청/NNC+이/PCA))
+										       되/VV+을/EAN))))
+									 (NP 방위청/NNC+을/PCA))
+								 (NP-COMP 국방성/NNC+으로/PAD)
+								 (VV 승격/NNC+시키/XSV+기/ENM)))
+                                                      위하/VV+은/EAN)))
+                                            (NP 법안/NNC+을/PCA))
+                                    (VP (VP (NP-ADV 의원/NNC
+                                                    입법/NNC+으로/PAD)
+                                            (VP (NP-COMP 이번/NNC
+                                                         정기/NNC+국회/NNC+에/PAD)
+                                                (VV 제출/NNC)))
+                                        ,/SCM
+                                        (VP (VV 통과/NNC+시키/XSV+는다는/EAN)))))
+                             (NP 방침/NNC+을/PCA))
+                     굳히/VV+었/EPF+다/EFN+고/PAD)))
+   (S (NP-SBJ 도쿄/NPR
+              (PRN -LRB-/SLQ
+                   동경/NPR
+                   -RRB-/SRQ)
+              신문/NNC+이/PCA)
+      (VP (NP-ADV 8/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>2001 년부터 중앙성청 개편계획에 의해 내각부의 외청이 될 방위청</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>국방성</term>
+	    </Arg>
+	    <Rel>
+	      <term>승격시키기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

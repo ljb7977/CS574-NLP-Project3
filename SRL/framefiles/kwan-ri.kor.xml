@@ -1,0 +1,53 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>관리</lemma>
+    <comment>Frames file for '관리' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>관리.01</id>
+      <edef>manage</edef>
+      <roleset>
+	<role argnum="0" argrole="manager"/>
+	<role argnum="1" argrole="thing managed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>관리하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인민 무력부에선 누가 병기 및 탄약 시설을 관리하는가?</text>
+	  <parse>
+(S (NP-ADV 인민/NNC
+           무력부/NNC+에서/PAD+은/PAU)
+   (S (NP-SBJ 누구/NPN+이/PCA)
+      (VP (NP-OBJ (NP 병기/NNC)
+                  (ADCP 및/ADC)
+                  (NP 탄약/NNC
+                      시설/NNC+을/PCA))
+          (VV 관리/NNC+하/XSV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>인민 무력부에선</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>누구</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>병기 및 탄약 시설</term>
+	    </Arg>
+	    <Rel>
+	      <term>관리하는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

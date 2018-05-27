@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>구획</lemma>
+    <comment>Frames file for '구획' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>구획.01</id>
+      <edef>divide</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing being divided"/>
+	<role argnum="2" argrole="resultant"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>구획되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인민군의 방어 지역은 여러 구역으로 구획된다.</text>
+	  <parse>
+(S (NP-SBJ (NP 인민군/NNC+의/PAN)
+           (NP 방어/NNC
+               지역/NNC+은/PAU))
+   (VP (NP-COMP 여러/DAN
+                구역/NNC+으로/PAD)
+       (VV 구획/NNC+되/XSV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>인민군의 방어 지역</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>여러 구역</term>
+	    </Arg>
+	    <Rel>
+	      <term>구획된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

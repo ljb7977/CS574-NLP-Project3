@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>통화</lemma>
+    <comment>Frames file for '통화' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>통화.01</id>
+      <edef>talk over the telephone</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="talked with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>통화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저는 오늘 아침 10시에 포대장하고 통화했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (NP-ADV 오늘/NNC
+               아침/NNC
+               10/NNU
+               시/NNX+에/PAD)
+       (VP (NP-COMP 포대장/NNC+하고/PAD)
+           (VV 통화/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>오늘 아침 10시에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>하고</f>
+	      <term>포대장</term>
+	    </Arg>
+	    <Rel>
+	      <term>통화했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

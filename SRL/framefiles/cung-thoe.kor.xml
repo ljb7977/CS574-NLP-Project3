@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>중퇴</lemma>
+    <comment>Frames file for '중퇴' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>중퇴.01</id>
+      <edef>drop out of school</edef>
+      <roleset>
+	<role argnum="0" argrole="thing dropping"/>
+	<role argnum="1" argrole="drop out of"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>중퇴하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>고등학교를 중퇴했으나 고졸자격증 소지자인 모란은 지난해 11 월 로스앤젤레스 경찰청 웹사이트에 두 차례 침입, 마약추방에 대한 슬로건을 반대로 바꾸고 만화영화 주인공인 `도널드 덕'이 마약주사를 팔에 꽂고 있는 그림 등 영상들을 웹사이트에 올려놓기도 했다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (VP (NP-OBJ 고등학교/NNC+을/PCA)
+                            (VV 중퇴/NNC+하/XSV+었/EPF+으나/ECS))
+                        (VP (NP 고졸/NNC+자격증/NNC
+                                소지자/NNC+이/CO+은/EAN)))))
+              (NP 모란/NPR+은/PAU))
+      (VP (NP-ADV 지난해/NNC
+                  11/NNU
+                  월/NNX)
+          (VP (NP-COMP 로스앤젤레스/NPR
+                       경찰청/NNC
+                       웹사이트/NNC+에/PAD)
+              (VP (NP-ADV 두/NNU
+                          차례/NNX)
+                  (VP (VV 침입/NNC))))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-COMP 마약/NNC+추방/NNC+에/PAD)
+                                대하/VV+은/EAN)))
+                      (NP 슬로건/NNC+을/PCA))
+              (NP-COMP 반대/NNC+으로/PAD)
+              바꾸/VV+고/ECS)
+          (VP (VP (NP-OBJ (NP (NP (S (NP-SBJ (S (WHNP-3 *op*)
+                                                (S (NP-SBJ *T*-3)
+                                                   (VP (NP 만화/NNC+영화/NNC
+                                                           주인공/NNC+이/CO+은/EAN))))
+                                             (NP `/SLQ
+                                                 도널드/NPR
+                                                 덕/NPR
+                                                 '/SRQ
+                                                 이/PCA))
+                                     (VP (VP (NP-OBJ 마약/NNC+주사/NNC+을/PCA)
+                                             (NP-COMP 팔/NNC+에/PAD)
+                                             꽂/VV+고/ECS)
+                                         있/VX+는/EAN))
+                                  (NP 그림/NNC))
+                              (NP 등/NNX))
+                          (NP 영상/NNC+들/XSF+을/PCA))
+                  (NP-COMP 웹사이트/NNC+에/PAD)
+                  올려놓/VV+기/ENM+도/PAU)
+              하/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=모란</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>고등학교</term>
+	    </Arg>
+	    <Rel>
+	      <term>중퇴했으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

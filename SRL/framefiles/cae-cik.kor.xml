@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재직</lemma>
+    <comment>Frames file for '재직' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재직.01</id>
+      <edef>hold in office</edef>
+      <roleset>
+	<role argnum="0" argrole="thing holding in office"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재직하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>화제의 주인공은 이번 학기부터 한양대 생명과학과 BK21 계약교수로 재직하게 된 이종수(39. 여) 박사 등 5 명으로 구성된 미국 국립보건원(NIH) 내 한국인 연구팀.</text>
+	  <parse>
+(S (NP-SBJ (NP 화제/NNC+의/PAN)
+           (NP 주인공/NNC+은/PAU))
+   (VP (NP (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (NP-COMP (NP (NP (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (VP (NP-ADV 이번/NNC
+                                                            학기/NNC+부터/PAU)
+                                                    (NP-ADV 한양대/NPR
+                                                            생명과학과/NNC
+                                                            BK21/NFW
+                                                            계약/NNC+교수/NNC+으로/PAD)
+                                                    (VP (VV 재직/NNC+하/XSV+게/ECS)))
+                                                되/VX+은/EAN)))
+                                      (NP 이종수/NPR
+                                          (PRN -LRB-/SLQ
+                                               (NP 39/NNU
+                                                   ./SSY
+                                                   여/NNC)
+                                               -RRB-/SRQ)
+                                          박사/NNC))
+                                  (NP 등/NNX))
+                              (NP 5/NNU
+                                  명/NNX+으로/PAD))
+                     (VV 구성/NNC+되/XSV+은/EAN))))
+           (NP (NP 미국/NPR
+                   국립/NNC+보건원/NNC
+                   (PRN -LRB-/SLQ
+                        (NP NIH/NFW)
+                        -RRB-/SRQ)
+                   내/NNX)
+               (NP 한국인/NNC
+                   연구팀/NNC))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=이종수(39. 여) 박사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이번 학기부터</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>한양대 생명과학과 BK21 계약교수로</term>
+	    </Arg>
+	    <Rel>
+	      <term>재직하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>된</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung, revised by Shijong</comment>
+</framefile>

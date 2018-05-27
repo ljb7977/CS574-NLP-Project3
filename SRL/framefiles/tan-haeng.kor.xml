@@ -1,0 +1,153 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>단행</lemma>
+    <comment>Frames file for '단행' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>단행.01</id>
+      <edef>carry out</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing carried out"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>단행하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>리비아 전인민회의(의회)는 이날 전임내각이 "무능하고 비효율적"이었다고 비난한 뒤 핵심부서인 석유부와 청소년 체육부, 통상부 등 13 개 부서를 없애 이들 부서의 업무를 지방인민회의로 이관시키는 등의 정부조직 개편을 단행했다.</text>
+	  <parse>
+(S (NP-SBJ 리비아/NPR
+           전/XPF+인민/NNC+회의/NNC
+           (PRN -LRB-/SLQ
+                의회/NNC
+                -RRB-/SRQ)
+           은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (S-COMP (NP-SBJ 전임/NNC+내각/NNC+이/PCA)
+                              (VP "/SLQ
+                                  (ADJP (VJ 무능/NNC+하/XSJ+고/ECS))
+                                  (VP (NP 비/XPF+효율/NNC+적/XSF))
+                                  "/SRQ
+                                  이/CO+었/EPF+다/EFN+고/PAD))
+                      (VV 비난/NNC+하/XSV+은/EAN)))
+               (NP 뒤/NNC))
+       (VP (NP-OBJ (NP (S (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP (NP (NP (S (WHNP-1 *op*)
+                                                        (S (NP-SBJ *T*-1)
+                                                           (VP (NP 핵심/NNC+부서/NNC+이/CO+은/EAN))))
+                                                     (NP 석유부/NNC+과/PCJ))
+                                                 (NP 청소년/NNC
+                                                     체육부/NNC
+                                                     ,/SCM)
+                                                 (NP 통상부/NNC))
+                                             (NP 등/NNX))
+                                         (NP 13/NNU
+                                             개/NNX
+                                             부서/NNC+을/PCA))
+                                 없애/VV+어/ECS))
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP 이/NPN+들/XSF
+                                             부서/NNC+의/PAN)
+                                         (NP 업무/NNC+을/PCA))
+                                 (NP-COMP 지방/NNC+인민/NNC+회의/NNC+으로/PAD)
+                                 (VV 이관/NNC+시키/XSV+는/EAN))))
+                       (NP 등/NNX+의/PAN))
+                   (NP 정부/NNC+조직/NNC
+                       개편/NNC+을/PCA))
+           (VV 단행/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>리비아 전인민회의(의회)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전임내각이 "무능하고 비효율적"이었다고 비난한 뒤</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>핵심부서인 석유부와 청소년 체육부, 통상부 등 13 개 부서를 없애 이들 부서의 업무를 지방인민회의로 이관시키는 등의 정부조직 개편</term>
+	    </Arg>
+	    <Rel>
+	      <term>단행했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>단행되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 제임스 울펀슨 세계은행 총재는 14 일 세계은행에 대한 대수술이 단행돼야 한다는 지난주 미국 의회 주장과 관련, "세계은행은 변하고 있다. 더이상 5 년전의 모습이 아니다"며 개혁작업이 이미 시작됐다고 해명했다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ (NP 제임스/NPR
+			울펀슨/NPR)
+              (NP 세계/NPR+은행/NNC
+			  총재/NNC+은/PAU))
+      (VP (NP-ADV 14/NNU
+                  일/NNX)
+          (S (NP-SBJ *pro*)
+             (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP-COMP 세계/NPR+은행/NNC+에/PAD)
+                                               대하/VV+은/EAN)))
+                                     (NP 대/XPF+수술/NNC+이/PCA))
+                             (VP (VP (VV 단행/NNC+되/XSV+어야/ECS))
+                                 하/VX+는다는/EAN))
+                          (NP (NP 지난주/NNC)
+                              (NP 미국/NPR
+				      의회/NNC
+				      주장/NNC+과/PAD)))
+                 (VV 관련/NNC)))
+          ,/SCM
+          (S "/SLQ
+             (S (NP-SBJ 세계/NPR+은행/NNC+은/PAU)
+                (VP (VP 변하/VV+고/ECS)
+                    있/VX+다/EFN))
+             ./SFN
+             (S (ADVP 더이상/ADV)
+                (S (NP-SBJ *pro*)
+		   (ADJP (NP-COMP (NP 5/NNU
+				      년/NNX+전/NNC+의/PAN)
+				  (NP 모습/NNC+이/PCA))
+			 아니/VJ+다/EFN)))
+             "/SRQ
+             며/ECS)
+          (VP (S-COMP (NP-SBJ 개혁/NNC+작업/NNC+이/PCA)
+                      (VP (ADVP 이미/ADV)
+                          (VP (VV 시작/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))
+              (VV 해명/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>세계은행에 대한 대수술</term>
+	    </Arg>
+	    <Rel>
+	      <term>단행돼야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

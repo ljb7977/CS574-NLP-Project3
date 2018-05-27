@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>두텁</lemma>
+    <comment>Frames file for '두텁' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>두텁.01</id>
+      <edef>deep</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being deep"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>두텁다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이번 로저 클린턴의 전북대병원에서의 라식수술은 지난달 말 서울에서 열린 모임에서 평소 친분이 두터운 유종근 전북지사가 적극 주선해 이뤄졌다.</text>
+	  <parse>
+(S (NP-SBJ (NP 이번/NNC)
+           (NP (NP 로저/NPR
+                   클린턴/NPR+의/PAN)
+               (NP (NP 전북대/NPR+병원/NNC+에서/PAD+의/PAN)
+                   (NP 라식/NNC+수술/NNC+은/PAU))))
+   (VP (S (NP-ADV (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-ADV 지난달/NNC
+                                    말/NNC)
+                            (NP-ADV 서울/NPR+에서/PAD)
+                            (VP 열리/VV+은/EAN))))
+                  (NP 모임/NNC+에서/PAD))
+          (S (NP-SBJ (S (NP-ADV 평소/NNC)
+			(S (NP-SBJ 친분/NNC+이/PCA)
+			   (ADJP 두텁/VJ+은/EAN)))
+                     (NP (NP 유종근/NPR)
+                         (NP 전북/NPR+지사/NNC+이/PCA)))
+             (VP (ADVP 적극/ADV)
+                 (VP (VV 주선/NNC+하/XSV+어/ECS)))))
+       (VP (VV 이루/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>평소</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>친분</term>
+	    </Arg>
+	    <Rel>
+	      <term>두터운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

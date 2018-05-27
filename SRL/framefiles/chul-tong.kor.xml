@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>출동</lemma>
+    <comment>Frames file for '출동' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>출동.01</id>
+      <edef>move out</edef>
+      <roleset>
+	<role argnum="0" argrole="thing moving out"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>출동하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>미국 테네시주 멤피스에서 8 일 화재 진압을 위해 출동한 소방관들을 향해 한 괴한이 총격을 가해 3 명이 숨지고 3 명이 부상했다고 경찰이 밝혔다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-ADV 미국/NPR
+                     테네시/NPR+주/NNC
+                     멤피스/NPR+에서/PAD)
+             (NP-ADV 8/NNU
+                     일/NNX)
+             (S (S (NP-SBJ *pro*)
+                   (VP (NP-OBJ (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (S (NP-SBJ *pro*)
+                                            (VP (NP-OBJ 화재/NNC
+                                                        진압/NNC+을/PCA)
+                                                위하/VV+어/ECS))
+                                         (VP (VV 출동/NNC+하/XSV+은/EAN)))))
+                               (NP 소방관/NNC+들/XSF+을/PCA))
+                       향하/VV+어/ECS))
+                (S (NP-SBJ 한/NNU
+                           괴한/NNC+이/PCA)
+                   (VP (NP-OBJ 총격/NNC+을/PCA)
+                       가하/VV+어/ECS)))
+             (S (S (NP-SBJ 3/NNU
+                           명/NNX+이/PCA)
+                   (VP 숨지/VV+고/ECS))
+                (S (NP-SBJ 3/NNU
+                           명/NNX+이/PCA)
+                   (VP (VV 부상/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))))
+   (S (NP-SBJ 경찰/NNC+이/PCA)
+      (VP (S-COMP *T*-2)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=소방관들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>화재 진압을 위해</term>
+	    </Arg>
+	    <Rel>
+	      <term>출동한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

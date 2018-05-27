@@ -1,0 +1,142 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>압수</lemma>
+    <comment>Frames file for '압수' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>압수.01</id>
+      <edef>seize</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing seized"/>
+	<role argnum="2" argrole="source"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>압수하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미연방수사국(FBI) 요원들은 이 해커의 컴퓨터를 증거물로 압수했으며, 연방 검찰이 이 해커를 최근의 유명 웹사이트 해킹사건이 아닌 다른 컴퓨터 범죄를 저지른 혐의로 기소할 수 있는지 여부를 검토하고 있다고 FBI 관계자는 말했다.</text>
+	  <parse>
+(S (S-COMP-2 (S (NP-SBJ 미연방수사국/NPR
+                        (PRN -LRB-/SLQ
+                             FBI/NFW
+                             -RRB-/SRQ)
+                        요원/NNC+들/XSF+은/PAU)
+                (VP (NP-OBJ (NP 이/DAN
+                                해커/NNC+의/PAN)
+                            (NP 컴퓨터/NNC+을/PCA))
+                    (VP (NP-ADV 증거물/NNC+으로/PAD)
+                        (VP (VV 압수/NNC+하/XSV+었/EPF+으며/ECS)))))
+             ,/SCM
+             (S (NP-SBJ 연방/NNC
+                        검찰/NNC+이/PCA)
+                (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                   (VP (VP (NP-OBJ 이/DAN
+                                                   해커/NNC+을/PCA)
+                                           (NP-COMP (S (NP-SBJ *pro*)
+                                                       (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                                      (S (NP-SBJ *T*-1)
+                                                                         (ADJP (NP-COMP (NP 최근/NNC+의/PAN)
+                                                                                        (NP 유명/NNC
+                                                                                            웹사이트/NNC
+                                                                                            해킹/NNC+사건/NNC+이/PCA))
+                                                                               (ADJP 아니/VJ+은/EAN))))
+                                                                   (NP 다른/DAN
+                                                                       컴퓨터/NNC
+                                                                       범죄/NNC+을/PCA))
+                                                           저지르/VV+은/EAN))
+                                                    (NP 혐의/NNC+으로/PAD))
+                                           (VV 기소/NNC+하/XSV+을/EAN))
+                                       (VX 수/NNX
+                                           있/VJ+는지/EFN)))
+                                (NP 여부/NNC+을/PCA))
+                        (VV 검토/NNC+하/XSV+고/ECS))
+                    있/VX+다/EFN+고/PAD)))
+   (S (NP-SBJ FBI/NFW
+              관계자/NNC+은/PAU)
+      (VP (S-COMP *T*-2)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>미연방수사국(FBI) 요원들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 해커의 컴퓨터</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>증거물로</term>
+	    </Arg>
+	    <Rel>
+	      <term>압수했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>압수되다</rel>
+          <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>2 차 대전 중 프랑스 미술품 거래상으로부터 압수된 앙리 마티스의 "여자 노예"가 98 년 시애틀의 박물관에서 발견되어 상속인에게 반환됐다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 2/NNU
+                             차/NNX
+                             대전/NNC
+                             중/NNX)
+                     (VP (NP-COMP 프랑스/NPR
+                                  미술품/NNC
+                                  거래상/NNC+으로부터/PAD)
+                         (VV 압수/NNC+되/XSV+은/EAN)))))
+           (NP (NP 앙리/NPR
+                   마티스/NPR+의/PAN)
+               (NP "/SLQ
+                   여자/NNC
+                   노예/NNC
+                   "/SRQ
+                   이/PCA)))
+   (VP (VP (NP-ADV 98/NNU
+                   년/NNX)
+           (NP-ADV (NP 시애틀/NPR+의/PAN)
+                   (NP 박물관/NNC+에서/PAD))
+           (VP (VV 발견/NNC+되/XSV+어/ECS)))
+       (VP (NP-COMP 상속인/NNC+에게/PAD)
+           (VV 반환/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=앙리 마티스의 "여자 노예"</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>2 차 대전 중</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로부터</f>
+	      <term>프랑스 미술품 거래상</term>
+	    </Arg>
+	    <Rel>
+	      <term>압수된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

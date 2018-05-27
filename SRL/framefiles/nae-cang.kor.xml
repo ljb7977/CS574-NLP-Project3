@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>내장</lemma>
+    <comment>Frames file for '내장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>내장.01</id>
+      <edef>include within</edef>
+      <roleset>
+	<role argnum="1" argrole="whole"/>
+	<role argnum="2" argrole="part"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내장되다</rel>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>리셉터에 내장돼 있는 콘덴서는 200-350V를 충전하는 동안 전압을 높여 충전시간 단축에 이용되고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-COMP 리셉터/NNC+에/PAD)
+                         (VV 내장/NNC+되/XSV+어/ECS))
+                     있/VX+는/EAN)))
+           (NP 콘덴서/NNC+은/PAU))
+   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ 200/NNU+-/SSY+350/NNU+V/NFW+을/PCA)
+                          (VV 충전/NNC+하/XSV+는/EAN)))
+                   (NP 동안/NNC))
+           (VP (NP-OBJ 전압/NNC+을/PCA)
+               높이/VV+어/ECS))
+       (VP (VP (NP-COMP 충전/NNC+시간/NNC
+                        단축/NNC+에/PAD)
+               (VV 이용/NNC+되/XSV+고/ECS))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f></f>
+	      <term>*trace*=콘덴서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>리셉터</term>
+	    </Arg>
+	    <Rel>
+	      <term>내장돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

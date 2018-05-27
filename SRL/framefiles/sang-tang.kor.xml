@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상당</lemma>
+    <comment>Frames file for '상당' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>상당.01</id>
+      <edef>considerable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being considerable"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상당하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>박격포 같은 것을 몇 문 본 일이 있는데, 아마 상당한 규모의 박격포 부대가 있을 것이고, 그리고 제 생각엔 반항공 포병과 아울러 반탱크 부대도 역시 있을 것으로 생각됩니다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP (NP-COMP 박격포/NNC)
+                                         같/VJ+은/EAN)))
+                             (NP 것/NNX+을/PCA))
+                     (VP (NP-ADV 몇/NNU
+                                 문/NNX)
+                         (VP 보/VV+은/EAN))))
+              (NP 일/NNC+이/PCA))
+      (ADJP 있/VJ+는데/ECS))
+   ,/SCM
+   (S (ADVP 아마/ADV)
+      (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                        (S (NP-SBJ *T*-2)
+                           (ADJP (VJ 상당/NNC+하/XSJ+은/EAN))))
+                     (NP 규모/NNC+의/PAN))
+                 (NP 박격포/NNC
+                     부대/NNC+이/PCA))
+         (VP (ADJP 있/VJ+을/EAN)
+             (VX 것/NNX+이/CO+고/ECS))))
+   ,/SCM
+   (ADCP 그리고/ADC)
+   (S (NP-ADV (NP 저/NPN+의/PAN)
+              (NP 생각/NNC+에/PAD+은/PAU))
+      (ADVP (NP-COMP 반항공/NNC
+                     포병/NNC+과/PAD)
+            아울러/ADV)
+      (S (NP-SBJ 반탱크/NNC
+                 부대/NNC+도/PAU)
+         (VP (NP-COMP (S (NP-SBJ *pro*)
+                         (ADJP (ADVP 역시/ADV)
+                               (ADJP 있/VJ+을/EAN)))
+                      (NP 것/NNX+으로/PAD))
+             (VV 생각/NNC+되/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=규모</term>
+	    </Arg>
+	    <Rel>
+	      <term>상당한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

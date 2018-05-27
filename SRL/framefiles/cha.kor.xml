@@ -1,0 +1,221 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>차</lemma>
+    <comment>Frames file for '차' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>차.01</id>
+      <edef>fill</edef>
+      <roleset>
+	<role argnum="0" argrole="thing filling"/>
+	<role argnum="1" argrole="thing filled"/>
+	<role argnum="2" argrole="fill with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>차다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>세계에서 가장 악명 높은 해커 가운데 한 명인 미트닉은 이날 미 상원 행정위원회의 연방 컴퓨터 안전에 관한 청문회에 출석, 자신감에 찬 목소리로 컴퓨터 보안의 취약성은 기계가 아닌 사람에 있다고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP (NP (NP (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (ADJP (NP-ADV 세계/NNC+에서/PAD)
+                                             (ADVP 가장/ADV)
+                                             (ADJP (NP-COMP 악명/NNC)
+                                                   높/VJ+은/EAN))))
+                                 (NP 해커/NNC))
+                             (NP 가운데/NNC))
+                         (NP 한/NNU
+                             명/NNX+이/CO+은/EAN)))))
+           (NP 미트닉/NPR+은/PAU))
+   (VP (VP (NP-ADV 이날/NNC)
+           (VP (NP-COMP (NP 미/NPR
+                            상원/NNC
+                            행정/NNC+위원회/NNC+의/PAN)
+                        (NP (S (WHNP-3 *op*)
+                               (S (NP-SBJ *T*-3)
+                                  (VP (NP-COMP 연방/NNC
+                                               컴퓨터/NNC
+                                               안전/NNC+에/PAD)
+                                      관하/VV+은/EAN)))
+                            (NP 청문회/NNC+에/PAD)))
+               (VV 출석/NNC)))
+       ,/SCM
+       (VP (NP-ADV (S (WHNP-4 *op*)
+                      (S (NP-SBJ *T*-4)
+                         (VP (NP-COMP 자신감/NNC+에/PAD)
+                             차/VV+은/EAN)))
+                   (NP 목소리/NNC+으로/PAD))
+           (VP (S-COMP (NP-SBJ (NP 컴퓨터/NNC
+                                   보안/NNC+의/PAN)
+                               (NP 취약성/NNC+은/PAU))
+                       (ADJP (NP-COMP (S (WHNP-5 *op*)
+                                         (S (NP-SBJ *T*-5)
+                                            (ADJP (NP-COMP 기계/NNC+이/PCA)
+                                                  아니/VJ+은/EAN)))
+                                      (NP 사람/NNC+에/PAD))
+                             있/VJ+다/EFN+고/PAD))
+               (VV 강조/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=목소리</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>자신감</term>
+	    </Arg>
+	    <Rel>
+	      <term>찬</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>채우다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>부시 지사측은 그러나 금고를 곧 다시 채울 수 있을 것으로 자신하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 부시/NPR
+           지사/NNC+측/XSF+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                           (VP (VP (NP-OBJ 금고/NNC+을/PCA)
+                                   (VP (ADVP 곧/ADV)
+                                       (ADVP 다시/ADV)
+                                       (VP 채우/VV+을/EAN)))
+                               (VX 수/NNX
+                                   있/VJ+을/EAN)))
+                        (NP 것/NNX+으로/PAD))
+               (VV 자신/NNC+하/XSV+고/ECS))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>금고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>곧</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>다시</term>
+	    </Arg>
+	    <Rel>
+	      <term>채울</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>차.02</id>
+      <edef>fasten</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing fastened"/>
+	<role argnum="2" argrole="goal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>채우다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 그럼에도 불구하고 컴퓨터 보안은 현관문에 자물쇠를 채워 놓은 것과 같아 누군가가 정말로 침입하려 마음을 먹으면 문이 아니라 창문을 통해 들어갈 수 있다면서 자원이 풍부한 개인이나 외국 정부가 결심만 하면 해킹 방법을 찾을 수 있다고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-COMP (NP-SBJ *pro*)
+		      (ADJP 그렇/VJ+음/ENM+에/PAD+도/PAU))
+              불구하/VV+고/ECS))
+       (S (NP-SBJ 컴퓨터/NNC
+                  보안/NNC+은/PAU)
+          (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                            (VP (VP (NP-COMP 현관문/NNC+에/PAD)
+                                    (NP-OBJ 자물쇠/NNC+을/PCA)
+				    채우/VV+어/ECS)
+                                놓/VX+은/EAN))
+                         (NP 것/NNX+과/PAD))
+                같/VJ+어/ECS))
+       (S (S (NP-SBJ 누군가/NPN+이/PCA)
+             (VP (S (NP-SBJ *pro*)
+                    (VP (ADVP 정말로/ADV)
+                        (VP (NP-COMP *pro*)
+                            (VV 침입/NNC+하/XSV+으려/ECS))))
+                 (VP (NP-OBJ 마음/NNC+을/PCA)
+                     먹/VV+으면/ECS)))
+          (S (NP-SBJ *pro*)
+             (VP (VP (S (S (NP-SBJ *pro*)
+                           (ADJP (NP-COMP 문/NNC+이/PCA)
+                                 아니/VJ+라/EFN))
+                        (S (NP-SBJ *pro*)
+                           (VP (NP-OBJ 창문/NNC+을/PCA)
+                               통하/VV+어/ECS)))
+                     (VP (NP-COMP *pro*)
+                         들어가/VV+을/EAN))
+                 (VX 수/NNX
+                     있/VJ+다면서/ECS))))
+       (VP (S-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (S (NP-SBJ 자원/NNC+이/PCA)
+                                       (ADJP 풍부하/VJ+은/EAN))))
+                              (NP (NP 개인/NNC+이나/PCJ)
+                                  (NP 외국/NNC
+                                      정부/NNC+이/PCA)))
+                      (VP (NP-OBJ 결심/NNC+만/PAU)
+                          하/VV+으면/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ 해킹/NNC
+                                      방법/NNC+을/PCA)
+                              찾/VV+을/EAN)
+                          (VX 수/NNX
+                              있/VJ+다/EFN+고/PAD))))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>현관문</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자물쇠</term>
+	    </Arg>
+	    <Rel>
+	      <term>채워</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>놓은</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

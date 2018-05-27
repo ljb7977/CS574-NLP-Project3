@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>용이하</lemma>
+    <comment>Frames file for '용이하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>용이하.01</id>
+      <edef>easy</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being easy"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>용이하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>교전 중에 철수하는 건 용이한 일이 아닙니다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+              (VP (NP-ADV 교전/NNC
+                          중/NNX+에/PAD)
+                  (VP (VV 철수/NNC+하/XSV+는/EAN))))
+           (NP 것/NNX+은/PAU))
+   (ADJP (NP-COMP (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP 용이하/VJ+은/EAN)))
+                  (NP 일/NNC+이/PCA))
+         아니/VJ+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=일</term>
+	    </Arg>
+	    <Rel>
+	      <term>용이한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>용이해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>특히 여성들의 관심 증가와 휴대전화를 통한 더욱 용이해진 접근방식을 그는 지적했다.</text>
+	  <parse>
+(S (ADVP 특히/ADV)
+   (NP-OBJ-1 (NP (NP 여성/NNC+들/XSF+의/PAN)
+                 (NP 관심/NNC
+                     증가/NNC+과/PCJ))
+             (NP (S (WHNP-2 *op*)
+                    (S (S (NP-SBJ *T*-2)
+                          (VP (NP-OBJ 휴대/NNC+전화/NNC+을/PCA)
+                              통하/VV+은/EAN))
+                       (S (NP-SBJ *T*-2)
+                          (VP (ADVP 더욱/ADV)
+                              (VP (VV 용이하/VJ+어지/XSV+은/EAN))))))
+                 (NP 접근/NNC+방식/NNC+을/PCA)))
+   (S (NP-SBJ 그/NPN+은/PAU)
+      (VP (NP-OBJ *T*-1)
+          (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=접근방식</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더욱</term>
+	    </Arg>
+	    <Rel>
+	      <term>용이해진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,125 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>판매</lemma>
+    <comment>Frames file for '판매' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>판매.01</id>
+      <edef>sell</edef>
+      <roleset>
+	<role argnum="0" argrole="seller"/>
+	<role argnum="1" argrole="thing sold"/>
+	<role argnum="2" argrole="buyer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>판매하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>밀호린은 또 선 마이크로 시스템스사가 라파엘 이스라엘 군장비 개발청에 슈퍼컴퓨터를 판매하려는 계획도 미국정부가 승인할 예정이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 밀호린/NPR+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (NP-COMP (S (NP-OBJ-1 (S (NP-SBJ 선/NPR
+                                            마이크로/NPR
+                                            시스템스/NPR+사/XSF+이/PCA)
+                                    (VP (NP-COMP 라파엘/NPR
+                                                 이스라엘/NPR
+                                                 군/NNC+장비/NNC
+                                                 개발청/NNC+에/PAD)
+                                        (NP-OBJ 슈퍼/NNC+컴퓨터/NNC+을/PCA)
+                                        (VV 판매/NNC+하/XSV+으려는/EAN)))
+                                 (NP 계획/NNC+도/PAU))
+                       (S (NP-SBJ 미국/NPR+정부/NNC+이/PCA)
+                          (VP (NP-OBJ *T*-1)
+                              (VV 승인/NNC+하/XSV+을/EAN))))
+                    (NP 예정/NNC+이라고/PAD))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>선 마이크로 시스템스사</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>라파엘 이스라엘 군장비 개발청</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>슈퍼컴퓨터</term>
+	    </Arg>
+	    <Rel>
+	      <term>판매하려는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>판매되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>실제로 베트남에는 아모레, 드봉 외에 코리아나, 라미 등 많은 화장품들이 진출해 있으나 세금이 너무 비싸기 때문에 한국내에서보다도 더 비싼 가격에 판매되고 있다.</text>
+	  <parse>
+(S (S (NP-ADV 실제/NNC+으로/PAD)
+      (S (NP-COMP-2 베트남/NPR+에/PAD+은/PAU)
+         (S (NP-ADV (NP (NP 아모레/NPR)
+                        ,/SCM
+                        (NP 드봉/NPR))
+                    (NP 외/NNX+에/PAD))
+            (S (NP-SBJ (NP (NP (NP 코리아나/NPR)
+                               ,/SCM
+                               (NP 라미/NPR))
+                           (NP 등/NNX))
+                       (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (ADJP 많/VJ+은/EAN)))
+                           (NP 화장품/NNC+들/XSF+이/PCA)))
+               (VP (VP (NP-COMP *T*-2)
+                       (VV 진출/NNC+하/XSV+어/ECS))
+                   있/VX+으나/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (S (NP-SBJ 세금/NNC+이/PCA)
+                         (ADJP (ADVP 너무/ADV)
+                               (ADJP 비싸/VJ+기/ENM)))
+                      (NP 때문/NNX+에/PAD))
+              (NP-ADV (S (WHNP-3 *op*)
+                         (S (NP-SBJ *T*-3)
+                            (ADJP (NP-ADV 한국/NPR+내/NNX+에서/PAD+보다/PAD+도/PAU)
+                                  (ADVP 더/ADV)
+                                  (ADJP 비싸/VJ+은/EAN))))
+                      (NP 가격/NNC+에/PAD))
+              (VP (VV 판매/NNC+되/XSV+고/ECS)))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>세금이 너무 비싸기 때문에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>한국내에서보다도 더 비싼 가격에</term>
+	    </Arg>
+	    <Rel>
+	      <term>판매되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

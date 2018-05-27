@@ -1,0 +1,210 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>받아들이</lemma>
+    <comment>Frames file for '받아들이' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>받아들이.01</id>
+      <edef>accept</edef>
+      <roleset>
+	<role argnum="0" argrole="acceptor"/>
+	<role argnum="1" argrole="thing accepted"/>
+	<role argnum="2" argrole="accepted from"/>
+	<role argnum="3" argrole="attribute of arg1"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>받아들이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>일본 자동차메이커들의 경우 닛산(일산) 자동차가 프랑스 르노로부터 36.8 퍼센트, 마쓰다가 미국 포드로부터 33.4 퍼센트의 출자를 수용한 이외에 후지(부사) 중공업도 미 제너랄 모터스(GM)로부터 20.0 퍼센트를 받아들이기로 하는 등 외국과의 자본 제휴가 잇따르고 있다.</text>
+	  <parse>
+(S (NP-ADV (NP 일본/NPR
+               자동차/NNC+메이커/NNC+들/XSF+의/PAN)
+           (NP 경우/NNC))
+   (NP-ADV (S (S (NP-SBJ 닛산/NPR
+                         (PRN -LRB-/SLQ
+                              (NP 일산/NPR)
+                              -RRB-/SRQ)
+                         자동차/NNC+이/PCA)
+                 (VP (NP-COMP 프랑스/NPR
+                              르노/NPR+으로부터/PAD)
+                     (NP-OBJ 36.8/NNU
+                             퍼센트/NNX)
+                     (VV *?*)))
+              ,/SCM
+              (S (NP-SBJ 마쓰다/NPR+이/PCA)
+                 (VP (NP-COMP 미국/NPR
+                              포드/NPR+으로부터/PAD)
+                     (NP-OBJ (NP 33.4/NNU
+                                 퍼센트/NNX+의/PAN)
+                             (NP 출자/NNC+을/PCA))
+                     (VV 수용/NNC+하/XSV+은/EAN))))
+           (NP 이외/NNC+에/PAD))
+   (S (NP-SBJ (NP (S (NP-SBJ *pro*)
+                     (VP (S-COMP (NP-SBJ 후지/NPR
+                                         (PRN -LRB-/SLQ
+                                              (NP 부사/NPR)
+                                              -RRB-/SRQ)
+                                         중공업/NNC+도/PAU)
+                                 (VP (NP-COMP 미/NPR
+                                              제너랄/NPR
+                                              모터스/NPR
+                                              (PRN -LRB-/SLQ
+                                                   (NP GM/NFW)
+                                                   -RRB-/SRQ)
+                                              으로부터/PAD)
+                                     (NP-OBJ 20.0/NNU
+                                             퍼센트/NNX+을/PCA)
+                                     받아들이/VV+기/ENM+으로/PAD))
+                         하/VV+는/EAN))
+                  (NP 등/NNX))
+              (NP (NP 외국/NNC+과/PAD+의/PAN)
+                  (NP 자본/NNC
+                      제휴/NNC+이/PCA)))
+      (VP (VP 잇따르/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>후지(부사) 중공업</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로부터</f>
+	      <term>미 제너랄 모터스(GM)</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>20.0 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>받아들이기로</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>본데빅 총리는 의회 연설을 통해 "야당인 노동당이 정부안을 지지하지 않으면 이를 현정부의 중대정책에 대한 도전으로 받아들이고 그 결과를 수용하겠다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 본데빅/NPR
+           총리/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 의회/NNC
+                      연설/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP 야당/NNC+이/CO+은/EAN))))
+                              (NP 노동당/NNC+이/PCA))
+                      (VP (VP (NP-OBJ 정부안/NNC+을/PCA)
+                              (VV 지지/NNC+하/XSV+지/ECS))
+                          않/VX+으면/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ 이/NPN+을/PCA)
+                              (NP-COMP (S (WHNP-1 *op*)
+                                          (S (NP-SBJ *T*-1)
+                                             (VP (NP-COMP (NP 현정부/NNC+의/PAN)
+                                                          (NP 중대/NNC+정책/NNC+에/PAD))
+                                                 대하/VV+은/EAN)))
+                                       (NP 도전/NNC+으로/PAD))
+                              받아들이/VV+고/ECS)
+                          (VP (NP-OBJ 그/NPN
+                                      결과/NNC+을/PCA)
+                              (VV 수용/NNC+하/XSV+겠/EPF+다/EFN))))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>야당인 노동당이 정부안을 지지하지 않으면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>현정부의 중대정책에 대한 도전</term>
+	    </Arg>
+	    <Rel>
+	      <term>받아들이고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>받아들여지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>최근 줄어들고 있는 외환보유고를 늘리기 위해 취해진 이 조치는 특히 베트남에 진출해 있는 외국기업들과 미국 등에 거주하는 베트남교포들의 국내송금을 늘리기 위한 조치로 받아들여진다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (S-OBJ (NP-SBJ *pro*)
+                                   (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                  (S (NP-SBJ *T*-1)
+                                                     (VP (VP (NP-ADV 최근/NNC)
+                                                             (VP 줄어들/VV+고/ECS))
+                                                         있/VX+는/EAN)))
+                                               (NP 외환/NNC+보유고/NNC+을/PCA))
+                                       늘리/VV+기/ENM))
+                            위하/VV+어/ECS))
+                     (VP (VV 취하/VV+어지/XSV+은/EAN)))))
+           (NP 이/DAN
+               조치/NNC+은/PAU))
+   (VP (NP-COMP (S (WHNP-5 *op*)
+                   (S (NP-SBJ *T*-5)
+                      (VP (S-OBJ (NP-SBJ *pro*)
+                                 (VP (NP-OBJ (NP (NP (S (WHNP-3 *op*)
+                                                        (S (NP-SBJ *T*-3)
+                                                           (VP (VP (ADVP 특히/ADV)
+                                                                   (VP (NP-COMP 베트남/NPR+에/PAD)
+                                                                       (VV 진출/NNC+하/XSV+어/ECS)))
+                                                               있/VX+는/EAN)))
+                                                     (NP 외국/NNC+기업/NNC+들/XSF+과/PCJ))
+                                                 (NP (S (WHNP-4 *op*)
+                                                        (S (NP-SBJ *T*-4)
+                                                           (VP (NP-COMP (NP 미국/NPR)
+                                                                        (NP 등/NNX+에/PAD))
+                                                               (VV 거주/NNC+하/XSV+는/EAN))))
+                                                     (NP 베트남/NPR+교포/NNC+들/XSF+의/PAN)))
+                                             (NP 국내/NNC+송금/NNC+을/PCA))
+                                     늘리/VV+기/ENM))
+                          위하/VV+은/EAN)))
+                (NP 조치/NNC+으로/PAD))
+       (VV 받아들이/VV+어지/XSV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>최근 줄어들고 있는 외환보유고를 늘리기 위해 취해진 이 조치</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>특히 베트남에 진출해 있는 외국기업들과 미국 등에 거주하는 베트남교포들의 국내송금을 늘리기 위한 조치</term>
+	    </Arg>
+	    <Rel>
+	      <term>받아들여진다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

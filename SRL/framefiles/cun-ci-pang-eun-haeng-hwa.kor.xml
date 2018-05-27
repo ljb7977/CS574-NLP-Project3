@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>준지방은행화</lemma>
+    <comment>Frames file for '준지방은행화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>준지방은행화.01</id>
+      <edef>make a quasi-local bank</edef>
+      <roleset>
+	<role argnum="0" argrole="thing making"/>
+	<role argnum="1" argrole="thing made a quasi-local bank"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>준지방은행화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 대형금고를 준지방은행화하는 방안이 강구되며 금고의 경쟁력 강화를 위한 영업구역 및 업무영역 확대가 추진된다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 대형/NNC+금고/NNC+을/PCA)
+                     (VV 준지방은행화/NNC+하/XSV+는/EAN)))
+              (NP 방안/NNC+이/PCA))
+      (VP (VV 강구/NNC+되/XSV+으며/ECS)))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-OBJ (NP 금고/NNC+의/PAN)
+                                (NP 경쟁력/NNC
+                                    강화/NNC+을/PCA))
+                        위하/VV+은/EAN)))
+              (NP (NP (NP 영업/NNC+구역/NNC)
+                      (ADCP 및/ADC)
+                      (NP 업무/NNC+영역/NNC))
+                  (NP 확대/NNC+이/PCA)))
+      (VP (VV 추진/NNC+되/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대형금고</term>
+	    </Arg>
+	    <Rel>
+	      <term>준지방은행화하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,101 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>업</lemma>
+    <comment>Frames file for '업' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>업.01</id>
+      <edef>put</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing put"/>
+	<role argnum="2" argrole="back"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>업다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>독일 정부의 강력한 지원과 EU를 등에 업고 있는 코흐-베저는 2 일 워싱턴에서 열린 IMF 집행이사회 비공식투표에서 경쟁자인 스탠리 피셔 IMF 수석부총재와 사카키바라 에이스케(목 + 신원영자) 전 일본 대장성 재무관을 제치고 가장 많은 지지를 획득했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (VP (NP-OBJ (NP (NP 독일/NPR
+                                         정부/NNC+의/PAN)
+                                     (NP (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (ADJP 강력하/VJ+은/EAN)))
+                                         (NP 지원/NNC+과/PCJ)))
+                                 (NP EU/NFW+을/PCA))
+                         (NP-COMP 등/NNC+에/PAD)
+                         업/VV+고/ECS)
+                     있/VX+는/EAN)))
+           (NP 코흐/NPR
+               -/SSY
+               베저/NPR+은/PAU))
+   (VP (NP-ADV (NP (S (WHNP-3 *op*)
+                      (S (NP-SBJ *T*-3)
+                         (VP (NP-ADV 2/NNU
+                                     일/NNX)
+                             (NP-ADV 워싱턴/NPR+에서/PAD)
+                             (VP 열리/VV+은/EAN))))
+                   (NP IMF/NFW
+                       집행/NNC+이사회/NNC))
+               (NP 비공식/NNC+투표/NNC+에서/PAD))
+       (VP (VP (NP-OBJ (S (WHNP-4 *op*)
+                          (S (NP-SBJ *T*-4)
+                             (VP (NP 경쟁자/NNC+이/CO+은/EAN))))
+                       (NP (NP 스탠리/NPR
+                               피셔/NPR
+                               IMF/NFW
+                               수석/NNC+부총재/NNC+과/PCJ)
+                           (NP 사카키바라/NPR
+                               에이스케/NPR
+                               (PRN -LRB-/SLQ
+                                    (NP 목/NPR
+                                        -PLU-/SSY
+                                        신원영자/NPR)
+                                    -RRB-/SRQ)
+                               전/DAN
+                               일본/NPR
+                               대장성/NPR
+                               재무관/NNC+을/PCA)))
+               제치/VV+고/ECS)
+           (VP (NP-OBJ (S (WHNP-5 *op*)
+                          (S (NP-SBJ *T*-5)
+                             (ADJP (ADVP 가장/ADV)
+                                   (ADJP 많/VJ+은/EAN))))
+                       (NP 지지/NNC+을/PCA))
+               (VV 획득/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=코흐-베저</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>독일 정부의 강력한 지원과 EU</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>등</term>
+	    </Arg>
+	    <Rel>
+	      <term>업고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

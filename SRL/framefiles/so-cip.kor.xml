@@ -1,0 +1,139 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소집</lemma>
+    <comment>Frames file for '소집' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>소집.01</id>
+      <edef>convene</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing convened"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소집하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 자신의 제안이 단지 구상단계에 있을 뿐 특정 국가나 시기를 의중에 품고 있는 것은 아니라고 전제하고, 그러나 미국 태평양사령부가 다음달 이 문제를 검토하기 위해 회의를 소집할 것이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (ADJP (NP-ADV (S (NP-SBJ (NP 자신/NNC+의/PAN)
+                                            (NP 제안/NNC+이/PCA))
+                                    (ADJP (ADVP 단지/ADV)
+                                          (ADJP (NP-COMP 구상/NNC+단계/NNC+에/PAD)
+                                                있/VJ+을/EAN)))
+                                 (NP 뿐/NNX))
+                         (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                                           (VP (VP (NP-OBJ (NP 특정/NNC)
+                                                           (NP (NP 국가/NNC+이나/PCJ)
+                                                               (NP 시기/NNC+을/PCA)))
+                                                   (NP-COMP 의중/NNC+에/PAD)
+                                                   품/VV+고/ECS)
+                                               있/VX+는/EAN))
+                                        (NP 것/NNX+은/PAU))
+                               아니/VJ+라/EFN+고/PAD)))
+           (VV 전제/NNC+하/XSV+고/ECS))
+       ,/SCM
+       (VP (S-COMP (ADCP 그러나/ADC)
+                   (S (NP-SBJ 미국/NPR
+                              태평양/NPR+사령부/NNC+이/PCA)
+                      (VP (VP (NP-ADV 다음달/NNC)
+                              (S (NP-SBJ *pro*)
+                                 (VP (S-OBJ (NP-SBJ *pro*)
+                                            (VP (NP-OBJ 이/DAN
+                                                        문제/NNC+을/PCA)
+                                                (VV 검토/NNC+하/XSV+기/ENM)))
+                                     위하/VV+어/ECS))
+                              (VP (NP-OBJ 회의/NNC+을/PCA)
+                                  (VV 소집/NNC+하/XSV+을/EAN)))
+                          (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>미국 태평양사령부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>다음달</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>이 문제를 검토하기 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>회의</term>
+	    </Arg>
+	    <Rel>
+	      <term>소집할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>소집되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>IMF 관리들은 24 인 집행위원회가 쾰러 후보의 워싱턴 방문이 끝나는대로 소집돼 차기 총재를 선출할 예정이라고 밝혔으나 구체적 일정은 공개하지 않았다.</text>
+	  <parse>
+(S (S (NP-SBJ IMF/NFW
+              관리/NNC+들/XSF+은/PAU)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP (S (S (NP-SBJ 24/NNU
+                                        인/NNX
+                                        집행/NNC+위원회/NNC+이/PCA)
+                                (VP (S (NP-SBJ (NP 쾰러/NPR
+                                                   후보/NNC+의/PAN)
+                                               (NP 워싱턴/NPR
+                                                   방문/NNC+이/PCA))
+                                       (VP 끝나/VV+는대로/ECS))
+                                    (VP (VV 소집/NNC+되/XSV+어/ECS))))
+                             (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ 차기/NNC
+                                            총재/NNC+을/PCA)
+                                    (VV 선출/NNC+하/XSV+을/EAN))))
+                          (NP 예정/NNC+이/CO+라/EFN+고/PAD))))
+          밝히/VV+었/EPF+으나/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 구체/NNC+적/XSF
+                      일정/NNC+은/PAU)
+              (VP (VV 공개/NNC+하/XSV+지/ECS)))
+          않/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>24 인 집행위원회</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>쾰러 후보의 워싱턴 방문이 끝나는대로</term>
+	    </Arg>
+	    <Rel>
+	      <term>소집돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

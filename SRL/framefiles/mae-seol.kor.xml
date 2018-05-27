@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>매설</lemma>
+    <comment>Frames file for '매설' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>매설.01</id>
+      <edef>lay</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing laid"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>매설하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>공병들이 우리 중대 좌측방에 지뢰를 매설했습니다.</text>
+	  <parse>
+(S (NP-SBJ 공병/NNC+들/XSF+이/PCA)
+   (VP (NP-COMP (NP 우리/NPN
+                    중대/NNC)
+                (NP 좌측방/NNC+에/PAD))
+       (NP-OBJ 지뢰/NNC+을/PCA)
+       (VV 매설/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>공병들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>우리 중대 좌측방</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>지뢰</term>
+	    </Arg>
+	    <Rel>
+	      <term>매설했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>매설되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 지뢰원에는 원격 조종 폭파 지뢰가 매설됐습니다.</text>
+	  <parse>
+(S (NP-COMP-1 그/DAN
+              지뢰원/NNC+에/PAD+은/PAU)
+   (S (NP-SBJ 원격/NNC
+              조종/NNC
+              폭파/NNC
+              지뢰/NNC+이/PCA)
+      (VP (NP-COMP *T*-1)
+          (VV 매설/NNC+되/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>그 지뢰원</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>원격 조종 폭파 지뢰</term>
+	    </Arg>
+	    <Rel>
+	      <term>매설됐습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

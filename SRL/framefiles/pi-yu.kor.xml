@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>비유</lemma>
+    <comment>Frames file for '비유' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>비유.01</id>
+      <edef>compare to</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="first item in comparison"/>
+	<role argnum="2" argrole="second item in comparison"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>비유하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>신문은 이스라엘의 한 고위 군관계자도 최근 아사드를 "박제동물"에 비유했다고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 신문/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ (NP 이스라엘/NPR+의/PAN)
+                       (NP 한/NNU
+                           고위/NNC
+                           군/NNC+관계자/NNC+도/PAU))
+               (VP (NP-ADV 최근/NNC)
+                   (VP (NP-OBJ 아사드/NPR+을/PCA)
+                       (NP-COMP "/SLQ
+                                박제/NNC+동물/NNC
+                                "/SRQ
+                                에/PAD)
+                       (VV 비유/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+       (VV 지적/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>이스라엘의 한 고위 군관계자</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>최근</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>아사드</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>"박제동물"</term>
+	    </Arg>
+	    <Rel>
+	      <term>비유했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

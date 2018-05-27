@@ -1,0 +1,194 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>누르</lemma>
+    <comment>Frames file for '누르' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>누르.01</id>
+      <edef>press</edef>
+      <roleset>
+	<role argnum="0" argrole="presser"/>
+	<role argnum="1" argrole="thing pressed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>누르다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포대장을 부를 때는 이 단추를 누르시오.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 포대장/NNC+을/PCA)
+                     부르/VV+을/EAN)))
+           (NP 때/NNC+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 이/DAN
+                  단추/NNC+을/PCA)
+          누르/VV+으시/EPF+으오/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>포대장을 부를 때는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이 단추</term>
+	    </Arg>
+	    <Rel>
+	      <term>누르시오</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>누르.02</id>
+      <edef>beat</edef>
+      <roleset>
+	<role argnum="0" argrole="winner"/>
+	<role argnum="1" argrole="loser"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>누르다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>특히 대통령 선거 이상의 관심을 받고 있는 뉴욕주 상원의원 선거에서 루돌프 줄리아니 시장이 힐러리 클린턴 여사를 눌러 주길 바라고 있다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (ADVP 특히/ADV)
+           (VP (S-OBJ (NP-ADV (S (WHNP-1 *op*)
+				 (S (NP-SBJ *T*-1)
+				    (VP (VP (NP-OBJ (NP 대통령/NNC
+							      선거/NNC
+							      이상/NNC+의/PAN)
+						    (NP 관심/NNC+을/PCA))
+					    받/VV+고/ECS)
+					있/VX+는/EAN)))
+			      (NP 뉴욕/NPR+주/NNC
+				      상원/NNC+의원/NNC
+				      선거/NNC+에서/PAD))
+		      (S (NP-SBJ 루돌프/NPR
+				       줄리아니/NPR
+				       시장/NNC+이/PCA)
+			 (VP (VP (NP-OBJ 힐러리/NPR
+					       클린턴/NPR
+					       여사/NNC+을/PCA)
+				 누르/VV+어/ECS)
+			     주/VX+기/ENM+을/PCA)))
+               바라/VV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>대통령 선거 이상의 관심을 받고 있는 뉴욕주 상원의원 선거에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>루돌프 줄리아니 시장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>힐러리 클린턴 여사</term>
+	    </Arg>
+	    <Rel>
+	      <term>눌러</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>주길</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>눌리다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>서부 캘리포니아주에서 동부 매사추세츠주에 이르는 모든 주에서 고어 부통령에게 눌리고 있는 브래들리 전 의원은 심지어 프로 농구선수로 활약했던 뉴욕주와 출생주인 미주리주에서도 각각 32 퍼센트 포인트와 20 퍼센트 포인트의 차이로 뒤떨어지고 있는 것으로 최근 여론조사 결과 밝혀졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (VP (NP-ADV (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *T*-2)
+                                                       (VP (NP-COMP 서부/NNC
+                                                                    캘리포니아/NPR+주/NNC+에서/PAD)
+                                                           (NP-COMP 동부/NNC
+                                                                    매사추세츠/NPR+주/NNC+에/PAD)
+                                                           이르/VV+는/EAN)))
+                                                 (NP 모든/DAN
+                                                     주/NNC+에서/PAD))
+                                         (VP (NP-COMP 고어/NPR
+                                                      부통령/NNC+에게/PAD)
+                                             눌리/VV+고/ECS))
+                                     있/VX+는/EAN)))
+                           (NP (NP 브래들리/NPR)
+                               (NP 전/DAN
+                                   의원/NNC+은/PAU)))
+                   (VP (VP (ADVP 심지어/ADV)
+                           (NP-ADV (NP (S (WHNP *op*)
+                                          (S (NP-SBJ *pro*)
+                                             (VP (NP-COMP 프로/NNC
+                                                          농구/NNC+선수/NNC+으로/PAD)
+                                                 (VV 활약/NNC+하/XSV+었/EPF+던/EAN))))
+                                       (NP 뉴욕/NPR+주/NNC+과/PCJ))
+                                   (NP (S (WHNP-3 *op*)
+                                          (S (NP-SBJ *T*-3)
+                                             (VP (NP 출생/NNC+주/NNC+이/CO+은/EAN))))
+                                       (NP 미주리/NPR+주/NNC+에서/PAD+도/PAU)))
+                           (ADVP 각각/ADV)
+                           (NP-ADV (NP (NP 32/NNU
+                                           퍼센트/NNX
+                                           포인트/NNX+과/PCJ)
+                                       (NP 20/NNU
+                                           퍼센트/NNX
+                                           포인트/NNX+의/PAN))
+                                   (NP 차이/NNC+으로/PAD))
+                           (VP 뒤떨어지/VV+고/ECS))
+                       있/VX+는/EAN))
+                (NP 것/NNX+으로/PAD))
+       (VP (NP-ADV (NP 최근/NNC
+                       여론/NNC+조사/NNC)
+                   (NP 결과/NNC))
+           (VP (VV 밝히/VV+어지/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=브래들리 전 의원</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>서부 캘리포니아주에서 동부 매사추세츠주에 이르는 모든 주에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에게</f>
+	      <term>고어 부통령</term>
+	    </Arg>
+	    <Rel>
+	      <term>눌리고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

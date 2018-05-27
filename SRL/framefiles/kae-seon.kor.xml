@@ -1,0 +1,288 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>개선</lemma>
+    <comment>Frames file for '개선' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>개선.01</id>
+      <edef>improve</edef>
+      <roleset>
+	<role argnum="0" argrole="improver"/>
+	<role argnum="1" argrole="thing improving"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>개선하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이 신문은 `한국 정부가 시위대에 최루탄을 쏘지 않는 정책을 채택하고 있다'는 제목의 서울발 기사에서 지난 20 년간 한국에서 최루탄과 시위는 마치 불고기와 김치 관계처럼 보였으나 경찰은 1 년 전부터 최루탄 사용을 자제하는 등 시위진압방법을 개선했다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           신문/NNC+은/PAU)
+   (VP (NP-ADV (NP (S `/SLQ
+                      (NP-SBJ 한국/NPR
+                              정부/NNC+이/PCA)
+                      (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                         (VP (VP (NP-COMP 시위대/NNC+에/PAD)
+                                                 (NP-OBJ 최루탄/NNC+을/PCA)
+                                                 쏘/VV+지/ECS)
+                                             않/VX+는/EAN))
+                                      (NP 정책/NNC+을/PCA))
+                              (VV 채택/NNC+하/XSV+고/ECS))
+                          있/VX+다/EFN)
+                      '/SRQ
+                      는/EAN)
+                   (NP 제목/NNC+의/PAN))
+               (NP 서울/NPR+발/XSF
+                   기사/NNC+에서/PAD))
+       (VP (S-COMP (S (NP-ADV 지난/DAN
+                              20/NNU
+                              년/NNX+간/XSF)
+                      (NP-ADV 한국/NPR+에서/PAD)
+                      (S (NP-SBJ (NP 최루탄/NNC+과/PCJ)
+                                 (NP 시위/NNC+은/PAU))
+                         (VP (ADVP 마치/ADV)
+                             (VP (NP-COMP (NP (NP 불고기/NNC+과/PCJ)
+                                              (NP 김치/NNC))
+                                          (NP 관계/NNC+처럼/PAD))
+                                 보이/VV+었/EPF+으나/ECS))))
+                   (S (NP-SBJ 경찰/NNC+은/PAU)
+                      (VP (NP-ADV 1/NNU
+                                  년/NNX
+                                  전/NNC+부터/PAU)
+                          (NP-ADV (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ 최루탄/NNC
+                                                 사용/NNC+을/PCA)
+                                         (VV 자제/NNC+하/XSV+는/EAN)))
+                                  (NP 등/NNX))
+                          (VP (NP-OBJ 시위/NNC+진압/NNC+방법/NNC+을/PCA)
+                              (VV 개선/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))))
+           전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>지난 20 년간 한국에서 최루탄과 시위는 마치 불고기와 김치 관계처럼 보였으나</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>경찰</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>1 년 전부터</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>최루탄 사용을 자제하는 등</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>시위진압방법</term>
+	    </Arg>
+	    <Rel>
+	      <term>개선했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>현재 GNER사가 운영하고 있는 동해안선을 차지하려는 버진사는 모두 30 억 파운드를 투입해 처리능력이 크고 속도가 빠른 노선으로 개선하겠다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (NP-OBJ (S (WHNP-1 *op*)
+                                (S (NP-ADV 현재/NNC)
+                                   (S (NP-SBJ GNER/NFW+사/XSF+이/PCA)
+                                      (VP (VP (NP-OBJ *T*-1)
+                                              (VV 운영/NNC+하/XSV+고/ECS))
+                                          있/VX+는/EAN))))
+                             (NP 동해안/NNC+선/XSF+을/PCA))
+                     (VV 차지/NNC+하/XSV+으려는/EAN))))
+           (NP 버진/NPR+사/XSF+은/PAU))
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (S (NP-SBJ *pro*)
+                      (VP (ADVP 모두/ADV)
+                          (VP (NP-OBJ 30/NNU
+                                      억/NNU
+                                      파운드/NNX+을/PCA)
+                              (VV 투입/NNC+하/XSV+어/ECS))))
+                   (VP (NP-COMP (S (WHNP-3 *op*)
+                                   (S (NP-SBJ *T*-3)
+                                      (S (S (NP-SBJ 처리/NNC+능력/NNC+이/PCA)
+                                            (ADJP 크/VJ+고/ECS))
+                                         (S (NP-SBJ 속도/NNC+이/PCA)
+                                            (ADJP 빠르/VJ+은/EAN)))))
+                                (NP 노선/NNC+으로/PAD))
+                       (VV 개선/NNC+하/XSV+겠/EPF+다/EFN+고/PAD))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>모두 30 억 파운드를 투입해</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>처리능력이 크고 속도가 빠른 노선</term>
+	    </Arg>
+	    <Rel>
+	      <term>개선하겠다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>개선되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>또 98 년말 458 퍼센트이던 부채비율이 지난해 5 월과 12 월 두차례에 걸친 유상증자 등을 거쳐 각각 지난해말 129 퍼센트 이하로 개선됐다고 현대차는 밝혔다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (S-COMP-3 (NP-SBJ (S (WHNP-1 *op*)
+                           (S (NP-SBJ *T*-1)
+                              (VP (NP-ADV 98/NNU
+                                          년/NNX+말/NNX)
+                                  (VP (NP 458/NNU
+                                          퍼센트/NNX+이/CO+던/EAN)))))
+                        (NP 부채/NNC+비율/NNC+이/PCA))
+                (VP (S (NP-SBJ *pro*)
+                       (VP (NP-ADV 지난해/NNC)
+                           (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (VP (NP-COMP (NP (NP 5/NNU
+                                                                      월/NNX+과/PCJ)
+                                                                  (NP 12/NNU
+                                                                      월/NNX))
+                                                              (NP 두/NNU+차례/NNX+에/PAD))
+                                                     걸치/VV+은/EAN)))
+                                           (NP 유상/NNC+증자/NNC))
+                                       (NP 등/NNX+을/PCA))
+                               거치/VV+어/ECS)))
+                    (ADVP 각각/ADV)
+                    (NP-ADV 지난해/NNC+말/NNX)
+                    (VP (NP-COMP 129/NNU
+                                 퍼센트/NNX
+                                 이하/NNC+으로/PAD)
+                        (VV 개선/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))
+      (S (NP-SBJ 현대/NPR+차/NNC+은/PAU)
+         (VP (S-COMP *T*-3)
+             밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>98 년말 458 퍼센트이던 부채비율</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>지난해 5 월과 12 월 두차례에 걸친 유상증자 등을 거쳐</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>각각</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해말</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>129 퍼센트 이하</term>
+	    </Arg>
+	    <Rel>
+	      <term>개선됐다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>개선시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>워싱턴의 한국 자동차업계 관계자는 그러나 "자동차 시장에 관한 한 한국은 이미 풀 만큼 다 풀었다"고 말하고 "경쟁력 있는 마케팅으로 상황을 개선시킬 생각은 하지 않고 통상 압력에 의존하려는 미국과 유럽 업계의 태도도 문제"라고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 워싱턴/NPR+의/PAN)
+           (NP 한국/NPR
+               자동차/NNC+업계/NNC
+               관계자/NNC+은/PAU))
+   (VP (ADCP 그러나/ADC)
+       (VP (VP (S-COMP "/SLQ
+                       (NP-ADV (S (NP-SBJ *pro*)
+                                  (VP (NP-COMP 자동차/NNC
+                                               시장/NNC+에/PAD)
+                                      관하/VV+은/EAN))
+                               (NP 한/NNX))
+                       (S (NP-SBJ 한국/NPR+은/PAU)
+                          (VP (ADVP 이미/ADV)
+                              (NP-ADV (S (NP-SBJ *pro*)
+                                         (VP 풀/VV+을/EAN))
+                                      (NP 만큼/NNX))
+                              (ADVP 다/ADV)
+                              (VP 풀/VV+었/EPF+다/EFN)))
+                       "/SRQ
+                       고/PAD)
+               말하/VV+고/ECS)
+           (VP (S-COMP "/SLQ
+                       (NP-SBJ (NP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (VP (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                                (VP (NP-ADV (S (WHNP-2 *op*)
+                                                                               (S (NP-SBJ 경쟁력/NNC)
+										  (ADJP (NP-COMP *T*-2)
+											있/VJ+는/EAN)))
+                                                                            (NP 마케팅/NNC+으로/PAD))
+                                                                    (VP (NP-OBJ 상황/NNC+을/PCA)
+                                                                        (VV 개선/NNC+시키/XSV+을/EAN))))
+                                                             (NP 생각/NNC+은/PAU))
+                                                     하/VV+지/ECS)
+                                                 않/VX+고/ECS)
+                                             (VP (NP-COMP 통상/NNC
+                                                          압력/NNC+에/PAD)
+                                                 (VV 의존/NNC+하/XSV+으려는/EAN)))))
+                                   (NP (NP (NP 미국/NPR+과/PCJ)
+                                           (NP 유럽/NPR))
+                                       (NP 업계/NNC+의/PAN)))
+                               (NP 태도/NNC+도/PAU))
+                       (VP (NP 문제/NNC))
+                       "/SRQ
+                       이/CO+라/EFN+고/PAD)
+               (VV 지적/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>경쟁력 있는 마케팅으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>상황</term>
+	    </Arg>
+	    <Rel>
+	      <term>개선시킬</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

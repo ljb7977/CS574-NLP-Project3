@@ -1,0 +1,165 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>놓</lemma>
+    <comment>Frames file for '놓' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>놓.01</id>
+      <edef>put</edef>
+      <roleset>
+	<role argnum="0" argrole="putter"/>
+	<role argnum="1" argrole="thing put"/>
+	<role argnum="2" argrole="where put"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>놓다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>자, (담배와 라이터를 테이블 위에 놓으면서) 이거 마음대로 피워요.</text>
+	  <parse>
+(S (INTJ 자/IJ)
+   ,/SCM
+   (PRN -LRB-/SLQ
+        (S (NP-SBJ *pro*)
+           (VP (NP-OBJ (NP 담배/NNC+과/PCJ)
+                       (NP 라이터/NNC+을/PCA))
+               (NP-COMP (NP 테이블/NNC)
+                        (NP 위/NNC+에/PAD))
+               놓/VV+으면서/ECS))
+        -RRB-/SRQ)
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 이거/NPN)
+          (VP (NP-ADV 마음/NNC+대로/PAD)
+              (VP 피우/VV+어요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>담배와 라이터</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>테이블 위</term>
+	    </Arg>
+	    <Rel>
+	      <term>놓으면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>놓이다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>대대 지역 북방 약 2 킬로 되는 지점에 금화 저수지로 흘러 들어가는 개울이 하나 있는데, 그 개울에 놓여 있는 다리의 남쪽 끝엔 차단소가 하나 있었지요.</text>
+	  <parse>
+(S (S (NP-COMP-3 (S (WHNP-2 *op*)
+                    (S (NP-SBJ *T*-2)
+                       (VP (NP-COMP (NP 대대/NNC
+                                        지역/NNC)
+                                    (NP 북방/NNC)
+                                    (NP 약/DAN
+                                        2/NNU
+                                        킬로/NNX))
+                           되/VV+는/EAN)))
+                 (NP 지점/NNC+에/PAD))
+      (S (NP-SBJ (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-COMP 금화/NPR
+                                    저수지/NNC+으로/PAD)
+                           (CV 흐르/VV+어/ECS
+                               들어가/VV+는/EAN))))
+                 (NP 개울/NNC+이/PCA))
+         (ADJP (NP-ADV 하나/NNU)
+               (ADJP (NP-COMP *T*-3)
+                     있/VJ+는데/ECS))))
+   ,/SCM
+   (S (NP-COMP-4 (NP (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (VP (NP-COMP 그/DAN
+                                            개울/NNC+에/PAD)
+                                   놓이/VV+어/ECS)
+                               있/VX+는/EAN)))
+                     (NP 다리/NNC+의/PAN))
+                 (NP 남쪽/NNC
+                     끝/NNC+에/PAD+은/PAU))
+      (S (NP-SBJ 차단소/NNC+이/PCA)
+         (ADJP (NP-ADV 하나/NNU)
+               (ADJP (NP-COMP *T*-4)
+                     있/VJ+었/EPF+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=다리</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>그 개울</term>
+	    </Arg>
+	    <Rel>
+	      <term>놓여</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>놓.02</id>
+      <edef>about</edef>
+      <roleset>
+	<role argnum="0" argrole="impersonal"/>
+	<role argnum="1" argrole="about what"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel></rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>황금노선인 한국-중국간 항공노선을 놓고 양국 항공사간 경쟁이 치열해지고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP 황금/NNC+노선/NNC+이/CO+은/EAN))))
+                  (NP (NP 한국/NPR
+                          -/SSY
+                          중국/NPR+간/XSF)
+                      (NP 항공/NNC+노선/NNC+을/PCA)))
+          놓/VV+고/ECS))
+   (S (NP-SBJ (NP 양국/NNC
+                  항공사/NNC+간/XSF)
+              (NP 경쟁/NNC+이/PCA))
+      (VP (VP (VV (VJ 치열/NNC+하/XSJ+어지/XSV+고/ECS)))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>황금노선인 한국-중국간 항공노선</term>
+	    </Arg>
+	    <Rel>
+	      <term>놓고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

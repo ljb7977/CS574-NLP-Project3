@@ -1,0 +1,115 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>풍기</lemma>
+    <comment>Frames file for '풍기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>풍기.01</id>
+      <edef>smack</edef>
+      <roleset>
+	<role argnum="1" argrole="thing giving indication"/>
+	<role argnum="2" argrole="indication"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>풍기다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>6 일 뉴욕타임스에 따르면 줄리아니 시장과 평소 관계가 안 좋았던 뉴욕의 케이블뉴스 채널인 '뉴욕 원'의 정치부 기자 앤드루 커츠먼과 '빌리지 보이스'의 사건담당 기자 웨인 배럿이 각각 저술한 '루디 줄리아니: 뉴욕시의 황제'와 '루디: 고담의 골리앗'은 제목에서부터 비판적인 분위기를 풍기고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-ADV 6/NNU
+                  일/NNX)
+          (VP (NP-COMP 뉴욕타임스/NPR+에/PAD)
+              따르/VV+으면/ECS)))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ (S (WHNP-2 *op*)
+                               (S (NP-SBJ *T*-2)
+                                  (ADJP (NP-COMP 줄리아니/NPR
+                                                 시장/NNC+과/PAD)
+                                        (ADJP (NP-ADV 평소/NNC)
+                                              (ADJP (NP-COMP 관계/NNC+이/PCA)
+                                                    (ADJP (ADVP 안/ADV)
+                                                          (ADJP 좋/VJ+었/EPF+던/EAN)))))))
+                            (NP (NP (NP (S (WHNP-3 *op*)
+                                           (S (NP-SBJ *T*-3)
+                                              (VP (NP (NP 뉴욕/NPR+의/PAN)
+                                                      (NP 케이블/NNC+뉴스/NNC
+                                                          채널/NNC+이/CO+은/EAN)))))
+                                        (NP '/SLQ
+                                            뉴욕/NPR
+                                            원/NPR
+                                            '/SRQ
+                                            의/PAN))
+                                    (NP 정치부/NNC
+                                        기자/NNC
+                                        앤드루/NPR
+                                        커츠먼/NPR+과/PCJ))
+                                (NP (NP '/SLQ
+                                        빌리지/NPR
+                                        보이스/NPR
+                                        '/SRQ
+                                        의/PAN)
+                                    (NP 사건/NNC+담당/NNC
+                                        기자/NNC
+                                        웨인/NPR
+                                        배럿/NPR+이/PCA))))
+                    (VP (ADVP 각각/ADV)
+                        (VP (NP-OBJ *T*-1)
+                            (VV 저술/NNC+하/XSV+은/EAN)))))
+              (NP (NP '/SLQ
+                      (NP 루디/NPR
+                          줄리아니/NPR)
+                      :/SSY
+                      (NP (NP 뉴욕/NPR+시/NNC+의/PAN)
+                          (NP 황제/NNC))
+                      '/SRQ
+                      과/PCJ)
+                  (NP '/SLQ
+                      (NP 루디/NPR)
+                      :/SSY
+                      (NP (NP 고담/NPR+의/PAN)
+                          (NP 골리앗/NPR))
+                      '/SRQ
+                      은/PAU)))
+      (VP (VP (NP-ADV 제목/NNC+에서부터/PAD)
+              (VP (NP-OBJ (S (WHNP-4 *op*)
+                             (S (NP-SBJ *T*-4)
+                                (VP (NP 비판/NNC+적/XSF+이/CO+은/EAN))))
+                          (NP 분위기/NNC+을/PCA))
+                  풍기/VV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>6 일 뉴욕타임스에 따르면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>줄리아니 시장과 평소 관계가 안 좋았던 뉴욕의 케이블뉴스 채널인 '뉴욕 원'의 정치부 기자 앤드루 커츠먼과 '빌리지 보이스'의 사건담당 기자 웨인 배럿이 각각 저술한 '루디 줄리아니: 뉴욕시의 황제'와 '루디: 고담의 골리앗'</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>제목에서부터</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>비판적인 분위기</term>
+	    </Arg>
+	    <Rel>
+	      <term>풍기고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

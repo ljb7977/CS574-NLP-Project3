@@ -1,0 +1,285 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>넘</lemma>
+    <comment>Frames file for '넘' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>넘.01</id>
+      <edef>pass</edef>
+      <roleset>
+	<role argnum="0" argrole="entity passing"/>
+	<role argnum="1" argrole="thing passed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>넘다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리 중대는 그 지점에서부터 고지를 2개 넘고 야지를 횡단해서 이 초소 뒤에 있는 좁은 길에 도착했습니다.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN
+           중대/NNC+은/PAU)
+   (VP (NP-COMP 그/DAN
+                지점/NNC+에서/PAD+부터/PAU)
+       (VP (S (NP-SBJ *pro*)
+              (VP (VP (NP-OBJ 고지/NNC+을/PCA)
+                      (VP (NP-ADV 2/NNU
+                                  개/NNX)
+                          (VP 넘/VV+고/ECS)))
+                  (VP (NP-OBJ 야지/NNC+을/PCA)
+                      (VV 횡단/NNC+하/XSV+어서/ECS))))
+           (VP (NP-COMP (S (WHNP-2 *op*)
+                           (S (NP-SBJ *T*-2)
+                              (ADJP (NP-COMP 이/DAN
+                                             초소/NNC
+                                             뒤/NNC+에/PAD)
+                                    있/VJ+는/EAN)))
+                        (NP (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (ADJP 좁/VJ+은/EAN)))
+                            (NP 길/NNC+에/PAD)))
+               (VV 도착/NNC+하/XSV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>우리 중대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>그 지점에서부터</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>고지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>2개</term>
+	    </Arg>
+	    <Rel>
+	      <term>넘고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>넘기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대신투신운용의 양유식 팀장은 "대우채의 환매불안으로 투신권의 수익증권에 대한 신뢰도가 크게 훼손됐다"면서 "투신권에 자금이 다시 몰려야 진정한 위기를 넘긴 것으로 해석할 수 있다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 대신/NPR+투신/NNC+운용/NNC+의/PAN)
+           (NP 양유식/NPR
+               팀장/NNC+은/PAU))
+   (VP (S-COMP (S "/SLQ
+                  (NP-ADV (NP 대우/NPR+채/NNX+의/PAN)
+                          (NP 환매/NNC+불안/NNC+으로/PAD))
+                  (S (NP-SBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (VP (NP-COMP (NP 투신/NNC+권/XSF+의/PAN)
+                                                (NP 수익/NNC+증권/NNC+에/PAD))
+                                       대하/VV+은/EAN)))
+                             (NP 신뢰도/NNC+이/PCA))
+                     (VP (ADVP (ADV 크/VJ+게/ECS))
+                         (VP (VV 훼손/NNC+되/XSV+었/EPF+다/EFN))))
+                  "/SRQ
+                  면서/ECS)
+               (S "/SLQ
+                  (S (NP-COMP-2 투신/NNC+권/XSF+에/PAD)
+                     (S (NP-SBJ 자금/NNC+이/PCA)
+                        (VP (ADVP 다시/ADV)
+                            (VP (NP-COMP *T*-2)
+                                몰리/VV+어야/ECS))))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                                         (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                        (S (NP-SBJ *T*-3)
+                                                           (ADJP 진정하/VJ+은/EAN)))
+                                                     (NP 위기/NNC+을/PCA))
+                                             넘기/VV+은/EAN))
+                                      (NP 것/NNX+으로/PAD))
+                             (VV 해석/NNC+하/XSV+을/EAN))
+                         (VX 수/NNX
+                             있/VJ+다/EFN)))
+                  "/SRQ
+                  고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>진정한 위기</term>
+	    </Arg>
+	    <Rel>
+	      <term>넘긴</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>이 당국자는 "북한 김정일 총비서가 지난 5 일 평양주재 중국대사관을 방문한 것은 북-중 관계개선 차원에서 가볍게 볼 사안은 아니다"면서 "북한의 수요 못지않게 특히 중국 군부는 올해 한국전쟁 50 주년을 의미 없이 넘기지 않을 것"이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           당국자/NNC+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ (S (NP-SBJ 북한/NPR
+                             김정일/NPR
+                             총비서/NNC+이/PCA)
+                     (VP (NP-ADV 지난/DAN
+                                 5/NNU
+                                 일/NNX)
+                         (VP (NP-OBJ (NP 평양/NPR+주재/NNC)
+                                     (NP 중국/NPR+대사관/NNC+을/PCA))
+                             (VV 방문/NNC+하/XSV+은/EAN))))
+                  (NP 것/NNX+은/PAU))
+          (ADJP (NP-ADV 북/NPR
+                        -/SSY
+                        중/NPR
+                        관계/NNC+개선/NNC
+                        차원/NNC+에서/PAD)
+                (ADJP (NP-COMP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ *T*-1)
+                                         (ADVP-COMP (ADV 가볍/VJ+게/ECS))
+                                         보/VV+을/EAN)))
+                               (NP 사안/NNC+은/PAU))
+                      아니/VJ+다/EFN))
+          "/SRQ
+          면서/ECS)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (ADJP (NP-COMP (NP 북한/NPR+의/PAN)
+                                     (NP 수요/NNC))
+                            못지않/VJ+게/ECS))
+                   (ADVP 특히/ADV)
+                   (S (NP-SBJ 중국/NPR
+                              군부/NNC+은/PAU)
+                      (VP (VP (VP (NP-OBJ 올해/NNC
+                                          한국/NPR+전쟁/NNC
+                                          50/NNU
+                                          주년/NNX+을/PCA)
+                                  (VP (ADVP 의미/NNC+없이/ADV)
+                                      (VP 넘기/VV+지/ECS)))
+                              않/VX+을/EAN)
+                          (VX 것/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>북한의 수요 못지않게</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>중국 군부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>올해 한국전쟁 50 주년</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>의미 없이</term>
+	    </Arg>
+	    <Rel>
+	      <term>넘기지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>넘.02</id>
+      <edef>exceed</edef>
+      <roleset>
+	<role argnum="1" argrole="thing that's more"/>
+	<role argnum="2" argrole="thing that's less"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>넘다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>T-54 탱크의 연료 적재량은 모두 1,000 리터가 넘습니다.</text>
+	  <parse>
+(S (NP-SBJ (NP T-54/NFW
+               탱크/NNC+의/PAN)
+           (NP 연료/NNC
+               적재량/NNC+은/PAU))
+   (VP (ADVP 모두/ADV)
+       (VP (NP-COMP 1,000/NNU
+                    리터/NNX+이/PCA)
+           넘/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>T-54 탱크의 연료 적재량</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>모두</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>가</f>
+	      <term>1,000 리터</term>
+	    </Arg>
+	    <Rel>
+	      <term>넘습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>넘다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>사상자 수가 열 명을 넘었다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>사상자 수</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>열 명</term>
+	    </Arg>
+	    <Rel>
+	      <term>넘었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

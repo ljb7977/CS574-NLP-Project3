@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>심</lemma>
+    <comment>Frames file for '심' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>심.01</id>
+      <edef>plant</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing planted"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>심다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>머시코 인터내셔널이 북한에 지원한 사과나무 1 만 그루는 올 봄 평남 일대의 협동농장에 심게 될 것으로 알려졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ *pro*)
+                   (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                      (S (NP-SBJ 머시코/NPR
+                                                 인터내셔널/NPR+이/PCA)
+                                         (VP (NP-COMP 북한/NPR+에/PAD)
+                                             (NP-OBJ *T*-1)
+                                             (VV 지원/NNC+하/XSV+은/EAN))))
+                                   (NP 사과/NNC+나무/NNC
+                                       1/NNU
+                                       만/NNU
+                                       그루/NNX+은/PAU))
+                           (VP (NP-ADV 올/DAN
+                                       봄/NNC)
+                               (VP (NP-COMP (NP 평남/NPR
+                                                일대/NNC+의/PAN)
+                                            (NP 협동/NNC+농장/NNC+에/PAD))
+                                   심/VV+게/ECS)))
+                       되/VX+을/EAN))
+                (NP 것/NNX+으로/PAD))
+       (VV 알리/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>머시코 인터내셔널이 북한에 지원한 사과나무 1 만 그루</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올 봄</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>평남 일대의 협동농장</term>
+	    </Arg>
+	    <Rel>
+	      <term>심게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>될</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

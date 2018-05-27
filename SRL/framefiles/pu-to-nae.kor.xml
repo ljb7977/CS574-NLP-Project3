@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부도내</lemma>
+    <comment>Frames file for '부도내' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부도내.01</id>
+      <edef>dishonor</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="check, bill"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부도내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>36 세의 다른 한 여성은 남편이 자신의 이름으로 은행대출을 받아 갚지도 않고 수표를 부도내는 등 자신을 경제적으로 파탄시켰다며 소송을 냈다.</text>
+	  <parse>
+(S (NP-SBJ (NP 36/NNU
+               세/NNX+의/PAN)
+           (NP 다른/DAN
+               한/NNU
+               여성/NNC+은/PAU))
+   (VP (S (NP-SBJ 남편/NNC+이/PCA)
+          (VP (NP-ADV (S (NP-SBJ *pro*)
+                         (VP (VP (VP (NP-ADV (NP 자신/NNC+의/PAN)
+                                             (NP 이름/NNC+으로/PAD))
+                                     (VP (NP-OBJ 은행/NNC+대출/NNC+을/PCA)
+                                         받/VV+어/ECS))
+                                 (VP (VP (NP-OBJ *pro*)
+                                         갚/VV+지/ECS+도/PAU)
+                                     않/VX+고/ECS))
+                             (VP (NP-OBJ 수표/NNC+을/PCA)
+                                 부도내/VV+는/EAN)))
+                      (NP 등/NNX))
+              (VP (NP-OBJ 자신/NNC+을/PCA)
+                  (VP (ADVP (ADV 경제/NNC+적/XSF+으로/PAD))
+                      (VP (VV 파탄/NNC+시키/XSV+었/EPF+다며/ECS))))))
+       (VP (NP-OBJ 소송/NNC+을/PCA)
+           내/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수표</term>
+	    </Arg>
+	    <Rel>
+	      <term>부도내는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

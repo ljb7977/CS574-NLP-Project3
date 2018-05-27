@@ -1,0 +1,96 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>경영</lemma>
+    <comment>Frames file for '경영' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>경영.01</id>
+      <edef>manage</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing managed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>경영하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>현재 LA 에서 스포츠 매니지먼트사 KSI 를 경영하고 있는 스티브 김은 16 일 "KSI가 우선 100 만달러(한화 약 11 억원)를 자본금으로 대고 유명 스포츠선수들과 한국 투자자들이 주주로 참여해 약 100 만달러를 추가 투자하게 될 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-ADV 현재/NNC)
+                         (NP-ADV LA/NFW+에서/PAD)
+                         (VP (NP-OBJ 스포츠/NNC
+                                     매니지먼트사/NNC
+                                     KSI/NFW+을/PCA)
+                             (VV 경영/NNC+하/XSV+고/ECS)))
+                     있/VX+는/EAN)))
+           (NP 스티브/NPR
+               김/NPR+은/PAU))
+   (VP (NP-ADV 16/NNU
+               일/NNX)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ KSI/NFW+이/PCA)
+                      (VP (ADVP 우선/ADV)
+                          (VP (NP-OBJ 100/NNU
+                                      만/NNU+달러/NNX
+                                      (PRN -LRB-/SLQ
+                                           (NP 한화/NNC
+                                               약/DAN
+                                               11/NNU
+                                               억/NNU+원/NNX)
+                                           -RRB-/SRQ)
+                                      을/PCA)
+                              (VP (NP-ADV 자본금/NNC+으로/PAD)
+                                  (VP 대/VV+고/ECS)))))
+                   (S (NP-SBJ (NP 유명/NNC
+                                  스포츠/NNC+선수/NNC+들/XSF+과/PCJ)
+                              (NP 한국/NPR
+                                  투자자/NNC+들/XSF+이/PCA))
+                      (VP (VP (VP (S (NP-SBJ *pro*)
+                                     (VP (NP-ADV 주주/NNC+으로/PAD)
+                                         (VP (VV 참여/NNC+하/XSV+어/ECS))))
+                                  (VP (NP-OBJ 약/DAN
+                                              100/NNU
+                                              만/NNU+달러/NNX+을/PCA)
+                                      (VP (NP-ADV 추가/NNC)
+                                          (VP (VV 투자/NNC+하/XSV+게/ECS)))))
+                              되/VX+을/EAN)
+                          (VX 것/NNX))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=스티브 김</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현재</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>LA 에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>스포츠 매니지먼트사 KSI</term>
+	    </Arg>
+	    <Rel>
+	      <term>경영하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

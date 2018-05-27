@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수많</lemma>
+    <comment>Frames file for '수많' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수많.01</id>
+      <edef>numerous</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being numerous"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수많다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>민주당 의원들은 시간당 최저임금을 1 달러 인상하는 데 3 년이 걸리는 것은 지나치다면서 "2 년에 걸쳐 1 달러를 올려야 수많은 가정에 확실한 효과가 즉각 나타날 것"이라고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 민주당/NPR
+           의원/NNC+들/XSF+은/PAU)
+   (VP (S (NP-SBJ (S (NP-COMP-3 (S (NP-SBJ *pro*)
+                                   (VP (NP-OBJ 시간/NNC+당/XSF
+                                               최저/NNC+임금/NNC+을/PCA)
+                                       (VP (NP-ADV 1/NNU
+                                                   달러/NNX)
+                                           (VP (VV 인상/NNC+하/XSV+는/EAN)))))
+                                (NP 데/NNX))
+                     (S (NP-SBJ 3/NNU
+                                년/NNX+이/PCA)
+                        (VP (NP-COMP *T*-3)
+                            걸리/VV+는/EAN)))
+                  (NP 것/NNX+은/PAU))
+          (ADJP 지나치/VJ+다면서/ECS))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-COMP 2/NNU
+                                          년/NNX+에/PAD)
+                                 걸치/VV+어/ECS))
+                          (VP (NP-OBJ 1/NNU
+                                      달러/NNX+을/PCA)
+                              올리/VV+어야/ECS)))
+                   (S (NP-COMP-4 (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (ADJP 수많/VJ+은/EAN)))
+                                 (NP 가정/NNC+에/PAD))
+                      (S (NP-SBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (ADJP 확실하/VJ+은/EAN)))
+                                 (NP 효과/NNC+이/PCA))
+                         (VP (VP (ADVP 즉각/ADV)
+                                 (VP (NP-COMP *T*-4)
+                                     나타나/VV+을/EAN))
+                             (VX 것/NNX))))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=가정</term>
+	    </Arg>
+	    <Rel>
+	      <term>수많은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

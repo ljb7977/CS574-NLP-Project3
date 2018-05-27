@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주효</lemma>
+    <comment>Frames file for '주효' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>주효.01</id>
+      <edef>take effect</edef>
+      <roleset>
+	<role argnum="1" argrole="thing taking effect"/>
+	<role argnum="2" argrole="effect on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주효하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>특히 지난해 중부지방의 대홍수를 포함, 베트남 정부가 어려울 때 앞장서 도와 주고 고아원 방문 등 사회복지사업에 꾸준히 관심을 기울여 베트남인들로 하여금 인간적인 정감을 느끼게 한 것이 훈장수여에 주효했던 것으로 평가된다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (S (NP-SBJ *pro*)
+                                     (VP (VP (NP-ADV (S (WHNP *op*)
+                                                        (S (S (NP-SBJ *pro*)
+                                                              (VP (ADVP 특히/ADV)
+                                                                  (NP-ADV 지난해/NNC)
+                                                                  (VP (NP-OBJ (NP 중부/NNC+지방/NNC+의/PAN)
+                                                                              (NP 대홍수/NNC+을/PCA))
+                                                                      (VV 포함/NNC))))
+                                                           ,/SCM
+                                                           (S (NP-SBJ 베트남/NPR
+                                                                      정부/NNC+이/PCA)
+                                                              (ADJP 어렵/VJ+을/EAN))))
+                                                     (NP 때/NNC))
+                                             (S (NP-SBJ *pro*)
+                                                (VP 앞장서/VV+어/ECS))
+                                             (VP (VP (NP-OBJ *pro*)
+                                                     돕/VV+어/ECS)
+                                                 주/VX+고/ECS))
+                                         (VP (NP-COMP (NP (NP 고아원/NNC
+                                                              방문/NNC)
+                                                          (NP 등/NNX))
+                                                      (NP 사회/NNC+복지/NNC+사업/NNC+에/PAD))
+                                             (VP (ADVP 꾸준히/ADV)
+                                                 (VP (NP-OBJ 관심/NNC+을/PCA)
+                                                     기울이/VV+어/ECS)))))
+                                  (VP (S-COMP (NP-SBJ *pro*)
+                                              (VP (ADVP (NP-COMP 베트남/NPR+인/XSF+들/XSF+으로/PAD)
+                                                        하여금/ADV)
+                                                  (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                                 (S (NP-SBJ *T*-1)
+                                                                    (VP (NP 인간/NNC+적/XSF+이/CO+은/EAN))))
+                                                              (NP 정감/NNC+을/PCA))
+                                                      느끼/VV+게/ECS)))
+                                      하/VV+은/EAN)))
+                           (NP 것/NNX+이/PCA))
+                   (VP (NP-COMP 훈장/NNC+수여/NNC+에/PAD)
+                       (VV 주효/NNC+하/XSV+었/EPF+던/EAN)))
+                (NP 것/NNX+으로/PAD))
+       (VV 평가/NNC+되/XSV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>특히 지난해 중부지방의 대홍수를 포함, 베트남 정부가 어려울 때 앞장서 도와 주고 고아원 방문 등 사회복지사업에 꾸준히 관심을 기울여 베트남인들로 하여금 인간적인 정감을 느끼게 한 것</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>훈장수여</term>
+	    </Arg>
+	    <Rel>
+	      <term>주효했던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

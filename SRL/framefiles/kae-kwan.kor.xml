@@ -1,0 +1,113 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>개관</lemma>
+    <comment>Frames file for '개관' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>개관.01</id>
+      <edef>open</edef>
+      <roleset>
+	<role argnum="0" argrole="opener"/>
+	<role argnum="1" argrole="thing opening"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>개관하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국의 향기, 향수 산업그룹인 Fragrance Foundation의 안넷 그린 사장은 여러해동안 노력한 끝에 이 박물관을 작년 11 월 개관했다.</text>
+	  <parse>
+(S (NP-SBJ (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP (NP 미국/NPR+의/PAN)
+                             (NP 향기/NNC
+                                 ,/SCM
+                                 향수/NNC
+                                 산업/NNC+그룹/NNC+이/CO+은/EAN)))))
+               (NP Fragrance/NFW
+                   Foundation/NFW+의/PAN))
+           (NP 안넷/NPR
+               그린/NPR
+               사장/NNC+은/PAU))
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-ADV 여러/DAN+해/NNX+동안/NNX)
+                      (VP (VV 노력/NNC+하/XSV+은/EAN))))
+               (NP 끝/NNC+에/PAD))
+       (VP (NP-OBJ 이/DAN
+                   박물관/NNC+을/PCA)
+           (VP (NP-ADV 작년/NNC
+                       11/NNU
+                       월/NNX)
+               (VP (VV 개관/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>미국의 향기, 향수 산업그룹인 Fragrance Foundation의 안넷 그린 사장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>여러해동안 노력한 끝에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 박물관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>작년 11 월</term>
+	    </Arg>
+	    <Rel>
+	      <term>개관했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>개관하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>뉴욕에 최근 "향기 향수 박물관"이란 새로운 박물관이 개관했다.</text>
+	  <parse>
+(S (NP-ADV 뉴욕/NPR+에/PAD)
+   (NP-ADV 최근/NNC)
+   (S (NP-SBJ (NP "/SLQ
+                  향기/NNC
+                  향수/NNC
+                  박물관/NNC
+                  "/SRQ
+                  이라는/PAN)
+              (NP (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP 새롭/VJ+은/EAN)))
+                  (NP 박물관/NNC+이/PCA)))
+      (VP (VV 개관/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>뉴욕에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>최근</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>"향기 향수 박물관"이란 새로운 박물관</term>
+	    </Arg>
+	    <Rel>
+	      <term>개관했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

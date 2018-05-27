@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>친선방문</lemma>
+    <comment>Frames file for '친선방문' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>친선방문.01</id>
+      <edef>visit for friendship</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing visited"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>친선방문하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 또 총통 취임일인 "5 월 20 일 이전에 중국을 친선방문하고 싶다"고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV (NP (S (WHNP-1 *op*)
+                                          (S (NP-SBJ *T*-1)
+                                             (VP (NP 총통/NNC
+                                                     취임/NNC+일/XSF+이/CO+은/EAN))))
+                                       "/SLQ
+                                       (NP 5/NNU
+                                           월/NNX
+                                           20/NNU
+                                           일/NNX))
+                                   (NP 이전/NNC+에/PAD))
+                           (VP (NP-OBJ 중국/NPR+을/PCA)
+                               (VV 친선방문/NNC+하/XSV+고/ECS)))
+                       싶/VX+다/EFN
+                       "/SRQ
+                       고/PAD))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>총통 취임일인 "5 월 20 일 이전에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Rel>
+	      <term>친선방문하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>싶다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>ÈÞ½Ä</lemma>
+    <comment>Frames file for 'ÈÞ½Ä' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>ÈÞ½Ä.01</id>
+      <edef>take a break</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>ÈÞ½ÄÇÏ´Ù</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>3 ºÐ´ë´Â ³ª¹« ¹Ø¿¡¼­ 5ºÐ°£ ÈÞ½ÄÇß´Ù.</text>
+	  <parse>
+(S (NP-SBJ 3/NNU
+           ºÐ´ë/NNC+Àº/PAU)
+   (VP (NP-ADV ³ª¹«/NNC
+               ¹Ø/NNC+¿¡¼­/PAD)
+       (NP-ADV 5/NNU
+               ºÐ/NNX
+               °£/NNX)
+       (VP (VV ÈÞ½Ä/NNC+ÇÏ/XSV+¾ú/EPF+´Ù/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>´Â</f>
+	      <term>3 ºÐ´ë</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>³ª¹« ¹Ø¿¡¼­</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>5ºÐ°£</term>
+	    </Arg>
+	    <Rel>
+	      <term>ÈÞ½ÄÇß´Ù</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

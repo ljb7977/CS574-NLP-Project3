@@ -1,0 +1,124 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전제</lemma>
+    <comment>Frames file for '전제' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>전제.01</id>
+      <edef>premise</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing premised"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전제하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>클라크 총리는 이전 정부로부터 물려받은 빈약한 국방예산을 가장 우선순위 분야에 사용해야 한다고 전제하고 그런 분야는 육상 기동력과 첨단 공중 및 해상 감시망, 공군 지원장비 등이 돼야 한다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 클라크/NPR
+           총리/NNC+은/PAU)
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *pro*)
+                                         (VP (NP-COMP 이전/NNC
+                                                      정부/NNC+으로부터/PAD)
+                                             (NP-OBJ *T*-1)
+                                             물려받/VV+은/EAN))
+                                      (S (NP-SBJ *T*-1)
+                                         (ADJP (VJ 빈약/NNC+하/XSJ+은/EAN))))
+                                   (NP 국방/NNC+예산/NNC+을/PCA))
+                           (NP-COMP (ADVP 가장/ADV)
+                                    (NP 우선/NNC+순위/NNC
+                                        분야/NNC+에/PAD))
+                           (VV 사용/NNC+하/XSV+어야/ECS))
+                       하/VX+는다/EFN+고/PAD))
+           (VV 전제/NNC+하/XSV+고/ECS))
+       (VP (S-COMP (NP-SBJ 그런/DAN
+                           분야/NNC+은/PAU)
+                   (VP (VP (NP-COMP (NP (NP 육상/NNC
+                                            기동력/NNC+과/PCJ)
+                                        (NP (NP 첨단/NNC
+                                                공중/NNC)
+                                            (ADCP 및/ADC)
+                                            (NP 해상/NNC
+                                                감시망/NNC))
+                                        ,/SCM
+                                        (NP 공군/NNC
+                                            지원/NNC+장비/NNC))
+                                    (NP 등/NNX+이/PCA))
+                           되/VV+어야/ECS)
+                       하/VX+는다/EFN+고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>클라크 총리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>이전 정부로부터 물려받은 빈약한 국방예산을 가장 우선순위 분야에 사용해야 한다</term>
+	    </Arg>
+	    <Rel>
+	      <term>전제하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전제되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>주 대변인은 그러나 이는 교황청과 대만의 단교, 종교문제를 가장한 교황청의 내정간섭 중지가 전제돼야 한다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 주/NPR
+           대변인/NNC+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S-COMP (NP-ADV 이/NPN+은/PAU)
+                   (S (NP-SBJ (NP (NP (NP 교황청/NNC+과/PCJ)
+                                      (NP 대만/NPR+의/PAN))
+                                  (NP 단교/NNC))
+                              ,/SCM
+                              (NP (NP (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (NP-OBJ 종교/NNC+문제/NNC+을/PCA)
+                                                (VV 가장/NNC+하/XSV+은/EAN))))
+                                      (NP (NP 교황청/NNC+의/PAN)
+                                          (NP 내정/NNC+간섭/NNC)))
+                                  (NP 중지/NNC+이/PCA)))
+                      (VP (VP (VV 전제/NNC+되/XSV+어야/ECS))
+                          하/VX+는다/EFN+고/PAD)))
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>이는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>교황청과 대만의 단교, 종교문제를 가장한 교황청의 내정간섭 중지</term>
+	    </Arg>
+	    <Rel>
+	      <term>전제돼야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,97 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>따라가</lemma>
+    <comment>Frames file for '따라가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>따라가.01</id>
+      <edef>follow</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing followed"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>따라가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>공격 중에는 위생병은 중대 대열의 바로 뒤를 따라갑니다.</text>
+	  <parse>
+(S (NP-ADV 공격/NNC
+           중/NNX+에/PAD+은/PAU)
+   (S (NP-SBJ 위생병/NNC+은/PAU)
+      (VP (NP-OBJ (NP 중대/NNC
+                      대열/NNC+의/PAN)
+                  (NP 바로/DAN
+                      뒤/NNC+을/PCA))
+          따라가/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>공격 중에는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>위생병</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>중대 대열의 바로 뒤</term>
+	    </Arg>
+	    <Rel>
+	      <term>따라갑니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>자, 반정리 그 도로 교차점에서부터 연대 목표 1까지 어떤 진로를 따라갔소?</text>
+	  <parse>
+(S (INTJ 자/IJ)
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (NP 반정/NPR+리/XSF)
+                   (NP 그/DAN
+                       도로/NNC
+                       교차점/NNC+에서부터/PAD))
+          (NP-COMP 연대/NNC
+                   목표/NNC
+                   1/NNU+까지/PAU)
+          (NP-OBJ 어떤/DAN
+                  진로/NNC+을/PCA)
+          따라가/VV+었/EPF+소/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>자</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서부터</f>
+	      <term>반정리 그 도로 교차점</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>까지</f>
+	      <term>연대 목표 1</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>어떤 진로</term>
+	    </Arg>
+	    <Rel>
+	      <term>따라갔소</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

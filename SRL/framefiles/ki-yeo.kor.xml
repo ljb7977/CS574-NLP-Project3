@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기여</lemma>
+    <comment>Frames file for '기여' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>기여.01</id>
+      <edef>contribute</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="contributed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기여하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 포대장이 그 표적 일람표를 작성하는 데 기여했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+           포대장/NNC+이/PCA)
+   (VP (NP-COMP (S (NP-SBJ *pro*)
+                   (VP (NP-OBJ 그/DAN
+                               표적/NNC
+                               일람표/NNC+을/PCA)
+                       (VV 작성/NNC+하/XSV+는/EAN)))
+                (NP 데/NNX))
+       (VV 기여/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>저희 포대장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>그 표적 일람표를 작성하는 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>기여했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

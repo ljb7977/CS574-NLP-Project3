@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>꾀하</lemma>
+    <comment>Frames file for '꾀하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>꾀하.01</id>
+      <edef>attempt</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing tried"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>꾀하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난해 9 월 베를린 천도 이후 활발한 외교 활동을 벌이고 있는 독일 정부는 유럽연합(EU)과 북대서양조약기구(나토)의 동유럽 확대를 주도하고 있으며 올해 들어서는 중동지역에 대한 영향력 확대를 꾀하고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-ADV 지난해/NNC
+                                 9/NNU
+                                 월/NNX
+                                 베를린/NPR
+                                 천도/NNC
+                                 이후/NNC)
+                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (ADJP (VJ 활발/NNC+하/XSJ+은/EAN))))
+                                     (NP 외교/NNC
+                                         활동/NNC+을/PCA))
+                             벌이/VV+고/ECS))
+                     있/VX+는/EAN)))
+           (NP 독일/NPR
+               정부/NNC+은/PAU))
+   (VP (VP (VP (NP-OBJ (NP (NP 유럽연합/NPR
+				       (PRN -LRB-/SLQ
+					     EU/NFW
+					     -RRB-/SRQ)
+				       과/PCJ)
+			   (NP 북대서양조약기구/NPR
+					       (PRN -LRB-/SLQ
+						     나토/NPR
+						     -RRB-/SRQ)
+					       의/PAN))
+		       (NP 동유럽/NPR
+				 확대/NNC+을/PCA))
+	       (VV 주도/NNC+하/XSV+고/ECS))
+	   있/VX+으며/ECS)
+       (VP (S (NP-SBJ *pro*)
+              (VP (NP-COMP 올해/NNC)
+                  들어서/VV+는/EAN))
+           (VP (VP (NP-OBJ (NP (S (WHNP-3 *op*)
+                                  (S (NP-SBJ *T*-3)
+                                     (VP (NP-COMP 중동/NPR+지역/NNC+에/PAD)
+                                         대하/VV+은/EAN)))
+                               (NP 영향력/NNC))
+                           (NP 확대/NNC+을/PCA))
+                   꾀하/VV+고/ECS)
+               있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>지난해 9 월 베를린 천도 이후 활발한 외교 활동을 벌이고 있는 독일 정부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올해 들어서는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>중동지역에 대한 영향력 확대</term>
+	    </Arg>
+	    <Rel>
+	      <term>꾀하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

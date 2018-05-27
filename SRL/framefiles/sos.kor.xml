@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>솟</lemma>
+    <comment>Frames file for '솟' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>솟.01</id>
+      <edef>spring</edef>
+      <roleset>
+	<role argnum="1" argrole="thing springing"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>솟다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>또한 김 대통령은 교민간담회에만 가면 매번 예정시간을 넘겨 연설하고 대화를 나누는 등 교민들의 열광적인 반응에 `엔돌핀이 솟는 것 같았다'고 측근들은 전했다.</text>
+	  <parse>
+(S (ADCP 또한/ADC)
+   (S (S-COMP-2 (NP-ADV (S (NP-SBJ 김/NPR
+                                   대통령/NNC+은/PAU)
+                           (VP (S (NP-SBJ *pro*)
+                                  (VP (NP-COMP 교민/NNC+간담회/NNC+에/PAD+만/PAU)
+                                      가/VV+으면/ECS))
+                               (VP (VP (ADVP 매번/ADV)
+                                       (S (NP-SBJ *pro*)
+                                          (VP (NP-OBJ 예정/NNC+시간/NNC+을/PCA)
+                                              넘기/VV+어/ECS))
+                                       (VP (VV 연설/NNC+하/XSV+고/ECS)))
+                                   (VP (NP-OBJ 대화/NNC+을/PCA)
+                                       나누/VV+는/EAN))))
+                        (NP 등/NNX))
+                (NP-ADV (NP 교민/NNC+들/XSF+의/PAN)
+                        (NP (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (VP (NP 열광/NNC+적/XSF+이/CO+은/EAN))))
+                            (NP 반응/NNC+에/PAD)))
+                `/SLQ
+                (S (NP-SBJ 엔돌핀/NNC+이/PCA)
+                   (VP (VP 솟/VV+는/EAN)
+                       (VX 것/NNX
+                           같/VJ+었/EPF+다/EFN)))
+                '/SRQ
+                고/PAD)
+      (S (NP-SBJ 측근/NNC+들/XSF+은/PAU)
+         (VP (S-COMP *T*-2)
+             전하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>김 대통령은 교민간담회에만 가면 매번 예정시간을 넘겨 연설하고 대화를 나누는 등</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>교민들의 열광적인 반응에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>엔돌핀</term>
+	    </Arg>
+	    <Rel>
+	      <term>솟는</term>
+	    </Rel>
+	    <Aux>
+	      <f>는</f>
+	      <term>것 같았다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

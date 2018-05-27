@@ -1,0 +1,187 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>진행</lemma>
+    <comment>Frames file for '진행' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>진행.01</id>
+      <edef>proceed</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing proceeding"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>진행하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한과 미국은 7 일부터 미국 뉴욕에서 김계관 북한 외무성 부상과 찰스 카트먼 미 한반도평화회담 담당특사가 수석대표로 참석한 가운데 고위급 회담을 위한 준비회담을 진행하고 있다.</text>
+	  <parse>
+(S (NP-SBJ (NP 북한/NPR+과/PCJ)
+           (NP 미국/NPR+은/PAU))
+   (VP (VP (NP-ADV 7/NNU
+                   일/NNX+부터/PAU)
+           (NP-ADV 미국/NPR
+                   뉴욕/NPR+에서/PAD)
+           (NP-ADV (S (NP-SBJ (NP 김계관/NPR
+                                  북한/NPR
+                                  외무성/NNC
+                                  부상/NNC+과/PCJ)
+                              (NP 찰스/NPR
+                                  카트먼/NPR
+                                  미/NPR
+                                  한반도/NPR+평화/NNC+회담/NNC
+                                  담당/NNC+특사/NNC+이/PCA))
+                      (VP (NP-ADV 수석/NNC+대표/NNC+으로/PAD)
+                          (VP (VV 참석/NNC+하/XSV+은/EAN))))
+                   (NP 가운데/NNC))
+           (VP (NP-OBJ (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP-OBJ 고위급/NNC
+                                         회담/NNC+을/PCA)
+                                 위하/VV+은/EAN)))
+                       (NP 준비/NNC+회담/NNC+을/PCA))
+               (VV 진행/NNC+하/XSV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>북한과 미국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>7 일부터</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>미국 뉴욕에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>김계관 북한 외무성 부상과 찰스 카트먼 미 한반도평화회담 담당특사가 수석대표로 참석한 가운데</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>고위급 회담을 위한 준비회담</term>
+	    </Arg>
+	    <Rel>
+	      <term>진행하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>진행되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지금 그 공격 준비가 계획대로 진행되고 있습니다.</text>
+	  <parse>
+(S (NP-ADV 지금/NNC)
+   (S (NP-SBJ 그/DAN
+              공격/NNC
+              준비/NNC+이/PCA)
+      (VP (VP (NP-ADV 계획/NNC+대로/PAD)
+              (VP (VV 진행/NNC+되/XSV+고/ECS)))
+          있/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지금</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>그 공격 준비</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>계획대로</term>
+	    </Arg>
+	    <Rel>
+	      <term>진행되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>진행시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>양측은 고위급회담 준비회담이 차질을 빚는 것을 피하기 위해 북한을 테러지원국 명단에서 삭제하는 문제를 따로 분리, 별도의 회담으로 진행시키고 있다.</text>
+	  <parse>
+(S (NP-SBJ 양측/NNC+은/PAU)
+   (VP (VP (S (NP-SBJ *pro*)
+              (VP (S-OBJ (NP-SBJ *pro*)
+                         (VP (NP-OBJ (S (NP-SBJ 고위급/NNC+회담/NNC
+                                                준비/NNC+회담/NNC+이/PCA)
+                                        (VP (NP-OBJ 차질/NNC+을/PCA)
+                                            빚/VV+는/EAN))
+                                     (NP 것/NNX+을/PCA))
+                             피하/VV+기/ENM))
+                  위하/VV+어/ECS))
+           (S (NP-SBJ *pro*)
+              (VP (NP-OBJ (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ 북한/NPR+을/PCA)
+                                 (NP-COMP 테러/NNC+지원국/NNC
+					      명단/NNC+에서/PAD)
+				 (VV 삭제/NNC+하/XSV+는/EAN)))
+                          (NP 문제/NNC+을/PCA))
+                  (VP (ADVP 따로/ADV)
+                      (VP (VV 분리/NNC)))))
+           ,/SCM
+           (NP-ADV (NP 별도/NNC+의/PAN)
+                   (NP 회담/NNC+으로/PAD))
+           (VP (NP-OBJ *pro*)
+               (VV 진행/NNC+시키/XSV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>양측</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>고위급회담 준비회담이 차질을 빚는 것을 피하기 위해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>북한을 테러지원국 명단에서 삭제하는 문제를 따로 분리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>별도의 회담으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>진행시키고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

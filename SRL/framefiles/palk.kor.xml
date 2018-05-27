@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>밝</lemma>
+    <comment>Frames file for '밝' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>밝.01</id>
+      <edef>bright</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being bright"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>밝다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그런데 날이 밝아 와서 우리 분대는 맡은 일을 못 했습니다.</text>
+	  <parse>
+(S (ADCP 그런데/ADC)
+   (S (NP-SBJ 날/NNC+이/PCA)
+      (VP (ADJP 밝/VJ+어/ECS)
+          오/VX+어서/ECS))
+   (S (NP-SBJ 우리/NPN
+              분대/NNC+은/PAU)
+      (VP (NP-OBJ-LV (S (WHNP-1 *op*)
+                        (S (NP-SBJ *pro*)
+                           (VP (NP-OBJ *T*-1)
+                               맡/VV+은/EAN)))
+                     (NP 일/NNC+을/PCA))
+          (VP (ADVP 못/ADV)
+              (VP (LV 하/VV+었/EPF+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그런데</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>날</term>
+	    </Arg>
+	    <Rel>
+	      <term>밝아</term>
+	    </Rel>
+	    <Aux>
+	      <f>아</f>
+	      <term>와서</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

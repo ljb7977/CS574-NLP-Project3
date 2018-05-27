@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>명백하</lemma>
+    <comment>Frames file for '명백하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>명백하.01</id>
+      <edef>evident</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being evident"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>명백하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한은 "일본인 적군파가 일본당국의 가혹한 탄압과 박해를 피해 북한으로 탈출한 정치적 망명자"라고 말하고 "적군파 추방이라는 미국의 요구는 조선민주주의인민공화국에 대한 주권침해이자 명백한 국제법 위반"이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 북한/NPR+은/PAU)
+   (VP (VP (S-COMP "/SLQ
+                   (NP-SBJ 일본인/NNC
+                           적군파/NPR+이/PCA)
+                   (VP (NP (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-OBJ (NP 일본/NPR+당국/NNC+의/PAN)
+                                                    (NP (S (WHNP-1 *op*)
+                                                           (S (NP-SBJ *T*-1)
+                                                              (ADJP (VJ 가혹/NNC+하/XSJ+은/EAN))))
+                                                        (NP (NP 탄압/NNC+과/PCJ)
+                                                            (NP 박해/NNC+을/PCA))))
+                                            피하/VV+어/ECS))
+                                     (VP (NP-COMP 북한/NPR+으로/PAD)
+                                         (VV 탈출/NNC+하/XSV+은/EAN)))))
+                           (NP 정치/NNC+적/XSF
+                               망명자/NNC)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+고/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (NP 적군파/NPR
+                               추방/NNC+이라는/PAN)
+                           (NP (NP 미국/NPR+의/PAN)
+                               (NP 요구/NNC+은/PAU)))
+                   (VP (VP (NP (S (WHNP-3 *op*)
+                                  (S (NP-SBJ *T*-3)
+                                     (VP (NP-COMP 조선민주주의인민공화국/NPR+에/PAD)
+                                         대하/VV+은/EAN)))
+                               (NP 주권/NNC+침해/NNC+이/CO+자/ECS)))
+                       (VP (NP (S (WHNP-4 *op*)
+                                  (S (NP-SBJ *T*-4)
+                                     (ADJP 명백하/VJ+은/EAN)))
+                               (NP 국제법/NNC
+                                   위반/NNC))))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=국제법 위반</term>
+	    </Arg>
+	    <Rel>
+	      <term>명백한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

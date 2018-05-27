@@ -1,0 +1,93 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>깃들</lemma>
+    <comment>Frames file for '깃들' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>깃들.01</id>
+      <edef>permeate</edef>
+      <roleset>
+	<role argnum="1" argrole="entity permeating"/>
+	<role argnum="2" argrole="entity permeated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>깃들다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이준화 공사는 "여러가지로 한국과 관련이 많은 이 지역에 한국의 얼이 깃든 태권도 체육관을 만들어 기증하게 된 것은 매우 뜻 깊은 일"이라고 말하고 "앞으로 베트남에서 가장 인기가 많은 태권도를 진흥시키는 데 지원을 아끼지 않을 계획"이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 이준화/NPR
+           공사/NNC+은/PAU)
+   (VP (VP (S-COMP "/SLQ
+                   (NP-SBJ (S (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (S (NP-ADV 여러가지/NNC+으로/PAD)
+						      (S (NP-SBJ (NP 한국/NPR+과/PAD)
+								 (NP 관련/NNC+이/PCA))
+							 (ADJP 많/VJ+은/EAN)))))
+                                             (NP 이/DAN
+                                                 지역/NNC+에/PAD))
+                                     (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ (NP 한국/NPR+의/PAN)
+                                                               (NP 얼/NNC+이/PCA))
+                                                       (VP (NP-COMP *T*-2)
+                                                           깃들/VV+은/EAN)))
+                                                 (NP 태권도/NNC
+                                                     체육관/NNC+을/PCA))
+                                         만들/VV+어/ECS)))
+                              (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-COMP *pro*)
+                                         (NP-OBJ *pro*)
+                                         (VV 기증/NNC+하/XSV+게/ECS))
+                                     되/VX+은/EAN)))
+                           (NP 것/NNX+은/PAU))
+                   (VP (NP (S (ADVP 매우/ADV)
+                              (S (NP-SBJ 뜻/NNC)
+                                 (ADJP 깊/VJ+은/EAN)))
+                           (NP 일/NNC)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+고/ECS)
+       (VP (NP-COMP "/SLQ
+                    (S (NP-SBJ *pro*)
+                       (VP (VP (NP-ADV 앞/NNC+으로/PAD)
+                               (NP-ADV (S (NP-SBJ *pro*)
+					  (VP (NP-OBJ (S (WHNP-3 *op*)
+							 (S (NP-SBJ *T*-3)
+							    (S (NP-ADV 베트남/NPR+에서/PAD)
+							       (ADVP 가장/ADV)
+							       (S (NP-SBJ 인기/NNC+이/PCA)
+								  (ADJP 많/VJ+은/EAN)))))
+						      (NP 태권도/NNC+을/PCA))
+					      (VV 진흥/NNC+시키/XSV+는/EAN)))
+				       (NP 데/NNX))
+			       (VP (NP-OBJ 지원/NNC+을/PCA)
+				   아끼/VV+지/ECS))
+                           않/VX+을/EAN))
+                    (NP 계획/NNC)
+                    "/SRQ
+                    이라고/PAD)
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>한국의 얼</term>
+	    </Arg>
+	    <Arg n="2">
+	      <term>*trace*=태권도 체육관</term>
+	    </Arg>
+	    <Rel>
+	      <term>깃든</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

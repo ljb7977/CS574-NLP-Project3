@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탄식</lemma>
+    <comment>Frames file for '탄식' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탄식.01</id>
+      <edef>sigh</edef>
+      <roleset>
+	<role argnum="0" argrole="speaker"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탄식하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 신문은 지난 76 년 박정희 대통령이 박준규 당시 공화당 정책위의장에게 "미국사람들이 도청하려면 무슨 수를 써서라도 못하겠는가"고 탄식했다면서 과거나 지금이나 한반도가 미국의 주요 감청대상이 돼 왔다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           신문/NNC+은/PAU)
+   (VP (S-COMP (S (NP-ADV 지난/DAN
+                          76/NNU
+                          년/NNX)
+                  (S (NP-SBJ 박정희/NPR
+                             대통령/NNC+이/PCA)
+                     (VP (NP-COMP 박준규/NPR
+                                  당시/NNC
+                                  공화당/NPR
+                                  정책위의장/NNC+에게/PAD)
+                         (S-COMP "/SLQ
+                                 (NP-SBJ 미국/NPR+사람/NNC+들/XSF+이/PCA)
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-OBJ *pro*)
+                                            (VV 도청/NNC+하/XSV+으려면/ECS)))
+                                     (S (NP-SBJ *pro*)
+                                        (VP (NP-OBJ 무슨/DAN
+                                                    수/NNX+을/PCA)
+                                            쓰/VV+어서/ECS+이라도/PAU))
+                                     (VP (NP-OBJ *pro*)
+                                         못하/VV+겠/EPF+는가/EFN))
+                                 "/SRQ
+                                 고/PAD)
+                         (VV 탄식/NNC+하/XSV+었/EPF+다면서/ECS))))
+               (S (NP-ADV (NP 과거/NNC+이나/PCJ)
+                          (NP 지금/NNC+이나/PAU))
+                  (S (NP-SBJ 한반도/NNC+이/PCA)
+                     (VP (VP (NP-COMP (NP 미국/NPR+의/PAN)
+                                      (NP 주요/NNC
+                                          감청/NNC+대상/NNC+이/PCA))
+                             되/VV+어/ECS)
+                         오/VX+었/EPF+다/EFN+고/PAD))))
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 76 년</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>박정희 대통령</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>박준규 당시 공화당 정책위의장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>"미국사람들이 도청하려면 무슨 수를 써서라도 못하겠는가"</term>
+	    </Arg>
+	    <Rel>
+	      <term>탄식했다면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

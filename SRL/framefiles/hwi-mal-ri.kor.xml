@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>휘말리</lemma>
+    <comment>Frames file for '휘말리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>휘말리.01</id>
+      <edef>be involved in</edef>
+      <roleset>
+	<role argnum="1" argrole="patient"/>
+	<role argnum="2" argrole="involved in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>휘말리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국 어린이들의 `금단현상'을 불러일으키고 있는 동화 `해리 포터' 시리즈가 저작권 시비에 휘말렸다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-OBJ (NP 미국/NPR
+                                     어린이/NNC+들/XSF+의/PAN)
+                                 (NP `/SLQ
+                                     금단/NNC+현상/NNC
+                                     '/SRQ
+                                     을/PCA))
+                         불러일으키/VV+고/ECS)
+                     있/VX+는/EAN)))
+           (NP 동화/NNC
+               `/SLQ
+               해리/NPR
+               포터/NPR
+               '/SRQ
+               시리즈/NNC+이/PCA))
+   (VP (NP-COMP 저작권/NNC
+                시비/NNC+에/PAD)
+       휘말리/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>미국 어린이들의 `금단현상'을 불러일으키고 있는 동화 `해리 포터' 시리즈</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>저작권 시비</term>
+	    </Arg>
+	    <Rel>
+	      <term>휘말렸다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

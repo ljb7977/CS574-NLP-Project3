@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>쏟아 붓</lemma>
+    <comment>Frames file for '쏟아 붓' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>붓.01</id>
+      <edef>pour</edef>
+      <roleset>
+	<role argnum="0" argrole="pourer"/>
+	<role argnum="1" argrole="thing poured"/>
+	<role argnum="2" argrole="destination"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>쏟아 붓다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>부시와 매케인의 경우 지난 7 일의 '슈퍼 화요일' 예비선거를 앞두고 2 주간 900 만달러 이상을 TV 광고에 쏟아 부었다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (NP (NP 부시/NPR+과/PCJ)
+                   (NP 매케인/NPR+의/PAN))
+               (NP 경우/NNC))
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (NP 지난/DAN
+                          7/NNU
+                          일/NNX+의/PAN)
+                      (NP '/SLQ
+                          슈퍼/NNC
+                          화요일/NNC
+                          '/SRQ
+                          예비/NNC+선거/NNC+을/PCA))
+              앞두/VV+고/ECS))
+       (NP-ADV 2/NNU
+               주/NNX+간/XSF)
+       (VP (NP-OBJ 900/NNU
+                   만/NNU+달러/NNX
+                   이상/NNC+을/PCA)
+           (NP-COMP TV/NFW
+                    광고/NNC+에/PAD)
+           (CV 쏟/VV+어/ECS
+               붓/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>부시와 매케인의 경우</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 7 일의 '슈퍼 화요일' 예비선거를 앞두고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>2 주간</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>900 만달러 이상</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>TV 광고</term>
+	    </Arg>
+	    <Rel>
+	      <term>쏟아 부었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부끄럽</lemma>
+    <comment>Frames file for '부끄럽' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부끄럽.01</id>
+      <edef>shameful</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="person feeling shameful"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부끄럽다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 이 두 주인공은 모두 슈퍼맨을 부끄럽게 만들 정도의 우람한 체격을 소유하고 있다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 이/DAN
+              두/NNU
+              주인공/NNC+은/PAU)
+      (VP (ADVP 모두/ADV)
+          (VP (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ 슈퍼맨/NPR+을/PCA)
+                                     (S-COMP (NP-SBJ *pro*)
+                                             (ADJP 부끄럽/VJ+게/ECS))
+                                     만들/VV+을/EAN))
+                              (NP 정도/NNC+의/PAN))
+                          (NP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (ADJP 우람하/VJ+은/EAN)))
+                              (NP 체격/NNC+을/PCA)))
+                  (VV 소유/NNC+하/XSV+고/ECS))
+              있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>부끄럽게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,101 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>교육</lemma>
+    <comment>Frames file for '교육' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>교육.01</id>
+      <edef>educate</edef>
+      <roleset>
+	<role argnum="0" argrole="teacher"/>
+	<role argnum="1" argrole="subject"/>
+	<role argnum="2" argrole="student"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>교육시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>현재 제시되고 있는 한가지 대책은 정보기술 업체들이 비숙련 인력을 고용, 이들에게 정보기술을 교육시키는 것이다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-ADV 현재/NNC)
+                         (VP (VV 제시/NNC+되/XSV+고/ECS)))
+                     있/VX+는/EAN)))
+           (NP 한/NNU+가지/NNX
+               대책/NNC+은/PAU))
+   (VP (NP (S (NP-SBJ 정보/NNC+기술/NNC
+                      업체/NNC+들/XSF+이/PCA)
+              (VP (VP (NP-OBJ 비/XPF+숙련/NNC
+                              인력/NNC+을/PCA)
+                      (VV 고용/NNC))
+                  ,/SCM
+                  (VP (NP-COMP 이/NPN+들/XSF+에게/PAD)
+                      (NP-OBJ 정보/NNC+기술/NNC+을/PCA)
+                      (VV 교육/NNC+시키/XSV+는/EAN))))
+           (NP 것/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>정보기술 업체들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>이들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>정보기술</term>
+	    </Arg>
+	    <Rel>
+	      <term>교육시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>교육받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>만약 어떤 이유로 공격이 저지되면 측방 이동을 실시하도록 교육받았습니다.</text>
+	  <parse>
+(S (S (ADVP 만약/ADV)
+      (NP-ADV 어떤/DAN
+              이유/NNC+으로/PAD)
+      (S (NP-SBJ 공격/NNC+이/PCA)
+         (VP (VV 저지/NNC+되/XSV+으면/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-OBJ 측방/NNC
+                              이동/NNC+을/PCA)
+                      (VV 실시/NNC+하/XSV+도록/ECS)))
+          (VV 교육/NNC+받/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>만약 어떤 이유로 공격이 저지되면</term>
+	    </Arg>
+	    <Arg n="2">
+	      <term>측방 이동을 실시하도록</term>
+	    </Arg>
+	    <Rel>
+	      <term>교육받았습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

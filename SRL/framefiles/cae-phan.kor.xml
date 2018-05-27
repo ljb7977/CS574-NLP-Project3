@@ -1,0 +1,131 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재판</lemma>
+    <comment>Frames file for '재판' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재판.01</id>
+      <edef>judge</edef>
+      <roleset>
+	<role argnum="0" argrole="thing judging"/>
+	<role argnum="1" argrole="thing judged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재판하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 세계가 칠레를 지켜보고 있다며 국제사회에 약속한 대로 그를 재판하지 않을 경우 "칠레는 거짓말 국가가 될 것"이라고 우려했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S (NP-SBJ 세계/NNC+이/PCA)
+          (VP (VP (NP-OBJ 칠레/NPR+을/PCA)
+                  지켜보/VV+고/ECS)
+              있/VX+다며/ECS))
+       (VP (S-COMP (NP-ADV (S (NP-SBJ *pro*)
+                              (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                 (VP (NP-COMP 국제/NNC+사회/NNC+에/PAD)
+                                                     (NP-OBJ *pro*)
+                                                     (VV 약속/NNC+하/XSV+은/EAN)))
+                                              (NP 대로/NNX))
+                                      (VP (NP-OBJ 그/NPN+을/PCA)
+                                          (VV 재판/NNC+하/XSV+지/ECS)))
+                                  않/VX+을/EAN))
+                           (NP 경우/NNC))
+                   (S "/SLQ
+                      (NP-SBJ 칠레/NPR+은/PAU)
+                      (VP (VP (NP-COMP 거짓말/NNC
+                                       국가/NNC+이/PCA)
+                              되/VV+을/EAN)
+                          (VX 것/NNX))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD))
+           (VV 우려/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>국제사회에 약속한 대로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그</term>
+	    </Arg>
+	    <Rel>
+	      <term>재판하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>재판받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>칠레의 후안 구즈만 타피아 판사는 영국에서 귀국한 전독재자 아우구스토 피노체트가 국내에서 재판받을 수 있도록 그에 대한 면책특권 해제를 6 일 산티아고 항소법원에 요청했다고 한 변호사가 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP 칠레/NPR+의/PAN)
+                     (NP 후안/NPR
+                         구즈만/NPR
+                         타피아/NPR
+                         판사/NNC+은/PAU))
+             (VP (S (NP-SBJ (S (WHNP-3 *op*)
+			       (S (NP-SBJ *T*-3)
+				  (VP (NP-ADV 영국/NPR+에서/PAD)
+				      (VP (VV 귀국/NNC+하/XSV+은/EAN)))))
+			    (NP (NP 전/XPF+독재자/NNC)
+				(NP 아우구스토/NPR
+					      피노체트/NPR+이/PCA)))
+                    (VP (VP (NP-ADV 국내/NNC+에서/PAD)
+                            (VP (VV 재판/NNC+받/XSV+을/EAN)))
+                        (VX 수/NNX
+                            있/VJ+도록/ECS)))
+                 (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP (NP-COMP 그/NPN+에/PAD)
+                                           대하/VV+은/EAN)))
+                                 (NP 면책/NNC+특권/NNC))
+                             (NP 해제/NNC+을/PCA))
+                     (VP (NP-ADV 6/NNU
+                                 일/NNX)
+                         (VP (NP-COMP 산티아고/NPR
+                                      항소/NNC+법원/NNC+에/PAD)
+                             (VV 요청/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))))
+   (S (NP-SBJ 한/NNU
+              변호사/NNC+이/PCA)
+      (VP (S-COMP *T*-1)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>영국에서 귀국한 전독재자 아우구스토 피노체트</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>국내에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>재판받을</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

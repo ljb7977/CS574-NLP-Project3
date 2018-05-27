@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>싸잡</lemma>
+    <comment>Frames file for '싸잡' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>싸잡.01</id>
+      <edef>lump together</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing lumped"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>싸잡다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>자민련 이한동 총재는 이날 경기도 김포지구당 개편대회에 참석, "민주당은 공천때는 시민단체를 이용해 불법을 자행하더니, 선거때는 전국규모의 이익단체를 이용해 불법 선거를 주도하고 있다", "한나라당도 일부 지역서 입당원서를 받으며 금품을 준다는 보도가 있다"며 양당을 싸잡아 비난했다.</text>
+	  <parse>
+(S (NP-SBJ 자민련/NPR
+           이한동/NPR
+           총재/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 이날/NNC)
+              (VP (NP-COMP 경기도/NPR
+                           김포/NPR+지구당/NNC
+                           개편/NNC+대회/NNC+에/PAD)
+                  (VV 참석/NNC))))
+       ,/SCM
+       (S "/SLQ
+          (S (NP-SBJ 민주당/NPR+은/PAU)
+             (VP (NP-ADV 공천/NNC+때/NNC+은/PAU)
+                 (S (NP-SBJ *pro*)
+                    (VP (NP-OBJ 시민/NNC+단체/NNC+을/PCA)
+                        (VV 이용/NNC+하/XSV+어/ECS)))
+                 (VP (NP-OBJ 불법/NNC+을/PCA)
+                     (VV 자행/NNC+하/XSV+더니/ECS))))
+          ,/SCM
+          (S (NP-SBJ *pro*)
+             (VP (VP (NP-ADV 선거/NNC+때/NNC+은/PAU)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP 전국/NNC+규모/NNC+의/PAN)
+                                    (NP 이익/NNC+단체/NNC+을/PCA))
+                            (VV 이용/NNC+하/XSV+어/ECS)))
+                     (VP (NP-OBJ 불법/NNC
+                                 선거/NNC+을/PCA)
+                         (VV 주도/NNC+하/XSV+고/ECS)))
+                 있/VX+다/EFN))
+          "/SRQ)
+       ,/SCM
+       (S "/SLQ
+          (NP-SBJ (S (NP-SBJ 한나라당/NPR+도/PAU)
+                     (VP (NP-ADV 일부/NNC
+                                 지역/NNC+에서/PAD)
+                         (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ 입당/NNC+원서/NNC+을/PCA)
+                                받/VV+으며/ECS))
+                         (VP (NP-OBJ 금품/NNC+을/PCA)
+                             주/VV+는다는/EAN)))
+                  (NP 보도/NNC+이/PCA))
+          (ADJP 있/VJ+다/EFN)
+          "/SRQ
+          며/ECS)
+       (VP (NP-OBJ 양당/NNC+을/PCA)
+           (VP (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ *pro*)
+                      싸잡/VV+어/ECS))
+               (VP (VV 비난/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>싸잡아</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

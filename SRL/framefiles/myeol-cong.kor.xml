@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>멸종</lemma>
+    <comment>Frames file for '멸종' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>멸종.01</id>
+      <edef>exterminate</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="entity exterminated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>멸종되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 국내의 재래작물품종은 지난 85 년에 비해 불과 15 년 사이에 74 퍼센트 가량이 멸종된 것으로 파악됐다.</text>
+	  <parse>
+(S (ADCP 또/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 국내/NNC+의/PAN
+                              재래/NNC+작물/NNC+품종/NNC+은/PAU)
+                      (S (S (NP-SBJ *pro*)
+                            (VP (NP-COMP 지난/DAN
+                                         85/NNU
+                                         년/NNX+에/PAD)
+                                비하/VV+어/ECS))
+                         (ADVP (ADVP 불과/ADV)
+                               (NP-ADV 15/NNU
+                                       년/NNX
+                                       사이/NNC+에/PAD))
+                         (S (NP-SBJ 74/NNU
+                                    퍼센트/NNX
+                                    가량/NNC+이/PCA)
+                            (VP (VV 멸종/NNC+되/XSV+은/EAN)))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 파악/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>국내의 재래작물품종</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>지난 85 년에 비해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>불과 15 년 사이에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>74 퍼센트 가량</term>
+	    </Arg>
+	    <Rel>
+	      <term>멸종된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

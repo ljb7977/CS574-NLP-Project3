@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>점령</lemma>
+    <comment>Frames file for '점령' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>점령.01</id>
+      <edef>occupy</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity occupied"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>점령하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>공격 준비 사격 단계에선 호송포가 미리 정해진 사격 진지를 점령합니다.</text>
+	  <parse>
+(S (NP-ADV 공격/NNC
+           준비/NNC
+           사격/NNC
+           단계/NNC+에서/PAD+은/PAU)
+   (S (NP-SBJ 호송포/NNC+이/PCA)
+      (VP (NP-OBJ (S (WHNP-4 *op*)
+                     (S (NP-SBJ *T*-4)
+                        (VP (ADVP 미리/ADV)
+                            (VP (VV 정하/VV+어지/XSV+은/EAN)))))
+                  (NP 사격/NNC
+                      진지/NNC+을/PCA))
+          (VV 점령/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>공격 준비 사격 단계에선</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>호송포</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>미리 정해진 사격 진지</term>
+	    </Arg>
+	    <Rel>
+	      <term>점령합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

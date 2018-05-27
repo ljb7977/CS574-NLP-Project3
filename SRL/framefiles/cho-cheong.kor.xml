@@ -1,0 +1,111 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>초청</lemma>
+    <comment>Frames file for '초청' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>초청.01</id>
+      <edef>invite</edef>
+      <roleset>
+	<role argnum="0" argrole="thing inviting"/>
+	<role argnum="1" argrole="thing invited"/>
+	<role argnum="2" argrole="invite to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>초청하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국은 중국을 선진 8 개국(G8) 정상회담에 초청하자는 일본의 비공식 제의에 난색을 표했다고 일본 관리들이 1 일 전했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 미국/NPR+은/PAU)
+             (VP (NP-ADV (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ 중국/NPR+을/PCA)
+                                (NP-COMP 선진/NNC
+                                         8/NNU
+                                         개/NNX+국/NNX
+                                         (PRN -LRB-/SLQ
+                                              G8/NFW
+                                              -RRB-/SRQ)
+                                         정상/NNC+회담/NNC+에/PAD)
+                                (VV 초청/NNC+하/XSV+자는/EAN)))
+                         (NP (NP 일본/NPR+의/PAN)
+                             (NP 비공식/NNC
+                                 제의/NNC+에/PAD)))
+                 (VP (NP-OBJ 난색/NNC+을/PCA)
+                     표하/VV+었/EPF+다/EFN+고/PAD))
+   (S (NP-SBJ 일본/NPR
+              관리/NNC+들/XSF+이/PCA)
+      (VP (NP-ADV 1/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              전하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>선진 8 개국(G8) 정상회담</term>
+	    </Arg>
+	    <Rel>
+	      <term>초청하자는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>초청되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한국과 북한 두 나라 실무 대표가 함께 초청돼 관심을 모았지만 북한측은 참석하지 않은 것으로 알려졌다.</text>
+	  <parse>
+(S (S (S (NP-SBJ (NP (NP 한국/NPR+과/PCJ)
+		     (NP 북한/NPR))
+		 (NP 두/NNU
+		       나라/NNC
+		       실무/NNC
+		       대표/NNC+이/PCA))
+	 (VP (ADVP 함께/ADV)
+	     (VP (VV 초청/NNC+되/XSV+어/ECS))))
+      (S (NP-SBJ *pro*)
+	 (VP (NP-OBJ 관심/NNC+을/PCA)
+	     모으/VV+었/EPF+지만/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 북한/NPR+측/XSF+은/PAU)
+                      (VP (VP (NP-COMP *pro*)
+                              (VV 참석/NNC+하/XSV+지/ECS))
+                          않/VX+은/EAN))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>한국과 북한 두 나라 실무 대표</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>함께</term>
+	    </Arg>
+	    <Rel>
+	      <term>초청돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

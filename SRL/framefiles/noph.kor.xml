@@ -1,0 +1,233 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>높</lemma>
+    <comment>Frames file for '높' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>높.01</id>
+      <edef>high</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing being high"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>높다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한국에서는 여름철에 기온이 아주 높습니다.</text>
+	  <parse>
+(S (NP-ADV 한국/NPR+에서/PAD+은/PAU) 
+   (NP-ADV 여름철/NNC+에/PAD) 
+   (S (NP-SBJ 기온/NNC+이/PCA) 
+      (ADJP (ADVP 아주/ADV) 
+	    (ADJP 높/VJ+습니다/EFN))) 
+   ./SFN ) 
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>한국에서는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>여름철에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>기온</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>아주</term>
+	    </Arg>
+	    <Rel>
+	      <term>높습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>우리 장병들은 조국을 통일할 준비가 되어 있기 때문에 사기가 항상 높습니다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 우리/NPN
+                      장병/NNC+들/XSF+은/PAU)
+              (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ 조국/NNC+을/PCA)
+                                      (VV 통일/NNC+하/XSV+을/EAN)))
+                               (NP 준비/NNC+이/PCA))
+                      되/VV+어/ECS)
+                  있/VX+기/ENM))
+           (NP 때문/NNX+에/PAD))
+   (S (NP-SBJ 사기/NNC+이/PCA)
+      (ADJP (ADVP 항상/ADV)
+            (ADJP 높/VJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>우리 장병들은 조국을 통일할 준비가 되어 있기 때문에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>사기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>항상</term>
+	    </Arg>
+	    <Rel>
+	      <term>높습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>높이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>모건스탠리 증권 서울지점은 3 일 모건스탠리 딘위터 증권이 지난 2 일자 '아시아 태평양 투자 보고서'에서 삼성전자와 현대전자의 투자등급을 '실적호전(Outperform)'에서 '적극 매수(Strong buy)'로 높였다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 모건스탠리/NPR
+           증권/NNC
+           서울/NPR+지점/NNC+은/PAU)
+   (VP (NP-ADV 3/NNU
+               일/NNX)
+       (VP (S-COMP (NP-SBJ 모건스탠리/NPR
+                           딘위터/NPR
+                           증권/NNC+이/PCA)
+                   (VP (NP-ADV 지난/DAN
+                               2/NNU
+                               일자/NNC
+                               '/SLQ
+                               아시아/NPR
+                               태평양/NPR
+                               투자/NNC
+                               보고서/NNC
+                               '/SRQ
+                               에서/PAD)
+                       (VP (NP-OBJ (NP (NP 삼성/NPR+전자/NNC+과/PCJ)
+                                       (NP 현대/NPR+전자/NNC+의/PAN))
+                                   (NP 투자/NNC+등급/NNC+을/PCA))
+                           (NP-COMP '/SLQ
+				    실적/NNC+호전/NNC
+				    -LRB-/SLQ
+				    Outperform/NFW
+				    -RRB-/SRQ
+				    '/SRQ
+				    에서/PAD)
+			   (NP-COMP '/SLQ
+				    적극/NNC
+				    매수/NNC
+				    -LRB-/SLQ
+				    Strong/NFW
+				    buy/NFW
+				    -RRB-/SRQ
+				    '/SRQ
+				    으로/PAD)
+			   높이/VV+었/EPF+다/EFN+고/PAD)))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>모건스탠리 딘위터 증권</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>지난 2 일자 '아시아 태평양 투자 보고서'에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>삼성전자와 현대전자의 투자등급</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>'실적호전(Outperform)'</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>'적극 매수(Strong buy)'</term>
+	    </Arg>
+	    <Rel>
+	      <term>높였다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>높아지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>올들어 미국계 자금은 2 조 2 천 428 억원의 순매수를 기록해 이 기간 전체 외국인 순매수의 76.5 퍼센트를 차지했고 특히 2 월 이후로 보면 미국계 자금의 비중이 88.1 퍼센트로 높아졌다.</text>
+	  <parse>
+(S (S (ADVP 올들어/ADV)
+      (S (NP-SBJ 미국/NPR+계/XSF
+                 자금/NNC+은/PAU)
+         (VP (VP (NP-OBJ (NP 2/NNU
+                             조/NNU
+                             2/NNU
+                             천/NNU
+                             428/NNU
+                             억/NNU+원/NNX+의/PAN)
+                         (NP 순매수/NNC+을/PCA))
+                 (VV 기록/NNC+하/XSV+어/ECS))
+             (VP (NP-OBJ (NP 이/DAN
+                             기간/NNC)
+                         (NP 전체/NNC
+                             외국인/NNC
+                             순매수/NNC+의/PAN)
+                         (NP 76.5/NNU
+                             퍼센트/NNX+을/PCA))
+                 (VV 차지/NNC+하/XSV+었/EPF+고/ECS)))))
+   (S (S (ADVP 특히/ADV)
+         (S (NP-SBJ *pro*)
+            (VP (NP-ADV 2/NNU
+                        월/NNX
+                        이후/NNC+으로/PAD)
+                (VP (NP-OBJ *pro*)
+                    보/VV+으면/ECS))))
+      (S (NP-SBJ (NP 미국/NPR+계/XSF
+                     자금/NNC+의/PAN)
+                 (NP 비중/NNC+이/PCA))
+         (VP (NP-COMP 88.1/NNU
+                      퍼센트/NNX+으로/PAD)
+             (VV 높/VJ+어지/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>특히 2 월 이후로 보면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>미국계 자금의 비중</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>88.1 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>높아졌다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

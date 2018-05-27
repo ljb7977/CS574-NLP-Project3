@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>토론</lemma>
+    <comment>Frames file for '토론' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>토론.01</id>
+      <edef>discuss</edef>
+      <roleset>
+	<role argnum="0" argrole="discussant"/>
+	<role argnum="1" argrole="topic"/>
+	<role argnum="2" argrole="conversation partner"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>토론하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 평가위원들은 `국민의 정부' 2 년의 대북정책을 비롯해 베를린 선언 후속조치 등 향후 정책추진 방안을 집중 토론하고 국민적 합의에 의한 대북포용정책 추진이 바람직하다는 데 인식을 같이했다.</text>
+	  <parse>
+(S (ADCP 또/ADC)
+   (S (NP-SBJ 평가/NNC+위원/NNC+들/XSF+은/PAU)
+      (VP (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+			     (VP (NP-OBJ (NP `/SLQ
+					     (NP 국민/NNC+의/PAN)
+					     (NP 정부/NNC)
+					     '/SRQ
+					     2/NNU
+					     년/NNX+의/PAN)
+					 (NP 대/XPF+북/NPR+정책/NNC+을/PCA))
+				 비롯하/VV+어/ECS))
+			  (NP (NP 베를린/NPR
+					선언/NNC
+					후속/NNC+조치/NNC)
+			      (NP 등/NNX)))
+		      (NP 향후/NNC
+			      정책/NNC+추진/NNC
+			      방안/NNC+을/PCA))
+	      (VP (NP-ADV 집중/NNC)
+		  (VP (VV 토론/NNC+하/XSV+고/ECS))))
+	  (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+				     (S (NP-SBJ *T*-1)
+					(VP (NP-COMP 국민/NNC+적/XSF
+							 합의/NNC+에/PAD)
+					    의하/VV+은/EAN)))
+				  (NP 대/XPF+북/NPR+포용/NNC+정책/NNC
+					추진/NNC+이/PCA))
+			  (ADJP 바람직하/VJ+다는/EAN))
+		       (NP 데/NNX))
+	      (NP-OBJ 인식/NNC+을/PCA)
+	      (VV 같이/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>평가위원들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>`국민의 정부' 2 년의 대북정책을 비롯해 베를린 선언 후속조치 등 향후 정책추진 방안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>집중</term>
+	    </Arg>
+	    <Rel>
+	      <term>토론하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

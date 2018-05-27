@@ -1,0 +1,130 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>숨</lemma>
+    <comment>Frames file for '숨' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>숨.01</id>
+      <edef>hide</edef>
+      <roleset>
+	<role argnum="0" argrole="hider"/>
+	<role argnum="1" argrole="thing hidden"/>
+	<role argnum="2" argrole="where hide"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>숨다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>낮에는 정규 수색 구분대가 적의 이동을 용이하게 관측할 수 있는 위치에 숨어 있을 겁니다.</text>
+	  <parse>
+(S (NP-ADV 낮/NNC+에/PAD+은/PAU)
+   (S (NP-SBJ 정규/NNC
+              수색/NNC
+              구분대/NNC+이/PCA)
+      (VP (VP (VP (NP-COMP (S (WHNP *op*)
+                              (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-OBJ (NP 적/NNC+의/PAN)
+                                                 (NP 이동/NNC+을/PCA))
+                                         (VP (ADVP (ADV 용이하/VJ+게/ECS))
+                                             (VP (VV 관측/NNC+하/XSV+을/EAN))))
+                                     (VX 수/NNX
+                                         있/VJ+는/EAN))))
+                           (NP 위치/NNC+에/PAD))
+                  숨/VV+어/ECS)
+              있/VX+을/EAN)
+          (VX 것/NNX+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>낮에는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>정규 수색 구분대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>적의 이동을 용이하게 관측할 수 있는 위치</term>
+	    </Arg>
+	    <Rel>
+	      <term>숨어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>겁니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>숨기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>우방인 미국과 일본에서 불법 체류자라는 신분을 숨기고 살고 있는 이들 대부분은 대체로 새로운 일자리를 찾기 위한 사람들로 특히 일본의 경우 대부분 막노동이나 유흥업소에서 일하는 것으로 알려졌다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP 우방/NNC+이/CO+은/EAN))))
+                                     (NP (NP 미국/NPR+과/PCJ)
+                                         (NP 일본/NPR+에서/PAD)))
+                            (S (NP-SBJ *pro*)
+                               (VP (NP-OBJ (NP 불법/NNC
+                                               체류/NNC+자/XSF+이라는/PAN)
+                                           (NP 신분/NNC+을/PCA))
+                                   숨기/VV+고/ECS))
+                            (VP 살/VV+고/ECS))
+                        있/VX+는/EAN)))
+              (NP 이/NPN+들/XSF
+                  대부분/NNC+은/PAU))
+      (VP (ADVP 대체로/ADV)
+          (VP (NP (S (WHNP-4 *op*)
+                     (S (NP-SBJ *T*-4)
+                        (VP (S-OBJ (NP-SBJ *pro*)
+                                   (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                  (S (NP-SBJ *T*-3)
+                                                     (ADJP 새롭/VJ+은/EAN)))
+                                               (NP 일자리/NNC+을/PCA))
+                                       찾/VV+기/ENM))
+                            위하/VV+은/EAN)))
+                  (NP 사람/NNC+들/XSF+으로/PAD)))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-ADV (ADVP 특히/ADV)
+                              (NP (NP 일본/NPR+의/PAN)
+                                  (NP 경우/NNC)))
+                      (S (NP-SBJ 대부분/NNC)
+                         (VP (NP-ADV (NP 막노동/NNC+이나/PCJ)
+                                     (NP 유흥/NNC+업소/NNC+에서/PAD))
+                             (VP 일하/VV+는/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>불법 체류자라는 신분</term>
+	    </Arg>
+	    <Rel>
+	      <term>숨기고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

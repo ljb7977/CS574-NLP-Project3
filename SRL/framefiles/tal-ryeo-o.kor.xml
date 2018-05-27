@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>달려오</lemma>
+    <comment>Frames file for '달려오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>달려오.01</id>
+      <edef>come running</edef>
+      <roleset>
+	<role argnum="0" argrole="entity in motion"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>달려오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>경찰은 결혼하객 45 명을 태운 버스 운전수가 달려오던 열차를 미처 보지 못해 이같은 사고가 난 것으로 보고 있다.</text>
+	  <parse>
+(S (NP-SBJ 경찰/NNC+은/PAU)
+   (VP (VP (NP-COMP (S (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (NP-OBJ (NP 결혼/NNC+하객/NNC)
+                                                        (NP 45/NNU
+                                                            명/NNX+을/PCA))
+                                                태우/VV+은/EAN)))
+                                      (NP 버스/NNC))
+                                  (NP 운전수/NNC+이/PCA))
+                          (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP 달려오/VV+던/EAN)))
+                                          (NP 열차/NNC+을/PCA))
+                                  (VP (ADVP 미처/ADV)
+                                      (VP 보/VV+지/ECS)))
+                              못하/VX+어/ECS))
+                       (S (NP-SBJ 이같은/DAN
+                                  사고/NNC+이/PCA)
+                          (VP 나/VV+은/EAN)))
+                    (NP 것/NNX+으로/PAD))
+           보/VV+고/ECS)
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=열차</term>
+	    </Arg>
+	    <Rel>
+	      <term>달려오던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

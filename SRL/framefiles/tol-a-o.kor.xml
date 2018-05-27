@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌아오</lemma>
+    <comment>Frames file for '돌아오' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>돌아오.01</id>
+      <edef>come back</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="source"/>
+	<role argnum="3" argrole="goal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌아오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>지난주에 제가 연대 지휘부에서 돌아올 때였지요.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (WHNP *op*)
+              (S (NP-ADV 지난주/NNC+에/PAD)
+                 (S (NP-SBJ 제/NPN+이/PCA)
+                    (VP (NP-COMP 연대/NNC
+                                 지휘부/NNC+에서/PAD)
+                        돌아오/VV+을/EAN))))
+           (NP 때/NNC+이/CO+었/EPF+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 주에</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>연대 지휘부</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌아올</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>같은 길을 돌아오다가 저는 고사 기관총 좌지를 봤습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 같은/DAN
+                  길/NNC+을/PCA)
+          돌아오/VV+다가/ECS))
+   (S (NP-SBJ 저/NPN+은/PAU)
+      (VP (NP-OBJ 고사/NNC
+                  기관총/NNC
+                  좌지/NNC+을/PCA)
+          보/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>같은 길</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌아오다가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

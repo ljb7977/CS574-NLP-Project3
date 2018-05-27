@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수여</lemma>
+    <comment>Frames file for '수여' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수여.01</id>
+      <edef>award</edef>
+      <roleset>
+	<role argnum="0" argrole="giver"/>
+	<role argnum="1" argrole="award"/>
+	<role argnum="2" argrole="receiver"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수여하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>92 년 한국과 수교를 한 사회주의공화국 베트남은 9 일 천득렁 대통령 명의의 베트남 우의훈장을 조원일 한국대사에게 수여하겠다고 공식 통보했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 92/NNU
+                             년/NNX)
+                     (VP (NP-COMP 한국/NPR+과/PAD)
+                         (NP-OBJ 수교/NNC+을/PCA)
+                         하/VV+은/EAN))))
+           (NP 사회주의/NNC+공화국/NNC
+               베트남/NPR+은/PAU))
+   (VP (NP-ADV 9/NNU
+               일/NNX)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-OBJ (NP 천득렁/NPR
+                                   대통령/NNC
+                                   명의/NNC+의/PAN)
+                               (NP 베트남/NPR
+                                   우의/NNC+훈장/NNC+을/PCA))
+                       (NP-COMP 조원일/NPR
+                                한국/NPR+대사/NNC+에게/PAD)
+                       (VV 수여/NNC+하/XSV+겠/EPF+다/EFN+고/PAD)))
+           (VP (NP-ADV 공식/NNC)
+               (VP (VV 통보/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>천득렁 대통령 명의의 베트남 우의훈장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>조원일 한국대사</term>
+	    </Arg>
+	    <Rel>
+	      <term>수여하겠다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>엷</lemma>
+    <comment>Frames file for '엷' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>엷.01</id>
+      <edef>light</edef>
+      <roleset>
+	<role argnum="1" argrole="thing light"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>엷다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 보호장치는 엷은 유리이며 유리 표면은 인듐 산화물과 주석으로 만드는 투명 전극으로 덮여 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 이/DAN
+              보호/NNC+장치/NNC+은/PAU)
+      (VP (NP (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (ADJP 엷/VJ+은/EAN)))
+              (NP 유리/NNC+이/CO+으며/ECS))))
+   (S (NP-SBJ 유리/NNC
+              표면/NNC+은/PAU)
+      (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-ADV (NP 인듐/NNC
+                                             산화물/NNC+과/PCJ)
+                                         (NP 주석/NNC+으로/PAD))
+                                 (VP (NP-OBJ *T*-2)
+                                     만들/VV+는/EAN))))
+                       (NP 투명/NNC
+                           전극/NNC+으로/PAD))
+              덮이/VV+어/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=유리</term>
+	    </Arg>
+	    <Rel>
+	      <term>엷은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

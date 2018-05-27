@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>켜</lemma>
+    <comment>Frames file for '켜' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>켜.01</id>
+      <edef>turn on</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="lamp etc."/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>켜다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 이번 화재는 학생들이 켜 놓은 촛불이 낡은 목재건물 기숙사에 옮겨 붙으면서 발생한 것으로 추정되며 기숙사 출입문이 야간에 모두 잠겨진 바람에 학생들이 밖으로 빠져나오지 못해 희생자 규모가 컸다고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-SBJ 이번/NNC
+                          화재/NNC+은/PAU)
+                  (VP (NP-COMP (S (NP-SBJ *pro*)
+                                  (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                                                    (S (NP-SBJ 학생/NNC+들/XSF+이/PCA)
+                                                       (VP (VP (NP-OBJ *T*-1)
+                                                               켜/VV+어/ECS)
+                                                           놓/VX+은/EAN)))
+                                                 (NP 촛불/NNC+이/PCA))
+                                         (VP (NP-COMP (S (WHNP-2 *op*)
+                                                         (S (NP-SBJ *T*-2)
+                                                            (ADJP 낡/VJ+은/EAN)))
+                                                      (NP 목재/NNC+건물/NNC
+                                                          기숙사/NNC+에/PAD))
+                                             (CV 옮기/VV+어/ECS
+                                                 붙/VV+으면서/ECS)))
+                                      (VP (VV 발생/NNC+하/XSV+은/EAN))))
+                               (NP 것/NNX+으로/PAD))
+                      (VV 추정/NNC+되/XSV+으며/ECS)))
+               (S (NP-ADV (S (NP-SBJ 기숙사/NNC
+                                     출입문/NNC+이/PCA)
+                             (VP (NP-ADV 야간/NNC+에/PAD)
+                                 (ADVP 모두/ADV)
+                                 (VP 잠기/VV+어지/XSV+은/EAN)))
+                          (NP 바람/NNX+에/PAD))
+                  (S (NP-SBJ 학생/NNC+들/XSF+이/PCA)
+                     (VP (VP (NP-COMP 밖/NNC+으로/PAD)
+                             빠져나오/VV+지/ECS)
+                         못하/VX+어/ECS)))
+               (S (NP-SBJ 희생자/NNC
+                          규모/NNC+이/PCA)
+                  (ADJP 크/VJ+었/EPF+다/EFN+고/PAD)))
+       (VV 설명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>학생들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=촛불</term>
+	    </Arg>
+	    <Rel>
+	      <term>켜</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>놓은</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

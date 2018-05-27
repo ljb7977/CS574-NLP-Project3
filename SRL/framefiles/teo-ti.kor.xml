@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>더디</lemma>
+    <comment>Frames file for '더디' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>더디.01</id>
+      <edef>slow</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being slow"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>더디다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 "진정으로 의미있는 개혁은 금융서비스 등 극히 일부 분야에 국한돼있는 반면 통신장비, 건축, 해운, 제지와 농산물 분야는 진전 속도가 매우 더디다"고 평가했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP "/SLQ
+               (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                                     (S (NP-ADV 진정/NNC+으로/PAD)
+                                        (S (NP-SBJ 의미/NNC)
+                                           (ADJP (NP-COMP *T*-1)
+                                                 있/VJ+는/EAN))))
+                                  (NP 개혁/NNC+은/PAU))
+                          (VP (VP (NP-COMP (NP (NP 금융/NNC+서비스/NNC)
+                                               (NP 등/NNX))
+                                           (NP (NP 극히/ADV
+                                               일부/NNC)
+                                               (NP 분야/NNC+에/PAD)))
+                                  (VV 국한/NNC+되/XSV+어/ECS))
+                              있/VX+는/EAN))
+                       (NP 반면/NNC))
+               (S (NP-SBJ (NP (NP 통신/NNC+장비/NNC)
+                              ,/SCM
+                              (NP 건축/NNC)
+                              ,/SCM
+                              (NP 해운/NNC)
+                              ,/SCM
+                              (NP 제지/NNC+과/PCJ)
+                              (NP 농산물/NNC))
+                          (NP 분야/NNC+은/PAU))
+                  (S (NP-SBJ 진전/NNC
+                             속도/NNC+이/PCA)
+                     (ADJP (ADVP 매우/ADV)
+                           (ADJP 더디/VJ+다/EFN))))
+               "/SRQ
+               고/PAD)
+       (VV 평가/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>진정으로 의미있는 개혁은 금융서비스 등 극히 일부 분야에 국한돼있는 반면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>통신장비, 건축, 해운, 제지와 농산물 분야</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>진전 속도</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>매우</term>
+	    </Arg>
+	    <Rel>
+	      <term>더디다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

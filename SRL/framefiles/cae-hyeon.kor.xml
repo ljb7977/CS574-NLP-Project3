@@ -1,0 +1,151 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재현</lemma>
+    <comment>Frames file for '재현' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재현.01</id>
+      <edef>represent</edef>
+      <roleset>
+	<role argnum="1" argrole="thing representing"/>
+	<role argnum="2" argrole="thing represented"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재현하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>`서울공원'은 파리시에서 부지를 제공하고 서울시에서 공원을 조성하게 되는데 공원 조성규모는 약 600 평으로, 정자, 연못, 꽃담장 등 한국 전통공원의 미를 그대로 재현하게 되며 내년도 완공을 목표로 하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (PRN `/SLQ
+                   서울/NPR+공원/NNC
+                   '/SRQ)
+              은/PAU)
+      (VP (S (S (NP-SBJ 파리시/NPR+에서/PCA)
+                (VP (NP-OBJ 부지/NNC+을/PCA)
+                    (VV 제공/NNC+하/XSV+고/ECS)))
+             (S (NP-SBJ 서울시/NPR+에서/PCA)
+                (VP (VP (NP-OBJ 공원/NNC+을/PCA)
+                        (VV 조성/NNC+하/XSV+게/ECS))
+                     되/VX+는데/ECS)))
+          (S (NP-SBJ 공원/NNC
+                     조성/NNC+규모/NNC+은/PAU)
+             (VP (NP 약/DAN
+                     600/NNU
+                     평/NNX+으로/PAD))
+             ,/SCM)
+          (VP (VP (NP-OBJ (NP (NP (NP 정자/NNC)
+                                  ,/SCM
+                                  (NP 연못/NNC)
+                                  ,/SCM
+                                  (NP 꽃/NNC+담장/NNC))
+                              (NP 등/NNX))
+                          (NP (NP 한국/NPR
+                                  전통/NNC+공원/NNC+의/PAN)
+                              (NP 미/NNC+을/PCA)))
+                  (VP (ADVP 그대로/ADV)
+                      (VP (VV 재현/NNC+하/XSV+게/ECS))))
+              되/VX+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 내년도/NNC
+                      완공/NNC+을/PCA)
+              (NP-COMP 목표/NNC+으로/PAD)
+              하/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>서울공원</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>파리시에서 부지를 제공하고 서울시에서 공원을 조성하게 되는데</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>공원 조성규모는 약 600 평으로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>정자, 연못, 꽃담장 등 한국 전통공원의 미</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>그대로</term>
+	    </Arg>
+	    <Rel>
+	      <term>재현하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>되며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>재현되다</rel>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>특히 장 후반에는 주말 악재에 대한 불안심리로 일단 주식을 팔고 휴일을 보내자는 '주말효과'가 재현되면서 투매물량까지 대거 쏟아져 나왔다.</text>
+	  <parse>
+(S (ADVP 특히/ADV)
+   (NP-ADV 장/NNC
+           후반/NNC+에/PAD+은/PAU)
+   (NP-ADV (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP 주말/NNC
+                              악재/NNC+에/PAD)
+                     대하/VV+은/EAN)))
+           (NP 불안/NNC+심리/NNC+으로/PAD))
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (VP (ADVP 일단/ADV)
+                         (VP (NP-OBJ 주식/NNC+을/PCA)
+                             팔/VV+고/ECS))
+                     (VP (NP-OBJ 휴일/NNC+을/PCA)
+                         보내/VV+자는/EAN)))
+              (NP '/SLQ
+                  주말/NNC+효과/NNC
+                  '/SRQ
+                  이/PCA))
+      (VP (VV 재현/NNC+되/XSV+으면서/ECS)))
+   (S (NP-SBJ 투매/NNC+물량/NNC+까지/PAU)
+      (VP (ADVP 대거/ADV)
+          (VP (CV 쏟아지/VV+어/ECS
+                  나오/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>장 후반에는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>주말 악재에 대한 불안심리로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>이</f>
+	      <term>일단 주식을 팔고 휴일을 보내자는 '주말효과'</term>
+	    </Arg>
+	    <Rel>
+	      <term>재현되면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

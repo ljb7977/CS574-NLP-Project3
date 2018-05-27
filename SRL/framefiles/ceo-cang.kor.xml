@@ -1,0 +1,185 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>저장</lemma>
+    <comment>Frames file for '저장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>저장.01</id>
+      <edef>store</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing stored"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>저장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인민군 포병 부대에서는 어떤 포탄도 대대 공급반에 저장하지 않았습니다.</text>
+	  <parse>
+(S (NP-SBJ 인민군/NNC 
+	   포병/NNC 
+	   부대/NNC+에서/PCA+는/PAU)
+   (VP (VP (NP-OBJ 어떤/DAN 
+		   포탄/NNC+도/PAU) 
+	   (NP-COMP 대대/NNC 
+		       공급반/NNC+에/PAD) 
+	   (VV 저장/NNC+하/XSV+지/EAU))
+       않/VX+았/EPF+습니다/EFN) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>인민군 포병 부대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>어떤 포탄</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>대대 공급반</term>
+	    </Arg>
+	    <Rel>
+	      <term>저장하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>저장되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>1개 단위대의 기본 휴대량은 탄약 저장 시설에 저장된 탄약은 물론 포와 함께 있는 탄약도 포함된다.</text>
+	  <parse>
+(S (NP-COMP-1 (NP 1/NNU
+                  개/NNX
+                  단위대/NNC+의/PAN)
+              (NP 기본/NNC
+                  휴대량/NNC+은/PAU))
+   (S (ADVP (NP-COMP (S (WHNP-9 *op*)
+                        (S (NP-SBJ *T*-9)
+                           (VP (NP-COMP 탄약/NNC
+                                        저장/NNC
+                                        시설/NNC+에/PAD)
+                               (VV 저장/NNC+되/XSV+은/EAN))))
+                     (NP 탄약/NNC+은/PAU))
+            물론/ADV)
+      (S (NP-SBJ (S (WHNP-8 *op*)
+                    (S (NP-SBJ *T*-8)
+                       (ADJP (ADVP (NP-COMP 포/NNC+과/PAD)
+                                   함께/ADV)
+                             (ADJP 있/VJ+는/EAN))))
+                 (NP 탄약/NNC+도/PAU))
+         (VP (NP-COMP *T*-1)
+             (VV 포함/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=탄약</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>탄약 저장 시설</term>
+	    </Arg>
+	    <Rel>
+	      <term>저장된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>저장시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>동유럽 출신의 해커가 미국의 한 인터넷 전자상거래 웹사이트에 침투, 무려 48 만 5 천장의 신용카드 정보를 빼낸 뒤 이를 미 정부기관의 한 웹사이트에 몰래 저장시켜 놓았다고 미 MSNBC 방송이 최근 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP 동유럽/NPR
+                         출신/NNC+의/PAN)
+                     (NP 해커/NNC+이/PCA))
+             (VP (VP (NP-ADV (S (S (NP-SBJ *pro*)
+                                   (VP (NP-COMP (NP 미국/NPR+의/PAN)
+                                                (NP 한/NNU
+                                                    인터넷/NNC
+                                                    전자/NNC+상거래/NNC
+                                                    웹사이트/NNC+에/PAD))
+                                       (VV 침투/NNC)))
+                                ,/SCM
+                                (S (NP-SBJ *pro*)
+                                   (VP (ADVP 무려/ADV)
+                                       (VP (NP-OBJ (NP 48/NNU
+                                                       만/NNU
+                                                       5/NNU
+                                                       천/NNU+장/NNX+의/PAN)
+                                                   (NP 신용/NNC+카드/NNC
+                                                       정보/NNC+을/PCA))
+                                           빼내/VV+은/EAN))))
+                             (NP 뒤/NNC))
+                     (VP (NP-OBJ 이/NPN+을/PCA)
+                         (NP-COMP (NP 미/NPR
+                                      정부/NNC+기관/NNC+의/PAN)
+                                  (NP 한/NNU
+                                      웹사이트/NNC+에/PAD))
+                         (VP (ADVP 몰래/ADV)
+                             (VP (VV 저장/NNC+시키/XSV+어/ECS)))))
+                 놓/VX+었/EPF+다/EFN+고/PAD))
+   (S (NP-SBJ 미/NPR
+              MSNBC/NFW
+              방송/NNC+이/PCA)
+      (VP (NP-ADV 최근/NNC)
+          (VP (S-COMP *T*-1)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>동유럽 출신의 해커</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>미국의 한 인터넷 전자상거래 웹사이트에 침투, 무려 48 만 5 천장의 신용카드 정보를 빼낸 뒤</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>미 정부기관의 한 웹사이트</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>몰래</term>
+	    </Arg>
+	    <Rel>
+	      <term>저장시켜</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>놓았다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

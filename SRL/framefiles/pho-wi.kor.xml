@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>포위</lemma>
+    <comment>Frames file for '포위' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>포위.01</id>
+      <edef>surround</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing surrounded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>포위하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>교전 중에 적이 너의 부대를 포위하려고 들면 어떤 조치를 취하는가?</text>
+	  <parse>
+(S (S (NP-ADV 교전/NNC
+              중/NNX+에/PAD)
+      (S (NP-SBJ 적/NNC+이/PCA)
+         (VP (VP (NP-OBJ (NP 너/NPN+의/PAN)
+                         (NP 부대/NNC+을/PCA))
+                 (VV 포위/NNC+하/XSV+으려고/ECS))
+             들/VX+으면/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 어떤/DAN
+                  조치/NNC+을/PCA)
+          취하/VV+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>교전 중에</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>적</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>너의 부대</term>
+	    </Arg>
+	    <Rel>
+	      <term>포위하려고</term>
+	    </Rel>
+	    <Aux>
+	      <f>려고</f>
+	      <term>들면</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

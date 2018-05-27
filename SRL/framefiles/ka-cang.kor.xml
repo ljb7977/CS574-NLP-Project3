@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가장</lemma>
+    <comment>Frames file for '가장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가장.01</id>
+      <edef>disguise</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing disguised"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가장하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>주 대변인은 그러나 이는 교황청과 대만의 단교, 종교문제를 가장한 교황청의 내정간섭 중지가 전제돼야 한다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 주/NPR
+           대변인/NNC+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S-COMP (NP-ADV 이/NPN+은/PAU)
+                   (S (NP-SBJ (NP (NP (NP 교황청/NNC+과/PCJ)
+                                      (NP 대만/NPR+의/PAN))
+                                  (NP 단교/NNC))
+                              ,/SCM
+                              (NP (NP (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (NP-OBJ 종교/NNC+문제/NNC+을/PCA)
+                                                (VV 가장/NNC+하/XSV+은/EAN))))
+                                      (NP (NP 교황청/NNC+의/PAN)
+                                          (NP 내정/NNC+간섭/NNC)))
+                                  (NP 중지/NNC+이/PCA)))
+                      (VP (VP (VV 전제/NNC+되/XSV+어야/ECS))
+                          하/VX+는다/EFN+고/PAD)))
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=교황청의 내정간섭</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>종교문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>가장한</term>
+	    </Rel>
+	  </relation>
+	  <comment>'종교문제로 가장한'이 올바른 표현이 아닐까?</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

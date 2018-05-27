@@ -1,0 +1,161 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>목격</lemma>
+    <comment>Frames file for '목격' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>목격.01</id>
+      <edef>witness</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing witnessed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>목격하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>클린턴 대통령은 셀마 도착 전 기금모금 행사에서 "남부 출신인 내가 젊은 시절 목격했던 민권운동의 중심지인 셀마를 미국 대통령으로서 방문할 수 있다는 것이 일생의 중요한 경험일 것"이라면서 "우리 모두가 35 년전 목숨을 걸고 자신들의 주장을 외쳤던 그들을 기억하기를 바란다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 클린턴/NPR
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV 셀마/NPR
+               도착/NNC
+               전/NNC)
+       (NP-ADV 기금/NNC+모금/NNC
+               행사/NNC+에서/PAD)
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (NP 남부/NNC
+                                                       출신/NNC+이/CO+은/EAN))))
+                                         (NP 나/NPN+이/PCA))
+                                 (VP (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                    (S (NP-SBJ *T*-3)
+                                                       (VP (NP (NP (S (WHNP-2 *op*)
+                                                                      (S (NP-SBJ *pro*)
+                                                                         (VP (NP-ADV (S (WHNP *op*)
+                                                                                        (S (NP-SBJ *pro*)
+                                                                                           (ADJP 젊/VJ+은/EAN)))
+                                                                                     (NP 시절/NNC))
+                                                                             (VP (NP-OBJ *T*-2)
+                                                                                 (VV 목격/NNC+하/XSV+었/EPF+던/EAN)))))
+                                                                   (NP 민권/NNC+운동/NNC+의/PAN))
+                                                               (NP 중심지/NNC+이/CO+은/EAN)))))
+                                                 (NP 셀마/NPR+을/PCA))
+                                         (VP (NP-ADV 미국/NPR
+                                                     대통령/NNC+으로서/PAD)
+                                             (VP (VV 방문/NNC+하/XSV+을/EAN))))
+                                     (VX 수/NNX
+                                         있/VJ+다는/EAN)))
+                              (NP 것/NNX+이/PCA))
+                      (VP (VP (NP (NP 일생/NNC+의/PAN)
+                                  (NP (S (WHNP-4 *op*)
+                                         (S (NP-SBJ *T*-4)
+                                            (ADJP (VJ 중요/NNC+하/XSJ+은/EAN))))
+                                      (NP 경험/NNC+이/CO+을/EAN))))
+                          (VX 것/NNX))
+                      "/SRQ
+                      이/CO+라면서/ECS)
+                   (S "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (S-OBJ (NP-SBJ 우리/NPN
+                                         모두/NNC+이/PCA)
+                                 (VP (NP-OBJ (S (WHNP-5 *op*)
+                                                (S (NP-SBJ *T*-5)
+                                                   (VP (NP-ADV 35/NNU
+                                                               년/NNX+전/NNC)
+                                                       (VP (VP (NP-OBJ 목숨/NNC+을/PCA)
+                                                               걸/VV+고/ECS)
+                                                           (VP (NP-OBJ (NP 자신/NNC+들/XSF+의/PAN)
+                                                                       (NP 주장/NNC+을/PCA))
+                                                               외치/VV+었/EPF+던/EAN)))))
+                                             (NP 그/NPN+들/XSF+을/PCA))
+                                     (VV 기억/NNC+하/XSV+기/ENM+을/PCA)))
+                          바라/VV+는다/EFN)
+                      "/SRQ
+                      고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>젊은 시절</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=민권운동</term>
+	    </Arg>
+	    <Rel>
+	      <term>목격했던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>목격되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>천수이볜 (진수편) 민진당 후보가 대만 총통에 당선된 뒤 중국 전투기 1 백여대가 19 일 대만쪽을 향해 비행한 것이 목격됐다고 홍콩의 사우스차이나 모닝 포스트가 현지 주민들의 말을 인용, 20 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-ADV (S (NP-SBJ (NP 천수이볜/NPR
+                                    (PRN -LRB-/SLQ
+                                         (NP 진수편/NPR)
+                                         -RRB-/SRQ))
+                                (NP 민진당/NPR
+                                    후보/NNC+이/PCA))
+                        (VP (NP-COMP 대만/NPR
+                                     총통/NNC+에/PAD)
+                            (VV 당선/NNC+되/XSV+은/EAN)))
+                     (NP 뒤/NNC))
+             (S (NP-SBJ (S (NP-SBJ 중국/NPR
+                                   전투기/NNC
+                                   1/NNU
+                                   백/NNU+여/XSF+대/NNX+이/PCA)
+                           (VP (NP-ADV 19/NNU
+                                       일/NNX)
+                               (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ 대만/NPR+쪽/NNX+을/PCA)
+                                      향하/VV+어/ECS))
+                               (VP (VV 비행/NNC+하/XSV+은/EAN))))
+                        (NP 것/NNX+이/PCA))
+                (VP (VV 목격/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ (NP 홍콩/NPR+의/PAN)
+              (NP 사우스차이나/NPR
+                  모닝/NPR
+                  포스트/NPR+이/PCA))
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (NP 현지/NNC
+                             주민/NNC+들/XSF+의/PAN)
+                         (NP 말/NNC+을/PCA))
+                 (VV 인용/NNC)))
+          ,/SCM
+          (NP-ADV 20/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>천수이볜 (진수편) 민진당 후보가 대만 총통에 당선된 뒤</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>중국 전투기 1 백여대가 19 일 대만쪽을 향해 비행한 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>목격됐다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

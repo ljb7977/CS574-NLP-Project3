@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>매입</lemma>
+    <comment>Frames file for '매입' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>매입.01</id>
+      <edef>buy</edef>
+      <roleset>
+	<role argnum="0" argrole="buyer"/>
+	<role argnum="1" argrole="thing bought"/>
+	<role argnum="2" argrole="seller"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>매입하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>르노는 삼성자동차와 르노가 각각 30 퍼센트와 70 퍼센트의 지분을 갖는 공동회사를 설립, 삼성차 운영자산을 매입하는 방식으로 인수가 이뤄지며 인수가 성사될 경우 수년내 부산공장에서 삼성 상표로 연간 20 만대의 자동차를 생산하겠다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 르노/NPR+은/PAU)
+   (VP (S-COMP (S (NP-ADV (S (NP-SBJ (NP 삼성/NPR+자동차/NNC+과/PCJ)
+				     (NP 르노/NPR+이/PCA))
+			     (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+						(VP (ADVP 각각/ADV)
+						    (VP (NP-OBJ (NP (NP 30/NNU
+									퍼센트/NNX+과/PCJ)
+								    (NP 70/NNU
+									퍼센트/NNX+의/PAN))
+								(NP 지분/NNC+을/PCA))
+							갖/VV+는/EAN)))
+					     (NP 공동/NNC+회사/NNC+을/PCA))
+				     (VV 설립/NNC))
+                                 ,/SCM
+                                 (VP (NP-OBJ 삼성/NPR+차/NNC
+						   운영/NNC+자산/NNC+을/PCA)
+                                     (VV 매입/NNC+하/XSV+는/EAN))))
+                          (NP 방식/NNC+으로/PAD))
+                  (S (NP-SBJ 인수/NNC+이/PCA)
+                     (VP (VV 이루/VV+어지/XSV+으며/ECS))))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-ADV (S (NP-SBJ 인수/NNC+이/PCA)
+                                 (VP (VV 성사/NNC+되/XSV+을/EAN)))
+                              (NP 경우/NNC))
+                      (NP-ADV 수년/NNC+내/NNX)
+                      (NP-ADV 부산/NPR+공장/NNC+에서/PAD)
+                      (NP-ADV 삼성/NPR
+                              상표/NNC+으로/PAD)
+                      (VP (NP-OBJ (NP 연간/NNC
+                                      20/NNU
+                                      만/NNU+대/NNX+의/PAN)
+                                  (NP 자동차/NNC+을/PCA))
+                          (VV 생산/NNC+하/XSV+겠/EPF+다/EFN+고/PAD)))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>삼성자동차와 르노</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>삼성차 운영자산</term>
+	    </Arg>
+	    <Rel>
+	      <term>매입하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

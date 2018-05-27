@@ -1,0 +1,107 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>급상승</lemma>
+    <comment>Frames file for '급상승' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>급상승.01</id>
+      <edef>rise suddenly</edef>
+      <roleset>
+	<role argnum="1" argrole="thing rising"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>급상승하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>행정원 경제건설위원회의 장빙쿤(강병곤) 주임은 이에 따라 롄 후보가 당선되면 9,400 포인트를 오르내리는 자취앤(가권) 지수가 1 만 5 천포인트로 60 퍼센트 포인트 급상승하는 반면 민진당의 천수이볜(진수편) 후보나 무소속의 쑹추위(송초유) 후보가 당선되면 증시 상황이 크게 악화될 것이라고 내다보면서 롄 후보 지지를 호소했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 행정원/NNC
+               경제/NNC+건설/NNC+위원회/NNC+의/PAN)
+           (NP 장빙쿤/NPR
+               (PRN -LRB-/SLQ
+                    (NP 강병곤/NPR)
+                    -RRB-/SRQ)
+               주임/NNC+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP 이/NPN+에/PAD)
+              따르/VV+어/ECS))
+       (S (NP-SBJ *pro*)
+          (VP (S-COMP (NP-ADV (S (S (NP-SBJ 롄/NPR
+                                            후보/NNC+이/PCA)
+                                    (VP (VV 당선/NNC+되/XSV+으면/ECS)))
+                                 (S (NP-SBJ (S (WHNP-1 *op*)
+                                               (S (NP-SBJ *T*-1)
+                                                  (VP (NP-OBJ 9,400/NNU
+                                                              포인트/NNX+을/PCA)
+                                                      오르내리/VV+는/EAN)))
+                                            (NP 자취앤/NPR
+                                                (PRN -LRB-/SLQ
+                                                     (NP 가권/NPR)
+                                                     -RRB-/SRQ)
+                                                지수/NNC+이/PCA))
+                                    (VP (NP-COMP 1/NNU
+                                                 만/NNU
+                                                 5/NNU
+                                                 천/NNU+포인트/NNX+으로/PAD)
+                                        (VP (NP-ADV 60/NNU
+                                                    퍼센트/NNX
+                                                    포인트/NNX)
+                                            (VP (VV 급상승/NNC+하/XSV+는/EAN))))))
+                              (NP 반면/NNC))
+                      (S (S (NP-SBJ (NP (NP 민진당/NPR+의/PAN)
+                                        (NP 천수이볜/NPR
+                                            (PRN -LRB-/SLQ
+                                                 (NP 진수편/NPR)
+                                                 -RRB-/SRQ)
+                                            후보/NNC+이나/PCJ))
+                                    (NP (NP 무소속/NNC+의/PAN)
+                                        (NP 쑹추위/NPR
+                                            (PRN -LRB-/SLQ
+                                                 (NP 송초유/NPR)
+                                                 -RRB-/SRQ)
+                                            후보/NNC+이/PCA)))
+                            (VP (VV 당선/NNC+되/XSV+으면/ECS)))
+                         (S (NP-SBJ 증시/NNC
+                                    상황/NNC+이/PCA)
+                            (VP (VP (ADVP (ADV 크/VJ+게/ECS))
+                                    (VP (VV 악화/NNC+되/XSV+을/EAN)))
+                                (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+              내다보/VV+으면서/ECS))
+       (VP (NP-OBJ 롄/NPR
+                   후보/NNC
+                   지지/NNC+을/PCA)
+           (VV 호소/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>롄 후보가 당선되면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>9,400 포인트를 오르내리는 자취앤(가권) 지수</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>1 만 5 천포인트</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>60 퍼센트 포인트</term>
+	    </Arg>
+	    <Rel>
+	      <term>급상승하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

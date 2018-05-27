@@ -1,0 +1,134 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>있</lemma>
+    <comment>Frames file for '있' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>있.01</id>
+      <edef>exist</edef>
+      <roleset>
+	<role argnum="1" argrole="thing existing"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>있다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>다시 말하자면 2 대대가 어느 한 대대 무전망에 있는 무전소들을 모두 동시에 호출하려면 어떤 호출대호를 사용하는가?</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (ADVP 다시/ADV)
+          (VP (NP-OBJ *pro*)
+              말하/VV+자면/ECS)))
+   (S (S (NP-SBJ 2/NNU
+                 대대/NNC+이/PCA)
+         (VP (NP-OBJ (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (ADJP (NP-COMP 어느/DAN
+                                          한/NNU
+                                          대대/NNC
+                                          무전망/NNC+에/PAD)
+                                 있/VJ+는/EAN)))
+                     (NP 무전소/NNC+들/XSF+을/PCA))
+             (ADVP 모두/ADV)
+             (NP-ADV 동시/NNC+에/PAD)
+             (VP (VV 호출/NNC+하/XSV+으려면/ECS))))
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ 어떤/DAN
+                     호출/NNC
+                     대호/NNC+을/PCA)
+             (VV 사용/NNC+하/XSV+는가/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=무전소들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>어느 한 대대 무전망</term>
+	    </Arg>
+	    <Rel>
+	      <term>있는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>있다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>어떤 사람들이 그 무전망에서 무선 송신할 권한이 있소?</text>
+	  <parse>
+(S (NP-SBJ 어떤/DAN 
+	   사람/NNC+들/XSF+이/PCA) 
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+		 (VP (NP-ADV 그/DAN 
+			     무전망/NNC+에서/PAD) 
+		     (NP-ADV무선/NNC) 
+		     (VV 송신/NNC+하/XSV+을/EAN))) 
+	      (NP 권한/NNC+이/PCA)) 
+      (ADJP 있/VJ+소/EFN) 
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>이</f>
+	      <term>어떤 사람들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>그 무전망에서 무전 송신할 권한</term>
+	    </Arg>
+	    <Rel>
+	      <term>있소</term>
+	    </Rel>
+	  </relation>
+	  <comment>double nominative case</comment>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>있.02</id>
+      <edef>regarding</edef>
+      <roleset>
+	<role argnum="1" argrole="thing"/>
+	<role argnum="2" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>있다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>구성에 있어서는 똑같습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*) 
+   (ADJP (S (NP-SBJ *pro*)
+	    (ADJP (NP-COMP 구성/NNC+에/PAD) 
+		  있/VJ+어서/ECS+는/PAU)) 
+	 (ADJP 똑같/VJ+습니다/EFN)) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>구성</term>
+	    </Arg>
+	    <Rel>
+	      <term>있어서는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>입법</lemma>
+    <comment>Frames file for '입법' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>입법.01</id>
+      <edef>legalize</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing legalized"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입법되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난 주 상원에서 82 대 17로 통과된 데 이어 이날 하원에서 채택된 이 항공법은 백악관으로 송부돼 빌 클린턴 대통령의 서명을 거쳐 입법될 것으로 예상된다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (ADVP (NP-COMP (S (NP-SBJ *pro*)
+						       (VP (NP-ADV 지난/DAN
+								       주/NNX)
+							   (NP-ADV 상원/NNC+에서/PAD)
+							   (NP-ADV 82/NNU
+								   대/NNX
+								   17/NNU+으로/PAD)
+							   (VP (VV 통과/NNC+되/XSV+은/EAN))))
+						    (NP 데/NNX))
+					   이어/ADV)
+                                     (NP-ADV 이날/NNC)
+                                     (NP-ADV 하원/NNC+에서/PAD)
+                                     (VP (VV 채택/NNC+되/XSV+은/EAN)))))
+                           (NP 이/DAN
+                               항공법/NNC+은/PAU))
+                   (VP (S (NP-SBJ *pro*)
+                          (VP (NP-COMP 백악관/NPR+으로/PAD)
+                              (VV 송부/NNC+되/XSV+어/ECS)))
+                       (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ (NP 빌/NPR
+                                          클린턴/NPR
+                                          대통령/NNC+의/PAN)
+                                      (NP 서명/NNC+을/PCA))
+                              거치/VV+어/ECS))
+                       (VP (VV 입법/NNC+되/XSV+을/EAN))))
+                (NP 것/NNX+으로/PAD))
+       (VV 예상/NNC+되/XSV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>지난 주 상원에서 82 대 17로 통과된 데 이어 이날 하원에서 채택된 이 항공법</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>백악관으로 송부돼</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>빌 클린턴 대통령의 서명을 거쳐</term>
+	    </Arg>
+	    <Rel>
+	      <term>입법될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

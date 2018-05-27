@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조우</lemma>
+    <comment>Frames file for '조우' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>조우.01</id>
+      <edef>encounter</edef>
+      <roleset>
+	<role argnum="1" argrole="one party"/>
+	<role argnum="2" argrole="other party"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조우하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>어제 행군 시에는 두 번이나 적과 조우했습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 어제/NNC)
+       (NP-ADV 행군/NNC
+               시/NNX+에/PAD+은/PAU)
+       (NP-ADV 두/NNU
+               번/NNX+이나/PAU)
+       (VP (NP-COMP 적/NNC+과/PAD)
+           (VV 조우/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>어제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>행군 시에는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>두 번이나</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>적</term>
+	    </Arg>
+	    <Rel>
+	      <term>조우했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

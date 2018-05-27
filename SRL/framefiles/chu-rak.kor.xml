@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>추락</lemma>
+    <comment>Frames file for '추락' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>추락.01</id>
+      <edef>fall</edef>
+      <roleset>
+	<role argnum="1" argrole="thing falling"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>추락하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>러시아 여객기 1 대가 9 일 모스크바의 공항에 추락했다고 인테르팍스 통신이 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP 러시아/NPR
+                         여객기/NNC)
+                     (NP 1/NNU
+                         대/NNX+이/PCA))
+             (VP (NP-ADV 9/NNU
+                         일/NNX)
+                 (VP (NP-COMP (NP 모스크바/NPR+의/PAN)
+                              (NP 공항/NNC+에/PAD))
+                     (VV 추락/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 인테르팍스/NPR
+              통신/NNC+이/PCA)
+      (VP (S-COMP *T*-1)
+          (VV 보도/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>러시아 여객기 1 대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>9 일</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>모스크바의 공항</term>
+	    </Arg>
+	    <Rel>
+	      <term>추락했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

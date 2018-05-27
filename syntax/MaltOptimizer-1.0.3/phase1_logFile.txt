@@ -1,0 +1,13 @@
+Training set path:data/kaist_train.conll
+Size (tokens):446451
+Size (sentences):20841
+Non projective:24.624538169953457
+Dangling Punctuation:0
+LAS:91.58
+Default:91.58
+NumRootLabels:2
+JavaHeap:-Xmx7168m
+MaxTokens:2147483647
+CposEqPos:true
+LemmaBlank:false
+FeatsBlank:false

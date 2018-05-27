@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뛰어들</lemma>
+    <comment>Frames file for '뛰어들' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뛰어들.01</id>
+      <edef>plunge</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뛰어들다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이는 이인제 중앙선거대책위원장과 함께 두 사람이 대통령선거 후보경쟁 대열에 뛰어들겠다는 의사를 공식 표명하는 것으로 받아들여져 앞으로 당내에서 차기주자간 경쟁이 본격화될 것으로 전망된다.</text>
+	  <parse>
+(S (S (NP-SBJ 이/NPN+은/PAU)
+      (VP (NP-COMP (S (ADVP (NP-COMP 이인제/NPR
+                                     중앙/NNC+선거/NNC+대책/NNC+위원장/NNC+과/PAD)
+                            함께/ADV)
+                      (S (NP-SBJ 두/NNU
+                                 사람/NNC+이/PCA)
+                         (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                        (VP (NP-COMP 대통령/NNC+선거/NNC
+							   후보/NNC+경쟁/NNC
+							   대열/NNC+에/PAD)
+                                            뛰어들/VV+겠/EPF+다는/EAN))
+                                     (NP 의사/NNC+을/PCA))
+                             (VP (NP-ADV 공식/NNC)
+				 (VP (VV 표명/NNC+하/XSV+는/EAN))))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 받아들이/VV+어지/XSV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-ADV 앞/NNC+으로/PAD)
+                      (NP-ADV 당/NNC+내/NNX+에서/PAD)
+                      (S (NP-SBJ 차기/NNC+주자/NNC+간/XSF
+                                 경쟁/NNC+이/PCA)
+                         (VP (VV 본격화/NNC+되/XSV+을/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 전망/NNC+되/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>대통령선거 후보경쟁 대열</term>
+	    </Arg>
+	    <Rel>
+	      <term>뛰어들겠다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

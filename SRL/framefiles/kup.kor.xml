@@ -1,0 +1,41 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>±Á</lemma>
+    <comment>Frames file for '±Á' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>±Á.01</id>
+      <edef>bake</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing baked"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>±Á´Ù</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>°¨ÀÚ´Â º¸Åë Âî°Å³ª ±¸¿ö¼­ ¸Ô½À´Ï´Ù.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-OBJ °¨ÀÚ/NNC+Àº/PAU)
+       (VP (ADVP º¸Åë/ADV)
+           (S (NP-SBJ *pro*)
+              (VP (NP-OBJ *pro*)
+                  (VV Âî/VV+°Å³ª/ECS
+                      ±Á/VV+¾î¼­/ECS)))
+           (VP ¸Ô/VV+½À´Ï´Ù/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>±¸¿ö¼­</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

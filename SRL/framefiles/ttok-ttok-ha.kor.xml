@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>똑똑하</lemma>
+    <comment>Frames file for '똑똑하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>똑똑하.01</id>
+      <edef>bright</edef>
+      <roleset>
+	<role argnum="1" argrole="person being bright"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>똑똑하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 위원장은 또 "똑똑한 사람이면 누구나 대통령 후보가 되고 국민의 지지를 받아 국가를 경영할 수 있어야 하며, 민주당은 그렇게 큰 그릇의 국민정당이 될 것"이라면서 "민주당과 이인제를 키워 달라"고 말해 김대중 대통령의 후계구도 언급을 계기로 차기대권에 도전할 뜻을 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           위원장/NNC+은/PAU)
+   (VP (S (ADVP 또/ADV)
+          (S "/SLQ
+             (S (NP-SBJ (S (WHNP-3 *op*)
+                           (S (NP-SBJ *T*-3)
+                              (VP (NP (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (ADJP 똑똑하/VJ+은/EAN)))
+                                      (NP 사람/NNC+이/CO+으면/ECS)))))
+                        (NP 누구/NPN+이나/PAU))
+                (VP (VP (VP (VP (NP-COMP 대통령/NNC
+                                         후보/NNC+이/PCA)
+                                되/VV+고/ECS)
+                            (VP (NP-OBJ (NP 국민/NNC+의/PAN)
+                                        (NP 지지/NNC+을/PCA))
+                                받/VV+어/ECS)
+                            (VP (NP-OBJ 국가/NNC+을/PCA)
+                                (VV 경영/NNC+하/XSV+을/EAN)))
+                        (VX 수/NNX
+                            있/VJ+어야/ECS))
+                    하/VX+으며/ECS))
+             ,/SCM
+             (S (NP-SBJ 민주당/NPR+은/PAU)
+                (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (ADJP (ADVP 그렇게/ADV)
+                                                 (ADJP 크/VJ+은/EAN))))
+                                     (NP 그릇/NNC+의/PAN))
+                                 (NP 국민/NNC+정당/NNC+이/PCA))
+                        되/VV+을/EAN)
+                    (VX 것/NNX
+                        "/SRQ
+                        이/CO+라면서/ECS)))))
+       (VP (VP (S-COMP "/SLQ
+                       (NP-SBJ *pro*)
+                       (VP (VP (NP-OBJ (NP 민주당/NPR+과/PCJ)
+                                       (NP 이인제/NPR+을/PCA)
+                                       키우/VV+어/ECS)
+                               달/VX+라/EFN))
+                       "/SRQ
+                       고/PAD)
+               말하/VV+어/ECS)
+           (VP (NP-ADV (NP-OBJ (NP 김대중/NPR
+                                   대통령/NNC+의/PAN)
+                               (NP 후계/NNC+구도/NNC
+                                   언급/NNC+을/PCA))
+                       계기/NNC+으로/PAD)
+               (VP (NP-OBJ (S (NP-SBJ *pro*)
+                              (VP (NP-COMP 차기/NNC+대권/NNC+에/PAD)
+                                  (VV 도전/NNC+하/XSV+을/EAN)))
+                           (NP 뜻/NNC+을/PCA))
+                   밝히/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=사람</term>
+	    </Arg>
+	    <Rel>
+	      <term>똑똑한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>국빈방문</lemma>
+    <comment>Frames file for '국빈방문' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>국빈방문.01</id>
+      <edef>pay a state visit</edef>
+      <roleset>
+	<role argnum="0" argrole="person"/>
+	<role argnum="1" argrole="nation"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>국빈방문하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김대중 대통령은 이탈리아, 교황청, 프랑스, 독일 등 유럽 4 개국을 국빈방문하기 위해 부인 이희호 여사와 함께 2 일 오전 성남 서울공항을 통해 출국했다.</text>
+	  <parse>
+(S (NP-SBJ 김대중/NPR
+           대통령/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-OBJ (NP-SBJ *pro*)
+		     (VP (NP-OBJ (NP (NP (NP 이탈리아/NPR)
+					 ,/SCM
+					 (NP 교황청/NPR)
+					 ,/SCM
+					 (NP 프랑스/NPR)
+					 ,/SCM
+					 (NP 독일/NPR))
+				     (NP 등/NNX))
+				 (NP 유럽/NPR
+					 4/NNU
+					 개국/NNX+을/PCA))
+			 (VV 국빈/NNC+방문/NNC+하/XSV+기/ENM)))
+              위하/VV+어/ECS))
+       (VP (ADVP (NP-COMP 부인/NNC
+                          이희호/NPR
+                          여사/NNC+과/PAD)
+                 함께/ADV)
+           (NP-ADV 2/NNU
+                   일/NNX
+                   오전/NNC)
+           (S (NP-SBJ *pro*)
+              (VP (NP-OBJ 성남/NPR
+                          서울/NPR+공항/NNC+을/PCA)
+                  통하/VV+어/ECS))
+           (VP (VV 출국/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이탈리아, 교황청, 프랑스, 독일 등 유럽 4 개국</term>
+	    </Arg>
+	    <Rel>
+	      <term>국빈방문하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

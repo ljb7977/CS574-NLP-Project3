@@ -1,0 +1,137 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>위촉</lemma>
+    <comment>Frames file for '위촉' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>위촉.01</id>
+      <edef>entrust</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing entrusted"/>
+	<role argnum="2" argrole="entrust with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>위촉하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>공화당 주도의 미 의회는 아시아 금융위기 중에 IMF에 180 억달러를 제공하는 데 합의하면서 11 명의 경제학자를 자문위원으로 임명해 IMF와 세계은행 개혁방안을 검토하도록 위촉한 바 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ (NP 공화당/NPR
+                          주도/NNC+의/PAN)
+                      (NP 미/NPR
+                          의회/NNC+은/PAU))
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-ADV (NP 아시아/NPR
+                                     금융/NNC+위기/NNC)
+                                 (NP 중/NNX+에/PAD))
+                         (VP (NP-COMP (S (NP-SBJ *pro*)
+                                         (VP (NP-COMP IMF/NFW+에/PAD)
+                                             (NP-OBJ 180/NNU
+                                                     억/NNU+달러/NNX+을/PCA)
+                                             (VV 제공/NNC+하/XSV+는/EAN)))
+                                      (NP 데/NNX))
+                             (VV 합의/NNC+하/XSV+으면서/ECS))))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP 11/NNU
+                                     명/NNX+의/PAN)
+                                 (NP 경제학자/NNC+을/PCA))
+                         (NP-COMP 자문/NNC+위원/NNC+으로/PAD)
+                         (VV 임명/NNC+하/XSV+어/ECS)))
+                  (VP (S-COMP (NP-SBJ *pro*)
+                              (VP (NP-OBJ (NP (NP IMF/NFW+과/PCJ)
+                                              (NP 세계/NPR+은행/NNC))
+                                          (NP 개혁/NNC+방안/NNC+을/PCA))
+                                  (VV 검토/NNC+하/XSV+도록/ECS)))
+                      (VV 위촉/NNC+하/XSV+은/EAN))))
+           (NP 바/NNX))
+   (ADJP 있/VJ+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>11 명의 경제학자를 자문위원으로 임명해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>도록</f>
+	      <term>IMF와 세계은행 개혁방안을 검토하</term>
+	    </Arg>
+	    <Rel>
+	      <term>위촉한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>위촉되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이날 회의에서 박재규 통일부장관은 "김대중 대통령의 베를린 선언은 이제 북한을 적극적으로 도와 줄 수 있는 준비가 됐다는 의미로 이해하면 될 것"이라고 말하고 새로 위촉된 통일 정책평가위원들의 협조를 당부했다.</text>
+	  <parse>
+(S (NP-ADV 이날/NNC
+           회의/NNC+에서/PAD)
+   (S (NP-SBJ 박재규/NPR
+              통일부/NNC+장관/NNC+은/PAU)
+      (VP (VP (S-COMP "/SLQ
+		      (NP-SBJ *pro*)
+		      (VP (VP (VP (NP-OBJ (NP 김대중/NPR
+						    대통령/NNC+의/PAN)
+					  (NP 베를린/NPR
+						    선언/NNC+은/PAU))
+				  (NP-COMP (S (NP-SBJ *pro*)
+					      (VP (ADVP 이제/ADV)
+						  (VP (NP-COMP (S (NP-SBJ *pro*)
+								  (VP (VP (VP (NP-OBJ 북한/NPR+을/PCA)
+									      (VP (NP-ADV 적극/NNC+적/XSF+으로/PAD)
+										  (VP 돕/VV+어/ECS)))
+									  주/VX+을/EAN)
+								      (VX 수/NNX
+									    있/VJ+는/EAN)))
+							       (NP 준비/NNC+이/PCA))
+						      되/VV+었/EPF+다는/EAN)))
+					   (NP 의미/NNC+으로/PAD))
+				  (VV 이해/NNC+하/XSV+으면/ECS))
+			      되/VX+을/EAN)
+			  (VX 것/NNX))
+		      "/SRQ
+		      이/CO+라/EFN+고/PAD)
+              말하/VV+고/ECS)
+          (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (ADVP 새로/ADV)
+                                    (VP (VV 위촉/NNC+되/XSV+은/EAN)))))
+                          (NP 통일/NNC
+                              정책/NNC+평가/NNC+위원/NNC+들/XSF+의/PAN))
+                      (NP 협조/NNC+을/PCA))
+              (VV 당부/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=통일 정책평가위원들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>새로</term>
+	    </Arg>
+	    <Rel>
+	      <term>위촉된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,119 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>관철</lemma>
+    <comment>Frames file for '관철' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>관철.01</id>
+      <edef>achieve</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing achieved"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>관철하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>박순용 검찰총장은 10 일 "이익단체들이 선거분위기에 편승해 폭력적 방법으로 자신들의 의사를 관철하려는 풍조에 엄중 대처하라고 전국 검찰에 지시했다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 박순용/NPR
+           검찰/NNC+총장/NNC+은/PAU)
+   (VP (NP-ADV 10/NNU
+               일/NNX)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (S-COMP (NP-SBJ *pro*)
+                               (VP (NP-COMP (S (S (NP-SBJ 이익/NNC+단체/NNC+들/XSF+이/PCA)
+                                                  (VP (NP-COMP 선거/NNC+분위기/NNC+에/PAD)
+                                                      (VV 편승/NNC+하/XSV+어/ECS)))
+                                               (S (NP-SBJ *pro*)
+                                                  (VP (NP-ADV 폭력/NNC+적/XSF
+                                                              방법/NNC+으로/PAD)
+                                                      (VP (NP-OBJ (NP 자신/NNC+들/XSF+의/PAN)
+                                                                  (NP 의사/NNC+을/PCA))
+                                                          (VV 관철/NNC+하/XSV+으려는/EAN)))))
+                                            (NP 풍조/NNC+에/PAD))
+                                   (VP (NP-ADV 엄중/NNC)
+                                       (VP (VV 대처/NNC+하/XSV+으라/EFN+고/PAD)))))
+                       (NP-COMP 전국/NNC
+                                검찰/NNC+에/PAD)
+                       (VV 지시/NNC+하/XSV+었/EPF+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>이익단체들이 선거분위기에 편승해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>폭력적 방법으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>자신들의 의사</term>
+	    </Arg>
+	    <Rel>
+	      <term>관철하려는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>관철되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이처럼 외국인 전문 인력 수입 문제를 둘러싸고 교육부와 노동부가 정면으로 대립하는 상황에서 슈뢰더 총리가 문호 개방 방침을 천명함으로써 교육부측의 주장이 관철될 것으로 보는 전망이 우세하다.</text>
+	  <parse>
+(S (S (NP-ADV 이/NPN+처럼/PAD)
+      (NP-ADV (S (S (NP-SBJ *pro*)
+		    (VP (NP-OBJ 외국인/NNC
+				      전문/NNC
+				      인력/NNC
+				      수입/NNC
+				      문제/NNC+을/PCA)
+			둘러싸/VV+고/ECS))
+		 (S (NP-SBJ (NP 교육부/NNC+과/PCJ)
+			    (NP 노동부/NNC+이/PCA))
+		    (VP (NP-ADV 정면/NNC+으로/PAD)
+			(VP (VV 대립/NNC+하/XSV+는/EAN)))))
+	      (NP 상황/NNC+에서/PAD))
+      (S (NP-SBJ 슈뢰더/NPR
+		       총리/NNC+이/PCA)
+	 (VP (NP-OBJ 문호/NNC
+			 개방/NNC
+			 방침/NNC+을/PCA)
+	     (VV 천명/NNC+하/XSV+음/ENM+으로써/PAD))))
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (S-COMP (NP-SBJ (NP 교육부/NNC+측/NNX+의/PAN)
+                                     (NP 주장/NNC+이/PCA))
+                             (VP (VP (VV 관철/NNC+되/XSV+을/EAN))
+                                 (VX 것/NNX+으로/PAD)))
+                     보/VV+는/EAN))
+              (NP 전망/NNC+이/PCA))
+      (ADJP (VJ 우세/NNC+하/XSJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>교육부측의 주장</term>
+	    </Arg>
+	    <Rel>
+	      <term>관철될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

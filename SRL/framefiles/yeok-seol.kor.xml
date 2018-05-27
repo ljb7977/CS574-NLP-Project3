@@ -1,0 +1,157 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>역설</lemma>
+    <comment>Frames file for '역설' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>역설.01</id>
+      <edef>emphasize</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing emphasized"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>역설하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>버지니아 의과대학의 리처드 웬젤 교수는 5 일 미국질병통제센터(CDC)의 감염 예방 및 퇴치를 위한 회의에 참석, 신장비 사용과 세수 등의 간단한 방법으로 감염확산을 충분히 예방할 수 있다고 역설했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 버지니아/NPR
+               의과/NNC+대학/NNC+의/PAN)
+           (NP 리처드/NPR
+               웬젤/NPR
+               교수/NNC+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 5/NNU
+                      일/NNX)
+              (VP (NP-COMP (NP 미국/NPR+질병/NNC+통제/NNC+센터/NNC
+                               (PRN -LRB-/SLQ
+                                    CDC/NFW
+                                    -RRB-/SRQ)
+                               의/PAN)
+                           (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (NP-OBJ (NP 감염/NNC
+                                                     예방/NNC)
+                                                 (ADCP 및/ADC)
+                                                 (NP 퇴치/NNC+을/PCA))
+                                         위하/VV+은/EAN)))
+                               (NP 회의/NNC+에/PAD)))
+                  (VV 참석/NNC))))
+       ,/SCM
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV (NP (NP (NP 신/XPF+장비/NNC
+                                               사용/NNC+과/PCJ)
+                                           (NP 세수/NNC))
+                                       (NP 등/NNX+의/PAN))
+                                   (NP (S (WHNP-2 *op*)
+                                          (S (NP-SBJ *T*-2)
+                                             (ADJP 간단하/VJ+은/EAN)))
+                                       (NP 방법/NNC+으로/PAD)))
+                           (VP (NP-OBJ 감염/NNC+확산/NNC+을/PCA)
+                               (VP (ADVP 충분히/ADV)
+                                   (VP (VV 예방/NNC+하/XSV+을/EAN)))))
+                       (VX 수/NNX
+                           있/VJ+다/EFN+고/PAD)))
+           (VV 역설/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>버지니아 의과대학의 리처드 웬젤 교수</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>5 일 미국질병통제센터(CDC)의 감염 예방 및 퇴치를 위한 회의에 참석</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>신장비 사용과 세수 등의 간단한 방법으로 감염확산을 충분히 예방할 수 있다</term>
+	    </Arg>
+	    <Rel>
+	      <term>역설했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>역설하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 대통령은 베를린을 방문하기 전에 들렀던 이탈리아와 프랑스, 로마교황청에서도 방문국 정상들을 만난 자리에서 끊임없이 남북한 대화의 필요성을 역설하며 분위기를 조성한 뒤 독일 자유의 상징인 이 대학 연설을 통해 대미를 장식했다.</text>
+	  <parse>
+(S (NP-SBJ 김/NPR
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-ADV (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *pro*)
+                                    (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                   (VP (NP-OBJ 베를린/NPR+을/PCA)
+                                                       (VV 방문/NNC+하/XSV+기/ENM)))
+                                                (NP 전/NNC+에/PAD))
+                                        (VP (NP-OBJ *T*-1)
+                                            들르/VV+었/EPF+던/EAN))))
+                              (NP (NP 이탈리아/NPR+과/PCJ)
+                                  (NP 프랑스/NPR)
+                                  ,/SCM
+                                  (NP 로마/NPR+교황청/NNC+에서/PAD+도/PAU)))
+                      (S (NP-SBJ *pro*)
+                         (VP (NP-ADV (S (WHNP *op*)
+                                        (S (NP-SBJ *pro*)
+                                           (VP (NP-OBJ 방문/NNC+국/XSF
+                                                       정상/NNC+들/XSF+을/PCA)
+                                               만나/VV+은/EAN)))
+                                     (NP 자리/NNC+에서/PAD))
+                             (ADVP 끊임/NNC+없이/ADV)
+                             (VP (NP-OBJ (NP 남북한/NPR
+                                             대화/NNC+의/PAN)
+                                         (NP 필요성/NNC+을/PCA))
+                                 (VV 역설/NNC+하/XSV+으며/ECS))))
+                      (VP (NP-OBJ 분위기/NNC+을/PCA)
+                          (VV 조성/NNC+하/XSV+은/EAN))))
+               (NP 뒤/NNC))
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (NP (NP 독일/NPR
+                                            자유/NNC+의/PAN)
+                                        (NP 상징/NNC+이/CO+은/EAN)))))
+                          (NP 이/DAN
+                              대학/NNC))
+                      (NP 연설/NNC+을/PCA))
+              통하/VV+어/ECS))
+       (VP (NP-OBJ 대미/NNC+을/PCA)
+           (VV 장식/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>방문국 정상들을 만난 자리에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>끊임없이</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>남북한 대화의 필요성</term>
+	    </Arg>
+	    <Rel>
+	      <term>역설하며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

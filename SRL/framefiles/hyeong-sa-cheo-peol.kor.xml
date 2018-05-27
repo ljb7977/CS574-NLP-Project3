@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>형사처벌</lemma>
+    <comment>Frames file for '형사처벌' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>형사처벌.01</id>
+      <edef>punish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="criminal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>형사처벌하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일본정부는 7 일 인간 복제행위를 형사처벌하는 것 등을 골자로 하는 `인간 복제 기술 등의 규제에 대한 법률안'을 마련, 이번 정기국회에 제출할 방침이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 일본/NPR+정부/NNC+은/PAU)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 7/NNU
+                                 일/NNX)
+                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                                                              (VP (NP-OBJ 인간/NNC
+                                                                          복제/NNC+행위/NNC+을/PCA)
+                                                                  (VV 형사처벌/NNC+하/XSV+는/EAN)))
+                                                           (NP 것/NNX))
+                                                       (NP 등/NNX+을/PCA))
+                                               (NP-COMP 골자/NNC+으로/PAD)
+                                               하/VV+는/EAN)))
+                                     (NP `/SLQ
+                                         (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (NP-COMP (NP 인간/NNC
+                                                                복제/NNC
+                                                                기술/NNC
+                                                                등/NNX+의/PAN)
+                                                            (NP 규제/NNC+에/PAD))
+                                                   대하/VV+은/EAN)))
+                                         (NP 법률안/NNC)
+                                         '/SRQ
+                                         을/PCA))
+                             (VV 마련/NNC))))
+                  ,/SCM
+                  (VP (NP-COMP 이번/NNC
+                               정기/NNC+국회/NNC+에/PAD)
+                      (NP-OBJ *pro*)
+                      (VV 제출/NNC+하/XSV+을/EAN))))
+           (NP 방침/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>인간 복제행위</term>
+	    </Arg>
+	    <Rel>
+	      <term>형사처벌하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

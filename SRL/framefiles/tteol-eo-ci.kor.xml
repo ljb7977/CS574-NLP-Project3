@@ -1,0 +1,293 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>떨어지</lemma>
+    <comment>Frames file for '떨어지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>떨어지.01</id>
+      <edef>fall</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing falling"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>떨어지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>김 동무는 야간 행군중에 졸다가 강에 거꾸로 떨어졌지요.</text>
+	  <parse>
+(S (NP-SBJ 김/NPR
+           동무/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 야간/NNC
+                      행군/NNC
+                      중/NNX+에/PAD)
+              (VP 졸/VV+다가/ECS)))
+       (VP (NP-COMP 강/NNC+에/PAD)
+           (VP (ADVP 거꾸로/ADV)
+               (VP 떨어지/VV+었/EPF+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>김 동무</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>야간 행군중에 졸다가</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>강</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>거꾸로</term>
+	    </Arg>
+	    <Rel>
+	      <term>떨어졌지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>떨어뜨리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>신문은 이와 함께 현재는 지난 97 년 국제통화기금(IMF) 체제 하에서 취업의 기회조차 박탈당한 뒤 시간과 아이디어로 무장한 채 능력발휘를 노리던 청년 실업자들이 이제는 세상으로 나와 그들을 절망의 나락으로 떨어뜨렸던 구세대를 향해 통쾌한 복수극을 벌이고 있는 아이러니칼한 상황이라는 한 외국계 기업 중역의 발언도 실었다.</text>
+	  <parse>
+(S (NP-SBJ 신문/NNC+은/PAU)
+   (VP (ADVP (NP-COMP 이/NPN+과/PAD)
+             함께/ADV)
+       (VP (NP-OBJ (S (NP-SBJ 현재/NNC+은/PAU)
+                      (VP (NP (S (NP-SBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                              (VP (NP-ADV (NP 지난/DAN
+                                                                              97/NNU
+                                                                              년/NNX)
+                                                                          (NP 국제/NNC+통화/NNC+기금/NNC
+                                                                              (PRN -LRB-/SLQ
+                                                                                   (NP IMF/NFW)
+                                                                                   -RRB-/SRQ)
+                                                                              체제/NNC
+                                                                              하/NNX+에서/PAD))
+                                                                  (VP (NP-OBJ (NP 취업/NNC+의/PAN)
+                                                                              (NP 기회/NNC+조차/PAU))
+                                                                      (VV 박탈/NNC+당하/XSV+은/EAN))))
+                                                           (NP 뒤/NNC))
+                                                   (NP-ADV (S (NP-SBJ *pro*)
+                                                              (VP (NP-COMP (NP 시간/NNC+과/PCJ)
+                                                                           (NP 아이디어/NNC+으로/PAD))
+                                                                  (VV 무장/NNC+하/XSV+은/EAN)))
+                                                           (NP 채/NNX))
+                                                   (VP (NP-OBJ 능력/NNC+발휘/NNC+을/PCA)
+                                                       노리/VV+던/EAN))))
+                                         (NP 청년/NNC
+                                             실업자/NNC+들/XSF+이/PCA))
+                                 (VP (VP (S (NP-SBJ *pro*)
+                                            (VP (NP-ADV 이제/NNC+은/PAU)
+                                                (VP (NP-COMP 세상/NNC+으로/PAD)
+                                                    나오/VV+어/ECS)))
+                                         (S (NP-SBJ *pro*)
+                                            (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                           (S (NP-SBJ *T*-2)
+                                                              (VP (NP-OBJ 그/NPN+들/XSF+을/PCA)
+                                                                  (NP-COMP (NP 절망/NNC+의/PAN)
+                                                                           (NP 나락/NNC+으로/PAD))
+                                                                  떨어뜨리/VV+었/EPF+던/EAN)))
+                                                        (NP 구세대/NNC+을/PCA))
+                                                향하/VV+어/ECS))
+                                         (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                        (S (NP-SBJ *T*-3)
+                                                           (ADJP (VJ 통쾌/NNC+하/XSJ+은/EAN))))
+                                                     (NP 복수극/NNC+을/PCA))
+                                             벌이/VV+고/ECS))
+                                     있/VX+는/EAN))
+                              (NP (S (WHNP-4 *op*)
+                                     (S (NP-SBJ *T*-4)
+                                        (ADJP (VJ 아이러니칼/NNC+하/XSJ+은/EAN))))
+                                  (NP 상황/NNC+이/CO+라는/EAN)))))
+                   (NP (NP 한/NNU
+                           외국계/NNC
+                           기업/NNC
+                           중역/NNC+의/PAN)
+                       (NP 발언/NNC+도/PAU)))
+           싣/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=구세대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그들</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>절망의 나락</term>
+	    </Arg>
+	    <Rel>
+	      <term>떨어뜨렸던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>떨어지.02</id>
+      <edef>run out</edef>
+      <roleset>
+	<role argnum="1" argrole="thing running out"/>
+	<role argnum="2" argrole="possessor"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>떨어지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>만약 전투 중에 탱크가 탄약이 떨어지면 전차장이 이런 상황을 소대장에게 보고합니다.</text>
+	  <parse>
+(S (S (ADVP 만약/ADV)
+      (NP-ADV 전투/NNC
+              중/NNX+에/PAD)
+      (S (NP-COMP-3 탱크/NNC+이/PCA)
+         (S (NP-SBJ 탄약/NNC+이/PCA)
+            (VP (NP-COMP *T*-3)
+                떨어지/VV+으면/ECS))))
+   (S (NP-SBJ 전차장/NNC+이/PCA)
+      (VP (NP-OBJ 이런/DAN
+                  상황/NNC+을/PCA)
+          (NP-COMP 소대장/NNC+에게/PAD)
+          (VV 보고/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>만약</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전투 중에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>이</f>
+	      <term>탱크</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>탄약</term>
+	    </Arg>
+	    <Rel>
+	      <term>떨어지면</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>탱크에 연료가 떨어지면 전차량은 지휘 계통을 통해 중대장에게 보고합니다.</text>
+	  <parse>
+(S (S (NP-COMP-1 탱크/NNC+에/PAD)
+      (S (NP-SBJ 연료/NNC+이/PCA)
+         (VP (NP-COMP *T*-1)
+             떨어지/VV+으면/ECS)))
+   (S (NP-SBJ 전차장/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 지휘/NNC
+                         계통/NNC+을/PCA)
+                 통하/VV+어/ECS))
+          (VP (NP-COMP 중대장/NNC+에게/PAD)
+              (NP-OBJ *pro*)
+              (VV 보고/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>탱크</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>연료</term>
+	    </Arg>
+	    <Rel>
+	      <term>떨어지면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>떨어지.03</id>
+      <edef>be off</edef>
+      <roleset>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="be off from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>떨어지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>우리가 떠날 때엔, 집합지역에서 약 2 킬로 떨어진 고지의 기슭에 있었습니다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ 우리/NPN+이/PCA)
+                 (VP (NP-OBJ *pro*)
+                     떠나/VV+을/EAN)))
+           (NP 때/NNC+에/PAD+은/PAU))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (ADJP (NP-COMP (NP (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (VP (NP-COMP 집합/NNC
+                                            지역/NNC+에서/PAD)
+                                   (VP (NP-ADV 약/DAN
+                                               2/NNU
+                                               킬로/NNX)
+                                       (VP 떨어지/VV+은/EAN)))))
+                         (NP 고지/NNC+의/PAN))
+                     (NP 기슭/NNC+에/PAD))
+            있/VJ+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=고지</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>집합지역</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>약 2 킬로</term>
+	    </Arg>
+	    <Rel>
+	      <term>떨어진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

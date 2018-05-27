@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잡아내</lemma>
+    <comment>Frames file for '잡아내' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>잡아내.01</id>
+      <edef>take</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing taken"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잡아내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김선우는 1 이닝동안 삼진을 1 개 잡아냈고 볼넷과 홈런은 내주지 않았으나 연속안타에 무너졌다.</text>
+	  <parse>
+(S (S (NP-SBJ 김선우/NPR+은/PAU)
+      (VP (NP-ADV 1/NNU
+                  이닝/NNC+동안/NNX)
+          (VP (VP (NP-OBJ 삼진/NNC+을/PCA)
+                  (VP (NP-ADV 1/NNU
+                              개/NNX)
+                      (VP 잡아내/VV+었/EPF+고/ECS)))
+              (VP (VP (NP-OBJ (NP 볼넷/NNC+과/PCJ)
+                              (NP 홈런/NNC+은/PAU))
+                      내주/VV+지/ECS)
+                  않/VX+었/EPF+으나/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 연속/NNC+안타/NNC+에/PAD)
+          무너지/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>김선우</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>1 이닝동안</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>삼진</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>1 개</term>
+	    </Arg>
+	    <Rel>
+	      <term>잡아냈고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

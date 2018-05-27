@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>산책</lemma>
+    <comment>Frames file for '산책' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>산책.01</id>
+      <edef>stroll</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="path"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>산책하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>매카트니는 최근 몇달 동안 밀스와 함께 다니는 것이 목격됐는데 이날도 런던의 한 공원에서 함께 산책하는 것이 파파라초의 카메라에 잡히자 "우리는 함께 자선 행사를 하고 가까워 졌다. 휴가를 같이 보내고 있다"고 털어놨다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-SBJ 매카트니/NPR+은/PAU)
+                 (VP (NP-ADV 최근/NNC
+                             몇/NNU+달/NNX
+                             동안/NNC)
+                     (VP (ADVP (NP-COMP 밀스/NPR+과/PAD)
+                               함께/ADV)
+                         (VP 다니/VV+는/EAN))))
+              (NP 것/NNX+이/PCA))
+      (VP (VV 목격/NNC+되/XSV+었/EPF+는데/ECS)))
+   (S (NP-ADV 이날/NNC+도/PAU)
+      (S (NP-SBJ (S (NP-SBJ *pro*)
+                    (VP (NP-COMP (NP 런던/NPR+의/PAN)
+                                 (NP 한/NNU
+                                     공원/NNC+에서/PAD))
+                        (VP (ADVP 함께/ADV)
+                            (VP (VV 산책/NNC+하/XSV+는/EAN)))))
+                 (NP 것/NNX+이/PCA))
+         (VP (NP-COMP (NP 파파라초/NNC+의/PAN)
+                      (NP 카메라/NNC+에/PAD))
+             잡히/VV+자/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP "/SLQ
+                  (S (NP-SBJ 우리/NPN+은/PAU)
+                     (VP (VP (ADVP 함께/ADV)
+                             (VP (NP-OBJ 자선/NNC
+                                         행사/NNC+을/PCA)
+                                 하/VV+고/ECS))
+                         (VP (ADJP 가깝/VJ+어/ECS)
+                             지/VX+었/EPF+다/EFN))
+                     ./SFN)
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-OBJ 휴가/NNC+을/PCA)
+                             (VP (ADVP 같이/ADV)
+                                 (VP 보내/VV+고/ECS)))
+                         있/VX+다/EFN))
+                  "/SRQ
+                  고/PAD)
+          털어놓/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>런던의 한 공원</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>함께</term>
+	    </Arg>
+	    <Rel>
+	      <term>산책하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

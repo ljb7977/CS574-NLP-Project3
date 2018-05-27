@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상용화</lemma>
+    <comment>Frames file for '상용화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>상용화.01</id>
+      <edef>commercialize</edef>
+      <roleset>
+	<role argnum="0" argrole="causer, agent"/>
+	<role argnum="1" argrole="thing commercialized"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상용화되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>오태환 오피콤 회장은 "이번 기술은 동영상 전자우편과 다자간 영상회의, 쇼핑몰에서의 3 차원 영상, 인터넷 비디오 교육, 방송국에서의 녹화프로그램 응용, 화상 무료전화 등에 상용화될 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 오태환/NPR
+           오피콤/NPR
+           회장/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (NP-SBJ 이번/NNC
+                       기술/NNC+은/PAU)
+               (VP (VP (NP-COMP (NP (NP 동영상/NNC
+                                        전자/NNC+우편/NNC+과/PCJ)
+                                    (NP (NP 다자/NNC+간/XSF)
+                                        (NP 영상/NNC+회의/NNC))
+                                    ,/SCM
+                                    (NP (NP 쇼핑몰/NNC+에서/PAD+의/PAN)
+                                        (NP 3/NNU
+                                            차원/NNX
+                                            영상/NNC))
+                                    ,/SCM
+                                    (NP 인터넷/NNC
+                                        비디오/NNC
+                                        교육/NNC)
+                                    ,/SCM
+                                    (NP (NP 방송국/NNC+에서/PAD+의/PAN)
+                                        (NP 녹화/NNC+프로그램/NNC
+                                            응용/NNC))
+                                    ,/SCM
+                                    (NP 화상/NNC
+                                        무료/NNC+전화/NNC))
+                                (NP 등/NNX+에/PAD))
+                       (VV 상용화/NNC+되/XSV+을/EAN))
+                   (VX 것/NNX))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>이번 기술</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>동영상 전자우편과 다자간 영상회의, 쇼핑몰에서의 3 차원 영상, 인터넷 비디오 교육, 방송국에서의 녹화프로그램 응용, 화상 무료전화 등</term>
+	    </Arg>
+	    <Rel>
+	      <term>상용화될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불안</lemma>
+    <comment>Frames file for '불안' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불안.01</id>
+      <edef>anxious</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="person feeling anxious"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불안하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전형범 LG 투자증권 연구원은 시장 분위기가 불안한 조짐을 보이고 있다면서 재료 보유주를 중심으로 보수적인 자세로 매매에 임하는 것이 바람직하다고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 전형범/NPR
+           LG/NFW
+           투자/NNC+증권/NNC
+           연구원/NNC+은/PAU)
+   (VP (S (NP-SBJ 시장/NNC
+                  분위기/NNC+이/PCA)
+          (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (ADJP (VJ 불안/NNC+하/XSJ+은/EAN))))
+                          (NP 조짐/NNC+을/PCA))
+                  보이/VV+고/ECS)
+              있/VX+다면서/ECS))
+       (VP (S-COMP (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (NP-ADV (NP-OBJ 재료/NNC
+                                                  보유주/NNC+을/PCA)
+                                          중심/NNC+으로/PAD)
+                                  (NP-ADV (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP 보수/NNC+적/XSF+이/CO+은/EAN))))
+                                          (NP 자세/NNC+으로/PAD))
+                                  (VP (NP-COMP 매매/NNC+에/PAD)
+                                      임하/VV+는/EAN)))
+                           (NP 것/NNX+이/PCA))
+                   (ADJP 바람직하/VJ+다/EFN+고/PAD))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=조짐</term>
+	    </Arg>
+	    <Rel>
+	      <term>불안한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

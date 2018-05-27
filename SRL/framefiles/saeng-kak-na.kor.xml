@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>생각나</lemma>
+    <comment>Frames file for '생각나' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>생각나.01</id>
+      <edef>recall</edef>
+      <roleset>
+	<role argnum="1" argrole="memory"/>
+	<role argnum="2" argrole="rememberer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>생각나다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지금 생각나는 건 그것뿐입니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-ADV 지금/NNC)
+                 (S (NP-SBJ *T*-1*)
+                    (VP (NP-COMP *pro*)
+                        생각나/VV+는/EAN))))
+           (NP 것/NNX+은/PAU))
+   (VP (NP 그것/NPN+뿐/XSF+이/CO+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지금</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=것</term>
+	    </Arg>
+	    <Rel>
+	      <term>생각나는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

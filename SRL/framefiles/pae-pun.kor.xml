@@ -1,0 +1,156 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>배분</lemma>
+    <comment>Frames file for '배분' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>배분.01</id>
+      <edef>distribute</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing distributed"/>
+	<role argnum="2" argrole="distributed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>배분하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전영일 ISR 소장은 항생제, 위장약, 어린이 피부질환제 등 북한 보건성이 지원을 요청한 10여 가지의 긴급 의약품과 의료기구를 오는 6 월 10 일부터 일주일동안 북한에서 배분할 계획이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 전영일/NPR
+           ISR/NFW
+           소장/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (NP (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ (NP (NP 항생제/NNC
+                                              ,/SCM
+                                              위장약/NNC
+                                              ,/SCM
+                                              어린이/NNC
+                                              피부질환제/NNC)
+                                          (NP 등/NNX))
+                                      (NP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ 북한/NPR
+                                                        보건성/NPR+이/PCA)
+                                                (VP (NP-OBJ *T*-1)
+                                                    (VP (NP-OBJ 지원/NNC+을/PCA)
+                                                        (VV 요청/NNC+하/XSV+은/EAN)))))
+                                          (NP (NP 10/NNU+여/XSF
+                                                  가지/NNX+의/PAN)
+                                              (NP (NP 긴급/NNC
+                                                      의약품/NNC+과/PCJ)
+                                                  (NP 의료/NNC+기구/NNC+을/PCA)))))
+                              (VP (NP-ADV 오는/DAN
+                                          6/NNU
+                                          월/NNX
+                                          10/NNU
+                                          일/NNX+부터/PAU)
+                                  (NP-ADV 일주일/NNC+동안/NNX)
+                                  (NP-ADV 북한/NPR+에서/PAD)
+                                  (VP (VV 배분/NNC+하/XSV+을/EAN)))))
+                       (NP 계획/NNC+이/CO+라/EFN+고/PAD))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>항생제, 위장약, 어린이 피부질환제 등 북한 보건성이 지원을 요청한 10여 가지의 긴급 의약품과 의료기구</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>오는 6 월 10 일부터</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>일주일동안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>북한에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>배분할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>배분되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>ISR은 지난 1, 2 차 지원때와 마찬가지로 이번에도 북한에서 의약품과 의료기구들이 투명성 있게 배분되도록 ISR 화해봉사단 5 명을 파견하기로 하고 의사, 인터넷 전문가, 변호사등을 대상으로 공개 모집에 들어갔다.</text>
+	  <parse>
+(S (NP-SBJ ISR/NFW+은/PAU)
+   (VP (VP (S (NP-ADV (NP-COMP (DANP 지난/DAN)
+                               (NP (NP (NP 1/NNU
+                                           ,/SCM
+                                           2/NNU)
+                                       (NP 차/NNX))
+                                   (NP 지원/NNC+때/NNC+과/PAD)))
+                      마찬가지/NNC+으로/PAD)
+              (NP-ADV 이번/NNC+에/PAD+도/PAU)
+              (NP-ADV 북한/NPR+에서/PAD)
+              (S (NP-SBJ (NP 의약품/NNC+과/PCJ)
+                         (NP 의료/NNC+기구/NNC+들/XSF+이/PCA))
+                 (VP (S (NP-SBJ *pro*)
+                        (ADJP (NP-COMP 투명성/NNC)
+                              있/VJ+게/ECS))
+                     (VP (VV 배분/NNC+되/XSV+도록/ECS)))))
+           (VP (S-COMP (NP-SBJ *pro*)
+		       (VP (NP-OBJ ISR/NFW
+				   화해/NNC+봉사단/NNC
+				   5/NNU
+				   명/NNX+을/PCA)
+			   (VV 파견/NNC+하/XSV+기/ENM+으로/PAD)))
+               하/VV+고/ECS))
+       (VP (NP-ADV (NP-OBJ 의사/NNC
+                           ,/SCM
+                           인터넷/NNC
+                           전문가/NNC
+                           ,/SCM
+                           변호사/NNC+등/NNX+을/PCA)
+                   대상/NNC+으로/PAD)
+           (VP (NP-COMP 공개/NNC
+                        모집/NNC+에/PAD)
+               들어가/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>지난 1, 2 차 지원때와 마찬가지로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이번에도</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>북한에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>의약품과 의료기구들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>투명성있게</term>
+	    </Arg>
+	    <Rel>
+	      <term>배분되도록</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

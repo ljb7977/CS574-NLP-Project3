@@ -1,0 +1,144 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>삭제</lemma>
+    <comment>Frames file for '삭제' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>삭제.01</id>
+      <edef>delete</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing deleted"/>
+	<role argnum="2" argrole="deleted from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>삭제하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미 행정부가 북한을 테러지원국 명단에서 삭제하기 위해서는 국무장관이 '최근 6 개월간 테러를 지원한 적이 없고 앞으로도 하지 않을 것'이란 점을 의회에 보증하는 절차를 거쳐야 한다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ 미/NPR
+                         행정부/NNC+이/PCA)
+                 (VP (NP-OBJ 북한/NPR+을/PCA)
+                     (NP-COMP 테러/NNC+지원국/NNC
+				  명단/NNC+에서/PAD)
+		     (VV 삭제/NNC+하/XSV+기/ENM)))
+          위하/VV+어서/ECS+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (NP-SBJ 국무장관/NNC+이/PCA)
+                         (VP (NP-OBJ (S '/SLQ
+                                        (S (NP-ADV 최근/NNC
+                                                   6/NNU
+                                                   개월/NNX+간/XSF)
+                                           (S (NP-SBJ (S (NP-SBJ *pro*)
+                                                         (VP (NP-OBJ 테러/NNC+을/PCA)
+                                                             (VV 지원/NNC+하/XSV+은/EAN)))
+                                                      (NP 적/NNX+이/PCA))
+                                              (ADJP 없/VJ+고/ECS)))
+                                        (S (NP-SBJ *pro*)
+                                           (VP (VP (VP (NP-ADV 앞/NNC+으로/PAD+도/PAU)
+                                                       (VP (NP-OBJ *pro*)
+                                                           하/VV+지/ECS))
+                                                   않/VX+을/EAN)
+                                               (VX 것/NNX)))
+                                        '/SRQ
+                                        이/CO+란/EAN)
+                                     (NP 점/NNC+을/PCA))
+                             (VP (NP-ADV 의회/NNC+에/PAD)
+                                 (VP (VV 보증/NNC+하/XSV+는/EAN)))))
+                      (NP 절차/NNC+을/PCA))
+              거치/VV+어야/ECS)
+          하/VX+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>미 행정부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>테러지원국 명단</term>
+	    </Arg>
+	    <Rel>
+	      <term>삭제하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>삭제되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이번 랭킹에서는 `2 년동안 국제대회에 출전하지 않으면 리스트에서 제외시킨다'는 규정에 따라 5 위이던 `탁구 마녀' 덩야핑(중국)의 이름이 삭제됐다.</text>
+	  <parse>
+(S (NP-COMP-2 이번/NNC
+		  랭킹/NNC+에서/PAD+은/PAU)
+   (S (S (NP-SBJ *pro*)
+	 (VP (NP-COMP (S `/SLQ
+			 (S (NP-SBJ *pro*)
+			    (VP (VP (NP-ADV 2/NNU
+					    년/NNX+동안/NNX)
+				    (VP (NP-COMP 국제/NNC+대회/NNC+에/PAD)
+					(VV 출전/NNC+하/XSV+지/ECS)))
+				않/VX+으면/ECS))
+			 (S (NP-SBJ *pro*)
+			    (VP (NP-COMP 리스트/NNC+에서/PAD)
+				(VV 제외/NNC+시키/XSV+는다/EFN)))
+			 '/SRQ
+			 은/PAU)
+		      (NP 규정/NNC+에/PAD))
+	     따르/VV+어/ECS))
+      (S (NP-SBJ (NP (S (WHNP-1 *op*)
+			(S (NP-SBJ *T*-1)
+			   (VP (NP 5/NNU
+				   위/NNX+이/CO+던/EAN))))
+		     (NP (NP `/SLQ
+			     탁구/NNC
+			     마녀/NNC
+			     '/SRQ)
+			 (NP 덩야핑/NPR
+				   (PRN -LRB-/SLQ
+					(NP 중국/NPR)
+					-RRB-/SRQ)
+				   의/PAN)))
+		 (NP 이름/NNC+이/PCA))
+	 (VP (NP-COMP *T*-2)
+	     (VV 삭제/NNC+되/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에서는</f>
+	      <term>이번 랭킹</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>`2 년동안 국제대회에 출전하지 않으면 리스트에서 제외시킨다'는 규정에 따라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>5 위이던 `탁구 마녀' 덩야핑(중국)의 이름</term>
+	    </Arg>
+	    <Rel>
+	      <term>삭제됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

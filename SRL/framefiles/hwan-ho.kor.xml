@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>환호</lemma>
+    <comment>Frames file for '환호' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>환호.01</id>
+      <edef>cheer</edef>
+      <roleset>
+	<role argnum="0" argrole="clapper"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>환호하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>고어 부통령은 이보다 앞서 테네시주 내쉬빌의 선거본부에서 가진 집회에서 부인 티퍼 여사의 소개에 이어 연단에 올라 환호하는 지지자들에게 승리를 선언했다.</text>
+	  <parse>
+(S (NP-SBJ 고어/NPR
+           부통령/NNC+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (ADVP (NP-COMP 이/NPN+보다/PAD)
+                               앞서/ADV)
+                         (NP-ADV (NP (NP 테네시/NPR+주/NNC)
+                                     (NP 내쉬빌/NPR+의/PAN))
+                                 (NP 선거/NNC+본부/NNC+에서/PAD))
+                         (VP (NP-OBJ *T*-1)
+                             가지/VV+은/EAN))))
+               (NP 집회/NNC+에서/PAD))
+       (S (NP-SBJ *pro*)
+          (VP (ADVP (NP-COMP (NP 부인/NNC
+				     티퍼/NPR
+				     여사/NNC+의/PAN)
+			     (NP 소개/NNC+에/PAD))
+		    이어/ADV)
+              (VP (NP-COMP 연단/NNC+에/PAD)
+                  오르/VV+어/ECS)))
+       (VP (NP-COMP (S (WHNP-2 *op*)
+                       (S (NP-SBJ *T*-2)
+                          (VP (VV 환호/NNC+하/XSV+는/EAN))))
+                    (NP 지지자/NNC+들/XSF+에게/PAD))
+           (NP-OBJ 승리/NNC+을/PCA)
+           (VV 선언/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=지지자들</term>
+	    </Arg>
+	    <Rel>
+	      <term>환호하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

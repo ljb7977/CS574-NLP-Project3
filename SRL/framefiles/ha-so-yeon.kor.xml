@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>하소연</lemma>
+    <comment>Frames file for '하소연' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>하소연.01</id>
+      <edef>appeal</edef>
+      <roleset>
+	<role argnum="0" argrole="appealer"/>
+	<role argnum="1" argrole="appealed for"/>
+	<role argnum="2" argrole="appealed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>하소연하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>유방암을 앓았던 부인 린다와 2 년전 사별한 매카트니는 "정치인도 스파이도 아니니까 우리를 에워싸는 일은 제발 원하지 않는다"고 하소연했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP-OBJ 유방암/NNC+을/PCA)
+                                        앓/VV+었/EPF+던/EAN)))
+                              (NP 부인/NNC
+                                  린다/NPR+과/PAD))
+                     (VP (NP-ADV 2/NNU
+                                 년/NNX+전/NNC)
+                         (VP (VV 사별/NNC+하/XSV+은/EAN))))))
+           (NP 매카트니/NPR+은/PAU))
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ *pro*)
+                  (ADJP (NP-COMP (NP 정치인/NNC+도/PAU)
+                                 (NP 스파이/NNC+도/PAU))
+                        아니/VJ+으니까/ECS))
+               (S (NP-SBJ *pro*)
+                  (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ 우리/NPN+을/PCA)
+                                         에워싸/VV+는/EAN))
+                                  (NP 일/NNC+은/PAU))
+                          (VP (ADVP 제발/ADV)
+                              (VP 원하/VV+지/ECS)))
+                      않/VX+는다/EFN))
+               "/SRQ
+               고/PAD)
+       (VV 하소연/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>유방암을 앓았던 부인 린다와 2 년전 사별한 매카트니</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>"정치인도 스파이도 아니니까 우리를 에워싸는 일은 제발 원하지 않는다"</term>
+	    </Arg>
+	    <Rel>
+	      <term>하소연했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>사</lemma>
+    <comment>Frames file for '사' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>사.01</id>
+      <edef>buy</edef>
+      <roleset>
+	<role argnum="0" argrole="buyer"/>
+	<role argnum="1" argrole="thing bought"/>
+	<role argnum="2" argrole="seller"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>사다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 책을 어제 샀는데 인쇄가 분명치 않아서 반환해야겠다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 이/DAN
+                  책/NNC+을/PCA)
+          (VP (NP-ADV 어제/NNC)
+              (VP 사/VV+었/EPF+는데/ECS))))
+   (S (S (NP-SBJ 인쇄/NNC+이/PCA)
+         (VP (ADJP (VJ 분명/NNC+하/XSJ+지/ECS))
+             않/VX+어서/ECS))
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ *pro*)
+             (VV 반환/NNC+하/XSV+어야겠/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 책</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>어제</term>
+	    </Arg>
+	    <Rel>
+	      <term>샀는데</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

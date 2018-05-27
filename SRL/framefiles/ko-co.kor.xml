@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고조</lemma>
+    <comment>Frames file for '고조' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>고조.01</id>
+      <edef>enhance</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing enhanced"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고조되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 작년 9 월 도카이무라 원전에서 발생한 방사능 유출사고로 직원 1 명이 숨지고 439 명이 피폭을 당한 후 원전의 안전성에 대한 국민들의 우려가 고조돼 왔다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-ADV (S (NP-ADV (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (VP (NP-ADV 작년/NNC
+                                           9/NNU
+                                           월/NNX)
+                                   (VP (NP-COMP 도카이무라/NPR
+                                                원전/NNC+에서/PAD)
+                                       (VV 발생/NNC+하/XSV+은/EAN)))))
+                         (NP 방사능/NNC
+                             유출/NNC+사고/NNC+으로/PAD))
+                 (S (NP-SBJ 직원/NNC
+                            1/NNU
+                            명/NNX+이/PCA)
+                    (VP 숨지/VV+고/ECS))
+                 (S (NP-SBJ 439/NNU
+                            명/NNX+이/PCA)
+                    (VP (NP-OBJ 피폭/NNC+을/PCA)
+                        당하/VV+은/EAN)))
+              (NP 후/NNC))
+      (S (NP-SBJ (S (WHNP-2 *op*)
+                    (S (NP-SBJ *T*-2)
+                       (VP (NP-COMP (NP 원전/NNC+의/PAN)
+                                    (NP 안전성/NNC+에/PAD))
+                           대하/VV+은/EAN)))
+                 (NP (NP 국민/NNC+들/XSF+의/PAN)
+                     (NP 우려/NNC+이/PCA)))
+         (VP (VP (VV 고조/NNC+되/XSV+어/ECS))
+             오/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>작년 9 월 도카이무라 원전에서 발생한 방사능 유출사고로 직원 1 명이 숨지고 439 명이 피폭을 당한 후</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>원전의 안전성에 대한 국민들의 우려</term>
+	    </Arg>
+	    <Rel>
+	      <term>고조돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

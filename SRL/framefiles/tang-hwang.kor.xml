@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>당황</lemma>
+    <comment>Frames file for '당황' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>당황.01</id>
+      <edef>be perplexed</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="entity perplexed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>당황하다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포스트지는 한 예로 한국의 대표적 재벌인 삼성그룹 계열사인 삼성 SDS 를 들고 지난해 사내 인력의 10 퍼센트 이상인 6 천명이 신생 첨단 벤처기업으로 자리를 옮긴 데 당황한 SDS 가 최근 자유복 착용, 근무시간 자유조정 그리고 능력 본위 진급 등 혁신적인 개혁안을 발표하기도 했다고 보도했다.</text>
+	  <parse>
+(S (S (NP-SBJ 포스트/NPR+지/XSF+은/PAU)
+      (VP (NP-ADV 한/NNU
+                  예/NNC+으로/PAD)
+          (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP (NP (S (WHNP-1 *op*)
+                                           (S (NP-SBJ *T*-1)
+                                              (VP (NP (NP 한국/NPR+의/PAN)
+                                                      (NP 대표/NNC+적/XSF
+                                                          재벌/NNC+이/CO+은/EAN)))))
+                                        (NP 삼성/NPR+그룹/NNC))
+                                    (NP 계열사/NNC+이/CO+은/EAN)))))
+                      (NP 삼성/NPR
+                          SDS/NFW+을/PCA))
+              들/VV+고/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ (S (WHNP-4 *op*)
+                             (S (NP-SBJ *T*-4)
+                                (VP (NP-COMP (S (NP-ADV 지난해/NNC)
+                                                (S (NP-SBJ (S (WHNP-3 *op*)
+                                                              (S (NP-SBJ *T*-3)
+                                                                 (VP (NP (NP 사/NNX+내/NNX
+                                                                             인력/NNC+의/PAN)
+                                                                         (NP 10/NNU
+                                                                             퍼센트/NNX
+                                                                             이상/NNC+이/CO+은/EAN)))))
+                                                           (NP 6/NNU
+                                                               천/NNU+명/NNX+이/PCA))
+                                                   (VP (NP-COMP 신생/NNC
+                                                                첨단/NNC
+                                                                벤처/NNC+기업/NNC+으로/PAD)
+                                                       (NP-OBJ 자리/NNC+을/PCA)
+                                                       옮기/VV+은/EAN)))
+                                             (NP 데/NNX))
+                                    (VV 당황/NNC+하/XSV+은/EAN))))
+                          (NP SDS/NFW+이/PCA))
+                  (VP (VP (NP-ADV 최근/NNC)
+                          (VP (NP-OBJ (NP (NP (NP 자유복/NNC
+                                                  착용/NNC)
+                                              ,/SCM
+                                              (NP 근무/NNC+시간/NNC
+                                                  자유/NNC+조정/NNC)
+                                              (ADCP 그리고/ADC)
+                                              (NP 능력/NNC
+                                                  본위/NNC
+                                                  진급/NNC))
+                                          (NP 등/NNX))
+                                      (NP (S (WHNP-5 *op*)
+                                             (S (NP-SBJ *T*-5)
+                                                (VP (NP 혁신/NNC+적/XSF+이/CO+은/EAN))))
+                                          (NP 개혁/NNC+안/NNC+을/PCA)))
+                              (VV 발표/NNC+하/XSV+기/ENM+도/PAU)))
+                      하/VX+었/EPF+다/EFN+고/PAD))
+          (VV 보도/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=SDS</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>지난해 사내 인력의 10 퍼센트 이상인 6 천명이 신생 첨단 벤처기업으로 자리를 옮긴 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>당황한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,148 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>방영</lemma>
+    <comment>Frames file for '방영' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>방영.01</id>
+      <edef>broadcast</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, broadcaster"/>
+	<role argnum="1" argrole="thing broadcasted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>방영하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>탈출을 시도하다 체포된 한 소년은 일부 소년이 반 크루나 탈출난동 장면을 방영하는 TV를 시청하다 탈출 발상을 하게 됐다고 말하고 구치소는 매우 혼잡하며 음식도 끔찍스럽고 경비들도 거칠게 다룬다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 탈출/NNC+을/PCA)
+                            (VV 시도/NNC+하/XSV+다/ECS)))
+                     (VP (VV 체포/NNC+되/XSV+은/EAN)))))
+           (NP 한/NNU
+               소년/NNC+은/PAU))
+   (VP (VP (S-COMP (NP-SBJ 일부/NNC
+                           소년/NNC+이/PCA)
+                   (VP (VP (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP-OBJ 반/NPR
+                                                            크루나/NPR
+                                                            탈출/NNC+난동/NNC
+                                                            장면/NNC+을/PCA)
+                                                    (VV 방영/NNC+하/XSV+는/EAN))))
+                                          (NP TV/NFW+을/PCA))
+                                  (VV 시청/NNC+하/XSV+다/ECS)))
+                           (VP (NP-OBJ 탈출/NNC
+                                       발상/NNC+을/PCA)
+                               하/VV+게/ECS))
+                       되/VX+었/EPF+다/EFN+고/PAD))
+           말하/VV+고/ECS)
+       (VP (S-COMP (S (NP-SBJ 구치소/NNC+은/PAU)
+                      (ADJP (ADVP 매우/ADV)
+                            (ADJP (VJ 혼잡/NNC+하/XSJ+으며/ECS))))
+                   (S (NP-SBJ 음식/NNC+도/PAU)
+                      (ADJP 끔찍스럽/VJ+고/ECS))
+                   (S (NP-SBJ 경비/NNC+들/XSF+도/PAU)
+                      (VP (ADVP (ADV 거칠/VJ+게/ECS))
+                          (VP (NP-OBJ *pro*)
+                              다루/VV+는다/EFN+고/PAD))))
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=TV</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>반 크루나 탈출난동 장면</term>
+	    </Arg>
+	    <Rel>
+	      <term>방영하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>방영되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한국관광공사가 일본인 관광객 유치를 위해 제작한 한국 홍보광고가 10 일부터 도쿄(동경), 오사카(대판), 나고야(명고옥) 등 전국에서 민방 TV 를 통해 일제히 방영됐다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ 한국/NPR+관광/NNC+공사/NNC+이/PCA)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 일본인/NNC
+                                    관광객/NNC
+                                    유치/NNC+을/PCA)
+                            위하/VV+어/ECS))
+                     (VP (NP-OBJ *T*-1)
+                         (VV 제작/NNC+하/XSV+은/EAN)))))
+           (NP 한국/NPR
+               홍보/NNC+광고/NNC+이/PCA))
+   (VP (NP-ADV 10/NNU
+               일/NNX+부터/PAU)
+       (NP-ADV (NP (NP (NP 도쿄/NPR
+                           (PRN -LRB-/SLQ
+                                (NP 동경/NPR)
+                                -RRB-/SRQ))
+                       ,/SCM
+                       (NP 오사카/NPR
+                           (PRN -LRB-/SLQ
+                                (NP 대판/NPR)
+                                -RRB-/SRQ))
+                       ,/SCM
+                       (NP 나고야/NPR
+                           (PRN -LRB-/SLQ
+                                (NP 명고옥/NPR)
+                                -RRB-/SRQ)))
+                   (NP 등/NNX))
+               (NP 전국/NNC+에서/PAD))
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 민방/NNC
+                      TV/NFW+을/PCA)
+              통하/VV+어/ECS))
+       (ADVP 일제히/ADV)
+       (VP (VV 방영/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>한국관광공사가 일본인 관광객 유치를 위해 제작한 한국 홍보광고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>10 일부터</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>도쿄(동경), 오사카(대판), 나고야(명고옥) 등 전국에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f></f>
+	      <term>민방 TV 를 통해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>일제히</term>
+	    </Arg>
+	    <Rel>
+	      <term>방영됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

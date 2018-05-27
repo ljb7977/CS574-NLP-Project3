@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>바쁘</lemma>
+    <comment>Frames file for '바쁘' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>바쁘.01</id>
+      <edef>busy</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being busy"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>바쁘다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 이틀 동안에 제가 우리 중대 전투 준비를 하느라고 너무나 바빠서 그 지역에 있는 다른 부대에는 관심을 갖지 못했습니다.</text>
+	  <parse>
+(S (NP-ADV 그/DAN
+           이틀/NNC
+           동안/NNX+에/PAD)
+   (S (NP-SBJ 제/NPN+이/PCA)
+      (ADJP (S (NP-SBJ *pro*)
+               (VP (NP-OBJ-LV 우리/NPN
+                              중대/NNC
+                              전투/NNC
+                              준비/NNC+을/PCA)
+                   (LV 하/VV+느라고/ECS)))
+            (ADVP 너무나/ADV)
+            (ADJP 바쁘/VJ+어서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (ADJP (NP-COMP 그/DAN
+                                            지역/NNC+에/PAD)
+                                   있/VJ+는/EAN)))
+                       (NP 다른/DAN
+                           부대/NNC+에/PAD+은/PAU))
+              (VP (NP-OBJ-LV 관심/NNC+을/PCA)
+                  (LV 갖/VV+지/ECS)))
+          못하/VX+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그 이틀 동안에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>우리 중대 전투 준비를 하느라고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>너무나</term>
+	    </Arg>
+	    <Rel>
+	      <term>바빠서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

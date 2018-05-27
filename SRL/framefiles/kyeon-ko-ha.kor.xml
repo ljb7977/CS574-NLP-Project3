@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>견고하</lemma>
+    <comment>Frames file for '견고하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>견고하.01</id>
+      <edef>solid</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being solid"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>견고하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 지역은 땅이 아주 견고해서 우리 탱크들은 쉽게 횡단할 수 있었습니다.</text>
+	  <parse>
+(S (S (NP-SBJ 그/DAN
+	      지역/NNC+은/PAU)
+      (S (NP-SBJ 땅/NNC+이/PCA)
+	 (ADJP (ADVP 아주/ADV)
+	       (ADJP (VJ 견고/NNC+하/XSJ+어서/ECS)))))
+   (S (NP-SBJ 우리/NPN
+              탱크/NNC+들/XSF+은/PAU)
+      (VP (VP (ADVP (ADV 쉽/VJ+게/ECS))
+	      (VP (VV 횡단/NNC+하/XSV+을/EAN)))
+	  (VX 수/NNX
+              있/VJ+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그 지역</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>땅</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>아주</term>
+	    </Arg>
+	    <Rel>
+	      <term>견고해서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

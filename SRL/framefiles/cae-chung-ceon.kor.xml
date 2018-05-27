@@ -1,0 +1,101 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재충전</lemma>
+    <comment>Frames file for '재충전' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재충전.01</id>
+      <edef>recharge</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, causer"/>
+	<role argnum="1" argrole="thing recharged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재충전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>국산 축전지는 나빠서 재충전하는 일이 자주 있지요.</text>
+	  <parse>
+(S (S (NP-SBJ 국산/NNC
+              축전지/NNC+은/PAU)
+      (ADJP 나쁘/VJ+어서/ECS))
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ *pro*)
+                     (VV 재충전/NNC+하/XSV+는/EAN)))
+              (NP 일/NNC+이/PCA))
+      (ADJP (ADVP 자주/ADV)
+            (ADJP 있/VJ+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>재충전하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>재충전시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>플레이트는 가장 바람직하지 않은 한국 총선 결과는 김대통령이 이끄는 민주당을 거부하는 것으로 이는 한국 경제를 재충전시키고 아시아 경제회복의 도화선이 된 구조개혁의 중단을 초래할 수 있다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 플레이트/NPR+은/PAU)
+   (VP (S-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (ADJP (ADVP 가장/ADV)
+                                          (ADJP 바람직하/VJ+지/ECS))
+                                    않/VX+은/EAN)))
+                          (NP 한국/NPR
+                              총선/NNC
+                              결과/NNC+은/PAU))
+                  (VP (NP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (S (WHNP-2 *op*)
+                                            (S (NP-SBJ 김/NPR+대통령/NNC+이/PCA)
+                                               (VP (NP-OBJ *T*-2)
+                                                   이끌/VV+는/EAN)))
+                                         (NP 민주당/NPR+을/PCA))
+                                 (VV 거부/NNC+하/XSV+는/EAN)))
+                          (NP 것/NNX+으로/PAD))))
+               (S (NP-SBJ 이/NPN+은/PAU)
+                  (VP (VP (NP-OBJ (NP (S (WHNP-3 *op*)
+                                         (S (NP-SBJ *T*-3)
+                                            (VP (VP (NP-OBJ 한국/NPR
+                                                            경제/NNC+을/PCA)
+                                                    (VV 재충전/NNC+시키/XSV+고/ECS))
+                                                (VP (NP-COMP (NP 아시아/NPR
+                                                                 경제/NNC+회복/NNC+의/PAN)
+                                                             (NP 도화선/NNC+이/PCA))
+                                                    되/VV+은/EAN))))
+                                      (NP 구조/NNC+개혁/NNC+의/PAN))
+                                  (NP 중단/NNC+을/PCA))
+                          (VV 초래/NNC+하/XSV+을/EAN))
+                      (VX 수/NNX
+                          있/VJ+다/EFN+고/PAD))))
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=구조개혁</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>한국 경제</term>
+	    </Arg>
+	    <Rel>
+	      <term>재충전시키고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,177 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>추방</lemma>
+    <comment>Frames file for '추방' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>추방.01</id>
+      <edef>banish</edef>
+      <roleset>
+	<role argnum="0" argrole="thing banishing"/>
+	<role argnum="1" argrole="thing banished"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>추방하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>영국정부는 망명희망자가 거리에서 구걸행위를 하다 적발되면 신속하게 국외로 추방하는 절차를 마련 중이라고 영국 언론이 19 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 영국/NPR+정부/NNC+은/PAU)
+             (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                (VP (S (NP-SBJ 망명/NNC+희망자/NNC+이/PCA)
+                                       (VP (S (NP-SBJ *pro*)
+                                              (VP (NP-ADV 거리/NNC+에서/PAD)
+                                                  (VP (NP-OBJ 구걸/NNC+행위/NNC+을/PCA)
+                                                      하/VV+다/ECS)))
+                                           (VP (VV 적발/NNC+되/XSV+으면/ECS))))
+                                    (VP (ADVP (ADV (VJ 신속/NNC+하/XSJ+게/ECS)))
+                                        (VP (NP-COMP 국외/NNC+으로/PAD)
+                                            (VV 추방/NNC+하/XSV+는/EAN)))))
+                             (NP 절차/NNC+을/PCA))
+                     (VV 마련/NNC))
+                 (VX 중/NNX+이/CO+라/EFN+고/PAD)))
+   (S (NP-SBJ 영국/NPR
+              언론/NNC+이/PCA)
+      (VP (NP-ADV 19/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>망명희망자가 거리에서 구걸행위를 하다 적발되면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>신속하게</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>국외</term>
+	    </Arg>
+	    <Rel>
+	      <term>추방하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>추방되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>그는 이같은 혐의 때문에 미국과 캐나다에서 추방된 바 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 그/NPN+은/PAU)
+              (VP (NP-ADV (NP 이같은/DAN
+                              혐의/NNC)
+                          (NP 때문/NNX+에/PAD))
+                  (VP (NP-COMP (NP 미국/NPR+과/PCJ)
+                               (NP 캐나다/NPR+에서/PAD))
+                      (VV 추방/NNC+되/XSV+은/EAN))))
+           (NP 바/NNX))
+   (ADJP 있/VJ+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이같은 혐의 때문에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>미국과 캐나다</term>
+	    </Arg>
+	    <Rel>
+	      <term>추방된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>추방당하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>브르코의 안정화를 위해서는 내전 당시 추방당한 회교계와 크로아티아계 주민들의 복귀가 이뤄져야 할 것으로 지적됐지만 그동안 이곳에 정착해 온 세르비아계 주민들이 반발하고 있는 데다 주택과 취업사정도 열악해 불안요인이 여전한 것으로 평가되고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (NP 브르코/NPR+의/PAN)
+                                     (NP 안정화/NNC+을/PCA))
+                             위하/VV+어서/ECS+은/PAU))
+                      (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP-ADV 내전/NNC
+                                                       당시/NNC)
+                                               (VP (VV 추방/NNC+당하/XSV+은/EAN)))))
+                                     (NP (NP (NP 회교/NNC+계/XSF+과/PCJ)
+                                             (NP 크로아티아/NPR+계/XSF))
+                                         (NP 주민/NNC+들/XSF+의/PAN)))
+                                 (NP 복귀/NNC+이/PCA))
+                         (VP (VP (VV 이루/VV+어지/XSV+어야/ECS))
+                             하/VX+을/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          (VV 지적/NNC+되/XSV+었/EPF+지만/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (S (NP-ADV (S (NP-SBJ (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (VP (VP (NP-ADV 그동안/NNC)
+                                                           (VP (NP-COMP 이곳/NPN+에/PAD)
+                                                               (VV 정착/NNC+하/XSV+어/ECS)))
+                                                       오/VX+은/EAN)))
+                                             (NP 세르비아/NPR+계/XSF
+                                                 주민/NNC+들/XSF+이/PCA))
+                                     (VP (VP (VV 반발/NNC+하/XSV+고/ECS))
+                                         있/VX+는/EAN))
+                                  (NP 데/NNX+다/PAU))
+                          (S (NP-SBJ (NP 주택/NNC+과/PCJ)
+                                     (NP 취업/NNC+사정/NNC+도/PAU))
+                             (ADJP 열악하/VJ+어/ECS))
+                          (S (NP-SBJ 불안/NNC+요인/NNC+이/PCA)
+                             (ADJP 여전하/VJ+은/EAN)))
+                       (NP 것/NNX+으로/PAD))
+              (VV 평가/NNC+되/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=회교계와 크로아티아계 주민들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>내전 당시</term>
+	    </Arg>
+	    <Rel>
+	      <term>추방당한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

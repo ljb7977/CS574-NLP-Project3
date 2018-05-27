@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<experiment>
+	<optioncontainer>
+		<optiongroup groupname="config">
+			<option name="name" value="langModel"/>
+			<option name="flowchart" value="learn"/>
+		</optiongroup>
+		<optiongroup groupname="input">
+			<option name="infile" value="kaist_train_train80.conll"/>
+		</optiongroup>
+		<optiongroup groupname="lib">
+			<option name="options" value="-s_4_-c_0.1"/>
+		</optiongroup>
+		<optiongroup groupname="guide">
+			<option name="learner" value="liblinear"/>
+		</optiongroup>
+	</optioncontainer>
+</experiment>

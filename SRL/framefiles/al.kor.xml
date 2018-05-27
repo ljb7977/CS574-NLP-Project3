@@ -1,0 +1,287 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>알</lemma>
+    <comment>Frames file for '알' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>알.01</id>
+      <edef>know</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="knower"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>알다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>1개 박격포 연대가 있다는 걸 저는 분명히 압니다.</text>
+	  <parse>
+(S (NP-OBJ-1 (S (NP-SBJ 1/NNU
+                        개/NNX
+                        박격포/NNC
+                        연대/NNC+이/PCA)
+                (ADJP 있/VJ+다는/EAN))
+             (NP 것/NNX+을/PCA))
+   (S (NP-SBJ 저/NPN+은/PAU)
+      (VP (ADVP 분명히/ADV)
+          (VP (NP-OBJ *T*-1)
+              알/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>1개 박격포 연대가 있다는 것</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>분명히</term>
+	    </Arg>
+	    <Rel>
+	      <term>압니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>알다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>귀관이 지금까지 이미 언급한 부대들 외에 또 어떤 부대들에 대해서 알고 있소?</text>
+	  <parse>
+(S (NP-ADV (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ 귀관/NPN+이/PCA)
+                     (VP (NP-ADV 지금/NNC+까지/PAU)
+                         (ADVP 이미/ADV)
+                         (VP (NP-OBJ *T*-1)
+                             (VV 언급/NNC+하/XSV+은/EAN)))))
+               (NP 부대/NNC+들/XSF))
+           (NP 외/NNC+에/PAD))
+   (ADVP 또/ADV)
+   (S (NP-SBJ *pro*)
+      (VP (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (NP-COMP 어떤/DAN
+                                   부대/NNC+들/XSF+에/PAD)
+                          대하/VV+어서/ECS))
+              알/VV+고/ECS)
+          있/VX+소/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>귀관이 지금까지 이미 언급한 부대들 외에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에 대해서</f>
+	      <term>어떤 부대들</term>
+	    </Arg>
+	    <Rel>
+	      <term>알고</term>
+	    </Rel>
+	    <AUX>
+	      <f>고</f>
+	      <term>있소</term>
+	    </AUX>
+	  </relation>
+	</example>
+	<example>
+	  <text>1개 박격포 소대의 병력은 비반충포 소대의 병력과 대략 같은 것으로 알고 있습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-COMP (S (NP-SBJ (NP (NP 1/NNU
+                                       개/NNX)
+                                   (NP 박격포/NNC
+                                       소대/NNC+의/PAN))
+                               (NP 병력/NNC+은/PAU))
+                       (ADJP (NP-COMP (NP 비반충포/NNC
+                                          소대/NNC+의/PAN)
+                                      (NP 병력/NNC+과/PAD))
+                             (ADJP (ADVP 대략/ADV)
+                                   (ADJP 같/VJ+은/EAN))))
+                    (NP 것/NNX+으로/PAD))
+           알/VV+고/ECS)
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>1개 박격포 소대의 병력은 비반충포 소대의 병력과 대략 같은 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>알고</term>
+	    </Rel>
+	    <AUX>
+	      <f>고</f>
+	      <term>있습니다</term>
+	    </AUX>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>알리다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>그런 다음에 그 소요를 대대부에 알렸습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 그런/DAN
+               다음/NNC+에/PAD)
+       (VP (NP-OBJ 그/DAN
+                   소요/NNC+을/PCA)
+           (NP-COMP 대대부/NNC+에/PAD)
+           (VP 알리/VV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그런 다음에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>그 소요</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>대대부</term>
+	    </Arg>
+	    <Rel>
+	      <term>알렸습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>중대장은 대대 후방부장에게 연료의 소요량과 연료를 필요로 하는 탱크의 위치를 알립니다.</text>
+	  <parse>
+(S (NP-SBJ 중대장/NNC+은/PAU)
+   (VP (NP-COMP 대대/NNC
+                후방/NNC
+                부장/NNC+에게/PAD)
+       (NP-OBJ (NP (NP 연료/NNC+의/PAN)
+                   (NP 소요량/NNC+과/PCJ))
+               (NP (NP (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP-OBJ 연료/NNC+을/PCA)
+                                 (VP (NP-COMP-LV 필요/NNC+으로/PAD)
+                                     (LV 하/VV+는/EAN)))))
+                       (NP 탱크/NNC+의/PAN))
+                   (NP 위치/NNC+을/PCA)))
+       알리/VV+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="A">
+	      <f>은</f>
+	      <term>중대장</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에게</f>
+	      <term>대대 후방부장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>연료의 소요량과 연료를 필요로 하는 탱크의 위치</term>
+	    </Arg>
+	    <Rel>
+	      <term>알립니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>알려지다</rel>
+	  <mapitem src="s" trg="argA"/>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중대장이 전사한 것은 아직 알려지지 않았다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 중대장/NNC+이/PCA)
+              (VP (VV 전사/NNC+하/XSV+은/EAN)))
+           (NP 것/NNX+은/PAU))
+   (VP (VP (ADVP 아직/ADV)
+           (VP (VV 알리/VV+어지/XSV+지/ECS)))
+       않/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>중대장이 전사한 것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>아직</term>
+	    </Arg>
+	    <Rel>
+	      <term>알려지지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>알려지다</rel>
+	  <mapitem src="s" trg="argA"/>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이것은 T-54C로도 알려져 있다.</text>
+	  <parse>
+(S (NP-SBJ 이것/NPN+은/PAU)
+   (VP (VP (NP-COMP T-54C/NFW+으로/PAD+도/PAU)
+           (VV 알리/VV+어지/XSV+어/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>이것</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>로도</f>
+	      <term>T-54C</term>
+	    </Arg>
+	    <Rel>
+	      <term>알려져</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

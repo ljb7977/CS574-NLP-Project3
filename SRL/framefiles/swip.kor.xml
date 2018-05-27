@@ -1,0 +1,42 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>쉽</lemma>
+    <comment>Frames file for '쉽' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>쉽.01</id>
+      <edef>easy</edef>
+      <roleset>
+	<role argnum="1" argrole="event"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>쉽다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>여름 철엔 무전기가 과열되기 쉽습니다.</text>
+	  <parse>
+(S (NP-ADV 여름철/NNC+에/PAD+은/PAU)
+   (S (S-SBJ (NP-SBJ 무전기/NNC+이/PCA)
+             (VP (VV 과열/NNC+되/XSV+기/ENM)))
+      (ADJP 쉽/VJ+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>여름철엔</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>무전기가 과열되기</term>
+	    </Arg>
+	    <Rel>
+	      <term>쉽습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

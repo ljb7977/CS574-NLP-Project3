@@ -1,0 +1,116 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>초래</lemma>
+    <comment>Frames file for '초래' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>초래.01</id>
+      <edef>bring about</edef>
+      <roleset>
+	<role argnum="0" argrole="thing bringing"/>
+	<role argnum="1" argrole="bring about"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>초래하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>초음속 여객기인 콩코드가 내는 소음이 비둘기들의 방향감각에 혼란을 초래하고 있다고 미국의 한 지구물리학자가 밝혔다.</text>
+	  <parse>
+(S (S-COMP-3 (NP-SBJ (S (WHNP-2 *op*)
+                        (S (NP-SBJ (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (VP (NP 초음속/NNC
+                                                 여객기/NNC+이/CO+은/EAN))))
+                                   (NP 콩코드/NPR+이/PCA))
+                           (VP (NP-OBJ *T*-2)
+                               내/VV+는/EAN)))
+                     (NP 소음/NNC+이/PCA))
+             (VP (VP (NP-ADV (NP 비둘기/NNC+들/XSF+의/PAN)
+                             (NP 방향/NNC+감각/NNC+에/PAD))
+                     (VP (NP-OBJ 혼란/NNC+을/PCA)
+                         (VV 초래/NNC+하/XSV+고/ECS)))
+                 있/VX+다/EFN+고/PAD))
+   (S (NP-SBJ (NP 미국/NPR+의/PAN)
+              (NP 한/NNU
+                  지구/NNC+물리학자/NNC+이/PCA))
+      (VP (S-COMP *T*-3)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>초음속 여객기인 콩코드가 내는 소음</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>비둘기들의 방향감각에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>혼란</term>
+	    </Arg>
+	    <Rel>
+	      <term>초래하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>초래되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>리스터 장관은 정보통신 분야에서 이 원칙이 한번 무너지면 망명신청자나 계절노동자등의 외국인 노동자들에게도 문호를 개방하게 되는 사태가 초래될 것을 우려하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 리스터/NPR
+           장관/NNC+은/PAU)
+   (VP (VP (NP-OBJ (S (S (NP-ADV 정보/NNC+통신/NNC
+				 분야/NNC+에서/PAD)
+			 (S (NP-SBJ 이/DAN
+				    원칙/NNC+이/PCA)
+			    (VP (NP-ADV 한/NNU+번/NNX)
+				(VP 무너지/VV+으면/ECS))))
+		      (S (NP-SBJ (S (NP-SBJ *pro*)
+				    (VP (VP (NP-COMP (NP 망명/NNC+신청자/NNC+이나/PCJ)
+						     (NP 계절/NNC+노동자/NNC+등/NNX+의/PAN)
+						     (NP 외국인/NNC
+							 노동자/NNC+들/XSF+에게/PAD+도/PAU))
+					    (NP-OBJ 문호/NNC+을/PCA)
+					    (VV 개방/NNC+하/XSV+게/ECS))
+					되/VX+는/EAN))
+				 (NP 사태/NNC+이/PCA))
+			 (VP (VV 초래/NNC+되/XSV+을/EAN))))
+		   (NP 것/NNX+을/PCA))
+           (VV 우려/NNC+하/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>정보통신 분야에서 이 원칙이 한번 무너지면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>망명신청자나 계절노동자등의 외국인 노동자들에게도 문호를 개방하게 되는 사태</term>
+	    </Arg>
+	    <Rel>
+	      <term>초래될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

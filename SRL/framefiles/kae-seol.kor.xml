@@ -1,0 +1,109 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>개설</lemma>
+    <comment>Frames file for '개설' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>개설.01</id>
+      <edef>open</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing opening"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>개설하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>작년에 원산에서 평양까지 고속도로를 새로 개설했습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 작년/NNC+에/PAD)
+       (NP-ADV 원산/NPR+에서/PAD)
+       (NP-ADV 평양/NPR+까지/PAU)
+       (VP (NP-OBJ 고속/NNC
+                   도로/NNC+을/PCA)
+           (VP (ADVP 새로/ADV)
+               (VP (VV 개설/NNC+하/XSV+었/EPF+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>작년에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>원산에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>평양까지</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>고속도로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>새로</term>
+	    </Arg>
+	    <Rel>
+	      <term>개설했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>개설되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>안중근의사 유골 발굴위원회 도쿄(동경) 사무국이 17 일 개설돼 일본 관계자들과 함께 중국에서 본격적인 발굴작업에 들어가게 됐다.</text>
+	  <parse>
+(S (S (NP-SBJ 안중근/NPR+의사/NNC
+              유골/NNC
+              발굴/NNC+위원회/NNC
+              도쿄/NPR
+              (PRN -LRB-/SLQ
+                   (NP 동경/NPR)
+                   -RRB-/SRQ)
+              사무국/NNC+이/PCA)
+      (VP (NP-ADV 17/NNU
+                  일/NNX)
+          (VP (VV 개설/NNC+되/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (ADVP (NP-COMP 일본/NPR
+                             관계자/NNC+들/XSF+과/PAD)
+                    함께/ADV)
+              (NP-ADV 중국/NPR+에서/PAD)
+              (VP (NP-COMP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP 본격/NNC+적/XSF+이/CO+은/EAN))))
+                           (NP 발굴/NNC+작업/NNC+에/PAD))
+                  들어가/VV+게/ECS))
+          되/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>안중근의사 유골 발굴위원회 도쿄(동경) 사무국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>17 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>개설돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

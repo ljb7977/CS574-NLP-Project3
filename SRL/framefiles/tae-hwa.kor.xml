@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대화</lemma>
+    <comment>Frames file for '대화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대화.01</id>
+      <edef>talk with</edef>
+      <roleset>
+	<role argnum="0" argrole="talker"/>
+	<role argnum="1" argrole="subject"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>부시 지사는 종종 약점으로 지적되고 있는 보좌관들에 대한 지나친 의존을 오히려 자신의 강점이라고 생각, 책을 읽기보다는 대화하는 것이 편하다고 느껴 모든 결정도 토론을 통해 내리기를 좋아한다고 말하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 부시/NPR
+              지사/NNC+은/PAU)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (VP (ADVP 종종/ADV)
+                                (VP (NP-COMP 약점/NNC+으로/PAD)
+                                    (VV 지적/NNC+되/XSV+고/ECS)))
+                            있/VX+는/EAN)))
+                  (NP (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-COMP 보좌관/NNC+들/XSF+에/PAD)
+                                대하/VV+은/EAN)))
+                      (NP (S (WHNP-3 *op*)
+                             (S (NP-SBJ *T*-3)
+                                (VP 지나치/VV+은/EAN)))
+                          (NP 의존/NNC+을/PCA))))
+          (VP (ADVP 오히려/ADV)
+              (VP (NP-COMP (NP 자신/NNC+의/PAN)
+                           (NP 강점/NNC+이라고/PAD))
+                  (VV 생각/NNC)))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (VP (S-COMP (S (NP-SBJ *pro*)
+                         (VP (S-COMP (S (NP-SBJ *pro*)
+                                        (VP (NP-OBJ 책/NNC+을/PCA)
+                                            읽/VV+기/ENM+보다/PAD+은/PAU))
+                                     (S (NP-SBJ (S (NP-SBJ *pro*)
+                                                   (VP (NP-COMP *pro*)
+                                                       (VV 대화/NNC+하/XSV+는/EAN)))
+                                                (NP 것/NNX+이/PCA))
+                                        (ADJP 편하/VJ+다/EFN+고/PAD)))
+                             느끼/VV+어/ECS))
+                      (S (NP-SBJ *pro*)
+                         (VP (S-OBJ (NP-SBJ *pro*)
+                                    (VP (NP-OBJ 모든/DAN
+                                                결정/NNC+도/PAU)
+                                        (VP (S (NP-SBJ *pro*)
+                                               (VP (NP-OBJ 토론/NNC+을/PCA)
+                                                   통하/VV+어/ECS))
+                                            (VP 내리/VV+기/ENM+을/PCA))))
+                             (VV 좋/VJ+어하/XSV+는다/EFN+고/PAD))))
+              말하/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>대화하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

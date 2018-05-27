@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>닦</lemma>
+    <comment>Frames file for '닦' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>닦.01</id>
+      <edef>clean</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing cleaned"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>닦다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그리고 물론 자기네 차량을 항상 깨끗이 닦아 두고 녹슬지 않게끔 하지요.</text>
+	  <parse>
+(S (ADCP 그리고/ADC)
+   (ADVP 물론/ADV)
+   (S (NP-SBJ *pro*)
+      (VP (VP (VP (NP-OBJ (NP 자기/NPN+네/XSF)
+                          (NP 차량/NNC+을/PCA))
+                  (VP (ADVP 항상/ADV)
+                      (ADVP 깨끗이/ADV)
+                      (VP 닦/VV+어/ECS)))
+              두/VX+고/ECS)
+          (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (VP 녹슬/VV+지/ECS)
+                          않/VX+게끔/ECS))
+              하/VV+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그리고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>물론</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자기네 차량</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>항상</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>깨끗이</term>
+	    </Arg>
+	    <Rel>
+	      <term>닦아</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>두고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

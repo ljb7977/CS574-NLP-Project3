@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소탕</lemma>
+    <comment>Frames file for '소탕' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>소탕.01</id>
+      <edef>mop up</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="enemy, resistance"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소탕하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대대 예비 병력의 임무는 대대가 우회한 적의 고립된 저항을 소탕하거나 즉각적인 반전차 방어 부대로서 차량화 소총 부대를 지원하거나 하는 것입니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 대대/NNC
+               예비/NNC
+               병력/NNC+의/PAN)
+           (NP 임무/NNC+은/PAU))
+   (VP (NP (S (NP-SBJ *pro*)
+              (VP (S-COMP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                (S (NP-SBJ 대대/NNC+이/PCA)
+                                                   (VP (NP-OBJ *T*-1)
+                                                       (VV 우회/NNC+하/XSV+은/EAN))))
+                                             (NP 적/NNC+의/PAN))
+                                         (NP (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (VP (VV 고립/NNC+되/XSV+은/EAN))))
+                                             (NP 저항/NNC+을/PCA)))
+                                 (VV 소탕/NNC+하/XSV+거나/ECS)))
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-ADV (S (WHNP-3 *op*)
+                                            (S (NP-SBJ *T*-3)
+                                               (VP (NP 즉각/NNC+적/XSF+이/CO+은/EAN))))
+                                         (NP 반전차/NNC
+                                             방어/NNC
+                                             부대/NNC+으로서/PAD))
+                                 (VP (NP-OBJ 차량/NNC+화/XSF
+                                             소총/NNC
+                                             부대/NNC+을/PCA)
+                                     (VV 지원/NNC+하/XSV+거나/ECS)))))
+                  하/VV+는/EAN))
+           (NP 것/NNX+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대대가 우회한 적의 고립된 저항</term>
+	    </Arg>
+	    <Rel>
+	      <term>소탕하거나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

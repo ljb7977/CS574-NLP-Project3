@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>협상</lemma>
+    <comment>Frames file for '협상' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>협상.01</id>
+      <edef>negotiate</edef>
+      <roleset>
+	<role argnum="0" argrole="negotiator"/>
+	<role argnum="1" argrole="agreement"/>
+	<role argnum="2" argrole="other party"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>협상하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>다임러크라이슬러는 혼다 및 미쓰비시 자동차와 제휴 문제를 협상하고 있다고 다임러크라이슬러 간부가 프랑스 신문에 밝힌 것으로 2 일 보도됐다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (S-COMP-1 (NP-SBJ 다임크라이슬러/NPR+은/PAU)
+                             (VP (VP (NP-COMP (NP 혼다/NPR)
+                                              (ADCP 및/ADC)
+                                              (NP 미쓰비시/NPR
+                                                  자동차/NNC+과/PAD))
+                                     (NP-OBJ 제휴/NNC
+                                             문제/NNC+을/PCA)
+                                     (VV 협상/NNC+하/XSV+고/ECS))
+                                 있/VX+다/EFN+고/PAD))
+                   (S (NP-SBJ 다임러크라이슬러/NPR
+                              간부/NNC+이/PCA)
+                      (VP (NP-COMP 프랑스/NPR
+                                   신문/NNC+에/PAD)
+                          (S-COMP *T*-1)
+                          밝히/VV+은/EAN)))
+                (NP 것/NNX+으로/PAD))
+       (VP (NP-ADV 2/NNU
+                   일/NNX)
+           (VP (VV 보도/NNC+되/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>다임러크라이슬러</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>혼다 및 미쓰비시 자동차</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>제휴 문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>협상하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

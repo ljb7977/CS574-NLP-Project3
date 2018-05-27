@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>방비</lemma>
+    <comment>Frames file for '방비' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>방비.01</id>
+      <edef>arm with</edef>
+      <roleset>
+	<role argnum="0" argrole="entity armed"/>
+	<role argnum="1" argrole="equipment"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>방비하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 중대에는 하전사가 37명 있는데 이들은 모두 7.62mm AKM 보총을 방비했으며 이 보총의 전투 정량은 120발입니다.</text>
+	  <parse>
+(S (S (NP-COMP-1 저희/NPN
+                 중대/NNC+에/PAD+은/PAU)
+      (S (NP-SBJ 하전사/NNC+이/PCA)
+         (ADJP (NP-ADV 37/NNU
+                       명/NNX)
+               (ADJP (NP-COMP *T*-1)
+                     있/VJ+는데/ECS))))
+   (S (NP-SBJ 이/NPN+들/XSF+은/PAU)
+      (VP (ADVP 모두/ADV)
+          (VP (NP-OBJ 7.62/NNU
+                      mm/NFW
+                      AKM/NFW
+                      보총/NNC+을/PCA)
+              (VV 방비/NNC+하/XSV+었/EPF+으며/ECS))))
+   (S (NP-SBJ (NP 이/DAN
+                  보총/NNC+의/PAN)
+              (NP 전투/NNC
+                  정량/NNC+은/PAU))
+      (VP (NP 120/NNU
+              발/NNX+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>모두</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>7.62mm AKM 보총</term>
+	    </Arg>
+	    <Rel>
+	      <term>방비했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

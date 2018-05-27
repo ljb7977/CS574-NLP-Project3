@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지지</lemma>
+    <comment>Frames file for '지지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>지지.01</id>
+      <edef>support</edef>
+      <roleset>
+	<role argnum="0" argrole="thing supporting"/>
+	<role argnum="1" argrole="thing supported"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중국은 18 일의 대만 총통선거가 대만 독립을 지지하는 후보의 당선으로 이어질 경우 무력을 사용할 것이라고 경고해 왔다.</text>
+	  <parse>
+(S (NP-SBJ 중국/NPR+은/PAU)
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV (S (NP-SBJ (NP 18/NNU
+                                                  일/NNX+의/PAN)
+                                              (NP 대만/NPR
+                                                  총통/NNC+선거/NNC+이/PCA))
+                                      (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                                          (S (NP-SBJ *T*-1)
+                                                             (VP (NP-OBJ 대만/NPR
+                                                                         독립/NNC+을/PCA)
+                                                                 (VV 지지/NNC+하/XSV+는/EAN))))
+                                                       (NP 후보/NNC+의/PAN))
+                                                   (NP 당선/NNC+으로/PAD))
+                                          (VV 잇/VV+어지/XSV+을/EAN)))
+                                   (NP 경우/NNC))
+                           (VP (NP-OBJ 무력/NNC+을/PCA)
+                               (VV 사용/NNC+하/XSV+을/EAN)))
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+           (VV 경고/NNC+하/XSV+어/ECS))
+       오/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=후보</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대만 독립</term>
+	    </Arg>
+	    <Rel>
+	      <term>지지하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

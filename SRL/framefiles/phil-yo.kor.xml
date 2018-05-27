@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>필요</lemma>
+    <comment>Frames file for '필요' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>필요.01</id>
+      <edef>necessary</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being necessary"/>
+	<role argnum="2" argrole="necessary to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>필요하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>우리 탱크 부대에는 숙달된 기술 군관이 필요합니다.</text>
+	  <parse>
+(S (NP-COMP-2 우리/NPN
+              탱크/NNC
+              부대/NNC+에/PAD+은/PAU)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP *pro*)
+                        (VV 숙달/NNC+되/XSV+은/EAN))))
+              (NP 기술/NNC
+                  군관/NNC+이/PCA))
+      (ADJP (NP-COMP *T*-2)
+            (VJ 필요/NNC+하/XSJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>우리 탱크 부대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>숙달된 기술 군관</term>
+	    </Arg>
+	    <Rel>
+	      <term>필요합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>필요하다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전투 차량은 보조 연료 탱크가 필요하다.</text>
+	  <parse>
+(S (NP-SBJ 전투/NNC
+           차량/NNC+은/PAU)
+   (S (NP-SBJ 보조/NNC
+              연료/NNC
+              탱크/NNC+이/PCA)
+      (ADJP (VJ 필요/NNC+하/XSJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>전투 차량</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>보조 연료 탱크</term>
+	    </Arg>
+	    <Rel>
+	      <term>필요하다</term>
+	    </Rel>
+	  </relation>
+	  <comment>double nominative</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

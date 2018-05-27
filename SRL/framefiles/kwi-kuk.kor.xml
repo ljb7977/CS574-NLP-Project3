@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>귀국</lemma>
+    <comment>Frames file for '귀국' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>귀국.01</id>
+      <edef>return to one's country</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>귀국하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>칠레의 후안 구즈만 타피아 판사는 영국에서 귀국한 전독재자 아우구스토 피노체트가 국내에서 재판받을 수 있도록 그에 대한 면책특권 해제를 6 일 산티아고 항소법원에 요청했다고 한 변호사가 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP 칠레/NPR+의/PAN)
+                     (NP 후안/NPR
+                         구즈만/NPR
+                         타피아/NPR
+                         판사/NNC+은/PAU))
+             (VP (S (NP-SBJ (S (WHNP-3 *op*)
+                               (S (NP-SBJ *T*-3)
+                                  (VP (NP-ADV 영국/NPR+에서/PAD)
+                                      (VP (VV 귀국/NNC+하/XSV+은/EAN)))))
+                            (NP (NP 전/XPF+독재자/NNC)
+                                (NP 아우구스토/NPR
+                                    피노체트/NPR+이/PCA)))
+                    (VP (VP (NP-ADV 국내/NNC+에서/PAD)
+                            (VP (VV 재판/NNC+받/XSV+을/EAN)))
+                        (VX 수/NNX
+                            있/VJ+도록/ECS)))
+                 (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP (NP-COMP 그/NPN+에/PAD)
+                                           대하/VV+은/EAN)))
+                                 (NP 면책/NNC+특권/NNC))
+                             (NP 해제/NNC+을/PCA))
+                     (VP (NP-ADV 6/NNU
+                                 일/NNX)
+                         (VP (NP-COMP 산티아고/NPR
+                                      항소/NNC+법원/NNC+에/PAD)
+                             (VV 요청/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))))
+   (S (NP-SBJ 한/NNU
+              변호사/NNC+이/PCA)
+      (VP (S-COMP *T*-1)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=전독재자 아우구스토 피노체트</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>영국에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>귀국한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

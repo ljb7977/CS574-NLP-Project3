@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불필요</lemma>
+    <comment>Frames file for '불필요' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>불필요.01</id>
+      <edef>non-essential</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being non-essential"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불필요하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>불필요한 물자는 전투를 개시하기 전에 후송한다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-OBJ (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (ADJP (VJ 불필요/NNC+하/XSJ+은/EAN))))
+               (NP 물자/NNC+은/PAU))
+       (VP (NP-ADV (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ 전투/NNC+을/PCA)
+                          (VV 개시/NNC+하/XSV+기/ENM)))
+                   (NP 전/NNC+에/PAD))
+           (VP (VV 후송/NNC+하/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=물자</term>
+	    </Arg>
+	    <Rel>
+	      <term>불필요한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

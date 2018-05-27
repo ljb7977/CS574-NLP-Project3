@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>경주</lemma>
+    <comment>Frames file for '경주' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>경주.01</id>
+      <edef>concentrate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="energy"/>
+	<role argnum="2" argrole="concentrated on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>경주하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한나라당은 이어 이번 주말까지 서울 16 곳, 인천, 경기 16 곳 등 수도권 32 개 지구당 정기대회를 열어 수도권 세몰이에 총력을 경주한다는 전략이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (S (NP-SBJ 한나라당/NPR+은/PAU)
+                 (VP (ADVP 이어/ADV)
+                     (NP-ADV 이번/NNC
+                             주말/NNC+까지/PAU)
+                     (VP (NP-OBJ (NP (NP (NP (NP 서울/NPR
+                                                 16/NNU
+                                                 곳/NNX)
+                                             ,/SCM
+                                             (NP 인천/NPR
+                                                 ,/SCM
+                                                 경기/NPR
+                                                 16/NNU
+                                                 곳/NNX))
+                                         (NP 등/NNX))
+                                     (NP 수도권/NNC
+                                         32/NNU
+                                         개/NNX
+                                         지구당/NNC))
+                                 (NP 정기/NNC+대회/NNC+을/PCA))
+                         열/VV+어/ECS)))
+              (S (NP-SBJ *pro*)
+                 (VP (NP-COMP 수도권/NNC
+                              세몰이/NNC+에/PAD)
+                     (NP-OBJ 총력/NNC+을/PCA)
+                     (VV 경주/NNC+하/XSV+는다는/EAN))))
+           (NP 전략/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>한나라당은 이어 이번 주말까지 서울 16 곳, 인천, 경기 16 곳 등 수도권 32 개 지구당 정기대회를 열어</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>수도권 세몰이</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>총력</term>
+	    </Arg>
+	    <Rel>
+	      <term>경주한다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,262 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>말하</lemma>
+    <comment>Frames file for '말하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>말하.01</id>
+      <edef>say</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>말하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>05:90: 제가 금방 제2 대대 편성을 당신에게 말하지 않았습니까?</text>
+	  <parse>
+(S (NP-SBJ 제/NPN+이/PCA)
+   (VP (VP (ADVP 금방/ADV)
+           (VP (NP-OBJ 제/XPF+2/NNU
+                       대대/NNC
+                       편성/NNC+을/PCA)
+               (NP-COMP 당신/NPN+에게/PAD)
+               말하/VV+지/ECS))
+       않/VX+었/EPF+습니까/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>금방</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>제2 대대 편성</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>당신</term>
+	    </Arg>
+	    <Rel>
+	      <term>말하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았습니까</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>말하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>A;08:111: 중대 특무장과 위생 지도원이 어떤 개인 화기를 휴대한다고 너는 말했지?</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP 중대/NNC
+                         특무장/NNC+과/PCJ)
+                     (NP 위생/NNC
+                         지도원/NNC+이/PCA))
+             (VP (NP-OBJ 어떤/DAN
+                         개인/NNC
+                         화기/NNC+을/PCA)
+                 (VV 휴대/NNC+하/XSV+는다/EFN+고/PAD)))
+   (S (NP-SBJ 너/NPN+은/PAU)
+      (VP (S-COMP *T*-1)
+          말하/VV+었/EPF+지/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>중대 특무장과 위생 지도원이 어떤 개인 화기를 휴대한다</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>너</term>
+	    </Arg>
+	    <Rel>
+	      <term>말했지</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>A;08:13: 보병 대대의 차량들에 대해서는 너는 이미 말했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ *pro*)
+             (VP (NP-COMP 보병/NNC
+                          대대/NNC+의/PAN
+                          차량/NNC+들/XSF+에/PAD)
+                 대하/VV+어서/ECS+은/PAU))
+   (S (NP-SBJ 너/NPN+은/PAU)
+      (VP (ADVP 이미/ADV)
+          (VP (S-COMP *T*-1)
+              말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>보병 대대의 차량들에 대해서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>너</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이미</term>
+	    </Arg>
+	    <Rel>
+	      <term>말했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>말하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>A;07:4: 개인 화기란 개인이 휴대하여 혼자서 조작하는 모든 화기를 말한다.</text>
+	  <parse>
+(S (NP-COMP-2 개인/NNC
+		  화기/NNC+이란/PAU)
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+		     (S (S (NP-SBJ 개인/NNC+이/PCA)
+			   (VP (NP-OBJ *T*-1)
+			       (VV 휴대/NNC+하/XSV+어/ECS)))
+			(S (NP-SBJ *pro*)
+			   (VP (NP-ADV 혼자/NNC+서/PAD)
+			       (VP (NP-OBJ *T*-1)
+				   (VV 조작/NNC+하/XSV+는/EAN))))))
+		  (NP 모든/DAN
+			  화기/NNC+을/PCA))
+	  (NP-COMP *T*-2)
+	  말하/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이란</f>
+	      <term>개인 화기</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>개인이 휴대하여 혼자서 조작하는 모든 화기</term>
+	    </Arg>
+	    <Rel>
+	      <term>말한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>잘라 말하</lemma>
+    <comment>Frames file for '잘라 말하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>말하.02</id>
+      <edef>say definitely-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잘라 말하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>푸틴 대행은 이날 이바노보를 방문, 기자들에게 이같이 밝히고 "어떤 군사조직이 나토가 현재 신유고연방에서 채택하고 있는 것과 같은 조치들을 취할 경우, 이는 러시아를 만족시키지 못할 것이며 이럴 경우 러시아는 그같은 조직에 참여할 의사가 없다"고 잘라 말했다.</text>
+	  <parse>
+(S (NP-SBJ 푸틴/NPR
+           대행/NNC+은/PAU)
+   (VP (VP (NP-ADV 이날/NNC)
+           (VP (VP (NP-OBJ 이바노보/NPR+을/PCA)
+                   (VV 방문/NNC))
+               ,/SCM
+               (VP (NP-COMP 기자/NNC+들/XSF+에게/PAD)
+                   (VP (ADVP 이같이/ADV)
+                       (VP 밝히/VV+고/ECS)))))
+       (VP (S-COMP "/SLQ
+                   (S (NP-ADV (S (NP-SBJ 어떤/DAN
+                                         군사/NNC+조직/NNC+이/PCA)
+                                 (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                (S (NP-SBJ *T*-3)
+                                                   (ADJP (NP-COMP (S (WHNP-2 *op*)
+                                                                     (S (NP-SBJ 나토/NPR+이/PCA)
+                                                                        (VP (NP-ADV 현재/NNC)
+                                                                            (VP (VP (NP-ADV 신/XPF+유고/NPR+연방/NNC+에서/PAD)
+                                                                                    (VP (NP-OBJ *T*-2)
+                                                                                        (VV 채택/NNC+하/XSV+고/ECS)))
+                                                                                있/VX+는/EAN))))
+                                                                  (NP 것/NNX+과/PAD))
+                                                         같/VJ+은/EAN)))
+                                             (NP 조치/NNC+들/XSF+을/PCA))
+                                     취하/VV+을/EAN))
+                              (NP 경우/NNC))
+                      ,/SCM
+                      (S (NP-SBJ 이/NPN+은/PAU)
+                         (VP (VP (VP (NP-OBJ 러시아/NPR+을/PCA)
+                                     (VV 만족/NNC+시키/XSV+지/ECS))
+                                 못하/VX+을/EAN)
+                             (VX 것/NNX+이/CO+으며/ECS))))
+                   (S (NP-ADV (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (ADJP 이렇/VJ+을/EAN)))
+                              (NP 경우/NNC))
+                      (S (NP-SBJ 러시아/NPR+은/PAU)
+                         (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                                           (VP (NP-COMP 그같은/DAN
+							      조직/NNC+에/PAD)
+                                               (VV 참여/NNC+하/XSV+을/EAN)))
+                                        (NP 의사/NNC+이/PCA))
+                               없/VJ+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (CV 자르/VV+어/ECS
+	       말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>푸틴 대행</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>"어떤 군사조직이 나토가 현재 신유고연방에서 채택하고 있는 것과 같은 조치들을 취할 경우, 이는 러시아를 만족시키지 못할 것이며 이럴 경우 러시아는 그같은 조직에 참여할 의사가 없다"</term>
+	    </Arg>
+	    <Rel>
+	      <term>잘라 말했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일원화</lemma>
+    <comment>Frames file for '일원화' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>일원화.01</id>
+      <edef>centralize</edef>
+      <roleset>
+	<role argnum="0" argrole="collector"/>
+	<role argnum="1" argrole="thing collected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일원화되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>방어 지원 작전 시, 포병 부대 지휘 계통은 공격 지원 작전시보다 더 일원화된다.</text>
+	  <parse>
+(S (NP-ADV 방어/NNC
+           지원/NNC
+           작전/NNC
+           시/NNX)
+   ,/SCM
+   (S (NP-SBJ 포병/NNC
+              부대/NNC
+              지휘/NNC
+              계통/NNC+은/PAU)
+      (VP (NP-ADV 공격/NNC
+                  지원/NNC
+                  작전/NNC
+                  시/NNC+보다/PAD)
+          (ADVP 더/ADV)
+          (VP (VV 일원화/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>방어 지원 작전 시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>포병 부대 지휘 계통</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>공격 지원 작전시보다</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더</term>
+	    </Arg>
+	    <Rel>
+	      <term>일원화된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

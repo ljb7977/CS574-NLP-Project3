@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>압도</lemma>
+    <comment>Frames file for '압도' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>압도.01</id>
+      <edef>overwhelm</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing overwhelmed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>압도하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>상승종목이 300 개를 넘어서며 하락종목을 3 배 가까이 압도하고 있는 가운데 대형통신주들이 오름세를 주도하고 있다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 상승/NNC+종목/NNC+이/PCA)
+              (VP (VP (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ 300/NNU
+                                     개/NNX+을/PCA)
+                             넘어서/VV+으며/ECS))
+                      (VP (NP-OBJ 하락/NNC+종목/NNC+을/PCA)
+                          (VP (ADVP (NP-COMP 3/NNU
+                                             배/NNX)
+                                    가까이/ADV)
+                              (VP (VV 압도/NNC+하/XSV+고/ECS)))))
+                  있/VX+는/EAN))
+           (NP 가운데/NNC))
+   (S (NP-SBJ 대형/NNC+통신주/NNC+들/XSF+이/PCA)
+      (VP (VP (NP-OBJ 오름세/NNC+을/PCA)
+              (VV 주도/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>상승종목</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>300 개를 넘어서며</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>하락종목</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>3 배 가까이</term>
+	    </Arg>
+	    <Rel>
+	      <term>압도하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

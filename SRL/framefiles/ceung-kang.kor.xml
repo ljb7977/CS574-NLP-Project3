@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>증강</lemma>
+    <comment>Frames file for '증강' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>증강.01</id>
+      <edef>reinforce</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing reinforced"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>증강되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>첨병 부대는 보통 공병으로 증강됩니다.</text>
+	  <parse>
+(S (NP-SBJ 첨병/NNC
+           부대/NNC+은/PAU)
+   (VP (ADVP 보통/ADV)
+       (NP-ADV 공병/NNC+으로/PAD)
+       (VP (VV 증강/NNC+되/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>첨병 부대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>보통</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>공병으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>증강됩니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

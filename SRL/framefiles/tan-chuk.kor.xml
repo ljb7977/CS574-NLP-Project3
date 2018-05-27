@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>단축</lemma>
+    <comment>Frames file for '단축' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>단축.01</id>
+      <edef>shorten</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing becoming shorter"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>단축하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>때로는 측면 노출을 피하기 위하여, 또는 병참선을 단축하기 위하여 철수가 필요할 때도 있습니다.</text>
+	  <parse>
+(S (ADVP 때로/ADV+은/PAU)
+   (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ *pro*)
+                 (VP (NP-OBJ 측면/NNC
+                             노출/NNC+을/PCA)
+                     피하/VV+기/ENM))
+          위하/VV+어/ECS))
+   ,/SCM
+   (ADCP 또는/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ *pro*)
+                 (VP (NP-OBJ 병참선/NNC+을/PCA)
+                     (VV 단축/NNC+하/XSV+기/ENM)))
+          위하/VV+어/ECS))
+   (S (NP-SBJ (S (WHNP *op*)
+                 (S (NP-SBJ 철수/NNC+이/PCA)
+                    (ADJP (VJ 필요/NNC+하/XSJ+을/EAN))))
+              (NP 때/NNC+도/PAU))
+      (ADJP 있/VJ+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>병참선</term>
+	    </Arg>
+	    <Rel>
+	      <term>단축하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

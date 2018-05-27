@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발포</lemma>
+    <comment>Frames file for '발포' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발포.01</id>
+      <edef>fire</edef>
+      <roleset>
+	<role argnum="0" argrole="shooter"/>
+	<role argnum="2" argrole="target"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발포하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>중국 인민해방군은 미국이 지난 96 년 대만총통 선거 당시처럼 이번 선거를 앞두고 또 대만해협에 함대를 파견할 경우 발포할 수 있다고 경고했다고 홍콩 빈과일보가 3 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 중국/NPR
+                     인민해방군/NPR+은/PAU)
+             (VP (S-COMP (NP-SBJ *pro*)
+                         (VP (VP (NP-ADV (S (NP-SBJ 미국/NPR+이/PCA)
+                                            (VP (NP-ADV 지난/DAN
+                                                        96/NNU
+                                                        년/NNX
+                                                        대만/NPR+총통/NNC
+                                                        선거/NNC
+                                                        당시/NNC+처럼/PAD)
+                                                (S (NP-SBJ *pro*)
+                                                   (VP (NP-OBJ 이번/NNC
+                                                               선거/NNC+을/PCA)
+                                                       앞두/VV+고/ECS))
+                                                (ADVP 또/ADV)
+                                                (VP (NP-COMP 대만해협/NPR+에/PAD)
+                                                    (NP-OBJ 함대/NNC+을/PCA)
+                                                    (VV 파견/NNC+하/XSV+을/EAN))))
+                                         (NP 경우/NNC))
+                                 (VP (NP-COMP *pro*)
+                                     (VV 발포/NNC+하/XSV+을/EAN)))
+                             (VX 수/NNX
+                                 있/VJ+다/EFN+고/PAD)))
+                 (VV 경고/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))
+   (S (NP-SBJ 홍콩/NPR
+              빈과/NPR+일보/NNC+이/PCA)
+      (VP (NP-ADV 3/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>미국이 지난 96 년 대만총통 선거 당시처럼 이번 선거를 앞두고 또 대만해협에 함대를 파견할 경우</term>
+	    </Arg>
+	    <Rel>
+	      <term>발포할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

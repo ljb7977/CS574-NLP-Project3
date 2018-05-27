@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불확실하</lemma>
+    <comment>Frames file for '불확실하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불확실하.01</id>
+      <edef>uncertain</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being uncertain"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불확실하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 장기적으로 건강에 어떤 영향을 미칠지가 "매우 불확실하고", 유전자변형 작물이 환경, 특히 열대 지방에 어떤 영향을 미칠지가 아직 불확실하다는 점을 인정했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (S (S-SBJ (NP-SBJ *pro*)
+                               (VP (NP-ADV 장기/NNC+적/XSF+으로/PAD)
+                                   (VP (NP-COMP 건강/NNC+에/PAD)
+                                       (NP-OBJ 어떤/DAN
+                                               영향/NNC+을/PCA)
+                                       미치/VV+을지/EFN+이/PCA)))
+                        (ADJP "/SLQ
+                              (ADVP 매우/ADV)
+                              (ADJP 불확실하/VJ+고/ECS)
+                              "/SRQ))
+                     ,/SCM
+                     (S (S-SBJ (NP-SBJ 유전자/NNC+변형/NNC
+                                       작물/NNC+이/PCA)
+                               (VP (NP-COMP (NP 환경/NNC)
+                                            ,/SCM
+                                            (ADVP 특히/ADV)
+                                            (NP 열대/NNC
+                                                지방/NNC+에/PAD))
+                                   (NP-OBJ 어떤/DAN
+                                           영향/NNC+을/PCA)
+                                   미치/VV+을지/EFN+이/PCA))
+                        (ADJP (ADVP 아직/ADV)
+                              (ADJP 불확실하/VJ+다는/EAN))))
+                  (NP 점/NNX+을/PCA))
+          (VV 인정/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>장기적으로 건강에 어떤 영향을 미칠지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>매우</term>
+	    </Arg>
+	    <Rel>
+	      <term>불확실하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

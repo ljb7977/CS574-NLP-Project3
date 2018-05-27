@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>꼿꼿하</lemma>
+    <comment>Frames file for '꼿꼿하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>꼿꼿하.01</id>
+      <edef>rigid</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being rigid"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>꼿꼿해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이것을 조절하면 안테나가 꼿꼿해집니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 이것/NPN+을/PCA)
+          (VV 조절/NNC+하/XSV+으면/ECS)))
+   (S (NP-SBJ 안테나/NNC+이/PCA)
+      (VP (VV 꼿꼿하/VJ+어지/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>이것을 조절하면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>안테나</term>
+	    </Arg>
+	    <Rel>
+	      <term>꼿꼿해집니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

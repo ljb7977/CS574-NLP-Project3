@@ -1,0 +1,126 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>걸치</lemma>
+    <comment>Frames file for '걸치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>걸치.01</id>
+      <edef>extend</edef>
+      <roleset>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="EXT or TMP"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>걸치다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지난 28 일 있었던 존 프레스코트 부총리와 리빙스턴 의원간의 2 시간에 걸친 독대는 교착상태로 끝났으나 아직도 리빙스턴 의원이 스스로 물러설 기회는 남겨 둔 것이다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (ADJP (NP-ADV 지난/DAN
+                                  28/NNU
+                                  일/NNX)
+                          (ADJP 있/VJ+었/EPF+던/EAN))))
+              (NP (NP (NP 존/NPR
+                          프레스코트/NPR
+                          부총리/NNC+과/PCJ)
+                      (NP 리빙스턴/NPR
+                          의원/NNC+간/XSF+의/PAN))
+                  (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-COMP 2/NNU
+                                         시간/NNX+에/PAD)
+                                걸치/VV+은/EAN)))
+                      (NP 독대/NNC+은/PAU))))
+      (VP (NP-ADV 교착/NNC+상태/NNC+으로/PAD)
+          (VP 끝나/VV+었/EPF+으나/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ *pro*)
+                 (VP (VP (ADVP 아직/ADV+도/PAU)
+                         (VP (NP-OBJ (S (NP-SBJ 리빙스턴/NPR
+                                                의원/NNC+이/PCA)
+                                        (VP (ADVP 스스로/ADV)
+                                            (VP (NP-COMP *pro*)
+                                                물러서/VV+을/EAN)))
+                                     (NP 기회/NNC+은/PAU))
+                             남기/VV+어/ECS))
+		     두/VX+은/EAN))
+              (NP 것/NNX+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=독대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>2 시간</term>
+	    </Arg>
+	    <Rel>
+	      <term>걸친</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>걸치.02</id>
+      <edef>wear</edef>
+      <roleset>
+	<role argnum="0" argrole="wearer"/>
+	<role argnum="1" argrole="clothing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>걸치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>과거에는 망토를 걸친 전사가 진실과 정의를 위해 싸웠지만, 이제는 남성동성애 권리가 근육질 주인공들의 활약 이유들중에 포함된다.</text>
+	  <parse>
+(S (S (NP-ADV 과거/NNC+에/PAD+은/PAU)
+      (S (NP-SBJ (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-OBJ 망토/NNC+을/PCA)
+                           걸치/VV+은/EAN)))
+                 (NP 전사/NNC+이/PCA))
+         (VP (S (NP-SBJ *pro*)
+                (VP (NP-OBJ (NP 진실/NNC+과/PCJ)
+                            (NP 정의/NNC+을/PCA))
+                    위하/VV+어/ECS))
+             (VP 싸우/VV+었/EPF+지만/ECS))))
+   ,/SCM
+   (S (NP-ADV 이제/NNC+은/PAU)
+      (S (NP-SBJ 남성/NNC+동성애/NNC
+                 권리/NNC+이/PCA)
+         (VP (NP-COMP (NP 근육질/NNC
+                          주인공/NNC+들/XSF+의/PAN)
+                      (NP 활약/NNC
+                          이유/NNC+들/XSF+중/NNX+에/PAD))
+             (VV 포함/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=전사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>망토</term>
+	    </Arg>
+	    <Rel>
+	      <term>걸친</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

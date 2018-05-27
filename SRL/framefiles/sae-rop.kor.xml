@@ -1,0 +1,45 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>새롭</lemma>
+    <comment>Frames file for '새롭' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>새롭.01</id>
+      <edef>new</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being new"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>새롭다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 동무들은 약 4개월에 한번씩 새로운 암호표를 사용했습니다.</text>
+	  <parse>
+(S (NP-SBJ 그/DAN
+           동무/NNC+들/XSF+은/PAU)
+   (VP (NP-ADV (NP 약/DAN
+                   4/NNU
+                   개월/NNX+에/PAD)
+               (NP 한번/NNC+씩/XSF))
+       (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP 새롭/VJ+은/EAN)))
+                   (NP 암호표/NNC+을/PCA))
+           (VV 사용/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=암호표</term>
+	    </Arg>
+	    <Rel>
+	      <term>새로운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

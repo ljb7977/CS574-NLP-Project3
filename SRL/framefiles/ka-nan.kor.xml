@@ -1,0 +1,42 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가난</lemma>
+    <comment>Frames file for '가난' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>가난.01</id>
+      <edef>poor</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being poor"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가난하다</rel>
+	  <mapitem src="np-sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 가족들은 여전히 가난합니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN 가족/NNC+들/XSF+은/PAU) 
+   (ADJP (ADVP 여전히/ADV)
+         (ADJP (VJ 가난/NNC+하/XSJ+습니다/EFN)))
+ ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>저희 가족들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>여전히</term>
+	    </Arg>
+	    <Rel>
+	      <term>가난합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,101 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>살피</lemma>
+    <comment>Frames file for '살피' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>살피.01</id>
+      <edef>look at</edef>
+      <roleset>
+	<role argnum="0" argrole="looker"/>
+	<role argnum="1" argrole="thing looked at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>살피다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이어 이 총재는 `여당이 과반수를 차지해야 정국이 안정된다'는 민주당의 안정론에 대해 "국정이 흔들리고 나라의 기본틀이 무너진 것은 공동정권이 과반수를 차지, 수만 믿고 오만과 독선으로 흘러서 국민을 외면했기 때문"이라며 "야당이 과반수를 차지해서 대통령과 여당이 국민의 눈치를 살피도록 해야 진정한 안정을 이룰 수 있다"고 반박했다.</text>
+	  <parse>
+(S (ADVP 이어/ADV)
+   (S (NP-SBJ 이/NPR
+              총재/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP (S `/SLQ
+                             (S (NP-SBJ 여당/NNC+이/PCA)
+                                (VP (NP-OBJ 과반수/NNC+을/PCA)
+                                    (VV 차지/NNC+하/XSV+어야/ECS)))
+                             (S (NP-SBJ 정국/NNC+이/PCA)
+                                (VP (VV 안정/NNC+되/XSV+는다/EFN)))
+                             '/SRQ
+                             는/EAN)
+                          (NP (NP 민주당/NPR+의/PAN)
+                              (NP 안정/NNC+론/XSF+에/PAD)))
+                 대하/VV+어/ECS))
+          (VP (S-COMP (S "/SLQ
+                         (NP-SBJ (S (S (NP-SBJ 국정/NNC+이/PCA)
+                                       (VP 흔들리/VV+고/ECS))
+                                    (S (NP-SBJ (NP 나라/NNC+의/PAN)
+                                               (NP 기본/NNC+틀/NNC+이/PCA))
+                                       (VP 무너지/VV+은/EAN)))
+                                 (NP 것/NNX+은/PAU))
+                         (VP (NP (S (NP-SBJ 공동/NNC+정권/NNC+이/PCA)
+				    (VP (S (NP-SBJ *pro*)
+					   (VP (NP-OBJ 과반수/NNC+을/PCA)
+					       (VV 차지/NNC)))
+					,/SCM
+					(S (NP-SBJ *pro*)
+					   (VP (VP (NP-OBJ 수/NNC+만/PAU)
+						   믿/VV+고/ECS)
+					       (VP (NP-COMP (NP 오만/NNC+과/PCJ)
+							    (NP 독선/NNC+으로/PAD))
+						   흐르/VV+어서/ECS)))
+					(VP (NP-OBJ 국민/NNC+을/PCA)
+					    (VV 외면/NNC+하/XSV+었/EPF+기/ENM))))
+                                 (NP 때문/NNX)))
+                         "/SRQ
+                         이/CO+라며/ECS)
+                      (S "/SLQ
+                         (NP-SBJ *pro*)
+                         (VP (VP (S (NP-SBJ 야당/NNC+이/PCA)
+                                    (VP (NP-OBJ 과반수/NNC+을/PCA)
+                                        (VV 차지/NNC+하/XSV+어서/ECS)))
+                                 (S (NP-SBJ *pro*)
+                                    (VP (S-COMP (NP-SBJ (NP 대통령/NNC+과/PCJ)
+                                                        (NP 여당/NNC+이/PCA))
+                                                (VP (NP-OBJ (NP 국민/NNC+의/PAN)
+                                                            (NP 눈치/NNC+을/PCA))
+                                                    살피/VV+도록/ECS))
+                                        하/VV+어야/ECS))
+                                 (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (ADJP 진정하/VJ+은/EAN)))
+                                             (NP 안정/NNC+을/PCA))
+                                     이루/VV+을/EAN))
+                             (VX 수/NNX
+                                 있/VJ+다/EFN))
+                         "/SRQ
+                         고/PAD))
+              (VV 반박/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>대통령과 여당</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>국민의 눈치</term>
+	    </Arg>
+	    <Rel>
+	      <term>살피도록</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

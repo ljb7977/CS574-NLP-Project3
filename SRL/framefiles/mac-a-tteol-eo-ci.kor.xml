@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>맞아떨어지</lemma>
+    <comment>Frames file for '맞아떨어지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>맞아떨어지.01</id>
+      <edef>coincide</edef>
+      <roleset>
+	<role argnum="1" argrole="thing under consideration"/>
+	<role argnum="2" argrole="thing coinciding with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>맞아떨어지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>요시카 피셔 독일 외무장관이 6 일부터 이틀간 이란을 방문한 것은 독일의 중동 외교 강화 목적과 이란의 대서방 접근 정책이 맞아떨어진 것으로 볼 수 있다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-OBJ (S (NP-SBJ 요시카/NPR
+				    피셔/NPR
+				    독일/NPR
+				    외무/NNC+장관/NNC+이/PCA)
+		      (VP (NP-ADV 6/NNU
+				  일/NNX+부터/PAU)
+			  (NP-ADV 이틀/NNC+간/XSF)
+			  (VP (NP-OBJ 이란/NPR+을/PCA)
+			      (VV 방문/NNC+하/XSV+은/EAN))))
+		   (NP 것/NNX+은/PAU))
+	   (NP-COMP (S (NP-SBJ (NP (NP 독일/NPR+의/PAN)
+				   (NP 중동/NPR
+					   외교/NNC
+					   강화/NNC
+					   목적/NNC+과/PCJ))
+			       (NP (NP 이란/NPR+의/PAN)
+				   (NP 대/XPF+서방/NNC
+					 접근/NNC
+					 정책/NNC+이/PCA)))
+		       (VP 맞아떨어지/VV+은/EAN))
+		    (NP 것/NNX+으로/PAD))
+	   보/VV+을/EAN)
+       (VX 수/NNX
+	     있/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>독일의 중동 외교 강화 목적과 이란의 대서방 접근 정책</term>
+	    </Arg>
+	    <Rel>
+	      <term>맞아떨어진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

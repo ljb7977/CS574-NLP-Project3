@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>감지</lemma>
+    <comment>Frames file for '감지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>감지.01</id>
+      <edef>perceive</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity perceived"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>감지되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 대변인은 그러나 "중국의 군사적 움직임은 아직 감지되지 않고 있기 때문에" 공황에 빠질 필요는 없다고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           대변인/NNC+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S-COMP (NP-ADV "/SLQ
+			   (S (NP-SBJ (NP 중국/NPR+의/PAN)
+				      (NP 군사/NNC+적/XSF
+					      움직임/NNC+은/PAU))
+			      (VP (VP (VP (ADVP 아직/ADV)
+					  (VP (VV 감지/NNC+되/XSV+지/ECS)))
+				      않/VX+고/ECS)
+				  있/VX+기/ENM))
+			   (NP 때문/NNX+에/PAD)
+			   "/SRQ)
+		   (S (NP-SBJ (S (NP-SBJ *pro*)
+				 (VP (NP-COMP 공황/NNC+에/PAD)
+				     빠지/VV+을/EAN))
+			      (NP 필요/NNC+은/PAU))
+		      (ADJP 없/VJ+다/EFN+고/PAD)))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>중국의 군사적 움직임</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>아직</term>
+	    </Arg>
+	    <Rel>
+	      <term>감지되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않고</term>
+	    </Aux>
+	    <Aux>
+	      <f>고</f>
+	      <term>있기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

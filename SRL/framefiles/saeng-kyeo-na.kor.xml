@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>생겨나</lemma>
+    <comment>Frames file for '생겨나' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>생겨나.01</id>
+      <edef>come into being</edef>
+      <roleset>
+	<role argnum="1" argrole="thing coming into being"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>생겨나다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>프랑스 국빈방문을 위해 6 일 파리에 도착한 김대통령은 7 일자 프랑스 일간 르몽드와의 회견에서 `햇볕정책'으로 확고한 안보태세와 더불어 평화정책이 전 세계의 지지를 받게 됐으며 이로 인해 한반도에 의미 있는 변화가 생겨났다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 프랑스/NPR
+                                    국빈/NNC+방문/NNC+을/PCA)
+                            위하/VV+어/ECS))
+                     (NP-ADV 6/NNU
+                             일/NNX)
+                     (VP (NP-COMP 파리/NPR+에/PAD)
+                         (VV 도착/NNC+하/XSV+은/EAN)))))
+           (NP 김/NPR+대통령/NNC+은/PAU))
+   (VP (NP-ADV (NP (NP 7/NNU
+                       일자/NNX)
+                   (NP (NP 프랑스/NPR
+                           일간/NNC)
+                       (NP 르몽드/NPR+과/PAD+의/PAN)))
+               (NP 회견/NNC+에서/PAD))
+       (VP (S-COMP (S (NP-ADV `/SLQ
+                              햇볕/NNC+정책/NNC
+                              '/SRQ
+                              으로/PAD)
+                      (ADVP (NP-COMP (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (ADJP 확고하/VJ+은/EAN)))
+                                     (NP 안보/NNC+태세/NNC+과/PAD))
+                            더불어/ADV)
+                      (S (NP-SBJ 평화/NNC+정책/NNC+이/PCA)
+                         (VP (VP (NP-OBJ (NP 전/DAN
+                                             세계/NNC+의/PAN)
+                                         (NP 지지/NNC+을/PCA))
+                                 받/VV+게/ECS)
+                             되/VX+었/EPF+으며/ECS)))
+                   (S (S (NP-SBJ *pro*)
+                         (VP (NP-COMP 이/NPN+으로/PAD)
+                             인하/VV+어/ECS))
+                      (S (NP-COMP-4 한반도/NNC+에/PAD)
+			 (S (NP-SBJ (S (WHNP-3 *op*)
+				       (S (NP-SBJ *T*-3)
+					  (ADJP (NP-COMP 의미/NNC)
+						있/VJ+는/EAN)))
+				    (NP 변화/NNC+이/PCA))
+			    (VP (NP-COMP *T*-4)
+				생겨나/VV+었/EPF+다/EFN+고/PAD)))))
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이로 인해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>한반도</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>의미 있는 변화</term>
+	    </Arg>
+	    <Rel>
+	      <term>생겨났다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>감동</lemma>
+    <comment>Frames file for '감동' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>감동.01</id>
+      <edef>move</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="person moved"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>감동시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 워싱턴시 인근 버지니아주 그레이트 폴스에서 뺑소니차에 희생된 한인 여고생 윤나은(15)양의 유가족에게 이웃 미국 주민들이 자발적으로 따뜻한 정을 베풀고 있어 주변을 감동시키고 있다.</text>
+	  <parse>
+(S (S (NP-COMP-3 (NP (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (NP-ADV 미국/NPR
+                                       워싱턴/NPR+시/NNC
+                                       인근/NNC
+                                       버지니아/NPR+주/NNC
+                                       그레이트/NPR
+                                       폴스/NPR+에서/PAD)
+                               (NP-ADV 뺑소니차/NNC+에/PAD)
+                               (VP (VV 희생/NNC+되/XSV+은/EAN)))))
+                     (NP 한인/NNC
+                         여고생/NNC
+                         윤나은/NPR
+                         (PRN -LRB-/SLQ
+                              (NP 15/NNU)
+                              -RRB-/SRQ)
+                         양/NNX+의/PAN))
+                 (NP 유가족/NNC+에게/PAD))
+      (S (NP-SBJ 이웃/NNC
+                 미국/NPR
+                 주민/NNC+들/XSF+이/PCA)
+         (VP (VP (ADVP (ADV 자발/NNC+적/XSF+으로/PAD))
+                 (VP (NP-COMP *T*-3)
+                     (NP-OBJ (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (ADJP (VJ 따뜻/NNC+하/XSJ+은/EAN))))
+                             (NP 정/NNC+을/PCA))
+                     베풀/VV+고/ECS))
+             있/VX+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 주변/NNC+을/PCA)
+              (VV 감동/NNC+시키/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>미국 워싱턴시 인근 버지니아주 그레이트 폴스에서 뺑소니차에 희생된 한인 여고생 윤나은(15)양의 유가족에게 이웃 미국 주민들이 자발적으로 따뜻한 정을 베풀고 있어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>주변</term>
+	    </Arg>
+	    <Rel>
+	      <term>감동시키고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,160 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>폭로</lemma>
+    <comment>Frames file for '폭로' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>폭로.01</id>
+      <edef>disclose</edef>
+      <roleset>
+	<role argnum="0" argrole="speaker"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>폭로하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>AP 통신 외에도 일리노이주에서 발행되는 데일리 사우스타운의 케빈 카모디 기자는 수십년 전 원자폭탄 제조공장 근로자들이 독성 금속물질에 노출돼 다수가 죽거나 병에 걸린 사실을 정부가 알고도 은폐했음을 폭로하는 기사를 발굴해 지역보도상을 받았다.</text>
+	  <parse>
+(S (NP-ADV AP/NFW
+           통신/NNC
+           외/NNC+에/PAD+도/PAU)
+   (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-ADV 일리노이/NPR+주/NNC+에서/PAD)
+                            (VP (VV 발행/NNC+되/XSV+는/EAN)))))
+                  (NP 데일리/NPR
+                      사우스타운/NPR+의/PAN))
+              (NP 케빈/NPR
+                  카모디/NPR
+                  기자/NNC+은/PAU))
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (WHNP-3 *op*)
+                            (S (NP-SBJ *T*-3)
+                               (VP (S-OBJ (NP-OBJ-2 (S (S (NP-ADV 수십/NNU+년/NNX
+                                                                  전/NNC)
+                                                          (S (NP-SBJ 원자/NNC+폭탄/NNC
+                                                                     제조/NNC+공장/NNC
+                                                                     근로자/NNC+들/XSF+이/PCA)
+                                                             (VP (NP-COMP 독성/NNC
+                                                                          금속/NNC+물질/NNC+에/PAD)
+                                                                 (VV 노출/NNC+되/XSV+어/ECS))))
+                                                       (S (NP-SBJ 다수/NNC+이/PCA)
+                                                          (VP (VP 죽/VV+거나/ECS)
+                                                              (VP (NP-COMP 병/NNC+에/PAD)
+                                                                  걸리/VV+은/EAN))))
+                                                    (NP 사실/NNC+을/PCA))
+                                          (S (NP-SBJ 정부/NNC+이/PCA)
+                                             (VP (NP-OBJ *T*-2)
+                                                 (VV 알/VV+고/ECS+도/PAU
+                                                     (VV 은폐/NNC+하/XSV+었/EPF+음/ENM+을/PCA)))))
+                                   (VV 폭로/NNC+하/XSV+는/EAN))))
+                         (NP 기사/NNC+을/PCA))
+                 (VV 발굴/NNC+하/XSV+어/ECS)))
+          (VP (NP-OBJ 지역/NNC+보도/NNC+상/NNC+을/PCA)
+              받/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=기사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수십년 전 원자폭탄 제조공장 근로자들이 독성 금속물질에 노출돼 다수가 죽거나 병에 걸린 사실을 정부가 알고도 은폐했음</term>
+	    </Arg>
+	    <Rel>
+	      <term>폭로하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>폭로되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>영국 BBC 방송이 처음 입수한 이 매카시 보고서는 9 일 가디언을 통해 처음 폭로됐으며, 보고서에 관한 자세한 내용이 오는 12 일 BBC의 특별 프로그램을 통해 `전쟁터의 나토-윤리전'이라는 제목으로 방영될 계획이다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ 영국/NPR
+                            BBC/NFW
+                            방송/NNC+이/PCA)
+                    (VP (ADVP 처음/ADV)
+                        (VP (NP-OBJ *T*-1)
+                            (VV 입수/NNC+하/XSV+은/EAN)))))
+              (NP 이/DAN
+                  매카시/NPR
+                  보고서/NNC+은/PAU))
+      (VP (NP-ADV 9/NNU
+                  일/NNX)
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 가디언/NPR+을/PCA)
+                 통하/VV+어/ECS))
+          (ADVP 처음/ADV)
+          (VP (VV 폭로/NNC+되/XSV+었/EPF+으며/ECS))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ (S (WHNP-3 *op*)
+                            (S (NP-SBJ *T*-3)
+                               (VP (NP-COMP 보고서/NNC+에/PAD)
+                                   관하/VV+은/EAN)))
+                         (NP (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (ADJP 자세하/VJ+은/EAN)))
+                             (NP 내용/NNC+이/PCA)))
+                 (VP (NP-ADV 오는/DAN
+                             12/NNU
+                             일/NNX)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP BBC/NFW+의/PAN)
+                                    (NP 특별/NNC
+                                        프로그램/NNC+을/PCA))
+                            통하/VV+어/ECS))
+                     (NP-ADV (NP `/SLQ
+                                 (NP 전쟁터/NNC+의/PAN)
+                                 (NP 나토/NPR)
+                                 -/SSY
+                                 (NP 윤리/NNC+전/XSF)
+                                 '/SRQ
+                                 이라는/PAN)
+                             (NP 제목/NNC+으로/PAD))
+                     (VP (VV 방영/NNC+되/XSV+을/EAN))))
+              (NP 계획/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>영국 BBC 방송이 처음 입수한 이 매카시 보고서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>9 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>가디언을 통해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>처음</term>
+	    </Arg>
+	    <Rel>
+	      <term>폭로됐으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

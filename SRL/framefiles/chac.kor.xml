@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>찾</lemma>
+    <comment>Frames file for '찾' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>찾.01</id>
+      <edef>find</edef>
+      <roleset>
+	<role argnum="0" argrole="finder"/>
+	<role argnum="1" argrole="thing found"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>찾다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리가 가지고 있는 지도가 부정확해서 그 지점을 찾을 수 없었다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ 우리/NPN+이/PCA)
+                    (VP (VP (NP-OBJ *T*-1)
+                            가지/VV+고/ECS)
+                        있/VX+는/EAN)))
+              (NP 지도/NNC+이/PCA))
+      (ADJP (VJ 부정확/NNC+하/XSJ+어서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 그/DAN
+                      지점/NNC+을/PCA)
+              찾/VV+을/EAN)
+          (VX 수/NNX
+              없/VJ+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>우리가 가지고 있는 지도가 부정확해서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그 지점</term>
+	    </Arg>
+	    <Rel>
+	      <term>찾을</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없었다</term>
+	    </Aux>
+	  </relation>    
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>찾.02</id>
+      <edef>draw</edef>
+      <roleset>
+	<role argnum="0" argrole="drawer"/>
+	<role argnum="1" argrole="thing drawn"/>
+	<role argnum="2" argrole="source"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>찾다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>나는 은행에서 저금한 돈을 찾았다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>나</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>은행</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>저금한 돈</term>
+	    </Arg>
+	    <Rel>
+	      <term>찾았다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

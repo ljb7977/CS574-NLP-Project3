@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>폐막</lemma>
+    <comment>Frames file for '폐막' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>폐막.01</id>
+      <edef>end</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing ending"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>폐막하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>안전성 논란을 빚고 있는 신종 유전자변형(GM) 식품에 대한 경제협력개발기구(OECD) 주최 국제회의가 1 일 합의서 초안을 발표하고 폐막했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (VP (NP-OBJ 안전성/NNC
+                                                    논란/NNC+을/PCA)
+                                            빚/VV+고/ECS)
+                                        있/VX+는/EAN)))
+                              (NP 신종/NNC
+                                  유전자/NNC+변형/NNC
+                                  (PRN -LRB-/SLQ
+                                       GM/NFW
+                                       -RRB-/SRQ)
+                                  식품/NNC+에/PAD))
+                     대하/VV+은/EAN)))
+           (NP 경제/NNC+협력/NNC+개발/NNC+기구/NNC
+               (PRN -LRB-/SLQ
+                    OECD/NFW
+                    -RRB-/SRQ)
+               주최/NNC
+               국제/NNC+회의/NNC+이/PCA))
+   (VP (NP-ADV 1/NNU
+               일/NNX)
+       (VP (VP (NP-OBJ 합의서/NNC
+                       초안/NNC+을/PCA)
+               (VV 발표/NNC+하/XSV+고/ECS))
+           (VP (VV 폐막/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>안전성 논란을 빚고 있는 신종 유전자변형(GM) 식품에 대한 경제협력개발기구(OECD) 주최 국제회의</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>1 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>폐막했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

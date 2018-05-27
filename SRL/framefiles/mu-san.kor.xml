@@ -1,0 +1,156 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>무산</lemma>
+    <comment>Frames file for '무산' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>무산.01</id>
+      <edef>dispel</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="entity dispelled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>무산시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 명예총재는 이날 오후 충남 보령시 대천체육관에서 열린 서천, 보령 지구당(위원장 이긍규) 개편대회에 참석, "민주당이 국민앞에 엄숙하게 약속한 내각제를 무산시키는 바람에 민주당과는 공조하지 않겠다는 선언을 이한동 총재가 하게 된 것"이라며 이같이 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 김/NPR
+           명예/NNC+총재/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP-ADV 이날/NNC
+                                         오후/NNC)
+                                 (NP-ADV 충남/NPR
+                                         보령/NPR+시/NNC
+                                         대천/NPR+체육관/NNC+에서/PAD)
+                                 (VP 열리/VV+은/EAN))))
+                       (NP 서천/NPR
+                           ,/SCM
+                           보령/NPR
+                           지구당/NNC
+                           (PRN -LRB-/SLQ
+                                위원장/NNC
+                                이긍규/NPR
+                                -RRB-/SRQ)
+                           개편/NNC+대회/NNC+에/PAD))
+              (VV 참석/NNC)))
+       ,/SCM
+       (S (NP-SBJ *pro*)
+          (VP (NP "/SLQ
+                  (S (NP-ADV (S (NP-SBJ 민주당/NPR+이/PCA)
+                                (VP (NP-OBJ (S (WHNP-2 *op*)
+                                               (S (NP-SBJ *pro*)
+                                                  (VP (NP-ADV 국민/NNC+앞/NNC+에/PAD)
+                                                      (ADVP (ADV (VJ 엄숙/NNC+하/XSJ+게/ECS)))
+                                                      (VP (NP-OBJ *T*-2)
+                                                          (VV 약속/NNC+하/XSV+은/EAN)))))
+                                            (NP 내각제/NNC+을/PCA))
+                                    (VV 무산/NNC+시키/XSV+는/EAN)))
+                             (NP 바람/NNX+에/PAD))
+                     (S (NP-OBJ-3 (S (NP-SBJ *pro*)
+                                     (VP (VP (NP-COMP 민주당/NPR+과/PAD+은/PAU)
+                                             (VV 공조/NNC+하/XSV+지/ECS))
+                                         않/VX+겠/EPF+다는/EAN))
+                                  (NP 선언/NNC+을/PCA))
+                        (S (NP-SBJ 이한동/NPR
+                                   총재/NNC+이/PCA)
+                           (VP (VP (NP-OBJ *T*-3)
+                                   하/VV+게/ECS)
+                               되/VX+은/EAN))))
+                  (NP 것/NNX)
+                  "/SRQ
+                  이/CO+라며/ECS)))
+       (NP-ADV 이/NPN+같이/PAD)
+       (VP (NP-OBJ *pro*)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>민주당</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>국민앞에 엄숙하게 약속한 내각제</term>
+	    </Arg>
+	    <Rel>
+	      <term>무산시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>무산되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 대통령은 취임사에서 지난 91 년 체결된 남북 기본합의서 이행을 위한 특사교환을 제의했으며, 북한이 김일성 주석의 사망(94. 7)으로 무산된 정상회담 재개를 원한다면 응할 수 있다는 입장을 피력했다.</text>
+	  <parse>
+(S (S (NP-SBJ 김/NPR
+              대통령/NNC+은/PAU)
+      (VP (NP-ADV 취임사/NNC+에서/PAD)
+          (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                               (S (NP-SBJ *T*-1)
+                                                  (VP (NP-ADV 지난/DAN
+                                                              91/NNU
+                                                              년/NNX)
+                                                      (VP (VV 체결/NNC+되/XSV+은/EAN)))))
+                                            (NP 남북/NNC
+                                                기본/NNC+합의서/NNC))
+                                        (NP 이행/NNC+을/PCA))
+                                위하/VV+은/EAN)))
+                      (NP 특사/NNC+교환/NNC+을/PCA))
+              (VV 제의/NNC+하/XSV+었/EPF+으며/ECS))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (S (NP-SBJ 북한/NPR+이/PCA)
+                        (VP (NP-OBJ (NP (S (WHNP-3 *op*)
+                                           (S (NP-SBJ *T*-3)
+                                              (VP (NP-COMP (NP 김일성/NPR
+								     주석/NNC+의/PAN)
+							   (NP 사망/NNC
+								   (PRN -LRB-/SLQ
+									(NP 94.7/NNU)
+									-RRB-/SRQ)
+								   으로/PAD))
+                                                  (VV 무산/NNC+되/XSV+은/EAN))))
+                                        (NP 정상/NNC+회담/NNC))
+                                    (NP 재개/NNC+을/PCA))
+                            원하/VV+는다면/ECS))
+                     (S (NP-SBJ *pro*)
+                        (VP (VP (NP-COMP *pro*)
+                                응하/VV+을/EAN)
+                            (VX 수/NNX
+                                있/VJ+다는/EAN))))
+                  (NP 입장/NNC+을/PCA))
+          (VV 피력/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=정상회담</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>으로</f>
+	      <term>김일성 주석의 사망(94. 7)</term>
+	    </Arg>
+	    <Rel>
+	      <term>무산된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

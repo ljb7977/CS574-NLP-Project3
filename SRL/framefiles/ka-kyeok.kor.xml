@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가격</lemma>
+    <comment>Frames file for '가격' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가격.01</id>
+      <edef>strike</edef>
+      <roleset>
+	<role argnum="0" argrole="hitter"/>
+	<role argnum="1" argrole="thing hit"/>
+	<role argnum="2" argrole="instrument"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가격하다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 중국이 대만을 가격할 수 있는 미사일 약 200 기를 배치하고 있으며 해마다 약 50 기씩 추가배치하고 있다고 지적하고 그러나 이들 미사일이 대만의 군사목표물을 정확히 명중시킬 수 있을 것인지는 그 성능에 의문이 있다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (VP (S-COMP (S (NP-SBJ 중국/NPR+이/PCA)
+                      (VP (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (VP (NP-OBJ 대만/NPR+을/PCA)
+                                                        (VV 가격/NNC+하/XSV+을/EAN))
+                                                    (VX 수/NNX
+                                                        있/VJ+는/EAN))))
+                                          (NP 미사일/NNC))
+                                      (NP 약/DAN
+                                          200/NNU
+                                          기/NNX+을/PCA))
+                              (VV 배치/NNC+하/XSV+고/ECS))
+                          있/VX+으며/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-ADV 해/NNC+마다/PAU)
+                              (VP (NP-OBJ 약/DAN
+                                          50/NNU
+                                          기/NNX+씩/XSF)
+                                  (VV 추가배치/NNC+하/XSV+고/ECS)))
+                          있/VX+다/EFN+고/PAD)))
+           (VV 지적/NNC+하/XSV+고/ECS))
+       (VP (S-COMP (ADCP 그러나/ADC)
+                   (S (NP-SBJ 이/NPN+들/XSF
+                              미사일/NNC+이/PCA)
+                      (VP (VP (VP (NP-OBJ (NP 대만/NPR+의/PAN)
+                                          (NP 군사/NNC+목표물/NNC+을/PCA))
+                                  (VP (ADVP 정확히/ADV)
+                                      (VP (VV 명중/NNC+시키/XSV+을/EAN))))
+                              (VX 수/NNX
+                                  있/VJ+을/EAN))
+                          (VX 것/NNX+이/CO+은지/EFN+은/PAU)))
+                   (S (NP-COMP-2 그/DAN
+                                 성능/NNC+에/PAD)
+                      (S (NP-SBJ 의문/NNC+이/PCA)
+                         (ADJP (NP-COMP *T*-2)
+                               있/VJ+다/EFN+고/PAD))))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <term>*trace*=미사일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대만</term>
+	    </Arg>
+	    <Rel>
+	      <term>가격할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

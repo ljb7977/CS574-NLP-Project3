@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>맞물</lemma>
+    <comment>Frames file for '맞물' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>맞물.01</id>
+      <edef>be in gear with</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being in gear with"/>
+	<role argnum="2" argrole="the other thing being in gear with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>맞물리다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포드 측은 "고객지향의 경영 패러다임에 근거한 공격적인 마케팅 전략이 미국시장의 호황과 맞물려 매출상승의 결정적 요인으로 작용했다"고 분석했다.</text>
+	  <parse>
+(S (NP-SBJ 포드/NPR
+           측/NNX+은/PAU)
+   (VP (S-COMP "/SLQ
+               (NP-SBJ (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (VP (NP-COMP (NP 고객/NNC+지향/NNC+의/PAN)
+                                          (NP 경영/NNC
+                                              패러다임/NNC+에/PAD))
+                                 (VV 근거/NNC+하/XSV+은/EAN))))
+                       (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP 공격/NNC+적/XSF+이/CO+은/EAN))))
+                           (NP 마케팅/NNC
+                               전략/NNC+이/PCA)))
+               (VP (VP (NP-COMP (NP 미국/NPR+시장/NNC+의/PAN)
+                                (NP 호황/NNC+과/PAD))
+                       맞물리/VV+어/ECS)
+                   (VP (NP-COMP (NP 매출/NNC+상승/NNC+의/PAN)
+                                (NP 결정/NNC+적/XSF
+                                    요인/NNC+으로/PAD))
+                       (VV 작용/NNC+하/XSV+었/EPF+다/EFN)))
+               "/SRQ
+               고/PAD)
+       (VV 분석/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>이</f>
+	      <term>고객지향의 경영 패러다임에 근거한 공격적인 마케팅 전략</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>과</f>
+	      <term>미국시장의 호황</term>
+	    </Arg>
+	    <Rel>
+	      <term>맞물려</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소통</lemma>
+    <comment>Frames file for '소통' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>소통.01</id>
+      <edef>connect</edef>
+      <roleset>
+	<role argnum="0" argrole="causal agent"/>
+	<role argnum="1" argrole="thing connected"/>
+	<role argnum="2" argrole="connected with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소통시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 해저 광케이블은 1 초당 24 만 1 천 920 회선을 소통시키고 20Gbps(초당 A4 용지 250 만장 전송) 용량을 갖는 광파장분할다중화방식(WDM)을 채택하고 있으며 한국통신은 이 공사에 3 천 400 만달러를 투자해 3 천 480 회선을 확보했다.</text>
+	  <parse>
+(S (S (NP-SBJ 이/DAN
+              해저/NNC
+              광케이블/NNC+은/PAU)
+      (VP (VP (NP-OBJ (NP 1/NNU
+                          초/NNX+당/XSF)
+                      (NP 24/NNU
+                          만/NNU
+                          1/NNU
+                          천/NNU
+                          920/NNU
+                          회선/NNX+을/PCA))
+              (VV 소통/NNC+시키/XSV+고/ECS))
+          (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-OBJ 20/NNU+Gbps/NFW
+                                            (PRN -LRB-/SLQ
+                                                 (NP (NP 초/NNC+당/XSF)
+                                                     (NP A4/NFW
+                                                         용지/NNC
+                                                         250/NNU
+                                                         만/NNU+장/NNX)
+                                                     (NP 전송/NNC))
+                                                 -RRB-/SRQ)
+                                            용량/NNC+을/PCA)
+                                    갖/VV+는/EAN)))
+                          (NP 광파장/NNC+분할/NNC+다중화/NNC+방식/NNC
+                              (PRN -LRB-/SLQ
+                                   (NP WDM/NFW)
+                                   -RRB-/SRQ)
+                              을/PCA))
+                  (VV 채택/NNC+하/XSV+고/ECS))
+              있/VX+으며/ECS)))
+   (S (NP-SBJ 한국/NPR+통신/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 이/DAN
+                          공사/NNC+에/PAD)
+                 (NP-OBJ 3/NNU
+                         천/NNU
+                         400/NNU
+                         만/NNU+달러/NNX+을/PCA)
+                 (VV 투자/NNC+하/XSV+어/ECS)))
+          (VP (NP-OBJ 3/NNU
+                      천/NNU
+                      480/NNU
+                      회선/NNX+을/PCA)
+              (VV 확보/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이 해저 광케이블</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>1 초당 24 만 1 천 920 회선</term>
+	    </Arg>
+	    <Rel>
+	      <term>소통시키고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

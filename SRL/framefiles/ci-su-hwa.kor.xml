@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지수화</lemma>
+    <comment>Frames file for '지수화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>지수화.01</id>
+      <edef>collect statistics of</edef>
+      <roleset>
+	<role argnum="0" argrole="thing collecting"/>
+	<role argnum="1" argrole="statistics of"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지수화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>경기체감지수는 6 개 지역의 슈퍼마켓 판매원, 택시 운전사, 인력업체 직원, 편의점 관리인 등 경기 등락에 민감한 직업 종사자 600 명을 대상으로 3 개월 전에 비해 경기가 호전 또는 악화됐다고 생각하는지를 매달 물어 결과를 지수화하는 것이다.</text>
+	  <parse>
+(S (NP-SBJ 경기/NNC+체감/NNC+지수/NNC+은/PAU)
+   (VP (NP (S (S (NP-SBJ *pro*)
+                 (VP (NP-ADV (NP-OBJ (NP (NP 6/NNU
+                                             개/NNX
+                                             지역/NNC+의/PAN)
+                                         (NP (NP 슈퍼마켓/NNC
+                                                 판매원/NNC)
+                                             ,/SCM
+                                             (NP 택시/NNC
+                                                 운전사/NNC)
+                                             ,/SCM
+                                             (NP 인력/NNC+업체/NNC
+                                                 직원/NNC)
+                                             ,/SCM
+                                             (NP 편의점/NNC
+                                                 관리인/NNC))
+                                         (NP 등/NNX))
+                                     (NP (NP (NP (S (WHNP-1 *op*)
+						    (S (NP-SBJ *T*-1)
+						       (ADJP (NP-COMP 경기/NNC
+									  등락/NNC+에/PAD)
+							     민감하/VJ+은/EAN)))
+						 (NP 직업/NNC))
+					     (NP 종사자/NNC))
+					 (NP 600/NNU
+					     명/NNX+을/PCA)))
+                             대상/NNC+으로/PAD)
+                     (VP (S-OBJ (NP-SBJ *pro*)
+				(VP (S-COMP (S (NP-SBJ *pro*)
+					       (VP (NP-COMP 3/NNU
+							    개월/NNX
+							    전/NNC+에/PAD)
+						   비하/VV+어/ECS))
+					    (S (NP-SBJ 경기/NNC+이/PCA)
+					       (VP (VP (VV 호전/NNC))
+						   (ADCP 또는/ADC)
+						   (VP (VV 악화/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))))
+				    (VV 생각/NNC+하/XSV+는지/EFN+을/PCA)))
+                         (VP (ADVP 매달/ADV)
+			     (VP 묻/VV+어/ECS)))))
+              (S (NP-SBJ *pro*) 
+		 (VP (NP-OBJ 결과/NNC+을/PCA)
+		     (VV 지수화/NNC+하/XSV+은/EAN))))
+           (NP 것/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>6 개 지역의 슈퍼마켓 판매원, 택시 운전사, 인력업체 직원, 편의점 관리인 등 경기 등락에 민감한 직업 종사자 600 명을 대상으로 3 개월 전에 비해 경기가 호전 또는 악화됐다고 생각하는지를 매달 물어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>결과</term>
+	    </Arg>
+	    <Rel>
+	      <term>지수화하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

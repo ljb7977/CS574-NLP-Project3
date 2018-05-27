@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>제지</lemma>
+    <comment>Frames file for '제지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>제지.01</id>
+      <edef>control</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing controlled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>제지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인도는 지난 98 년 핵실험을 실시한 이후 핵무기화 프로그램을 제지하고 핵실험 금지 조약에 가입시키려는 미국의 압력에 저항하고 있으며 카슈미르 분쟁해결을 위한 미국의 중재노력도 거부해 왔다.</text>
+	  <parse>
+(S (NP-SBJ 인도/NPR+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 지난/DAN
+                              98/NNU
+                              년/NNX
+                              핵실험/NNC+을/PCA)
+                      (VV 실시/NNC+하/XSV+은/EAN)))
+               (NP 이후/NNC))
+       (S (NP-SBJ *pro*)
+          (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (VP (NP-OBJ (NP 핵무기/NNC+화/XSF)
+                                                     (NP 프로그램/NNC+을/PCA))
+                                             (VV 제지/NNC+하/XSV+고/ECS))
+                                         (VP (NP-COMP 핵실험/NNC
+                                                      금지/NNC
+                                                      조약/NNC+에/PAD)
+                                             (VV 가입/NNC+시키/XSV+으려는/EAN)))))
+                               (NP 미국/NPR+의/PAN))
+                           (NP 압력/NNC+에/PAD))
+                  (VV 저항/NNC+하/XSV+고/ECS))
+              있/VX+으며/ECS))
+       (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (VP (NP-OBJ 카슈미르/NPR
+                                         분쟁/NNC+해결/NNC+을/PCA)
+                                 위하/VV+은/EAN)))
+                       (NP (NP 미국/NPR+의/PAN)
+                           (NP 중재/NNC+노력/NNC+도/PAU)))
+               (VV 거부/NNC+하/XSV+어/ECS))
+           오/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=미국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>핵무기화 프로그램</term>
+	    </Arg>
+	    <Rel>
+	      <term>제지하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

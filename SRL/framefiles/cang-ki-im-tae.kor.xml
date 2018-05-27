@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>장기임대</lemma>
+    <comment>Frames file for '장기임대' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>장기임대.01</id>
+      <edef>lease for a while</edef>
+      <roleset>
+	<role argnum="0" argrole="thing leasing"/>
+	<role argnum="1" argrole="thing leased"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>장기임대하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>금강산 관광사업 주관사인 현대상선은 올해초 북한 장전항에 450 명 수용규모의 금강산 해상호텔을 설치, 운영하고 금강산내 북측 휴양시설인 금강산 려관을 장기임대할 계획이라고 발표했었다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP 금강산/NPR
+                         관광/NNC+사업/NNC
+                         주관사/NNC+이/CO+은/EAN))))
+           (NP 현대/NPR+상선/NNC+은/PAU))
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (NP (S (NP-SBJ *pro*)
+                          (VP (VP (NP-ADV 올해초/NNC)
+                                  (NP-ADV 북한/NPR
+                                          장전항/NPR+에/PAD)
+                                  (VP (NP-OBJ (NP 450/NNU
+                                                  명/NNX
+                                                  수용/NNC+규모/NNC+의/PAN)
+                                              (NP 금강산/NPR
+                                                  해상/NNC+호텔/NNC+을/PCA))
+                                      (VV (VV 설치/NNC)
+                                          ,/SCM
+                                          (VV 운영/NNC+하/XSV+고/ECS))))
+                              (VP (NP-OBJ (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP 금강산/NPR+내/NNX
+							      북/NPR+측/NNX
+							      휴양/NNC+시설/NNC+이/CO+은/EAN))))
+                                          (NP 금강산/NPR
+						    려관/NNC+을/PCA))
+                                  (VV 장기임대/NNC+하/XSV+을/EAN))))
+                       (NP 계획/NNC+이/CO+라/EFN+고/PAD))))
+       (VV 발표/NNC+하/XSV+었었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>금강산내 북측 휴양시설인 금강산 려관</term>
+	    </Arg>
+	    <Rel>
+	      <term>장기임대할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

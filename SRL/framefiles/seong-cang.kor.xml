@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>성장</lemma>
+    <comment>Frames file for '성장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>성장.01</id>
+      <edef>grow</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing grown"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>성장하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이로써 양키 네츠는 메이저리그와 NBA, NHL을 포괄하는 거대 스포츠 기업으로 성장하게 됐다.</text>
+	  <parse>
+(S (NP-ADV 이/NPN+으로써/PAD)
+   (S (NP-SBJ 양키/NPR
+              네츠/NPR+은/PAU)
+      (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ (NP 메이저리그/NPR+과/PCJ)
+                                      (NP NBA/NFW)
+                                      ,/SCM
+                                      (NP NHL/NFW+을/PCA))
+                              (VV 포괄/NNC+하/XSV+는/EAN)))
+                       (NP 거대/NNC
+                           스포츠/NNC
+                           기업/NNC+으로/PAD))
+              (VV 성장/NNC+하/XSV+게/ECS))
+          되/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>이로써</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>양키 네츠</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>메이저리그와 NBA, NHL을 포괄하는 거대 스포츠 기업</term>
+	    </Arg>
+	    <Rel>
+	      <term>성장하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>됐다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

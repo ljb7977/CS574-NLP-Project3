@@ -1,0 +1,154 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대기</lemma>
+    <comment>Frames file for '대기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대기.01</id>
+      <edef>stand by</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="entity standing by"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대기하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 또 중국이 현재의 군사력으로 대만에 대한 무모한 침공을 감행한다면 중국은 해안에 대기하고 있는 대만 군인들에게 수만명이 전멸당하는 비극을 맞게 될 것이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (S (NP-SBJ 중국/NPR+이/PCA)
+                      (VP (NP-ADV (NP 현재/NNC+의/PAN)
+                                  (NP 군사력/NNC+으로/PAD))
+                          (VP (NP-OBJ (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (VP (NP-COMP 대만/NPR+에/PAD)
+                                                대하/VV+은/EAN)))
+                                      (NP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (ADJP (VJ 무모/NNC+하/XSJ+은/EAN))))
+                                          (NP 침공/NNC+을/PCA)))
+                              (VV 감행/NNC+하/XSV+는다면/ECS))))
+                   (S (NP-SBJ 중국/NPR+은/PAU)
+                      (VP (VP (VP (NP-OBJ (S (NP-COMP-4 (S (WHNP-3 *op*)
+                                                           (S (NP-SBJ *T*-3)
+                                                              (VP (VP (NP-ADV 해안/NNC+에/PAD)
+                                                                      (VP (VV 대기/NNC+하/XSV+고/ECS)))
+                                                                  있/VX+는/EAN)))
+                                                        (NP 대만/NPR
+                                                            군인/NNC+들/XSF+에게/PAD))
+                                             (S (NP-SBJ 수/XPF+만/NNU+명/NNX+이/PCA)
+                                                (VP (NP-COMP *T*-4)
+                                                    (VV 전멸/NNC+당하/XSV+는/EAN))))
+                                          (NP 비극/NNC+을/PCA))
+                                  맞/VV+게/ECS)
+                              되/VX+을/EAN)
+                          (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=대만 군인들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>해안에</term>
+	    </Arg>
+	    <Rel>
+	      <term>대기하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>대기시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>경찰은 경기관총과 권총등으로 무장한 괴한 3 명이 카라치 시내 한 건물 2 층에 있는 라드의 사무실에 침입, 총격을 가해 라드 및 사무실 직원과 라드의 친구 등 3 명을 숨지게 한 뒤 미리 대기시켜 놓은 차를 타고 달아났다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 경찰/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-COMP (NP 경기관총/NNC+과/PCJ)
+                                             (NP 권총/NNC+등/NNX+으로/PAD))
+                                    (VV 무장/NNC+하/XSV+은/EAN))))
+                          (NP 괴한/NNC
+                              3/NNU
+                              명/NNX+이/PCA))
+                  (VP (NP-COMP (S (WHNP-2 *op*)
+                                  (S (NP-SBJ *T*-2)
+                                     (ADJP (NP-COMP 카라치/NPR
+                                                    시내/NNC
+                                                    한/NNU
+                                                    건물/NNC
+                                                    2/NNU
+                                                    층/NNX+에/PAD)
+                                           있/VJ+는/EAN)))
+                               (NP (NP 라드/NPR+의/PAN)
+                                   (NP 사무실/NNC+에/PAD)))
+                      (VV 침입/NNC)))
+               ,/SCM
+               (S (NP-SBJ *pro*)
+                  (VP (NP-ADV (S (NP-SBJ *pro*)
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-COMP *pro*)
+                                            (NP-OBJ 총격/NNC+을/PCA)
+                                            가하/VV+어/ECS))
+                                     (VP (NP-OBJ (NP (NP (NP 라드/NPR)
+                                                         (ADCP 및/ADC)
+                                                         (NP 사무실/NNC
+                                                             직원/NNC+과/PCJ)
+                                                         (NP (NP 라드/NPR+의/PAN)
+                                                             (NP 친구/NNC)))
+                                                     (NP 등/NNX))
+                                                 (NP 3/NNU
+                                                     명/NNX+을/PCA))
+                                         (S-COMP (NP-SBJ *pro*)
+                                                 (VP 숨지/VV+게/ECS))
+                                         하/VV+은/EAN)))
+                              (NP 뒤/NNC))
+                      (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (S (WHNP-3 *op*)
+                                        (S (NP-SBJ *pro*)
+                                           (VP (VP (ADVP 미리/ADV)
+                                                   (VP (NP-OBJ *T*-3)
+                                                       (VV 대기/NNC+시키/XSV+어/ECS)))
+                                               놓/VX+은/EAN)))
+                                     (NP 차/NNC+을/PCA))
+                             타/VV+고/ECS))
+                      (VP 달아나/VV+었/EPF+다/EFN+고/PAD))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>미리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=차</term>
+	    </Arg>
+	    <Rel>
+	      <term>대기시켜</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>놓은</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

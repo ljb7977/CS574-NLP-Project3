@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>적법</lemma>
+    <comment>Frames file for '적법' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>적법.01</id>
+      <edef>legal</edef>
+      <roleset>
+	<role argnum="1" argrole="thing legal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>적법하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>차이나 데일리는 앞서 상하이에서도 학부모들의 진정에 따라 당국이 인터넷 카페들에 대한 대대적인 단속을 벌여 적법하게 허가를 받지 않은 127 개 업소를 폐쇄했다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 차이나/NPR
+           데일리/NPR+은/PAU)
+   (VP (S-COMP (ADVP 앞서/ADV)
+               (NP-ADV 상하이/NPR+에서/PAD+도/PAU)
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (NP 학부모/NNC+들/XSF+의/PAN)
+                               (NP 진정/NNC+에/PAD))
+                      따르/VV+어/ECS))
+               (S (NP-SBJ 당국/NNC+이/PCA)
+                  (VP (NP-OBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-COMP 인터넷/NNC
+                                                 카페/NNC+들/XSF+에/PAD)
+                                        대하/VV+은/EAN)))
+                              (NP (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (VP (NP 대대/NNC+적/XSF+이/CO+은/EAN))))
+                                  (NP 단속/NNC+을/PCA)))
+                      벌이/VV+어/ECS))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (S (WHNP-3 *op*)
+                                 (S (NP-SBJ *T*-3)
+                                    (VP (VP (ADVP (ADV (VJ 적법/NNC+하/XSJ+게/ECS)))
+                                            (VP (NP-OBJ 허가/NNC+을/PCA)
+                                                받/VV+지/ECS))
+                                        않/VX+은/EAN)))
+                              (NP 127/NNU
+                                  개/NNX
+                                  업소/NNC+을/PCA))
+                      (VV 폐쇄/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>적법하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

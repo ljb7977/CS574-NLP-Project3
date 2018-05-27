@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>책임지</lemma>
+    <comment>Frames file for '책임지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>책임지.01</id>
+      <edef>be responsible</edef>
+      <roleset>
+	<role argnum="1" argrole="entity taking the responsibility"/>
+	<role argnum="2" argrole="responsible for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>책임지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>대대급에서는 부속품의 획득과 분배를 누가 책임지오?</text>
+	  <parse>
+(S (NP-ADV 대대/NNC+급/XSF+에서/PAD+는/PAU) 
+   (NP-OBJ-1 (NP 부속품/NNC+의/PCA) 
+	     (NP (NP 획득/NNC+과/PCJ) 
+		 (NP 분배/NNC+를/PCA)))
+   (S (NP-SBJ 누구/NPN+가/PCA) 
+      (VP (NP-OBJ *T*-1)
+	  (VV 책임/NNC+지/XSV+오/EFN)))
+   ?/SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>대대급에서는</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>부속품의 획득과 분배</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>누구</term>
+	    </Arg>
+	    <Rel>
+	      <term>책임지오</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

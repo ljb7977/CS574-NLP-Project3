@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재선임</lemma>
+    <comment>Frames file for '재선임' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재선임.01</id>
+      <edef>reelect</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing reelected"/>
+	<role argnum="2" argrole="reelect as"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재선임되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 임기 만료된 유상부 회장과 김용운 부사장이 재선임되고 정명식 사외이사 등 3 명의 후임으로 윤대욱 SK 케미컬 고문, 박우희 서울대 교수, 김순 한국기계공업진흥회 고문 등이 사외이사로 신규 선임됐다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (S (NP-SBJ 임기/NNC)
+		       (VP (VV 만료/NNC+되/XSV+은/EAN)))))
+              (NP (NP 유상부/NPR
+                      회장/NNC+과/PCJ)
+                  (NP 김용운/NPR
+                      부사장/NNC+이/PCA)))
+      (VP (VV 재선임/NNC+되/XSV+고/ECS)))
+   (S (NP-ADV (NP (NP (NP 정명식/NPR
+                          사외/NNC+이사/NNC)
+                      (NP 등/NNX))
+                  (NP 3/NNU
+                      명/NNX+의/PAN))
+              (NP 후임/NNC+으로/PAD))
+      (S (NP-SBJ (NP (NP 윤대욱/NPR
+                         SK/NFW
+                         케미컬/NNC
+                         고문/NNC)
+                     ,/SCM
+                     (NP 박우희/NPR
+                         서울대/NPR
+                         교수/NNC)
+                     ,/SCM
+                     (NP 김순/NPR
+                         한국/NPR+기계/NNC+공업/NNC+진흥회/NNC
+                         고문/NNC))
+                 (NP 등/NNX+이/PCA))
+         (VP (NP-COMP 사외/NNC+이사/NNC+으로/PAD)
+             (VP (NP-ADV 신규/NNC)
+                 (VP (VV 선임/NNC+되/XSV+었/EPF+다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>임기 만료된 유상부 회장과 김용운 부사장</term>
+	    </Arg>
+	    <Rel>
+	      <term>재선임되고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

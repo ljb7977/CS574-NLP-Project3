@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>무지막지하</lemma>
+    <comment>Frames file for '무지막지하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>무지막지하.01</id>
+      <edef>outrageous</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being outrageous"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>무지막지하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>경찰들은 피습당시 북오세티아 모즈도크시에서 체첸의 한 기지로 이동 중이었으며 "그로즈니 지역에서 이토록 무지막지한 공격을 당할 줄은 몰랐다"고 한 경찰이 밝혔다.</text>
+	  <parse>
+(S (S (NP-SBJ 경찰/NNC+들/XSF+은/PAU)
+      (VP (VP (NP-ADV 피습/NNC+당시/NNC)
+              (NP-ADV 북오세티아/NPR
+                      모즈도크/NPR+시/NNC+에서/PAD)
+              (VP (NP-COMP (NP 체첸/NPR+의/PAN)
+                           (NP 한/NNU
+                               기지/NNC+으로/PAD))
+                  (VV 이동/NNC)))
+          (VX 중/NNX+이/CO+었/EPF+으며/ECS)))
+   (S (S-COMP-1 "/SLQ
+                (NP-SBJ *pro*)
+                (VP (NP-OBJ (S (NP-SBJ *pro*)
+                               (VP (NP-ADV 그로즈니/NPR
+                                           지역/NNC+에서/PAD)
+                                   (VP (NP-OBJ-LV (S (WHNP-2 *op*)
+                                                     (S (NP-SBJ *T*-2)
+                                                        (ADJP (ADVP 이토록/ADV)
+                                                              (ADJP 무지막지하/VJ+은/EAN))))
+                                                  (NP 공격/NNC+을/PCA))
+                                       (LV 당하/VV+을/EAN))))
+                            (NP 줄/NNX+은/PAU))
+                    모르/VV+었/EPF+다/EFN)
+                "/SRQ
+                고/PAD)
+      (S (NP-SBJ 한/NNU
+                 경찰/NNC+이/PCA)
+         (VP (S-COMP *T*-1)
+             밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=공격</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>이토록</term>
+	    </Arg>
+	    <Rel>
+	      <term>무지막지한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

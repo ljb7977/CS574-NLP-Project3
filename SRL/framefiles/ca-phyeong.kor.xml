@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자평</lemma>
+    <comment>Frames file for '자평' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>자평.01</id>
+      <edef>self-evaluate</edef>
+      <roleset>
+	<role argnum="0" argrole="thing self-evaluating"/>
+	<role argnum="1" argrole="thing evaluated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자평하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중국 당국은 마오쩌둥(모택동)이 "여성이 세상의 절반을 떠받치고 있다"고 선언한 이후 여성의 사회적 지위가 눈부시게 향상됐다고 자평했다.</text>
+	  <parse>
+(S (NP-SBJ 중국/NPR
+           당국/NNC+은/PAU)
+   (VP (S-COMP (NP-ADV (S (NP-SBJ 마오쩌둥/NPR
+                                  (PRN -LRB-/SLQ
+                                       (NP 모택동/NPR)
+                                       -RRB-/SRQ)
+                                  이/PCA)
+                          (VP (S-COMP "/SLQ
+                                      (NP-SBJ 여성/NNC+이/PCA)
+                                      (VP (VP (NP-OBJ (NP 세상/NNC+의/PAN)
+                                                      (NP 절반/NNC+을/PCA))
+                                              떠받치/VV+고/ECS)
+                                          있/VX+다/EFN)
+                                      "/SRQ
+                                      고/PAD)
+                              (VV 선언/NNC+하/XSV+은/EAN)))
+                       (NP 이후/NNC))
+               (S (NP-SBJ (NP 여성/NNC+의/PAN)
+                          (NP (NP 사회/NNC+적/XSF)
+                              (NP 지위/NNC+이/PCA)))
+                  (VP (ADVP (ADV 눈부시/VJ+게/ECS))
+                      (VP (VV 향상/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))))
+       (VV 자평/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>중국 당국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>마오쩌둥(모택동)이 "여성이 세상의 절반을 떠받치고 있다"고 선언한 이후 여성의 사회적 지위가 눈부시게 향상됐다</term>
+	    </Arg>
+	    <Rel>
+	      <term>자평했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

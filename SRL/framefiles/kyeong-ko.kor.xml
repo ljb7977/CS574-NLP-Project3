@@ -1,0 +1,155 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>경고</lemma>
+    <comment>Frames file for '경고' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>경고.01</id>
+      <edef>warn</edef>
+      <roleset>
+	<role argnum="0" argrole="entity giving warning"/>
+	<role argnum="1" argrole="warning"/>
+	<role argnum="2" argrole="entity getting warning"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>경고하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>군부는 특히 단도직입적으로 대만 유권자들에게 독립 지지파인 천수이볜(진수편) 후보를 지지하지 말 것을 엄중 경고했다.</text>
+	  <parse>
+(S (NP-SBJ 군부/NNC+은/PAU)
+   (VP (ADVP 특히/ADV)
+       (NP-ADV 단도직입/NNC+적/XSF+으로/PAD)
+       (VP (NP-COMP 대만/NPR
+                    유권자/NNC+들/XSF+에게/PAD)
+           (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (NP 독립/NNC
+                                                    지지파/NNC+이/CO+은/EAN))))
+                                      (NP 천수이볜/NPR
+                                          (PRN -LRB-/SLQ
+                                               (NP 진수편/NPR)
+                                               -RRB-/SRQ)
+                                          후보/NNC+을/PCA))
+                              (VV 지지/NNC+하/XSV+지/ECS))
+                          말/VX+을/EAN))
+                   (NP 것/NNX+을/PCA))
+           (VP (NP-ADV 엄중/NNC)
+               (VP (VV 경고/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>군부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>단도직입적으로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>대만 유권자들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>독립 지지파인 천수이볜(진수편) 후보를 지지하지 말 것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>엄중</term>
+	    </Arg>
+	    <Rel>
+	      <term>경고했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>경고하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>빌 클린턴 미 대통령은 지난주 게르하르트 슈뢰더 독일 총리에게 독일이 새로 국제통화기금(IMF) 총재 후보로 내세운 호르스트 쾰러 유럽부흥개발은행(EBRD) 총재가 미국의 지지를 얻지 못할지도 모른다고 경고한 것으로 워싱턴 포스트가 9 일 보도했다.</text>
+	  <parse>
+(S (NP-COMP-1 (S (NP-SBJ (NP 빌/NPR
+                             클린턴/NPR)
+                         (NP 미/NPR
+                             대통령/NNC+은/PAU))
+                 (VP (NP-ADV 지난주/NNC)
+                     (VP (NP-COMP (NP 게르하르트/NPR
+                                      슈뢰더/NPR)
+                                  (NP 독일/NPR
+                                      총리/NNC+에게/PAD))
+                         (S-COMP (NP-SBJ *pro*)
+                                 (VP (S-OBJ (NP-SBJ (S (WHNP-2 *op*)
+						       (S (NP-SBJ 독일/NPR+이/PCA)
+							  (VP (ADVP 새로/ADV)
+							      (VP (NP-OBJ *T*-2)
+								  (NP-COMP 국제/NNC+통화/NNC+기금/NNC
+									       (PRN -LRB-/SLQ
+										    IMF/NFW
+										    -RRB-/SRQ)
+									       총재/NNC
+									       후보/NNC+으로/PAD)
+								  내세우/VV+은/EAN))))
+                                                    (NP (NP 호르스트/NPR
+								    쾰러/NPR)
+                                                        (NP 유럽/NPR+부흥/NNC+개발/NNC+은행/NNC
+								(PRN -LRB-/SLQ
+								     EBRD/NFW
+								     -RRB-/SRQ)
+								총재/NNC+이/PCA)))
+                                            (VP (VP (NP-OBJ (NP 미국/NPR+의/PAN)
+                                                            (NP 지지/NNC+을/PCA))
+                                                    얻/VV+지/ECS)
+                                                못하/VX+을지/EFN+도/PAU))
+                                     모르/VV+는다/EFN+고/PAD))
+                         (VV 경고/NNC+하/XSV+은/EAN))))
+              (NP 것/NNX+으로/PAD))
+   (S (NP-SBJ 워싱턴/NPR
+              포스트/NPR+이/PCA)
+      (VP (NP-ADV 9/NNU
+                  일/NNX)
+          (VP (NP-COMP *T*-1)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>빌 클린턴 미 대통령</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난주</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>게르하르트 슈뢰더 독일 총리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>독일이 새로 국제통화기금(IMF) 총재 후보로 내세운 호르스트 쾰러 유럽부흥개발은행(EBRD) 총재가 미국의 지지를 얻지 못할지도 모른다</term>
+	    </Arg>
+	    <Rel>
+	      <term>경고한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

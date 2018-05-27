@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수놓</lemma>
+    <comment>Frames file for '수놓' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수놓.01</id>
+      <edef>decorate</edef>
+      <roleset>
+	<role argnum="0" argrole="decorator"/>
+	<role argnum="1" argrole="thing decorated"/>
+	<role argnum="2" argrole="decoration"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수놓다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>가로 8M, 세로 4M 규모의 판에 3 가지 색의 계란으로 `새천년 통일염원'이라는 글자와 한반도 지도를 수놓은 이 탑은 인천시내 공원에 전시될 예정이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ (S (WHNP *op*)
+                         (S (NP-SBJ *pro*)
+			    (VP (NP-COMP (NP (NP (NP 가로/NPR
+							 8/NNU+M/NFW)
+						 ,/SCM
+						 (NP 세로/NNC
+							 4/NNU+M/NFW))
+					     (NP 규모/NNC+의/PAN))
+					 (NP 판/NNC+에/PAD))
+				(VP (NP-ADV (NP 3/NNU
+						가지/NNX
+						색/NNC+의/PAN)
+					    (NP 계란/NNC+으로/PAD))
+				    (VP (NP-OBJ (NP (NP `/SLQ
+							새천년/NNC
+							통일/NNC+염원/NNC
+							'/SRQ
+							이라는/PAN)
+						    (NP 글자/NNC+과/PCJ))
+						(NP 한반도/NPR
+							  지도/NNC+을/PCA))
+					수놓/VV+은/EAN)))))
+                      (NP 이/DAN
+                          탑/NNC+은/PAU))
+              (VP (NP-COMP 인천/NPR+시내/NNC
+                           공원/NNC+에/PAD)
+                  (VV 전시/NNC+되/XSV+을/EAN)))
+           (NP 예정/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>가로 8M, 세로 4M 규모의 판</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>3 가지 색의 계란으로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>`새천년 통일염원'이라는 글자와 한반도 지도</term>
+	    </Arg>
+	    <Rel>
+	      <term>수놓은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

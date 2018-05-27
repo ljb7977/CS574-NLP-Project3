@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>복귀</lemma>
+    <comment>Frames file for '복귀' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>복귀.01</id>
+      <edef>return</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>복귀하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이스라엘과 시리아는 평화협상 재개의 장애물들을 명백히 제거했으며 한 달내에 협상 테이블에 복귀할 것으로 보인다고 이스라엘 신문들이 1 일 에프레임 스네 국방차관의 말을 인용해 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ *pro*)
+	     (VP (NP-COMP (S (NP-SBJ (NP 이스라엘/NPR+과/PCJ)
+				     (NP 시리아/NPR+은/PAU))
+			     (VP (VP (NP-OBJ (NP 평화/NNC+협상/NNC
+						 재개/NNC+의/PAN)
+					     (NP 장애물/NNC+들/XSF+을/PCA))
+				     (VP (ADVP 명백히/ADV)
+					 (VP (VV 제거/NNC+하/XSV+었/EPF+으며/ECS))))
+				 (VP (NP-ADV 한/NNU
+					     달/NNC+내/NNX+에/PAD)
+				     (VP (NP-COMP 협상/NNC
+						  테이블/NNC+에/PAD)
+					 (VV 복귀/NNC+하/XSV+을/EAN)))))
+			  (NP 것/NNX+으로/PAD))
+		 보이/VV+는다/EFN+고/PAD))
+   (S (NP-SBJ 이스라엘/NPR
+              신문/NNC+들/XSF+이/PCA)
+      (VP (NP-ADV 1/NNU
+                  일/NNX)
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (NP 에프레임/NPR
+                             스네/NPR
+                             국방/NNC+차관/NNC+의/PAN)
+                         (NP 말/NNC+을/PCA))
+                 (VV 인용/NNC+하/XSV+어/ECS)))
+          (VP (S-COMP *T*-1)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>이스라엘과 시리아</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>한 달내에</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>협상 테이블</term>
+	    </Arg>
+	    <Rel>
+	      <term>복귀할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

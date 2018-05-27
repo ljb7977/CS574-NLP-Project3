@@ -1,0 +1,200 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>제기</lemma>
+    <comment>Frames file for '제기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>제기.01</id>
+      <edef>bring up</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing brought up"/>
+	<role argnum="2" argrole="bring up to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>제기하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한국정부는 이 문제를 어떤 방식으로 유엔 인권위에 제기할 것인지를 조만간 결정할 것이지만 관련 당사국들을 비난하는 결의 채택을 추진하지는 않을 것 같다고 그는 덧붙였다.</text>
+	  <parse>
+(S (S-COMP-2 (S (NP-SBJ 한국/NPR+정부/NNC+은/PAU)
+                (VP (VP (S-OBJ (NP-SBJ *pro*)
+                               (VP (VP (NP-OBJ 이/DAN
+                                               문제/NNC+을/PCA)
+                                       (VP (NP-ADV 어떤/DAN
+                                                   방식/NNC+으로/PAD)
+                                           (VP (NP-COMP 유엔/NPR
+                                                        인권위/NNC+에/PAD)
+                                               (VV 제기/NNC+하/XSV+을/EAN))))
+                                   (VX 것/NNX+이/CO+은지/EFN+을/PCA)))
+                        (VP (ADVP 조만간/ADV)
+                            (VP (VV 결정/NNC+하/XSV+을/EAN))))
+                    (VX 것/NNX+이/CO+지만/ECS)))
+             (S (NP-SBJ *pro*)
+                (VP (VP (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                           (S (NP-SBJ *T*-1)
+                                              (VP (NP-OBJ 관련/NNC
+                                                          당사국/NNC+들/XSF+을/PCA)
+                                                  (VV 비난/NNC+하/XSV+는/EAN))))
+                                        (NP 결의/NNC))
+                                    (NP 채택/NNC+을/PCA))
+                            (VV 추진/NNC+하/XSV+지/ECS+은/PAU))
+                        않/VX+을/EAN)
+                    (VX 것/NNX
+                        같/VJ+다/EFN+고/PAD))))
+   (S (NP-SBJ 그/NPN+은/PAU)
+      (VP (S-COMP *T*-2)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 문제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어떤 방식으로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>유엔 인권위</term>
+	    </Arg>
+	    <Rel>
+	      <term>제기할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것인지</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>줄리아니 시장은 그간 이들의 인터뷰 요청을 전면 거부해 왔으며 두 기자는 뉴욕시 공보실을 상대로 정보청구소송을 제기하기도 했다.</text>
+	  <parse>
+(S (S (NP-SBJ 줄리아니/NPR
+              시장/NNC+은/PAU)
+      (VP (VP (NP-ADV 그/NPN+간/XSF)
+              (VP (NP-OBJ (NP 이/NPN+들/XSF+의/PAN)
+                          (NP 인터뷰/NNC
+                              요청/NNC+을/PCA))
+                  (VP (NP-ADV 전면/NNC)
+                      (VP (VV 거부/NNC+하/XSV+어/ECS)))))
+          오/VX+었/EPF+으며/ECS))
+   (S (NP-SBJ 두/NNU
+              기자/NNC+은/PAU)
+      (VP (VP (NP-ADV (NP-OBJ 뉴욕/NPR+시/NNC
+                              공보실/NNC+을/PCA)
+                      상대/NNC+으로/PAD)
+              (VP (NP-OBJ 정보/NNC+청구/NNC+소송/NNC+을/PCA)
+                  (VV 제기/NNC+하/XSV+기/ENM+도/PAU)))
+          하/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>두 기자</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>뉴욕시 공보실을 상대로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>정보청구소송</term>
+	    </Arg>
+	    <Rel>
+	      <term>제기하기도</term>
+	    </Rel>
+	    <Aux>
+	      <f>도</f>
+	      <term>했다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>제기되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>현행 중의원 선거제도(소선거구 비례대표 병립제)는 개인에 의한 선거에서 정당 위주 선거로의 이행을 도모한다는 취지에서 마련돼 1996 년 총선거때부터 적용해 왔으나 정계개편에 따른 비례대표 의원의 당적이동등이 속출, 일각에서 재검토해야 한다는 지적이 제기됐었다.</text>
+	  <parse>
+(S (S (NP-SBJ 현행/NNC
+              중의원/NNC
+              선거/NNC+제도/NNC
+              (PRN -LRB-/SLQ
+                   (NP 소선거구/NNC
+                       비례/NNC+대표/NNC
+                       병립제/NNC)
+                   -RRB-/SRQ)
+              은/PAU)
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP (NP (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (NP-COMP 개인/NNC+에/PAD)
+                                                   의하/VV+은/EAN)))
+                                         (NP 선거/NNC+에서/PAD))
+                                     (NP 정당/NNC
+                                         위주/NNC
+                                         선거/NNC+으로/PAD+의/PAN))
+                                 (NP 이행/NNC+을/PCA))
+                         (VV 도모/NNC+하/XSV+는다는/EAN)))
+                  (NP 취지/NNC+에서/PAD))
+          (VP (VV 마련/NNC+되/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV 1996/NNU
+                      년/NNX
+                      총선거/NNC+때/NNC+부터/PAU)
+              (VP (NP-OBJ *pro*)
+                  (VV 적용/NNC+하/XSV+어/ECS)))
+          오/VX+었/EPF+으나/ECS))
+   (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (VP (NP-COMP 정계/NNC+개편/NNC+에/PAD)
+                        따르/VV+은/EAN)))
+              (NP (NP 비례/NNC+대표/NNC
+                      의원/NNC+의/PAN)
+                  (NP 당적/NNC+이동/NNC+등/NNX+이/PCA)))
+      (VP (VV 속출/NNC)))
+   ,/SCM
+   (S (NP-COMP-3 일각/NNC+에서/PAD)
+      (S (NP-SBJ (S (NP-SBJ *pro*)
+                    (VP (VP (NP-OBJ *pro*)
+                            (VV 재검토/NNC+하/XSV+어야/ECS))
+                        하/VX+는다는/EAN))
+                 (NP 지적/NNC+이/PCA))
+         (VP (NP-COMP *T*-3)
+             (VV 제기/NNC+되/XSV+었었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>정계개편에 따른 비례대표 의원의 당적이동등이 속출</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에서</f>
+	      <term>일각</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>재검토해야 한다는 지적</term>
+	    </Arg>
+	    <Rel>
+	      <term>제기됐었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

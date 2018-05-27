@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이롭</lemma>
+    <comment>Frames file for '이롭' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>이롭.01</id>
+      <edef>beneficial</edef>
+      <roleset>
+	<role argnum="1" argrole="thing beneficial"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이롭다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한국과 일본의 건설업체들은 최근 입찰을 한 하이반 터널건설공사를 비롯한 각종 공사수주에서 출혈경쟁을 벌여 베트남 당국만 이롭게 하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP (NP 한국/NPR+과/PCJ)
+                  (NP 일본/NPR+의/PAN))
+              (NP 건설/NNC+업체/NNC+들/XSF+은/PAU))
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *pro*)
+                                       (VP (NP-ADV 최근/NNC)
+                                           (VP (NP-COMP *T*-1)
+                                               (VP (NP-OBJ-LV 입찰/NNC+을/PCA)
+                                                   (LV 하/VV+은/EAN))))))
+                                 (NP 하이반/NPR
+					   터널/NNC+건설/NNC+공사/NNC+을/PCA))
+                         비롯하/VV+은/EAN))
+                  (NP 각종/NNC
+                      공사/NNC+수주/NNC+에서/PAD))
+          (VP (NP-OBJ 출혈/NNC+경쟁/NNC+을/PCA)
+              벌이/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 베트남/NPR
+                      당국/NNC+만/PAU)
+              (S-COMP (NP-SBJ *pro*)
+                      (ADJP 이롭/VJ+게/ECS))
+              하/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>이롭게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

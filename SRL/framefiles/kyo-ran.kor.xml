@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>교란</lemma>
+    <comment>Frames file for '교란' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>교란.01</id>
+      <edef>disturb</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing disturbed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>교란하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>적의 전후방을 동시에 교란했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-OBJ 적/NNC+의/PCA 
+	       전후방/NNC+을/PCA) 
+       (VP (NP-ADV 동시/NNC+에/PAD) 
+	   (VP (VV 교란/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적의 전후방</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>동시에</term>
+	    </Arg>
+	    <Rel>
+	      <term>교란했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

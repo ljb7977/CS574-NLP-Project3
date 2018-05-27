@@ -1,0 +1,101 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>채취</lemma>
+    <comment>Frames file for '채취' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>채취.01</id>
+      <edef>collect</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing collected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>채취하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>다이크 사장은 "이들이 여러번의 '모험'을 거쳐 악어 혈액 샘플을 채취했으며 지난주 한 주요 연구소가 이 샘플에서 신비한 항균성 물질인 펩타이드를 추출해 냈다"면서 "시험 결과 이 물질은 모든 표준 항생물질에 내성이 있는 유독 박테리아 변종을 죽이는 것으로 나타났다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 다이크/NPR
+           사장/NNC+은/PAU)
+   (VP (S-COMP (S "/SLQ
+                  (S (NP-SBJ 이/NPN+들/XSF+이/PCA)
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ (NP 여러번/NNC+의/PAN)
+                                        (NP '/SLQ
+                                            모험/NNC
+                                            '/SRQ
+                                            을/PCA))
+                                거치/VV+어/ECS))
+                         (VP (NP-OBJ 악어/NNC
+                                     혈액/NNC
+                                     샘플/NNC+을/PCA)
+                             (VV 채취/NNC+하/XSV+었/EPF+으며/ECS))))
+                  (S (NP-ADV 지난주/NNC)
+                     (S (NP-SBJ 한/NNU
+                                주요/NNC
+                                연구소/NNC+이/PCA)
+                        (VP (VP (NP-COMP 이/DAN
+                                         샘플/NNC+에서/PAD)
+                                (NP-OBJ (S (WHNP-2 *op*)
+                                           (S (NP-SBJ *T*-2)
+                                              (VP (NP (S (WHNP-1 *op*)
+                                                         (S (NP-SBJ *T*-1)
+                                                            (ADJP (VJ 신비/NNC+하/XSJ+은/EAN))))
+                                                      (NP 항균성/NNC
+                                                          물질/NNC+이/CO+은/EAN)))))
+                                        (NP 펩타이드/NPR+을/PCA))
+                                (VV 추출/NNC+하/XSV+어/ECS))
+                            내/VX+었/EPF+다/EFN)))
+                  "/SRQ
+                  면서/ECS)
+               (S "/SLQ
+                  (NP-SBJ *pro*)
+                  (VP (NP-ADV 시험/NNC
+                              결과/NNC)
+                      (VP (NP-COMP (S (NP-SBJ 이/DAN
+                                              물질/NNC+은/PAU)
+                                      (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                     (S (NP-SBJ *T*-3)
+                                                        (ADJP (NP-ADV 모든/DAN
+                                                                      표준/NNC
+                                                                      항생/NNC+물질/NNC+에/PAD)
+                                                              (ADJP (NP-COMP 내성/NNC+이/PCA)
+                                                                    있/VJ+는/EAN))))
+                                                  (NP 유독/NNC
+                                                      박테리아/NNC
+                                                      변종/NNC+을/PCA))
+                                          죽이/VV+는/EAN))
+                                   (NP 것/NNX+으로/PAD))
+                          나타나/VV+었/EPF+다/EFN))
+                  "/SRQ
+                  고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>이들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>여러번의 '모험'을 거쳐</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>악어 혈액 샘플</term>
+	    </Arg>
+	    <Rel>
+	      <term>채취했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

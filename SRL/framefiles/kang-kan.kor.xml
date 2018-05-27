@@ -1,0 +1,181 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>강간</lemma>
+    <comment>Frames file for '강간' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>강간.01</id>
+      <edef>rape</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="victim"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>강간하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>소장에 따르면, 이들 3 명의 피고는 지난 92 년 여름 포차에서 학교, 경기장, 건설 노무자 막사 등에 이른바 `강간공장' 혹은 `준 매춘굴'을 차려놓고 여성을 집단 강간했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 소장/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   ,/SCM
+   (S (NP-SBJ (NP 이/NPN+들/XSF
+                  3/NNU
+                  명/NNX+의/PAN)
+              (NP 피고/NNC+은/PAU))
+      (VP (NP-ADV 지난/DAN
+                  92/NNU
+                  년/NNX
+                  여름/NNC)
+          (NP-ADV 포차/NPR+에서/PAD)
+          (VP (VP (VP (NP-ADV (NP (NP 학교/NNC)
+                                  ,/SCM
+                                  (NP 경기장/NNC)
+                                  ,/SCM
+                                  (NP 건설/NNC
+                                      노무자/NNC
+                                      막사/NNC))
+                              (NP 등/NNX+에/PAD))
+                      (VP (NP-OBJ (ADVP 이른바/ADV)
+                                  (NP (NP `/SLQ
+                                          강간/NNC+공장/NNC
+                                          '/SRQ)
+                                      (ADCP 혹은/ADC)
+                                      (NP `/SLQ
+                                          준/DAN
+                                          매춘굴/NNC
+                                          '/SRQ
+                                          을/PCA)))
+                          차리/VV+어/ECS))
+                  놓/VX+고/ECS)
+              (VP (NP-OBJ 여성/NNC+을/PCA)
+                  (VP (NP-ADV 집단/NNC)
+                      (VP (VV 강간/NNC+하/XSV+었/EPF+다/EFN)))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>소장에 따르면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>이들 3 명의 피고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 92 년 여름</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>포차에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>여성</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>집단</term>
+	    </Arg>
+	    <Rel>
+	      <term>강간했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>강간당하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>논평은 이어 미국에서는 현재 인구 10 만명당 한해에 8 명이 살해당하고 3 백여명이 부상하고 있으며, 70 여명의 여성이 강간당하고 2 백여명이 약탈당하고 있다면서" 인간의 생존권마저 보장못하는 미국이 사람들의 정치적 자유와 권리에 대해 운운하는 것은 하나의 정치만화라 하지 않을 수 없다"고 꼬집었다.</text>
+	  <parse>
+(S (NP-SBJ 논평/NNC+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (S (NP-ADV 미국/NPR+에서/PAD+은/PAU)
+          (NP-ADV 현재/NNC)
+          (NP-ADV 인구/NNC
+                  10/NNU
+                  만/NNU+명/NNX+당/XSF)
+          (NP-ADV 한해/NNC+에/PAD)
+          (S (S (NP-SBJ 8/NNU
+                        명/NNX+이/PCA)
+                (VP (VV 살해/NNC+당하/XSV+고/ECS)))
+             (S (NP-SBJ 3/NNU
+                        백/NNU+여/XSF+명/NNX+이/PCA)
+                (VP (VP (VV 부상/NNC+하/XSV+고/ECS))
+                    있/VX+으며/ECS))
+             ,/SCM
+             (S (NP-SBJ (NP 70/NNU
+                            여/XSF+명/NNX+의/PAN)
+                        (NP 여성/NNC+이/PCA))
+                (VP (VV 강간/NNC+당하/XSV+고/ECS)))
+             (S (NP-SBJ 2/NNU
+                        백/NNU+여/XSF+명/NNX+이/PCA)
+                (VP (VP (VV 약탈/NNC+당하/XSV+고/ECS))
+                    있/VX+다면서/ECS))))
+       (VP (S-COMP "/SRQ
+                   (NP-SBJ *pro*)
+                   (VP (VP (VP (S-COMP (NP-SBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                                             (S (NP-SBJ *T*-1)
+                                                                (VP (NP-OBJ (NP 인간/NNC+의/PAN)
+                                                                            (NP 생존권/NNC+마저/PAU))
+                                                                    (VP (NP-OBJ-LV 보장/NNC)
+                                                                        (LV 못하/VV+는/EAN)))))
+                                                          (NP 미국/NPR+이/PCA))
+                                                  (VP (S-COMP (NP-SBJ *pro*)
+                                                              (VP (NP-COMP (NP 사람/NNC+들/XSF+의/PAN)
+                                                                           (NP (NP 정치/NNC+적/XSF
+                                                                                   자유/NNC+과/PCJ)
+                                                                               (NP 권리/NNC+에/PAD)))
+                                                                  대하/VV+어/ECS))
+                                                      (VV 운운/NNC+하/XSV+는/EAN)))
+                                               (NP 것/NNX+은/PAU))
+                                       (VP (NP (NP 하나/NNU+의/PAN)
+                                               (NP 정치/NNC+만화/NNC+이/CO+라/EFN))))
+                               하/VV+지/ECS)
+                           않/VX+을/EAN)
+                       (VX 수/NNX
+                           없/VJ+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           꼬집/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>미국에서는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현재</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>인구 10 만명당 한해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>70 여명의 여성</term>
+	    </Arg>
+	    <Rel>
+	      <term>강간당하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다면서</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수리</lemma>
+    <comment>Frames file for '수리' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>수리.01</id>
+      <edef>repair</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing repaired"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수리하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>만약 제3 소대 제1 포반의 곡사포가 파손되었다면, 귀관은 그걸 어떻게 수리했겠는가?</text>
+	  <parse>
+(S (S (ADVP 만약/ADV)
+      (S (NP-SBJ (NP (NP 제/XPF+3/NNU
+                         소대/NNC)
+                     (NP 제/XPF+1/NNU
+                         포반/NNC+의/PAN))
+                 (NP 곡사포/NNC+이/PCA))
+         (VP (VV 파손/NNC+되/XSV+었/EPF+다면/ECS))))
+   ,/SCM
+   (S (NP-SBJ 귀관/NPN+은/PAU)
+      (VP (NP-OBJ 그것/NPN+을/PCA)
+          (VP (ADVP 어떻게/ADV)
+              (VP (VV 수리/NNC+하/XSV+었겠/EPF+는가/EFN)))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>만약 제3 소대 제1 포반의 곡사포가 파손되었다면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>귀관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어떻게</term>
+	    </Arg>
+	    <Rel>
+	      <term>수리했겠는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>수리되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="s" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>만약 최초의 곡사포가 몹시 파손됐을 경우에는, 그게 수리되고 있는 동안에 연대로부터 대체용 곡사포를 받았습니다.</text>
+	  <parse>
+(S (NP-ADV (S (ADVP 만약/ADV)
+              (S (NP-SBJ (NP 최초/NNC+의/PAN)
+                         (NP 곡사포/NNC+이/PCA))
+                 (VP (ADVP 몹시/ADV)
+                     (VP (VV 파손/NNC+되/XSV+었/EPF+을/EAN)))))
+           (NP 경우/NNC+에/PAD+은/PAU))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (NP-SBJ 그것/NPN+이/PCA)
+                     (VP (VP (VV 수리/NNC+되/XSV+고/ECS))
+                         있/VX+는/EAN))
+                  (NP 동안/NNX+에/PAD))
+          (VP (NP-COMP 연대/NNC+으로/PAD+부터/PAU)
+              (NP-OBJ 대체/NNC+용/XSF
+                      곡사포/NNC+을/PCA)
+              받/VV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Rel>
+	      <term>수리되고</term>
+	    </Rel>
+	    <AUX>
+	      <f>고</f>
+	      <term>있는</term>
+	    </AUX>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

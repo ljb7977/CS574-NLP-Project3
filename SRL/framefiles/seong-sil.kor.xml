@@ -1,0 +1,106 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>성실</lemma>
+    <comment>Frames file for '성실' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>성실.01</id>
+      <edef>sincere</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being sincere"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>성실하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>재판부는 하지만 "임 지사의 혼인 신고 경위에 대한 발언의 경우 김 의원이 당시 허위라는 사실을 인식하지 못했던 것으로 보이는 만큼 허위사실유포죄 대신 후보자 비방죄를 유죄로 인정했다"며 "또 김 의원이 발언을 한 장소가 한나라당원들이 주로 참석한 정당 연설회였고 김 의원이 그동안 성실하게 의정활동을 해 온 점 등을 감안, 피선거권이 박탈될 수 있는 형을 선고하지 않는다"고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 재판부/NNC+은/PAU)
+   (VP (ADCP 하지만/ADC)
+       (VP (S "/SLQ
+	      (NP-SBJ *pro*)
+	      (VP (NP-ADV (NP (S (WHNP-1 *op*)
+				 (S (NP-SBJ *T*-1)
+				    (VP (NP-COMP (NP 임/NPR
+						       지사/NNC+의/PAN)
+						 (NP 혼인/NNC
+							 신고/NNC
+							 경위/NNC+에/PAD))
+					대하/VV+은/EAN)))
+			      (NP 발언/NNC+의/PAN))
+			  (NP 경우/NNC))
+		  (NP-ADV (S (NP-SBJ *pro*)
+			     (VP (NP-COMP (S (NP-SBJ 김/NPR
+						       의원/NNC+이/PCA)
+					     (VP (VP (NP-ADV 당시/NNC)
+						     (VP (NP-OBJ (NP 허위/NNC+이라는/PAN)
+								 (NP 사실/NNC+을/PCA))
+							 (VV 인식/NNC+하/XSV+지/ECS)))
+						 못하/VX+었/EPF+던/EAN))
+					  (NP 것/NNX+으로/PAD))
+				 보이/VV+는/EAN))
+			  (NP 만큼/NNX))
+		  (NP-ADV (NP 허위/NNC+사실/NNC+유포죄/NNC)
+			  (NP 대신/NNC))
+		  (VP (NP-OBJ 후보자/NNC
+				    비방죄/NNC+을/PCA)
+		      (NP-COMP 유죄/NNC+으로/PAD)
+		      (VV 인정/NNC+하/XSV+었/EPF+다/EFN)))
+	      "/SRQ
+	      며/ECS)
+	   (VP (S-COMP "/SLQ
+		       (NP-SBJ *pro*)
+		       (VP (VP (S (NP-SBJ *pro*)
+				  (VP (NP-OBJ (NP (S (S (ADVP 또/ADV)
+							(S (NP-SBJ (S (WHNP *op*)
+								      (S (NP-SBJ 김/NPR
+										   의원/NNC+이/PCA)
+									 (VP (NP-OBJ 발언/NNC+을/PCA)
+									     하/VV+은/EAN)))
+								   (NP 장소/NNC+이/PCA))
+							   (VP (NP (S (WHNP-2 *op*)
+								      (S (NP-SBJ 한나라/NPR+당원/NNC+들/XSF+이/PCA)
+									 (VP (ADVP 주로/ADV)
+									     (VP (NP-COMP *T*-2)
+										 (VV 참석/NNC+하/XSV+은/EAN)))))
+								   (NP 정당/NNC
+									   연설회/NNC+이/CO+었/EPF+고/ECS)))))
+						     (S (NP-SBJ 김/NPR
+								  의원/NNC+이/PCA)
+							(VP (VP (NP-ADV 그동안/NNC)
+								(ADVP (ADV (VJ 성실/NNC+하/XSJ+게/ECS)))
+								(VP (NP-OBJ 의정/NNC+활동/NNC+을/PCA)
+								    하/VV+어/ECS))
+							    오/VX+은/EAN)))
+						  (NP 점/NNX))
+					      (NP 등/NNX+을/PCA))
+				      (VV 감안/NNC)))
+			       ,/SCM
+			       (VP (NP-OBJ (S (NP-SBJ 피선거권/NNC+이/PCA)
+					      (VP (VP (VV 박탈/NNC+되/XSV+을/EAN))
+						  (VX 수/NNX
+							있/VJ+는/EAN)))
+					   (NP 형/NNC+을/PCA))
+				   (VV 선고/NNC+하/XSV+지/ECS)))
+			   않/VX+는다/EFN)
+		       "/SRQ
+		       고/PAD)
+	       덧붙이/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>성실하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

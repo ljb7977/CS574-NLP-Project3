@@ -1,0 +1,135 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>점검</lemma>
+    <comment>Frames file for '점검' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>점검.01</id>
+      <edef>inspect</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity inspected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>점검하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>운전수는 제동유도 가끔 점검해야 합니다.</text>
+	  <parse>
+(S (NP-SBJ 운전수/NNC+은/PAU)
+   (VP (VP (NP-OBJ 제동유/NNC+도/PAU)
+           (VP (ADVP 가끔/ADV)
+               (VP (VV 점검/NNC+하/XSV+어야/ECS))))
+       하/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>운전수</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>제동유</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>가끔</term>
+	    </Arg>
+	    <Rel>
+	      <term>점검해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>합니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>점검받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이에 따라 이들 은행은 오는 4 월 20 일까지 올 1.4 분기 감축계획 이행실적을 금감원에 제출하는 것을 시작으로 매분기마다 이행실적을 점검받게 되며 금감원은 추후 사후관리 방안 지침을 만들어 이행이 미진할 경우 해당은행을 제재할 방침이다.</text>
+	  <parse>
+(S (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP 이/NPN+에/PAD)
+             따르/VV+어/ECS))
+      (S (NP-SBJ 이/NPN+들/XSF
+                 은행/NNC+은/PAU)
+         (VP (VP (NP-ADV (NP-OBJ (S (NP-SBJ *pro*)
+                                    (VP (NP-ADV 오는/DAN
+                                                4/NNU
+                                                월/NNX
+                                                20/NNU
+                                                일/NNX+까지/PAU)
+                                        (VP (NP-OBJ (NP 올/DAN
+                                                        1.4/NNU
+                                                        분기/NNC)
+                                                    (NP 감축/NNC+계획/NNC)
+                                                    (NP 이행/NNC+실적/NNC+을/PCA))
+                                            (NP-COMP 금감원/NNC+에/PAD)
+                                            (VV 제출/NNC+하/XSV+는/EAN))))
+                                 (NP 것/NNX+을/PCA))
+                         시작/NNC+으로/PAD)
+                 (NP-ADV 매/XPF+분기/NNC+마다/PAU)
+                 (VP (NP-OBJ 이행/NNC+실적/NNC+을/PCA)
+                     (VV 점검/NNC+받/XSV+게/ECS)))
+             되/VX+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (S (NP-SBJ 금감원/NNC+은/PAU)
+                    (VP (NP-OBJ 추후/NNC
+                                사후/NNC+관리/NNC
+                                방안/NNC
+                                지침/NNC+을/PCA)
+                        만들/VV+어/ECS))
+                 (S (NP-SBJ *pro*)
+                    (VP (NP-ADV (S (NP-SBJ 이행/NNC+이/PCA)
+                                   (ADJP 미진하/VJ+을/EAN))
+                                (NP 경우/NNC))
+                        (VP (NP-OBJ 해당/NNC+은행/NNC+을/PCA)
+                            (VV 제재/NNC+하/XSV+을/EAN)))))
+              (NP 방침/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이에 따라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>이들 은행</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>오는 4 월 20 일까지 올 1.4 분기 감축계획 이행실적을 금감원에 제출하는 것을 시작으로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>매분기마다</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이행실적</term>
+	    </Arg>
+	    <Rel>
+	      <term>점검받게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>되며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

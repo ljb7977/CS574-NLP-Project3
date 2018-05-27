@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>압축</lemma>
+    <comment>Frames file for '압축' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>압축.01</id>
+      <edef>condense</edef>
+      <roleset>
+	<role argnum="0" argrole="thing condensing"/>
+	<role argnum="1" argrole="thing condensed"/>
+	<role argnum="2" argrole="condense into"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>압축되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>민주당의 빌 브래들리 전 상원의원은 이보다 한 시간 앞서 기자회견을 갖고 앨 고어 부통령에 대한 지지를 선언했기 때문에 오는 11 월의 미국 대통령 선거는 민주당의 고어 후보와 공화당의 부시 후보간의 양자 대결로 압축됐다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ (NP 민주당/NPR+의/PAN)
+		      (NP 빌/NPR
+			    브래들리/NPR
+			    전/NNC
+			    상원/NNC+의원/NNC+은/PAU))
+	      (VP (VP (ADVP (NP-ADV 이/NPN+보다/PAD)
+			    (ADVP (NP-COMP 한/NNU
+					     시간/NNX)
+				  앞서/ADV))
+		      (VP (NP-OBJ 기자/NNC+회견/NNC+을/PCA)
+			  갖/VV+고/ECS))
+		  (VP (NP-OBJ (S (WHNP-1 *op*)
+				 (S (NP-SBJ *T*-1)
+				    (VP (NP-COMP 앨/NPR
+						   고어/NPR
+						   부통령/NNC+에/PAD)
+					대하/VV+은/EAN)))
+			      (NP 지지/NNC+을/PCA))
+		      (VV 선언/NNC+하/XSV+었/EPF+기/ENM))))
+           (NP 때문/NNX+에/PAD))
+   (S (NP-SBJ (NP 오는/DAN
+                  11/NNU
+                  월/NNX+의/PAN)
+              (NP 미국/NPR
+                  대통령/NNC
+                  선거/NNC+은/PAU))
+      (VP (NP-COMP (NP (NP (NP 민주당/NPR+의/PAN)
+                           (NP 고어/NPR
+                               후보/NNC+과/PAD))
+                       (NP (NP 공화당/NPR+의/PAN)
+                           (NP 부시/NPR
+                               후보/NNC+간/NNX+의/PAN)))
+                   (NP 양자/NNC
+                       대결/NNC+으로/PAD))
+          (VV 압축/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>민주당의 빌 브래들리 전 상원의원은 이보다 한 시간 앞서 기자회견을 갖고 앨 고어 부통령에 대한 지지를 선언했기 때문에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>오는 11 월의 미국 대통령 선거</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>민주당의 고어 후보와 공화당의 부시 후보간의 양자 대결</term>
+	    </Arg>
+	    <Rel>
+	      <term>압축됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

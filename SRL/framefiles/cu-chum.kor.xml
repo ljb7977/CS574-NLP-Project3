@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주춤</lemma>
+    <comment>Frames file for '주춤' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>주춤.01</id>
+      <edef>blench</edef>
+      <roleset>
+	<role argnum="1" argrole="thing blenching"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주춤해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 11 월과 12 월에도 각각 10 조 9 천억원과 13 조 3 천억원이 감소했다가 대우문제가 약간 주춤해진 올해 1 월에는 감소규모가 4 조 9 천억원으로 줄었다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (S (NP-ADV (NP 11/NNU
+                     월/NNX+과/PCJ)
+                 (NP 12/NNU
+                     월/NNX+에/PAD+도/PAU))
+         (ADVP 각각/ADV)
+         (S (NP-SBJ (NP 10/NNU
+                        조/NNU
+                        9/NNU
+                        천억/NNU+원/NNX+과/PCJ)
+                    (NP 13/NNU
+                        조/NNU
+                        3/NNU
+                        천억/NNU+원/NNX+이/PCA))
+            (VP (VV 감소/NNC+하/XSV+었/EPF+다가/ECS))))
+      (S (NP-ADV (S (WHNP *op*)
+                    (S (NP-SBJ 대우/NPR+문제/NNC+이/PCA)
+                       (VP (ADVP 약간/ADV)
+                           (VP (VV (VV 주춤/NNC+하/XSV+어지/XSV+은/EAN))))))
+                 (NP 올해/NNC
+                     1/NNU
+                     월/NNX+에/PAD+은/PAU))
+         (S (NP-SBJ 감소/NNC+규모/NNC+이/PCA)
+            (VP (NP-COMP 4/NNU
+                         조/NNU
+                         9/NNU
+                         천억/NNU+원/NNX+으로/PAD)
+                줄/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>대우문제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>약간</term>
+	    </Arg>
+	    <Rel>
+	      <term>주춤해진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

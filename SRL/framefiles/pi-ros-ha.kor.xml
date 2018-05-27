@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>비롯하</lemma>
+    <comment>Frames file for '비롯하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>비롯하.01</id>
+      <edef>include</edef>
+      <roleset>
+	<role argnum="1" argrole="group"/>
+	<role argnum="2" argrole="member"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>비롯하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 통신은 호세 빈센트 랑헬 베네수엘라 외무장관의 말을 인용, 차베스 대통령이 이란을 비롯한 이들 4 개 석유수출국기구(OPEC) 회원국과 향후 석유에너지 전략에 대해 협의할 것이라고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           통신/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (NP 호세/NPR
+                          빈센트/NPR
+                          랑헬/NPR
+                          베네수엘라/NPR
+                          외무/NNC+장관/NNC+의/PAN)
+                      (NP 말/NNC+을/PCA))
+              (VV 인용/NNC)))
+       ,/SCM
+       (VP (S-COMP (NP-SBJ 차베스/NPR
+                           대통령/NNC+이/PCA)
+                   (VP (VP (NP-COMP (S (WHNP-1 *op*)
+				       (S (NP-SBJ *T*-1)
+					  (VP (NP-OBJ 이란/NPR+을/PCA)
+					      비롯하/VV+은/EAN)))
+                                    (NP 이/NPN+들/XSF
+                                        4/NNU
+                                        개/NNX
+                                        석유/NNC+수출국/NNC+기구/NNC
+                                        (PRN -LRB-/SLQ
+                                             (NP OPEC/NFW)
+                                             -RRB-/SRQ)
+                                        회원국/NNC+과/PAD))
+                           (S-COMP (NP-SBJ *pro*)
+                                   (VP (NP-COMP 향후/NNC
+                                                석유/NNC+에너지/NNC
+                                                전략/NNC+에/PAD)
+                                       대하/VV+어/ECS))
+                           (VV 협의/NNC+하/XSV+을/EAN))
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+           전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=이들 4 개 석유수출국기구(OPEC) 회원국</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>이란</term>
+	    </Arg>
+	    <Rel>
+	      <term>비롯한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

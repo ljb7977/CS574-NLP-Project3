@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>침수</lemma>
+    <comment>Frames file for '침수' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>침수.01</id>
+      <edef>inundate</edef>
+      <roleset>
+	<role argnum="0" argrole="thing inundating"/>
+	<role argnum="1" argrole="thing inundated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>침수되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>볼리비아의 비상대책기구는 피라이강 등 2 개 강이 범람하면서 10 개 마을을 휩쓸어 교량과 도로 등이 파손됐으며 1 만 4 천헥타르 (3 만 5 천에이커)의 옥수수와 콩 등 작물이 침수되고 9 만마리의 가축이 몰살 위기에 놓여 있다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 볼리비아/NPR+의/PAN)
+           (NP 비상/NNC+대책/NNC+기구/NNC+은/PAU))
+   (VP (S-COMP (S (NP-SBJ (NP (NP 피라이/NPR+강/NNC)
+                              (NP 등/NNX))
+                          (NP 2/NNU
+                              개/NNX
+                              강/NNC+이/PCA))
+                  (VP (VV 범람/NNC+하/XSV+으면서/ECS)))
+               (S (S (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 10/NNU
+                                    개/NNX
+                                    마을/NNC+을/PCA)
+                            휩쓸/VV+어/ECS))
+                     (S (NP-SBJ (NP (NP 교량/NNC+과/PCJ)
+                                    (NP 도로/NNC))
+                                (NP 등/NNX+이/PCA))
+                        (VP (VV 파손/NNC+되/XSV+었/EPF+으며/ECS))))
+                  (S (NP-SBJ (NP 1/NNU
+                                 만/NNU
+                                 4/NNU
+                                 천/NNU+헥타르/NNX
+                                 (PRN -LRB-/SLQ
+                                      3/NNU
+                                      만/NNU
+                                      5/NNU
+                                      천/NNU+에이커/NNX
+                                      -RRB-/SRQ)
+                                 의/PAN)
+                             (NP (NP (NP (NP 옥수수/NNC+과/PCJ)
+                                         (NP 콩/NNC))
+                                     (NP 등/NNX))
+                                 (NP 작물/NNC+이/PCA)))
+                     (VP (VV 침수/NNC+되/XSV+고/ECS)))
+                  (S (NP-SBJ (NP 9/NNU
+                                 만/NNU+마리/NNX+의/PAN)
+                             (NP 가축/NNC+이/PCA))
+                     (VP (VP (NP-COMP 몰살/NNC
+                                      위기/NNC+에/PAD)
+                             놓이/VV+어/ECS)
+                         있/VX+다/EFN+고/PAD))))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>1 만 4 천헥타르 (3 만 5 천에이커)의 옥수수와 콩 등 작물</term>
+	    </Arg>
+	    <Rel>
+	      <term>침수되고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

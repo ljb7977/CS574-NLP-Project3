@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>살아남</lemma>
+    <comment>Frames file for '살아남' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>살아남.01</id>
+      <edef>survive</edef>
+      <roleset>
+	<role argnum="0" argrole="survivor"/>
+	<role argnum="1" argrole="circumstances"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>살아남다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보스워스 대사는 "한국이 국제사회에서 살아남기 위해서는 개혁, 구조조정, 자기개선 노력이 절실하다"면서 "다행히 한국인은 한차원 높은 개혁과 구조조정을 추진하고 있으며 시장세력이 앞으로 나갈 수 있을 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 보스워스/NPR
+           대사/NNC+은/PAU)
+   (VP (S-COMP (S "/SLQ
+                  (S (NP-SBJ *pro*)
+                     (VP (S-OBJ (NP-SBJ 한국/NPR+이/PCA)
+                                (VP (NP-COMP 국제/NNC+사회/NNC+에서/PAD)
+                                    살아남/VV+기/ENM))
+                         위하/VV+어서/ECS+은/PAU))
+                  (S (NP-SBJ (NP (NP 개혁/NNC)
+                                 ,/SCM
+                                 (NP 구조/NNC+조정/NNC)
+                                 ,/SCM
+                                 (NP 자기/NPN+개선/NNC))
+                             (NP 노력/NNC+이/PCA))
+                     (ADJP 절실하/VJ+다/EFN))
+                  "/SRQ
+                  면서/ECS)
+               (S "/SLQ
+                  (S (ADVP 다행히/ADV)
+                     (S (NP-SBJ 한국인/NNC+은/PAU)
+                        (VP (VP (NP-OBJ (S (NP-SBJ 한/NNU+차원/NNC)
+                                           (ADJP 높/VJ+은/EAN))
+                                        (NP (NP 개혁/NNC+과/PCJ)
+                                            (NP 구조/NNC+조정/NNC+을/PCA)))
+                                (VV 추진/NNC+하/XSV+고/ECS))
+                            있/VX+으며/ECS)))
+                  (S (NP-SBJ 시장/NNC+세력/NNC+이/PCA)
+                     (VP (VP (VP (NP-COMP 앞/NNC+으로/PAD)
+                                 나가/VV+을/EAN)
+                             (VX 수/NNX
+                                 있/VJ+을/EAN))
+                         (VX 것/NNX)))
+                  "/SRQ
+                  이/CO+라/EFN+고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>한국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>국제사회</term>
+	    </Arg>
+	    <Rel>
+	      <term>살아남기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

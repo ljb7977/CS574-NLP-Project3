@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>들여보내</lemma>
+    <comment>Frames file for '들여보내' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>들여보내.01</id>
+      <edef>send into</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thind sent into"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>들여보내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>앞서 18 일엔 방콕 근교 방나의 반 크루나 감화원에서 근 600 명이 탈출, 경찰이 최루탄과 물대포를 동원 대부분을 원내로 다시 들여보낸 사건이 일어났었다.</text>
+	  <parse>
+(S (S (ADVP 앞서/ADV)
+      (NP-ADV 18/NNU
+              일/NNX+에/PAD+은/PAU)
+      (NP-ADV (NP 방콕/NPR
+                  근교/NNC)
+              (NP 방나의/NPR
+                  반/NPR
+                  크루나/NPR
+                  감화원/NNC+에서/PAD))
+      (S (NP-SBJ 근/DAN
+                 600/NNU
+                 명/NNX+이/PCA)
+         (VP (VV 탈출/NNC))))
+   ,/SCM
+   (S (NP-SBJ (S (NP-SBJ 경찰/NNC+이/PCA)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP 최루탄/NNC+과/PCJ)
+                                    (NP 물/NNC+대포/NNC+을/PCA))
+                            (VV 동원/NNC)))
+                     (VP (NP-OBJ 대부분/NNC+을/PCA)
+                         (NP-COMP 원/NNC+내/NNX+으로/PAD)
+                         (VP (ADVP 다시/ADV)
+                             (VP 들여보내/VV+은/EAN)))))
+              (NP 사건/NNC+이/PCA))
+      (VP 일어나/VV+었었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>경찰</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>최루탄과 물대포를 동원</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대부분</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>원내</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>다시</term>
+	    </Arg>
+	    <Rel>
+	      <term>들여보낸</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

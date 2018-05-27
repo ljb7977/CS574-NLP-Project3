@@ -1,0 +1,129 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발족</lemma>
+    <comment>Frames file for '발족' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발족.01</id>
+      <edef>establish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing established"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발족하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>FDA의 수사과는 373 명을 공중위생법 위반 혐의로 체포해 이 중 211 명에 대해 유죄평결을 받아냄으로써 수사과가 발족한 이래 최고의 체포 및 유죄평결 건수를 기록했다.</text>
+	  <parse>
+(S (NP-SBJ (NP FDA/NFW+의/PAN)
+           (NP 수사과/NNC+은/PAU))
+   (VP (S (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 373/NNU
+                         명/NNX+을/PCA)
+                 (VP (NP-ADV 공중/NNC+위생법/NNC
+                             위반/NNC
+                             혐의/NNC+으로/PAD)
+                     (VP (VV 체포/NNC+하/XSV+어/ECS)))))
+          (S (NP-SBJ *pro*)
+             (VP (VP (S (NP-SBJ *pro*)
+                        (VP (NP-COMP 이/DAN
+                                     중/NNX
+                                     211/NNU
+                                     명/NNX+에/PAD)
+                            대하/VV+어/ECS))
+                     (VP (NP-OBJ 유죄/NNC+평결/NNC+을/PCA)
+                         받/VV+어/ECS))
+                 내/VX+음/ENM+으로써/PAD)))
+       (NP-ADV (S (NP-SBJ 수사과/NNC+이/PCA)
+                  (VP (VV 발족/NNC+하/XSV+은/EAN)))
+               (NP 이래/NNC))
+       (VP (NP-OBJ (NP 최고/NNC+의/PAN)
+                   (NP (NP (NP 체포/NNC)
+                           (ADCP 및/ADC)
+                           (NP 유죄/NNC+평결/NNC))
+                       (NP 건수/NNC+을/PCA)))
+           (VV 기록/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>수사과</term>
+	    </Arg>
+	    <Rel>
+	      <term>발족한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>발족되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난달 23 일 발족된 `일, 조 우호 의원연맹'은 2 일 제 1 회 임원회를 열고 노나카 히로무(야중광무) 자민당 간사장 대리를 연맹의 간사장에 임명했다고 자유아시아방송(RFA)이 이날 보도했다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-SBJ (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (NP-ADV 지난달/NNC
+                                       23/NNU
+                                       일/NNX)
+                               (VP (VV 발족/NNC+되/XSV+은/EAN)))))
+                     (NP `/SLQ
+                         일/NPR
+                         ,/SCM
+                         조/NPR
+                         우호/NNC
+                         의원/NNC+연맹/NNC
+                         '/SRQ
+                         은/PAU))
+             (VP (VP (NP-ADV 2/NNU
+                             일/NNX)
+                     (VP (NP-OBJ 제/DAN
+                                 1/NNU
+                                 회/NNX
+                                 임원회/NNC+을/PCA)
+                         열/VV+고/ECS))
+                 (VP (NP-OBJ 노나카/NPR
+                             히로무/NPR
+                             (PRN -LRB-/SLQ
+                                  야중광무/NPR
+                                  -RRB-/SRQ)
+                             자민당/NPR
+                             간사장/NNC
+                             대리/NNC+을/PCA)
+                     (NP-COMP (NP 연맹/NNC+의/PAN)
+                              (NP 간사장/NNC+에/PAD))
+                     (VV 임명/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 자유아시아방송/NPR
+              (PRN -LRB-/SLQ
+                   RFA/NFW
+                   -RRB-/SRQ)
+              이/PCA)
+      (VP (NP-ADV 이날/NNC)
+          (VP (S-COMP *T*-2)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=`일, 조 우호 의원연맹'</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난달 23 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>발족된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

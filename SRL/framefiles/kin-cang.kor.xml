@@ -1,0 +1,143 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>긴장</lemma>
+    <comment>Frames file for '긴장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>긴장.01</id>
+      <edef>become tense</edef>
+      <roleset>
+	<role argnum="1" argrole="entity becoming tense"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>긴장하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 롄 후보 진영에서는 리 총통의 지원설에 대해 묵묵부답으로 일관해 온 천 후보가 막판에 리 총통 카드를 꺼내 이같은 소문을 사실인 양 암시함으로써 선거 전략에 차질이 빚어지지 않을까 긴장하고 있는 것으로 알려졌다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 롄/NPR
+                              후보/NNC
+                              진영/NNC+에서/PCA+은/PAU)
+                      (VP (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (VP (S (NP-SBJ *pro*)
+                                                          (VP (NP-COMP (NP 리/NPR
+                                                                           총통/NNC+의/PAN)
+                                                                       (NP 지원/NNC+설/NNC+에/PAD))
+                                                              대하/VV+어/ECS))
+                                                       (VP (NP-COMP 묵묵부답/NNC+으로/PAD)
+                                                           (VV 일관/NNC+하/XSV+어/ECS)))
+                                                   오/VX+은/EAN)))
+                                         (NP 천/NPR
+                                             후보/NNC+이/PCA))
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-ADV 막판/NNC+에/PAD)
+                                            (VP (NP-OBJ 리/NPR
+                                                        총통/NNC
+                                                        카드/NNC+을/PCA)
+                                                꺼내/VV+어/ECS)))
+                                     (VP (NP-OBJ 이같은/DAN
+                                                 소문/NNC+을/PCA)
+                                         (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                        (VP (NP 사실/NNC+이/CO+은/EAN)))
+                                                     (NP 양/NNX))
+                                             (VP (VV 암시/NNC+하/XSV+음/ENM+으로써/PAD))))))
+                              (S (NP-COMP-2 선거/NNC
+                                            전략/NNC+에/PAD)
+                                 (S (NP-SBJ 차질/NNC+이/PCA)
+                                    (VP (VP (NP-COMP *T*-2)
+                                            (VV 빚/VV+어지/XSV+지/ECS))
+                                        않/VX+을까/EFN)))
+                              (VP (VV 긴장/NNC+하/XSV+고/ECS)))
+                          있/VX+는/EAN))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에서는</f>
+	      <term>롄 후보 진영</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>리 총통의 지원설에 대해 묵묵부답으로 일관해 온 천 후보가 막판에 리 총통 카드를 꺼내 이같은 소문을 사실인 양 암시함으로써</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>선거 전략에 차질이 빚어지지 않을까</term>
+	    </Arg>
+	    <Rel>
+	      <term>긴장하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>긴장되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중국은 대만 총통 선거을 앞두고 유권자들에게 독립을 지지하는 천 후보에게 투표하지 말라고 간접적으로 경고해 왔으며 선거를 앞두고 군에 고도 경계령을 내리고 전투기를 긴급 발진시키는 등 긴장된 모습을 보였다.</text>
+	  <parse>
+(S (S (NP-SBJ 중국/NPR+은/PAU)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 대만/NPR
+                             총통/NNC
+                             선거/NNC+을/PCA)
+                     앞두/VV+고/ECS))
+              (VP (NP-COMP 유권자/NNC+들/XSF+에게/PAD)
+                  (S-COMP (NP-SBJ *pro*)
+                          (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                              (S (NP-SBJ *T*-1)
+                                                 (VP (NP-OBJ 독립/NNC+을/PCA)
+                                                     (VV 지지/NNC+하/XSV+는/EAN))))
+                                           (NP 천/NPR
+                                               후보/NNC+에게/PAD))
+                                  (VV 투표/NNC+하/XSV+지/ECS))
+                              말/VX+으라/EFN+고/PAD))
+                  (VP (NP-ADV 간접/NNC+적/XSF+으로/PAD)
+                      (VP (VV 경고/NNC+하/XSV+어/ECS)))))
+          오/VX+었/EPF+으며/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                         (VP (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ 선거/NNC+을/PCA)
+                                    앞두/VV+고/ECS))
+                             (VP (VP (NP-COMP 군/NNC+에/PAD)
+                                     (NP-OBJ 고도/NNC
+                                             경계령/NNC+을/PCA)
+                                     내리/VV+고/ECS)
+                                 (VP (NP-OBJ 전투기/NNC+을/PCA)
+                                     (VP (NP-ADV 긴급/NNC)
+                                         (VP (VV 발진/NNC+시키/XSV+는/EAN)))))))
+                      (NP 등/NNX))
+                  (NP (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (VV 긴장/NNC+되/XSV+은/EAN))))
+                      (NP 모습/NNC+을/PCA)))
+          보이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=모습</term>
+	    </Arg>
+	    <Rel>
+	      <term>긴장된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,164 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>꼬집</lemma>
+    <comment>Frames file for '꼬집' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>꼬집.01</id>
+      <edef>make cutting remarks</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity criticized"/>
+	<role argnum="2" argrole="on what grounds"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>꼬집다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>로버트 그론딘 ACCJ 회장은 기자회견에서 "어떤 (무역) 협정이든 일본은 패배로 간주하고 있으며 공동의 이익에 관한 시각이 결여돼 있다"며 일본 정부관리들사이에 팽배해 있는 제로섬(zero-sum)식 사고방식을 꼬집었다.</text>
+	  <parse>
+(S (NP-SBJ (NP 로버트/NPR
+               그론딘/NPR)
+           (NP ACCJ/NFW
+               회장/NNC+은/PAU))
+   (VP (NP-ADV 기자/NNC+회견/NNC+에서/PAD)
+       (VP (S-COMP "/SLQ
+		   (S (NP-OBJ-1 어떤/DAN
+				    (PRN -LRB-/SLQ
+					 (NP 무역/NNC)
+					 -RRB-/SRQ)
+				    협정/NNC+이든/PAU)
+		      (S (NP-SBJ 일본/NPR+은/PAU)
+			 (VP (VP (NP-COMP 패배/NNC+으로/PAD)
+				 (NP-OBJ *T*-1)
+				 (VV 간주/NNC+하/XSV+고/ECS))
+			     있/VX+으며/ECS)))
+		   (S (NP-SBJ (S (WHNP-2 *op*)
+				 (S (NP-SBJ *T*-2)
+				    (VP (NP-COMP (NP 공동/NNC+의/PAN)
+						 (NP 이익/NNC+에/PAD))
+					관하/VV+은/EAN)))
+			      (NP 시각/NNC+이/PCA))
+		      (VP (VP (VV 결여/NNC+되/XSV+어/ECS))
+			  있/VX+다/EFN))
+		   "/SRQ
+		   며/ECS)
+	   (NP-OBJ (S (WHNP-3 *op*)
+		      (S (NP-SBJ *T*-3)
+			 (VP (VP (NP-COMP 일본/NPR
+					      정부/NNC+관리/NNC+들/XSF+사이/NNC+에/PAD)
+				 (VV 팽배/NNC+하/XSV+어/ECS))
+			     있/VX+는/EAN)))
+		   (NP (NP 제로/NNC+섬/NNC
+			       (PRN -LRB-/SLQ
+				    (NP zero-sum/NFW)
+				    -RRB-/SRQ)
+			       식/XSF)
+		       (NP 사고/NNC+방식/NNC+을/PCA)))
+	   꼬집/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>로버트 그론딘 ACCJ 회장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>기자회견에서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>며</f>
+	      <term>"어떤 (무역) 협정이든 일본은 패배로 간주하고 있으며 공동의 이익에 관한 시각이 결여돼 있다"</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>일본 정부관리들사이에 팽배해 있는 제로섬(zero-sum)식 사고방식</term>
+	    </Arg>
+	    <Rel>
+	      <term>꼬집었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>진 장관은 이날 기자간담회에서 특정 정당에서 국가채무를 미래에 발생가능성이 있는 국민연금을 포함해 400 조원 이상으로 확대해석한 것은 "국제기준에 맞지 않는 말도 안되는 소리"라며 "그같은 정쟁이 과연 누구를 이롭게 할 것인지 신중히 생각해야 한다"고 꼬집었다.</text>
+	  <parse>
+(S (NP-SBJ 진/NPR
+           장관/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (NP-ADV 기자/NNC+간담회/NNC+에서/PAD)
+       (VP (S-COMP (S (NP-SBJ (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 특정/NNC
+                                             정당/NNC+에서/PAD)
+                                     (VP (NP-OBJ 국가/NNC+채무/NNC+을/PCA)
+                                         (VP (S (NP-SBJ *pro*)
+                                                (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                               (S (NP-SBJ *T*-1)
+                                                                  (ADJP (NP-ADV 미래/NNC+에/PAD)
+                                                                        (ADJP (NP-COMP 발생/NNC+가능성/NNC+이/PCA)
+                                                                              있/VJ+는/EAN))))
+                                                            (NP 국민/NNC+연금/NNC+을/PCA))
+                                                    (VV 포함/NNC+하/XSV+어/ECS)))
+                                             (NP-ADV 400/NNU
+                                                     조/NNU+원/NNX
+                                                     이상/NNC+으로/PAD)
+                                             (VP (VV 확대해석/NNC+하/XSV+은/EAN))))))
+                              (NP 것/NNX+은/PAU))
+                      (VP (NP "/SLQ
+                              (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-COMP 국제/NNC+기준/NNC+에/PAD)
+                                         맞/VV+지/ECS)
+                                     않/VX+는/EAN))
+                              (S (NP-SBJ 말/NNC+도/PAU)
+                                 (VP 안되/VV+는/EAN))
+                              (NP 소리/NNC)
+                              "/SRQ
+                              이/CO+라며/ECS)))
+                   (S "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (VP (S-OBJ (NP-SBJ 그같은/DAN
+                                             정쟁/NNC+이/PCA)
+                                     (VP (VP (ADVP 과연/ADV)
+                                             (VP (NP-OBJ 누구/NPN+을/PCA)
+                                                 (S-COMP (NP-SBJ *pro*)
+                                                         (ADJP 이롭/VJ+게/ECS))
+                                                 하/VV+을/EAN))
+                                         (VX 것/NNX+이/CO+은지/EFN)))
+                              (VP (ADVP 신중히/ADV)
+                                  (VP (VV 생각/NNC+하/XSV+어야/ECS))))
+                          하/VX+는다/EFN)
+                      "/SRQ
+                      고/PAD))
+           꼬집/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>진 장관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>기자간담회에서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>고</f>
+	      <term>특정 정당에서 국가채무를 미래에 발생가능성이 있는 국민연금을 포함해 400 조원 이상으로 확대해석한 것은 "국제기준에 맞지 않는 말도 안되는 소리"라며 "그같은 정쟁이 과연 누구를 이롭게 할 것인지 신중히 생각해야 한다"</term>
+	    </Arg>
+	    <Rel>
+	      <term>꼬집었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

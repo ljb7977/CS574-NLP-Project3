@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상쇄</lemma>
+    <comment>Frames file for '상쇄' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>상쇄.01</id>
+      <edef>offset</edef>
+      <roleset>
+	<role argnum="1" argrole="opposer"/>
+	<role argnum="2" argrole="thing offset"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상쇄하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 미 연방준비제도이사회(FRB)의 예방적 금리인상 조치가 세계 경제에 영향을 줄 것이지만 다른 성장요인들이 이를 상쇄하고도 남을 것이라고 분석했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-SBJ (NP 미/NPR
+                              연방/NNC+준비/NNC+제도/NNC+이사회/NNC
+                              (PRN -LRB-/SLQ
+                                   (NP FRB/NFW)
+                                   -RRB-/SRQ)
+                              의/PAN)
+                          (NP (NP 예방/NNC+적/XSF)
+                              (NP 금리/NNC+인상/NNC
+                                  조치/NNC+이/PCA)))
+                  (VP (VP (NP-COMP 세계/NNC
+                                   경제/NNC+에/PAD)
+                          (NP-OBJ 영향/NNC+을/PCA)
+                          주/VV+을/EAN)
+                      (VX 것/NNX+이/CO+지만/ECS)))
+               (S (NP-SBJ 다른/DAN
+                          성장/NNC+요인/NNC+들/XSF+이/PCA)
+                  (VP (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ 이/NPN+을/PCA)
+                                 (VV 상쇄/NNC+하/XSV+고/ECS+도/PAU)))
+                          (VP 남/VV+을/EAN))
+                      (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+       (VV 분석/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>이</term>
+	    </Arg>
+	    <Rel>
+	      <term>상쇄하고도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

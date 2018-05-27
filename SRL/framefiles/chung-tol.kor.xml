@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>충돌</lemma>
+    <comment>Frames file for '충돌' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>충돌.01</id>
+      <edef>clash</edef>
+      <roleset>
+	<role argnum="0" argrole="thing clashing"/>
+	<role argnum="1" argrole="clash with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>충돌하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이날 사고로 기장 등 여객기 탑승객 6 명과 여객기와 충돌한 승용차 여성 운전자 및 그녀의 4 살 난 어린 딸이 부상했으나 부상 정도는 심각하지는 않은 것으로 전해졌다.</text>
+	  <parse>
+(S (S (NP-ADV 이날/NNC
+              사고/NNC+으로/PAD)
+      (S (NP-SBJ (NP (NP (NP 기장/NNC)
+                         (NP 등/NNX))
+                     (NP 여객기/NNC
+                         탑승객/NNC
+                         6/NNU
+                         명/NNX+과/PCJ))
+                 (NP (NP (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (VP (NP-COMP 여객기/NNC+과/PAD)
+                                   (VV 충돌/NNC+하/XSV+은/EAN))))
+                         (NP 승용차/NNC))
+                     (NP (NP 여성/NNC
+                             운전자/NNC)
+                         (ADCP 및/ADC)
+                         (NP (NP 그녀/NPN+의/PAN)
+                             (NP (S (WHNP-3 *op*)
+                                    (S (NP-SBJ *T*-3)
+                                       (VP (NP-COMP 4/NNU
+                                                    살/NNX)
+                                           나/VV+은/EAN)))
+                                 (NP (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (ADJP 어리/VJ+은/EAN)))
+                                     (NP 딸/NNC+이/PCA)))))))
+         (VP (VV 부상/NNC+하/XSV+었/EPF+으나/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 부상/NNC
+                              정도/NNC+은/PAU)
+                      (VP (ADJP 심각하/VJ+지/ECS+은/PAU)
+                          않/VX+은/EAN))
+                   (NP 것/NNX+으로/PAD))
+          (VV 전하/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=승용차</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>와</f>
+	      <term>여객기</term>
+	    </Arg>
+	    <Rel>
+	      <term>충돌한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

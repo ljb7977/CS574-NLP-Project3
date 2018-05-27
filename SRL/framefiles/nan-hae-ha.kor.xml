@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>난해하</lemma>
+    <comment>Frames file for '난해하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>난해하.01</id>
+      <edef>abstruse</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being abstruse"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>난해하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>반면 고어 부통령 진영에서는 난해한 정책에 대한 풍부한 경험과 지식을 지닌 부통령이 빈약한 행정권을 지닌 주지사 경력 5 년이 대통령의 자질로 충분하다고 믿는 '방자한 경량급'의 도전을 받아야 하느냐고 열을 올리는 지지자들이 있을지 모르지만 정작 고어 부통령의 생각은 다르다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-OBJ (ADCP 반면/ADC)
+                 (NP-ADV 고어/NPR
+                         부통령/NNC
+                         진영/NNC+에서/PAD+은/PAU)
+                 (S (NP-SBJ (S (WHNP-9 *op*)
+                               (S (NP-SBJ *T*-9)
+                                  (VP (S (NP-SBJ (S (WHNP-4 *op*)
+                                                    (S (NP-SBJ *T*-4)
+                                                       (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                      (S (NP-SBJ *T*-2)
+                                                                         (VP (NP-COMP (S (WHNP-1 *op*)
+                                                                                         (S (NP-SBJ *T*-1)
+                                                                                            (ADJP 난해하/VJ+은/EAN)))
+                                                                                      (NP 정책/NNC+에/PAD))
+                                                                             대하/VV+은/EAN)))
+                                                                   (NP (S (WHNP-3 *op*)
+                                                                          (S (NP-SBJ *T*-3)
+                                                                             (ADJP 풍부하/VJ+은/EAN)))
+                                                                       (NP (NP 경험/NNC+과/PCJ)
+                                                                           (NP 지식/NNC+을/PCA))))
+                                                           지니/VV+은/EAN)))
+                                                 (NP 부통령/NNC+이/PCA))
+                                         (VP (VP (NP-OBJ (NP (S (WHNP-7 *op*)
+                                                                (S (NP-SBJ *T*-7)
+                                                                   (VP (S-COMP (NP-SBJ (NP (S (WHNP-6 *op*)
+                                                                                              (S (NP-SBJ *T*-6)
+                                                                                                 (VP (NP-OBJ (S (WHNP-5 *op*)
+                                                                                                                (S (NP-SBJ *T*-5)
+                                                                                                                   (ADJP (VJ 빈약/NNC+하/XSJ+은/EAN))))
+                                                                                                             (NP 행정권/NNC+을/PCA))
+                                                                                                     지니/VV+은/EAN)))
+                                                                                           (NP 주지사/NNC))
+                                                                                       (NP 경력/NNC
+                                                                                           5/NNU
+                                                                                           년/NNX+이/PCA))
+                                                                               (ADJP (NP-COMP (NP 대통령/NNC+의/PAN)
+											      (NP 자질/NNC+으로/PAD))
+                                                                                     충분하/VJ+다/EFN+고/PAD))
+                                                                       믿/VV+는/EAN)))
+                                                             (NP '/SLQ
+                                                                 (S (WHNP-8 *op*)
+                                                                    (S (NP-SBJ *T*-8)
+                                                                       (ADJP 방자하/VJ+은/EAN)))
+                                                                 (NP 경량급/NNC)
+                                                                 '/SRQ
+                                                                 의/PAN))
+                                                         (NP 도전/NNC+을/PCA))
+                                                 받/VV+어야/ECS)
+                                             하/VX+느냐/EFN+고/PAD))
+                                      (VP (NP-OBJ 열/NNC+을/PCA)
+                                          올리/VV+는/EAN))))
+                            (NP 지지자/NNC+들/XSF+이/PCA))
+                    (ADJP 있/VJ+을지/EFN)))
+          모르/VV+지만/ECS))
+   (S (ADVP 정작/ADV)
+      (S (NP-SBJ (NP 고어/NPR
+                     부통령/NNC+의/PAN)
+                 (NP 생각/NNC+은/PAU))
+         (ADJP 다르/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=정책</term>
+	    </Arg>
+	    <Rel>
+	      <term>난해한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

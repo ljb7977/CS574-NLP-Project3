@@ -1,0 +1,167 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>설득</lemma>
+    <comment>Frames file for '설득' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>설득.01</id>
+      <edef>persuade</edef>
+      <roleset>
+	<role argnum="0" argrole="convincer"/>
+	<role argnum="1" argrole="impelled agent"/>
+	<role argnum="2" argrole="impelled action"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>설득하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>코언 장관도 주일 미군기지에 대해 2001 년부터 5 년간 적용될 일본의 정부분담금 협정과 관련하여 미국 국방부는 현행 수준이 유지되도록 일본을 설득할 수 있을 것으로 믿는다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 코언/NPR
+           장관/NNC+도/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (S (NP-SBJ *pro*)
+                                    (VP (NP-COMP 주일/NNC
+                                                 미군/NNC+기지/NNC+에/PAD)
+                                        대하/VV+어/ECS))
+                                 (NP-ADV 2001/NNU
+                                         년/NNX+부터/PAU)
+                                 (NP-ADV 5/NNU
+                                         년/NNX+간/XSF)
+                                 (VP (VV 적용/NNC+되/XSV+을/EAN)))))
+                       (NP (NP 일본/NPR+의/PAN)
+                           (NP 정부/NNC+분담금/NNC
+                               협정/NNC+과/PAD)))
+              (VV 관련/NNC+하/XSV+어/ECS)))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-COMP (S (NP-SBJ 미국/NPR
+                                           국방부/NNC+은/PAU)
+                                   (VP (VP (S-COMP (NP-SBJ 현행/NNC
+                                                           수준/NNC+이/PCA)
+                                                   (VP (VV 유지/NNC+되/XSV+도록/ECS)))
+                                           (NP-OBJ 일본/NPR+을/PCA)
+                                           (VV 설득/NNC+하/XSV+을/EAN))
+                                       (VX 수/NNX
+                                           있/VJ+을/EAN)))
+                                (NP 것/NNX+으로/PAD))
+                       믿/VV+는다/EFN+고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>미국 국방부</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>도록</f>
+	      <term>현행 수준이 유지되</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>일본</term>
+	    </Arg>
+	    <Rel>
+	      <term>설득할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>설득시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>데일리 장관은 이날 우량주 기업 경영자로 구성된 한 무역위원회에 참석해 "정상무역관계(NTR) 갱신작업이 시작되는 6 월 이후까지 기다리면 중국의 영구적인 NTR 지위 획득에 대한 입장을 결정하지 못한 민주당 의원들을 설득시키기가 더욱 힘들 것"이라면서 상원과는 달리 하원의 상황이 불투명하기는 하지만 5 월에는 결정이 나와야 한다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 데일리/NPR
+           장관/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 이날/NNC)
+              (VP (NP-COMP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP-COMP 우량주/NNC
+                                              기업/NNC
+                                              경영자/NNC+으로/PAD)
+                                     (VV 구성/NNC+되/XSV+은/EAN))))
+                           (NP 한/NNU
+                               무역/NNC+위원회/NNC+에/PAD))
+                  (VV 참석/NNC+하/XSV+어/ECS))))
+       (S "/SLQ
+          (S (NP-SBJ *pro*)
+             (VP (NP-ADV (S (WHNP *op*)
+                            (S (NP-SBJ 정상/NNC+무역/NNC+관계/NNC
+                                       (PRN -LRB-/SLQ
+                                            (NP NTR/NFW)
+                                            -RRB-/SRQ)
+                                       갱신/NNC+작업/NNC+이/PCA)
+                               (VP (VV 시작/NNC+되/XSV+는/EAN))))
+                         (NP 6/NNU
+                             월/NNX
+                             이후/NNC+까지/PAU))
+                 (VP 기다리/VV+으면/ECS)))
+          (S (S-SBJ (NP-SBJ *pro*)
+                    (VP (NP-OBJ (S (WHNP-4 *op*)
+                                   (S (NP-SBJ *T*-4)
+                                      (VP (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                         (S (NP-SBJ *T*-3)
+                                                            (VP (NP-COMP (NP 중국/NPR+의/PAN)
+                                                                         (NP (S (WHNP-2 *op*)
+                                                                                (S (NP-SBJ *T*-2)
+                                                                                   (VP (NP 영구/NNC+적/XSF+이/CO+은/EAN))))
+                                                                             (NP NTR/NFW
+                                                                                 지위/NNC
+                                                                                 획득/NNC+에/PAD)))
+                                                                대하/VV+은/EAN)))
+                                                      (NP 입장/NNC+을/PCA))
+                                              (VV 결정/NNC+하/XSV+지/ECS))
+                                          못하/VX+은/EAN)))
+                                (NP 민주당/NPR
+                                    의원/NNC+들/XSF+을/PCA))
+                        (VV 설득/NNC+시키/XSV+기/ENM+이/PCA)))
+             (VP (ADJP (ADVP 더욱/ADV)
+                       (ADJP 힘들/VJ+을/EAN))
+                 (VX 것/NNX)))
+          "/SRQ
+          이/CO+라면서/ECS)
+       (VP (S-COMP (S (ADVP (NP-COMP 상원/NNC+과/PAD+은/PAU)
+                            달리/ADV)
+                      (S (NP-SBJ (NP 하원/NNC+의/PAN)
+                                 (NP 상황/NNC+이/PCA))
+                         (VP (ADJP (VJ 불투명/NNC+하/XSJ+기/ENM+은/PAU))
+                             하/VX+지만/ECS)))
+                   (S (NP-ADV 5/NNU
+                              월/NNX+에/PAD+은/PAU)
+                      (S (NP-SBJ 결정/NNC+이/PCA)
+                         (VP (VP 나오/VV+어야/ECS)
+                             하/VX+는다/EFN+고/PAD))))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>중국의 영구적인 NTR 지위 획득에 대한 입장을 결정하지 못한 민주당 의원들</term>
+	    </Arg>
+	    <Rel>
+	      <term>설득시키기가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

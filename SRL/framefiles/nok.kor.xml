@@ -1,0 +1,144 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>녹</lemma>
+    <comment>Frames file for '녹' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>녹.01</id>
+      <edef>melt</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing melted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>녹다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>극지방, 고산지대 등의 빙하와 빙산이 유례없이 빠른 속도로 녹고 있어 지구상에 큰 환경 및 기후 변화를 초래할 것이라고 환경감시기구인 월드워치 인스티튜트가 6 일 경고했다.</text>
+	  <parse>
+(S (S-COMP-4 (S (NP-SBJ (NP (NP 극지방/NNC
+                                ,/SCM
+                                고산/NNC+지대/NNC)
+                            (NP 등/NNX+의/PAN))
+                        (NP (NP 빙하/NNC+과/PCJ)
+                            (NP 빙산/NNC+이/PCA)))
+                (VP (VP (NP-ADV (S (WHNP-1 *op*)
+				   (S (NP-SBJ *T*-1)
+				      (ADJP (ADVP 유례/NNC+없이/ADV)
+					    (ADJP 빠르/VJ+은/EAN))))
+				(NP 속도/NNC+으로/PAD))
+                        (VP 녹/VV+고/ECS))
+                    있/VX+어/ECS))
+             (S (NP-SBJ *pro*)
+                (VP (VP (NP-COMP 지구/NNC+상/XSF+에/PAD)
+                        (NP-OBJ (S (WHNP-3 *op*)
+                                   (S (NP-SBJ *T*-3)
+                                      (ADJP 크/VJ+은/EAN)))
+                                (NP (NP (NP 환경/NNC)
+                                        (ADCP 및/ADC)
+                                        (NP 기후/NNC))
+                                    (NP 변화/NNC+을/PCA)))
+                        (VV 초래/NNC+하/XSV+을/EAN))
+                    (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+   (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (VP (NP 환경/NNC+감시/NNC+기구/NNC+이/CO+은/EAN))))
+              (NP 월드워치/NPR
+                  인스티튜트/NPR+이/PCA))
+      (VP (NP-ADV 6/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-4)
+              (VV 경고/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>극지방, 고산지대 등의 빙하와 빙산</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>유례없이 빠른 속도로</term>
+	    </Arg>
+	    <Rel>
+	      <term>녹고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있어</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>녹.01</id>
+      <edef>attract</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, causer"/>
+	<role argnum="1" argrole="thing attracted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>녹다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>TV 초기시대 개척자 이모진 코카가 설명하는 45 분간의 비디오는 지난 1970 년대 중 "찰리" 향수 선전에 녹았던 사람들에게는 매력적으로 보이지 않을지도 모른다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ TV/NFW
+                      초기/NNC+시대/NNC
+                      개척자/NNC
+                      이모진/NPR
+                      코카/NPR+이/PCA)
+              (VP (NP-OBJ *pro*)
+                  (VV 설명/NNC+하/XSV+는/EAN)))
+           (NP (NP 45/NNU
+                   분/NNX+간/XSF+의/PAN)
+               (NP 비디오/NNC+은/PAU)))
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-ADV 지난/DAN
+                                 1970/NNU
+                                 년대/NNX
+                                 중/NNX)
+                         (VP (NP-COMP "/SLQ
+                                      찰리/NPR
+                                      "/SRQ
+                                      향수/NNC
+                                      선전/NNC+에/PAD)
+                             녹/VV+었/EPF+던/EAN))))
+               (NP 사람/NNC+들/XSF+에게/PAD+은/PAU))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-COMP 매력/NNC+적/XSF+으로/PAD)
+                           보이/VV+지/ECS)
+                       않/VX+을지/EFN+도/PAU))
+           모르/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=사람들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 1970 년대 중</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>"찰리" 향수 선전</term>
+	    </Arg>
+	    <Rel>
+	      <term>녹았던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

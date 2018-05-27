@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잠잠하</lemma>
+    <comment>Frames file for '잠잠하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>잠잠하.01</id>
+      <edef>abate</edef>
+      <roleset>
+	<role argnum="1" argrole="thing abating"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잠잠하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>클린턴 대통령의 총기 대책회의 제안은 지난달 29 일 미시간주에서 6 살짜리 초등학교 1 학년 남학생이 같은 반 여학생을 총으로 쏴 죽이고 이튿날에는 펜실베이니아주에서 한 남자가 총기를 난사, 2 명이 죽고 3 명이 중태에 빠지는 등 한동안 잠잠했던 총기 사고가 또다시 잇따르고 있는 가운데 나온 것이다.</text>
+	  <parse>
+(S (NP-SBJ (NP 클린턴/NPR
+               대통령/NNC+의/PAN)
+           (NP 총기/NNC
+               대책/NNC+회의/NNC
+               제안/NNC+은/PAU))
+   (VP (NP (S (WHNP-3 *op*)
+              (S (NP-SBJ *T*-3)
+                 (VP (NP-ADV (S (NP-ADV (S (S (NP-ADV 지난달/NNC
+                                                      29/NNU
+                                                      일/NNX)
+                                              (NP-ADV 미시간/NPR+주/NNC+에서/PAD)
+                                              (S (NP-SBJ 6/NNU
+                                                         살/NNX+짜리/XSF
+                                                         초등학교/NNC
+                                                         1/NNU
+                                                         학년/NNX
+                                                         남학생/NNC+이/PCA)
+                                                 (VP (NP-OBJ (NP 같은/DAN
+                                                                 반/NNC)
+                                                             (NP 여학생/NNC+을/PCA))
+                                                     (VP (NP-ADV 총/NNC+으로/PAD)
+                                                         (VP (VV 쏘/VV+어/ECS
+                                                                 죽이/VV+고/ECS))))))
+                                           (S (NP-ADV 이튿날/NNC+에/PAD+은/PAU)
+                                              (NP-ADV 펜실베이니아/NPR+주/NNC+에서/PAD)
+                                              (S (NP-SBJ 한/NNU
+                                                         남자/NNC+이/PCA)
+                                                 (VP (NP-OBJ 총기/NNC+을/PCA)
+                                                     (VV 난사/NNC)))
+                                              ,/SCM
+                                              (S (S (NP-SBJ 2/NNU
+                                                            명/NNX+이/PCA)
+                                                    (VP 죽/VV+고/ECS))
+                                                 (S (NP-SBJ 3/NNU
+                                                            명/NNX+이/PCA)
+                                                    (VP (NP-COMP 중태/NNC+에/PAD)
+                                                        빠지/VV+는/EAN)))))
+                                        (NP 등/NNX))
+                                (S (NP-SBJ (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (ADJP (ADVP 한동안/ADV)
+                                                       (ADJP 잠잠하/VJ+었/EPF+던/EAN))))
+                                           (NP 총기/NNC
+                                               사고/NNC+이/PCA))
+                                   (VP (VP (ADVP 또다시/ADV)
+                                           (VP 잇따르/VV+고/ECS))
+                                       있/VX+는/EAN)))
+                             (NP 가운데/NNC))
+                     (VP 나오/VV+은/EAN))))
+           (NP 것/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=총기 사고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>한동안</term>
+	    </Arg>
+	    <Rel>
+	      <term>잠잠했던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>격추</lemma>
+    <comment>Frames file for '격추' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>격추.01</id>
+      <edef>shoot down</edef>
+      <roleset>
+	<role argnum="0" argrole="shooter"/>
+	<role argnum="1" argrole="entity shot down"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>격추되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="s" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>할 소령은 베트남전이 치열할 당시인 72 년 10 월 북폭에 가담했다가 격추된 것으로 알려졌으며 핀니 소령은 69 년 3 월 라오스를 비행하다 사망한 것으로 확인됐다.</text>
+	  <parse>
+(S (S (NP-SBJ 할/NPR
+              소령/NNC+은/PAU)
+      (VP (NP-COMP (S (S (NP-SBJ *pro*)
+                         (VP (NP-ADV (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP (S (WHNP *op*)
+                                                      (S (NP-SBJ 베트남/NPR+전/XSF+이/PCA)
+                                                         (ADJP (VJ 치열/NNC+하/XSJ+을/EAN))))
+                                                   (NP 당시/NNC+이/CO+은/EAN)))))
+                                     (NP 72/NNU
+                                         년/NNX
+                                         10/NNU
+                                         월/NNX))
+                             (VP (NP-COMP 북폭/NNC+에/PAD)
+                                 (VV 가담/NNC+하/XSV+었/EPF+다가/ECS))))
+                      (S (NP-SBJ *pro*)
+                         (VP (VV 격추/NNC+되/XSV+은/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+으며/ECS)))
+   (S (NP-SBJ 핀니/NPR
+              소령/NNC+은/PAU)
+      (VP (NP-COMP (S (S (NP-SBJ *pro*)
+                         (VP (NP-ADV 69/NNU
+                                     년/NNX
+                                     3/NNU
+                                     월/NNX)
+                             (VP (NP-OBJ 라오스/NPR+을/PCA)
+                                 (VV 비행/NNC+하/XSV+다/ECS))))
+                      (S (NP-SBJ *pro*)
+                         (VP (VV 사망/NNC+하/XSV+은/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 확인/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>베트남전이 치열할 당시인 72 년 10 월 북폭에 가담했다가</term>
+	    </Arg>
+	    <Rel>
+	      <term>격추된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

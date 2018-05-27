@@ -1,0 +1,40 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조용하</lemma>
+    <comment>Frames file for '조용하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>조용하.01</id>
+      <edef>quiet</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being quiet"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조용하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조용한 데로 갑시다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (WHNP-1 *op*)
+                   (S (NP-SBJ *T*-1)
+                      (ADJP 조용하/VJ+은/EAN)))
+                (NP 데/NNX+으로/PAD))
+       가/VV+읍시다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=데</term>
+	    </Arg>
+	    <Rel>
+	      <term>조용한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

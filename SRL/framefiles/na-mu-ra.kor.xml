@@ -1,0 +1,99 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>나무라</lemma>
+    <comment>Frames file for '나무라' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>나무라.01</id>
+      <edef>blame</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity blamed"/>
+	<role argnum="2" argrole="blamed for what?"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>나무라다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>윤양은 지난 8 일 밤 남동생과 말다툼을 벌이다 어머니가 갓길에 차를 세우고 나무라자 남동생과 함께 차에서 내려 서로 반대쪽으로 걸어가다 뺑소니차에 치여 숨졌으며 제인 와그너라는 여변호사는 사고 이틀만에 자수한 후 "사슴을 친 줄 알았다"고 진술하고 있어 음주 운전을 은폐하려는 게 아니냐는 의혹이 일고 있다.</text>
+	  <parse>
+(S (S (S (NP-SBJ 윤/NPR+양/NNX+은/PAU)
+         (VP (NP-ADV 지난/DAN
+                     8/NNU
+                     일/NNX
+                     밤/NNC)
+             (VP (NP-COMP 남동생/NNC+과/PAD)
+                 (NP-OBJ 말다툼/NNC+을/PCA)
+                 벌이/VV+다/ECS)))
+      (S (NP-SBJ 어머니/NNC+이/PCA)
+         (VP (VP (NP-ADV 갓길/NNC+에/PAD)
+                 (VP (NP-OBJ 차/NNC+을/PCA)
+                     세우/VV+고/ECS))
+             (VP (NP-OBJ *pro*)
+                 나무라/VV+자/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (ADVP (NP-COMP 남동생/NNC+과/PAD)
+                   함께/ADV)
+             (VP (NP-COMP 차/NNC+에서/PAD)
+                 내리/VV+어/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (ADVP 서로/ADV)
+             (NP-ADV 반대쪽/NNC+으로/PAD)
+             (VP 걸어가/VV+다/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (NP-COMP 뺑소니차/NNC+에/PAD)
+             치이/VV+어/ECS))
+      (S (NP-SBJ *pro*)
+         (VP 숨지/VV+었/EPF+으며/ECS)))
+   (S (S (NP-SBJ (NP 제인/NPR
+                     와그너/NPR+이라는/PAN)
+                 (NP 여/XPF+변호사/NNC+은/PAU))
+         (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                            (VP (NP-ADV 사고/NNC
+                                        이틀/NNC+만/NNX+에/PAD)
+                                (VP (VV 자수/NNC+하/XSV+은/EAN))))
+                         (NP 후/NNC))
+                 (VP (S-COMP "/SLQ
+                             (NP-SBJ *pro*)
+                             (VP (NP-COMP (S (NP-SBJ *pro*)
+                                             (VP (NP-OBJ 사슴/NNC+을/PCA)
+                                                 치/VV+은/EAN))
+                                          (NP 줄/NNX))
+                                 알/VV+었/EPF+다/EFN)
+                             "/SRQ
+                             고/PAD)
+                     (VV 진술/NNC+하/XSV+고/ECS)))
+             있/VX+어/ECS))
+      (S (NP-SBJ (S (NP-SBJ (S (NP-SBJ *pro*)
+                               (VP (NP-OBJ 음주/NNC
+                                           운전/NNC+을/PCA)
+                                   (VV 은폐/NNC+하/XSV+으려는/EAN)))
+                            (NP 것/NNX+이/PCA))
+                    (ADJP 아니/VJ+냐는/EAN))
+                 (NP 의혹/NNC+이/PCA))
+         (VP (VP 일/VV+고/ECS)
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>윤양은 지난 8 일 밤 남동생과 말다툼을 벌이다</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>어머니</term>
+	    </Arg>
+	    <Rel>
+	      <term>나무라자</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지리하</lemma>
+    <comment>Frames file for '지리하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>지리하.01</id>
+      <edef>boring</edef>
+      <roleset>
+	<role argnum="1" argrole="thing boring"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지리하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난 98 년 11 월 가서명된 한중 어업협정 관련 문서를 둘러싸고 한국과 중국이 지리한 논란을 벌이고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-ADV 지난/DAN
+                                        98/NNU
+                                        년/NNX
+                                        11/NNU
+                                        월/NNX)
+                                (VP (VV 가서명/NNC+되/XSV+은/EAN)))))
+                      (NP 한/NPR+중/NPR
+                          어업/NNC+협정/NNC))
+                  (NP 관련/NNC
+                      문서/NNC+을/PCA))
+          둘러싸/VV+고/ECS))
+   (S (NP-SBJ (NP 한국/NPR+과/PCJ)
+              (NP 중국/NPR+이/PCA))
+      (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (ADJP 지리하/VJ+은/EAN)))
+                      (NP 논란/NNC+을/PCA))
+              벌이/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=논란</term>
+	    </Arg>
+	    <Rel>
+	      <term>지리한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

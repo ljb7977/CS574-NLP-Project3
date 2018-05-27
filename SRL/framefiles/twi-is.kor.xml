@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뒤잇</lemma>
+    <comment>Frames file for '뒤잇' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뒤잇.01</id>
+      <edef>follow</edef>
+      <roleset>
+	<role argnum="1" argrole="thing following"/>
+	<role argnum="2" argrole="thing followed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뒤잇다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이런 장주석의 발언은 천대만 총통 당선자가 양측이 서로 동등하게 인정하는 속에서 중국과 대만간에 대화가 이뤄져야 한다고 촉구한 데 뒤이어 나온 것이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ (DANP 이런/DAN)
+                      (NP (NP 장/NPR+주석/NNC+의/PAN)
+                          (NP 발언/NNC+은/PAU)))
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (S (NP-SBJ 천대만/NPR
+                                             총통/NNC
+                                             당선자/NNC+이/PCA)
+                                     (VP (S-COMP (NP-ADV (S (NP-SBJ 양측/NNC+이/PCA)
+                                                            (VP (ADVP 서로/ADV)
+                                                                (ADVP (ADV (VJ 동등/NNC+하/XSJ+게/ECS)))
+                                                                (VP (VV 인정/NNC+하/XSV+는/EAN))))
+                                                         (NP 속/NNC+에서/PAD))
+                                                 (S (NP-COMP-1 (NP 중국/NPR+과/PCJ)
+                                                               (NP 대만/NPR+간/XSF+에/PAD))
+                                                    (S (NP-SBJ 대화/NNC+이/PCA)
+                                                       (VP (VP (NP-COMP *T*-1)
+                                                               (VV 이루/VV+어지/XSV+어야/ECS))
+                                                           하/VX+는다/EFN+고/PAD))))
+                                         (VV 촉구/NNC+하/XSV+은/EAN)))
+                                  (NP 데/NNX))
+                         뒤잇/VV+어/ECS))
+                  (VP 나오/VV+은/EAN)))
+           (NP 것/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>천대만 총통 당선자가 양측이 서로 동등하게 인정하는 속에서 중국과 대만간에 대화가 이뤄져야 한다고 촉구한 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>뒤이어</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

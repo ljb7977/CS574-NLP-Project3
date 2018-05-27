@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>순찰</lemma>
+    <comment>Frames file for '순찰' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>순찰.01</id>
+      <edef>patrol</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="area"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>순찰하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>모터사이클을 타고 순찰하는 사회 안전원도 있습니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (S (NP-SBJ *pro*)
+		        (VP (NP-OBJ 모터사이클/NNC+을/PCA)
+			    타/VV+고/ECS))
+                     (VP (NP-OBJ *pro*)
+                         (VV 순찰/NNC+하/XSV+는/EAN)))))
+           (NP 사회/NNC
+               안전원/NNC+도/PAU))
+   (ADJP 있/VJ+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=사회 안전원</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>모터사이클을 타고</term>
+	    </Arg>
+	    <Rel>
+	      <term>순찰하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

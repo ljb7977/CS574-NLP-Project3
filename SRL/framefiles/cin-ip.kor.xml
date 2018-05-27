@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>진입</lemma>
+    <comment>Frames file for '진입' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>진입.01</id>
+      <edef>access</edef>
+      <roleset>
+	<role argnum="0" argrole="accessor"/>
+	<role argnum="1" argrole="thing accessed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>진입하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>진입하기가 쉽기 때문에 그 집합 지역을 선정했습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (S (NP-SBJ (S (NP-SBJ *pro*)
+                             (VP (NP-COMP *pro*)
+                                 (VV 진입/NNC+하/XSV+기/ENM+이/PCA))))
+                  (ADJP 쉽/VJ+기/ENM))
+               (NP 때문/NNX+에/PAD))
+       (VP (NP-OBJ 그/DAN
+                   집합/NNC
+                   지역/NNC+을/PCA)
+           (VV 선정/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>진입하기가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

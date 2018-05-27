@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>어색하</lemma>
+    <comment>Frames file for '어색하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>어색하.01</id>
+      <edef>unnatural</edef>
+      <roleset>
+	<role argnum="1" argrole="thing unnatural"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>어색하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난 수년간 보여 준 나스닥의 성장세는 이런 찬사가 전혀 어색하지 않을 정도이다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (VP (NP-ADV 지난/DAN
+                                 수/NNU+년/NNX+간/XSF)
+                         (VP (NP-OBJ *T*-1)
+                             보이/VV+어/ECS))
+                     주/VX+은/EAN)))
+           (NP (NP 나스닥/NPR+의/PAN)
+               (NP 성장세/NNC+은/PAU)))
+   (VP (NP (S (NP-SBJ 이런/DAN
+                      찬사/NNC+이/PCA)
+              (VP (ADJP (ADVP 전혀/ADV)
+                        (ADJP 어색하/VJ+지/ECS))
+                  않/VX+을/EAN))
+           (NP 정도/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이런 찬사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>전혀</term>
+	    </Arg>
+	    <Rel>
+	      <term>어색하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

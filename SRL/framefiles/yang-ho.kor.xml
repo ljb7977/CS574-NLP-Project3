@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>양호</lemma>
+    <comment>Frames file for '양호' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>양호.01</id>
+      <edef>good</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being good"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>양호하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>각 진지는 관측과 사계가 양호한 장소라야만 하며, 또한 지휘와 통제를 용이하게 하는 곳이라야만 합니다.</text>
+	  <parse>
+(S (S (NP-SBJ 각/DAN
+              진지/NNC+은/PAU)
+      (VP (VP (NP (S (WHNP *op*)
+                     (S (NP-SBJ (NP 관측/NNC+과/PCJ)
+                                (NP 사계/NNC+이/PCA))
+                        (ADJP (VJ 양호/NNC+하/XSJ+은/EAN))))
+                  (NP 장소/NNC+이/CO+라야/ECS+만/PAU)))
+          하/VX+으며/ECS))
+   ,/SCM
+   (ADVP 또한/ADV)
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (VP (NP-OBJ (NP 지휘/NNC+과/PCJ)
+                                    (NP 통제/NNC+을/PCA))
+                            (S-COMP (NP-SBJ *pro*)
+                                    (ADJP 용이하/VJ+게/ECS))
+                            하/VV+는/EAN)))
+                  (NP 곳/NNX+이/CO+라야/ECS+만/PAU)))
+          하/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>관측과 사계</term>
+	    </Arg>
+	    <Rel>
+	      <term>양호한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

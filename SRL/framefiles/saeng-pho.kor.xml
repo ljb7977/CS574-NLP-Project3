@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>생포</lemma>
+    <comment>Frames file for '생포' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>생포.01</id>
+      <edef>catch alive</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing being caught"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>생포되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희들이 당신네 부대한테 생포됐을 때도 제 포반 성원들은 똑같은 포탄을 가지고 있었습니다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ 저희/NPN+들/XSF+이/PCA)
+                 (VP (NP-COMP (NP 당신/NPN+네/XSF)
+                              (NP 부대/NNC+한테/PAD))
+                     (VV 생포/NNC+되/XSV+었/EPF+을/EAN))))
+           (NP 때/NNC+도/PAU))
+   (S (NP-SBJ (NP (NP 저/NPN+의/PAN)
+                  (NP 포반/NNC))
+              (NP 성원/NNC+들/XSF+은/PAU))
+      (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (ADJP 똑같/VJ+은/EAN)))
+                      (NP 포탄/NNC+을/PCA))
+              가지/VV+고/ECS)
+          있/VX+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>저희들</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>한테</f>
+	      <term>당신네 부대</term>
+	    </Arg>
+	    <Rel>
+	      <term>생포됐을</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

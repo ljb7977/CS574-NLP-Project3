@@ -1,0 +1,143 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>장치</lemma>
+    <comment>Frames file for '장치' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>장치.01</id>
+      <edef>install</edef>
+      <roleset>
+	<role argnum="0" argrole="putter"/>
+	<role argnum="1" argrole="thing put"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>장치하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>2 탱크 대대 2 탱크 중대에서는 탱크에 그 외에 또 무슨 특수 장비를 장치했소?</text>
+	  <parse>
+(S (NP-SBJ (NP 2/NNU
+               탱크/NNC
+               대대/NNC)
+           (NP 2/NNU
+               탱크/NNC
+               중대/NNC+에서/PCA+은/PAU))
+   (VP (NP-COMP 탱크/NNC+에/PAD)
+       (VP (NP-ADV 그/DAN
+                   외/NNC+에/PAD)
+           (ADVP 또/ADV)
+           (VP (NP-OBJ 무슨/DAN
+                       특수/NNC
+                       장비/NNC+을/PCA)
+               (VV 장치/NNC+하/XSV+었/EPF+소/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>2 탱크 대대 2 탱크 중대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>탱크</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>그 외에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>무슨 특수 장비</term>
+	    </Arg>
+	    <Rel>
+	      <term>장치했소</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>그 후에 D-10TG포는 그 포에 포강 소연기를 장치했다.</text>
+	  <parse>
+(S (NP-ADV 그/DAN
+           후/NNC+에/PAD)
+   (S (NP-SBJ D-10TG/NFW
+              포/NNC+은/PAU)
+      (VP (NP-COMP 그/DAN
+                   포/NNC+에/PAD)
+          (NP-OBJ 포강/NNC
+                  소연기/NNC+을/PCA)
+          (VV 장치/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그 후에</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>D-10TG포</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>그 포</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>포강 소연기</term>
+	    </Arg>
+	    <Rel>
+	      <term>장치했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>장치되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>에르-105 무전기엔 동력 증폭기가 장치돼 있다.</text>
+	  <parse>
+(S (NP-COMP-1 에르-105/NNC
+              무전기/NNC+에/PAD+은/PAU)
+   (S (NP-SBJ 동력/NNC
+              증폭기/NNC+이/PCA)
+      (VP (VP (NP-COMP *T*-1)
+              (VV 장치/NNC+되/XSV+어/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>엔</f>
+	      <term>에르-105 무전기</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>동력 증폭기</term>
+	    </Arg>
+	    <Rel>
+	      <term>장치돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

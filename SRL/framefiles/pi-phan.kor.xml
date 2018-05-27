@@ -1,0 +1,212 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>비판</lemma>
+    <comment>Frames file for '비판' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>비판.01</id>
+      <edef>criticize</edef>
+      <roleset>
+	<role argnum="0" argrole="critic"/>
+	<role argnum="1" argrole="entity criticized"/>
+	<role argnum="2" argrole="grounds, reason"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>비판하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한나라당은 이에 따라 여의도당사에서 `수도권 필승대책회의'를 열어 이번 선거를 `DJ 정권에 대한 중간심판'으로 규정, 수도권 세몰이를 통한 필승을 다짐하고 이회창 총재와 홍사덕 선대위원장이 수도권 7 곳에서 릴레이 유세를 갖고 병역비리 수사재개와 중소기업인의 여당입당 등을 `신종관권선거'라고 강도 높게 비판했다.</text>
+	  <parse>
+(S (S (NP-SBJ 한나라당/NPR+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+	     (VP (NP-COMP 이/NPN+에/PAD)
+		 따르/VV+어/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP-ADV 여의도/NPR+당사/NNC+에서/PAD)
+                 (VP (NP-OBJ `/SLQ
+                             수도권/NNC
+                             필승/NNC+대책/NNC+회의/NNC
+                             '/SRQ
+                             을/PCA)
+                     열/VV+어/ECS)))
+          (VP (NP-OBJ 이번/NNC
+                      선거/NNC+을/PCA)
+              (NP-COMP `/SLQ
+                       (S (WHNP-1 *op*)
+			  (S (NP-SBJ *T*-1)
+			     (VP (NP-COMP DJ/NFW
+					  정권/NNC+에/PAD)
+				 대하/VV+은/EAN)))
+                       (NP 중간/NNC+심판/NNC)
+                       '/SRQ
+                       으로/PAD)
+              (VV 규정/NNC))))
+   ,/SCM
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-OBJ (S (WHNP-2 *op*) 
+			(S (NP-SBJ *T*-2)
+			   (VP (NP-OBJ 수도권/NNC
+				       세몰이/NNC+을/PCA)
+			       통하/VV+은/EAN)))
+                     (NP 필승/NNC+을/PCA))
+             (VV 다짐/NNC+하/XSV+고/ECS)))
+      (S (NP-SBJ (NP 이회창/NPR
+                     총재/NNC+과/PCJ)
+                 (NP 홍사덕/NPR
+                     선대위원장/NNC+이/PCA))
+         (VP (NP-ADV 수도권/NNC
+                     7/NNU
+                     곳/NNC+에서/PAD)
+             (VP (NP-OBJ 릴레이/NNC
+                         유세/NNC+을/PCA)
+                 갖/VV+고/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ (NP (NP 병역/NNC+비리/NNC
+			     수사/NNC+재개/NNC+과/PCJ)
+                         (NP 중소/NNC+기업인/NNC+의/PAN
+			     여당/NNC+입당/NNC))
+                     (NP 등/NNX+을/PCA))
+             (S-COMP (NP-SBJ *pro*)
+		     (VP (NP `/SLQ
+			     신종/NNC+관권/NNC+선거/NNC
+			     '/SRQ
+			     이/CO+라/EFN+고/PAD)))
+             (VP (S (NP-SBJ 강도/NNC)
+		    (ADJP 높/VJ+게/ECS))
+		 (VP (VV 비판/NNC+하/XSV+었/EPF+다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>병역비리 수사재개와 중소기업인의 여당입당 등</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>라고</f>
+	      <term>`신종관권선거'</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>강도 높게</term>
+	    </Arg>
+	    <Rel>
+	      <term>비판했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>비판하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이후 북한은 남한정부의 대북정책에 대해서는 시시콜콜 비판하면서도 특사교환에 대해 언급하는 것을 철저하게 회피했다.</text>
+	  <parse>
+(S (NP-ADV 이후/NNC)
+   (S (NP-SBJ 북한/NPR+은/PAU)
+      (VP (S-COMP (NP-SBJ *pro*)
+		  (VP (NP-COMP (NP 남한/NPR+정부/NNC+의/PAN)
+			       (NP 대/XPF+북/NPR+정책/NNC+에/PAD))
+		      대하/VV+어서/ECS+은/PAU))
+          (VP (ADVP 시시콜콜/ADV)
+	      (VP (VV 비판/NNC+하/XSV+으면서/ECS+도/PAU)))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ *pro*)
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (NP-COMP 특사/NNC+교환/NNC+에/PAD)
+                                대하/VV+어/ECS))
+                         (VP (NP-OBJ *pro*)
+                             (VV 언급/NNC+하/XSV+는/EAN))))
+                  (NP 것/NNX+을/PCA))
+          (VP (ADVP (ADV (VJ 철저/NNC+하/XSJ+게/ECS)))
+              (VP (VV 회피/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에 대해서는</f>
+	      <term>남한정부의 대북정책</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>시시콜콜</term>
+	    </Arg>
+	    <Rel>
+	      <term>비판하면서도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>비판받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="s-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>국무부는 그러나 그동안 미 의원들로부터 마약과의 전쟁 노력이 충분치 못하다고 비판받아 온 콜롬비아와 멕시코에 대해서는 합격점을 주었다.</text>
+	  <parse>
+(S (NP-SBJ 국무부/NNC+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S (NP-SBJ *pro*)
+              (VP (NP-COMP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (VP (NP-ADV 그동안/NNC)
+                                         (VP (NP-COMP 미/NPR
+                                                      의원/NNC+들/XSF+으로부터/PAD)
+                                             (S-COMP (NP-SBJ (NP (NP 마약/NNC+과/PAD+의/PAN)
+                                                                 (NP 전쟁/NNC))
+                                                             (NP 노력/NNC+이/PCA))
+                                                     (VP (ADJP 충분하/VJ+지/ECS)
+                                                         못하/VX+다/EFN+고/PAD))
+                                             (VV 비판/NNC+받/XSV+어/ECS)))
+                                     오/VX+은/EAN)))
+                           (NP (NP 콜롬비아/NPR+과/PCJ)
+                               (NP 멕시코/NPR+에/PAD)))
+                  대하/VV+어서/ECS+은/PAU))
+           (VP (NP-OBJ 합격점/NNC+을/PCA)
+               주/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=콜롬비아와 멕시코</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그동안</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>로부터</f>
+	      <term>미 의원들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>고</f>
+	      <term>마약과의 전쟁 노력이 충분치 못하다</term>
+	    </Arg>
+	    <Rel>
+	      <term>비판받아</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>온</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

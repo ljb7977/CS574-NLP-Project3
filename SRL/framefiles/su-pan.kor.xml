@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수반</lemma>
+    <comment>Frames file for '수반' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수반.01</id>
+      <edef>accompany</edef>
+      <roleset>
+	<role argnum="1" argrole="subject accompanier"/>
+	<role argnum="2" argrole="object accompanied"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수반하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전세계적으로 모기에 물린 후 심한 열과 뼈까지 떨리는 오한, 관절통, 구토 등을 수반하는 말라리아로 숨지는 사람은 매년 300 만명에 이른다.</text>
+	  <parse>
+(S (NP-ADV 전세계/NNC+적/XSF+으로/PAD)
+   (S (NP-SBJ (S (WHNP-3 *op*)
+                 (S (NP-SBJ *T*-3)
+                    (VP (NP-ADV (S (NP-SBJ *pro*)
+                                   (VP (NP-COMP 모기/NNC+에/PAD)
+                                       물리/VV+은/EAN))
+                                (NP 후/NNC))
+                        (NP-ADV (S (WHNP-2 *op*)
+                                   (S (NP-SBJ *T*-2)
+                                      (VP (NP-OBJ (NP (NP (S (WHNP-1 *op*)
+                                                             (S (NP-SBJ *T*-1)
+                                                                (ADJP 심하/VJ+은/EAN)))
+                                                          (NP 열/NNC+과/PCJ))
+                                                      (NP (S (WHNP-4 *op*)
+                                                             (S (NP-SBJ 뼈/NNC+까지/PAU)
+                                                                (VP (NP-COMP *T*-4)
+                                                                    떨리/VV+는/EAN)))
+                                                          (NP 오한/NNC))
+                                                      ,/SCM
+                                                      (NP 관절통/NNC)
+                                                      ,/SCM
+                                                      (NP 구토/NNC))
+                                                  (NP 등/NNX+을/PCA))
+                                          (VV 수반/NNC+하/XSV+는/EAN))))
+                                (NP 말라리아/NNC+으로/PAD))
+                        (VP 숨지/VV+는/EAN))))
+              (NP 사람/NNC+은/PAU))
+      (VP (NP-ADV 매년/NNC)
+          (VP (NP-COMP 300/NNU
+                       만/NNU+명/NNX+에/PAD)
+              이르/VV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=말라리아</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>심한 열과 뼈까지 떨리는 오한, 관절통, 구토 등</term>
+	    </Arg>
+	    <Rel>
+	      <term>수반하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

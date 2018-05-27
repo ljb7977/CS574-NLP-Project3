@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>협력</lemma>
+    <comment>Frames file for '협력' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>협력.01</id>
+      <edef>cooperate</edef>
+      <roleset>
+	<role argnum="0" argrole="one cooperator"/>
+	<role argnum="1" argrole="other cooperator(s)"/>
+	<role argnum="2" argrole="shared task"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>협력하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이밖에 프랑스와는 고속전철(TGV) 사업의 제 3 국 공동 진출에 서로 협력하자는 제안을 했으며 이탈리아에서는 대구의 섬유산업 육성을 위한 `밀라노 프로젝트'에 대한 적극적인 지원도 약속받았다.</text>
+	  <parse>
+(S (NP-ADV 이/NPN+밖/NNX+에/PAD)
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 프랑스/NPR+과/PAD+은/PAU)
+                         (NP-COMP (NP 고속/NNC+전철/NNC
+                                          (PRN -LRB-/SLQ
+                                               TGV/NFW
+                                               -RRB-/SRQ)
+                                          사업/NNC+의/PAN)
+				  (NP 제/DAN
+					3/NNU
+					국/NNC
+					공동/NNC
+					진출/NNC+에/PAD))
+			 (VP (ADVP 서로/ADV)
+			     (VP (VV 협력/NNC+하/XSV+자는/EAN)))))
+                  (NP 제안/NNC+을/PCA))
+          하/VV+었/EPF+으며/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV 이탈리아/NPR+에서/PAD+은/PAU)
+          (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (S (NP-SBJ *T*-2)
+                               (VP (NP-COMP (S (WHNP-1 *op*)
+                                               (S (NP-SBJ *T*-1)
+                                                  (VP (NP-OBJ (NP (NP 대구/NPR+의/PAN)
+                                                                  (NP 섬유/NNC+산업/NNC))
+                                                              (NP 육성/NNC+을/PCA))
+                                                      위하/VV+은/EAN)))
+                                            (NP `/SLQ
+                                                밀라노/NPR
+                                                프로젝트/NNC
+                                                '/SRQ
+                                                에/PAD))
+                                   대하/VV+은/EAN))
+                            (S (NP-SBJ *T*-2)
+                               (VP (NP 적극/NNC+적/XSF+이/CO+은/EAN)))))
+                      (NP 지원/NNC+도/PAU))
+              (VV 약속/NNC+받/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>와는</f>
+	      <term>프랑스</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>고속전철(TGV) 사업의 제 3 국 공동 진출</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>서로</term>
+	    </Arg>
+	    <Rel>
+	      <term>협력하자는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,117 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>걷어치우</lemma>
+    <comment>Frames file for '걷어치우' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>걷어치우.01</id>
+      <edef>give up</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing given up"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>걷어치우다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한은 이에 앞서 지난 6 일 노동신문 논평을 통해 "요즘 남조선에서 안전기획부의 후신인 국가정보원이 또 다시 대화를 걷어치우려고 하는 것은 어떤 경우에도 용납할 수 없는 일"이라면서 "북, 남대화가 민족의 단합을 도모하고 통일을 지향하는 참다운 대화가 되려면 정보원의 개입부터 일절 허용하지 말아야 한다"고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 북한/NPR+은/PAU)
+   (VP (ADVP (NP-COMP 이/NPN+에/PAD)
+             앞서/ADV)
+       (NP-ADV 지난/DAN
+               6/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 노동/NNC+신문/NNC
+                      논평/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ (S (NP-ADV 요즘/NNC)
+                                 (NP-ADV 남조선/NPR+에서/PAD)
+                                 (S (NP-SBJ (S (WHNP-1 *op*)
+                                               (S (NP-SBJ *T*-1)
+                                                  (VP (NP (NP 안전기획부/NNC+의/PAN)
+                                                          (NP 후신/NNC+이/CO+은/EAN)))))
+                                            (NP 국가/NNC+정보원/NNC+이/PCA))
+                                    (VP (VP (ADVP (ADVP 또/ADV)
+                                                  (ADVP 다시/ADV))
+                                            (VP (NP-OBJ 대화/NNC+을/PCA)
+                                                걷어치우/VV+으려고/ECS))
+                                        하/VX+는/EAN)))
+                              (NP 것/NNX+은/PAU))
+                      (VP (NP (S (WHNP-3 *op*)
+				 (S (NP-SBJ *pro*)
+				    (VP (VP (NP-ADV 어떤/DAN
+						    경우/NNC+에/PAD+도/PAU)
+					    (VP (NP-OBJ *T*-3)
+						(VV 용납/NNC+하/XSV+을/EAN)))
+					(VX 수/NNX
+					    없/VJ+는/EAN))))
+                              (NP 일/NNC)))
+		      "/SRQ
+		      이/CO+라면서/ECS)
+                   (S "/SLQ
+                      (S (NP-SBJ 북/NPR
+                                 ,/SCM
+                                 남/NPR+대화/NNC+이/PCA)
+                         (VP (NP-COMP (S (WHNP-2 *op*)
+					 (S (S (NP-SBJ *T*-2)
+					       (VP (VP (NP-OBJ (NP 민족/NNC+의/PAN)
+							       (NP 단합/NNC+을/PCA))
+						       (VV 도모/NNC+하/XSV+고/ECS))
+						   (VP (NP-OBJ 통일/NNC+을/PCA)
+						       (VV 지향/NNC+하/XSV+는/EAN))))
+					    (S (NP-SBJ *T*-2)
+					       (ADJP 참답/VJ+은/EAN))))
+				      (NP 대화/NNC+이/PCA))
+                             되/VV+으려면/ECS))
+                      (S (NP-SBJ *pro*)
+                         (VP (VP (VP (NP-OBJ 정보원/NNC+의/PAN
+                                             개입/NNC+부터/PAU)
+                                     (VP (ADVP 일절/ADV)
+					 (VP (VV 허용/NNC+하/XSV+지/ECS))))
+                                 말/VX+어야/ECS)
+                             하/VX+는다/EFN))
+                      "/SRQ
+                      고/PAD))
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>요즘</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>남조선에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>안전기획부의 후신인 국가정보원</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>또 다시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>대화</term>
+	    </Arg>
+	    <Rel>
+	      <term>걷어치우려고</term>
+	    </Rel>
+	    <Aux>
+	      <f>려고</f>
+	      <term>하는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

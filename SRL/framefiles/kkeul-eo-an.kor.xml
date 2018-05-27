@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>끌어안</lemma>
+    <comment>Frames file for '끌어안' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>끌어안.01</id>
+      <edef>embrace</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity embraced"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>끌어안다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그녀는 황급히 내려가 의식을 잃은 딸을 끌어안고 인근 콜롬비아 레스톤 병원으로 옮겼으나 이미 숨진 뒤였다.</text>
+	  <parse>
+(S (S (NP-SBJ 그녀/NPN+은/PAU)
+      (VP (ADVP 황급히/ADV)
+          (VP 내려가/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-OBJ 의식/NNC+을/PCA)
+                            잃/VV+은/EAN)))
+                  (NP 딸/NNC+을/PCA))
+          끌어안/VV+고/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 인근/NNC
+                   콜롬비아/NPR
+                   레스톤/NPR
+                   병원/NNC+으로/PAD)
+          (NP-OBJ *pro*)
+          옮기/VV+었/EPF+으나/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ *pro*)
+                 (VP (ADVP 이미/ADV)
+                     (VP 숨지/VV+은/EAN)))
+              (NP 뒤/NNC+이/CO+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>의식을 잃은 딸</term>
+	    </Arg>
+	    <Rel>
+	      <term>끌어안고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

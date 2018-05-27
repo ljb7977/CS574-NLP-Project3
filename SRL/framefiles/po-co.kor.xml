@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보조</lemma>
+    <comment>Frames file for '보조' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보조.01</id>
+      <edef>be supplied</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing supplied"/>
+	<role argnum="2" argrole="supplied for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보조받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일본 노동성은 장애인과 55 세 이상의 고령층의 취업확대를 위해 인건비의 일정부분을 정부에서 보조받는 기업의 자격조건을 완화할 방침이라고 노동성 관계자가 니혼게이자이(일본경제) 신문을 통해 17 일 밝혔다.</text>
+	  <parse>
+(S (NP-COMP-2 (S (NP-SBJ 일본/NPR
+                         노동성/NNC+은/PAU)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP (NP 장애인/NNC+과/PCJ)
+                                        (NP (NP 55/NNU
+                                                세/NNX
+                                                이상/NNC+의/PAN)
+                                            (NP 고령층/NNC+의/PAN)))
+                                    (NP 취업/NNC+확대/NNC+을/PCA))
+                            위하/VV+어/ECS))
+                     (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP-OBJ (NP 인건비/NNC+의/PAN)
+                                                       (NP 일정/NNC+부분/NNC+을/PCA))
+                                               (NP-COMP 정부/NNC+에서/PAD)
+                                               (VV 보조/NNC+받/XSV+는/EAN))))
+                                     (NP 기업/NNC+의/PAN))
+                                 (NP 자격/NNC+조건/NNC+을/PCA))
+                         (VV 완화/NNC+하/XSV+을/EAN))))
+              (NP 방침/NNC+이라고/PAD))
+   (S (NP-SBJ 노동성/NNC
+              관계자/NNC+이/PCA)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 니혼게이자이/NPR
+                         (PRN -LRB-/SLQ
+                              (NP 일본/NPR+경제/NNC)
+                              -RRB-/SRQ)
+                         신문/NNC+을/PCA)
+                 통하/VV+어/ECS))
+          (NP-ADV 17/NNU
+                  일/NNX)
+          (VP (NP-COMP *T*-2)
+              밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <term>*trace*=기업</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>인건비의 일정부분</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에서</f>
+	      <term>정부</term>
+	    </Arg>
+	    <Rel>
+	      <term>보조받는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

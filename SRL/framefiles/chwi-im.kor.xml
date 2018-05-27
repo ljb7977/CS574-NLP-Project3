@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>취임</lemma>
+    <comment>Frames file for '취임' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>취임.01</id>
+      <edef>take office</edef>
+      <roleset>
+	<role argnum="0" argrole="thing taking office"/>
+	<role argnum="1" argrole="take office as"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>취임하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>내달 도이체방크의 아시아담당 회장에 취임하는 나이스 전국장은 싱가포르에서 이날 열린 `국제재정전망' 회의에 참석해 이렇게 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-ADV 내달/NNC)
+                        (VP (NP-COMP (NP 도이체방크/NPR+의/PAN)
+                                     (NP 아시아/NPR+담당/NNC
+                                         회장/NNC+에/PAD))
+                            (VV 취임/NNC+하/XSV+는/EAN)))))
+              (NP 나이스/NPR
+                  전/XPF+국장/NNC+은/PAU))
+      (VP (NP-COMP (S (WHNP-2 *op*)
+                      (S (NP-SBJ *T*-2)
+                         (VP (NP-ADV 싱가포르/NPR+에서/PAD)
+                             (NP-ADV 이날/NNC)
+                             (VP 열리/VV+은/EAN))))
+                   (NP `/SLQ
+                       국제/NNC+재정/NNC+전망/NNC
+                       '/SRQ
+                       회의/NNC+에/PAD))
+          (VV 참석/NNC+하/XSV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 이렇게/ADV)
+          (VP 말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=나이스 전국장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>내달</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>도이체방크의 아시아담당 회장</term>
+	    </Arg>
+	    <Rel>
+	      <term>취임하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

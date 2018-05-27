@@ -1,0 +1,97 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>감시</lemma>
+    <comment>Frames file for '감시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>감시.01</id>
+      <edef>guard</edef>
+      <roleset>
+	<role argnum="0" argrole="guard"/>
+	<role argnum="1" argrole="guarded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>감시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>밀호린은 또 이스라엘의 핵무기 개발 중심지이자 고에너지 물리학 연구소인 바이츠만 연구소와 중국의 장거리 미사일 부품 개발을 맡고 있는 하얼빈 기술연구소, 정치적 반대파들의 행적을 감시하고 있는 난징 공공보안국 등이 초당 20 억-65 억회의 연산을 수행할 수 있는 슈퍼컴퓨터를 구입하려 하고 있다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 밀호린/NPR+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (NP-SBJ (NP (NP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (VP (NP (NP 이스라엘/NPR+의/PAN)
+                                                 (NP (NP 핵무기/NNC
+                                                         개발/NNC
+                                                         중심지/NNC+이자/PCJ)
+                                                     (NP 고/XPF+에너지/NNC
+                                                         물리학/NNC
+                                                         연구소/NNC+이/CO+은/EAN))))))
+                                   (NP 바이츠만/NPR
+                                       연구소/NNC+과/PCJ))
+                               (NP (S (WHNP-2 *op*)
+                                      (S (NP-SBJ *T*-2)
+                                         (VP (VP (NP-OBJ (NP 중국/NPR+의/PAN)
+                                                         (NP 장거리/NNC
+                                                             미사일/NNC
+                                                             부품/NNC
+                                                             개발/NNC+을/PCA))
+                                                 맡/VV+고/ECS)
+                                             있/VX+는/EAN)))
+                                   (NP 하얼빈/NPR
+                                       기술/NNC+연구소/NNC))
+                               ,/SCM
+                               (NP (S (WHNP-3 *op*)
+                                      (S (NP-SBJ *T*-3)
+                                         (VP (VP (NP-OBJ (NP 정치/NNC+적/XSF
+                                                             반대파/NNC+들/XSF+의/PAN)
+                                                         (NP 행적/NNC+을/PCA))
+                                                 (VV 감시/NNC+하/XSV+고/ECS))
+                                             있/VX+는/EAN)))
+                                   (NP 난징/NPR
+                                       공공/NNC+보안국/NNC)))
+                           (NP 등/NNX+이/PCA))
+                   (VP (VP (VP (NP-OBJ (S (WHNP-4 *op*)
+                                          (S (NP-SBJ *T*-4)
+                                             (VP (VP (NP-OBJ (NP 초/NNC+당/XSF
+                                                                 20/NNU
+                                                                 억/NNU
+                                                                 -/SSY
+                                                                 65/NNU
+                                                                 억/NNU+회/NNX+의/PAN)
+                                                             (NP 연산/NNC+을/PCA))
+                                                     (VV 수행/NNC+하/XSV+을/EAN))
+                                                 (VX 수/NNX
+                                                     있/VJ+는/EAN))))
+                                       (NP 슈퍼/NNC+컴퓨터/NNC+을/PCA))
+                               (VV 구입/NNC+하/XSV+으려/ECS))
+                           하/VX+고/ECS)
+                       있/VX+다/EFN+고/PAD))
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=난징 공공보안국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>정치적 반대파들의 행적</term>
+	    </Arg>
+	    <Rel>
+	      <term>감시하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

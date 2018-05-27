@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>선사</lemma>
+    <comment>Frames file for '선사' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>선사.01</id>
+      <edef>present</edef>
+      <roleset>
+	<role argnum="0" argrole="giver"/>
+	<role argnum="1" argrole="thing given"/>
+	<role argnum="2" argrole="given to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>선사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>신문은 드물긴 하지만 시위자들이 진압경찰에 돌과 화염병 대신 꽃을 선사하기도 하며 최루탄 사용량으로 노동, 정치 소요의 정도가 측정되던 한국에서 지난해 경찰은 최루탄 사용 없이 시위에 대처했다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 신문/NNC+은/PAU)
+   (VP (S-COMP (S (S (NP-SBJ *pro*)
+                     (VP (ADJP 드물/VJ+기/ENM+은/PAU)
+                         하/VX+지만/ECS))
+                  (S (NP-SBJ 시위자/NNC+들/XSF+이/PCA)
+                     (VP (VP (NP-COMP 진압/NNC+경찰/NNC+에/PAD)
+                             (VP (NP-ADV (NP (NP 돌/NNC+과/PCJ)
+                                             (NP 화염병/NNC))
+                                         (NP 대신/NNC))
+                                 (VP (NP-OBJ 꽃/NNC+을/PCA)
+                                     (VV 선사/NNC+하/XSV+기/ENM+도/PAU))))
+                         하/VX+으며/ECS)))
+               (S (NP-ADV (S (WHNP *op*)
+                             (S (NP-ADV 최루탄/NNC
+                                        사용량/NNC+으로/PAD)
+                                (S (NP-SBJ (NP (NP (NP 노동/NNC)
+                                                   ,/SCM
+                                                   (NP 정치/NNC))
+                                               (NP 소요/NNC+의/PAN))
+                                           (NP 정도/NNC+이/PCA))
+                                   (VP (VV 측정/NNC+되/XSV+던/EAN)))))
+                          (NP 한국/NPR+에서/PAD))
+                  (NP-ADV 지난해/NNC)
+                  (S (NP-SBJ 경찰/NNC+은/PAU)
+                     (VP (ADVP (NP-COMP 최루탄/NNC
+                                        사용/NNC)
+                               없이/ADV)
+                         (VP (NP-COMP 시위/NNC+에/PAD)
+                             (VV 대처/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>드물긴 하지만</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>시위자들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>진압경찰</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>돌과 화염병 대신</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>꽃</term>
+	    </Arg>
+	    <Rel>
+	      <term>선사하기도</term>
+	    </Rel>
+	    <Aux>
+	      <f>기도</f>
+	      <term>하며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>힘쓰</lemma>
+    <comment>Frames file for '힘쓰' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>힘쓰.01</id>
+      <edef>strive</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing tried"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>힘쓰다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>콜린스 회장 등은 미국과 유럽 자동차 업계가 한국 시장에서 자동차를 팔기 위해 벌이고 있는 노력에 대해 배경을 설명하는 한편 한국이 주요 자동차 수출국으로 발돋움하려고 힘쓰면서도 자국 시장은 열지 않고 있다며 한국 정부를 공격할 것으로 알려졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (NP 콜린스/NPR
+                               회장/NNC)
+                           (NP 등/NNX+은/PAU))
+                   (VP (NP-ADV (S (NP-SBJ *pro*)
+                                  (VP (S (NP-SBJ *pro*)
+                                         (VP (NP-COMP (S (WHNP-1 *op*)
+                                                         (S (NP-SBJ (NP (NP 미국/NPR+과/PCJ)
+                                                                        (NP 유럽/NPR))
+                                                                    (NP 자동차/NNC
+                                                                        업계/NNC+이/PCA))
+                                                            (VP (S (NP-SBJ *pro*)
+                                                                   (VP (S-OBJ (NP-SBJ *pro*)
+                                                                              (VP (NP-ADV 한국/NPR
+                                                                                          시장/NNC+에서/PAD)
+                                                                                  (VP (NP-OBJ 자동차/NNC+을/PCA)
+                                                                                      팔/VV+기/ENM)))
+                                                                       위하/VV+어/ECS))
+                                                                (VP (VP (NP-OBJ *T*-1)
+                                                                        벌이/VV+고/ECS)
+                                                                    있/VX+는/EAN))))
+                                                      (NP 노력/NNC+에/PAD))
+                                             대하/VV+어/ECS))
+                                      (VP (NP-OBJ 배경/NNC+을/PCA)
+                                          (VV 설명/NNC+하/XSV+는/EAN))))
+                               (NP 한편/NNC))
+                       (VP (S (S (NP-SBJ 한국/NPR+이/PCA)
+                                 (VP (S-COMP (NP-SBJ *pro*)
+                                             (VP (NP-COMP 주요/NNC
+                                                          자동차/NNC
+                                                          수출국/NNC+으로/PAD)
+                                                 (VV 발돋움/NNC+하/XSV+으려고/ECS)))
+                                     힘쓰/VV+으면서/ECS+도/PAU))
+                              (S (NP-SBJ *pro*)
+                                 (VP (VP (VP (NP-OBJ 자국/NNC
+                                                     시장/NNC+은/PAU)
+                                             열/VV+지/ECS)
+                                         않/VX+고/ECS)
+                                     있/VX+다며/ECS)))
+                           (VP (NP-OBJ 한국/NPR
+                                       정부/NNC+을/PCA)
+                               (VV 공격/NNC+하/XSV+을/EAN)))))
+                (NP 것/NNX+으로/PAD))
+       (VV 알리/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>한국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>려고</f>
+	      <term>주요 자동차 수출국으로 발돋움하</term>
+	    </Arg>
+	    <Rel>
+	      <term>힘쓰면서도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

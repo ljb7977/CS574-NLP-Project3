@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주</lemma>
+    <comment>Frames file for '주' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>주.01</id>
+      <edef>give</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing given"/>
+	<role argnum="2" argrole="given to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그리고 귀관이 나에게 주는 모든 첩보는 정확성이 검토될 거라는 걸 염두에 두시오.</text>
+	  <parse>
+(S (ADCP 그리고/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ 귀관/NPN+이/PCA)
+                                   (VP (NP-COMP 나/NPN+에게/PAD)
+                                       (NP-OBJ *T*-1)
+                                       (VP 주/VV+는/EAN))))
+                             (NP 모든/DAN
+                                 첩보/NNC+은/PAU))
+                     (S (NP-SBJ 정확성/NNC+이/PCA)
+                        (VP (VP (VV 검토/NNC+되/XSV+을/EAN))
+                            (VX 것/NNX+이/CO+으라는/EAN))))
+                  (NP 것/NNX+을/PCA))
+          (NP-COMP 염두/NNC+에/PAD)
+          두/VV+으시/EPF+으오/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>귀관</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=모든 첩보</term>
+	    </Arg>
+	    <Rel>
+	      <term>주는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>주어지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인민군 1개 보병 대대에게는 방어 정면이 얼마나 주어지는가?</text>
+	  <parse>
+(S (NP-COMP-1 인민군/NNC
+              1/NNU
+              개/NNX
+              보병/NNC
+              대대/NNC+에게/PAD+은/PAU)
+   (S (NP-SBJ 방어/NNC
+              정면/NNC+이/PCA)
+      (VP (ADVP 얼마나/ADV)
+          (VP (NP-COMP *T*-1)
+              (VV 주/VV+어지/XSV+는가/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에게는</f>
+	      <term>인민군 1개 보병 대대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>방어 정면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>얼마나</term>
+	    </Arg>
+	    <Rel>
+	      <term>주어지는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

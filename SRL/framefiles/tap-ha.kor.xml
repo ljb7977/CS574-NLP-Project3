@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>답하</lemma>
+    <comment>Frames file for '답하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>답하.01</id>
+      <edef>answer</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="in response to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>답하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이밖에 평화시위문화 정착을 위한 `무최루탄 원칙'에 일반시민의 87 퍼센트, 여론주도층의 90 퍼센트가 공감했고 개혁작전 이후 `민생치안활동'에 대해서도 시민의 69.5 퍼센트, 여론주도층의 57.5 퍼센트가 `만족한다'고 답했다.</text>
+	  <parse>
+(S (S (NP-ADV 이/NPN+밖에/PAU)
+      (S (NP-COMP-2 (S (WHNP-1 *op*)
+                       (S (NP-SBJ *T*-1)
+                          (VP (NP-OBJ 평화/NNC+시위/NNC+문화/NNC
+                                      정착/NNC+을/PCA)
+                              위하/VV+은/EAN)))
+                    (NP `/SLQ
+                        무/XPF+최루탄/NNC
+                        원칙/NNC
+                        '/SRQ
+                        에/PAD))
+         (S (NP-SBJ (NP (NP 일반/NNC+시민/NNC+의/PAN)
+                        (NP 87/NNU
+                            퍼센트/NNX))
+                    ,/SCM
+                    (NP (NP 여론/NNC+주도층/NNC+의/PAN)
+                        (NP 90/NNU
+                            퍼센트/NNX+이/PCA)))
+            (VP (NP-COMP *T*-2)
+                (VV 공감/NNC+하/XSV+었/EPF+고/ECS)))))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP (NP 개혁/NNC+작전/NNC
+                          이후/NNC)
+                      (NP `/SLQ
+                          민생/NNC+치안/NNC+활동/NNC
+                          '/SRQ
+                          에/PAD))
+             대하/VV+어서/ECS+도/PAU))
+      (S (NP-SBJ (NP (NP 시민/NNC+의/PAN)
+                     (NP 69.5/NNU
+                         퍼센트/NNX))
+                 ,/SCM
+                 (NP (NP 여론/NNC+주도층/NNC+의/PAN)
+                     (NP 57.5/NNU
+                         퍼센트/NNX+이/PCA)))
+         (VP (S-COMP `/SLQ
+                     (NP-SBJ *pro*)
+                     (VP (VV 만족/NNC+하/XSV+는다/EFN))
+                     '/SRQ
+                     고/PAD)
+             (VV 답/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>개혁작전 이후 `민생치안활동'에 대해서도</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>시민의 69.5 퍼센트, 여론주도층의 57.5 퍼센트</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>`만족한다'</term>
+	    </Arg>
+	    <Rel>
+	      <term>답했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

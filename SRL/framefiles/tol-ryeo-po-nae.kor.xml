@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌려보내</lemma>
+    <comment>Frames file for '돌려보내' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>돌려보내.01</id>
+      <edef>send back</edef>
+      <roleset>
+	<role argnum="0" argrole="sender"/>
+	<role argnum="1" argrole="sent"/>
+	<role argnum="2" argrole="sent to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌려보내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국 백악관은 2 일 칠레의 전 독재자 아우구스토 피노체트를 석방, 고국으로 돌려보내기로 한 영국 정부의 결정을 존중하는 것이 국제사회의 의무라고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR
+           백악관/NPR+은/PAU)
+   (VP (NP-ADV 2/NNU
+               일/NNX)
+       (VP (S-COMP (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (S-COMP (NP-SBJ *pro*)
+                                                            (VP (VP (NP-OBJ (NP 칠레/NPR+의/PAN)
+                                                                            (NP 전/DAN
+                                                                                독재자/NNC
+                                                                                아우구스토/NPR
+                                                                                피노체트/NPR+을/PCA))
+                                                                    (VV 석방/NNC))
+                                                                ,/SCM
+                                                                (VP (NP-ADV 고국/NNC+으로/PAD)
+                                                                    (VP (NP-OBJ *pro*)
+                                                                        돌려보내/VV+기/ENM+으로/PAD))))
+                                                    하/VV+은/EAN)))
+                                          (NP (NP 영국/NPR
+                                                  정부/NNC+의/PAN)
+                                              (NP 결정/NNC+을/PCA)))
+                                  (VV 존중/NNC+하/XSV+는/EAN)))
+                           (NP 것/NNX+이/PCA))
+                   (VP (NP (NP 국제/NNC+사회/NNC+의/PAN)
+                           (NP 의무/NNC+이/CO+라/EFN+고/PAD))))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>고국</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌려보내기로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>어그러지</lemma>
+    <comment>Frames file for '어그러지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>어그러지.01</id>
+      <edef>deviate</edef>
+      <roleset>
+	<role argnum="1" argrole="thing deviating"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>어그러지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>3 일 입수된 북한 노동당기관지 노동신문(2.21)은 미 해군이 지난달 3 일 걸프만을 운항 중이던 러시아 유조선 `볼고네프티-147' 호를 억류한 것은 "점점 어그러지는 러, 미 관계에 또 하나의 돌멩이를 던진 것"이라면서 이같이 말했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 3/NNU
+                             일/NNX)
+                     (VP (VV 입수/NNC+되/XSV+은/EAN)))))
+           (NP 북한/NPR
+               노동당/NNC+기관지/NNC
+               노동/NNC+신문/NNC
+               (PRN -LRB-/SLQ
+                    2.21/NNU
+                    -RRB-/SRQ)
+               은/PAU))
+   (VP (S (NP-SBJ (S (NP-SBJ 미/NPR
+                             해군/NNC+이/PCA)
+                     (VP (NP-ADV 지난달/NNC
+                                 3/NNU
+                                 일/NNX)
+                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (VP (VP (NP-OBJ 걸프/NPR+만/NNC+을/PCA)
+                                                   (VV 운항/NNC))
+                                               (VX 중/NNX+이/CO+던/EAN))))
+                                     (NP (NP 러시아/NPR
+                                             유조선/NNC)
+                                         (NP `/SLQ
+                                             볼고네프티/NPR
+                                             -/SSY
+                                             147/NNU
+                                             '/SRQ
+                                             호/NNX+을/PCA)))
+                             (VV 억류/NNC+하/XSV+은/EAN))))
+                  (NP 것/NNX+은/PAU))
+          (VP (NP "/SLQ
+		  (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (S (WHNP-3 *op*)
+                                     (S (NP-SBJ *T*-3)
+                                        (VP (ADVP 점점/ADV)
+                                            (VP 어그러지/VV+는/EAN))))
+                                  (NP 러/NPR
+					,/SCM
+					미/NPR
+					관계/NNC+에/PAD))
+                         (NP-OBJ (NP 또/ADV
+				       하나/NNU+의/PAN)
+                                 (NP 돌멩이/NNC+을/PCA))
+                         던지/VV+은/EAN))
+                  (NP 것/NNX)
+		  "/SRQ
+		  이/CO+라면서/ECS)))
+       (VP (ADVP 이같이/ADV)
+           (VP 말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=러, 미 관계</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>점점</term>
+	    </Arg>
+	    <Rel>
+	      <term>어그러지는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

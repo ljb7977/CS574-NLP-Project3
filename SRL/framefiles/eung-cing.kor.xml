@@ -1,0 +1,117 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>응징</lemma>
+    <comment>Frames file for '응징' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>응징.01</id>
+      <edef>punish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing punished"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>응징하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>총선연대는 또 "민국당 김윤환씨는 `영남정권 재창출'이라는 지역대결적인 언사를 남발하고 같은 당 김광일씨는 신당이 선거에서 질 경우 `부산 시민들이 영도다리에 빠져 죽어야 한다'는 망발까지 서슴지 않고 있다"고 소개하면서 "지역감정 조장 후보들이 설령 당선되더라도 임기 내내 국민소환운동과 함께 철저한 감시활동을 통해 다시는 지역감정을 선동하지 못하도록 응징할 것"이라고 강조했다.</text>
+	  <parse>
+(S (S (NP-SBJ 총선/NNC+연대/NNC+은/PAU)
+      (VP (ADVP 또/ADV)
+          (VP (S-COMP "/SLQ
+                      (S (NP-SBJ 민국당/NPR
+                                 김윤환/NPR+씨/NNX+은/PAU)
+                         (VP (NP-OBJ (NP `/SLQ
+                                         영남/NPR+정권/NNC
+                                         재/XPF+창출/NNC
+                                         '/SRQ
+                                         이라는/PAN)
+                                     (NP (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (NP 지역/NNC+대결/NNC+적/XSF+이/CO+은/EAN))))
+                                         (NP 언사/NNC+을/PCA)))
+                             (VV 남발/NNC+하/XSV+고/ECS)))
+                      (S (NP-SBJ 같은/DAN
+                                 당/NNC
+                                 김광일/NPR+씨/NNX+은/PAU)
+                         (VP (VP (VP (NP-OBJ (S (NP-ADV (S (NP-SBJ 신당/NNC+이/PCA)
+                                                           (VP (NP-ADV 선거/NNC+에서/PAD)
+                                                               (VP 지/VV+을/EAN)))
+                                                        (NP 경우/NNC))
+                                                (S `/SLQ
+                                                   (NP-SBJ 부산/NPR
+                                                           시민/NNC+들/XSF+이/PCA)
+                                                   (VP (VP (S (NP-SBJ *pro*)
+                                                              (VP (NP-COMP 영도/NPR+다리/NNC+에/PAD)
+                                                                  빠지/VV+어/ECS))
+                                                           (VP 죽/VV+어야/ECS))
+                                                       하/VX+는다/EFN)
+                                                   '/SRQ
+                                                   는/EAN))
+                                             (NP 망발/NNC+까지/PAU))
+                                     서슴/VV+지/ECS)
+                                 않/VX+고/ECS)
+                             있/VX+다/EFN))
+                      "/SRQ
+                      고/PAD)
+              (VV 소개/NNC+하/XSV+으면서/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP "/SLQ
+                      (VP (S (NP-SBJ 지역/NNC+감정/NNC
+                                     조장/NNC
+                                     후보/NNC+들/XSF+이/PCA)
+                             (VP (ADVP 설령/ADV)
+                                 (VP (VV 당선/NNC+되/XSV+더라도/ECS))))
+                          (S (NP-SBJ *pro*)
+                             (VP (ADVP (NP-COMP 임기/NNC)
+                                       내내/ADV)
+                                 (ADVP (NP-COMP 국민/NNC+소환/NNC+운동/NNC+과/PAD)
+                                       함께/ADV)
+                                 (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (ADJP (VJ 철저/NNC+하/XSJ+은/EAN))))
+                                             (NP 감시/NNC+활동/NNC+을/PCA))
+                                     통하/VV+어/ECS)))
+                          (S (NP-SBJ *pro*)
+                             (VP (VP (ADVP 다시/ADV+은/PAU)
+                                     (VP (NP-OBJ 지역/NNC+감정/NNC+을/PCA)
+                                         (VV 선동/NNC+하/XSV+지/ECS)))
+                                 못하/VX+도록/ECS))
+                          (VP (VV 응징/NNC+하/XSV+을/EAN)))
+                      (VX 것/NNX)
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD))
+          (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>지역감정 조장 후보들이 설령 당선되더라도</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>임기 내내 국민소환운동과 함께 철저한 감시활동을 통해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>다시는 지역감정을 선동하지 못하도록</term>
+	    </Arg>
+	    <Rel>
+	      <term>응징할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

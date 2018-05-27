@@ -1,0 +1,39 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>ÈÇ¸¢ÇÏ</lemma>
+    <comment>Frames file for 'ÈÇ¸¢ÇÏ' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>ÈÇ¸¢ÇÏ.01</id>
+      <edef>excellent</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being excellent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>ÈÇ¸¢ÇÏ´Ù</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>ÀÌ°Ç ÈÇ¸¢ÇÑ ¹ø¿ªÀÌ±º¿ä.</text>
+	  <parse>
+(S (NP-SBJ ÀÌ°Í/NPN+Àº/PAU) 
+   (VP (NP (S (WHNP-1 *op*) 
+	      (S (NP-SBJ *T*-1)
+		 (ADJP ÈÇ¸¢ÇÏ/VJ+Àº/EAN))) 
+	   (NP ¹ø¿ª/NNC+ÀÌ/CO+±º¿ä/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=¹ø¿ª</term>
+	    </Arg>
+	    <Rel>
+	      <term>ÈÇ¸¢ÇÑ</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

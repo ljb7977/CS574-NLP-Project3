@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>추격</lemma>
+    <comment>Frames file for '추격' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>추격.01</id>
+      <edef>chase</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity chased"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>추격하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일단 적이 분산해서 철수하기 시작하면 우리는 적이 완전히 섬멸될 때까지 통상 적을 추격하게 됩니다.</text>
+	  <parse>
+(S (S (ADVP 일단/ADV)
+      (S (S (NP-SBJ 적/NNC+이/PCA)
+            (VP (VV 분산/NNC+하/XSV+어서/ECS)))
+         (S (NP-SBJ *pro*)
+            (VP (S-OBJ (NP-SBJ *pro*)
+                       (VP (VV 철수/NNC+하/XSV+기/ENM)))
+                (VV 시작/NNC+하/XSV+으면/ECS)))))
+   (S (NP-SBJ 우리/NPN+은/PAU)
+      (VP (VP (NP-ADV (S (WHNP *op*)
+                         (S (NP-SBJ 적/NNC+이/PCA)
+                            (VP (ADVP 완전히/ADV)
+                                (VP (VV 섬멸/NNC+되/XSV+을/EAN)))))
+                      (NP 때/NNC+까지/PAU))
+              (ADVP 통상/ADV)
+              (VP (NP-OBJ 적/NNC+을/PCA)
+                  (VV 추격/NNC+하/XSV+게/ECS)))
+          되/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>일단 적이 분산해서 철수하기 시작하면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>우리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>적이 완전히 섬멸될 때까지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>통상</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적</term>
+	    </Arg>
+	    <Rel>
+	      <term>추격하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>됩니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

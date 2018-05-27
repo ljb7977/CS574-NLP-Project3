@@ -1,0 +1,178 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>암시</lemma>
+    <comment>Frames file for '암시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>암시.01</id>
+      <edef>hint</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing hinted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>암시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>장 주석은 그러나 당나라 시인 두푸(두보)의 시 `춘왕(춘망)' 중 `석달째 계속 타오르는 봉화(봉화연삼월)' 구절을 빗대 "3 월에 봉화(전쟁)는 없을 것"이라고 말해 당분간 양안관계가 일촉즉발의 전쟁위기로 비화되지는 않을 것임을 암시했다.</text>
+	  <parse>
+(S (NP-SBJ 장/NPR
+           주석/NNC+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S (NP-SBJ *pro*)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP (NP (NP 당나라/NPR
+                                             시인/NNC
+                                             두푸/NPR
+                                             (PRN -LRB-/SLQ
+                                                  (NP 두보/NPR)
+                                                  -RRB-/SRQ)
+                                             의/PAN)
+                                         (NP 시/NNC))
+                                     (NP `/SLQ
+                                         춘왕/NPR
+                                         (PRN -LRB-/SLQ
+                                              (NP 춘망/NPR)
+                                              -RRB-/SRQ)
+                                         '/SRQ
+                                         중/NNX))
+                                 (NP (NP `/SLQ
+                                         (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (NP-ADV 석/NNU+달/NNX+째/XSF)
+                                                   (ADVP 계속/ADV)
+                                                   (VP 타오르/VV+는/EAN))))
+                                         (NP 봉화/NNC)
+                                         (PRN -LRB-/SLQ
+                                              (NP 봉화연삼월/NPR)
+                                              -RRB-/SRQ)
+                                         '/SRQ)
+                                     (NP 구절/NNC+을/PCA)))
+                         빗대/VV+어/ECS))
+                  (VP (S-COMP "/SLQ
+                              (NP-ADV 3/NNU
+                                      월/NNX+에/PAD)
+                              (S (NP-SBJ 봉화/NNC
+                                         (PRN -LRB-/SLQ
+                                              (NP 전쟁/NNC)
+                                              -RRB-/SRQ)
+                                         은/PAU)
+                                 (VP (ADJP 없/VJ+을/EAN)
+                                     (VX 것/NNX)))
+                              "/SRQ
+                              이/CO+라/EFN+고/PAD)
+                      말하/VV+어/ECS)))
+           (VP (S-OBJ (NP-ADV 당분간/NNC)
+                      (S (NP-SBJ 양안/NNC+관계/NNC+이/PCA)
+                         (VP (VP (VP (NP-COMP (NP 일촉즉발/NNC+의/PAN)
+                                              (NP 전쟁/NNC+위기/NNC+으로/PAD))
+                                     (VV 비화/NNC+되/XSV+지/ECS+은/PAU))
+                                 않/VX+을/EAN)
+                             (VX 것/NNX+이/CO+음/ENM+을/PCA))))
+               (VV 암시/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>장 주석</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>당나라 시인 두푸(두보)의 시 `춘왕(춘망)' 중 `석달째 계속 타오르는 봉화(봉화연삼월)' 구절을 빗대 "3 월에 봉화(전쟁)는 없을 것"이라고 말해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>당분간 양안관계가 일촉즉발의 전쟁위기로 비화되지는 않을 것임</term>
+	    </Arg>
+	    <Rel>
+	      <term>암시했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>암시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 롄 후보 진영에서는 리 총통의 지원설에 대해 묵묵부답으로 일관해 온 천 후보가 막판에 리 총통 카드를 꺼내 이같은 소문을 사실인 양 암시함으로써 선거 전략에 차질이 빚어지지 않을까 긴장하고 있는 것으로 알려졌다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 롄/NPR
+                              후보/NNC
+                              진영/NNC+에서/PCA+은/PAU)
+                      (VP (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (VP (S (NP-SBJ *pro*)
+                                                          (VP (NP-COMP (NP 리/NPR
+                                                                           총통/NNC+의/PAN)
+                                                                       (NP 지원/NNC+설/NNC+에/PAD))
+                                                              대하/VV+어/ECS))
+                                                       (VP (NP-COMP 묵묵부답/NNC+으로/PAD)
+                                                           (VV 일관/NNC+하/XSV+어/ECS)))
+                                                   오/VX+은/EAN)))
+                                         (NP 천/NPR
+                                             후보/NNC+이/PCA))
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-ADV 막판/NNC+에/PAD)
+                                            (VP (NP-OBJ 리/NPR
+                                                        총통/NNC
+                                                        카드/NNC+을/PCA)
+                                                꺼내/VV+어/ECS)))
+                                     (VP (NP-OBJ 이같은/DAN
+						       소문/NNC+을/PCA)
+                                         (NP-COMP (S (NP-SBJ *pro*)
+						     (VP (NP 사실/NNC+이/CO+은/EAN)))
+						  (NP 양/NNX))
+					 (VV 암시/NNC+하/XSV+음/ENM+으로써/PAD))))
+                              (S (NP-COMP-2 선거/NNC
+						전략/NNC+에/PAD)
+                                 (S (NP-SBJ 차질/NNC+이/PCA)
+                                    (VP (VP (NP-COMP *T*-2)
+					    (VV 빚/VV+어지/XSV+지/ECS))
+                                        않/VX+을까/EFN)))
+                              (VP (VV 긴장/NNC+하/XSV+고/ECS)))
+                          있/VX+는/EAN))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>리 총통의 지원설에 대해 묵묵부답으로 일관해 온 천 후보</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>막판에 리 총통 카드를 꺼내</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이같은 소문</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>사실인 양</term>
+	    </Arg>
+	    <Rel>
+	      <term>암시함으로써</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

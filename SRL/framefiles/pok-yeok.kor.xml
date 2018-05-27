@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>복역</lemma>
+    <comment>Frames file for '복역' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>복역.01</id>
+      <edef>serve in prison</edef>
+      <roleset>
+	<role argnum="1" argrole="prisoner"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>복역하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 지난 95 년 한 아파트에 보내는 전자신호를 추적한 수사관들에 의해 체포된 그는 59 개월간 복역한 뒤 지난 1 월 21 일 석방됐다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-ADV 지난/DAN
+                            95/NNU
+                            년/NNX)
+                    (S (NP-SBJ *pro*)
+                       (VP (NP-COMP (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                         (S (NP-SBJ *pro*)
+                                                            (VP (NP-COMP 한/NNU
+                                                                         아파트/NNC+에/PAD)
+                                                                (NP-OBJ *T*-2)
+                                                                보내/VV+는/EAN)))
+                                                      (NP 전자/NNC+신호/NNC+을/PCA))
+                                              (VV 추적/NNC+하/XSV+은/EAN))))
+                                    (NP 수사관/NNC+들/XSF+에/PAD))
+                           의하/VV+어/ECS))
+                    (S (NP-SBJ *T*-1)
+                       (VP (VV 체포/NNC+되/XSV+은/EAN)))))
+              (NP 그/NPN+은/PAU))
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 59/NNU
+                                 개월/NNX+간/XSF)
+                         (VP (VV 복역/NNC+하/XSV+은/EAN))))
+                  (NP 뒤/NNC))
+          (NP-ADV 지난/DAN
+                  1/NNU
+                  월/NNX
+                  21/NNU
+                  일/NNX)
+          (VP (VV 석방/NNC+되/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>59 개월간</term>
+	    </Arg>
+	    <Rel>
+	      <term>복역한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

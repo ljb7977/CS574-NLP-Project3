@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>넘겨받</lemma>
+    <comment>Frames file for '넘겨받' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>넘겨받.01</id>
+      <edef>take over</edef>
+      <roleset>
+	<role argnum="0" argrole="taker"/>
+	<role argnum="1" argrole="thing taken"/>
+	<role argnum="2" argrole="entity taken from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>넘겨받다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이들은 오는 10 일까지 베이징에 머물면서 중국 공안당국으로부터 귀순자 조명철(41)씨, 무역회사 직원 서모(30)씨 납치사건의 공범으로 구속된 조선족 채모(22, 여)씨 등 6 명에 대한 조사자료를 넘겨받고 보강수사를 벌일 방침이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (S (NP-SBJ 이/NPN+들/XSF+은/PAU)
+                 (VP (NP-ADV 오는/DAN
+                             10/NNU
+                             일/NNX+까지/PAU)
+                     (VP (NP-COMP 베이징/NPR+에/PAD)
+                         머물/VV+으면서/ECS)))
+              (S (NP-SBJ *pro*)
+                 (VP (VP (NP-COMP 중국/NPR
+                                  공안/NNC+당국/NNC+으로부터/PAD)
+                         (NP-OBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP (NP-COMP (NP (NP (NP 귀순자/NNC
+                                                                조명철/NPR
+                                                                (PRN -LRB-/SLQ
+                                                                     (NP 41/NNU)
+                                                                     -RRB-/SRQ)
+                                                                씨/NNX)
+                                                            ,/SCM
+                                                            (NP (S (WHNP-1 *op*)
+                                                                   (S (NP-SBJ *T*-1)
+                                                                      (VP (NP-COMP (NP (NP 무역/NNC+회사/NNC
+											       직원/NNC
+											       서/NPR+모/NPN
+											       (PRN -LRB-/SLQ
+												    (NP 30/NNU)
+												    -RRB-/SRQ)
+											       씨/NNX)
+										       (NP 납치/NNC+사건/NNC+의/PAN))
+										   (NP 공범/NNC+으로/PAD))
+                                                                          (VV 구속/NNC+되/XSV+은/EAN))))
+                                                                (NP 조선족/NNC
+                                                                    채/NPR+모/NPN
+                                                                    (PRN -LRB-/SLQ
+                                                                         (NP 22/NNU
+                                                                             ,/SCM
+                                                                             여/NNC)
+                                                                         -RRB-/SRQ)
+                                                                    씨/NNX)))
+                                                        (NP 등/NNX))
+                                                    (NP 6/NNU
+                                                        명/NNX+에/PAD))
+                                           대하/VV+은/EAN)))
+                                 (NP 조사/NNC+자료/NNC+을/PCA))
+                         넘겨받/VV+고/ECS)
+                     (VP (NP-OBJ 보강/NNC+수사/NNC+을/PCA)
+                         벌이/VV+을/EAN))))
+           (NP 방침/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>으로부터</f>
+	      <term>중국 공안당국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>귀순자 조명철(41)씨, 무역회사 직원 서모(30)씨 납치사건의 공범으로 구속된 조선족 채모(22, 여)씨 등 6 명에 대한 조사자료</term>
+	    </Arg>
+	    <Rel>
+	      <term>넘겨받고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

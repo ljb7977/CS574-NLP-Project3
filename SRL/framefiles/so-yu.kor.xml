@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소유</lemma>
+    <comment>Frames file for '소유' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>소유.01</id>
+      <edef>have</edef>
+      <roleset>
+	<role argnum="0" argrole="owner"/>
+	<role argnum="1" argrole="possession"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소유하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>경보병 여단은 9개 대대를 소유하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 경보병/NNC
+	   여단/NNC+은/PAU) 
+   (VP (VP (NP-OBJ 9/NNU 
+		   개/NNX 
+		   대대/NNC+을/PCA) 
+	   (VV 소유/NNC+하/XSV+고/EAU)) 
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>경보병 여단</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>9개 대대</term>
+	    </Arg>
+	    <Rel>
+	      <term>소유하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

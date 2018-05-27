@@ -1,0 +1,251 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>확정</lemma>
+    <comment>Frames file for '확정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>확정.01</id>
+      <edef>decide</edef>
+      <roleset>
+	<role argnum="0" argrole="decider"/>
+	<role argnum="1" argrole="thing decided"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>확정하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>KBS의 수신료 중 공사로 전환되는 EBS의 지원비율은 3 퍼센트로 확정했고 민영 지상파방송사업자의 특정방송 의존비율은 50-85 퍼센트 범위에서 방송위원회가 고시하도록 한 당초의 안을 유지하기로 했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP (NP (NP KBS/NFW+의/PAN)
+			  (NP 수신료/NNC))
+		      (NP 중/NNX))
+		  (NP (NP (S (WHNP-1 *op*)
+			     (S (NP-SBJ *T*-1)
+				(VP (NP-COMP 공사/NNC+으로/PAD)
+				    (VV 전환/NNC+되/XSV+는/EAN))))
+			  (NP EBS/NFW+의/PAN))
+		      (NP 지원/NNC+비율/NNC+은/PAU)))
+	  (NP-COMP 3/NNU
+		   퍼센트/NNX+으로/PAD)
+	  (VV 확정/NNC+하/XSV+었/EPF+고/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-OBJ (S (WHNP-3 *op*)
+                                 (S (NP-SBJ *T*-3)
+                                    (VP (S-COMP (NP-OBJ-2 (NP 민영/NNC
+                                                              지상파/NNC+방송/NNC+사업자/NNC+의/PAN)
+                                                          (NP 특정/NNC+방송/NNC
+                                                              의존/NNC+비율/NNC+은/PAU))
+                                                (S (NP-ADV 50/NNU+-/SSY+85/NNU
+                                                           퍼센트/NNX
+                                                           범위/NNC+에서/PAD)
+                                                   (S (NP-SBJ 방송/NNC+위원회/NNC+이/PCA)
+                                                      (VP (NP-OBJ *T*-2)
+                                                          (VV 고시/NNC+하/XSV+도록/ECS)))))
+                                        하/VV+은/EAN)))
+                              (NP (NP 당초/NNC+의/PAN)
+                                  (NP 안/NNC+을/PCA)))
+                      (VV 유지/NNC+하/XSV+기/ENM+으로/PAD)))
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>KBS의 수신료 중 공사로 전환되는 EBS의 지원비율</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>3 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>확정했고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>확정되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>부시 지사가 3 월 초 대통령 후보로 확정되면 수중에 2 천만-3 천만달러는 갖고 있을 것으로 보았던 민주당 전략가들의 예상이 빗나갔다.</text>
+	  <parse>
+(S (NP-SBJ (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-COMP (S (S (NP-SBJ 부시/NPR
+                                                지사/NNC+이/PCA)
+                                        (VP (NP-ADV 3/NNU
+                                                    월/NNX
+                                                    초/NNX)
+                                            (VP (NP-COMP 대통령/NNC
+                                                         후보/NNC+으로/PAD)
+                                                (VV 확정/NNC+되/XSV+으면/ECS))))
+                                     (S (NP-SBJ *pro*)
+                                        (VP (VP (NP-ADV 수중/NNC+에/PAD)
+                                                (VP (NP-OBJ 2/NNU
+                                                            천만/NNU
+                                                            -/SSY
+                                                            3/NNU
+                                                            천만/NNU+달러/NNX+은/PAU)
+                                                    갖/VV+고/ECS))
+                                            있/VX+을/EAN)))
+                                  (NP 것/NNX+으로/PAD))
+                         보/VV+었/EPF+던/EAN)))
+               (NP 민주당/NPR
+                   전략가/NNC+들/XSF+의/PAN))
+           (NP 예상/NNC+이/PCA))
+   (VP 빗나가/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>부시 지사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>3 월 초</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>대통령 후보</term>
+	    </Arg>
+	    <Rel>
+	      <term>확정되면</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>이로써 한국은 이미 본선 진출이 확정된 남녀 단식 3 명씩에다 복식에 남녀 각 2 개조씩을 파견할 수 있게 돼 한 국가가 출전시킬 수 있는 최대 티켓 목표를 달성했다.</text>
+	  <parse>
+(S (ADVP 이로써/ADV)
+   (S (NP-SBJ 한국/NPR+은/PAU)
+      (VP (VP (VP (NP-ADV (S (WHNP-1 *op*)
+			     (S (NP-SBJ *T*-1)
+				(S (ADVP 이미/ADV)
+				   (S (NP-SBJ 본선/NNC
+						  진출/NNC+이/PCA)
+				      (VP (VV 확정/NNC+되/XSV+은/EAN))))))
+			  (NP 남녀/NNC
+				  단식/NNC
+				  3/NNU
+				  명/NNX+씩/XSF+에다/PAD))
+		  (VP (NP-COMP 복식/NNC+에/PAD)
+		      (NP-OBJ 남녀/NNC
+				  각/DAN
+				  2/NNU
+				  개/NNX+조/NNC+씩/XSF+을/PCA)
+		      (VV 파견/NNC+하/XSV+을/EAN)))
+	      (VX 수/NNX
+		    있/VJ+게/ECS))
+	  되/VX+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+			 (S (NP-SBJ 한/NNU
+				      국가/NNC+이/PCA)
+			    (VP (VP (NP-OBJ *T*-2)
+				    (VV 출전/NNC+시키/XSV+을/EAN))
+				(VX 수/NNX
+				      있/VJ+는/EAN))))
+		      (NP 최대/NNC
+			      티켓/NNC))
+		  (NP 목표/NNC+을/PCA))
+	  (VV 달성/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=남녀 단식 3 명씩</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이미</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>본선 진출</term>
+	    </Arg>
+	    <Rel>
+	      <term>확정된</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>확정짓다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>북한과 미국은 15 일(현지시간) 뉴욕에서 진행돼 온 접촉에서 워싱턴 고위급회담 개최와 관련된 준비사항을 최종 확정짓지 못하고 추후에 다시 만나 논의키로 하는 선에서 회담을 마쳤다.</text>
+	  <parse>
+(S (NP-SBJ (NP 북한/NPR+과/PCJ)
+           (NP 미국/NPR+은/PAU))
+   (VP (NP-ADV 15/NNU
+               일/NNX
+               (PRN -LRB-/SLQ
+                    (NP 현지/NNC+시간/NNC)
+                    -RRB-/SRQ))
+       (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (VP (NP-ADV 뉴욕/NPR+에서/PAD)
+                             (VP (VV 진행/NNC+되/XSV+어/ECS)))
+                         오/VX+은/EAN)))
+               (NP 접촉/NNC+에서/PAD))
+       (S (NP-SBJ *pro*)
+	  (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+			     (S (NP-SBJ *T*-2)
+				(VP (NP-COMP 워싱턴/NPR
+						   고위급/NNC+회담/NNC
+						   개최/NNC+과/PAD)
+				    (VV 관련/NNC+되/XSV+은/EAN))))
+			  (NP 준비/NNC+사항/NNC+을/PCA))
+		  (VP (NP-ADV 최종/NNC)
+		      (VP 확정짓/VV+지/ENM)))
+	      못하/VX+고/ECS))
+       (NP-ADV (S (NP-SBJ *pro*)
+		  (VP (S-COMP (NP-SBJ *pro*)
+			      (VP (S (NP-SBJ *pro*)
+				     (VP (NP-ADV 추후/NNC+에/PAD)
+					 (ADVP 다시/ADV)
+					 (VP 만나/VV+어/ECS)))
+				  (VP (NP-OBJ *pro*)
+				      (VV 논의/NNC+하/XSV+기/ENM+으로/PAD))))
+		      하/VV+는/EAN))
+	       (NP 선/NNC+에서/PAD))
+       (VP (NP-OBJ 회담/NNC+을/PCA)
+           마치/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>워싱턴 고위급회담 개최와 관련된 준비사항</term>
+	    </Arg>
+	    <Rel>
+	      <term>확정짓지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못하고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

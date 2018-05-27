@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>평행</lemma>
+    <comment>Frames file for '평행' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>평행.01</id>
+      <edef>parallel</edef>
+      <roleset>
+	<role argnum="1" argrole="thing under consideration"/>
+	<role argnum="2" argrole="in comparison to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>평행하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>기준선이 언제나 적 전선에 평행한 건 아닙니다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 기준선/NNC+이/PCA)
+              (ADJP (ADVP 언제나/ADV)
+                    (ADJP (NP-COMP 적/NNC
+                                   전선/NNC+에/PAD)
+                          (VJ 평행/NNC+하/XSJ+은/EAN))))
+           (NP 것/NNX+은/PAU))
+   (ADJP 아니/VJ+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>기준선</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>언제나</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>적 전선</term>
+	    </Arg>
+	    <Rel>
+	      <term>평행한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

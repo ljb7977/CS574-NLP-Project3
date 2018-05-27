@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고대</lemma>
+    <comment>Frames file for '고대' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>고대.01</id>
+      <edef>long for</edef>
+      <roleset>
+	<role argnum="0" argrole="wanter"/>
+	<role argnum="1" argrole="thing wanted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고대하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 전쟁이 끝나서 누구나가 다 집에 돌아갈 수 있기를 나는 고대하고 있어.</text>
+	  <parse>
+(S (NP-OBJ-1 (S (S (NP-SBJ 이/DAN
+                           전쟁/NNC+이/PCA)
+                   (VP 끝나/VV+어서/ECS))
+                (S (NP-SBJ 누구나/NPN+이/PCA)
+                   (VP (VP (ADVP 다/ADV)
+                           (VP (NP-COMP 집/NNC+에/PAD)
+                               돌아가/VV+을/EAN))
+                       (VX 수/NNX
+                           있/VJ+기/ENM+을/PCA)))))
+   (S (NP-SBJ 나/NPN+은/PAU)
+      (VP (VP (NP-OBJ *T*-1)
+              (VV 고대/NNC+하/XSV+고/ECS))
+          있/VX+어/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>*trace*=이 전쟁이 끝나서 누구나가 다 집에 돌아갈 수 있기</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>나</term>
+	    </Arg>
+	    <Rel>
+	      <term>고대하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있어</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>요청</lemma>
+    <comment>Frames file for '요청' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>요청.01</id>
+      <edef>request</edef>
+      <roleset>
+	<role argnum="0" argrole="asker"/>
+	<role argnum="1" argrole="favor"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>요청하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>만약 그것도 가능하지 않으면 추가로 화력을 요청합니다.</text>
+	  <parse>
+(S (S (ADVP 만약/ADV)
+      (S (NP-SBJ 그것/NPN+도/PAU)
+         (VP (ADJP (VJ 가능/NNC+하/XSJ+지/ECS))
+             않/VX+으면/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV 추가/NNC+으로/PAD)
+          (VP (NP-OBJ 화력/NNC+을/PCA)
+              (VV 요청/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>만약 그것도 가능하지 않으면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>추가로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>화력</term>
+	    </Arg>
+	    <Rel>
+	      <term>요청합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

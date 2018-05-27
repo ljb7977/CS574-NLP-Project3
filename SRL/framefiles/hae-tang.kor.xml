@@ -1,0 +1,147 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>해당</lemma>
+    <comment>Frames file for '해당' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>해당.01</id>
+      <edef>correspond to</edef>
+      <roleset>
+	<role argnum="1" argrole="topic, theme"/>
+	<role argnum="2" argrole="compared with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>해당하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 관계자는 "5 조원이라는 막대한 자금을 들여 만든 삼성차를 10 분의 1에 해당하는 가격에, 그것도 국내 업체도 아닌 해외업체에 매각한다면 국민들이 과연 납득하겠느냐"고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           관계자/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (S (WHNP-3 *op*)
+                                 (S (S (NP-SBJ *pro*)
+                                       (VP (NP-OBJ (NP 5/NNU
+                                                       조/NNU+원/NNX+이라는/PAN)
+                                                   (NP (S (WHNP-4 *op*)
+                                                          (S (NP-SBJ *T*-4)
+                                                             (ADJP 막대하/VJ+은/EAN)))
+                                                       (NP 자금/NNC+을/PCA)))
+                                           들이/VV+어/ECS))
+                                    (S (NP-SBJ *pro*)
+                                       (VP (NP-OBJ *T*-3)
+                                           만들/VV+은/EAN))))
+                              (NP 삼성/NPR+차/NNC+을/PCA))
+                      (VP (NP-ADV (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (VP (NP-COMP (NP 10/NNU
+                                                         분/NNX+의/PAN)
+                                                     (NP 1/NNU+에/PAD))
+                                            (VV 해당/NNC+하/XSV+는/EAN))))
+                                  (NP 가격/NNC+에/PAD))
+                          ,/SCM
+                          (VP (NP-COMP (S (WHNP-1 *op*)
+					  (S (NP-SBJ *T*-1)
+					     (ADJP (NP-ADV 그것/NPN+도/PAU)
+						   (ADJP (NP-COMP 국내/NNC
+								      업체/NNC+도/PAU)
+							 아니/VJ+은/EAN))))
+                                       (NP 해외/NNC+업체/NNC+에/PAD))
+                              (VV 매각/NNC+하/XSV+는다면/ECS)))))
+               (S (NP-SBJ 국민/NNC+들/XSF+이/PCA)
+                  (VP (ADVP 과연/ADV)
+                      (VP (NP-OBJ *pro*)
+                          (VV 납득/NNC+하/XSV+겠/EPF+느냐/EFN))))
+               "/SRQ
+               고/PAD)
+       덧붙이/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=가격</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>10 분의 1</term>
+	    </Arg>
+	    <Rel>
+	      <term>해당하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>해당되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>경찰은 아카데미상 위원회에 전화를 걸어 이 트로피가 분실된 것 중의 일부임을 확인했으며 "이번 사건이 절도에 해당되는 만큼 수사가 불가피해 아카데미상 위원회에 이 트로피가 즉시 되돌려질 수 있을지는 확신할 수 없다"고 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ 경찰/NNC+은/PAU)
+      (VP (NP-COMP 아카데미상/NPR
+                   위원회/NNC+에/PAD)
+          (NP-OBJ 전화/NNC+을/PCA)
+          걸/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ 이/DAN
+			   트로피/NNC+이/PCA)
+		 (VP (NP (NP (NP (S (WHNP-1 *op*)
+				    (S (NP-SBJ *T*-1)
+				       (VP (VV 분실/NNC+되/XSV+은/EAN))))
+				 (NP 것/NNX))
+			     (NP 중/NNX+의/PAN))
+			 (NP 일부/NNC+이/CO+음/ENM+을/PCA))))
+          (VV 확인/NNC+하/XSV+었/EPF+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP "/SLQ
+                  (S (NP-ADV (S (NP-SBJ 이번/NNC
+                                        사건/NNC+이/PCA)
+                                (VP (NP-COMP 절도/NNC+에/PAD)
+                                    (VV 해당/NNC+되/XSV+는/EAN)))
+                             (NP 만큼/NNX))
+                     (S (NP-SBJ 수사/NNC+이/PCA)
+                        (ADJP 불가피하/VJ+어/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (S-OBJ (NP-COMP-2 아카데미상/NPR
+                                               위원회/NNC+에/PAD)
+                                    (S (NP-SBJ 이/DAN
+                                               트로피/NNC+이/PCA)
+                                       (VP (VP (ADVP 즉시/ADV)
+                                               (VP (NP-COMP *T*-2)
+                                                   (VV 되돌리/VV+어지/XSV+을/EAN)))
+                                           (VX 수/NNX
+                                               있/VJ+을지/EFN+은/PAU))))
+                             (VV 확신/NNC+하/XSV+을/EAN))
+                         (VX 수/NNX
+                             없/VJ+다/EFN)))
+                  "/SRQ
+                  고/PAD)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이번 사건</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>절도</term>
+	    </Arg>
+	    <Rel>
+	      <term>해당되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

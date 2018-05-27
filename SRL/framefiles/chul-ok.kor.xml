@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>출옥</lemma>
+    <comment>Frames file for '출옥' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>출옥.01</id>
+      <edef>leave</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing left"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>출옥하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>최근 미국 연방 교도소에서 출옥한 유명 해커 케빈 미트닉(36)이 2 일 미의회에서 의원들을 상대로 주요 기관과 기업체들의 컴퓨터망이 외부 침입에 무방비 상태임을 강조하며 보안 강화를 촉구했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 최근/NNC)
+                     (VP (NP-COMP 미국/NPR
+                                  연방/NNC
+                                  교도소/NNC+에서/PAD)
+                         (VV 출옥/NNC+하/XSV+은/EAN)))))
+           (NP 유명/NNC
+               해커/NNC
+               케빈/NPR
+               미트닉/NPR
+               (PRN -LRB-/SLQ
+                    36/NNU
+                    -RRB-/SRQ)
+               이/PCA))
+   (VP (NP-ADV 2/NNU
+               일/NNX)
+       (NP-ADV 미/NPR+의회/NNC+에서/PAD)
+       (NP-ADV (NP-OBJ 의원/NNC+들/XSF+을/PCA)
+               상대/NNC+으로/PAD)
+       (VP (VP (S-OBJ (NP-SBJ (NP (NP 주요/NNC
+					  기관/NNC+과/PCJ)
+				  (NP 기업체/NNC+들/XSF+의/PAN))
+			      (NP 컴퓨터/NNC+망/NNC+이/PCA))
+		      (VP (NP (NP-COMP 외부/NNC
+					   침입/NNC+에/PAD)
+			      (NP 무방비/NNC
+					상태/NNC+이/CO+음/ENM+을/PCA))))
+               (VV 강조/NNC+하/XSV+으며/ECS))
+           (VP (NP-OBJ 보안/NNC
+                       강화/NNC+을/PCA)
+               (VV 촉구/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=유명 해커 케빈 미트닉(36)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>최근</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>미국 연방 교도소</term>
+	    </Arg>
+	    <Rel>
+	      <term>출옥한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

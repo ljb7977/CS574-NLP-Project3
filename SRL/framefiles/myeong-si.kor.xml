@@ -1,0 +1,127 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>명시</lemma>
+    <comment>Frames file for '명시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>명시.01</id>
+      <edef>state clearly</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing stated"/>
+	<role argnum="2" argrole="document, where"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>명시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이에 따라 영국산 밀크 초콜릿은 유럽 본토에서는 '패밀리 밀크 초콜릿'으로 불리우게 되며 식물성기름을 함유했다는 사실을 겉에 명시해야 한다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          따르/VV+어/ECS))
+   (S (S (NP-SBJ 영국/NPR+산/XSF
+                 밀크/NNC
+                 초콜릿/NNC+은/PAU)
+         (VP (VP (NP-ADV 유럽/NPR
+                         본토/NNC+에서/PAD+은/PAU)
+                 (VP (NP-COMP '/SLQ
+                              패밀리/NNC
+                              밀크/NNC
+                              초콜릿/NNC
+                              '/SRQ
+                              으로/PAD)
+                     불리우/VV+게/ECS))
+             되/VX+으며/ECS))
+      (S (NP-SBJ *pro*)
+         (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ 식물성/NNC+기름/NNC+을/PCA)
+                                (VV 함유/NNC+하/XSV+었/EPF+다는/EAN)))
+                         (NP 사실/NNC+을/PCA))
+                 (NP-COMP 겉/NNC+에/PAD)
+                 (VV 명시/NNC+하/XSV+어야/ECS))
+             하/VX+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이에 따라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>식물성기름을 함유했다는 사실</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>겉</term>
+	    </Arg>
+	    <Rel>
+	      <term>명시해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>명시되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>코뮈니케 속에는 양국간 정치, 경제, 사회, 문화관계증진을 위한 원칙 등이 명시될 것이라고 소식통들은 덧붙였다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-COMP-3 코뮈니케/NNC
+                        속/NNC+에/PAD+은/PAU)
+             (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (VP (NP-OBJ (NP 양국/NNC+간/XSF)
+                                              (NP 정치/NNC
+                                                  ,/SCM
+                                                  경제/NNC
+                                                  ,/SCM
+                                                  사회/NNC
+                                                  ,/SCM
+                                                  문화/NNC+관계/NNC+증진/NNC+을/PCA))
+                                      위하/VV+은/EAN)))
+                            (NP 원칙/NNC))
+                        (NP 등/NNX+이/PCA))
+                (VP (VP (NP-COMP *T*-3)
+                        (VV 명시/NNC+되/XSV+을/EAN))
+                    (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+   (S (NP-SBJ 소식통/NNC+들/XSF+은/PAU)
+      (VP (S-COMP *T*-2)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>코뮈니케 속</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>양국간 정치, 경제, 사회, 문화관계증진을 위한 원칙 등</term>
+	    </Arg>
+	    <Rel>
+	      <term>명시될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

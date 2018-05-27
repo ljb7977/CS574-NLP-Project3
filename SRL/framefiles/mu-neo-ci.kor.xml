@@ -1,0 +1,121 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>무너지</lemma>
+    <comment>Frames file for '무너지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>무너지.01</id>
+      <edef>collapse</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing collapsing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>무너지다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김선우는 1 이닝동안 삼진을 1 개 잡아냈고 볼넷과 홈런은 내주지 않았으나 연속안타에 무너졌다.</text>
+	  <parse>
+(S (S (NP-SBJ 김선우/NPR+은/PAU)
+      (VP (NP-ADV 1/NNU
+                  이닝/NNC+동안/NNX)
+          (VP (VP (NP-OBJ 삼진/NNC+을/PCA)
+                  (VP (NP-ADV 1/NNU
+                              개/NNX)
+                      (VP 잡아내/VV+었/EPF+고/ECS)))
+              (VP (VP (NP-OBJ (NP 볼넷/NNC+과/PCJ)
+                              (NP 홈런/NNC+은/PAU))
+                      내주/VV+지/ECS)
+                  않/VX+었/EPF+으나/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV 연속/NNC+안타/NNC+에/PAD)
+          (VP 무너지/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>연속안타</term>
+	    </Arg>
+	    <Rel>
+	      <term>무너졌다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>무너뜨리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>두 신문에 따르면 올브라이트 장관은 이날 양국 관계개선을 위한 민간모임인 이 협의회에서 지난 53 년 사회주의 정권을 무너뜨리고 팔레비 왕정을 복원시킨 이란 쿠데타에 CIA 가 "중대 역할"을 한 사실을 시인할 예정이다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 두/NNU
+                   신문/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 올브라이트/NPR
+                         장관/NNC+은/PAU)
+                 (VP (NP-ADV 이날/NNC)
+                     (NP-ADV (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (VP (NP (S (WHNP-1 *op*)
+                                              (S (NP-SBJ *T*-1)
+                                                 (VP (NP-OBJ 양국/NNC
+                                                             관계/NNC+개선/NNC+을/PCA)
+                                                     위하/VV+은/EAN)))
+                                           (NP 민간/NNC+모임/NNC+이/CO+은/EAN)))))
+                             (NP 이/DAN
+                                 협의회/NNC+에서/PAD))
+                     (VP (NP-OBJ (S (NP-ADV (S (WHNP-3 *op*)
+                                               (S (NP-SBJ *T*-3)
+                                                  (VP (NP-ADV 지난/DAN
+                                                              53/NNU
+                                                              년/NNX)
+                                                      (VP (VP (NP-OBJ 사회주의/NNC
+                                                                      정권/NNC+을/PCA)
+                                                              무너뜨리/VV+고/ECS)
+                                                          (VP (NP-OBJ 팔레비/NPR
+                                                                      왕정/NNC+을/PCA)
+                                                              (VV 복원/NNC+시키/XSV+은/EAN))))))
+                                            (NP 이란/NPR
+                                                쿠데타/NNC+에/PAD))
+                                    (S (NP-SBJ CIA/NFW+이/PCA)
+                                       (VP (NP-OBJ "/SLQ
+                                                   중대/NNC
+                                                   역할/NNC
+                                                   "/SRQ
+                                                   을/PCA)
+                                           하/VV+은/EAN)))
+                                 (NP 사실/NNC+을/PCA))
+                         (VV 시인/NNC+하/XSV+을/EAN))))
+              (NP 예정/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=이란 쿠데타</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 53 년</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>사회주의 정권</term>
+	    </Arg>
+	    <Rel>
+	      <term>무너뜨리고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>첨예</lemma>
+    <comment>Frames file for '첨예' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>첨예.01</id>
+      <edef>acute</edef>
+      <roleset>
+	<role argnum="1" argrole="thing acute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>첨예하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>국제통화기금(IMF)은 미국과 유럽이 신임 총재 인선을 놓고 첨예하게 맞서고 있는 가운데 2 일 총재 후보들에 대한 비밀 선호도 조사(secret ballot straw poll)를 통해 총재 선출 절차에 정식으로 돌입한다.</text>
+	  <parse>
+(S (NP-SBJ 국제/NNC+통화/NNC+기금/NNC
+           (PRN -LRB-/SLQ
+                IMF/NFW
+                -RRB-/SRQ)
+           은/PAU)
+   (VP (NP-ADV (S (WHNP *op*)
+                  (S (NP-SBJ (NP 미국/NPR+과/PCJ)
+                             (NP 유럽/NPR+이/PCA))
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ 신임/NNC
+                                        총재/NNC
+                                        인선/NNC+을/PCA)
+                                놓/VV+고/ECS))
+                         (VP (VP (ADVP (ADV (VJ 첨예/NNC+하/XSJ+게/ECS)))
+                                 (VP 맞서/VV+고/ECS))
+                             있/VX+는/EAN))))
+               (NP 가운데/NNC))
+       (NP-ADV 2/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-COMP 총재/NNC
+                                         후보/NNC+들/XSF+에/PAD)
+                                대하/VV+은/EAN)))
+                      (NP 비밀/NNC
+                          선호도/NNC
+                          조사/NNC
+                          (PRN -LRB-/SLQ
+                               secret/NFW
+                               ballot/NFW
+                               straw/NFW
+                               poll/NFW
+                               -RRB-/SRQ)
+                          을/PCA))
+              통하/VV+어/ECS))
+       (VP (NP-COMP 총재/NNC
+                    선출/NNC
+                    절차/NNC+에/PAD)
+           (VP (NP-ADV 정식/NNC+으로/PAD)
+               (VP (VV 돌입/NNC+하/XSV+는다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>첨예하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

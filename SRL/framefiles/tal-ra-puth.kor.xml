@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>달라붙</lemma>
+    <comment>Frames file for '달라붙' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>달라붙.01</id>
+      <edef>stick</edef>
+      <roleset>
+	<role argnum="1" argrole="thing sticking"/>
+	<role argnum="2" argrole="stuck to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>달라붙다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>DC-SIGN은 네덜란드 네이메헌 대학병원의 이베트반 코이크 박사가 8 년전에 처음 발견했으며 이후 네덜란드 연구팀은 뉴욕 대학 의학센터 댄트만 박사가 이끄는 연구진과 함께 HIV-1이 어떻게 나무가지 세포에 달라붙는지를 밝히기 위한 연구에 들어갔다.</text>
+	  <parse>
+(S (S (NP-OBJ-1 DC-SIGN/NFW+은/PAU)
+      (S (NP-SBJ (NP 네덜란드/NPR
+                     네이메헌/NPR
+                     대학/NNC+병원/NNC+의/PAN)
+                 (NP 이베트반/NPR
+                     코이크/NPR
+                     박사/NNC+이/PCA))
+         (VP (NP-ADV 8/NNU
+                     년/NNX+전/NNC+에/PAD)
+             (NP-ADV 처음/NNC)
+             (VP (NP-OBJ *T*-1)
+                 (VV 발견/NNC+하/XSV+었/EPF+으며/ECS)))))
+   (S (NP-ADV 이후/NNC)
+      (S (NP-SBJ 네덜란드/NPR
+                 연구팀/NNC+은/PAU)
+         (VP (ADVP (NP-COMP (S (WHNP-3 *op*)
+                               (S (NP-SBJ 뉴욕/NPR
+                                          대학/NNC
+                                          의학/NNC+센터/NNC
+                                          댄트만/NPR
+                                          박사/NNC+이/PCA)
+                                  (VP (NP-OBJ *T*-3)
+                                      이끌/VV+는/EAN)))
+                            (NP 연구진/NNC+과/PAD))
+                   함께/ADV)
+             (VP (NP-COMP (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (S-OBJ (NP-SBJ *pro*)
+					   (VP (S-OBJ (NP-SBJ HIV-1/NFW+이/PCA)
+						      (VP (ADVP 어떻게/ADV)
+							  (VP (NP-COMP 나무/NNC+가지/NNC
+									   세포/NNC+에/PAD)
+							      달라붙/VV+는지/EFN+을/PCA)))
+					       밝히/VV+기/ENM))
+                                    위하/VV+은/EAN)))
+                          (NP 연구/NNC+에/PAD))
+                 들어가/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>HIV-1</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어떻게</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>나무가지 세포</term>
+	    </Arg>
+	    <Rel>
+	      <term>달라붙는지를</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

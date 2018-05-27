@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>치솟</lemma>
+    <comment>Frames file for '치솟' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>치솟.01</id>
+      <edef>go up to</edef>
+      <roleset>
+	<role argnum="1" argrole="thing going up"/>
+	<role argnum="2" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>치솟다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>국제 유가가 6 일 32.18 달러까지 치솟아 근 10 년만에 최고치를 기록했다.</text>
+	  <parse>
+(S (NP-SBJ 국제/NNC
+           유가/NNC+이/PCA)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 6/NNU
+                      일/NNX)
+              (VP (NP-COMP 32.18/NNU
+                           달러/NNX+까지/PAU)
+                  치솟/VV+어/ECS)))
+       (NP-ADV 근/DAN
+               10/NNU
+               년/NNX+만/NNX+에/PAD)
+       (VP (NP-OBJ 최고치/NNC+을/PCA)
+           (VV 기록/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>국제 유가</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>6 일</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>까지</f>
+	      <term>32.18 달러</term>
+	    </Arg>
+	    <Rel>
+	      <term>치솟아</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

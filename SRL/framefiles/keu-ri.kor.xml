@@ -1,0 +1,154 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>그리</lemma>
+    <comment>Frames file for '그리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>그리.01</id>
+      <edef>draw</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing drawn"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>그리다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포로는 지뢰원 모양을 그리기 시작한다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-OBJ (NP-SBJ 포로/NNC+은/PAU)
+              (VP (NP-OBJ 지뢰원/NNC
+                          모양/NNC+을/PCA)
+                  그리/VV+기/ENM))
+       (VV 시작/NNC+하/XSV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>포로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지뢰원 모양</term>
+	    </Arg>
+	    <Rel>
+	      <term>그리기</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>그리.02</id>
+      <edef>long for</edef>
+      <roleset>
+	<role argnum="0" argrole="person experiencing emotion"/>
+	<role argnum="1" argrole="thing longed for"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>그리다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 애타게 고향을 그리다 끝내 숨을 거두었다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>애타게</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>고향</term>
+	    </Arg>
+	    <Rel>
+	      <term>그리다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>그리.03</id>
+      <edef>describe</edef>
+      <roleset>
+	<role argnum="0" argrole="describer"/>
+	<role argnum="1" argrole="thing described"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>그려지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 만화속에서 이들 주인공은 서로 키스할 뿐 아니라 '브리티시 설레브리티'란 가상의 잡지에 "지상 최고의 커플"로 묘사되어 있는 것으로 그려져 있다.</text>
+	  <parse>
+(S (NP-ADV 이/DAN
+           만화/NNC+속/NNC+에서/PAD)
+   (S (NP-SBJ 이/NPN+들/XSF
+              주인공/NNC+은/PAU)
+      (VP (VP (NP-COMP (S (S (NP-SBJ (S (NP-SBJ *pro*)
+                                        (VP (ADVP 서로/ADV)
+                                            (VP (VV 키스/NNC+하/XSV+을/EAN))))
+                                     (NP 뿐/NNX))
+                             (ADJP 아니/VJ+라/ECS))
+                          (S (NP-SBJ *pro*)
+                             (VP (VP (NP-ADV (NP '/SLQ
+                                                 브리티시/NPR
+                                                 설레브리티/NPR
+                                                 '/SRQ
+                                                 이란/PAN)
+                                             (NP (NP 가상/NNC+의/PAN)
+                                                 (NP 잡지/NNC+에/PAD)))
+                                     (VP (NP-COMP "/SLQ
+                                                  (NP 지상/NNC
+                                                      최고/NNC+의/PAN)
+                                                  (NP 커플/NNC)
+                                                  "/SRQ
+                                                  으로/PAD)
+                                         (VV 묘사/NNC+되/XSV+어/ECS)))
+                                 있/VX+는/EAN)))
+                       (NP 것/NNX+으로/PAD))
+              (VV 그리/VV+어지/XSV+어/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>이 만화속에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>이들 주인공</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>서로 키스할 뿐 아니라 '브리티시 설레브리티'란 가상의 잡지에 "지상 최고의 커플"로 묘사되어 있는 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>그려져</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>
+

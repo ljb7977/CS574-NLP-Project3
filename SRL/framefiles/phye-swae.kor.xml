@@ -1,0 +1,136 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>폐쇄</lemma>
+    <comment>Frames file for '폐쇄' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>폐쇄.01</id>
+      <edef>close</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing closing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>폐쇄하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>7 일 늦게 구사우에 도착한 한 나이지리아 기자는 이날 충돌이 이슬람교도인 학생들이 이슬람의 샤리아법을 이 시에서 시행할 것을 요구하는 데모를 벌이면서 발생했다면서 당국이 캠퍼스를 폐쇄했으며 데모는 도시전역으로 번져 수천명의 기독교인들이 겁에 질린 나머지 경찰서와 군 병영등으로 피신했다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 7/NNU
+                             일/NNX)
+                     (ADVP (ADV 늦/VJ+게/ECS))
+                     (VP (NP-COMP 구사우/NPR+에/PAD)
+                         (VV 도착/NNC+하/XSV+은/EAN)))))
+           (NP 한/NNU
+               나이지리아/NPR
+               기자/NNC+은/PAU))
+   (VP (S-COMP (S (NP-SBJ 이날/NNC
+                          충돌/NNC+이/PCA)
+                  (VP (S (NP-SBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP (NP 이슬람교도/NNC+이/CO+은/EAN))))
+                                 (NP 학생/NNC+들/XSF+이/PCA))
+                         (VP (NP-OBJ (S (WHNP-3 *op*)
+                                        (S (NP-SBJ *T*-3)
+                                           (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                          (VP (NP-OBJ (NP 이슬람/NNC+의/PAN)
+                                                                      (NP 샤리아/NPR+법/NNC+을/PCA))
+                                                              (VP (NP-ADV 이/DAN
+                                                                          시/NNC+에서/PAD)
+                                                                  (VP (VV 시행/NNC+하/XSV+을/EAN)))))
+                                                       (NP 것/NNX+을/PCA))
+                                               (VV 요구/NNC+하/XSV+는/EAN))))
+                                     (NP 데모/NNC+을/PCA))
+                             벌이/VV+으면서/ECS))
+                      (VP (VV 발생/NNC+하/XSV+었/EPF+다면서/ECS))))
+               (S (NP-SBJ 당국/NNC+이/PCA)
+                  (VP (NP-OBJ 캠퍼스/NNC+을/PCA)
+                      (VV 폐쇄/NNC+하/XSV+었/EPF+으며/ECS)))
+               (S (S (NP-SBJ 데모/NNC+은/PAU)
+                     (VP (NP-COMP 도시/NNC+전역/NNC+으로/PAD)
+                         번지/VV+어/ECS))
+                  (S (NP-SBJ (NP 수천/NNU+명/NNX+의/PAN)
+                             (NP 기독교인/NNC+들/XSF+이/PCA))
+                     (VP (NP-ADV (S (NP-SBJ *pro*)
+                                    (VP (NP-COMP 겁/NNC+에/PAD)
+                                        질리/VV+은/EAN))
+                                 (NP 나머지/NNC))
+                         (VP (NP-COMP (NP 경찰서/NNC+과/PCJ)
+                                      (NP 군/NNC
+                                          병영/NNC+등/NNX+으로/PAD))
+                             (VV 피신/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>당국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>캠퍼스</term>
+	    </Arg>
+	    <Rel>
+	      <term>폐쇄했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>폐쇄되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>셰르메체보-1 공항은 사고 직후 곧바로 폐쇄됐으며, 현재 구조대가 급파돼 생존자 수색 및 구조작업을 벌이고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 셰르메체보/NPR
+              -/SSY
+              1/NNU
+              공항/NNC+은/PAU)
+      (VP (NP-ADV 사고/NNC
+                  직후/NNC)
+          (ADVP 곧바로/ADV)
+          (VP (VV 폐쇄/NNC+되/XSV+었/EPF+으며/ECS))))
+   ,/SCM
+   (S (NP-ADV 현재/NNC)
+      (S (NP-SBJ 구조대/NNC+이/PCA)
+         (VP (VP (S (NP-SBJ *pro*)
+                    (VP (VV 급파/NNC+되/XSV+어/ECS)))
+                 (VP (NP-OBJ (NP 생존자/NNC)
+                             (NP (NP 수색/NNC)
+                                 (ADCP 및/ADC)
+                                 (NP 구조/NNC+작업/NNC+을/PCA)))
+                     벌이/VV+고/ECS))
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>셰르메체보-1 공항</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>사고 직후</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>곧바로</term>
+	    </Arg>
+	    <Rel>
+	      <term>폐쇄됐으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

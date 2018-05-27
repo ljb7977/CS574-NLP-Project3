@@ -1,0 +1,255 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주목</lemma>
+    <comment>Frames file for '주목' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>주목.01</id>
+      <edef>pay attention to</edef>
+      <roleset>
+	<role argnum="0" argrole="thing paying attention"/>
+	<role argnum="1" argrole="pay attention to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주목하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 특사교환 제의에 대한 북한의 무반응이나 무응답이 반드시 이에 대한 거부나 부정을 의미하는 것은 아니라는 사실에 주목할 필요가 있다고 전문가들은 주장한다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (S-COMP-3 (NP-SBJ (S (NP-SBJ *pro*)
+                           (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                                                      (S (NP-SBJ *T*-1)
+                                                         (VP (NP-COMP 특사/NNC+교환/NNC
+                                                                      제의/NNC+에/PAD)
+                                                             대하/VV+은/EAN)))
+                                                   (NP (NP 북한/NPR+의/PAN)
+                                                       (NP (NP 무/XPF+반응/NNC+이나/PCJ)
+                                                           (NP 무/XPF+응답/NNC+이/PCA))))
+                                           (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                                                             (VP (ADVP 반드시/ADV)
+                                                                 (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                                (S (NP-SBJ *T*-2)
+                                                                                   (VP (NP-COMP 이/NPN+에/PAD)
+                                                                                       대하/VV+은/EAN)))
+                                                                             (NP (NP 거부/NNC+이나/PCJ)
+                                                                                 (NP 부정/NNC+을/PCA)))
+                                                                     (VV 의미/NNC+하/XSV+는/EAN))))
+                                                          (NP 것/NNX+은/PAU))
+                                                 아니/VJ+라는/EAN))
+                                        (NP 사실/NNC+에/PAD))
+                               (VV 주목/NNC+하/XSV+을/EAN)))
+                        (NP 필요/NNC+이/PCA))
+                (ADJP 있/VJ+다/EFN+고/PAD))
+      (S (NP-SBJ 전문가/NNC+들/XSF+은/PAU)
+         (VP (S-COMP *T*-3)
+             (VV 주장/NNC+하/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>특사교환 제의에 대한 북한의 무반응이나 무응답이 반드시 이에 대한 거부나 부정을 의미하는 것은 아니라는 사실</term>
+	    </Arg>
+	    <Rel>
+	      <term>주목할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>주목하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>다이크 사장은 런던에서 열린 과학박물관 연례 만찬 석상에서 "악어들이 서로 입히는 무서운 상처에도 불구하고 상처가 거의 감염되지 않는다는 놀라운 사실을 우리 PD가 주목한 데서 이러한 발견이 이뤄지게 됐다"고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 다이크/NPR
+           사장/NNC+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-ADV 런던/NPR+에서/PAD)
+                         (VP 열리/VV+은/EAN))))
+               (NP 과학/NNC+박물관/NNC
+                   연례/NNC
+                   만찬/NNC
+                   석상/NNC+에서/PAD))
+       (VP (S-COMP "/SLQ
+                   (NP-ADV (S (NP-OBJ-5 (S (S (NP-SBJ *pro*)
+                                              (VP (NP-COMP (S (WHNP-3 *op*)
+                                                              (S (NP-SBJ 악어/NNC+들/XSF+이/PCA)
+                                                                 (VP (ADVP 서로/ADV)
+                                                                     (VP (NP-OBJ *T*-3)
+                                                                         입히/VV+는/EAN))))
+                                                           (NP (S (WHNP-2 *op*)
+                                                                  (S (NP-SBJ *T*-2)
+                                                                     (ADJP 무섭/VJ+은/EAN)))
+                                                               (NP 상처/NNC+에/PAD+도/PAU)))
+                                                  불구하/VV+고/ECS))
+                                           (S (NP-SBJ 상처/NNC+이/PCA)
+                                              (VP (VP (ADVP 거의/ADV)
+                                                      (VP (VV 감염/NNC+되/XSV+지/ECS)))
+                                                  않/VX+는다는/EAN)))
+                                        (NP (S (WHNP-4 *op*)
+                                               (S (NP-SBJ *pro*)
+                                                  (ADJP (NP-COMP *T*-4)
+                                                        놀랍/VJ+은/EAN)))
+                                            (NP 사실/NNC+을/PCA)))
+                              (S (NP-SBJ 우리/NPN
+                                         PD/NFW+이/PCA)
+                                 (VP (NP-OBJ *T*-5)
+                                     (VV 주목/NNC+하/XSV+은/EAN))))
+                           (NP 데/NNX+서/PAD))
+                   (S (NP-SBJ 이러한/DAN
+                              발견/NNC+이/PCA)
+                      (VP (VP (VV 이루/VV+어지/XSV+게/ECS))
+                          되/VX+었/EPF+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>"악어들이 서로 입히는 무서운 상처에도 불구하고 상처가 거의 감염되지 않는다는 놀라운 사실</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>우리 PD</term>
+	    </Arg>
+	    <Rel>
+	      <term>주목한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>주목되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이같은 조치는 피노체트를 재판대에 올려 사법처리하기 위한 첫 조치로 법원의 향후 결정이 주목된다.</text>
+	  <parse>
+(S (S (NP-SBJ 이같은/DAN
+              조치/NNC+은/PAU)
+      (VP (NP (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (S-OBJ (S (NP-SBJ *pro*)
+				  (VP (NP-OBJ 피노체트/NPR+을/PCA)
+				      (NP-COMP 재판대/NNC+에/PAD)
+				      올리/VV+어/ECS))
+			       (S (NP-SBJ *pro*)
+				  (VP (NP-OBJ *pro*)
+				      (VV 사법처리/NNC+하/XSV+기/ENM))))
+                        위하/VV+은/EAN)))
+              (NP 첫/NNU
+                  조치/NNC+으로/PAD))))
+   (S (NP-SBJ (NP 법원/NNC+의/PAN)
+              (NP 향후/NNC
+                  결정/NNC+이/PCA))
+      (VP (VV 주목/NNC+되/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이같은 조치는 피노체트를 재판대에 올려 사법처리하기 위한 첫 조치로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>법원의 향후 결정</term>
+	    </Arg>
+	    <Rel>
+	      <term>주목된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>주목받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>쩡 조직부장은 혁명 원로들인 쩡산(증산)과 덩류진(등육금) 사이에서 태어났으며 이를 배경으로 원로의 자제들과 깊은 교감을 가지고 있어 중국분석가들 사이에서는 그의 움직임이 장쩌민의 행보와 관련해 주목받고 있다.</text>
+	  <parse>
+(S (S (S (NP-SBJ 쩡/NPR
+                 조직/NNC+부장/NNC+은/PAU)
+         (VP (NP-ADV (NP (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (VP (NP 혁명/NNC
+                                       원로/NNC+들/XSF+이/CO+은/EAN))))
+                         (NP (NP 쩡산/NPR
+                                 (PRN -LRB-/SLQ
+                                      증산/NPR
+                                      -RRB-/SRQ)
+                                 과/PCJ)
+                             (NP 덩류진/NPR
+                                 (PRN -LRB-/SLQ
+                                      등육금/NPR
+                                      -RRB-/SRQ))))
+                     (NP 사이/NNC+에서/PAD))
+             (VP 태어나/VV+었/EPF+으며/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (VP (NP-ADV (NP-OBJ 이/NPN+을/PCA)
+                         배경/NNC+으로/PAD)
+                 (VP (NP-COMP (NP 원로/NNC+의/PAN)
+                              (NP 자제/NNC+들/XSF+과/PAD))
+                     (VP (NP-OBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (ADJP 깊/VJ+은/EAN)))
+                                 (NP 교감/NNC+을/PCA))
+                         가지/VV+고/ECS)))
+             있/VX+어/ECS)))
+   (S (NP-ADV 중국/NPR+분석가/NNC+들/XSF
+              사이/NNC+에서/PAD+은/PAU)
+      (S (NP-SBJ (NP 그/NPN+의/PAN)
+                 (NP 움직임/NNC+이/PCA))
+         (VP (VP (S (NP-SBJ *pro*)
+                    (VP (NP-COMP (NP 장쩌민/NPR+의/PAN)
+                                 (NP 행보/NNC+과/PAD))
+                        (VV 관련/NNC+하/XSV+어/ECS)))
+                 (VP (VV 주목/NNC+받/XSV+고/ECS)))
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>쩡 조직부장은 혁명 원로들인 쩡산(증산)과 덩류진(등육금) 사이에서 태어났으며 이를 배경으로 원로의 자제들과 깊은 교감을 가지고 있어</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>중국분석가들 사이에서는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>그의 움직임</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>장쩌민의 행보와 관련해</term>
+	    </Arg>
+	    <Rel>
+	      <term>주목받고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>느리</lemma>
+    <comment>Frames file for '느리' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>느리.01</id>
+      <edef>slow</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being slow"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>느리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리 특무장은 셈이 아주 느리다.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN
+	   특무장/NNC+은/PAU)
+   (S (NP-SBJ 셈/NNC+이/PCA)
+      (ADJP (ADVP 아주/ADV)
+	    (ADJP 느리/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>우리 특무장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>셈</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>아주</term>
+	    </Arg>
+	    <Rel>
+	      <term>느리다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

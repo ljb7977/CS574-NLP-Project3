@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>직행</lemma>
+    <comment>Frames file for '직행' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>직행.01</id>
+      <edef>go directly</edef>
+      <roleset>
+	<role argnum="0" argrole="thing going"/>
+	<role argnum="1" argrole="go to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>직행하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김계관 북한 외무성 부상을 포함한 북한대표단은 이날 오전 10 시께 유엔주재 미대표부에 도착해 회담장으로 직행했다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-OBJ 김계관/NPR
+                                북한/NPR
+                                외무성/NNC
+                                부상/NNC+을/PCA)
+                        (VV 포함/NNC+하/XSV+은/EAN))))
+              (NP 북한/NPR+대표단/NNC+은/PAU))
+      (VP (NP-ADV 이날/NNC
+                  오전/NNC
+                  10/NNU
+                  시/NNX+께/XSF)
+          (VP (NP-COMP 유엔/NPR+주재/NNC
+                       미/NPR+대표부/NNC+에/PAD)
+              (VV 도착/NNC+하/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 회담장/NNC+으로/PAD)
+          (VV 직행/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>김계관 북한 외무성 부상을 포함한 북한대표단은 이날 오전 10 시께 유엔주재 미대표부에 도착해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>회담장</term>
+	    </Arg>
+	    <Rel>
+	      <term>직행했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

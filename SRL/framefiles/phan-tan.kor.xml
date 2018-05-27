@@ -1,0 +1,217 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>판단</lemma>
+    <comment>Frames file for '판단' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>판단.01</id>
+      <edef>judge</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="judgement"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>판단하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이와 관련, 통신은 "일본정부가 일본인 납치의혹의 해명을 식량지원 실시의 전제조건으로 내세울 경우 진전을 기대할 수 없다고 판단하게 된 것"이라며 "최근의 비공식 접촉에서 북한측이 본회담 개최에 전향적인 입장을 보였기 때문에 납치의혹을 교섭과정에서 거론, 진전시키기 위해서 식량지원을 단행키로 했다"고 설명했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+과/PAD)
+          (VV 관련/NNC)))
+   ,/SCM
+   (S (NP-SBJ 통신/NNC+은/PAU)
+      (VP (S-COMP (S (NP-SBJ *pro*)
+                     (VP (NP "/SLQ
+                             (S (NP-SBJ 일본/NPR+정부/NNC+이/PCA)
+                                (VP (VP (S-COMP (NP-SBJ *pro*)
+                                                (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                                   (VP (NP-OBJ (NP 일본인/NNC
+                                                                                   납치/NNC+의혹/NNC+의/PAN)
+                                                                               (NP 해명/NNC+을/PCA))
+                                                                       (NP-COMP (NP 식량/NNC+지원/NNC
+                                                                                    실시/NNC+의/PAN)
+                                                                                (NP 전제/NNC+조건/NNC+으로/PAD))
+                                                                       내세우/VV+을/EAN))
+                                                                (NP 경우/NNC))
+                                                        (VP (NP-OBJ 진전/NNC+을/PCA)
+                                                            (VV 기대/NNC+하/XSV+을/EAN)))
+                                                    (VX 수/NNX
+                                                        없/VJ+다/EFN+고/PAD)))
+                                        (VV 판단/NNC+하/XSV+게/ECS))
+                                    되/VX+은/EAN))
+                             (NP 것/NNX)
+                             "/SRQ
+                             이/CO+라며/ECS)))
+                  "/SLQ
+                  (S (NP-SBJ *pro*)
+                     (VP (S-COMP (NP-SBJ *pro*)
+                                 (VP (VP (S-OBJ (NP-SBJ *pro*)
+						(VP (NP-ADV (S (NP-ADV (NP 최근/NNC+의/PAN)
+								       (NP 비공식/NNC
+										 접촉/NNC+에서/PAD))
+							       (S (NP-SBJ 북한/NPR+측/XSF+이/PCA)
+								  (VP (NP-COMP 본회담/NNC
+										     개최/NNC+에/PAD)
+								      (NP-OBJ (S (WHNP-1 *op*)
+										 (S (NP-SBJ *T*-1)
+										    (VP (NP 전향/NNC+적/XSF+이/CO+은/EAN))))
+									      (NP 입장/NNC+을/PCA))
+								      보이/VV+었/EPF+기/ENM)))
+							    (NP 때문/NNX+에/PAD))
+						    (VP (NP-OBJ 납치/NNC+의혹/NNC+을/PCA)
+							(VP (NP-ADV 교섭/NNC+과정/NNC+에서/PAD)
+							    (VP (VV (VV 거론/NNC)
+								    ,/SCM
+								    (VV 진전/NNC+시키/XSV+기/ENM)))))))
+                                         위하/VV+어서/ECS)
+                                     (VP (NP-OBJ 식량/NNC+지원/NNC+을/PCA)
+                                         (VV 단행/NNC+하/XSV+기/ENM+으로/PAD))))
+                         하/VV+었/EPF+다/EFN))
+                  "/SRQ
+                  고/PAD)
+          (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>일본정부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>일본인 납치의혹의 해명을 식량지원 실시의 전제조건으로 내세울 경우 진전을 기대할 수 없다</term>
+	    </Arg>
+	    <Rel>
+	      <term>판단하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>된</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>판단하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그린스펀 의장은 그러나 지난 2 월 FRB의 금리정책 방향을 밝히는 의회 증언을 통해 주가수준이 적절한지 여부를 판단하려는 시도를 하지 않을 것이며 거품을 빼려고도 하지 않을 것이라고 밝힌 바 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 그린스펀/NPR
+                      의장/NNC+은/PAU)
+              (VP (ADCP 그러나/ADC)
+                  (VP (NP-ADV 지난/DAN
+                              2/NNU
+                              월/NNX)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (NP-OBJ (NP FRB/NFW+의/PAN)
+                                                           (NP 금리/NNC+정책/NNC
+                                                               방향/NNC+을/PCA))
+                                                   밝히/VV+는/EAN)))
+                                         (NP 의회/NNC
+                                             증언/NNC+을/PCA))
+                                 통하/VV+어/ECS))
+                          (VP (S-COMP (NP-SBJ *pro*)
+                                      (VP (VP (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                                 (VP (NP-OBJ (S (NP-SBJ 주가/NNC+수준/NNC+이/PCA)
+                                                                                (ADJP 적절하/VJ+은지/EFN))
+                                                                             (NP 여부/NNC+을/PCA))
+                                                                     (VV 판단/NNC+하/XSV+으려는/EAN)))
+                                                              (NP 시도/NNC+을/PCA))
+                                                      하/VV+지/ECS)
+                                                  않/VX+을/EAN)
+                                              (VX 것/NNX+이/CO+으며/ECS))
+                                          (VP (VP (VP (VP (NP-OBJ 거품/NNC+을/PCA)
+                                                          빼/VV+으려고/ECS+도/PAU)
+                                                      하/VX+지/ECS)
+                                                  않/VX+을/EAN)
+                                              (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+                              밝히/VV+은/EAN)))))
+           (NP 바/NNX))
+   (ADJP 있/VJ+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>주가수준이 적절한지 여부</term>
+	    </Arg>
+	    <Rel>
+	      <term>판단하려는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>판단되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 관계자는 "금강산 일대 위락시설 설치에 관한 남북 기본합의서에 따라 해상호텔과 금강산 려관에 카지노를 설치할 계획"이라며 "북측도 카지노 설치에 긍정적이며 국내법상으로도 문제가 없는 것으로 판단된다"고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           관계자/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP "/SLQ
+                      (NP (S (NP-SBJ *pro*)
+                             (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (VP (NP-COMP 금강산/NPR
+                                                                 일대/NNC
+                                                                 위락/NNC+시설/NNC
+                                                                 설치/NNC+에/PAD)
+                                                        관하/VV+은/EAN)))
+                                              (NP 남북/NNC
+                                                  기본/NNC+합의서/NNC+에/PAD))
+                                     따르/VV+어/ECS)
+                                 (VP (NP-COMP (NP 해상/NNC+호텔/NNC+과/PCJ)
+                                              (NP 금강산/NPR
+                                                  려관/NNC+에/PAD))
+                                     (NP-OBJ 카지노/NNC+을/PCA)
+                                     (VV 설치/NNC+하/XSV+을/EAN))))
+                          (NP 계획/NNC))
+                      "/SRQ
+                      이/CO+라며/ECS))
+               "/SLQ
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (S (NP-SBJ 북/NPR+측/NNX+도/PAU)
+                                     (VP (NP-COMP 카지노/NNC
+                                                  설치/NNC+에/PAD)
+                                         (VP (NP 긍정/NNC+적/XSF+이/CO+으며/ECS))))
+                                  (S (NP-ADV 국내법/NNC+상/NNC+으로/PAD+도/PAU)
+                                     (S (NP-SBJ 문제/NNC+이/PCA)
+                                        (ADJP 없/VJ+는/EAN))))
+                               (NP 것/NNX+으로/PAD))
+                      (VV 판단/NNC+되/XSV+는다/EFN)))
+               "/SRQ
+               고/PAD)
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>북측도 카지노 설치에 긍정적이며 국내법상으로도 문제가 없는 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>판단된다</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

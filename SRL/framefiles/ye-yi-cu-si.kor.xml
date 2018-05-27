@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>예의주시</lemma>
+    <comment>Frames file for '예의주시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>예의주시.01</id>
+      <edef>pay attention to</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>예의주시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>클라크 사령관은 이날 공식방문지 마드리드에서 "발칸지역의 전례에 비춰 볼 때 몬테네그로에는 밀로세비치 대통령이 군사조치를 취할 수 있는 현상이 벌어지고 있다"면서 나토는 몬테네그로의 상황을 예의주시하고 있다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 클라크/NPR
+           사령관/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (NP-ADV 공식/NNC+방문지/NNC
+               마드리드/NPR+에서/PAD)
+       (VP (S-COMP (S "/SLQ
+                      (NP-ADV (S (NP-SBJ *pro*)
+                                 (VP (S (NP-SBJ *pro*)
+					(VP (NP-COMP (NP 발칸/NPR+지역/NNC+의/PAN)
+						     (NP 전례/NNC+에/PAD))
+					    비추/VV+어/ECS))
+                                     (VP (NP-OBJ *pro*)
+					 보/VV+을/EAN)))
+                              (NP 때/NNC))
+                      (NP-ADV 몬테네그로/NPR+에/PAD+은/PAU)
+                      (S (NP-SBJ (S (NP-SBJ 밀로세비치/NPR
+                                            대통령/NNC+이/PCA)
+                                    (VP (VP (NP-OBJ 군사/NNC+조치/NNC+을/PCA)
+                                            취하/VV+을/EAN)
+                                        (VX 수/NNX
+                                            있/VJ+는/EAN)))
+                                 (NP 현상/NNC+이/PCA))
+                         (VP (VP 벌어지/VV+고/ECS)
+                             있/VX+다/EFN))
+                      "/SRQ
+                      면서/ECS)
+                   (S (NP-SBJ 나토/NPR+은/PAU)
+                      (VP (VP (NP-OBJ (NP 몬테네그로/NPR+의/PAN)
+                                      (NP 상황/NNC+을/PCA))
+                              (VV 예의주시/NNC+하/XSV+고/ECS))
+                          있/VX+다/EFN+고/PAD)))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>나토</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>몬테네그로의 상황</term>
+	    </Arg>
+	    <Rel>
+	      <term>예의주시하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

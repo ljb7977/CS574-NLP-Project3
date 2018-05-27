@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>사죄</lemma>
+    <comment>Frames file for '사죄' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>사죄.01</id>
+      <edef>apologize</edef>
+      <roleset>
+	<role argnum="0" argrole="apologist"/>
+	<role argnum="1" argrole="apologize for"/>
+	<role argnum="2" argrole="apologized to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>사죄하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>교황은 이번 방문을 앞두고 지난 12 일 2 천년 기독교 사상 처음으로 교회의 과오에 대해 사죄한 바 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 교황/NNC+은/PAU)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ 이번/NNC
+                                 방문/NNC+을/PCA)
+                         앞두/VV+고/ECS))
+                  (NP-ADV 지난/DAN
+                          12/NNU
+                          일/NNX)
+                  (NP-ADV 2/NNU
+                          천/NNU+년/NNX
+                          기독교/NNC
+                          사상/NNC
+                          처음/NNC+으로/PAD)
+                  (VP (S-COMP (NP-SBJ *pro*)
+                              (VP (NP-COMP (NP 교회/NNC+의/PAN)
+                                           (NP 과오/NNC+에/PAD))
+                                  대하/VV+어/ECS))
+                      (VV 사죄/NNC+하/XSV+은/EAN))))
+           (NP 바/NNX))
+   (ADJP 있/VJ+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>교황</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이번 방문을 앞두고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 12 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>2 천년 기독교 사상 처음으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에 대해</f>
+	      <term>교회의 과오</term>
+	    </Arg>
+	    <Rel>
+	      <term>사죄한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>닫</lemma>
+    <comment>Frames file for '닫' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>닫.01</id>
+      <edef>close</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing closing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>닫다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>구로다 차관은 기자들의 질문에 이렇게 대답하면서 "아시아 국가들이 재정 지원을 (계속) 필요로 할 경우 일본이 문을 닫지 않을 것"이라고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 구로다/NPR
+           차관/NNC+은/PAU)
+   (VP (VP (NP-COMP (NP 기자/NNC+들/XSF+의/PAN)
+                    (NP 질문/NNC+에/PAD))
+           (VP (ADVP 이렇게/ADV)
+               (VP (VV 대답/NNC+하/XSV+으면서/ECS))))
+       (VP (S-COMP "/SLQ
+                   (NP-ADV (S (NP-SBJ 아시아/NPR
+                                      국가/NNC+들/XSF+이/PCA)
+                              (VP (NP-OBJ 재정/NNC
+                                          지원/NNC+을/PCA)
+                                  (PRN -LRB-/SLQ
+                                       (ADVP 계속/ADV)
+                                       -RRB-/SRQ)
+                                  (NP-COMP 필요/NNC+으로/PAD)
+                                  하/VV+을/EAN))
+                           (NP 경우/NNC))
+                   (S (NP-SBJ 일본/NPR+이/PCA)
+                      (VP (VP (VP (NP-OBJ 문/NNC+을/PCA)
+                                  닫/VV+지/ECS)
+                              않/VX+을/EAN)
+                          (VX 것/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>아시아 국가들이 재정 지원을 (계속) 필요로 할 경우</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>일본</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>문</term>
+	    </Arg>
+	    <Rel>
+	      <term>닫지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>제재</lemma>
+    <comment>Frames file for '제재' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>제재.01</id>
+      <edef>punish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing punished"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>제재하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>EU는 극우 정당의 오스트리아 연정 참여를 제재하기 위해 오스트리아와 회원국의 쌍무 정치 관계를 중단키로 한 조치를 계속 유지하고 있다.</text>
+	  <parse>
+(S (NP-SBJ EU/NFW+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-OBJ (NP-SBJ *pro*)
+		     (VP (NP-OBJ (NP 극우/NNC
+					 정당/NNC+의/PAN)
+				 (NP 오스트리아/NPR
+					       연정/NNC
+					       참여/NNC+을/PCA))
+			 (VV 제재/NNC+하/XSV+기/ENM)))
+              위하/VV+어/ECS))
+       (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                          (VP (S-COMP (NP-SBJ *pro*)
+				      (VP (NP-OBJ (NP (NP 오스트리아/NPR+과/PCJ)
+						      (NP 회원국/NNC+의/PAN))
+						  (NP 쌍무/NNC
+							  정치/NNC
+							  관계/NNC+을/PCA))
+					  (VV 중단/NNC+하/XSV+기/ENM+으로/PAD)))
+                              하/VV+은/EAN))
+                       (NP 조치/NNC+을/PCA))
+               (VP (ADVP 계속/ADV)
+                   (VP (VV 유지/NNC+하/XSV+고/ECS))))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>극우 정당의 오스트리아 연정 참여</term>
+	    </Arg>
+	    <Rel>
+	      <term>제재하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

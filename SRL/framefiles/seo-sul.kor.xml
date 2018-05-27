@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>서술</lemma>
+    <comment>Frames file for '서술' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>서술.01</id>
+      <edef>describe</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing described"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>서술하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>백서는 특히 세계무역기구(WTO) 가입을 위한 중국의 관세인하 품목들의 동향에 대해서도 서술하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 백서/NNC+은/PAU)
+   (VP (VP (ADVP 특히/ADV)
+           (VP (S-COMP (NP-SBJ *pro*)
+                       (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                           (S (NP-SBJ *T*-1)
+                                              (VP (NP-OBJ 세계/NNC+무역/NNC+기구/NNC
+                                                          (PRN -LRB-/SLQ
+                                                               (NP WTO/NFW)
+                                                               -RRB-/SRQ)
+                                                          가입/NNC+을/PCA)
+                                                  위하/VV+은/EAN)))
+                                        (NP (NP 중국/NPR+의/PAN)
+                                            (NP 관세/NNC+인하/NNC
+                                                품목/NNC+들/XSF+의/PAN)))
+                                    (NP 동향/NNC+에/PAD))
+                           대하/VV+어서/ECS+도/PAU))
+               (VV 서술/NNC+하/XSV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>백서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에 대해서도</f>
+	      <term>세계무역기구(WTO) 가입을 위한 중국의 관세인하 품목들의 동향</term>
+	    </Arg>
+	    <Rel>
+	      <term>서술하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

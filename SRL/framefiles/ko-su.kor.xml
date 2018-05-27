@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고수</lemma>
+    <comment>Frames file for '고수' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>고수.01</id>
+      <edef>adhere</edef>
+      <roleset>
+	<role argnum="0" argrole="adherer"/>
+	<role argnum="1" argrole="thing adhered to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고수하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>필리핀은 앞서 북한의 ARF 참가를 종용했으나 북한은 아세안(동남아국가연합) 회원국과의 외교관계수립 이전에는 참가계획을 추진할 수 없다는 입장을 고수해 왔다.</text>
+	  <parse>
+(S (S (NP-SBJ 필리핀/NPR+은/PAU)
+      (VP (ADVP 앞서/ADV)
+          (VP (NP-OBJ (NP 북한/NPR+의/PAN)
+                      (NP ARF/NFW
+                          참가/NNC+을/PCA))
+              (VV 종용/NNC+하/XSV+었/EPF+으나/ECS))))
+   (S (NP-SBJ 북한/NPR+은/PAU)
+      (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                         (VP (VP (NP-ADV (NP (NP 아세안/NPR
+                                                 (PRN -LRB-/SLQ
+                                                      (NP 동남아/NPR+국가/NNC+연합/NNC)
+                                                      -RRB-/SRQ)
+                                                 회원국/NNC+과/PAD+의/PAN)
+                                             (NP 외교/NNC+관계/NNC+수립/NNC))
+                                         (NP 이전/NNC+에/PAD+은/PAU))
+                                 (VP (NP-OBJ 참가/NNC+계획/NNC+을/PCA)
+                                     (VV 추진/NNC+하/XSV+을/EAN)))
+                             (VX 수/NNX
+                                 없/VJ+다는/EAN)))
+                      (NP 입장/NNC+을/PCA))
+              (VV 고수/NNC+하/XSV+어/ECS))
+          오/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>아세안(동남아국가연합) 회원국과의 외교관계수립 이전에는 참가계획을 추진할 수 없다는 입장</term>
+	    </Arg>
+	    <Rel>
+	      <term>고수해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

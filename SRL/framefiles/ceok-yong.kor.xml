@@ -1,0 +1,191 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>적용</lemma>
+    <comment>Frames file for '적용' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>적용.01</id>
+      <edef>apply</edef>
+      <roleset>
+	<role argnum="0" argrole="applier"/>
+	<role argnum="1" argrole="thing applied"/>
+	<role argnum="2" argrole="applied to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>적용하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희는 그때 새 전술 교리를 적용했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN+은/PAU)
+   (VP (NP-ADV 그때/NNC)
+       (VP (NP-OBJ 새/DAN
+                   전술/NNC
+                   교리/NNC+을/PCA)
+           (VV 적용/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저희</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그때</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>새 전술 교리</term>
+	    </Arg>
+	    <Rel>
+	      <term>적용했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>적용되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>IBM 연구진들은 이 실험에서 미립자층이 사람 머리카락의 2 만분의 1 정도로 매우 얇게 합쳐졌다면서 "이는 다양한 형태의 소형 기억장치 구조에 적용될 수 있기 때문에 매우 흥미로운 기술"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ IBM/NFW
+           연구진/NNC+들/XSF+은/PAU)
+   (VP (S (NP-ADV 이/DAN
+                  실험/NNC+에서/PAD)
+          (S (NP-SBJ 미립자/NNC+층/XSF+이/PCA)
+             (VP (NP-ADV (NP 사람/NNC
+                             머리카락/NNC+의/PAN)
+                         (NP (NP 2/NNU
+                                 만/NNU+분/XSF+의/PAN)
+                             (NP 1/NNU
+                                 정도/NNC+으로/PAD)))
+                 (ADVP (ADVP 매우/ADV)
+                       (ADVP (ADV 얇/VJ+게/ECS)))
+                 (VP (VV 합치/VV+어지/XSV+었/EPF+다면서/ECS)))))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (NP-ADV (S (NP-SBJ 이/NPN+은/PAU)
+                                  (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                                          (S (NP-SBJ *T*-1)
+                                                             (ADJP (VJ 다양/NNC+하/XSJ+은/EAN))))
+                                                       (NP 형태/NNC+의/PAN))
+                                                   (NP 소형/NNC
+                                                       기억/NNC+장치/NNC
+                                                       구조/NNC+에/PAD))
+                                          (VV 적용/NNC+되/XSV+을/EAN))
+                                      (VX 수/NNX
+                                          있/VJ+기/ENM)))
+                               (NP 때문/NNX+에/PAD))
+                       (VP (NP (S (WHNP-2 *op*)
+                                  (S (NP-SBJ *T*-2)
+                                     (ADJP (ADVP 매우/ADV)
+                                           (ADJP 흥미롭/VJ+은/EAN))))
+                               (NP 기술/NNC))))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>이</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>다양한 형태의 소형 기억장치 구조</term>
+	    </Arg>
+	    <Rel>
+	      <term>적용될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>적용받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 중국은 한국으로부터 섬유류, 원피 등 221 개 품목에 대해 평균 30 퍼센트 인하된 특혜관세를 적용받을 수 있게 돼 양국간 교역이 크게 증대될 것으로 보인다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 중국/NPR+은/PAU)
+      (VP (VP (VP (NP-COMP 한국/NPR+으로부터/PAD)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-COMP (NP (NP (NP 섬유/NNC+류/XSF)
+                                              ,/SCM
+                                              (NP 원피/NNC))
+                                          (NP 등/NNX))
+                                      (NP 221/NNU
+                                          개/NNX
+                                          품목/NNC+에/PAD))
+                             대하/VV+어/ECS))
+                      (VP (NP-OBJ (S (NP-SBJ 평균/NNC
+                                             30/NNU
+                                             퍼센트/NNX)
+                                     (VP (VV 인하/NNC+되/XSV+은/EAN)))
+                                  (NP 특혜/NNC+관세/NNC+을/PCA))
+                          (VV 적용/NNC+받/XSV+을/EAN))))
+              (VX 수/NNX
+                  있/VJ+게/ECS))
+          되/VX+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ (NP 양국/NNC+간/XSF)
+                              (NP 교역/NNC+이/PCA))
+                      (VP (ADVP (ADV 크/VJ+게/ECS))
+                          (VP (VV 증대/NNC+되/XSV+을/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>으로부터</f>
+	      <term>한국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>섬유류, 원피 등 221 개 품목에 대해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>평균 30 퍼센트 인하된 특혜관세</term>
+	    </Arg>
+	    <Rel>
+	      <term>적용받을</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있게</term>
+	    </Aux>
+	    <Aux>
+	      <f>게</f>
+	      <term>돼</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,173 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>논의</lemma>
+    <comment>Frames file for '논의' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>논의.01</id>
+      <edef>discuss</edef>
+      <roleset>
+	<role argnum="0" argrole="discussant"/>
+	<role argnum="1" argrole="topic"/>
+	<role argnum="2" argrole="conversation partner"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>논의하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한편 브라히미 의장 내정자는 "오는 21 일 위원회 첫번째 회의를 열어 유엔 회원국 및 안전보장이사회 이사국들과 권고안 작성문제를 논의할 예정"이라고 밝혔다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ 브라히미/NPR
+              의장/NNC
+              내정자/NNC+은/PAU)
+      (VP (NP-COMP "/SLQ
+		   (S (NP-SBJ *pro*)
+		      (S (NP-SBJ *pro*)
+			 (VP (NP-ADV 오는/DAN
+					 21/NNU
+					 일/NNX)
+			     (VP (NP-OBJ 위원회/NNC
+					       첫/NNU+번째/NNX
+					       회의/NNC+을/PCA)
+				 열/VV+어/ECS)))
+		      (VP (NP-COMP (NP 유엔/NPR
+					   회원국/NNC)
+				   (ADCP 및/ADC)
+				   (NP 안전/NNC+보장/NNC+이사회/NNC
+					   이사국/NNC+들/XSF+과/PAD))
+			  (NP-OBJ 권고/NNC+안/NNC
+				      작성/NNC+문제/NNC+을/PCA)
+			  (VV 논의/NNC+하/XSV+을/EAN)))
+		   (NP 예정/NNC)
+		   "/SRQ
+		   이라고/PAD)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>오는 21 일 위원회 첫번째 회의를 열어</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>유엔 회원국 및 안전보장이사회 이사국들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>권고안 작성문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>논의할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>논의하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>백 외무상과 주 총리는 양국간 쌍무관계 및 다른 공동 관심사에 대해 논의하고 있다고 이 통신은 전했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP 백/NPR
+                         외무상/NNC+과/PCJ)
+                     (NP 주/NPR
+                         총리/NNC+은/PAU))
+             (VP (VP (S-COMP (NP-SBJ *pro*)
+			     (VP (NP-COMP (NP 양국/NNC+간/XSF
+						  쌍무/NNC+관계/NNC)
+					  (ADCP 및/ADC)
+					  (NP 다른/DAN
+						  공동/NNC
+						  관심사/NNC+에/PAD))
+				 대하/VV+어/ECS))
+                     (VV 논의/NNC+하/XSV+고/ECS))
+                 있/VX+다/EFN+고/PAD))
+   (S (NP-SBJ 이/DAN
+              통신/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>백 외무상과 주 총리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에 대해</f>
+	      <term>양국간 쌍무관계 및 다른 공동 관심사</term>
+	    </Arg>
+	    <Rel>
+	      <term>논의하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>논의되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인도 외무부 대변인은 이번 회담에서 중국의 M-11 미사일 파키스탄 공급 문제가 거론됐는지의 여부에 대해서는 논평을 거부했으나 중국-인도간의 국경문제는 논의되지 않았다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 인도/NPR
+           외무부/NNC
+           대변인/NNC+은/PAU)
+   (VP (VP (S (NP-SBJ *pro*)
+              (VP (NP-COMP (S (NP-ADV 이번/NNC
+                                      회담/NNC+에서/PAD)
+                              (S (NP-SBJ (NP 중국/NPR+의/PAN)
+                                         (NP M/NFW+-/SSY+11/NNU
+                                             미사일/NNC)
+                                         (NP 파키스탄/NPR
+                                             공급/NNC
+                                             문제/NNC+이/PCA))
+                                 (VP (VV 거론/NNC+되/XSV+었/EPF+는지/EFN+의/PAN))))
+                           (NP 여부/NNC+에/PAD))
+                  대하/VV+어서/ECS+은/PAU))
+           (VP (NP-OBJ 논평/NNC+을/PCA)
+               (VV 거부/NNC+하/XSV+었/EPF+으나/ECS)))
+       (VP (S-COMP (NP-SBJ (NP 중국/NPR
+                               -/SSY
+                               인도/NPR+의/PAN)
+                           (NP 국경/NNC+문제/NNC+은/PAU))
+                   (VP (VP (VV 논의/NNC+되/XSV+지/ECS))
+                       않/VX+었/EPF+다/EFN+고/PAD))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>중국-인도간의 국경문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>논의되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

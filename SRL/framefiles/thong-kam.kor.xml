@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>통감</lemma>
+    <comment>Frames file for '통감' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>통감.01</id>
+      <edef>realize fully</edef>
+      <roleset>
+	<role argnum="0" argrole="knower"/>
+	<role argnum="1" argrole="knowledge"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>통감하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조 대표는 이날 오전 부산 롯데호텔에서 열린 최고위원 회의후 "당의 대표로서 중요한 역할을 해야 한다는 사실을 통감하고 있으며 당 진로에 기여할 수 있는 방안으로 나에게 주어진 모든 기득권을 버리기로 했다"며 이같이 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 조/NPR
+           대표/NNC+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-ADV 이날/NNC
+                                 오전/NNC)
+                         (NP-ADV 부산/NPR
+                                 롯데/NPR+호텔/NNC+에서/PAD)
+                         (VP 열리/VV+은/EAN))))
+               (NP 최고/NNC+위원/NNC
+                   회의/NNC+후/NNC))
+       (S "/SLQ
+          (S (NP-SBJ *pro*)
+             (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                (VP (VP (NP-ADV (NP 당/NNC+의/PAN)
+                                                (NP 대표/NNC+으로서/PAD))
+                                        (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                       (S (NP-SBJ *T*-2)
+                                                          (ADJP (VJ 중요/NNC+하/XSJ+은/EAN))))
+                                                    (NP 역할/NNC+을/PCA))
+                                            하/VV+어야/ECS))
+                                    하/VX+는다는/EAN))
+                             (NP 사실/NNC+을/PCA))
+                     (VV 통감/NNC+하/XSV+고/ECS))
+                 있/VX+으며/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP-ADV (S (NP-SBJ *pro*)
+                            (VP (VP (NP-COMP 당/NNC
+                                             진로/NNC+에/PAD)
+                                    (VV 기여/NNC+하/XSV+을/EAN))
+                                (VX 수/NNX
+                                    있/VJ+는/EAN)))
+                         (NP 방안/NNC+으로/PAD))
+                 (VP (S-COMP (NP-SBJ *pro*)
+                             (VP (NP-OBJ (S (WHNP-3 *op*)
+                                            (S (NP-SBJ *T*-3)
+                                               (VP (NP-COMP 나/NPN+에게/PAD)
+                                                   (VV 주/VV+어지/XSV+은/EAN))))
+                                         (NP 모든/DAN
+                                             기득권/NNC+을/PCA))
+                                 버리/VV+기/ENM+으로/PAD))
+                     하/VV+었/EPF+다/EFN)))
+          "/SRQ
+          며/ECS)
+       (ADVP 이같이/ADV)
+       (VP (NP-OBJ *pro*)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>당의 대표로서 중요한 역할을 해야 한다는 사실</term>
+	    </Arg>
+	    <Rel>
+	      <term>통감하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있으며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

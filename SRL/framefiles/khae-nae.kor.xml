@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>캐내</lemma>
+    <comment>Frames file for '캐내' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>캐내.01</id>
+      <edef>pry</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing pried"/>
+	<role argnum="2" argrole="source"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>캐내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 자신이 20 여년 동안 해킹 대상으로 삼았던 컴퓨터망 가운데 단 하나만 제외하고 모두 해킹할 수 있었다면서 모토로라나 노키아 같은 유명 기업 직원들을 속여 핵심 정보들을 캐내는 것이 얼마나 쉬운 일이었는지를 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S (NP-SBJ 자신/NNC+이/PCA)
+          (VP (VP (S (NP-SBJ *pro*)
+                     (VP (NP-ADV (NP (S (WHNP-1 *op*)
+					(S (NP-SBJ *pro*)
+					   (VP (NP-ADV 20/NNU
+						       여/XSF+년/NNX
+						       동안/NNC)
+					       (VP (NP-OBJ *T*-1)
+						   (NP-COMP 해킹/NNC
+								대상/NNC+으로/PAD)
+						   삼/VV+었/EPF+던/EAN))))
+				     (NP 컴퓨터/NNC+망/NNC))
+				 (NP 가운데/NNC))
+			 (VP (NP-OBJ 단/DAN
+				       하나/NNU+만/PAU)
+			     (VV 제외/NNC+하/XSV+고/ECS))))
+                  (VP (NP-OBJ 모두/NPN)
+                      (VV 해킹/NNC+하/XSV+을/EAN)))
+              (VX 수/NNX
+                  있/VJ+었/EPF+다면서/ECS)))
+       (VP (S-OBJ (NP-SBJ (S (NP-SBJ *pro*)
+                             (VP (S (NP-SBJ *pro*)
+				    (VP (NP-OBJ (NP (S (WHNP-3 *op*)
+						       (S (NP-SBJ *T*-3)
+							  (ADJP (NP-COMP (NP 모토로라/NPR+이나/PCJ)
+									 (NP 노키아/NPR))
+								같/VJ+은/EAN)))
+						    (NP 유명/NNC
+							    기업/NNC))
+						(NP 직원/NNC+들/XSF+을/PCA))
+					속이/VV+어/ECS))
+                                 (VP (NP-OBJ 핵심/NNC
+                                             정보/NNC+들/XSF+을/PCA)
+                                     캐내/VV+는/EAN)))
+                          (NP 것/NNX+이/PCA))
+                  (VP (NP (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (ADJP (ADVP 얼마나/ADV)
+                                      (ADJP 쉽/VJ+은/EAN))))
+                          (NP 일/NNC+이/CO+었/EPF+는지/EFN+을/PCA))))
+           (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>모토로라나 노키아 같은 유명 기업 직원들을 속여</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>핵심 정보들</term>
+	    </Arg>
+	    <Rel>
+	      <term>캐내는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

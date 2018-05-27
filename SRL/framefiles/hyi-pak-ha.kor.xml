@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>희박하</lemma>
+    <comment>Frames file for '희박하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>희박하.01</id>
+      <edef>slight</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being slight"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>희박하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일부 소수 주지사들의 의견인 데다 부시와 매케인이 한치의 양보 없이 이전투구 싸움을 벌이고 있어 현재로서는 그 실현 가능성이 희박한 것이 사실이다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ *pro*)
+              (VP (NP (NP 일부/NNC
+                          소수/NNC
+                          주지사/NNC+들/XSF+의/PAN)
+                      (NP 의견/NNC+이/CO+은/EAN))))
+	   (NP 데/NNX+에다/PAD))
+   (S (NP-SBJ (NP 부시/NPR+과/PCJ)
+              (NP 매케인/NPR+이/PCA))
+      (VP (VP (ADVP (NP-COMP (NP 한/NNU+치/NNX+의/PAN)
+                             (NP 양보/NNC))
+                    없이/ADV)
+              (VP (NP-OBJ 이전투구/NNC
+                          싸움/NNC+을/PCA)
+                  벌이/VV+고/ECS))
+          있/VX+어/ECS))
+   (S (NP-SBJ (S (NP-ADV 현재/NNC+으로서/PAD+은/PAU)
+                 (S (NP-SBJ 그/DAN
+                            실현/NNC
+                            가능성/NNC+이/PCA)
+                    (ADJP 희박하/VJ+은/EAN)))
+              (NP 것/NNX+이/PCA))
+      (VP (NP 사실/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현재로서는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>그 실현 가능성</term>
+	    </Arg>
+	    <Rel>
+	      <term>희박한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

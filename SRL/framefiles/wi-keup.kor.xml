@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>위급</lemma>
+    <comment>Frames file for '위급' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>위급.01</id>
+      <edef>exigent</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being exigent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>위급하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 특무장, 지금도 야전 지역에 남아 있는 저의 전우들은 위급한 상태에 있다.</text>
+	  <parse>
+(S (NP-VOC 김/NPR
+           특무장/NNC)
+   ,/SCM
+   (S (NP-ADV 지금/NNC+도/PAU)
+      (S (NP-SBJ (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (VP (NP-COMP 야전/NNC
+                                        지역/NNC+에/PAD)
+                               남/VV+어/ECS)
+                           있/VX+는/EAN)))
+                 (NP (NP 너/NPN+의/PAN)
+                     (NP 전우/NNC+들/XSF+은/PAU)))
+         (ADJP (NP-COMP (S (WHNP-2 *op*)
+                           (S (NP-SBJ *T*-2)
+                              (ADJP (VJ 위급/NNC+하/XSJ+은/EAN))))
+                        (NP 상태/NNC+에/PAD))
+               있/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=상태</term>
+	    </Arg>
+	    <Rel>
+	      <term>위급한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

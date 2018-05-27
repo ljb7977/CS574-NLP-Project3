@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지니</lemma>
+    <comment>Frames file for '지니' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>지니.01</id>
+      <edef>have</edef>
+      <roleset>
+	<role argnum="0" argrole="thing having"/>
+	<role argnum="1" argrole="thing had"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지니다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>크렘린궁의 세르게이 야스트르젬스키 대변인은 이날 "체첸은 특수지위가 아닌 러시아의 여타 공화국과 동일한 지위를 지닐 것"이라면서 "이러한 지위에는 충분한 수준의 자치가 포함된다"고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ (NP 크렘린/NPR+궁/NNC+의/PAN)
+           (NP 세르게이/NPR
+               야스트르젬스키/NPR
+               대변인/NNC+은/PAU))
+   (VP (NP-ADV 이날/NNC)
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ 체첸/NPR+은/PAU)
+                      (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (ADJP (ADJP (NP-COMP 특수/NNC+지위/NNC+이/PCA)
+                                                        아니/VJ+은/EAN)
+                                                  (ADJP (NP-COMP (NP 러시아/NPR+의/PAN)
+                                                                 (NP 여타/NNC
+                                                                     공화국/NNC+과/PAD))
+                                                        (VJ 동일/NNC+하/XSJ+은/EAN)))))
+                                      (NP 지위/NNC+을/PCA))
+                              지니/VV+을/EAN)
+                          (VX 것/NNX))
+                      "/SRQ
+                      이/CO+라면서/ECS)
+                   (S "/SLQ
+                      (NP-COMP-3 이러한/DAN
+                                 지위/NNC+에/PAD+은/PAU)
+                      (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (ADJP 충분하/VJ+은/EAN)))
+                                     (NP 수준/NNC+의/PAN))
+                                 (NP 자치/NNC+이/PCA))
+                         (VP (NP-COMP *T*-3)
+                             (VV 포함/NNC+되/XSV+는다/EFN)))
+                      "/SRQ
+                      고/PAD))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>체첸</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>특수지위가 아닌 러시아의 여타 공화국과 동일한 지위</term>
+	    </Arg>
+	    <Rel>
+	      <term>지닐</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>까다롭</lemma>
+    <comment>Frames file for '까다롭' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>까다롭.01</id>
+      <edef>complicated</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being complicated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>까다롭다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>증시 통합은 개장 시간의 일치, 증시 운영 및 거래, 감독 체계의 조화 등 기술적인 사안과 이해 관계 조정이 맞물려 있는 까다로운 작업이지만 실현될 경우 3 국 증시의 시가 총액 규모는 2 조 2 천 160 억 유로로 크게 늘어난다.</text>
+	  <parse>
+(S (S (NP-SBJ 증시/NNC
+              통합/NNC+은/PAU)
+      (VP (NP (S (NP-SBJ (NP (NP (NP (NP (NP 개장/NNC
+                                             시간/NNC+의/PAN)
+                                         (NP 일치/NNC))
+                                     ,/SCM
+                                     (NP (NP 증시/NNC
+                                             운영/NNC)
+                                         (ADCP 및/ADC)
+                                         (NP 거래/NNC))
+                                     ,/SCM
+                                     (NP (NP 감독/NNC
+                                             체계/NNC+의/PAN)
+                                         (NP 조화/NNC)))
+                                 (NP 등/NNX))
+                             (NP (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP 기술/NNC+적/XSF+이/CO+은/EAN))))
+                                 (NP 사안/NNC+과/PCJ)))
+                         (NP 이해/NNC
+                             관계/NNC
+                             조정/NNC+이/PCA))
+                 (VP (VP 맞물리/VV+어/ECS)
+                     있/VX+는/EAN))
+              (NP (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (ADJP 까다롭/VJ+은/EAN)))
+                  (NP 작업/NNC+이/CO+지만/ECS)))))
+   (S (NP-ADV (S (NP-SBJ *pro*)
+                 (VP (VV 실현/NNC+되/XSV+을/EAN)))
+              (NP 경우/NNC))
+      (S (NP-SBJ (NP 3/NNU
+                     국/NNC
+                     증시/NNC+의/PAN)
+                 (NP 시가/NNC
+                     총액/NNC
+                     규모/NNC+은/PAU))
+         (VP (NP-ADV 2/NNU
+                     조/NNU
+                     2/NNU
+                     천/NNU
+                     160/NNU
+                     억/NNU
+                     유로/NNX+으로/PAD)
+             (ADVP (ADV 크/VJ+게/ECS))
+             (VP 늘어나/VV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=작업</term>
+	    </Arg>
+	    <Rel>
+	      <term>까다로운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

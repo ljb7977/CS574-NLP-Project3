@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>중요시</lemma>
+    <comment>Frames file for '중요시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>중요시.01</id>
+      <edef>attach importance to</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="attach importance to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>중요시되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>아사드 대통령의 건강 상태는 이스라엘과 시리아가 평화협상을 타결할 경우 막바지 과정에서 에후드 바라크 이스라엘 총리 및 빌 클린턴 미국 대통령과 아사드간의 회담이 필요할 것이란 점에서 중요시되고 있다.</text>
+	  <parse>
+(S (NP-SBJ (NP 아사드/NPR
+               대통령/NNC+의/PAN)
+           (NP 건강/NNC
+               상태/NNC+은/PAU))
+   (VP (VP (NP-ADV (S (NP-ADV (S (NP-SBJ (NP 이스라엘/NPR+과/PCJ)
+                                         (NP 시리아/NPR+이/PCA))
+                                 (VP (NP-OBJ 평화/NNC+협상/NNC+을/PCA)
+                                     (VV 타결/NNC+하/XSV+을/EAN)))
+                              (NP 경우/NNC))
+                      (NP-ADV 막바지/NNC
+                              과정/NNC+에서/PAD)
+                      (S (NP-SBJ (NP (NP 에후드/NPR
+                                         바라크/NPR
+                                         이스라엘/NPR
+                                         총리/NNC)
+                                     (ADCP 및/ADC)
+                                     (NP 빌/NPR
+                                         클린턴/NPR
+                                         미국/NPR
+                                         대통령/NNC+과/PCJ)
+                                     (NP 아사드/NPR+간/NNX+의/PAN))
+                                 (NP 회담/NNC+이/PCA))
+                         (VP (ADJP (VJ 필요/NNC+하/XSJ+을/EAN))
+                             (VX 것/NNX+이/CO+란/EAN))))
+                   (NP 점/NNX+에서/PAD))
+           (VP (VV 중요시/NNC+되/XSV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>아사드 대통령의 건강 상태</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>이스라엘과 시리아가 평화협상을 타결할 경우 막바지 과정에서 에후드 바라크 이스라엘 총리 및 빌 클린턴 미국 대통령과 아사드간의 회담이 필요할 것이란 점에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>중요시되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

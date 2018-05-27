@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고생</lemma>
+    <comment>Frames file for '고생' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>고생.01</id>
+      <edef>have a hard time</edef>
+      <roleset>
+	<role argnum="1" argrole="patient"/>
+	<role argnum="2" argrole="reason"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고생하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 고혈압과 당뇨로 고생하는 것으로 알려져 있으며 지난달에는 바이러스 감염으로 진단받아 사흘간 휴무하기도 했었다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (S (NP-SBJ 그/NPN+은/PAU)
+                          (VP (NP-COMP (NP 고혈압/NNC+과/PCJ)
+                                       (NP 당뇨/NNC+으로/PAD))
+                              (VV 고생/NNC+하/XSV+는/EAN)))
+                       (NP 것/NNX+으로/PAD))
+              (VV 알리/VV+어지/XSV+어/ECS))
+          있/VX+으며/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-ADV 지난달/NNC+에/PAD+은/PAU)
+                     (VP (NP-COMP 바이러스/NNC
+                                  감염/NNC+으로/PAD)
+                         (VV 진단/NNC+받/XSV+어/ECS))))
+              (VP (NP-OBJ 사흘/NNC+간/XSF)
+                  (VV 휴무/NNC+하/XSV+기/ENM+도/PAU)))
+          하/VX+었었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>고혈압과 당뇨</term>
+	    </Arg>
+	    <Rel>
+	      <term>고생하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>서명</lemma>
+    <comment>Frames file for '서명' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>서명.01</id>
+      <edef>sign</edef>
+      <roleset>
+	<role argnum="0" argrole="signer"/>
+	<role argnum="1" argrole="document"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>서명하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한국과 중국 두 나라는 10 일 오전 9 시 30 분(한국시간 10 시 30 분) 베이징(북경)에서 중국의 방콕협정 가입을 위해 한-중 양국간 특혜관세인 양허관세 적용에 관한 양해각서에 서명했다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP 한국/NPR+과/PCJ)
+               (NP 중국/NPR))
+           (NP 두/NNU
+               나라/NNC+은/PAU))
+   (VP (NP-ADV 10/NNU
+               일/NNX
+               오전/NNC
+               9/NNU
+               시/NNX
+               30/NNU
+               분/NNX
+               (PRN -LRB-/SLQ
+                    (NP 한국/NPR+시간/NNC)
+                    (NP 10/NNU
+                        시/NNX
+                        30/NNU
+                        분/NNX)
+                    -RRB-/SRQ))
+       (NP-ADV 베이징/NPR
+               (PRN -LRB-/SLQ
+                    (NP 북경/NPR)
+                    -RRB-/SRQ)
+               에서/PAD)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (NP 중국/NPR+의/PAN)
+                      (NP 방콕/NPR+협정/NNC
+                          가입/NNC+을/PCA))
+              위하/VV+어/ECS))
+       (VP (NP-COMP (S (WHNP-2 *op*)
+                       (S (NP-SBJ *T*-2)
+                          (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                              (S (NP-SBJ *T*-1)
+                                                 (VP (NP (NP 한/NPR
+                                                             -/SSY
+                                                             중/NPR
+                                                             양국/NNC+간/XSF)
+                                                         (NP 특혜/NNC+관세/NNC+이/CO+은/EAN)))))
+                                           (NP 양허/NNC+관세/NNC))
+                                       (NP 적용/NNC+에/PAD))
+                              관하/VV+은/EAN)))
+                    (NP 양해/NNC+각서/NNC+에/PAD))
+           (VV 서명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>한국과 중국 두 나라</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>10 일 오전 9 시 30 분(한국시간 10 시 30 분)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>베이징(북경)에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>중국의 방콕협정 가입을 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>한-중 양국간 특혜관세인 양허관세 적용에 관한 양해각서</term>
+	    </Arg>
+	    <Rel>
+	      <term>서명했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

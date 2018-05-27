@@ -1,0 +1,92 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>퍼붓</lemma>
+    <comment>Frames file for '퍼붓' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>퍼붓.01</id>
+      <edef>pour</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing poured"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>퍼붓다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 교량을 파괴하기 위해 저희 포대는 포탄을 많이 퍼부었습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ *pro*)
+                 (VP (NP-OBJ 그/DAN
+                             교량/NNC+을/PCA)
+                     (VV 파괴/NNC+하/XSV+기/ENM)))
+          위하/VV+어/ECS))
+   (S (NP-SBJ 저희/NPN
+              포대/NNC+은/PAU)
+      (VP (NP-OBJ 포탄/NNC+을/PCA)
+          (VP (ADVP 많이/ADV)
+              (VP 퍼붓/VV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>그 교량을 파괴하기 위해</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저희 포대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>포탄</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>많이</term>
+	    </Arg>
+	    <Rel>
+	      <term>퍼부었습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>퍼붓다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>비가 퍼붓는 데도 불구하고 우리는 계속 전진했습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 비/NNC+이/PCA)
+                      (VP 퍼붓/VV+는/EAN))
+                   (NP 데/NNX+도/PAU))
+          불구하/VV+고/ECS))
+   (S (NP-SBJ 우리/NPN+은/PAU)
+      (VP (ADVP 계속/ADV)
+          (VP (VV 전진/NNC+하/XSV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>비</term>
+	    </Arg>
+	    <Rel>
+	      <term>퍼붓는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

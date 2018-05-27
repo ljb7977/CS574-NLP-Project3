@@ -1,0 +1,178 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유지</lemma>
+    <comment>Frames file for '유지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>유지.01</id>
+      <edef>maintain</edef>
+      <roleset>
+	<role argnum="0" argrole="maintainer"/>
+	<role argnum="1" argrole="thing maintained"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>화기를 좋은 상태로 유지하기 위해서 예방 정비를 철저히 하지요.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-OBJ (NP-SBJ *pro*)
+                     (VP (NP-OBJ 화기/NNC+을/PCA)
+                         (NP-COMP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (ADJP 좋/VJ+은/EAN)))
+                                  (NP 상태/NNC+으로/PAD))
+                         (VV 유지/NNC+하/XSV+기/ENM)))
+              위하/VV+어서/ECS))
+       (VP (NP-OBJ-LV 예방/NNC
+                      정비/NNC+을/PCA)
+           (VP (ADVP 철저히/ADV)
+               (VP (LV 하/VV+지요/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>화기</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>좋은 상태</term>
+	    </Arg>
+	    <Rel>
+	      <term>유지하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>운전수들은 엔진 기름을 항상 적당하게 유지해야 합니다.</text>
+	  <parse>
+(S (NP-SBJ 운전수/NNC+들/XSF+은/PAU)
+   (VP (VP (NP-OBJ 엔진/NNC
+                   기름/NNC+을/PCA)
+           (VP (ADVP 항상/ADV)
+               (VP (S-COMP (NP-SBJ *pro*)
+                           (ADJP 적당하/VJ+게/ECS))
+                   (VV 유지/NNC+하/XSV+어야/ECS))))
+       하/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>운전수들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>엔진 기름</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>항상</term>
+	    </Arg>
+	    <Arg n="2">
+	      <term>적당하게</term>
+	    </Arg>
+	    <Rel>
+	      <term>유지해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>아야</f>
+	      <term>합니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>유지되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>탄약과 연유에 대한 우선 순위에는 융통성이 없으며, 비록 이것이 병사들로 하여금 식량을 약탈해야 하게 하더라도 그 우선 순위는 그대로 유지된다.</text>
+	  <parse>
+(S (S (NP-COMP-2 (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-COMP (NP 탄약/NNC+과/PCJ)
+                                    (NP 연유/NNC+에/PAD))
+                           대하/VV+은/EAN)))
+                 (NP 우선/NNC
+                     순위/NNC+에/PAD+은/PAU))
+      (S (NP-SBJ 융통성/NNC+이/PCA)
+         (ADJP (NP-COMP *T*-2)
+               없/VJ+으며/ECS)))
+   ,/SCM
+   (S (S (ADVP 비록/ADV)
+         (S (NP-SBJ 이것/NPN+이/PCA)
+            (VP (ADVP (NP-COMP 병사/NNC+들/XSF+으로/PAD)
+                      하여금/ADV)
+                (VP (NP-OBJ *pro*)
+                    (S-COMP (NP-SBJ *pro*)
+                            (VP (VP (NP-OBJ 식량/NNC+을/PCA)
+                                    (VV 약탈/NNC+하/XSV+어야/ECS))
+                                하/VX+게/ECS))
+                    하/VV+더라도/ECS))))
+      (S (NP-SBJ 그/DAN
+                 우선/NNC
+                 순위/NNC+은/PAU)
+         (VP (ADVP 그대로/ADV)
+             (VP (VV 유지/NNC+되/XSV+는다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>비록 이것이 병사들로 하여금 식량을 약탈해야 하게 하더라도</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>그 우선 순위</term>
+	    </Arg>
+	    <Arg n="2">
+	      <term>그대로</term>
+	    </Arg>
+	    <Rel>
+	      <term>유지된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>조공 부대와 고역 구분대 사이의 접촉은 무전으로 유지됩니다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP (NP 조공/NNC
+                       부대/NNC+과/PCJ)
+                   (NP 고역/NNC
+                       구분대/NNC))
+               (NP 사이/NNC+의/PAN))
+           (NP 접촉/NNC+은/PAU))
+   (VP (NP-ADV 무전/NNC+으로/PAD)
+       (VP (VV 유지/NNC+되/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>조공 부대와 고역 구분대 사이의 접촉</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>무전으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>유지됩니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

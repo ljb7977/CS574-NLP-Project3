@@ -1,0 +1,105 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>운영</lemma>
+    <comment>Frames file for '운영' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>운영.01</id>
+      <edef>operate</edef>
+      <roleset>
+	<role argnum="0" argrole="operator"/>
+	<role argnum="1" argrole="thing operated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>운영하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조 중사는 포병에서 운영하는 임시 공급소에서 공급 업무에 종사하고 있습니다.</text>
+	  <parse>
+(S (NP-SBJ 조/NPR
+           중사/NNC+은/PAU)
+   (VP (VP (NP-ADV (S (WHNP-1 *op*)
+                      (S (NP-SBJ 포병/NNC+에서/PCA)
+                         (VP (NP-OBJ *T*-1)
+                             (VV 운영/NNC+하/XSV+는/EAN))))
+                   (NP 임시/NNC
+                       공급소/NNC+에서/PAD))
+           (VP (NP-COMP 공급/NNC
+                        업무/NNC+에/PAD)
+               (VV 종사/NNC+하/XSV+고/ECS)))
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서</f>
+	      <term>포병</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=임시 공급소</term>
+	    </Arg>
+	    <Rel>
+	      <term>운영하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>운영되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>각 포병 사단을 지원하기 위해서 운영되는 병기 보급소라고 부르는 1개 병기 시설과 1개 임시 기동 탄약 보급소가 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (S-OBJ (NP-SBJ *pro*)
+                                   (VP (NP-OBJ 각/DAN
+                                               포병/NNC
+                                               사단/NNC+을/PCA)
+                                       (VV 지원/NNC+하/XSV+기/ENM)))
+                            위하/VV+어서/ECS))
+                     (VP (VV 운영/NNC+되/XSV+는/EAN)))))
+           (NP (S (WHNP-2 *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ *T*-2)
+                         (NP-COMP 병기/NNC
+                                  보급소/NNC+이라고/PAD)
+                         부르/VV+는/EAN)))
+               (NP (NP (NP 1/NNU
+                           개/NNX)
+                       (NP 병기/NNC
+                           시설/NNC+과/PCJ))
+                   (NP (NP 1/NNU
+                           개/NNX)
+                       (NP 임시/NNC
+                           기동/NNC
+                           탄약/NNC
+                           보급소/NNC+이/PCA)))))
+   (ADJP 있/VJ+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=병기 보급소라고 부르는 1개 병기 시설과 1개 임시 기동 탄약 보급소</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>각 포병 사단을 지원하기 위해서</term>
+	    </Arg>
+	    <Rel>
+	      <term>운영되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

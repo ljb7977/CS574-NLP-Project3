@@ -1,0 +1,128 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발사</lemma>
+    <comment>Frames file for '발사' based on sentences in Virginia and Newswire
+    Corpus</comment>
+    <frameset>
+      <id>발사.01</id>
+      <edef>fire</edef>
+      <roleset>
+	<role argnum="0" argrole="shooter"/>
+	<role argnum="1" argrole="thing shot"/>
+	<role argnum="2" argrole="goal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>적이 분대 밀집 사격 구역으로 다가올 때 기관총 점발 사격을 가하고, 적의 돌현 목표가 400 미터 안으로 들어올 때 적탄통도 발사합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-ADV (S (WHNP *op*)
+                      (S (NP-SBJ 적/NNC+이/PCA)
+                         (VP (NP-COMP 분대/NNC
+                                      밀집/NNC
+                                      사격/NNC
+                                      구역/NNC+으로/PAD)
+                             다가오/VV+을/EAN)))
+                   (NP 때/NNC))
+           (VP (NP-OBJ 기관총/NNC
+                       점발/NNC
+                       사격/NNC+을/PCA)
+               가하/VV+고/ECS))
+       ,/SCM
+       (VP (NP-ADV (S (WHNP *op*)
+                      (S (NP-SBJ (NP 적/NNC+의/PAN)
+                                 (NP 돌현/NNC
+                                     목표/NNC+이/PCA))
+                         (VP (NP-COMP 400/NNU
+                                      미터/NNX
+                                      안/NNC+으로/PAD)
+                             들어오/VV+을/EAN)))
+                   (NP 때/NNC))
+           (VP (NP-OBJ 적탄통/NNC+도/PAU)
+               (VV 발사/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>적의 돌현 목표가 400 미터 안으로 들어올 때</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>적탄통</term>
+	    </Arg>
+	    <Rel>
+	      <term>발사합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>발사되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지상에서 발사되는 강력한 레이저 빔은 우주 궤도를 돌면서 적군 지역의 상세한 사진을 찍는 첩보위성의 극히 민감한 광학 감지기의 기능을 마비시킬 수 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 지상/NNC+에서/PAD)
+                     (VP (VV 발사/NNC+되/XSV+는/EAN)))))
+           (NP (S (WHNP-2 *op*)
+                  (S (NP-SBJ *T*-2)
+                     (ADJP 강력하/VJ+은/EAN)))
+               (NP 레이저/NNC
+                   빔/NNC+은/PAU)))
+   (VP (VP (NP-OBJ (NP (NP (S (WHNP-4 *op*)
+                              (S (NP-SBJ *T*-4)
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-OBJ 우주/NNC
+                                                    궤도/NNC+을/PCA)
+                                            돌/VV+으면서/ECS))
+                                     (VP (NP-OBJ (NP 적군/NNC
+                                                     지역/NNC+의/PAN)
+                                                 (NP (S (WHNP-3 *op*)
+                                                        (S (NP-SBJ *T*-3)
+                                                           (ADJP (VJ 상세/NNC+하/XSJ+은/EAN))))
+                                                     (NP 사진/NNC+을/PCA)))
+                                         찍/VV+는/EAN))))
+                           (NP 첩보/NNC+위성/NNC+의/PAN))
+                       (NP (S (WHNP-5 *op*)
+                              (S (NP-SBJ *T*-5)
+                                 (ADJP (ADVP 극히/ADV)
+                                       (ADJP (VJ 민감/NNC+하/XSJ+은/EAN)))))
+                           (NP 광학/NNC
+                               감지기/NNC+의/PAN)))
+                   (NP 기능/NNC+을/PCA))
+           (VV 마비/NNC+시키/XSV+을/EAN))
+       (VX 수/NNX
+           있/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=강력한 레이저 빔</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>지상에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>발사되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

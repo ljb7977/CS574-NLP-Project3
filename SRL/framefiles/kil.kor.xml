@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>길</lemma>
+    <comment>Frames file for '길' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>길.01</id>
+      <edef>long</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being long"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>길다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>파키스탄에서 정치적 집회는 전통적으로 긴 행진과 확성기를 통한 격렬한 연설 등으로 진행된다.</text>
+	  <parse>
+(S (NP-ADV 파키스탄/NPR+에서/PAD)
+   (S (NP-SBJ 정치/NNC+적/XSF
+              집회/NNC+은/PAU)
+      (VP (NP-ADV 전통/NNC+적/XSF+으로/PAD)
+          (VP (NP-COMP (NP (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (ADJP 길/VJ+은/EAN)))
+                               (NP 행진/NNC+과/PCJ))
+                           (NP (S (WHNP-3 *op*)
+                                  (S (NP-SBJ *T*-3)
+                                     (VP (NP-OBJ 확성기/NNC+을/PCA)
+                                         통하/VV+은/EAN)))
+                               (NP (S (WHNP-2 *op*)
+                                      (S (NP-SBJ *T*-2)
+                                         (ADJP (VJ 격렬/NNC+하/XSJ+은/EAN))))
+                                   (NP 연설/NNC))))
+                       (NP 등/NNX+으로/PAD))
+              (VV 진행/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=행진</term>
+	    </Arg>
+	    <Rel>
+	      <term>긴</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

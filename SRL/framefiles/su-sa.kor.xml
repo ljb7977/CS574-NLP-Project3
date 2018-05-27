@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수사</lemma>
+    <comment>Frames file for '수사' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수사.01</id>
+      <edef>investigate</edef>
+      <roleset>
+	<role argnum="0" argrole="examiner"/>
+	<role argnum="1" argrole="thing examined"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>자민련 이규양 선대위 수석부대변인은 "선거를 코앞에 둔 시점에서 사정당국이 병역비리를 수사하겠다는 것은 정치적 의혹을 불러일으킬 소지가 많다"며 "선거가 끝난 후 철저한 수사를 해야 한다"고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 자민련/NPR
+           이규양/NPR
+           선대위/NNC
+           수석/NNC+부/XPF+대변인/NNC+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ (S (NP-SBJ (S (NP-ADV (S (WHNP *op*)
+                                           (S (NP-SBJ *pro*)
+                                              (VP (NP-OBJ 선거/NNC+을/PCA)
+                                                  (NP-COMP 코앞/NNC+에/PAD)
+                                                  두/VV+은/EAN)))
+                                        (NP 시점/NNC+에서/PAD))
+                                (S (NP-SBJ 사정/NNC+당국/NNC+이/PCA)
+                                   (VP (NP-OBJ 병역/NNC+비리/NNC+을/PCA)
+                                       (VV 수사/NNC+하/XSV+겠/EPF+다는/EAN))))
+                             (NP 것/NNX+은/PAU))
+                     (VP (NP-OBJ 정치/NNC+적/XSF
+                                 의혹/NNC+을/PCA)
+                         불러일으키/VV+을/EAN))
+                  (NP 소지/NNC+이/PCA))
+          (ADJP 많/VJ+다/EFN)
+          "/SRQ
+          며/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV (S (NP-SBJ 선거/NNC+이/PCA)
+                                      (VP 끝나/VV+은/EAN))
+                                   (NP 후/NNC))
+                           (VP (NP-OBJ (S (WHNP-1 *op*)
+                                          (S (NP-SBJ *T*-1)
+                                             (ADJP (VJ 철저/NNC+하/XSJ+은/EAN))))
+                                       (NP 수사/NNC+을/PCA))
+                               하/VV+어야/ECS))
+                       하/VX+는다/EFN)
+                   "/SRQ
+                   고/PAD)
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>선거를 코앞에 둔 시점에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>사정당국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>병역비리</term>
+	    </Arg>
+	    <Rel>
+	      <term>수사하겠다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

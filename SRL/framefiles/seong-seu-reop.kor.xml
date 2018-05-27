@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>성스럽</lemma>
+    <comment>Frames file for '성스럽' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>성스럽.01</id>
+      <edef>holy</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being holy"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>성스럽다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>탕 외교부장은 러시아가 분리주의 공화국 체첸에서 전개하는 전쟁은 인권문제가 아니라 "러시아의 주권과 영토보전을 지킬려는 성스러운 대의"에 따른 것이라고 말했다고 이 통신은 전했다.</text>
+	  <parse>
+(S (S-COMP-3 (NP-SBJ 탕/NPR
+                     외교/NNC+부장/NNC+은/PAU)
+             (VP (NP-COMP (S (S (NP-SBJ (S (WHNP-1 *op*)
+                                           (S (NP-SBJ 러시아/NPR+이/PCA)
+                                              (VP (NP-ADV 분리/NNC+주의/NNC
+                                                          공화국/NNC
+                                                          체첸/NPR+에서/PAD)
+                                                  (VP (NP-OBJ *T*-1)
+                                                      (VV 전개/NNC+하/XSV+는/EAN)))))
+                                        (NP 전쟁/NNC+은/PAU))
+                                (ADJP (NP-COMP 인권/NNC+문제/NNC+이/PCA)
+                                      아니/VJ+라/ECS))
+                             (S (NP-SBJ *pro*)
+                                (VP (NP-COMP "/SLQ
+                                             (S (NP-SBJ *pro*)
+                                                (VP (NP-OBJ (NP 러시아/NPR+의/PAN)
+                                                            (NP (NP 주권/NNC+과/PCJ)
+                                                                (NP 영토/NNC+보전/NNC+을/PCA)))
+                                                    지키/VV+을려는/EAN))
+                                             (NP (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *T*-2)
+                                                       (ADJP 성스럽/VJ+은/EAN)))
+                                                 (NP 대의/NNC))
+                                             "/SRQ
+                                             에/PAD)
+                                    따르/VV+은/EAN)))
+                          (NP 것/NNX+이라고/PAD))
+                 말하/VV+었/EPF+다/EFN+고/PAD))
+   (S (NP-SBJ 이/DAN
+              통신/NNC+은/PAU)
+      (VP (S-COMP *T*-3)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=대의</term>
+	    </Arg>
+	    <Rel>
+	      <term>성스러운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

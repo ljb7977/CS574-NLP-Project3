@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>후원</lemma>
+    <comment>Frames file for '후원' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>후원.01</id>
+      <edef>support</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="person or project supported"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>후원하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>카트먼 수석대표는 이번 준비회의에서 지난 70 년 일본항공(JAL)기를 납치한 뒤 북한에 체류하고 있는 적군파 테러범을 후원해 왔다는 점을 제기할 것이라고 소식통들은 전했다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-SBJ 카트먼/NPR
+                     수석/NNC+대표/NNC+은/PAU)
+             (VP (VP (NP-ADV 이번/NNC
+                             준비/NNC+회의/NNC+에서/PAD)
+                     (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                    (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                       (S (NP-SBJ *T*-1)
+                                                          (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                                             (VP (NP-ADV 지난/DAN
+                                                                                         70/NNU
+                                                                                         년/NNX)
+                                                                                 (VP (NP-OBJ 일본/NPR+항공/NNC
+                                                                                             (PRN -LRB-/SLQ
+                                                                                                  (NP JAL/NFW)
+                                                                                                  -RRB-/SRQ)
+                                                                                             기/XSF+을/PCA)
+                                                                                     (VV 납치/NNC+하/XSV+은/EAN))))
+                                                                          (NP 뒤/NNC))
+                                                                  (VP (NP-COMP 북한/NPR+에/PAD)
+                                                                      (VV 체류/NNC+하/XSV+고/ECS)))
+                                                              있/VX+는/EAN)))
+                                                    (NP 적군파/NPR
+                                                        테러범/NNC+을/PCA))
+                                            (VV 후원/NNC+하/XSV+어/ECS))
+                                        오/VX+었/EPF+다는/EAN))
+                                 (NP 점/NNX+을/PCA))
+                         (VV 제기/NNC+하/XSV+을/EAN)))
+                 (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+   (S (NP-SBJ 소식통/NNC+들/XSF+은/PAU)
+      (VP (S-COMP *T*-2)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지난 70 년 일본항공(JAL)기를 납치한 뒤 북한에 체류하고 있는 적군파 테러범</term>
+	    </Arg>
+	    <Rel>
+	      <term>후원해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

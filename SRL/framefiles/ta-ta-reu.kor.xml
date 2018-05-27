@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>다다르</lemma>
+    <comment>Frames file for '다다르' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>다다르.01</id>
+      <edef>reach</edef>
+      <roleset>
+	<role argnum="1" argrole="thing in motion"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>다다르다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>리마의 비상대책기구 직원은 "강물이 범람하고 있다"면서 리막강은 초당 120의 흐름을 유지할 수 있으나 이미 이달말 한계에 다다라 위험수준이라고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 리마/NPR+의/PAN)
+           (NP 비상/NNC+대책/NNC+기구/NNC
+               직원/NNC+은/PAU))
+   (VP (S-COMP (S "/SLQ
+                  (NP-SBJ 강물/NNC+이/PCA)
+                  (VP (VP (VV 범람/NNC+하/XSV+고/ECS))
+                      있/VX+다/EFN)
+		  "/SRQ
+		  면서/ECS)
+               (S (S (NP-SBJ 리막/NPR+강/NNC+은/PAU)
+                     (VP (VP (NP-OBJ (NP 초/NNC+당/NNX
+                                         120/NNU+의/PAN)
+                                     (NP 흐름/NNC+을/PCA))
+                             (VV 유지/NNC+하/XSV+을/EAN))
+                         (VX 수/NNX
+                             있/VJ+으나/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (ADVP 이미/ADV)
+                                (NP-ADV 이달말/NNC)
+                                (VP (NP-COMP 한계/NNC+에/PAD)
+                                    다다르/VV+어/ECS)))
+                         (VP (NP 위험/NNC+수준/NNC+이/CO+라/EFN+고/PAD))))))
+       (VV 설명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이미</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이달말</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>한계</term>
+	    </Arg>
+	    <Rel>
+	      <term>다다라</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

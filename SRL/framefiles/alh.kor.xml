@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>앓</lemma>
+    <comment>Frames file for '앓' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>앓.01</id>
+      <edef>suffer</edef>
+      <roleset>
+	<role argnum="0" argrole="thing suffering"/>
+	<role argnum="1" argrole="suffer from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>앓다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 자신이 10 대 시절부터 우울증을 앓았으며 현재도 의사의 치료를 받으며 몇 가지 약을 복용하고 있다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (NP-SBJ 자신/NNC+이/PCA)
+               (VP (VP (NP-ADV 10/NNU
+                               대/NNX
+                               시절/NNC+부터/PAU)
+                       (VP (NP-OBJ 우울증/NNC+을/PCA)
+                           앓/VV+었/EPF+으며/ECS))
+                   (VP (VP (VP (NP-ADV 현재/NNC+도/PAU)
+                               (VP (NP-OBJ (NP 의사/NNC+의/PAN)
+                                           (NP 치료/NNC+을/PCA))
+                                   받/VV+으며/ECS))
+                           (VP (NP-OBJ 몇/NNU
+                                       가지/NNX
+                                       약/NNC+을/PCA)
+                               (VV 복용/NNC+하/XSV+고/ECS)))
+                       있/VX+다/EFN+고/PAD)))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>자신</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>10 대 시절부터</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>우울증</term>
+	    </Arg>
+	    <Rel>
+	      <term>앓았으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

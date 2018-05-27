@@ -1,0 +1,180 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발효</lemma>
+    <comment>Frames file for '발효' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발효.01</id>
+      <edef>come into effect</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing coming into effect"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발효하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>파키스탄 군사정부 내무부는 금지령이 전국적으로 즉각 발효한다고 밝혔으나 유효기간에 대해서는 무기한이라는 보도와 특별히 기한이 언급되지 않았다는 보도가 엇갈리고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 파키스탄/NPR
+              군사/NNC+정부/NNC
+              내무부/NNC+은/PAU)
+      (VP (S-COMP (NP-SBJ 금지령/NNC+이/PCA)
+                  (VP (NP-ADV 전국/NNC+적/XSF+으로/PAD)
+                      (ADVP 즉각/ADV)
+                      (VP (VV 발효/NNC+하/XSV+는다/EFN+고/PAD))))
+          밝히/VV+었/EPF+으나/ECS))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP 유효/NNC+기간/NNC+에/PAD)
+             대하/VV+어서/ECS+은/PAU))
+      (S (NP-SBJ (NP (S (NP-SBJ *pro*)
+                        (VP (NP 무기한/NNC+이/CO+라는/EAN)))
+                     (NP 보도/NNC+과/PCJ))
+                 (NP (S (ADVP 특별히/ADV)
+                        (S (NP-SBJ 기한/NNC+이/PCA)
+                           (VP (VP (VV 언급/NNC+되/XSV+지/ECS))
+                               않/VX+었/EPF+다는/EAN)))
+                     (NP 보도/NNC+이/PCA)))
+         (VP (VP 엇갈리/VV+고/ECS)
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>금지령</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>전국적으로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>즉각</term>
+	    </Arg>
+	    <Rel>
+	      <term>발효한다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>발효되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 노동법안은 최고위 감독기구인 호헌평의회가 헌법과의 일치여부를 최종 판단한 후 그 효력이 발효된다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           노동법/NNC+안/NNC+은/PAU)
+   (S (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (VP (NP 최고위/NNC
+                                       감독/NNC+기구/NNC+이/CO+은/EAN))))
+                         (NP 호헌/NNC+평의회/NNC+이/PCA))
+                 (VP (NP-OBJ (NP 헌법/NNC+과/PAD+의/PAN)
+                             (NP 일치/NNC+여부/NNC+을/PCA))
+                     (VP (NP-ADV 최종/NNC)
+                         (VP (VV 판단/NNC+하/XSV+은/EAN)))))
+              (NP 후/NNC))
+      (S (NP-SBJ 그/DAN
+                 효력/NNC+이/PCA)
+         (VP (VV 발효/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>이 노동법안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>최고위 감독기구인 호헌평의회가 헌법과의 일치여부를 최종 판단한 후</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>그 효력</term>
+	    </Arg>
+	    <Rel>
+	      <term>발효된다</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>발효시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>외교부의 한 관계자는 "우리의 어업 이익을 보호하기 위해 가급적 조속한 시일내에 한-중 어업협정을 발효시키는 것이 유리하다"면서 "협상 과정에서 우리 어민들의 이익이 최대한 보장될 수 있도록 최선을 다할 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 외교부/NNC+의/PAN)
+           (NP 한/NNU
+               관계자/NNC+은/PAU))
+   (VP (S "/SLQ
+          (S (NP-SBJ *pro*)
+             (VP (S-OBJ (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP 우리/NPN+의/PAN)
+                                    (NP 어업/NNC
+                                        이익/NNC+을/PCA))
+                            (VV 보호/NNC+하/XSV+기/ENM)))
+                 위하/VV+어/ECS))
+          (S (NP-SBJ (S (NP-SBJ *pro*)
+                        (VP (NP-ADV (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (ADJP (NP-ADV 가급적/NNC)
+                                                (ADJP 조속하/VJ+은/EAN))))
+                                    (NP 시일/NNC+내/NNX+에/PAD))
+                            (VP (NP-OBJ 한/NPR
+                                        -/SSY
+                                        중/NPR
+                                        어업/NNC+협정/NNC+을/PCA)
+                                (VV 발효/NNC+시키/XSV+는/EAN))))
+                     (NP 것/NNX+이/PCA))
+             (ADJP (VJ 유리/NNC+하/XSJ+다/EFN)))
+          "/SRQ
+          면서/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV 협상/NNC
+                                   과정/NNC+에서/PAD)
+                           (S (NP-SBJ (NP 우리/NPN
+                                          어민/NNC+들/XSF+의/PAN)
+                                      (NP 이익/NNC+이/PCA))
+                              (VP (VP (NP-ADV 최대한/NNC)
+                                      (VP (VV 보장/NNC+되/XSV+을/EAN)))
+                                  (VX 수/NNX
+                                      있/VJ+도록/ECS)))
+                           (VP (NP-OBJ 최선/NNC+을/PCA)
+                               다하/VV+을/EAN))
+                       (VX 것/NNX))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>가급적 조속한 시일내에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>한-중 어업협정</term>
+	    </Arg>
+	    <Rel>
+	      <term>발효시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

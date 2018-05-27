@@ -1,0 +1,185 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>반박</lemma>
+    <comment>Frames file for '반박' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>반박.01</id>
+      <edef>refute</edef>
+      <roleset>
+	<role argnum="0" argrole="refuter"/>
+	<role argnum="1" argrole="thing refuted"/>
+	<role argnum="2" argrole="opponent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>반박하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>정 대변인은 또 "오늘 중소기업인들의 입당은 중소기업 정책과 미래를 책임질 정당이 민주당뿐이라는 사실을 입증하는 것"이라고 반박했다.</text>
+	  <parse>
+(S (NP-SBJ 정/NPR
+           대변인/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (NP-COMP "/SLQ
+                    (S (NP-SBJ (NP 오늘/NNC)
+                               (NP (NP 중소기업인/NNC+들/XSF+의/PAN)
+                                   (NP 입당/NNC+은/PAU)))
+                       (VP (NP-OBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (VP (NP-OBJ (NP 중소기업/NNC)
+                                                                (NP (NP 정책/NNC+과/PCJ)
+                                                                    (NP 미래/NNC+을/PCA)))
+                                                        책임지/VV+을/EAN)))
+                                              (NP 정당/NNC+이/PCA))
+                                      (VP (NP 민주당/NPR+뿐/NNX+이/CO+라는/EAN)))
+                                   (NP 사실/NNC+을/PCA))
+                           (VV 입증/NNC+하/XSV+는/EAN)))
+                    (NP 것/NNX)
+                    "/SRQ
+                    이라고/PAD)
+           (VV 반박/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>정 대변인</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>"오늘 중소기업인들의 입당은 중소기업 정책과 미래를 책임질 정당이 민주당뿐이라는 사실을 입증하는 것"이라</term>
+	    </Arg>
+	    <Rel>
+	      <term>반박했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>반박하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 변호인측은 최종 변론에서 그녀가 법을 위반했다는 주장을 반박하고 그녀가 고어 부통령과의 긴밀한 친분관계 때문에 기소됐다고 말했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 변호인/NNC+측/XSF+은/PAU)
+      (VP (NP-ADV 최종/NNC
+                  변론/NNC+에서/PAD)
+          (VP (VP (NP-OBJ (S (NP-SBJ 그녀/NPN+이/PCA)
+                             (VP (NP-OBJ 법/NNC+을/PCA)
+                                 (VV 위반/NNC+하/XSV+었/EPF+다는/EAN)))
+                          (NP 주장/NNC+을/PCA))
+                  (VV 반박/NNC+하/XSV+고/ECS))
+              (VP (S-COMP (NP-SBJ 그녀/NPN+이/PCA)
+                          (VP (NP-ADV (NP (NP 고어/NPR
+                                              부통령/NNC+과/PAD+의/PAN)
+                                          (NP (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (ADJP 긴밀하/VJ+은/EAN)))
+                                              (NP 친분/NNC+관계/NNC)))
+                                      (NP 때문/NNC+에/PAD))
+                              (VP (VV 기소/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))
+                  말하/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>변호인측</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>최종 변론에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그녀가 법을 위반했다는 주장</term>
+	    </Arg>
+	    <Rel>
+	      <term>반박하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>반박하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>채권단 고위관계자는 이날 "법원이 평가한 존속가치가 1 조 2 천억원인데 그 절반도 안되는 헐값에 인수하겠다는 것은 어불성설"이라며 "현재 르노측 입장을 반박할 대응자료를 준비 중"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 채권단/NNC
+           고위/NNC+관계자/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (S "/SLQ
+          (S (NP-SBJ (S (WHNP-1 *op*)
+                        (S (NP-SBJ 법원/NNC+이/PCA)
+                           (VP (NP-OBJ *T*-1)
+                               (VV 평가/NNC+하/XSV+은/EAN))))
+                     (NP 존속/NNC+가치/NNC+이/PCA))
+             (VP (NP 1/NNU
+                     조/NNU
+                     2/NNU
+                     천억/NNU+원/NNX+이/CO+은데/ECS)))
+          (S (NP-SBJ (S (NP-SBJ *pro*)
+                        (VP (NP-ADV (S (NP-SBJ *pro*)
+                                       (VP (NP-COMP 그/NPN
+                                                    절반/NNC+도/PAU)
+                                           안되/VV+는/EAN))
+                                    (NP 헐값/NNC+에/PAD))
+                            (VP (NP-OBJ *pro*)
+                                (VV 인수/NNC+하/XSV+겠/EPF+다는/EAN))))
+                     (NP 것/NNX+은/PAU))
+             (VP (NP 어불성설/NNC)))
+          "/SRQ
+          이/CO+라며/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (NP (S (NP-SBJ *pro*)
+                              (VP (NP-ADV 현재/NNC)
+                                  (VP (NP-OBJ (S (WHNP *op*)
+						 (S (NP-SBJ *pro*)
+						    (VP (NP-OBJ 르노/NPR+측/XSF
+								    입장/NNC+을/PCA)
+							(VV 반박/NNC+하/XSV+을/EAN))))
+					      (NP 대응/NNC+자료/NNC+을/PCA))
+				      (VV 준비/NNC))))
+                           (NP 중/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>르노측 입장</term>
+	    </Arg>
+	    <Rel>
+	      <term>반박할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,424 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>오르</lemma>
+    <comment>Frames file for '오르' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>오르.01</id>
+      <edef>rise</edef>
+      <roleset>
+	<role argnum="0" argrole="thing causing rise"/>
+	<role argnum="1" argrole="thing rising"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>오르다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	  <mapitem src="np-comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>서울-파리, 서울-런던 등 유럽 노선(3 개월 왕복)은 122 만원에서 125 만원으로 올라 IMF 이전 요금의 95 퍼센트 수준에 이르게 됐다고 대한항공은 말했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP (NP (NP 서울/NPR
+                                 -/SSY
+                                 파리/NPR)
+                             ,/SCM
+                             (NP 서울/NPR
+                                 -/SSY
+                                 런던/NPR))
+                         (NP 등/NNX))
+                     (NP 유럽/NPR
+                         노선/NNC
+                         (PRN -LRB-/SLQ
+                              3/NNU
+                              개월/NNX
+                              왕복/NNC
+                              -RRB-/SRQ)
+                         은/PAU))
+             (VP (VP (VP (NP-COMP 122/NNU
+                                  만/NNU+원/NNX+에서/PAD)
+                         (NP-COMP 125/NNU
+                                  만/NNU+원/NNX+으로/PAD)
+                         오르/VV+어/ECS)
+                     (VP (NP-COMP (NP IMF/NFW
+                                      이전/NNC
+                                      요금/NNC+의/PAN)
+                                  (NP 95/NNU
+                                      퍼센트/NNX
+                                      수준/NNC+에/PAD))
+                         이르/VV+게/ECS))
+                 되/VX+었/EPF+다/EFN+고/PAD))
+   (S (NP-SBJ 대한/NPR+항공/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>서울-파리, 서울-런던 등 유럽 노선(3 개월 왕복)</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>122 만원</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>125 만원</term>
+	    </Arg>
+	    <Rel>
+	      <term>올라</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>올리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	  <mapitem src="np-comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>대한항공은 서울-로스앤젤레스 노선의 요금(이하 개인 왕복요금 기준)을 96 만원에서 105 만원으로 9.4 퍼센트 올리고 이 노선의 휴가시즌(7-8 월) 요금은 110 만원에서 120 만원으로 9.1 퍼센트 인상키로 했다.</text>
+	  <parse>
+(S (NP-SBJ 대한/NPR+항공/NNC+은/PAU)
+   (VP (VP (VP (NP-OBJ (NP 서울/NPR
+                           -/SSY
+                           로스앤젤레스/NPR
+                           노선/NNC+의/PAN)
+                       (NP 요금/NNC
+                           (PRN -LRB-/SLQ
+                                이하/NNC
+                                개인/NNC
+                                왕복/NNC+요금/NNC
+                                기준/NNC
+                                -RRB-/SRQ)
+                           을/PCA))
+               (NP-COMP 96/NNU
+                        만/NNU+원/NNX+에서/PAD)
+               (NP-COMP 105/NNU
+                        만/NNU+원/NNX+으로/PAD)
+               (NP-COMP 9.4/NNU
+                        퍼센트/NNX)
+               올리/VV+고/ECS)
+           (VP (NP-OBJ (NP 이/DAN
+                           노선/NNC+의/PAN)
+                       (NP 휴가/NNC+시즌/NNC
+                           (PRN -LRB-/SLQ
+                                7-8/NNU
+                                월/NNX
+                                -RRB-/SRQ)
+                           요금/NNC+은/PAU))
+               (NP-COMP 110/NNU
+                        만/NNU+원/NNX+에서/PAD)
+               (NP-COMP 120/NNU
+                        만/NNU+원/NNX+으로/PAD)
+               (NP-COMP 9.1/NNU
+                        퍼센트/NNX)
+               (VV 인상/NNC+하/XSV+기/ENM+으로/PAD)))
+       하/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>대한항공</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>서울-로스앤젤레스 노선의 요금(이하 개인 왕복요금 기준)</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>96 만원</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>105 만원</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>9.4 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>올리고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>오르.02</id>
+      <!-- one of (comment roleset) -->
+      <edef>place</edef>
+      <roleset>
+	<role argnum="0" argrole="thing placing"/>
+	<role argnum="1" argrole="thing placed"/>
+	<role argnum="2" argrole="place at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>오르다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>유럽 4 개국 순방길에 오른 김대중 대통령은 3 일 새벽(한국시간) 첫 방문국인 이탈리아 로마의 대통령궁에서 카를로 아첼리오 참피 대통령과 정상회담을 갖고 중소기업 분야에서 양국이 전략적 제휴를 하기로 했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP 유럽/NPR
+                              4/NNU
+                              개/NNX+국/NNX
+                              순방/NNC+길/NNC+에/PAD)
+                     오르/VV+은/EAN)))
+           (NP 김대중/NPR
+               대통령/NNC+은/PAU))
+   (VP (NP-ADV 3/NNU
+               일/NNX
+               새벽/NNC)
+       (PRN -LRB-/SLQ
+            한국/NPR+시간/NNC
+            -RRB-/SRQ)
+       (S (NP-ADV 첫/NNU
+                  방문국/NNC+이/CO+은/EAN
+                  이탈리아/NPR
+                  로마/NPR+의/PAN
+                  대통령/NNC+궁/NNC+에서/PAD)
+          (S (NP-SBJ *pro*)
+             (VP (NP-COMP 카를로/NPR
+                          아첼리오/NPR
+                          참피/NPR
+                          대통령/NNC+과/PAD)
+                 (NP-OBJ 정상/NNC+회담/NNC+을/PCA)
+                 갖/VV+고/ECS)))
+       (VP (NP-ADV 중소/NNC+기업/NNC
+                   분야/NNC+에서/PAD)
+           (VP (S-COMP (NP-SBJ 양국/NNC+이/PCA)
+		       (VP (NP-OBJ 전략/NNC+적/XSF
+				       제휴/NNC+을/PCA)
+			   (LV 하/VV+기/ENM+으로/PAD)))
+               하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=김대중 대통령</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>유럽 4 개국 순방길</term>
+	    </Arg>
+	    <Rel>
+	      <term>오른</term>
+	    </Rel>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>올리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>보고서는 가장 최악의 환경오염 업체로 미국에서 트럭과 스포츠카를 판매하는 일본의 이스즈사를 꼽았으며 이른바 `빅 3'에 속하는 다임러크라이슬러사와 포드사, 제너럴모터스사를 나란히 2, 3, 4 위에 올려 놨다.</text>
+	  <parse>
+(S (S (NP-SBJ 보고서/NNC+은/PAU)
+      (VP (NP-COMP (NP (ADVP 가장/ADV)
+                       (NP 최악/NNC+의/PAN))
+                   (NP 환경/NNC+오염/NNC
+                       업체/NNC+으로/PAD))
+          (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-ADV 미국/NPR+에서/PAD)
+                            (VP (NP-OBJ (NP 트럭/NNC+과/PCJ)
+                                        (NP 스포츠카/NNC+을/PCA))
+                                (VV 판매/NNC+하/XSV+는/EAN)))))
+                  (NP (NP 일본/NPR+의/PAN)
+                      (NP 이스즈/NPR+사/XSF+을/PCA)))
+          꼽/VV+었/EPF+으며/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-COMP (ADVP 이른바/ADV)
+                                         (NP `/SLQ
+                                             빅/NNC
+                                             3/NNU
+                                             '/SRQ
+                                             에/PAD))
+                                속하/VV+는/EAN)))
+                      (NP (NP 다임러크라이슬러/NPR+사/XSF+과/PCJ)
+                          (NP 포드/NPR+사/XSF)
+                          ,/SCM
+                          (NP 제너럴모터스/NPR+사/XSF+을/PCA)))
+              (VP (ADVP 나란히/ADV)
+                  (VP (NP-COMP (NP 2/NNU)
+                               ,/SCM
+                               (NP 3/NNU)
+                               ,/SCM
+                               (NP 4/NNU
+				   위/NNX+에/PAD))
+                      올리/VV+어/ECS)))
+          놓/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이른바 `빅 3'에 속하는 다임러크라이슬러사와 포드사, 제너럴모터스사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>나란히</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>2, 3, 4 위</term>
+	    </Arg>
+	    <Rel>
+	      <term>올려</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>놨다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>오르.03</id>
+      <edef>get</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing gotten"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>올리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김병현이 올 시즌 시범경기에서 1 점차 승리를 지켜 첫 세이브를 올렸다.</text>
+	  <parse>
+(S (NP-SBJ 김병현/NPR+이/PCA)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 올/DAN
+                      시즌/NNC
+                      시범/NNC+경기/NNC+에서/PAD)
+              (VP (NP-OBJ (NP 1/NNU
+                              점/NNX+차/NNC)
+                          (NP 승리/NNC+을/PCA))
+                  지키/VV+어/ECS)))
+       (VP (NP-OBJ 첫/DAN
+                   세이브/NNC+을/PCA)
+           올리/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>김병현</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>올 시즌 시범경기에서 1 점차 승리를 지켜</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>첫 세이브</term>
+	    </Arg>
+	    <Rel>
+	      <term>올렸다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>오르.04</id>
+      <edef>enthusiastic</edef>
+      <roleset>
+	<role argnum="0" argrole="thing enthusiastic"/>
+	<role argnum="1" argrole="heat"/>
+	<role argnum="2" argrole="enthusiastic about"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>올리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>고객들은 또 로이드 경영진들이 이런 점을 사전에 알고 있었으면서도 이를 속이고 잠재적 손실금을 보전하기 위해 전 세계 수천명의 신규 고객들을 유치하는 데 열을 올렸다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 고객/NNC+들/XSF+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (NP-SBJ 로이드/NPR
+                           경영진/NNC+들/XSF+이/PCA)
+                   (VP (VP (S (NP-SBJ *pro*)
+                              (VP (VP (NP-OBJ 이런/DAN
+                                              점/NNC+을/PCA)
+                                      (VP (NP-ADV 사전/NNC+에/PAD)
+                                          (VP 알/VV+고/ECS)))
+                                  있/VX+었/EPF+으면서/ECS+도/PAU))
+                           (VP (NP-OBJ 이/NPN+을/PCA)
+                               속이/VV+고/ECS))
+                       (VP (S (NP-SBJ *pro*)
+                              (VP (S-OBJ (NP-SBJ *pro*)
+                                         (VP (NP-OBJ (NP 잠재/NNC+적/XSF)
+                                                     (NP 손실금/NNC+을/PCA))
+                                             (VV 보전/NNC+하/XSV+기/ENM)))
+                                  위하/VV+어/ECS))
+                           (VP (NP-COMP (S (NP-SBJ *pro*)
+                                           (VP (NP-OBJ (NP 전/DAN
+							     세계/NNC
+							     수천/NNU+명/NNX+의/PAN)
+                                                       (NP 신규/NNC
+							       고객/NNC+들/XSF+을/PCA))
+                                               (VV 유치/NNC+하/XSV+는/EAN)))
+                                        (NP 데/NNX))
+                               (NP-OBJ 열/NNC+을/PCA)
+			       올리/VV+었/EPF+다/EFN+고/PAD))))
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>로이드 경영진들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>잠재적 손실금을 보전하기 위해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>전 세계 수천명의 신규 고객들을 유치하는 데</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>열</term>
+	    </Arg>
+	    <Rel>
+	      <term>올렸다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

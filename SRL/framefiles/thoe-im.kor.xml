@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>퇴임</lemma>
+    <comment>Frames file for '퇴임' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>퇴임.01</id>
+      <edef>retire</edef>
+      <roleset>
+	<role argnum="0" argrole="retiree"/>
+	<role argnum="1" argrole="former job"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>퇴임하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 재무부 장관에서 퇴임한 뒤 시티그룹의 공동회장을 맡고 있는 제임스 루빈(61)씨가 장관재직 때의 100 배에 달하는 보수를 받는 것으로 나타났다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                    (VP (NP-COMP 미국/NPR
+                                                                 재무부/NNC
+                                                                 장관/NNC+에서/PAD)
+                                                        (VV 퇴임/NNC+하/XSV+은/EAN)))
+                                                 (NP 뒤/NNC))
+                                         (VP (NP-OBJ (NP 시티/NPR+그룹/NNC+의/PAN)
+                                                     (NP 공동/NNC+회장/NNC+을/PCA))
+                                             맡/VV+고/ECS))
+                                     있/VX+는/EAN)))
+                           (NP 제임스/NPR
+                               루빈/NPR
+                               (PRN -LRB-/SLQ
+                                    61/NNU
+                                    -RRB-/SRQ)
+                               씨/NNX+이/PCA))
+                   (VP (NP-OBJ (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (NP-COMP (NP 장관/NNC+재직/NNC
+                                                      때/NNC+의/PAN)
+                                                  (NP 100/NNU
+                                                      배/NNX+에/PAD))
+                                         달하/VV+는/EAN)))
+                               (NP 보수/NNC+을/PCA))
+                       받/VV+는/EAN))
+                (NP 것/NNX+으로/PAD))
+       나타나/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>미국 재무부 장관</term>
+	    </Arg>
+	    <Rel>
+	      <term>퇴임한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

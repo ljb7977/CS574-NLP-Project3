@@ -1,0 +1,187 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가속화</lemma>
+    <comment>Frames file for '가속화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가속화.01</id>
+      <edef>accelerate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, causer"/>
+	<role argnum="1" argrole="thing accelerated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가속화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>카를로 아첼리아 참피 이탈리아 대통령은 7 일 유럽연합(EU)이 정치적 통합을 위한 노력을 가속화해야 한다면서 유럽 `헌법'의 제정을 촉구했다.</text>
+	  <parse>
+(S (NP-SBJ 카를로/NPR
+           아첼리아/NPR
+           참피/NPR
+           이탈리아/NPR
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV 7/NNU
+               일/NNX)
+       (S (NP-SBJ 유럽/NPR+연합/NNC
+                      (PRN -LRB-/SLQ
+                           EU/NFW
+                           -RRB-/SRQ)
+                      이/PCA)
+	  (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+			     (S (NP-SBJ *T*-1)
+				(VP (NP-OBJ 정치/NNC+적/XSF
+                                                통합/NNC+을/PCA)
+				    위하/VV+은/EAN)))
+			  (NP 노력/NNC+을/PCA))
+		  (VV 가속화/NNC+하/XSV+어야/ECS))
+	      하/VX+는다면서/ECS))
+       (VP (NP-OBJ (NP 유럽/NPR
+                           `/SLQ
+                           헌법/NNC
+                           '/SRQ
+                           의/PAN)
+		   (NP 제정/NNC+을/PCA))
+	   (VV 촉구/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>유럽연합(EU)</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>정치적 통합을 위한 노력</term>
+	    </Arg>
+	    <Rel>
+	      <term>가속화해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다면서</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<comment>자료에는 없지만, Arg1이 주어로 오는 frame도 있다.</comment>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>가속화되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 연구보고서는 "북한이 정치체제와 별개로 경제체제는 시장경제를 도입할 가능성을 배제할 수 없다"면서 "이 경우 농민시장의 발전은 가속화될 것으로 추측된다"고 분석했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           연구/NNC+보고서/NNC+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ *pro*)
+          (VP (VP (NP-OBJ (S (NP-SBJ 북한/NPR+이/PCA)
+                             (VP (NP-ADV (NP-COMP 정치/NNC+체제/NNC+과/PAD)
+                                         별개/NNC+으로/PAD)
+                                 (NP-ADV 경제/NNC+체제/NNC+은/PAU)
+				 (VP (NP-OBJ 시장/NNC+경제/NNC+을/PCA)
+				     (VV 도입/NNC+하/XSV+을/EAN))))
+                          (NP 가능성/NNC+을/PCA))
+                  (VV 배제/NNC+하/XSV+을/EAN))
+              (VX 수/NNX
+                  없/VJ+다/EFN))
+          "/SRQ
+          면서/ECS)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (S (NP-ADV 이/DAN
+						경우/NNC)
+				      (S (NP-SBJ (NP 농민/NNC+시장/NNC+의/PAN)
+						 (NP 발전/NNC+은/PAU))
+					 (VP (VV 가속화/NNC+되/XSV+을/EAN))))
+				   (NP 것/NNX+으로/PAD))
+                          (VV 추측/NNC+되/XSV+는다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 분석/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이 경우</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>농민시장의 발전</term>
+	    </Arg>
+	    <Rel>
+	      <term>가속화될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>가속화시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 연구팀을 지휘한 세실 델쿠르 박사는 태양광선속의 자외선이 수정체의 혼탁을 가속화시키는 것으로 생각된다고 말하고 백내장은 태양 노출이 오래동안 축적되어 발생하기 때문에 어린시절의 과다한 햇빛 노출도 경계해야 한다고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-OBJ 이/DAN
+                             연구/NNC+팀/NNC+을/PCA)
+                     (VV 지휘/NNC+하/XSV+은/EAN))))
+           (NP 세실/NPR
+               델쿠르/NPR
+               박사/NNC+은/PAU))
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-COMP (S (NP-SBJ (NP 태양/NNC+광선/NNC+속/NNC+의/PAN)
+                                           (NP 자외선/NNC+이/PCA))
+                                   (VP (NP-OBJ (NP 수정체/NNC+의/PAN)
+                                               (NP 혼탁/NNC+을/PCA))
+                                       (VV 가속화/NNC+시키/XSV+는/EAN)))
+                                (NP 것/NNX+으로/PAD))
+                       (VV 생각/NNC+되/XSV+는다/EFN+고/PAD)))
+           말하/VV+고/ECS)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV (S (NP-SBJ 백내장/NNC+은/PAU)
+				      (VP (S (NP-SBJ 태양/NNC
+							 노출/NNC+이/PCA)
+					     (VP (NP-ADV 오래/NNC+동안/NNX)
+						 (VP (VV 축적/NNC+되/XSV+어/ECS))))
+					  (VP (VV 발생/NNC+하/XSV+기/ENM))))
+                                   (NP 때문/NNX+에/PAD))
+                           (VP (NP-OBJ (NP 어린/NNC+시절/NNC+의/PAN)
+                                       (NP (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (ADJP (VJ 과다/NNC+하/XSJ+은/EAN))))
+                                           (NP 햇빛/NNC
+                                               노출/NNC+도/PAU)))
+                               (VV 경계/NNC+하/XSV+어야/ECS)))
+                       하/VX+는다/EFN+고/PAD))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>태양광선속의 자외선</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수정체의 혼탁</term>
+	    </Arg>
+	    <Rel>
+	      <term>가속화시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

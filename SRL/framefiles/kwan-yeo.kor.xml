@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>관여</lemma>
+    <comment>Frames file for '관여' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>관여.01</id>
+      <edef>concern</edef>
+      <roleset>
+	<role argnum="0" argrole="entity dealing with"/>
+	<role argnum="1" argrole="thing dealt with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>관여하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미셸 장관은 법원 판결에 정부가 관여할 수 없다는 기본 원칙을 거듭 강조하고 칠레의 전 군사 독재자 아우구스토 피노체트 사건에서는 신병 인도를 요구한 벨기에 정부가 사법절차의 당사자였으나 이번 사건은 정부와 무관하다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 미셸/NPR
+           장관/NNC+은/PAU)
+   (VP (VP (NP-OBJ (S (NP-COMP-1 법원/NNC
+                                 판결/NNC+에/PAD)
+                      (S (NP-SBJ 정부/NNC+이/PCA)
+                         (VP (VP (NP-COMP *T*-1)
+                                 (VV 관여/NNC+하/XSV+을/EAN))
+                             (VX 수/NNX
+                                 없/VJ+다는/EAN))))
+                   (NP 기본/NNC
+                       원칙/NNC+을/PCA))
+           (VP (ADVP 거듭/ADV)
+               (VP (VV 강조/NNC+하/XSV+고/ECS))))
+       (VP (S-COMP (S (NP-ADV (NP (NP (NP 칠레/NPR+의/PAN)
+                                      (NP 전/DAN
+                                          군사/NNC
+                                          독재자/NNC))
+                                  (NP 아우구스토/NPR
+                                      피노체트/NPR))
+                              (NP 사건/NNC+에서/PAD+은/PAU))
+                      (S (NP-SBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP (NP-OBJ 신병/NNC
+                                                   인도/NNC+을/PCA)
+                                           (VV 요구/NNC+하/XSV+은/EAN))))
+                                 (NP 벨기에/NPR
+                                     정부/NNC+이/PCA))
+                         (VP (NP (NP 사법/NNC+절차/NNC+의/PAN)
+                                 (NP 당사자/NNC+이/CO+었/EPF+으나/ECS)))))
+                   (S (NP-SBJ 이번/NNC
+                              사건/NNC+은/PAU)
+                      (ADJP (NP-COMP 정부/NNC+과/PAD)
+                            무관하/VJ+다/EFN+고/PAD)))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>법원 판결</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>정부</term>
+	    </Arg>
+	    <Rel>
+	      <term>관여할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

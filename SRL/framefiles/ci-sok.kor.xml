@@ -1,0 +1,230 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지속</lemma>
+    <comment>Frames file for '지속' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>지속.01</id>
+      <edef>continue</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing continued"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지속하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>백악관측은 이번 파키스탄 방문 의미에 대해 "민선정부가 수립되지 않고 있는 데 대한 우리의 심대한 우려에도 불구, 역내 주요국가와 대화를 지속해 가려는 뜻"이라고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 백악관/NPR+측/XSF+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP 이번/NNC
+                       파키스탄/NPR
+                       방문/NNC
+                       의미/NNC+에/PAD)
+              대하/VV+어/ECS))
+       (VP (NP-COMP "/SLQ
+                    (S (NP-SBJ *pro*)
+                       (VP (VP (S (NP-SBJ *pro*)
+                                  (VP (NP-COMP (S (WHNP-2 *op*)
+                                                  (S (NP-SBJ *T*-2)
+                                                     (VP (NP-COMP (S (NP-SBJ 민선/NNC+정부/NNC+이/PCA)
+                                                                     (VP (VP (VP (VV 수립/NNC+되/XSV+지/ECS))
+                                                                             않/VX+고/ECS)
+                                                                         있/VX+는/EAN))
+                                                                  (NP 데/NNX))
+                                                         대하/VV+은/EAN)))
+                                               (NP (NP 우리/NPN+의/PAN)
+                                                   (NP (S (WHNP-1 *op*)
+                                                          (S (NP-SBJ *T*-1)
+                                                             (ADJP 심대하/VJ+은/EAN)))
+                                                       (NP 우려/NNC+에/PAD+도/PAU))))
+                                      (VV 불구/NNC)))
+                               ,/SCM
+                               (NP-ADV 역내/NNC
+					   주요/NNC+국가/NNC+과/PAD)
+			       (VP (NP-OBJ 대화/NNC+을/PCA)
+				   (VV 지속/NNC+하/XSV+어/ECS)))
+                           가/VX+으려는/EAN))
+                    (NP 뜻/NNC)
+                    "/SRQ
+                    이라고/PAD)
+           (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>민선정부가 수립되지 않고 있는 데 대한 우리의 심대한 우려에도 불구</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>역내 주요국가와</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대화</term>
+	    </Arg>
+	    <Rel>
+	      <term>지속해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>가려는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>지속하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 뉴욕증시에서 15 일(현지시간) 첨단 기술주에서 자금이 빠져 `구경제' 종목으로 옮겨가면서 다우존스 산업평균 주가지수는 폭등을 하고 나스닥 지수는 사흘째 폭락세를 지속하며 신-구경제 종목간 폭등락이 엇갈렸다.</text>
+	  <parse>
+(S (S (NP-ADV 미국/NPR
+              뉴욕/NPR+증시/NNC+에서/PAD)
+      (NP-ADV 15/NNU
+              일/NNX
+              (PRN -LRB-/SLQ
+                   현지/NNC+시간/NNC
+                   -RRB-/SRQ))
+      (S (S (NP-COMP-1 첨단/NNC
+                       기술/NNC+주/NNC+에서/PAD)
+            (S (NP-SBJ 자금/NNC+이/PCA)
+               (VP (NP-COMP *T*-1)
+                   빠지/VV+어/ECS)))
+         (S (NP-SBJ *pro*)
+            (VP (NP-COMP `/SLQ
+                         구/XPF+경제/NNC
+                         '/SRQ
+                         종목/NNC+으로/PAD)
+                옮겨가/VV+으면서/ECS))))
+   (S (NP-SBJ 다우존스/NPR
+              산업/NNC+평균/NNC
+              주가/NNC+지수/NNC+은/PAU)
+      (VP (NP-OBJ 폭등/NNC+을/PCA)
+          하/VV+고/ECS))
+   (S (NP-SBJ 나스닥/NPR
+              지수/NNC+은/PAU)
+      (VP (NP-ADV 사흘/NNC+째/XSF)
+          (VP (NP-OBJ 폭락세/NNC+을/PCA)
+              (VV 지속/NNC+하/XSV+으며/ECS))))
+   (S (NP-SBJ 신/XPF
+              -/SSY
+              구/XPF+경제/NNC
+              종목/NNC+간/NNX
+              폭등락/NNC+이/PCA)
+      (VP 엇갈리/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>나스닥 지수</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>사흘째</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>폭락세</term>
+	    </Arg>
+	    <Rel>
+	      <term>지속하며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>지속되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>클린턴 행정부는 29 년만에 처음으로 지난 98 년 재정흑자를 낸 데 이어 99 년에는 아이젠하워 행정부 시절인 지난 50 년대 이후 처음으로 2 년 연속 흑자를 기록하는 등 재정 형편이 크게 개선되고 앞으로도 당분간은 흑자 행진이 지속될 것으로 보임에 따라 국채 상환에 나서기로 했다.</text>
+	  <parse>
+(S (NP-SBJ 클린턴/NPR
+           행정부/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-COMP (S (NP-COMP-2 (S (ADVP (NP-COMP (S (NP-SBJ *pro*)
+							 (VP (NP-ADV 29/NNU
+								     년/NNX+만/NNX+에/PAD)
+							     (NP-ADV 처음/NNC+으로/PAD)
+							     (NP-ADV 지난/DAN
+									 98/NNU
+									 년/NNX)
+							     (VP (NP-OBJ 재정/NNC+흑자/NNC+을/PCA)
+								 내/VV+은/EAN)))
+						      (NP 데/NNX))
+					     이어/ADV)
+				       (S (NP-SBJ *pro*)
+					  (VP (NP-ADV 99/NNU
+						      년/NNX+에/PAD+은/PAU)
+					      (NP-ADV (NP (S (WHNP-1 *op*)
+							     (S (NP-SBJ *T*-1)
+								(VP (NP 아이젠하워/NPR
+										  행정부/NNC
+										  시절/NNC+이/CO+은/EAN))))
+							  (NP 지난/DAN
+								  50/NNU
+								  년대/NNX))
+						      (NP 이후/NNC))
+					      (NP-ADV 처음/NNC+으로/PAD)
+					      (VP (NP-OBJ 2/NNU
+							  년/NNX
+							  연속/NNC
+							  흑자/NNC+을/PCA)
+						  (VV 기록/NNC+하/XSV+는/EAN)))))
+				    (NP 등/NNX))
+			 (S (NP-SBJ 재정/NNC
+					형편/NNC+이/PCA)
+			    (VP (ADVP (ADV 크/VJ+게/ECS))
+				(VP (NP-COMP *T*-2)
+				    (VV 개선/NNC+되/XSV+고/ECS)))))
+		      (S (NP-SBJ *pro*)
+			 (VP (NP-COMP (S (NP-ADV 앞/NNC+으로/PAD+도/PAU)
+					 (NP-ADV 당분간/NNC+은/PAU)
+					 (S (NP-SBJ 흑자/NNC
+							행진/NNC+이/PCA)
+					    (VP (VV 지속/NNC+되/XSV+을/EAN))))
+				      (NP 것/NNX+으로/PAD))
+			     보이/VV+음/ENM+에/PAD)))
+	      따르/VV+어/ECS))
+       (VP (S-COMP (NP-SBJ *pro*)
+		   (VP (NP-COMP 국채/NNC
+				    상환/NNC+에/PAD)
+		       나서/VV+기/ENM+으로/PAD))
+           하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>앞으로도</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>당분간은</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>흑자 행진</term>
+	    </Arg>
+	    <Rel>
+	      <term>지속될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

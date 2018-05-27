@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>저평가</lemma>
+    <comment>Frames file for '저평가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>저평가.01</id>
+      <edef>undervalue</edef>
+      <roleset>
+	<role argnum="0" argrole="thing undervaluing"/>
+	<role argnum="1" argrole="thing undervalued"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>저평가되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>금감원 관계자는 이와 관련, 대우증권 주가가 너무 저평가돼 있는 데다 서울투신과의 대우 콜지원 문제 등이 걸려 있어 설사 매각이 추진된다 하더라도 현단계에서는 어렵다고 말해 정부가 서둘러 대우증권을 매각할 뜻이 없음을 분명히 했다.</text>
+	  <parse>
+(S (S (NP-SBJ 금감원/NPR
+              관계자/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 이/NPN+과/PAD)
+                 (VV 관련/NNC)))
+          ,/SCM
+          (VP (S-COMP (S (NP-ADV (S (NP-SBJ 대우/NPR+증권/NNC
+                                            주가/NNC+이/PCA)
+                                    (VP (VP (ADVP 너무/ADV)
+                                            (VP (VV 저평가/NNC+되/XSV+어/ECS)))
+                                        있/VX+는/EAN))
+                                 (NP 데/NNX+다/PAU))
+                         (S (NP-SBJ (NP (NP 서울투신/NPR+과/PAD+의/PAN)
+                                        (NP 대우/NPR
+                                            콜지원/NNC
+                                            문제/NNC))
+                                    (NP 등/NNX+이/PCA))
+                            (VP (VP 걸리/VV+어/ECS)
+                                있/VX+어/ECS)))
+                      (S (NP-SBJ *pro*)
+                         (ADJP (S (NP-SBJ *pro*)
+                                  (VP (ADVP 설사/ADV)
+                                      (VP (S-COMP (NP-SBJ 매각/NNC+이/PCA)
+                                                  (VP (VV 추진/NNC+되/XSV+는다/EFN)))
+                                          하/VV+더라도/ECS)))
+                               (NP-ADV 현/XPF+단계/NNC+에서/PAD+은/PAU)
+                               (ADJP 어렵/VJ+다/EFN+고/PAD))))
+              말하/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ 정부/NNC+이/PCA)
+		 (ADJP (NP-COMP (S (NP-SBJ *pro*)
+				   (VP (S (NP-SBJ *pro*)
+					  (VP 서두르/VV+어/ECS))
+				       (VP (NP-OBJ 대우/NPR+증권/NNC+을/PCA)
+					   (VV 매각/NNC+하/XSV+을/EAN))))
+				(NP 뜻/NNC+이/PCA))
+		       (ADJP 없/VJ+음/ENM+을/PCA)))
+          (VP (ADVP 분명히/ADV)
+              (VP 하/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>대우증권 주가</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>너무</term>
+	    </Arg>
+	    <Rel>
+	      <term>저평가돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

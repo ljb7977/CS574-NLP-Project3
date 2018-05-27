@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소독</lemma>
+    <comment>Frames file for '소독' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>소독.01</id>
+      <edef>sanitize</edef>
+      <roleset>
+	<role argnum="0" argrole="cleaner"/>
+	<role argnum="1" argrole="thing disinfected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소독하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>병원 등 각급 의료기간들이 알코올 용기를 각 병상에 설치한다면 의료종사자들이 손을 더욱 자주 소독하기 때문에 병원당 40 퍼센트까지 혈액감염률을 낮출 수 있다고 웬젤 교수는 주장했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ (NP (NP 병원/NNC)
+                            (NP 등/NNX))
+                        (NP 각급/NNC
+                            의료/NNC+기간/NNC+들/XSF+이/PCA))
+                (VP (NP-OBJ 알코올/NNC
+                            용기/NNC+을/PCA)
+                    (NP-COMP 각/DAN
+                             병상/NNC+에/PAD)
+                    (VV 설치/NNC+하/XSV+는다면/ECS)))
+             (NP-ADV (S (NP-SBJ 의료/NNC+종사자/NNC+들/XSF+이/PCA)
+			(VP (NP-OBJ 손/NNC+을/PCA)
+			    (VP (ADVP (ADVP 더욱/ADV)
+				      (ADVP 자주/ADV))
+				(VP (VV 소독/NNC+하/XSV+기/ENM)))))
+                     (NP 때문/NNX+에/PAD))
+             (S (NP-SBJ *pro*)
+                (VP (VP (NP-COMP (NP 병원/NNC+당/XSF)
+				 (NP 40/NNU
+				     퍼센트/NNX+까지/PAU))
+                        (NP-OBJ 혈액/NNC+감염률/NNC+을/PCA)
+			낮추/VV+을/EAN)
+                    (VX 수/NNX
+                        있/VJ+다/EFN+고/PAD))))
+   (S (NP-SBJ 웬젤/NPR
+              교수/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>의료종사자들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>손</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더욱 자주</term>
+	    </Arg>
+	    <Rel>
+	      <term>소독하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

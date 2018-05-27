@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>위독하</lemma>
+    <comment>Frames file for '위독하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>위독하.01</id>
+      <edef>critical</edef>
+      <roleset>
+	<role argnum="1" argrole="thing critical"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>위독하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>학생과 교장은 모두 머리에 생명이 위독할 정도의 상처를 입고 헬리콥터로 병원으로 실려 갔다.</text>
+	  <parse>
+(S (NP-SBJ (NP 학생/NNC+과/PCJ)
+           (NP 교장/NNC+은/PAU))
+   (VP (ADVP 모두/ADV)
+       (VP (VP (NP-COMP 머리/NNC+에/PAD)
+	       (NP-OBJ (NP (S (NP-SBJ 생명/NNC+이/PCA)
+			      (ADJP 위독하/VJ+을/EAN))
+			   (NP 정도/NNC+의/PAN))
+		       (NP 상처/NNC+을/PCA))
+	       입/VV+고/ECS)
+	   (VP (NP-ADV 헬리콥터/NNC+으로/PAD)
+	       (VP (NP-COMP 병원/NNC+으로/PAD)
+		   (CV 실리/VV+어/ECS
+	               가/VV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>생명</term>
+	    </Arg>
+	    <Rel>
+	      <term>위독할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

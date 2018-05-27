@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>호송</lemma>
+    <comment>Frames file for '호송' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>호송.01</id>
+      <edef>escort</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity escorted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>호송하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전투기들이 수송기를 호송하러 원산 기지에 도착했다.</text>
+	  <parse>
+(S (NP-SBJ 전투기/NNC+들/XSF+이/PCA)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 수송기/NNC+을/PCA)
+              (VV 호송/NNC+하/XSV+으러/ECS)))
+       (VP (NP-COMP 원산/NPR
+                    기지/NNC+에/PAD)
+           (VV 도착/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>수송기</term>
+	    </Arg>
+	    <Rel>
+	      <term>호송하러</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

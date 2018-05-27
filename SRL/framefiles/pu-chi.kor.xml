@@ -1,0 +1,163 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부치</lemma>
+    <comment>Frames file for '부치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부치.01</id>
+      <edef>submit</edef>
+      <roleset>
+	<role argnum="0" argrole="giver"/>
+	<role argnum="1" argrole="thing given"/>
+	<role argnum="2" argrole="given to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>무가베 대통령은 지난달 비슷한 내용의 헌법 개정안을 국민투표에 부쳤다가 부결된 점을 감안, 이번 개정안은 집권당이 전체 150 석 가운데 147 석을 차지하고 있는 의회에서 통과시킬 계획이다.</text>
+	  <parse>
+(S (NP-SBJ 무가베/NPR
+           대통령/NNC+은/PAU)
+   (VP (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+                         (VP (NP-ADV 지난달/NNC)
+                             (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (ADJP 비슷하/VJ+은/EAN)))
+                                             (NP 내용/NNC+의/PAN))
+                                         (NP 헌법/NNC
+                                             개정안/NNC+을/PCA))
+                                 (NP-COMP 국민/NNC+투표/NNC+에/PAD)
+                                 부치/VV+었/EPF+다가/ECS)))
+                      (S (NP-SBJ *pro*)
+                         (VP (VV 부결/NNC+되/XSV+은/EAN))))
+                   (NP 점/NNC+을/PCA))
+           (VV 감안/NNC))
+       ,/SCM
+       (VP (NP (S (NP-OBJ-2 이번/NNC
+                            개정안/NNC+은/PAU)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ *T*-2)
+                         (NP-COMP (S (WHNP *op*)
+                                     (S (NP-SBJ 집권당/NNC+이/PCA)
+                                        (VP (VP (NP-OBJ (NP 전체/NNC
+                                                            150/NNU
+                                                            석/NNX
+                                                            가운데/NNC)
+                                                        (NP 147/NNU
+                                                            석/NNX+을/PCA))
+                                                (VV 차지/NNC+하/XSV+고/ECS))
+                                            있/VX+는/EAN)))
+                                  (NP 의회/NNC+에서/PAD))
+                         (VV 통과/NNC+시키/XSV+을/EAN))))
+               (NP 계획/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난달</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>비슷한 내용의 헌법 개정안</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>국민투표</term>
+	    </Arg>
+	    <Rel>
+	      <term>부쳤다가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>부치.02</id>
+      <edef>keep</edef>
+      <roleset>
+	<role argnum="0" argrole="keeper"/>
+	<role argnum="1" argrole="thing kept"/>
+	<role argnum="2" argrole="state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이탈리아 순방때는 람베르토 디니 외무장관의 3 월말 방북 문제를 놓고 우리측은 이 사실을 보안에 부쳤으나 달라마 총리가 정상회담 직후 기자회견에서 이를 공개하는 바람에 허를 찔린 우리측 외교안보팀이 뒤늦게 해명에 나서기도 했다.</text>
+	  <parse>
+(S (NP-ADV 이탈리아/NPR
+           순방/NNC+때/NNC+은/PAU)
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP 람베르토/NPR
+                      디니/NPR
+                      외무장관/NNC+의/PAN)
+                  (NP (NP 3/NNU
+                          월/NNX+말/NNX)
+                      (NP 방북/NNC
+                          문제/NNC+을/PCA)))
+          놓/VV+고/ECS))
+   (S (NP-SBJ 우리/NPN+측/XSF+은/PAU)
+      (VP (NP-OBJ 이/DAN
+                  사실/NNC+을/PCA)
+          (NP-COMP 보안/NNC+에/PAD)
+          부치/VV+었/EPF+으나/ECS))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-ADV (S (NP-SBJ 달라마/NPR
+                                           총리/NNC+이/PCA)
+                                   (VP (NP-ADV 정상/NNC+회담/NNC
+                                               직후/NNC)
+                                       (NP-ADV 기자/NNC+회견/NNC+에서/PAD)
+                                       (VP (NP-OBJ 이/NPN+을/PCA)
+                                           (VV 공개/NNC+하/XSV+는/EAN))))
+                                (NP 바람/NNX+에/PAD))
+                        (VP (NP-OBJ 허/NNC+을/PCA)
+                            찔리/VV+은/EAN))))
+              (NP 우리/NPN+측/XSF
+                  외교안보팀/NNC+이/PCA))
+      (VP (VP (ADVP (ADV 뒤늦/VJ+게/ECS))
+              (VP (NP-COMP 해명/NNC+에/PAD)
+                  나서/VV+기/ENM+도/PAU))
+          하/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이탈리아 순방때는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>람베르토 디니 외무장관의 3 월말 방북 문제를 놓고</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>우리측</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 사실</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>보안</term>
+	    </Arg>
+	    <Rel>
+	      <term>부쳤으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가져다주</lemma>
+    <comment>Frames file for '가져다주' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>가져다주.01</id>
+      <edef>bring</edef>
+      <roleset>
+	<role argnum="0" argrole="bringer"/>
+	<role argnum="1" argrole="thing brought"/>
+	<role argnum="2" argrole="brought to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가져다주다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>대대 공급반이 저희 포대에 탄약을 가져다주는 데 책임을 지고 있습니다.</text>
+	  <parse>
+(S (NP-SBJ 대대/NNC
+           공급반/NNC+이/PCA)
+   (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                       (VP (NP-COMP 저희/NPN
+                                    포대/NNC+에/PAD)
+                           (NP-OBJ 탄약/NNC+을/PCA)
+                           가져다주/VV+는/EAN))
+                    (NP 데/NNX))
+           (VP (NP-OBJ-LV 책임/NNC+을/PCA)
+               (LV 지/VV+고/ECS)))
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>저희 포대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>탄약</term>
+	    </Arg>
+	    <Rel>
+	      <term>가져다주는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잦</lemma>
+    <comment>Frames file for '잦' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>잦.01</id>
+      <edef>frequent</edef>
+      <roleset>
+	<role argnum="1" argrole="thing frequent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잦다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>자문위는 이날 공개된 보고서에서 이들 두 기구가 개발도상국에 득보다는 실이 되는 경우가 잦다는 점을 들어 규모를 대폭 축소하고 차관도 줄일 것을 촉구했다.</text>
+	  <parse>
+(S (NP-SBJ 자문위/NPR+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-ADV 이날/NNC)
+                         (VP (VV 공개/NNC+되/XSV+은/EAN)))))
+               (NP 보고서/NNC+에서/PAD))
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (S (NP-SBJ (S (NP-SBJ (NP 이/NPN+들/XSF)
+                                            (NP 두/NNU
+                                                기구/NNC+이/PCA))
+                                    (VP (NP-ADV 개발도상국/NNC+에/PAD)
+                                        (NP-ADV 득/NNC+보다/PAD+은/PAU)
+                                        (VP (NP-COMP 실/NNC+이/PCA)
+                                            되/VV+는/EAN)))
+                                 (NP 경우/NNC+이/PCA))
+                         (ADJP 잦/VJ+다는/EAN))
+                      (NP 점/NNX+을/PCA))
+              들/VV+어/ECS))
+       (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ 규모/NNC+을/PCA)
+                              (VP (ADVP 대폭/ADV)
+                                  (VP (VV 축소/NNC+하/XSV+고/ECS))))
+                          (VP (NP-OBJ 차관/NNC+도/PAU)
+                              줄이/VV+을/EAN)))
+                   (NP 것/NNX+을/PCA))
+           (VV 촉구/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이들 두 기구가 개발도상국에 득보다는 실이 되는 경우</term>
+	    </Arg>
+	    <Rel>
+	      <term>잦다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

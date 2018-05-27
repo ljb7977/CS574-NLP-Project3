@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>획득</lemma>
+    <comment>Frames file for '획득' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>획득.01</id>
+      <edef>acquire</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing acquired"/>
+	<role argnum="2" argrole="acquired from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>획득하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희들은 새 포를 쉽게 획득할 수 있었습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN+들/XSF+은/PAU)
+   (VP (VP (NP-OBJ 새/DAN
+                   포/NNC+을/PCA)
+           (VP (ADVP (ADV 쉽/VJ+게/ECS))
+               (VP (VV 획득/NNC+하/XSV+을/EAN))))
+       (VX 수/NNX
+           있/VJ+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>저희들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>새 포</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>쉽게</term>
+	    </Arg>
+	    <Rel>
+	      <term>획득할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있었습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>긴급 시엔 보충병을 붉은 청년 근위대에서 획득할 수 있습니다.</text>
+	  <parse>
+(S (NP-ADV 긴급/NNC
+           시/NNX+에/PAD+은/PAU)
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 보충병/NNC+을/PCA)
+              (NP-COMP 붉은/NPR
+                       청년/NPR
+                       근위대/NPR+에서/PAD)
+              (VV 획득/NNC+하/XSV+을/EAN))
+          (VX 수/NNX
+              있/VJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>긴급 시엔</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>보충병</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>붉은 청년 근위대</term>
+	    </Arg>
+	    <Rel>
+	      <term>획득할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

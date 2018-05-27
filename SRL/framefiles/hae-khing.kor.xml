@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>해킹</lemma>
+    <comment>Frames file for '해킹' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>해킹.01</id>
+      <edef>hack</edef>
+      <roleset>
+	<role argnum="0" argrole="hacker"/>
+	<role argnum="1" argrole="target"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>해킹하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그가 해킹하지 못한 유일한 사이트는 영국의 동료 해커가 운영하는 컴퓨터였다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (S (NP-SBJ 그/NPN+이/PCA)
+                    (VP (VP (NP-OBJ *T*-2)
+                            (VV 해킹/NNC+하/XSV+지/ECS))
+                        못하/VX+은/EAN))
+                 (S (NP-SBJ *T*-2)
+                    (ADJP (VJ 유일/NNC+하/XSJ+은/EAN)))))
+           (NP 사이트/NNC+은/PAU))
+   (VP (NP (S (WHNP-1 *op*)
+              (S (NP-SBJ (NP 영국/NPR+의/PAN)
+                         (NP 동료/NNC
+                             해커/NNC+이/PCA))
+                 (VP (NP-OBJ *T*-1)
+                     (VV 운영/NNC+하/XSV+는/EAN))))
+           (NP 컴퓨터/NNC+이/CO+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=사이트</term>
+	    </Arg>
+	    <Rel>
+	      <term>해킹하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못한</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

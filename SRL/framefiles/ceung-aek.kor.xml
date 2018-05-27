@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>증액</lemma>
+    <comment>Frames file for '증액' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>증액.01</id>
+      <edef>increase</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing increased"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>증액하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 중국이 앞으로 수년간 국방예산을 증액할 것으로 예상되지만 양안간의 군사력 균형을 크게 깨뜨릴 정도까지는 가지 않을 것으로 본다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-SBJ 중국/NPR+이/PCA)
+                                  (VP (NP-ADV 앞/NNC+으로/PAD)
+                                      (NP-ADV 수/XPF+년/NNX+간/XSF)
+                                      (VP (NP-OBJ 국방/NNC+예산/NNC+을/PCA)
+                                          (VV 증액/NNC+하/XSV+을/EAN))))
+                               (NP 것/NNX+으로/PAD))
+                      (VV 예상/NNC+되/XSV+지만/ECS)))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-SBJ *pro*)
+                                  (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                                                      (VP (NP-OBJ (NP 양안/NNC+간/XSF+의/PAN)
+                                                                  (NP 군사력/NNC
+                                                                      균형/NNC+을/PCA))
+                                                          (VP (ADVP (ADV 크/VJ+게/ECS))
+                                                              (VP 깨뜨리/VV+을/EAN))))
+                                                   (NP 정도/NNC+까지/PAU+은/PAU))
+                                          가/VV+지/ECS)
+                                      않/VX+을/EAN))
+                               (NP 것/NNX+으로/PAD))
+                      보/VV+는다/EFN+고/PAD)))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>앞으로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>수년간</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>국방예산</term>
+	    </Arg>
+	    <Rel>
+	      <term>증액할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

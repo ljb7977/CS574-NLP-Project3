@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>만연</lemma>
+    <comment>Frames file for '만연' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>만연.01</id>
+      <edef>spread</edef>
+      <roleset>
+	<role argnum="1" argrole="substance"/>
+	<role argnum="2" argrole="direction or location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>만연되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>중국 당국은 주룽지(주용기) 총리의 주도로 사회 전반에 만연돼 있는 부패 척결 운동에 착수, 지금까지 30 명 이상의 관리들을 비리 혐의로 구속했으며 자칭린(가경림) 베이징시 당서기의 부인 등 수백명이 조사를 받은 것으로 알려졌다.</text>
+	  <parse>
+(S (S (NP-SBJ 중국/NPR
+              당국/NNC+은/PAU)
+      (VP (NP-ADV (NP 주룽지/NPR
+                      (PRN -LRB-/SLQ
+                           주용기/NPR
+                           -RRB-/SRQ)
+                      총리/NNC+의/PAN)
+                  (NP 주도/NNC+으로/PAD))
+          (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (VP (NP-COMP 사회/NNC
+                                                  전반/NNC+에/PAD)
+                                         (VV 만연/NNC+되/XSV+어/ECS))
+                                     있/VX+는/EAN)))
+                           (NP 부패/NNC))
+                       (NP 척결/NNC
+                           운동/NNC+에/PAD))
+              (VV 착수/NNC))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV 지금/NNC+까지/PAU)
+          (VP (NP-OBJ (NP 30/NNU
+                          명/NNX
+                          이상/NNC+의/PAN)
+                      (NP 관리/NNC+들/XSF+을/PCA))
+              (VP (NP-ADV 비리/NNC
+                          혐의/NNC+으로/PAD)
+                  (VP (VV 구속/NNC+하/XSV+었/EPF+으며/ECS))))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ (NP (NP (NP (NP 자칭린/NPR
+                                              (PRN -LRB-/SLQ
+                                                   가경림/NPR
+                                                   -RRB-/SRQ))
+                                          (NP 베이징/NPR+시/NNC
+                                              당/NNC+서기/NNC+의/PAN))
+                                      (NP 부인/NNC))
+                                  (NP 등/NNX))
+                              (NP 수백/NNU+명/NNX+이/PCA))
+                      (VP (NP-OBJ 조사/NNC+을/PCA)
+                          받/VV+은/EAN))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=부패</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>사회 전반</term>
+	    </Arg>
+	    <Rel>
+	      <term>만연돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

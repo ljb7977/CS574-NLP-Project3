@@ -1,0 +1,123 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>당하</lemma>
+    <comment>Frames file for '당하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>당하.01</id>
+      <edef>suffer</edef>
+      <roleset>
+	<role argnum="1" argrole="entity suffering"/>
+	<role argnum="2" argrole="thing suffered"/>
+	<role argnum="3" argrole="source"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>당하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>인민군에서는 전사가 전투 중에 부상을 당하면 어떻게 하는가?</text>
+	  <parse>
+(S (NP-SBJ 인민군/NNC+에서/PCA+은/PAU)
+   (VP (S (NP-SBJ 전사/NNC+이/PCA)
+          (VP (NP-ADV 전투/NNC
+                      중/NNX+에/PAD)
+              (VP (NP-OBJ-LV 부상/NNC+을/PCA)
+                  (LV 당하/VV+으면/ECS))))
+       (VP (ADVP-COMP 어떻게/ADV)
+           하/VV+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>전사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전투 중에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>부상</term>
+	    </Arg>
+	    <Rel>
+	      <term>당하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>당하.02</id>
+      <edef>reasonable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being reasonable"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>당하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이들 의원은 대만이 원하는 무기를 판매함으로써 "미국은 안보를 확보하고 중국의 오판을 막을 수 있을 것"이라며 미국과의 무역협상이 원만하게 타결되지 않으면 대만을 무력으로 통일하겠다는 중국의 위협은 당치도 않는 것이라고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPN+들/XSF
+           의원/NNC+은/PAU)
+   (VP (S (S (NP-SBJ *pro*)
+	     (VP (NP-OBJ (S (WHNP-1 *op*)
+			    (S (NP-SBJ 대만/NPR+이/PCA)
+			       (VP (NP-OBJ *T*-1)
+				   원하/VV+는/EAN)))
+			 (NP 무기/NNC+을/PCA))
+		 (VV 판매/NNC+하/XSV+음/ENM+으로써/PAD)))
+          (S "/SLQ
+             (NP-SBJ 미국/NPR+은/PAU)
+             (VP (VP (VP (VP (NP-OBJ 안보/NNC+을/PCA)
+                             (VV 확보/NNC+하/XSV+고/ECS))
+                         (VP (NP-OBJ (NP 중국/NPR+의/PAN)
+                                     (NP 오판/NNC+을/PCA))
+                             막/VV+을/EAN))
+                     (VX 수/NNX
+			   있/VJ+을/EAN))
+                 (VX 것/NNX))
+             "/SRQ
+             이/CO+라며/ECS))
+       (VP (NP-COMP (S (NP-SBJ (S (NP-SBJ *pro*)
+                                  (VP (S (NP-SBJ (NP 미국/NPR+과/PAD+의/PAN)
+                                                 (NP 무역/NNC+협상/NNC+이/PCA))
+                                         (VP (VP (ADVP (ADV 원만하/VJ+게/ECS))
+                                                 (VP (VV 타결/NNC+되/XSV+지/ECS)))
+                                             않/VX+으면/ECS))
+                                      (VP (NP-OBJ 대만/NPR+을/PCA)
+                                          (VP (NP-ADV 무력/NNC+으로/PAD)
+                                              (VP (VV 통일/NNC+하/XSV+겠/EPF+다는/EAN))))))
+                               (NP (NP 중국/NPR+의/PAN)
+                                   (NP 위협/NNC+은/PAU)))
+                       (VP (ADJP 당하/VJ+지/ECS+도/PAU)
+                           않/VX+는/EAN))
+                    (NP 것/NNX+이/CO+라/EFN+고/PAD))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>미국과의 무역협상이 원만하게 타결되지 않으면 대만을 무력으로 통일하겠다는 중국의 위협</term>
+	    </Arg>
+	    <Rel>
+	      <term>당치도</term>
+	    </Rel>
+	    <Aux>
+	      <f>지도</f>
+	      <term>않는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

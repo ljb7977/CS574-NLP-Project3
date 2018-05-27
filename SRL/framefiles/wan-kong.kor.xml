@@ -1,0 +1,131 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>완공</lemma>
+    <comment>Frames file for '완공' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>완공.01</id>
+      <edef>complete</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing completed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>완공하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>주 베트남 한국대사관은 베트남의 남중부 도시 나창에 태권도 전용체육관을 완공해 17 일 준공식 겸 기증식을 갖는다고 발표했다.</text>
+	  <parse>
+(S (NP-SBJ 주/DAN
+           베트남/NPR
+           한국/NPR+대사관/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP-ADV (NP 베트남/NPR+의/PAN)
+                              (NP 남중부/NNC
+                                  도시/NNC
+                                  나창/NPR+에/PAD))
+                      (VP (NP-OBJ 태권도/NNC
+                                  전용/NNC+체육관/NNC+을/PCA)
+                          (VV 완공/NNC+하/XSV+어/ECS))))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-ADV 17/NNU
+                              일/NNX)
+                      (VP (NP-OBJ (NP 준공식/NNC)
+                                  (NP 겸/NNX)
+                                  (NP 기증식/NNC+을/PCA))
+                          갖/VV+는다/EFN+고/PAD))))
+       (VV 발표/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>베트남의 남중부 도시 나창에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>태권도 전용체육관</term>
+	    </Arg>
+	    <Rel>
+	      <term>완공해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>완공되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한국통신(사장 이계철)은 아시아, 유럽 63 개국 92 개 사업자가 참여해 3 년여동안 건설한 세계 최장의 해저 광케이블인 `제 7 국제 해저케이블(SEA-ME-WE3)'이 9 일 완공돼 본격 가동된다고 8 일 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 한국/NPR+통신/NNC
+           (PRN -LRB-/SLQ
+                (NP 사장/NNC
+                    이계철/NPR)
+                -RRB-/SRQ)
+           은/PAU)
+   (VP (S-COMP (NP-SBJ (S (WHNP-2 *op*)
+                          (S (S (NP-SBJ 아시아/NPR
+                                        ,/SCM
+                                        유럽/NPR
+                                        63/NNU
+                                        개국/NNX
+                                        92/NNU
+                                        개/NNX
+                                        사업자/NNC+이/PCA)
+                                (VP (NP-COMP *T*-2)
+                                    (VV 참여/NNC+하/XSV+어/ECS)))
+                             (S (NP-SBJ *pro*)
+                                (VP (NP-ADV 3/NNU
+                                            년/NNX+여/XSF+동안/NNX)
+                                    (VP (NP-OBJ *T*-2)
+                                        (VV 건설/NNC+하/XSV+은/EAN))))))
+                       (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP (NP 세계/NNC
+                                             최장/NNC+의/PAN)
+                                         (NP 해저/NNC
+                                             광케이블/NNC+이/CO+은/EAN)))))
+                           (NP `/SLQ
+                               제/DAN
+                               7/NNU
+                               국제/NNC
+                               해저/NNC+케이블/NNC
+                               (PRN -LRB-/SLQ
+                                    (NP SEA-ME-WE3/NFW)
+                                    -RRB-/SRQ)
+                               '/SRQ
+                               이/PCA)))
+               (VP (S (NP-SBJ *pro*)
+                      (VP (NP-ADV 9/NNU
+                                  일/NNX)
+                          (VP (VV 완공/NNC+되/XSV+어/ECS))))
+                   (NP-ADV 본격/NNC)
+                   (VP (VV 가동/NNC+되/XSV+는다/EFN+고/PAD))))
+       (VP (NP-ADV 8/NNU
+                   일/NNX)
+           (VP 밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>9 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>완공되어</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

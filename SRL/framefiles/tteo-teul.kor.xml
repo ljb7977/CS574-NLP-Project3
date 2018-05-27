@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>떠들</lemma>
+    <comment>Frames file for '떠들' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>떠들.01</id>
+      <edef>clamor</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing clamored"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>떠들다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 "내가 지역감정을 부추긴 것처럼 떠드는 사람들이 있으나 나는 그런 사람이 아니다"라며 "대통령이 잘못 얘기한 것을 비판한 사람을 오히려 때리는 게 민주주의냐"고 반문했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S "/SLQ
+          (S (NP-SBJ (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (NP-COMP (S (NP-SBJ 나/NPN+이/PCA)
+                                           (VP (NP-OBJ 지역/NNC+감정/NNC+을/PCA)
+                                               부추기/VV+은/EAN))
+                                        (NP 것/NNX+처럼/PAD))
+                               떠들/VV+는/EAN)))
+                     (NP 사람/NNC+들/XSF+이/PCA))
+             (ADJP 있/VJ+으나/ECS))
+          (S (NP-SBJ 나/NPN+은/PAU)
+             (ADJP (NP-COMP 그런/DAN
+                            사람/NNC+이/PCA)
+                   아니/VJ+다/EFN))
+          "/SRQ
+          이/CO+라며/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                               (S (NP-SBJ 대통령/NNC+이/PCA)
+                                                                  (VP (NP-OBJ *T*-3)
+                                                                      (VP (ADVP 잘못/ADV)
+                                                                          (VP (VV 얘기/NNC+하/XSV+은/EAN))))))
+                                                            (NP 것/NNX+을/PCA))
+                                                    (VV 비판/NNC+하/XSV+은/EAN))))
+                                          (NP 사람/NNC+을/PCA))
+                                  (VP (ADVP 오히려/ADV)
+                                      (VP 때리/VV+는/EAN))))
+                           (NP 것/NNX+이/PCA))
+                   (VP (NP 민주주의/NNC+이/CO+냐/EFN))
+                   "/SRQ
+                   고/PAD)
+           (VV 반문/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=사람들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>처럼</f>
+	      <term>내가 지역감정을 부추긴 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>떠드는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

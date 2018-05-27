@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>시사</lemma>
+    <comment>Frames file for '시사' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>시사.01</id>
+      <edef>conduct a test fire</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="weapon"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>시사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>수 개 부대가 동시에 시사하는 일은 극히 드문데, 이것은 그렇게 할 경우 요란 사격으로 착각되기 쉽기 때문이다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-SBJ 수/DAN
+                         개/NNX
+                         부대/NNC+이/PCA)
+                 (VP (NP-ADV 동시/NNC+에/PAD)
+                     (VP (VV 시사/NNC+하/XSV+는/EAN))))
+              (NP 일/NNC+은/PAU))
+      (ADJP (ADVP 극히/ADV)
+            (ADJP 드물/VJ+는데/ECS)))
+   ,/SCM
+   (S (NP-SBJ 이것/NPN+은/PAU)
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (ADVP 그렇게/ADV)
+                         (VP 하/VV+을/EAN)))
+                  (NP 경우/NNC))
+          (VP (NP (S (S-SBJ (NP-SBJ *pro*)
+                            (VP (NP-COMP 요란/NNC
+                                         사격/NNC+으로/PAD)
+                                (VV 착각/NNC+되/XSV+기/ENM)))
+                     (ADJP 쉽/VJ+기/ENM))
+                  (NP 때문/NNX+이/CO+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>수 개 부대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>동시에</term>
+	    </Arg>
+	    <Rel>
+	      <term>시사하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

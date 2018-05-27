@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>집권</lemma>
+    <comment>Frames file for '집권' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>집권.01</id>
+      <edef>take power</edef>
+      <roleset>
+	<role argnum="0" argrole="thing taking power"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>집권하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>클린턴 대통령의 파키스탄 방문계획은 당초 이같은 인도, 방글라데시 순방계획에 포함돼 있었으나 페르베즈 무샤라프 장군이 쿠데타로 집권한 이후 보류돼 왔다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 클린턴/NPR
+                  대통령/NNC+의/PAN)
+              (NP 파키스탄/NPR
+                  방문/NNC+계획/NNC+은/PAU))
+      (VP (VP (NP-ADV 당초/NNC)
+              (VP (NP-COMP 이같은/DAN
+                           인도/NPR
+                           ,/SCM
+                           방글라데시/NPR
+                           순방/NNC+계획/NNC+에/PAD)
+                  (VV 포함/NNC+되/XSV+어/ECS)))
+          있/VX+었/EPF+으나/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (NP-SBJ 페르베즈/NPR
+                             무샤라프/NPR
+                             장군/NNC+이/PCA)
+                     (VP (NP-ADV 쿠데타/NNC+으로/PAD)
+                         (VP (VV 집권/NNC+하/XSV+은/EAN))))
+                  (NP 이후/NNC))
+          (VP (VP (VV 보류/NNC+되/XSV+어/ECS))
+              오/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=페르베즈 무샤라프 장군</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>쿠테타로</term>
+	    </Arg>
+	    <Rel>
+	      <term>집권한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>적응</lemma>
+    <comment>Frames file for '적응' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>적응.01</id>
+      <edef>adapt</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity adapted"/>
+	<role argnum="2" argrole="adapted to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>적응하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>하사관으로서 네 경험에 의하면 이 신대원들이 군대 생활에 적응하는 데 어떤 문제가 있는가?</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (NP (NP-ADV 하사관/NNC+으로서/PAD))
+                   (NP (NP 너/NPN+의/PAN)
+                       (NP 경험/NNC+에/PAD)))
+          의하/VV+으면/ECS))
+   (S (NP-COMP-1 (S (NP-SBJ 이/DAN
+                            신/XPF+대원/NNC+들/XSF+이/PCA)
+                    (VP (NP-COMP 군대/NNC
+                                 생활/NNC+에/PAD)
+                        (VV 적응/NNC+하/XSV+는/EAN)))
+                 (NP 데/NNX))
+      (S (NP-SBJ 어떤/DAN
+                 문제/NNC+이/PCA)
+         (ADJP (NP-COMP *T*-1)
+               있/VJ+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이 신대원들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>군대 생활</term>
+	    </Arg>
+	    <Rel>
+	      <term>적응하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

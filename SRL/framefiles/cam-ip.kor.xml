@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잠입</lemma>
+    <comment>Frames file for '잠입' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>잠입.01</id>
+      <edef>infiltrate</edef>
+      <roleset>
+	<role argnum="0" argrole="thing infiltrating"/>
+	<role argnum="1" argrole="infiltrate into"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잠입하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>체첸군 70 여명은 5 일 새벽 어둠을 틈타 은신지인 산악지대를 벗어나 그로즈니에서 7 KM 떨어진 콤소몰스코예 부근까지 잠입했다가 러시아 특수경찰에 발각, 교전을 벌인 뒤 퇴각했다.</text>
+	  <parse>
+(S (S (NP-SBJ 체첸/NPR+군/NNC
+              70/NNU
+              여/XSF+명/NNX+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-ADV 5/NNU
+                         일/NNX
+                         새벽/NNC)
+                 (S (NP-SBJ *pro*)
+                    (VP (NP-OBJ 어둠/NNC+을/PCA)
+                        틈타/VV+어/ECS))
+                 (S (NP-SBJ *pro*)
+                    (VP (NP-OBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (NP 은신지/NNC+이/CO+은/EAN))))
+                                (NP 산악/NNC+지대/NNC+을/PCA))
+                        벗어나/VV+어/ECS))
+                 (VP (NP-COMP (NP (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (VP (NP-COMP 그로즈니/NPR+에서/PAD)
+                                            (VP (NP-ADV 7/NNU
+                                                        KM/NFW)
+                                                (VP 떨어지/VV+은/EAN)))))
+                                  (NP 콤소몰스코예/NPR))
+                              (NP 부근/NNC+까지/PAU))
+                     (VV 잠입/NNC+하/XSV+었/EPF+다가/ECS))))
+          (VP (NP-COMP 러시아/NPR
+                       특수/NNC+경찰/NNC+에/PAD)
+              (VV 발각/NNC))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (WHNP *op*)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 교전/NNC+을/PCA)
+                            벌이/VV+은/EAN)))
+                  (NP 뒤/NNC))
+          (VP (VV 퇴각/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>5 일 새벽</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어둠을 틈타</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>은신지인 산악지대를 벗어나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>까지</f>
+	      <term>그로즈니에서 7 KM 떨어진 콤소몰스코예 부근</term>
+	    </Arg>
+	    <Rel>
+	      <term>잠입했다가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

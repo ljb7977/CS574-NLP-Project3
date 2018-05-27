@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불순</lemma>
+    <comment>Frames file for '불순' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>불순.01</id>
+      <edef>impure</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being impure"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불순하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>양 동지는 사상이 아주 불순한 것 같습니다.</text>
+	  <parse>
+(S (NP-SBJ 양/NPR
+	   동지/NNC+은/PAU)
+   (S (NP-SBJ 사상/NNC+이/PCA)
+      (VP (ADJP (ADVP 아주/ADV)
+		(ADJP (VJ 불순/NNC+하/XSJ+은/EAN)))
+	  (VX 것/NNX
+	      같/VJ+습니다/EFN)))
+   ./SFN )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>양 동지</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>사상</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>아주</term>
+	    </Arg>
+	    <Rel>
+	      <term>불순한</term>
+	    </Rel>
+	    <Aux>
+	      <f>은</f>
+	      <term>것 같습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

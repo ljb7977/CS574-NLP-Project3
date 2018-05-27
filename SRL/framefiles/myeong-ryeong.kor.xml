@@ -1,0 +1,125 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>명령</lemma>
+    <comment>Frames file for '명령' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>명령.01</id>
+      <edef>order</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="impelled action"/>
+	<role argnum="2" argrole="impelled agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>명령하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>대대장이 박격포 중대에 공격 준비 사격을 중지하라고 명령할 때지요.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (WHNP *op*)
+              (S (NP-SBJ 대대장/NNC+이/PCA)
+                 (VP (NP-COMP 박격포/NNC
+                              중대/NNC+에/PAD)
+                     (S-COMP (NP-SBJ *pro*)
+                             (VP (NP-OBJ 공격/NNC
+                                         준비/NNC
+                                         사격/NNC+을/PCA)
+                                 (VV 중지/NNC+하/XSV+으라/EFN+고/PAD)))
+                     (VV 명령/NNC+하/XSV+을/EAN))))
+           (NP 때/NNC+이/CO+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>대대장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>박격포 중대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>공격 준비 사격을 중지하라</term>
+	    </Arg>
+	    <Rel>
+	      <term>명령할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>명령하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>해스럭 사무총장은 경찰 당국이 백인 소유 농장에 침입한 시위대에게 이날 새벽까지 반드시 철수할 것을 명령했으나 농장 침입자들은 자신들이 곧 법이라고 주장하면서 경찰의 지시를 거부하는 등 전혀 물러설 기미가 없다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 해스럭/NPR
+           사무총장/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ 경찰/NNC
+                          당국/NNC+이/PCA)
+                  (VP (NP-COMP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (NP-COMP 백인/NNC
+                                                  소유/NNC
+                                                  농장/NNC+에/PAD)
+                                         (VV 침입/NNC+하/XSV+은/EAN))))
+                               (NP 시위대/NNC+에게/PAD))
+                      (NP-OBJ (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 이날/NNC
+                                             새벽/NNC+까지/PAU)
+                                     (ADVP 반드시/ADV)
+                                     (VP (VV 철수/NNC+하/XSV+을/EAN))))
+                              (NP 것/NNX+을/PCA))
+                      (VV 명령/NNC+하/XSV+었/EPF+으나/ECS)))
+               (S (NP-ADV (S (NP-SBJ 농장/NNC
+					 침입자/NNC+들/XSF+은/PAU)
+			     (VP (S (NP-SBJ *pro*)
+				    (VP (S-COMP (NP-SBJ 자신/NNC+들/XSF+이/PCA)
+						(VP (ADVP 곧/ADV)
+						    (VP (NP 법/NNC+이/CO+라/EFN+고/PAD))))
+					(VV 주장/NNC+하/XSV+으면서/ECS)))
+				 (VP (NP-OBJ (NP 경찰/NNC+의/PAN)
+					     (NP 지시/NNC+을/PCA))
+				     (VV 거부/NNC+하/XSV+는/EAN))))
+			  (NP 등/NNX))
+		  (ADVP 전혀/ADV)
+		  (S (NP-SBJ (S (NP-SBJ *pro*)
+				(VP 물러서/VV+을/EAN))
+			     (NP 기미/NNC+이/PCA))
+		     (ADJP 없/VJ+다/EFN+고/PAD))))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>경찰 당국</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>인 소유 농장에 침입한 시위대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이날 새벽까지 반드시 철수할 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>명령했으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

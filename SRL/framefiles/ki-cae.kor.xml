@@ -1,0 +1,97 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기재</lemma>
+    <comment>Frames file for '기재' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>기재.01</id>
+      <edef>list</edef>
+      <roleset>
+	<role argnum="0" argrole="lister"/>
+	<role argnum="1" argrole="item"/>
+	<role argnum="2" argrole="list"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기재하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 보고서에다 적 활동에 관한 정보를 자세히 기재하라.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP 이/DAN
+                보고서/NNC+에다/PAD)
+       (NP-OBJ (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-COMP 적/NNC
+                                  활동/NNC+에/PAD)
+                         관하/VV+은/EAN)))
+               (NP 정보/NNC+을/PCA))
+       (VP (ADVP 자세히/ADV)
+           (VP (VV 기재/NNC+하/XSV+으라/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에다</f>
+	      <term>이 보고서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>적 활동에 관한 정보</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>자세히</term>
+	    </Arg>
+	    <Rel>
+	      <term>기재하라</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>기재되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>제3 대대 제1 포대는 표적 일람표에 기재된 목표에 언제 사격을 개시하는가?</text>
+	  <parse>
+(S (NP-SBJ (NP 제/XPF+3/NNU
+               대대/NNC)
+           (NP 제/XPF+1/NNU
+               포대/NNC+은/PAU))
+   (VP (NP-COMP (S (WHNP-1 *op*)
+                   (S (NP-SBJ *T*-1)
+                      (VP (NP-COMP 표적/NNC
+                                   일람표/NNC+에/PAD)
+                          (VV 기재/NNC+되/XSV+은/EAN))))
+                (NP 목표/NNC+에/PAD))
+       (VP (ADVP 언제/ADV)
+           (VP (NP-OBJ 사격/NNC+을/PCA)
+               (VV 개시/NNC+하/XSV+는가/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=목표</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>표적 일람표</term>
+	    </Arg>
+	    <Rel>
+	      <term>기재된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>법률화</lemma>
+    <comment>Frames file for '법률화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>법률화.01</id>
+      <edef>enact</edef>
+      <roleset>
+	<role argnum="0" argrole="legislative body"/>
+	<role argnum="1" argrole="law"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>법률화되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>하원의 최저임금 인상안은 오는 4 월 1 일 시간당 50 센트를 올린 후 오는 2001 년 4 월 다시 50 센트를 인상토록 되어 있으나 이 법안이 다음 달까지 법률화될 가능성이 희박한 데다 소급 적용에 대해서도 언급하지 않고 있어 현실성이 없는 것으로 지적되고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 하원/NNC+의/PAN)
+              (NP 최저/NNC+임금/NNC
+                  인상/NNC+안/NNC+은/PAU))
+      (VP (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (NP-ADV (S (NP-SBJ *pro*)
+                                     (VP (NP-ADV 오는/DAN
+                                                 4/NNU
+                                                 월/NNX
+                                                 1/NNU
+                                                 일/NNX)
+                                         (VP (NP-OBJ 시간/NNC+당/XSF
+                                                     50/NNU
+                                                     센트/NNX+을/PCA)
+                                             올리/VV+은/EAN)))
+                                  (NP 후/NNC))
+                          (NP-ADV 오는/DAN
+                                  2001/NNU
+                                  년/NNX
+                                  4/NNU
+                                  월/NNX)
+                          (ADVP 다시/ADV)
+                          (VP (NP-OBJ 50/NNU
+                                      센트/NNX+을/PCA)
+                              (VV 인상/NNC+하/XSV+도록/ECS))))
+              되/VV+어/ECS)
+          있/VX+으나/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (S (NP-SBJ (S (NP-SBJ 이/DAN
+                                            법안/NNC+이/PCA)
+                                    (VP (NP-ADV 다음/NNC
+                                                달/NNX+까지/PAU)
+                                        (VP (VV 법률화/NNC+되/XSV+을/EAN))))
+                                 (NP 가능성/NNC+이/PCA))
+                         (ADJP 희박하/VJ+은/EAN))
+                      (NP 데/NNX+다/PAU))
+              (S (NP-SBJ *pro*)
+                 (VP (VP (VP (S (NP-SBJ *pro*)
+                                (VP (NP-COMP 소급/NNC
+                                             적용/NNC+에/PAD)
+                                    대하/VV+어서/ECS+도/PAU))
+                             (VP (NP-OBJ *pro*)
+                                 (VV 언급/NNC+하/XSV+지/ECS)))
+                         않/VX+고/ECS)
+                     있/VX+어/ECS))
+              (VP (NP-COMP (S (NP-SBJ 현실성/NNC+이/PCA)
+                              (ADJP 없/VJ+는/EAN))
+                           (NP 것/NNX+으로/PAD))
+                  (VV 지적/NNC+되/XSV+고/ECS)))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이 법안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>다음 달까지</term>
+	    </Arg>
+	    <Rel>
+	      <term>법률화될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

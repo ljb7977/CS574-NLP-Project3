@@ -1,0 +1,133 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>진척</lemma>
+    <comment>Frames file for '진척' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>진척.01</id>
+      <edef>expedite</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing expedited"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>진척되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>스튜어트 아이젠버그 변호사도 최근 미국 정부는 진상조사가 20 퍼센트밖에 진척되지 않았다며 조사가 끝날 때까지 기다려 줄 것을 요청했다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 스튜어트/NPR
+           아이젠버그/NPR
+           변호사/NNC+도/PAU)
+   (VP (NP-ADV 최근/NNC)
+       (VP (S-COMP (NP-SBJ 미국/NPR
+                           정부/NNC+은/PAU)
+                   (VP (S (NP-SBJ 진상/NNC+조사/NNC+이/PCA)
+                          (VP (VP (NP-ADV 20/NNU
+                                          퍼센트/NNX+밖에/PAU)
+                                  (VP (VV 진척/NNC+되/XSV+지/ECS)))
+                              않/VX+었/EPF+다며/ECS))
+                       (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                      (VP (VP (NP-ADV (S (WHNP *op*)
+                                                         (S (NP-SBJ 조사/NNC+이/PCA)
+                                                            (VP 끝나/VV+을/EAN)))
+                                                      (NP 때/NNC+까지/PAU))
+                                              (VP 기다리/VV+어/ECS))
+                                          주/VX+을/EAN))
+                                   (NP 것/NNX+을/PCA))
+                           (VV 요청/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>진상조사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>20 퍼센트밖에</term>
+	    </Arg>
+	    <Rel>
+	      <term>진척되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았다며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>진척시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일본에서는 자민당을 중심으로 식량지원을 일본인 납치의혹 등 다른 현안과 연계시켜야 한다는 신중론이 있으나 정부의 지원 방침은 미국 등의 요청이 있는 데다 쌀 지원을 지렛대로 수교협상을 진척시키는 것이 여타 현안의 해결에도 기여한다는 판단을 내렸기 때문이라고 신문은 말했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-ADV 일본/NPR+에서/PAD+은/PAU)
+                (NP-ADV (NP-OBJ 자민당/NPR+을/PCA)
+                        중심/NNC+으로/PAD)
+                (S (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (VP (NP-OBJ 식량/NNC+지원/NNC+을/PCA)
+                                      (NP-COMP (NP (NP 일본인/NNC
+                                                       납치/NNC+의혹/NNC)
+                                                   (NP 등/NNX))
+                                               (NP 다른/DAN
+                                                   현안/NNC+과/PAD))
+                                      (VV 연계/NNC+시키/XSV+어야/ECS))
+                                  하/VX+는다는/EAN))
+                           (NP 신중/NNC+론/XSF+이/PCA))
+                   (ADJP 있/VJ+으나/ECS)))
+             (S (NP-SBJ (NP 정부/NNC+의/PAN)
+                        (NP 지원/NNC
+                            방침/NNC+은/PAU))
+                (VP (NP (S (NP-ADV (S (NP-SBJ (NP 미국/NPR
+					          등/NNX+의/PAN)
+				              (NP 요청/NNC+이/PCA))
+			              (ADJP 있/VJ+는/EAN))
+			           (NP 데/NNX+에다/PAD))
+			   (S (NP-SBJ *pro*)
+			      (VP (NP-OBJ (S (NP-SBJ (S (NP-SBJ *pro*)
+							(VP (NP-ADV (NP-OBJ 쌀/NNC
+									      지원/NNC+을/PCA)
+								    지렛대/NNC+으로/PAD)
+							    (VP (NP-OBJ 수교/NNC+협상/NNC+을/PCA)
+								(VV 진척/NNC+시키/XSV+는/EAN))))
+						     (NP 것/NNX+이/PCA))
+					     (VP (NP-COMP (NP 여타/NNC
+								  현안/NNC+의/PAN)
+							  (NP 해결/NNC+에/PAD+도/PAU))
+						 (VV 기여/NNC+하/XSV+는다는/EAN)))
+					  (NP 판단/NNC+을/PCA))
+				  내리/VV+었/EPF+기/ENM)))
+                        (NP 때문/NNX+이/CO+라/EFN+고/PAD)))))
+   (S (NP-SBJ 신문/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>쌀 지원을 지렛대로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수교협상</term>
+	    </Arg>
+	    <Rel>
+	      <term>진척시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

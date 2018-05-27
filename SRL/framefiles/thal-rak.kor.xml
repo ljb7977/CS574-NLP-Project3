@@ -1,0 +1,148 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탈락</lemma>
+    <comment>Frames file for '탈락' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탈락.01</id>
+      <edef>fail</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing failing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탈락하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>부시 지사와 고어 부통령은 양당에서 경쟁자가 모두 탈락한 가운데 텍사스, 테네시, 플로리다 등 남부 6 개 주에서 14 일 동시에 실시된 이른바 `미니 슈퍼 화요일' 예비선거를 압승, 각각 1 천 93 명과 2 천 536 명의 대의원을 확보한 것으로 집계됐다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (S (NP-SBJ (NP 부시/NPR
+                                  지사/NNC+과/PCJ)
+                              (NP 고어/NPR
+                                  부통령/NNC+은/PAU))
+                      (VP (NP-ADV (S (NP-ADV 양당/NNC+에서/PAD)
+                                     (S (NP-SBJ 경쟁자/NNC+이/PCA)
+                                        (VP (ADVP 모두/ADV)
+                                            (VP (VV 탈락/NNC+하/XSV+은/EAN)))))
+                                  (NP 가운데/NNC))
+                          (VP (NP-OBJ (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (NP-ADV (NP (NP (NP 텍사스/NPR)
+                                                                ,/SCM
+                                                                (NP 테네시/NPR)
+                                                                ,/SCM
+                                                                (NP 플로리다/NPR))
+                                                            (NP 등/NNX))
+                                                        (NP 남부/NNC
+                                                            6/NNU
+                                                            개/NNX
+                                                            주/NNC+에서/PAD))
+                                                (NP-ADV 14/NNU
+                                                        일/NNX)
+                                                (NP-ADV 동시/NNC+에/PAD)
+                                                (VP (VV 실시/NNC+되/XSV+은/EAN)))))
+                                      (NP (ADVP 이른바/ADV)
+                                          (NP (PRN `/SLQ
+                                                   미니/NNC
+                                                   슈퍼/NNC
+                                                   화요일/NNC
+                                                   '/SRQ)
+                                              예비/NNC+선거/NNC+을/PCA)))
+                              (VV 압승/NNC))))
+                   ,/SCM
+                   (S (NP-SBJ *pro*)
+                      (VP (ADVP 각각/ADV)
+                          (VP (NP-OBJ (NP (NP 1/NNU
+                                              천/NNU
+                                              93/NNU
+                                              명/NNX+과/PCJ)
+                                          (NP 2/NNU
+                                              천/NNU
+                                              536/NNU
+                                              명/NNX+의/PAN))
+                                      (NP 대의원/NNC+을/PCA))
+                              (VV 확보/NNC+하/XSV+은/EAN)))))
+                (NP 것/NNX+으로/PAD))
+       (VV 집계/NNC+되/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>양당에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>경쟁자</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>모두</term>
+	    </Arg>
+	    <Rel>
+	      <term>탈락한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>탈락시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한 관계자는 코흐-베저 차관을 노골적으로 반대하고 있는 미국이 기권할 가능성이 높기 때문에 첫 투표에서는 지지도가 가장 낮은 후보를 탈락시키는 정도에 그칠 공산이 큰 것으로 내다봤다.</text>
+	  <parse>
+(S (NP-SBJ 한/NNU
+           관계자/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (VP (NP-OBJ (NP 코흐/NPR
+                                                               -/SSY
+                                                               베저/NPR)
+                                                           (NP 차관/NNC+을/PCA))
+                                                   (VP (NP-ADV 노골/NNC+적/XSF+으로/PAD)
+                                                       (VP (VV 반대/NNC+하/XSV+고/ECS))))
+                                               있/VX+는/EAN)))
+                                     (NP 미국/NPR+이/PCA))
+                             (VP (VV 기권/NNC+하/XSV+을/EAN)))
+                          (NP 가능성/NNC+이/PCA))
+                  (ADJP 높/VJ+기/ENM))
+               (NP 때문/NNX+에/PAD))
+       (VP (NP-COMP (S (NP-ADV 첫/NNU
+                               투표/NNC+에서/PAD+은/PAU)
+                       (S (NP-SBJ (S (NP-SBJ *pro*)
+                                     (VP (NP-COMP (S (NP-SBJ *pro*)
+                                                     (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                    (S (NP-SBJ *T*-2)
+                                                                       (S (NP-SBJ 지지도/NNC+이/PCA)
+                                                                          (ADJP (ADVP 가장/ADV)
+                                                                                (ADJP 낮/VJ+은/EAN)))))
+                                                                 (NP 후보/NNC+을/PCA))
+                                                         (VV 탈락/NNC+시키/XSV+는/EAN)))
+                                                  (NP 정도/NNC+에/PAD))
+                                         그치/VV+을/EAN))
+                                  (NP 공산/NNC+이/PCA))
+                          (ADJP 크/VJ+은/EAN)))
+                    (NP 것/NNX+으로/PAD))
+           내다보/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>지지도가 가장 낮은 후보</term>
+	    </Arg>
+	    <Rel>
+	      <term>탈락시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

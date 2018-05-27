@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>심의</lemma>
+    <comment>Frames file for '심의' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>심의.01</id>
+      <edef>discuss</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="topic"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>심의하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>사회복지정책 관계장관회의는 의장인 복지부 장관과 환경부, 노동부, 기획예산처 장관, 여성특별위원회 위원장, 청와대 복지노동수석 등 6 명으로 구성됐으며 이날 회의를 시작으로 매월 정례회의를 통해 사회복지정책의 발전방향과 기본계획, 관계부처간 조율 등 주요사항을 심의하게 된다.</text>
+	  <parse>
+(S (S (NP-SBJ 사회/NNC+복지/NNC+정책/NNC
+              관계/NNC+장관/NNC+회의/NNC+은/PAU)
+      (VP (NP-COMP (NP (NP (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (NP 의장/NNC+이/CO+은/EAN))))
+                               (NP 복지부/NNC
+                                   장관/NNC+과/PCJ))
+                           (NP 환경부/NNC)
+                           ,/SCM
+                           (NP 노동부/NNC)
+                           ,/SCM
+                           (NP 기획예산처/NNC
+                               장관/NNC)
+                           ,/SCM
+                           (NP 여성/NNC+특별위원회/NNC
+                               위원장/NNC)
+                           ,/SCM
+                           (NP 청와대/NPR
+                               복지/NNC+노동/NNC+수석/NNC))
+                       (NP 등/NNX))
+                   (NP 6/NNU
+                       명/NNX+으로/PAD))
+          (VV 구성/NNC+되/XSV+었/EPF+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (NP-OBJ 이날/NNC
+                              회의/NNC+을/PCA)
+                      시작/NNC+으로/PAD)
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 매월/NNC
+                             정례/NNC+회의/NNC+을/PCA)
+                     통하/VV+어/ECS))
+              (VP (NP-OBJ (NP (NP (NP (NP 사회/NNC+복지/NNC+정책/NNC+의/PAN)
+                                      (NP 발전/NNC+방향/NNC+과/PCJ))
+                                  (NP 기본/NNC+계획/NNC)
+                                  ,/SCM
+                                  (NP 관계/NNC+부처/NNC+간/XSF
+                                      조율/NNC))
+                              (NP 등/NNX))
+                          (NP 주요/NNC+사항/NNC+을/PCA))
+                  (VV 심의/NNC+하/XSV+게/ECS)))
+          되/VX+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날 회의를 시작으로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>매월 정례회의를 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>사회복지정책의 발전방향과 기본계획, 관계부처간 조율 등 주요사항</term>
+	    </Arg>
+	    <Rel>
+	      <term>심의하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>된다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

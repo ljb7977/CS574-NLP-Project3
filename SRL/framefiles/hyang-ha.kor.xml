@@ -1,0 +1,107 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>향하</lemma>
+    <comment>Frames file for '향하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>향하.01</id>
+      <edef>towards</edef>
+      <roleset>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="towards what"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>향하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>애들은 모의 보총을 사용해서 표적을 향해 조준하는 법을 배웁니다.</text>
+	  <parse>
+(S (NP-SBJ 애/NNC+들/XSF+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 모의/NNC
+                      보총/NNC+을/PCA)
+              (VV 사용/NNC+하/XSV+어서/ECS)))
+       (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ 표적/NNC+을/PCA)
+                                 향하/VV+어/ECS))
+                          (VP (VV 조준/NNC+하/XSV+는/EAN))))
+                   (NP 법/NNC+을/PCA))
+           배우/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>표적</term>
+	    </Arg>
+	    <Rel>
+	      <term>향해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>향하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>제가 말씀 드린 그 큰 고지로 향해 올라가는 아주 좁은 길을 건너고 나서 동북쪽을 향해서 약 600 미터 산기슭을 따라 계속 가게 됩니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (S (NP-SBJ *pro*)
+                                   (VP (NP-COMP (S (WHNP-1 *op*)
+                                                   (S (NP-SBJ 제/NPN+이/PCA)
+                                                      (VP (NP-OBJ *T*-1)
+                                                          (VP (NP-OBJ-LV 말씀/NNC)
+                                                              (LV 드리/VV+은/EAN)))))
+                                                (NP (DANP 그/DAN)
+                                                    (NP (S (WHNP-4 *op*)
+                                                           (S (NP-SBJ *T*-4)
+                                                              (ADJP 크/VJ+은/EAN)))
+                                                        (NP 고지/NNC+으로/PAD))))
+                                       향하/VV+어/ECS))
+                                (VP 올라가/VV+는/EAN))))
+                      (NP (S (WHNP-3 *op*)
+                             (S (NP-SBJ *T*-3)
+                                (ADJP (ADVP 아주/ADV)
+                                      (ADJP 좁/VJ+은/EAN))))
+                          (NP 길/NNC+을/PCA)))
+              건너/VV+고/ECS)
+          나/VX+어서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 동북쪽/NNC+을/PCA)
+                     향하/VV+어서/ECS))
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 약/DAN
+                             600/NNU
+                             미터/NNX
+                             산기슭/NNC+을/PCA)
+                     따르/VV+어/ECS))
+              (ADVP 계속/ADV)
+              (VP 가/VV+게/ECS))
+          되/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>제가 말씀 드린 그 큰 고지</term>
+	    </Arg>
+	    <Rel>
+	      <term>향해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>슬</lemma>
+    <comment>Frames file for '슬' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>슬.01</id>
+      <edef>rust</edef>
+      <roleset>
+	<role argnum="1" argrole="rust"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>슬다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>총신강에 녹이 너무 슬어서 총을 쓸 수가 없게 되었습니다.</text>
+	  <parse>
+(S (S (NP-ADV 총신강/NNC+에/PAD)
+      (S (NP-SBJ 녹/NNC+이/PCA)
+         (VP (ADVP 너무/ADV)
+             (VP 슬/VV+어서/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (VP (NP-OBJ 총/NNC+을/PCA)
+                  쓰/VV+을/EAN)
+              (VX 수/NNX+이/PCA
+                  없/VJ+게/ECS))
+          되/VX+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>총신강</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>녹</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>너무</term>
+	    </Arg>
+	    <Rel>
+	      <term>슬어서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

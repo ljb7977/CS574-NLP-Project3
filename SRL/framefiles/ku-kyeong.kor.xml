@@ -1,0 +1,43 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>구경</lemma>
+    <comment>Frames file for '구경' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>구경.01</id>
+      <edef>see</edef>
+      <roleset>
+	<role argnum="0" argrole="viewer"/>
+	<role argnum="1" argrole="thing viewed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>구경하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인민군에서는 고기 통조림을 구경하기가 힘들지요.</text>
+	  <parse>
+(S (NP-ADV 인민군/NNC+에서/PAD+은/PAU)
+   (S (S-SBJ (NP-SBJ *pro*)
+             (VP (NP-OBJ 고기/NNC
+                         통조림/NNC+을/PCA)
+                 (VV 구경/NNC+하/XSV+기/ENM+이/PCA)))
+      (ADJP 힘들/VJ+지요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>고기 통조림</term>
+	    </Arg>
+	    <Rel>
+	      <term>구경하기가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

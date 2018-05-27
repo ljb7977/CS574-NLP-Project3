@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>반등</lemma>
+    <comment>Frames file for '반등' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>반등.01</id>
+      <edef>rally</edef>
+      <roleset>
+	<role argnum="1" argrole="price"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>반등하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 샤슈트는 "아직도 어느 정도의 불확실성은 남아 있지만 기본적인 요소들은 크게 변하지 않았기 때문에 유가는 내일 반등할 수 있으며 이달말 배럴당 30 달러 이하로 내려간다면 놀라운 일"이라고 말했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 샤슈트/NPR+은/PAU)
+      (VP (S-COMP "/SLQ
+                  (S (S (NP-ADV 아직/NNC+도/PAU)
+                        (S (NP-SBJ (NP 어느/DAN
+                                       정도/NNC+의/PAN)
+                                   (NP 불확실성/NNC+은/PAU))
+                           (VP (VP 남/VV+어/ECS)
+                               있/VX+지만/ECS)))
+                     (NP-ADV (S-COMP (NP-SBJ (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (VP (NP 기본/NNC+적/XSF+이/CO+은/EAN))))
+                                             (NP 요소/NNC+들/XSF+은/PAU))
+                                     (VP (VP (ADVP (ADV 크/VJ+게/ECS))
+                                             (VP 변하/VV+지/ECS))
+                                         않/VX+었/EPF+기/ENM))
+                             (NP 때문/NNX+에/PAD))
+                     (S (NP-SBJ 유가/NNC+은/PAU)
+                        (VP (VP (NP-ADV 내일/NNC)
+                                (VP (VV 반등/NNC+하/XSV+을/EAN)))
+                            (VX 수/NNX
+                                있/VJ+으며/ECS))))
+                  (S (S (NP-SBJ *pro*)
+                        (VP (NP-ADV 이달/NNC+말/XSF)
+                            (NP-ADV (NP 배럴/NNC+당/NNX)
+                                    (NP 30/NNU
+                                        달러/NNX
+                                        이하/NNC+으로/PAD))
+                            (VP 내려가/VV+는다면/ECS)))
+                     (S (NP-SBJ *pro*)
+                        (VP (NP (S (WHNP-2 *op*)
+                                   (S (NP-SBJ *T*-2)
+                                      (ADJP 놀랍/VJ+은/EAN)))
+                                (NP 일/NNC)))))
+                  "/SRQ
+                  이/CO+라/EFN+고/PAD)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>아직도 어느 정도의 불확실성은 남아 있지만</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>기본적인 요소들은 크게 변하지 않았기 때문에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>유가</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>내일</term>
+	    </Arg>
+	    <Rel>
+	      <term>반등할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있으며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>괴롭</lemma>
+    <comment>Frames file for '괴롭' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>괴롭.01</id>
+      <edef>annoy</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="person annoyed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>괴롭히다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>피노체트의 아들인 마리오 안토니오 피노체트는 5 일 피노체트가 거주중인 저택 앞에서 기자들에게 "아버지가 자신을 괴롭혀 온 사람들을 용서했고 친척과 우리들도 그렇게 했다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP (NP 피노체트/NPR+의/PAN)
+                         (NP 아들/NNC+이/CO+은/EAN)))))
+           (NP 마리오/NPR
+               안토니오/NPR
+               피노체트/NPR+은/PAU))
+   (VP (NP-ADV 5/NNU
+               일/NNX)
+       (NP-ADV (NP (S (WHNP-2 *op*)
+                      (S (NP-SBJ 피노체트/NPR+이/PCA)
+                         (VP (VP (NP-COMP *T*-2)
+                                 (VV 거주/NNC))
+                             (VX 중/NNX+이/CO+은/EAN))))
+                   (NP 저택/NNC))
+               (NP 앞/NNC+에서/PAD))
+       (VP (NP-COMP 기자/NNC+들/XSF+에게/PAD)
+           (S-COMP "/SLQ
+                   (S (NP-SBJ 아버지/NNC+이/PCA)
+                      (VP (NP-OBJ (S (WHNP-3 *op*)
+                                     (S (NP-SBJ *T*-3)
+                                        (VP (VP (NP-OBJ 자신/NNC+을/PCA)
+                                                괴롭히/VV+어/ECS)
+                                            오/VX+은/EAN)))
+                                  (NP 사람/NNC+들/XSF+을/PCA))
+                          (VV 용서/NNC+하/XSV+었/EPF+고/ECS)))
+                   (S (NP-SBJ (NP 친척/NNC+과/PCJ)
+                              (NP 우리/NPN+들/XSF+도/PAU))
+                      (VP (ADVP-COMP 그렇게/ADV)
+                          하/VV+었/EPF+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=사람들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자신</term>
+	    </Arg>
+	    <Rel>
+	      <term>괴롭혀</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>온</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

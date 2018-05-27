@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기습</lemma>
+    <comment>Frames file for '기습' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>기습.01</id>
+      <edef>envelop</edef>
+      <roleset>
+	<role argnum="0" argrole="enveloper"/>
+	<role argnum="1" argrole="entity enveloped"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기습하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>예비 소대는 차후 목표를 포위하고 적의 지휘소와 박격포 진지를 기습할 겁니다.</text>
+	  <parse>
+(S (NP-SBJ 예비/NNC
+           소대/NNC+은/PAU)
+   (VP (VP (VP (NP-OBJ 차후/NNC
+                       목표/NNC+을/PCA)
+               (VV 포위/NNC+하/XSV+고/ECS))
+           (VP (NP-OBJ (NP 적/NNC+의/PAN)
+                       (NP (NP 지휘소/NNC+과/PCJ)
+                           (NP 박격포/NNC
+                               진지/NNC+을/PCA)))
+               (VV 기습/NNC+하/XSV+을/EAN)))
+       (VX 것/NNX+이/CO+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>예비 소대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>적의 지휘소와 박격포 진지</term>
+	    </Arg>
+	    <Rel>
+	      <term>기습할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>겁니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

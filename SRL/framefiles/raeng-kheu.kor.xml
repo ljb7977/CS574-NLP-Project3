@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>랭크</lemma>
+    <comment>Frames file for '랭크' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>랭크.01</id>
+      <edef>rank</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing assigned a position"/>
+	<role argnum="2" argrole="position"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>랭크되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>현대차와 기아차는 지난해 연간 285 만대를 생산, 세계 8 위에 랭크돼 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 현대차/NPR+과/PCJ)
+              (NP 기아차/NPR+은/PAU))
+      (VP (NP-ADV 지난해/NNC)
+          (VP (NP-OBJ 연간/NNC
+                      285/NNU
+                      만/NNU+대/NNX+을/PCA)
+              (VV 생산/NNC))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP 세계/NNC
+                       8/NNU
+                       위/NNX+에/PAD)
+              (VV 랭크/NNC+되/XSV+어/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>현대차와 기아차는 지난해 연간 285 만대를 생산</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>세계 8 위</term>
+	    </Arg>
+	    <Rel>
+	      <term>랭크돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

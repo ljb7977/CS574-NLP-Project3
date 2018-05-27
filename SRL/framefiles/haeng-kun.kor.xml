@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>행군</lemma>
+    <comment>Frames file for '행군' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>행군.01</id>
+      <edef>march</edef>
+      <roleset>
+	<role argnum="0" argrole="entity moving"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>행군하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>주간 행군 시에는 시간당 15 내지 20 킬로미터를 행군하고요.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 주간/NNC
+               행군/NNC
+               시/NNX+에/PAD+은/PAU)
+       (VP (NP-OBJ (NP 시간/NNC+당/XSF)
+                   (NP (NP (NP 15/NNU)
+                           (ADCP 내지/ADC)
+                           (NP 20/NNU))
+                       (NP 킬로미터/NNX+을/PCA)))
+           (VV 행군/NNC+하/XSV+고요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>주간 행군 시에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>시간당 15 내지 20 킬로미터</term>
+	    </Arg>
+	    <Rel>
+	      <term>행군하고요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

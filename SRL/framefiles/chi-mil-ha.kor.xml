@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>치밀하</lemma>
+    <comment>Frames file for '치밀하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>치밀하.01</id>
+      <edef>elaborate</edef>
+      <roleset>
+	<role argnum="1" argrole="thing elaborate"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>치밀하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한나라당 서청원 선거대책 본부장은 10 일 김대중 대통령의 베를린선언에 대해 "선거를 의식해 북한과의 치밀한 연계에 의해 이뤄진 것"이라고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 한나라당/NPR
+           서청원/NPR
+           선거/NNC+대책/NNC
+           본부장/NNC+은/PAU)
+   (VP (NP-ADV 10/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (NP 김대중/NPR
+                           대통령/NNC+의/PAN)
+                       (NP 베를린/NPR+선언/NNC+에/PAD))
+              대하/VV+어/ECS))
+       (VP (NP-COMP "/SLQ
+                    (S (NP-SBJ *pro*)
+                       (VP (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ 선거/NNC+을/PCA)
+                                  (VV 의식/NNC+하/XSV+어/ECS)))
+                           (S (NP-SBJ *pro*)
+                              (VP (NP-COMP (NP 북한/NPR+과/PAD+의/PAN)
+                                           (NP (S (WHNP-1 *op*)
+                                                  (S (NP-SBJ *T*-1)
+                                                     (ADJP 치밀하/VJ+은/EAN)))
+                                               (NP 연계/NNC+에/PAD)))
+                                  의하/VV+어/ECS))
+                           (VP (VV 이루/VV+어지/XSV+은/EAN))))
+                    (NP 것/NNX)
+                    "/SRQ
+                    이라고/PAD)
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=연계</term>
+	    </Arg>
+	    <Rel>
+	      <term>치밀한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

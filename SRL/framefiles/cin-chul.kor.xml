@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>진출</lemma>
+    <comment>Frames file for '진출' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>진출.01</id>
+      <edef>advance</edef>
+      <roleset>
+	<role argnum="0" argrole="thing advancing"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>진출하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>공격 시 후방 부대는 공격 부대가 10 내지 15 킬로미터 진출하면 전방으로 이동한다.</text>
+	  <parse>
+(S (NP-ADV 공격/NNC
+           시/NNX)
+   (S (NP-SBJ 후방/NNC
+              부대/NNC+들/XSF+은/PAU)
+      (VP (S (NP-SBJ 공격/NNC
+                     부대/NNC+이/PCA)
+             (VP (NP-OBJ (NP (NP 10/NNU)
+                             (ADCP 내지/ADC)
+                             (NP 15/NNU))
+                         (NP 킬로미터/NNX))
+                 (VV 진출/NNC+하/XSV+으면/ECS)))
+          (VP (NP-COMP 전방/NNC+으로/PAD)
+              (VV 이동/NNC+하/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>공격 부대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>10 내지 15 킬로미터</term>
+	    </Arg>
+	    <Rel>
+	      <term>진출하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

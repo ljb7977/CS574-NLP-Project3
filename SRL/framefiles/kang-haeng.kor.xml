@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>강행</lemma>
+    <comment>Frames file for '강행' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>강행.01</id>
+      <edef>enforce</edef>
+      <roleset>
+	<role argnum="0" argrole="enforcer"/>
+	<role argnum="1" argrole="action"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>강행하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 아라파트 수반은 이스라엘의 경고에도 불구하고 앞으로 6 개월안에 독립국 선포를 강행할 것이라고 다짐했다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ 아라파트/NPR
+              수반/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP (NP 이스라엘/NPR+의/PAN)
+                          (NP 경고/NNC+에/PAD+도/PAU))
+                 불구하/VV+고/ECS))
+          (VP (S-COMP (NP-ADV (NP 앞/NNC+으로/PAD)
+                              (NP 6/NNU
+                                  개월/NNX+안/NNC+에/PAD))
+                      (S (NP-SBJ *pro*)
+                         (VP (VP (NP-OBJ 독립국/NNC
+                                         선포/NNC+을/PCA)
+                                 (VV 강행/NNC+하/XSV+을/EAN))
+                             (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+              (VV 다짐/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>앞으로 6 개월안에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>독립국 선포</term>
+	    </Arg>
+	    <Rel>
+	      <term>강행할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

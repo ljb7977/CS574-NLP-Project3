@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>다짐</lemma>
+    <comment>Frames file for '다짐' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>다짐.01</id>
+      <edef>pledge</edef>
+      <roleset>
+	<role argnum="0" argrole="promiser"/>
+	<role argnum="1" argrole="promised thing or action"/>
+	<role argnum="2" argrole="person promised to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>다짐하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>나는 당에 충성을 다 하겠다고 다짐했습니다.</text>
+	  <parse>
+(S (NP-SBJ 나/NPN+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (NP-COMP 당/NNC+에/PAD)
+                   (VP (NP-OBJ-LV 충성/NNC+을/PCA)
+                       (VP (ADVP 다/ADV)
+                           (VP (LV 하/VV+겠/EPF+다/EFN+고/PAD))))))
+       (VV 다짐/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>당에 충성을 다 하겠다</term>
+	    </Arg>
+	    <Rel>
+	      <term>다짐했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>다짐하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>나는 당에 충성을 다짐했습니다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>나</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>당</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>충성</term>
+	    </Arg>
+	    <Rel>
+	      <term>다짐했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

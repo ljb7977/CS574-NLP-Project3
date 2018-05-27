@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대항</lemma>
+    <comment>Frames file for '대항' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대항.01</id>
+      <edef>oppose</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing opposed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대항하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>즉 태국에서도 채권자들이 법적으로 채무자에 대항할 수 있다는 중요한 원칙이 이번 판결로 인정돼 태국 경제에 광범위한 영향을 미칠 것이라는 분석이다.</text>
+	  <parse>
+(S (ADCP 즉/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (S (NP-ADV 태국/NPR+에서/PAD+도/PAU)
+                    (S (NP-SBJ (S (NP-SBJ 채권자/NNC+들/XSF+이/PCA)
+                                  (VP (VP (NP-ADV 법적/NNC+으로/PAD)
+                                          (VP (NP-COMP 채무자/NNC+에/PAD)
+                                              (VV 대항/NNC+하/XSV+을/EAN)))
+                                      (VX 수/NNX
+                                          있/VJ+다는/EAN)))
+                               (NP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (ADJP (VJ 중요/NNC+하/XSJ+은/EAN))))
+                                   (NP 원칙/NNC+이/PCA)))
+                       (VP (NP-ADV 이번/NNC
+                                   판결/NNC+으로/PAD)
+                           (VP (VV 인정/NNC+되/XSV+어/ECS)))))
+                 (S (NP-SBJ *pro*)
+                    (VP (VP (NP-COMP 태국/NPR
+                                     경제/NNC+에/PAD)
+                            (NP-OBJ (S (WHNP-2 *op*)
+                                       (S (NP-SBJ *T*-2)
+                                          (ADJP (VJ 광범위/NNC+하/XSJ+은/EAN))))
+                                    (NP 영향/NNC+을/PCA))
+                            미치/VV+을/EAN)
+                        (VX 것/NNX+이/CO+라는/EAN))))
+              (NP 분석/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>채권자들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>법적으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>채무자</term>
+	    </Arg>
+	    <Rel>
+	      <term>대항할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

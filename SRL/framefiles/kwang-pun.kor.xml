@@ -1,0 +1,93 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>광분</lemma>
+    <comment>Frames file for '광분' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>광분.01</id>
+      <edef>strive excessively</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing tried"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>광분하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이에 대해 한나라당 이회창 총재는 10 일 진주지구당(위원장 하순봉) 창당대회에서 "베를린선언은 그저 북한을 지원, 북한의 경제회생을 도와주겠다고만 했지, 전쟁준비에 광분하고 미사일과 핵개발에 혈안이 된 북한에 무엇을 어떻게 하라고 요구하는 아무런 내용이 없다"며 `상호주의' 포기라고 비판했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          대하/VV+어/ECS))
+   (S (NP-SBJ 한나라당/NPR
+              이회창/NPR
+              총재/NNC+은/PAU)
+      (VP (NP-ADV 10/NNU
+                  일/NNX)
+          (NP-ADV 진주/NPR+지구당/NNC
+                  (PRN -LRB-/SLQ
+                       (NP 위원장/NNC
+                           하순봉/NPR)
+                       -RRB-/SRQ)
+                  창당/NNC+대회/NNC+에서/PAD)
+          (S "/SLQ
+             (S (NP-SBJ 베를린/NPR+선언/NNC+은/PAU)
+                (VP (S-COMP (S (NP-SBJ *pro*)
+                               (VP (ADVP 그저/ADV)
+                                   (VP (NP-OBJ 북한/NPR+을/PCA)
+                                       (VV 지원/NNC))))
+                            ,/SCM
+                            (S (NP-SBJ *pro*)
+                               (VP (VP (NP-OBJ (NP 북한/NPR+의/PAN)
+                                               (NP 경제/NNC+회생/NNC+을/PCA))
+                                       돕/VV+어/ECS)
+                                   주/VX+겠/EPF+다/EFN+고/PAD+만/PAU)))
+                    하/VV+었/EPF+지/ECS))
+             ,/SCM
+             (S (NP-SBJ (S (NP-SBJ *pro*)
+                           (VP (NP-COMP (S (WHNP-1 *op*)
+                                           (S (NP-SBJ *T*-1)
+                                              (VP (VP (NP-COMP 전쟁/NNC+준비/NNC+에/PAD)
+                                                      (VV 광분/NNC+하/XSV+고/ECS))
+                                                  (VP (NP-ADV (NP 미사일/NNC+과/PCJ)
+                                                              (NP 핵/NNC+개발/NNC+에/PAD))
+                                                      (VP (NP-COMP 혈안/NNC+이/PCA)
+                                                          되/VV+은/EAN)))))
+                                        (NP 북한/NPR+에/PAD))
+                               (S-COMP (NP-SBJ *pro*)
+                                       (VP (NP-OBJ 무엇/NPN+을/PCA)
+                                           (VP (ADVP 어떻게/ADV)
+                                               (VP 하/VV+으라/EFN+고/PAD))))
+                               (VV 요구/NNC+하/XSV+는/EAN)))
+                        (NP 아무런/DAN
+                            내용/NNC+이/PCA))
+                (ADJP 없/VJ+다/EFN))
+             "/SRQ
+             며/ECS)
+          (VP (NP-COMP `/SLQ
+                       상호/NNC+주의/NNC
+                       '/SRQ
+                       포기/NNC+이라고/PAD)
+              (VV 비판/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=북한</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>전쟁준비</term>
+	    </Arg>
+	    <Rel>
+	      <term>광분하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

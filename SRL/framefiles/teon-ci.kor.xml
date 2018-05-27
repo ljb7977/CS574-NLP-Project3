@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>던지</lemma>
+    <comment>Frames file for '던지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>던지.01</id>
+      <edef>throw</edef>
+      <roleset>
+	<role argnum="0" argrole="thrower"/>
+	<role argnum="1" argrole="thing thrown"/>
+	<role argnum="2" argrole="thrown to, at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>던지다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러고 난 다음에도 적이 20에서 40 미터 안으로 들어오면 분대 성원들이 수류탄을 던지며 육박전을 할 준비를 합니다.</text>
+	  <parse>
+(S (S (NP-ADV (S (NP-SBJ *pro*)
+                 (VP (VP 그러/VV+고/ECS)
+                     나/VX+은/EAN))
+              (NP 다음/NNC+에/PAD+도/PAU))
+      (S (NP-SBJ 적/NNC+이/PCA)
+         (VP (NP-COMP (NP (NP 20/NNU+에서/PAD)
+                          (NP 40/NNU
+                              미터/NNX))
+                      (NP 안/NNC+으로/PAD))
+             들어오/VV+으면/ECS)))
+   (S (S (NP-SBJ 분대/NNC
+                 성원/NNC+들/XSF+이/PCA)
+         (VP (NP-OBJ 수류탄/NNC+을/PCA)
+             던지/VV+으며/ECS))
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ-LV (S (NP-SBJ *pro*)
+                           (VP (NP-OBJ-LV 육박전/NNC+을/PCA)
+                               (LV 하/VV+을/EAN)))
+                        (NP 준비/NNC+을/PCA))
+             (LV 하/VV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>그러고 난 다음에도 적이 20에서 40 미터 안으로 들어오면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>분대 성원들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수류탄</term>
+	    </Arg>
+	    <Rel>
+	      <term>던지며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

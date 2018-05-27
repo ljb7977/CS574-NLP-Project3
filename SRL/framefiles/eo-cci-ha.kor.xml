@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>어찌하</lemma>
+    <comment>Frames file for '어찌하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>어찌하.01</id>
+      <edef>do what</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>어찌하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>장 주석은 오는 18 일 치러지는 대만 총통선거에서 민진당의 천수이볜(진수편) 후보가 당선되면 어떻게 하겠느냐는 기자의 질문에 "달리 할 말이 없을 것"이라고 말하고 "당신 생각엔 내가 어찌하면 좋겠느냐"고 반문, 구체적인 언급을 피했다.</text>
+	  <parse>
+(S (S (NP-SBJ 장/NPR
+              주석/NNC+은/PAU)
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (S (NP-ADV (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (NP-ADV 오는/DAN
+                                                      18/NNU
+                                                      일/NNX)
+                                              (VP (VV 치르/VV+어지/XSV+는/EAN)))))
+                                    (NP 대만/NPR
+                                        총통/NNC+선거/NNC+에서/PAD))
+                            (S (NP-SBJ (NP 민진당/NPR+의/PAN)
+                                       (NP 천수이볜/NPR
+                                           (PRN -LRB-/SLQ
+                                                (NP 진수편/NPR)
+                                                -RRB-/SRQ)
+                                           후보/NNC+이/PCA))
+                               (VP (VV 당선/NNC+되/XSV+으면/ECS))))
+                         (ADVP 어떻게/ADV)
+                         (VP 하/VV+겠/EPF+느냐는/EAN)))
+                  (NP (NP 기자/NNC+의/PAN)
+                      (NP 질문/NNC+에/PAD)))
+          (VP (VP (S-COMP "/SLQ
+                          (NP-SBJ (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *pro*)
+                                        (VP (ADVP 달리/ADV)
+                                            (VP (NP-OBJ *T*-2)
+                                                하/VV+을/EAN))))
+                                  (NP 말/NNC+이/PCA))
+                          (VP (ADJP 없/VJ+을/EAN)
+                              (VX 것/NNX))
+                          "/SRQ
+                          이/CO+라/EFN+고/PAD)
+                  말하/VV+고/ECS)
+              (VP (S-COMP "/SLQ
+                          (NP-ADV 당신/NPN
+                                  생각/NNC+에/PAD+은/PAU)
+                          (S (NP-SBJ 나/NPN+이/PCA)
+                             (VP 어찌하/VV+으면/ECS))
+                          (S (NP-SBJ *pro*)
+                             (ADJP 좋/VJ+겠/EPF+느냐/EFN))
+                          "/SRQ
+                          고/PAD)
+                  (VV 반문/NNC)))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-3 *op*)
+                     (S (NP-SBJ *T*-3)
+                        (VP (NP 구체/NNC+적/XSF+이/CO+은/EAN))))
+                  (NP 언급/NNC+을/PCA))
+          피하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>나</term>
+	    </Arg>
+	    <Rel>
+	      <term>어찌하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

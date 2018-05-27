@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>착각</lemma>
+    <comment>Frames file for '착각' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>착각.01</id>
+      <edef>mistake</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing mistaken"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>착각하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저는 그 분을 정치 군관으로 착각했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (NP-OBJ 그/DAN
+               분/NNX+을/PCA)
+       (NP-COMP 정치/NNC
+                군관/NNC+으로/PAD)
+       (VV 착각/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그 분</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>정치 군관</term>
+	    </Arg>
+	    <Rel>
+	      <term>착각했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>착각되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>수 개 부대가 동시에 시사하는 일은 극히 드문데, 이것은 그렇게 할 경우 요란 사격으로 착각되기 쉽기 때문이다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-SBJ 수/DAN
+                         개/NNX
+                         부대/NNC+이/PCA)
+                 (VP (NP-ADV 동시/NNC+에/PAD)
+                     (VP (VV 시사/NNC+하/XSV+는/EAN))))
+              (NP 일/NNC+은/PAU))
+      (ADJP (ADVP 극히/ADV)
+            (ADJP 드물/VJ+는데/ECS)))
+   ,/SCM
+   (S (NP-SBJ 이것/NPN+은/PAU)
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (ADVP 그렇게/ADV)
+                         (VP 하/VV+을/EAN)))
+                  (NP 경우/NNC))
+          (VP (NP (S (S-SBJ (NP-SBJ *pro*)
+                            (VP (NP-COMP 요란/NNC
+                                         사격/NNC+으로/PAD)
+                                (VV 착각/NNC+되/XSV+기/ENM)))
+                     (ADJP 쉽/VJ+기/ENM))
+                  (NP 때문/NNX+이/CO+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>요란 사격</term>
+	    </Arg>
+	    <Rel>
+	      <term>착각되기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

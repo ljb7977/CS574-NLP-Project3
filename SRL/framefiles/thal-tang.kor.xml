@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탈당</lemma>
+    <comment>Frames file for '탈당' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탈당.01</id>
+      <edef>secede</edef>
+      <roleset>
+	<role argnum="0" argrole="ex-member"/>
+	<role argnum="1" argrole="party"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탈당하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>와데 당수는 앞서 사회당을 탈당한 인사로 지난달 27 일의 1 차 투표에서 17 퍼센트의 지지를 얻은 무스타파 니아세 후보의 지지를 이끌어 냄으로써 지지기반을 더욱 공고히 했다.</text>
+	  <parse>
+(S (NP-SBJ 와데/NPR
+           당수/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+	  (VP (VP (ADVP 앞서/ADV)
+		  (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+				     (S (NP-SBJ *T*-2)
+					(VP (NP-ADV (S (WHNP-1 *op*)
+						       (S (NP-SBJ *T*-1)
+							  (VP (NP-OBJ 사회당/NPR+을/PCA)
+							      (VV 탈당/NNC+하/XSV+은/EAN))))
+						    (NP 인사/NNC+으로/PAD))
+					    (NP-ADV (NP 지난달/NNC
+							      27/NNU
+							      일/NNX+의/PAN)
+						    (NP 1/NNU
+							차/NNX
+							투표/NNC+에서/PAD))
+					    (VP (NP-OBJ (NP 17/NNU
+							    퍼센트/NNX+의/PAN)
+							(NP 지지/NNC+을/PCA))
+						얻/VV+은/EAN))))
+				  (NP 무스타파/NPR
+                                              니아세/NPR
+                                              후보/NNC+의/PAN))
+			      (NP 지지/NNC+을/PCA))
+		      이끌/VV+어/ECS))
+	      내/VX+음/ENM+으로써/PAD))
+       (VP (NP-OBJ 지지/NNC+기반/NNC+을/PCA)
+           (VP (ADVP (ADVP 더욱/ADV)
+                     (ADVP 공고히/ADV))
+               (VP 하/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=인사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>사회당</term>
+	    </Arg>
+	    <Rel>
+	      <term>탈당한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

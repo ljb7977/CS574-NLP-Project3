@@ -1,0 +1,205 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>분열</lemma>
+    <comment>Frames file for '분열' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>분열.01</id>
+      <edef>separate</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing divided"/>
+	<role argnum="2" argrole="divided into"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>분열하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>군부는 "수백만명의 인민해방군이 고도의 경계 및 전투태세를 갖추고 있다"면서 "중국을 분열하려는 어떠한 움직임도 단연히 분쇄하기 위해 모든 조치를 취할 것"이라고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 군부/NNC+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ (NP 수/XSF+백만/NNU+명/NNX+의/PAN)
+                  (NP 인민해방군/NNC+이/PCA))
+          (VP (VP (NP-OBJ (NP (NP 고도/NNC+의/PAN)
+                              (NP 경계/NNC))
+                          (ADCP 및/ADC)
+                          (NP 전투/NNC+태세/NNC+을/PCA))
+                  갖추/VV+고/ECS)
+              있/VX+다/EFN)
+          "/SRQ
+          면서/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (VP (S (NP-SBJ *pro*)
+                              (VP (S-OBJ (NP-SBJ *pro*)
+                                         (VP (NP-OBJ (S (WHNP-1 *op*)
+							(S (NP-SBJ *T*-1)
+							   (VP (NP-OBJ 중국/NPR+을/PCA)
+							       (VV 분열/NNC+하/XSV+으려는/EAN))))
+                                                     (NP 어떠한/DAN
+                                                         움직임/NNC+도/PAU))
+                                             (VP (ADVP 단연히/ADV)
+                                                 (VP (VV 분쇄/NNC+하/XSV+기/ENM)))))
+                                  위하/VV+어/ECS))
+                           (VP (NP-OBJ 모든/DAN
+                                       조치/NNC+을/PCA)
+                               취하/VV+을/EAN))
+                       (VX 것/NNX))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=어떠한 움직임</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Rel>
+	      <term>분열하려는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>분열하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>리 당수는 이날 리아오(이오) 후보와 함께 기자회견을 갖고 "대만 독립 반대자들은 분열해서는 안되며 모두 쑹 후보를 지지해야 한다"고 밝혔으며 자신은 이를 위해 신당을 탈퇴한다고 덧붙였다.
+
+</text>
+	  <parse>
+(S (S (NP-SBJ 리/NPR
+              당수/NNC+은/PAU)
+      (VP (NP-ADV 이날/NNC)
+          (ADVP (NP-COMP 리아오/NPR
+                         (PRN -LRB-/SLQ
+                              (NP 이오/NPR)
+                              -RRB-/SRQ)
+                         후보/NNC+과/PAD)
+                함께/ADV)
+          (VP (NP-OBJ 기자/NNC+회견/NNC+을/PCA)
+              갖/VV+고/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP "/SLQ
+                  (S (S (NP-SBJ 대만/NPR
+                                독립/NNC
+                                반대자/NNC+들/XSF+은/PAU)
+                        (VP (VV 분열/NNC+하/XSV+어서/ECS+은/PAU)))
+                     (S (NP-SBJ *pro*)
+                        (VP 안되/VV+으며/ECS)))
+                  (S (NP-SBJ 모두/NNC)
+                     (VP (VP (NP-OBJ 쑹/NPR
+                                     후보/NNC+을/PCA)
+                             (VV 지지/NNC+하/XSV+어야/ECS))
+                         하/VX+는다/EFN))
+                  "/SRQ
+                  고/PAD)
+          밝히/VV+었/EPF+으며/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ 자신/NNC+은/PAU)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ 이/NPN+을/PCA)
+                             위하/VV+어/ECS))
+                      (VP (NP-OBJ 신당/NNC+을/PCA)
+                          (VV 탈퇴/NNC+하/XSV+는다/EFN+고/PAD))))
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>대만 독립 반대자들</term>
+	    </Arg>
+	    <Rel>
+	      <term>분열해서는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>분열시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 아무런 관계가 없는 위라하디쿠수마 소장과 자신이 적대적 관계로 놓이게 된 것이 음모의 한 예라고 주장하면서 "음모자들이 군부의 특정 세력을 다른 세력과 서로 경쟁시키는 방법으로 군을 분열시키고 있다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-COMP (NP-SBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (S (NP-SBJ 아무런/DAN
+                                                          관계/NNC+이/PCA)
+                                                  (ADJP 없/VJ+는/EAN))))
+                                         (NP (NP 위라하디쿠수마/NPR
+                                                 소장/NNC+과/PAD)
+                                             (NP 자신/NNC+이/PCA)))
+                                 (VP (VP (NP-COMP 적대/NNC+적/XSF
+                                                  관계/NNC+으로/PAD)
+                                         놓이/VV+게/ECS)
+                                     되/VX+은/EAN))
+                              (NP 것/NNX+이/PCA))
+                      (VP (NP (NP 음모/NNC+의/PAN)
+                              (NP 한/NNU
+                                  예/NNC+이/CO+라/EFN+고/PAD))))
+              (VV 주장/NNC+하/XSV+으면서/ECS)))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ 음모자/NNC+들/XSF+이/PCA)
+                   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                      (VP (NP-OBJ (NP 군부/NNC+의/PAN)
+                                                  (NP 특정/NNC
+                                                      세력/NNC+을/PCA))
+                                          (NP-COMP 다른/DAN
+                                                   세력/NNC+과/PAD)
+                                          (VP (ADVP 서로/ADV)
+                                              (VP (VV 경쟁/NNC+시키/XSV+는/EAN)))))
+                                   (NP 방법/NNC+으로/PAD))
+                           (VP (NP-OBJ 군/NNC+을/PCA)
+                               (VV 분열/NNC+시키/XSV+고/ECS)))
+                       있/VX+다/EFN)
+                   "/SRQ
+                   고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>음모자들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>군부의 특정 세력을 다른 세력과 서로 경쟁시키는 방법으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>군</term>
+	    </Arg>
+	    <Rel>
+	      <term>분열시키고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

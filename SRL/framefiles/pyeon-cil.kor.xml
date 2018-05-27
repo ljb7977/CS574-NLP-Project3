@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>변질</lemma>
+    <comment>Frames file for '변질' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>변질.01</id>
+      <edef>transmute</edef>
+      <roleset>
+	<role argnum="1" argrole="thing changing"/>
+	<role argnum="2" argrole="start state"/>
+	<role argnum="3" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>변질되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>총선연대는 6 일 여야 4 당이 지역주의 총선전략을 노골화하고 있다고 판단, 선거가 지역대결 구도로 변질되는 것을 막기 위해 지역감정 추방에 모든 역량을 집중키로 했다.</text>
+	  <parse>
+(S (S (NP-SBJ 총선/NNC+연대/NNC+은/PAU)
+      (VP (NP-ADV 6/NNU
+                  일/NNX)
+          (VP (S-COMP (NP-SBJ 여야/NNC
+                              4/NNU
+                              당/NNX+이/PCA)
+                      (VP (VP (NP-OBJ 지역/NNC+주의/NNC
+                                      총선/NNC+전략/NNC+을/PCA)
+                              (VV 노골화/NNC+하/XSV+고/ECS))
+                          있/VX+다/EFN+고/PAD))
+              (VV 판단/NNC))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (S-OBJ (NP-SBJ *pro*)
+                                    (VP (NP-OBJ (S (NP-SBJ 선거/NNC+이/PCA)
+                                                   (VP (NP-COMP 지역/NNC+대결/NNC
+                                                                구도/NNC+으로/PAD)
+                                                       (VV 변질/NNC+되/XSV+는/EAN)))
+                                                (NP 것/NNX+을/PCA))
+                                        막/VV+기/ENM))
+                             위하/VV+어/ECS))
+                      (VP (NP-COMP 지역/NNC+감정/NNC
+                                   추방/NNC+에/PAD)
+                          (NP-OBJ 모든/DAN
+                                  역량/NNC+을/PCA)
+                          (VV 집중/NNC+하/XSV+기/ENM+으로/PAD))))
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>선거</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>지역대결 구도</term>
+	    </Arg>
+	    <Rel>
+	      <term>변질되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

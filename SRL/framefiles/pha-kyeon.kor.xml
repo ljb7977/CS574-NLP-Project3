@@ -1,0 +1,116 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>파견</lemma>
+    <comment>Frames file for '파견' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>파견.01</id>
+      <edef>dispatch</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity dispatched"/>
+	<role argnum="2" argrole="dispatched to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>파견하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그리고 5 중대는 전방 약 600 미터 지점에 첨병 소대를 파견할 겁니다.</text>
+	  <parse>
+(S (ADCP 그리고/ADC)
+   (S (NP-SBJ 5/NNU
+              중대/NNC+은/PAU)
+      (VP (VP (NP-COMP 전방/NNC
+                       약/DAN
+                       600/NNU
+                       미터/NNX
+                       지점/NNC+에/PAD)
+              (NP-OBJ 첨병/NNC
+                      소대/NNC+을/PCA)
+              (VV 파견/NNC+하/XSV+을/EAN))
+          (VX 것/NNX+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그리고</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>5 중대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>전방 약 600 미터 지점</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>첨병 소대</term>
+	    </Arg>
+	    <Rel>
+	      <term>파견할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>겁니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>파견되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="np-sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>적이 철수할 때에는 적의 퇴로를 차단하고 이를 포위하기 위해 경보병 부대가 파견될지도 모릅니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-OBJ (NP-ADV (S (WHNP *op*)
+                         (S (NP-SBJ 적/NNC+이/PCA)
+                            (VP (VV 철수/NNC+하/XSV+을/EAN))))
+                      (NP 때/NNC+에/PAD+은/PAU))
+              (S (NP-SBJ *pro*)
+                 (VP (S-OBJ (S (NP-SBJ *pro*)
+                               (VP (NP-OBJ (NP 적/NNC+의/PAN)
+                                           (NP 퇴로/NNC+을/PCA))
+                                   (VV 차단/NNC+하/XSV+고/ECS)))
+                            (S (NP-SBJ *pro*)
+                               (VP (NP-OBJ 이/NPN+을/PCA)
+                                   (VV 포위/NNC+하/XSV+기/ENM))))
+                     위하/VV+어/ECS)) 
+              (S (NP-SBJ 경보병/NNC
+                         부대/NNC+이/PCA)
+                 (VP (VV 파견/NNC+되/XSV+을지/EFN+도/PAU))))
+       모르/VV+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>적이 철수할 때에는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>적의 퇴로를 차단하고 이를 포위하기 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>경보병 부대</term>
+	    </Arg>
+	    <Rel>
+	      <term>파견될지도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

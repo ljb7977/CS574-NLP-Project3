@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탕감</lemma>
+    <comment>Frames file for '탕감' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탕감.01</id>
+      <edef>forgive</edef>
+      <roleset>
+	<role argnum="0" argrole="forgiver"/>
+	<role argnum="1" argrole="debt"/>
+	<role argnum="2" argrole="entity forgiven"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탕감하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이탈리아는 모잠비크의 부채 약 5 억달러를 탕감해 주기로 했다고 총리실 관계자가 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 이탈리아/NPR+은/PAU)
+	     (VP (S-COMP (NP-SBJ *pro*)
+			 (VP (VP (NP-OBJ (NP (NP 모잠비크/NPR+의/PAN)
+					     (NP 부채/NNC))
+					 (NP 약/DAN
+					       5/NNU
+					       억/NNU+달러/NNX+을/PCA))
+				 (VV 탕감/NNC+하/XSV+어/ECS))
+			     주/VX+기/ENM+으로/PAD))
+		 하/VV+었/EPF+다/EFN+고/PAD))
+   (S (NP-SBJ 총리/NNC+실/XSF
+              관계자/NNC+이/PCA)
+      (VP (S-COMP *T*-1)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>모잠비크의 부채 약 5 억달러</term>
+	    </Arg>
+	    <Rel>
+	      <term>탕감해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>주기로</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

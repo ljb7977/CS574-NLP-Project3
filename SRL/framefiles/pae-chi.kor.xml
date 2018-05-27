@@ -1,0 +1,101 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>배치</lemma>
+    <comment>Frames file for '배치' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>배치.01</id>
+      <edef>distribute</edef>
+      <roleset>
+	<role argnum="0" argrole="distributor"/>
+	<role argnum="1" argrole="thing distributed"/>
+	<role argnum="2" argrole="distributed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>배치하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저는 저희 포대가 김포공항 동북쪽에 위치한 논에다 포들을 배치하기로 되어 있었던 것밖에 모릅니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (VP (S-COMP (NP-SBJ 저희/NPN
+                                          포대/NNC+이/PCA)
+                                  (VP (NP-COMP (S (WHNP-1 *op*)
+                                                  (S (NP-SBJ *T*-1)
+                                                     (VP (NP-COMP 김포/NPR
+                                                                  공항/NNC
+                                                                  동북쪽/NNC+에/PAD)
+                                                         (VV 위치/NNC+하/XSV+은/EAN))))
+                                               (NP 논/NNC+에다/PAD))
+                                      (NP-OBJ 포/NNC+들/XSF+을/PCA)
+                                      (VV 배치/NNC+하/XSV+기/ENM+으로/PAD)))
+                          되/VV+어/ECS)
+                      있/VX+었/EPF+던/EAN))
+               (NP 것/NNX+밖에/PAU))
+       (VP (NP-OBJ *pro*)
+           모르/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>저희 포대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에다</f>
+	      <term>김포공항 동북쪽에 위치한 논</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>포들</term>
+	    </Arg>
+	    <Rel>
+	      <term>배치하기로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>배치되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>제1 소대와 경기관총 분대는 이 능선에 배치되어 있었습니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 제/XPF+1/NNU 소대/NNC+와/PCJ)
+	   (NP 경기관총/NNC 분대/NNC+은/PAU))
+   (VP (VP (NP-COMP 이/DAN 능선/NNC+에/PAD)
+	   (VV 배치/NNC+되/XSV+어/EAU)))
+       있/VX+었/EPF+습니다/EFN)
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>제1 소대와 경기관총 분대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>이 능선</term>
+	    </Arg>
+	    <Rel>
+	      <term>배치되어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있었습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

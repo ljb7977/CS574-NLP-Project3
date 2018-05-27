@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가서명</lemma>
+    <comment>Frames file for '가서명' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가서명.01</id>
+      <edef>sign tentatively</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="document"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가서명되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>양국은 이번 회담에서는 지난 98 년 11 월 가서명된 어업협정을 올 상반기 중 정식 서명, 발효시키기 위해 현재 이견이 남아 있는 양쯔장(양자강) 하구 수역 조업문제를 집중 논의할 예정이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 양국/NNC+은/PAU)
+              (VP (NP-ADV 이번/NNC
+                          회담/NNC+에서/PAD+은/PAU)
+                  (S (NP-SBJ *pro*)
+                     (VP (S-OBJ (NP-SBJ *pro*)
+                                (VP (NP-OBJ (S (WHNP-1 *op*)
+                                               (S (NP-SBJ *T*-1)
+                                                  (VP (NP-ADV 지난/DAN
+                                                              98/NNU
+                                                              년/NNX
+                                                              11/NNU
+                                                              월/NNX)
+                                                      (VP (VV 가서명/NNC+되/XSV+은/EAN)))))
+                                            (NP 어업/NNC+협정/NNC+을/PCA))
+                                    (VP (NP-ADV 올/DAN
+                                                상반기/NNC
+                                                중/NNX)
+                                        (NP-ADV 정식/NNC)
+                                        (VP (VV (VV 서명/NNC)
+                                                ,/SCM
+                                                (VV 발효/NNC+시키/XSV+기/ENM))))))
+                         위하/VV+어/ECS))
+                  (VP (NP-OBJ (S (WHNP-2 *op*)
+                                 (S (NP-ADV 현재/NNC)
+                                    (S (NP-SBJ 이견/NNC+이/PCA)
+                                       (VP (VP (NP-COMP *T*-2)
+                                               남/VV+어/ECS)
+                                           있/VX+는/EAN))))
+                              (NP 양쯔장/NPR
+                                  (PRN -LRB-/SLQ
+                                       (NP 양자강/NPR)
+                                       -RRB-/SRQ)
+                                  하구/NNC
+                                  수역/NNC
+                                  조업/NNC+문제/NNC+을/PCA))
+                      (VP (NP-ADV 집중/NNC)
+                          (VP (VV 논의/NNC+하/XSV+을/EAN))))))
+           (NP 예정/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=어업협정</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 98 년 11 월</term>
+	    </Arg>
+	    <Rel>
+	      <term>가서명된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

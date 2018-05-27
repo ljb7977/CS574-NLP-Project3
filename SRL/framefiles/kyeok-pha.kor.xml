@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>격파</lemma>
+    <comment>Frames file for '격파' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>격파.01</id>
+      <edef>destroy</edef>
+      <roleset>
+	<role argnum="0" argrole="destroyer"/>
+	<role argnum="1" argrole="thing destroyed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>격파하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>임기 표적을 격파하는 데는 어떤 사격 방법이 사용되는가?</text>
+	  <parse>
+(S (NP-COMP-1 (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 임기/NNC
+                             표적/NNC+을/PCA)
+                     (VV 격파/NNC+하/XSV+는/EAN)))
+              (NP 데/NNX+은/PAU))
+   (S (NP-SBJ 어떤/DAN
+              사격/NNC
+              방법/NNC+이/PCA)
+      (VP (NP-COMP *T*-1)
+          (VV 사용/NNC+되/XSV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>임기 표적</term>
+	    </Arg>
+	    <Rel>
+	      <term>격파하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>격파되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="np-sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>귀관 탱크가 그 교량을 건너간 다음 격파될 때까지 얼마나 이동해갔소?</text>
+	  <parse>
+(S (NP-SBJ 귀관/NPN
+           탱크/NNC+이/PCA)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 그/DAN
+                              교량/NNC+을/PCA)
+                      건너가/VV+은/EAN))
+               (NP 다음/NNC))
+       (NP-ADV (S (WHNP *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (VV 격파/NNC+되/XSV+을/EAN))))
+               (NP 때/NNC+까지/PAU))
+       (ADVP 얼마나/ADV)
+       (S (NP-SBJ *pro*)
+          (VP (VV 이동/NNC+하/XSV+어/ECS)))
+       (VP 가/VV+었/EPF+소/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>격파될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

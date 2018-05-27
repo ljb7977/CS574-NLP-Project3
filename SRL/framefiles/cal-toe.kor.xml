@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잘되</lemma>
+    <comment>Frames file for '잘되' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>잘되.01</id>
+      <edef>go well</edef>
+      <roleset>
+	<role argnum="1" argrole="thing going well"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잘되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 북한의 현 정부를 "구세대와 신세대 지도자들의 조화가 잘된 정부"로, 정치체제에 대해서는 "내용적으로는 1 인 독재체제이나 구조상으로는 집단지도 또는 집체적 지도정치로 볼 수 있다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (NP 북한/NPR+의/PAN)
+                              (NP 현/DAN
+                                  정부/NNC+을/PCA))
+                      (NP-COMP "/SLQ
+                               (S (NP-SBJ (NP (NP (NP 구/XPF+세대/NNC+과/PCJ)
+                                                  (NP 신/XPF+세대/NNC))
+                                              (NP 지도자/NNC+들/XSF+의/PAN))
+                                          (NP 조화/NNC+이/PCA))
+                                  (VP 잘되/VV+은/EAN))
+                               (NP 정부/NNC)
+                               "/SRQ
+                               으로/PAD)
+                      (VV *?*)))
+               ,/SCM
+               (S (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 정치/NNC+체제/NNC+에/PAD)
+                         대하/VV+어서/ECS+은/PAU))
+                  "/SLQ
+                  (S (S (NP-SBJ *pro*)
+                        (VP (NP-ADV 내용/NNC+적/XSF+으로/PAD+은/PAU)
+                            (VP (NP 1/NNU
+                                    인/NNX
+                                    독재/NNC+체제/NNC+이/CO+으나/ECS))))
+                     (S (NP-SBJ *pro*)
+                        (VP (VP (NP-ADV 구조상/NNC+으로/PAD+은/PAU)
+                                (VP (NP-OBJ *pro*)
+                                    (NP-COMP (NP 집단/NNC+지도/NNC)
+                                             (ADCP 또는/ADC)
+                                             (NP 집체적/NNC
+                                                 지도/NNC+정치/NNC+으로/PAD))
+                                    보/VV+을/EAN))
+                            (VX 수/NNX
+                                있/VJ+다/EFN))))
+                  "/SRQ
+                  고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>구세대와 신세대 지도자들의 조화</term>
+	    </Arg>
+	    <Rel>
+	      <term>잘된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

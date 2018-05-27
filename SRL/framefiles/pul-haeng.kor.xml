@@ -1,0 +1,40 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불행</lemma>
+    <comment>Frames file for '불행' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>불행.01</id>
+      <edef>unfortunate</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being unfortunate"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불행하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그건 정말 불행한 일이야.</text>
+	  <parse>
+(S (NP-SBJ 그것/NPN+은/PAU)
+   (VP (ADVP 정말/ADV)
+       (VP (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (ADJP (VJ 불행/NNC+하/XSJ+은/EAN))))
+               (NP 일/NNC+이/CO+야/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=일</term>
+	    </Arg>
+	    <Rel>
+	      <term>불행한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

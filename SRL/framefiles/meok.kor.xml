@@ -1,0 +1,121 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>먹</lemma>
+    <comment>Frames file for '먹' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>먹.01</id>
+      <edef>eat, have</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing eaten"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>먹다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>상좌 이상의 고급 군관이 먹는 식사는 양도 더 많고 질도 훨씬 좋습니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 0) 
+	      (S (NP-SBJ (NP 상좌/NNC 
+			     이상/NNC+의/PCA) 
+			 (NP 고급/NNC 
+			     군관/NNC+이/PCA)) 
+		 (VP (NP-OBJ *T*-1)
+		     먹/VV+는/EAN))) 
+	   (NP 식사/NNC+는/PAU))
+   (S (S (NP-SBJ 양/NNC+도/PAU) 
+	 (ADJP (ADVP 더/ADV)
+	       (ADJP 많/VJ+고/ECS))) 
+      (S (NP-SBJ 질/NNC+도/PAU) 
+	 (ADJP (ADVP 훨씬/ADV) 
+	       (ADJP 좋/VJ+습니다/EFN))))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>상좌 이상의 고급 군관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=식사</term>
+	    </Arg>
+	    <Rel>
+	      <term>먹는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>먹이다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이와 함께 김 명예총재는 대북문제와 관련, "대북문제는 어떤 정치인이 자신의 정치적 입장을 위해 가타부타한다고 되는 것이 아니다"라며 "통일은 우리나라가 북한을 우리힘으로 먹여 살릴 정도의 국력을 갖기 전에는 섣불리 추진할 수 없다"고 말했다.</text>
+	  <parse>
+(S (ADVP (NP-COMP 이/NPN+과/PAD)
+         함께/ADV)
+   (S (NP-SBJ 김/NPR
+              명예/NNC+총재/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 대/XPF+북/NPR+문제/NNC+과/PAD)
+                 (VV 관련/NNC)))
+          ,/SCM
+          (S "/SLQ
+             (NP-SBJ 대/XPF+북/NPR+문제/NNC+은/PAU)
+             (ADJP (S (NP-SBJ 어떤/DAN
+                              정치인/NNC+이/PCA)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP 자신/NNC+의/PAN)
+                                         (NP 정치/NNC+적/XSF
+                                             입장/NNC+을/PCA))
+                                 위하/VV+어/ECS))
+                          (VP (VV 가타부타/NNC+하/XSV+는다/EFN+고/PAD))))
+                   (ADJP (NP-COMP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP 되/VV+는/EAN)))
+                                  (NP 것/NNX+이/PCA))
+                         아니/VJ+다/EFN))
+             "/SRQ
+             라며/ECS)
+          (VP (S-COMP "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ 통일/NNC+은/PAU)
+                              (VP (NP-ADV (S (NP-SBJ 우리나라/NNC+이/PCA)
+                                             (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                                                                (VP (NP-OBJ 북한/NPR+을/PCA)
+                                                                    (VP (NP-ADV 우리/NPN+힘/NNC+으로/PAD)
+                                                                        (S (NP-SBJ *pro*)
+                                                                           (VP (NP-OBJ *pro*)
+                                                                               먹이/VV+어/ECS))
+                                                                        (VP 살리/VV+을/EAN))))
+                                                             (NP 정도/NNC+의/PAN))
+                                                         (NP 국력/NNC+을/PCA))
+                                                 갖/VV+기/ENM))
+                                          (NP 전/NNC+에/PAD+은/PAU))
+                                  (ADVP 섣불리/ADV)
+                                  (VP (VV 추진/NNC+하/XSV+을/EAN))))
+                          (VX 수/NNX
+                              없/VJ+다/EFN))
+                      "/SRQ
+                      고/PAD)
+              말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>먹여</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

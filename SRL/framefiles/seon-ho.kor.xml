@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>선호</lemma>
+    <comment>Frames file for '선호' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>선호.01</id>
+      <edef>prefer</edef>
+      <roleset>
+	<role argnum="0" argrole="chooser"/>
+	<role argnum="1" argrole="thing chosen"/>
+	<role argnum="2" argrole="compared to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>선호하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 73 가구는 아들보다 딸을 선호했으며 아들을 선호한 가구는 69 개로 약간 적었다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 73/NNU
+              가구/NNC+은/PAU)
+      (VP (NP-COMP 아들/NNC+보다/PAD)
+          (NP-OBJ 딸/NNC+을/PCA)
+	  (VV 선호/NNC+하/XSV+었/EPF+으며/ECS)))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-OBJ 아들/NNC+을/PCA)
+                        (VV 선호/NNC+하/XSV+은/EAN))))
+              (NP 가구/NNC+이/PCA))
+      (ADJP (NP-ADV 69/NNU
+                    개/NNX+으로/PAD)
+            (ADVP 약간/ADV)
+            (ADJP 적/VJ+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>73 가구</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>보다</f>
+	      <term>아들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>딸</term>
+	    </Arg>
+	    <Rel>
+	      <term>선호했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

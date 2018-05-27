@@ -1,0 +1,112 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>창당</lemma>
+    <comment>Frames file for '창당' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>창당.01</id>
+      <edef>form a political party</edef>
+      <roleset>
+	<role argnum="0" argrole="thing forming"/>
+	<role argnum="1" argrole="thing formed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>창당되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>영남권 신당에 참여했던 한 핵심 인사는 "영남권 신당을 추진하던 일부 인사들이 자민련의 이 총재를 만나 이같은 의견을 타진, 긍정적인 반응을 얻었으며 박찬종씨등도 이에 공감했었다"면서 "이후 한나라당 공천파동으로 민국당이 창당되는 새로운 변수가 발생했지만 양당 모두 총선에서 살아남기 위한 유일한 생존전략 차원에서 이 아이디어는 아직 유효한 것으로 알고 있다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP 영남/NPR+권/XSF
+                              신당/NNC+에/PAD)
+                     (VV 참여/NNC+하/XSV+었/EPF+던/EAN))))
+           (NP 한/NNU
+               핵심/NNC
+               인사/NNC+은/PAU))
+   (VP (S "/SLQ
+          (S (NP-SBJ (S (WHNP-2 *op*)
+                        (S (NP-SBJ *T*-2)
+                           (VP (NP-OBJ 영남/NPR+권/XSF
+                                       신당/NNC+을/PCA)
+                               (VV 추진/NNC+하/XSV+던/EAN))))
+                     (NP 일부/NNC
+                         인사/NNC+들/XSF+이/PCA))
+             (VP (NP-OBJ (NP 자민련/NPR+의/PAN)
+                         (NP 이/NPR
+                             총재/NNC+을/PCA))
+                 만나/VV+어/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 이같은/DAN
+                         의견/NNC+을/PCA)
+                 (VV 타진/NNC)))
+          ,/SCM
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (WHNP-3 *op*)
+                            (S (NP-SBJ *T*-3)
+                               (VP (NP 긍정/NNC+적/XSF+이/CO+은/EAN))))
+                         (NP 반응/NNC+을/PCA))
+                 얻/VV+었/EPF+으며/ECS))
+          (S (NP-SBJ 박찬종/NPR+씨/NNX+등/NNX+도/PAU)
+             (VP (NP-COMP 이/NPN+에/PAD)
+                 (VV 공감/NNC+하/XSV+었었/EPF+다/EFN)))
+          "/SRQ
+          면서/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (VP (NP-COMP (S (S (NP-ADV 이후/NNC)
+                                          (S (NP-SBJ (S (NP-ADV 한나라당/NPR
+                                                                공천/NNC+파동/NNC+으로/PAD)
+                                                        (S (NP-SBJ 민국당/NPR+이/PCA)
+                                                           (VP (VV 창당/NNC+되/XSV+는/EAN))))
+                                                     (NP (S (WHNP-4 *op*)
+                                                            (S (NP-SBJ *T*-4)
+                                                               (ADJP 새롭/VJ+은/EAN)))
+                                                         (NP 변수/NNC+이/PCA)))
+                                             (VP (VV 발생/NNC+하/XSV+었/EPF+지만/ECS))))
+                                       (NP-ADV (NP (S (WHNP-6 *op*)
+                                                      (S (NP-SBJ *T*-6)
+                                                         (VP (S-OBJ (NP-SBJ 양당/NNC
+                                                                            모두/NNC)
+                                                                    (VP (NP-COMP 총선/NNC+에서/PAD)
+                                                                        살아남/VV+기/ENM))
+                                                             위하/VV+은/EAN)))
+                                                   (NP (S (WHNP-5 *op*)
+                                                          (S (NP-SBJ *T*-5)
+                                                             (ADJP (VJ 유일/NNC+하/XSJ+은/EAN))))
+                                                       (NP 생존/NNC+전략/NNC)))
+                                               (NP 차원/NNC+에서/PAD))
+                                       (S (NP-SBJ 이/DAN
+                                                  아이디어/NNC+은/PAU)
+                                          (ADJP (ADVP 아직/ADV)
+                                                (ADJP (VJ 유효/NNC+하/XSJ+은/EAN)))))
+                                    (NP 것/NNX+으로/PAD))
+                           알/VV+고/ECS)
+                       있/VX+다/EFN)
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>한나라당 공천파동으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>민국당</term>
+	    </Arg>
+	    <Rel>
+	      <term>창당되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>느슨하</lemma>
+    <comment>Frames file for '느슨하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>느슨하.01</id>
+      <edef>slack</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being slack"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>느슨하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 또 8 일 악성 대출의 대부분은 경제상황이 유리할 때 이뤄진 것이라면서 은행들은 현재와 같은 경제 팽창이 무한정 지속될 것으로 안심하지 말고 느슨한 대출기준과 사기행각에 철저히 대비해야 할 것이라고 촉구했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (NP-ADV 8/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP (S (NP-SBJ (NP 악성/NNC
+                                 대출/NNC+의/PAN)
+                             (NP 대부분/NNC+은/PAU))
+                     (VP (NP-ADV (S (NP-SBJ 경제/NNC+상황/NNC+이/PCA)
+                                    (ADJP (VJ 유리/NNC+하/XSJ+을/EAN)))
+                                 (NP 때/NNC))
+                         (VP (VV 이루/VV+어지/XSV+는/EAN))))
+                  (NP 것/NNX+이/CO+라면서/ECS))))
+       (VP (S-COMP (NP-SBJ 은행/NNC+들/XSF+은/PAU)
+                   (VP (VP (VP (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                                                     (S (NP-SBJ *T*-1)
+                                                        (ADJP (NP-COMP 현재/NNC+과/PAD)
+                                                              같/VJ+은/EAN)))
+                                                  (NP 경제/NNC
+                                                      팽창/NNC+이/PCA))
+                                          (VP (ADVP 무한정/ADV)
+                                              (VP (VV 지속/NNC+되/XSV+을/EAN))))
+                                       (NP 것/NNX+으로/PAD))
+                               (VP (VV 안심/NNC+하/XSV+지/ECS)))
+                           말/VX+고/ECS)
+                       (VP (VP (VP (NP-COMP (NP (S (WHNP-2 *op*)
+                                                   (S (NP-SBJ *T*-2)
+                                                      (ADJP 느슨하/VJ+은/EAN)))
+                                                (NP 대출/NNC+기준/NNC+과/PCJ))
+                                            (NP 사기/NNC+행각/NNC+에/PAD))
+                                   (VP (ADVP 철저히/ADV)
+                                       (VP (VV 대비/NNC+하/XSV+어야/ECS))))
+                               하/VX+을/EAN)
+                           (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+           (VV 촉구/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=대출기준</term>
+	    </Arg>
+	    <Rel>
+	      <term>느슨한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

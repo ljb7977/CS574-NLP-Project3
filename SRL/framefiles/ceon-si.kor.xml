@@ -1,0 +1,215 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전시</lemma>
+    <comment>Frames file for '전시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>전시.01</id>
+      <edef>exhibit</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing exhibited"/>
+	<role argnum="2" argrole="exhibit at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전시하다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 박물관은 250 개의 각종 향기 향수병들을 전시하고 있을 뿐 아니라, 각종 향기 향수들이 지난 1949 년부터 1990 년대까지 도입된 역사를 상세히 기록한 전장 7.6M의 기다란 시간표를 제시하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-SBJ 이/DAN
+                         박물관/NNC+은/PAU)
+                 (VP (VP (NP-OBJ (NP 250/NNU
+                                     개/NNX+의/PAN)
+                                 (NP 각종/NNC
+                                     향기/NNC
+                                     향수병/NNC+들/XSF+을/PCA))
+                         (VV 전시/NNC+하/XSV+고/ECS))
+                     있/VX+을/EAN))
+              (NP 뿐/NNX))
+      (ADJP 아니/VJ+라/EFN))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-OBJ (S (NP-SBJ 각종/NNC
+                                                   향기/NNC
+                                                   향수/NNC+들/XSF+이/PCA)
+                                           (VP (NP-ADV 지난/DAN
+                                                       1949/NNU
+                                                       년/NNX+부터/PAU)
+                                               (NP-ADV 1990/NNU
+                                                       년대/NNX+까지/PAU)
+                                               (VP (VV 도입/NNC+되/XSV+은/EAN))))
+                                        (NP 역사/NNC+을/PCA))
+                                (VP (ADVP 상세히/ADV)
+                                    (VP (VV 기록/NNC+하/XSV+은/EAN))))))
+                      (NP (NP 전장/NNC
+                              7.6/NNU+M/NFW+의/PAN)
+                          (NP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (ADJP 기다랗/VJ+은/EAN)))
+                              (NP 시간표/NNC+을/PCA))))
+              (VV 제시/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>이 박물관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>250 개의 각종 향기 향수병들</term>
+	    </Arg>
+	    <Rel>
+	      <term>전시하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이와 함께 세계 수자원 박람회도 개최돼 유엔 산하 기관, 펀드 매니저, 비정부 기구(NGO), 다국적 기업이 제각기 수자원 문제에 대한 해결책과 관련 제품을 제시하고 전시한다.</text>
+	  <parse>
+(S (ADVP (NP-COMP 이/NPN+과/PAD)
+         함께/ADV)
+   (S (NP-SBJ 세계/NNC
+              수자원/NNC
+              박람회/NNC+도/PAU)
+      (VP (VV 개최/NNC+되/XSV+어/ECS)))
+   (S (NP-SBJ (NP 유엔/NPR
+                  산하/NNC
+                  기관/NNC)
+              ,/SCM
+              (NP 펀드/NNC
+                  매니저/NNC)
+              ,/SCM
+              (NP 비/XPF+정부/NNC
+                  기구/NNC
+                  (PRN -LRB-/SLQ
+                       (NP NGO/NFW)
+                       -RRB-/SRQ))
+              ,/SCM
+              (NP 다국적/NNC
+                  기업/NNC+이/PCA))
+      (VP (ADVP 제각기/ADV)
+          (S (NP-SBJ *pro*)
+             (VP (NP-COMP (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-COMP 수자원/NNC
+                                             문제/NNC+에/PAD)
+                                    대하/VV+은/EAN)))
+                          (NP 해결책/NNC+과/PAD))
+                 (VV 관련/NNC)))
+          (VP (NP-OBJ 제품/NNC+을/PCA)
+              (VV (VV 제시/NNC+하/XSV+고/ECS)
+                  (VV 전시/NNC+하/XSV+는다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이와 함께</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>세계 수자원 박람회도 개최돼</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>유엔 산하 기관, 펀드 매니저, 비정부 기구(NGO), 다국적 기업</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>제각기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>수자원 문제에 대한 해결책과 관련</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>제품</term>
+	    </Arg>
+	    <Rel>
+	      <term>전시한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전시되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>가로 8M, 세로 4M 규모의 판에 3 가지 색의 계란으로 `새천년 통일염원'이라는 글자와 한반도 지도를 수놓은 이 탑은 인천시내 공원에 전시될 예정이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ (S (WHNP *op*)
+                         (S (NP-SBJ *pro*)
+			    (VP (NP-COMP (NP (NP (NP 가로/NPR
+							 8/NNU+M/NFW)
+						 ,/SCM
+						 (NP 세로/NNC
+							 4/NNU+M/NFW))
+					     (NP 규모/NNC+의/PAN))
+					 (NP 판/NNC+에/PAD))
+				(VP (NP-ADV (NP 3/NNU
+						가지/NNX
+						색/NNC+의/PAN)
+					    (NP 계란/NNC+으로/PAD))
+				    (VP (NP-OBJ (NP (NP `/SLQ
+							새천년/NNC
+							통일/NNC+염원/NNC
+							'/SRQ
+							이라는/PAN)
+						    (NP 글자/NNC+과/PCJ))
+						(NP 한반도/NPR
+							  지도/NNC+을/PCA))
+					수놓/VV+은/EAN)))))
+                      (NP 이/DAN
+                          탑/NNC+은/PAU))
+              (VP (NP-COMP 인천/NPR+시내/NNC
+                           공원/NNC+에/PAD)
+                  (VV 전시/NNC+되/XSV+을/EAN)))
+           (NP 예정/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>가로 8M, 세로 4M 규모의 판에 3 가지 색의 계란으로 `새천년 통일염원'이라는 글자와 한반도 지도를 수놓은 이 탑</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>인천시내 공원</term>
+	    </Arg>
+	    <Rel>
+	      <term>전시될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

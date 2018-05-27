@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>몰아내</lemma>
+    <comment>Frames file for '몰아내' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>몰아내.01</id>
+      <edef>oust</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity ousted"/>
+	<role argnum="2" argrole="ousted from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>몰아내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>뒤이어 4 월호에는 이들이 체첸으로 날아가 러시아인들을 몰아낸다.</text>
+	  <parse>
+(S (ADVP 뒤이어/ADV)
+   (NP-ADV 4/NNU
+           월호/NNX+에/PAD+은/PAU)
+   (S (NP-SBJ 이/NPN+들/XSF+이/PCA)
+      (VP (VP (NP-ADV 체첸/NPR+으로/PAD)
+              (VP 날아가/VV+어/ECS))
+          (VP (NP-OBJ 러시아인/NNC+들/XSF+을/PCA)
+              몰아내/VV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>뒤이어</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>4 월호에는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>이들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>러시아인들</term>
+	    </Arg>
+	    <Rel>
+	      <term>몰아낸다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

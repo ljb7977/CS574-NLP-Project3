@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유예</lemma>
+    <comment>Frames file for '유예' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유예.01</id>
+      <edef>suspend</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing suspended"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유예하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한은 대북 포괄접근을 담은 `페리 프로세스'에 대해 분명한 동의 의사를 밝히지는 않았지만 지난해 9 월 미사일 시험발사를 유예하겠다고 선언하고 미국과의 수교협상에 대해 적극적인 입장을 피력함으로써 사실상 `페리 프로세스'에 동참했다.</text>
+	  <parse>
+(S (S (NP-SBJ 북한/NPR+은/PAU)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-OBJ 대/XPF+북/NPR
+                                                포괄/NNC+접근/NNC+을/PCA)
+                                        담/VV+은/EAN)))
+                              (NP `/SLQ
+                                  페리/NPR
+                                  프로세스/NNC
+                                  '/SRQ
+                                  에/PAD))
+                     대하/VV+어/ECS))
+              (VP (NP-OBJ (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (ADJP (VJ 분명/NNC+하/XSJ+은/EAN))))
+                          (NP 동의/NNC
+                              의사/NNC+을/PCA))
+                  밝히/VV+지/ECS+은/PAU))
+          않/VX+었/EPF+지만/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S (NP-SBJ *pro*)
+             (VP (VP (NP-ADV 지난해/NNC
+                             9/NNU
+                             월/NNX)
+                     (VP (S-COMP (NP-SBJ *pro*)
+                                 (VP (NP-OBJ 미사일/NNC
+                                             시험/NNC+발사/NNC+을/PCA)
+                                     (VV 유예/NNC+하/XSV+겠/EPF+다/EFN+고/PAD)))
+                         (VV 선언/NNC+하/XSV+고/ECS)))
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-COMP (NP 미국/NPR+과/PAD+의/PAN)
+                                     (NP 수교/NNC+협상/NNC+에/PAD))
+                            대하/VV+어/ECS))
+                     (VP (NP-OBJ (S (WHNP-3 *op*)
+                                    (S (NP-SBJ *T*-3)
+                                       (VP (NP 적극/NNC+적/XSF+이/CO+은/EAN))))
+                                 (NP 입장/NNC+을/PCA))
+                         (VV 피력/NNC+하/XSV+음/ENM+으로써/PAD)))))
+          (NP-ADV 사실상/NNC)
+          (VP (NP-COMP `/SLQ
+                       페리/NPR
+                       프로세스/NNC
+                       '/SRQ
+                       에/PAD)
+              (VV 동참/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>미사일 시험발사</term>
+	    </Arg>
+	    <Rel>
+	      <term>유예하겠다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

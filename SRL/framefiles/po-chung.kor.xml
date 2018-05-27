@@ -1,0 +1,158 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보충</lemma>
+    <comment>Frames file for '보충' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>보충.01</id>
+      <edef>provide</edef>
+      <roleset>
+	<role argnum="0" argrole="provider"/>
+	<role argnum="1" argrole="thing provided"/>
+	<role argnum="2" argrole="provided for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보충하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>중대 위생 지도원은 의료품을 어떻게 보충하는가?</text>
+	  <parse>
+(S (NP-SBJ 중대/NNC 
+	   위생/NNC 
+	   지도원/NNC+은/PAU) 
+   (VP (NP-OBJ 의료품/NNC+을/PCA)
+       (VP (ADVP 어떻게/ADV) 
+	   (VP (VV 보충/NNC+하/XSV+는가/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>중대 위생 지도원</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>의료품</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어떻게</term>
+	    </Arg>
+	    <Rel>
+	      <term>보충하는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>보병 대대에서는 전사한 장병의 직책을 보충하는 것이 그렇게 어렵지는 않습니다.</text>
+	  <parse>
+(S (NP-ADV 보병/NNC
+           대대/NNC+에서/PAD+은/PAU)
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (VV 전사/NNC+하/XSV+은/EAN))))
+                                 (NP 장병/NNC+의/PAN))
+                             (NP 직책/NNC+을/PCA))
+                     (VV 보충/NNC+하/XSV+는/EAN)))
+              (NP 것/NNX+이/PCA))
+      (VP (ADJP (ADVP 그렇게/ADV)
+                (ADJP 어렵/VJ+지/ECS+은/PAU))
+          않/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>전사한 장병의 직책</term>
+	    </Arg>
+	    <Rel>
+	      <term>보충하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보충되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 중대 편성은 보충되는 신대원 수에 따라 융통성이 있습니다.</text>
+	  <parse>
+(S (NP-COMP-2 그/DAN
+              중대/NNC
+              편성/NNC+은/PAU)
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (VV 보충/NNC+되/XSV+는/EAN))))
+                          (NP 신/XPF+대원/NNC))
+                      (NP 수/NNC+에/PAD))
+             따르/VV+어/ECS))
+      (S (NP-SBJ 융통성/NNC+이/PCA)
+         (ADJP (NP-COMP *T*-2)
+               있/VJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=신대원</term>
+	    </Arg>
+	    <Rel>
+	      <term>보충되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보충받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>무전기가 고장나면 중대는 즉시 다른 무전기를 보충받습니다.</text>
+	  <parse>
+(S (S (NP-SBJ 무전기/NNC+이/PCA)
+      (VP 고장나/VV+으면/ECS))
+   (S (NP-SBJ 중대/NNC+은/PAU)
+      (VP (ADVP 즉시/ADV)
+          (VP (NP-OBJ 다른/DAN
+                      무전기/NNC+을/PCA)
+              (VV 보충/NNC+받/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>무전기가 고장나면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>중대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>즉시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>다른 무전기</term>
+	    </Arg>
+	    <Rel>
+	      <term>보충받습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

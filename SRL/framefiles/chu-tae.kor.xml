@@ -1,0 +1,115 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>추대</lemma>
+    <comment>Frames file for '추대' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>추대.01</id>
+      <edef>elect</edef>
+      <roleset>
+	<role argnum="0" argrole="thing electing"/>
+	<role argnum="1" argrole="thing elected"/>
+	<role argnum="2" argrole="elect as"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>추대하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>민국당은 이날 회의에서 당초 검토했던 총선전 차기 대선후보 가시화 문제는 총선후 경선을 통해 대선후보를 추대하기로 결정했다.</text>
+	  <parse>
+(S (NP-SBJ 민국당/NPR+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (NP-ADV 회의/NNC+에서/PAD)
+       (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *pro*)
+                         (VP (NP-ADV 당초/NNC)
+                             (VP (NP-OBJ *T*-1)
+                                 (VV 검토/NNC+하/XSV+었/EPF+던/EAN)))))
+                   (NP (NP 총선/NNC+전/NNC)
+		       (NP 차기/NNC
+			       대선/NNC+후보/NNC)
+                       (NP 가시화/NNC)
+                       (NP 문제/NNC+은/PAU)))
+           (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-ADV 총선/NNC+후/NNC)
+                       (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ 경선/NNC+을/PCA)
+                              통하/VV+어/ECS))
+                       (VP (NP-OBJ 대선/NNC+후보/NNC+을/PCA)
+                           (VV 추대/NNC+하/XSV+기/ENM+으로/PAD))))
+           (VV 결정/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>총선후</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>경선을 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대선후보</term>
+	    </Arg>
+	    <Rel>
+	      <term>추대하기로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>추대되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>대한상공회의소 김상하 회장의 후임으로 추대된 박용성 OB 맥주 회장은 재계뿐만 아니라 체육계까지 널리 알려진 인물이다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP (NP (NP 대한/NPR+상공회의소/NNC)
+                                  (NP 김상하/NPR
+                                      회장/NNC+의/PAN))
+                              (NP 후임/NNC+으로/PAD))
+                     (VV 추대/NNC+되/XSV+은/EAN))))
+           (NP 박용성/NPR
+               OB/NFW
+               맥주/NNC
+               회장/NNC+은/PAU))
+   (VP (NP (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (S (NP-SBJ 재계/NNC+뿐/PAU+만/PAU)
+                        (ADJP 아니/VJ+라/ECS))
+                     (VP (NP-COMP 체육계/NNC+까지/PAU)
+                         (VP (ADVP 널리/ADV)
+                             (VP (VV 알리/VV+어지/XSV+은/EAN)))))))
+           (NP 인물/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=박용성 OB 맥주 회장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>대한상공회의소 김상하 회장의 후임</term>
+	    </Arg>
+	    <Rel>
+	      <term>추대된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

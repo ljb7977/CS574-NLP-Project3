@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자신</lemma>
+    <comment>Frames file for '자신' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>자신</id>
+      <edef>confident</edef>
+      <roleset>
+	<role argnum="0" argrole="thing confident"/>
+	<role argnum="1" argrole="confident in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자신하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>부시 지사측은 그러나 금고를 곧 다시 채울 수 있을 것으로 자신하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 부시/NPR
+           지사/NNC+측/XSF+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                           (VP (VP (NP-OBJ 금고/NNC+을/PCA)
+                                   (VP (ADVP 곧/ADV)
+                                       (ADVP 다시/ADV)
+                                       (VP 채우/VV+을/EAN)))
+                               (VX 수/NNX
+                                   있/VJ+을/EAN)))
+                        (NP 것/NNX+으로/PAD))
+               (VV 자신/NNC+하/XSV+고/ECS))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>부시 지사측</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>금고를 곧 다시 채울 수 있을 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>자신하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

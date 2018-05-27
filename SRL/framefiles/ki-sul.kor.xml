@@ -1,0 +1,92 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기술</lemma>
+    <comment>Frames file for '기술' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>기술.01</id>
+      <edef>describe</edef>
+      <roleset>
+	<role argnum="0" argrole="describer"/>
+	<role argnum="1" argrole="thing described"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기술하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>위에서 기술한 바와 같이 인민군엔 화력 지원 협조소가 없다.</text>
+	  <parse>
+(S (ADVP (NP-COMP (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 위/NNC+에서/PAD)
+                         (VP (NP-OBJ *pro*)
+                             (VV 기술/NNC+하/XSV+은/EAN))))
+                  (NP 바/NNX+과/PAD))
+         같이/ADV)
+   (S (NP-COMP-1 인민군/NNC+에/PAD+은/PAU)
+      (S (NP-SBJ 화력/NNC
+                 지원/NNC
+                 협조소/NNC+이/PCA)
+         (ADJP (NP-COMP *T*-1)
+               없/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>위에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>기술한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>기술되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="s" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>저희들의 모든 사격 임무는 평가 계획이나 실습 계획에 기술된 정황에 맞게 미리 계획됩니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 저희/NPN+들/XSF+의/PAN)
+           (NP 모든/DAN
+               사격/NNC
+               임무/NNC+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP-ADV (NP 평가/NNC
+                                             계획/NNC+이나/PCJ)
+                                         (NP 실습/NNC
+                                             계획/NNC+에/PAD))
+                                 (VP (VV 기술/NNC+되/XSV+은/EAN)))))
+                       (NP 정황/NNC+에/PAD))
+              맞/VV+게/ECS))
+       (ADVP 미리/ADV)
+       (VP (VV 계획/NNC+되/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=정황</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>평가 계획이나 실습 계획에</term>
+	    </Arg>
+	    <Rel>
+	      <term>기술된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

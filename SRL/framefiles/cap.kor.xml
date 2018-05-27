@@ -1,0 +1,138 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잡</lemma>
+    <comment>Frames file for '잡' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>잡.01</id>
+      <edef>catch</edef>
+      <roleset>
+	<role argnum="0" argrole="getter"/>
+	<role argnum="1" argrole="thing gotten"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잡다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포로를 잡으면 지체없이 보고해야 합니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 포로/NNC+을/PCA)
+          잡/VV+으면/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (ADVP 지체없이/ADV)
+              (VP (NP-OBJ *pro*)
+                  (VV 보고/NNC+하/XSV+어야/ECS)))
+          하/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>포로</term>
+	    </Arg>
+	    <Rel>
+	      <term>잡으면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>잡히다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그럼, 네가 포로로 잡히던 그 당시 5중대 임무는 뭐였지?</text>
+	  <parse>
+(S (ADCP 그럼/ADC)
+   ,/SCM
+   (S (NP-ADV (S (WHNP *op*)
+                 (S (NP-SBJ 네/NPN+이/PCA)
+                    (VP (NP-ADV 포로/NNC+으로/PAD)
+                        (VP 잡히/VV+던/EAN))))
+              (NP 그/DAN
+                  당시/NNC))
+      (S (NP-SBJ 5/NNU
+                 중대/NNC
+                 임무/NNC+은/PAU)
+         (VP (NP 뭐/NPN+이/CO+었/EPF+지/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>네</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>포로로</term>
+	    </Arg>
+	    <Rel>
+	      <term>잡히던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>잡.02</id>
+      <edef>determine</edef>
+      <roleset>
+	<role argnum="0" argrole="decider"/>
+	<role argnum="1" argrole="thing determined"/>
+	<role argnum="2" argrole="attribute of arg1"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잡다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일본 정부는 2000 회계연도 GDP 성장 목표를 1 퍼센트로 잡고 있다.</text>
+	  <parse>
+(S (NP-SBJ 일본/NPR
+           정부/NNC+은/PAU)
+   (VP (VP (NP-OBJ (NP 2000/NNU
+                       회계/NNC+연도/NNC)
+                   (NP GDP/NFW
+                       성장/NNC
+                       목표/NNC+을/PCA))
+           (NP-COMP 1/NNU
+                    퍼센트/NNX+으로/PAD)
+           잡/VV+고/ECS)
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>일본 정부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>2000 회계연도 GDP 성장 목표</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>1 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>잡고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

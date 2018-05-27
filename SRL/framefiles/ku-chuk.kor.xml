@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>구축</lemma>
+    <comment>Frames file for '구축' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>구축.01</id>
+      <edef>construct</edef>
+      <roleset>
+	<role argnum="0" argrole="builder"/>
+	<role argnum="1" argrole="construction"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>구축하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>교통호는 보통 곡절형으로 구축합니다.</text>
+	  <parse>
+(S (NP-OBJ-1 교통호/NNC+은/PAU)
+   (S (ADVP 보통/ADV)
+      (S (NP-SBJ *pro*)
+         (VP (NP-ADV 곡절/NNC
+                     형/NNC+으로/PAD)
+             (VP (NP-OBJ *T*-1)
+                 (VV 구축/NNC+하/XSV+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>교통호</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>보통</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>곡절형으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>구축합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>구축되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 연결호들은 곡절형으로 구축되었지요.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           연결호/NNC+들/XSF+은/PAU)
+   (VP (NP-ADV 곡절/NNC
+               형/NNC+으로/PAD)
+       (VP (VV 구축/NNC+되/XSV+었/EPF+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>이 연결호들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>곡절형으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>구축되었지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

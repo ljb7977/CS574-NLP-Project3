@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>격리</lemma>
+    <comment>Frames file for '격리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>격리.01</id>
+      <edef>isolate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity isolated"/>
+	<role argnum="2" argrole="isolated from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>격리시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>클린턴 대통령은 이날 아침 NBC TV의 아침 뉴스 프로그램 `투데이'와 가진 회견에서 상하 양원의 공화, 민주당 지도부를 백악관으로 초청, 총기를 범죄자와 어린이로부터 격리시키기 위한 총기규제법안들의 처리 문제를 협의할 것이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 클린턴/NPR
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC
+               아침/NNC)
+       (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (NP NBC/NFW
+                                      TV/NFW+의/PAN)
+                                  (NP 아침/NNC
+                                      뉴스/NNC
+                                      프로그램/NNC)
+                                  (NP `/SLQ
+                                      투데이/NPR
+                                      '/SRQ
+                                      과/PAD))
+                         (NP-OBJ *T*-1)
+                         가지/VV+은/EAN)))
+               (NP 회견/NNC+에서/PAD))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (VP (NP-OBJ (NP 상하/NNC
+                                           양원/NNC+의/PAN)
+                                       (NP 공화/NPR
+                                           ,/SCM
+                                           민주당/NPR
+                                           지도부/NNC+을/PCA))
+                               (VP (NP-ADV 백악관/NPR+으로/PAD)
+                                   (VP (VV 초청/NNC))))
+                           ,/SCM
+                           (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (VP (S-OBJ (NP-SBJ *pro*)
+							    (VP (NP-OBJ 총기/NNC+을/PCA)
+								(NP-COMP (NP 범죄자/NNC+과/PCJ)
+									 (NP 어린이/NNC+으로부터/PAD))
+								(VV 격리/NNC+시키/XSV+기/ENM)))
+                                                     위하/VV+은/EAN)))
+                                           (NP 총기/NNC+규제/NNC+법안/NNC+들/XSF+의/PAN))
+                                       (NP 처리/NNC
+                                           문제/NNC+을/PCA))
+                               (VV 협의/NNC+하/XSV+을/EAN)))
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>총기/</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로부터</f>
+	      <term>범죄자와 어린이</term>
+	    </Arg>
+	    <Rel>
+	      <term>격리시키기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

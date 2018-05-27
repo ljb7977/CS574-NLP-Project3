@@ -1,0 +1,131 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>그치</lemma>
+    <comment>Frames file for '그치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>그치.01</id>
+      <edef>be limited to</edef>
+      <roleset>
+	<role argnum="1" argrole="thing under consideration"/>
+	<role argnum="2" argrole="limited to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>그치다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인도네시아 당국은 지금까지는 농장주들의 허가를 취소할 것이라고 으름장을 놓는 데 그치고 있다.</text>
+	  <parse>
+(S (NP-SBJ 인도네시아/NPR
+           당국/NNC+은/PAU)
+   (VP (VP (NP-ADV 지금/NNC+까지/PAU+은/PAU)
+           (VP (NP-COMP (S (NP-SBJ *pro*)
+                           (VP (S (NP-SBJ *pro*)
+                                  (VP (VP (NP-OBJ (NP 농장주/NNC+들/XSF+의/PAN)
+                                                  (NP 허가/NNC+을/PCA))
+                                          (VV 취소/NNC+하/XSV+을/EAN))
+                                      (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+                               (VP (NP-OBJ 으름장/NNC+을/PCA)
+                                   놓/VV+는/EAN)))
+                        (NP 데/NNX))
+               그치/VV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>인도네시아 당국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지금까지는</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>농장주들의 허가를 취소할 것이라고 으름장을 놓는 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>그치고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>그치.02</id>
+      <edef>cease</edef>
+      <roleset>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>그치다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>세계 석유시장은 수급의 통상적인 규칙이 제대로 작용하지 않는 곳으로 고유가 현상이 단기간에 그칠 것이라고 단언할 수는 없다고 폴 크루그먼 매사추세츠공대(MIT) 교수가 5 일 지적했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ 세계/NNC
+                        석유/NNC+시장/NNC+은/PAU)
+                (VP (NP (S (WHNP *op*)
+                           (S (NP-SBJ (NP 수급/NNC+의/PAN)
+                                      (NP (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP 통상/NNC+적/XSF+이/CO+은/EAN))))
+                                          (NP 규칙/NNC+이/PCA)))
+                              (VP (VP (ADVP 제대로/ADV)
+                                      (VP (VV 작용/NNC+하/XSV+지/ECS)))
+                                  않/VX+는/EAN)))
+                        (NP 곳/NNC+으로/PAD))))
+             (S (NP-SBJ *pro*)
+                (VP (VP (S-COMP (NP-SBJ 고유가/NNC
+                                        현상/NNC+이/PCA)
+                                (VP (VP (NP-ADV 단기간/NNC+에/PAD)
+                                        (VP 그치/VV+을/EAN))
+                                    (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+                        (VV 단언/NNC+하/XSV+을/EAN))
+                    (VX 수/NNX+은/PAU
+                        없/VJ+다/EFN+고/PAD))))
+   (S (NP-SBJ 폴/NPR
+              크루그먼/NPR
+              매사추세츠/NPR+공대/NNC
+              (PRN -LRB-/SLQ
+                   MIT/NFW
+                   -RRB-/SRQ)
+              교수/NNC+이/PCA)
+      (VP (NP-ADV 5/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              (VV 지적/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>고유가 현상</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>단기간에</term>
+	    </Arg>
+	    <Rel>
+	      <term>그칠</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

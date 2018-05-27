@@ -1,0 +1,122 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>풀이</lemma>
+    <comment>Frames file for '풀이' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>풀이.01</id>
+      <edef>interpret</edef>
+      <roleset>
+	<role argnum="0" argrole="interpreter"/>
+	<role argnum="1" argrole="thing interpreted"/>
+	<role argnum="2" argrole="attribute of arg1"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>풀이하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>신화통신은 딸 선호 가구가 아들 선호 가구보다 많은 이유에 대해 "딸이 아들보다 자신들의 부모에 대해 효도를 많이 하고 결혼할 때 경제적인 부담도 적기 때문"이라고 풀이했다.</text>
+	  <parse>
+(S (NP-SBJ 신화/NPR+통신/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+	       (VP (NP-COMP (S (WHNP *op*)
+			       (S (NP-SBJ 딸/NNC
+					    선호/NNC
+					    가구/NNC+이/PCA)
+				  (ADJP (NP-ADV 아들/NNC
+						    선호/NNC
+						    가구/NNC+보다/PAD)
+					(ADJP 많/VJ+은/EAN))))
+			    (NP 이유/NNC+에/PAD))
+		   대하/VV+어/ECS))
+       (NP-COMP "/SLQ
+		(S (S (NP-SBJ 딸/NNC+이/PCA)
+		      (VP (NP-ADV 아들/NNC+보다/PAD)
+			  (S (NP-SBJ *pro*)
+			     (VP (NP-COMP (NP 자신/NNC+들/XSF+의/PAN)
+					  (NP 부모/NNC+에/PAD))
+				 대하/VV+어/ECS))
+			  (VP (NP-OBJ 효도/NNC+을/PCA)
+			      (VP (ADVP 많이/ADV)
+				  (VP 하/VV+고/ECS)))))
+		   (S (NP-ADV (S (NP-SBJ *pro*)
+				 (VP (VV 결혼/NNC+하/XSV+을/EAN)))
+			      (NP 때/NNC))
+		      (S (NP-SBJ (S (WHNP-1 *op*)
+				    (S (NP-SBJ *T*-1)
+				       (VP (NP 경제/NNC+적/XSF+이/CO+은/EAN))))
+				 (NP 부담/NNC+도/PAU))
+			 (ADJP 적/VJ+기/ENM))))
+		(NP 때문/NNX)
+		"/SRQ
+		이라고/PAD)
+       (VV 풀이/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>신화통신</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에 대해</f>
+	      <term>딸 선호 가구가 아들 선호 가구보다 많은 이유</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>고</f>
+	      <term>"딸이 아들보다 자신들의 부모에 대해 효도를 많이 하고 결혼할 때 경제적인 부담도 적기 때문"이라</term>
+	    </Arg>
+	    <Rel>
+	      <term>풀이했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>풀이되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그의 발언은 대만 대통령선거에 나선 후보들에 대한 압력의 일환으로 풀이된다.</text>
+	  <parse>
+(S (NP-SBJ (NP 그/NPN+의/PAN)
+           (NP 발언/NNC+은/PAU))
+   (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                       (S (NP-SBJ *T*-1)
+                          (VP (NP-COMP (S (WHNP-2 *op*)
+                                          (S (NP-SBJ *T*-2)
+                                             (VP (NP-COMP 대만/NPR
+                                                          대통령/NNC+선거/NNC+에/PAD)
+                                                 나서/VV+은/EAN)))
+                                       (NP 후보/NNC+들/XSF+에/PAD))
+                              대하/VV+은/EAN)))
+                    (NP 압력/NNC+의/PAN))
+                (NP 일환/NNC+으로/PAD))
+       (VV 풀이/NNC+되/XSV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그의 발언</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>대만 대통령선거에 나선 후보들에 대한 압력의 일환</term>
+	    </Arg>
+	    <Rel>
+	      <term>풀이된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

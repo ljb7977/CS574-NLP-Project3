@@ -1,0 +1,251 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>게재</lemma>
+    <comment>Frames file for '게재' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>게재.01</id>
+      <edef>print</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="document"/>
+	<role argnum="2" argrole="printed in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>게재하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이에 대해 한나라당은 장광근 부대변인 명의의 성명에서 "민주당이 `새천년민주신문'에 터무니없는 `돈 공천 의혹설'을 게재한 것은 음모집단의 모습 그 자체"라면서 "선거 때마다 흑색 마타도어를 일삼던 옛날 버릇이 되살아나는 모양"이라며 의혹을 일축했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          대하/VV+어/ECS))
+   (S (NP-SBJ 한나라당/NPR+은/PAU)
+      (VP (NP-ADV (NP 장광근/NPR
+                      부/XPF+대변인/NNC
+                      명의/NNC+의/PAN)
+                  (NP 성명/NNC+에서/PAD))
+          (VP (S-COMP (S "/SLQ
+                         (NP-SBJ (S (NP-SBJ 민주당/NPR+이/PCA)
+                                    (VP (NP-COMP `/SLQ
+                                                 새천년민주신문/NPR
+                                                 '/SRQ
+                                                 에/PAD)
+                                        (NP-OBJ (S (WHNP-1 *op*)
+                                                   (S (NP-SBJ *T*-1)
+                                                      (ADJP 터무니없/VJ+는/EAN)))
+                                                (NP `/SLQ
+                                                    돈/NNC
+                                                    공천/NNC
+                                                    의혹/NNC+설/NNC
+                                                    '/SRQ
+                                                    을/PCA))
+                                        (VV 게재/NNC+하/XSV+은/EAN)))
+                                 (NP 것/NNX+은/PAU))
+                         (VP (NP (NP (NP 음모/NNC+집단/NNC+의/PAN)
+                                     (NP 모습/NNC))
+                                 (NP 그/DAN
+                                     자체/NNC)))
+                         "/SRQ
+                         이/CO+라면서/ECS)
+                      (S "/SLQ
+                         (NP-SBJ *pro*)
+                         (VP (NP (S (NP-SBJ (S (NP-SBJ *pro*)
+                                               (VP (NP-ADV 선거/NNC
+                                                           때/NNC+마다/PAU)
+                                                   (VP (NP-OBJ 흑색/NNC
+                                                               마타도어/NNC+을/PCA)
+                                                       일삼/VV+던/EAN)))
+                                            (NP 옛날/NNC
+                                                버릇/NNC+이/PCA))
+                                    (VP 되살아나/VV+는/EAN))
+                                 (NP 모양/NNC)))
+                         "/SRQ
+                         이/CO+라며/ECS))
+              (NP-OBJ 의혹/NNC+을/PCA)
+              (VV 일축/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>민주당</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>`새천년민주신문'</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>터무니없는 `돈 공천 의혹설'</term>
+	    </Arg>
+	    <Rel>
+	      <term>게재한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>게재하다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>생명과학. 의학분야 전문 주간지인 영국의 네이처(Nature)지는 9 일 암 억제 유전자인 브라카(Braca) 1의 신호 전달체계가 한국인 연구팀에 의해 규명돼 유전성 유방암과 난소암의 치료에 새로운 전기가 마련될 전망이라면서 'Cds1에 의한 Braca1 의 인산화는 세포내 DNA 손상반응을 조절한다'는 제목의 연구팀의 논문을 게재했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP 생명/NNC+과학/NNC
+                         ,/SCM
+                         의학/NNC+분야/NNC
+                         전문/NNC
+                         주간지/NNC+이/CO+은/EAN))))
+           (NP (NP 영국/NPR+의/PAN)
+               (NP 네이처/NPR
+                   (PRN -LRB-/SLQ
+                        (NP Nature/NFW)
+                        -RRB-/SRQ)
+                   지/XSF+은/PAU)))
+   (VP (NP-ADV 9/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP (S (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                                       (S (NP-SBJ *T*-2)
+                                          (VP (NP 암/NNC
+                                                  억제/NNC
+                                                  유전자/NNC+이/CO+은/EAN))))
+                                    (NP 브라카/NPR
+                                        (PRN -LRB-/SLQ
+                                             (NP Braca/NFW)
+                                             -RRB-/SRQ)
+                                        1/NNU+의/PAN))
+                                (NP 신호/NNC
+                                    전달/NNC+체계/NNC+이/PCA))
+                        (VP (S (NP-SBJ *pro*)
+                               (VP (NP-COMP 한국인/NNC
+                                            연구팀/NNC+에/PAD)
+                                   의하/VV+어/ECS))
+                            (VP (VV 규명/NNC+되/XSV+어/ECS))))
+                     (S (NP-COMP-4 (NP (NP 유전/NNC+성/XSF)
+                                       (NP (NP 유방암/NNC+과/PCJ)
+                                           (NP 난소암/NNC+의/PAN)))
+                                   (NP 치료/NNC+에/PAD))
+                        (S (NP-SBJ (S (WHNP-3 *op*)
+                                      (S (NP-SBJ *T*-3)
+                                         (ADJP 새롭/VJ+은/EAN)))
+                                   (NP 전기/NNC+이/PCA))
+                           (VP (NP-COMP *T*-4)
+                               (VV 마련/NNC+되/XSV+을/EAN)))))
+                  (NP 전망/NNC+이/CO+라면서/ECS))))
+       (VP (NP-OBJ (NP (S '/SLQ
+                          (NP-SBJ (S (WHNP-5 *op*)
+                                     (S (NP-SBJ *T*-5)
+                                        (VP (NP-COMP Cds1/NFW+에/PAD)
+                                            의하/VV+은/EAN)))
+                                  (NP (NP Braca1/NFW+의/PAN)
+                                      (NP 인산/NNC+화/XSF+은/PAU)))
+                          (VP (NP-OBJ 세포/NNC+내/NNX
+                                      DNA/NFW
+                                      손상/NNC+반응/NNC+을/PCA)
+                              (VV 조절/NNC+하/XSV+는다/EFN))
+                          '/SRQ
+                          는/EAN)
+                       (NP 제목/NNC+의/PAN))
+                   (NP (NP 연구팀/NNC+의/PAN)
+                       (NP 논문/NNC+을/PCA)))
+           (VV 게재/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>는</f>
+	      <term>생명과학. 의학분야 전문 주간지인 영국의 네이처(Nature)지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>9 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>암 억제 유전자인 브라카(Braca) 1의 신호 전달체계가 한국인 연구팀에 의해 규명돼 유전성 유방암과 난소암의 치료에 새로운 전기가 마련될 전망이라면서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>'Cds1에 의한 Braca1 의 인산화는 세포내 DNA 손상반응을 조절한다'는 제목의 연구팀의 논문</term>
+	    </Arg>
+	    <Rel>
+	      <term>게재했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>게재되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>영국 웨일스 지방 렉스햄 맬러 병원의 존 하비 박사는 과학잡지 뉴 사이언티스트 최신호에 게재된 연구보고에서 220 명의 환자가 스타틴 계열 심장병약을 복용하기 시작한 뒤 '사내다움'을 상실한 것 같다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ (NP 영국/NPR
+               웨일스/NPR
+               지방/NNC
+               렉스햄/NPR
+               맬러/NPR
+               병원/NNC+의/PAN)
+           (NP 존/NPR
+               하비/NPR
+               박사/NNC+은/PAU))
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-COMP 과학/NNC+잡지/NNC
+                                  뉴/NPR
+                                  사이언티스트/NPR
+                                  최신호/NNC+에/PAD)
+                         (VV 게재/NNC+되/XSV+은/EAN))))
+               (NP 연구/NNC+보고/NNC+에서/PAD))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                      (VP (S-OBJ (NP-SBJ (NP 220/NNU
+                                                             명/NNX+의/PAN)
+                                                         (NP 환자/NNC+이/PCA))
+                                                 (VP (NP-OBJ 스타틴/NPR
+                                                             계열/NNC
+                                                             심장병/NNC+약/NNC+을/PCA)
+                                                     (VV 복용/NNC+하/XSV+기/ENM)))
+                                          (VV 시작/NNC+하/XSV+은/EAN)))
+                                   (NP 뒤/NNC))
+                           (VP (NP-OBJ '/SLQ
+                                       사내다움/NNC
+                                       '/SRQ
+                                       을/PCA)
+                               (VV 상실/NNC+하/XSV+은/EAN)))
+                       (VX 것/NNX
+                           같/VJ+다/EFN+고/PAD)))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=연구보고</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>과학잡지 뉴 사이언티스트 최신호</term>
+	    </Arg>
+	    <Rel>
+	      <term>게재된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

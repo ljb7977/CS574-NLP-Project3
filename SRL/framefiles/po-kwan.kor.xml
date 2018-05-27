@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보관</lemma>
+    <comment>Frames file for '보관' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>보관.01</id>
+      <edef>keep</edef>
+      <roleset>
+	<role argnum="0" argrole="keeper"/>
+	<role argnum="1" argrole="thing kept"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보관하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>대개 그것은 예비용으로 보관해 뒀다가 중대가 행군할 때나 또는 감시소가 운용될 때 사용하지요.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (ADVP 대개/ADV)
+              (VP (NP-OBJ 그것/NPN+은/PAU)
+                  (VP (NP-ADV 예비/NNC+용/XSF+으로/PAD)
+                      (VP (VV 보관/NNC+하/XSV+어/ECS)))))
+          두/VX+었/EPF+다가/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (NP (S (WHNP *op*)
+                         (S (NP-SBJ 중대/NNC+이/PCA)
+                            (VP (VV 행군/NNC+하/XSV+을/EAN))))
+                      (NP 때/NNC+이나/PCJ))
+                  (ADCP 또는/ADC)
+                  (NP (S (WHNP *op*)
+                         (S (NP-SBJ 감시소/NNC+이/PCA)
+                            (VP (VV 운용/NNC+되/XSV+을/EAN))))
+                      (NP 때/NNC)))
+          (VP (NP-OBJ *pro*)
+              (VV 사용/NNC+하/XSV+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>대개</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>예비용으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>보관해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>뒀다가</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

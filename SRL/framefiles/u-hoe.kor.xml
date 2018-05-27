@@ -1,0 +1,98 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>우회</lemma>
+    <comment>Frames file for '우회' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>우회.01</id>
+      <edef>bypass</edef>
+      <roleset>
+	<role argnum="0" argrole="thing going around"/>
+	<role argnum="1" argrole="thing gone around"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>우회하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>저의 연대 본대는 적의 고립된 저항 지역을 우회했습니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 저/NPN+의/PAN)
+           (NP 연대/NNC
+               본대/NNC+은/PAU))
+   (VP (NP-OBJ (NP 적/NNC+의/PAN)
+               (NP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (VV 고립/NNC+되/XSV+은/EAN))))
+                   (NP 저항/NNC
+                       지역/NNC+을/PCA)))
+       (VV 우회/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저의 연대 본대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적의 고립된 저항 지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>우회했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>셰르메체보-1 공항은 사고 직후 곧바로 폐쇄됐으며, 이곳에 착륙할 예정이었던 여객기들은 다른 공항으로 우회하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 셰르메체보/NPR
+              -/SSY
+              1/NNU
+              공항/NNC+은/PAU)
+      (VP (NP-ADV 사고/NNC
+                  직후/NNC)
+          (ADVP 곧바로/ADV)
+          (VP (VV 폐쇄/NNC+되/XSV+었/EPF+으며/ECS))))
+   ,/SCM
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP (S (NP-SBJ *pro*)
+                               (VP (NP-COMP 이곳/NPN+에/PAD)
+                                   (VV 착륙/NNC+하/XSV+을/EAN)))
+                            (NP 예정/NNC+이/CO+었/EPF+던/EAN)))))
+              (NP 여객기/NNC+들/XSF+은/PAU))
+      (VP (VP (NP-COMP 다른/DAN
+                       공항/NNC+으로/PAD)
+              (VV 우회/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이곳에 착륙할 예정이었던 여객기들</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>다른 공항</term>
+	    </Arg>
+	    <Rel>
+	      <term>우회하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

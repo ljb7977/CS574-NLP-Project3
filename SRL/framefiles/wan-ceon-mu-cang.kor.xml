@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>완전무장</lemma>
+    <comment>Frames file for '완전무장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>완전무장.01</id>
+      <edef>rully armed</edef>
+      <roleset>
+	<role argnum="1" argrole="thing fully armed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>완전무장하가</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>경찰은 또 시위대와 물리적 충돌을 피하기 위해 완전무장한 전경 대신 비무장 여성경관들을 시위현장에 투입하는 등 참신한 방안을 시행함으로써 과거의 폭력적 시위는 사실상 종언을 고했다고 신문은 강조했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ 경찰/NNC+은/PAU)
+                (VP (ADVP 또/ADV)
+                    (S (NP-SBJ *pro*)
+                       (VP (S-OBJ (NP-SBJ *pro*)
+                                  (VP (NP-ADV 시위대/NNC+과/PAD)
+                                      (VP (NP-OBJ 물리/NNC+적/XSF
+                                                  충돌/NNC+을/PCA)
+                                          피하/VV+기/ENM)))
+                           위하/VV+어/ECS))
+                    (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                                       (VP (NP-ADV (NP (S (WHNP-2 *op*)
+                                                          (S (NP-SBJ *T*-2)
+                                                             (VP (VV 완전무장/NNC+하/XSV+은/EAN))))
+                                                       (NP 전경/NNC))
+                                                   (NP 대신/NNC))
+                                           (VP (NP-OBJ 비/XPF+무장/NNC
+                                                       여성/NNC+경관/NNC+들/XSF+을/PCA)
+                                               (NP-COMP 시위/NNC+현장/NNC+에/PAD)
+                                               (VV 투입/NNC+하/XSV+는/EAN))))
+                                    (NP 등/NNX))
+                                (NP (S (WHNP-3 *op*)
+                                       (S (NP-SBJ *T*-3)
+                                          (ADJP 참신하/VJ+은/EAN)))
+                                    (NP 방안/NNC+을/PCA)))
+                        (VV 시행/NNC+하/XSV+음/ENM+으로써/PAD))))
+             (S (NP-SBJ (NP 과거/NNC+의/PAN)
+                        (NP 폭력/NNC+적/XSF
+                            시위/NNC+은/PAU))
+                (VP (NP-ADV 사실/NNC+상/XSF)
+                    (VP (NP-OBJ 종언/NNC+을/PCA)
+                        고하/VV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 신문/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=전경</term>
+	    </Arg>
+	    <Rel>
+	      <term>완전무장한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

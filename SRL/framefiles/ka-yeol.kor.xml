@@ -1,0 +1,208 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가열</lemma>
+    <comment>Frames file for '가열' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가열.01</id>
+      <edef>heat</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, causer"/>
+	<role argnum="1" argrole="thing heated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가열하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>텔레비전 디너(오븐에 가열해 곧 먹을 수 있는 알루미늄 용기 사용 냉동음식)와 엘비스 프레슬리가 첫 등장했던 지난 1950 년대에는 여성들이 "호프"(희망), "앰부시"(잠복), "인티멋"(친우)등으로 불리는 향수로 남성들을 유혹했다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ (NP 텔레비전/NNC
+                          디너/NNC
+                          (PRN -LRB-/SLQ
+                               (NP (S (WHNP-1 *op*)
+                                      (S (S (NP-SBJ *pro*)
+                                            (VP (NP-ADV 오븐/NNC+에/PAD)
+                                                (VP (NP-OBJ *T*-1)
+                                                    (VV 가열/NNC+하/XSV+어/ECS))))
+                                         (S (NP-SBJ *pro*)
+                                            (VP (VP (ADVP 곧/ADV)
+                                                    (VP (NP-OBJ *T*-1)
+                                                        먹/VV+을/EAN))
+                                                (VX 수/NNX
+                                                    있/VJ+는/EAN)))))
+                                   (NP (NP 알루미늄/NNC
+                                           용기/NNC
+                                           사용/NNC)
+                                       (NP 냉동/NNC+음식/NNC)))
+                               -RRB-/SRQ)
+                          과/PCJ)
+                      (NP 엘비스/NPR
+                          프레슬리/NPR+이/PCA))
+              (VP (NP-ADV 첫/NNU)
+                  (VP (VV 등장/NNC+하/XSV+었/EPF+던/EAN))))
+           (NP 지난/DAN
+               1950/NNU
+               년대/NNX+에/PAD+은/PAU))
+   (S (NP-SBJ 여성/NNC+들/XSF+이/PCA)
+      (VP (NP-ADV (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (VP (NP-COMP (NP (NP "/SLQ
+                                             호프/NNC
+                                             "/SRQ
+                                             (PRN -LRB-/SLQ
+                                                  희망/NNC
+                                                  -RRB-/SRQ))
+                                         ,/SCM
+                                         (NP "/SLQ
+                                             앰부시/NNC
+                                             "/SRQ
+                                             (PRN -LRB-/SLQ
+                                                  잠복/NNC
+                                                  -RRB-/SRQ))
+                                         ,/SCM
+                                         (NP "/SLQ
+                                             인티멋/NNC
+                                             "/SRQ
+                                             (PRN -LRB-/SLQ
+                                                  친우/NNC
+                                                  -RRB-/SRQ)))
+                                     (NP 등/NNX+으로/PAD))
+                            불리/VV+는/EAN)))
+                  (NP 향수/NNC+으로/PAD))
+          (VP (NP-OBJ 남성/NNC+들/XSF+을/PCA)
+              (VV 유혹/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>오븐에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=알루미늄 용기 사용 냉동음식</term>
+	    </Arg>
+	    <Rel>
+	      <term>가열해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>가열되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>칠레의 전 독재자 아우구스토 피노체트의 건강에 대한 의혹이 증폭되고 있는 가운데 칠레 내에서 그의 처벌을 놓고 논란이 가열되고 있다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-COMP (NP (NP (NP 칠레/NPR+의/PAN)
+                                                 (NP 전/DAN
+                                                     독재자/NNC))
+                                             (NP 아우구스토/NPR
+                                                 피노체트/NPR+의/PAN))
+                                         (NP 건강/NNC+에/PAD))
+                                대하/VV+은/EAN)))
+                      (NP 의혹/NNC+이/PCA))
+              (VP (VP (VV 증폭/NNC+되/XSV+고/ECS))
+                  있/VX+는/EAN))
+           (NP 가운데/NNC))
+   (NP-ADV 칠레/NPR
+           내/NNX+에서/PAD)
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-OBJ (NP 그/NPN+의/PAN)
+                     (NP 처벌/NNC+을/PCA))
+             놓/VV+고/ECS))
+      (S (NP-SBJ 논란/NNC+이/PCA)
+         (VP (VP (VV 가열/NNC+되/XSV+고/ECS))
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>칠레의 전 독재자 아우구스토 피노체트의 건강에 대한 의혹이 증폭되고 있는 가운데</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>칠레 내에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>그의 처벌을 놓고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>논란</term>
+	    </Arg>
+	    <Rel>
+	      <term>가열되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>가열시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>슈워츠 박사의 주장이 사실인지 여부를 떠나 이번 사건은 베일에 쌓인 미사일 방어망에 대한 논란을 더욱 가열시킬 전망이다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ (NP 슈워츠/NPR
+                                 박사/NNC+의/PAN)
+                             (NP 주장/NNC+이/PCA))
+                     (VP (NP 사실/NNC+이/CO+은지/EFN)))
+                  (NP 여부/NNC+을/PCA))
+          떠나/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 이번/NNC
+                         사건/NNC+은/PAU)
+                 (VP (NP-OBJ (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (VP (NP-COMP (S (WHNP-1 *op*)
+                                                   (S (NP-SBJ *T*-1)
+                                                      (VP (NP-COMP 베일/NPR+에/PAD)
+                                                          쌓이/VV+은/EAN)))
+                                                (NP 미사일/NNC
+                                                    방어망/NNC+에/PAD))
+                                       대하/VV+은/EAN)))
+                             (NP 논란/NNC+을/PCA))
+                     (VP (ADVP 더욱/ADV)
+                         (VP (VV 가열/NNC+시키/XSV+을/EAN)))))
+              (NP 전망/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이번 사건</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>베일에 쌓인 미사일 방어망에 대한 논란</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더욱</term>
+	    </Arg>
+	    <Rel>
+	      <term>가열시킬</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기만</lemma>
+    <comment>Frames file for '기만' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기만.01</id>
+      <edef>deceive</edef>
+      <roleset>
+	<role argnum="0" argrole="liar"/>
+	<role argnum="1" argrole="lied to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기만하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>장위원은 전국인민대표대회(전인대)에 참석하고 있는 군사 대표들에게 행한 연설에서 대만 분리주의자들이 특정 외국 세력의 묵인아래 대만 인민들을 기만하려 하고 있다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 장/NPR+위원/NNC+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-COMP (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (VP (VP (NP-COMP 전국/NNC+인민/NNC+대표/NNC+대회/NNC
+                                                         (PRN -LRB-/SLQ
+                                                              전인대/NPR
+                                                              -RRB-/SRQ)
+                                                         에/PAD)
+                                                (VV 참석/NNC+하/XSV+고/ECS))
+                                            있/VX+는/EAN)))
+                                  (NP 군사/NNC
+                                      대표/NNC+들/XSF+에게/PAD))
+                         행하/VV+은/EAN)))
+               (NP 연설/NNC+에서/PAD))
+       (VP (S-COMP (NP-SBJ 대만/NPR
+                           분리/NNC+주의자/NNC+들/XSF+이/PCA)
+                   (VP (VP (VP (NP-ADV (NP 특정/NNC
+                                           외국/NNC
+                                           세력/NNC+의/PAN)
+                                       (NP 묵인/NNC+아래/NNC))
+                               (VP (NP-OBJ 대만/NPR
+                                           인민/NNC+들/XSF+을/PCA)
+                                   (VV 기만/NNC+하/XSV+으려/ECS)))
+                           하/VX+고/ECS)
+                       있/VX+다/EFN+고/PAD))
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>대만 분리주의자들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>특정 외국 세력의 묵인아래</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대만 인민들</term>
+	    </Arg>
+	    <Rel>
+	      <term>기만하려</term>
+	    </Rel>
+	    <Aux>
+	      <f>려</f>
+	      <term>하고</term>
+	    </Aux>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

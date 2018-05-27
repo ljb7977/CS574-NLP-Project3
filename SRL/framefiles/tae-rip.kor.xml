@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대립</lemma>
+    <comment>Frames file for '대립' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대립.01</id>
+      <edef>oppose</edef>
+      <roleset>
+	<role argnum="0" argrole="opposer"/>
+	<role argnum="1" argrole="opposed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대립하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 김 명예총재는 지역감정 문제에 대해 "지역감정은 내 고장에서 대통령을 배출하자고 (여야 정당이) 극심하게 대립하는 바람에 생긴 것이며, 대통령제와 대통령선거라는 근원적인 문제를 고치지 않는 한 없어지지 않는다"며 내각책임제로의 개헌을 거듭 주장했다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 김/NPR
+              명예/NNC+총재/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 지역/NNC+감정/NNC
+                          문제/NNC+에/PAD)
+                 대하/VV+어/ECS))
+          (S "/SLQ
+             (S (NP-SBJ 지역/NNC+감정/NNC+은/PAU)
+                (VP (NP (S (WHNP-1 *op*)
+                           (S (NP-ADV (S (S (NP-SBJ *pro*)
+                                            (VP (NP-ADV (NP 나/NPN+의/PAN)
+                                                        (NP 고장/NNC+에서/PAD))
+                                                (VP (NP-OBJ 대통령/NNC+을/PCA)
+                                                    (VV 배출/NNC+하/XSV+자/EFN+고/PAD))))
+                                         (S (NP-SBJ (PRN -LRB-/SLQ
+                                                         여야/NNC
+                                                         정당/NNC+이/PCA
+                                                         -RRB-/SRQ))
+                                            (VP (ADVP (ADV 극심하/VJ+게/ECS))
+                                                (VP (VV 대립/NNC+하/XSV+는/EAN)))))
+                                      (NP 바람/NNX+에/PAD))
+                              (S (NP-SBJ *T*-1)
+                                 (VP 생기/VV+은/EAN))))
+                        (NP 것/NNX+이/CO+으며/ECS))))
+             ,/SCM
+             (S (NP-ADV (S (NP-SBJ *pro*)
+                           (VP (VP (NP-OBJ (NP (NP 대통령제/NNC+과/PCJ)
+                                               (NP 대통령/NNC+선거/NNC+이라는/PAN))
+                                           (NP (S (WHNP-3 *op*)
+                                                  (S (NP-SBJ *T*-3)
+                                                     (VP (NP 근원/NNC+적/XSF+이/CO+은/EAN))))
+                                               (NP 문제/NNC+을/PCA)))
+                                   고치/VV+지/ECS)
+                               않/VX+는/EAN))
+                        (NP 한/NNC))
+                (S (NP-SBJ *pro*)
+                   (VP (VP (VV 없/VJ+어지/XSV+지/ECS))
+                       않/VX+는다/EFN)))
+             "/SRQ
+             며/ECS)
+          (VP (NP-OBJ (NP 내각책임제/NNC+으로/PAD+의/PAN)
+                      (NP 개헌/NNC+을/PCA))
+              (VP (ADVP 거듭/ADV)
+                  (VP (VV 주장/NNC+하/XSV+었/EPF+다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>내 고장에서 대통령을 배출하자고</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>여야 정당</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>극심하게</term>
+	    </Arg>
+	    <Rel>
+	      <term>대립하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

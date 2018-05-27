@@ -1,0 +1,98 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>착수</lemma>
+    <comment>Frames file for '착수' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>착수.01</id>
+      <edef>start</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>착수하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>제3 포대 성원들은 새 진지 구축 공사에 착수했다.</text>
+	  <parse>
+(S (NP-SBJ 제/XPF+3/NNU
+	   포대/NNC
+	   성원/NNC+들/XSF+은/PAU)
+   (VP (NP-COMP (NP 새/DAN
+		    진지/NNC)
+		(NP 구축/NNC)
+		(NP 공사/NNC+에/PAD))
+       (VV 착수/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>제3 포대 성원들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>새 진지 구축 공사</term>
+	    </Arg>
+	    <Rel>
+	      <term>착수했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>착수되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>영종도와 서울역을 잇는 인천신공항철도(61.5 KM) 사업이 올 상반기내 착수될 수 있을 것으로 보인다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (NP (NP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (VP (NP-COMP 영종도/NPR+과/PCJ)
+                                             (NP-OBJ 서울역/NPR+을/PCA)
+                                             잇/VV+는/EAN)))
+                                   (NP 인천/NPR+신공항/NNC+철도/NNC))
+                               (PRN -LRB-/SLQ
+                                    61.5/NNU
+                                    KM/NFW
+                                    -RRB-/SRQ))
+                           (NP 사업/NNC+이/PCA))
+                   (VP (VP (NP-ADV 올/DAN
+                                   상반기/NNC+내/NNX)
+                           (VP (VV 착수/NNC+되/XSV+을/EAN)))
+                       (VX 수/NNX
+                           있/VJ+을/EAN)))
+                (NP 것/NNX+으로/PAD))
+       보이/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>영종도와 서울역을 잇는 인천신공항철도(61.5 KM) 사업</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올 상반기내</term>
+	    </Arg>
+	    <Rel>
+	      <term>착수될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

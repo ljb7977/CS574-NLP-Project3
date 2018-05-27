@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>닥치</lemma>
+    <comment>Frames file for '닥치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>닥치.01</id>
+      <edef>befall</edef>
+      <roleset>
+	<role argnum="1" argrole="event"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>닥치다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>기상청은 "고온 현상은 4 일까지 이어지겠지만 새벽 한때 전국에 걸쳐 비가 내리면서 경칩인 5 일을 고비로 수그러들어 7 일에는 서울 아침 최저기온이 영하 6 도로 곤두박질치는 `꽃샘추위'가 닥치겠다"고 내다봤다.</text>
+	  <parse>
+(S (NP-SBJ 기상청/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ 고온/NNC
+                          현상/NNC+은/PAU)
+                  (VP (VP (NP-ADV 4/NNU
+                                  일/NNX+까지/PAU)
+                          (VP (VV 잇/VV+어지/XSV+겠/EPF+지만/ECS)))
+                      (VP (S (NP-ADV 새벽/NNC
+                                     한때/NNC)
+                             (S (NP-SBJ *pro*)
+                                (VP (NP-COMP 전국/NNC+에/PAD)
+                                    걸치/VV+어/ECS))
+                             (S (NP-SBJ 비/NNC+이/PCA)
+                                (VP 내리/VV+으면서/ECS)))
+                          (NP-ADV (NP-OBJ (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (NP 경칩/NNC+이/CO+은/EAN))))
+                                          (NP 5/NNU
+                                              일/NNX+을/PCA))
+                                  고비/NNC+으로/PAD)
+                          (VP 수그러들/VV+어/ECS))))
+               (S (NP-SBJ (S (NP-ADV 7/NNU
+                                     일/NNX+에/PAD+은/PAU)
+                             (S (NP-SBJ 서울/NPR
+                                        아침/NNC
+                                        최저/NNC+기온/NNC+이/PCA)
+                                (VP (NP-COMP 영하/NNC
+						 6/NNU
+						 도/NNX+으로/PAD)
+                                    곤두박질치/VV+는/EAN)))
+                          (NP `/SLQ
+                              꽃샘/NNC+추위/NNC
+                              '/SRQ
+                              이/PCA))
+                  (VP 닥치/VV+겠/EPF+다/EFN))
+               "/SRQ
+               고/PAD)
+       내다보/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>고온 현상은 4 일까지 이어지겠지만 새벽 한때 전국에 걸쳐 비가 내리면서 경칩인 5 일을 고비로 수그러들어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>7 일에는 서울 아침 최저기온이 영하 6 도로 곤두박질치는 `꽃샘추위'</term>
+	    </Arg>
+	    <Rel>
+	      <term>닥치겠다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,99 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>교섭</lemma>
+    <comment>Frames file for '교섭' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>교섭.01</id>
+      <edef>negotiate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="agreement"/>
+	<role argnum="2" argrole="other party"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>교섭하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>세계 5 위 자동차 회사인 독일 다임러 크라이슬러와 자본 제휴를 교섭하고 있는 미쓰비시(삼릉) 자동차공업은 다임러가 경영에 직접 관여할 수 있는 약 34 퍼센트의 자본참여를 수용, 다임러의 산하로 들어간다는 방침을 굳혔다고 요미우리(독매) 신문이 10 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-3 (NP-SBJ (S (WHNP-2 *op*)
+                        (S (NP-SBJ *T*-2)
+                           (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                               (S (NP-SBJ *T*-1)
+                                                  (VP (NP 세계/NNC
+                                                          5/NNU
+                                                          위/NNX
+                                                          자동차/NNC
+                                                          회사/NNC+이/CO+은/EAN))))
+                                            (NP 독일/NPR
+                                                다임러/NPR
+                                                크라이슬러/NPR+과/PAD))
+                                   (NP-OBJ 자본/NNC
+                                           제휴/NNC+을/PCA)
+                                   (VV 교섭/NNC+하/XSV+고/ECS))
+                               있/VX+는/EAN)))
+                     (NP 미쓰비시/NPR
+                         (PRN -LRB-/SLQ
+                              (NP 삼릉/NPR)
+                              -RRB-/SRQ)
+                         자동차/NNC+공업/NNC+은/PAU))
+             (VP (NP-OBJ (S (NP-SBJ *pro*)
+                            (VP (S (NP-SBJ *pro*)
+                                   (VP (NP-OBJ (S (NP-SBJ 다임러/NPR+이/PCA)
+                                                  (VP (VP (NP-COMP 경영/NNC+에/PAD)
+                                                          (VP (ADVP 직접/ADV)
+                                                              (VP (VV 관여/NNC+하/XSV+을/EAN))))
+                                                      (VX 수/NNX
+                                                          있/VJ+는/EAN)))
+                                               (NP (NP 약/DAN
+                                                       34/NNU
+                                                       퍼센트/NNX+의/PAN)
+                                                   (NP 자본/NNC+참여/NNC+을/PCA)))
+                                       (VV 수용/NNC)))
+                                ,/SCM
+                                (VP (NP-COMP (NP 다임러/NPR+의/PAN)
+                                             (NP 산하/NNC+으로/PAD))
+                                    들어가/VV+는다는/EAN)))
+                         (NP 방침/NNC+을/PCA))
+                 굳히/VV+었/EPF+다/EFN+고/PAD))
+   (S (NP-SBJ 요미우리/NPR
+              (PRN -LRB-/SLQ
+                   (NP 독매/NPR)
+                   -RRB-/SRQ)
+              신문/NNC+이/PCA)
+      (VP (NP-ADV 10/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-3)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=미쓰비시(삼릉) 자동차공업</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>세계 5 위 자동차 회사인 독일 다임러 크라이슬러</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>자본 제휴</term>
+	    </Arg>
+	    <Rel>
+	      <term>교섭하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

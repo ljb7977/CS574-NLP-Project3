@@ -1,0 +1,106 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주도</lemma>
+    <comment>Frames file for '주도' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>주도.01</id>
+      <edef>lead</edef>
+      <roleset>
+	<role argnum="0" argrole="thing leading"/>
+	<role argnum="1" argrole="thing led"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주도하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>워싱턴 포스트는 특히 벤처 열풍을 주도하고 있는 한국의 젊은이들을 새로운 기업문화 창출의 선도자로 소개했다.</text>
+	  <parse>
+(S (NP-SBJ 워싱턴/NPR
+           포스트/NPR+은/PAU)
+   (VP (ADVP 특히/ADV)
+       (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (VP (NP-OBJ 벤처/NNC
+                                         열풍/NNC+을/PCA)
+                                 (VV 주도/NNC+하/XSV+고/ECS))
+                             있/VX+는/EAN)))
+                   (NP (NP 한국/NPR+의/PAN)
+                       (NP 젊은이/NNC+들/XSF+을/PCA)))
+           (NP-COMP (NP (NP (S (WHNP-2 *op*)
+                               (S (NP-SBJ *T*-2)
+                                  (ADJP 새롭/VJ+은/EAN)))
+                            (NP 기업/NNC+문화/NNC))
+                        (NP 창출/NNC+의/PAN))
+                    (NP 선도자/NNC+으로/PAD))
+           (VV 소개/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=한국의 젊은이들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>벤처 열풍</term>
+	    </Arg>
+	    <Rel>
+	      <term>주도하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>주도되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이러한 외국인의 국내 주식 매입 현상은 주로 미국계 자금에 의해 주도되고 있는 것으로 나타났다.</text>
+	  <parse>
+(S (NP-SBJ (DANP 이러한/DAN)
+           (NP (NP 외국인/NNC+의/PAN)
+               (NP 국내/NNC
+                   주식/NNC
+                   매입/NNC
+                   현상/NNC+은/PAU)))
+   (VP (ADVP 주로/ADV)
+       (VP (NP-COMP (S (S (NP-SBJ *pro*)
+                          (VP (NP-COMP 미국/NPR+계/XSF
+                                       자금/NNC+에/PAD)
+                              의하/VV+어/ECS))
+                       (S (NP-SBJ *pro*)
+                          (VP (VP (VV 주도/NNC+되/XSV+고/ECS))
+                              있/VX+는/EAN)))
+                    (NP 것/NNX+으로/PAD))
+           나타나/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에 의해</f>
+	      <term>미국계 자금</term>
+	    </Arg>
+	    <Rel>
+	      <term>주도되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

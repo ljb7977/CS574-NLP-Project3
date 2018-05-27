@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>성토</lemma>
+    <comment>Frames file for '성토' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>성토.01</id>
+      <edef>denounce</edef>
+      <roleset>
+	<role argnum="0" argrole="denouncer"/>
+	<role argnum="1" argrole="thing denounced"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>성토하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한은 5 개항으로 이루어진 공개질문장에서 햇볕정책을 성토하고 주한미군 철수와 국가보안법 철폐를 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 북한/NPR+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-COMP 5/NNU
+                                  개/NNX+항/NNC+으로/PAD)
+                         (VV 이루/VV+어지/XSV+은/EAN))))
+               (NP 공개/NNC+질문/NNC+장/XSF+에서/PAD))
+       (VP (VP (NP-OBJ 햇볕/NNC+정책/NNC+을/PCA)
+               (VV 성토/NNC+하/XSV+고/ECS))
+           (VP (NP-OBJ (NP 주한/NNC+미군/NNC
+                           철수/NNC+과/PCJ)
+                       (NP 국가/NNC+보안법/NNC
+                           철폐/NNC+을/PCA))
+               (VV 주장/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>5 개항으로 이루어진 공개질문장에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>햇볕정책</term>
+	    </Arg>
+	    <Rel>
+	      <term>성토하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

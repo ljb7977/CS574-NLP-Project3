@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>말려들</lemma>
+    <comment>Frames file for '말려들' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>말려들.01</id>
+      <edef>be involved</edef>
+      <roleset>
+	<role argnum="1" argrole="entity involved in contention"/>
+	<role argnum="2" argrole="contention"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>말려들다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>민주당은 또 최근 확산기미를 보이고 있는 지역주의 선거경향에 대해서도 비판여론을 환기시켜 조기차단하되 야당의 지역주의 선거전략에 말려들지 않도록 맞대응을 피하고 국정낭비에 대한 야당의 책임문제와 여당의 정책개발 및 지난 2 년간 국정성과 홍보에 초점을 맞추기로 했다.</text>
+	  <parse>
+(S (NP-SBJ 민주당/NPR+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (VP (VP (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (VP (VP (NP-ADV 최근/NNC)
+                                                 (VP (NP-OBJ 확산/NNC+기미/NNC+을/PCA)
+                                                     보이/VV+고/ECS))
+                                             있/VX+는/EAN)))
+                                   (NP 지역/NNC+주의/NNC
+                                       선거/NNC+경향/NNC+에/PAD))
+                          대하/VV+어서/ECS+도/PAU))
+                   (VP (VP (NP-OBJ 비판/NNC+여론/NNC+을/PCA)
+                           (VV 환기/NNC+시키/XSV+어/ECS))
+                       (VP (NP-OBJ *pro*)
+                           (VV 조기차단/NNC+하/XSV+으되/ECS))))
+               (VP (S (NP-SBJ *pro*)
+                      (VP (VP (NP-COMP (NP 야당/NNC+의/PAN)
+                                       (NP 지역/NNC+주의/NNC
+                                           선거/NNC+전략/NNC+에/PAD))
+                              말려들/VV+지/ECS)
+                          않/VX+도록/ECS))
+                   (VP (NP-OBJ 맞대응/NNC+을/PCA)
+                       피하/VV+고/ECS))
+               (VP (NP-COMP (NP (S (WHNP-2 *op*)
+                                   (S (NP-SBJ *T*-2)
+                                      (VP (NP-COMP 국정/NNC+낭비/NNC+에/PAD)
+                                          대하/VV+은/EAN)))
+                                (NP (NP 야당/NNC+의/PAN)
+                                    (NP 책임/NNC+문제/NNC+과/PCJ)))
+                            (NP (NP (NP 여당/NNC+의/PAN
+                                        정책/NNC+개발/NNC)
+                                    (ADCP 및/ADC)
+                                    (NP 지난/DAN
+                                        2/NNU
+                                        년/NNX+간/XSF
+                                        국정/NNC+성과/NNC))
+                                (NP 홍보/NNC+에/PAD)))
+                   (NP-OBJ 초점/NNC+을/PCA)
+                   맞추/VV+기/ENM+으로/PAD))
+           하/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>야당의 지역주의 선거전략</term>
+	    </Arg>
+	    <Rel>
+	      <term>말려들지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

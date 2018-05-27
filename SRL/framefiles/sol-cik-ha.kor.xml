@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>솔직하</lemma>
+    <comment>Frames file for '솔직하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>솔직하.01</id>
+      <edef>straightforward</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being straightforward"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>솔직하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보고서에 따르면 탈북자들은 객관적인 사실에 대해서는 비교적 솔직하지만 자신의 경력 등에 대해 거짓말을 많이 하고 있으며 심지어는 도움을 주는 중국내 친척들에게도 금방 탄로가 날 거짓말을 한다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 보고서/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   (S (NP-SBJ 탈북자/NNC+들/XSF+은/PAU)
+      (ADJP (S (NP-SBJ *pro*)
+               (VP (NP-COMP (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (VP (NP 객관/NNC+적/XSF+이/CO+은/EAN))))
+                            (NP 사실/NNC+에/PAD))
+                   대하/VV+어서/ECS+은/PAU))
+            (ADVP 비교적/ADV)
+            (ADJP 솔직하/VJ+지만/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (NP (NP 자신/NNC+의/PAN)
+                                  (NP 경력/NNC))
+                              (NP 등/NNX+에/PAD))
+                     대하/VV+어/ECS))
+              (VP (NP-OBJ 거짓말/NNC+을/PCA)
+                  (VP (ADVP 많이/ADV)
+                      (VP 하/VV+고/ECS))))
+          있/VX+으며/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 심지어/ADV+은/PAU)
+          (VP (NP-COMP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (VP (NP-OBJ 도움/NNC+을/PCA)
+                                 (NP-COMP *pro*)
+                                 주/VV+는/EAN)))
+                       (NP (NP 중국/NPR+내/NNX)
+                           (NP 친척/NNC+들/XSF+에게/PAD+도/PAU)))
+              (NP-OBJ (S (WHNP-3 *op*)
+                         (S (NP-SBJ *T*-3)
+                            (S (ADVP 금방/ADV)
+			       (S (NP-SBJ-LV 탄로/NNC+이/PCA)
+				  (VP (LV 나/VV+을/EAN))))))
+                      (NP 거짓말/NNC+을/PCA))
+              하/VV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>탈북자들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>객관적인 사실에 대해서는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>비교적</term>
+	    </Arg>
+	    <Rel>
+	      <term>솔직하지만</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

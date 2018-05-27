@@ -1,0 +1,96 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조동</lemma>
+    <comment>Frames file for '조동' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>조동.01</id>
+      <edef>transfer</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity sent"/>
+	<role argnum="2" argrole="sent to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조동시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이유는 모르겠습니다만 정치 부중대장이 그 동무들을 조동시켰지요.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 이유/NNC+은/PAU)
+          모르/VV+겠/EPF+습니다만/ECS))
+   (S (NP-SBJ 정치/NNC
+              부중대장/NNC+이/PCA)
+      (VP (NP-OBJ 그/DAN
+                  동무/NNC+들/XSF+을/PCA)
+          (VV 조동/NNC+시키/XSV+었/EPF+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이유는 모르겠습니다만</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>정치 부중대장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그 동무들</term>
+	    </Arg>
+	    <Rel>
+	      <term>조동시켰지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>조동되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>박 전사는 그 직책에 적응하지 못해서 다른 곳으로 조동됐지요.</text>
+	  <parse>
+(S (NP-SBJ 박/NPR
+           전사/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (VP (NP-COMP 그/DAN
+                           직책/NNC+에/PAD)
+                  (VV 적응/NNC+하/XSV+지/ECS))
+              못하/VX+어서/ECS))
+       (VP (NP-COMP 다른/DAN
+                    곳/NNC+으로/PAD)
+           (VV 조동/NNC+되/XSV+었/EPF+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>박 전사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>그 직책에 적응하지 못해서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>다른 곳</term>
+	    </Arg>
+	    <Rel>
+	      <term>조동됐지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

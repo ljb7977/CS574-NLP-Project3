@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>동일</lemma>
+    <comment>Frames file for '동일' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>동일.01</id>
+      <edef>equal</edef>
+      <roleset>
+	<role argnum="1" argrole="focus of equation"/>
+	<role argnum="2" argrole="other side of equation"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>동일하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>제1 대대와 제2 대대 집합 지역은 동일했습니다.</text>
+        <parse>
+(S (NP-SBJ (NP 제/XPF+1/NNU
+	       대대/NNC+와/PCJ)
+	   (NP 제/XPF+2/NNU
+	       대대/NNC)
+	   (NP 집합/NNC
+	       지역/NNC+은/PAU))
+   (ADJP (VJ 동일/NNC+하/XSJ+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>제1 대대와 제2 대대 집합 지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>동일했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

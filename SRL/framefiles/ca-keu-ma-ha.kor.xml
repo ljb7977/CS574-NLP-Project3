@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자그마하</lemma>
+    <comment>Frames file for '자그마하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>자그마하.01</id>
+      <edef>small</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being small"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자그마하다</rel>
+	  <mapitem src="np-sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신문관은 자그마한 원이 네 개나 들어 있는 네모꼴 부호를 가리킨다.</text>
+	  <parse>
+(S (NP-SBJ 신문관/NNC+은/PAU)
+   (VP (NP-OBJ (S (WHNP-2 *op*)
+                  (S (NP-SBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP 자그마하/VJ+은/EAN)))
+                             (NP 원/NNC+이/PCA))
+                     (VP (VP (NP-ADV 네/NNU
+                                     개/NNX+이나/PAU)
+                             (VP (NP-COMP *T*-2)
+                                 들/VV+어/ECS))
+                         있/VX+는/EAN)))
+               (NP 네모꼴/NNC
+                   부호/NNC+을/PCA))
+       가리키/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=원</term>
+	    </Arg>
+	    <Rel>
+	      <term>자그마한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

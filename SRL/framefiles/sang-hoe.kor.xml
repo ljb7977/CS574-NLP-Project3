@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상회</lemma>
+    <comment>Frames file for '상회' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>상회.01</id>
+      <edef>exceed</edef>
+      <roleset>
+	<role argnum="1" argrole="thing that's more"/>
+	<role argnum="2" argrole="thing that's less"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상회하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>도이체 텔레콤의 인수가 성사되면 규모는 1 천억달러를 상회할 것으로 보인다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (S (NP-SBJ (NP 도이체/NPR
+                                  텔레콤/NPR+의/PAN)
+                              (NP 인수/NNC+이/PCA))
+                      (VP (VV 성사/NNC+되/XSV+으면/ECS)))
+                   (S (NP-SBJ 규모/NNC+은/PAU)
+                      (VP (NP-OBJ 1/NNU
+                                  천억/NNU+달러/NNX+을/PCA)
+                          (VV 상회/NNC+하/XSV+을/EAN))))
+                (NP 것/NNX+으로/PAD))
+       보이/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>도이체 텔레콤의 인수가 성사되면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>규모</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>1 천억달러</term>
+	    </Arg>
+	    <Rel>
+	      <term>상회할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

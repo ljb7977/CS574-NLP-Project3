@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>매도</lemma>
+    <comment>Frames file for '매도' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>매도.01</id>
+      <edef>sell over</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing sold over"/>
+	<role argnum="2" argrole="sold over to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>매도하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>종목별로는 전날 외국인들이 집중 매도한 싸이버텍홀딩스에 이어 장미디어와 미디어솔루션 등 인터넷 보안 솔루션 업체들이 일제히 하한가를 기록했다.</text>
+	  <parse>
+(S (NP-ADV 종목/NNC+별/XSF+으로/PAD+은/PAU)
+   (ADVP (NP-COMP (S (WHNP-1 *op*)
+                     (S (NP-ADV 전날/NNC)
+                        (S (NP-SBJ 외국인/NNC+들/XSF+이/PCA)
+                           (VP (NP-OBJ *T*-1)
+                               (VP (NP-ADV 집중/NNC)
+                                   (VP (VV 매도/NNC+하/XSV+은/EAN)))))))
+                  (NP 싸이버텍홀딩스/NPR+에/PAD))
+         이어/ADV)
+   (S (NP-SBJ (NP (NP (NP 장미디어/NPR+과/PCJ)
+                      (NP 미디어솔루션/NPR))
+                  (NP 등/NNX))
+              (NP 인터넷/NNC
+                  보안/NNC
+                  솔루션/NNC
+                  업체/NNC+들/XSF+이/PCA))
+      (VP (ADVP 일제히/ADV)
+          (VP (NP-OBJ 하한가/NNC+을/PCA)
+              (VV 기록/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전날</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>외국인들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=싸이버텍홀딩스</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>집중</term>
+	    </Arg>
+	    <Rel>
+	      <term>매도한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

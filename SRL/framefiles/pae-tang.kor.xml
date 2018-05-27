@@ -1,0 +1,102 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>배당</lemma>
+    <comment>Frames file for '배당' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>배당.01</id>
+      <edef>allocate</edef>
+      <roleset>
+	<role argnum="0" argrole="allocator"/>
+	<role argnum="1" argrole="thing allocated"/>
+	<role argnum="2" argrole="allocated to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>배당하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전투 전에 유류와 탄약을 포함한 각종 보급품을 배당한다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 전투/NNC
+               전/NNC+에/PAD)
+       (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (NP-OBJ (NP 유류/NNC+과/PCJ)
+                                     (NP 탄약/NNC+을/PCA))
+                             (VV 포함/NNC+하/XSV+은/EAN))))
+                   (NP 각종/NNC
+                       보급품/NNC+을/PCA))
+           (VV 배당/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전투 전에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>유류와 탄약을 포함한 각종 보급품</term>
+	    </Arg>
+	    <Rel>
+	      <term>배당한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>배당되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>12.7 미리 데에스하까 반항공 기관총의 전투 정량은 500발이고 7.62 미리 기관총에는 각각 3500발이 배당됩니다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP (NP 12.7/NNU
+                      미리/NNX)
+                  (NP 데에스하까/NNC
+                      반항공/NNC
+                      기관총/NNC+의/PAN))
+              (NP 전투/NNC
+                  정량/NNC+은/PAU))
+      (VP (NP 500/NNU
+              발/NNX+이/CO+고/ECS)))
+   (S (NP-COMP-1 (NP 7.62/NNU
+                     미리/NNX)
+                 (NP 기관총/NNC+에/PAD+은/PAU))
+      (S (ADVP 각각/ADV)
+         (S (NP-SBJ 3500/NNU
+                    발/NNX+이/PCA)
+            (VP (NP-COMP *T*-1)
+                (VV 배당/NNC+되/XSV+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>7.62 미리 기관총</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>각각</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>3500발</term>
+	    </Arg>
+	    <Rel>
+	      <term>배당됩니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

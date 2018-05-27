@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불려가</lemma>
+    <comment>Frames file for '불려가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불려가.01</id>
+      <edef>be called</edef>
+      <roleset>
+	<role argnum="0" argrole="caller"/>
+	<role argnum="1" argrole="entity called"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불려가다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>벨기에 언론은 테헤란 주재 벨기에 대사가 이란 외무부에 불려가 강력한 항의를 받았다고 전하고 이번 사태가 양국관계에 타격을 줄 가능성에 주목했다.</text>
+	  <parse>
+(S (NP-SBJ 벨기에/NPR
+           언론/NNC+은/PAU)
+   (VP (VP (S-COMP (NP-SBJ (NP 테헤란/NPR
+                               주재/NNC)
+                           (NP 벨기에/NPR
+                               대사/NNC+이/PCA))
+                   (VP (S (NP-SBJ *pro*)
+                          (VP (NP-COMP 이란/NPR
+                                       외무부/NNC+에/PAD)
+                              불려가/VV+어/ECS))
+                       (VP (NP-OBJ (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (ADJP 강력하/VJ+은/EAN)))
+                                   (NP 항의/NNC+을/PCA))
+                           받/VV+었/EPF+다/EFN+고/PAD)))
+           전하/VV+고/ECS)
+       (VP (NP-COMP (S (NP-SBJ 이번/NNC
+                               사태/NNC+이/PCA)
+                       (VP (NP-COMP 양국/NNC+관계/NNC+에/PAD)
+                           (NP-OBJ 타격/NNC+을/PCA)
+                           주/VV+을/EAN))
+                    (NP 가능성/NNC+에/PAD))
+           (VV 주목/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>이란 외무부</term>
+	    </Arg>
+	    <Rel>
+	      <term>불려가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

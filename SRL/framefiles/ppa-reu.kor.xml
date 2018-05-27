@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>빠르</lemma>
+    <comment>Frames file for '빠르' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>빠르.01</id>
+      <edef>quick</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being quick"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>빠르다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리는 적의 전연에 있는 적의 화기와 병력에 사격을 가하면서 빠른 속도로 이동했습니다.</text>
+	  <parse>
+(S (S (NP-SBJ 우리/NPN+은/PAU)
+      (VP (NP-COMP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP (NP-COMP (NP 적/NNC+의/PAN)
+                                        (NP 전연/NNC+에/PAD))
+                               있/VJ+는/EAN)))
+                   (NP (NP 적/NNC+의/PAN)
+                       (NP (NP 화기/NNC+과/PCJ)
+                           (NP 병력/NNC+에/PAD))))
+          (NP-OBJ 사격/NNC+을/PCA)
+          가하/VV+으면서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (ADJP 빠르/VJ+은/EAN)))
+                  (NP 속도/NNC+으로/PAD))
+          (VP (VV 이동/NNC+하/XSV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=속도</term>
+	    </Arg>
+	    <Rel>
+	      <term>빠른</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,216 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>살해</lemma>
+    <comment>Frames file for '살해' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>살해.01</id>
+      <edef>kill</edef>
+      <roleset>
+	<role argnum="0" argrole="causal agent"/>
+	<role argnum="1" argrole="entity dying"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>살해하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전날 미시간주에서 초등학교 1 학년인 6 살짜리 남학생이 같은 반의 여학생을 총으로 살해한 사건의 충격이 채 가시기도 전에 또 다시 총기 사고가 발생해 충격의 도를 더하고 있다.</text>
+	  <parse>
+(S (S (NP-ADV (S (NP-SBJ (NP (S (NP-ADV 전날/NNC)
+                                (NP-ADV 미시간/NPR+주/NNC+에서/PAD)
+                                (S (NP-SBJ (S (WHNP-1 *op*)
+                                              (S (NP-SBJ *T*-1)
+                                                 (VP (NP 초등학교/NNC
+                                                         1/NNU
+                                                         학년/NNX+이/CO+은/EAN))))
+                                           (NP 6/NNU
+                                               살/NNX+짜리/XSF
+                                               남학생/NNC+이/PCA))
+                                   (VP (NP-OBJ (NP 같은/DAN
+                                                   반/NNC+의/PAN)
+                                               (NP 여학생/NNC+을/PCA))
+                                       (VP (NP-ADV 총/NNC+으로/PAD)
+                                           (VP (VV 살해/NNC+하/XSV+은/EAN))))))
+                             (NP 사건/NNC+의/PAN))
+                         (NP 충격/NNC+이/PCA))
+                 (VP (ADVP 채/ADV)
+                     (VP 가시/VV+기/ENM+도/PAU)))
+              (NP 전/NNC+에/PAD))
+      (ADVP (ADVP 또/ADV)
+            (ADVP 다시/ADV))
+      (S (NP-SBJ 총기/NNC
+                 사고/NNC+이/PCA)
+         (VP (VV 발생/NNC+하/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP *pro*)
+              (NP-OBJ (NP 충격/NNC+의/PAN)
+                      (NP 도/NNC+을/PCA))
+              더하/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전날</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>미시간주에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>초등학교 1 학년인 6 살짜리 남학생</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>같은 반의 여학생</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>총으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>살해한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>살해되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>나이지리아 남부 아바 마을에서 종족간의 유혈분규로 450 명의 호사족 주민이 이보족 주민에 의해 살해됐다고 한 군사소식통이 1 일 AFP 통신에 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-ADV 나이지리아/NPR
+                     남부/NNC
+                     아바/NPR
+                     마을/NNC+에서/PAD)
+             (NP-ADV (NP 종족/NNC+간/XSF+의/PAN)
+                     (NP 유혈/NNC+분규/NNC+으로/PAD))
+             (S (NP-SBJ (NP 450/NNU
+                            명/NNX+의/PAN)
+                        (NP 호사/NPR+족/XSF
+                            주민/NNC+이/PCA))
+                (VP (S (NP-SBJ *pro*)
+                       (VP (NP-COMP 이보/NPR+족/XSF
+                                    주민/NNC+에/PAD)
+                           의하/VV+어/ECS))
+                    (VP (VV 살해/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))))
+   (S (NP-SBJ 한/NNU
+              군사/NNC+소식통/NNC+이/PCA)
+      (VP (NP-ADV 1/NNU
+                  일/NNX)
+          (VP (NP-COMP AFP/NFW
+                       통신/NNC+에/PAD)
+              (S-COMP *T*-1)
+              밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>나이지리아 남부 아바 마을에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>종족간의 유혈분규로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>450 명의 호사족 주민</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에 의해</f>
+	      <term>이보족 주민</term>
+	    </Arg>
+	    <Rel>
+	      <term>살해됐다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>살해당하다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이보족 주민들은 지난주 북부 카두나시에서 같은 종족 주민들이 살해당한 데 대한 보복으로 지난달 28 일 남부 아바 마을의 호사 주민들을 공격했는데 앞서 외교 및 사업 소식통들은 28 일과 29 일 아바 마을의 호사 주민들이 이보족 주민들에 의해 조직적으로 살해됐다고 전했다.</text>
+	  <parse>
+(S (S (NP-SBJ 이보/NPR+족/XSF
+              주민/NNC+들/XSF+은/PAU)
+      (VP (NP-ADV (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (VP (NP-COMP (S (NP-ADV 지난주/NNC)
+                                        (NP-ADV 북부/NNC
+                                                카두나/NPR+시/NNC+에서/PAD)
+                                        (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                                          (S (NP-SBJ *T*-1)
+                                                             (ADJP 같/VJ+은/EAN)))
+                                                       (NP 종족/NNC))
+                                                   (NP 주민/NNC+들/XSF+이/PCA))
+                                           (VP (VV 살해/NNC+당하/XSV+은/EAN))))
+                                     (NP 데/NNX))
+                            대하/VV+은/EAN)))
+                  (NP 보복/NNC+으로/PAD))
+          (NP-ADV 지난달/NNC
+                  28/NNU
+                  일/NNX)
+          (VP (NP-OBJ (NP 남부/NNC
+                          아바/NPR
+                          마을/NNC+의/PAN)
+                      (NP 호사/NPR
+                          주민/NNC+들/XSF+을/PCA))
+              (VV 공격/NNC+하/XSV+었/EPF+는데/ECS))))
+   (S (ADVP 앞서/ADV)
+      (S (NP-SBJ (NP (NP 외교/NNC)
+                     (ADCP 및/ADC)
+                     (NP 사업/NNC))
+                 (NP 소식통/NNC+들/XSF+은/PAU))
+         (VP (S-COMP (NP-ADV (NP 28/NNU
+                                 일/NNX+과/PCJ)
+                             (NP 29/NNU
+                                 일/NNX))
+                     (S (NP-SBJ (NP 아바/NPR
+                                    마을/NNC+의/PAN)
+                                (NP 호사/NPR
+                                    주민/NNC+들/XSF+이/PCA))
+                        (VP (S (NP-SBJ *pro*)
+                               (VP (NP-COMP 이보/NPR+족/NNC
+						주민/NNC+들/XSF+에/PAD)
+                                   의하/VV+어/ECS))
+                            (NP-ADV 조직/NNC+적/XSF+으로/PAD)
+                            (VP (VV 살해/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))))
+             전하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난주</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>북부 카두나시에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>같은 종족 주민들</term>
+	    </Arg>
+	    <Rel>
+	      <term>살해당한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

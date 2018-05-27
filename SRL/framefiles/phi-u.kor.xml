@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>피우</lemma>
+    <comment>Frames file for '피우' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>피우.01</id>
+      <edef>smoke</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="cigarettes, fire"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>피우다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>너는 담배를 몇 가치 피우는가?</text>
+	  <parse>
+(S (NP-SBJ 너/NPN+은/PAU)
+   (VP (NP-OBJ 담배/NNC+을/PCA)
+       (VP (NP-ADV 몇/NNU
+                   가치/NNX)
+           (VP 피우/VV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>너</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>담배</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>몇 가치</term>
+	    </Arg>
+	    <Rel>
+	      <term>피우는가</term>
+	    </Rel>
+	  </relation>
+	  <comment>floating quantifier</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>좌초</lemma>
+    <comment>Frames file for '좌초' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>좌초.01</id>
+      <edef>strand</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing stranded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>좌초시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>칠레 실종자 가족들은 6 일 군부가 전 독재자 아우구스토 피노체트에 대한 충성을 과시한 데 대한 불만의 표시로 피노체트의 17 년 독재기간 동안 실종된 1 천명이상의 운명을 확인하기 위한 회담을 좌초시켰다.</text>
+	  <parse>
+(S (NP-SBJ 칠레/NPR
+           실종자/NNC
+           가족/NNC+들/XSF+은/PAU)
+   (VP (NP-ADV 6/NNU
+               일/NNX)
+       (NP-ADV (NP (S (WHNP-2 *op*)
+                      (S (NP-SBJ *T*-2)
+                         (VP (NP-COMP (S (NP-SBJ 군부/NNC+이/PCA)
+                                         (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                        (S (NP-SBJ *T*-1)
+                                                           (VP (NP-COMP 전/DAN
+                                                                        독재자/NNC
+                                                                        아우구스토/NPR
+                                                                        피노체트/NPR+에/PAD)
+                                                               대하/VV+은/EAN)))
+                                                     (NP 충성/NNC+을/PCA))
+                                             (VV 과시/NNC+하/XSV+은/EAN)))
+                                      (NP 데/NNX))
+                             대하/VV+은/EAN)))
+                   (NP 불만/NNC+의/PAN))
+               (NP 표시/NNC+으로/PAD))
+       (VP (NP-OBJ (S (WHNP-4 *op*)
+                      (S (NP-SBJ *T*-4)
+                         (VP (S-OBJ (NP-SBJ *pro*)
+				    (VP (NP-OBJ (NP (S (WHNP-3 *op*)
+						       (S (NP-SBJ *T*-3)
+							  (VP (NP-ADV (NP (NP 피노체트/NPR+의/PAN)
+									  (NP 17/NNU
+									      년/NNX
+									      독재/NNC+기간/NNC))
+								      (NP 동안/NNX))
+							      (VP (VV 실종/NNC+되/XSV+은/EAN)))))
+						    (NP 1/NNU
+							천/NNU+명/NNX+이상/NNC+의/PAN))
+						(NP 운명/NNC+을/PCA))
+					(VV 확인/NNC+하/XSV+기/ENM)))
+                             위하/VV+은/EAN)))
+                   (NP 회담/NNC+을/PCA))
+           (VV 좌초/NNC+시키/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>칠레 실종자 가족들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>6 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>군부가 전 독재자 아우구스토 피노체트에 대한 충성을 과시한 데 대한 불만의 표시로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>피노체트의 17 년 독재기간 동안 실종된 1 천명이상의 운명을 확인하기 위한 회담</term>
+	    </Arg>
+	    <Rel>
+	      <term>좌초시켰다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

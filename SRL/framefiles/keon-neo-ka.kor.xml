@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>건너가</lemma>
+    <comment>Frames file for '건너가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>건너가.01</id>
+      <edef>go over</edef>
+      <roleset>
+	<role argnum="0" argrole="entity in motion"/>
+	<role argnum="1" argrole="barrier"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>건너가다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>어느 도로로 어떤 교량을 건너가야 하느냐 하는 그런 문제는 제 포대장이 염려할 일이었습니다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+	      (VP (S-COMP (NP-SBJ *pro*)
+			  (VP (NP-ADV 어느/DAN
+				      도로/NNC+로/PAD)
+			      (VP (VP (NP-OBJ 어떤/DAN
+					      교량/NNC+을/PCA)
+				      건너가/VV+아야/ECS)
+				  하/VX+느냐/ECS)))
+		  하/VV+는/EAN))
+	   (NP 그런/DAN
+	       문제/NNC+는/PAU))
+   (VP (NP (S (WHNP-1 0)
+	      (S (NP-SBJ 제/NPN
+			 포대장/NNC+이/PCA)
+		 (VP (NP-OBJ *T*-1)
+		     (VV 염려/NNC+하/XSV+을/EAN))))
+	   (NP 일/NNC+이/CO+었/EPF+습니다/EFN)))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>어느 도로로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>어떤 교량</term>
+	    </Arg>
+	    <Rel>
+	      <term>건너가야</term>
+	    </Rel>
+	    <Aux>
+	      <f>아야</f>
+	      <term>하느냐</term>
+	    </Aux>
+	  </relation>    
+	</example>
+	<example>
+	  <text>형은 3년 전에 일본으로 건너갔다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>형</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>3년 전에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>일본</term>
+	    </Arg>
+	    <Rel>
+	      <term>건너갔다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+	<example>
+	  <text>그 친구는 미국에 건너가서 많은 돈을 벌었다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>그 친구</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>미국</term>
+	    </Arg>
+	    <Rel>
+	      <term>건너가서</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>
+

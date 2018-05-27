@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>몸담</lemma>
+    <comment>Frames file for '몸담' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>몸담.01</id>
+      <edef>work in</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="job"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>몸담다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>해설가 바클리는 8 일 자신이 모두 몸담았던 휴스턴 로케츠와 피닉스 선즈의 휴스턴 경기를 데뷔무대로 삼을 계획이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ (NP 해설가/NNC)
+                      (NP 바클리/NPR+은/PAU))
+              (VP (NP-ADV 8/NNU
+                          일/NNX)
+                  (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ 자신/NNC+이/PCA)
+                                        (VP (ADVP 모두/ADV)
+                                            (VP (NP-COMP *T*-1)
+                                                몸담/VV+었/EPF+던/EAN))))
+                                  (NP (NP 휴스턴/NPR
+                                          로케츠/NPR+과/PCJ)
+                                      (NP 피닉스/NPR
+                                          선즈/NPR+의/PAN)))
+                              (NP 휴스턴/NPR
+                                  경기/NNC+을/PCA))
+                      (NP-COMP 데뷔/NNC+무대/NNC+으로/PAD)
+                      삼/VV+을/EAN)))
+           (NP 계획/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>자신</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>모두</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=휴스턴 로케츠와 피닉스 선즈</term>
+	    </Arg>
+	    <Rel>
+	      <term>몸담았던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

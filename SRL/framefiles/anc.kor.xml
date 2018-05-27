@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>¾É</lemma>
+    <comment>Frames file for '¾É' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>¾É.01</id>
+      <edef>sit</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>¾É´Ù</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>ÀÚ, ±è Æ¯¹«Àå, ¾ÉÀ¸¶ó.</text>
+	  <parse>
+(S (INTJ ÀÚ/IJ)
+   ,/SCM
+   (NP-VOC ±è/NPR
+	   Æ¯¹«Àå/NNC)
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP ¾É/VV+À¸¶ó/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>ÀÚ</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>±è Æ¯¹«Àå</term>
+	    </Arg>
+	    <Rel>
+	      <term>¾ÉÀ¸¶ó</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>단속</lemma>
+    <comment>Frames file for '단속' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>단속.01</id>
+      <edef>regulate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing regulated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>단속하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 정부는 올해 돈세탁을 대대적으로 단속하기로 하고 뉴욕, 로스앤젤레스 등에 돈세탁 단속전담반을 설치하고 단속요원을 대거 투입할 것이라고 스튜어트 아이젠스타트 재무부 부장관이 9 일 말했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 미국/NPR
+                     정부/NNC+은/PAU)
+             (VP (VP (S-COMP (NP-SBJ *pro*)
+                             (VP (NP-ADV 올해/NNC)
+                                 (VP (NP-OBJ 돈세탁/NNC+을/PCA)
+                                     (VP (ADVP (ADV 대대/NNC+적/XSF+으로/PAD))
+                                         (VP (VV 단속/NNC+하/XSV+기/ENM+으로/PAD))))))
+                     하/VV+고/ECS)
+                 (VP (VP (NP-COMP (NP (NP 뉴욕/NPR)
+                                      ,/SCM
+                                      (NP 로스앤젤레스/NPR))
+                                  (NP 등/NNX+에/PAD))
+                         (VP (VP (NP-OBJ 돈세탁/NNC
+                                         단속/NNC+전담반/NNC+을/PCA)
+                                 (VV 설치/NNC+하/XSV+고/ECS))
+                             (VP (NP-OBJ 단속/NNC+요원/NNC+을/PCA)
+                                 (VP (ADVP 대거/ADV)
+                                     (VP (VV 투입/NNC+하/XSV+을/EAN))))))
+                     (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+   (S (NP-SBJ 스튜어트/NPR
+              아이젠스타트/NPR
+              재무부/NNC
+              부장관/NNC+이/PCA)
+      (VP (NP-ADV 9/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>돈세탁</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>대대적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>단속하기로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>여하</lemma>
+    <comment>Frames file for '여하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>여하.01</id>
+      <edef>no matter what</edef>
+      <roleset>
+	<role argnum="1" argrole="thing no matter what"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>여하하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>시 당국은 성명을 통해 앞으로 모든 인터넷 카페들은 허가권을 갖고 있는 통신당국의 검사를 받게 된다고 밝히고 카페 소유자들에 대해 국가 안보 저해, 공공 질서 교란, 공공의 권리 및 이익의 침해로 이어질 여하한 행위도 허용하지 말라고 경고했다.</text>
+	  <parse>
+(S (NP-SBJ 시/NNC
+           당국/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 성명/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (VP (VP (S-COMP (NP-ADV 앞/NNC+으로/PAD)
+                       (S (NP-SBJ 모든/DAN
+                                  인터넷/NNC
+                                  카페/NNC+들/XSF+은/PAU)
+                          (VP (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (VP (VP (NP-OBJ 허가/NNC+권/XSF+을/PCA)
+                                                            갖/VV+고/ECS)
+                                                        있/VX+는/EAN)))
+                                              (NP 통신/NNC+당국/NNC+의/PAN))
+                                          (NP 검사/NNC+을/PCA))
+                                  받/VV+게/ECS)
+                              되/VX+는다/EFN+고/PAD)))
+               밝히/VV+고/ECS)
+           (VP (S (NP-SBJ *pro*)
+                  (VP (NP-COMP 카페/NNC
+                               소유자/NNC+들/XSF+에/PAD)
+                      대하/VV+어/ECS))
+               (VP (S-COMP (NP-SBJ *pro*)
+                           (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (VP (NP-COMP (NP 국가/NNC
+                                                                  안보/NNC
+                                                                  저해/NNC)
+                                                              ,/SCM
+                                                              (NP 공공/NNC
+                                                                  질서/NNC
+                                                                  교란/NNC)
+                                                              ,/SCM
+                                                              (NP (NP (NP 공공/NNC+의/PAN)
+                                                                      (NP (NP 권리/NNC)
+                                                                          (ADCP 및/ADC)
+                                                                          (NP 이익/NNC+의/PAN)))
+                                                                  (NP 침해/NNC+으로/PAD)))
+                                                     (VV 잇/VV+어지/XSV+을/EAN))))
+                                           (NP (S (WHNP-3 *op*)
+                                                  (S (NP-SBJ *T*-3)
+                                                     (ADJP (VJ 여하/NNC+하/XSJ+은/EAN))))
+                                               (NP 행위/NNC+도/PAU)))
+                                   (VV 허용/NNC+하/XSV+지/ECS))
+                               말/VX+으라/EFN+고/PAD))
+                   (VV 경고/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=행위</term>
+	    </Arg>
+	    <Rel>
+	      <term>여하한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

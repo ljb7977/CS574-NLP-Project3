@@ -1,0 +1,180 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>넓</lemma>
+    <comment>Frames file for '넓' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>넓.01</id>
+      <edef>wide</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing being wide"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>넓다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 집합 지역은 대대 전체가 전개할 만큼 충분히 넓습니다.</text>
+	  <parse>
+(S (NP-SBJ 그/DAN 
+	   집합/NNC 
+	   지역/NNC+은/PAU) 
+   (ADJP (NP-ADV (S (NP-SBJ 대대/NNC 전체/NNC+가/PCA) 
+		    (VP (VV 전개/NNC+하/XSV+을/EAN))) 
+		 (NP 만큼/NNX)) 
+	 (ADVP 충분히/ADV) 
+	 (ADJP 넓/VJ+습니다/EFN)) 
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그 집합 지역</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>대대 전체가 전개할 만큼</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>충분히</term>
+	    </Arg>
+	    <Rel>
+	      <term>넓습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>넓히다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 나토가 창설된 지난 49 년 이후 당시 소련도 나토 가입 의사를 표시했지만 거절당했으며 그 결과로 바르샤바조약기구가 창설됐다는 점을 상기시킨 뒤 "현재 공산당이 러시아의 권력을 독점하고 있지도 않으며, 소련이나 바르샤바조약기구도 없지만 나토는 계속 자신의 영역과 책임지역을 넓혀 가고 있다"고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (S (S (S (NP-ADV (NP (S (NP-SBJ 나토/NPR+이/PCA)
+						      (VP (VV 창설/NNC+되/XSV+은/EAN)))
+						   (NP 지난/DAN
+							   49/NNU
+							   년/NNX))
+					       (NP 이후/NNC))
+				       (S (NP-SBJ 당시/NNC
+						      소련/NPR+도/PAU)
+					  (VP (NP-OBJ 나토/NPR
+							  가입/NNC
+							  의사/NNC+을/PCA)
+					      (VV 표시/NNC+하/XSV+었/EPF+지만/ECS))))
+				    (S (NP-SBJ *pro*)
+				       (VP (NP-OBJ *pro*)
+					   (VV 거절/NNC+당하/XSV+었/EPF+으며/ECS))))
+                                 (S (NP-ADV 그/DAN
+                                            결과/NNC+으로/PAD)
+                                    (S (NP-SBJ 바르샤바/NPR+조약/NNC+기구/NNC+이/PCA)
+                                       (VP (VV 창설/NNC+되/XSV+었/EPF+다는/EAN)))))
+                              (NP 점/NNX+을/PCA))
+                      (VV 상기/NNC+시키/XSV+은/EAN)))
+               (NP 뒤/NNC))
+       (VP (S-COMP "/SLQ
+                   (S (S (NP-ADV 현재/NNC)
+			 (S (NP-SBJ 공산당/NPR+이/PCA)
+			    (VP (VP (VP (NP-OBJ (NP 러시아/NPR+의/PAN)
+						(NP 권력/NNC+을/PCA))
+					(VV 독점/NNC+하/XSV+고/ECS))
+				    있/VX+지/EFN+도/PAU)
+				않/VX+으며/ECS)))
+		      ,/SCM
+		      (S (NP-SBJ (NP 소련/NPR+이나/PCJ)
+				 (NP 바르샤바/NPR+조약/NNC+기구/NNC+도/PAU))
+			 (ADJP 없/VJ+지만/ECS)))
+		   (S (NP-SBJ 나토/NPR+는/EAN)
+		      (VP (NP-ADV 계속/NNC)
+			  (VP (VP (VP (NP-OBJ (NP (NP 자신/NNC+의/PAN)
+						  (NP 영역/NNC+과/PCJ))
+					      (NP 책임/NNC+지역/NNC+을/PCA))
+				      넓히/VV+어/ECS)
+				  가/VX+고/ECS)
+			      있/VX+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>나토</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>계속</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자신의 영역과 책임지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>넓혀</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>가고</term>
+	    </Aux>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>넓혀지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>개장 초반 한 때 12 포인트 이상 급등하며 930 선에도 근접했으나 이후 매매공방이 벌어지며 상승폭이 좁혀졌다 넓혀졌다 반복되고 있다.</text>
+	  <parse>
+(S (S (NP-ADV (NP 개장/NNC
+                  초반/NNC)
+              (NP 한/NNU
+                  때/NNC))
+      (S (NP-SBJ 12/NNU
+                 포인트/NNX
+                 이상/NNC)
+         (VP (VV 급등/NNC+하/XSV+으며/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 930/NNU
+                   선/NNC+에/PAD+도/PAU)
+          (VV 근접/NNC+하/XSV+었/EPF+으나/ECS)))
+   (S (NP-ADV 이후/NNC)
+      (S (NP-SBJ 매매/NNC+공방/NNC+이/PCA)
+         (VP 벌어지/VV+으며/ECS)))
+   (S (S-SBJ (NP-SBJ 상승/NNC+폭/NNC+이/PCA)
+             (VP (VP (VV 좁히/VV+어지/XSV+었/EPF+다/ECS))
+                 (VP (VV 넓히/VV+어지/XSV+었/EPF+다/ECS))))
+      (VP (VP (VV 반복/NNC+되/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>상승폭</term>
+	    </Arg>
+	    <Rel>
+	      <term>넓혀졌다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

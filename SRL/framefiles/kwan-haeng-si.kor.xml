@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>관행시</lemma>
+    <comment>Frames file for '관행시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>관행시.01</id>
+      <edef>take as usage</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing taken as usage"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>관행시되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한 핵심 당직자는 "원론적으로 말해서 병역비리는 그동안은 관행시돼 왔지만 3 정문란에 해당한다" 며 "병역비리로 슈퍼마켓 주인은 구속하면서 정치인은 나중으로 미룬다면 형평에 맞지 않는 일"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 한/NNU
+           핵심/NNC
+           당직자/NNC+은/PAU)
+   (VP (S-COMP (S "/SLQ
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 원론적/NNC+으로/PAD)
+                         (VP 말하/VV+어서/ECS)))
+                  (S (NP-SBJ 병역/NNC+비리/NNC+은/PAU)
+                     (VP (VP (VP (NP-ADV 그동안/NNC+은/PAU)
+                                 (VP (VV 관행시/NNC+되/XSV+어/ECS)))
+                             오/VX+었/EPF+지만/ECS)
+                         (VP (NP-COMP 3/NNU
+                                      정/NNC+문란/NNC+에/PAD)
+                             (VV 해당/NNC+하/XSV+는다/EFN))))
+                  "/SRQ
+                  며/ECS)
+               (S "/SLQ
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-COMP 병역/NNC+비리/NNC+으로/PAD)
+                             (NP-OBJ 슈퍼마켓/NNC
+				     주인/NNC+은/PAU)
+                             (VV 구속/NNC+하/XSV+으면서/ECS))
+                         (VP (NP-OBJ 정치인/NNC+은/PAU)
+                             (VP (NP-ADV 나중/NNC+으로/PAD)
+				 (VP 미루/VV+는다면/ECS)))))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP (S (WHNP-1 *op*)
+				(S (NP-SBJ *T*-1)
+				   (VP (VP (NP-COMP 형평/NNC+에/PAD)
+					   맞/VV+지/ECS)
+				       않/VX+는/EAN)))
+                             (NP 일/NNC))))
+		  "/SRQ
+		  이/CO+라/EFN+고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>원론적으로 말해서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>병역비리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그동안은</term>
+	    </Arg>
+	    <Rel>
+	      <term>관행시돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔지만</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

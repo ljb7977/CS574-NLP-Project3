@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>끌</lemma>
+    <comment>Frames file for '끌' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>끌.01</id>
+      <edef>drag</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing dragged"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>끌다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>ZIL-151 트럭들이 자주포 몇 문을 끌고 서쪽으로 갔습니다.</text>
+	  <parse>
+(S (NP-SBJ ZIL-151/NFW
+           트럭/NNC+들/XSF+이/PCA)
+   (VP (VP (NP-OBJ 자주포/NNC
+                   몇/NNU
+                   문/NNX+을/PCA)
+           끌/VV+고/ECS)
+       (VP (NP-COMP 서쪽/NNC+으로/PAD)
+           가/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>ZIL-151 트럭들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자주포 몇 문</term>
+	    </Arg>
+	    <Rel>
+	      <term>끌고</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>
+

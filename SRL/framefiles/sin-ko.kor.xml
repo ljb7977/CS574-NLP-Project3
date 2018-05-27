@@ -1,0 +1,170 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>신고</lemma>
+    <comment>Frames file for '신고' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>신고.01</id>
+      <edef>report</edef>
+      <roleset>
+	<role argnum="0" argrole="reporter"/>
+	<role argnum="1" argrole="thing reported"/>
+	<role argnum="2" argrole="reported to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>신고하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>콜 총리는 금년초 자신이 총리와 CDU 당수로서 200 만 마르크의 헌금을 받았으나 1 만 마르크를 초과하는 헌금은 신고하도록 돼 있는 법을 어기고 이를 당 계좌에 입금하지 않았음을 시인했다.</text>
+	  <parse>
+(S (NP-SBJ 콜/NPR
+           총리/NNC+은/PAU)
+   (VP (S-OBJ (S (NP-ADV 금년/NNC+초/NNX)
+		 (S (NP-SBJ 자신/NNC+이/PCA)
+		    (VP (NP-ADV (NP 총리/NNC+과/PCJ)
+				(NP CDU/NFW
+				    당수/NNC+으로서/PAD))
+			(VP (NP-OBJ (NP 200/NNU
+					만/NNU
+					마르크/NNX+의/PAN)
+				    (NP 헌금/NNC+을/PCA))
+			    받/VV+었/EPF+으나/ECS))))
+	      (S (NP-SBJ *pro*)
+		 (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+				    (S (NP-SBJ *T*-2)
+				       (VP (VP (S-COMP (NP-SBJ *pro*)
+						       (VP (NP-OBJ (S (WHNP-1 *op*)
+								      (S (NP-SBJ *T*-1)
+									 (VP (NP-OBJ 1/NNU
+										     만/NNU
+										     마르크/NNX+을/PCA)
+									     (VV 초과/NNC+하/XSV+는/EAN))))
+								   (NP 헌금/NNC+은/PAU))
+							   (VV 신고/NNC+하/XSV+도록/ECS)))
+					       되/VV+어/ECS)
+					   있/VX+는/EAN)))
+				 (NP 법/NNC+을/PCA))
+			 어기/VV+고/ECS)
+		     (VP (VP (NP-OBJ 이/NPN+을/PCA)
+			     (NP-COMP 당/NNC
+					계좌/NNC+에/PAD)
+			     (VV 입금/NNC+하/XSV+지/ECS))
+			 않/VX+었/EPF+음/ENM+을/PCA))))
+       (VV 시인/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>1 만 마르크를 초과하는 헌금</term>
+	    </Arg>
+	    <Rel>
+	      <term>신고하도록</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>윌리 풀기어씨는 20 일 오전 쓰레기장에서 오스카상 트로피 10 여개를 발견해 경찰과 언론사 등에 신고했다.</text>
+	  <parse>
+(S (S (NP-SBJ 윌리/NPR
+              풀기어/NPR+씨/NNX+은/PAU)
+      (VP (NP-ADV 20/NNU
+                  일/NNX
+                  오전/NNC)
+          (NP-ADV 쓰레기장/NNC+에서/PAD)
+          (VP (NP-OBJ 오스카상/NPR
+                      트로피/NNC
+                      10/NNU
+                      여개/NNC+을/PCA)
+              (VV 발견/NNC+하/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (NP (NP 경찰/NNC+과/PCJ)
+                       (NP 언론사/NNC))
+                   (NP 등/NNX+에/PAD))
+          (VV 신고/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>윌리 풀기어씨는 20 일 오전 쓰레기장에서 오스카상 트로피 10 여개를 발견해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>경찰과 언론사 등</term>
+	    </Arg>
+	    <Rel>
+	      <term>신고했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>신고되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>현행 재산등록은 공직자로 신규 임용되는 첫해만 재산총액을 등록한 뒤 이듬해부터는 변동사항만 신고하기 때문에 재산총액의 변동여부를 파악하기가 어렵고 보유주식의 경우 전년도 종가만이 신고될 뿐 가격 상승분이 빠져 있어 재산변동사항을 정확히 파악할 수 없는 실정이다.</text>
+	  <parse>
+(S (NP-SBJ 현행/NNC
+           재산/NNC+등록/NNC+은/PAU)
+   (VP (NP (S (S (NP-ADV (S (NP-ADV (S (NP-SBJ *pro*)
+				       (VP (NP-ADV (S (WHNP *op*)
+						      (S (NP-SBJ *pro*)
+							 (VP (NP-COMP 공직자/NNC+으로/PAD)
+							     (VP (NP-ADV 신규/NNC)
+							         (VP (VV 임용/NNC+되/XSV+는/EAN))))))
+						   (NP 첫해/NNC+만/PAU))
+					   (VP (NP-OBJ 재산/NNC+총액/NNC+을/PCA)
+					       (VV 등록/NNC+하/XSV+은/EAN))))
+				    (NP 뒤/NNC))
+			    (S (NP-SBJ *pro*)
+			       (VP (NP-ADV 이듬해/NNC+부터/PAU+은/PAU)
+				   (VP (NP-OBJ 변동/NNC+사항/NNC+만/PAU)
+				       (VV 신고/NNC+하/XSV+기/ENM)))))
+                         (NP 때문/NNX+에/PAD))
+                 (S (S-SBJ (NP-SBJ *pro*)
+			   (VP (NP-OBJ (NP 재산/NNC+총액/NNC+의/PAN)
+				       (NP 변동/NNC+여부/NNC+을/PCA))
+			       (VV 파악/NNC+하/XSV+기/ENM+이/PCA)))
+                    (ADJP 어렵/VJ+고/ECS)))
+              (S (NP-ADV (NP 보유/NNC+주식/NNC+의/PAN)
+                         (NP 경우/NNC))
+                 (S (NP-ADV (S (NP-SBJ 전년도/NNC
+                                       종가/NNC+만/PAU+이/PCA)
+                               (VP (VV 신고/NNC+되/XSV+을/EAN)))
+                            (NP 뿐/NNX))
+                    (S (NP-SBJ 가격/NNC
+                               상승/NNC+분/XSF+이/PCA)
+                       (VP (VP 빠지/VV+어/ECS)
+                           있/VX+어/ECS)))
+                 (S (NP-SBJ *pro*)
+                    (VP (VP (NP-OBJ 재산/NNC+변동/NNC+사항/NNC+을/PCA)
+                            (VP (ADVP 정확히/ADV)
+                                (VP (VV 파악/NNC+하/XSV+을/EAN))))
+                        (VX 수/NNX
+                            없/VJ+는/EAN)))))
+           (NP 실정/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>만이</f>
+	      <term>전년도 종가</term>
+	    </Arg>
+	    <Rel>
+	      <term>신고될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,118 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수립</lemma>
+    <comment>Frames file for '수립' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수립.01</id>
+      <edef>establish</edef>
+      <roleset>
+	<role argnum="0" argrole="setter"/>
+	<role argnum="1" argrole="thing set"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수립하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신속한 군수 지원을 보장하기 위해 통합 수송 제도를 수립하여 운용한다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ *pro*)
+                 (VP (NP-OBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP 신속하/VJ+은/EAN)))
+                             (NP 군수/NNC
+                                 지원/NNC+을/PCA))
+                     (VV 보장/NNC+하/XSV+기/ENM)))
+          위하/VV+어/ECS))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-OBJ 통합/NNC
+                     수송/NNC
+                     제도/NNC+을/PCA)
+             (VV 수립/NNC+하/XSV+어/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ *pro*)
+             (VV 운용/NNC+하/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>통합 수송 제도</term>
+	    </Arg>
+	    <Rel>
+	      <term>수립하여</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>수립되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>백악관측은 이번 파키스탄 방문 의미에 대해 "민선정부가 수립되지 않고 있는 데 대한 우리의 심대한 우려에도 불구, 역내 주요국가와 대화를 지속해 가려는 뜻"이라고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 백악관/NPR+측/XSF+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP 이번/NNC
+                       파키스탄/NPR
+                       방문/NNC
+                       의미/NNC+에/PAD)
+              대하/VV+어/ECS))
+       (VP (NP-COMP "/SLQ
+                    (S (NP-SBJ *pro*)
+                       (VP (VP (S (NP-SBJ *pro*)
+                                  (VP (NP-COMP (S (WHNP-2 *op*)
+                                                  (S (NP-SBJ *T*-2)
+                                                     (VP (NP-COMP (S (NP-SBJ 민선/NNC+정부/NNC+이/PCA)
+                                                                     (VP (VP (VP (VV 수립/NNC+되/XSV+지/ECS))
+                                                                             않/VX+고/ECS)
+                                                                         있/VX+는/EAN))
+                                                                  (NP 데/NNX))
+                                                         대하/VV+은/EAN)))
+                                               (NP (NP 우리/NPN+의/PAN)
+                                                   (NP (S (WHNP-1 *op*)
+                                                          (S (NP-SBJ *T*-1)
+                                                             (ADJP 심대하/VJ+은/EAN)))
+                                                       (NP 우려/NNC+에/PAD+도/PAU))))
+                                      (VV 불구/NNC)))
+                               ,/SCM
+                               (NP-ADV 역내/NNC
+					   주요/NNC+국가/NNC+과/PAD)
+			       (VP (NP-OBJ 대화/NNC+을/PCA)
+				   (VV 지속/NNC+하/XSV+어/ECS)))
+                           가/VX+으려는/EAN))
+                    (NP 뜻/NNC)
+                    "/SRQ
+                    이라고/PAD)
+           (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>민선정부</term>
+	    </Arg>
+	    <Rel>
+	      <term>수립되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않고</term>
+	    </Aux>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

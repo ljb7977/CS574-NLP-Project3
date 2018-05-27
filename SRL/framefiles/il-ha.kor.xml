@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일하</lemma>
+    <comment>Frames file for '일하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>일하.01</id>
+      <edef>work</edef>
+      <roleset>
+	<role argnum="0" argrole="worker"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>저는 대대부에서 일하지 않았기 때문에 대대부 장비에 대해서는 아무 것도 모릅니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (NP-ADV (NP (S (NP-SBJ *pro*)
+                      (VP (VP (NP-ADV 대대부/NNC+에서/PAD)
+                              (VP 일하/VV+지/ECS))
+                          않/VX+었/EPF+기/ENM)))
+               (NP 때문/NNX+에/PAD))
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (NP 대대부/NNC)
+                       (NP 장비/NNC+에/PAD))
+              대하/VV+어서/ECS+은/PAU))
+       (VP (NP-OBJ 아무/DAN
+                   것/NNX+도/PAU)
+           모르/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>대대부에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>일하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>급격하</lemma>
+    <comment>Frames file for '급격하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>급격하.01</id>
+      <edef>rapid</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being rapid"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>급격하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>컨퍼런스 보드는 "지난해 4.4 분기의 급격한 국내총생산 증가에도 불구하고 미국경제는 지난 1 월에도 상당한 힘을 유지했다"면서 경기확장에 따른 가장 큰 위험요소는 금리의 추가인상 가능성이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 컨퍼런스/NPR
+           보드/NPR+은/PAU)
+   (VP (S-COMP (S "/SLQ
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (NP 지난해/NNC
+                                      4.4/NNU
+                                      분기/NNC+의/PAN)
+                                  (NP (S (WHNP-3 *op*)
+                                         (S (NP-SBJ *T*-3)
+                                            (ADJP 급격하/VJ+은/EAN)))
+                                      (NP 국내총생산/NNC
+                                          증가/NNC+에/PAD+도/PAU)))
+                         (VV 불구/NNC+하/XSV+고/ECS)))
+                  (S (NP-SBJ 미국/NPR+경제/NNC+은/PAU)
+                     (VP (NP-ADV 지난/DAN
+                                 1/NNU
+                                 월/NNX+에/PAD+도/PAU)
+                         (VP (NP-OBJ (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (ADJP (VJ 상당/NNC+하/XSJ+은/EAN))))
+                                     (NP 힘/NNC+을/PCA))
+                             (VV 유지/NNC+하/XSV+었/EPF+다/EFN))))
+                  "/SRQ
+                  면서/ECS)
+               (S (NP-SBJ (S (WHNP-2 *op*)
+                             (S (S (NP-SBJ *T*-2)
+                                   (VP (NP-COMP 경기/NNC+확장/NNC+에/PAD)
+                                       따르/VV+은/EAN))
+                                (S (NP-SBJ *T*-2)
+                                   (ADJP (ADVP 가장/ADV)
+                                         (ADJP 크/VJ+은/EAN)))))
+                          (NP 위험/NNC+요소/NNC+은/PAU))
+                  (VP (NP (NP 금리/NNC+의/PAN)
+                          (NP 추가/NNC+인상/NNC
+                              가능성/NNC+이/CO+라/EFN+고/PAD)))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=국내총생산 증가</term>
+	    </Arg>
+	    <Rel>
+	      <term>급격한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

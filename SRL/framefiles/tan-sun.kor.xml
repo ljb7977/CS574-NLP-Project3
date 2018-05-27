@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>단순</lemma>
+    <comment>Frames file for '단순' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>단순.01</id>
+      <edef>simple</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being simple"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>단순하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 제네바 자동차쇼에 참석한 다임러크라이슬러 간부는 "이 보도가 단순한 추측에 불과하다"고 부인했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP 제네바/NPR
+                                 자동차/NNC+쇼/NNC+에/PAD)
+                        (VV 참석/NNC+하/XSV+은/EAN))))
+              (NP 다임러크라이슬러/NPR
+                  간부/NNC+은/PAU))
+      (VP (S-COMP "/SLQ
+                  (NP-SBJ 이/DAN
+                          보도/NNC+이/PCA)
+                  (ADJP (NP-COMP (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (ADJP (VJ 단순/NNC+하/XSJ+은/EAN))))
+                                 (NP 추측/NNC+에/PAD))
+                        (VJ 불과/NNC+하/XSJ+다/EFN))
+                  "/SRQ
+                  고/PAD)
+          (VV 부인/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=추측</term>
+	    </Arg>
+	    <Rel>
+	      <term>단순한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

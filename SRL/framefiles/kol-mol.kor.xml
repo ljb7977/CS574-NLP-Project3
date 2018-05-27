@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>골몰</lemma>
+    <comment>Frames file for '골몰' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>골몰.01</id>
+      <edef>devote oneself to</edef>
+      <roleset>
+	<role argnum="0" argrole="entity devoting"/>
+	<role argnum="1" argrole="devoted to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>골몰하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>자신과 견원지간이 된 무소속의 쑹추위(송초유) 후보 당선 저지에 골몰해 온 리총통은 천 후보만이 쑹의 적수가 될 수 있으며 `양국론'으로 대표되는 독립정책을 밀고 나갈 적임자로 판단, 천을 비밀리에 지원했다는 게 대다수 관측통들의 견해다.</text>
+	  <parse>
+(S (NP-SBJ (S (S (NP-SBJ (S (WHNP-2 *op*)
+                            (S (NP-SBJ *T*-2)
+                               (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                                       (S (NP-SBJ *T*-1)
+                                                          (VP (NP-COMP (NP 자신/NNC+과/PAD)
+                                                                       (NP 견원지간/NNC+이/PCA))
+                                                              되/VV+은/EAN)))
+                                                    (NP (NP 무소속/NNC+의/PAN)
+                                                        (NP 쑹추위/NPR
+                                                            (PRN -LRB-/SLQ
+                                                                 (NP 송초유/NPR)
+                                                                 -RRB-/SRQ)
+                                                            후보/NNC)))
+                                                (NP 당선/NNC
+                                                    저지/NNC+에/PAD))
+                                       (VV 골몰/NNC+하/XSV+어/ECS))
+                                   오/VX+은/EAN)))
+                         (NP 리/NPR+총통/NNC+은/PAU))
+                 (VP (S (NP-SBJ 천/NPR
+                                후보/NNC+만/PAU+이/PCA)
+                        (VP (VP (NP-COMP (NP 쑹/NPR+의/PAN)
+                                         (NP 적수/NNC+이/PCA))
+                                되/VV+을/EAN)
+                            (VX 수/NNX
+                                있/VJ+으며/ECS)))
+                     (VP (NP-COMP (S (WHNP-4 *op*)
+                                     (S (NP-SBJ *T*-4)
+                                        (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                       (S (NP-SBJ *T*-3)
+                                                          (VP (NP-COMP `/SLQ
+                                                                       양국론/NNC
+                                                                       '/SRQ
+                                                                       으로/PAD)
+                                                              (VV 대표/NNC+되/XSV+는/EAN))))
+                                                    (NP 독립/NNC+정책/NNC+을/PCA))
+                                            (CV 밀/VV+고/ECS
+                                                나가/VV+을/EAN))))
+                                  (NP 적임자/NNC+으로/PAD))
+                         (NP-OBJ *pro*)
+                         (VV 판단/NNC))))
+              ,/SCM
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 천/NPR+을/PCA)
+                     (VP (NP-ADV 비밀리/NNC+에/PAD)
+                         (VP (VV 지원/NNC+하/XSV+었/EPF+다는/EAN))))))
+           (NP 것/NNX+이/PCA))
+   (VP (NP (NP 대다수/NNC
+               관측통/NNC+들/XSF+의/PAN)
+           (NP 견해/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=리총통</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>자신과 견원지간이 된 무소속의 쑹추위(송초유) 후보 당선 저지</term>
+	    </Arg>
+	    <Rel>
+	      <term>골몰해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>온</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

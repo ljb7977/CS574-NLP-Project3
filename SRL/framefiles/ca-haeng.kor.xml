@@ -1,0 +1,93 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자행</lemma>
+    <comment>Frames file for '자행' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>자행.01</id>
+      <edef>practice</edef>
+      <roleset>
+	<role argnum="0" argrole="practicer"/>
+	<role argnum="1" argrole="action"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자행하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인민군은 화학전을 계속 자행하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 인민군/NNC+은/PAU)
+   (VP (VP (NP-OBJ 화학전/NNC+을/PCA)
+	   (VP (ADVP 계속/ADV)
+	       (VP (VV 자행/NNC+하/XSV+고/EAU))))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>인민군</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>화학전</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>계속</term>
+	    </Arg>
+	    <Rel>
+	      <term>자행하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>자행되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>카라지치와 믈라디치는 지난 92-95 년 보스니아 전쟁 당시 자행된 전범행위로 기소됐다.</text>
+	  <parse>
+(S (NP-SBJ (NP 카라지치/NPR+과/PCJ)
+           (NP 믈라디치/NPR+은/PAU))
+   (VP (NP-COMP (S (WHNP-9 *op*)
+                   (S (NP-ADV (NP 지난/DAN
+                                  92-95/NNU
+                                  년/NNX)
+                              (NP 보스니아/NPR
+                                  전쟁/NNC
+                                  당시/NNC))
+                      (S (NP-SBJ *T*-9)
+                         (VP (VV 자행/NNC+되/XSV+은/EAN)))))
+                (NP 전범/NNC+행위/NNC+으로/PAD))
+       (VV 기소/NNC+되/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 92-95 년 보스니아 전쟁 당시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=전범행위</term>
+	    </Arg>
+	    <Rel>
+	      <term>자행된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

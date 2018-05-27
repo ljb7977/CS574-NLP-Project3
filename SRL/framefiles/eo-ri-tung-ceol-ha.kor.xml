@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>어리둥절하</lemma>
+    <comment>Frames file for '어리둥절하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>어리둥절하.01</id>
+      <edef>confused</edef>
+      <roleset>
+	<role argnum="1" argrole="patient"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>어리둥절하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>어제 물어 보실 때는 어리둥절했습니다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (VP (NP-ADV 어제/NNC)
+                         (VP (NP-OBJ *pro*)
+                             묻/VV+어/ECS))
+                     보/VX+으시/EPF+을/EAN)))
+           (NP 때/NNC+은/PAU))
+   (S (NP-SBJ *pro*)
+      (ADJP 어리둥절하/VJ+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>어제 물어 보실 때는</term>
+	    </Arg>
+	    <Rel>
+	      <term>어리둥절했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

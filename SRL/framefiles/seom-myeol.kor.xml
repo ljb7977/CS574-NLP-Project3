@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>섬멸</lemma>
+    <comment>Frames file for '섬멸' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>섬멸.01</id>
+      <edef>annihilate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing annihilated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>섬멸하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>1 대대가 적을 섬멸하기 위해서 투입되었습니다.</text>
+	  <parse>
+(S (NP-SBJ 1/NNU
+           대대/NNC+이/PCA)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-OBJ (NP-SBJ *pro*)
+                     (VP (NP-OBJ 적/NNC+을/PCA)
+                         (VV 섬멸/NNC+하/XSV+기/ENM)))
+              위하/VV+어서/ECS))
+       (VP (NP-COMP *pro*)
+           (VV 투입/NNC+되/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적</term>
+	    </Arg>
+	    <Rel>
+	      <term>섬멸하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>섬멸되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일단 적이 분산해서 철수하기 시작하면 우리는 적이 완전히 섬멸될 때까지 통상 적을 추격하게 됩니다.</text>
+	  <parse>
+(S (S (ADVP 일단/ADV)
+      (S (S (NP-SBJ 적/NNC+이/PCA)
+            (VP (VV 분산/NNC+하/XSV+어서/ECS)))
+         (S (NP-SBJ *pro*)
+            (VP (S-OBJ (NP-SBJ *pro*)
+                       (VP (VV 철수/NNC+하/XSV+기/ENM)))
+                (VV 시작/NNC+하/XSV+으면/ECS)))))
+   (S (NP-SBJ 우리/NPN+은/PAU)
+      (VP (VP (NP-ADV (S (WHNP *op*)
+                         (S (NP-SBJ 적/NNC+이/PCA)
+                            (VP (ADVP 완전히/ADV)
+                                (VP (VV 섬멸/NNC+되/XSV+을/EAN)))))
+                      (NP 때/NNC+까지/PAU))
+              (ADVP 통상/ADV)
+              (VP (NP-OBJ 적/NNC+을/PCA)
+                  (VV 추격/NNC+하/XSV+게/ECS)))
+          되/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>적</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>완전히</term>
+	    </Arg>
+	    <Rel>
+	      <term>섬멸될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

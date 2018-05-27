@@ -1,0 +1,153 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>급파</lemma>
+    <comment>Frames file for '급파' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>급파.01</id>
+      <edef>dispatch</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity dispatched"/>
+	<role argnum="2" argrole="dispatched to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>급파하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>두 나라 경찰은 지난 6 일 이후 여러 차례 베이징에서 공조 수사를 벌여 이같이 의견을 모았으며 베이징시 공안국은 한국측이 제공한 수사 자료를 토대로 이들 범인을 체포하기 위해 옌지시에 수사요원들을 급파했다.</text>
+	  <parse>
+(S (S (NP-SBJ 두/NNU
+              나라/NNC
+              경찰/NNC+은/PAU)
+      (VP (NP-ADV 지난/DAN
+                  6/NNU
+                  일/NNX
+                  이후/NNC)
+          (NP-ADV 여러/DAN
+                  차례/NNX)
+          (NP-ADV 베이징/NPR+에서/PAD)
+          (VP (NP-OBJ 공조/NNC
+                      수사/NNC+을/PCA)
+              벌이/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 이같이/ADV)
+          (VP (NP-OBJ 의견/NNC+을/PCA)
+              모으/VV+었/EPF+으며/ECS)))
+   (S (NP-SBJ 베이징/NPR+시/NNC
+              공안국/NNC+은/PAU)
+      (VP (NP-ADV (NP-OBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ 한국/NPR+측/XSF+이/PCA)
+                                (VP (NP-OBJ *T*-1)
+                                    (VV 제공/NNC+하/XSV+은/EAN))))
+                          (NP 수사/NNC
+                              자료/NNC+을/PCA))
+                  토대/NNC+으로/PAD)
+          (S (NP-SBJ *pro*)
+             (VP (S-OBJ (NP-SBJ *pro*)
+                        (VP (NP-OBJ 이/NPN+들/XSF
+                                    범인/NNC+을/PCA)
+                            (VV 체포/NNC+하/XSV+기/ENM)))
+                 위하/VV+어/ECS))
+          (VP (NP-COMP 옌지/NPR+시/NNC+에/PAD)
+              (NP-OBJ 수사/NNC+요원/NNC+들/XSF+을/PCA)
+              (VV 급파/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>두 나라 경찰은 지난 6 일 이후 여러 차례 베이징에서 공조 수사를 벌여 이같이 의견을 모았으며</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>베이징시 공안국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>한국측이 제공한 수사 자료를 토대로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>이들 범인을 체포하기 위해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>옌지시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수사요원들</term>
+	    </Arg>
+	    <Rel>
+	      <term>급파했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>급파되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국은 클린턴 대통령의 명령에 따라 구조용 헬리콥터 및 보트와 함께 수백명의 군 병력이 모잠비크에 급파될 것이라고 2 일 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (NP 클린턴/NPR
+                                   대통령/NNC+의/PAN)
+                               (NP 명령/NNC+에/PAD))
+                      따르/VV+어/ECS))
+               (ADVP (NP-COMP (NP 구조/NNC+용/XSF
+                                  헬리콥터/NNC)
+                              (ADCP 및/ADC)
+                              (NP 보트/NNC+과/PAD))
+                     함께/ADV)
+               (S (NP-SBJ (NP 수백/NNU+명/NNX+의/PAN)
+                          (NP 군/NNC
+                              병력/NNC+이/PCA))
+                  (VP (VP (NP-COMP 모잠비크/NPR+에/PAD)
+                          (VV 급파/NNC+되/XSV+을/EAN))
+                      (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+       (VP (NP-ADV 2/NNU
+                   일/NNX)
+           (VP 밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>클린턴 대통령의 명령에 따라</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>구조용 헬리콥터 및 보트와 함께</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>수백명의 군 병력</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>모잠비크</term>
+	    </Arg>
+	    <Rel>
+	      <term>급파될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

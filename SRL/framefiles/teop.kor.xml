@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>덥</lemma>
+    <comment>Frames file for '덥' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>덥.01</id>
+      <edef>hot</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being hot"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>덥다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>날이 아주 더우면 차량 엔진이 과열되기 쉽지요.</text>
+	  <parse>
+(S (S (NP-SBJ 날/NNC+이/PCA) 
+      (ADJP (ADVP 아주/ADV) 
+	    (ADJP 덥/VJ+으면/ECS))) 
+   (S (NP-SBJ (S (NP-SBJ 차량/NNC 
+			 엔진/NNC+이/PCA) 
+		 (VP (VV 과열/NNC+되/XSV+기/ENM)))) 
+      (ADJP 쉽/VJ+지요/EFN)) 
+   ./SFN ) 
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>날</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>아주</term>
+	    </Arg>
+	    <Rel>
+	      <term>더우면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

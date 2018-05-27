@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>의지</lemma>
+    <comment>Frames file for '의지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>의지.01</id>
+      <edef>depend on</edef>
+      <roleset>
+	<role argnum="0" argrole="thing depending"/>
+	<role argnum="1" argrole="depend on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>의지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이들 두 후보를 비교하면, 고어 부통령이 노력을 통해 확신을 얻는 성격이라면 부시 지사는 본능적인 판단에 의지하는 스타일이다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP 이/NPN+들/XSF)
+                  (NP 두/NNU
+			후보/NNC+을/PCA))
+          (VV 비교/NNC+하/XSV+으면/ECS)))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 고어/NPR
+			     부통령/NNC+이/PCA)
+		 (VP (S (NP-SBJ *pro*)
+			(VP (NP-OBJ 노력/NNC+을/PCA)
+			    통하/VV+어/ECS))
+		     (VP (NP-OBJ 확신/NNC+을/PCA)
+			 얻/VV+는/EAN)))
+	      (NP 성격/NNC+이/CO+라면/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 부시/NPR
+			     지사/NNC+은/PAU)
+		 (VP (NP-COMP (S (WHNP-1 *op*)
+				 (S (NP-SBJ *T*-1)
+				    (VP (NP 본능/NNC+적/XSF+이/CO+은/EAN))))
+			      (NP 판단/NNC+에/PAD))
+		     (VV 의지/NNC+하/XSV+는/EAN)))
+	      (NP 스타일/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>부시 지사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>본능적인 판단</term>
+	    </Arg>
+	    <Rel>
+	      <term>의지하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

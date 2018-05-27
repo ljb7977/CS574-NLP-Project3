@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조명</lemma>
+    <comment>Frames file for '조명' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>조명.01</id>
+      <edef>illuminate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing illuminated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조명하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>박격포 중대는 적을 소멸할 뿐만 아니라 전투지역을 조명하기도 하지요.</text>
+	  <parse>
+(S (NP-SBJ 박격포/NNC
+           중대/NNC+은/PAU)
+   (VP (VP (S (NP-SBJ (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ 적/NNC+을/PCA)
+                             (VV 소멸/NNC+하/XSV+을/EAN)))
+                      (NP 뿐/NNX+만/PAU))
+              (ADJP 아니/VJ+라/ECS))
+           (VP (NP-OBJ 전투/NNC
+                       지역/NNC+을/PCA)
+               (VV 조명/NNC+하/XSV+기도/ECS)))
+       하/VX+지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>박격포 중대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>적을 소멸할 뿐만 아니라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>전투지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>조명하기도</term>
+	    </Rel>
+	    <Aux>
+	      <f>기도</f>
+	      <term>하지요</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

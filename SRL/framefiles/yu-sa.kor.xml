@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유사</lemma>
+    <comment>Frames file for '유사' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>유사.01</id>
+      <edef>resemble</edef>
+      <roleset>
+	<role argnum="1" argrole="copy"/>
+	<role argnum="2" argrole="original"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유사하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 T-54X는 T-54B와 유사한데 포탑에 둥근 지붕 모양의 통풍 장치가 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (DANP 이/DAN)
+              (NP T-54X/NFW+은/PAU))
+      (ADJP (NP-COMP T-54B/NFW+과/PAD)
+            (VJ 유사/NNC+하/XSJ+는데/ECS)))
+   (S (NP-COMP-2 포탑/NNC+에/PAD)
+      (S (NP-SBJ (NP (NP (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (ADJP 둥글/VJ+은/EAN)))
+                         (NP 지붕/NNC))
+                     (NP 모양/NNC+의/PAN))
+                 (NP 통풍/NNC
+                     장치/NNC+이/PCA))
+         (ADJP (NP-COMP *T*-2)
+               있/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>이 T-54X</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>T-54B</term>
+	    </Arg>
+	    <Rel>
+	      <term>유사한데</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

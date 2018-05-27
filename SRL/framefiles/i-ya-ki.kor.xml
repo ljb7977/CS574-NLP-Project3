@@ -1,0 +1,194 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이야기</lemma>
+    <comment>Frames file for '이야기' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>이야기.01</id>
+      <edef>talk</edef>
+      <roleset>
+	<role argnum="0" argrole="talker"/>
+	<role argnum="1" argrole="subject"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이야기하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그리고 요 전날 저녁엔 우리 운전병이 제가 아까 이야기한 건물 부근의 네거리에서 길을 잘못 들었습니다.</text>
+	  <parse>
+(S (ADCP 그리고/ADC)
+   (S (NP-ADV 요/DAN
+              전날/NNC
+              저녁/NNC+에/PAD+은/PAU)
+      (S (NP-SBJ 우리/NPN
+                 운전병/NNC+이/PCA)
+         (VP (NP-ADV (NP (NP (S (WHNP-1 *op*)
+                                (S (NP-SBJ 제/NPN+이/PCA)
+                                   (VP (NP-OBJ *T*-1)
+                                       (VP (ADVP 아까/ADV)
+                                           (VP (VV 이야기/NNC+하/XSV+은/EAN))))))
+                             (NP 건물/NNC))
+                         (NP 부근/NNC+의/PAN))
+                     (NP 네거리/NNC+에서/PAD))
+             (VP (NP-OBJ 길/NNC+을/PCA)
+                 (VP (ADVP 잘못/ADV)
+                     (VP 들/VV+었/EPF+습니다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=건물</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>아까</term>
+	    </Arg>
+	    <Rel>
+	      <term>이야기한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>이야기하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>T-54 탱크 포탑의 내부 구조에 대해서 좀 이야기해 봅시다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-COMP (NP T-54/NFW
+                                    탱크/NNC
+                                    포탑/NNC+의/PAN)
+                                (NP 내부/NNC
+                                    구조/NNC+에/PAD))
+                       대하/VV+어서/ECS))
+           (VP (ADVP 좀/ADV)
+               (VP (VV 이야기/NNC+하/XSV+어/ECS))))
+       보/VX+읍시다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에 대해서</f>
+	      <term>T-54 탱크 포탑의 내부 구조</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>좀</term>
+	    </Arg>
+	    <Rel>
+	      <term>이야기해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>봅시다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>얘기하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그런데 제가 뭘 얘기하고 있었지요?</text>
+	  <parse>
+(S (ADCP 그런데/ADC)
+   (S (NP-SBJ 제/NPN+이/PCA)
+      (VP (VP (NP-OBJ 무엇/NPN+을/PCA)
+              (VV 얘기/NNC+하/XSV+고/ECS))
+          있/VX+었/EPF+지요/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그런데</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>무엇</term>
+	    </Arg>
+	    <Rel>
+	      <term>얘기하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있었지요</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>얘기하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>우리는 지금까지 제12 탱크 연대와 제2 탱크 대대 목표들에 관해서 얘기해 왔소.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN+은/PAU)
+   (VP (VP (NP-ADV 지금/NNC+까지/PAU)
+           (VP (S-COMP (NP-SBJ *pro*)
+                       (VP (NP-COMP (NP 제/XPF+12/NNU
+                                        탱크/NNC
+                                        연대/NNC+과/PCJ)
+                                    (NP 제/XPF+2/NNU
+                                        탱크/NNC
+                                        대대/NNC
+                                        목표/NNC+들/XSF+에/PAD))
+                           관하/VV+어서/ECS))
+               (VV 얘기/NNC+하/XSV+어/ECS)))
+       오/VX+었/EPF+소/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>우리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지금까지</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에 관해서</f>
+	      <term>제12 탱크 연대와 제2 탱크 대대 목표들</term>
+	    </Arg>
+	    <Rel>
+	      <term>얘기해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔소</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

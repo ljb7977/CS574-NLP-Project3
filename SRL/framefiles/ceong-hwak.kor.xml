@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>정확</lemma>
+    <comment>Frames file for '정확' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>정확.01</id>
+      <edef>precise</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being precise"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>정확하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>SA-7 반전차 유도탄은 극히 정확합니다.</text>
+	  <parse>
+(S (NP-SBJ SA-7/NFW
+           반전차/NNC
+           유도탄/NNC+은/PAU)
+   (ADJP (ADVP 극히/ADV)
+         (ADJP (VJ 정확/NNC+하/XSJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>SA-7 반전차 유도탄</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>극히</term>
+	    </Arg>
+	    <Rel>
+	      <term>정확합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

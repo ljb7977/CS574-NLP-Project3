@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가담</lemma>
+    <comment>Frames file for '가담' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가담.01</id>
+      <edef>participate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="participated in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가담하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>렝데르 장관은 이어 2 단계로 마드리드와 밀라노 증시도 통합에 가담할 수 있을 것이라고 말하고 이같은 통합이 조속히 이뤄지기를 기대한다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 렝데르/NPR
+           장관/NNC+은/PAU)
+   (VP (VP (ADVP 이어/ADV)
+           (VP (S-COMP (NP-ADV 2/NNU
+                               단계/NNC+으로/PAD)
+                       (S (NP-SBJ (NP (NP 마드리드/NPR+과/PCJ)
+                                      (NP 밀라노/NPR))
+                                  (NP 증시/NNC+도/PAU))
+                          (VP (VP (VP (NP-COMP 통합/NNC+에/PAD)
+                                      (VV 가담/NNC+하/XSV+을/EAN))
+                                  (VX 수/NNX
+                                      있/VJ+을/EAN))
+                              (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+               말하/VV+고/ECS))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (S-OBJ (NP-SBJ 이같은/DAN
+					    통합/NNC+이/PCA)
+			      (VP (ADVP 조속히/ADV)
+				  (VP (VV 이루/VV+어지/XSV+기/ENM+을/PCA))))
+                       (VV 기대/NNC+하/XSV+는다/EFN+고/PAD)))
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>2 단계로</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>마드리드와 밀라노 증시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>통합</term>
+	    </Arg>
+	    <Rel>
+	      <term>가담할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

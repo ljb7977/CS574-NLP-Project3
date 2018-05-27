@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>결심</lemma>
+    <comment>Frames file for '결심' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>결심.01</id>
+      <edef>decide</edef>
+      <roleset>
+	<role argnum="0" argrole="decider"/>
+	<role argnum="1" argrole="decision"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>결심하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>사단장이 남쪽으로 밀고 내려가기로 벌써 결심했으므로 결코 주공 부대를 철수시키지 않을 겁니다.</text>
+	  <parse>
+(S (S (NP-SBJ 사단장/NNC+이/PCA)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-COMP 남쪽/NNC+으로/PAD)
+                      (CV 밀/VV+고/ECS
+                          내려가/VV+기/ENM+으로/PAD)))
+          (VP (ADVP 벌써/ADV)
+              (VP (VV 결심/NNC+하/XSV+었/EPF+으므로/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (VP (ADVP 결코/ADV)
+                  (VP (NP-OBJ 주공/NNC
+                              부대/NNC+을/PCA)
+                      (VV 철수/NNC+시키/XSV+지/ECS)))
+              않/VX+을/EAN)
+          (VX 것/NNX+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>사단장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>기로</f>
+	      <term>남쪽으로 밀고 내려가</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>벌써</term>
+	    </Arg>
+	    <Rel>
+	      <term>결심했으므로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

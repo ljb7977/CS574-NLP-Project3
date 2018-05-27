@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부풀</lemma>
+    <comment>Frames file for '부풀' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부풀.01</id>
+      <edef>expand</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing expanded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부풀려지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>사티아나라얀 자티아 노동장관은 실업 규모와 관련, 지난해 12 월 말 현재 1 천 800 만명이 실업 상태인 것으로 공식 등록됐다고 밝혔으나 취업 통계가 부풀려진 점을 감안한다면 실질 실업은 이보다 훨씬 클 것으로 노동부 관리들이 추산했다.</text>
+	  <parse>
+(S (S (NP-SBJ 사티아나라얀/NPR
+              자티아/NPR
+              노동/NNC+장관/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 실업/NNC
+                          규모/NNC+과/PAD)
+                 (VV 관련/NNC)))
+          ,/SCM
+          (VP (S-COMP (NP-ADV 지난해/NNC
+                              12/NNU
+                              월/NNX
+                              말/NNC
+                              현재/NNC)
+                      (S (NP-SBJ 1/NNU
+                                 천/NNU
+                                 800/NNU
+                                 만/NNU+명/NNX+이/PCA)
+                         (VP (NP-COMP (S (NP-SBJ *pro*)
+                                         (VP (NP 실업/NNC
+                                                 상태/NNC+이/CO+은/EAN)))
+                                      (NP 것/NNX+으로/PAD))
+                             (VP (NP-ADV 공식/NNC)
+                                 (VP (VV 등록/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))))
+              밝히/VV+었/EPF+으나/ECS)))
+   (S (NP-COMP-1 (S (S (NP-SBJ *pro*)
+                       (VP (NP-OBJ (S (NP-SBJ 취업/NNC
+                                              통계/NNC+이/PCA)
+                                      (VP (VV 부풀리/VV+어지/XSV+은/EAN)))
+                                   (NP 점/NNX+을/PCA))
+                           (VV 감안/NNC+하/XSV+는다면/ECS)))
+                    (S (NP-SBJ 실질/NNC
+                               실업/NNC+은/PAU)
+                       (ADJP (NP-COMP 이/NPN+보다/PAD)
+                             (ADVP 훨씬/ADV)
+                             (ADJP 크/VJ+을/EAN))))
+                 (NP 것/NNX+으로/PAD))
+      (S (NP-SBJ 노동부/NNC
+                 관리/NNC+들/XSF+이/PCA)
+         (VP (NP-COMP *T*-1)
+             (VV 추산/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>취업 통계</term>
+	    </Arg>
+	    <Rel>
+	      <term>부풀려진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

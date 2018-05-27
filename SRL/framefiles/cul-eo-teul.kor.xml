@@ -1,0 +1,179 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>줄어들</lemma>
+    <comment>Frames file for '줄어들' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>줄어들.01</id>
+      <edef>decrease</edef>
+      <roleset>
+	<role argnum="1" argrole="thing decreasing"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>줄어들다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>지난해 7 월 대우사태가 불거진 이후 지금까지 8 개월 동안 투신권의 공사채형 수익증권 잔고가 100 조원 이상 빠져 시장규모가 절반 수준으로 줄어든 것으로 나타났다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-ADV (S (NP-ADV 지난해/NNC
+                                      7/NNU
+                                      월/NNX)
+                              (S (NP-SBJ 대우/NPR+사태/NNC+이/PCA)
+                                 (VP 불거지/VV+은/EAN)))
+                           (NP 이후/NNC))
+                   (NP-ADV 지금/NNC+까지/PAU)
+                   (NP-ADV 8/NNU
+                           개월/NNX
+                           동안/NNC)
+                   (S (NP-SBJ (NP 투신/NNC+권/XSF+의/PAN)
+                              (NP 공사채/NNC+형/XSF
+                                  수익/NNC+증권/NNC
+                                  잔고/NNC+이/PCA))
+                      (S (NP-SBJ 100/NNU
+                                 조/NNU+원/NNX
+                                 이상/NNC)
+                         (VP 빠지/VV+어/ECS)))
+                   (S (NP-SBJ 시장/NNC+규모/NNC+이/PCA)
+                      (VP (NP-COMP 절반/NNC
+                                   수준/NNC+으로/PAD)
+                          줄어들/VV+은/EAN)))
+                (NP 것/NNX+으로/PAD))
+       나타나/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해 7 월 대우사태가 불거진 이후</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지금까지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>8 개월 동안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>투신권의 공사채형 수익증권 잔고가 100 조원 이상 빠져</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>시장규모</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>절반 수준</term>
+	    </Arg>
+	    <Rel>
+	      <term>줄어든</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>만기 6 개월 미만 단기상품의 경우 46 조 1 천억원 감소했고 6 개월 이상 장기상품은 58 조 3 천억원이 줄어들었다.</text>
+	  <parse>
+(S (S (NP-ADV (NP 만기/NNC
+                  6/NNU
+                  개월/NNX
+                  미만/NNC
+                  단기/NNC+상품/NNC+의/PAN)
+              (NP 경우/NNC))
+      (S (NP-SBJ 46/NNU
+                 조/NNU
+                 1/NNU
+                 천억/NNU+원/NNX)
+         (VP (VV 감소/NNC+하/XSV+었/EPF+고/ECS))))
+   (S (NP-SBJ 6/NNU
+              개월/NNX
+              이상/NNC
+              장기/NNC+상품/NNC+은/PAU)
+      (S (NP-SBJ 58/NNU
+                 조/NNU
+                 3/NNU
+                 천억/NNU+원/NNX+이/PCA)
+         (VP 줄어들/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>6 개월 이상 장기상품</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>58 조 3 천억원</term>
+	    </Arg>
+	    <Rel>
+	      <term>줄어들었다</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+	<example>
+	  <text>히말라야 빙산지대는 향후 35 년 동안 5 분의 1이 감소할 것으로 예상되며 중국, 중앙아시아, 러시아에 분포해 있는 빙산은 지난 30 년 동안 20-60 퍼센트가 줄어들었다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 히말라야/NPR
+				      빙산/NNC+지대/NNC+은/PAU)
+		      (VP (NP-ADV 향후/NNC
+				      35/NNU
+				      년/NNX
+				      동안/NNC)
+			  (NP-ADV (NP 5/NNU
+				      분/NNX+의/PAN)
+				  (NP 1/NNU+이/PCA))
+			  (VP (VV 감소/NNC+하/XSV+을/EAN))))
+		   (NP 것/NNX+으로/PAD))
+          (VV 예상/NNC+되/XSV+으며/ECS)))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (VP (NP-COMP (NP 중국/NPR)
+                                     ,/SCM
+                                     (NP 중앙아시아/NPR)
+                                     ,/SCM
+                                     (NP 러시아/NPR+에/PAD))
+                            (VV 분포/NNC+하/XSV+어/ECS))
+                        있/VX+는/EAN)))
+              (NP 빙산/NNC+은/PAU))
+      (VP (NP-ADV 지난/DAN
+                  30/NNU
+                  년/NNX
+                  동안/NNC)
+          (NP-ADV 20/NNU+-/SSY+60/NNU
+                  퍼센트/NNX+이/PCA)
+          (VP 줄어들/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>러시아에 분포해 있는 빙산</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 30 년 동안</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>20-60 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>줄어들었다</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

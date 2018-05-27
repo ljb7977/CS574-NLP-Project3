@@ -1,0 +1,121 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>계속</lemma>
+    <comment>Frames file for '계속' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>계속.01</id>
+      <edef>continue</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing continuing"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>계속하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대대가 공격 중에 있으면 중대는 보충병을 받을 때까지 그대로 전투를 계속해야 합니다.</text>
+	  <parse>
+(S (S (NP-SBJ 대대/NNC+이/PCA)
+      (ADJP (NP-COMP 공격/NNC
+                     중/NNX+에/PAD)
+            있/VJ+으면/ECS))
+   (S (NP-SBJ 중대/NNC+은/PAU)
+      (VP (VP (NP-ADV (S (WHNP *op*)
+                         (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ 보충병/NNC+을/PCA)
+                                받/VV+을/EAN)))
+                      (NP 때/NNC+까지/PAU))
+              (ADVP 그대로/ADV)
+              (VP (NP-OBJ 전투/NNC+을/PCA)
+                  (VV 계속/NNC+하/XSV+어야/ECS)))
+          하/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>대대가 공격 중에 있으면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>중대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>보충병을 받을 때까지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>그대로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>전투</term>
+	    </Arg>
+	    <Rel>
+	      <term>계속해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>아야</f>
+	      <term>합니다</term>
+	    </Aux>
+	  </relation>    
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>계속되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이같은 감소추세는 대우채 95 퍼센트 환매시한이 지나고 해외채권단과의 대우 계열사 손실률 협상이 타결된 이후에도 계속돼 투자심리는 여전히 개선되지 않고 있는 것으로 풀이된다 ~.</text>
+	  <parse>
+(S (S (NP-SBJ 이같은/DAN
+              감소/NNC+추세/NNC+은/PAU)
+      (VP (NP-ADV (S (S (NP-SBJ 대우/NPR+채/NNX
+                                95/NNU
+                                퍼센트/NNX
+                                환매/NNC+시한/NNC+이/PCA)
+                        (VP 지나/VV+고/ECS))
+                     (S (NP-SBJ (NP 해외/NNC+채권단/NNC+과/PAD+의/PAN)
+                                (NP 대우/NPR
+                                    계열사/NNC
+                                    손실률/NNC
+                                    협상/NNC+이/PCA))
+                        (VP (VV 타결/NNC+되/XSV+은/EAN))))
+                  (NP 이후/NNC+에/PAD+도/PAU))
+          (VP (VV 계속/NNC+되/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 투자/NNC+심리/NNC+은/PAU)
+                      (VP (VP (VP (ADVP 여전히/ADV)
+                                  (VP (VV 개선/NNC+되/XSV+지/ECS)))
+                              않/VX+고/ECS)
+                          있/VX+는/EAN))
+                   (NP 것/NNX+으로/PAD))
+          (VV 풀이/NNC+되/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>이같은 감소추세</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>대우채 95 퍼센트 환매시한이 지나고 해외채권단과의 대우 계열사 손실률 협상이 타결된 이후에도</term>
+	    </Arg>
+	    <Rel>
+	      <term>계속돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>
+

@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>왕성</lemma>
+    <comment>Frames file for '왕성' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>왕성.01</id>
+      <edef>flourishing</edef>
+      <roleset>
+	<role argnum="1" argrole="thing flourishing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>왕성하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>연구팀의 실험결과 일반적 상황 즉 햇빛과 영양요소와 물이 공급되는 조건에서 해조류는 왕성하게 성장하면서 엄청나게 많은 새로운 세포를 만들어 냈다.</text>
+	  <parse>
+(S (NP-ADV (NP 연구/NNC+팀/NNC+의/PAN)
+           (NP 실험/NNC+결과/NNC))
+   (NP-ADV (NP (NP 일반/NNC+적/XSF)
+               (NP 상황/NNC))
+           (ADCP 즉/ADC)
+           (NP (S (NP-SBJ (NP 햇빛/NNC+과/PCJ)
+                          (NP 영양/NNC+요소/NNC+과/PCJ)
+                          (NP 물/NNC+이/PCA))
+                  (VP (VV 공급/NNC+되/XSV+는/EAN)))
+               (NP 조건/NNC+에서/PAD)))
+   (S (S (NP-SBJ 해조류/NNC+은/PAU)
+         (VP (ADVP (ADV (VJ 왕성/NNC+하/XSJ+게/ECS)))
+             (VP (VV 성장/NNC+하/XSV+으면서/ECS))))
+      (S (NP-SBJ *pro*)
+         (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                            (S (S (NP-SBJ *T*-1)
+                                  (ADJP (ADVP (ADV 엄청나/VJ+게/ECS))
+                                        (ADJP 많/VJ+은/EAN)))
+                               (S (NP-SBJ *T*-1)
+                                  (ADJP 새롭/VJ+은/EAN))))
+                         (NP 세포/NNC+을/PCA))
+                 만들/VV+어/ECS)
+             내/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>왕성하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

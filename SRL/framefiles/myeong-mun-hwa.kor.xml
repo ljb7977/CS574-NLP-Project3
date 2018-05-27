@@ -1,0 +1,134 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>명문화</lemma>
+    <comment>Frames file for '명문화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>명문화.01</id>
+      <edef>stipulate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing stipulated"/>
+	<role argnum="2" argrole="document"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>명문화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>사설은 또 5 일 이스라엘 각의에서 승인된 철군 계획은 단지 병력 철수를 명문화한 것에 불과하다면서 "이스라엘이 국제적으로 인정된 국경선 뒤로 완전 철군하지 않고 남부 레바논의 전략 지역들을 계속 장악하려 하고 있음을 의미한다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 사설/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (S (NP-SBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-ADV 5/NNU
+                                    일/NNX)
+                            (NP-ADV 이스라엘/NPR
+                                    각의/NNC+에서/PAD)
+                            (VP (VV 승인/NNC+되/XSV+은/EAN)))))
+                  (NP 철군/NNC
+                      계획/NNC+은/PAU))
+          (ADJP (ADVP 단지/ADV)
+                (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ 병력/NNC
+                                              철수/NNC+을/PCA)
+                                      (VV 명문화/NNC+하/XSV+은/EAN)))
+                               (NP 것/NNX+에/PAD))
+                      (VJ 불과/NNC+하/XSJ+다면서/ECS))))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (S-OBJ (NP-SBJ 이스라엘/NPR+이/PCA)
+                              (VP (VP (VP (NP-COMP (NP (S (WHNP-2 *op*)
+                                                          (S (NP-SBJ *T*-2)
+                                                             (VP (ADVP (ADV 국제/NNC+적/XSF+으로/PAD))
+                                                                 (VP (VV 인정/NNC+되/XSV+은/EAN)))))
+                                                       (NP 국경선/NNC))
+                                                   (NP 뒤/NNC+으로/PAD))
+                                          (VP (NP-ADV 완전/NNC)
+                                              (VP (VV 철군/NNC+하/XSV+지/ECS))))
+                                      않/VX+고/ECS)
+                                  (VP (VP (VP (NP-OBJ (NP 남부/NNC
+                                                          레바논/NPR+의/PAN)
+                                                      (NP 전략/NNC
+                                                          지역/NNC+들/XSF+을/PCA))
+                                              (VP (ADVP 계속/ADV)
+                                                  (VP (VV 장악/NNC+하/XSV+으려/ECS))))
+                                          하/VX+고/ECS)
+                                      있/VX+음/ENM+을/PCA)))
+                       (VV 의미/NNC+하/XSV+는다/EFN))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>병력 철수</term>
+	    </Arg>
+	    <Rel>
+	      <term>명문화한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>명문화되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>베트남 국내법에는 외국인에 대한 훈장수여에 대한 명문화된 규정이 없어 내국인에 준하는 자격을 부여하는 매우 까다로운 절차를 거쳐야 한다.</text>
+	  <parse>
+(S (S (NP-COMP-4 베트남/NPR
+                 국내법/NNC+에/PAD+은/PAU)
+      (S (NP-SBJ (S (WHNP-2 *op*)
+                    (S (NP-SBJ *T*-2)
+                       (VP (NP-COMP (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (NP-COMP 외국인/NNC+에/PAD)
+                                              대하/VV+은/EAN)))
+                                    (NP 훈장/NNC+수여/NNC+에/PAD))
+                           대하/VV+은/EAN)))
+                 (NP (S (WHNP-3 *op*)
+                        (S (NP-SBJ *T*-3)
+                           (VP (VV 명문화/NNC+되/XSV+은/EAN))))
+                     (NP 규정/NNC+이/PCA)))
+         (ADJP (NP-COMP *T*-4)
+               없/VJ+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (S (WHNP-5 *op*)
+                                        (S (NP-SBJ *T*-5)
+                                           (VP (NP-COMP 내국인/NNC+에/PAD)
+                                               준하/VV+는/EAN)))
+                                     (NP 자격/NNC+을/PCA))
+                             (VV 부여/NNC+하/XSV+는/EAN)))
+                      (NP (S (WHNP-6 *op*)
+                             (S (NP-SBJ *T*-6)
+                                (ADJP (ADVP 매우/ADV)
+                                      (ADJP 까다롭/VJ+은/EAN))))
+                          (NP 절차/NNC+을/PCA)))
+              거치/VV+어야/ECS)
+          하/VX+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=규정</term>
+	    </Arg>
+	    <Rel>
+	      <term>명문화된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

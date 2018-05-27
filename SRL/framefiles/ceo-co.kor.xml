@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>저조</lemma>
+    <comment>Frames file for '저조' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>저조.01</id>
+      <edef>low</edef>
+      <roleset>
+	<role argnum="1" argrole="thing low"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>저조하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>프랑스 전체 인구중 여성은 53 퍼센트를 점하고 있으나 여성 의원의 수는 하원에서 10.5 퍼센트, 상원에서 6 퍼센트를 각각 차지, 여성의 정치참여가 유럽에서 그리스 다음으로 저조하다.</text>
+	  <parse>
+(S (S (NP-ADV 프랑스/NPR
+              전체/NNC
+              인구/NNC+중/NNX)
+      (S (NP-SBJ 여성/NNC+은/PAU)
+         (VP (VP (NP-OBJ 53/NNU
+                         퍼센트/NNX+을/PCA)
+                 점하/VV+고/ECS)
+             있/VX+으나/ECS)))
+   (S (NP-SBJ (NP 여성/NNC
+                  의원/NNC+의/PAN)
+              (NP 수/NNC+은/PAU))
+      (VP (VP (NP-ADV 하원/NNC+에서/PAD)
+              (VP (NP-OBJ 10.5/NNU
+                          퍼센트/NNX)
+                  (VV *?*)))
+          ,/SCM
+          (VP (NP-ADV 상원/NNC+에서/PAD)
+              (VP (NP-OBJ 6/NNU
+                          퍼센트/NNX+을/PCA)
+                  (VP (ADVP 각각/ADV)
+                      (VP (VV 차지/NNC)))))))
+   ,/SCM
+   (S (NP-SBJ (NP 여성/NNC+의/PAN)
+              (NP 정치/NNC+참여/NNC+이/PCA))
+      (ADJP (NP-ADV 유럽/NPR+에서/PAD)
+            (NP-ADV 그리스/NPR
+                    다음/NNC+으로/PAD)
+            (ADJP (VJ 저조/NNC+하/XSJ+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>여성의 정치참여</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>유럽에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>그리스 다음으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>저조하다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

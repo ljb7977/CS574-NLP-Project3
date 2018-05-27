@@ -1,0 +1,129 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>내</lemma>
+    <comment>Frames file for '내' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>내.01</id>
+      <edef>send</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing sent"/>
+	<role argnum="2" argrole="sent to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>신문관은 나가서 정보 장교에게 예상되는 공격에 대한 추가적인 긴급 보고를 낸다.</text>
+	  <parse>
+(S (NP-SBJ 신문관/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP 나가/VV+어서/ECS))
+       (VP (NP-COMP 정보/NNC
+                    장교/NNC+에게/PAD)
+           (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (NP-COMP (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (VP (VV 예상/NNC+되/XSV+는/EAN))))
+                                      (NP 공격/NNC+에/PAD))
+                             대하/VV+은/EAN)))
+                   (NP (S (WHNP-3 *op*)
+                          (S (NP-SBJ *T*-3)
+                             (VP (NP 추가/NNC+적/XSF+이/CO+은/EAN))))
+                       (NP 긴급/NNC
+                           보고/NNC+을/PCA)))
+           내/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>신문관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>나가서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>정보 장교</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>예상되는 공격에 대한 추가적인 긴급 보고</term>
+	    </Arg>
+	    <Rel>
+	      <term>낸다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>내.02</id>
+      <edef>make</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing made"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>소대의 철조망 정면을 따라 여러 곳에 설치된 돌폭뢰를 폭발시키면 나는 돌이 많은 사상자를 냅니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (S (NP-SBJ *pro*)
+                               (VP (NP-OBJ (NP 소대/NNC+의/PAN)
+                                           (NP 철조망/NNC
+                                               정면/NNC+을/PCA))
+                                   따르/VV+어/ECS))
+                            (VP (NP-COMP 여러/DAN
+                                         곳/NNX+에/PAD)
+                                (VV 설치/NNC+되/XSV+은/EAN)))))
+                  (NP 돌폭뢰/NNC+을/PCA))
+          (VV 폭발/NNC+시키/XSV+으면/ECS)))
+   (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (VP 날/VV+는/EAN)))
+              (NP 돌/NNC+이/PCA))
+      (VP (NP-OBJ (S (WHNP-3 *op*)
+                     (S (NP-SBJ *T*-3)
+                        (ADJP 많/VJ+은/EAN)))
+                  (NP 사상자/NNC+을/PCA))
+          내/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>소대의 철조망 정면을 따라 여러 곳에 설치된 돌폭뢰를 폭발시키면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>나는 돌</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>많은 사상자</term>
+	    </Arg>
+	    <Rel>
+	      <term>냅니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

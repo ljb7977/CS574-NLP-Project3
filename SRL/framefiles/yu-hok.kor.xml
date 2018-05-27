@@ -1,0 +1,105 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유혹</lemma>
+    <comment>Frames file for '유혹' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유혹.01</id>
+      <edef>entice</edef>
+      <roleset>
+	<role argnum="0" argrole="thing enticing"/>
+	<role argnum="1" argrole="thing enticed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유혹하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>텔레비전 디너(오븐에 가열해 곧 먹을 수 있는 알루미늄 용기 사용 냉동음식)와 엘비스 프레슬리가 첫 등장했던 지난 1950 년대에는 여성들이 "호프"(희망), "앰부시"(잠복), "인티멋"(친우)등으로 불리는 향수로 남성들을 유혹했다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ (NP 텔레비전/NNC
+                          디너/NNC
+                          (PRN -LRB-/SLQ
+                               (NP (S (WHNP-1 *op*)
+                                      (S (S (NP-SBJ *pro*)
+                                            (VP (NP-ADV 오븐/NNC+에/PAD)
+                                                (VP (NP-OBJ *T*-1)
+                                                    (VV 가열/NNC+하/XSV+어/ECS))))
+                                         (S (NP-SBJ *pro*)
+                                            (VP (VP (ADVP 곧/ADV)
+                                                    (VP (NP-OBJ *T*-1)
+                                                        먹/VV+을/EAN))
+                                                (VX 수/NNX
+                                                    있/VJ+는/EAN)))))
+                                   (NP (NP 알루미늄/NNC
+                                           용기/NNC
+                                           사용/NNC)
+                                       (NP 냉동/NNC+음식/NNC)))
+                               -RRB-/SRQ)
+                          과/PCJ)
+                      (NP 엘비스/NPR
+                          프레슬리/NPR+이/PCA))
+              (VP (NP-ADV 첫/NNU)
+                  (VP (VV 등장/NNC+하/XSV+었/EPF+던/EAN))))
+           (NP 지난/DAN
+               1950/NNU
+               년대/NNX+에/PAD+은/PAU))
+   (S (NP-SBJ 여성/NNC+들/XSF+이/PCA)
+      (VP (NP-ADV (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (VP (NP-COMP (NP (NP "/SLQ
+                                             호프/NNC
+                                             "/SRQ
+                                             (PRN -LRB-/SLQ
+                                                  희망/NNC
+                                                  -RRB-/SRQ))
+                                         ,/SCM
+                                         (NP "/SLQ
+                                             앰부시/NNC
+                                             "/SRQ
+                                             (PRN -LRB-/SLQ
+                                                  잠복/NNC
+                                                  -RRB-/SRQ))
+                                         ,/SCM
+                                         (NP "/SLQ
+                                             인티멋/NNC
+                                             "/SRQ
+                                             (PRN -LRB-/SLQ
+                                                  친우/NNC
+                                                  -RRB-/SRQ)))
+                                     (NP 등/NNX+으로/PAD))
+                            불리/VV+는/EAN)))
+                  (NP 향수/NNC+으로/PAD))
+          (VP (NP-OBJ 남성/NNC+들/XSF+을/PCA)
+              (VV 유혹/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>텔레비전 디너(오븐에 가열해 곧 먹을 수 있는 알루미늄 용기 사용 냉동음식)와 엘비스 프레슬리가 첫 등장했던 지난 1950 년대에는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>여성들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>"호프"(희망), "앰부시"(잠복), "인티멋"(친우)등으로 불리는 향수로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>남성들</term>
+	    </Arg>
+	    <Rel>
+	      <term>유혹했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

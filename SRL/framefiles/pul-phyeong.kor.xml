@@ -1,0 +1,53 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불평</lemma>
+    <comment>Frames file for '불평' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>불평.01</id>
+      <edef>complain</edef>
+      <roleset>
+	<role argnum="0" argrole="complainer"/>
+	<role argnum="1" argrole="complain about"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불평하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>운전수들이 그 트럭에 대해서 불평하는 걸 저는 들어 본 적이 없습니다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-OBJ-1 (S (NP-SBJ 운전수/NNC+들/XSF+이/PCA)
+                           (VP (S-COMP (NP-SBJ *pro*)
+                                       (VP (NP-COMP 그/DAN
+                                                    트럭/NNC+에/PAD)
+                                           대하/VV+어서/ECS))
+                               (VV 불평/NNC+하/XSV+는/EAN)))
+                        (NP 것/NNX+을/PCA))
+              (S (NP-SBJ 저/NPN+은/PAU)
+                 (VP (VP (NP-OBJ *T*-1)
+                         듣/VV+어/ECS)
+                     보/VX+은/EAN)))
+           (NP 적/NNX+이/PCA))
+   (ADJP 없/VJ+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>운전수들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>그 트럭에 대해서</term>
+	    </Arg>
+	    <Rel>
+	      <term>불평하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

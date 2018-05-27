@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>튼튼하</lemma>
+    <comment>Frames file for '튼튼하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>튼튼하.01</id>
+      <edef>strong</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being strong"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>튼튼하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>케네디 의원은 코카인을 포함해 불법적인 약물을 복용한 사실이 있음을 시인한 뒤 "병은 치유됐으며 그렇지 않다면 오늘처럼 튼튼할 수는 없을 것"이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 케네디/NPR
+           의원/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (S-OBJ (NP-SBJ (S (NP-SBJ *pro*)
+					(VP (S (NP-SBJ *pro*)
+					       (VP (NP-OBJ 코카인/NNC+을/PCA)
+						   (VV 포함/NNC+하/XSV+어/ECS)))
+					    (VP (NP-OBJ (S (WHNP-1 *op*)
+							   (S (NP-SBJ *T*-1)
+							      (VP (NP 불법/NNC+적/XSF+이/CO+은/EAN))))
+							(NP 약물/NNC+을/PCA))
+						(VV 복용/NNC+하/XSV+은/EAN))))
+				     (NP 사실/NNC+이/PCA))
+			     (ADJP 있/VJ+음/ENM+을/PCA))
+                      (VV 시인/NNC+하/XSV+은/EAN)))
+               (NP 뒤/NNC))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 병/NNC+은/PAU)
+                      (VP (VV 치유/NNC+되/XSV+었/EPF+으며/ECS)))
+                   (S (S (NP-SBJ *pro*)
+                         (VP (ADJP 그렇/VJ+지/ECS)
+                             않/VX+다면/ECS))
+                      (S (NP-SBJ *pro*)
+                         (VP (VP (ADJP (NP-ADV 오늘/NNC+처럼/PAD)
+                                       (ADJP 튼튼하/VJ+을/EAN))
+                                 (VX 수/NNX+은/PAU
+                                     없/VJ+을/EAN))
+                             (VX 것/NNX))))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>그렇지 않다면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>오늘처럼</term>
+	    </Arg>
+	    <Rel>
+	      <term>튼튼할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수는 없을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

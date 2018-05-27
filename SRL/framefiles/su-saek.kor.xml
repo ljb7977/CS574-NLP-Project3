@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수색</lemma>
+    <comment>Frames file for '수색' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수색.01</id>
+      <edef>search</edef>
+      <roleset>
+	<role argnum="0" argrole="searcher"/>
+	<role argnum="1" argrole="thing searched"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수색하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>경찰들은 앞서 러시아 연방군이 이 지역을 샅샅이 수색한 후 안전하다고 해 방심하고 가다 공격을 당했으나 증원 병력이 도착할 때까지 방어전을 펼쳤다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 경찰/NNC+들/XSF+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (S (NP-SBJ *pro*)
+                                (VP (S (ADVP 앞서/ADV)
+                                       (S (NP-SBJ 러시아/NPR
+                                                  연방/NNC+군/NNC+이/PCA)
+                                          (VP (NP-ADV (S (WHNP *op*)
+                                                         (S (NP-SBJ *pro*)
+                                                            (VP (NP-OBJ 이/DAN
+                                                                        지역/NNC+을/PCA)
+                                                                (VP (ADVP 샅샅이/ADV)
+                                                                    (VP (VV 수색/NNC+하/XSV+은/EAN))))))
+                                                      (NP 후/NNC))
+                                              (VP (S-COMP (NP-SBJ *pro*)
+                                                          (ADJP (VJ 안전/NNC+하/XSJ+다/EFN+고/PAD)))
+                                                  하/VV+어/ECS))))
+                                    (VP (VV 방심/NNC+하/XSV+고/ECS))))
+                             (VP 가/VV+다/ECS)))
+                      (VP (NP-OBJ-LV 공격/NNC+을/PCA)
+                          (LV 당하/VV+었/EPF+으나/ECS))))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-ADV (S (WHNP *op*)
+                                 (S (NP-SBJ 증원/NNC
+                                            병력/NNC+이/PCA)
+                                    (VP (VV 도착/NNC+하/XSV+을/EAN))))
+                              (NP 때/NNC+까지/PAU))
+                      (VP (NP-OBJ 방어전/NNC+을/PCA)
+                          펼치/VV+었/EPF+다/EFN+고/PAD))))
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 지역</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>샅샅이</term>
+	    </Arg>
+	    <Rel>
+	      <term>수색한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

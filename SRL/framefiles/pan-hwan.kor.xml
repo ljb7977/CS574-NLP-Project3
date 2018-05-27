@@ -1,0 +1,105 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>반환</lemma>
+    <comment>Frames file for '반환' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>반환.01</id>
+      <edef>return</edef>
+      <roleset>
+	<role argnum="0" argrole="giver"/>
+	<role argnum="1" argrole="thing given"/>
+	<role argnum="2" argrole="given to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>반환하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>누가 그런 화기를 대대 탄약 공급소에 반환하지?</text>
+	  <parse>
+(S (NP-SBJ 누구/NPN+이/PCA)
+   (VP (NP-OBJ 그런/DAN
+               화기/NNC+을/PCA)
+       (NP-COMP 대대/NNC
+                탄약/NNC
+                공급소/NNC+에/PAD)
+       (VV 반환/NNC+하/XSV+지/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이  </f>
+	      <term>누구</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을  </f>
+	      <term>그런 화기</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>대대 탄약 공급소</term>
+	    </Arg>
+	    <Rel>
+	      <term>반환하지</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>반환되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>2 차 대전 중 프랑스 미술품 거래상으로부터 압수된 앙리 마티스의 "여자 노예"가 98 년 시애틀의 박물관에서 발견되어 상속인에게 반환됐다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 2/NNU
+                             차/NNX
+                             대전/NNC
+                             중/NNX)
+                     (VP (NP-COMP 프랑스/NPR
+                                  미술품/NNC
+                                  거래상/NNC+으로부터/PAD)
+                         (VV 압수/NNC+되/XSV+은/EAN)))))
+           (NP (NP 앙리/NPR
+                   마티스/NPR+의/PAN)
+               (NP "/SLQ
+                   여자/NNC
+                   노예/NNC
+                   "/SRQ
+                   이/PCA)))
+   (VP (VP (NP-ADV 98/NNU
+                   년/NNX)
+           (NP-ADV (NP 시애틀/NPR+의/PAN)
+                   (NP 박물관/NNC+에서/PAD))
+           (VP (VV 발견/NNC+되/XSV+어/ECS)))
+       (VP (NP-COMP 상속인/NNC+에게/PAD)
+           (VV 반환/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>2 차 대전 중 프랑스 미술품 거래상으로부터 압수된 앙리 마티스의 "여자 노예"</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>상속인</term>
+	    </Arg>
+	    <Rel>
+	      <term>반환됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

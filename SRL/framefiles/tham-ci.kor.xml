@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탐지</lemma>
+    <comment>Frames file for '탐지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>탐지.01</id>
+      <edef>detect</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing detected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탐지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 동무들은 그 도로 상에서 지뢰를 탐지하는 임무를 띠고 있지 않았나 생각합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-COMP (NP-SBJ 그/DAN
+                       동무/NNC+들/XSF+은/PAU)
+               (VP (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                      (VP (NP-ADV 그/DAN
+                                                  도로/NNC
+                                                  상/NNC+에서/PAD)
+                                          (VP (NP-OBJ 지뢰/NNC+을/PCA)
+                                              (VV 탐지/NNC+하/XSV+는/EAN))))
+                                   (NP 임무/NNC+을/PCA))
+                           띠/VV+고/ECS)
+                       있/VX+지/ECS)
+                   않/VX+었/EPF+나/ECS))
+       (VV 생각/NNC+하/XSV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>그 도로 상에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>지뢰</term>
+	    </Arg>
+	    <Rel>
+	      <term>탐지하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,148 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>건의</lemma>
+    <comment>Frames file for '건의' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>건의.01</id>
+      <edef>propose</edef>
+      <roleset>
+	<role argnum="0" argrole="proposer"/>
+	<role argnum="1" argrole="thing proposed"/>
+	<role argnum="2" argrole="proposed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>건의하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>특히 외국인 상대 불법행위자에 대해서는 적발 즉시 과태료 20 만원 부과와 함께 자격정지 20 일 처분을 함께 내릴 수 있도록 여객자동차운수사업법 시행규칙을 개정해 줄 것을 건설교통부에 건의키로 했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-COMP (NP-SBJ *pro*)
+	       (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+				 (VP (ADVP 특히/ADV)
+				     (VP (NP-COMP 외국인/NNC
+							상대/NNC
+							불법/NNC+행위자/NNC+에/PAD)
+					 대하/VV+어서/ECS+은/PAU)))
+			      (S (NP-SBJ *pro*)
+				 (VP (VP (NP-ADV 적발/NNC
+						     즉시/NNC)
+					 (ADVP (NP-COMP 과태료/NNC
+							      20/NNU
+							      만/NNU+원/NNX
+							      부과/NNC+과/PAD)
+					       함께/ADV)
+					 (VP (NP-OBJ 자격/NNC+정지/NNC
+							 20/NNU
+							 일/NNX
+							 처분/NNC+을/PCA)
+					     (VP (ADVP 함께/ADV)
+						 (VP 내리/VV+을/EAN))))
+				     (VX 수/NNX
+					   있/VJ+도록/ECS)))
+			      (S (NP-SBJ *pro*)
+				 (VP (VP (NP-OBJ 여객/NNC+자동차/NNC+운수/NNC+사업/NNC+법/NNC
+						     시행/NNC+규칙/NNC+을/PCA)
+					 (VV 개정/NNC+하/XSV+어/ECS))
+				     주/VX+을/EAN)))
+			   (NP 것/NNX+을/PCA))
+		   (NP-COMP 건설교통부/NNC+에/PAD)
+		   (VV 건의/NNC+하/XSV+기/ENM+으로/PAD)))
+       하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>특히 외국인 상대 불법행위자에 대해서는 적발 즉시 과태료 20 만원 부과와 함께 자격정지 20 일 처분을 함께 내릴 수 있도록 여객자동차운수사업법 시행규칙을 개정해 줄 것</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>건설교통부</term>
+	    </Arg>
+	    <Rel>
+	      <term>건의키로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>건의하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>포스트는 고위 보좌관들이 매케인 의원에게 정치개혁을 계속 추진하기 위한 여행 및 기타 활동자금 마련을 위해 정치행동위원회 (PAC)를 구성, 공화당내에서 그의 이름과 정치개혁 메시지 전달을 유지해 나가도록 건의할 것이라고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 포스트/NPR+은/PAU)
+   (VP (S-COMP (NP-SBJ 고위/NNC
+                       보좌관/NNC+들/XSF+이/PCA)
+               (VP (VP (NP-COMP 매케인/NPR
+                                의원/NNC+에게/PAD)
+                       (S-COMP (NP-SBJ *pro*)
+                               (VP (S (NP-SBJ *pro*)
+                                      (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                     (VP (S-COMP (NP-SBJ *pro*)
+								 (VP (NP-OBJ 정치/NNC+개혁/NNC+을/PCA)
+								     (VP (ADVP 계속/ADV)
+									 (VP (VV 추진/NNC+하/XSV+기/ENM)))))
+                                                         위하/VV+은/EAN))
+                                                  (NP (NP 여행/NNC)
+                                                      (ADCP 및/ADC)
+                                                      (NP 기타/NNC
+                                                          활동/NNC+자금/NNC
+                                                          마련/NNC+을/PCA)))
+                                          위하/VV+어/ECS))
+                                   (VP (VP (VP (NP-OBJ 정치/NNC+행동/NNC+위원회/NNC
+                                                       (PRN -LRB-/SLQ
+                                                            PAC/NFW
+                                                            -RRB-/SRQ)
+                                                       을/PCA)
+                                               (VV 구성/NNC))
+                                           ,/SCM
+                                           (VP (NP-ADV 공화당/NPR+내/NNX+에서/PAD)
+                                               (VP (NP-OBJ (NP (NP 그/NPN+의/PAN)
+                                                               (NP 이름/NNC+과/PCJ))
+                                                           (NP 정치/NNC+개혁/NNC
+                                                               메시지/NNC
+                                                               전달/NNC+을/PCA))
+                                                   (VV 유지/NNC+하/XSV+어/ECS))))
+                                       나가/VX+도록/ECS)))
+                       (VV 건의/NNC+하/XSV+을/EAN))
+                   (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>고위 보좌관들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>매케인 의원</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도록</f>
+	      <term>정치개혁을 계속 추진하기 위한 여행 및 기타 활동자금 마련을 위해 정치행동위원회 (PAC)를 구성, 공화당내에서 그의 이름과 정치개혁 메시지 전달을 유지해 나가</term>
+	    </Arg>
+	    <Rel>
+	      <term>건의할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

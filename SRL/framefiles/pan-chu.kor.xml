@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>반추</lemma>
+    <comment>Frames file for '반추' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>반추.01</id>
+      <edef>ruminate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="topic"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>반추하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>상황과 환경이 다소 달라지긴 했지만 지난 98 년 2 월 김 대통령이 처음 특사교환을 제의한 이후 보였던 북한의 반응과 태도를 반추해 보면 이런 추론이 가능해진다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 상황/NNC+과/PCJ)
+              (NP 환경/NNC+이/PCA))
+      (VP (VP (ADVP 다소/ADV)
+              (VP (VV 다르/VJ+어지/XSV+기/ENM+은/PAU)))
+          하/VX+었/EPF+지만/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-ADV (S (NP-ADV 지난/DAN
+                                                   98/NNU
+                                                   년/NNX
+                                                   2/NNU
+                                                   월/NNX)
+                                           (S (NP-SBJ 김/NPR
+                                                      대통령/NNC+이/PCA)
+                                              (VP (ADVP 처음/ADV)
+                                                  (VP (NP-OBJ 특사/NNC+교환/NNC+을/PCA)
+                                                      (VV 제의/NNC+하/XSV+은/EAN)))))
+                                        (NP 이후/NNC))
+                                (VP 보이/VV+었/EPF+던/EAN))))
+                      (NP (NP 북한/NPR+의/PAN)
+                          (NP (NP 반응/NNC+과/PCJ)
+                              (NP 태도/NNC+을/PCA))))
+              (VV 반추/NNC+하/XSV+어/ECS))
+          보/VX+으면/ECS))
+   (S (NP-SBJ 이런/DAN
+              추론/NNC+이/PCA)
+      (VP (VV (VJ 가능/NNC+하/XSJ+어지/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지난 98 년 2 월 김 대통령이 처음 특사교환을 제의한 이후 보였던 북한의 반응과 태도</term>
+	    </Arg>
+	    <Rel>
+	      <term>반추해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>보면</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,108 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>심각하</lemma>
+    <comment>Frames file for '심각하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>심각하.01</id>
+      <edef>serious</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being serious"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>심각하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>남북간의 정치 문제는 퍽 심각합니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 남북/NNC
+               간/NNX+의/PAN)
+           (NP 정치/NNC
+               문제/NNC+은/PAU))
+   (ADJP (ADVP 퍽/ADV)
+         (ADJP 심각하/VJ+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>남북간의 정치 문제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>퍽</term>
+	    </Arg>
+	    <Rel>
+	      <term>심각합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>심각해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>독일의 첨단 기술 업체들이 독일 정부의 엄격한 외국인 취업 규제로 외국인 전문인력을 고용하지 못해 아예 기업을 외국으로 이전하는 사례가 속출하는 등 문제가 심각해지자 게르하르트 슈뢰더 총리는 정보통신 인력에 대해 문호를 개방할 것을 선언했다.</text>
+	  <parse>
+(S (S (NP-ADV (S (NP-SBJ (S (NP-SBJ (NP 독일/NPR+의/PAN)
+                                    (NP 첨단/NNC
+                                        기술/NNC
+                                        업체/NNC+들/XSF+이/PCA))
+                            (VP (S (NP-SBJ *pro*)
+				   (VP (VP (NP-ADV (NP 독일/NPR
+							   정부/NNC+의/PAN)
+						   (NP (S (WHNP-1 *op*)
+							  (S (NP-SBJ *T*-1)
+							     (ADJP 엄격하/VJ+은/EAN)))
+						       (NP 외국인/NNC
+								 취업/NNC
+								 규제/NNC+으로/PAD)))
+					   (VP (NP-OBJ 외국인/NNC
+							     전문/NNC+인력/NNC+을/PCA)
+					       (VV 고용/NNC+하/XSV+지/ECS)))
+				       못하/VX+어/ECS))
+				(ADVP 아예/ADV)
+				(VP (NP-OBJ 기업/NNC+을/PCA)
+				    (NP-COMP 외국/NNC+으로/PAD)
+				    (VV 이전/NNC+하/XSV+는/EAN))))
+                         (NP 사례/NNC+이/PCA))
+                 (VP (VV 속출/NNC+하/XSV+는/EAN)))
+              (NP 등/NNX))
+      (S (NP-SBJ 문제/NNC+이/PCA)
+         (VP (VV 심각하/VJ+어지/XSV+자/ECS))))
+   (S (NP-SBJ 게르하르트/NPR
+              슈뢰더/NPR
+              총리/NNC+은/PAU)
+      (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+			(VP (NP-COMP 정보/NNC+통신/NNC
+				     인력/NNC+에/PAD)
+			    대하/VV+어/ECS))
+		     (S (NP-SBJ *pro*)
+			(VP (NP-OBJ 문호/NNC+을/PCA)
+			    (VV 개방/NNC+하/XSV+을/EAN))))
+		  (NP 것/NNX+을/PCA))
+          (VV 선언/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>독일의 첨단 기술 업체들이 독일 정부의 엄격한 외국인 취업 규제로 외국인 전문인력을 고용하지 못해 아예 기업을 외국으로 이전하는 사례가 속출하는 등</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>심각해지자</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

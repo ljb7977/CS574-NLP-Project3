@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유인</lemma>
+    <comment>Frames file for '유인' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유인.01</id>
+      <edef>entice</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing enticed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유인하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한 반잠수정의 야간침투를 가정해 실시된 이번 훈련은 먼저 먼 바다에서 포착된 적을 해안으로 유인한 뒤 육, 해, 공군의 통합된 화력으로 적을 일망타진하는 순서로 전개됐다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP 북한/NPR
+                                        반/XPF+잠수정/NNC+의/PAN)
+                                    (NP 야간/NNC+침투/NNC+을/PCA))
+                            (VV 가정/NNC+하/XSV+어/ECS)))
+                     (VP (VV 실시/NNC+되/XSV+은/EAN)))))
+           (NP 이번/NNC
+               훈련/NNC+은/PAU))
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-ADV (S (NP-SBJ *pro*)
+                                 (VP (ADVP 먼저/ADV)
+                                     (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                    (S (NP-SBJ *T*-3)
+                                                       (VP (NP-ADV (S (WHNP-2 *op*)
+                                                                      (S (NP-SBJ *T*-2)
+                                                                         (ADJP 멀/VJ+은/EAN)))
+                                                                   (NP 바다/NNC+에서/PAD))
+                                                           (VP (VV 포착/NNC+되/XSV+은/EAN)))))
+                                                 (NP 적/NNC+을/PCA))
+                                         (VP (NP-ADV 해안/NNC+으로/PAD)
+                                             (VP (VV 유인/NNC+하/XSV+은/EAN))))))
+                              (NP 뒤/NNC))
+                      (NP-ADV (NP 육/NNC
+                                  ,/SCM
+                                  해/NNC
+                                  ,/SCM
+                                  공군/NNC+의/PAN)
+                              (NP (S (WHNP-4 *op*)
+                                     (S (NP-SBJ *T*-4)
+                                        (VP (VV 통합/NNC+되/XSV+은/EAN))))
+                                  (NP 화력/NNC+으로/PAD)))
+                      (VP (NP-OBJ 적/NNC+을/PCA)
+                          (VV 일망타진/NNC+하/XSV+는/EAN))))
+               (NP 순서/NNC+으로/PAD))
+       (VP (VV 전개/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>먼저</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>먼 바다에서 포착된 적</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>해안으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>유인한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

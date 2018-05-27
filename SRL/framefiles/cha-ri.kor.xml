@@ -1,0 +1,170 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>차리</lemma>
+    <comment>Frames file for '차리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>차리.01</id>
+      <edef>concentrate one's mind</edef>
+      <roleset>
+	<role argnum="0" argrole="thing concentrating"/>
+	<role argnum="1" argrole="mind"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>차리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>깜짝 놀란 윤씨는 정신을 차리고 딸을 찾았으나 보이지 않은 사실을 알고는 납치됐을지도 모른다는 생각에 가슴 졸이다가 가드레일을 넘어 숲속을 경유해 혼자 집으로 걸어가고 있을 것으로 판단하고 시야에서 사라진 아들을 걱정하기 시작했다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (ADVP 깜짝/ADV)
+                        (VP 놀라/VV+은/EAN))))
+              (NP 윤/NPR+씨/NNX+은/PAU))
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 정신/NNC+을/PCA)
+                 차리/VV+고/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 딸/NNC+을/PCA)
+                 찾/VV+었/EPF+으나/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (NP-SBJ *pro*)
+                            (VP (VP 보이/VV+지/ECS)
+                                않/VX+은/EAN))
+                         (NP 사실/NNC+을/PCA))
+                 알/VV+고/ECS+은/PAU))
+          (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (S-OBJ (NP-SBJ *pro*)
+                                (VP (VV 납치/NNC+되/XSV+었/EPF+을지/EFN+도/PAU)))
+                         모르/VV+는다는/EAN))
+                  (NP 생각/NNC+에/PAD))
+          (VP (NP-OBJ 가슴/NNC)
+              졸이/VV+다가/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                          (VP (VP (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ 가드/NNC+레일/NNC+을/PCA)
+                                         넘/VV+어/ECS))
+                                  (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ 숲/NNC+속/NNC+을/PCA)
+                                         (VV 경유/NNC+하/XSV+어/ECS)))
+                                  (ADVP 혼자/ADV)
+                                  (VP (NP-COMP 집/NNC+으로/PAD)
+                                      걸어가/VV+고/ECS))
+                              있/VX+을/EAN))
+                       (NP 것/NNX+으로/PAD))
+              (VV 판단/NNC+하/XSV+고/ECS))
+          (VP (S-OBJ (NP-SBJ *pro*)
+                     (VP (NP-OBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP (NP-ADV 시야/NNC+에서/PAD)
+                                           (VP 사라지/VV+은/EAN))))
+                                 (NP 아들/NNC+을/PCA))
+                         (VV 걱정/NNC+하/XSV+기/ENM)))
+              (VV 시작/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>정신</term>
+	    </Arg>
+	    <Rel>
+	      <term>차리고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>차리.02</id>
+      <edef>set up</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing set up"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>차리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>소장에 따르면, 이들 3 명의 피고는 지난 92 년 여름 포차에서 학교, 경기장, 건설 노무자 막사 등에 이른바 `강간공장' 혹은 `준 매춘굴'을 차려 놓고 여성을 집단 강간했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 소장/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   ,/SCM
+   (S (NP-SBJ (NP 이/NPN+들/XSF
+                  3/NNU
+                  명/NNX+의/PAN)
+              (NP 피고/NNC+은/PAU))
+      (VP (NP-ADV 지난/DAN
+                  92/NNU
+                  년/NNX
+                  여름/NNC)
+          (NP-ADV 포차/NPR+에서/PAD)
+          (VP (VP (VP (NP-ADV (NP (NP 학교/NNC)
+                                  ,/SCM
+                                  (NP 경기장/NNC)
+                                  ,/SCM
+                                  (NP 건설/NNC
+                                      노무자/NNC
+                                      막사/NNC))
+                              (NP 등/NNX+에/PAD))
+                      (VP (NP-OBJ (ADVP 이른바/ADV)
+                                  (NP (NP `/SLQ
+                                          강간/NNC+공장/NNC
+                                          '/SRQ)
+                                      (ADCP 혹은/ADC)
+                                      (NP `/SLQ
+                                          준/DAN
+                                          매춘굴/NNC
+                                          '/SRQ
+                                          을/PCA)))
+                          차리/VV+어/ECS))
+                  놓/VX+고/ECS)
+              (VP (NP-OBJ 여성/NNC+을/PCA)
+                  (VP (NP-ADV 집단/NNC)
+                      (VP (VV 강간/NNC+하/XSV+었/EPF+다/EFN)))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이들 3 명의 피고</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 92 년 여름</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>포차에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>학교, 경기장, 건설 노무자 막사 등에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이른바 `강간공장' 혹은 `준 매춘굴'</term>
+	    </Arg>
+	    <Rel>
+	      <term>차려</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>놓고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

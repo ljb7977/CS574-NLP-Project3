@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>작업</lemma>
+    <comment>Frames file for '작업' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>작업.01</id>
+      <edef>work</edef>
+      <roleset>
+	<role argnum="0" argrole="worker"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>작업하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>공병 1개 분대가 5 중대 지역 지뢰원에서 약 2주 동안 열심히 작업하는 것을 제가 봤습니다.</text>
+	  <parse>
+(S (NP-OBJ-1 (S (NP-SBJ 공병/NNC
+                        1/NNU
+                        개/NNX
+                        분대/NNC+이/PCA)
+                (VP (NP-ADV 5/NNU
+                            중대/NNC
+                            지역/NNC
+                            지뢰원/NNC+에서/PAD)
+                    (NP-ADV 약/DAN
+                            2/NNU
+                            주/NNX
+                            동안/NNX)
+                    (ADVP 열심히/ADV)
+                    (VP (VV 작업/NNC+하/XSV+는/EAN))))
+             (NP 것/NNX+을/PCA))
+   (S (NP-SBJ 제/NPN+이/PCA)
+      (VP (NP-OBJ *T*-1)
+          보/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>공병 1개 분대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>5 중대 지역 지뢰원에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>약 2주 동안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>열심히</term>
+	    </Arg>
+	    <Rel>
+	      <term>작업하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,200 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보호</lemma>
+    <comment>Frames file for '보호' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보호.01</id>
+      <edef>protect</edef>
+      <roleset>
+	<role argnum="0" argrole="protector"/>
+	<role argnum="1" argrole="protected"/>
+	<role argnum="2" argrole="danger"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보호하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>우리는 남북에 있는 한국 사람들 다 그 무서운 독해물로부터 보호해야 해.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN+은/PAU)
+   (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP (NP-COMP 남북/NNC+에/PAD)
+                               있/VJ+는/EAN)))
+                   (NP 한국/NPR
+                       사람/NNC+들/XSF))
+           (VP (ADVP 다/ADV)
+               (VP (NP-COMP (DANP 그/DAN)
+                            (NP (S (WHNP-2 *op*)
+                                   (S (NP-SBJ *T*-2)
+                                      (ADJP 무섭/VJ+은/EAN)))
+                                (NP 독해물/NNC+으로/PAD+부터/PAU)))
+                   (VV 보호/NNC+하/XSV+어야/ECS))))
+       하/VX+어/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>우리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>남북에 있는 한국 사람들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>다</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로부터</f>
+	      <term>그 무서운 독해물</term>
+	    </Arg>
+	    <Rel>
+	      <term>보호해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>해</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보호되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>여러가지 흥미 요소를 갖춘 이 프로그램은 시청률을 위해 인간의 `훔쳐보기' 본능을 자극하고 있다는 비난을 사고 있으며 참가한 사람들의 사생활이 전혀 보호될 수 없어 헌법이 보장하고 있는 인간의 존엄성을 침해하고 있다는 지적을 받고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-OBJ 여러가지/NNC
+                             흥미/NNC
+                             요소/NNC+을/PCA)
+                     갖추/VV+은/EAN)))
+           (NP 이/DAN
+               프로그램/NNC+은/PAU))
+   (VP (VP (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ 시청률/NNC+을/PCA)
+                                 위하/VV+어/ECS))
+                          (S (NP-SBJ *pro*)
+                             (VP (VP (NP-OBJ (NP 인간/NNC+의/PAN)
+                                             (NP `/SLQ
+                                                 훔쳐보기/NNC
+                                                 '/SRQ
+                                                 본능/NNC+을/PCA))
+                                     (VV 자극/NNC+하/XSV+고/ECS))
+                                 있/VX+다는/EAN)))
+                       (NP 비난/NNC+을/PCA))
+               사/VV+고/ECS)
+           있/VX+으며/ECS)
+       (VP (VP (NP-OBJ (S (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                                            (S (NP-SBJ *T*-2)
+                                               (VP (NP-COMP *pro*)
+                                                   (VV 참가/NNC+하/XSV+은/EAN))))
+                                         (NP 사람/NNC+들/XSF+의/PAN))
+                                     (NP 사생활/NNC+이/PCA))
+                             (VP (VP (ADVP 전혀/ADV)
+                                     (VP (VV 보호/NNC+되/XSV+을/EAN)))
+                                 (VX 수/NNX
+                                     없/VJ+어/ECS)))
+                          (S (NP-SBJ *pro*)
+                             (VP (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                (S (NP-SBJ 헌법/NNC+이/PCA)
+                                                   (VP (VP (NP-OBJ *T*-3)
+                                                           (VV 보장/NNC+하/XSV+고/ECS))
+                                                       있/VX+는/EAN)))
+                                             (NP (NP 인간/NNC+의/PAN)
+                                                 (NP 존엄성/NNC+을/PCA)))
+                                     (VV 침해/NNC+하/XSV+고/ECS))
+                                 있/VX+다는/EAN)))
+                       (NP 지적/NNC+을/PCA))
+               받/VV+고/ECS)
+           있/VX+다/EFN))
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>참가한 사람들의 사생활</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>전혀</term>
+	    </Arg>
+	    <Rel>
+	      <term>보호될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없어</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보호받다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이와 관련, 정부는 식량난 등으로 북한을 탈출하는 경제적 난민도 인간의 생존권 차원에서 보호받을 수 있다는 선에서 문제를 거론할 것으로 전해졌다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+과/PAD)
+          (VV 관련/NNC)))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 정부/NNC+은/PAU)
+                      (VP (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (VP (NP-ADV (NP 식량난/NNC)
+                                                               (NP 등/NNX+으로/PAD))
+                                                       (VP (NP-OBJ 북한/NPR+을/PCA)
+                                                           (VV 탈출/NNC+하/XSV+는/EAN)))))
+                                             (NP 경제/NNC+적/XSF
+                                                 난민/NNC+도/PAU))
+                                     (VP (VP (NP-ADV (NP (NP 인간/NNC+의/PAN)
+                                                         (NP 생존권/NNC))
+                                                     (NP 차원/NNC+에서/PAD))
+                                             (VP (VV 보호/NNC+받/XSV+을/EAN)))
+                                         (VX 수/NNX
+                                             있/VJ+다는/EAN)))
+                                  (NP 선/NNC+에서/PAD))
+                          (VP (NP-OBJ 문제/NNC+을/PCA)
+                              (VV 거론/NNC+하/XSV+을/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 전하/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>식량난 등으로 북한을 탈출하는 경제적 난민</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>인간의 생존권 차원에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>보호받을</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

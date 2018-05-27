@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뜨겁</lemma>
+    <comment>Frames file for '뜨겁' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뜨겁.01</id>
+      <edef>hot</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being hot"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뜨겁다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>아폴로는 태양으로부터 받은 에너지로 초능력자가 돼 공중을 날고 눈에서 뜨거운 광선을 내뿜는다.</text>
+	  <parse>
+(S (S (NP-SBJ 아폴로/NPR+은/PAU)
+      (VP (NP-ADV (S (WHNP-1 *op*)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-COMP 태양/NNC+으로부터/PAD)
+                            (NP-OBJ *T*-1)
+                            받/VV+은/EAN)))
+                  (NP 에너지/NNC+으로/PAD))
+          (VP (NP-COMP 초능력자/NNC+이/PCA)
+              되/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 공중/NNC+을/PCA)
+              날/VV+고/ECS)
+          (VP (NP-ADV 눈/NNC+에서/PAD)
+              (VP (NP-OBJ (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (ADJP 뜨겁/VJ+은/EAN)))
+                          (NP 광선/NNC+을/PCA))
+                  내뿜/VV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=광선</term>
+	    </Arg>
+	    <Rel>
+	      <term>뜨거운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

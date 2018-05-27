@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>변호</lemma>
+    <comment>Frames file for '변호' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>변호.01</id>
+      <edef>defend</edef>
+      <roleset>
+	<role argnum="0" argrole="lawyer"/>
+	<role argnum="1" argrole="defendant"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>변호하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>간첩죄로 미국 교도소에서 5 년째 복역중인 재미교포 로버트 김(60, 한국명:김채곤)씨를 변호할 미국인 변호사가 선임됨으로써 김씨의 형량재심청구 작업이 본격화하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (VP (NP-OBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (VP (NP-ADV 간첩죄/NNC+으로/PAD)
+                                              (NP-ADV 미국/NPR
+                                                      교도소/NNC+에서/PAD)
+                                              (NP-ADV 5/NNU
+                                                      년/NNX+째/XSF)
+                                              (VP (VV 복역/NNC)))
+                                          (VX 중/NNX+이/CO+은/EAN))))
+                                (NP 재미/NNC+교포/NNC
+                                    로버트/NPR
+                                    김/NPR
+                                    (PRN -LRB-/SLQ
+                                         (NP 60/NNU)
+                                         ,/SCM
+                                         (NP 한국/NPR+명/XSF
+                                             :/SSY
+                                             김채곤/NPR)
+                                         -RRB-/SRQ)
+                                    씨/NNX+을/PCA))
+                        (VV 변호/NNC+하/XSV+을/EAN))))
+              (NP 미국인/NNC
+                  변호사/NNC+이/PCA))
+      (VP (VV 선임/NNC+되/XSV+음/ENM+으로써/PAD)))
+   (S (NP-SBJ (NP 김/NPR+씨/NNX+의/PAN)
+              (NP 형량/NNC+재심/NNC+청구/NNC
+                  작업/NNC+이/PCA))
+      (VP (VP (VV 본격화/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=미국인 변호사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>간첩죄로 미국 교도소에서 5 년째 복역중인 재미교포 로버트 김(60, 한국명:김채곤)씨</term>
+	    </Arg>
+	    <Rel>
+	      <term>변호할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

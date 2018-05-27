@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>닮</lemma>
+    <comment>Frames file for '닮' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>닮.01</id>
+      <edef>resemble</edef>
+      <roleset>
+	<role argnum="1" argrole="copy"/>
+	<role argnum="2" argrole="original"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>닮다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>버진사가 투입하려는 VGV는 영국내에서 제작될 것으로 보이며 이름은 프랑스의 TGV를 본뜬 것이지만 모양은 일본의 시속 187 마일짜리 총알열차를 더 닮게 될 것이라고 이 회사 관계자는 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ 버진/NPR+사/XSF+이/PCA)
+                                    (VP (NP-OBJ *T*-1)
+                                        (VV 투입/NNC+하/XSV+으려는/EAN))))
+                              (NP VGV/NFW+은/PAU))
+                      (VP (NP-ADV 영국/NPR+내/NNX+에서/PAD)
+                          (VP (VV 제작/NNC+되/XSV+을/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+으며/ECS))
+   (S (S-COMP-2 (S (NP-SBJ 이름/NNC+은/PAU)
+                   (VP (NP (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ (NP 프랑스/NPR+의/PAN)
+                                          (NP TGV/NFW+을/PCA))
+                                  본뜨/VV+은/EAN))
+                           (NP 것/NNX+이/CO+지만/ECS))))
+                (S (NP-SBJ 모양/NNC+은/PAU)
+                   (VP (VP (VP (NP-OBJ (NP 일본/NPR+의/PAN)
+                                       (NP (NP 시속/NNC
+                                               187/NNU
+                                               마일/NNX+짜리/XSF)
+                                           (NP 총알/NNC+열차/NNC+을/PCA)))
+                               (VP (ADVP 더/ADV)
+                                   (VP 닮/VV+게/ECS)))
+                           되/VX+을/EAN)
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+      (S (NP-SBJ 이/DAN
+                 회사/NNC
+                 관계자/NNC+은/PAU)
+         (VP (S-COMP *T*-2)
+             말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이름은 프랑스의 TGV를 본뜬 것이지만</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>모양</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>일본의 시속 187 마일짜리 총알열차</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더</term>
+	    </Arg>
+	    <Rel>
+	      <term>닮게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>될</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

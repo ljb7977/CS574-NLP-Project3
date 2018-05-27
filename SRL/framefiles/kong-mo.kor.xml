@@ -1,0 +1,129 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>공모</lemma>
+    <comment>Frames file for '공모' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>공모.01</id>
+      <edef>conspire</edef>
+      <roleset>
+	<role argnum="0" argrole="conspirator"/>
+	<role argnum="1" argrole="conspiracy"/>
+	<role argnum="2" argrole="co-conspirator"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>공모하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국 브루클린 연방법원 배심원단은 이날 찰스 슈워츠(34), 토머스 위즈(37), 토마스 브루더(34) 등 3 명이 고문 당시 슈워츠가 현장에 없었다고 주장함으로써 슈워츠의 고문가담 사실을 은폐하려 공모했다며 유죄 평결을 내렸다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR
+           브루클린/NPR
+           연방/NNC+법원/NNC
+           배심원/NNC+단/XSF+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (S (NP-SBJ (NP (NP (NP 찰스/NPR
+                              슈워츠/NPR
+                              (PRN -LRB-/SLQ
+                                   (NP 34/NNU)
+                                   -RRB-/SRQ))
+                          ,/SCM
+                          (NP 토머스/NPR
+                              위즈/NPR
+                              (PRN -LRB-/SLQ
+                                   (NP 37/NNU)
+                                   -RRB-/SRQ))
+                          ,/SCM
+                          (NP 토마스/NPR
+                              브루더/NPR
+                              (PRN -LRB-/SLQ
+                                   (NP 34/NNU)
+                                   -RRB-/SRQ)))
+                      (NP 등/NNX))
+                  (NP 3/NNU
+                      명/NNX+이/PCA))
+          (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (S-COMP (NP-ADV 고문/NNC
+                                                 당시/NNC)
+                                         (S (NP-SBJ 슈워츠/NPR+이/PCA)
+                                            (ADJP (NP-COMP 현장/NNC+에/PAD)
+                                                  없/VJ+었/EPF+다/EFN+고/PAD)))
+                                 (VV 주장/NNC+하/XSV+음/ENM+으로써/PAD)))
+                          (VP (NP-OBJ (NP 슈워츠/NPR+의/PAN)
+                                      (NP 고문/NNC+가담/NNC
+                                          사실/NNC+을/PCA))
+                              (VV 은폐/NNC+하/XSV+으려/ECS))))
+              (VV 공모/NNC+하/XSV+었/EPF+다며/ECS)))
+       (VP (NP-OBJ 유죄/NNC
+                   평결/NNC+을/PCA)
+           내리/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>찰스 슈워츠(34), 토머스 위즈(37), 토마스 브루더(34) 등 3 명</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으려</f>
+	      <term>고문 당시 슈워츠가 현장에 없었다고 주장함으로써 슈워츠의 고문가담 사실을 은폐하</term>
+	    </Arg>
+	    <Rel>
+	      <term>공모했다며</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>검찰측은 당시 슈워츠가 루이마를 바닥에서 일어나지 못하도록 붙잡았으며 위즈와 브루더는 슈워츠와 사전 공모해 슈워츠의 고문 가담 사실을 은폐하려 했다면서 이들의 전화통화 기록을 증거로 제시했다.</text>
+	  <parse>
+(S (NP-SBJ 검찰/NNC+측/XSF+은/PAU)
+   (VP (S (NP-ADV 당시/NNC)
+          (S (NP-SBJ 슈워츠/NPR+이/PCA)
+             (VP (NP-OBJ 루이마/NPR+을/PCA)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (VP (NP-ADV 바닥/NNC+에서/PAD)
+                                (VP 일어나/VV+지/ECS))
+                            못하/VX+도록/ECS))
+                     (VP 붙잡/VV+었/EPF+으며/ECS)))))
+       (S (NP-SBJ (NP 위즈/NPR+과/PCJ)
+                  (NP 브루더/NPR+은/PAU))
+          (VP (VP (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 슈워츠/NPR+과/PAD)
+                         (VP (NP-ADV 사전/NNC)
+                             (VP (VV 공모/NNC+하/XSV+어/ECS)))))
+                  (VP (NP-OBJ (NP 슈워츠/NPR+의/PAN)
+                              (NP 고문/NNC
+                                  가담/NNC
+                                  사실/NNC+을/PCA))
+                      (VV 은폐/NNC+하/XSV+으려/ECS)))
+              하/VX+었/EPF+다면서/ECS))
+       (VP (NP-OBJ (NP 이/NPN+들/XSF+의/PAN)
+                   (NP 전화/NNC+통화/NNC
+                       기록/NNC+을/PCA))
+           (NP-COMP 증거/NNC+으로/PAD)
+           (VV 제시/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>슈워츠</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>사전</term>
+	    </Arg>
+	    <Rel>
+	      <term>공모해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>도주</lemma>
+    <comment>Frames file for '도주' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>도주.01</id>
+      <edef>flee</edef>
+      <roleset>
+	<role argnum="0" argrole="fleer"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>도주하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>김 특무장, 너의 정찰대가 사격을 받기 바로 약 한시간 전에 두 사람이 금화지역을 통해 북쪽으로 도주하려고 하고 있었다.</text>
+	  <parse>
+(S (NP-VOC 김/NPR
+           특무장/NNC)
+   ,/SCM
+   (S (NP-ADV (S (NP-SBJ (NP 너/NPN+의/PAN)
+                         (NP 정찰대/NNC+이/PCA))
+                 (VP (NP-OBJ-LV 사격/NNC+을/PCA)
+                     (LV 받/VV+기/ENM)))
+              (NP 바로/DAN
+                  약/DAN
+                  한/NNU
+                  시간/NNX
+                  전/NNC+에/PAD))
+      (S (NP-SBJ 두/NNU
+                 사람/NNC+이/PCA)
+         (VP (VP (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 금화/NPR
+                                    지역/NNC+을/PCA)
+                            통하/VV+어/ECS))
+                     (VP (NP-COMP 북쪽/NNC+으로/PAD)
+                         (VV 도주/NNC+하/XSV+으려고/ECS)))
+                 하/VX+고/ECS)
+             있/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>김 특무장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>너의 정찰대가 사격을 받기 바로 약 한시간 전에</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>두 사람</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>금화지역을 통해</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>북쪽</term>
+	    </Arg>
+	    <Rel>
+	      <term>도주하려고</term>
+	    </Rel>
+	    <Aux>
+	      <f>려고</f>
+	      <term>하고</term>
+	    </Aux>
+	    <Aux>
+	      <f>고</f>
+	      <term>있었다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>침공</lemma>
+    <comment>Frames file for '침공' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>침공.01</id>
+      <edef>invade</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing invaded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>침공하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>장 주석은 대만이 통일협상을 무기한 연기하고 독립을 계속 추구할 경우 대만을 침공할 수도 있다고 공식 경고한 지난 달의 `대만백서' 발표 후 가진 첫 외신 기자회견에서 이같이 말했다.</text>
+	  <parse>
+(S (NP-SBJ 장/NPR
+           주석/NNC+은/PAU)
+   (VP (NP-ADV (S (WHNP-2 *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-ADV (NP (NP (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (S-COMP (NP-SBJ *pro*)
+                                                           (VP (VP (NP-ADV (S (NP-SBJ 대만/NPR+이/PCA)
+                                                                              (VP (VP (NP-OBJ 통일/NNC+협상/NNC+을/PCA)
+                                                                                      (VP (NP-ADV 무기한/NNC)
+                                                                                          (VP (VV 연기/NNC+하/XSV+고/ECS))))
+                                                                                  (VP (NP-OBJ 독립/NNC+을/PCA)
+                                                                                      (VP (ADVP 계속/ADV)
+                                                                                          (VP (VV 추구/NNC+하/XSV+을/EAN))))))
+                                                                           (NP 경우/NNC))
+                                                                   (VP (NP-OBJ 대만/NPR+을/PCA)
+                                                                       (VV 침공/NNC+하/XSV+을/EAN)))
+                                                               (VX 수/NNX+도/PAU
+                                                                   있/VJ+다/EFN+고/PAD)))
+                                                   (VP (NP-ADV 공식/NNC)
+                                                       (VP (VV 경고/NNC+하/XSV+은/EAN))))))
+                                         (NP (NP 지난/DAN
+                                                 달/NNC+의/PAN)
+                                             (NP `/SLQ
+                                                 대만/NPR+백서/NNC
+                                                 '/SRQ)))
+                                     (NP 발표/NNC))
+                                 (NP 후/NNC))
+                         (VP (NP-OBJ *T*-2)
+                             가지/VV+은/EAN))))
+               (NP 첫/NNU
+                   외신/NNC
+                   기자/NNC+회견/NNC+에서/PAD))
+       (ADVP 이같이/ADV)
+       (VP (NP-OBJ *pro*)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>대만이 통일협상을 무기한 연기하고 독립을 계속 추구할 경우</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대만</term>
+	    </Arg>
+	    <Rel>
+	      <term>침공할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수도 있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

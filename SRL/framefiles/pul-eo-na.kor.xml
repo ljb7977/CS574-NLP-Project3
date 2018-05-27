@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불어나</lemma>
+    <comment>Frames file for '불어나' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불어나.01</id>
+      <edef>rise</edef>
+      <roleset>
+	<role argnum="1" argrole="thing rising"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불어나다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>한편 모잠비크의 잠베지강과 리쿵고강의 상류지역인 짐바브웨와 잠비아도 최근의 집중호우로 강물이 불어나 댐 수문을 개방하는 등 비상조치를 취하고 있으며 나미비아 남부 마리엔탈에서는 인근 댐 수문 개방이후 마을 일부가 물에 잠겨 수백명이 대피하는 등 아프리카 남부지역의 수재는 진정될 기미를 보이지 않고 있다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP (NP (NP 모잠비크/NPR+의/PAN)
+                                (NP (NP 잠베지강/NPR+과/PCJ)
+                                    (NP 리쿵고/NPR+강/NNC+의/PAN)))
+                            (NP 상류/NNC+지역/NNC+이/CO+은/EAN)))))
+              (NP (NP 짐바브웨/NPR+과/PCJ)
+                  (NP 잠비아/NPR+도/PAU)))
+      (VP (S (NP-ADV (NP 최근/NNC+의/PAN)
+                     (NP 집중/NNC+호우/NNC+으로/PAD))
+             (S (NP-SBJ 강물/NNC+이/PCA)
+                (VP 불어나/VV+어/ECS)))
+          (VP (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ 댐/NNC
+                                             수문/NNC+을/PCA)
+                                     (VV 개방/NNC+하/XSV+는/EAN)))
+                              (NP 등/NNX))
+                          (NP 비상/NNC+조치/NNC+을/PCA))
+                  취하/VV+고/ECS)
+              있/VX+으며/ECS)))
+   (S (NP-ADV (S (NP-ADV 나미비아/NPR
+                         남부/NNC
+                         마리엔탈/NPR+에서/PAD+은/PAU)
+                 (NP-ADV 인근/NNC
+                         댐/NNC
+                         수문/NNC
+                         개방/NNC+이후/NNC)
+                 (S (S (NP-SBJ 마을/NNC
+                               일부/NNC+이/PCA)
+                       (VP (NP-COMP 물/NNC+에/PAD)
+                           잠기/VV+어/ECS))
+                    (S (NP-SBJ 수백/NNU+명/NNX+이/PCA)
+                       (VP (VV 대피/NNC+하/XSV+는/EAN)))))
+              (NP 등/NNX))
+      (S (NP-SBJ (NP 아프리카/NPR
+                     남부/NNC+지역/NNC+의/PAN)
+                 (NP 수재/NNC+은/PAU))
+         (VP (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                (VP (VV 진정/NNC+되/XSV+을/EAN)))
+                             (NP 기미/NNC+을/PCA))
+                     보이/VV+지/ECS)
+                 않/VX+고/ECS)
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>최근의 집중호우로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>강물</term>
+	    </Arg>
+	    <Rel>
+	      <term>불어나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

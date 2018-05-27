@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재배치</lemma>
+    <comment>Frames file for '재배치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재배치.01</id>
+      <edef>relocate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing relocated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재배치하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이스라엘 정부는 이날 이츠하크 헤르초크 내각 장관이 발표한 성명을 통해 "정부는 오는 7 월까지 레바논 국경을 따라 군을 재배치키로 만장일치로 결정했으며 이는 이스라엘 북부 지역의 안전을 보장할 것"이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 이스라엘/NPR
+           정부/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ 이츠하크/NPR
+                                    헤르초크/NPR
+                                    내각/NNC
+                                    장관/NNC+이/PCA)
+                            (VP (NP-OBJ *T*-1)
+                                (VV 발표/NNC+하/XSV+은/EAN))))
+                      (NP 성명/NNC+을/PCA))
+              통하/VV+어/ECS))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 정부/NNC+은/PAU)
+                      (VP (S-COMP (NP-SBJ *pro*)
+                                  (VP (NP-ADV 오는/DAN
+                                              7/NNU
+                                              월/NNX+까지/PAU)
+                                      (S (NP-SBJ *pro*)
+                                         (VP (NP-OBJ 레바논/NPR
+                                                     국경/NNC+을/PCA)
+                                             따르/VV+어/ECS))
+                                      (VP (NP-OBJ 군/NNC+을/PCA)
+                                          (VV 재배치/NNC+하/XSV+기/ENM+으로/PAD))))
+                          (VP (NP-ADV 만장/NNC+일치/NNC+으로/PAD)
+                              (VP (VV 결정/NNC+하/XSV+었/EPF+으며/ECS)))))
+                   (S (NP-SBJ 이/NPN+은/PAU)
+                      (VP (VP (NP-OBJ (NP 이스라엘/NPR
+                                          북부/NNC
+                                          지역/NNC+의/PAN)
+                                      (NP 안전/NNC+을/PCA))
+                              (VV 보장/NNC+하/XSV+을/EAN))
+                          (VX 것/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>오는 7 월까지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>레바논 국경을 따라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>군</term>
+	    </Arg>
+	    <Rel>
+	      <term>재배치키로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

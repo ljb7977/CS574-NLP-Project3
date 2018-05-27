@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>검거</lemma>
+    <comment>Frames file for '검거' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>검거.01</id>
+      <edef>arrest</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="criminal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>검거하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>경찰은 대부분을 검거했으나 164 명은 아직 잡지 못했다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 경찰/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 대부분/NNC+을/PCA)
+                      (VV 검거/NNC+하/XSV+었/EPF+으나/ECS)))
+               (S (NP-SBJ *pro*)
+                  (VP (VP (NP-OBJ 164/NNU
+                                  명/NNX+은/PAU)
+                          (VP (ADVP 아직/ADV)
+                              (VP 잡/VV+지/ECS)))
+                      못하/VX+었/EPF+다/EFN+고/PAD)))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대부분</term>
+	    </Arg>
+	    <Rel>
+	      <term>검거했으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

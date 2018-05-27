@@ -1,0 +1,139 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>거세</lemma>
+    <comment>Frames file for '거세' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>거세.01</id>
+      <edef>strong</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being strong"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>거세다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>벨기에의 다미엔 반더미르쉬 판사는 지난주 라프산자니 전 이란 대통령이 지난 83-89 년 테헤란 등지에서 벌어진 납치, 고문, 학대 및 정신적 폭력 등에 책임이 있는지를 조사하라는 판결을 내려 이란측의 거센 반발을 불러 일으켰다.</text>
+	  <parse>
+(S (NP-SBJ (NP 벨기에/NPR+의/PAN)
+           (NP 다미엔/NPR
+               반더미르쉬/NPR
+               판사/NNC+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 지난주/NNC)
+              (VP (NP-OBJ (S (NP-SBJ *pro*)
+                             (VP (S-OBJ (NP-SBJ (NP 라프산자니/NPR)
+                                                (NP 전/DAN
+                                                    이란/NPR
+                                                    대통령/NNC+이/PCA))
+                                        (ADJP (NP-ADV (S (WHNP-1 *op*)
+                                                         (S (NP-SBJ *T*-1)
+                                                            (VP (NP-ADV 지난/DAN
+                                                                        83-89/NNU
+                                                                        년/NNX)
+                                                                (NP-ADV 테헤란/NPR
+                                                                        등지/NNX+에서/PAD)
+                                                                (VP 벌어지/VV+은/EAN))))
+                                                      (NP (NP (NP 납치/NNC)
+                                                              ,/SCM
+                                                              (NP 고문/NNC)
+                                                              ,/SCM
+                                                              (NP 학대/NNC)
+                                                              (ADCP 및/ADC)
+                                                              (NP 정신/NNC+적/XSF
+                                                                  폭력/NNC))
+                                                          (NP 등/NNX+에/PAD)))
+                                              (ADJP (NP-COMP 책임/NNC+이/PCA)
+                                                    있/VJ+는지/EFN+을/PCA)))
+                                 (VV 조사/NNC+하/XSV+라는/EAN)))
+                          (NP 판결/NNC+을/PCA))
+                  내리/VV+어/ECS)))
+       (VP (NP-OBJ (NP 이란/NPR+측/XSF+의/PAN)
+                   (NP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (ADJP 거세/VJ+은/EAN)))
+                       (NP 반발/NNC+을/PCA)))
+           (CV 부르/VV+어/ECS
+               일으키/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=반발</term>
+	    </Arg>
+	    <Rel>
+	      <term>거센</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>거세지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그의 이번 방문은 수하르토가 악화된 건강문제로 인해 뇌물수수 의혹사건에 대한 조사를 받을 수 없다는 변호인단의 주장에 대한 진위여부를 확인하기 위해 자택을 방문하라는 정부 고위관리들의 요구가 거세지고 있는 가운데 이뤄졌다.</text>
+	  <parse>
+(S (NP-SBJ (NP 그/NPN+의/PAN)
+           (NP 이번/NNC
+               방문/NNC+은/PAU))
+   (VP (NP-ADV (S (NP-SBJ (S (NP-SBJ *pro*)
+			     (VP (S (NP-SBJ *pro*)
+				    (VP (S-OBJ (NP-SBJ *pro*)
+					       (VP (NP-OBJ (S (WHNP-3 *op*)
+							      (S (NP-SBJ *T*-3)
+								 (VP (NP-COMP (S (NP-SBJ 수하르토/NPR+이/PCA)
+										 (VP (VP (S (NP-SBJ *pro*)
+											    (VP (NP-COMP (S (WHNP-1 *op*)
+													    (S (NP-SBJ *T*-1)
+													       (VP (VV 악화/NNC+되/XSV+은/EAN))))
+													 (NP 건강/NNC+문제/NNC+으로/PAD))
+												인하/VV+어/ECS))
+											 (VP (NP-OBJ (S (WHNP-2 *op*)
+													(S (NP-SBJ *T*-2)
+													   (VP (NP-COMP 뇌물/NNC+수수/NNC
+															    의혹/NNC+사건/NNC+에/PAD)
+													       대하/VV+은/EAN)))
+												     (NP 조사/NNC+을/PCA))
+											     받/VV+을/EAN))
+										     (VX 수/NNX
+											   없/VJ+다는/EAN)))
+									      (NP (NP 변호인/NNC+단/XSF+의/PAN)
+										  (NP 주장/NNC+에/PAD)))
+								     대하/VV+은/EAN)))
+							   (NP 진위/NNC+여부/NNC+을/PCA))
+						   (VV 확인/NNC+하/XSV+기/ENM)))
+					위하/VV+어/ECS))
+				 (VP (NP-OBJ 자택/NNC+을/PCA)
+				     (VV 방문/NNC+하/XSV+으라는/EAN))))
+                          (NP (NP 정부/NNC
+				      고위/NNC+관리/NNC+들/XSF+의/PAN)
+                              (NP 요구/NNC+이/PCA)))
+                  (VP (VP (VV 거세/VJ+어지/XSV+고/ECS))
+                      있/VX+는/EAN))
+               (NP 가운데/NNC))
+       (VP (VV 이루/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>수하르토가 악화된 건강문제로 인해 뇌물수수 의혹사건에 대한 조사를 받을 수 없다는 변호인단의 주장에 대한 진위여부를 확인하기 위해 자택을 방문하라는 정부 고위관리들의 요구</term>
+	    </Arg>
+	    <Rel>
+	      <term>거세지고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

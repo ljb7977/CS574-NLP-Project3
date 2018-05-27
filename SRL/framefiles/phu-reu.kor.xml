@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>푸르</lemma>
+    <comment>Frames file for '푸르' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>푸르.01</id>
+      <edef>blue</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being blue"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>푸르다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>두 개의 수직선과 그것들이 연결된 하나의 수평선, 이 세 개의 선으로 된 이 작고 푸른 모양이 논을 표시하지.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP (NP (NP (NP 두/NNU
+                                          개/NNX+의/PAN)
+                                      (NP 수직선/NNC+과/PCJ))
+                                  (NP (S (WHNP-3 *op*)
+                                         (S (NP-SBJ 그것/NPN+들/XSF+이/PCA)
+                                            (VP (NP-COMP *T*-3)
+                                                (VV 연결/NNC+되/XSV+은/EAN))))
+                                      (NP 하나/NNU+의/PAN
+                                          수평선/NNC)))
+                              ,/SCM
+                              (NP (NP 이/DAN
+                                      세/NNU
+                                      개/NNX+의/PAN)
+                                  (NP 선/NNC+으로/PAD)))
+                     되/VV+은/EAN)))
+           (NP (DANP 이/DAN)
+               (NP (S (WHNP-2 *op*)
+                      (S (NP-SBJ *T*-2)
+                         (ADJP (ADJP 작/VJ+고/ECS)
+                               (ADJP 푸르/VJ+은/EAN))))
+                   (NP 모양/NNC+이/PCA))))
+   (VP (NP-OBJ 논/NNC+을/PCA)
+       (VV 표시/NNC+하/XSV+지/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=모양</term>
+	    </Arg>
+	    <Rel>
+	      <term>푸른</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

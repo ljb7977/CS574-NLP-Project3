@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>환류</lemma>
+    <comment>Frames file for '환류' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>환류.01</id>
+      <edef>return</edef>
+      <roleset>
+	<role argnum="1" argrole="entity in motion"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>환류하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이 재경장관은 투신권 정리가 이뤄지면 이제 상당수 채권들에 대해 시가평가가 가능해지게 된다며 이 제도가 확립되면 시장의 신뢰가 회복되고 채권시장을 떠났던 돈이 다시 환류할 수 있을 것이라고 전망했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           재경/NNC+장관/NNC+은/PAU)
+   (VP (S (S (NP-SBJ 투신/NNC+권/XSF
+                     정리/NNC+이/PCA)
+             (VP (VV 이루/VV+어지/XSV+으면/ECS)))
+          (NP-ADV 이제/NNC)
+          (S (NP-SBJ *pro*)
+             (VP (NP-COMP 상당수/NNC
+                          채권/NNC+들/XSF+에/PAD)
+                 대하/VV+어/ECS))
+          (S (NP-SBJ 시가/NNC+평가/NNC+이/PCA)
+             (VP (VP (VV (VJ 가능/NNC+하/XSJ+어지/XSV+게/ECS)))
+                 되/VX+는다며/ECS)))
+       (VP (S-COMP (S (NP-SBJ 이/DAN
+                              제도/NNC+이/PCA)
+                      (VP (VV 확립/NNC+되/XSV+으면/ECS)))
+                   (S (S (NP-SBJ (NP 시장/NNC+의/PAN)
+				 (NP 신뢰/NNC+이/PCA))
+			 (VP (VV 회복/NNC+되/XSV+고/ECS)))
+		      (S (NP-SBJ (S (WHNP-1 *op*)
+				    (S (NP-SBJ *T*-1)
+				       (VP (NP-OBJ 채권/NNC+시장/NNC+을/PCA)
+					   떠나/VV+었/EPF+던/EAN)))
+				 (NP 돈/NNC+이/PCA))
+			 (VP (VP (VP (ADVP 다시/ADV)
+				     (VP (VV 환류/NNC+하/XSV+을/EAN)))
+				 (VX 수/NNX
+				       있/VJ+을/EAN))
+			     (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+           (VV 전망/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>이 제도가 확립되면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>채권시장을 떠났던 돈</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>다시</term>
+	    </Arg>
+	    <Rel>
+	      <term>환류할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

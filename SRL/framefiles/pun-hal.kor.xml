@@ -1,0 +1,200 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>분할</lemma>
+    <comment>Frames file for '분할' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>분할.01</id>
+      <edef>divide</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing divided"/>
+	<role argnum="2" argrole="divided into"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>분할하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>통일부의 한 관계자는 이날 강연에서 "북한은 남한 및 해외에 거주하고 있는 이산가족들이 재북 형제자매나 부모 앞으로 생활 지원금을 보낼 경우 송금액의 10 퍼센트만을 지급하고 잔액은 6 개월마다 10 퍼센트씩 분할해 지급하고 있다"고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 통일부/NNC+의/PAN)
+           (NP 한/NNU
+               관계자/NNC+은/PAU))
+   (VP (NP-ADV 이날/NNC
+               강연/NNC+에서/PAD)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ 북한/NPR+은/PAU)
+                   (VP (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (VP (NP-COMP (NP 남한/NPR)
+                                                                 (ADCP 및/ADC)
+                                                                 (NP 해외/NNC+에/PAD))
+                                                        (VV 거주/NNC+하/XSV+고/ECS))
+                                                    있/VX+는/EAN)))
+                                          (NP 이산/NNC+가족/NNC+들/XSF+이/PCA))
+                                  (VP (NP-COMP (NP (NP 재/XPF+북/NPR
+                                                       형제/NNC+자매/NNC+이나/PCJ)
+                                                   (NP 부모/NNC))
+                                               (NP 앞/NNC+으로/PAD))
+                                      (NP-OBJ 생활/NNC
+                                              지원금/NNC+을/PCA)
+                                      보내/VV+을/EAN))
+                               (NP 경우/NNC))
+                       (VP (VP (NP-OBJ (NP 송금액/NNC+의/PAN)
+                                       (NP 10/NNU
+                                           퍼센트/NNX+만/PAU+을/PCA))
+                               (VV 지급/NNC+하/XSV+고/ECS))
+                           (VP (VP (NP-OBJ 잔액/NNC+은/PAU)
+                                   (VP (S (NP-SBJ *pro*)
+					  (VP (NP-OBJ *pro*)
+					      (VP (NP-ADV 6/NNU
+							  개월/NNX+마다/PAU)
+						  (VP (NP-COMP 10/NNU
+							       퍼센트/NNX+씩/XSF)
+						      (VV 분할/NNC+하/XSV+어/ECS)))))
+				       (VP (VV 지급/NNC+하/XSV+고/ECS))))
+                               있/VX+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>6 개월마다</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>10 퍼센트씩</term>
+	    </Arg>
+	    <Rel>
+	      <term>분할해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>분할되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>심지어 조사대상의 35 퍼센트는 20 년후 영국은 이들 3 개 지역으로 분할될 것으로 믿는다고 응답했다.</text>
+	  <parse>
+(S (ADVP 심지어/ADV)
+   (S (NP-SBJ (NP 조사/NNC+대상/NNC+의/PAN)
+              (NP 35/NNU
+                  퍼센트/NNX+은/PAU))
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-ADV 20/NNU
+                                          년/NNX+후/NNC)
+                                  (S (NP-SBJ 영국/NPR+은/PAU)
+                                     (VP (NP-COMP 이/NPN+들/XSF
+                                                  3/NNU
+                                                  개/NNX
+                                                  지역/NNC+으로/PAD)
+                                         (VV 분할/NNC+되/XSV+을/EAN))))
+                               (NP 것/NNX+으로/PAD))
+                      믿/VV+는다/EFN+고/PAD))
+          (VV 응답/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>20 년후</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>영국</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>이들 3 개 지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>분할될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>분할시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한편 일본정부는 초기 수정란을 분할시켜 같은 유전자의 개체를 만드는 것등 체세포핵이식 이외의 방법으로 만든 `유사배'와, 체세포 복제배등을 합치는 `특정배'의 연구에 대해서는 별도로 지침을 마련, 규제하기로 했다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ 일본/NPR+정부/NNC+은/PAU)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (S (NP-SBJ *pro*)
+                                (VP (NP-COMP (NP (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *pro*)
+                                                       (VP (NP-ADV (NP (S (NP-SBJ *pro*)
+                                                                          (VP (S (NP-SBJ *pro*)
+                                                                                 (VP (NP-OBJ 초기/NNC
+                                                                                             수정란/NNC+을/PCA)
+                                                                                     (VV 분할/NNC+시키/XSV+어/ECS)))
+                                                                              (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                                                                 (S (NP-SBJ *T*-1)
+                                                                                                    (ADJP 같/VJ+은/EAN)))
+                                                                                              (NP 유전자/NNC+의/PAN))
+                                                                                          (NP 개체/NNC+을/PCA))
+                                                                                  만들/VV+는/EAN)))
+                                                                       (NP 것/NNX+등/NNX))
+                                                                   (NP (NP 체세포/NNC+핵/NNC+이식/NNC
+                                                                           이외/NNC+의/PAN)
+                                                                       (NP 방법/NNC+으로/PAD)))
+                                                           (VP (NP-OBJ *T*-2)
+                                                               만들/VV+은/EAN))))
+                                                 (NP `/SLQ
+                                                     유사/NNC+배/NNC
+                                                     '/SRQ
+                                                     과/PCJ)
+                                                 ,/SCM
+                                                 (NP (S (WHNP-3 *op*)
+                                                        (S (NP-SBJ *T*-3)
+                                                           (VP (NP-OBJ 체세포/NNC
+                                                                       복제/NNC+배/NNC+등/NNX+을/PCA)
+                                                               합치/VV+는/EAN)))
+                                                     (NP `/SLQ
+                                                         특정/NNC+배/NNC
+                                                         '/SRQ
+                                                         의/PAN)))
+                                             (NP 연구/NNC+에/PAD))
+                                    대하/VV+어서/ECS+은/PAU))
+                             (NP-ADV 별도/NNC+으로/PAD)
+                             (VP (NP-OBJ 지침/NNC+을/PCA)
+                                 (VV 마련/NNC))))
+                      ,/SCM
+                      (VP (NP-OBJ *pro*)
+                          (VV 규제/NNC+하/XSV+기/ENM+으로/PAD))))
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>초기 수정란</term>
+	    </Arg>
+	    <Rel>
+	      <term>분할시켜</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

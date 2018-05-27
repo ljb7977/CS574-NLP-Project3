@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>신중</lemma>
+    <comment>Frames file for '신중' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>신중.01</id>
+      <edef>prudent</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being prudent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>신중하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>정부는 특히 인권위원회에서 미국과 중국 간의 인권 갈등이 큰 이슈로 부각될 것이라는 판단하에 중국 당국을 간접적으로라도 언급하는 문제에 대해서는 신중한 입장을 견지하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 정부/NNC+은/PAU)
+   (VP (VP (ADVP 특히/ADV)
+           (NP-ADV (S (NP-ADV 인권/NNC+위원회/NNC+에서/PAD)
+                      (S (NP-SBJ (NP (NP (NP 미국/NPR+과/PCJ)
+                                         (NP 중국/NPR))
+                                     (NP 간/NNX+의/PAN))
+                                 (NP 인권/NNC
+                                     갈등/NNC+이/PCA))
+                         (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (ADJP 크/VJ+은/EAN)))
+                                          (NP 이슈/NNC+으로/PAD))
+                                 (VV 부각/NNC+되/XSV+을/EAN))
+                             (VX 것/NNX+이/CO+라는/EAN))))
+                   (NP 판단/NNC+하/XSF+에/PAD))
+           (S (NP-SBJ *pro*)
+              (VP (NP-COMP (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ 중국/NPR
+                                          당국/NNC+을/PCA)
+                                  (VP (NP-ADV 간접/NNC+적/XSF+으로/PAD+이라도/PAU)
+                                      (VP (VV 언급/NNC+하/XSV+는/EAN)))))
+                           (NP 문제/NNC+에/PAD))
+                  대하/VV+어서/ECS+은/PAU))
+           (VP (NP-OBJ (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (ADJP (VJ 신중/NNC+하/XSJ+은/EAN))))
+                       (NP 입장/NNC+을/PCA))
+               (VV 견지/NNC+하/XSV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=입장</term>
+	    </Arg>
+	    <Rel>
+	      <term>신중한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

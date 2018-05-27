@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조기시행</lemma>
+    <comment>Frames file for '조기시행' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>조기시행.01</id>
+      <edef>conduct early</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing conducted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조기시행하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>현대차 관계자는 "이번 사외이사 과반수 구성은 내년까지 자산 규모 2 조원 이상 회사의 사외이사 비율 50 퍼센트로 구성해야 하는 관련법규를 조기시행하는 것"이라며 "앞으로 전문경영인 체제 강화에 크게 기여하게 될 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 현대/NPR+차/NNC
+           관계자/NNC+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ 이번/NNC
+                  사외/NNC+이사/NNC
+                  과반수/NNC
+                  구성/NNC+은/PAU)
+          (VP (NP (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                    (VP (VP (NP-ADV 내년/NNC+까지/PAU)
+                                            (VP (NP-OBJ (NP 자산/NNC
+                                                            규모/NNC
+                                                            2/NNU
+                                                            조/NNU+원/NNX
+                                                            이상/NNC
+                                                            회사/NNC+의/PAN)
+                                                        (NP 사외/NNC+이사/NNC
+                                                            비율/NNC))
+                                                (NP-COMP 50/NNU
+                                                         퍼센트/NNX+으로/PAD)
+                                                (VP (VV 구성/NNC+하/XSV+어야/ECS))))
+                                        하/VX+는/EAN))
+                                 (NP 관련/NNC+법규/NNC+을/PCA))
+                         (VP (VV 조기시행/NNC+하/XSV+는/EAN))))
+                  (NP 것/NNX)))
+          "/SRQ
+          이/CO+라며/ECS)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP "/SLQ
+                       (VP (VP (NP-ADV 앞/NNC+으로/PAD)
+                               (VP (NP-COMP 전문/NNC+경영인/NNC
+                                            체제/NNC
+                                            강화/NNC+에/PAD)
+                                   (VP (ADVP (ADV 크/VJ+게/ECS))
+                                       (VP (VV 기여/NNC+하/XSV+게/ECS)))))
+                           되/VX+을/EAN)
+                       (VX 것/NNX)
+                       "/SRQ
+                       이/CO+라/EFN+고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>내년까지 자산 규모 2 조원 이상 회사의 사외이사 비율 50 퍼센트로 구성해야 하는 관련법규</term>
+	    </Arg>
+	    <Rel>
+	      <term>조기시행하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

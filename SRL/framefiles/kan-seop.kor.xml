@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>간섭</lemma>
+    <comment>Frames file for '간섭' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>간섭.01</id>
+      <edef>intervene</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="intervene in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>간섭하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대대장은 안전 문제 외에는 저희 포대장 일에 간섭하지 않습니다.</text>
+	  <parse>
+(S (NP-SBJ 대대장/NNC+은/PAU)
+   (VP (VP (NP-ADV (NP 안전/NNC
+		       문제/NNC)
+		   (NP 외/NNC+에/PAD+은/PAU))
+	   (VP (NP-COMP (NP 저희/NPN
+			    포대장/NNC)
+			(NP 일/NNC+에/PAD))
+	       (VV 간섭/NNC+하/XSV+지/EAU)))
+       않/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>대대장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>안전 문제 외에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>저희 포대장 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>간섭하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

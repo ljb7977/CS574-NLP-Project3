@@ -1,0 +1,107 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>무장</lemma>
+    <comment>Frames file for '무장' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>무장.01</id>
+      <edef>arm</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity armed"/>
+	<role argnum="2" argrole="equipment"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>무장되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>T-54 탱크는 포탑에 거치한 100mm 탱크 선조포로 무장돼 있습니다.</text>
+	  <parse>
+(S (NP-SBJ T-54/NFW
+           탱크/NNC+은/PAU)
+   (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                       (S (NP-SBJ *pro*)
+                          (VP (NP-COMP 포탑/NNC+에/PAD)
+                              (NP-OBJ *T*-1)
+                              (VV 거치/NNC+하/XSV+은/EAN))))
+                    (NP 100/NNU
+                        mm/NFW
+                        탱크/NNC
+                        선조포/NNC+으로/PAD))
+           (VV 무장/NNC+되/XSV+어/ECS))
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>T-54 탱크</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>포탑에 거치한 100mm 탱크 선조포</term>
+	    </Arg>
+	    <Rel>
+	      <term>무장돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>무장.02</id>
+      <edef>arm</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="equipment"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>무장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>AKM 보총을 장비한 전사들은 다 총창으로도 무장했습니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-OBJ AKM/NFW
+                             보총/NNC+을/PCA)
+                     (VV 장비/NNC+하/XSV+은/EAN))))
+           (NP 전사/NNC+들/XSF+은/PAU))
+   (VP (ADVP 다/ADV)
+       (VP (NP-COMP 총창/NNC+으로/PAD+도/PAU)
+           (VV 무장/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>AKM 보총을 장비한 전사들</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f></f>
+	      <term>다</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로도</f>
+	      <term>총창</term>
+	    </Arg>
+	    <Rel>
+	      <term>무장했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>찾아보</lemma>
+    <comment>Frames file for '찾아보' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>찾아보.01</id>
+      <edef>find</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing found"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>찾아보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>하지만 남한정부를 대하는 북한의 태도나 자세에는 근본적인 변화를 찾아볼 수 없다.</text>
+	  <parse>
+(S (ADCP 하지만/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-OBJ 남한/NPR+정부/NNC+을/PCA)
+                                대하/VV+는/EAN)))
+                      (NP (NP 북한/NPR+의/PAN)
+                          (NP (NP 태도/NNC+이나/PCJ)
+                              (NP 자세/NNC+에/PAD+은/PAU))))
+              (VP (NP-OBJ (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (NP 근본/NNC+적/XSF+이/CO+은/EAN))))
+                          (NP 변화/NNC+을/PCA))
+                  찾아보/VV+을/EAN))
+          (VX 수/NNX
+              없/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>하지만</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>남한정부를 대하는 북한의 태도나 자세에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>근본적인 변화</term>
+	    </Arg>
+	    <Rel>
+	      <term>찾아볼</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>괴멸</lemma>
+    <comment>Frames file for '괴멸' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>괴멸.01</id>
+      <edef>ruin</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing destroyed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>괴멸시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>마이니치(매일) 신문에 따르면 이시하라 지사는 이날 자민, 자유 양당 참의원 연구모임에 강사로 참석, "북한 따위가 허튼 짓을 시작한다면 한방에 괴멸시키겠다"는 등의 말을 했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 마이니치/NPR
+                   (PRN -LRB-/SLQ
+                        (NP 매일/NPR)
+                        -RRB-/SRQ)
+                   신문/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   (S (NP-SBJ 이시하라/NPR
+              지사/NNC+은/PAU)
+      (VP (NP-ADV 이날/NNC)
+          (VP (NP-COMP (NP 자민/NPR
+                           ,/SCM
+                           자유/NPR
+                           양당/NNC)
+                       (NP 참의원/NNC
+                           연구/NNC+모임/NNC+에/PAD))
+              (VP (NP-ADV 강사/NNC+으로/PAD)
+                  (VP (VV 참석/NNC))))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP (S "/SLQ
+                         (NP-SBJ *pro*)
+                         (VP (S (NP-SBJ 북한/NPR
+                                        따위/NNX+이/PCA)
+                                (VP (NP-OBJ 허튼/DAN
+                                            짓/NNX+을/PCA)
+                                    (VV 시작/NNC+하/XSV+는다면/ECS)))
+                             (NP-ADV 한/NNU+방/NNX+에/PAD)
+                             (VP (VV 괴멸/NNC+시키/XSV+겠/EPF+다/EFN)))
+                         "/SRQ
+                         은/EAN)
+                      (NP 등/NNX+의/PAN))
+                  (NP 말/NNC+을/PCA))
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>북한 따위가 허튼 짓을 시작한다면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>한방에</term>
+	    </Arg>
+	    <Rel>
+	      <term>괴멸시키겠다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

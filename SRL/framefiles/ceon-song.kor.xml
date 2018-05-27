@@ -1,0 +1,102 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전송</lemma>
+    <comment>Frames file for '전송' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>전송.01</id>
+      <edef>transmit</edef>
+      <roleset>
+	<role argnum="0" argrole="thing transmitting"/>
+	<role argnum="1" argrole="thing transmitted"/>
+	<role argnum="2" argrole="transmit to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전송하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>관계자는 "일본의 인터넷 이용자 대부분이 데이터 전송속도가 늦은 전화회선을 이용하고 있으나 3 사는 고속으로 많은 양을 전송할 수 있는 케이블 TV 회선을 활용, 수요자를 확대할 계획"이라며 "2005 년에 매상고를 1 천억엔으로 내다보고 있다"고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 관계자/NNC+은/PAU)
+   (VP (S "/SLQ
+          (S (NP-SBJ (NP 일본/NPR+의/PAN)
+                     (NP 인터넷/NNC
+                         이용자/NNC
+                         대부분/NNC+이/PCA))
+             (VP (VP (NP-OBJ (S (WHNP-3 *op*)
+				(S (NP-SBJ *T*-3)
+				   (S (NP-SBJ 데이터/NNC
+						    전송/NNC+속도/NNC+이/PCA)
+				      (ADJP 늦/VJ+은/EAN))))
+                             (NP 전화/NNC+회선/NNC+을/PCA))
+                     (VV 이용/NNC+하/XSV+고/ECS))
+                 있/VX+으나/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP (S (NP-SBJ 3/NNU
+                                사/NNX+은/PAU)
+                        (VP (S (NP-SBJ *pro*)
+                               (VP (NP-OBJ (S (WHNP-1 *op*)
+                                              (S (NP-SBJ *T*-1)
+                                                 (VP (VP (NP-ADV 고속/NNC+으로/PAD)
+                                                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                        (S (NP-SBJ *T*-2)
+                                                                           (ADJP 많/VJ+은/EAN)))
+                                                                     (NP 양/NNC+을/PCA))
+                                                             (VV 전송/NNC+하/XSV+을/EAN)))
+                                                     (VX 수/NNX
+                                                         있/VJ+는/EAN))))
+                                           (NP 케이블/NNC
+                                               TV/NFW
+                                               회선/NNC+을/PCA))
+                                   (VV 활용/NNC)))
+                            ,/SCM
+                            (VP (NP-OBJ 수요자/NNC+을/PCA)
+                                (VV 확대/NNC+하/XSV+을/EAN))))
+                     (NP 계획/NNC))))
+          "/SRQ
+          이/CO+라며/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV 2005/NNU
+                                   년/NNX+에/PAD)
+                           (VP (NP-OBJ 매상고/NNC+을/PCA)
+                               (NP-COMP 1/NNU
+                                        천억/NNU+엔/NNX+으로/PAD)
+                               내다보/VV+고/ECS))
+                       있/VX+다/EFN)
+                   "/SRQ
+                   고/PAD)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=케이블 TV 회선</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>고속으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>많은 양</term>
+	    </Arg>
+	    <Rel>
+	      <term>전송할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

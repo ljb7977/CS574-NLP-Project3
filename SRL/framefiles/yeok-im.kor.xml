@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>역임</lemma>
+    <comment>Frames file for '역임' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>역임.01</id>
+      <edef>hold successively</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing held"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>역임하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>두산그룹 2 대 회장인 고 박두병씨의 3 남인 박 회장은 서울출신으로 경기고와 서울대 경제학과를 졸업한 뒤 은행원, 투자금융 임원, 두산기계 전무, 동양맥주 사장 등을 역임하면서 경영자로서의 역량을 쌓아 왔다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (S (NP-SBJ *T*-1)
+                    (VP (NP (NP 두산/NPR+그룹/NNC)
+                            (NP 2/NNU
+                                대/NNX
+                                회장/NNC+이/CO+은/EAN))))
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP (NP 고/DAN
+                                박두병/NPR+씨/NNX+의/PAN)
+                            (NP 3/NNU
+                                남/NNC+이/CO+은/EAN))))))
+           (NP 박/NPR
+               회장/NNC+은/PAU))
+   (VP (NP-ADV 서울/NPR+출신/NNC+으로/PAD)
+       (S (NP-SBJ *pro*)
+          (VP (NP-ADV (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (NP 경기고/NPR+과/PCJ)
+                                     (NP 서울대/NPR
+                                         경제학과/NNC+을/PCA))
+                             (VV 졸업/NNC+하/XSV+은/EAN)))
+                      (NP 뒤/NNC))
+              (VP (NP-OBJ (NP (NP 은행원/NNC)
+                              ,/SCM
+                              (NP 투자/NNC+금융/NNC
+                                  임원/NNC)
+                              ,/SCM
+                              (NP 두산/NPR+기계/NNC
+                                  전무/NNC)
+                              ,/SCM
+                              (NP 동양/NNC+맥주/NNC
+                                  사장/NNC))
+                          (NP 등/NNX+을/PCA))
+                  (VV 역임/NNC+하/XSV+으면서/ECS))))
+       (VP (VP (NP-OBJ (NP 경영자/NNC+으로서/PAD+의/PAN)
+                       (NP 역량/NNC+을/PCA))
+               쌓/VV+어/ECS)
+           오/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>은행원, 투자금융 임원, 두산기계 전무, 동양맥주 사장 등</term>
+	    </Arg>
+	    <Rel>
+	      <term>역임하면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

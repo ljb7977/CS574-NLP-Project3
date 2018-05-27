@@ -1,0 +1,110 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>신문</lemma>
+    <comment>Frames file for '신문' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>신문.01</id>
+      <edef>question</edef>
+      <roleset>
+	<role argnum="0" argrole="asker"/>
+	<role argnum="1" argrole="entity asked"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>신문하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>부대 임무가 다 나올 때까지 신문을 계속한 다음 신문관은 부대 구성에 대해서 포로를 신문했다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ *pro*)
+              (VP (NP-ADV (S (WHNP *op*)
+                             (S (NP-SBJ 부대/NNC
+                                        임무/NNC+이/PCA)
+                                (VP (ADVP 다/ADV)
+                                    (VP 나오/VV+을/EAN))))
+                          (NP 때/NNC+까지/PAU))
+                  (VP (NP-OBJ 신문/NNC+을/PCA)
+                      (VV 계속/NNC+하/XSV+은/EAN))))
+           (NP 다음/NNC))
+   (S (NP-SBJ 신문관/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 부대/NNC
+                          구성/NNC+에/PAD)
+                 대하/VV+어서/ECS))
+          (VP (NP-OBJ 포로/NNC+을/PCA)
+              (VV 신문/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>부대 임무가 다 나올 때까지 신문을 계속한 다음</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>신문관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>부대 구성에 대해서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>포로</term>
+	    </Arg>
+	    <Rel>
+	      <term>신문했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>신문받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>뉴햄프셔에 사는 17 세의 이 해커는 LA 경찰에서 신문받는 동안 100 개의 웹사이트를 해킹했다고 시인한 것으로 알려졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP-COMP 뉴햄프셔/NPR+에/PAD)
+                                     살/VV+는/EAN)))
+                           (NP (NP 17/NNU
+                                   세/NNX+의/PAN)
+                               (NP 이/DAN
+                                   해커/NNC+은/PAU)))
+                   (VP (NP-ADV (S (NP-SBJ *pro*)
+                                  (VP (NP-ADV LA/NFW
+                                              경찰/NNC+에서/PAD)
+                                      (VP (VV 신문/NNC+받/XSV+는/EAN))))
+                               (NP 동안/NNC))
+                       (VP (S-COMP (NP-SBJ *pro*)
+                                   (VP (NP-OBJ (NP 100/NNU
+                                                   개/NNX+의/PAN)
+                                               (NP 웹사이트/NNC+을/PCA))
+                                       (VV 해킹/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))
+                           (VV 시인/NNC+하/XSV+은/EAN))))
+                (NP 것/NNX+으로/PAD))
+       (VV 알리/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>LA 경찰에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>신문받는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

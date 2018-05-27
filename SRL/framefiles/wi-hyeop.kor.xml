@@ -1,0 +1,134 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>위협</lemma>
+    <comment>Frames file for '위협' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>위협.01</id>
+      <edef>threaten</edef>
+      <roleset>
+	<role argnum="0" argrole="thing threatening"/>
+	<role argnum="1" argrole="thing threatened"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>위협하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>모잠비크 대홍수 이후 물위를 떠다니고 있는 사람과 동물들의 사체가 생존자들의 생명과 건강을 위협하고 있다고 유엔측이 7 일 밝혔다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-SBJ (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (VP (NP-ADV 모잠비크/NPR
+                                           대홍수/NNC
+                                           이후/NNC)
+                                   (VP (NP-OBJ 물/NNC+위/NNC+을/PCA)
+                                       떠다니/VV+고/ECS))
+                               있/VX+는/EAN)))
+                     (NP (NP (NP 사람/NNC+과/PCJ)
+                             (NP 동물/NNC+들/XSF+의/PAN))
+                         (NP 사체/NNC+이/PCA)))
+             (VP (VP (NP-OBJ (NP 생존자/NNC+들/XSF+의/PAN)
+                             (NP (NP 생명/NNC+과/PCJ)
+                                 (NP 건강/NNC+을/PCA)))
+                     (VV 위협/NNC+하/XSV+고/ECS))
+                 있/VX+다/EFN+고/PAD))
+   (S (NP-SBJ 유엔/NPR+측/NNX+이/PCA)
+      (VP (NP-ADV 7/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-2)
+              밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>모잠비크 대홍수 이후 물위를 떠다니고 있는 사람과 동물들의 사체</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>생존자들의 생명과 건강</term>
+	    </Arg>
+	    <Rel>
+	      <term>위협하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>위협받다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대만의 새로운 독립지향 정권은 앞으로 10 년간 중국에 대해 군사적 우위를 유지할 수 있겠으나 이같은 군사적 이점은 중국의 으뜸 카드인 탄두미사일 병참의 증가로 위협받고 있다고 아시아 군사전문가들이 19 일 분석했다.</text>
+	  <parse>
+(S (S-COMP-3 (S (NP-SBJ (NP 대만/NPR+의/PAN)
+                        (NP (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (ADJP 새롭/VJ+은/EAN)))
+                            (NP 독립/NNC+지향/NNC
+                                정권/NNC+은/PAU)))
+                (VP (VP (NP-ADV 앞/NNC+으로/PAD)
+                        (NP-ADV 10/NNU
+                                년/NNX+간/XSF)
+                        (S (NP-SBJ *pro*)
+                           (VP (NP-COMP 중국/NPR+에/PAD)
+                               대하/VV+어/ECS))
+                        (VP (NP-OBJ 군사/NNC+적/XSF
+                                    우위/NNC+을/PCA)
+                            (VV 유지/NNC+하/XSV+을/EAN)))
+                    (VX 수/NNX
+                        있/VJ+겠/EPF+으나/ECS)))
+             (S (NP-SBJ 이같은/DAN
+                        군사/NNC+적/XSF
+                        이점/NNC+은/PAU)
+                (VP (VP (NP-ADV (NP (NP 중국/NPR+의/PAN)
+                                    (NP (NP (S (WHNP-2 *op*)
+                                               (S (NP-SBJ *T*-2)
+                                                  (VP (NP 으뜸/NNC
+                                                          카드/NNC+이/CO+은/EAN))))
+                                            (NP 탄두/NNC+미사일/NNC))
+                                        (NP 병참/NNC+의/PAN)))
+                                (NP 증가/NNC+으로/PAD))
+                        (VP (VV 위협/NNC+받/XSV+고/ECS)))
+                    있/VX+다/EFN+고/PAD)))
+   (S (NP-SBJ 아시아/NPR
+              군사/NNC+전문가/NNC+들/XSF+이/PCA)
+      (VP (NP-ADV 19/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-3)
+              (VV 분석/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>이같은 군사적 이점</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>중국의 으뜸 카드인 탄두미사일 병참의 증가로</term>
+	    </Arg>
+	    <Rel>
+	      <term>위협받고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

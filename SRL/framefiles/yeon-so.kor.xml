@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>연소</lemma>
+    <comment>Frames file for '연소' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>연소.01</id>
+      <edef>burn</edef>
+      <roleset>
+	<role argnum="1" argrole="thing burning"/>
+	<role argnum="2" argrole="thing burnt"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>연소하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이들은 미국 자동차 업체의 선호생산 품목인 픽업 트럭이나 경주용 등의 스포츠카가 일반 승용차보다 기름을 더 연소하고 배기가스를 더 많이 배출하기 때문이라고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPN+들/XSF+은/PAU)
+   (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP (NP 미국/NPR
+                                             자동차/NNC
+                                             업체/NNC+의/PAN)
+                                         (NP 선호/NNC+생산/NNC
+                                             품목/NNC+이/CO+은/EAN)))))
+                           (NP (NP 픽업/NNC
+                                   트럭/NNC+이나/PCJ)
+                               (NP (NP (NP 경주/NNC+용/XSF)
+                                       (NP 등/NNX+의/PAN))
+                                   (NP 스포츠카/NNC+이/PCA))))
+                   (VP (NP-ADV 일반/NNC
+                                   승용차/NNC+보다/PAD)
+		       (VP (VP (NP-OBJ 기름/NNC+을/PCA)
+			       (VP (ADVP 더/ADV)
+				   (VP (VV 연소/NNC+하/XSV+고/ECS))))
+			   (VP (NP-OBJ 배기/NNC+가스/NNC+을/PCA)
+			       (VP (ADVP (ADVP 더/ADV)
+					 (ADVP 많이/ADV))
+				   (VP (VV 배출/NNC+하/XSV+기/ENM)))))))
+                (NP 때문/NNX+이라고/PAD))
+       (VV 설명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>미국 자동차 업체의 선호생산 품목인 픽업 트럭이나 경주용 등의 스포츠카</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>일반 승용차보다</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>기름</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더</term>
+	    </Arg>
+	    <Rel>
+	      <term>연소하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

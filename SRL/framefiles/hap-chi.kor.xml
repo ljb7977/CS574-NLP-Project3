@@ -1,0 +1,126 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>합치</lemma>
+    <comment>Frames file for '합치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>합치.01</id>
+      <edef>combine</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="ingredient one"/>
+	<role argnum="2" argrole="ingredient two"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>합치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>연봉과 보너스에다 스톡옵션까지 합치면 장관보수의 200 배 이상을 받는 셈이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (S (NP-SBJ *pro*)
+              (VP (NP-COMP (NP 연봉/NNC+과/PCJ)
+                           (NP 보너스/NNC+에다/PAD))
+                  (NP-OBJ 스톡/NNC+옵션/NNC+까지/PAU)
+                  합치/VV+으면/ECS))
+           (VP (NP-OBJ (NP 장관/NNC+보수/NNC+의/PAN)
+                       (NP 200/NNU
+                           배/NNX
+                           이상/NNC+을/PCA))
+               받/VV+는/EAN))
+       (VX 셈/NNX+이/CO+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에다</f>
+	      <term>연봉과 보너스</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>까지</f>
+	      <term>스톡옵션</term>
+	    </Arg>
+	    <Rel>
+	      <term>합치면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>합쳐지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>IBM 연구진들은 이 실험에서 미립자층이 사람 머리카락의 2 만분의 1 정도로 매우 얇게 합쳐졌다면서 "이는 다양한 형태의 소형 기억장치 구조에 적용될 수 있기 때문에 매우 흥미로운 기술"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ IBM/NFW
+           연구진/NNC+들/XSF+은/PAU)
+   (VP (S (NP-ADV 이/DAN
+                  실험/NNC+에서/PAD)
+          (S (NP-SBJ 미립자/NNC+층/XSF+이/PCA)
+             (VP (NP-ADV (NP 사람/NNC
+                             머리카락/NNC+의/PAN)
+                         (NP (NP 2/NNU
+                                 만/NNU+분/XSF+의/PAN)
+                             (NP 1/NNU
+                                 정도/NNC+으로/PAD)))
+                 (ADVP (ADVP 매우/ADV)
+                       (ADVP (ADV 얇/VJ+게/ECS)))
+                 (VP (VV 합치/VV+어지/XSV+었/EPF+다면서/ECS)))))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (NP-ADV (S (NP-SBJ 이/NPN+은/PAU)
+                                  (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                                          (S (NP-SBJ *T*-1)
+                                                             (ADJP (VJ 다양/NNC+하/XSJ+은/EAN))))
+                                                       (NP 형태/NNC+의/PAN))
+                                                   (NP 소형/NNC
+                                                       기억/NNC+장치/NNC
+                                                       구조/NNC+에/PAD))
+                                          (VV 적용/NNC+되/XSV+을/EAN))
+                                      (VX 수/NNX
+                                          있/VJ+기/ENM)))
+                               (NP 때문/NNX+에/PAD))
+                       (VP (NP (S (WHNP-2 *op*)
+                                  (S (NP-SBJ *T*-2)
+                                     (ADJP (ADVP 매우/ADV)
+                                           (ADJP 흥미롭/VJ+은/EAN))))
+                               (NP 기술/NNC))))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>이 실험에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>미립자층</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>사람 머리카락의 2 만분의 1 정도로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>매우 얇게</term>
+	    </Arg>
+	    <Rel>
+	      <term>합쳐졌다면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

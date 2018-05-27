@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>광고</lemma>
+    <comment>Frames file for '광고' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>광고.01</id>
+      <edef>advertise</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing advertised"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>광고하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>슈바르츠는 컴퓨터 실험결과 이 센서가 광고한 만큼의 기능을 발휘하지 못한 것으로 나타났다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 슈바르츠/NPR+은/PAU)
+   (VP (S-COMP (NP-SBJ 컴퓨터/NNC
+                       실험/NNC+결과/NNC)
+               (VP (NP-COMP (S (NP-SBJ 이/DAN
+                                       센서/NNC+이/PCA)
+                               (VP (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                                                      (VP (NP-OBJ *pro*)
+                                                          (VV 광고/NNC+하/XSV+은/EAN)))
+                                                   (NP 만큼/NNX+의/PAN))
+                                               (NP 기능/NNC+을/PCA))
+                                       (VV 발휘/NNC+하/XSV+지/ECS))
+                                   못하/VX+은/EAN))
+                            (NP 것/NNX+으로/PAD))
+                   나타나/VV+었/EPF+다/EFN+고/PAD))
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>광고한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

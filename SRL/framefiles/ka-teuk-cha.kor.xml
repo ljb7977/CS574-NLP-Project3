@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가득차</lemma>
+    <comment>Frames file for '가득차' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가득차.01</id>
+      <edef>fill</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="container"/>
+	<role argnum="2" argrole="substance"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가득차다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>비록 전시된 화장품의 수는 그리 많지 않고 실제로 화장품을 사가는 사람도 거의 보이지 않았지만 전시회장은 호기심 많은 젊은 베트남 여성들로 가득차 화장품에 대한 큰 관심을 보여 주었다.</text>
+	  <parse>
+(S (S (ADVP 비록/ADV)
+      (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (VV 전시/NNC+되/XSV+은/EAN))))
+                     (NP 화장품/NNC+의/PAN))
+                 (NP 수/NNC+은/PAU))
+         (VP (ADJP (ADVP 그리/ADV)
+                   (ADJP 많/VJ+지/ECS))
+             않/VX+고/ECS))
+      (S (NP-SBJ (S (WHNP-2 *op*)
+                    (S (NP-SBJ *T*-2)
+                       (VP (NP-ADV 실제/NNC+으로/PAD)
+                           (VP (NP-OBJ 화장품/NNC+을/PCA)
+                               사가/VV+는/EAN))))
+                 (NP 사람/NNC+도/PAU))
+         (VP (VP (ADVP 거의/ADV)
+                 (VP 보이/VV+지/ECS))
+             않/VX+었/EPF+지만/ECS)))
+   (S (NP-SBJ 전시회장/NNC+은/PAU)
+      (VP (NP-COMP (S (WHNP-3 *op*)
+                      (S (NP-SBJ 호기심/NNC)
+                         (ADJP (NP-COMP *T*-3)
+                               많/VJ+은/EAN)))
+                   (NP (S (WHNP-4 *op*)
+                          (S (NP-SBJ *T*-4)
+                             (ADJP 젊/VJ+은/EAN)))
+                       (NP 베트남/NPR
+                           여성/NNC+들/XSF+으로/PAD)))
+          가득차/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (WHNP-5 *op*)
+                         (S (NP-SBJ *T*-5)
+                            (VP (NP-COMP 화장품/NNC+에/PAD)
+                                대하/VV+은/EAN)))
+                      (NP (S (WHNP-6 *op*)
+                             (S (NP-SBJ *T*-6)
+                                (ADJP 크/VJ+은/EAN)))
+                          (NP 관심/NNC+을/PCA)))
+              보이/VV+어/ECS)
+          주/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>전시회장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>호기심 많은 젊은 베트남 여성들</term>
+	    </Arg>
+	    <Rel>
+	      <term>가득차</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

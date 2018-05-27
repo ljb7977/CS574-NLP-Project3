@@ -1,0 +1,92 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>간명하</lemma>
+    <comment>Frames file for '간명하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>간명하.01</id>
+      <edef>concise</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being concise"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>간명하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>로버트 스위프트 변호사는 유태인 600 만명을 죽인 나치의 만행이나 14 년에 걸친 마르코스의 독재와는 달리 노근리사건은 미군이 총을 쐈고 부녀자와 어린이 등 양민수백명이 죽은 '지극히 간명한 인권 범죄'라고 규정하고 "사죄와 보상 요구는 당연하며 미국 정부가 대화에 불응한다면 집단소송도 불사할 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 로버트/NPR
+           스위프트/NPR
+           변호사/NNC+은/PAU)
+   (VP (VP (S-COMP (ADVP (NP-COMP (NP (NP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (NP-OBJ 유태인/NNC
+                                                            600/NNU
+                                                            만/NNU+명/NNX+을/PCA)
+                                                    죽이/VV+은/EAN)))
+                                          (NP 나치/NPR+의/PAN))
+                                      (NP 만행/NNC+이나/PCJ))
+                                  (NP (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (VP (NP-COMP 14/NNU
+                                                         년/NNX+에/PAD)
+                                                걸치/VV+은/EAN)))
+                                      (NP (NP 마르코스/NPR+의/PAN)
+                                          (NP 독재/NNC+과/PAD+은/PAU))))
+                         달리/ADV)
+                   (S (NP-SBJ 노근리/NPR+사건/NNC+은/PAU)
+                      (VP (NP (S (S (NP-SBJ 미군/NNC+이/PCA)
+                                    (VP (NP-OBJ 총/NNC+을/PCA)
+                                        쏘/VV+었/EPF+고/ECS))
+                                 (S (NP-SBJ (NP (NP (NP 부녀자/NNC+과/PCJ)
+                                                    (NP 어린이/NNC))
+                                                (NP 등/NNX))
+                                            (NP 양민/NNC+수백/NNU+명/NNX+이/PCA))
+                                    (VP 죽/VV+은/EAN)))
+                              (NP '/SLQ
+                                  (S (WHNP-3 *op*)
+                                     (S (NP-SBJ *T*-3)
+                                        (ADJP (ADVP 지극히/ADV)
+                                              (ADJP (VJ 간명/NNC+하/XSJ+은/EAN)))))
+                                  (NP 인권/NNC
+                                      범죄/NNC)
+                                  '/SRQ
+                                  이/CO+라/EFN+고/PAD)))))
+           (VV 규정/NNC+하/XSV+고/ECS))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ (NP 사죄/NNC+과/PCJ)
+                              (NP 보상/NNC
+                                  요구/NNC+은/PAU))
+                      (ADJP (VJ 당연/NNC+하/XSJ+으며/ECS)))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (S (NP-SBJ 미국/NPR
+                                         정부/NNC+이/PCA)
+                                 (VP (NP-COMP 대화/NNC+에/PAD)
+                                     (VV 불응/NNC+하/XSV+는다면/ECS)))
+                              (VP (NP-OBJ 집단/NNC+소송/NNC+도/PAU)
+                                  (VV 불사/NNC+하/XSV+을/EAN)))
+                          (VX 것/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=인권 범죄</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>지극히</term>
+	    </Arg>
+	    <Rel>
+	      <term>간명한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

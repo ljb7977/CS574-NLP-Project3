@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>긴밀하</lemma>
+    <comment>Frames file for '긴밀하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>긴밀하.01</id>
+      <edef>close</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being close"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>긴밀하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>급조 지뢰원은 기록해서 보고할 필요는 없지만 사고를 예방하기 위해서 항상 부대간의 긴밀한 협조를 합니다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 급조/NNC
+                                    지뢰원/NNC+은/PAU)
+                            (VV 기록/NNC+하/XSV+어서/ECS)))
+                     (VP (NP-OBJ *pro*)
+                         (VV 보고/NNC+하/XSV+을/EAN))))
+              (NP 필요/NNC+은/PAU))
+      (ADJP 없/VJ+지만/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S (NP-SBJ *pro*)
+             (VP (S-OBJ (NP-SBJ *pro*)
+                        (VP (NP-OBJ 사고/NNC+을/PCA)
+                            (VV 예방/NNC+하/XSV+기/ENM)))
+                 위하/VV+어서/ECS))
+          (ADVP 항상/ADV)
+          (VP (NP-OBJ-LV (NP 부대/NNC+간/XSF+의/PAN)
+                         (NP (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP 긴밀하/VJ+은/EAN)))
+                             (NP 협조/NNC+을/PCA)))
+              (LV 하/VV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=협조</term>
+	    </Arg>
+	    <Rel>
+	      <term>긴밀한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

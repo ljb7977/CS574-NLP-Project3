@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이어가</lemma>
+    <comment>Frames file for '이어가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>이어가.01</id>
+      <edef>continue</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing continued"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이어가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>코스닥시장이 연 6 일째 폭락세를 이어가며 지수 230 선에 간신히 턱걸이했다.</text>
+	  <parse>
+(S (NP-SBJ 코스닥/NPR+시장/NNC+이/PCA)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 연/DAN
+                      6/NNU
+                      일/NNX+째/XSF)
+              (VP (NP-OBJ 폭락세/NNC+을/PCA)
+                  이어가/VV+으며/ECS)))
+       (VP (NP-COMP 지수/NNC
+                    230/NNU
+                    선/NNC+에/PAD)
+           (VP (ADVP 간신히/ADV)
+               (VP (VV 턱걸이/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>코스닥시장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>연 6 일째</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+              <term>폭락세</term>
+	    </Arg>
+	    <Rel>
+	      <term>이어가며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

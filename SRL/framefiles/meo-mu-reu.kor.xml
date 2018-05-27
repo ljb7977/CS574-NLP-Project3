@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>머무르</lemma>
+    <comment>Frames file for '머무르' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>머무르.01</id>
+      <edef>remain</edef>
+      <roleset>
+	<role argnum="1" argrole="thing remaining"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>머무르다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>나치의 유태인학살 죄과와 2 차 대전 패전국의 멍에를 안고 있는 독일은 그 동안 국제외교무대에서 소극적인 위치에 머물러 있었다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-OBJ (NP (NP 나치/NPR+의/PAN)
+                                     (NP 유태인/NNC+학살/NNC
+                                         죄과/NNC+과/PCJ))
+                                 (NP (NP 2/NNU
+                                         차/NNX
+                                         대전/NPR
+                                         패전국/NNC+의/PAN)
+                                     (NP 멍에/NNC+을/PCA)))
+                         안/VV+고/ECS)
+                     있/VX+는/EAN)))
+           (NP 독일/NPR+은/PAU))
+   (VP (VP (NP-ADV 그/DAN
+                   동안/NNC)
+           (NP-ADV 국제/NNC+외교/NNC+무대/NNC+에서/PAD)
+           (VP (NP-COMP (S (WHNP-2 *op*)
+                           (S (NP-SBJ *T*-2)
+                              (VP (NP 소극/NNC+적/XSF+이/CO+은/EAN))))
+                        (NP 위치/NNC+에/PAD))
+               머무르/VV+어/ECS))
+       있/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>나치의 유태인학살 죄과와 2 차 대전 패전국의 멍에를 안고 있는 독일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그 동안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>국제외교무대에서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>소극적인 위치</term>
+	    </Arg>
+	    <Rel>
+	      <term>머물러</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있었다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

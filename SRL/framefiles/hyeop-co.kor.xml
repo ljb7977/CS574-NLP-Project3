@@ -1,0 +1,136 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>협조</lemma>
+    <comment>Frames file for '협조' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>협조.01</id>
+      <edef>help</edef>
+      <roleset>
+	<role argnum="0" argrole="helper"/>
+	<role argnum="1" argrole="task, benefactive"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>협조하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포병 부대장은 전투 시에 늘 피지원 부대장과 협조합니다.</text>
+	  <parse>
+(S (NP-SBJ 포병/NNC
+           부대장/NNC+은/PAU)
+   (VP (NP-ADV 전투/NNC
+               시/NNX+에/PAD)
+       (ADVP 늘/ADV)
+       (VP (NP-COMP 피지원/NNC
+                    부대장/NNC+과/PAD)
+           (VV 협조/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>포병 부대장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전투 시에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>늘</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>과</f>
+	      <term>피지원 부대장</term>
+	    </Arg>
+	    <Rel>
+	      <term>협조합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>협조하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>마찬가지로 연대급에서는 연대 후방부장이 군수 업무를 협조합니다.</text>
+	  <parse>
+(S (NP-ADV 마찬가지/NNC+으로/PAD)
+   (NP-ADV 연대/NNC
+           급/NNX+에서/PAD+은/PAU)
+   (S (NP-SBJ 연대/NNC
+              후방/NNC
+              부장/NNC+이/PCA)
+      (VP (NP-OBJ 군수/NNC
+                  업무/NNC+을/PCA)
+          (VV 협조/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>마찬가지로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>연대급에서는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>연대 후방부장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>군수 업무</term>
+	    </Arg>
+	    <Rel>
+	      <term>협조합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>협조되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지휘 관측소의 임무와 저희 포반의 임무는 여러 가지 방법으로 협조됩니다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP 지휘/NNC
+                   관측소/NNC+의/PAN)
+               (NP 임무/NNC+과/PCJ))
+           (NP (NP 저희/NPN
+                   포반/NNC+의/PAN)
+               (NP 임무/NNC+은/PAU)))
+   (VP (NP-ADV (NP 여러/DAN
+                   가지/NNX)
+               (NP 방법/NNC+으로/PAD))
+       (VP (VV 협조/NNC+되/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>지휘 관측소의 임무와 저희 포반의 임무</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>여러 가지 방법으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>협조됩니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>다하</lemma>
+    <comment>Frames file for '다하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>다하.01</id>
+      <edef>do</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing done"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>다하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>제가 최선을 다하겠습니다.</text>
+	  <parse>
+(S (NP-SBJ 제/NPN+이/PCA) 
+   (VP (NP-OBJ 최선/NNC+을/PCA) 
+       다하/VV+겠/EPF+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>최선</term>
+	    </Arg>
+	    <Rel>
+	      <term>다하겠습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

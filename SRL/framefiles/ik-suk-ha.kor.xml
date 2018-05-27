@@ -1,0 +1,106 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>익숙하</lemma>
+    <comment>Frames file for '익숙하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>익숙하.01</id>
+      <edef>be familiar with</edef>
+      <roleset>
+	<role argnum="1" argrole="entity"/>
+	<role argnum="2" argrole="thing familiar with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>익숙하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>사실은 제가 그 지역에 아주 익숙하지 못합니다.</text>
+	  <parse>
+(S (NP-ADV 사실/NNC+은/PAU)
+   (S (NP-SBJ 제/NPN+이/PCA)
+      (VP (ADJP (NP-COMP 그/DAN
+                         지역/NNC+에/PAD)
+                (ADJP (ADVP 아주/ADV)
+                      (ADJP 익숙하/VJ+지/ECS)))
+          못하/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>사실은</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>그 지역</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>아주</term>
+	    </Arg>
+	    <Rel>
+	      <term>익숙하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못합니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>익숙해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>김 대통령의 건강 비결은 과거 선거 유세때 익숙해진 `이동중 토막 잠자기'였다는 게 비서진들의 설명이다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ (NP 김/NPR
+                          대통령/NNC+의/PAN)
+                      (NP 건강/NNC
+                          비결/NNC+은/PAU))
+              (VP (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *pro*)
+                            (VP (NP-ADV 과거/NNC
+                                        선거/NNC
+                                        유세/NNC+때/NNC)
+                                (VP (NP-COMP *T*-1)
+                                    (VV 익숙하/VJ+어지/XSV+은/EAN)))))
+                      (NP `/SLQ
+                          (NP 이동/NNC+중/NNX)
+                          (NP 토막/NNC
+                              잠자기/NNC)
+                          '/SRQ
+                          이/CO+었/EPF+다는/EAN))))
+           (NP 것/NNX+이/PCA))
+   (VP (NP (NP 비서진/NNC+들/XSF+의/PAN)
+           (NP 설명/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>과거 선거 유세때</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>*trace*=`이동중 토막 잠자기'</term>
+	    </Arg>
+	    <Rel>
+	      <term>익숙해진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

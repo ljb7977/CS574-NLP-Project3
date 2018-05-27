@@ -1,0 +1,102 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대비</lemma>
+    <comment>Frames file for '대비' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대비.01</id>
+      <edef>prepare</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="prepared for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대비하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>차기 임무에 대비해서 저희 포반에서는 산탄을 준비했습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 차기/NNC
+                   임무/NNC+에/PAD)
+          (VV 대비/NNC+하/XSV+어서/ECS)))
+   (S (NP-SBJ 저희/NPN
+              포반/NNC+에서/PCA+은/PAU)
+      (VP (NP-OBJ 산탄/NNC+을/PCA)
+          (VV 준비/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>차기 임무</term>
+	    </Arg>
+	    <Rel>
+	      <term>대비해서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>대비하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이스라엘 군부는 친 이스라엘 민병대인 남부레바논군(SLA)이 레바논 남부에서 헤즈볼라 세력에 대규모로 투항할 경우를 대비해 비상 철군계획을 수립했다고 이스라엘 공영 TV 방송이 1 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-SBJ 이스라엘/NPR
+                     군부/NNC+은/PAU)
+             (VP (VP (NP-OBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                           (S (NP-SBJ *T*-1)
+                                              (VP (NP 친/DAN
+                                                      이스라엘/NPR
+                                                      민병대/NNC+이/CO+은/EAN))))
+                                        (NP 남부/NNC+레바논/NPR+군/NNC
+                                            (PRN -LRB-/SLQ
+                                                 SLA/NFW
+                                                 -RRB-/SRQ)
+                                            이/PCA))
+                                (VP (NP-ADV 레바논/NPR
+                                            남부/NNC+에서/PAD)
+                                    (VP (NP-COMP 헤즈볼라/NPR
+                                                 세력/NNC+에/PAD)
+                                        (VP (NP-ADV 대규모/NNC+으로/PAD)
+                                            (VP (VV 투항/NNC+하/XSV+을/EAN))))))
+                             (NP 경우/NNC+을/PCA))
+                     (VV 대비/NNC+하/XSV+어/ECS))
+                 (VP (NP-OBJ 비상/NNC
+                             철군/NNC+계획/NNC+을/PCA)
+                     (VV 수립/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 이스라엘/NPR
+              공영/NNC
+              TV/NFW
+              방송/NNC+이/PCA)
+      (VP (NP-ADV 1/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-2)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>이스라엘 군부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>친 이스라엘 민병대인 남부레바논군(SLA)이 레바논 남부에서 헤즈볼라 세력에 대규모로 투항할 경우</term>
+	    </Arg>
+	    <Rel>
+	      <term>대비해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

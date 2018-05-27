@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부합</lemma>
+    <comment>Frames file for '부합' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부합.01</id>
+      <edef>correspond</edef>
+      <roleset>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="corresponding to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부합되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>관계자는 이러한 취지에 부합되는 인력은 어학능력을 포함, 충분한 자질을 갖춰야 하며 20 대의 대졸미취업자를 우선 대상으로 생각하고 있다며 관계기관 등과 함께 구체적 방안을 마련해 선발하게 될 것이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 관계자/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP-COMP 이러한/DAN
+                                                        취지/NNC+에/PAD)
+                                               (VV 부합/NNC+되/XSV+는/EAN))))
+                                     (NP 인력/NNC+은/PAU))
+                             (VP (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-OBJ 어학/NNC+능력/NNC+을/PCA)
+                                            (VV 포함/NNC)))
+                                     ,/SCM
+                                     (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *T*-2)
+                                                       (ADJP 충분하/VJ+은/EAN)))
+                                                 (NP 자질/NNC+을/PCA))
+                                         갖추/VV+어야/ECS))
+                                 하/VX+으며/ECS))
+                          (VP (NP-OBJ (NP 20/NNU
+                                          대/NNX+의/PAN)
+                                      (NP 대졸/NNC+미/XPF+취업자/NNC+을/PCA))
+                              (NP-COMP 우선/NNC
+                                       대상/NNC+으로/PAD)
+                              (VV 생각/NNC+하/XSV+고/ECS)))
+                      있/VX+다며/ECS))
+               (S (NP-SBJ *pro*)
+                  (VP (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (ADVP (NP-COMP (NP 관계/NNC+기관/NNC)
+                                                    (NP 등/NNX+과/PAD))
+                                           함께/ADV)
+                                     (VP (NP-OBJ (NP 구체/NNC+적/XSF)
+                                                 (NP 방안/NNC+을/PCA))
+                                         (VV 마련/NNC+하/XSV+어/ECS))))
+                              (VP (NP-OBJ *pro*)
+                                  (VV 선발/NNC+하/XSV+게/ECS)))
+                          되/VX+을/EAN)
+                      (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=인력</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>이러한 취지</term>
+	    </Arg>
+	    <Rel>
+	      <term>부합되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

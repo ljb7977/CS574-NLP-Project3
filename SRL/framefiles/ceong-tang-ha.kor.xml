@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>정당하</lemma>
+    <comment>Frames file for '정당하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>정당하.01</id>
+      <edef>just</edef>
+      <roleset>
+	<role argnum="1" argrole="thing just"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>정당하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>라우 대통령은 지난해 말 언론의 폭로로 `비행기 스캔들'이 확산되자 서부독일주은행의 전세기를 44 번이나 이용한 사실은 시인했으나 이들 경우 모두가 정당한 업무수행 목적을 갖고 있었다고 주장한 바 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 라우/NPR
+              대통령/NNC+은/PAU)
+      (VP (S (NP-ADV 지난해/NNC
+			   말/NNX)
+	     (NP-ADV (NP 언론/NNC+의/PAN)
+		     (NP 폭로/NNC+으로/PAD))
+	     (S (NP-SBJ `/SLQ
+			비행기/NNC
+			스캔들/NNC
+			'/SRQ
+			이/PCA)
+		(VP (VV 확산/NNC+되/XSV+자/ECS))))
+          (VP (NP-OBJ (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (NP 서부/NNC+독일/NPR+주/NNC+은행/NNC+의/PAN)
+                                     (NP 전세기/NNC+을/PCA))
+                             (VP (NP-ADV 44/NNU
+                                         번/NNX+이나/PAU)
+                                 (VP (VV 이용/NNC+하/XSV+은/EAN)))))
+                      (NP 사실/NNC+은/PAU))
+              (VV 시인/NNC+하/XSV+었/EPF+으나/ECS))))
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (S-COMP (NP-SBJ 이/NPN+들/XSF
+                                     경우/NNC
+                                     모두/NNC+이/PCA)
+                             (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (ADJP 정당하/VJ+은/EAN)))
+                                             (NP 업무/NNC+수행/NNC
+                                                 목적/NNC+을/PCA))
+                                     갖/VV+고/ECS)
+                                 있/VX+었/EPF+다/EFN+고/PAD))
+                     (VV 주장/NNC+하/XSV+은/EAN)))
+              (NP 바/NNX))
+      (ADJP 있/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=업무수행 목적</term>
+	    </Arg>
+	    <Rel>
+	      <term>정당한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>내한</lemma>
+    <comment>Frames file for '내한' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>내한.01</id>
+      <edef>visit Korea</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내한하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>라이언 총장은 98 년에 이어 두번째로 19 일 내한했으며, 경기도 평택과 전북 군산의 주한 미공군기지를 방문한 뒤 22 일 우리나라를 떠날 예정이다.</text>
+	  <parse>
+(S (S (NP-SBJ 라이언/NPR
+              총장/NNC+은/PAU)
+      (VP (ADVP (ADVP (NP-COMP 98/NNU
+			       년/NNX+에/PAD)
+		      이어/ADV)
+		(NP-ADV 두/NNU+번/NNX+째/XSF+으로/PAD))
+          (NP-ADV 19/NNU
+                  일/NNX)
+          (VP (VV 내한/NNC+하/XSV+었/EPF+으며/ECS))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ *pro*)
+                 (VP (NP-ADV (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ (NP (NP 경기도/NPR
+                                                    평택/NPR+과/PCJ)
+                                                (NP 전북/NPR
+                                                    군산/NPR+의/PAN))
+                                            (NP 주한/NNC
+                                                미/NPR+공군/NNC+기지/NNC+을/PCA))
+                                    (VV 방문/NNC+하/XSV+은/EAN)))
+                             (NP 뒤/NNC))
+                     (NP-ADV 22/NNU
+                             일/NNX)
+                     (VP (NP-OBJ 우리나라/NNC+을/PCA)
+                         떠나/VV+을/EAN)))
+              (NP 예정/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>라이언 총장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>98 년에 이어 두번째로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>19 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>내한했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

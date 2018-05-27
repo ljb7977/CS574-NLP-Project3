@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가석방</lemma>
+    <comment>Frames file for '가석방' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가석방.01</id>
+      <edef>parole</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="person paroled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가석방되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>모란은 5 천달러의 보석금을 내고 가석방됐으나 예비심리 일자는 아직 결정되지 않았다.</text>
+	  <parse>
+(S (S (NP-SBJ 모란/NPR+은/PAU)
+      (VP (VP (NP-OBJ (NP 5/NNU
+                          천/NNU+달러/NNX+의/PAN)
+                      (NP 보석금/NNC+을/PCA))
+              내/VV+고/ECS)
+          (VP (VV 가석방/NNC+되/XSV+었/EPF+으나/ECS))))
+   (S (NP-SBJ 예비/NNC+심리/NNC
+              일자/NNC+은/PAU)
+      (VP (VP (ADVP 아직/ADV)
+              (VP (VV 결정/NNC+되/XSV+지/ECS)))
+          않/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>모란</term>
+	    </Arg>
+	    <Rel>
+	      <term>가석방됐으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

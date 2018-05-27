@@ -1,0 +1,117 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부각</lemma>
+    <comment>Frames file for '부각' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부각.01</id>
+      <edef>bring into relief</edef>
+      <roleset>
+	<role argnum="0" argrole="bringer"/>
+	<role argnum="1" argrole="thing brought into relief"/>
+	<role argnum="2" argrole="attribute of arg1"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부각되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한편 베를린이 남한과 북한 모두에게 중요한 장소로 부각되는 듯한 분위기가 조성되고 있어 관심을 끌고 있다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ (S (NP-SBJ 베를린/NPR+이/PCA)
+                 (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (ADJP (NP-COMP (NP (NP 남한/NPR+과/PCJ)
+                                                           (NP 북한/NPR))
+                                                       (NP 모두/NNC+에게/PAD))
+                                              (VJ 중요/NNC+하/XSJ+은/EAN))))
+                                  (NP 장소/NNC+으로/PAD))
+                         (VV 부각/NNC+되/XSV+는/EAN))
+                     듯하/VX+은/EAN))
+              (NP 분위기/NNC+이/PCA))
+      (VP (VP (VV 조성/NNC+되/XSV+고/ECS))
+          있/VX+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 관심/NNC+을/PCA)
+              끌/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>베를린</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>남한과 북한 모두에게 중요한 장소</term>
+	    </Arg>
+	    <Rel>
+	      <term>부각되는</term>
+	    </Rel>
+	    <Aux>
+	      <f>는</f>
+	      <term>듯한</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>부각시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일본은 그러나 대북 식량지원이 본격적인 경제원조와는 별개로 어디까지나 인도적 차원임을 부각시키기 위해 WFP를 통해 지원하는 방식을 택하기로 했다고 신문은 덧붙였다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 일본/NPR+은/PAU)
+             (VP (ADCP 그러나/ADC)
+                 (VP (VP (S (NP-SBJ *pro*)
+                            (VP (S-OBJ (NP-SBJ *pro*)
+				       (VP (S-OBJ (NP-SBJ 대/XPF+북/NPR
+							    식량/NNC+지원/NNC+이/PCA)
+						  (VP (NP-ADV (NP-COMP (S (WHNP-2 *op*)
+									  (S (NP-SBJ *T*-2)
+									     (VP (NP 본격/NNC+적/XSF+이/CO+은/EAN))))
+								       (NP 경제/NNC+원조/NNC+과/PAD+은/PAU))
+							      별개/NNC+으로/PAD)
+						      (NP-ADV 어디/NPN+까지/PAU+이나/PAU)
+						      (VP (NP 인도/NNC+적/XSF
+								  차원/NNC+이/CO+음/ENM+을/PCA))))
+					   (VV 부각/NNC+시키/XSV+기/ENM)))
+                                위하/VV+어/ECS))
+                         (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                        (VP (S (NP-SBJ *pro*)
+                                               (VP (NP-OBJ WFP/NFW+을/PCA)
+                                                   통하/VV+어/ECS))
+                                            (VP (NP-OBJ *pro*)
+                                                (NP-COMP *pro*)
+                                                (VV 지원/NNC+하/XSV+는/EAN))))
+                                     (NP 방식/NNC+을/PCA))
+                             택하/VV+기/ENM+으로/PAD))
+                     하/VX+었/EPF+다/EFN+고/PAD)))
+   (S (NP-SBJ 신문/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대북 식량지원이 본격적인 경제원조와는 별개로 어디까지나 인도적 차원임</term>
+	    </Arg>
+	    <Rel>
+	      <term>부각시키기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

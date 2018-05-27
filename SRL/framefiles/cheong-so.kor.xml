@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>청소</lemma>
+    <comment>Frames file for '청소' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>청소.01</id>
+      <edef>clean</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing cleaned"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>청소하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>제가 어제 대대 탄약 공급소를 청소했습니다.</text>
+	  <parse>
+(S (NP-SBJ 제/NPN+이/PCA)
+   (VP (NP-ADV 어제/NNC)
+       (VP (NP-OBJ 대대/NNC
+                   탄약/NNC
+                   공급소/NNC+을/PCA)
+           (VV 청소/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>어제</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>대대 탄약 공급소</term>
+	    </Arg>
+	    <Rel>
+	      <term>청소했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

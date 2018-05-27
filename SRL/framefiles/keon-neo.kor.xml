@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>건너</lemma>
+    <comment>Frames file for '건너' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>건너.01</id>
+      <edef>cross</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="barrier"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>건너다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 도로를 건너서 곧장 연대 지역으로 들어갑니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 그/DAN
+                  도로/NNC+을/PCA)
+          건너/VV+어서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 곧장/ADV)
+          (VP (NP-COMP 연대/NNC
+                       지역/NNC+으로/PAD)
+              들어가/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>그 도로</term>
+	    </Arg>
+	    <Rel>
+	      <term>건너서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

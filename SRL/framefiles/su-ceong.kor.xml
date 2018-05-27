@@ -1,0 +1,204 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수정</lemma>
+    <comment>Frames file for '수정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수정.01</id>
+      <edef>correct</edef>
+      <roleset>
+	<role argnum="0" argrole="corrector"/>
+	<role argnum="1" argrole="thing being wrong"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수정하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>제1 단계에서는, 대략적인 사격 방향에 대한, 각 사격 진지에 대한 좌표, 기상 제원, 그리고 포반이 수정해야 할 사거리 등을 받습니다.</text>
+	  <parse>
+(S (NP-ADV 제/XPF+1/NNU
+           단계/NNC+에서/PAD+은/PAU)
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP (NP (S (WHNP-3 *op*)
+                             (S (NP-SBJ *T*-3)
+                                (VP (NP-COMP (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (VP (NP 대략/NNC+적/XSF+이/CO+은/EAN))))
+                                             (NP 사격/NNC
+                                                 방향/NNC+에/PAD))
+                                    대하/VV+은/EAN)))
+                          ,/SCM
+                          (NP (S (WHNP-4 *op*)
+                                 (S (NP-SBJ *T*-4)
+                                    (VP (NP-COMP 각/DAN
+                                                 사격/NNC
+                                                 진지/NNC+에/PAD)
+                                        대하/VV+은/EAN)))
+                              (NP 좌표/NNC)))
+                      ,/SCM
+                      (NP 기상/NNC
+                          제원/NNC)
+                      ,/SCM
+                      (ADCP 그리고/ADC)
+                      (NP (S (WHNP-2 *op*)
+                             (S (NP-SBJ 포반/NNC+이/PCA)
+                                (VP (VP (NP-OBJ *T*-2)
+                                        (VV 수정/NNC+하/XSV+어야/ECS))
+                                    하/VX+을/EAN)))
+                          (NP 사거리/NNC)))
+                  (NP 등/NNX+을/PCA))
+          받/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>포반</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=사거리</term>
+	    </Arg>
+	    <Rel>
+	      <term>수정해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>할</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>수정되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 공격 계획은 우리가 오늘밤에 그 집합 지역에 돌아가지 못하니까 수정될지 모릅니다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 공격/NNC
+              계획/NNC+은/PAU)
+      (VP (VP (S (NP-SBJ 우리/NPN+이/PCA)
+                 (VP (VP (NP-ADV 오늘밤/NNC+에/PAD)
+                         (VP (NP-COMP 그/DAN
+                                      집합/NNC
+                                      지역/NNC+에/PAD)
+                             돌아가/VV+지/ECS))
+                     못하/VX+으니까/ECS))
+              (VP (VV 수정/NNC+되/XSV+을지/EFN)))
+          모르/VX+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>공격 계획</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>우리가 오늘밤에 그 집합 지역에 돌아가지 못하니까</term>
+	    </Arg>
+	    <Rel>
+	      <term>수정될지</term>
+	    </Rel>
+	    <Aux>
+	      <f>을지</f>
+	      <term>모릅니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>수정.02</id>
+      <edef>fertilize</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="one part of gender"/>
+	<role argnum="2" argrole="other part of gender"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수정시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>법안은 또 이러한 체세포 핵이식에 의한 복제배 이외에 사람과 동물의 세포를 섞는 `인간성집합배(키메라배)'나 사람의 정자와 동물의 난자를 수정시키는 `사람동물 교잡배 또는 인간성융합배(하이브리드배)'를 자궁에 유입하는 것을 금지하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 법안/NNC+은/PAU)
+   (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (ADVP 또/ADV)
+                          (NP-ADV (NP (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (NP-COMP 이러한/DAN
+                                                         체세포/NNC
+                                                         핵/NNC+이식/NNC+에/PAD)
+                                                의하/VV+은/EAN)))
+                                      (NP 복제/NNC+배/NNC))
+                                  (NP 이외/NNC+에/PAD))
+                          (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+					     (VP (NP-OBJ (NP (NP 사람/NNC+과/PCJ)
+							     (NP 동물/NNC+의/PAN))
+							 (NP 세포/NNC+을/PCA))
+						 섞/VV+는/EAN))
+                                          (NP `/SLQ
+                                              인간성/NNC+집합/NNC+배/NNC
+                                              (PRN -LRB-/SLQ
+                                                   (NP 키메라/NPR+배/NNC)
+                                                   -RRB-/SRQ)
+                                              '/SRQ
+                                              이나/PCJ))
+                                      (NP (S (WHNP *op*)
+                                             (S (NP-SBJ *pro*)
+                                                (VP (NP-COMP (NP 사람/NNC+의/PAN)
+							     (NP 정자/NNC+과/PAD))
+						    (NP-OBJ (NP 동물/NNC+의/PAN)
+							    (NP 난자/NNC+을/PCA))
+                                                    (VV 수정/NNC+시키/XSV+는/EAN))))
+                                          (NP `/SLQ
+                                              (NP 사람/NNC+동물/NNC
+                                                  교잡/NNC+배/NNC)
+                                              (ADCP 또는/ADC)
+                                              (NP 인간성/NNC+융합/NNC+배/NNC
+                                                  (PRN -LRB-/SLQ
+                                                       (NP 하이브리드/NPR+배/NNC)
+                                                       -RRB-/SRQ))
+                                              '/SRQ
+                                              을/PCA)))
+                              (NP-COMP 자궁/NNC+에/PAD)
+                              (VV 유입/NNC+하/XSV+는/EAN))))
+                   (NP 것/NNX+을/PCA))
+           (VV 금지/NNC+하/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>사람의 정자</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>동물의 난자</term>
+	    </Arg>
+	    <Rel>
+	      <term>수정시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

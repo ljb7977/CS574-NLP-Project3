@@ -1,0 +1,100 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>얼</lemma>
+    <comment>Frames file for '얼' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>얼.01</id>
+      <edef>be frozen</edef>
+      <roleset>
+	<role argnum="1" argrole="thing freezing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>얼다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>사실은 그 도로에서 저수지와 같은 쪽에 얼음이 언 개울이 하나 있었지요.</text>
+	  <parse>
+(S (NP-ADV 사실/NNC+은/PAU)
+   (S (NP-COMP-2 (NP 그/DAN
+                     도로/NNC+에서/PAD)
+                 (NP (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (ADJP (NP-COMP 저수지/NNC+과/PAD)
+                                 (ADJP 같/VJ+은/EAN))))
+                     (NP 쪽/NNX+에/PAD)))
+      (S (NP-SBJ (S (WHNP *op*)
+                    (S (NP-SBJ 얼음/NNC+이/PCA)
+                       (VP 얼/VV+은/EAN)))
+                 (NP 개울/NNC+이/PCA))
+         (ADJP (NP-ADV 하나/NNU)
+               (ADJP (NP-COMP *T*-2)
+                     있/VJ+었/EPF+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>얼음</term>
+	    </Arg>
+	    <Rel>
+	      <term>언</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>사실은 그 진로 연변에 있는 기복 있는 고지들은 장갑 차량들이 쉽게 통과할 수 있고 그리고 논들은 얼어 있기 때문에 역시 탱크들이 빨리 횡단할 수 있지요</text>
+	  <parse>
+(S (NP-ADV 사실/NNC+은/PAU)
+   (S (NP-OBJ-2 (S (WHNP-1 *op*)
+                   (S (NP-SBJ *T*-1)
+                      (ADJP (NP-COMP 그/DAN
+                                     진로/NNC
+                                     연변/NNC+에/PAD)
+                            있/VJ+는/EAN)))
+                (NP (S (WHNP-3 *op*)
+                       (S (NP-SBJ 기복/NNC)
+                          (ADJP (NP-COMP *T*-3)
+                                있/VJ+는/EAN)))
+                    (NP 고지/NNC+들/XSF+은/PAU)))
+      (S (NP-SBJ 장갑/NNC
+                 차량/NNC+들/XSF+이/PCA)
+         (VP (VP (ADVP (ADV 쉽/VJ+게/ECS))
+                 (VP (NP-OBJ *T*-2)
+                     (VV 통과/NNC+하/XSV+을/EAN)))
+             (VX 수/NNX
+                 있/VJ+고/ECS))))
+   (ADCP 그리고/ADC)
+   (S (NP-ADV (S (NP-SBJ 논/NNC+들/XSF+은/PAU)
+                 (VP (VP 얼/VV+어/ECS)
+                     있/VX+기/ENM))
+              (NP 때문/NNX+에/PAD))
+      (ADVP 역시/ADV)
+      (S (NP-SBJ 탱크/NNC+들/XSF+이/PCA)
+         (VP (VP (ADVP 빨리/ADV)
+                 (VP (NP-OBJ *pro*)
+                     (VV 횡단/NNC+하/XSV+을/EAN)))
+             (VX 수/NNX
+                 있/VJ+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>논들</term>
+	    </Arg>
+	    <Rel>
+	      <term>얼어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

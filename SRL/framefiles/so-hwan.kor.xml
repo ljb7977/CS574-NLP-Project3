@@ -1,0 +1,220 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소환</lemma>
+    <comment>Frames file for '소환' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>소환.01</id>
+      <edef>summon</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing summoned"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소환하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>영국 외무부는 짐바브웨 공항 세관이 영국의 외교행낭을 강제로 개봉한 것에 항의해 9 일 짐바브웨 주재 대사를 소환했다.</text>
+	  <parse>
+(S (S (NP-SBJ 영국/NPR
+              외무부/NNC+은/PAU)
+      (VP (NP-COMP (S (NP-SBJ 짐바브웨/NPR
+                              공항/NNC
+                              세관/NNC+이/PCA)
+                      (VP (NP-OBJ (NP 영국/NPR+의/PAN)
+                                  (NP 외교/NNC+행낭/NNC+을/PCA))
+                          (VP (NP-ADV 강제/NNC+으로/PAD)
+                              (VP (VV 개봉/NNC+하/XSV+은/EAN)))))
+                   (NP 것/NNX+에/PAD))
+          (VV 항의/NNC+하/XSV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV 9/NNU
+		  일/NNX)
+          (VP (NP-OBJ 짐바브웨/NPR
+                      주재/NNC
+                      대사/NNC+을/PCA)
+              (VV 소환/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>영국 외무부는 짐바브웨 공항 세관이 영국의 외교행낭을 강제로 개봉한 것에 항의해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>9 일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>짐바브웨 주재 대사</term>
+	    </Arg>
+	    <Rel>
+	      <term>소환했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>소환하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>검, 군 병역비리 합동 수사반(공동본부장 이승구 서울지검 특수 1 부장, 서영득 국방부 검찰부장)은 20 일 병역비리 의혹을 받고 있는 야당 소속 L 의원의 아들 2 명을 22 일 소환키로 하는 등 전, 현직 의원 27 명의 아들 31 명에 대한 본격 소환조사에 착수했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 검/NNC
+               ,/SCM
+               군/NNC)
+           (NP 병역/NNC+비리/NNC
+               합동/NNC
+               수사반/NNC)
+           (PRN -LRB-/SLQ
+                (NP (NP 공동본부장/NNC)
+                    (NP (NP 이승구/NPR)
+                        (NP 서울/NPR+지검/NNC
+                            특수/NNC
+                            1/NNU
+                            부장/NNC))
+                    ,/SCM
+                    (NP (NP 서영득/NPR)
+                        (NP 국방부/NNC
+                            검찰/NNC+부장/NNC)))
+                -RRB-/SRQ)
+           은/PAU)
+   (VP (NP-ADV 20/NNU
+               일/NNX)
+       (VP (NP-COMP (NP (S (NP-SBJ *pro*)
+                           (VP (S-COMP (NP-SBJ *pro*)
+				       (VP (NP-OBJ (S (WHNP-1 *op*)
+						      (S (NP-SBJ *T*-1)
+							 (VP (VP (NP-OBJ 병역/NNC+비리/NNC
+									     의혹/NNC+을/PCA)
+								 받/VV+고/ECS)
+							     있/VX+는/EAN)))
+						   (NP (NP (NP 야당/NNC
+								   소속/NNC)
+							   (NP L/NFW
+							       의원/NNC+의/PAN))
+						       (NP 아들/NNC
+							       2/NNU
+							       명/NNX+을/PCA)))
+					   (VP (NP-ADV 22/NNU
+						       일/NNX)
+					       (VP (VV 소환/NNC+하/XSV+기/ENM+으로/PAD)))))
+                               하/VV+는/EAN))
+                        (NP 등/NNX))
+                    (NP (S (WHNP-2 *op*)
+                           (S (NP-SBJ *T*-2)
+                              (VP (NP-COMP (NP 전/NNC
+                                               ,/SCM
+                                               현직/NNC
+                                               의원/NNC
+                                               27/NNU
+                                               명/NNX+의/PAN)
+                                           (NP 아들/NNC
+                                               31/NNU
+                                               명/NNX+에/PAD))
+                                  대하/VV+은/EAN)))
+                        (NP 본격/NNC
+                            소환/NNC+조사/NNC+에/PAD)))
+           (VV 착수/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>병역비리 의혹을 받고 있는 야당 소속 L 의원의 아들 2 명</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>22 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>소환키로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>소환되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>H씨는 이에 앞서 미주통일신문 발행인 배부전씨에 대한 재판에서도 증인으로 소환됐다가 배씨의 반성문을 받은 뒤 고소를 취하했지만 스포츠지 등에 대해서는 2 억 2 천만원의 민사소송을 제기한 상태여서 증인 소환을 피하기 어려울 것으로 보인다.</text>
+	  <parse>
+(S (S (S (NP-SBJ H/NFW+씨/NNX+은/PAU)
+         (VP (ADVP (NP-COMP 이/NPN+에/PAD)
+                   앞서/ADV)
+             (NP-ADV (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (NP-COMP 미주/NNC+통일/NNC+신문/NNC
+                                        발행인/NNC
+                                        배부전/NPR+씨/NNX+에/PAD)
+                               대하/VV+은/EAN)))
+                     (NP 재판/NNC+에서/PAD+도/PAU))
+             (NP-ADV 증인/NNC+으로/PAD)
+             (VP (VV 소환/NNC+되/XSV+었/EPF+다가/ECS))))
+      (S (NP-SBJ *pro*)
+         (VP (NP-ADV (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP 배/NPR+씨/NNX+의/PAN)
+                                    (NP 반성문/NNC+을/PCA))
+                            받/VV+은/EAN))
+                     (NP 뒤/NNC))
+             (VP (NP-OBJ 고소/NNC+을/PCA)
+                 (VV 취하/NNC+하/XSV+었/EPF+지만/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (S (NP-SBJ *pro*)
+                         (VP (NP (S (NP-SBJ *pro*)
+                                    (VP (S (NP-SBJ *pro*)
+                                           (VP (NP-COMP (NP 스포츠/NNC+지/NNX)
+                                                        (NP 등/NNX+에/PAD))
+                                               대하/VV+어서/ECS+은/PAU))
+                                        (VP (NP-OBJ (NP 2/NNU
+                                                        억/NNU
+                                                        2/NNU
+                                                        천만/NNU+원/NNX+의/PAN)
+                                                    (NP 민사/NNC+소송/NNC+을/PCA))
+                                            (VV 제기/NNC+하/XSV+은/EAN))))
+                                 (NP 상태/NNC+이/CO+어서/ECS))))
+                      (S (S-SBJ (NP-SBJ *pro*)
+                                (VP (NP-OBJ 증인/NNC
+                                            소환/NNC+을/PCA)
+                                    피하/VV+기/ENM))
+                         (ADJP 어렵/VJ+을/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>H씨</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이에 앞서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>미주통일신문 발행인 배부전씨에 대한 재판에서도</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>증인으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>소환됐다가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

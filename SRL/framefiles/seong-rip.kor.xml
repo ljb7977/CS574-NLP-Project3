@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>성립</lemma>
+    <comment>Frames file for '성립' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>성립.01</id>
+      <edef>form</edef>
+      <roleset>
+	<role argnum="0" argrole="creator"/>
+	<role argnum="1" argrole="thing cteated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>성립되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 가운데 3 억달러는 5 일 현재 이미 가계약이 성립된 것으로 알려졌으며 나머지 7 억달러에 대해서는 오는 5 월과 7 월 두 차례에 걸친 이탈리아 기업인들의 내한시 상세한 내역이 확정될 예정이다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 이/DAN
+                  가운데/NNC)
+              (NP 3/NNU
+                  억/NNU+달러/NNX+은/PAU))
+      (VP (NP-COMP (S (NP-ADV 5/NNU
+                              일/NNX
+                              현재/NNC)
+                      (ADVP 이미/ADV)
+                      (S (NP-SBJ 가계약/NNC+이/PCA)
+                         (VP (VV 성립/NNC+되/XSV+은/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (S (NP-SBJ *pro*)
+                    (VP (NP-COMP 나머지/NNC
+                                 7/NNU
+                                 억/NNU+달러/NNX+에/PAD)
+                        대하/VV+어서/ECS+은/PAU))
+                 (NP-ADV (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (VP (NP-COMP (NP (NP 오는/DAN
+                                                    5/NNU
+                                                    월/NNX+과/PCJ)
+                                                (NP 7/NNU
+                                                    월/NNX))
+                                            (NP 두/NNU
+                                                차례/NNX+에/PAD))
+                                   걸치/VV+은/EAN)))
+                         (NP (NP 이탈리아/NPR
+                                 기업인/NNC+들/XSF+의/PAN)
+                             (NP 내한/NNC+시/NNX)))
+                 (S (NP-SBJ (S (WHNP-2 *op*)
+                               (S (NP-SBJ *T*-2)
+                                  (ADJP 상세하/VJ+은/EAN)))
+                            (NP 내역/NNC+이/PCA))
+                    (VP (VV 확정/NNC+되/XSV+을/EAN))))
+              (NP 예정/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>5 일 현재</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이미</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>가계약</term>
+	    </Arg>
+	    <Rel>
+	      <term>성립된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

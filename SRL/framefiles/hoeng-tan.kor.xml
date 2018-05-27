@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>횡단</lemma>
+    <comment>Frames file for '횡단' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>횡단.01</id>
+      <edef>cross</edef>
+      <roleset>
+	<role argnum="0" argrole="entity in motion"/>
+	<role argnum="1" argrole="barrier"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>횡단하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>장갑 차량들은 기복이 있는 고지를 쉽게 횡단했습니다.</text>
+	  <parse>
+(S (NP-SBJ 장갑/NNC
+           차량/NNC+들/XSF+은/PAU)
+   (VP (NP-OBJ (S (WHNP-1 *op*)
+                  (S (NP-SBJ 기복/NNC+이/PCA)
+                     (ADJP (NP-COMP *T*-1)
+                           있/VJ+는/EAN)))
+               (NP 고지/NNC+을/PCA))
+       (VP (ADVP (ADV 쉽/VJ+게/ECS))
+           (VP (VV 횡단/NNC+하/XSV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>장갑 차량들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>기복이 있는 고지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>쉽게</term>
+	    </Arg>
+	    <Rel>
+	      <term>횡단했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

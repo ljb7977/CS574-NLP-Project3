@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>힘들</lemma>
+    <comment>Frames file for '힘들' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>힘들.01</id>
+      <edef>difficult</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being difficult"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>힘들다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 트럭들이 정비가 너무나도 잘 돼 있어서 얼마나 오래 되었는지 알기 힘들지요.</text>
+	  <parse>
+(S (S (NP-SBJ 그/DAN
+              트럭/NNC+들/XSF+이/PCA)
+      (VP (VP (NP-COMP 정비/NNC+이/PCA)
+              (VP (ADVP (ADVP 너무나/ADV+도/PAU)
+                        (ADVP 잘/ADV))
+                  (VP 되/VV+어/ECS)))
+          있/VX+어서/ECS))
+   (S (S-SBJ (NP-SBJ *pro*)
+             (VP (S-OBJ (NP-SBJ *pro*)
+                        (ADJP (ADVP 얼마나/ADV)
+                              (ADJP 오래되/VJ+었/EPF+는지/EFN)))
+                 알/VV+기/ENM))
+      (ADJP 힘들/VJ+지요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>그 트럭들이 정비가 너무나도 잘 돼 있어서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>얼마나 오래 되었는지 알기</term>
+	    </Arg>
+	    <Rel>
+	      <term>힘들지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

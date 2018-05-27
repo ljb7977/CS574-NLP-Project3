@@ -1,0 +1,174 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>배제</lemma>
+    <comment>Frames file for '배제' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>배제.01</id>
+      <edef>exclude</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing excluded"/>
+	<role argnum="2" argrole="excluded from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>배제하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 그러나 미 육군이 책임자들에 대한 형사 기소 가능성도 배제하지는 않고 있다며 더 이상의 자세한 사실이나 지금까지 조사한 내용을 공개하지는 않았다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S (NP-SBJ 미/NPR
+                      육군/NNC+이/PCA)
+              (VP (VP (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (NP-COMP 책임자/NNC+들/XSF+에/PAD)
+                                                대하/VV+은/EAN)))
+                                      (NP 형사/NNC
+                                          기소/NNC))
+                                  (NP 가능성/NNC+도/PAU))
+                          (VV 배제/NNC+하/XSV+지/EFN+은/PAU))
+                      않/VX+고/ECS)
+                  있/VX+다며/ECS))
+           (VP (VP (NP-OBJ (NP (NP (ADVP 더/ADV)
+                                   이상/NNC+의/PAN)
+                               (NP (S (WHNP-2 *op*)
+                                      (S (NP-SBJ *T*-2)
+                                         (ADJP 자세하/VJ+은/EAN)))
+                                   (NP 사실/NNC+이나/PCJ)))
+                           (NP (S (WHNP-3 *op*)
+                                  (S (NP-SBJ *pro*)
+                                     (VP (NP-ADV 지금/NNC+까지/PAU)
+                                         (VP (NP-OBJ *T*-3)
+                                             (VV 조사/NNC+하/XSV+은/EAN)))))
+                               (NP 내용/NNC+을/PCA)))
+                   (VV 공개/NNC+하/XSV+지/EFN+은/PAU))
+               않/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>미 육군</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>책임자들에 대한 형사 기소 가능성</term>
+	    </Arg>
+	    <Rel>
+	      <term>배제하지는</term>
+	    </Rel>
+	    <Aux>
+	      <f>지는</f>
+	      <term>않고</term>
+	    </Aux>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>배제되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전진 부산시 행정부시장은 8 일 아시안게임 및 월드컵 준비상황을 점검하기 위해 부산을 방문한 국회 국제경기 특위 수석전문위원에게 "새천년 첫 36 억 아시안의 화합과 평화의 장에 북한이 배제될 수 없다"고 말하고 "북한참가를 유도하기 위한 지원과 함께 한민족의 성지인 백두산에서 성화 채화를 할 수 있도록 국회와 정부차원의 지원이 필요하다"고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 전진/NPR
+           부산시/NPR
+           행정부/NNC+시장/NNC+은/PAU)
+   (VP (NP-ADV 8/NNU
+               일/NNX)
+       (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                           (S (NP-SBJ *T*-1)
+                              (VP (VP (S-OBJ (NP-SBJ *pro*)
+					     (VP (NP-OBJ (NP (NP 아시안게임/NNC)
+							     (ADCP 및/ADC)
+							     (NP 월드컵/NPR))
+							 (NP 준비/NNC+상황/NNC+을/PCA))
+						 (VV 점검/NNC+하/XSV+기/ENM)))
+                                      위하/VV+어/ECS)
+                                  (VP (NP-OBJ 부산/NPR+을/PCA)
+                                      (VV 방문/NNC+하/XSV+은/EAN)))))
+                        (NP 국회/NNC
+                            국제/NNC+경기/NNC
+                            특위/NNC
+                            수석/NNC+전문/NNC+위원/NNC+에게/PAD))
+               (S-COMP "/SLQ
+                       (NP-COMP-4 (NP 새천년/NNC)
+                                  (NP 첫/NNU)
+                                  (NP (NP (NP 36/NNU
+                                              억/NNU
+                                              아시안/NPR+의/PAN)
+                                          (NP (NP 화합/NNC+과/PCJ)
+                                              (NP 평화/NNC+의/PAN)))
+                                      (NP 장/NNC+에/PAD)))
+                       (S (NP-SBJ 북한/NPR+이/PCA)
+                          (VP (VP (NP-COMP *T*-4)
+                                  (VV 배제/NNC+되/XSV+을/EAN))
+                              (VX 수/NNX
+                                  없/VJ+다/EFN)))
+                       "/SRQ
+                       고/PAD)
+               말하/VV+고/ECS)
+           (VP (S-COMP "/SLQ
+                       (ADVP (NP-COMP (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (VP (S-OBJ (NP-SBJ *pro*)
+						       (VP (NP-OBJ 북한/NPR+참가/NNC+을/PCA)
+							   (VV 유도/NNC+하/XSV+기/ENM)))
+                                                위하/VV+은/EAN)))
+                                      (NP 지원/NNC+과/PAD))
+                             함께/ADV)
+                       (S (S (NP-SBJ *pro*)
+                             (VP (VP (NP-ADV (S (WHNP-3 *op*)
+                                                (S (NP-SBJ *T*-3)
+                                                   (VP (NP (NP 한민족/NNC+의/PAN)
+                                                           (NP 성지/NNC+이/CO+은/EAN)))))
+                                             (NP 백두산/NPR+에서/PAD))
+                                     (VP (NP-OBJ 성화/NNC
+                                                 채화/NNC+을/PCA)
+                                         하/VV+을/EAN))
+                                 (VX 수/NNX
+                                     있/VJ+도록/ECS)))
+                          (S (NP-SBJ (NP (NP 국회/NNC+과/PCJ)
+                                         (NP 정부/NNC+차원/NNC+의/PAN))
+                                     (NP 지원/NNC+이/PCA))
+                             (ADJP (VJ 필요/NNC+하/XSJ+다/EFN))))
+                       "/SRQ
+                       고/PAD)
+               밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>새천년 첫 36 억 아시안의 화합과 평화의 장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Rel>
+	      <term>배제될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>곤두박질치</lemma>
+    <comment>Frames file for '곤두박질치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>곤두박질치.01</id>
+      <edef>fall headfirst</edef>
+      <roleset>
+	<role argnum="1" argrole="thing falling"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>곤두박질치다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>미래와 사람 주식이 16 일 인터넷 경매전문 자회사인 옥션의 코스닥 등록 보류 판정의 여파로 하한가로 곤두박질쳤다.</text>
+	  <parse>
+(S (NP-SBJ 미래/NNC+과/PCJ
+           사람/NNC
+           주식/NNC+이/PCA)
+   (VP (NP-ADV 16/NNU
+               일/NNX)
+       (NP-ADV (NP (NP (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP 인터넷/NNC
+                                     경매/NNC+전문/NNC
+                                     자회사/NNC+이/CO+은/EAN))))
+                       (NP 옥션/NPR+의/PAN))
+                   (NP 코스닥/NPR
+                       등록/NNC
+                       보류/NNC
+                       판정/NNC+의/PAN))
+               (NP 여파/NNC+으로/PAD))
+       (VP (NP-COMP 하한가/NNC+으로/PAD)
+           곤두박질치/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>미래와 사람 주식</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>16 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>인터넷 경매전문 자회사인 옥션의 코스닥 등록 보류 판정의 여파로</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>하한가</term>
+	    </Arg>
+	    <Rel>
+	      <term>곤두박질쳤다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

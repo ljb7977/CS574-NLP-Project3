@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>춥</lemma>
+    <comment>Frames file for '춥' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>춥.01</id>
+      <edef>cold</edef>
+      <roleset>
+	<role argnum="1" argrole="weather"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>춥다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>극히 추운 날씨에도 불구하고 노상행군을 5일간 계속했습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP (ADVP 극히/ADV)
+                               (ADJP 춥/VJ+은/EAN))))
+                   (NP 날씨/NNC+에/PAD+도/PAU))
+          불구하/VV+고/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 노상/NNC
+                  행군/NNC+을/PCA)
+          (VP (NP-ADV 5/NNU
+                      일/NNX+간/XSF)
+              (VP (VV 계속/NNC+하/XSV+었/EPF+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=날씨</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>극히</term>
+	    </Arg>
+	    <Rel>
+	      <term>추운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>추워지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>눈이 오고 나서 더 추워졌다.</text>
+	  <parse>
+(S (S (NP-SBJ 눈/NNC+이/PCA)
+      (VP (VP 오/VV+고/ECS)
+          나/VX+어서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 더/ADV)
+          (VP (VV 춥/VJ+어지/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>눈이 오고 나서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더</term>
+	    </Arg>
+	    <Rel>
+	      <term>추워졌다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

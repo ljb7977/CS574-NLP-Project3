@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>밀집</lemma>
+    <comment>Frames file for '밀집' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>밀집.01</id>
+      <edef>cluster</edef>
+      <roleset>
+	<role argnum="1" argrole="thing clustered"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>밀집되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이를 위해 벤처기업이 밀집돼 있는 서울 강남지역에 ASIC 산업지원센터를 설치하고 이곳을 중심으로 설계업체와 시스템업체, 전문투자, 마케팅, 컨설팅업체들을 집적해 'ASIC 타운'을 조성키로 했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 이/NPN+을/PCA)
+          위하/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ 벤처/NNC+기업/NNC+이/PCA)
+                                                (VP (VP (NP-COMP *T*-1)
+                                                        (VV 밀집/NNC+되/XSV+어/ECS))
+                                                    있/VX+는/EAN)))
+                                          (NP 서울/NPR
+                                              강남/NPR+지역/NNC+에/PAD))
+                                 (NP-OBJ ASIC/NFW
+                                         산업/NNC+지원/NNC+센터/NNC+을/PCA)
+                                 (VV 설치/NNC+하/XSV+고/ECS))
+                             (VP (NP-ADV (NP-OBJ 이곳/NPN+을/PCA)
+                                         중심/NNC+으로/PAD)
+                                 (VP (NP-OBJ (NP 설계/NNC+업체/NNC+과/PCJ)
+                                             (NP 시스템/NNC+업체/NNC)
+                                             ,/SCM
+                                             (NP 전문/NNC+투자/NNC)
+                                             ,/SCM
+                                             (NP 마케팅/NNC)
+                                             ,/SCM
+                                             (NP 컨설팅/NNC+업체/NNC+들/XSF+을/PCA))
+                                     (VV 집적/NNC+하/XSV+어/ECS)))))
+                      (VP (NP-OBJ '/SLQ
+                                  ASIC/NFW
+                                  타운/NNC
+                                  '/SRQ
+                                  을/PCA)
+                          (VV 조성/NNC+하/XSV+기/ENM+으로/PAD))))
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>벤처기업</term>
+	    </Arg>
+	    <Arg n="2">
+	      <term>*trace*=서울 강남지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>밀집돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

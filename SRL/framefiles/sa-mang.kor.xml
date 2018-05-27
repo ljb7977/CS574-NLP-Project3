@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>사망</lemma>
+    <comment>Frames file for '사망' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>사망.01</id>
+      <edef>die</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="entity dying"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>사망하다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 국제사회의 원조에도 불구하고 "북한 주민들은 여전히 기아로 사망하고 있다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (NP 국제/NNC+사회/NNC+의/PAN)
+                               (NP 원조/NNC+에/PAD+도/PAU))
+                      불구하/VV+고/ECS))
+               (S "/SLQ
+                  (NP-SBJ 북한/NPR
+                          주민/NNC+들/XSF+은/PAU)
+                  (VP (VP (ADVP 여전히/ADV)
+                          (VP (NP-COMP 기아/NNC+으로/PAD)
+                              (VV 사망/NNC+하/XSV+고/ECS))
+                      있/VX+다/EFN))
+                  "/SRQ
+                  고/PAD))
+       (VV 강조/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>국제사회의 원조에도 불구하고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>북한 주민들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>여전히</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>로</f>
+	      <term>기아</term>
+	    </Arg>
+	    <Rel>
+	      <term>사망하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

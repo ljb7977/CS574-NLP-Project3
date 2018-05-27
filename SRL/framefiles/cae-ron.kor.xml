@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재론</lemma>
+    <comment>Frames file for '재론' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재론.01</id>
+      <edef>rediscuss</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing rediscussed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재론하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한은 8 일 관영 중앙통신 논평을 통해 미 국무부의 '연례인권보고서'는 전도된 가치관과 흑백전도의 논리로 일관돼 있다며 재론할 일고의 가치도 없다고 일축했다.</text>
+	  <parse>
+(S (NP-SBJ 북한/NPR+은/PAU)
+   (VP (NP-ADV 8/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 관영/NNC
+                      중앙/NNC+통신/NNC
+                      논평/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (S (NP-SBJ (NP 미/NPR
+                      국무부/NNC+의/PAN)
+                  (NP '/SLQ
+                      연례/NNC+인권/NNC+보고서/NNC
+                      '/SRQ
+                      은/PAU))
+          (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (VV 전도/NNC+되/XSV+은/EAN))))
+                               (NP 가치관/NNC+과/PCJ))
+                           (NP (NP 흑백/NNC+전도/NNC+의/PAN)
+                               (NP 논리/NNC+으로/PAD)))
+                  (VV 일관/NNC+되/XSV+어/ECS))
+              있/VX+다며/ECS))
+       (VP (S-COMP (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ *pro*)
+                                  (VV 재론/NNC+하/XSV+을/EAN)))
+                           (NP (NP 일고/NNC+의/PAN)
+                               (NP 가치/NNC+도/PAU)))
+                   (ADJP 없/VJ+다/EFN+고/PAD))
+           (VV 일축/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>재론할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

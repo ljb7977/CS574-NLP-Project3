@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>도약</lemma>
+    <comment>Frames file for '도약' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>도약.01</id>
+      <edef>leap</edef>
+      <roleset>
+	<role argnum="1" argrole="thing leaping"/>
+	<role argnum="2" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>도약하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>현대자동차는 21 세기 경영목표로 설정한 세계 5 대 자동차 메이커로 도약하기 위해 세계 유수 자동차 메이커와 전략적 제휴를 추진 중이라고 7 일 발표했다.</text>
+	  <parse>
+(S (NP-SBJ 현대/NPR+자동차/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (S (NP-SBJ *pro*)
+                      (VP (S-OBJ (NP-SBJ *pro*)
+				 (VP (NP-COMP (S (WHNP-1 *op*)
+						 (S (NP-SBJ *pro*)
+						    (VP (NP-COMP 21/NNU
+								 세기/NNX
+								 경영/NNC+목표/NNC+으로/PAD)
+							(NP-OBJ *T*-1)
+							(VV 설정/NNC+하/XSV+은/EAN))))
+					      (NP 세계/NNC
+						      5/NNU
+						      대/NNX
+						      자동차/NNC
+						      메이커/NNC+으로/PAD))
+				     (VV 도약/NNC+하/XSV+기/ENM)))
+                          위하/VV+어/ECS))
+                   (VP (VP (NP-COMP 세계/NNC
+                                    유수/NNC
+                                    자동차/NNC
+                                    메이커/NNC+과/PAD)
+                           (NP-OBJ (NP 전략/NNC+적/XSF)
+                                   (NP 제휴/NNC+을/PCA))
+                           (VV 추진/NNC))
+                       (VX 중/NNX+이/CO+라/EFN+고/PAD))))
+       (VP (NP-ADV 7/NNU
+                   일/NNX)
+           (VP (VV 발표/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>21 세기 경영목표로 설정한 세계 5 대 자동차 메이커</term>
+	    </Arg>
+	    <Rel>
+	      <term>도약하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

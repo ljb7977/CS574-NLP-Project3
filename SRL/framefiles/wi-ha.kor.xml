@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>위하</lemma>
+    <comment>Frames file for '위하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>위하.01</id>
+      <edef>in order to</edef>
+      <roleset>
+	<role argnum="0" argrole="thing"/>
+	<role argnum="1" argrole="thing pursued"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>위하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>통상 소대에서는 정기 통신을 위해서는 유선을 사용하고 무선은 사용하지 않습니다.</text>
+	  <parse>
+(S (NP-ADV 통상/NNC)
+   (S (NP-SBJ 소대/NNC+에서/PCA+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 정기/NNC
+                         통신/NNC+을/PCA)
+                 위하/VV+어서/ECS+은/PAU))
+          (VP (VP (NP-OBJ 유선/NNC+을/PCA)
+                  (VV 사용/NNC+하/XSV+고/ECS))
+              (VP (VP (NP-OBJ 무선/NNC+은/PAU)
+                      (VV 사용/NNC+하/XSV+지/ECS))
+                  않/VX+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>정기 통신</term>
+	    </Arg>
+	    <Rel>
+	      <term>위해서는</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>저희 포대가 모든 사격 임무를 다 수행하기 위해서 모든 탄약을 다 충분히 보유한다는 건 힘들지요.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 저희/NPN
+                      포대/NNC+이/PCA)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (S-OBJ (NP-SBJ *pro*)
+                                (VP (NP-OBJ 모든/DAN
+                                            사격/NNC
+                                            임무/NNC+을/PCA)
+                                    (VP (ADVP 다/ADV)
+                                        (VP (VV 수행/NNC+하/XSV+기/ENM)))))
+                         위하/VV+어서/ECS))
+                  (VP (NP-OBJ 모든/DAN
+                              탄약/NNC+을/PCA)
+                      (VP (ADVP 다/ADV)
+                          (ADVP 충분히/ADV)
+                          (VP (VV 보유/NNC+하/XSV+는다는/EAN))))))
+           (NP 것/NNX+은/PAU))
+   (ADJP 힘들/VJ+지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>모든 사격 임무를 다 수행하기</term>
+	    </Arg>
+	    <Rel>
+	      <term>위해서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

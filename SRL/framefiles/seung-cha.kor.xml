@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>승차</lemma>
+    <comment>Frames file for '승차' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>승차.01</id>
+      <edef>mount</edef>
+      <roleset>
+	<role argnum="0" argrole="climber"/>
+	<role argnum="1" argrole="thing climbed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>승차하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그때 저희 포반 성원들은 포차에 승차하고 사격 진지를 향해 이동했습니다.</text>
+	  <parse>
+(S (NP-ADV 그때/NNC)
+   (S (NP-SBJ (NP 저희/NPN
+                  포반/NNC)
+              (NP 성원/NNC+들/XSF+은/PAU))
+      (VP (VP (NP-COMP 포차/NNC+에/PAD)
+              (VV 승차/NNC+하/XSV+고/ECS))
+          (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (NP-OBJ 사격/NNC
+                                  진지/NNC+을/PCA)
+                          향하/VV+어/ECS))
+              (VV 이동/NNC+하/XSV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그때</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>저희 포반 성원들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>포차</term>
+	    </Arg>
+	    <Rel>
+	      <term>승차하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,104 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>도청</lemma>
+    <comment>Frames file for '도청' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>도청하.01</id>
+      <edef>bug</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing bugged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>도청하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>`오마이뉴스'는 이와 함께 `주한미군 전자도청부대 501'이라는 제목의 기사에서 "주한 미국정보기관이 남북한간에 어떤 비밀흥정을 할 가능성이 있기 때문이라는 이유 등을 들어 지난 75 년 청와대를 도청했다"는 지난 77 년 6 월 20 일자 뉴욕타임스 보도를 상기시키면서 남한 역시 에셜런의 감청대상에 포함돼 있을 것이라고 추정했다.</text>
+	  <parse>
+(S (S (NP-SBJ `/SLQ
+              오마이/NPR+뉴스/NNC
+              '/SRQ
+              은/PAU)
+      (VP (ADVP (NP-COMP 이/NPN+과/PAD)
+                함께/ADV)
+          (NP-ADV (NP (NP `/SLQ
+                          주한/NNC+미군/NNC
+                          전자/NNC+도청/NNC+부대/NNC
+                          501/NNU
+                          '/SRQ
+                          이라는/PAN)
+                      (NP 제목/NNC+의/PAN))
+                  (NP 기사/NNC+에서/PAD))
+          (VP (NP-OBJ (S "/SLQ
+                         (NP-SBJ 주한/NNC
+                                 미국/NPR+정보/NNC+기관/NNC+이/PCA)
+                         (VP (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ (NP (NP (S (NP-SBJ (S (NP-SBJ *pro*)
+                                                                  (VP (NP-ADV 남북한/NPR+간/XSF+에/PAD)
+                                                                      (VP (NP-OBJ 어떤/DAN
+                                                                                  비밀/NNC+흥정/NNC+을/PCA)
+                                                                          하/VV+을/EAN)))
+                                                               (NP 가능성/NNC+이/PCA))
+                                                       (ADJP 있/VJ+기/ENM))
+                                                    (NP 때문/NNX+이라는/PAN))
+                                                (NP 이유/NNC))
+                                            (NP 등/NNX+을/PCA))
+                                    들/VV+어/ECS))
+                             (NP-ADV 지난/DAN
+                                     75/NNU
+                                     년/NNX)
+                             (VP (NP-OBJ 청와대/NPR+을/PCA)
+                                 (VV 도청/NNC+하/XSV+었/EPF+다/EFN)))
+                         "/SRQ
+                         는/EAN)
+                      (NP (NP 지난/DAN
+                              77/NNU
+                              년/NNX
+                              6/NNU
+                              월/NNX
+                              20/NNU
+                              일자/NNX)
+                          (NP 뉴욕타임스/NPR
+                              보도/NNC+을/PCA)))
+              (VV 상기/NNC+시키/XSV+으면서/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ 남한/NPR)
+                  (VP (VP (VP (ADVP 역시/ADV)
+                              (VP (NP-COMP (NP 에셜런/NPR+의/PAN)
+                                           (NP 감청/NNC+대상/NNC+에/PAD))
+                                  (VV 포함/NNC+되/XSV+어/ECS)))
+                          있/VX+을/EAN)
+                      (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+          (VV 추정/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>주한 미국정보기관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>남북한간에 어떤 비밀흥정을 할 가능성이 있기 때문이라는 이유 등을 들어</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 75 년</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>청와대</term>
+	    </Arg>
+	    <Rel>
+	      <term>도청했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

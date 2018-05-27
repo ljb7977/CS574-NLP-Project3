@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>값싸</lemma>
+    <comment>Frames file for '값싸' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>값싸.01</id>
+      <edef>inexpensive</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being inexpensive"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>값싸다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>반대로 미국이나 기타 선진국에서는 교육받은 부유층은 적절한 음식을 먹고 있는 반면 값싸고 기름기 많은 패스트푸드에 의존하고 있는 가난한 사람들의 수는 점점 늘어나고 있다.</text>
+	  <parse>
+(S (NP-ADV 반대/NNC+으로/PAD)
+   (NP-ADV (NP 미국/NPR+이나/PCJ)
+           (NP 기타/NNC
+               선진국/NNC+에서/PAD+은/PAU))
+   (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-OBJ 교육/NNC)
+                                받/VV+은/EAN)))
+                      (NP 부유층/NNC+은/PAU))
+              (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (ADJP 적절하/VJ+은/EAN)))
+                              (NP 음식/NNC+을/PCA))
+                      먹/VV+고/ECS)
+                  있/VX+는/EAN))
+           (NP 반면/NNC))
+   (S (NP-SBJ (NP (S (WHNP-5 *op*)
+                     (S (NP-SBJ *T*-5)
+                        (VP (VP (NP-COMP (S (WHNP-3 *op*)
+                                            (S (S (NP-SBJ *T*-3)
+                                                  (ADJP 값싸/VJ+고/ECS))
+                                               (S (NP-SBJ *T*-3)
+                                                  (S (NP-SBJ 기름기/NNC)
+                                                     (ADJP 많/VJ+은/EAN)))))
+                                         (NP 패스트푸드/NNC+에/PAD))
+                                (VV 의존/NNC+하/XSV+고/ECS))
+                            있/VX+는/EAN)))
+                  (NP (S (WHNP-4 *op*)
+                         (S (NP-SBJ *T*-4)
+                            (ADJP (VJ 가난/NNC+하/XSJ+은/EAN))))
+                      (NP 사람/NNC+들/XSF+의/PAN)))
+              (NP 수/NNC+은/PAU))
+      (VP (VP (ADVP 점점/ADV)
+              (VP 늘어나/VV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=패스트푸드</term>
+	    </Arg>
+	    <Rel>
+	      <term>값싸고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

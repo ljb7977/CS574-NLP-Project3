@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주고받</lemma>
+    <comment>Frames file for '주고받' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>주고받.01</id>
+      <edef>exchange</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing exchanged"/>
+	<role argnum="2" argrole="other exchanger"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주고받다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>KFOR은 이날 오전 알바니아계와 세르비아계 주민들이 이바르강을 사이에 두고 욕설을 주고받다가 충돌이 일어났으며 정오부터는 신원을 알 수 없는 사람들이 총을 쏘고 수류탄을 던지기 시작했다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ KFOR/NFW+은/PAU)
+   (VP (S-COMP (S (S (NP-ADV 이날/NNC
+                             오전/NNC)
+                     (S (NP-SBJ 알바니아/NPR+계/XSF+과/PCJ
+                                세르비아/NPR+계/XSF
+                                주민/NNC+들/XSF+이/PCA)
+                        (VP (S (NP-SBJ *pro*)
+                               (VP (NP-OBJ 이바르/NPR+강/NNC+을/PCA)
+                                   (NP-COMP 사이/NNC+에/PAD)
+                                   두/VV+고/ECS))
+                            (VP (NP-OBJ 욕설/NNC+을/PCA)
+                                주고받/VV+다가/ECS))))
+                  (S (NP-SBJ 충돌/NNC+이/PCA)
+                     (VP 일어나/VV+었/EPF+으며/ECS)))
+               (S (NP-ADV 정오/NNC+부터/PAU+은/PAU)
+                  (S (NP-SBJ (S (NP-SBJ *pro*)
+                                (VP (VP (NP-OBJ 신원/NNC+을/PCA)
+                                        알/VV+을/EAN)
+                                    (VX 수/NNX
+                                        없/VJ+는/EAN)))
+                             (NP 사람/NNC+들/XSF+이/PCA))
+                     (VP (S-OBJ (S (NP-SBJ *pro*)
+				   (VP (NP-OBJ 총/NNC+을/PCA)
+				       쏘/VV+고/ECS))
+				(S (NP-SBJ *pro*)
+				   (VP (NP-OBJ 수류탄/NNC+을/PCA)
+				       던지/VV+기/ENM)))
+                         (VV 시작/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날 오전</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>알바니아계와 세르비아계 주민들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이바르강을 사이에 두고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>욕설</term>
+	    </Arg>
+	    <Rel>
+	      <term>주고받다가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

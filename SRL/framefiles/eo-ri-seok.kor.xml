@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>어리석</lemma>
+    <comment>Frames file for '어리석' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>어리석.01</id>
+      <edef>stupid</edef>
+      <roleset>
+	<role argnum="1" argrole="thing stupid"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>어리석다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 방송은 "우리 (북한)를 개방으로 유도해서 흡수통일을 이뤄 보려는 어리석은 망상"이라면서 "통일문제, 남북관계문제는 결코 물건짝을 가지고 해결할 문제가 아니다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           방송/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP "/SLQ
+              (NP (S (NP-SBJ *pro*)
+                     (VP (VP (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ 우리/NPN
+                                            (PRN -LRB-/SLQ
+                                                 (NP 북한/NPR)
+                                                 -RRB-/SRQ)
+                                            을/PCA)
+                                    (NP-COMP 개방/NNC+으로/PAD)
+                                    (VV 유도/NNC+하/XSV+어서/ECS)))
+                             (VP (NP-OBJ 흡수/NNC+통일/NNC+을/PCA)
+                                 이루/VV+어/ECS))
+                         보/VX+으려는/EAN))
+                  (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (ADJP 어리석/VJ+은/EAN)))
+                      (NP 망상/NNC)))
+              "/SRQ
+              이/CO+라면서/ECS))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (NP 통일/NNC+문제/NNC)
+                           ,/SCM
+                           (NP 남북/NNC+관계/NNC+문제/NNC+은/PAU))
+                   (ADJP (ADVP 결코/ADV)
+                         (ADJP (NP-COMP (S (WHNP-2 *op*)
+                                           (S (NP-SBJ *pro*)
+                                              (VP (S (NP-SBJ *pro*)
+                                                     (VP (NP-OBJ 물건/NNC+짝/XSF+을/PCA)
+                                                         가지/VV+고/ECS))
+                                                  (VP (NP-OBJ *T*-2)
+                                                      (VV 해결/NNC+하/XSV+을/EAN)))))
+                                        (NP 문제/NNC+이/PCA))
+                               아니/VJ+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=망상</term>
+	    </Arg>
+	    <Rel>
+	      <term>어리석은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

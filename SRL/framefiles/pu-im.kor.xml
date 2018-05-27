@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부임</lemma>
+    <comment>Frames file for '부임' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부임.01</id>
+      <edef>proceed</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="new job"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부임하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>외무고시 1 기로 68 년 외무부에 들어와 유엔 참사관, 파키스탄. 캐나다공사, 유엔대표부대사, 외무부 외교정책실장등의 경력을 가진 조대사는 97 년 베트남 대사로 부임한 후 특수관계에 있는 한국과 베트남간의 유대 증진에 크게 기여했다는 평가를 받고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-ADV 외무/NNC+고시/NNC
+                                    1/NNU
+                                    기/NNX+으로/PAD)
+                            (NP-ADV 68/NNU
+                                    년/NNX)
+                            (VP (NP-COMP 외무부/NNC+에/PAD)
+                                들어오/VV+어/ECS)))
+                     (VP (NP-OBJ (NP (NP 유엔/NPR
+                                         참사관/NNC)
+                                     ,/SCM
+                                     (NP 파키스탄/NPR)
+                                     ./SFN
+                                     (NP 캐나다/NPR+공사/NNC)
+                                     ,/SCM
+                                     (NP 유엔/NPR+대표부/NNC+대사/NNC)
+                                     ,/SCM
+                                     (NP 외무부/NNC
+                                         외교/NNC+정책/NNC+실장/NNC+등/NNX+의/PAN))
+                                 (NP 경력/NNC+을/PCA))
+                         가지/VV+은/EAN))))
+           (NP 조/NPR+대사/NNC+은/PAU))
+   (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (NP-ADV (S (NP-SBJ *pro*)
+                                     (VP (NP-ADV 97/NNU
+                                                 년/NNX)
+                                         (VP (NP-COMP 베트남/NPR
+                                                      대사/NNC+으로/PAD)
+                                             (VV 부임/NNC+하/XSV+은/EAN))))
+                                  (NP 후/NNC))
+                          (VP (NP-COMP (NP (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (ADJP (NP-COMP 특수/NNC+관계/NNC+에/PAD)
+                                                       있/VJ+는/EAN)))
+                                           (NP (NP 한국/NPR+과/PCJ)
+                                               (NP 베트남/NPR+간/XSF+의/PAN)))
+                                       (NP 유대/NNC
+                                           증진/NNC+에/PAD))
+                              (VP (ADVP (ADV 크/VJ+게/ECS))
+                                  (VP (VV 기여/NNC+하/XSV+었/EPF+다는/EAN))))))
+                   (NP 평가/NNC+을/PCA))
+           받/VV+고/ECS)
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>97 년</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>로</f>
+	      <term>베트남 대사</term>
+	    </Arg>
+	    <Rel>
+	      <term>부임한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

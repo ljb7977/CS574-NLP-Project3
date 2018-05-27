@@ -1,0 +1,41 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>미안</lemma>
+    <comment>Frames file for '미안' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>미안.01</id>
+      <edef>sorry</edef>
+      <roleset>
+	<role argnum="0" argrole="person feeling sorry"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>미안하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미안하지만 그 각 반의 명칭은 모릅니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (ADJP (VJ 미안/NNC+하/XSJ+지만/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP 그/DAN
+		      각/DAN
+		      반/NNC+의/PCA)
+		  (NP 명칭/NNC+은/PAU))
+	  모르/VV+습니다/EFN))
+   ./SFN )
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>미안하지만</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

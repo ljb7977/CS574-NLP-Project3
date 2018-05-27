@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>헤매</lemma>
+    <comment>Frames file for '헤매' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>헤매.01</id>
+      <edef>stray</edef>
+      <roleset>
+	<role argnum="0" argrole="entity in motion"/>
+	<role argnum="1" argrole="path, location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>헤매다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 캘리포니아 소재 멘로공원의 지구물리학자인 존 핵스트럼은 18 일자 뉴 사이언티스트에 게재된 연구결과에서 콩코드기가 음속 돌파시 내는 충격파가 비둘기들의 저주파 청취 능력을 상실케 해 비둘기들이 귀로를 잃고 헤매게 된다고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP (NP 미국/NPR
+                             캘리포니아/NPR
+                             소재/NNC
+                             멘로/NPR+공원/NNC+의/PAN)
+                         (NP 지구/NNC+물리학자/NNC+이/CO+은/EAN)))))
+           (NP 존/NPR
+               핵스트럼/NPR+은/PAU))
+   (VP (NP-ADV (S (WHNP-2 *op*)
+                  (S (NP-SBJ *T*-2)
+                     (VP (NP-COMP (NP 18/NNU
+                                      일자/NNX)
+                                  (NP 뉴/NPR
+                                      사이언티스트/NPR+에/PAD))
+                         (VV 게재/NNC+되/XSV+은/EAN))))
+               (NP 연구/NNC+결과/NNC+에서/PAD))
+       (VP (S-COMP (S (NP-SBJ (S (WHNP-3 *op*)
+                                 (S (NP-SBJ 콩코드기/NPR+이/PCA)
+                                    (VP (NP-ADV 음속/NNC
+                                                돌파/NNC+시/XSF)
+                                        (VP (NP-OBJ *T*-3)
+                                            내/VV+는/EAN))))
+                              (NP 충격파/NNC+이/PCA))
+                      (VP (S-COMP (NP-SBJ *pro*)
+                                  (VP (NP-OBJ (NP 비둘기/NNC+들/XSF+의/PAN)
+                                              (NP 저주파/NNC
+                                                  청취/NNC
+                                                  능력/NNC+을/PCA))
+                                      (VV 상실/NNC+하/XSV+게/ECS)))
+                          하/VV+어/ECS))
+                   (S (NP-SBJ 비둘기/NNC+들/XSF+이/PCA)
+                      (VP (VP (NP-OBJ 귀로/NNC+을/PCA)
+                              잃/VV+고/ECS)
+                          (VP (VP 헤매/VV+게/ECS)
+                              되/VX+는다/EFN+고/PAD))))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>콩코드기가 음속 돌파시 내는 충격파가 비둘기들의 저주파 청취 능력을 상실케 해</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>비둘기들</term>
+	    </Arg>
+	    <Rel>
+	      <term>헤매게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>된다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

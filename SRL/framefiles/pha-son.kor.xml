@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>파손</lemma>
+    <comment>Frames file for '파손' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>파손.01</id>
+      <edef>damage</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing damaged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>파손되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전투 중에 개인 화기가 파손되면 전사는 어떻게 하는가?</text>
+	  <parse>
+(S (S (NP-ADV 전투/NNC
+              중/NNX+에/PAD)
+      (S (NP-SBJ 개인/NNC
+                 화기/NNC+이/PCA)
+         (VP (VV 파손/NNC+되/XSV+으면/ECS))))
+   (S (NP-SBJ 전사/NNC+은/PAU)
+      (VP (ADVP-COMP 어떻게/ADV)
+          하/VV+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전투 중에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>개인 화기</term>
+	    </Arg>
+	    <Rel>
+	      <term>파손되면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

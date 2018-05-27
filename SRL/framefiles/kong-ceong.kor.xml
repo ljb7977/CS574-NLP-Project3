@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>공정</lemma>
+    <comment>Frames file for '공정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>공정.01</id>
+      <edef>fair</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being fair"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>공정하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 "김 대통령은 연초에 언급했듯이 올해 공정한 선거를 해서 공명선거의 원년을 기록해야 한다는 확고한 의지를 갖고 있다"면서 "분명히 말하지만 정치권은 있지도 않은 가공의 환경을 사실인 양 주장하며, 선거분위기를 혼탁하게 만들어서는 안될 것"이라고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ 김/NPR
+                              대통령/NNC+은/PAU)
+                      (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 연초/NNC+에/PAD)
+                                     (VP (NP-OBJ *pro*)
+                                         (VV 언급/NNC+하/XSV+었/EPF+듯이/ECS))))
+                              (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                             (VP (VP (S (NP-SBJ *pro*)
+                                                        (VP (NP-ADV 올해/NNC)
+                                                            (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                                           (S (NP-SBJ *T*-1)
+                                                                              (ADJP (VJ 공정/NNC+하/XSJ+은/EAN))))
+                                                                        (NP 선거/NNC+을/PCA))
+                                                                하/VV+어서/ECS)))
+                                                     (VP (NP-OBJ (NP 공명/NNC+선거/NNC+의/PAN)
+                                                                 (NP 원년/NNC+을/PCA))
+                                                         (VV 기록/NNC+하/XSV+어야/ECS)))
+                                                 하/VX+는다는/EAN))
+                                          (NP (S (WHNP-2 *op*)
+                                                 (S (NP-SBJ *T*-2)
+                                                    (ADJP (VJ 확고/NNC+하/XSJ+은/EAN))))
+                                              (NP 의지/NNC+을/PCA)))
+                                  갖/VV+고/ECS))
+                          있/VX+다/EFN)
+                      "/SRQ
+                      으면서/ECS)
+                   (S "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (ADVP 분명히/ADV)
+                                     (VP (NP-OBJ *pro*)
+                                         말하/VV+지만/ECS)))
+                              (VP (S-COMP (S (NP-SBJ 정치권/NNC+은/PAU)
+                                             (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                            (S (NP-SBJ *T*-3)
+                                                               (VP (ADJP 있/VJ+지/ECS+도/PAU)
+                                                                   않/VX+은/EAN)))
+                                                         (NP (NP 가공/NNC+의/PAN)
+                                                             (NP 환경/NNC+을/PCA)))
+                                                 (NP-COMP (S (NP-SBJ *pro*)
+                                                             (VP (NP 사실/NNC+이/CO+은/EAN)))
+                                                          (NP 양/NNX))
+                                                 (VV 주장/NNC+하/XSV+으며/ECS)))
+                                          ,/SCM
+                                          (S (NP-SBJ *pro*)
+                                             (VP (NP-OBJ 선거/NNC+분위기/NNC+을/PCA)
+                                                 (S-COMP (NP-SBJ *pro*)
+                                                         (ADJP (VJ 혼탁/NNC+하/XSJ+게/ECS)))
+                                                 만들/VV+어서/ECS+은/PAU)))
+                                  안되/VV+을/EAN))
+                          (VX 것/NNX))
+                      "/SRQ
+                      이라고/PAD))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=선거</term>
+	    </Arg>
+	    <Rel>
+	      <term>공정한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

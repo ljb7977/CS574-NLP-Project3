@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>맵</lemma>
+    <comment>Frames file for '맵' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>맵.01</id>
+      <edef>spicy</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being spicy"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>맵다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난 8 일 피츠버그 파이어리츠와의 경기에서 생애 처음으로 메이저리그 팀을 상대로 마운드에 올라 1 이닝을 1 안타 무실점으로 막았던 김선우는 두번째 등판에서 메이저리그 타자들의 매운 맛을 본 셈이다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 지난/DAN
+                             8/NNU
+                             일/NNX)
+                     (NP-ADV (NP 피츠버그/NPR
+                                 파이어리츠/NPR+과/PAD+의/PAN)
+                             (NP 경기/NNC+에서/PAD))
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-ADV 생애/NNC
+                                    처음/NNC+으로/PAD)
+                            (NP-ADV (NP-OBJ 메이저/NNC+리그/NNC
+                                            팀/NNC+을/PCA)
+                                    상대/NNC+으로/PAD)
+                            (VP (NP-COMP 마운드/NNC+에/PAD)
+                                오르/VV+어/ECS)))
+                     (VP (NP-OBJ 1/NNU
+                                 이닝/NNC+을/PCA)
+                         (VP (NP-ADV 1/NNU
+                                     안타/NNC
+                                     무실점/NNC+으로/PAD)
+                             (VP 막/VV+었/EPF+던/EAN))))))
+           (NP 김선우/NPR+은/PAU))
+   (VP (VP (NP-ADV 두/NNU+번/NNX+째/XSF
+                   등판/NNC+에서/PAD)
+           (VP (NP-OBJ (NP 메이저/NNC+리그/NNC
+                           타자/NNC+들/XSF+의/PAN)
+                       (NP (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (ADJP 맵/VJ+은/EAN)))
+                           (NP 맛/NNC+을/PCA)))
+               보/VV+은/EAN))
+       (VX 셈/NNX+이/CO+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=맛</term>
+	    </Arg>
+	    <Rel>
+	      <term>매운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

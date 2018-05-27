@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>경연</lemma>
+    <comment>Frames file for '경연' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>경연.01</id>
+      <edef>compete</edef>
+      <roleset>
+	<role argnum="0" argrole="competitor"/>
+	<role argnum="1" argrole="opponent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>경연하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이렇게 경연하고 있는 동안에 누가 그 훈련을 평가했는가?</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ *pro*)
+              (VP (VP (ADVP 이렇게/ADV)
+                      (VP (VV 경연/NNC+하/XSV+고/ECS)))
+                  있/VX+는/EAN))
+           (NP 동안/NNX+에/PAD))
+   (S (NP-SBJ 누구/NPN+이/PCA)
+      (VP (NP-OBJ 그/DAN
+                  훈련/NNC+을/PCA)
+          (VV 평가/NNC+하/XSV+었/EPF+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>이렇게</term>
+	    </Arg>
+	    <Rel>
+	      <term>경연하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재평가</lemma>
+    <comment>Frames file for '재평가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재평가.01</id>
+      <edef>reevaluate</edef>
+      <roleset>
+	<role argnum="0" argrole="thing reevaluating"/>
+	<role argnum="1" argrole="thing reevaluated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재평가하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이와 함께 윤리위원회는 공직자 재테크의 투명성을 높이기 위해 재산변동신고때 주식을 사고 판 시점과 가격을 모두 신고하고 5 년마다 총재산을 재평가해 등록하도록 하는 등 신고절차를 강화하는 방안도 추진키로 했다.</text>
+	  <parse>
+(S (ADVP (NP-COMP 이/NPN+과/PAD)
+         함께/ADV)
+   (S (NP-SBJ 윤리/NNC+위원회/NNC+은/PAU)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (S-OBJ (NP-SBJ *pro*)
+			    (VP (NP-OBJ (NP 공직자/NNC
+						  재테크/NNC+의/PAN)
+					(NP 투명성/NNC+을/PCA))
+				높이/VV+기/ENM))
+                     위하/VV+어/ECS))
+              (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                                 (VP (S-COMP (S (NP-SBJ *pro*)
+                                                (VP (NP-ADV 재산/NNC+변동/NNC+신고/NNC+때/NNC)
+                                                    (VP (NP-OBJ (S (WHNP *op*)
+                                                                   (S (NP-SBJ *pro*)
+                                                                      (VP (NP-OBJ 주식/NNC+을/PCA)
+                                                                          (VV 사/VV+고/ECS
+                                                                              팔/VV+은/EAN))))
+                                                                (NP (NP 시점/NNC+과/PCJ)
+                                                                    (NP 가격/NNC+을/PCA)))
+                                                        (VP (ADVP 모두/ADV)
+                                                            (VP (VV 신고/NNC+하/XSV+고/ECS))))))
+                                             (S (NP-SBJ *pro*)
+                                                (VP (NP-ADV 5/NNU
+                                                            년/NNX+마다/PAU)
+                                                    (VP (NP-OBJ 총재산/NNC+을/PCA)
+							(VV (VV 재평가/NNC+하/XSV+어/ECS)
+							    (VV 등록/NNC+하/XSV+도록/ECS))))))
+                                     하/VV+는/EAN))
+                              (NP 등/NNX))
+                          (NP (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ 신고/NNC+절차/NNC+을/PCA)
+                                     (VV 강화/NNC+하/XSV+는/EAN)))
+                              (NP 방안/NNC+도/PAU)))
+                  (VV 추진/NNC+하/XSV+기/ENM+으로/PAD)))
+          하/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>5 년마다</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>총재산</term>
+	    </Arg>
+	    <Rel>
+	      <term>재평가해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

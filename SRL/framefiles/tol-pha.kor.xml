@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌파</lemma>
+    <comment>Frames file for '돌파' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>돌파.01</id>
+      <edef>break through</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="barrier"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌파하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>적의 방어선을 돌파한 후에는 측면을 은폐하거나 공격 방향에 대해 적을 혼란시키기 위해서 하급 지휘관이 연막을 사용할 수 있습니다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ *pro*)
+	      (VP (NP-OBJ (NP 적/NNC+의/PCA)
+			  (NP 방어선/NNC+을/PCA))
+		  (VV 돌파/NNC+하/XSV+은/EAN)))
+	   (NP 후/NNC+에/PAD+는/PAU))
+   (S (S (NP-SBJ *pro*)
+	 (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+			   (VP (NP-OBJ 측면/NNC+을/PCA)
+			       (VV 은폐/NNC+하/XSV+거나/ECS)))
+			(S (S (NP-SBJ *pro*)
+			      (VP (NP-COMP 공격/NNC
+					   방향/NNC+에/PAD)
+				  대하/VV+어/ECS))
+			   (S (NP-SBJ *pro*)
+			      (VP (NP-OBJ 적/NNC+을/PCA)
+			          (VV 혼란/NNC+시키/XSV+기/ENM))))))
+	     위하/VV+어서/ECS))
+      (S (NP-SBJ 하급/NNC
+		 지휘관/NNC+이/PCA)
+	 (VP (VP (NP-OBJ 연막/NNC+을/PCA)
+		 (VV 사용/NNC+하/XSV+을/EAN))
+	     (VX 수/NNX
+                 있/VJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적의 방어선</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌파한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

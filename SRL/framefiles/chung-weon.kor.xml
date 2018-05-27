@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>충원</lemma>
+    <comment>Frames file for '충원' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>충원.01</id>
+      <edef>recruit</edef>
+      <roleset>
+	<role argnum="0" argrole="recruiter"/>
+	<role argnum="1" argrole="recruit"/>
+	<role argnum="2" argrole="group, job"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>충원되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러므로 현재는 완전히 충원됐지요.</text>
+	  <parse>
+(S (ADCP 그러므로/ADC)
+   (NP-ADV 현재/NNC+은/PAU)
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 완전히/ADV)
+          (VP (VV 충원/NNC+되/XSV+었/EPF+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러므로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현재는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>완전히</term>
+	    </Arg>
+	    <Rel>
+	      <term>충원됐지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

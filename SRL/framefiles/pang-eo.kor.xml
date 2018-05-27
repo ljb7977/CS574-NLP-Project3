@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>방어</lemma>
+    <comment>Frames file for '방어' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>방어.01</id>
+      <edef>defend</edef>
+      <roleset>
+	<role argnum="0" argrole="defender"/>
+	<role argnum="1" argrole="entity defended"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>방어하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>통상 인민군 1개 대대는 3개 중대가 있으면 3500 미터까지의 정면을 방어할 수 있습니다.</text>
+	  <parse>
+(S (ADVP 통상/ADV)
+   (S (NP-SBJ (NP 인민군/NNC)
+              (NP 1/NNU
+                  개/NNX
+                  대대/NNC+은/PAU))
+      (VP (VP (S (NP-SBJ 3/NNU
+                         개/NNX
+                         중대/NNC+이/PCA)
+                 (ADJP (NP-COMP *pro*)
+                       있/VJ+으면/ECS))
+              (VP (NP-OBJ (NP 3500/NNU
+                              미터/NNX+까지/PAU+의/PAN)
+                          (NP 정면/NNC+을/PCA))
+                  (VV 방어/NNC+하/XSV+을/EAN)))
+          (VX 수/NNX
+              있/VJ+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>통상</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>인민군 1개 대대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>3개 중대가 있으면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>3500 미터까지의 정면</term>
+	    </Arg>
+	    <Rel>
+	      <term>방어할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>등재</lemma>
+    <comment>Frames file for '등재' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>등재.01</id>
+      <edef>register</edef>
+      <roleset>
+	<role argnum="0" argrole="entity registering"/>
+	<role argnum="1" argrole="thing registered"/>
+	<role argnum="2" argrole="register"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>등재되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이에 따라 현대의 다른 계열사에 이사로 등재돼 있는 정주영 현대 명예회장과 정몽준 의원(무소속)등도 주총 이후 이사진에서 제외될 것으로 보인다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (S (NP-SBJ *pro*)
+                      (VP (NP-COMP 이/NPN+에/PAD)
+                          따르/VV+어/ECS))
+                   (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (VP (NP-COMP (NP 현대/NPR+의/PAN)
+                                                     (NP 다른/DAN
+                                                         계열사/NNC+에/PAD))
+                                            (NP-COMP 이사/NNC+으로/PAD)
+                                            (VV 등재/NNC+되/XSV+어/ECS))
+                                        있/VX+는/EAN)))
+                              (NP (NP (NP 정주영/NPR
+                                          현대/NPR
+                                          명예/NNC+회장/NNC+과/PCJ)
+                                      (NP 정몽준/NPR
+                                          의원/NNC
+                                          (PRN -LRB-/SLQ
+                                               (NP 무소속/NNC)
+                                               -RRB-/SRQ)))
+                                  (NP 등/NNX+도/PAU)))
+                      (VP (NP-ADV 주총/NNC
+                                  이후/NNC)
+                          (VP (NP-COMP 이사진/NNC+에서/PAD)
+                              (VV 제외/NNC+되/XSV+을/EAN)))))
+                (NP 것/NNX+으로/PAD))
+       보이/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=정주영 현대 명예회장과 정몽준 의원(무소속)등</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>현대의 다른 계열사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>이사</term>
+	    </Arg>
+	    <Rel>
+	      <term>등재돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

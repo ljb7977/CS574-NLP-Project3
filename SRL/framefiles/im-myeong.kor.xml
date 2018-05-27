@@ -1,0 +1,147 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>임명</lemma>
+    <comment>Frames file for '임명' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>임명.01</id>
+      <edef>appoint</edef>
+      <roleset>
+	<role argnum="0" argrole="thing appointing"/>
+	<role argnum="1" argrole="thing appointed"/>
+	<role argnum="2" argrole="appoint as"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>임명하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지난달 23 일 발족된 `일, 조 우호 의원연맹'은 2 일 제 1 회 임원회를 열고 노나카 히로무(야중광무) 자민당 간사장 대리를 연맹의 간사장에 임명했다고 자유아시아방송(RFA)이 이날 보도했다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-SBJ (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (NP-ADV 지난달/NNC
+                                       23/NNU
+                                       일/NNX)
+                               (VP (VV 발족/NNC+되/XSV+은/EAN)))))
+                     (NP `/SLQ
+                         일/NPR
+                         ,/SCM
+                         조/NPR
+                         우호/NNC
+                         의원/NNC+연맹/NNC
+                         '/SRQ
+                         은/PAU))
+             (VP (VP (NP-ADV 2/NNU
+                             일/NNX)
+                     (VP (NP-OBJ 제/DAN
+                                 1/NNU
+                                 회/NNX
+                                 임원회/NNC+을/PCA)
+                         열/VV+고/ECS))
+                 (VP (NP-OBJ 노나카/NPR
+                             히로무/NPR
+                             (PRN -LRB-/SLQ
+                                  야중광무/NPR
+                                  -RRB-/SRQ)
+                             자민당/NPR
+                             간사장/NNC
+                             대리/NNC+을/PCA)
+                     (NP-COMP (NP 연맹/NNC+의/PAN)
+                              (NP 간사장/NNC+에/PAD))
+                     (VV 임명/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 자유/NNC+아시아/NPR+방송/NNC
+              (PRN -LRB-/SLQ
+                   RFA/NFW
+                   -RRB-/SRQ)
+              이/PCA)
+      (VP (NP-ADV 이날/NNC)
+          (VP (S-COMP *T*-2)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>지난달 23 일 발족된 `일, 조 우호 의원연맹'</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>2 일 제 1 회 임원회를 열고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>노나카 히로무(야중광무) 자민당 간사장 대리</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>연맹의 간사장</term>
+	    </Arg>
+	    <Rel>
+	      <term>임명했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>임명되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이탈리아의 여배우 클라우디아 카르디날레(60)가 다음 주 유엔교육과학문화기구(UNESCO) 친선대사로 임명될 예정이라고 UNESCO가 2 일 발표했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ *pro*)
+             (VP (NP (S (NP-SBJ (NP (NP 이탈리아/NPR+의/PAN)
+                                    (NP 여배우/NNC))
+                                (NP 클라우디아/NPR
+                                    카르디날레/NPR
+                                    (PRN -LRB-/SLQ
+                                         60/NNU
+                                         -RRB-/SRQ)
+                                    이/PCA))
+                        (VP (NP-ADV 다음/NNC
+                                    주/NNX)
+                            (VP (NP-COMP 유엔/NPR+교육/NNC+과학/NNC+문화/NNC+기구/NNC
+                                         (PRN -LRB-/SLQ
+                                              UNESCO/NFW
+                                              -RRB-/SRQ)
+                                         친선/NNC+대사/NNC+으로/PAD)
+                                (VV 임명/NNC+되/XSV+을/EAN))))
+                     (NP 예정/NNC+이/CO+라/EFN+고/PAD))))
+   (S (NP-SBJ UNESCO/NFW+이/PCA)
+      (VP (NP-ADV 2/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              (VV 발표/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이탈리아의 여배우 클라우디아 카르디날레(60)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>다음 주</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>유엔교육과학문화기구(UNESCO) 친선대사</term>
+	    </Arg>
+	    <Rel>
+	      <term>임명될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>입학</lemma>
+    <comment>Frames file for '입학' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>입학.01</id>
+      <edef>enter school</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="goal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입학하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이달 초 랭글리 고등학교 1 학년에 입학한 나윤양은 비록 영어구사가 서툴렀으나 이지적으로 생긴 얼굴과 활달한 성격 탓에 친구들과 쉽게 친해지는 등 미국생활에 빠르게 적응해 나갔다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 이달/NNC
+                             초/NNX)
+                     (VP (NP-COMP (NP 랭글리/NPR
+                                      고등학교/NNC)
+                                  (NP 1/NNU
+                                      학년/NNX+에/PAD))
+                         (VV 입학/NNC+하/XSV+은/EAN)))))
+           (NP 나윤/NPR+양/NNX+은/PAU))
+   (VP (VP (NP-ADV (S (S (ADVP 비록/ADV)
+                         (S (NP-SBJ 영어/NNC+구사/NNC+이/PCA)
+                            (ADJP 서투르/VJ+었/EPF+으나/ECS)))
+                      (S (NP-SBJ *pro*)
+                         (VP (NP-ADV (NP (NP (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (VP (NP-COMP 이지/NNC+적/XSF+으로/PAD)
+                                                       생기/VV+은/EAN)))
+                                             (NP 얼굴/NNC+과/PCJ))
+                                         (NP (S (WHNP-3 *op*)
+                                                (S (NP-SBJ *T*-3)
+                                                   (ADJP 활달하/VJ+은/EAN)))
+                                             (NP 성격/NNC)))
+                                     (NP 탓/NNC+에/PAD))
+                             (VP (NP-COMP 친구/NNC+들/XSF+과/PAD)
+                                 (VP (ADVP (ADV 쉽/VJ+게/ECS))
+                                     (VP (VV 친하/VJ+어지/XSV+는/EAN)))))))
+                   (NP 등/NNX))
+           (VP (NP-COMP 미국/NPR+생활/NNC+에/PAD)
+               (VP (ADVP (ADV 빠르/VJ+게/ECS))
+                   (VP (VV 적응/NNC+하/XSV+어/ECS)))))
+       나가/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=나윤양</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이달 초</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>랭글리 고등학교 1 학년</term>
+	    </Arg>
+	    <Rel>
+	      <term>입학한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

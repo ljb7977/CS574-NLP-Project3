@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탈출</lemma>
+    <comment>Frames file for '탈출' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>탈출.01</id>
+      <edef>escape</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="place or thing escaped"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탈출하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>정찰대원 한두 명은 탈출했을지도 모르지요.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-OBJ (NP-SBJ (NP 정찰/NNC
+                          대원/NNC)
+                      (NP 한두/NNU
+                          명/NNX+은/PAU))
+              (VP (VV 탈출/NNC+하/XSV+었/EPF+을지/EFN+도/PAU)))
+       모르/VV+지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>정찰대원 한두 명</term>
+	    </Arg>
+	    <Rel>
+	      <term>탈출했을지도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

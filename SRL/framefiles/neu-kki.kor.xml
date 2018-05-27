@@ -1,0 +1,220 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>느끼</lemma>
+    <comment>Frames file for '느끼' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>느끼.01</id>
+      <edef>feel</edef>
+      <roleset>
+	<role argnum="0" argrole="feeler"/>
+	<role argnum="1" argrole="thing felt"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>느끼다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이때문에 그동안 연공서열, 종신고용, 회사에 대한 충성 등을 강조하던 한국의 기업들 특히 재벌기업들은 당혹감을 느끼며 자신들의 기업문화에 변화를 주려는 움직임을 보이고 있다고 포스트지는 전했다.</text>
+	  <parse>
+(S (S-COMP-3 (NP-SBJ *pro*)
+             (VP (VP (NP-ADV 이/DAN+때문/NNX+에/PAD)
+                     (VP (NP-OBJ (S (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                                                      (S (NP-SBJ *T*-2)
+                                                         (VP (NP-ADV 그동안/NNC)
+                                                             (VP (NP-OBJ (NP (NP 연공/NNC+서열/NNC)
+                                                                             ,/SCM
+                                                                             (NP 종신/NNC+고용/NNC)
+                                                                             ,/SCM
+                                                                             (NP (S (WHNP-1 *op*)
+                                                                                    (S (NP-SBJ *T*-1)
+                                                                                       (VP (NP-COMP 회사/NNC+에/PAD)
+                                                                                           대하/VV+은/EAN)))
+                                                                                 (NP 충성/NNC)))
+                                                                         (NP 등/NNX+을/PCA))
+                                                                 (VV 강조/NNC+하/XSV+던/EAN)))))
+                                                   (NP (NP 한국/NPR+의/PAN)
+                                                       (NP 기업/NNC+들/XSF)))
+                                               (NP (ADVP 특히/ADV)
+                                                   (NP 재벌/NNC+기업/NNC+들/XSF+은/PAU)))
+                                       (VP (NP-OBJ 당혹감/NNC+을/PCA)
+                                           느끼/VV+으며/ECS))
+                                    (S (NP-SBJ *pro*)
+                                       (VP (NP-COMP (NP 자신/NNC+들/XSF+의/PAN)
+                                                    (NP 기업/NNC+문화/NNC+에/PAD))
+                                           (NP-OBJ 변화/NNC+을/PCA)
+                                           주/VV+으려는/EAN)))
+                                 (NP 움직임/NNC+을/PCA))
+                         보이/VV+고/ECS))
+                 있/VX+다/EFN+고/PAD))
+   (S (NP-SBJ 포스트/NPR+지/XSF+은/PAU)
+      (VP (S-COMP *T*-3)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>그동안 연공서열, 종신고용, 회사에 대한 충성 등을 강조하던 한국의 기업들 특히 재벌기업들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>당혹감</term>
+	    </Arg>
+	    <Rel>
+	      <term>느끼며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>느끼다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>부시 지사는 종종 약점으로 지적되고 있는 보좌관들에 대한 지나친 의존을 오히려 자신의 강점이라고 생각, 책을 읽기보다는 대화하는 것이 편하다고 느껴 모든 결정도 토론을 통해 내리기를 좋아한다고 말하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 부시/NPR
+              지사/NNC+은/PAU)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (VP (ADVP 종종/ADV)
+                                (VP (NP-COMP 약점/NNC+으로/PAD)
+                                    (VV 지적/NNC+되/XSV+고/ECS)))
+                            있/VX+는/EAN)))
+                  (NP (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-COMP 보좌관/NNC+들/XSF+에/PAD)
+                                대하/VV+은/EAN)))
+                      (NP (S (WHNP-3 *op*)
+                             (S (NP-SBJ *T*-3)
+                                (VP 지나치/VV+은/EAN)))
+                          (NP 의존/NNC+을/PCA))))
+          (VP (ADVP 오히려/ADV)
+              (VP (NP-COMP (NP 자신/NNC+의/PAN)
+                           (NP 강점/NNC+이라고/PAD))
+                  (VV 생각/NNC)))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (VP (S-COMP (S (NP-SBJ *pro*)
+                         (VP (S-COMP (S (NP-SBJ *pro*)
+                                        (VP (NP-OBJ 책/NNC+을/PCA)
+                                            읽/VV+기/ENM+보다/PAD+은/PAU))
+                                     (S (NP-SBJ (S (NP-SBJ *pro*)
+                                                   (VP (NP-COMP *pro*)
+                                                       (VV 대화/NNC+하/XSV+는/EAN)))
+                                                (NP 것/NNX+이/PCA))
+                                        (ADJP 편하/VJ+다/EFN+고/PAD)))
+                             느끼/VV+어/ECS))
+                      (S (NP-SBJ *pro*)
+                         (VP (S-OBJ (NP-SBJ *pro*)
+                                    (VP (NP-OBJ 모든/DAN
+                                                결정/NNC+도/PAU)
+                                        (VP (S (NP-SBJ *pro*)
+                                               (VP (NP-OBJ 토론/NNC+을/PCA)
+                                                   통하/VV+어/ECS))
+                                            (VP 내리/VV+기/ENM+을/PCA))))
+                             (VV 좋/VJ+어하/XSV+는다/EFN+고/PAD))))
+              말하/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>책을 읽기보다는 대화하는 것이 편하다</term>
+	    </Arg>
+	    <Rel>
+	      <term>느껴</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>느끼다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>부시 지사는 조지 부시 전 대통령의 후광을 누리고 있는 데 대해 자신은 "아버지 친구의 절반과 그의 모든 적"을 물려받았다고 말해 전직 대통령의 아들이라는 특별한 신분을 혜택이라기보다는 오히려 부담으로 느끼고 있음을 시사했다.</text>
+	  <parse>
+(S (S (NP-SBJ 부시/NPR
+              지사/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP (S (NP-SBJ *pro*)
+                             (VP (VP (NP-OBJ (NP (NP 조지/NPR
+							 부시/NPR)
+                                                 (NP 전/DAN
+						       대통령/NNC+의/PAN))
+                                             (NP 후광/NNC+을/PCA))
+                                     누리/VV+고/ECS)
+                                 있/VX+는/EAN))
+                          (NP 데/NNX))
+                 대하/VV+어/ECS))
+          (VP (S-COMP (NP-SBJ 자신/NNC+은/PAU)
+                      (VP (NP-OBJ "/SLQ
+                                  (NP (NP 아버지/NNC
+                                          친구/NNC+의/PAN)
+                                      (NP 절반/NNC+과/PCJ))
+                                  (NP (NP 그/NPN+의/PAN)
+                                      (NP 모든/DAN
+                                          적/NNX))
+                                  "/SRQ
+                                  을/PCA)
+                          물려받/VV+었/EPF+다/EFN+고/PAD))
+              말하/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ *pro*)
+                 (VP (VP (NP-OBJ (NP (NP 전직/NNC
+                                         대통령/NNC+의/PAN)
+                                     (NP 아들/NNC+이라는/PAN))
+                                 (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (ADJP (VJ 특별/NNC+하/XSJ+은/EAN))))
+                                     (NP 신분/NNC+을/PCA)))
+                         (VP (S (NP-SBJ *pro*)
+                                (VP (NP 혜택/NNC+이/CO+라/EFN+기/ENM+보다/PAD+은/PAU)))
+                             (ADVP 오히려/ADV)
+                             (VP (NP-COMP 부담/NNC+으로/PAD)
+                                 느끼/VV+고/ECS)))
+                     있/VX+음/ENM+을/PCA))
+          (VV 시사/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>전직 대통령의 아들이라는 특별한 신분</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>혜택이라기보다는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>오히려</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>부담</term>
+	    </Arg>
+	    <Rel>
+	      <term>느끼고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있음을</term>
+	    </Aux>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

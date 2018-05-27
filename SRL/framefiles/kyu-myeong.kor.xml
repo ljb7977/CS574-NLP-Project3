@@ -1,0 +1,161 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>규명</lemma>
+    <comment>Frames file for '규명' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>규명.01</id>
+      <edef>examine</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing examined"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>규명하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>구스만판사는 이미 8 개월전에 `캐러밴 학살'에 연루된 세르기오 아렐라노 장군을 포함한 군 고위장교들의 체포를 명령, 이 사건 배후에 피노체트가 있는지 여부를 규명하기 위한 준비를 해왔다.</text>
+	  <parse>
+(S (NP-SBJ 구스만/NPR+판사/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (ADVP 이미/ADV)
+              (NP-ADV 8/NNU
+                      개월/NNX+전/NNX+에/PAD)
+              (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                 (S (S (NP-SBJ *T*-1)
+                                       (VP (NP-COMP `/SLQ
+                                                    캐러밴/NPR
+                                                    학살/NNC
+                                                    '/SRQ
+                                                    에/PAD)
+                                           (VV 연루/NNC+되/XSV+은/EAN)))
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP-OBJ 세르기오/NPR
+                                                   아렐라노/NPR
+                                                   장군/NNC+을/PCA)
+                                           (VV 포함/NNC+하/XSV+은/EAN)))))
+                              (NP 군/NNC
+                                  고위/NNC+장교/NNC+들/XSF+의/PAN))
+                          (NP 체포/NNC+을/PCA))
+                  (VV 명령/NNC))))
+       ,/SCM
+       (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (VP (S-OBJ (NP-SBJ *pro*)
+					(VP (NP-OBJ (S (NP-ADV 이/DAN
+								 사건/NNC
+								 배후/NNC+에/PAD)
+						       (S (NP-SBJ 피노체트/NPR+이/PCA)
+							  (ADJP 있/VJ+는지/EFN)))
+						    (NP 여부/NNC+을/PCA))
+					    (VV 규명/NNC+하/XSV+기/ENM)))
+                                 위하/VV+은/EAN)))
+                       (NP 준비/NNC+을/PCA))
+               (VP 하/VV+어/ECS))
+           오/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이 사건 배후에 피노체트가 있는지 여부</term>
+	    </Arg>
+	    <Rel>
+	      <term>규명하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>규명되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>생명과학. 의학분야 전문 주간지인 영국의 네이처(Nature)지는 9 일 암 억제 유전자인 브라카(Braca) 1의 신호 전달체계가 한국인 연구팀에 의해 규명돼 유전성 유방암과 난소암의 치료에 새로운 전기가 마련될 전망이라면서 'Cds1에 의한 Braca1 의 인산화는 세포내 DNA 손상반응을 조절한다'는 제목의 연구팀의 논문을 게재했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP 생명/NNC+과학/NNC
+                         ,/SCM
+                         의학/NNC+분야/NNC
+                         전문/NNC
+                         주간지/NNC+이/CO+은/EAN))))
+           (NP (NP 영국/NPR+의/PAN)
+               (NP 네이처/NPR
+                   (PRN -LRB-/SLQ
+                        (NP Nature/NFW)
+                        -RRB-/SRQ)
+                   지/XSF+은/PAU)))
+   (VP (NP-ADV 9/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP (S (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                                       (S (NP-SBJ *T*-2)
+                                          (VP (NP 암/NNC
+                                                  억제/NNC
+                                                  유전자/NNC+이/CO+은/EAN))))
+                                    (NP 브라카/NPR
+                                        (PRN -LRB-/SLQ
+                                             (NP Braca/NFW)
+                                             -RRB-/SRQ)
+                                        1/NNU+의/PAN))
+                                (NP 신호/NNC
+                                    전달/NNC+체계/NNC+이/PCA))
+                        (VP (S (NP-SBJ *pro*)
+                               (VP (NP-COMP 한국인/NNC
+                                            연구팀/NNC+에/PAD)
+                                   의하/VV+어/ECS))
+                            (VP (VV 규명/NNC+되/XSV+어/ECS))))
+                     (S (NP-COMP-4 (NP (NP 유전/NNC+성/XSF)
+                                       (NP (NP 유방암/NNC+과/PCJ)
+                                           (NP 난소암/NNC+의/PAN)))
+                                   (NP 치료/NNC+에/PAD))
+                        (S (NP-SBJ (S (WHNP-3 *op*)
+                                      (S (NP-SBJ *T*-3)
+                                         (ADJP 새롭/VJ+은/EAN)))
+                                   (NP 전기/NNC+이/PCA))
+                           (VP (NP-COMP *T*-4)
+                               (VV 마련/NNC+되/XSV+을/EAN)))))
+                  (NP 전망/NNC+이/CO+라면서/ECS))))
+       (VP (NP-OBJ (NP (S '/SLQ
+                          (NP-SBJ (S (WHNP-5 *op*)
+                                     (S (NP-SBJ *T*-5)
+                                        (VP (NP-COMP Cds1/NFW+에/PAD)
+                                            의하/VV+은/EAN)))
+                                  (NP (NP Braca1/NFW+의/PAN)
+                                      (NP 인산/NNC+화/XSF+은/PAU)))
+                          (VP (NP-OBJ 세포/NNC+내/NNX
+                                      DNA/NFW
+                                      손상/NNC+반응/NNC+을/PCA)
+                              (VV 조절/NNC+하/XSV+는다/EFN))
+                          '/SRQ
+                          는/EAN)
+                       (NP 제목/NNC+의/PAN))
+                   (NP (NP 연구팀/NNC+의/PAN)
+                       (NP 논문/NNC+을/PCA)))
+           (VV 게재/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>암 억제 유전자인 브라카(Braca) 1의 신호 전달체계</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에 의해</f>
+	      <term>한국인 연구팀</term>
+	    </Arg>
+	    <Rel>
+	      <term>규명돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

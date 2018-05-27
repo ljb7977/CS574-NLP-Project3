@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>번지</lemma>
+    <comment>Frames file for '번지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>번지.01</id>
+      <edef>spread</edef>
+      <roleset>
+	<role argnum="1" argrole="thing spreading"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>번지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>짐바브웨 독립전쟁 참전 용사들이 주도하는 수천명의 시위대가 최근 2 백여곳의 백인 소유 농장을 대거 점거함에 따라 인종 분규 양상으로 번지고 있는 짐바브웨 토지 분쟁 사태가 악화일로를 걷고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ (NP 짐바브웨/NPR
+                                            독립/NNC+전쟁/NNC)
+                                        (NP 참전/NNC
+                                            용사/NNC+들/XSF+이/PCA))
+                                (VP (NP-OBJ *T*-1)
+                                    (VV 주도/NNC+하/XSV+는/EAN))))
+                          (NP (NP 수천/NNU+명/NNX+의/PAN)
+                              (NP 시위대/NNC+이/PCA)))
+                  (VP (NP-ADV 최근/NNC)
+                      (VP (NP-OBJ (NP 2/NNU
+                                      백/NNU+여/XSF+곳/NNX+의/PAN)
+                                  (NP 백인/NNC
+                                      소유/NNC
+                                      농장/NNC+을/PCA))
+                          (VP (ADVP 대거/ADV)
+                              (VP (VV 점거/NNC+하/XSV+음/ENM+에/PAD))))))
+          따르/VV+어/ECS))
+   (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (VP (VP (NP-COMP 인종/NNC
+                                     분규/NNC
+                                     양상/NNC+으로/PAD)
+                            번지/VV+고/ECS)
+                        있/VX+는/EAN)))
+              (NP 짐바브웨/NPR
+                  토지/NNC
+                  분쟁/NNC
+                  사태/NNC+이/PCA))
+      (VP (VP (NP-OBJ 악화/NNC+일로/NNC+을/PCA)
+              걷/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=짐바브웨 토지 분쟁 사태</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>인종 분규 양상</term>
+	    </Arg>
+	    <Rel>
+	      <term>번지고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뛰어나오</lemma>
+    <comment>Frames file for '뛰어나오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뛰어나오.01</id>
+      <edef>rush out</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뛰어나오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>와데 당수 지지자들은 20 일 오전 거리로 뛰어나와 춤을 추며 승리를 축하했으며 와데 당수는 "미리 승리를 선언하지 않을 것이나 선거 승리를 확신한다"고 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ 와데/NPR
+              당수/NNC
+              지지자/NNC+들/XSF+은/PAU)
+      (VP (NP-ADV 20/NNU
+                  일/NNX
+                  오전/NNC)
+          (S (NP-SBJ *pro*)
+             (VP (NP-COMP 거리/NNC+으로/PAD)
+                 뛰어나오/VV+어/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 춤/NNC+을/PCA)
+                 추/VV+으며/ECS))
+          (VP (NP-OBJ 승리/NNC+을/PCA)
+              (VV 축하/NNC+하/XSV+었/EPF+으며/ECS))))
+   (S (NP-SBJ 와데/NPR
+              당수/NNC+은/PAU)
+      (VP (S-COMP "/SLQ
+                  (NP-SBJ *pro*)
+                  (VP (VP (VP (VP (ADVP 미리/ADV)
+                                  (VP (NP-OBJ 승리/NNC+을/PCA)
+                                      (VV 선언/NNC+하/XSV+지/ECS)))
+                              않/VX+을/EAN)
+                          (VX 것/NNX+이/CO+으나/ECS))
+                      (VP (NP-OBJ 선거/NNC
+                                  승리/NNC+을/PCA)
+                          (VV 확신/NNC+하/XSV+는다/EFN)))
+                  "/SRQ
+                  고/PAD)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>거리</term>
+	    </Arg>
+	    <Rel>
+	      <term>뛰어나와</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

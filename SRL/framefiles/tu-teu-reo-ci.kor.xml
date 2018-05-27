@@ -1,0 +1,117 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>두드러지</lemma>
+    <comment>Frames file for '두드러지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>두드러지.01</id>
+      <comment>adjective</comment>
+      <edef>noticeable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being noticeable"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>두드러지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>특히 프랑스 자동차의 판매가 두드러져 지난해에 비해 23.7 퍼센트가 증가한 10 만 9 천 280 대가 팔려 점유율이 지난해 같은 기간의 56 퍼센트에서 60.2 퍼센트로 늘어났다.</text>
+	  <parse>
+(S (S (ADVP 특히/ADV)
+      (S (NP-SBJ (NP 프랑스/NPR
+                     자동차/NNC+의/PAN)
+                 (NP 판매/NNC+이/PCA))
+         (ADJP 두드러지/VJ+어/ECS)))
+   (S (NP-SBJ (S (S (NP-SBJ *pro*)
+		    (VP (NP-COMP 지난해/NNC+에/PAD)
+			비하/VV+어/ECS))
+		 (S (NP-SBJ 23.7/NNU
+			    퍼센트/NNX+이/PCA)
+		    (VP (VV 증가/NNC+하/XSV+은/EAN))))
+              (NP 10/NNU
+                  만/NNU
+                  9/NNU
+                  천/NNU
+                  280/NNU
+                  대/NNX+이/PCA))
+      (VP 팔리/VV+어/ECS))
+   (S (NP-SBJ 점유율/NNC+이/PCA)
+      (VP (NP-COMP (NP 지난해/NNC
+			     같은/DAN
+			     기간/NNC+의/PAN)
+		   (NP 56/NNU
+		       퍼센트/NNX+에서/PAD))
+          (NP-COMP 60.2/NNU
+		   퍼센트/NNX+으로/PAD)
+          늘어나/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>프랑스 자동차의 판매</term>
+	    </Arg>
+	    <Rel>
+	      <term>두드러져</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>두드러지.02</id>
+      <comment>verb</comment>
+      <edef>stand out</edef>
+      <roleset>
+	<role argnum="1" argrole="thing standing out"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>두드러지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대형우량주 강세와는 대조적으로 상한가종목이 40 여개에 그칠 정도로 개별종목군의 축소가 두드러지는 양상이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-ADV (NP-COMP (NP 대형/NNC+우량주/NNC)
+                               (NP 강세/NNC+과/PAD+은/PAU))
+                      대조/NNC+적/XSF+으로/PAD)
+              (NP-ADV (S (NP-SBJ 상한가/NNC+종목/NNC+이/PCA)
+                         (VP (NP-COMP 40/NNU
+                                      여/XSF+개/NNX+에/PAD)
+                             그치/VV+을/EAN))
+                      (NP 정도/NNC+으로/PAD))
+              (S (NP-SBJ (NP 개별/NNC+종목/NNC+군/XSF+의/PAN)
+                         (NP 축소/NNC+이/PCA))
+                 (VP 두드러지/VV+는/EAN)))
+           (NP 양상/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>대형우량주 강세와는 대조적으로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>상한가종목이 40 여개에 그칠 정도로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>개별종목군의 축소</term>
+	    </Arg>
+	    <Rel>
+	      <term>두드러지는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

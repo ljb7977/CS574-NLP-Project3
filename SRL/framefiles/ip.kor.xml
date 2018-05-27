@@ -1,0 +1,177 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>입</lemma>
+    <comment>Frames file for '입' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>입.01</id>
+      <edef>wear</edef>
+      <roleset>
+	<role argnum="0" argrole="wearer"/>
+	<role argnum="1" argrole="clothing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포로는 황갈색 군복을 입고 있었습니다.</text>
+	  <parse>
+(S (NP-SBJ 포로/NNC+은/PAU) 
+   (VP (VP (NP-OBJ 황갈색/NNC 
+	           군복/NNC+을/PCA) 
+	   입/VV+고/ECS) 
+       있/VX+었/EPF+습니다/EFN) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>포로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>황갈색 군복</term>
+	    </Arg>
+	    <Rel>
+	      <term>입고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있었습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>입.02</id>
+      <edef>incur</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="patient"/>
+	<role argnum="2" argrole="thing incurred"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>알렉산드르 베쉬냐코프 중앙 선관위원장은 대심원의 이번 결정으로 "중앙 선관위가 재정 및 조직 분야에서 손실을 입게 됐다"고 지적했지만 구체적인 액수는 밝히지 않았다.</text>
+	  <parse>
+(S (S (NP-SBJ 알렉산드르/NPR
+              베쉬냐코프/NPR
+              중앙/NNC
+              선관위/NNC+원장/NNC+은/PAU)
+      (VP (S-COMP (NP-ADV (NP 대심원/NPR+의/PAN)
+                          (NP 이번/NNC
+                              결정/NNC+으로/PAD))
+                  "/SLQ
+                  (S (NP-SBJ 중앙/NNC
+                             선관위/NNC+이/PCA)
+                     (VP (VP (NP-ADV (NP (NP 재정/NNC)
+                                         (ADCP 및/ADC)
+                                         (NP 조직/NNC))
+                                     (NP 분야/NNC+에서/PAD))
+                             (VP (NP-OBJ 손실/NNC+을/PCA)
+                                 입/VV+게/ECS))
+                         되/VX+었/EPF+다/EFN))
+                  "/SRQ
+                  고/PAD)
+          (VV 지적/NNC+하/XSV+었/EPF+지만/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP 구체/NNC+적/XSF+이/CO+은/EAN))))
+                      (NP 액수/NNC+은/PAU))
+              밝히/VV+지/ECS)
+          않/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>대심원의 이번 결정으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>중앙 선관위</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>재정 및 조직 분야에서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>손실</term>
+	    </Arg>
+	    <Rel>
+	      <term>입게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>됐다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>입히다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지난 97 년 수마트라와 칼리만탄의 산불은 싱가포르와 말레이시아 일부를 짙은 연무로 뒤덮어 건강과 관광업에 심각한 피해를 입혔었다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 지난/DAN
+                  97/NNU
+                  년/NNX)
+              (NP (NP (NP 수마트라/NPR+과/PCJ)
+                      (NP 칼리만탄/NPR+의/PAN))
+                  (NP 산불/NNC+은/PAU)))
+      (VP (NP-OBJ (NP 싱가포르/NPR+과/PCJ)
+                  (NP 말레이시아/NPR
+                      일부/NNC+을/PCA))
+          (NP-COMP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP 짙/VJ+은/EAN)))
+                   (NP 연무/NNC+으로/PAD))
+          뒤덮/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (NP 건강/NNC+과/PCJ)
+                   (NP 관광업/NNC+에/PAD))
+          (NP-OBJ (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (ADJP 심각하/VJ+은/EAN)))
+                  (NP 피해/NNC+을/PCA))
+          입히/VV+었었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>지난 97 년 수마트라와 칼리만탄의 산불은 싱가포르와 말레이시아 일부를 짙은 연무로 뒤덮어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>건강과 관광업</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>심각한 피해</term>
+	    </Arg>
+	    <Rel>
+	      <term>입혔었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

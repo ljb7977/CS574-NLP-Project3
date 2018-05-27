@@ -1,0 +1,155 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>비치</lemma>
+    <comment>Frames file for '비치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>비치.01</id>
+      <edef>show</edef>
+      <roleset>
+	<role argnum="0" argrole="shower"/>
+	<role argnum="1" argrole="thing shown"/>
+	<role argnum="2" argrole="seer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>비치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>중앙 선관위는 대심원의 이날 판결에 불복, 대법원 최고회의에 상소할 의사를 비치는 한편 11 명의 기존 후보의 이름이 기록된 투표용지 제작 작업을 중단하고 12 명의 이름이 기록된 투표용지 제작에 착수했다.</text>
+	  <parse>
+(S (NP-SBJ 중앙/NNC
+           선관위/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-COMP (NP 대심원/NPR+의/PAN)
+                                      (NP 이날/NNC
+                                          판결/NNC+에/PAD))
+                             (VV 불복/NNC)))
+                      ,/SCM
+                      (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                     (VP (NP-COMP 대법원/NNC
+                                                  최고/NNC+회의/NNC+에/PAD)
+                                         (VV 상소/NNC+하/XSV+을/EAN)))
+                                  (NP 의사/NNC+을/PCA))
+                          비치/VV+는/EAN)))
+               (NP 한편/NNC))
+       (VP (VP (NP-OBJ (NP (S (WHNP *op*)
+                              (S (NP-SBJ (NP (NP 11/NNU
+                                                 명/NNX+의/PAN)
+                                             (NP 기존/NNC
+                                                 후보/NNC+의/PAN))
+                                         (NP 이름/NNC+이/PCA))
+                                 (VP (VV 기록/NNC+되/XSV+은/EAN))))
+                           (NP 투표/NNC+용지/NNC))
+                       (NP 제작/NNC
+                           작업/NNC+을/PCA))
+               (VV 중단/NNC+하/XSV+고/ECS))
+           (VP (NP-COMP (NP (S (WHNP-2 *op*)
+                               (S (NP-SBJ (NP 12/NNU
+                                              명/NNX+의/PAN)
+                                          (NP 이름/NNC+이/PCA))
+                                  (VP (NP-COMP *T*-2)
+                                      (VV 기록/NNC+되/XSV+은/EAN))))
+                            (NP 투표/NNC+용지/NNC))
+                        (NP 제작/NNC+에/PAD))
+               (VV 착수/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>대심원의 이날 판결에 불복</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>대법원 최고회의에 상소할 의사</term>
+	    </Arg>
+	    <Rel>
+	      <term>비치는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>비치.02</id>
+      <edef>furnish</edef>
+      <roleset>
+	<role argnum="0" argrole="furnisher"/>
+	<role argnum="1" argrole="thing furnished"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>비치하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>시는 이와 함께 한국관광공사의 협조를 얻어 김포공항 각 청사 택시승차대에 영어와 일어 등 외국어 회화가 가능한 택시 도우미를 각각 4 명씩 배치하고 택시내에 회사명과 차량번호, 전화번호 등이 기재된 명함도 비치토록 할 방침이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 시/NNC+은/PAU)
+              (VP (ADVP (NP-COMP 이/NPN+과/PAD)
+                        함께/ADV)
+                  (VP (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP 한국/NPR+관광/NNC+공사/NNC+의/PAN)
+                                         (NP 협조/NNC+을/PCA))
+                                 얻/VV+어/ECS))
+                          (VP (NP-COMP (NP 김포/NPR+공항/NNC)
+                                       (NP 각/DAN
+                                           청사/NNC
+                                           택시/NNC+승차대/NNC+에/PAD))
+                              (NP-OBJ (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (S (NP-SBJ (NP (NP (NP 영어/NNC+과/PCJ)
+                                                               (NP 일어/NNC))
+                                                           (NP 등/NNX))
+                                                       (NP 외국어/NNC
+                                                           회화/NNC+이/PCA))
+                                               (ADJP (VJ 가능/NNC+하/XSJ+은/EAN)))))
+                                      (NP 택시/NNC
+                                          도우미/NNC+을/PCA))
+                              (VP (ADVP 각각/ADV)
+                                  (NP-ADV 4/NNU
+                                          명/NNX+씩/XSF)
+                                  (VP (VV 배치/NNC+하/XSV+고/ECS)))))
+                      (VP (S-COMP (NP-SBJ *pro*)
+                                  (VP (NP-COMP 택시/NNC+내/NNX+에/PAD)
+                                      (NP-OBJ (S (WHNP-2 *op*)
+                                                 (S (NP-SBJ (NP (NP 회사명/NNC+과/PCJ)
+                                                                (NP 차량/NNC+번호/NNC)
+                                                                ,/SCM
+                                                                (NP 전화/NNC+번호/NNC))
+                                                            (NP 등/NNX+이/PCA))
+                                                    (VP (NP-COMP *T*-2)
+                                                        (VV 기재/NNC+되/XSV+은/EAN))))
+                                              (NP 명함/NNC+도/PAU))
+                                      (VV 비치/NNC+하/XSV+도록/ECS)))
+                          하/VV+을/EAN))))
+           (NP 방침/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>택시내</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>회사명과 차량번호, 전화번호 등이 기재된 명함</term>
+	    </Arg>
+	    <Rel>
+	      <term>비치토록</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

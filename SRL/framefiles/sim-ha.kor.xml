@@ -1,0 +1,153 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>심하</lemma>
+    <comment>Frames file for '심하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>심하.01</id>
+      <edef>severe</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being severe"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>심하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리 중대가 따라간 진로 연변에는 고지와 논들이 있었지만 고지들은 기복이 심하지 않고 논들은 얼어 있었기 때문에 장갑 차량이나 탱크들이 통과하는 데는 아무 문제가 없었습니다.</text>
+	  <parse>
+(S (S (NP-COMP-2 (S (WHNP-1 *op*)
+                    (S (NP-SBJ 우리/NPN
+                               중대/NNC+이/PCA)
+                       (VP (NP-OBJ *T*-1)
+                           따라가/VV+은/EAN)))
+                 (NP 진로/NNC
+                     연변/NNC+에/PAD+은/PAU))
+      (S (NP-SBJ (NP 고지/NNC+과/PCJ)
+                 (NP 논/NNC+들/XSF+이/PCA))
+         (ADJP (NP-COMP *T*-2)
+               있/VJ+었/EPF+지만/ECS)))
+   (S (S (NP-SBJ 고지/NNC+들/XSF+은/PAU)
+         (S (NP-SBJ 기복/NNC+이/PCA)
+            (VP (ADJP 심하/VJ+지/ECS)
+                않/VX+고/ECS)))
+      (NP-ADV (S (NP-SBJ 논/NNC+들/XSF+은/PAU)
+                 (VP (VP 얼/VV+어/ECS)
+                     있/VX+었/EPF+기/ENM))
+              (NP 때문/NNX+에/PAD))
+      (S (NP-COMP-3 (S (NP-SBJ (NP 장갑/NNC
+                                   차량/NNC+이나/PCJ)
+                               (NP 탱크/NNC+들/XSF+이/PCA))
+                       (VP (NP-OBJ *pro*)
+                           (VV 통과/NNC+하/XSV+는/EAN)))
+                    (NP 데/NNX+은/PAU))
+         (S (NP-SBJ 아무/DAN
+                    문제/NNC+이/PCA)
+            (ADJP (NP-COMP *T*-3)
+                  없/VJ+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>고지들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>기복</term>
+	    </Arg>
+	    <Rel>
+	      <term>심하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않고</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>그 트럭이 너무 오래돼서 달려 갈 때는 진동이 심하다.</text>
+	  <parse>
+(S (S (NP-SBJ 그/DAN
+              트럭/NNC+이/PCA)
+      (ADJP (ADVP 너무/ADV)
+            (ADJP 오래되/VJ+어서/ECS)))
+   (S (NP-ADV (S (WHNP *op*)
+                 (S (NP-SBJ *pro*)
+                    (VP 달려가/VV+을/EAN)))
+              (NP 때/NNC+은/PAU))
+      (S (NP-SBJ 진동/NNC+이/PCA)
+         (ADJP 심하/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>그 트럭이 너무 오래돼서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>달려 갈 때는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>진동</term>
+	    </Arg>
+	    <Rel>
+	      <term>심하다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>심해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인도네시아 산불로 인한 연무가 심해짐에 따라 싱가포르는 10 일 천식환자들에 대해 바깥 출입을 삼가도록 권고하는 등 대응 조치를 취하기 시작했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-COMP 인도네시아/NPR
+                                             산불/NNC+으로/PAD)
+                                    인하/VV+은/EAN)))
+                          (NP 연무/NNC+이/PCA))
+                  (VP (VV 심하/VJ+어지/XSV+음/ENM+에/PAD)))
+          따르/VV+어/ECS))
+   (S (NP-SBJ 싱가포르/NPR+은/PAU)
+      (VP (NP-ADV 10/NNU
+                  일/NNX)
+          (VP (S-OBJ (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                                        (VP (S (NP-SBJ *pro*)
+                                               (VP (NP-COMP 천식/NNC+환자/NNC+들/XSF+에/PAD)
+                                                   대하/VV+어/ECS))
+                                            (VP (S-COMP (NP-SBJ *pro*)
+                                                        (VP (NP-OBJ 바깥/NNC
+                                                                    출입/NNC+을/PCA)
+                                                            삼가/VV+도록/ECS))
+                                                (VV 권고/NNC+하/XSV+는/EAN))))
+                                     (NP 등/NNX))
+                                 (NP 대응/NNC
+                                     조치/NNC+을/PCA))
+                         취하/VV+기/ENM))
+              (VV 시작/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>인도네시아 산불로 인한 연무</term>
+	    </Arg>
+	    <Rel>
+	      <term>심해짐에</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,109 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재편성</lemma>
+    <comment>Frames file for '재편성' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>재편성.01</id>
+      <edef>reorganize</edef>
+      <roleset>
+	<role argnum="0" argrole="reorganizer"/>
+	<role argnum="1" argrole="thing reorganized"/>
+	<role argnum="2" argrole="start state"/>
+	<role argnum="3" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재편성하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>공격 작전 시 후방부는 후방 부대의 각 제대들을 작전 계획에 맞도록 재편성한다.</text>
+	  <parse>
+(S (NP-ADV 공격/NNC
+           작전/NNC
+           시/NNX)
+   (S (NP-SBJ 후방부/NNC+은/PAU)
+      (VP (NP-OBJ (NP 후방/NNC
+                      부대/NNC+의/PAN)
+                  (NP 각/DAN
+                      제대/NNC+들/XSF+을/PCA))
+          (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-COMP 작전/NNC
+                               계획/NNC+에/PAD)
+                      맞/VV+도록/ECS))
+          (VV 재편성/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>공격 작전 시</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>후방부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>후방 부대의 각 제대들</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>도록</f>
+	      <term>작전 계획에 맞도록</term>
+	    </Arg>
+	    <Rel>
+	      <term>재편성한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>재편성되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>후방 부대들의 각급 제대들은 작전 계획에 맞도록 재편성될 수 있다.</text>
+	  <parse>
+(S (NP-SBJ (NP 후방/NNC
+               부대/NNC+들/XSF+의/PAN)
+           (NP 각/XPF+급/NNC
+               제대/NNC+들/XSF+은/PAU))
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-COMP 작전/NNC
+                                계획/NNC+에/PAD)
+                       맞/VV+도록/ECS))
+           (VV 재편성/NNC+되/XSV+을/EAN))
+       (VX 수/NNX
+           있/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>후방 부대들의 각급 제대들</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>도록</f>
+	      <term>작전 계획에 맞</term>
+	    </Arg>
+	    <Rel>
+	      <term>재편성될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

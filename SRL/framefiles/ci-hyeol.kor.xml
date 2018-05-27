@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>지혈</lemma>
+    <comment>Frames file for '지혈' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>지혈.01</id>
+      <edef>stanch</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="blood"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>지혈하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>야전에서 지혈할 땐 주로 붕대를 사용합니다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (NP-ADV 야전/NNC+에서/PAD)
+                     (VP (VV 지혈/NNC+하/XSV+을/EAN)))))
+           (NP 때/NNC+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 주로/ADV)
+          (VP (NP-OBJ 붕대/NNC+을/PCA)
+              (VV 사용/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>야전에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>지혈할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

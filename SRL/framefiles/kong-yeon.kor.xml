@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>공연</lemma>
+    <comment>Frames file for '공연' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>공연.01</id>
+      <edef>perform</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="performance"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>공연하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 학교 무용부는 미국내 동포들이 많이 살고 있는 로스엔젤레스와 뉴욕에서 민족무용을 공연할 예정이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 이/DAN
+			학교/NNC
+			무용부/NNC+은/PAU)
+	      (VP (NP-ADV (S (WHNP *op*)
+			     (S (NP-SBJ 미국/NPR+내/NNX
+					    동포/NNC+들/XSF+이/PCA)
+				(VP (VP (ADVP 많이/ADV)
+					(VP 살/VV+고/ECS))
+				    있/VX+는/EAN)))
+			  (NP (NP 로스엔젤레스/NPR+과/PCJ)
+			      (NP 뉴욕/NPR+에서/PAD)))
+		  (VP (NP-OBJ 민족/NNC+무용/NNC+을/PCA)
+		      (VV 공연/NNC+하/XSV+을/EAN))))
+	   (NP 예정/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>이 학교 무용부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>미국내 동포들이 많이 살고 있는 로스엔젤레스와 뉴욕에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>민족무용</term>
+	    </Arg>
+	    <Rel>
+	      <term>공연할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

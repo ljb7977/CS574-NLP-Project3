@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>속단</lemma>
+    <comment>Frames file for '속단' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>속단.01</id>
+      <edef>decide hastily</edef>
+      <roleset>
+	<role argnum="0" argrole="decider"/>
+	<role argnum="1" argrole="decision"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>속단하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>물론 자민련과 민국당간의 합당설이 실현될 수 있을지의 여부는 속단하기 어렵다는 게 중론이다.</text>
+	  <parse>
+(S (ADVP 물론/ADV)
+   (S (NP-SBJ (S (S-SBJ (NP-SBJ *pro*)
+                        (VP (NP-OBJ (S (NP-SBJ (NP (NP 자민련/NPR+과/PCJ)
+                                                   (NP 민국당/NPR+간/XSF+의/PAN))
+                                               (NP 합당/NNC+설/NNC+이/PCA))
+                                       (VP (VP (VV 실현/NNC+되/XSV+을/EAN))
+                                           (VX 수/NNX
+                                               있/VJ+을지/EFN+의/PAN)))
+                                    (NP 여부/NNC+은/PAU))
+                            (VV 속단/NNC+하/XSV+기/ENM)))
+                 (ADJP 어렵/VJ+다는/EAN))
+              (NP 것/NNX+이/PCA))
+      (VP (NP 중론/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>자민련과 민국당간의 합당설이 실현될 수 있을지의 여부</term>
+	    </Arg>
+	    <Rel>
+	      <term>속단하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

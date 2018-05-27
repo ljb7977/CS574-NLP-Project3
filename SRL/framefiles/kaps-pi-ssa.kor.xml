@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>값비싸</lemma>
+    <comment>Frames file for '값비싸' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>값비싸.01</id>
+      <edef>expensive</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being expensive"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>값비싸다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>군사전문지 제인스 디펜스 위클리의 로버트 카니얼 아태판 편집인은 단순 대비로 보면 중국의 병력 수가 대만보다 월등히 많지만 군사장비 면에서는 21 세기의 값비싼 첨단기술전을 치르기에는 부적절한 편이라고 평가했다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP 군사/NNC+전문지/NNC)
+               (NP 제인스/NPR
+                   디펜스/NPR
+                   위클리/NPR+의/PAN))
+           (NP (NP 로버트/NPR
+                   카니얼/NPR)
+               (NP 아태판/NNC
+                   편집인/NNC+은/PAU)))
+   (VP (NP-COMP (S (S (S (NP-SBJ *pro*)
+                         (VP (NP-ADV 단순/NNC
+                                     대비/NNC+으로/PAD)
+                             (VP 보/VV+으면/ECS)))
+                      (S (NP-SBJ (NP 중국/NPR+의/PAN)
+                                 (NP 병력/NNC
+                                     수/NNC+이/PCA))
+                         (ADJP (NP-ADV 대만/NPR+보다/PAD)
+                               (ADVP 월등히/ADV)
+                               (ADJP 많/VJ+지만/ECS))))
+                   (S (NP-SBJ *pro*)
+                      (ADJP (NP-ADV 군사/NNC+장비/NNC
+                                    면/NNC+에서/PAD+은/PAU)
+                            (ADJP (S-COMP (NP-SBJ *pro*)
+                                          (VP (NP-OBJ (NP 21/NNU
+                                                          세기/NNX+의/PAN)
+                                                      (NP (S (WHNP-1 *op*)
+                                                             (S (NP-SBJ *T*-1)
+                                                                (ADJP 값비싸/VJ+은/EAN)))
+                                                          (NP 첨단기술전/NNC+을/PCA)))
+                                              치르/VV+기/ENM+에/PAD+은/PAU))
+                                  부적절하/VJ+은/EAN))))
+                (NP 편/NNX+이라고/PAD))
+       (VV 평가/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=첨단기술전</term>
+	    </Arg>
+	    <Rel>
+	      <term>값비싼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

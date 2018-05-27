@@ -1,0 +1,106 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>채워넣</lemma>
+    <comment>Frames file for '채워넣' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>채워넣.01</id>
+      <edef>fill</edef>
+      <roleset>
+	<role argnum="0" argrole="thing filling"/>
+	<role argnum="1" argrole="thing filled"/>
+	<role argnum="2" argrole="fill with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>채워넣다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>크루그먼은 뉴욕타임스 칼럼을 통해 석유수출국기구(OPEC) 회원국들이 이달 말 회의에서 생산량을 크게 늘린다 해도 시장에 반영되는 것은 5 월 중순 이후나 될 것이라고 지적하고 "현재 논의되고 있는 증산규모는 고갈된 재고량을 채워넣는 것은 고사하고 재고량 사용을 중단하기에도 부족한 것으로 보인다"면서 올 여름께 휘발유 가격의 급등이 전적으로 가능한 것으로 보인다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 크루그먼/NPR+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 뉴욕타임스/NPR
+                      칼럼/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (VP (VP (S-COMP (S (NP-SBJ *pro*)
+                          (VP (S-COMP (NP-SBJ 석유/NNC+수출국/NNC+기구/NNC
+                                              (PRN -LRB-/SLQ
+                                                   OPEC/NFW
+                                                   -RRB-/SRQ)
+                                              회원국/NNC+들/XSF+이/PCA)
+                                      (VP (NP-ADV 이달/NNC
+                                                  말/NNC
+                                                  회의/NNC+에서/PAD)
+                                          (VP (NP-OBJ 생산량/NNC+을/PCA)
+                                              (VP (ADVP (ADV 크/VJ+게/ECS))
+                                                  (VP 늘리/VV+는다/EFN)))))
+                              하/VV+어도/ECS))
+                       (S (NP-SBJ (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (NP-COMP 시장/NNC+에/PAD)
+                                            (VV 반영/NNC+되/XSV+는/EAN))))
+                                  (NP 것/NNX+은/PAU))
+                          (VP (VP (NP-COMP 5/NNU
+                                           월/NNX
+                                           중순/NNC
+                                           이후/NNC+이나/PAU)
+                                  (VP 되/VV+을/EAN))
+                              (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+               (VV 지적/NNC+하/XSV+고/ECS))
+           (VP (S-COMP (S "/SLQ
+                          (NP-SBJ (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (VP (VP (NP-ADV 현재/NNC)
+                                                (VP (VV 논의/NNC+되/XSV+고/ECS)))
+                                            있/VX+는/EAN)))
+                                  (NP 증산/NNC+규모/NNC+은/PAU))
+                          (VP (ADVP (NP-COMP (S (NP-SBJ *pro*)
+                                                (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                               (S (NP-SBJ *T*-3)
+                                                                  (VP (VV 고갈/NNC+되/XSV+은/EAN))))
+                                                            (NP 재고량/NNC+을/PCA))
+                                                    채워넣/VV+는/EAN))
+                                             (NP 것/NNX+은/PAU))
+                                    고사하고/ADV)
+                              (VP (NP-COMP (S (NP-SBJ *pro*)
+                                              (ADJP (S-COMP (NP-SBJ *pro*)
+                                                            (VP (NP-OBJ 재고량/NNC
+                                                                        사용/NNC+을/PCA)
+                                                                (VV 중단/NNC+하/XSV+기/ENM+에/PAD+도/PAU)))
+                                                    (VJ 부족/NNC+하/XSJ+은/EAN)))
+                                           (NP 것/NNX+으로/PAD))
+                                  보이/VV+는다/EFN))
+                          "/SRQ
+                          면서/ECS)
+                       (S (NP-SBJ *pro*)
+                          (VP (NP-COMP (S (NP-ADV 올/DAN
+                                                  여름/NNC+께/XSF)
+                                          (S (NP-SBJ (NP 휘발유/NNC
+                                                         가격/NNC+의/PAN)
+                                                     (NP 급등/NNC+이/PCA))
+                                             (ADJP (NP-ADV 전적/NNC+으로/PAD)
+                                                   (ADJP (VJ 가능/NNC+하/XSJ+은/EAN)))))
+                                       (NP 것/NNX+으로/PAD))
+                              보이/VV+는다/EFN+고/PAD)))
+               밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>고갈된 재고량</term>
+	    </Arg>
+	    <Rel>
+	      <term>채워넣는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>정체</lemma>
+    <comment>Frames file for '정체' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>정체.01</id>
+      <edef>stagnate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing stagnated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>정체되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>하타미 대통령은 현재 시장개혁을 통해 정체된 경제를 회복시킴으로써 향후 5 년동안 약 380 만개의 일자리를 창출한다는 목표하에 민영화계획을 추진하고 있으나 성직자회의는 이를 헌법에 위배되는 것으로 규정, 반대입장을 보이고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 하타미/NPR
+              대통령/NNC+은/PAU)
+      (VP (VP (NP-ADV 현재/NNC)
+              (NP-ADV (S (S (S (NP-SBJ *pro*)
+			       (VP (NP-OBJ 시장/NNC+개혁/NNC+을/PCA)
+				   통하/VV+어/ECS))
+			    (S (NP-SBJ *pro*)
+			       (VP (NP-OBJ (S (WHNP-1 *op*)
+					      (S (NP-SBJ *T*-1)
+						 (VP (VV 정체/NNC+되/XSV+은/EAN))))
+					   (NP 경제/NNC+을/PCA))
+				   (VV 회복/NNC+시키/XSV+음/ENM+으로써/PAD))))
+                         (S (NP-SBJ *pro*)
+                            (VP (NP-ADV 향후/NNC
+					5/NNU
+					년/NNX+동안/NNX)
+                                (VP (NP-OBJ (NP 약/DAN
+						380/NNU
+						만/NNU+개/NNX+의/PAN)
+                                            (NP 일자리/NNC+을/PCA))
+                                    (VV 창출/NNC+하/XSV+는다는/EAN)))))
+                      (NP 목표/NNC+하/NNX+에/PAD))
+              (VP (NP-OBJ 민영화/NNC+계획/NNC+을/PCA)
+                  (VV 추진/NNC+하/XSV+고/ECS)))
+          있/VX+으나/ECS))
+   (S (NP-SBJ 성직자/NNC+회의/NNC+은/PAU)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 이/NPN+을/PCA)
+                     (NP-COMP (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP-COMP 헌법/NNC+에/PAD)
+                                        (VV 위배/NNC+되/XSV+는/EAN))))
+                              (NP 것/NNX+으로/PAD))
+                     (VV 규정/NNC)))
+              ,/SCM
+              (VP (NP-OBJ 반대/NNC+입장/NNC+을/PCA)
+                  보이/VV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=경제</term>
+	    </Arg>
+	    <Rel>
+	      <term>정체된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

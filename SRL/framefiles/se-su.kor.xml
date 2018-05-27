@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>세수</lemma>
+    <comment>Frames file for '세수' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>세수.01</id>
+      <edef>wash one's face and hands</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>세수하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>그러나 그는 신장비가 손을 깨끗이 씻는 것과 같은 단순한 조치에 비해 많은 비용이 소요된다며 의사와 간호사 등 병원 종사자들이 환자와 접촉한 뒤 매번 세수하는 것이 질병예방에 훨씬 효과적이라고 설명했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 그/NPN+은/PAU)
+      (VP (S (NP-SBJ 신/XPF+장비/NNC+이/PCA)
+             (S (S (NP-SBJ *pro*)
+                   (VP (NP-COMP (S (WHNP-1 *op*)
+                                   (S (S (NP-SBJ *T*-1)
+                                         (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                                                           (VP (NP-OBJ 손/NNC+을/PCA)
+                                                               (VP (ADVP 깨끗이/ADV)
+                                                                   (VP 씻/VV+는/EAN))))
+                                                        (NP 것/NNX+과/PAD))
+                                               같/VJ+은/EAN))
+                                      (S (NP-SBJ *T*-1)
+                                         (ADJP (VJ 단순/NNC+하/XSJ+은/EAN)))))
+                                (NP 조치/NNC+에/PAD))
+                       비하/VV+어/ECS))
+                (S (NP-SBJ (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (ADJP 많/VJ+은/EAN)))
+                           (NP 비용/NNC+이/PCA))
+                   (VP (VV 소요/NNC+되/XSV+는다며/ECS)))))
+          (VP (S-COMP (NP-SBJ (S (NP-SBJ (NP (NP (NP 의사/NNC+과/PCJ)
+                                                 (NP 간호사/NNC))
+                                             (NP 등/NNX))
+                                         (NP 병원/NNC
+                                             종사자/NNC+들/XSF+이/PCA))
+                                 (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                (VP (NP-COMP 환자/NNC+과/PAD)
+                                                    (VV 접촉/NNC+하/XSV+은/EAN)))
+                                             (NP 뒤/NNC))
+                                     (NP-ADV 매번/NNC)
+                                     (VP (VV 세수/NNC+하/XSV+는/EAN))))
+                              (NP 것/NNX+이/PCA))
+                      (VP (NP-COMP 질병/NNC+예방/NNC+에/PAD)
+                          (VP (ADVP 훨씬/ADV)
+                              (VP (NP 효과/NNC+적/XSF+이/CO+라/EFN+고/PAD)))))
+              (VV 설명/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>의사와 간호사 등 병원 종사자들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>환자와 접촉한 뒤</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>매번</term>
+	    </Arg>
+	    <Rel>
+	      <term>세수하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

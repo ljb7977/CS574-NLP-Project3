@@ -1,0 +1,172 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>양성</lemma>
+    <comment>Frames file for '양성' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>양성.01</id>
+      <edef>train</edef>
+      <roleset>
+	<role argnum="0" argrole="thing training"/>
+	<role argnum="1" argrole="thing trained"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>양성하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또한 12 개국 19 개 대학이 참여하는 사이버 대학을 설치해 벤처기업용 첨단기술에 필요한 전문인력을 양성하고 이 대학의 사무국은 서울에 두기로 하고, 종이금속화, 전자산업용 나노크리스탈 다이아몬드 공동연구개발, 단백질 대량생산기술 등 생명공학 분야에서의 기술 제휴 등도 추진키로 할 계획이다.</text>
+	  <parse>
+(S (ADCP 또한/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ (NP 12/NNU
+                                               개국/NNX)
+                                           (NP 19/NNU
+                                               개/NNX
+                                               대학/NNC+이/PCA))
+                                   (VP (NP-COMP *T*-1)
+                                       (VV 참여/NNC+하/XSV+는/EAN))))
+                             (NP 사이버/NNC
+                                 대학/NNC+을/PCA))
+                     (VV 설치/NNC+하/XSV+어/ECS)))
+              (VP (NP-OBJ (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (ADJP (NP-COMP (NP 벤처/NNC+기업/NNC+용/XSF)
+                                               (NP 첨단/NNC+기술/NNC+에/PAD))
+                                      (VJ 필요/NNC+하/XSJ+은/EAN))))
+                          (NP 전문/NNC+인력/NNC+을/PCA))
+                  (VV 양성/NNC+하/XSV+고/ECS)))
+          (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (NP-OBJ (NP 이/DAN
+                                      대학/NNC+의/PAN)
+                                  (NP 사무국/NNC+은/PAU))
+                          (NP-COMP 서울/NPR+에/PAD)
+                          두/VV+기/ENM+으로/PAD))
+              하/VV+고/ECS)))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ *pro*)
+                 (VP (S-COMP (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP (NP 종이/NNC+금속/NNC+화/XSF)
+                                             ,/SCM
+                                             (NP 전자/NNC+산업용/NNC
+                                                 나노크리스탈/NNC
+                                                 다이아몬드/NNC
+                                                 공동/NNC+연구/NNC+개발/NNC)
+                                             ,/SCM
+                                             (NP (NP (NP (NP 단백질/NNC
+                                                             대량/NNC+생산/NNC+기술/NNC)
+                                                         (NP 등/NNX))
+                                                     (NP 생명/NNC+공학/NNC
+                                                         분야/NNC+에서/PAD+의/PAN))
+                                                 (NP 기술/NNC
+                                                     제휴/NNC)))
+                                         (NP 등/NNX+도/PAU))
+                                 (VV 추진/NNC+하/XSV+기/ENM+으로/PAD)))
+                     하/VV+을/EAN))
+              (NP 계획/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>12 개국 19 개 대학이 참여하는 사이버 대학을 설치해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>벤처기업용 첨단기술에 필요한 전문인력</term>
+	    </Arg>
+	    <Rel>
+	      <term>양성하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>양성되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>시장 조사 기관인 IDC와 마이크로소프트(MS)가 공동 조사를 실시해 발표한 보고서에 따르면, 유럽에서는 오는 2003 년까지 1 천 300 만명의 숙련된 정보기술 인력이 필요하지만 양성된 인력은 1 천 130 만명에 그치게 돼 170 만명이 부족하게 될 것으로 보인다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (WHNP-2 *op*)
+                      (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP 시장/NNC
+                                                   조사/NNC
+                                                   기관/NNC+이/CO+은/EAN))))
+                                     (NP ICD/NFW+과/PCJ))
+                                 (NP 마이크로소프트/NPR
+                                     (PRN -LRB-/SLQ
+                                          MS/NFW
+                                          -RRB-/SRQ)
+                                     이/PCA))
+                         (VP (S (NP-SBJ *pro*)
+                                (VP (NP-ADV 공동/NNC)
+                                    (VP (NP-OBJ 조사/NNC+을/PCA)
+                                        (VV 실시/NNC+하/XSV+어/ECS))))
+                             (VP (NP-OBJ *T*-2)
+                                 (VV 발표/NNC+하/XSV+은/EAN)))))
+                   (NP 보고서/NNC+에/PAD))
+          따르/VV+으면/ECS))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (S (NP-ADV 유럽/NPR+에서/PAD+은/PAU)
+                         (NP-ADV 오는/DAN
+                                 2003/NNU
+                                 년/NNX+까지/PAU)
+                         (S (NP-SBJ (NP 1/NNU
+                                        천/NNU
+                                        300/NNU
+                                        만/NNU+명/NNX+의/PAN)
+                                    (NP (S (WHNP-3 *op*)
+                                           (S (NP-SBJ *T*-3)
+                                              (VP (VV 숙련/NNC+되/XSV+은/EAN))))
+                                        (NP 정보/NNC+기술/NNC
+                                            인력/NNC+이/PCA)))
+                            (ADJP (VJ 필요/NNC+하/XSJ+지만/ECS))))
+                      (S (NP-SBJ (S (WHNP-4 *op*)
+                                    (S (NP-SBJ *T*-4)
+                                       (VP (VV 양성/NNC+되/XSV+은/EAN))))
+                                 (NP 인력/NNC+은/PAU))
+                         (VP (VP (NP-COMP 1/NNU
+                                          천/NNU
+                                          130/NNU
+                                          만/NNU+명/NNX+에/PAD)
+                                 그치/VV+게/ECS)
+                             되/VX+어/ECS))
+                      (S (NP-SBJ 170/NNU
+                                 만/NNU+명/NNX+이/PCA)
+                         (VP (ADJP (VJ 부족/NNC+하/XSJ+게/ECS))
+                             되/VX+을/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=인력</term>
+	    </Arg>
+	    <Rel>
+	      <term>양성된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>현명</lemma>
+    <comment>Frames file for '현명' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>현명.01</id>
+      <edef>wise</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being wise"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>현명하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 "통일이 될 때까지 북한과 평화적으로 공존하며, 서로 화해하고 인적, 물적 교류를 해 가는 것이 현명한 대북정책"이라고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (VP (NP-ADV (S (WHNP *op*)
+                                                 (S (NP-SBJ 통일/NNC+이/PCA)
+                                                    (VP 되/VV+을/EAN)))
+                                              (NP 때/NNC+까지/PAU))
+                                      (S (NP-SBJ *pro*)
+                                         (VP (NP-COMP 북한/NPR+과/PAD)
+                                             (VP (NP-ADV 평화/NNC+적/XSF+으로/PAD)
+                                                 (VP (VV 공존/NNC+하/XSV+으며/ECS)))))
+                                      ,/SCM
+                                      (VP (VP (ADVP 서로/ADV)
+                                              (VP (VV 화해/NNC+하/XSV+고/ECS)))
+                                          (VP (NP-OBJ (NP (NP 인/NNC+적/XSF)
+                                                          ,/SCM
+                                                          (NP 물/NNC+적/XSF))
+                                                      (NP 교류/NNC+을/PCA))
+                                              하/VV+어/ECS)))
+                                  가/VX+는/EAN))
+                           (NP 것/NNX+이/PCA))
+                   (VP (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (ADJP (VJ 현명/NNC+하/XSJ+은/EAN))))
+                           (NP 대/XPF+북/NPR+정책/NNC)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=대북정책</term>
+	    </Arg>
+	    <Rel>
+	      <term>현명한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

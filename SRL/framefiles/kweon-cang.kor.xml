@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>권장</lemma>
+    <comment>Frames file for '권장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>권장.01</id>
+      <edef>recommend</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing recommended"/>
+	<role argnum="2" argrole="recommended to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>권장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>캐나다 연방정부는 이번 조사결과를 토대로 연방정부 내에 해킹을 보고하고 대응책을 마련하는 기구를 설치할 것을 자체적으로 권장했다.</text>
+	  <parse>
+(S (NP-SBJ 캐나다/NPR
+           연방/NNC+정부/NNC+은/PAU)
+   (VP (NP-ADV (NP-OBJ 이번/NNC
+                       조사/NNC+결과/NNC+을/PCA)
+               토대/NNC+으로/PAD)
+       (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (NP-COMP 연방/NNC+정부/NNC
+                                   내/NNX+에/PAD)
+                          (NP-OBJ (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (VP (NP-OBJ 해킹/NNC+을/PCA)
+                                                (VV 보고/NNC+하/XSV+고/ECS))
+                                            (VP (NP-OBJ 대응책/NNC+을/PCA)
+                                                (VV 마련/NNC+하/XSV+는/EAN)))))
+                                  (NP 기구/NNC+을/PCA))
+                          (VV 설치/NNC+하/XSV+을/EAN)))
+                   (NP 것/NNX+을/PCA))
+           (VP (ADVP (ADV 자체/NNC+적/XSF+으로/PAD))
+               (VP (VV 권장/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>캐나다 연방정부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>이번 조사결과를 토대로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>연방정부 내에 해킹을 보고하고 대응책을 마련하는 기구를 설치할 것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>자체적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>권장했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

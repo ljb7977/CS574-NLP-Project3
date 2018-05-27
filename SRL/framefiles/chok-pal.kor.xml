@@ -1,0 +1,128 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>촉발</lemma>
+    <comment>Frames file for '촉발' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>촉발.01</id>
+      <edef>detonate</edef>
+      <roleset>
+	<role argnum="0" argrole="thing detonating"/>
+	<role argnum="1" argrole="thing detonated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>촉발하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>현재 캐나다에 머무르고 있는 슈라이버는 기민당 비자금 스캔들을 촉발한 인물로 지난 91 년 기민당 재정국장 빌터 라이슬러 키프에게 100 만마르크(약 6 억원)의 뇌물을 제공한 사실이 드러나 검찰의 추적을 받고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-ADV 현재/NNC)
+                         (VP (NP-COMP 캐나다/NPR+에/PAD)
+                             머무르/VV+고/ECS))
+                     있/VX+는/EAN)))
+           (NP 슈라이버/NPR+은/PAU))
+   (VP (NP-ADV (S (WHNP-2 *op*)
+                  (S (NP-SBJ *T*-2)
+                     (VP (NP-OBJ 기민당/NPR
+                                 비자금/NNC
+                                 스캔들/NNC+을/PCA)
+                         (VV 촉발/NNC+하/XSV+은/EAN))))
+               (NP 인물/NNC+으로/PAD))
+       (VP (S (NP-SBJ (S (NP-SBJ *pro*)
+                         (VP (NP-ADV 지난/DAN
+                                     91/NNU
+                                     년/NNX)
+                             (VP (NP-COMP 기민당/NPR
+                                          재정/NNC+국장/NNC
+                                          빌터/NPR
+                                          라이슬러/NPR
+                                          키프/NPR+에게/PAD)
+                                 (NP-OBJ (NP 100/NNU
+                                             만/NNU+마르크/NNX
+                                             (PRN -LRB-/SLQ
+                                                  (NP 약/DAN
+                                                      6/NNU
+                                                      억/NNU+원/NNX)
+                                                  -RRB-/SRQ)
+                                             의/PAN)
+                                         (NP 뇌물/NNC+을/PCA))
+                                 (VV 제공/NNC+하/XSV+은/EAN))))
+                      (NP 사실/NNC+이/PCA))
+              (VP 드러나/VV+어/ECS))
+           (VP (VP (NP-OBJ (NP 검찰/NNC+의/PAN)
+                           (NP 추적/NNC+을/PCA))
+                   받/VV+고/ECS)
+               있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=인물</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>기민당 비자금 스캔들</term>
+	    </Arg>
+	    <Rel>
+	      <term>촉발한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>촉발되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 산유국들의 산유량 제한으로 인해 촉발된 석유가 폭등은 운송 분야의 비용 증가와 이익 감소로 연결됐다고 보고서는 지적했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (S-COMP-2 (NP-SBJ (S (WHNP-1 *op*)
+                           (S (NP-SBJ *T*-1)
+                              (VP (S (NP-SBJ *pro*)
+                                     (VP (NP-COMP (NP 산유국/NNC+들/XSF+의/PAN)
+                                                  (NP 산유량/NNC
+                                                      제한/NNC+으로/PAD))
+                                         인하/VV+어/ECS))
+                                  (VP (VV 촉발/NNC+되/XSV+은/EAN)))))
+                        (NP 석유/NNC+가/XSF
+                            폭등/NNC+은/PAU))
+                (VP (NP-COMP (NP 운송/NNC
+                                 분야/NNC+의/PAN)
+                             (NP (NP 비용/NNC
+                                     증가/NNC+과/PCJ)
+                                 (NP 이익/NNC
+                                     감소/NNC+으로/PAD)))
+                    (VV 연결/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))
+      (S (NP-SBJ 보고서/NNC+은/PAU)
+         (VP (S-COMP *T*-2)
+             (VV 지적/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=석유가 폭등</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>으로 인해</f>
+	      <term>산유국들의 산유량 제한</term>
+	    </Arg>
+	    <Rel>
+	      <term>촉발된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

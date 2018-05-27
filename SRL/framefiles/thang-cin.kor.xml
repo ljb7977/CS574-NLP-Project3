@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탕진</lemma>
+    <comment>Frames file for '탕진' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탕진.01</id>
+      <edef>waste</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing wasted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탕진하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조 앤드루 민주당 전국위원회 의장은 "부시 지사가 7 천만 달러를 탕진한 채 오늘날 이렇게 앉아 있으리라고 누가 생각이나 했겠느냐"고 반문했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 조/NPR
+               앤드루/NPR)
+           (NP 민주당/NPR
+               전국/NNC+위원회/NNC
+               의장/NNC+은/PAU))
+   (VP (S-COMP "/SLQ
+               (S-COMP-1 (NP-SBJ 부시/NPR
+                                 지사/NNC+이/PCA)
+                         (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                            (VP (NP-OBJ 7/NNU
+                                                        천만/NNU
+                                                        달러/NNX+을/PCA)
+                                                (VV 탕진/NNC+하/XSV+은/EAN)))
+                                         (NP 채/NNX))
+                                 (NP-ADV 오늘날/NNC)
+                                 (ADVP 이렇게/ADV)
+                                 (VP 앉/VV+어/ECS))
+                             있/VX+으리라/EFN+고/PAD))
+               (S (NP-SBJ 누구/NPN+이/PCA)
+                  (VP (S-COMP *T*-1)
+                      (VP (NP-OBJ 생각/NNC+이나/PAU)
+                          하/VV+었/EPF+겠/EPF+느냐/EFN)))
+               "/SRQ
+               고/PAD)
+       (VV 반문/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>7 천만 달러</term>
+	    </Arg>
+	    <Rel>
+	      <term>탕진한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

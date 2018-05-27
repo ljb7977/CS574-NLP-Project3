@@ -1,0 +1,99 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>획책</lemma>
+    <comment>Frames file for '획책' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>획책.01</id>
+      <edef>scheme</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing schemed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>획책하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 총재는 이날 서울 마포갑, 용산 등 수도권 지역 5 개 지구당 정기대회에 잇따라 참석, 축사를 통해 "그동안 대통령과 여당이 획책해 온 것은 야당분열이었다"며 "이런 사이비야당, 포말정당이 여당에 동조하지 않도록 이번 총선에서 한나라당을 지지해 달라"고 호소했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           총재/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (NP (NP (NP (NP 서울/NPR
+                                       마포갑/NPR)
+                                   ,/SCM
+                                   (NP 용산/NPR))
+                               (NP 등/NNX))
+                           (NP (NP 수도권/NNC
+                                   지역/NNC)
+                               (NP 5/NNU
+                                   개/NNX
+                                   지구당/NNC)))
+                       (NP 정기/NNC+대회/NNC+에/PAD))
+              (VP (ADVP 잇따라/ADV)
+                  (VP (VV 참석/NNC)))))
+       ,/SCM
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 축사/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ (S (WHNP-1 *op*)
+			         (S (NP-ADV 그동안/NNC)
+				    (S (NP-SBJ (NP 대통령/NNC+과/PCJ)
+					       (NP 여당/NNC+이/PCA))
+				       (VP (VP (NP-OBJ *T*-1)
+				               (VV 획책/NNC+하/XSV+어/ECS))
+					   오/VX+은/EAN))))
+                              (NP 것/NNX+은/PAU))
+                      (VP (NP 야당/NNC+분열/NNC+이/CO+었/EPF+다/EFN))
+                      "/SRQ
+                      며/ECS)
+                   (S "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (VP (S (NP-SBJ (NP 이런/DAN
+                                             사이비/NNC+야당/NNC)
+                                         ,/SCM
+                                         (NP 포말/NNC+정당/NNC+이/PCA))
+                                 (VP (VP (NP-COMP 여당/NNC+에/PAD)
+                                         (VV 동조/NNC+하/XSV+지/ECS))
+                                     않/VX+도록/ECS))
+                              (NP-ADV 이번/NNC
+                                      총선/NNC+에서/PAD)
+                              (VP (NP-OBJ 한나라당/NPR+을/PCA)
+                                  (VV 지지/NNC+하/XSV+어/ECS)))
+                          달/VX+라/EFN)
+                      "/SRQ
+                      고/PAD))
+           (VV 호소/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그동안</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>대통령과 여당</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=것</term>
+	    </Arg>
+	    <Rel>
+	      <term>획책해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>온</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

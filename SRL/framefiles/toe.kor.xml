@@ -1,0 +1,214 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>되</lemma>
+    <comment>Frames file for '되' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>되.01</id>
+      <edef>become</edef>
+      <roleset>
+	<role argnum="1" argrole="thing in focus"/>
+	<role argnum="2" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>참모부는 지휘부의 주간이 되며, 모든 전술작전을 통제한다.</text>
+	  <parse>
+(S (S (NP-SBJ 참모부/NNC+는/PAU) 
+      (VP (NP-COMP (NP 지휘부/NNC+의/PCA) 
+		   (NP 주간/NNC+이/PCA)) 
+	  되/VV+며/ECS))
+   ,/SCM 
+   (S (NP-SBJ *pro*) 
+      (VP (NP-OBJ 모든/DAN 
+		  전술/NNC 
+		  작전/NNC+을/PCA) 
+	  (VV 통제/NNC+하/XSV+는다/EFN))) 
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>참모부</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>이</f>
+	      <term>지휘부의 주간</term>
+	    </Arg>
+	    <Rel>
+	      <term>되며</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>전투 중에도 적어도 하루에 한끼는 원칙적으로 온식을 하도록 되어 있습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-ADV 전투/NNC
+                               중/NNX+에/PAD+도/PAU)
+                       (ADVP (ADVP 적어도/ADV)
+                             (NP-ADV (NP 하루/NNC+에/PAD)
+                                     (NP 한/NNU
+                                         끼/NNX+은/PAU)))
+                       (ADVP (ADV 원칙/NNC+적/XSF+으로/PAD))
+                       (VP (NP-OBJ 온식/NNC+을/PCA)
+                           하/VV+도록/ECS)))
+           되/VV+어/ECS)
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f></f>
+	      <term>전투 중에도 적어도 하루에 한끼는 원칙적으로 온식을 하도록</term>
+	    </Arg>
+	    <Rel>
+	      <term>되어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>되.02</id>
+      <edef>consist of</edef>
+      <roleset>
+	<role argnum="1" argrole="thing in focus"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전투 명령의 대부분은 명문으로 되어 있읍니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 전투/NNC 
+	       명령/NNC+의/PCA) 
+	   (NP 대부분/NNC+은/PAU)) 
+   (VP (VP (NP-COMP 명문/NNC+으로/PAD) 
+	   되/VV+어/EAU) 
+       있/VX+습니다/EFN) 
+   ./SFN )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>전투 명령의 대부분</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>명문</term>
+	    </Arg>
+	    <Rel>
+	      <term>되어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>되.03</id>
+      <edef>amount to</edef>
+      <roleset>
+	<role argnum="1" argrole="thing in focus"/>
+	<role argnum="2" argrole="amount"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>46.1 메가헬쯔에서 48.8 메가헬쯔 정도가 되겠지요.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (NP (NP 46.1/NNU 
+		        메가헬쯔/NNC+에서/PAD) 
+		    (NP 48.8/NNU 
+		        메가헬쯔/NNC)) 
+		(NP 정도/NNC+가/PCA)) 
+       되/VV+겠/EPF+지요/EFN) 
+   ./SFN ) 
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>이</f>
+	      <term>46.1 메가헬쯔에서 48.8 메가헬쯔 정도</term>
+	    </Arg>
+	    <Rel>
+	      <term>되겠지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>되.04</id>
+      <edef>do-light verb</edef>
+      <roleset>
+	<role argnum="1" argrole="thing in focus"/>
+	<role argnum="2" argrole="deverbal noun"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>목표가 몇 개나 12 탱크 연대에 부여 됐소?</text>
+	  <parse>
+(S (NP-SBJ 목표/NNC+이/PCA)
+   (VP (NP-ADV 몇/NNU
+               개/NNX+이나/PAU)
+       (VP (NP-COMP 12/NNU
+                    탱크/NNC
+                    연대/NNC+에/PAD)
+           (VP (NP-COMP-LV 부여/NNC)
+               (LV 되/VV+었/EPF+소/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>목표</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이나</f>
+	      <term>몇 개</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>12 탱크 연대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>부여</term>
+	    </Arg>
+	    <Rel>
+	      <term>됐소</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

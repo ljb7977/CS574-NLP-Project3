@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>변경</lemma>
+    <comment>Frames file for '변경' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>변경.01</id>
+      <edef>change</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing changing"/>
+	<role argnum="2" argrole="start state"/>
+	<role argnum="3" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>변경하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>저희 대대에선 주파수와 호출 대호를 수시로 변경했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+           대대/NNC+에서/PCA+은/PAU)
+   (VP (NP-OBJ (NP 주파수/NNC+과/PCJ)
+               (NP 호출/NNC
+                   대호/NNC+을/PCA))
+       (VP (ADVP 수시로/ADV)
+           (VP (VV 변경/NNC+하/XSV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에선</f>
+	      <term>저희 대대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>주파수와 호출 대호</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>수시로</term>
+	    </Arg>
+	    <Rel>
+	      <term>변경했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>변경되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>그 동무가 사용한 호출 대호와 주파수는 수시로 변경됐는데, 얼마나 자주 변경됐는지는 잘 생각이 나지 않습니다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ 그/DAN
+                            동무/NNC+이/PCA)
+                    (VP (NP-OBJ *T*-1)
+                        (VV 사용/NNC+하/XSV+은/EAN))))
+              (NP (NP 호출/NNC
+                      대호/NNC+과/PCJ)
+                  (NP 주파수/NNC+은/PAU)))
+      (VP (ADVP 수시로/ADV)
+          (VP (VV 변경/NNC+되/XSV+었/EPF+는데/ECS))))
+   ,/SCM
+   (S (S (NP-SBJ *pro*)
+         (VP (ADVP (ADVP 얼마나/ADV)
+                   (ADVP 자주/ADV))
+             (VP (VV 변경/NNC+되/XSV+었/EPF+는지/EFN+은/PAU))))
+      (ADVP 잘/ADV)
+      (S (NP-SBJ 생각/NNC+이/PCA)
+         (VP (VP 나/VV+지/ECS)
+             않/VX+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그 동무가 사용한 호출 대호와 주파수</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>수시로</term>
+	    </Arg>
+	    <Rel>
+	      <term>변경됐는데</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

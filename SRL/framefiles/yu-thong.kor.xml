@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유통</lemma>
+    <comment>Frames file for '유통' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>유통.01</id>
+      <edef>circulate</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing going round"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유통되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>사단급으로부터 중대급까지 공급품이 어떻게 유통되는지 말해 보오.</text>
+	  <parse>
+(S (NP-SBJ *pro*) 
+   (VP (VP (S-OBJ (NP-ADV 사단/NNC+급/XSF+으로부터/PAD) 
+		  (NP-ADV 중대/NNC+급/XSF+까지/PAU) 
+	          (S (NP-SBJ 공급품/NNC+이/PCA) 
+		     (VP (ADVP 어떻게/ADV) 
+			 (VP (VV 유통/NNC+되/XSV+는지/EFN))))) 
+	   말하/VV+어/EAU))
+       보/VX+오/EFN)
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>사단급으로부터</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>중대급까지</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>공급품</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어떻게</term>
+	    </Arg>
+	    <Rel>
+	      <term>유통되는지</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

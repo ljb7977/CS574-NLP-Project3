@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조준</lemma>
+    <comment>Frames file for '조준' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>조준.01</id>
+      <edef>aim</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="target"/>
+	<role argnum="2" argrole="projectile"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조준하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>애들은 모의 보총을 사용해서 표적을 향해 조준하는 법을 배웁니다.</text>
+	  <parse>
+(S (NP-SBJ 애/NNC+들/XSF+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 모의/NNC
+                      보총/NNC+을/PCA)
+              (VV 사용/NNC+하/XSV+어서/ECS)))
+       (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ 표적/NNC+을/PCA)
+                                 향하/VV+어/ECS))
+                          (VP (VV 조준/NNC+하/XSV+는/EAN))))
+                   (NP 법/NNC+을/PCA))
+           배우/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIR</f>
+	      <term>표적을 향해</term>
+	    </Arg>
+	    <Rel>
+	      <term>조준하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

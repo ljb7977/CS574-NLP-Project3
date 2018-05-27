@@ -1,0 +1,125 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>정비</lemma>
+    <comment>Frames file for '정비' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>정비.01</id>
+      <edef>maintain</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing maintained"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>정비하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>재경부는 올해 세법개편의 기본방향을 확정한 뒤 소득세법을 우선 정비하고 2001 년에는 법인세, 상속법 및 증여세법을, 2002 년에는 간접세와 지방세를 손질하기로 했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-COMP (NP-SBJ 재경부/NNC+은/PAU)
+	       (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+				  (VP (NP-ADV 올해/NNC)
+				      (VP (NP-OBJ (NP 세법/NNC+개편/NNC+의/PAN)
+						  (NP 기본/NNC+방향/NNC+을/PCA))
+					  (VV 확정/NNC+하/XSV+은/EAN))))
+			       (NP 뒤/NNC))
+		       (VP (NP-OBJ 소득세법/NNC+을/PCA)
+			   (VP (ADVP 우선/ADV)
+			       (VP (VV 정비/NNC+하/XSV+고/ECS)))))
+		   (VP (NP-ADV 2001/NNU
+			       년/NNX+에/PAD+은/PAU)
+		       (VP (NP-OBJ (NP 법인세/NNC)
+				   ,/SCM
+				   (NP 상속법/NNC)
+				   (ADCP 및/ADC)
+				   (NP 증여세법/NNC+을/PCA))
+			   (VV *?*)))
+		   ,/SCM
+		   (VP (NP-ADV 2002/NNU
+			       년/NNX+에/PAD+은/PAU)
+		       (VP (NP-OBJ (NP 간접세/NNC+과/PCJ)
+				   (NP 지방세/NNC+을/PCA))
+			   (VV 손질/NNC+하/XSV+기/ENM+으로/PAD)))))
+       하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>재경부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올해 세법개편의 기본방향을 확정한 뒤</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>소득세법</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>우선</term>
+	    </Arg>
+	    <Rel>
+	      <term>정비하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>정비되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>양도, 근로소득세 등 생활과 관련된 세금의 법체계와 신고절차 등이 앞으로 3 년간에 걸쳐 대대적으로 정비된다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP (NP (NP 양도/NNC
+                           ,/SCM
+                           근로/NNC+소득세/NNC)
+                       (NP 등/NNX))
+                   (NP (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP-COMP 생활/NNC+과/PAD)
+                                 (VV 관련/NNC+되/XSV+은/EAN))))
+                       (NP 세금/NNC+의/PAN)))
+               (NP (NP 법/NNC+체계/NNC+과/PCJ)
+                   (NP 신고/NNC+절차/NNC)))
+           (NP 등/NNX+이/PCA))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 앞/NNC+으로/PAD)
+              (VP (NP-COMP 3/NNU
+                           년/NNX+간/XSF+에/PAD)
+                  걸치/VV+어/ECS)))
+       (NP-ADV 대대/NNC+적/XSF+으로/PAD)
+       (VP (VV 정비/NNC+되/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>양도, 근로소득세 등 생활과 관련된 세금의 법체계와 신고절차 등</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>앞으로 3 년간에 걸쳐</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>대대적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>정비된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

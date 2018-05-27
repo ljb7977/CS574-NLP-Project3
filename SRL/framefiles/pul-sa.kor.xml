@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불사</lemma>
+    <comment>Frames file for '불사' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불사.01</id>
+      <edef>be willing to</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="action"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>노근리 미군 양민 학살사건 피해자들이 미국 정부에 협상을 요구하고 이에 불응할 경우 집단소송도 불사할 것이라고 경고했다.</text>
+	  <parse>
+(S (NP-SBJ 노근리/NPR
+           미군/NNC
+           양민/NNC
+           학살/NNC+사건/NNC
+           피해자/NNC+들/XSF+이/PCA)
+   (VP (VP (NP-COMP 미국/NPR
+                    정부/NNC+에/PAD)
+           (NP-OBJ 협상/NNC+을/PCA)
+           (VV 요구/NNC+하/XSV+고/ECS))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                      (VP (NP-COMP 이/NPN+에/PAD)
+                                          (VV 불응/NNC+하/XSV+을/EAN)))
+                                   (NP 경우/NNC))
+                           (VP (NP-OBJ 집단/NNC+소송/NNC+도/PAU)
+                               (VV 불사/NNC+하/XSV+을/EAN)))
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+           (VV 경고/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>이에 불응할 경우</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>집단소송</term>
+	    </Arg>
+	    <Rel>
+	      <term>불사할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

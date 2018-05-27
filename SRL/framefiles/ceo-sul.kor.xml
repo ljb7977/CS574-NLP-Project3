@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>저술</lemma>
+    <comment>Frames file for '저술' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>저술.01</id>
+      <edef>write</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing written"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>저술하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 공로상은 40 년 이상 시카고 지역에서 라디오 방송 보도를 해 오면서 20 여권의 책을 저술한 스터즈 터켈에게 돌아갔다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 공로/NNC+상/NNC+은/PAU)
+      (VP (NP-COMP (S (WHNP-1 *op*)
+                      (S (S (NP-SBJ *T*-1)
+                            (VP (VP (NP-ADV 40/NNU
+                                            년/NNX
+                                            이상/NNC)
+                                    (NP-ADV 시카고/NPR
+                                            지역/NNC+에서/PAD)
+                                    (VP (NP-OBJ 라디오/NNC
+                                                방송/NNC
+                                                보도/NNC+을/PCA)
+                                        하/VV+어/ECS))
+                                오/VX+으면서/ECS))
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-OBJ (NP 20/NNU
+                                            여/XSF+권/NNX+의/PAN)
+                                        (NP 책/NNC+을/PCA))
+                                (VV 저술/NNC+하/XSV+은/EAN)))))
+                   (NP 스터즈/NPR
+                       터켈/NPR+에게/PAD))
+          돌아가/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>40 년 이상 시카고 지역에서 라디오 방송 보도를 해 오면서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=스터즈 터켈</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>20 여권의 책</term>
+	    </Arg>
+	    <Rel>
+	      <term>저술한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

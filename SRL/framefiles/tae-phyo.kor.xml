@@ -1,0 +1,153 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대표</lemma>
+    <comment>Frames file for '대표' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대표.01</id>
+      <edef>represent</edef>
+      <roleset>
+	<role argnum="0" argrole="entity taking place of other"/>
+	<role argnum="1" argrole="entity being substituted by the other"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대표하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한통프리텔, 하이텔, 한솔엠닷컴, 하나로통신 등이 강세를 보이고 있는 가운데 드림라인은 내림세를 보이고 있으며 인터넷기술주를 대표하는 종목들도 새롬기술, 한글과 컴퓨터는 소폭 오름세를 보이고 있으나 다음은 보합, 로커스는 내림세를 보이고 있다.</text>
+	  <parse>
+(S (S (NP-ADV (S (NP-SBJ (NP (NP 한통프리텔/NPR)
+                             ,/SCM
+                             (NP 하이텔/NPR)
+                             ,/SCM
+                             (NP 한솔엠닷컴/NPR)
+                             ,/SCM
+                             (NP 하나로/NPR+통신/NNC))
+                         (NP 등/NNX+이/PCA))
+                 (VP (VP (NP-OBJ 강세/NNC+을/PCA)
+                         보이/VV+고/ECS)
+                     있/VX+는/EAN))
+              (NP 가운데/NNC))
+      (S (NP-SBJ 드림라인/NPR+은/PAU)
+         (VP (VP (NP-OBJ 내림세/NNC+을/PCA)
+                 보이/VV+고/ECS)
+             있/VX+으며/ECS)))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-OBJ 인터넷/NNC+기술주/NNC+을/PCA)
+                        (VV 대표/NNC+하/XSV+는/EAN))))
+              (NP 종목/NNC+들/XSF+도/PAU))
+      (S (S (NP-SBJ (NP 새롬/NPR+기술/NNC)
+                    ,/SCM
+                    (NP 한글/NPR+과/PCJ
+                        컴퓨터/NNC+은/PAU))
+            (VP (VP (NP-ADV 소폭/NNC)
+                    (VP (NP-OBJ 오름세/NNC+을/PCA)
+                        보이/VV+고/ECS))
+                있/VX+으나/ECS))
+         (S (NP-SBJ 다음/NPR+은/PAU)
+            (VP (NP-OBJ 보합/NNC)
+                (VV *?*)))
+         ,/SCM
+         (S (NP-SBJ 로커스/NPR+은/PAU)
+            (VP (VP (NP-OBJ 내림세/NNC+을/PCA)
+                    보이/VV+고/ECS)
+                있/VX+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=종목들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>인터넷기술주</term>
+	    </Arg>
+	    <Rel>
+	      <term>대표하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>대표되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>자신과 견원지간이 된 무소속의 쑹추위(송초유) 후보 당선 저지에 골몰해 온 리총통은 천 후보만이 쑹의 적수가 될 수 있으며 `양국론'으로 대표되는 독립정책을 밀고 나갈 적임자로 판단, 천을 비밀리에 지원했다는 게 대다수 관측통들의 견해다.</text>
+	  <parse>
+(S (NP-SBJ (S (S (NP-SBJ (S (WHNP-2 *op*)
+                            (S (NP-SBJ *T*-2)
+                               (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                                       (S (NP-SBJ *T*-1)
+                                                          (VP (NP-COMP (NP 자신/NNC+과/PAD)
+                                                                       (NP 견원지간/NNC+이/PCA))
+                                                              되/VV+은/EAN)))
+                                                    (NP (NP 무소속/NNC+의/PAN)
+                                                        (NP 쑹추위/NPR
+                                                            (PRN -LRB-/SLQ
+                                                                 (NP 송초유/NPR)
+                                                                 -RRB-/SRQ)
+                                                            후보/NNC)))
+                                                (NP 당선/NNC
+                                                    저지/NNC+에/PAD))
+                                       (VV 골몰/NNC+하/XSV+어/ECS))
+                                   오/VX+은/EAN)))
+                         (NP 리/NPR+총통/NNC+은/PAU))
+                 (VP (S (NP-SBJ 천/NPR
+                                후보/NNC+만/PAU+이/PCA)
+                        (VP (VP (NP-COMP (NP 쑹/NPR+의/PAN)
+                                         (NP 적수/NNC+이/PCA))
+                                되/VV+을/EAN)
+                            (VX 수/NNX
+                                있/VJ+으며/ECS)))
+                     (VP (NP-COMP (S (WHNP-4 *op*)
+                                     (S (NP-SBJ *T*-4)
+                                        (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                       (S (NP-SBJ *T*-3)
+                                                          (VP (NP-COMP `/SLQ
+                                                                       양국론/NNC
+                                                                       '/SRQ
+                                                                       으로/PAD)
+                                                              (VV 대표/NNC+되/XSV+는/EAN))))
+                                                    (NP 독립/NNC+정책/NNC+을/PCA))
+                                            (CV 밀/VV+고/ECS
+                                                나가/VV+을/EAN))))
+                                  (NP 적임자/NNC+으로/PAD))
+                         (NP-OBJ *pro*)
+                         (VV 판단/NNC))))
+              ,/SCM
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 천/NPR+을/PCA)
+                     (VP (NP-ADV 비밀리/NNC+에/PAD)
+                         (VP (VV 지원/NNC+하/XSV+었/EPF+다는/EAN))))))
+           (NP 것/NNX+이/PCA))
+   (VP (NP (NP 대다수/NNC
+               관측통/NNC+들/XSF+의/PAN)
+           (NP 견해/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=독립정책</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>으로</f>
+	      <term>`양국론'</term>
+	    </Arg>
+	    <Rel>
+	      <term>대표되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

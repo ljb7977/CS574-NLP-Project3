@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이기</lemma>
+    <comment>Frames file for '이기' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>이기.01</id>
+      <edef>win</edef>
+      <roleset>
+	<role argnum="0" argrole="winner"/>
+	<role argnum="1" argrole="loser"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>어제 축구 시합 전반전에서는 우리 중대가 이겼지요.</text>
+	  <parse>
+(S (NP-ADV 어제/NNC)
+   (NP-ADV 축구/NNC
+           시합/NNC
+           전반전/NNC+에서/PAD+은/PAU)
+   (S (NP-SBJ 우리/NPN
+              중대/NNC+이/PCA)
+      (VP (NP-OBJ *pro*)
+          이기/VV+었/EPF+지요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>어제 축구 시합 전반전에서는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>우리 중대</term>
+	    </Arg>
+	    <Rel>
+	      <term>이겼지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

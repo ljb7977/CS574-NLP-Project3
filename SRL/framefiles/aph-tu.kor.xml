@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>앞두</lemma>
+    <comment>Frames file for '앞두' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>앞두.01</id>
+      <edef>have ahead</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing ahead"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>앞두다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대만 군은 17 일 총통선거를 앞두고 중국의 전쟁위협에 대응하기 위해 39 시간동안의 "고도 경계" 태세에 돌입했다고 군 관계자들이 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 대만/NPR
+                     군/NNC+은/PAU)
+             (VP (VP (NP-ADV 17/NNU
+                             일/NNX)
+                     (VP (NP-OBJ 총통/NNC+선거/NNC+을/PCA)
+                         앞두/VV+고/ECS))
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (S-OBJ (NP-SBJ *pro*)
+                                   (VP (NP-COMP (NP 중국/NPR+의/PAN)
+                                                (NP 전쟁/NNC+위협/NNC+에/PAD))
+                                       (VV 대응/NNC+하/XSV+기/ENM)))
+                            위하/VV+어/ECS))
+                     (VP (NP-COMP (NP 39/NNU
+                                      시간/NNC+동안/NNX+의/PAN)
+                                  (NP "/SLQ
+                                      고도/NNC
+                                      경계/NNC
+                                      "/SRQ
+                                      태세/NNC+에/PAD))
+                         (VV 돌입/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))))
+   (S (NP-SBJ 군/NNC
+              관계자/NNC+들/XSF+이/PCA)
+      (VP (S-COMP *T*-1)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>대만군</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>17 일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>총통선거</term>
+	    </Arg>
+	    <Rel>
+	      <term>앞두고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

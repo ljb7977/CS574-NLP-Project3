@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>폭등</lemma>
+    <comment>Frames file for '폭등' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>폭등.01</id>
+      <edef>soar</edef>
+      <roleset>
+	<role argnum="1" argrole="thing rising"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>폭등하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>대형우량주 가운데 미국 증시에 상장된 주식예탁증서(ADR) 가격이 폭등한 한국통신과 포항제철에 매수세가 몰리고 있으나 SK 텔레콤, 한국전력, 현대전자는 약세를 보이고 있다.</text>
+	  <parse>
+(S (S (NP-COMP-3 (NP (NP 대형/NNC+우량주/NNC)
+                     (NP 가운데/NNC))
+                 (NP (S (WHNP-2 *op*)
+                        (S (NP-SBJ *T*-2)
+                           (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (NP-COMP 미국/NPR
+                                                             증시/NNC+에/PAD)
+                                                    (VV 상장/NNC+되/XSV+은/EAN))))
+                                          (NP 주식/NNC+예탁/NNC+증서/NNC
+                                              (PRN -LRB-/SLQ
+                                                   (NP ADR/NFW)
+                                                   -RRB-/SRQ)))
+                                      (NP 가격/NNC+이/PCA))
+                              (VP (VV 폭등/NNC+하/XSV+은/EAN)))))
+                     (NP (NP 한국/NPR+통신/NNC+과/PCJ)
+                         (NP 포항/NPR+제철/NNC+에/PAD))))
+      (S (NP-SBJ 매수세/NNC+이/PCA)
+         (VP (VP (NP-COMP *T*-3)
+                 몰리/VV+고/ECS)
+             있/VX+으나/ECS)))
+   (S (NP-SBJ (NP SK/NFW
+                  텔레콤/NPR)
+              ,/SCM
+              (NP 한국/NPR+전력/NNC)
+              ,/SCM
+              (NP 현대/NPR+전자/NNC+은/PAU))
+      (VP (VP (NP-OBJ 약세/NNC+을/PCA)
+              보이/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=한국통신과 포항제철</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>미국 증시에 상장된 주식예탁증서(ADR) 가격</term>
+	    </Arg>
+	    <Rel>
+	      <term>폭등한</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

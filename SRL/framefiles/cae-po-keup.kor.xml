@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재보급</lemma>
+    <comment>Frames file for '재보급' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>재보급.01</id>
+      <edef>resupply</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing provided"/>
+	<role argnum="2" argrole="entity provided for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재보급하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>T-54 탱크에다 탄약을 재보급하기 위해서 쓰는 2톤 반 짜리 트럭이 한 대 있습니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (S-COMP (NP-SBJ *pro*)
+                             (VP (S-OBJ (NP-SBJ *pro*)
+                                        (VP (NP-COMP T-54/NFW
+                                                     탱크/NNC+에다/PAD)
+                                            (NP-OBJ 탄약/NNC+을/PCA)
+                                            (VV 재보급/NNC+하/XSV+기/ENM)))
+                                 위하/VV+어서/ECS))
+                     (NP-OBJ *T*-1)
+                     쓰/VV+는/EAN)))
+           (NP (NP 2/NNU
+                   톤/NNX
+                   반/NNC+짜리/XSF)
+               (NP 트럭/NNC+이/PCA)))
+   (ADJP (NP-ADV 한/NNU
+                 대/NNX)
+         (ADJP 있/VJ+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에다</f>
+	      <term>T-54 탱크</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>탄약</term>
+	    </Arg>
+	    <Rel>
+	      <term>재보급하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

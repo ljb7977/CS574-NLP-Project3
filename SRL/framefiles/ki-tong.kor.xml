@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기동</lemma>
+    <comment>Frames file for '기동' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>기동.01</id>
+      <edef>maneuver</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기동하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>가능한 적진지 측방으로 기동하기 위해 측방로와 병행로를 사용하여 노상행군을 실시합니다.</text>
+	  <parse>
+(S (S (NP-ADV (S (NP-SBJ *pro*)
+                 (ADJP (VJ 가능/NNC+하/XSJ+은/EAN)))
+              (NP 한/NNX))
+      (S (NP-SBJ *pro*)
+         (VP (S-OBJ (NP-SBJ *pro*)
+                    (VP (NP-COMP (NP 적/NNC
+                                     진지/NNC)
+                                 (NP 측방/NNC+으로/PAD))
+                        (VV 기동/NNC+하/XSV+기/ENM)))
+             위하/VV+어/ECS)))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-OBJ (NP 측방로/NNC+과/PCJ)
+                     (NP 병행로/NNC+을/PCA))
+             (VV 사용/NNC+하/XSV+어/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ 노상행군/NNC+을/PCA)
+             (VV 실시/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>적진지 측방</term>
+	    </Arg>
+	    <Rel>
+	      <term>기동하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

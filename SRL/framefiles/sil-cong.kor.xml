@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>실종</lemma>
+    <comment>Frames file for '실종' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>실종.01</id>
+      <edef>be missing</edef>
+      <roleset>
+	<role argnum="1" argrole="person being missing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>실종되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>마린 당수의 남편은 그의 집권기간중에 실종된 1 천 2 백여명 중의 한 사람이었다.</text>
+	  <parse>
+(S (NP-SBJ (NP 마린/NPR
+               당수/NNC+의/PAN)
+           (NP 남편/NNC+은/PAU))
+   (VP (NP (NP (NP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (NP-ADV (NP 그/NPN+의/PAN)
+                                     (NP 집권/NNC+기간/NNC+중/NNX+에/PAD))
+                             (VP (VV 실종/NNC+되/XSV+은/EAN)))))
+                   (NP 1/NNU
+                       천/NNU
+                       2/NNU
+                       백/NNU+여/XSF+명/NNX))
+               (NP 중/NNX+의/PAN))
+           (NP 한/NNU
+               사람/NNC+이/CO+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=1 천 2 백여명</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그의 집권기간중에</term>
+	    </Arg>
+	    <Rel>
+	      <term>실종된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

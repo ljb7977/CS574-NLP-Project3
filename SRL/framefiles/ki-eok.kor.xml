@@ -1,0 +1,96 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기억</lemma>
+    <comment>Frames file for '기억' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>기억.01</id>
+      <edef>remember</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="memory"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기억하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>네거리에 사단 지휘부의 입구가 있었던 걸로 저는 기억합니다.</text>
+	  <parse>
+(S (NP-COMP-2 (S (NP-COMP-1 네거리/NNC+에/PAD)
+                 (S (NP-SBJ (NP 사단/NNC
+                                지휘부/NNC+의/PAN)
+                            (NP 입구/NNC+이/PCA))
+                    (ADJP (NP-COMP *T*-1)
+                          있/VJ+었/EPF+던/EAN)))
+              (NP 것/NNX+으로/PAD))
+   (S (NP-SBJ 저/NPN+은/PAU)
+      (VP (NP-COMP *T*-2)
+          (VV 기억/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>네거리에 사단 지휘부의 입구가 있었던 것</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저</term>
+	    </Arg>
+	    <Rel>
+	      <term>기억합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>기억하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 사람들이 너의 정찰대를 기억하고 있는데, 그럼, 그건 어떻게 된 거지?</text>
+	  <parse>
+(S (S (NP-SBJ 그/DAN
+              사람/NNC+들/XSF+이/PCA)
+      (VP (VP (NP-OBJ (NP 너/NPN+의/PAN)
+                      (NP 정찰대/NNC+을/PCA))
+              (VV 기억/NNC+하/XSV+고/ECS))
+          있/VX+는데/ECS))
+   ,/SCM
+   (ADCP 그럼/ADC)
+   ,/SCM
+   (S (NP-SBJ 그것/NPN+은/PAU)
+      (VP (NP (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (ADVP-COMP 어떻게/ADV)
+                        되/VV+은/EAN)))
+              (NP 것/NNX+이/CO+지/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>그 사람들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>너의 정찰대</term>
+	    </Arg>
+	    <Rel>
+	      <term>기억하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는데</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

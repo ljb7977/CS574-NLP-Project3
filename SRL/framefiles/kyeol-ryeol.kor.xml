@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>결렬</lemma>
+    <comment>Frames file for '결렬' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>결렬.01</id>
+      <edef>break off</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing broken off"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>결렬되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신무역라운드 협상 착수의 계기가 된 지난해말 WTO 시애틀 각료회담은 이견을 좁히지 못해 결렬됐다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP (NP 신/XPF+무역/NNC+라운드/NNC
+                                  협상/NNC
+                                  착수/NNC+의/PAN)
+                              (NP 계기/NNC+이/PCA))
+                     되/VV+은/EAN)))
+           (NP (NP 지난해/NNC+말/NNX)
+               (NP WTO/NFW
+                   시애틀/NPR
+                   각료/NNC+회담/NNC+은/PAU)))
+   (VP (S (NP-SBJ *pro*)
+          (VP (VP (NP-OBJ 이견/NNC+을/PCA)
+                  좁히/VV+지/ECS)
+              못하/VX+어/ECS))
+       (VP (VV 결렬/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>신무역라운드 협상 착수의 계기가 된 지난해말 WTO 시애틀 각료회담</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이견을 좁히지 못해</term>
+	    </Arg>
+	    <Rel>
+	      <term>결렬됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

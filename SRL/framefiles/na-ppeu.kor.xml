@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>나쁘</lemma>
+    <comment>Frames file for '나쁘' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>나쁘.01</id>
+      <edef>bad</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being bad"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>나쁘다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>남을 모방한다는 게 꼭 나쁘지는 않지요.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+              (VP (NP-OBJ 남/NNC+을/PCA)
+                  (VV 모방/NNC+하/XSV+는다는/EAN)))
+           (NP 것/NNX+이/PCA))
+   (VP (ADJP (ADVP 꼭/ADV)
+             (ADJP 나쁘/VJ+지/ECS+은/PAU))
+       않/VX+지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>남을 모방한다는 것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>꼭</term>
+	    </Arg>
+	    <Rel>
+	      <term>나쁘지는</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않지요</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>국산 축전지는 나빠서 재충전하는 일이 자주 있지요.</text>
+	  <parse>
+(S (S (NP-SBJ 국산/NNC
+              축전지/NNC+은/PAU)
+      (ADJP 나쁘/VJ+어서/ECS))
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ *pro*)
+                     (VV 재충전/NNC+하/XSV+는/EAN)))
+              (NP 일/NNC+이/PCA))
+      (ADJP (ADVP 자주/ADV)
+            (ADJP 있/VJ+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>국산 축전지</term>
+	    </Arg>
+	    <Rel>
+	      <term>나빠서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

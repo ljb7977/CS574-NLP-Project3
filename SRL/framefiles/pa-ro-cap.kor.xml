@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>바로잡</lemma>
+    <comment>Frames file for '바로잡' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>바로잡.01</id>
+      <edef>rectify</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing rectified"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>바로잡다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 명예총재는 이날 오후 충남 당진군민회관에서 열린 당진 지구당(위원장 김현욱) 정기대회에 참석, "정치를 바로잡으려면 대통령제를 내각책임제로 고쳐야 한다"며 이같이 주장했다.</text>
+	  <parse>
+(S (S (NP-SBJ 김/NPR
+              명예/NNC+총재/NNC+은/PAU)
+      (VP (NP-COMP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (NP-ADV 이날/NNC
+                                     오후/NNC)
+                             (NP-ADV 충남/NPR
+                                     당진/NPR+군민/NNC+회관/NNC+에서/PAD)
+                             (VP 열리/VV+은/EAN))))
+                   (NP 당진/NPR
+                       지구당/NNC
+                       (PRN -LRB-/SLQ
+                            (NP 위원장/NNC
+                                김현욱/NPR)
+                            -RRB-/SRQ)
+                       정기/NNC+대회/NNC+에/PAD))
+          (VV 참석/NNC)))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (S "/SLQ
+             (S (NP-SBJ *pro*)
+                (VP (NP-OBJ 정치/NNC+을/PCA)
+                    바로잡/VV+으려면/ECS))
+             (S (NP-SBJ *pro*)
+                (VP (VP (NP-OBJ 대통령제/NNC+을/PCA)
+                        (NP-COMP 내각책임제/NNC+으로/PAD)
+                        고치/VV+어야/ECS)
+                    하/VX+는다/EFN))
+             "/SRQ
+             며/ECS)
+          (ADVP 이같이/ADV)
+          (VP (NP-OBJ *pro*)
+              (VV 주장/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>정치</term>
+	    </Arg>
+	    <Rel>
+	      <term>바로잡으려면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

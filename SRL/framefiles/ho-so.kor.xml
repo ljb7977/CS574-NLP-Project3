@@ -1,0 +1,241 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>호소</lemma>
+    <comment>Frames file for '호소' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>호소.01</id>
+      <edef>complain</edef>
+      <roleset>
+	<role argnum="0" argrole="complainer"/>
+	<role argnum="1" argrole="complained of"/>
+	<role argnum="2" argrole="complained to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>호소하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>독일은 현재 정보통신 분야에서 약 7 만명의 인력이 부족한 것으로 알려지고 있으나 엄격한 외국인 취업 제한 규정 때문에 기업들이 외국인 인력을 채용하지 못해 어려움을 호소하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 독일/NPR+은/PAU)
+      (VP (VP (NP-COMP (S (NP-ADV 현재/NNC)
+                          (NP-ADV 정보/NNC+통신/NNC
+                                  분야/NNC+에서/PAD)
+                          (S (NP-SBJ (NP 약/DAN
+                                         7/NNU
+                                         만/NNU+명/NNX+의/PAN)
+                                     (NP 인력/NNC+이/PCA))
+                             (ADJP (VJ 부족/NNC+하/XSJ+은/EAN))))
+                       (NP 것/NNX+으로/PAD))
+              (VV 알리/VV+어지/XSV+고/ECS))
+          있/VX+으나/ECS))
+   (S (NP-ADV (NP (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP 엄격하/VJ+은/EAN)))
+                  (NP 외국인/NNC
+                      취업/NNC
+                      제한/NNC
+                      규정/NNC))
+              (NP 때문/NNX+에/PAD))
+      (S (NP-SBJ 기업/NNC+들/XSF+이/PCA)
+         (VP (S (NP-SBJ *pro*)
+                (VP (VP (NP-OBJ 외국인/NNC
+                                인력/NNC+을/PCA)
+                        (VV 채용/NNC+하/XSV+지/ECS))
+                    못하/VX+어/ECS))
+             (VP (VP (NP-OBJ 어려움/NNC+을/PCA)
+                     (VV 호소/NNC+하/XSV+고/ECS))
+                 있/VX+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>엄격한 외국인 취업 제한 규정 때문에</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>기업들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>외국인 인력을 채용하지 못해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>어려움</term>
+	    </Arg>
+	    <Rel>
+	      <term>호소하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>호소.02</id>
+      <edef>appeal</edef>
+      <roleset>
+	<role argnum="0" argrole="appealer"/>
+	<role argnum="1" argrole="appealed for"/>
+	<role argnum="2" argrole="appealed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>호소하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>모잠비크 정부는 지난주 시작된 홍수로 아직 수천명이 물 속에서 고립되어 있을 것으로 추정하고 있는데 국제 구호기관들은 물난리가 예상외로 크게 확산되자 세계 각국에 헬리콥터와 보트등을 지원해 줄 것을 호소하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 모잠비크/NPR
+              정부/NNC+은/PAU)
+      (VP (VP (NP-COMP (S (NP-ADV (S (WHNP-16 *op*)
+				     (S (NP-SBJ *T*-16)
+					(VP (NP-ADV 지난주/NNC)
+					    (VP (VV 시작/NNC+되/XSV+은/EAN)))))
+				  (NP 홍수/NNC+으로/PAD))
+			  (ADVP 아직/ADV)
+			  (S (NP-SBJ 수천/NNU+명/NNX+이/PCA)
+			     (VP (VP (NP-ADV 물/NNC
+					       속/NNC+에서/PAD)
+				     (VP (VV 고립/NNC+되/XSV+어/ECS)))
+				 있/VX+을/EAN)))
+		       (NP 것/NNX+으로/PAD))
+              (VV 추정/NNC+하/XSV+고/ECS))
+          있/VX+는데/ECS))
+   (S (NP-SBJ 국제/NNC
+              구호/NNC+기관/NNC+들/XSF+은/PAU)
+      (VP (VP (S (NP-SBJ 물난리/NNC+이/PCA)
+		 (VP (NP-ADV 예상/NNC+외/NNC+으로/PAD)
+		     (ADVP (ADV 크/VJ+게/ECS))
+		     (VP (VV 확산/NNC+되/XSV+자/ECS))))
+	      (VP (NP-COMP 세계/NNC
+			       각국/NNC+에/PAD)
+		  (NP-OBJ (S (NP-SBJ *pro*)
+			     (VP (VP (NP-OBJ (NP 헬리콥터/NNC+과/PCJ)
+					     (NP 보트/NNC+등/NNX+을/PCA))
+				     (VV 지원/NNC+하/XSV+어/ECS))
+				 주/VX+을/EAN))
+			  (NP 것/NNX+을/PCA))
+		  (VV 호소/NNC+하/XSV+고/ECS)))
+	  있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>국제 구호기관들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>물난리가 예상외로 크게 확산되자</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>세계 각국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>헬리콥터와 보트등을 지원해 줄 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>호소하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>호소하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 총재는 또 최근 야당을 선언한 자민련과, 한나라당 공천탈락자를 중심으로 탄생한 민국당을 `사이비 정당', `포말(거품) 정당'이라고 비난하고 "나라의 운명을 걸머지고 나갈 한나라당에 힘을 달라"고 호소했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           총재/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP-ADV 최근/NNC)
+                                     (VP (NP-OBJ 야당/NNC+을/PCA)
+                                         (VV 선언/NNC+하/XSV+은/EAN)))))
+                           (NP 자민련/NPR+과/PCJ))
+                       ,/SCM
+                       (NP (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (VP (NP-ADV (NP-OBJ 한나라당/NPR
+                                                     공천/NNC+탈락자/NNC+을/PCA)
+                                             중심/NNC+으로/PAD)
+                                     (VP (VV 탄생/NNC+하/XSV+은/EAN)))))
+                           (NP 민국당/NPR+을/PCA)))
+               (NP-COMP (NP `/SLQ
+                            사이비/NNC
+                            정당/NNC
+                            '/SRQ)
+                        ,/SCM
+                        (NP `/SLQ
+                            포말/NNC
+                            (PRN -LRB-/SLQ
+                                 (NP 거품/NNC)
+                                 -RRB-/SRQ)
+                            정당/NNC
+                            '/SRQ)
+                        이라고/PAD)
+               (VV 비난/NNC+하/XSV+고/ECS))
+           (VP (S-COMP "/SLQ
+                       (NP-SBJ *pro*)
+                       (VP (NP-COMP (S (WHNP-3 *op*)
+                                       (S (NP-SBJ *T*-3)
+                                          (VP (S (NP-SBJ *pro*)
+                                                 (VP (NP-OBJ (NP 나라/NNC+의/PAN)
+                                                             (NP 운명/NNC+을/PCA))
+                                                     걸머지/VV+고/ECS))
+                                              (VP 나가/VV+을/EAN))))
+                                    (NP 한나라당/NPR+에/PAD))
+                           (NP-OBJ 힘/NNC+을/PCA)
+                           달/VV+으라/EFN)
+                       "/SRQ
+                       고/PAD)
+               (VV 호소/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>이 총재</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>"나라의 운명을 걸머지고 나갈 한나라당에 힘을 달라"</term>
+	    </Arg>
+	    <Rel>
+	      <term>호소했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

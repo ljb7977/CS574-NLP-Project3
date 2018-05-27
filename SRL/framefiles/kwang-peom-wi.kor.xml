@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>광범위</lemma>
+    <comment>Frames file for '광범위' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>광범위.01</id>
+      <edef>extensive</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being extensive"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>광범위하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그리고 매복한 적 탱크를 피하기 위하여 광범위한 정찰을 실시합니다.</text>
+	  <parse>
+(S (ADCP 그리고/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S (NP-SBJ *pro*)
+             (VP (S-OBJ (NP-SBJ *pro*)
+                        (VP (NP-OBJ (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (VV 매복/NNC+하/XSV+은/EAN))))
+                                    (NP 적/NNC
+                                        탱크/NNC+을/PCA))
+                            피하/VV+기/ENM))
+                 위하/VV+어/ECS))
+          (VP (NP-OBJ (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (ADJP (VJ 광범위/NNC+하/XSJ+은/EAN))))
+                      (NP 정찰/NNC+을/PCA))
+              (VV 실시/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=정찰</term>
+	    </Arg>
+	    <Rel>
+	      <term>광범위한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

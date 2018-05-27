@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>장려</lemma>
+    <comment>Frames file for '장려' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>장려.01</id>
+      <edef>encourage</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing encouraged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>장려하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>회담에서 문장관은 상대국 언어를 장려하는 차원에서 우리 수능시험에 일본어가 제 2 외국어 선택과목에 포함된 것처럼 일본도 대학입학시험(센타 시험)에 한국어를 포함시켜 줄 것을 요청했으며 이에 나카소네 장관도 긍정적으로 검토하겠다고 말했다.</text>
+	  <parse>
+(S (S (NP-ADV 회담/NNC+에서/PAD)
+      (S (NP-SBJ 문/NPR+장관/NNC+은/PAU)
+         (VP (NP-OBJ (S (NP-ADV (S (NP-SBJ *pro*)
+                                   (VP (NP-OBJ 상대국/NNC
+                                               언어/NNC+을/PCA)
+                                       (VV 장려/NNC+하/XSV+는/EAN)))
+                                (NP 차원/NNC+에서/PAD))
+                        (NP-ADV (S (NP-ADV 우리/NPN
+                                           수능/NPR+시험/NNC+에/PAD)
+                                   (S (NP-SBJ 일본어/NNC+이/PCA)
+                                      (VP (NP-COMP 제/DAN
+                                                   2/NNU
+                                                   외국어/NNC
+                                                   선택/NNC+과목/NNC+에/PAD)
+                                          (VV 포함/NNC+되/XSV+은/EAN))))
+                                (NP 것/NNX+처럼/PAD))
+                        (S (NP-SBJ 일본/NPR+도/PAU)
+                           (VP (VP (NP-COMP 대학/NNC+입학/NNC+시험/NNC
+                                            (PRN -LRB-/SLQ
+                                                 (NP 센타/NNC
+                                                     시험/NNC)
+                                                 -RRB-/SRQ)
+                                            에/PAD)
+                                   (NP-OBJ 한국어/NNC+을/PCA)
+                                   (VV 포함/NNC+시키/XSV+어/ECS))
+                               주/VX+을/EAN)))
+                     (NP 것/NNX+을/PCA))
+             (VV 요청/NNC+하/XSV+었/EPF+으며/ECS))))
+   (S (NP-ADV 이/NPN+에/PAD)
+      (S (NP-SBJ 나카소네/NPR
+                 장관/NNC+도/PAU)
+         (VP (S-COMP (NP-SBJ *pro*)
+                     (VP (NP-ADV 긍정/NNC+적/XSF+으로/PAD)
+                         (VP (NP-OBJ *pro*)
+                             (VV 검토/NNC+하/XSV+겠/EPF+다/EFN+고/PAD))))
+             말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>상대국 언어</term>
+	    </Arg>
+	    <Rel>
+	      <term>장려하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

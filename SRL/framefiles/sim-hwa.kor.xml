@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>심화</lemma>
+    <comment>Frames file for '심화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>심화.01</id>
+      <edef>deepen</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing getting deeper"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>심화되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>국제화에 따른 자본과 상품 유통의 자유화로 소득 불균형이 심화되고 전통적인 노동시장이 흔들리게 됨에 따라 21 세기에는 이민노동력이 급증하게 될 것이라고 국제노동기구(ILO)가 전망했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ *pro*)
+                (VP (S-COMP (NP-ADV (S (WHNP-2 *op*)
+				       (S (NP-SBJ *T*-2)
+					  (VP (NP-COMP 국제화/NNC+에/PAD)
+					      따르/VV+은/EAN)))
+				    (NP (NP (NP 자본/NNC+과/PCJ)
+					    (NP 상품/NNC
+						유통/NNC+의/PAN))
+					(NP 자유화/NNC+으로/PAD)))
+			    (S (S (NP-SBJ 소득/NNC
+					  불균형/NNC+이/PCA)
+				  (VP (VV 심화/NNC+되/XSV+고/ECS)))
+			       (S (NP-SBJ (S (WHNP-3 *op*)
+					     (S (NP-SBJ *T*-3)
+						(VP (NP 전통/NNC+적/XSF+이/CO+은/EAN))))
+					  (NP 노동/NNC+시장/NNC+이/PCA))
+				  (VP (VP 흔들리/VV+게/ECS)
+				      되/VX+음/ENM+에/PAD))))
+                    따르/VV+어/ECS))
+             (S (NP-ADV 21/NNU
+                        세기/NNX+에/PAD+은/PAU)
+                (S (NP-SBJ 이민/NNC+노동력/NNC+이/PCA)
+                   (VP (VP (VP (VV 급증/NNC+하/XSV+게/ECS))
+                           되/VX+을/EAN)
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+   (S (NP-SBJ 국제/NNC+노동/NNC+기구/NNC
+              (PRN -LRB-/SLQ
+                   ILO/NFW
+                   -RRB-/SRQ)
+              이/PCA)
+      (VP (S-COMP *T*-1)
+          (VV 전망/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>로</f>
+	      <term>국제화에 따른 자본과 상품 유통의 자유화</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>소득 불균형</term>
+	    </Arg>
+	    <Rel>
+	      <term>심화되고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,138 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>담그</lemma>
+    <comment>Frames file for '담그' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>담그.01</id>
+      <edef>dip</edef>
+      <roleset>
+	<role argnum="0" argrole="dipper"/>
+	<role argnum="1" argrole="thing dipped"/>
+	<role argnum="2" argrole="dipped into"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>담그다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>러시아 남성들은 아내와 어머니 또는 여자친구에게 선물할 수선화와 장미를 사느라 장사진을 쳤으며 일부 여성들은 차가운 모스크바의 강물에 몸을 담그기도 했다.</text>
+	  <parse>
+(S (S (NP-SBJ 러시아/NPR
+              남성/NNC+들/XSF+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (WHNP-1 *op*)
+                            (S (NP-SBJ *pro*)
+                               (VP (NP-COMP (NP 아내/NNC+과/PCJ)
+                                            (NP 어머니/NNC)
+                                            (ADCP 또는/ADC)
+                                            (NP 여자/NNC+친구/NNC+에게/PAD))
+                                   (NP-OBJ *T*-1)
+                                   (VV 선물/NNC+하/XSV+을/EAN))))
+                         (NP (NP 수선화/NNC+과/PCJ)
+                             (NP 장미/NNC+을/PCA)))
+                 사/VV+느라/ECS))
+          (VP (NP-OBJ 장사진/NNC+을/PCA)
+              치/VV+었/EPF+으며/ECS)))
+   (S (NP-SBJ 일부/NNC
+              여성/NNC+들/XSF+은/PAU)
+      (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (ADJP 차갑/VJ+은/EAN)))
+                       (NP (NP 모스크바/NPR+의/PAN)
+                           (NP 강물/NNC+에/PAD)))
+              (NP-OBJ 몸/NNC+을/PCA)
+              담그/VV+기/ENM+도/PAU)
+          하/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>일부 여성들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>차가운 모스크바의 강물</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>몸</term>
+	    </Arg>
+	    <Rel>
+	      <term>담그기도</term>
+	    </Rel>
+	    <Aux>
+	      <f>기도</f>
+	      <term>했다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>담그.02</id>
+      <edef>ferment</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing undergoing fermentation"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>담그다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 장관은 이날 개관식에 이어 김치홍보관을 찾아 재일 김치연구가인 김수미씨(오사카 김치요리연구소장)와 함께 배추김치, 김치전, 깍두기 등 각종 김치 담그는 법을 시연했다.</text>
+	  <parse>
+(S (NP-SBJ 김/NPR
+           장관/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (ADVP (NP-COMP 개관식/NNC+에/PAD)
+	     이어/ADV)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 김치/NNC+홍보관/NNC+을/PCA)
+              찾/VV+어/ECS))
+       (ADVP (NP-COMP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP 재/XPF+일/NPR
+				      김치/NNC+연구가/NNC+이/CO+은/EAN))))
+                      (NP 김수미/NPR+씨/NNX
+				(PRN -LRB-/SLQ
+				     오사카/NPR
+				     김치/NNC+요리/NNC+연구/NNC+소장/NNC
+				     -RRB-/SRQ)
+				과/PAD))
+             함께/ADV)
+       (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ (NP (NP 배추/NNC+김치/NNC
+					      ,/SCM
+					      김치전/NNC
+					      ,/SCM
+					      깍두기/NNC)
+                                      (NP 등/NNX))
+                                  (NP 각종/NNC
+					  김치/NNC))
+                          담그/VV+는/EAN))
+                   (NP 법/NNC+을/PCA))
+           (VV 시연/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>배추김치, 김치전, 깍두기 등 각종 김치</term>
+	    </Arg>
+	    <Rel>
+	      <term>담그는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

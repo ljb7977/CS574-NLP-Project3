@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>오래되</lemma>
+    <comment>Frames file for '오래되' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>오래되.01</id>
+      <edef>old</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being old"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>오래되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 트럭이 너무 오래돼서 달려 갈 때는 진동이 심하다.</text>
+	  <parse>
+(S (S (NP-SBJ 그/DAN
+              트럭/NNC+이/PCA)
+      (ADJP (ADVP 너무/ADV)
+            (ADJP 오래되/VJ+어서/ECS)))
+   (S (NP-ADV (S (WHNP *op*)
+                 (S (NP-SBJ *pro*)
+                    (VP 달려가/VV+을/EAN)))
+              (NP 때/NNC+은/PAU))
+      (S (NP-SBJ 진동/NNC+이/PCA)
+         (ADJP 심하/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>그 트럭</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>너무</term>
+	    </Arg>
+	    <Rel>
+	      <term>오래돼서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

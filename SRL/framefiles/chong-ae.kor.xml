@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>총애</lemma>
+    <comment>Frames file for '총애' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>총애.01</id>
+      <edef>favor</edef>
+      <roleset>
+	<role argnum="0" argrole="thing favoring"/>
+	<role argnum="1" argrole="thing favored"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>총애하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일부 분석가들은 장쩌민이 그를 정치국 위원으로 발탁하려 하는 등 지나치게 총애한다고 비판하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 일부/NNC
+           분석가/NNC+들/XSF+은/PAU)
+   (VP (VP (S-COMP (NP-SBJ 장쩌민/NPR+이/PCA)
+                   (VP (NP-OBJ 그/NPN+을/PCA)
+                       (VP (NP-ADV (S (NP-SBJ *pro*)
+                                      (VP (VP (NP-OBJ *pro*)
+                                              (NP-COMP 정치국/NNC
+                                                       위원/NNC+으로/PAD)
+                                              (VV 발탁/NNC+하/XSV+으려/ECS))
+                                          하/VX+는/EAN))
+                                   (NP 등/NNX))
+                           (ADVP (ADV 지나치/VJ+게/ECS))
+                           (VP (VV 총애/NNC+하/XSV+는다/EFN+고/PAD)))))
+           (VV 비판/NNC+하/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>장쩌민</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>정치국 위원으로 발탁하려 하는 등</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>지나치게</term>
+	    </Arg>
+	    <Rel>
+	      <term>총애한다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이렇</lemma>
+    <comment>Frames file for '이렇' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>이렇.01</id>
+      <edef>be like this</edef>
+      <roleset>
+	<role argnum="1" argrole="thing under consideration"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이렇다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>즉 소대부에 군관이 2명과 3개 분대에 하전사 24명, 이렇습니다.</text>
+	  <parse>
+(S (ADCP 즉/ADC)
+   (S (S (NP-COMP-1 소대부/NNC+에/PAD)
+         (S (NP-SBJ 군관/NNC+이/PCA)
+            (ADJP (NP-ADV 2/NNU
+                          명/NNX+과/PCJ)
+                  (ADJP (NP-COMP *T*-1)
+                        (VJ *?*)))))
+      (S (NP-COMP-2 3/NNU
+                    개/NNX
+                    분대/NNC+에/PAD)
+         (S (NP-SBJ 하전사/NNC)
+            (ADJP (NP-ADV 24/NNU
+                          명/NNX)
+                  (ADJP (NP-COMP *T*-2)
+                        (VJ *?*))))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (ADJP 이렇/VJ+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>즉</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>소대부에 군관이 2명과 3개 분대에 하전사 24명</term>
+	    </Arg>
+	    <Rel>
+	      <term>이렇습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

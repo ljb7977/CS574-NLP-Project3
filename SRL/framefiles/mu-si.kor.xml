@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>무시</lemma>
+    <comment>Frames file for '무시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>무시.01</id>
+      <edef>ignore</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing ignored"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>무시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이라크의 아메르 라시드 석유장관도 지난달 바그다드 당국이 유엔 제재를 무시하기 위해 걸프 해역으로 석유를 밀수하고 있음을 시사한 바 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ (NP 이라크/NPR+의/PAN)
+                      (NP 아메르/NPR
+                          라시드/NPR
+                          석유/NNC+장관/NNC+도/PAU))
+              (VP (NP-ADV 지난달/NNC)
+                  (VP (S-OBJ (NP-SBJ 바그다드/NPR
+                                     당국/NNC+이/PCA)
+                             (VP (VP (S (NP-SBJ *pro*)
+                                        (VP (S-OBJ (NP-SBJ *pro*)
+					           (VP (NP-OBJ 유엔/NPR
+						 	       제재/NNC+을/PCA)
+						       (VV 무시/NNC+하/XSV+기/ENM)))
+                                            위하/VV+어/ECS))
+                                     (VP (NP-COMP 걸프/NPR
+                                                  해역/NNC+으로/PAD)
+                                         (NP-OBJ 석유/NNC+을/PCA)
+                                         (VV 밀수/NNC+하/XSV+고/ECS)))
+                                 있/VX+음/ENM+을/PCA))
+                      (VV 시사/NNC+하/XSV+은/EAN))))
+           (NP 바/NNX))
+   (ADJP 있/VJ+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>유엔 제재</term>
+	    </Arg>
+	    <Rel>
+	      <term>무시하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

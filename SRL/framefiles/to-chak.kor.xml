@@ -1,0 +1,53 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>도착</lemma>
+    <comment>Frames file for '도착' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>도착.01</id>
+      <edef>arrive</edef>
+      <roleset>
+	<role argnum="1" argrole="entity in motion"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>도착하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>전투기들이 수송기를 호송하러 원산 기지에 도착했다.</text>
+	  <parse>
+(S (NP-SBJ 전투기/NNC+들/XSF+이/PCA) 
+   (VP (S (NP-SBJ *pro*) 
+	  (VP (NP-OBJ 수송기/NNC+을/PCA) 
+	      (VV 호송/NNC+하/XSV+러/ECS))) 
+       (VP (NP-COMP 원산/NPR 기지/NNC+에/PAD) 
+	   (VV 도착/NNC+하/XSV+었/EPF+다/EFN))) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>전투기들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>수송기를 호송하러</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>원산 기지</term>
+	    </Arg>
+	    <Rel>
+	      <term>도착했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

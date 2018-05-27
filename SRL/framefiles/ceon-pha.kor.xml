@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전파</lemma>
+    <comment>Frames file for '전파' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>전파.01</id>
+      <edef>propagate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing propagated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전파하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 충무, 한일, 신흥, 삼일, 한국, 한신 등 영업정지 중인 6 개금고의 매각을 추진하는 등 부실 금고의 정리를 조속히 추진하는 한편 우량금고의 모범사례는 발굴해 전파할 예정이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ *pro*)
+              (VP (ADVP 또/ADV)
+                  (NP-ADV (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                                                (VP (NP-OBJ (NP (NP (NP 충무/NPR
+                                                                        ,/SCM
+                                                                        한일/NPR
+                                                                        ,/SCM
+                                                                        신흥/NPR
+                                                                        ,/SCM
+                                                                        삼일/NPR
+                                                                        ,/SCM
+                                                                        한국/NPR
+                                                                        ,/SCM
+                                                                        한신/NPR)
+                                                                    (NP 등/NNX))
+                                                                (NP (S (WHNP-1 *op*)
+                                                                       (S (NP-SBJ *T*-1)
+                                                                          (VP (VP (VV 영업/NNC+정지/NNC))
+                                                                              (VX 중/NNX+이/CO+은/EAN))))
+                                                                    (NP 6/NNU
+                                                                        개/NNX+금고/NNC+의/PAN)))
+                                                            (NP 매각/NNC+을/PCA))
+                                                    (VV 추진/NNC+하/XSV+는/EAN)))
+                                             (NP 등/NNX))
+                                         (NP (NP 부실/NNC
+                                                 금고/NNC+의/PAN)
+                                             (NP 정리/NNC+을/PCA)))
+                                 (VP (ADVP 조속히/ADV)
+                                     (VP (VV 추진/NNC+하/XSV+는/EAN)))))
+                          (NP 한편/NNC))
+                  (VP (NP-OBJ (NP 우량/NNC+금고/NNC+의/PAN)
+                              (NP 모범/NNC+사례/NNC+은/PAU))
+                      (VV (VV 발굴/NNC+하/XSV+어/ECS)
+                          (VV 전파/NNC+하/XSV+을/EAN)))))
+           (NP 예정/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>충무, 한일, 신흥, 삼일, 한국, 한신 등 영업정지 중인 6 개금고의 매각을 추진하는 등 부실 금고의 정리를 조속히 추진하는 한편</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>우량금고의 모범사례</term>
+	    </Arg>
+	    <Rel>
+	      <term>전파할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

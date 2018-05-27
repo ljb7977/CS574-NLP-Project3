@@ -1,0 +1,174 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>내놓</lemma>
+    <comment>Frames file for '내놓' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>내놓.01</id>
+      <edef>place</edef>
+      <roleset>
+	<role argnum="0" argrole="putter"/>
+	<role argnum="1" argrole="thing put"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내놓다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>회사측은 전체 2 억 4 천만주의 주식중 자사소유 2 천 800 만주 정도를 나스닥시장에 내놓을 계획이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 회사/NNC+측/XSF+은/PAU)
+              (VP (NP-ADV (NP 전체/NNC
+                              2/NNU
+                              억/NNU
+                              4/NNU
+                              천만/NNU+주/NNC+의/PAN)
+                          (NP 주식/NNC+중/NNX))
+                  (VP (NP-OBJ 자사/NNC+소유/NNC
+                              2/NNU
+                              천/NNU
+                              800/NNU
+                              만/NNU+주/NNC
+                              정도/NNC+을/PCA)
+                      (NP-COMP 나스닥/NPR+시장/NNC+에/PAD)
+                      내놓/VV+을/EAN)))
+           (NP 계획/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>회사측</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>전체 2 억 4 천만주의 주식중</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>자사소유 2 천 800 만주 정도</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>나스닥시장</term>
+	    </Arg>
+	    <Rel>
+	      <term>내놓을</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>이 위원장은 또 국가보훈대상자 지원확대 방안으로 보상금 수준을 적정 생활수준으로 상향 조정하고 민간주도의 보훈기금을 설치하는 방안 등을 내놓았다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           위원장/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (VP (NP-ADV 국가/NNC+보훈/NNC+대상자/NNC
+                       지원/NNC+확대/NNC
+                       방안/NNC+으로/PAD)
+               (VP (NP-OBJ 보상금/NNC
+                           수준/NNC+을/PCA)
+                   (VP (NP-ADV 적정/NNC
+                               생활/NNC+수준/NNC+으로/PAD)
+                       (NP-ADV 상향/NNC)
+                       (VP (VV 조정/NNC+하/XSV+고/ECS)))))
+           (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ (NP 민간/NNC+주도/NNC+의/PAN)
+                                          (NP 보훈/NNC+기금/NNC+을/PCA))
+                                  (VV 설치/NNC+하/XSV+는/EAN)))
+                           (NP 방안/NNC))
+                       (NP 등/NNX+을/PCA))
+               내놓/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이 위원장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>민간주도의 보훈기금을 설치하는 방안 등</term>
+	    </Arg>
+	    <Rel>
+	      <term>내놓았다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>교황은 이날 성베드로광장에 모인 3 만여명의 신도에게 오늘날의 젊은이들은 남을 위해 자신의 목숨을 기꺼이 내놓은 이런 사람들로부터 힘과 용기를 얻을 수 있을 것이라면서 두려워하지 않는 신앙을 가져 달라고 촉구했다.</text>
+	  <parse>
+(S (NP-SBJ 교황/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (VP (NP-COMP (S (WHNP-1 *op*)
+                       (S (NP-SBJ *T*-1)
+                          (VP (NP-COMP 성베드로/NPR+광장/NNC+에/PAD)
+                              모이/VV+은/EAN)))
+                    (NP (NP 3/NNU
+                            만/NNU+여/XSF+명/NNX+의/PAN)
+                        (NP 신도/NNC+에게/PAD)))
+           (S-COMP (S (NP-SBJ (NP 오늘날/NNC+의/PAN)
+                              (NP 젊은이/NNC+들/XSF+은/PAU))
+                      (VP (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (VP (S (NP-SBJ *pro*)
+                                                        (VP (NP-OBJ 남/NNC+을/PCA)
+                                                            위하/VV+어/ECS))
+                                                     (VP (NP-OBJ (NP 자신/NNC+의/PAN)
+                                                                 (NP 목숨/NNC+을/PCA))
+                                                         (VP (ADVP 기꺼이/ADV)
+                                                             (VP 내놓/VV+은/EAN))))))
+                                           (NP 이런/DAN
+                                               사람/NNC+들/XSF+으로부터/PAD))
+                                  (NP-OBJ (NP 힘/NNC+과/PCJ)
+                                          (NP 용기/NNC+을/PCA))
+                                  얻/VV+을/EAN)
+                              (VX 수/NNX
+                                  있/VJ+을/EAN))
+                          (VX 것/NNX+이/CO+라면서/ECS)))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                         (VP (VP (NP-OBJ *pro*)
+                                                 (VV 두렵/VJ+어하/XSV+지/ECS))
+                                             않/VX+는/EAN))
+                                      (NP 신앙/NNC+을/PCA))
+                              가지/VV+어/ECS)
+                          달/VX+라/EFN+고/PAD)))
+           (VV 촉구/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=이런 사람들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>남을 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자신의 목숨</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>기꺼이</term>
+	    </Arg>
+	    <Rel>
+	      <term>내놓은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>오래가</lemma>
+    <comment>Frames file for '오래가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>오래가.01</id>
+      <edef>last long</edef>
+      <roleset>
+	<role argnum="1" argrole="thing lasting long"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>오래가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>무전기용 축전지는 보통 얼마나 오래가는가?</text>
+	  <parse>
+(S (NP-SBJ 무전기/NNC+용/XSF
+           축전지/NNC+은/PAU)
+   (VP (ADVP 보통/ADV)
+       (ADVP 얼마나/ADV)
+       (VP 오래가/VV+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>무전기용 축전지는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>보통</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>얼마나</term>
+	    </Arg>
+	    <Rel>
+	      <term>오래가는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

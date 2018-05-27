@@ -1,0 +1,201 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>표시</lemma>
+    <comment>Frames file for '표시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>표시.01</id>
+      <edef>mark</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing marked"/>
+	<role argnum="2" argrole="instrument"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>표시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인민군에서는 말뚝으로 지뢰원을 표시합니다.</text>
+	  <parse>
+(S (NP-SBJ 인민군/NNC+에서/PCA+은/PAU)
+   (VP (NP-COMP 말뚝/NNC+으로/PAD)
+       (NP-OBJ 지뢰원/NNC+을/PCA)
+       (VV 표시/NNC+하/XSV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>인민군</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>말뚝</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지뢰원</term>
+	    </Arg>
+	    <Rel>
+	      <term>표시합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>표시되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 지도에서 1등 도로는 빨간 실선으로 표시됐습니다.</text>
+	  <parse>
+(S (NP-ADV 그/DAN
+           지도/NNC+에서/PAD)
+   (S (NP-SBJ 1/NNU
+              등/NNX
+              도로/NNC+은/PAU)
+      (VP (NP-COMP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP 빨갛/VJ+은/EAN)))
+                   (NP 실선/NNC+으로/PAD))
+          (VV 표시/NNC+되/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>그 지도에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>1등 도로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>빨간 실선</term>
+	    </Arg>
+	    <Rel>
+	      <term>표시됐습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>표시하다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>작은 원들이 들어있는 그 네모꼴은 지뢰원을 표시합니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (NP-SBJ (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (ADJP 작/VJ+은/EAN)))
+                         (NP 원/NNC+들/XSF+이/PCA))
+                 (VP (VP (NP-COMP *T*-2)
+                         들/VV+어/ECS)
+                     있/VX+는/EAN)))
+           (NP 그/DAN
+               네모꼴/NNC+은/PAU))
+   (VP (NP-OBJ 지뢰원/NNC+을/PCA)
+       (VV 표시/NNC+하/XSV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>작은 원들이 들어있는 그 네모꼴</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지뢰원</term>
+	    </Arg>
+	    <Rel>
+	      <term>표시합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>표시.02</id>
+      <edef>express</edef>
+      <roleset>
+	<role argnum="0" argrole="speaker"/>
+	<role argnum="1" argrole="thing expressed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>표시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>유엔환경계획(UNEP)은 10 일 인도네시아에서 번지고 있는 산불이 지난 97 년과 98 년 동남아의 일부를 뒤덮었던 연무를 재연시킬 가능성에 우려를 표시했다.</text>
+	  <parse>
+(S (NP-SBJ 유엔/NPR+환경/NNC+계획/NNC
+           (PRN -LRB-/SLQ
+                (NP UNEP/NFW)
+                -RRB-/SRQ)
+           은/PAU)
+   (VP (NP-ADV 10/NNU
+               일/NNX)
+       (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (VP (NP-ADV 인도네시아/NPR+에서/PAD)
+                                        (VP 번지/VV+고/ECS))
+                                    있/VX+는/EAN)))
+                          (NP 산불/NNC+이/PCA))
+                  (VP (NP-OBJ (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP-ADV (NP 지난/DAN
+                                                    97/NNU
+                                                    년/NNX+과/PCJ)
+                                                (NP 98/NNU
+                                                    년/NNX))
+                                        (VP (NP-OBJ (NP 동남아/NPR+의/PAN)
+                                                    (NP 일부/NNC+을/PCA))
+                                            뒤덮/VV+었/EPF+던/EAN))))
+                              (NP 연무/NNC+을/PCA))
+                      (VV 재연/NNC+시키/XSV+을/EAN)))
+               (NP 가능성/NNC+에/PAD))
+       (VP (NP-OBJ 우려/NNC+을/PCA)
+           (VV 표시/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>유엔환경계획(UNEP)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>10 일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>인도네시아에서 번지고 있는 산불이 지난 97 년과 98 년 동남아의 일부를 뒤덮었던 연무를 재연시킬 가능성</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>우려</term>
+	    </Arg>
+	    <Rel>
+	      <term>표시했다</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

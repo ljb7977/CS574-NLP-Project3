@@ -1,0 +1,167 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>흘리</lemma>
+    <comment>Frames file for '흘리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>흘리.01</id>
+      <edef>leak</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing leaked"/>
+	<role argnum="2" argrole="leaked to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>흘리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>러시아 내무부 소속의 한 경찰은 NTV와의 인터뷰를 통해 "그로즈니에서 이같은 강력한 저항은 미처 예상하지 못했었다"고 말하고 누군가 러시아군의 이동소식을 민병대측에 흘렸을 것으로 추정했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 러시아/NPR
+               내무부/NNC
+               소속/NNC+의/PAN)
+           (NP 한/NNU
+               경찰/NNC+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (NP NTV/NFW+과/PAD+의/PAN)
+                      (NP 인터뷰/NNC+을/PCA))
+              통하/VV+어/ECS))
+       (VP (VP (S-COMP "/SLQ
+                       (NP-SBJ *pro*)
+                       (VP (VP (NP-ADV 그로즈니/NPR+에서/PAD)
+                               (VP (NP-OBJ (DANP 이같은/DAN)
+                                           (NP (S (WHNP-1 *op*)
+                                                  (S (NP-SBJ *T*-1)
+                                                     (ADJP 강력하/VJ+은/EAN)))
+                                               (NP 저항/NNC+은/PAU)))
+                                   (VP (ADVP 미처/ADV)
+                                       (VP (VV 예상/NNC+하/XSV+지/ECS)))))
+                           못하/VX+었었/EPF+다/EFN)
+                       "/SRQ
+                       고/PAD)
+               말하/VV+고/ECS)
+           (VP (NP-COMP (S (NP-SBJ 누군가/NPN)
+			   (VP (NP-OBJ (NP 러시아/NPR+군/NNC+의/PAN)
+				       (NP 이동/NNC+소식/NNC+을/PCA))
+			       (NP-COMP 민병대/NNC+측/XSF+에/PAD)
+			       흘리/VV+었/EPF+을/EAN))
+			(NP 것/NNX+으로/PAD))
+               (VV 추정/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>누군가</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>러시아군의 이동소식</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>민병대측</term>
+	    </Arg>
+	    <Rel>
+	      <term>흘렸을</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>흘리.02</id>
+      <edef>bleed</edef>
+      <roleset>
+	<role argnum="1" argrole="entity bleeding"/>
+	<role argnum="2" argrole="blood"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>흘리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>클린턴 대통령은 잭슨 목사와 함께 대통령 전용기로 셀마에 도착, 당시 시위에 참가했던 존 루이스 민주당 하원의원(조지아주)등과 함께 투표권 박물관을 방문한 뒤 시위대들이 군경의 무자비한 진압에 피를 흘렸던 에드먼드 페터스 다리까지 행진해 기념공원 건립이 예정돼 있는 부지 주변을 둘러봤다.</text>
+	  <parse>
+(S (NP-SBJ 클린턴/NPR
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV (S (S (NP-SBJ *pro*)
+                     (VP (ADVP (NP-COMP 잭슨/NPR
+                                        목사/NNC+과/PAD)
+                               함께/ADV)
+                         (NP-ADV 대통령/NNC
+                                 전용기/NNC+으로/PAD)
+                         (VP (NP-COMP 셀마/NPR+에/PAD)
+                             (VV 도착/NNC))))
+                  ,/SCM
+                  (S (NP-SBJ *pro*)
+                     (VP (ADVP (NP-COMP (NP (S (WHNP-1 *op*)
+                                               (S (NP-SBJ *T*-1)
+                                                  (VP (NP-ADV 당시/NNC)
+                                                      (VP (NP-COMP 시위/NNC+에/PAD)
+                                                          (VV 참가/NNC+하/XSV+었/EPF+던/EAN)))))
+                                            (NP 존/NPR
+                                                루이스/NPR
+                                                민주당/NPR
+                                                하원/NNC+의원/NNC
+                                                (PRN -LRB-/SLQ
+                                                     (NP 조지아/NPR+주/NNC)
+                                                     -RRB-/SRQ)))
+                                        (NP 등/NNX+과/PAD))
+                               함께/ADV)
+                         (VP (NP-OBJ 투표권/NNC
+                                     박물관/NNC+을/PCA)
+                             (VV 방문/NNC+하/XSV+은/EAN)))))
+               (NP 뒤/NNC))
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (WHNP *op*)
+                          (S (NP-SBJ 시위대/NNC+들/XSF+이/PCA)
+                             (VP (NP-ADV (NP 군경/NNC+의/PAN)
+                                         (NP (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (ADJP 무자비하/VJ+은/EAN)))
+                                             (NP 진압/NNC+에/PAD)))
+                                 (VP (NP-OBJ 피/NNC+을/PCA)
+                                     흘리/VV+었/EPF+던/EAN))))
+                       (NP 에드먼드/NPR
+                           페터스/NPR
+                           다리/NNC+까지/PAU))
+              (VV 행진/NNC+하/XSV+어/ECS)))
+       (VP (NP-OBJ (NP (S (WHNP *op*)
+                          (S (NP-SBJ 기념/NNC+공원/NNC
+                                     건립/NNC+이/PCA)
+                             (VP (VP (VV 예정/NNC+되/XSV+어/ECS))
+                                 있/VX+는/EAN)))
+                       (NP 부지/NNC))
+                   (NP 주변/NNC+을/PCA))
+           둘러보/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>시위대들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>군경의 무자비한 진압에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>피</term>
+	    </Arg>
+	    <Rel>
+	      <term>흘렸던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>엄연</lemma>
+    <comment>Frames file for '엄연' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>엄연.01</id>
+      <edef>stern</edef>
+      <roleset>
+	<role argnum="1" argrole="thing stern"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>엄연하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 그러나 "특수한 국가대 국가의 관계에 기초해 중국과의 관계개선을 모색할 것"이라면서 "양국론은 엄연한 현실로 대만은 지난 1912 년(중화민국 건국) 이래 불가침의 주권을 누려 왔다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S "/SLQ
+              (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (ADJP (VJ 특수/NNC+하/XSJ+은/EAN))))
+                              (NP (NP 국가/NNC+대/NNX
+                                      국가/NNC+의/PAN)
+                                  (NP 관계/NNC+에/PAD)))
+                     (VV 기초/NNC+하/XSV+어/ECS)))
+              (S (NP-SBJ *pro*)
+                 (VP (VP (NP-OBJ (NP 중국/NPR+과/PAD+의/PAN)
+                                 (NP 관계/NNC+개선/NNC+을/PCA))
+                         (VV 모색/NNC+하/XSV+을/EAN))
+                     (VX 것/NNX)))
+              "/SRQ
+              이/CO+라면서/ECS)
+           (VP (S-COMP "/SLQ
+                       (S (NP-SBJ 양국론/NNC+은/PAU)
+                          (VP (NP (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (ADJP (VJ 엄연/NNC+하/XSJ+은/EAN))))
+                                  (NP 현실/NNC+으로/PAD))))
+                       (S (NP-SBJ 대만/NPR+은/PAU)
+                          (VP (VP (NP-ADV 지난/DAN
+                                          1912/NNU
+                                          년/NNX
+                                          (PRN -LRB-/SLQ
+                                               (NP 중화민국/NPR
+                                                   건국/NNC)
+                                               -RRB-/SRQ)
+                                          이래/NNX)
+                                  (VP (NP-OBJ (NP 불가침/NNC+의/PAN)
+                                              (NP 주권/NNC+을/PCA))
+                                      (VP 누리/VV+어/ECS)))
+                              오/VX+었/EPF+다/EFN))
+                       "/SRQ
+                       고/PAD)
+               (VV 강조/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=현실</term>
+	    </Arg>
+	    <Rel>
+	      <term>엄연한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

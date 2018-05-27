@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>냉각</lemma>
+    <comment>Frames file for '냉각' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>냉각.01</id>
+      <edef>be cooled</edef>
+      <roleset>
+	<role argnum="1" argrole="thing cooling"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>냉각되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>러시아와 나토와의 관계는 지난해 나토의 유고연방 폭격을 둘러싸고 냉각됐었으나 조지 로버트슨 나토 사무총장이 최근 러시아를 방문한 뒤 해빙무드를 타고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP (NP 러시아/NPR+과/PCJ)
+                  (NP 나토/NPR+과/PAD+의/PAN))
+              (NP 관계/NNC+은/PAU))
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-ADV 지난해/NNC)
+                 (VP (NP-OBJ (NP 나토/NPR+의/PAN)
+                             (NP 유고/NPR+연방/NNC
+                                 폭격/NNC+을/PCA))
+                     둘러싸/VV+고/ECS)))
+          (VP (VV 냉각/NNC+되/XSV+었었/EPF+으나/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (S (NP-SBJ 조지/NPR
+                                 로버트슨/NPR
+                                 나토/NPR
+                                 사무총장/NNC+이/PCA)
+                         (VP (NP-ADV 최근/NNC)
+                             (VP (NP-OBJ 러시아/NPR+을/PCA)
+                                 (VV 방문/NNC+하/XSV+은/EAN))))
+                      (NP 뒤/NNC))
+              (VP (NP-OBJ 해빙/NNC+무드/NNC+을/PCA)
+                  타/VV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>러시아와 나토와의 관계</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>지난해 나토의 유고연방 폭격을 둘러싸고</term>
+	    </Arg>
+	    <Rel>
+	      <term>냉각됐었으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

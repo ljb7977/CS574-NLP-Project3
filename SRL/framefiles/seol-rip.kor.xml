@@ -1,0 +1,131 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>설립</lemma>
+    <comment>Frames file for '설립' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>설립.01</id>
+      <edef>establish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing set"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>설립하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난해 12 월 양키스가 뉴저지 네츠를 합병한 뒤 설립한 지주회사 양키네츠는 3 대 스포츠 구단을 운영하는 이외에 TV 중계 등 스포츠 마케팅 사업에도 진출하고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-ADV 지난해/NNC
+                         12/NNU
+                         월/NNX)
+                 (S (NP-SBJ 양키스/NPR+이/PCA)
+			  (VP (NP-ADV (S (NP-SBJ *pro*)
+					 (VP (NP-OBJ 뉴저지/NPR
+							   네츠/NPR+을/PCA)
+					     (VV 합병/NNC+하/XSV+은/EAN)))
+				      (NP 뒤/NNC))
+			      (VP (NP-OBJ *T*-1)
+				  (VV 설립/NNC+하/XSV+은/EAN))))))
+           (NP 지주회사/NNC
+               양키네츠/NPR+은/PAU))
+   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ 3/NNU
+                                  대/NNX
+                                  스포츠/NNC
+                                  구단/NNC+을/PCA)
+                          (VV 운영/NNC+하/XSV+는/EAN)))
+                   (NP 이외/NNC+에/PAD))
+           (VP (NP-COMP (NP (NP TV/NFW
+				중계/NNC)
+			    (NP 등/NNX))
+			(NP 스포츠/NNC
+			    마케팅/NNC
+			    사업/NNC+에/PAD+도/PAU))
+	       (VV 진출/NNC+하/XSV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해 12 월</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>양키스</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>뉴저지 네츠를 합병한 뒤</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=지주회사 양키네츠</term>
+	    </Arg>
+	    <Rel>
+	      <term>설립한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>설립되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>스티브 김은 "새 벤처사가 금명간 설립될 것"이라며 "마무리 작업을 위해 곧 서울을 방문할 계획"이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 스티브/NPR
+           김/NPR+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ 새/DAN
+                  벤처사/NNC+이/PCA)
+          (VP (VP (NP-ADV 금명간/NNC)
+                  (VP (VV 설립/NNC+되/XSV+을/EAN)))
+              (VX 것/NNX))
+          "/SRQ
+          이/CO+라며/ECS)
+       (VP (NP-COMP "/SLQ
+                    (S (NP-SBJ *pro*)
+                       (VP (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ 마무리/NNC
+                                          작업/NNC+을/PCA)
+                                  위하/VV+어/ECS))
+                           (ADVP 곧/ADV)
+                           (VP (NP-OBJ 서울/NPR+을/PCA)
+                               (VV 방문/NNC+하/XSV+을/EAN))))
+                    (NP 계획/NNC)
+                    "/SRQ
+                    이라고/PAD)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>새 벤처사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>금명간</term>
+	    </Arg>
+	    <Rel>
+	      <term>설립될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

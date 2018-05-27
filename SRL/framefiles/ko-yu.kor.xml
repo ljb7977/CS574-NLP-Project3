@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고유</lemma>
+    <comment>Frames file for '고유' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>고유.01</id>
+      <edef>peculiar</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being peculiar"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고유하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보고서는 또 영국의 은행구좌체제를 완전히 혁신, 고객들에게 거래은행과 관계없이 고유한 구좌번호를 부여해 거래은행을 쉽게 바꿀 수 있도록 하는 방안과 타행고객의 현금인출기 사용에 부과하는 요금도 30 펜스 이내로 낮추는 방안을 제시하고 있는 것으로 알려졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ 보고서/NNC+은/PAU)
+                   (VP (VP (ADVP 또/ADV)
+                           (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ (NP 영국/NPR+의/PAN)
+                                          (NP 은행/NNC+구좌/NNC+체제/NNC+을/PCA))
+                                  (VP (ADVP 완전히/ADV)
+                                      (VP (VV 혁신/NNC)))))
+                           ,/SCM
+                           (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                                              (VP (S-COMP (S (NP-SBJ *pro*)
+                                                             (VP (NP-COMP 고객/NNC+들/XSF+에게/PAD)
+                                                                 (NP-OBJ (S (WHNP-1 *op*)
+                                                                            (S (NP-SBJ *T*-1)
+                                                                               (ADJP (ADVP (NP-COMP 거래/NNC+은행/NNC+과/PAD)
+                                                                                           관계없이/ADV)
+                                                                                     (ADJP (VJ 고유/NNC+하/XSJ+은/EAN)))))
+                                                                         (NP 구좌/NNC+번호/NNC+을/PCA))
+                                                                 (VV 부여/NNC+하/XSV+어/ECS)))
+                                                          (S (NP-SBJ *pro*)
+                                                             (VP (VP (NP-OBJ 거래/NNC+은행/NNC+을/PCA)
+                                                                     (VP (ADVP (ADV 쉽/VJ+게/ECS))
+                                                                         (VP 바꾸/VV+을/EAN)))
+                                                                 (VX 수/NNX
+                                                                     있/VJ+도록/ECS))))
+                                                  하/VV+는/EAN))
+                                           (NP 방안/NNC+과/PCJ))
+                                       (NP (S (NP-SBJ *pro*)
+                                              (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                             (S (NP-SBJ *pro*)
+                                                                (VP (NP-COMP (NP 타행/NNC+고객/NNC+의/PAN)
+                                                                             (NP 현금인출기/NNC
+                                                                                 사용/NNC+에/PAD))
+                                                                    (NP-OBJ *T*-2)
+                                                                    (VV 부과/NNC+하/XSV+는/EAN))))
+                                                          (NP 요금/NNC+도/PAU))
+                                                  (NP-COMP 30/NNU
+                                                           펜스/NNC
+                                                           이내/NNC+으로/PAD)
+                                                  낮추/VV+는/EAN))
+                                           (NP 방안/NNC+을/PCA)))
+                               (VV 제시/NNC+하/XSV+고/ECS)))
+                       있/VX+는/EAN))
+                (NP 것/NNX+으로/PAD))
+       (VV 알리/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=구좌번호</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>거래은행과 관계없이</term>
+	    </Arg>
+	    <Rel>
+	      <term>고유한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

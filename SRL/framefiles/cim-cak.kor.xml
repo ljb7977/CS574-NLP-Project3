@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>짐작</lemma>
+    <comment>Frames file for '짐작' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>짐작.01</id>
+      <edef>estimate</edef>
+      <roleset>
+	<role argnum="0" argrole="estimator"/>
+	<role argnum="1" argrole="thing estimated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>짐작하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리 위치는 아래삼재 남쪽 약 2 킬로미터 지점이었다고 짐작합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-COMP (NP-SBJ 우리/NPN
+                       위치/NNC+은/PAU)
+               (VP (NP (NP 아래삼재/NPR
+                           남쪽/NNC)
+                       (NP 약/DAN
+                           2/NNU
+                           킬로미터/NNX
+                           지점/NNC+이/CO+었/EPF+다/EFN+고/PAD))))
+       (VV 짐작/NNC+하/XSV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>우리 위치는 아래삼재 남쪽 약 2 킬로미터 지점이었다</term>
+	    </Arg>
+	    <Rel>
+	      <term>짐작합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

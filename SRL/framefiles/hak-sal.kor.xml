@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>학살</lemma>
+    <comment>Frames file for '학살' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>학살.01</id>
+      <edef>slaughter</edef>
+      <roleset>
+	<role argnum="0" argrole="killer"/>
+	<role argnum="1" argrole="corpse"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>학살되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이날 복자가 된 순교자에는 지난 17 세기 브라질에서 네덜란드계 캘빈파 신교도와 종교전쟁을 벌이다 희생된 성직자와 신도 30 명과 제 2 차 세계대전 중 지금의 벨로루시에서 나치에 학살된 폴란드 수녀 11 명 등이 포함돼 있다.</text>
+	  <parse>
+(S (NP-COMP-3 (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-ADV 이날/NNC)
+                        (VP (NP-COMP 복자/NNC+이/PCA)
+                            되/VV+은/EAN))))
+              (NP 순교자/NNC+에/PAD+은/PAU))
+   (S (NP-SBJ (NP (NP (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (S (NP-SBJ *pro*)
+                                   (VP (NP-ADV 지난/DAN
+                                               17/NNU
+                                               세기/NNX)
+                                       (NP-ADV 브라질/NPR+에서/PAD)
+                                       (NP-ADV 네덜란드/NPR+계/XSF
+                                               캘빈/NPR+파/NNC
+                                               신교도/NNC+과/PAD)
+                                       (VP (NP-OBJ 종교/NNC+전쟁/NNC+을/PCA)
+                                           벌이/VV+다/ECS)))
+                                (VP (VV 희생/NNC+되/XSV+은/EAN)))))
+                      (NP 성직자/NNC+과/PCJ))
+                  (NP (S (WHNP-4 *op*)
+                         (S (NP-SBJ *T*-4)
+                            (VP (NP-ADV 신도/NNC
+                                        30/NNU
+                                        명/NNX+과/PCJ)
+                                (NP-ADV 제/DAN
+                                        2/NNU
+                                        차/NNX
+                                        세계/NNC+대전/NNC
+                                        중/NNX)
+                                (NP-ADV (NP 지금/NNC+의/PAN)
+                                        (NP 벨로루시/NPR+에서/PAD))
+                                (VP (NP-COMP 나치/NPR+에/PAD)
+                                    (VV 학살/NNC+되/XSV+은/EAN)))))
+                      (NP 폴란드/NPR
+                          수녀/NNC
+                          11/NNU
+                          명/NNX)))
+              (NP 등/NNX+이/PCA))
+      (VP (VP (NP-COMP *T*-3)
+              (VV 포함/NNC+되/XSV+어/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=폴란드 수녀 11 명</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>신도 30 명과</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>제 2 차 세계대전 중</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>지금의 벨로루시에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>나치</term>
+	    </Arg>
+	    <Rel>
+	      <term>학살된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

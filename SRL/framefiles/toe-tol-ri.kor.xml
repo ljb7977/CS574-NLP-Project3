@@ -1,0 +1,158 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>되돌리</lemma>
+    <comment>Frames file for '되돌리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>되돌리.01</id>
+      <edef>turn back</edef>
+      <roleset>
+	<role argnum="0" argrole="causal agent"/>
+	<role argnum="1" argrole="thing turning back"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>되돌리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>장철원 대신경제연구소 연구원은 "투신권 매물이 매도의 악순환을 불러 왔다"고 분석하고 "그러나 신경제라는 역사의 대세를 되돌릴 수는 없을 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 장철원/NPR
+           대신/NPR+경제/NNC+연구소/NNC
+           연구원/NNC+은/PAU)
+   (VP (VP (S-COMP "/SLQ
+                   (NP-SBJ 투신/NNC+권/XSF
+                           매물/NNC+이/PCA)
+                   (VP (NP-OBJ (NP 매도/NNC+의/PAN)
+			       (NP 악순환/NNC+을/PCA))
+                       불러오/VV+었/EPF+다/EFN)
+                   "/SRQ
+                   고/PAD)
+           (VV 분석/NNC+하/XSV+고/ECS))
+       (VP (S-COMP "/SLQ
+                   (ADCP 그러나/ADC)
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (VP (NP-OBJ (NP 신/XPF+경제/NNC+이라는/PAN)
+                                          (NP (NP 역사/NNC+의/PAN)
+                                              (NP 대세/NNC+을/PCA)))
+                                  되돌리/VV+을/EAN)
+                              (VX 수/NNX+은/PAU
+                                  없/VJ+을/EAN))
+                          (VX 것/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>신경제라는 역사의 대세</term>
+	    </Arg>
+	    <Rel>
+	      <term>되돌릴</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수는 없을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>되돌리.02</id>
+      <edef>put back</edef>
+      <roleset>
+	<role argnum="0" argrole="putter"/>
+	<role argnum="1" argrole="thing put back"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>되돌려지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>경찰은 아카데미상 위원회에 전화를 걸어 이 트로피가 분실된 것 중의 일부임을 확인했으며 "이번 사건이 절도에 해당되는 만큼 수사가 불가피해 아카데미상 위원회에 이 트로피가 즉시 되돌려질 수 있을지는 확신할 수 없다"고 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ 경찰/NNC+은/PAU)
+      (VP (NP-COMP 아카데미상/NPR
+                   위원회/NNC+에/PAD)
+          (NP-OBJ 전화/NNC+을/PCA)
+          걸/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ 이/DAN
+			   트로피/NNC+이/PCA)
+		 (VP (NP (NP (NP (S (WHNP-1 *op*)
+				    (S (NP-SBJ *T*-1)
+				       (VP (VV 분실/NNC+되/XSV+은/EAN))))
+				 (NP 것/NNX))
+			     (NP 중/NNX+의/PAN))
+			 (NP 일부/NNC+이/CO+음/ENM+을/PCA))))
+          (VV 확인/NNC+하/XSV+었/EPF+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP "/SLQ
+                  (S (NP-ADV (S (NP-SBJ 이번/NNC
+                                        사건/NNC+이/PCA)
+                                (VP (NP-COMP 절도/NNC+에/PAD)
+                                    (VV 해당/NNC+되/XSV+는/EAN)))
+                             (NP 만큼/NNX))
+                     (S (NP-SBJ 수사/NNC+이/PCA)
+                        (ADJP 불가피하/VJ+어/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (S-OBJ (NP-COMP-2 아카데미상/NPR
+                                               위원회/NNC+에/PAD)
+                                    (S (NP-SBJ 이/DAN
+                                               트로피/NNC+이/PCA)
+                                       (VP (VP (ADVP 즉시/ADV)
+                                               (VP (NP-COMP *T*-2)
+                                                   (VV 되돌리/VV+어지/XSV+을/EAN)))
+                                           (VX 수/NNX
+                                               있/VJ+을지/EFN+은/PAU))))
+                             (VV 확신/NNC+하/XSV+을/EAN))
+                         (VX 수/NNX
+                             없/VJ+다/EFN)))
+                  "/SRQ
+                  고/PAD)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>아카데미상 위원회</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>이 트로피</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>즉시</term>
+	    </Arg>
+	    <Rel>
+	      <term>되돌려질</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있을지는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

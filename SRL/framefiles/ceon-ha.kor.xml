@@ -1,0 +1,455 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전하</lemma>
+    <comment>Frames file for '전하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>전하.01</id>
+      <edef>report</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing reported"/>
+	<role argnum="2" argrole="report to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>척 슈머 의원(민 : 뉴욕주)은 이날 백악관에서 동료 의원들과 함께 클린턴 대통령과 빌 리처드슨 에너지 장관 및 로런스 서머스 재무장관을 만난 후 기자들에게 "대통령이 전략비축유 방출 가능성에 대해 지금까지 보인 것 중에서 가장 강력한 의지를 표명했다"고 전했다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 척/NPR
+                      슈머/NPR
+                      의원/NNC
+                      (PRN -LRB-/SLQ
+                           민/NPR
+                           :/SSY
+                           뉴욕/NPR+주/NNC
+                           -RRB-/SRQ)
+                      은/PAU)
+              (VP (NP-ADV 이날/NNC)
+                  (NP-ADV 백악관/NPR+에서/PAD)
+                  (ADVP (NP-COMP 동료/NNC
+                                 의원/NNC+들/XSF+과/PAD)
+                        함께/ADV)
+                  (VP (NP-OBJ (NP 클린턴/NPR
+                                  대통령/NNC+과/PCJ)
+                              (NP 빌/NNC
+                                  리처드슨/NPR
+                                  에너지/NNC
+                                  장관/NNC)
+                              (ADCP 및/ADC)
+                              (NP 로런스/NPR
+                                  서머스/NPR
+                                  재무/NNC+장관/NNC+을/PCA))
+                      만나/VV+은/EAN)))
+           (NP 후/NNC))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 기자/NNC+들/XSF+에게/PAD)
+          (S-COMP "/SLQ
+                  (NP-SBJ 대통령/NNC+이/PCA)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-COMP 전략/NNC+비축유/NNC
+                                      방출/NNC
+                                      가능성/NNC+에/PAD)
+                             대하/VV+어/ECS))
+                      (VP (NP-OBJ (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (ADJP (NP-ADV (NP (S (WHNP-1 *op*)
+                                                             (S (NP-SBJ *pro*)
+                                                                (VP (NP-ADV 지금/NNC+까지/PAU)
+                                                                    (VP (NP-OBJ *T*-1)
+                                                                        보이/VV+은/EAN))))
+                                                          (NP 것/NNX))
+                                                      (NP 중/NNX+에서/PAD))
+                                              (ADVP 가장/ADV)
+                                              (ADJP 강력하/VJ+은/EAN))))
+                                  (NP 의지/NNC+을/PCA))
+                          (VV 표명/NNC+하/XSV+었/EPF+다/EFN)))
+                  "/SRQ
+                  고/PAD)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>척 슈머 의원(민 : 뉴욕주)은 이날 백악관에서 동료 의원들과 함께 클린턴 대통령과 빌 리처드슨 에너지 장관 및 로런스 서머스 재무장관을 만난 후</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>기자들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>대통령이 전략비축유 방출 가능성에 대해 지금까지 보인 것 중에서 가장 강력한 의지를 표명했다</term>
+	    </Arg>
+	    <Rel>
+	      <term>전했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>이보족 주민들은 지난주 북부 카두나시에서 같은 종족 주민들이 살해당한 데 대한 보복으로 지난달 28 일 남부 아바 마을의 호사 주민들을 공격했는데 앞서 외교 및 사업 소식통들은 28 일과 29 일 아바 마을의 호사 주민들이 이보족 주민들에 의해 조직적으로 살해됐다고 전했다.</text>
+	  <parse>
+(S (S (NP-SBJ 이보/NPR+족/XSF
+              주민/NNC+들/XSF+은/PAU)
+      (VP (NP-ADV (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (VP (NP-COMP (S (NP-ADV 지난주/NNC)
+                                        (NP-ADV 북부/NNC
+                                                카두나/NPR+시/NNC+에서/PAD)
+                                        (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                                          (S (NP-SBJ *T*-1)
+                                                             (ADJP 같/VJ+은/EAN)))
+                                                       (NP 종족/NNC))
+                                                   (NP 주민/NNC+들/XSF+이/PCA))
+                                           (VP (VV 살해/NNC+당하/XSV+은/EAN))))
+                                     (NP 데/NNX))
+                            대하/VV+은/EAN)))
+                  (NP 보복/NNC+으로/PAD))
+          (NP-ADV 지난달/NNC
+                  28/NNU
+                  일/NNX)
+          (VP (NP-OBJ (NP 남부/NNC
+                          아바/NPR
+                          마을/NNC+의/PAN)
+                      (NP 호사/NPR
+                          주민/NNC+들/XSF+을/PCA))
+              (VV 공격/NNC+하/XSV+었/EPF+는데/ECS))))
+   (S (ADVP 앞서/ADV)
+      (S (NP-SBJ (NP (NP 외교/NNC)
+                     (ADCP 및/ADC)
+                     (NP 사업/NNC))
+                 (NP 소식통/NNC+들/XSF+은/PAU))
+         (VP (S-COMP (NP-ADV (NP 28/NNU
+                                 일/NNX+과/PCJ)
+                             (NP 29/NNU
+                                 일/NNX))
+                     (S (NP-SBJ (NP 아바/NPR
+                                    마을/NNC+의/PAN)
+                                (NP 호사/NPR
+                                    주민/NNC+들/XSF+이/PCA))
+                        (VP (S (NP-SBJ *pro*)
+                               (VP (NP-COMP 이보/NPR+족/NNC
+						주민/NNC+들/XSF+에/PAD)
+                                   의하/VV+어/ECS))
+                            (NP-ADV 조직/NNC+적/XSF+으로/PAD)
+                            (VP (VV 살해/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))))
+             전하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>앞서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>외교 및 사업 소식통들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>28 일과 29 일 아바 마을의 호사 주민들이 이보족 주민들에 의해 조직적으로 살해됐다</term>
+	    </Arg>
+	    <Rel>
+	      <term>전했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>백 외무상은 김정일 (김정일) 총비서가 장 쩌민 (강택민) 총서기, 리펑 (이붕) 전국인민대표대회 (전인대. 의회격) 상무위원장, 주 총리, 그리고 홍성남 정무원 총리가 주 총리에게 전하는 정중한 안부인사들도 전달했다.</text>
+	  <parse>
+(S (NP-SBJ 백/NPR
+           외무상/NNC+은/PAU)
+   (VP (NP-OBJ (S (WHNP-2 *op*)
+                  (S (S (NP-SBJ 김정일/NPR
+                                (PRN -LRB-/SLQ
+                                     (NP 김정일/NPR)
+                                     -RRB-/SRQ)
+                                총비서/NNC+이/PCA)
+                        (VP (NP-COMP (NP 장/NPR
+                                         쩌민/NPR
+                                         (PRN -LRB-/SLQ
+                                              (NP 강택민/NPR)
+                                              -RRB-/SRQ)
+                                         총서기/NNC)
+                                     ,/SCM
+                                     (NP 리펑/NPR
+                                         (PRN -LRB-/SLQ
+                                              (NP 이붕/NPR)
+                                              -RRB-/SRQ)
+                                         전국/NNC+인민/NNC+대표/NNC+대회/NNC
+                                         (PRN -LRB-/SLQ
+                                              (NP (NP 전인대/NPR)
+                                                  ./SSY
+                                                  (NP 의회/NNC+격/NNX))
+                                              -RRB-/SRQ)
+                                         상무/NNC+위원장/NNC)
+                                     ,/SCM
+                                     (NP 주/NPR
+                                         총리/NNC))
+                            (NP-OBJ *T*-2)
+                            (VV *?*)))
+                     ,/SCM
+                     (ADCP 그리고/ADC)
+                     (S (NP-SBJ 홍성남/NPR
+                                정무원/NPR
+                                총리/NNC+이/PCA)
+                        (VP (NP-COMP 주/NPR
+                                     총리/NNC+에게/PAD)
+                            (NP-OBJ *T*-2)
+                            전하/VV+는/EAN))))
+               (NP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP 정중하/VJ+은/EAN)))
+                   (NP 안부/NNC+인사/NNC+들/XSF+도/PAU)))
+       (VV 전달/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그리고</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>홍성남 정무원 총리</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>주 총리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=정중한 안부인사들</term>
+	    </Arg>
+	    <Rel>
+	      <term>전하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>스네 차관은 워싱턴 극동정책연구소 연설에서 "분명한 이유를 제시할 순 없지만 한 달내에 협상이 재개될 것으로 믿는다"고 말한 것을 신문들은 전했다.</text>
+	  <parse>
+(S (NP-OBJ-1 (S (NP-SBJ 스네/NPR
+                        차관/NNC+은/PAU)
+                (VP (NP-ADV 워싱턴/NPR
+                            극동/NPR+정책/NNC+연구소/NNC
+                            연설/NNC+에서/PAD)
+                    (VP (S-COMP "/SLQ
+                                (S (NP-SBJ *pro*)
+                                   (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                      (S (NP-SBJ *T*-2)
+                                                         (ADJP (VJ 분명/NNC+하/XSJ+은/EAN))))
+                                                   (NP 이유/NNC+을/PCA))
+                                           (VV 제시/NNC+하/XSV+을/EAN))
+                                       (VX 수/NNX+은/PAU
+                                           없/VJ+지만/ECS)))
+                                (S (NP-SBJ *pro*)
+                                   (VP (NP-COMP (S (NP-ADV 한/NNU
+							   달/NNX+내/NNX+에/PAD)
+						   (S (NP-SBJ 협상/NNC+이/PCA)
+						      (VP (VV 재개/NNC+되/XSV+을/EAN))))
+						(NP 것/NNX+으로/PAD))
+                                       믿/VV+는다/EFN))
+                                "/SRQ
+                                고/PAD)
+                        말하/VV+은/EAN)))
+             (NP 것/NNX+을/PCA))
+   (S (NP-SBJ 신문/NNC+들/XSF+은/PAU)
+      (VP (NP-OBJ *T*-1)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>스네 차관은 워싱턴 극동정책연구소 연설에서 "분명한 이유를 제시할 순 없지만 한 달내에 협상이 재개될 것으로 믿는다"고 말한 것</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>신문들</term>
+	    </Arg>
+	    <Rel>
+	      <term>전했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>NBC 방송은 모잠비크의 수재민들이 머리 위에서 빙빙 돌기만 하면서 주민들 구조작업을 진행하지도 못하고, 식량 등 구호물자를 떨어뜨려 주지도 못하는 헬리콥터를 쳐다보면서 좌절하고 있다고 현지의 참상을 전했다.</text>
+	  <parse>
+(S (NP-SBJ NBC/NFW
+           방송/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ (NP 모잠비크/NPR+의/PAN)
+                       (NP 수재민/NNC+들/XSF+이/PCA))
+               (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                  (S (S (NP-SBJ *T*-1)
+                                        (VP (VP (NP-ADV 머리/NNC
+                                                        위/NNC+에서/PAD)
+                                                (ADVP 빙빙/ADV)
+                                                (VP 돌/VV+기만/ECS))
+                                            하/VX+으면서/ECS))
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (VP (NP-OBJ 주민/NNC+들/XSF
+                                                        구조/NNC+작업/NNC+을/PCA)
+                                                (VV 진행/NNC+하/XSV+지/ECS+도/PAU))
+                                            못하/VX+고/ECS))
+                                     ,/SCM
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (VP (VP (NP-OBJ (NP (NP 식량/NNC)
+                                                                (NP 등/NNX))
+                                                            (NP 구호/NNC+물자/NNC+을/PCA))
+                                                    떨어뜨리/VV+어/ECS)
+                                                주/VX+지/ECS+도/PAU)
+                                            못하/VX+는/EAN))))
+                               (NP 헬리콥터/NNC+을/PCA))
+                       쳐다보/VV+으면서/ECS)
+                   (VP (VP (VV 좌절/NNC+하/XSV+고/ECS))
+                       있/VX+다/EFN+고/PAD)))
+       (NP-OBJ (NP 현지/NNC+의/PAN)
+               (NP 참상/NNC+을/PCA))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>NBC 방송</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>모잠비크의 수재민들이 머리 위에서 빙빙 돌기만 하면서 주민들 구조작업을 진행하지도 못하고, 식량 등 구호물자를 떨어뜨려 주지도 못하는 헬리콥터를 쳐다보면서 좌절하고 있다</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>현지의 참상</term>
+	    </Arg>
+	    <Rel>
+	      <term>전했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전해지다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>서른 중반을 넘어선 나이에도 아직 150KM의 강속구를 뿌리는 선동열의 은퇴소식이 전해지자 메이저리그 보스턴 레드삭스에서 스카우트 움직임을 보여 선동열은 잠시 흔들리기도 했지만 끝내 자신의 은퇴 결심을 바꾸지 않았다.</text>
+	  <parse>
+(S (S (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                        (S (NP-SBJ *T*-2)
+                           (VP (NP-ADV (S (WHNP-1 *op*)
+                                          (S (NP-SBJ *T*-1)
+                                             (VP (NP-OBJ 서른/NNU
+                                                         중반/NNC+을/PCA)
+                                                 넘어서/VV+은/EAN)))
+                                       (NP 나이/NNC+에/PAD+도/PAU))
+                               (ADVP 아직/ADV)
+                               (VP (NP-OBJ (NP 150/NNU+KM/NFW+의/PAN)
+                                           (NP 강속구/NNC+을/PCA))
+                                   뿌리/VV+는/EAN))))
+                     (NP 선동열/NPR+의/PAN))
+                 (NP 은퇴/NNC+소식/NNC+이/PCA))
+         (VP (VV 전하/VV+어지/XSV+자/ECS)))
+      (S (NP-SBJ 메이저리그/NPR
+                 보스턴/NPR
+                 레드삭스/NPR+에서/PCA)
+         (VP (NP-OBJ 스카우트/NNC
+                     움직임/NNC+을/PCA)
+             보이/VV+어/ECS)))
+   (S (S (NP-SBJ 선동열/NPR+은/PAU)
+         (VP (VP (ADVP 잠시/ADV)
+                 (VP 흔들리/VV+기/ENM+도/PAU))
+             하/VX+었/EPF+지만/ECS))
+      (S (NP-SBJ *pro*)
+         (VP (VP (ADVP 끝내/ADV)
+                 (VP (NP-OBJ (NP 자신/NNC+의/PAN)
+                             (NP 은퇴/NNC
+                                 결심/NNC+을/PCA))
+                     바꾸/VV+지/ECS))
+             않/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>서른 중반을 넘어선 나이에도 아직 150KM의 강속구를 뿌리는 선동열의 은퇴소식</term>
+	    </Arg>
+	    <Rel>
+	      <term>전해지자</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>전해지다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>범인은 사건 직후 인근의 사무용 건물로 들어가 인질들을 잡고 경찰과 대치하다 투항했으며 부상자들은 모두 위독한 상태인 것으로 전해졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (S (NP-SBJ 범인/NNC+은/PAU)
+                      (VP (VP (NP-ADV 사건/NNC
+                                      직후/NNC)
+                              (VP (NP-COMP (NP 인근/NNC+의/PAN)
+                                           (NP 사무/NNC+용/XSF
+                                               건물/NNC+으로/PAD))
+                                  들어가/VV+어/ECS))
+                          (VP (NP-OBJ 인질/NNC+들/XSF+을/PCA)
+                              잡/VV+고/ECS)
+                          (VP (NP-COMP 경찰/NNC+과/PAD)
+                              (VV 대치/NNC+하/XSV+다/ECS))
+                          (VP (VV 투항/NNC+하/XSV+었/EPF+으며/ECS))))
+                   (S (NP-SBJ *pro*)
+                      (VP (NP (S (NP-SBJ 부상자/NNC+들/XSF+은/PAU)
+                                 (ADJP (ADVP 모두/ADV)
+                                       (ADJP 위독하/VJ+은/EAN)))
+                              (NP 상태/NNC+이/CO+은/EAN)))))
+                (NP 것/NNX+으로/PAD))
+       (VV 전하/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>범인은 사건 직후 인근의 사무용 건물로 들어가 인질들을 잡고 경찰과 대치하다 투항했으며 부상자들은 모두 위독한 상태인 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>전해졌다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

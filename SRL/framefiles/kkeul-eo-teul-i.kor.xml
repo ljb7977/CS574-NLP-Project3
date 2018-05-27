@@ -1,0 +1,99 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>끌어들이</lemma>
+    <comment>Frames file for '끌어들이' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>끌어들이.01</id>
+      <edef>bring into</edef>
+      <roleset>
+	<role argnum="0" argrole="bringer"/>
+	<role argnum="1" argrole="thing brought"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>끌어들이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>미국 연방 지방법원의 배심은 2 일 지난 1996 년 대통령선거 당시 앨 고어 부통령을 한 불교행사에 끌어들여 선거자금을 모금한 대만계 미국인 마리아 샤(48)에 대해 10 만 9 천 달러를 민주당을 위해 불법 모금한 혐의로 유죄 평결을 내렸다.</text>
+	  <parse>
+(S (NP-SBJ (NP 미국/NPR
+               연방/NNC
+               지방/NNC+법원/NNC+의/PAN)
+           (NP 배심/NNC+은/PAU))
+   (VP (NP-ADV 2/NNU
+               일/NNX)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-COMP (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (NP-ADV (NP 지난/DAN
+							  1996/NNU
+							  년/NNX)
+						  (NP 대통령/NNC+선거/NNC
+							    당시/NNC))
+                                          (VP (VP (NP-OBJ 앨/NPR
+                                                          고어/NPR
+                                                          부통령/NNC+을/PCA)
+                                                  (NP-COMP 한/NNU
+                                                           불교/NNC+행사/NNC+에/PAD)
+                                                  끌어들이/VV+어/ECS)
+                                              (VP (NP-OBJ 선거/NNC+자금/NNC+을/PCA)
+                                                  (VV 모금/NNC+하/XSV+은/EAN))))))
+                                (NP 대만/NPR+계/XSF
+                                    미국인/NNC
+                                    마리아/NPR
+                                    샤/NPR
+                                    (PRN -LRB-/SLQ
+                                         48/NNU
+                                         -RRB-/SRQ)
+                                    에/PAD))
+                       대하/VV+어/ECS))
+           (VP (NP-ADV (S (NP-SBJ *pro*)
+			  (VP (NP-OBJ 10/NNU
+				      만/NNU
+				      9/NNU
+				      천/NNU
+				      달러/NNX+을/PCA)
+			      (VP (S (NP-SBJ *pro*)
+				     (VP (NP-OBJ 민주당/NPR+을/PCA)
+					 위하/VV+어/ECS))
+				  (NP-ADV 불법/NNC)
+				  (VP (VV 모금/NNC+하/XSV+은/EAN)))))
+		       (NP 혐의/NNC+으로/PAD))
+	       (VP (NP-OBJ 유죄/NNC
+			       평결/NNC+을/PCA)
+		   내리/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=대만계 미국인 마리아 샤(48)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 1996 년 대통령선거 당시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>앨 고어 부통령</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>한 불교행사</term>
+	    </Arg>
+	    <Rel>
+	      <term>끌어들여</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

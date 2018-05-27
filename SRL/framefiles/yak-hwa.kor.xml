@@ -1,0 +1,132 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>약화</lemma>
+    <comment>Frames file for '약화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>약화.01</id>
+      <edef>weeken</edef>
+      <roleset>
+	<role argnum="0" argrole="thing making week"/>
+	<role argnum="1" argrole="thing weekening"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>약화되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>알베르토는 이번 폭우는 인도양에서 발생해 지금은 열대성 저기압으로 세력이 약화된 사이클론 `글로리아'의 영향때문이라며 향후 기상상태에 따라 이번 폭우의 강도가 달라질 수 있다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 알베르토/NPR+은/PAU)
+   (VP (S-COMP (S (NP-SBJ 이번/NNC
+                          폭우/NNC+은/PAU)
+                  (VP (NP (NP (S (WHNP-1 *op*)
+                                 (S (S (NP-SBJ *T*-1)
+                                       (VP (NP-ADV 인도양/NPR+에서/PAD)
+                                           (VP (VV 발생/NNC+하/XSV+어/ECS))))
+                                    (S (NP-SBJ *T*-1)
+                                       (S (NP-ADV 지금/NNC+은/PAU)
+                                          (NP-ADV 열대성/NNC
+                                                  저기압/NNC+으로/PAD)
+                                          (S (NP-SBJ 세력/NNC+이/PCA)
+                                             (VP (VV 약화/NNC+되/XSV+은/EAN)))))))
+                              (NP 사이클론/NNC
+                                  `/SLQ
+                                  글로리아/NPR
+                                  '/SRQ
+                                  의/PAN))
+                          (NP 영향/NNC+때문/NNX+이/CO+라며/ECS))))
+               (S (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 향후/NNC
+                                  기상/NNC+상태/NNC+에/PAD)
+                         따르/VV+어/ECS))
+                  (S (NP-SBJ (NP 이번/NNC
+                                 폭우/NNC+의/PAN)
+                             (NP 강도/NNC+이/PCA))
+                     (VP (VP (VV 다르/VJ+어지/XSV+을/EAN))
+                         (VX 수/NNX
+                             있/VJ+다/EFN+고/PAD)))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>인도양에서 발생해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=사이클론 `글로리아'</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지금은</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>열대성 저기압으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>세력</term>
+	    </Arg>
+	    <Rel>
+	      <term>약화된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>약화시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전문가들은 이런 인력부족 현상이 자칫 유럽 기업의 경쟁력 약화시키고 이것이 경제성장 둔화로 이어질 수도 있다고 경고하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 전문가/NNC+들/XSF+은/PAU)
+   (VP (VP (S-COMP (S (NP-SBJ 이런/DAN
+                              인력/NNC+부족/NNC
+                              현상/NNC+이/PCA)
+                      (VP (ADVP 자칫/ADV)
+                          (VP (NP-OBJ (NP 유럽/NPR
+                                          기업/NNC+의/PAN)
+                                      (NP 경쟁력/NNC))
+                              (VV 약화/NNC+시키/XSV+고/ECS))))
+                   (S (NP-SBJ 이것/NPN+이/PCA)
+                      (VP (VP (NP-COMP 경제/NNC+성장/NNC
+                                       둔화/NNC+으로/PAD)
+                              (VV 잇/VV+어지/XSV+을/EAN))
+                          (VX 수/NNX+도/PAU
+                              있/VJ+다/EFN+고/PAD))))
+           (VV 경고/NNC+하/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>이런 인력부족 현상</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>자칫</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>유럽 기업의 경쟁력</term>
+	    </Arg>
+	    <Rel>
+	      <term>약화시키고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

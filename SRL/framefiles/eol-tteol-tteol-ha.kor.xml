@@ -1,0 +1,38 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>¾ó¶³¶³ÇÏ</lemma>
+    <comment>Frames file for '¾ó¶³¶³ÇÏ' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>¾ó¶³¶³ÇÏ.01</id>
+      <edef>confused</edef>
+      <roleset>
+	<role argnum="1" argrole="patient"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>¾ó¶³¶³ÇÏ´Ù</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>Á» ¾ó¶³¶³ÇÑµ¥¿ä.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (ADJP (ADVP Á»/ADV)
+         (ADJP ¾ó¶³¶³ÇÏ/VJ+Àºµ¥¿ä/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>Á»</term>
+	    </Arg>
+	    <Rel>
+	      <term>¾ó¶³¶³ÇÑµ¥¿ä</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

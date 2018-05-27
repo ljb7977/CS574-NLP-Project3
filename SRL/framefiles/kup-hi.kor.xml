@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>굽히</lemma>
+    <comment>Frames file for '굽히' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>굽히.01</id>
+      <edef>give up</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="opinion"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>굽히다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>레바논 정부는 지난주 이들을 추방해 달라는 일본 정부의 요구를 거부했으나, 오부치 게이조(소연혜삼) 일본 총리는 아직 이들의 신병인도 요구를 굽히지 않고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 레바논/NPR
+              정부/NNC+은/PAU)
+      (VP (NP-ADV 지난주/NNC)
+          (VP (NP-OBJ (S (NP-SBJ *pro*)
+			 (VP (VP (NP-OBJ 이/NPN+들/XSF+을/PCA)
+				 (VV 추방/NNC+하/XSV+어/ECS))
+			     달/VX+라는/EAN))
+		      (NP (NP 일본/NPR
+				  정부/NNC+의/PAN)
+			  (NP 요구/NNC+을/PCA)))
+              (VV 거부/NNC+하/XSV+었/EPF+으나/ECS))))
+   ,/SCM
+   (S (NP-SBJ 오부치/NPR
+              게이조/NPR
+              (PRN -LRB-/SLQ
+                   소연혜삼/NPR
+                   -RRB-/SRQ)
+              일본/NPR
+              총리/NNC+은/PAU)
+      (VP (VP (VP (ADVP 아직/ADV)
+                  (VP (NP-OBJ (NP 이/NPN+들/XSF+의/PAN)
+                              (NP 신병/NNC+인도/NNC
+                                  요구/NNC+을/PCA))
+                      굽히/VV+지/ECS))
+              않/VX+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>오부치 게이조(소연혜삼) 일본 총리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>아직</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이들의 신병인도 요구</term>
+	    </Arg>
+	    <Rel>
+	      <term>굽히지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않고</term>
+	    </Aux>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

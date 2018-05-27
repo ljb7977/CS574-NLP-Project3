@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기쁘</lemma>
+    <comment>Frames file for '기쁘' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기쁘.01</id>
+      <edef>glad</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="experiencer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기쁘다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>주 총리는 백 외무상과 탕 자쉬앤 (당가선) 중국 외교부장이 두나라 외무장관 회담에서 양국 우의 관계의 추가 확대 문제와 다른 공동 관심사들에 관해 견해들을 충분히 교환하고 많은 문제에서 중요한 의견 일치를 본 데 대해 기쁘게 생각한다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 주/NPR
+           총리/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (S (NP-SBJ (NP 백/NPR
+                                                  외무상/NNC+과/PCJ)
+                                              (NP 탕/NPR
+                                                  자쉬앤/NPR
+                                                  (PRN -LRB-/SLQ
+                                                       (NP 당가선/NPR)
+                                                       -RRB-/SRQ)
+                                                  중국/NPR
+                                                  외교/NNC+부장/NNC+이/PCA))
+                                      (VP (NP-ADV 두/NNU+나라/NNC
+                                                  외무/NNC+장관/NNC
+                                                  회담/NNC+에서/PAD)
+                                          (VP (VP (S (NP-SBJ *pro*)
+                                                     (VP (NP-COMP (NP (NP 양국/NNC
+                                                                          우의/NNC
+                                                                          관계/NNC+의/PAN)
+                                                                      (NP 추가/NNC
+                                                                          확대/NNC
+                                                                          문제/NNC+과/PCJ))
+                                                                  (NP 다른/DAN
+                                                                      공동/NNC
+                                                                      관심사/NNC+들/XSF+에/PAD))
+                                                         관하/VV+어/ECS))
+                                                  (VP (NP-OBJ 견해/NNC+들/XSF+을/PCA)
+                                                      (VP (ADVP 충분히/ADV)
+                                                          (VP (VV 교환/NNC+하/XSV+고/ECS)))))
+                                              (VP (NP-ADV (S (WHNP-1 *op*)
+                                                             (S (NP-SBJ *T*-1)
+                                                                (ADJP 많/VJ+은/EAN)))
+                                                          (NP 문제/NNC+에서/PAD))
+                                                  (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                 (S (NP-SBJ *T*-2)
+                                                                    (ADJP (VJ 중요/NNC+하/XSJ+은/EAN))))
+                                                              (NP 의견/NNC
+                                                                  일치/NNC+을/PCA))
+                                                      보/VV+은/EAN)))))
+                                   (NP 데/NNX))
+                          대하/VV+어/ECS))
+                   (ADVP (ADV 기쁘/VJ+게/ECS))
+                   (VP (VV 생각/NNC+하/XSV+는다/EFN+고/PAD))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>기쁘게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

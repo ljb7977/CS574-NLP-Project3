@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기리</lemma>
+    <comment>Frames file for '기리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기리.01</id>
+      <edef>commend</edef>
+      <roleset>
+	<role argnum="0" argrole="entity giving praise"/>
+	<role argnum="1" argrole="entity praised"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 윤양이 다니던 랭글리고등학교는 윤양의 미술 작품을 액자에 넣어 유가족에게 전달하고 윤양을 기리는 자리를 마련하겠다는 의사를 밝힌 것으로 알려졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (ADVP 또/ADV)
+       (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                                  (S (NP-SBJ 윤/NPR+양/NNX+이/PCA)
+                                     (VP (NP-COMP *T*-1)
+                                         다니/VV+던/EAN)))
+                               (NP 랭글리/NPR+고등학교/NNC+은/PAU))
+                       (VP (VP (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ (NP 윤/NPR+양/NNX+의/PAN)
+                                              (NP 미술/NNC
+                                                  작품/NNC+을/PCA))
+                                      (NP-COMP 액자/NNC+에/PAD)
+                                      넣/VV+어/ECS))
+                               (VP (NP-COMP 유가족/NNC+에게/PAD)
+                                   (NP-OBJ *pro*)
+                                   (VV 전달/NNC+하/XSV+고/ECS)))
+                           (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                          (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                         (VP (NP-OBJ 윤/NPR+양/NNX+을/PCA)
+                                                             기리/VV+는/EAN))
+                                                      (NP 자리/NNC+을/PCA))
+                                              (VV 마련/NNC+하/XSV+겠/EPF+다는/EAN)))
+                                       (NP 의사/NNC+을/PCA))
+                               밝히/VV+은/EAN)))
+                    (NP 것/NNX+으로/PAD))
+           (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>윤양</term>
+	    </Arg>
+	    <Rel>
+	      <term>기리는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

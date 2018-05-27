@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>급신장</lemma>
+    <comment>Frames file for '급신장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>급신장.01</id>
+      <edef>make rapid expansion</edef>
+      <roleset>
+	<role argnum="1" argrole="thing expanding"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>급신장하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>미국의 향기, 향수산업은 지난 1950 년만 해도 연간소매고가 25 만달러에 불과했지만 오늘날에는 60 억달러 규모로 급신장했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 미국/NPR+의/PAN)
+           (NP 향기/NNC
+               ,/SCM
+               향수/NNC+산업/NNC+은/PAU))
+   (VP (S (S (NP-SBJ *pro*)
+             (VP (NP-COMP 지난/DAN
+			      1950/NNU
+			      년/NNX+만/PAU)
+                 하/VV+어도/ECS))
+          (S (NP-SBJ 연간/NNC+소매고/NNC+이/PCA)
+             (ADJP (NP-COMP 25/NNU
+                            만/NNU+달러/NNX+에/PAD)
+                   (ADJP (VJ 불과/NNC+하/XSJ+었/EPF+지만/ECS)))))
+       (NP-ADV 오늘날/NNC+에/PAD+은/PAU)
+       (VP (NP-COMP 60/NNU
+		    억/NNU+달러/NNX
+		    규모/NNC+으로/PAD)
+	   (VV 급신장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>미국의 향기, 향수산업</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>지난 1950 년만해도 연간소매고가 25 만달러에 불과했지만</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>오늘날에는</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>60 억달러 규모</term>
+	    </Arg>
+	    <Rel>
+	      <term>급신장했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

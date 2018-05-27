@@ -1,0 +1,122 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>통치</lemma>
+    <comment>Frames file for '통치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>통치.01</id>
+      <edef>govern</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing governed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>통치하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 자신이 직면하고 있는 불명예의 배후에는 30 여년간 오스트리아를 통치한 좌익이 있다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (NP-COMP-3 (NP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ 자신/NNC+이/PCA)
+                                    (VP (VP (NP-OBJ *T*-1)
+                                            (VV 직면/NNC+하/XSV+고/ECS))
+                                        있/VX+는/EAN)))
+                              (NP 불명예/NNC+의/PAN))
+                          (NP 배후/NNC+에/PAD+은/PAU))
+               (S (NP-SBJ (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (NP-ADV 30/NNU
+                                            여/XSF+년/NNX+간/XSF)
+                                    (VP (NP-OBJ 오스트리아/NPR+을/PCA)
+                                        (VV 통치/NNC+하/XSV+은/EAN)))))
+                          (NP 좌익/NNC+이/PCA))
+                  (ADJP (NP-COMP *T*-3)
+                        있/VJ+다/EFN+고/PAD)))
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=좌익</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>30 여년간</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>오스트리아</term>
+	    </Arg>
+	    <Rel>
+	      <term>통치한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>통치되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>국제사회가 파견한 로버트 패런드 브르코 행정관은 8 일 매들린 올브라이트 미국 국무장관이 참석한 가운데 브르코 특별행정구 선포식을 갖고 이 도시가 다인종 대표에 의해 통치되는 특별구가 됐음을 선언했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ 국제/NNC+사회/NNC+이/PCA)
+                 (VP (NP-OBJ *T*-1)
+                     (VV 파견/NNC+하/XSV+은/EAN))))
+           (NP 로버트/NPR
+               패런드/NPR
+               브르코/NPR
+               행정관/NNC+은/PAU))
+   (VP (NP-ADV 8/NNU
+               일/NNX)
+       (NP-ADV (S (NP-SBJ 매들린/NPR
+                          올브라이트/NPR
+                          미국/NPR
+                          국무/NNC+장관/NNC+이/PCA)
+                  (VP (NP-COMP *pro*)
+                      (VV 참석/NNC+하/XSV+은/EAN)))
+               (NP 가운데/NNC))
+       (VP (VP (NP-OBJ 브르코/NPR
+                       특별행정구/NNC
+                       선포/NNC+식/XSF+을/PCA)
+               갖/VV+고/ECS)
+           (VP (S-OBJ (NP-SBJ 이/DAN
+                              도시/NNC+이/PCA)
+                      (VP (NP-COMP (S (WHNP-2 *op*)
+                                      (S (NP-SBJ *T*-2)
+                                         (VP (S (NP-SBJ *pro*)
+                                                (VP (NP-COMP 다/XPF+인종/NNC
+                                                             대표/NNC+에/PAD)
+                                                    의하/VV+어/ECS))
+                                             (VP (VV 통치/NNC+되/XSV+는/EAN)))))
+                                   (NP 특별구/NNC+이/PCA))
+                          되/VV+었/EPF+음/ENM+을/PCA))
+               (VV 선언/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=특별구</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에 의해</f>
+	      <term>다인종 대표</term>
+	    </Arg>
+	    <Rel>
+	      <term>통치되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

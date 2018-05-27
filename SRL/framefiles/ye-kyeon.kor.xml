@@ -1,0 +1,165 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>예견</lemma>
+    <comment>Frames file for '예견' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>예견.01</id>
+      <edef>predict</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing predicted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>예견하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보고서는 전세계적인 추세가 전통적인 경향을 뒤바꾸고 있기 때문에 미국에 유입되는 자본의 유입이 줄어들 것이며 이에 따라 경상수지도 조정을 겪을 것이라고 예견했다.</text>
+	  <parse>
+(S (NP-SBJ 보고서/NNC+은/PAU)
+   (VP (S-COMP (S (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP 전세계/NNC+적/XSF+이/CO+은/EAN))))
+                                     (NP 추세/NNC+이/PCA))
+                             (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (VP (NP 전통/NNC+적/XSF+이/CO+은/EAN))))
+                                             (NP 경향/NNC+을/PCA))
+                                     뒤바꾸/VV+고/ECS)
+                                 있/VX+기/ENM))
+                          (NP 때문/NNX+에/PAD))
+                  (S (NP-SBJ (NP (S (WHNP-3 *op*)
+                                    (S (NP-SBJ *T*-3)
+                                       (VP (NP-COMP 미국/NPR+에/PAD)
+                                           (VV 유입/NNC+되/XSV+는/EAN))))
+                                 (NP 자본/NNC+의/PAN))
+                             (NP 유입/NNC+이/PCA))
+                     (VP (VP 줄어들/VV+을/EAN)
+                         (VX 것/NNX+이/CO+으며/ECS))))
+               (S (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 이/NPN+에/PAD)
+                         따르/VV+어/ECS))
+                  (S (NP-SBJ 경상/NNC+수지/NNC+도/PAU)
+                     (VP (VP (NP-OBJ 조정/NNC+을/PCA)
+                             겪/VV+을/EAN)
+                         (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+       (VV 예견/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>보고서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>전세계적인 추세가 전통적인 경향을 뒤바꾸고 있기 때문에 미국에 유입되는 자본의 유입이 줄어들 것이며 이에 따라 경상수지도 조정을 겪을 것이라</term>
+	    </Arg>
+	    <Rel>
+	      <term>예견했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>예견되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보스워스 대사는 이날 오후 대구 그랜드호텔에서 산학경영기술연구원 주최로 열린 세미나에서 `미국의 통상정책과 한국기업의 대응'이란 주제 발표를 통해 "한국의 올해 경제성장률이 5-7 퍼센트대로 예견되고 있으나 이는 경기위축에 따른 반등일 가능성이 있으며 99 년은 저금리, 미국 등 수출국의 호경기, 엔화 강세 등 국제적 상황이 많은 도움을 주었다"면서 이같이 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 보스워스/NPR
+           대사/NNC+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-ADV 이날/NNC
+                                 오후/NNC)
+                         (NP-ADV 대구/NPR
+                                 그랜드/NPR+호텔/NNC+에서/PAD)
+                         (NP-ADV 산학/NNC+경영/NNC+기술/NNC+연구원/NNC
+                                 주최/NNC+으로/PAD)
+                         (VP 열리/VV+은/EAN))))
+               (NP 세미나/NNC+에서/PAD))
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (NP `/SLQ
+                          (NP (NP 미국/NPR+의/PAN)
+                              (NP 통상/NNC+정책/NNC+과/PCJ))
+                          (NP (NP 한국/NPR+기업/NNC+의/PAN)
+                              (NP 대응/NNC))
+                          '/SRQ
+                          이란/PAN)
+                      (NP 주제/NNC
+                          발표/NNC+을/PCA))
+              통하/VV+어/ECS))
+       (S "/SLQ
+          (S (NP-SBJ (NP 한국/NPR+의/PAN)
+                     (NP 올해/NNC
+                         경제/NNC+성장률/NNC+이/PCA))
+             (VP (VP (NP-COMP 5-7/NNU
+                              퍼센트/NNX+대/XSF+으로/PAD)
+                     (VV 예견/NNC+되/XSV+고/ECS))
+                 있/VX+으나/ECS))
+          (S (NP-SBJ (S (NP-SBJ 이/NPN+은/PAU)
+                        (VP (NP (S (WHNP-2 *op*)
+                                   (S (NP-SBJ *T*-2)
+                                      (VP (NP-COMP 경기/NNC+위축/NNC+에/PAD)
+                                          따르/VV+은/EAN)))
+                                (NP 반등/NNC+이/CO+을/EAN))))
+                     (NP 가능성/NNC+이/PCA))
+             (ADJP 있/VJ+으며/ECS))
+          (S (NP-ADV 99/NNU
+                     년/NNX+은/PAU)
+             (S (NP-SBJ (NP (NP (NP 저금리/NNC)
+                                ,/SCM
+                                (NP (NP (NP (NP 미국/NPR)
+                                            (NP 등/NNX))
+                                        (NP 수출국/NNC+의/PAN))
+                                    (NP 호경기/NNC))
+                                ,/SCM
+                                (NP 엔화/NNC
+                                    강세/NNC))
+                            (NP 등/NNX))
+                        (NP 국제/NNC+적/XSF
+                            상황/NNC+이/PCA))
+                (VP (NP-COMP *pro*)
+                    (NP-OBJ (S (WHNP-3 *op*)
+                               (S (NP-SBJ *T*-3)
+                                  (ADJP 많/VJ+은/EAN)))
+                            (NP 도움/NNC+을/PCA))
+                    주/VV+었/EPF+다/EFN)))
+          "/SRQ
+          면서/ECS)
+       (ADVP 이같이/ADV)
+       (VP (NP-OBJ *pro*)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>한국의 올해 경제성장률</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>5-7 퍼센트대로</term>
+	    </Arg>
+	    <Rel>
+	      <term>예견되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있으나</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

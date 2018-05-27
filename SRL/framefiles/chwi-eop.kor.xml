@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>취업</lemma>
+    <comment>Frames file for '취업' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>취업.01</id>
+      <edef>work</edef>
+      <roleset>
+	<role argnum="0" argrole="thing working"/>
+	<role argnum="1" argrole="work at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>취업하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>해외 주둔 기간 단축이 해당 병사들과 그 가족의 짐을 덜어 주는 것은 물론이지만 특히 주방위군과 예비군의 경우는 이들이 취업하고 있는 직장의 고용주에게도 도움이 될 것으로 보인다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-SBJ 해외/NNC
+                         주둔/NNC
+                         기간/NNC
+                         단축/NNC+이/PCA)
+                 (VP (VP (NP-OBJ (NP (NP 해당/NNC
+                                         병사/NNC+들/XSF+과/PCJ)
+                                     (NP 그/DAN
+                                         가족/NNC+의/PAN))
+                                 (NP 짐/NNC+을/PCA))
+                         덜/VV+어/ECS)
+                     주/VX+는/EAN))
+              (NP 것/NNX+은/PAU))
+      (VP (NP 물론/NNC+이/CO+지만/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ *pro*)
+                      (VP (ADVP 특히/ADV)
+                          (NP-ADV (NP (NP 주/NNC+방위군/NNC+과/PCJ)
+                                      (NP 예비군/NNC+의/PAN))
+                                  (NP 경우/NNC+은/PAU))
+                          (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                              (S (NP-SBJ 이/NPN+들/XSF+이/PCA)
+                                                 (VP (VP (NP-COMP *T*-1)
+                                                         (VV 취업/NNC+하/XSV+고/ECS))
+                                                     있/VX+는/EAN)))
+                                           (NP 직장/NNC+의/PAN))
+                                       (NP 고용주/NNC+에게/PAD+도/PAU))
+                              (VP (NP-COMP-LV 도움/NNC+이/PCA)
+                                  (LV 되/VV+을/EAN)))))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>이들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=직장</term>
+	    </Arg>
+	    <Rel>
+	      <term>취업하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

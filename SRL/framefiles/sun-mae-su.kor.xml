@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>순매수</lemma>
+    <comment>Frames file for '순매수' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>순매수.01</id>
+      <edef>but a net amount</edef>
+      <roleset>
+	<role argnum="0" argrole="buyer"/>
+	<role argnum="1" argrole="thing bought"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>순매수하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>외국인과 기관 투자가들은 각각 1 천 332 억원어치와 249 억원어치를 순매수했으나 개인투자자들은 1 천 928 억원어치를 순매도했다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 외국인/NNC+과/PCJ)
+              (NP 기관/NNC
+                  투자가/NNC+들/XSF+은/PAU))
+      (VP (ADVP 각각/ADV)
+          (VP (NP-OBJ (NP 1/NNU
+                          천/NNU
+                          332/NNU
+                          억/NNU+원/NNX+어치/XSF+과/PCJ)
+                      (NP 249/NNU
+                          억/NNU+원/NNX+어치/XSF+을/PCA))
+              (VV 순매수/NNC+하/XSV+었/EPF+으나/ECS))))
+   (S (NP-SBJ 개인/NNC+투자자/NNC+들/XSF+은/PAU)
+      (VP (NP-OBJ 1/NNU
+                  천/NNU
+                  928/NNU
+                  억/NNU+원/NNX+어치/XSF+을/PCA)
+          (VV 순매도/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>외국인과 기관 투자가들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>각각</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>1 천 332 억원어치와 249 억원어치</term>
+	    </Arg>
+	    <Rel>
+	      <term>순매수했으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

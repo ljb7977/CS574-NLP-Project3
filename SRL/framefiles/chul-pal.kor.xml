@@ -1,0 +1,139 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>출발</lemma>
+    <comment>Frames file for '출발' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>출발.01</id>
+      <edef>depart</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>출발하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>정찰대는 중대한 임무를 띠고 막 출발했습니다.</text>
+	  <parse>
+(S (NP-SBJ 정찰대/NNC+은/PAU)
+   (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP (VJ 중대/NNC+하/XSJ+은/EAN))))
+                   (NP 임무/NNC+을/PCA))
+           띠/VV+고/ECS)
+       (VP (ADVP 막/ADV)
+           (VP (VV 출발/NNC+하/XSV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>정찰대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>막</term>
+	    </Arg>
+	    <Rel>
+	      <term>출발했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel></rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="obj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>핵스트럼은 그러나 콩코드기가 음속 돌파 시 발생하는 저주파 충격파가 비둘기들의 저주파 지도감각을 혼란시킨다고 주장하면서 지난 97 년 6 월 약 6 만 마리의 비둘기들을 프랑스 서부 낭트에서 출발시켜 관찰한 결과 3분의 1가량이 도중에 길을 잃고 목적지인 영국에 도착하지 못했으며 나머지도 '늦게' 도착했다고 밝혔다.</text>
+	  <parse>
+(S (S (NP-SBJ 핵스트럼/NPR+은/PAU)
+      (VP (ADCP 그러나/ADC)
+          (VP (S-COMP (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+				    (VP (NP-ADV (S (WHNP *op*)
+						   (S (NP-SBJ 콩코드기/NPR+이/PCA)
+						      (VP (NP-OBJ 음속/NNC)
+							  (VV 돌파/NNC))))
+						(NP 시/NNX))
+					(VP (VV 발생/NNC+하/XSV+는/EAN)))))
+                              (NP 저주파/NNC
+                                  충격파/NNC+이/PCA))
+                      (VP (NP-OBJ (NP 비둘기/NNC+들/XSF+의/PAN)
+                                  (NP 저주파/NNC
+                                      지도/NNC+감각/NNC+을/PCA))
+                          (VV 혼란/NNC+시키/XSV+는다/EFN+고/PAD)))
+              (VV 주장/NNC+하/XSV+으면서/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-ADV (S (NP-SBJ *pro*)
+                             (VP (S (NP-SBJ *pro*)
+                                    (VP (NP-ADV 지난/DAN
+                                                97/NNU
+                                                년/NNX
+                                                6/NNU
+                                                월/NNX)
+                                        (VP (NP-OBJ (NP 약/DAN
+							  6/NNU
+							  만/NNU
+							  마리/NNX+의/PAN)
+                                                    (NP 비둘기/NNC+들/XSF+을/PCA))
+                                            (NP-COMP 프랑스/NPR
+							   서부/NNC
+							   낭트/NPR+에서/PAD)
+					    (VV 출발/NNC+시키/XSV+어/ECS))))
+                                 (VP (NP-OBJ *pro*)
+                                     (VV 관찰/NNC+하/XSV+은/EAN))))
+                          (NP 결과/NNC))
+                  (S (NP-SBJ (NP 3/NNU+분/XSF+의/PAN)
+                             (NP 1/NNU+가량/XSF+이/PCA))
+                     (VP (VP (NP-ADV 도중/NNC+에/PAD)
+                             (VP (NP-OBJ 길/NNC+을/PCA)
+                                 잃/VV+고/ECS))
+                         (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP 목적지/NNC+이/CO+은/EAN))))
+                                          (NP 영국/NPR+에/PAD))
+                                 (VV 도착/NNC+하/XSV+지/ECS))
+                             못하/VX+었/EPF+으며/ECS)))
+                  (S (NP-SBJ 나머지/NNC+도/PAU)
+                     (VP (ADVP (ADV '/SLQ
+                                    늦/VJ+게/ECS
+                                    '/SRQ))
+                         (VP (NP-COMP *pro*)
+                             (VV 도착/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))))
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 97 년 6 월</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>을</f>
+	      <term>약 6 만 마리의 비둘기들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>프랑스 서부 낭트</term>
+	    </Arg>
+	    <Rel>
+	      <term>출발시켜</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

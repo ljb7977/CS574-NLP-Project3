@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>공개사과</lemma>
+    <comment>Frames file for '공개사과' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>공개사과.01</id>
+      <edef>apologize publicly</edef>
+      <roleset>
+	<role argnum="0" argrole="apologist"/>
+	<role argnum="1" argrole="apologized for"/>
+	<role argnum="2" argrole="apologized to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>공개사과하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 그러나 부동산을 담보로 20 억원을 만들었다는 민주당 정동영 대변인 등의 주장에 대해서는 "전혀 사실이 아니다"라며 "공개사과하지 않을 경우 명예훼손혐의 고소 등 법적 조치에 착수할 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (S (S (NP-SBJ *pro*)
+             (VP (NP-COMP (S (NP-SBJ *pro*)
+                             (VP (NP-ADV (NP-OBJ 부동산/NNC+을/PCA)
+                                         담보/NNC+으로/PAD)
+                                 (VP (NP-OBJ 20/NNU
+                                             억/NNU+원/NNX+을/PCA)
+                                     만들/VV+었/EPF+다는/EAN)))
+                          (NP (NP (NP 민주당/NPR
+                                      정동영/NPR
+                                      대변인/NNC)
+                                  (NP 등/NNX+의/PAN))
+                              (NP 주장/NNC+에/PAD)))
+                 대하/VV+어서/ECS+은/PAU))
+          (S "/SLQ
+             (NP-SBJ *pro*)
+             (ADJP (ADVP 전혀/ADV)
+                   (ADJP (NP-COMP 사실/NNC+이/PCA)
+                         아니/VJ+다/EFN))
+             "/SRQ
+             이/CO+라며/ECS))
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                      (VP (VP (VV 공개/NNC+사과/NNC+하/XSV+지/ECS))
+					      않/VX+을/EAN))
+                                   (NP 경우/NNC))
+                           (VP (NP-COMP (NP (NP 명예/NNC+훼손/NNC+혐의/NNC
+                                                고소/NNC)
+                                            (NP 등/NNX))
+                                        (NP 법적/NNC
+                                            조치/NNC+에/PAD))
+                               (VV 착수/NNC+하/XSV+을/EAN)))
+                       (VX 것/NNX))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>공개사과하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

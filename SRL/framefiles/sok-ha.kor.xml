@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>속하</lemma>
+    <comment>Frames file for '속하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>속하.01</id>
+      <edef>belong to</edef>
+      <roleset>
+	<role argnum="1" argrole="thing belonging"/>
+	<role argnum="2" argrole="belong to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>속하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>경리 군관 1명과 군의 군관 1명이 대대부 공급 소대에 속해 있습니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 경리/NNC
+	       군관/NNC
+	       1/NNU
+	       명/NNX+과/PCJ)
+	   (NP 군의/NNC
+	       군관/NNC
+	       1/NNU
+	       명/NNX+이/PCA))
+   (VP (VP (NP-COMP 대대부/NNC
+		    공급/NNC
+		    소대/NNC+에/PAD)
+	   속하/VV+어/EAU)
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>경리 군과 1명과 군의 군관 1명</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>대대부 공급 소대</term>
+	    </Arg>
+	    <Rel>
+	      <term>속해</term>
+	    </Rel>
+	    <AUX>
+	      <f>어</f>
+	      <term>있습니다</term>
+	    </AUX>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

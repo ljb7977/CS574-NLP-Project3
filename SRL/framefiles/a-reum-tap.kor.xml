@@ -1,0 +1,98 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>아름답</lemma>
+    <comment>Frames file for '아름답' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>아름답.01</id>
+      <edef>beatiful</edef>
+      <roleset>
+	<role argnum="1" argrole="thing beautiful"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>아름답다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>송국장은 "안의사의 유해발굴은 한-일 양국의 책무일 뿐만 아니라 한-일 양국이 할 수 있는 가장 아름다운 국제사회적 공헌"이라면서 "안의사의 유해가 발굴되면 고향인 북한쪽이 아니라 휴전선에 안장, 휴전선이 이산가족의 `만남의 장'이 되도록 하는 것이 이상적"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 송/NPR+국장/NNC+은/PAU)
+   (VP (S "/SLQ
+          (S (NP-SBJ (S (NP-SBJ (NP 안/NPR+의사/NNC+의/PAN)
+                                (NP 유해/NNC+발굴/NNC+은/PAU))
+                        (VP (NP (NP 한/NPR
+                                    -/SSY
+                                    일/NPR
+                                    양국/NNC+의/PAN)
+                                (NP 책무/NNC+이/CO+을/EAN))))
+                     (NP 뿐/NNX+만/PAU))
+             (ADJP 아니/VJ+라/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP (S (WHNP-1 *op*)
+                        (S (NP-SBJ 한/NPR
+                                   -/SSY
+                                   일/NPR
+                                   양국/NNC+이/PCA)
+                           (VP (VP (NP-OBJ *T*-1)
+                                   하/VV+을/EAN)
+                               (VX 수/NNX
+                                   있/VJ+는/EAN))))
+                     (NP (S (WHNP-2 *op*)
+                            (S (NP-SBJ *T*-2)
+                               (ADJP (ADVP 가장/ADV)
+                                     (ADJP 아름답/VJ+은/EAN))))
+                         (NP 국제/NNC+사회/NNC+적/XSF
+                             공헌/NNC)))))
+          "/SRQ
+          이/CO+라면서/ECS)
+       (VP (S-COMP "/SLQ
+		   (NP-SBJ (S (NP-SBJ *pro*)
+			      (VP (S-COMP (S (NP-SBJ (NP 안/NPR+의사/NNC+의/PAN)
+						     (NP 유해/NNC+이/PCA))
+					     (VP (VV 발굴/NNC+되/XSV+으면/ECS)))
+					  (S (S (NP-SBJ (S (WHNP-3 *op*)
+							   (S (NP-SBJ *T*-3)
+							      (VP (NP 고향/NNC+이/CO+은/EAN))))
+							(NP 북한/NPR+쪽/NNX+이/PCA))
+						(ADJP 아니/VJ+라/ECS))
+					     (S (NP-SBJ *pro*)
+						(VP (NP-ADV 휴전선/NNC+에/PAD)
+						    (VP (NP-OBJ *pro*)
+							(VV 안장/NNC))))
+					     ,/SCM)
+					  (S (NP-SBJ 휴전선/NNC+이/PCA)
+					     (VP (NP-COMP (NP 이산/NNC+가족/NNC+의/PAN)
+							  (NP `/SLQ
+							      (NP 만남/NNC+의/PAN)
+							      (NP 장/NNC)
+							      '/SRQ
+							      이/PCA))
+						 되/VV+도록/ECS)))
+				  하/VV+는/EAN))
+			   (NP 것/NNX+이/PCA))
+		   (VP (NP 이상/NNC+적/XSF))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=국제사회적 공헌</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>가장</term>
+	    </Arg>
+	    <Rel>
+	      <term>아름다운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

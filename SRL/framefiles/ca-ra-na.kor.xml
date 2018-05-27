@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자라나</lemma>
+    <comment>Frames file for '자라나' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>자라나.01</id>
+      <edef>grow</edef>
+      <roleset>
+	<role argnum="0" argrole="thing growing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자라나다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>거대공룡으로 자라난 마이크로소프트(MS)와 인텔사 같은 경우에는 뉴욕 증시 상장을 거부한 채 나스닥 시장에 여전히 남아 있다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (ADJP (NP-COMP (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP-ADV 거대/NNC+공룡/NNC+으로/PAD)
+                                           (VP 자라나/VV+은/EAN))))
+                                 (NP (NP 마이크로소프트/NPR
+                                         (PRN -LRB-/SLQ
+                                              (NP MS/NFW)
+                                              -RRB-/SRQ)
+                                         과/PCJ)
+                                     (NP 인텔/NPR+사/XSF)))
+                        같/VJ+은/EAN))
+               (NP 경우/NNC+에/PAD+은/PAU))
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 뉴욕/NPR
+                              증시/NNC
+                              상장/NNC+을/PCA)
+                      (VV 거부/NNC+하/XSV+은/EAN)))
+               (NP 채/NNX))
+       (VP (VP (NP-COMP 나스닥/NPR
+                        시장/NNC+에/PAD)
+               (VP (ADVP 여전히/ADV)
+                   (VP 남/VV+어/ECS)))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=마이크로소프트(MS)와 인텔사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>거대공룡으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>자라난</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

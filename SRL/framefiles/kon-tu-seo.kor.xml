@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>곤두서</lemma>
+    <comment>Frames file for '곤두서' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>곤두서.01</id>
+      <edef>stand on end</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing standing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>곤두세우다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 재경부는 올들어 6 일까지 외국인 주식 순매수액(증권거래소)이 5 조원으로 작년 한해동안의 2 조 5 천억원을 이미 뛰어넘고 있다는 데 촉각을 곤두세우고 있다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 재경부/NNC+은/PAU)
+      (VP (VP (NP-ADV (S (ADVP 올들어/ADV)
+                         (NP-ADV 6/NNU
+                                 일/NNX+까지/PAU)
+                         (S (NP-SBJ 외국인/NNC
+                                    주식/NNC
+                                    순매수액/NNC
+                                    (PRN -LRB-/SLQ
+                                         (NP 증권/NNC+거래소/NNC)
+                                         -RRB-/SRQ)
+                                    이/PCA)
+                            (VP (VP (NP-ADV 5/NNU
+                                            조/NNU+원/NNX+으로/PAD)
+                                    (VP (NP-OBJ (NP 작년/NNC
+                                                    한해/NNC+동안/NNX+의/PAN)
+                                                (NP 2/NNU
+                                                    조/NNU
+                                                    5/NNU
+                                                    천억/NNU+원/NNX+을/PCA))
+                                        (VP (ADVP 이미/ADV)
+                                            (VP 뛰어넘/VV+고/ECS))))
+                                있/VX+다는/EAN)))
+                      (NP 데/NNX))
+              (VP (NP-OBJ 촉각/NNC+을/PCA)
+                  곤두세우/VV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>재경부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>올들어 6 일까지 외국인 주식 순매수액(증권거래소)이 5 조원으로 작년 한해동안의 2 조 5 천억원을 이미 뛰어넘고 있다는 데</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>촉각</term>
+	    </Arg>
+	    <Rel>
+	      <term>곤두세우고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

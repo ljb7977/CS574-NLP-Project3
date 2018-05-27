@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부심</lemma>
+    <comment>Frames file for '부심' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부심.01</id>
+      <edef>strive</edef>
+      <roleset>
+	<role argnum="0" argrole="entity trying"/>
+	<role argnum="1" argrole="thing tried"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부심하</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한나라당은 그러나 서울 강북권 등 상당수 선거구에서 여전히 고전을 면치 못하고 있는 것으로 자체 분석하고 분위기 반전을 위해 중진인사들과 `386 후보'의 연대를 과시하는 이벤트 개발 등 특단의 대책마련에도 부심하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 한나라당/NPR+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+			   (VP (VP (VP (NP-ADV (NP (NP 서울/NPR
+						       강북권/NPR)
+						   (NP 등/NNX))
+					       (NP 상당수/NNC
+						   선거구/NNC+에서/PAD))
+				       (ADVP 여전히/ADV)
+				       (VP (NP-OBJ 고전/NNC+을/PCA)
+					   면하/VV+지/ECS))
+				   못하/VX+고/ECS)
+			       있/VX+는/EAN))
+			(NP 것/NNX+으로/PAD))
+	       (VP (NP-ADV 자체/NNC)
+		   (VP (VV 분석/NNC+하/XSV+고/ECS))))
+	   (VP (VP (S (NP-SBJ *pro*)
+		      (VP (NP-OBJ 분위기/NNC
+				  반전/NNC+을/PCA)
+			  위하/VV+어/ECS))
+		   (VP (NP-COMP (NP (NP (NP (S (WHNP *op*)
+					       (S (NP-SBJ *pro*)
+						  (VP (NP-OBJ (NP (NP 중진/NNC+인사/NNC+들/XSF+과/PCJ)
+								  (NP `/SLQ
+								      386/NNU
+								      후보/NNC
+								      '/SRQ
+								      의/PAN))
+							      (NP 연대/NNC+을/PCA))
+						      (VV 과시/NNC+하/XSV+는/EAN))))
+					    (NP 이벤트/NNC))
+					(NP 개발/NNC))
+				    (NP 등/NNX))
+				(NP (NP 특단/NNC+의/PAN)
+				    (NP 대책/NNC+마련/NNC+에/PAD+도/PAU)))
+		       (VV 부심/NNC+하/XSV+고/ECS)))
+	       있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>한나라당</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>분위기 반전을 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에도</f>
+	      <term>중진인사들과 `386 후보'의 연대를 과시하는 이벤트 개발 등 특단의 대책마련</term>
+	    </Arg>
+	    <Rel>
+	      <term>부심하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

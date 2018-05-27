@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>폭넓</lemma>
+    <comment>Frames file for '폭넓' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>폭넓.01</id>
+      <edef>broad</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being broad"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>폭넓다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 대통령이 이번 베를린선언에서 사회간접자본 확충을 비롯한 폭넓은 대북지원을 천명했고, 북미. 북일관계가 급속히 진전되면서 주변환경도 남북협력에 유리한 방향으로 흐르고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 김/NPR
+              대통령/NNC+이/PCA)
+      (VP (NP-ADV 이번/NNC
+                  베를린/NPR+선언/NNC+에서/PAD)
+          (VP (NP-OBJ (S (WHNP-2 *op*)
+			 (S (NP-SBJ *T*-2)
+			    (VP (NP-OBJ 사회/NNC+간접/NNC+자본/NNC
+					    확충/NNC+을/PCA)
+				비롯하/VV+은/EAN)))
+                      (NP (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (ADJP 폭넓/VJ+은/EAN)))
+                          (NP 대/XPF+북/NPR+지원/NNC+을/PCA)))
+              (VV 천명/NNC+하/XSV+었/EPF+고/ECS))))
+   ,/SCM
+   (S (NP-SBJ (NP 북/NPR+미/NPR)
+              ./SSY
+              (NP 북/NPR+일/NPR+관계/NNC+이/PCA))
+      (VP (ADVP 급속히/ADV)
+          (VP (VV 진전/NNC+되/XSV+으면서/ECS))))
+   (S (NP-SBJ 주변/NNC+환경/NNC+도/PAU)
+      (VP (VP (NP-COMP (S (WHNP-3 *op*)
+                          (S (NP-SBJ *T*-3)
+                             (ADJP (NP-COMP 남북/NNC+협력/NNC+에/PAD)
+                                   (VJ 유리/NNC+하/XSJ+은/EAN))))
+                       (NP 방향/NNC+으로/PAD))
+              흐르/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=대북지원</term>
+	    </Arg>
+	    <Rel>
+	      <term>폭넓은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

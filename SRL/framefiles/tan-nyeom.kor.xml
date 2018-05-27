@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>단념</lemma>
+    <comment>Frames file for '단념' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>단념.01</id>
+      <edef>give up</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing given up"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>단념하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전 전 대통령은 또 민국당 출현에 대해 "비행기에서 신문을 보고 알았다"며 더 이상의 언급을 피한 뒤, 동생 경환씨의 정치참여와 관련, "친인척이 나가는 것은 통제하기가 어렵다"며 출마포기 종용을 단념했음을 시사했다.</text>
+	  <parse>
+(S (NP-SBJ 전/NPR
+           전/DAN
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (ADVP 또/ADV)
+                      (S (NP-SBJ *pro*)
+                         (VP (NP-COMP 민국당/NPR
+                                      출현/NNC+에/PAD)
+                             대하/VV+어/ECS))
+                      (S "/SLQ
+                         (NP-SBJ *pro*)
+                         (VP (S (NP-SBJ *pro*)
+                                (VP (NP-ADV 비행기/NNC+에서/PAD)
+                                    (VP (NP-OBJ 신문/NNC+을/PCA)
+                                        보/VV+고/ECS)))
+                             (VP (NP-OBJ *pro*)
+                                 알/VV+었/EPF+다/EFN))
+                         "/SRQ
+                         며/ECS)
+                      (VP (NP-OBJ (NP 더/DAN
+                                      이상/NNC+의/PAN)
+                                  (NP 언급/NNC+을/PCA))
+                          피하/VV+은/EAN)))
+               (NP 뒤/NNC))
+       ,/SCM
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (NP 동생/NNC
+                           경환/NPR+씨/NNX+의/PAN)
+                       (NP 정치/NNC+참여/NNC+과/PAD))
+              (VV 관련/NNC)))
+       ,/SCM
+       (S "/SLQ
+          (S-SBJ (NP-SBJ *pro*)
+                 (VP (NP-OBJ (S (NP-SBJ 친인척/NNC+이/PCA)
+                                (VP 나가/VV+는/EAN))
+                             (NP 것/NNX+은/PAU))
+                     (VV 통제/NNC+하/XSV+기/ENM+이/PCA)))
+          (ADJP 어렵/VJ+다/EFN)
+          "/SRQ
+          며/ECS)
+       (VP (S-OBJ (NP-SBJ *pro*)
+                  (VP (NP-OBJ (NP 출마/NNC+포기/NNC)
+                              (NP 종용/NNC+을/PCA))
+                      (VV 단념/NNC+하/XSV+었/EPF+음/ENM+을/PCA)))
+           (VV 시사/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>출마포기 종용</term>
+	    </Arg>
+	    <Rel>
+	      <term>단념했음을</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

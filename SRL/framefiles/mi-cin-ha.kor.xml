@@ -1,0 +1,92 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>미진하</lemma>
+    <comment>Frames file for '미진하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>미진하.01</id>
+      <edef>incomplete</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being incomplete"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>미진하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>특히 행정분야를 제외한 순수 정치분야의 공약 14 개 중 적극 추진된 것은 `민간 운동지원에 관한 법률 제정' 및 `국무총리의 권한 및 위상강화와 국무총리실의 정책조정기능 강화' 등 단 2 가지(이행률 14.28 퍼센트)에 그쳐 정치개혁이 특히 미진한 것으로 평가됐다.</text>
+	  <parse>
+(S (ADVP 특히/ADV)
+   (S (NP-SBJ (S (WHNP-3 *op*)
+                 (S (NP-SBJ *T*-3)
+                    (VP (NP-ADV (NP (S (WHNP-2 *op*)
+                                       (S (NP-SBJ *pro*)
+                                          (VP (NP-COMP *T*-2)
+                                              (NP-OBJ 행정/NNC+분야/NNC+을/PCA)
+                                              (VV 제외/NNC+하/XSV+은/EAN))))
+                                    (NP 순수/NNC
+                                        정치/NNC+분야/NNC+의/PAN))
+                                (NP 공약/NNC
+                                    14/NNU
+                                    개/NNX
+                                    중/NNX))
+                        (NP-ADV 적극/NNC)
+                        (VP (VV 추진/NNC+되/XSV+은/EAN)))))
+              (NP 것/NNX+은/PAU))
+      (VP (NP-COMP (NP (NP (NP `/SLQ
+                               (NP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (VP (NP-COMP 민간/NNC
+                                                      운동/NNC+지원/NNC+에/PAD)
+                                             관하/VV+은/EAN)))
+                                   (NP 법률/NNC))
+                               (NP 제정/NNC)
+                               '/SRQ)
+                           (ADCP 및/ADC)
+                           (NP `/SLQ
+                               (NP (NP 국무총리/NNC+의/PAN)
+                                   (NP (NP 권한/NNC)
+                                       (ADCP 및/ADC)
+                                       (NP 위상/NNC+강화/NNC+과/PCJ)))
+                               (NP (NP 국무총리실/NNC+의/PAN)
+                                   (NP 정책/NNC+조정/NNC+기능/NNC
+                                       강화/NNC))
+                               '/SRQ))
+                       (NP 등/NNX))
+                   (NP 단/DAN
+                       2/NNU
+                       가지/NNX
+                       (PRN -LRB-/SLQ
+                            (NP 이행률/NNC
+                                14.28/NNU
+                                퍼센트/NNX)
+                            -RRB-/SRQ)
+                       에/PAD))
+          그치/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 정치/NNC+개혁/NNC+이/PCA)
+                      (ADJP (ADVP 특히/ADV)
+                            (ADJP 미진하/VJ+은/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          (VV 평가/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>정치개혁</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Rel>
+	      <term>미진한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

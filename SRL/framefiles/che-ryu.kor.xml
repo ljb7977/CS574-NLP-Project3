@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>체류</lemma>
+    <comment>Frames file for '체류' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>체류.01</id>
+      <edef>stay</edef>
+      <roleset>
+	<role argnum="0" argrole="thing staying"/>
+	<role argnum="1" argrole="stay at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>체류하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한을 탈출해 제 3 국에 체류하던 북한이탈주민 15 명이 10 일 오전 김포공항을 통해 입국했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 북한/NPR+을/PCA)
+                            (VV 탈출/NNC+하/XSV+어/ECS)))
+                     (VP (NP-COMP 제/DAN
+                                  3/NNU
+                                  국/NNX+에/PAD)
+                         (VV 체류/NNC+하/XSV+던/EAN)))))
+           (NP (NP 북한/NPR+이탈/NNC+주민/NNC)
+               (NP 15/NNU
+                   명/NNX+이/PCA)))
+   (VP (NP-ADV 10/NNU
+               일/NNX
+               오전/NNC)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 김포/NPR+공항/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (VP (VV 입국/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=북한이탈주민 15 명</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>북한을 탈출해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>제 3 국</term>
+	    </Arg>
+	    <Rel>
+	      <term>체류하던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수렴</lemma>
+    <comment>Frames file for '수렴' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수렴.01</id>
+      <edef>gather</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing gathered"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수렴하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>ASIC 산업위원회는 관련업계의 의견을 수렴해 세계시장에서 성장가능성이 높고 수입대체효과가 큰 분야를 선정, 기술개발과 제조, 판로개척 등 대책을 중점 추진할 계획이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ ASIC/NFW
+                      산업/NNC+위원회/NNC+은/PAU)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP 관련/NNC+업계/NNC+의/PAN)
+                                 (NP 의견/NNC+을/PCA))
+                         (VV 수렴/NNC+하/XSV+어/ECS)))
+                  (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                     (S (S (NP-SBJ *T*-1)
+                                           (S (NP-ADV 세계/NNC+시장/NNC+에서/PAD)
+                                              (S (NP-SBJ 성장/NNC+가능성/NNC+이/PCA)
+                                                 (ADJP 높/VJ+고/ECS))))
+                                        (S (NP-SBJ *T*-1)
+                                           (S (NP-SBJ 수입/NNC+대체/NNC+효과/NNC+이/PCA)
+                                              (ADJP 크/VJ+은/EAN)))))
+                                  (NP 분야/NNC+을/PCA))
+                          (VV 선정/NNC))
+                      ,/SCM
+                      (VP (NP-OBJ (NP (NP (NP 기술/NNC+개발/NNC+과/PCJ)
+                                          (NP 제조/NNC)
+                                          ,/SCM
+                                          (NP 판로/NNC+개척/NNC))
+                                      (NP 등/NNX))
+                                  (NP 대책/NNC+을/PCA))
+                          (VP (NP-ADV 중점/NNC)
+                              (VP (VV 추진/NNC+하/XSV+을/EAN)))))))
+           (NP 계획/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>관련업계의 의견</term>
+	    </Arg>
+	    <Rel>
+	      <term>수렴해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

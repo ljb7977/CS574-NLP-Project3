@@ -1,0 +1,193 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>선임</lemma>
+    <comment>Frames file for '선임' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>선임.01</id>
+      <edef>designate</edef>
+      <roleset>
+	<role argnum="0" argrole="designator"/>
+	<role argnum="1" argrole="person designated"/>
+	<role argnum="2" argrole="role, position"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>선임하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>민주국민당은 8 일 창당과 함께 선거대책위를 구성, 중앙선거대책위원장에 조 순 대표최고위원을 선임했다.</text>
+	  <parse>
+(S (S (NP-SBJ 민주국민당/NPR+은/PAU)
+      (VP (NP-ADV 8/NNU
+                  일/NNX)
+          (ADVP (NP-COMP 창당/NNC+과/PAD)
+                함께/ADV)
+          (VP (NP-OBJ 선거/NNC+대책위/NNC+을/PCA)
+              (VV 구성/NNC))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 중앙/NNC+선거/NNC+대책/NNC+위원장/NNC+에/PAD)
+          (NP-OBJ 조/NPR
+                  순/NPR
+                  대표/NNC+최고/NNC+위원/NNC+을/PCA)
+          (VV 선임/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>민주국민당은 8 일 창당과 함께 선거대책위를 구성</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>중앙선거대책위원장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>조 순 대표최고위원</term>
+	    </Arg>
+	    <Rel>
+	      <term>선임했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>선임하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 TPI사의 규모가 너무 크기 때문에 회사를 일시적으로 운영할 임시 관리인을 선임하기 곤란하다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (NP-ADV (S (NP-SBJ (NP TPI/NFW+사/XSF+의/PAN)
+                                      (NP 규모/NNC+이/PCA))
+                              (ADJP (ADVP 너무/ADV)
+                                    (ADJP 크/VJ+기/ENM)))
+                           (NP 때문/NNX+에/PAD))
+                   (S (S-SBJ (NP-SBJ *pro*)
+                             (VP (NP-OBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (NP-OBJ 회사/NNC+을/PCA)
+                                                   (VP (NP-ADV 일시/NNC+적/XSF+으로/PAD)
+                                                       (VP (VV 운영/NNC+하/XSV+을/EAN))))))
+                                         (NP 임시/NNC
+                                             관리인/NNC+을/PCA))
+                                 (VV 선임/NNC+하/XSV+기/ENM)))
+                      (ADJP (VJ 곤란/NNC+하/XSJ+다/EFN+고/PAD))))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>회사를 일시적으로 운영할 임시 관리인</term>
+	    </Arg>
+	    <Rel>
+	      <term>선임하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>선임되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한편 통일정책평가회의 위원장으로는 구영록 서울대 명예교수가 선임됐다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (NP-COMP-1 통일/NNC+정책/NNC+평가/NNC+회의/NNC
+		  위원장/NNC+으로/PAD+은/PAU)
+   (S (NP-SBJ 구영록/NPR
+		    서울대/NPR
+		    명예/NNC+교수/NNC+이/PCA)
+      (VP (NP-COMP *T*-1)
+          (VV 선임/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>한편</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로는</f>
+	      <term>통일정책평가회의 위원장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>구영록 서울대 명예교수</term>
+	    </Arg>
+	    <Rel>
+	      <term>선임됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>선임되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>간첩죄로 미국 교도소에서 5 년째 복역 중인 재미교포 로버트 김(60, 한국명:김채곤)씨를 변호할 미국인 변호사가 선임됨으로써 김씨의 형량재심청구 작업이 본격화하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (VP (NP-OBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (VP (NP-ADV 간첩죄/NNC+으로/PAD)
+                                              (NP-ADV 미국/NPR
+                                                      교도소/NNC+에서/PAD)
+                                              (NP-ADV 5/NNU
+                                                      년/NNX+째/XSF)
+                                              (VP (VV 복역/NNC)))
+                                          (VX 중/NNX+이/CO+은/EAN))))
+                                (NP 재미/NNC+교포/NNC
+                                    로버트/NPR
+                                    김/NPR
+                                    (PRN -LRB-/SLQ
+                                         (NP 60/NNU)
+                                         ,/SCM
+                                         (NP 한국/NPR+명/XSF
+                                             :/SSY
+                                             김채곤/NPR)
+                                         -RRB-/SRQ)
+                                    씨/NNX+을/PCA))
+                        (VV 변호/NNC+하/XSV+을/EAN))))
+              (NP 미국인/NNC
+                  변호사/NNC+이/PCA))
+      (VP (VV 선임/NNC+되/XSV+음/ENM+으로써/PAD)))
+   (S (NP-SBJ (NP 김/NPR+씨/NNX+의/PAN)
+              (NP 형량/NNC+재심/NNC+청구/NNC
+                  작업/NNC+이/PCA))
+      (VP (VP (VV 본격화/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>가</f>
+	      <term>간첩죄로 미국 교도소에서 5 년째 복역 중인 재미교포 로버트 김(60, 한국명:김채곤)씨를 변호할 미국인 변호사</term>
+	    </Arg>
+	    <Rel>
+	      <term>선임됨으로써</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

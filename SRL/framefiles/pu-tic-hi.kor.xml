@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부딪히</lemma>
+    <comment>Frames file for '부딪히' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>부딪히.01</id>
+      <edef>encounter</edef>
+      <roleset>
+	<role argnum="1" argrole="entity encountered"/>
+	<role argnum="2" argrole="barrier"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부딪히다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희 탱크들은 작전 중에 적의 완강한 저항에 부딪혔습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+           탱크/NNC+들/XSF+은/PAU)
+   (VP (NP-ADV 작전/NNC
+               중/NNX+에/PAD)
+       (VP (NP-COMP (NP 적/NNC+의/PAN)
+                    (NP (S (WHNP-1 *op*)
+                           (S (NP-SBJ *T*-1)
+                              (ADJP 완강하/VJ+은/EAN)))
+                        (NP 저항/NNC+에/PAD)))
+           부딪히/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>저희 탱크들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>작전 중에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>적의 완강한 저항</term>
+	    </Arg>
+	    <Rel>
+	      <term>부딪혔습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

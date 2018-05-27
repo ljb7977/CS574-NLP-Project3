@@ -1,0 +1,192 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>실현</lemma>
+    <comment>Frames file for '실현' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>실현.01</id>
+      <edef>materialize</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing being materialized"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>실현하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>오는 6 월 개장되는 일본의 첨단기술주 거래시장 나스닥저팬은 기존 도쿄 증권거래소(TSE)와의 경쟁을 통해 일본 증시의 혁신을 실현할 것이라고 나스닥저팬의 설립과 운영을 준비 중인 나스닥저팬 플래닝의 사에키 타츠유키 사장이 2 일 밝혔다.</text>
+	  <parse>
+(S (S-COMP-3 (NP-SBJ (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (NP-ADV 오는/DAN
+                                       6/NNU
+                                       월/NNX)
+                               (VP (VV 개장/NNC+되/XSV+는/EAN)))))
+                     (NP (NP 일본/NPR+의/PAN)
+                         (NP 첨단/NNC+기술/NNC+주/XSF
+                             거래/NNC+시장/NNC
+                             나스닥저팬/NPR+은/PAU)))
+             (VP (VP (S (NP-SBJ *pro*)
+			(VP (NP-OBJ (NP 기존/NNC
+					    도쿄/NPR
+					    증권거래소/NNC
+					    (PRN -LRB-/SLQ
+						 TSE/NFW
+						 -RRB-/SRQ)
+					    과/PAD+의/PAN)
+				    (NP 경쟁/NNC+을/PCA))
+			    통하/VV+어/ECS))
+                     (VP (NP-OBJ (NP 일본/NPR
+                                     증시/NNC+의/PAN)
+                                 (NP 혁신/NNC+을/PCA))
+                         (VV 실현/NNC+하/XSV+을/EAN)))
+                 (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+   (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ *T*-2)
+                    (VP (VP (NP-OBJ (NP 나스닥저팬/NPR+의/PAN)
+                                    (NP (NP 설립/NNC+과/PCJ)
+                                        (NP 운영/NNC+을/PCA)))
+                            (VV 준비/NNC))
+                        (VX 중/NNX+이/CO+은/EAN))))
+              (NP (NP 나스닥저팬/NPR
+                      플래닝/NPR+의/PAN)
+                  (NP 사에키/NPR
+                      타츠유키/NPR
+                      사장/NNC+이/PCA)))
+      (VP (NP-ADV 2/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-3)
+              밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>오는 6 월 개장되는 일본의 첨단기술주 거래시장 나스닥저팬</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>기존 도쿄 증권거래소(TSE)와의 경쟁을 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>일본 증시의 혁신</term>
+	    </Arg>
+	    <Rel>
+	      <term>실현할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>실현되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한강 도하 작전은 실현되지 못했다.</text>
+	  <parse>
+(S (NP-SBJ 한강/NPR
+           도하/NNC
+           작전/NNC+은/PAU)
+   (VP (VP (VV 실현/NNC+되/XSV+지/ECS))
+       못하/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>한강 도하 작전</term>
+	    </Arg>
+	    <Rel>
+	      <term>실현되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못했다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>실현시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 또 "이처럼 약속을 지키지 않는 사람들과의 공조는 있을 수 없다"면서 "가까운 장래에 심도 있는 대화와 국민들의 협력을 얻어 내각제를 실현시킬 것"이라고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ (NP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (VP (NP-ADV 이/NPN+처럼/PAD)
+                                                (VP (NP-OBJ 약속/NNC+을/PCA)
+                                                    지키/VV+지/ECS))
+                                            않/VX+는/EAN)))
+                                  (NP 사람/NNC+들/XSF+과/PAD+의/PAN))
+                              (NP 공조/NNC+은/PAU))
+                      (VP (ADJP 있/VJ+을/EAN)
+                          (VX 수/NNX
+                              없/VJ+다/EFN))
+                      "/SRQ
+                      면서/ECS)
+                   (S (NP-SBJ *pro*)
+                      (VP "/SLQ
+                          (VP (NP-ADV (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (ADJP 가깝/VJ+은/EAN)))
+                                      (NP 장래/NNC+에/PAD))
+                              (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ (NP (S (WHNP-3 *op*)
+                                                    (S (NP-SBJ *T*-3)
+                                                       (ADJP (NP-COMP 심도/NNC)
+                                                             있/VJ+는/EAN)))
+                                                 (NP 대화/NNC+과/PCJ))
+                                             (NP (NP 국민/NNC+들/XSF+의/PAN)
+                                                 (NP 협력/NNC+을/PCA)))
+                                     얻/VV+어/ECS))
+                              (VP (NP-OBJ 내각제/NNC+을/PCA)
+                                  (VV 실현/NNC+시키/XSV+을/EAN)))
+                          (VX 것/NNX)
+                          "/SRQ
+                          이/CO+라/EFN+고/PAD)))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>가까운 장래에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>심도 있는 대화와 국민들의 협력을 얻어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>내각제</term>
+	    </Arg>
+	    <Rel>
+	      <term>실현시킬</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

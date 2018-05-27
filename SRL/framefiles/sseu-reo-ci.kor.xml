@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>쓰러지</lemma>
+    <comment>Frames file for '쓰러지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>쓰러지.01</id>
+      <edef>fall over</edef>
+      <roleset>
+	<role argnum="1" argrole="thing falling over"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>쓰러지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>김 동무는 부상을 당하자 정신을 깜빡 잃고 쓰러졌습니다.</text>
+	  <parse>
+(S (S (NP-SBJ 김/NPR
+              동무/NNC+은/PAU)
+      (VP (NP-OBJ 부상/NNC+을/PCA)
+          당하/VV+자/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 정신/NNC+을/PCA)
+              (VP (ADVP 깜빡/ADV)
+                  (VP 잃/VV+고/ECS)))
+          (VP 쓰러지/VV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>김 동무는 부상을 당하자</term>
+	    </Arg>
+	    <Rel>
+	      <term>쓰러졌습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

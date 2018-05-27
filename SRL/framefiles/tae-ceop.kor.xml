@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대접</lemma>
+    <comment>Frames file for '대접' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>대접.01</id>
+      <edef>treat</edef>
+      <roleset>
+	<role argnum="0" argrole="one party"/>
+	<role argnum="1" argrole="other party"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대접하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>나는 지금까지 너를 쭉 믿고 점잖게 대접해 왔다.</text>
+	  <parse>
+(S (NP-SBJ 나/NPN+은/PAU)
+   (VP (NP-ADV 지금/NNC+까지/PAU)
+       (VP (VP (NP-OBJ 너/NPN+을/PCA)
+               (VP (ADVP 쭉/ADV)
+                   (VP 믿/VV+고/ECS)))
+           (VP (VP (ADVP (ADV 점잖/VJ+게/ECS))
+                   (VP (NP-OBJ *pro*)
+                       (VV 대접/NNC+하/XSV+어/ECS)))
+               오/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지금까지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>점잖게</term>
+	    </Arg>
+	    <Rel>
+	      <term>대접해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

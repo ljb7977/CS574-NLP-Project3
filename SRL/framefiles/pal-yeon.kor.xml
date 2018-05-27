@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발연</lemma>
+    <comment>Frames file for '발연' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>발연.01</id>
+      <edef>emit smoke</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발연하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>T-54 탱크는 우리 진지를 은폐하기 위해서 발연했습니다.</text>
+	  <parse>
+(S (NP-SBJ T-54/NFW
+           탱크/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-OBJ (NP-SBJ *pro*)
+                     (VP (NP-OBJ 우리/NPN
+                                 진지/NNC+을/PCA)
+                         (VV 은폐/NNC+하/XSV+기/ENM)))
+              위하/VV+어서/ECS))
+       (VP (VV 발연/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>T-54 탱크</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>우리 진지를 은폐하기 위해서</term>
+	    </Arg>
+	    <Rel>
+	      <term>발연했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

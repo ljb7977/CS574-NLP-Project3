@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>개막</lemma>
+    <comment>Frames file for '개막' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>개막.01</id>
+      <edef>open</edef>
+      <roleset>
+	<role argnum="0" argrole="opener"/>
+	<role argnum="1" argrole="thing opening"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>개막되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이란은 지난 1 일 개막된 카이로 국제박람회에 사상 처음으로 참가하는 등 이집트와의 경제교류 활성화도 추진 중이다.</text>
+	  <parse>
+(S (NP-SBJ 이란/NPR+은/PAU)
+   (VP (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                          (VP (NP-COMP (S (WHNP-1 *op*)
+                                          (S (NP-SBJ *T*-1)
+                                             (VP (NP-ADV 지난/DAN
+                                                         1/NNU
+                                                         일/NNX)
+                                                 (VP (VV 개막/NNC+되/XSV+은/EAN)))))
+                                       (NP 카이로/NPR
+                                           국제/NNC+박람회/NNC+에/PAD))
+                              (VP (NP-ADV 사상/NNC
+                                          처음/NNC+으로/PAD)
+                                  (VP (VV 참가/NNC+하/XSV+는/EAN)))))
+                       (NP 등/NNX))
+                   (NP (NP 이집트/NPR+과/PAD+의/PAN)
+                       (NP 경제/NNC+교류/NNC
+                           활성화/NNC+도/PAU)))
+           (VV 추진/NNC))
+       (VX 중/NNX+이/CO+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=카이로 국제박람회</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 1 일 </term>
+	    </Arg>
+	    <Rel>
+	      <term>개막된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

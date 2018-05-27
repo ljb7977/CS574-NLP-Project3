@@ -1,0 +1,119 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>좌절</lemma>
+    <comment>Frames file for '좌절' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>좌절.01</id>
+      <edef>discourage</edef>
+      <roleset>
+	<role argnum="0" argrole="thing discouraging"/>
+	<role argnum="1" argrole="thing discrouaged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>좌절하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text> NBC 방송은 모잠비크의 수재민들이 머리 위에서 빙빙 돌기만 하면서 주민들 구조작업을 진행하지도 못하고, 식량 등 구호물자를 떨어뜨려 주지도 못하는 헬리콥터를 쳐다보면서 좌절하고 있다고 현지의 참상을 전했다.</text>
+	  <parse>
+(S (NP-SBJ NBC/NFW
+           방송/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ (NP 모잠비크/NPR+의/PAN)
+                       (NP 수재민/NNC+들/XSF+이/PCA))
+               (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                  (S (S (NP-SBJ *T*-1)
+                                        (VP (VP (NP-ADV 머리/NNC
+                                                        위/NNC+에서/PAD)
+                                                (ADVP 빙빙/ADV)
+                                                (VP 돌/VV+기만/ECS))
+                                            하/VX+으면서/ECS))
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (VP (NP-OBJ 주민/NNC+들/XSF
+                                                        구조/NNC+작업/NNC+을/PCA)
+                                                (VV 진행/NNC+하/XSV+지/ECS+도/PAU))
+                                            못하/VX+고/ECS))
+                                     ,/SCM
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (VP (VP (NP-OBJ (NP (NP 식량/NNC)
+                                                                (NP 등/NNX))
+                                                            (NP 구호/NNC+물자/NNC+을/PCA))
+                                                    떨어뜨리/VV+어/ECS)
+                                                주/VX+지/ECS+도/PAU)
+                                            못하/VX+는/EAN))))
+                               (NP 헬리콥터/NNC+을/PCA))
+                       쳐다보/VV+으면서/ECS)
+                   (VP (VP (VV 좌절/NNC+하/XSV+고/ECS))
+                       있/VX+다/EFN+고/PAD)))
+       (NP-OBJ (NP 현지/NNC+의/PAN)
+               (NP 참상/NNC+을/PCA))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>모잠비크의 수재민들</term>
+	    </Arg>
+	    <Rel>
+	      <term>좌절하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>좌절되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>민국당은 원내교섭단체 구성이 좌절된 데 대해 한나라당이 정의화 의원에 `주저앉히기 공작'을 벌임으로써 부산지역 현역의원들의 발목을 잡았기 때문이라고 주장하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 민국당/NPR+은/PAU)
+   (VP (VP (S (NP-SBJ *pro*)
+              (VP (NP-COMP (S (NP-SBJ 원내/NNC+교섭/NNC+단체/NNC
+                                      구성/NNC+이/PCA)
+                              (VP (VV 좌절/NNC+되/XSV+은/EAN)))
+                           (NP 데/NNX))
+                  대하/VV+어/ECS))
+           (VP (NP-COMP (S (NP-SBJ 한나라당/NPR+이/PCA)
+                           (VP (S (NP-SBJ *pro*)
+                                  (VP (NP-ADV 정의화/NPR
+						    의원/NNC+에/PAD)
+                                      (VP (NP-OBJ `/SLQ
+						  주저앉히기/NNC
+						  공작/NNC
+						  '/SRQ
+						  을/PCA)
+					  벌이/VV+음/ENM+으로써/PAD)))
+                               (VP (NP-OBJ (NP 부산/NPR+지역/NNC
+                                               현역/NNC+의원/NNC+들/XSF+의/PAN)
+                                           (NP 발목/NNC+을/PCA))
+                                   잡/VV+었/EPF+기/ENM)))
+                        (NP 때문/NNX+이라고/PAD))
+               (VV 주장/NNC+하/XSV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>원내교섭단체 구성</term>
+	    </Arg>
+	    <Rel>
+	      <term>좌절된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>운전</lemma>
+    <comment>Frames file for '운전' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>운전.01</id>
+      <edef>drive</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="vehicle"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>운전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text> 아들을 찾기 위해 차량 앞문을 연 채 3.2KM를 운전하던 중 제지하는 경찰에게 자식들이 없어진 사실을 알린 뒤 나윤양이 마지막으로 목격된 지점으로 다시 왔다가 길언덕 20여 M 아래에 쓰러져 있는 나윤양을 발견했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                       (VP (S (NP-SBJ *pro*)
+                                                              (VP (S-OBJ (NP-SBJ *pro*)
+                                                                         (VP (NP-OBJ 아들/NNC+을/PCA)
+                                                                             찾/VV+기/ENM))
+                                                                  위하/VV+어/ECS))
+                                                           (NP-ADV (S (NP-SBJ *pro*)
+                                                                      (VP (NP-OBJ 차량/NNC
+                                                                                  앞문/NNC+을/PCA)
+                                                                          열/VV+은/EAN))
+                                                                   (NP 채/NNX))
+                                                           (VP (NP-OBJ 3.2/NNU+KM/NFW+을/PCA)
+                                                               (VV 운전/NNC+하/XSV+던/EAN))))
+                                                    (NP 중/NNX))
+                                            (VP (NP-OBJ *pro*)
+                                                (VV 제지/NNC+하/XSV+는/EAN)))))
+                                  (NP 경찰/NNC+에게/PAD))
+                         (NP-OBJ (S (NP-SBJ 자식/NNC+들/XSF+이/PCA)
+                                    (VP (VV 없/VJ+어지/XSV+은/EAN)))
+                                 (NP 사실/NNC+을/PCA))
+                         알리/VV+은/EAN))
+                  (NP 뒤/NNC))
+          (VP (NP-COMP (S (WHNP *op*)
+                          (S (NP-SBJ 나윤/NPR+양/NNX+이/PCA)
+                             (VP (NP-ADV 마지막/NNC+으로/PAD)
+                                 (VP (VV 목격/NNC+되/XSV+은/EAN)))))
+                       (NP 지점/NNC+으로/PAD))
+              (VP (ADVP 다시/ADV)
+                  (VP 오/VV+었/EPF+다가/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (VP (VP (NP-COMP (NP 길/NNC+언덕/NNC)
+                                         (NP 20/NNU+여/XSF
+                                             M/NFW)
+                                         (NP 아래/NNC+에/PAD))
+                                쓰러지/VV+어/ECS)
+                            있/VX+는/EAN)))
+                  (NP 나윤/NPR+양/NNX+을/PCA))
+          (VV 발견/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>아들을 찾기 위해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>차량 앞문을 연 채</term>
+	    </Arg>
+	    <Arg n="">
+	      <f></f>
+	      <term>3.2KM를</term>
+	    </Arg>
+	    <Rel>
+	      <term>운전하던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불타</lemma>
+    <comment>Frames file for '불타' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불타.01</id>
+      <edef>burn</edef>
+      <roleset>
+	<role argnum="0" argrole="pyromaniac"/>
+	<role argnum="1" argrole="thing burning"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불타다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>부시 지사는 고어 부통령을 "사기꾼이자 흉한"으로 간주하고 있으며 상대에 대한 특별한 대책도 없으면서 단순한 혐오감 때문에 한바탕 맞붙어 보겠다는 투지에 불타고 있다고 그의 측근들은 전하고 있다.</text>
+	  <parse>
+(S (S-COMP-4 (S (NP-SBJ 부시/NPR
+                        지사/NNC+은/PAU)
+                (VP (VP (NP-OBJ 고어/NPR
+                                부통령/NNC+을/PCA)
+                        (NP-COMP "/SLQ
+                                 (NP 사기꾼/NNC+이자/PCJ)
+                                 (NP 흉한/NNC)
+                                 "/SRQ
+                                 으로/PAD)
+                        (VV 간주/NNC+하/XSV+고/ECS))
+                    있/VX+으며/ECS))
+             (S (NP-SBJ *pro*)
+                (VP (VP (S (NP-SBJ (S (WHNP-1 *op*)
+				      (S (NP-SBJ *T*-1)
+					 (VP (NP-COMP 상대/NNC+에/PAD)
+					     대하/VV+은/EAN)))
+				   (NP (S (WHNP-2 *op*)
+					  (S (NP-SBJ *T*-2)
+					     (ADJP (VJ 특별/NNC+하/XSJ+은/EAN))))
+				       (NP 대책/NNC+도/PAU)))
+			   (ADJP 없/VJ+으면서/ECS))
+                        (NP-ADV (NP (S (WHNP-3 *op*)
+                                       (S (NP-SBJ *T*-3)
+                                          (ADJP (VJ 단순/NNC+하/XSJ+은/EAN))))
+                                    (NP 혐오감/NNC))
+                                (NP 때문/NNX+에/PAD))
+                        (VP (NP-COMP (S (NP-SBJ *pro*)
+                                        (VP (VP (ADVP 한바탕/ADV)
+                                                (VP (NP-COMP *pro*)
+                                                    맞붙/VV+어/ECS))
+                                            보/VX+겠/EPF+다는/EAN))
+                                     (NP 투지/NNC+에/PAD))
+                            불타/VV+고/ECS))
+                    있/VX+다/EFN+고/PAD)))
+   (S (NP-SBJ (NP 그/NPN+의/PAN)
+              (NP 측근/NNC+들/XSF+은/PAU))
+      (VP (VP (S-COMP *T*-4)
+              전하/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>상대에 대한 특별한 대책도 없으면서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>단순한 혐오감 때문에</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>한바탕 맞붙어 보겠다는 투지</term>
+	    </Arg>
+	    <Rel>
+	      <term>불타고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>공중납치</lemma>
+    <comment>Frames file for '공중납치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>공중납치.01</id>
+      <edef>hijack</edef>
+      <roleset>
+	<role argnum="0" argrole="hijacker"/>
+	<role argnum="1" argrole="plane"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>공중납치되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>영국의 잭 스트로 내무장관은 공중납치된 아프가니스탄 항공기 승객 79 명중 2 명에게 이미 난민 자격을 부여했으며 추가로 8 명에게 망명을 허용할 것이라고 1 일 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ (NP 영국/NPR+의/PAN)
+           (NP 잭/NPR
+               스트로/NPR
+               내무/NNC+장관/NNC+은/PAU))
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (VV 공중납치/NNC+되/XSV+은/EAN))))
+                                    (NP 아프가니스탄/NPR
+                                        항공기/NNC))
+                                (NP 승객/NNC
+                                    79/NNU
+                                    명/NNC+중/NNX)
+                                (NP 2/NNU
+                                    명/NNX+에게/PAD))
+                       (VP (ADVP 이미/ADV)
+                           (VP (NP-OBJ 난민/NNC
+                                       자격/NNC+을/PCA)
+                               (VV 부여/NNC+하/XSV+었/EPF+으며/ECS))))
+                   (VP (VP (NP-ADV 추가/NNC+으로/PAD)
+                           (VP (NP-COMP 8/NNU
+                                        명/NNX+에게/PAD)
+                               (NP-OBJ 망명/NNC+을/PCA)
+                               (VV 허용/NNC+하/XSV+을/EAN)))
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+       (VP (NP-ADV 1/NNU
+                   일/NNX)
+           (VP 밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=아프가니스탄 항공기</term>
+	    </Arg>
+	    <Rel>
+	      <term>공중납치된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

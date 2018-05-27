@@ -1,0 +1,133 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부추기</lemma>
+    <comment>Frames file for '부추기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부추기.01</id>
+      <edef>instigate</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="agent instigated "/>
+	<role argnum="2" argrole="action instigated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부추기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 미국의 고용비용지수 발표를 앞두고 나스닥 지수가 폭락세로 돌아설 경우에 대비해 일단 `빈 손'으로 주말을 보내자는 심리도 하락세를 부추기고 있다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ (S (S (NP-SBJ *pro*)
+                    (VP (NP-OBJ (NP 미국/NPR+의/PAN)
+                                (NP 고용/NNC+비용/NNC+지수/NNC
+                                    발표/NNC+을/PCA))
+                        앞두/VV+고/ECS))
+                 (S (NP-SBJ *pro*)
+                    (VP (NP-COMP (S (NP-SBJ 나스닥/NPR
+                                            지수/NNC+이/PCA)
+                                    (VP (NP-COMP 폭락세/NNC+으로/PAD)
+                                        돌아서/VV+을/EAN))
+                                 (NP 경우/NNC+에/PAD))
+                        (VV 대비/NNC+하/XSV+어/ECS)))
+                 (S (NP-SBJ *pro*)
+                    (VP (ADVP 일단/ADV)
+                        (NP-ADV `/SLQ
+                                (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP 비/VV+은/EAN)))
+                                (NP 손/NNC)
+                                '/SRQ
+                                으로/PAD)
+                        (VP (NP-OBJ 주말/NNC+을/PCA)
+                            보내/VV+자는/EAN))))
+              (NP 심리/NNC+도/PAU))
+      (VP (VP (NP-OBJ 하락세/NNC+을/PCA)
+              부추기/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>미국의 고용비용지수 발표를 앞두고 나스닥 지수가 폭락세로 돌아설 경우에 대비해 일단 `빈 손'으로 주말을 보내자는 심리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>하락세</term>
+	    </Arg>
+	    <Rel>
+	      <term>부추기고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>부추기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	  <mapitem src="s-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>선동자들은 사람들에게 돌을 던지라고 부추겼다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>선동자들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에게</f>
+	      <term>사람들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>돌을 던지라</term>
+	    </Arg>
+	    <Rel>
+	      <term>부추겼다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>부추기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>선동자들은 사람들을 부추겼다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>선동자들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>사람들</term>
+	    </Arg>
+	    <Rel>
+	      <term>부추겼다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

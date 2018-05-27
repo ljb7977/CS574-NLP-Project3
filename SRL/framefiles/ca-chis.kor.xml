@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자칫</lemma>
+    <comment>Frames file for '자칫' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>자칫.01</id>
+      <edef>near</edef>
+      <roleset>
+	<role argnum="1" argrole="thing near"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자칫하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 관계자는 나머지 후보 2 명을 놓고 2 차, 3 차 투표를 통해 이사회의 의견을 수렴해 나가는 방식으로 진행될 것이라고 말하고 "빠르면 이번 주말이나 내주 초에 신임 총재가 결정될 수도 있지만 자칫하면 하순께까지 줄다리기가 계속될 가능성을 배제할 수 없다"고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           관계자/NNC+은/PAU)
+   (VP (VP (S-COMP (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ 나머지/NNC
+                                  후보/NNC
+                                  2/NNU
+                                  명/NNX+을/PCA)
+                          놓/VV+고/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ (NP (NP 2/NNU
+                                          차/NNX)
+                                      ,/SCM
+                                      (NP 3/NNU
+                                          차/NNX))
+                                  (NP 투표/NNC+을/PCA))
+                          통하/VV+어/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-ADV (S (WHNP *op*)
+                                         (S (NP-SBJ *pro*)
+                                            (VP (VP (NP-OBJ (NP 이사회/NNC+의/PAN)
+                                                            (NP 의견/NNC+을/PCA))
+                                                    (VV 수렴/NNC+하/XSV+어/ECS))
+                                                나가/VX+는/EAN)))
+                                      (NP 방식/NNC+으로/PAD))
+                              (VP (VV 진행/NNC+되/XSV+을/EAN)))
+                          (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+           말하/VV+고/ECS)
+       (VP (S-COMP "/SLQ
+                   (S (S (NP-SBJ *pro*)
+                         (ADJP 빠르/VJ+으면/ECS))
+                      (NP-ADV (NP 이번/NNC
+                                  주말/NNC+이나/PCJ)
+                              (NP 내주/NNC
+                                  초/NNX+에/PAD))
+                      (S (NP-SBJ 신임/NNC
+                                 총재/NNC+이/PCA)
+                         (VP (VP (VV 결정/NNC+되/XSV+을/EAN))
+                             (VX 수/NNX+도/PAU
+                                 있/VJ+지만/ECS))))
+                   (S (S (NP-SBJ *pro*)
+                         (VP (VV 자칫/NNC+하/XSV+으면/ECS)))
+                      (S (NP-SBJ *pro*)
+                         (VP (VP (NP-OBJ (S (NP-ADV 하순/NNC+께/XSF+까지/PAU)
+                                            (S (NP-SBJ 줄다리기/NNC+이/PCA)
+                                               (VP (VV 계속/NNC+되/XSV+을/EAN))))
+                                         (NP 가능성/NNC+을/PCA))
+                                 (VV 배제/NNC+하/XSV+을/EAN))
+                             (VX 수/NNX
+                                 없/VJ+다/EFN))))
+                   "/SRQ
+                   고/PAD)
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>자칫하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

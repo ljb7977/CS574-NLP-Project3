@@ -1,0 +1,132 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>시인</lemma>
+    <comment>Frames file for '시인' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>시인.01</id>
+      <edef>approve</edef>
+      <roleset>
+	<role argnum="0" argrole="approver"/>
+	<role argnum="1" argrole="thing approved"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>시인하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일본은 과거에 쌍무 자유무역협정 체결을 바라지 않았을 뿐만 아니라 NAFTA와 EU 등의 창설도 보호주의를 초래할 수 있다고 보아 왔으나 통산성의 한 관리는 자유무역협정에 대한 일본의 이같은 태도가 바뀌었다는 점을 시인했다.</text>
+	  <parse>
+(S (S (S (NP-SBJ (S (NP-SBJ 일본/NPR+은/PAU)
+                    (VP (NP-ADV 과거/NNC+에/PAD)
+                        (VP (VP (NP-OBJ 쌍무/NNC
+                                        자유/NNC+무역/NNC+협정/NNC
+                                        체결/NNC+을/PCA)
+                                바라/VV+지/ECS)
+                            않/VX+었/EPF+을/EAN)))
+                 (NP 뿐/NNX+만/PAU))
+         (ADJP 아니/VJ+라/EFN))
+      (S (NP-SBJ *pro*)
+	 (VP (VP (S-COMP (NP-SBJ (NP (NP (NP NAFTA/NFW+과/PCJ)
+					 (NP EU/NFW))
+				     (NP 등/NNX+의/PAN))
+                                 (NP 창설/NNC+도/PAU))
+                         (VP (VP (NP-OBJ 보호/NNC+주의/NNC+을/PCA)
+                                 (VV 초래/NNC+하/XSV+을/EAN))
+                             (VX 수/NNX
+				 있/VJ+다/EFN+고/PAD)))
+                 보/VV+어/ECS)
+             오/VX+었/EPF+으나/ECS)))
+   (S (NP-SBJ (NP 통산성/NNC+의/PAN)
+              (NP 한/NNU
+                  관리/NNC+은/PAU))
+      (VP (NP-OBJ (S (NP-SBJ (S (WHNP-1 *op*)
+				(S (NP-SBJ *T*-1)
+				   (VP (NP-COMP 자유/NNC+무역/NNC+협정/NNC+에/PAD)
+				       대하/VV+은/EAN)))
+			     (NP (NP 일본/NPR+의/PAN)
+                                 (NP 이같은/DAN
+				     태도/NNC+이/PCA)))
+                     (VP 바뀌/VV+었/EPF+다는/EAN))
+                  (NP 점/NNC+을/PCA))
+          (VV 시인/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>통산성의 한 관리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자유무역협정에 대한 일본의 이같은 태도가 바뀌었다는 점</term>
+	    </Arg>
+	    <Rel>
+	      <term>시인했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>시인하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미 국방부도 내부 첩자에 의한 공습 정보 사전 유출 설을 일축했으나 크레이크 퀴글리 국방부 대변인은 "공습 초기단계에 있어 작전상의 보안 절차가 철저하지 못했을 수도 있었다"고 시인했다.</text>
+	  <parse>
+(S (S (NP-SBJ 미/NPR
+              국방부/NNC+도/PAU)
+      (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-COMP 내부/NNC
+                                         첩자/NNC+에/PAD)
+                                의하/VV+은/EAN)))
+                      (NP 공습/NNC
+                          정보/NNC
+                          사전/NNC
+                          유출/NNC))
+                  (NP 설/NNC+을/PCA))
+          (VV 일축/NNC+하/XSV+었/EPF+으나/ECS)))
+   (S (NP-SBJ 크레이크/NPR
+              퀴글리/NPR
+              국방부/NNC
+              대변인/NNC+은/PAU)
+      (VP (S-COMP "/SLQ
+                  (S (NP-SBJ *pro*)
+                     (ADJP (NP-COMP 공습/NNC
+                                    초기/NNC+단계/NNC+에/PAD)
+                           있/VJ+어/ECS))
+                  (S (NP-SBJ (NP 작전/NNC+상/XSF+의/PAN)
+                             (NP 보안/NNC
+                                 절차/NNC+이/PCA))
+                     (VP (VP (ADJP (VJ 철저/NNC+하/XSJ+지/ECS))
+                             못하/VX+었/EPF+을/EAN)
+                         (VX 수/NNX+도/PAU
+                             있/VJ+었/EPF+다/EFN)))
+                  "/SRQ
+                  고/PAD)
+          (VV 시인/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>크레이크 퀴글리 국방부 대변인</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>"공습 초기단계에 있어 작전상의 보안 절차가 철저하지 못했을 수도 있었다"</term>
+	    </Arg>
+	    <Rel>
+	      <term>시인했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

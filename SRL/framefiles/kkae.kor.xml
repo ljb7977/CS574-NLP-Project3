@@ -1,0 +1,189 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>깨</lemma>
+    <comment>Frames file for '깨' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>깨.01</id>
+      <edef>wake</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="sleeper"/>
+	<role argnum="2" argrole="sleep"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>깨우다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그녀는 또 자명종이 공기중에 소량의 감귤류 향이나 박하향을 살포, 주인의 잠을 깨우거나 활기를 불어넣어주게 될지도 모른다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그녀/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (S-COMP (NP-SBJ 자명종/NNC+이/PCA)
+                               (VP (VP (S (NP-SBJ *pro*)
+                                          (VP (NP-ADV 공기/NNC+중/NNX+에/PAD)
+                                              (VP (NP-OBJ (NP 소량/NNC+의/PAN)
+                                                          (NP (NP 감귤류/NNC
+                                                                  향/NNC+이나/PCJ)
+                                                              (NP 박하향/NNC+을/PCA)))
+                                                  (VV 살포/NNC))))
+                                       ,/SCM
+                                       (VP (VP (VP (NP-OBJ (NP 주인/NNC+의/PAN)
+                                                           (NP 잠/NNC+을/PCA))
+                                                   깨우/VV+거나/ECS)
+                                               (VP (NP-OBJ 활기/NNC+을/PCA)
+                                                   (VP 불어넣/VV+어/ECS)))
+                                           주/VX+게/ECS))
+                                   되/VX+을지/EFN+도/PAU))
+                       모르/VV+는다/EFN+고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>자명종</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>공기중에 소량의 감귤류 향이나 박하향을 살포</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>주인의 잠</term>
+	    </Arg>
+	    <Rel>
+	      <term>깨우거나</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>주게</term>
+	    </Aux>
+	    <Aux>
+	      <f>게</f>
+	      <term>될지도</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>깨.02</id>
+      <edef>break</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing broken"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>깨뜨리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 중국이 앞으로 수년간 국방예산을 증액할 것으로 예상되지만 양안간의 군사력 균형을 크게 깨뜨릴 정도까지는 가지 않을 것으로 본다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-SBJ 중국/NPR+이/PCA)
+                                  (VP (NP-ADV 앞/NNC+으로/PAD)
+                                      (NP-ADV 수/XPF+년/NNX+간/XSF)
+                                      (VP (NP-OBJ 국방/NNC+예산/NNC+을/PCA)
+                                          (VV 증액/NNC+하/XSV+을/EAN))))
+                               (NP 것/NNX+으로/PAD))
+                      (VV 예상/NNC+되/XSV+지만/ECS)))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-SBJ *pro*)
+                                  (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                                                      (VP (NP-OBJ (NP 양안/NNC+간/XSF+의/PAN)
+                                                                  (NP 군사력/NNC
+                                                                      균형/NNC+을/PCA))
+                                                          (VP (ADVP (ADV 크/VJ+게/ECS))
+                                                              (VP 깨뜨리/VV+을/EAN))))
+                                                   (NP 정도/NNC+까지/PAU+은/PAU))
+                                          가/VV+지/ECS)
+                                      않/VX+을/EAN))
+                               (NP 것/NNX+으로/PAD))
+                      보/VV+는다/EFN+고/PAD)))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>양안간의 군사력 균형</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>크게</term>
+	    </Arg>
+	    <Rel>
+	      <term>깨뜨릴</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>깨지다</rel>
+	  <mapitem src="np-adv" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>태평양 사령부의 데니스. C 블레어 제독은 하원 군사위원회 증언을 통해 이같이 말하고, 그러나 중국측의 군사력 증강으로 양안간 군사력 균형이 깨질 수도 있다고 경고했다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 태평양/NPR
+                  사령부/NNC+의/PAN)
+              (NP 데니스/NPR
+                  ./SSY
+                  C/NFW
+                  블레어/NPR
+                  제독/NNC+은/PAU))
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 하원/NNC
+                         군사/NNC+위원회/NNC
+                         증언/NNC+을/PCA)
+                 통하/VV+어/ECS))
+          (ADVP 이같이/ADV)
+          (VP 말하/VV+고/ECS)))
+   ,/SCM
+   (ADCP 그러나/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-ADV (NP 중국/NPR+측/XSF+의/PAN)
+                          (NP 군사력/NNC
+                              증강/NNC+으로/PAD))
+                  (S (NP-SBJ 양안/NNC+간/XSF
+                             군사력/NNC
+                             균형/NNC+이/PCA)
+                     (VP (VP 깨지/VV+을/EAN)
+                         (VX 수/NNX+도/PAU
+                             있/VJ+다/EFN+고/PAD))))
+          (VV 경고/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>으로</f>
+	      <term>중국측의 군사력 증강</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>양안간 군사력 균형</term>
+	    </Arg>
+	    <Rel>
+	      <term>깨질</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수도 있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

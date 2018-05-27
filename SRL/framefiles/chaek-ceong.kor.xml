@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>책정</lemma>
+    <comment>Frames file for '책정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>책정.01</id>
+      <edef>earmark</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="earmark for"/>
+	<role argnum="2" argrole="amount"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>책정하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이와 관련, 니혼게이자(일본경제) 신문은 정부가 새 원전 건설 목표를 13 개로 책정할 가능성이 있다고 보도했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+과/PAD)
+          (VV 관련/NNC)))
+   ,/SCM
+   (S (NP-SBJ 니혼게이자/NPR
+              (PRN -LRB-/SLQ
+                   (NP 일본/NPR+경제/NNC)
+                   -RRB-/SRQ)
+              신문/NNC+은/PAU)
+      (VP (S-COMP (NP-SBJ (S (NP-SBJ 정부/NNC+이/PCA)
+                             (VP (NP-OBJ 새/DAN
+                                         원전/NNC
+                                         건설/NNC
+                                         목표/NNC+을/PCA)
+                                 (NP-COMP 13/NNU
+                                          개/NNX+으로/PAD)
+                                 (VV 책정/NNC+하/XSV+을/EAN)))
+                          (NP 가능성/NNC+이/PCA))
+                  (ADJP 있/VJ+다/EFN+고/PAD))
+          (VV 보도/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>정부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>새 원전 건설 목표</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>13 개</term>
+	    </Arg>
+	    <Rel>
+	      <term>책정할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

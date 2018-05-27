@@ -1,0 +1,163 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>특정</lemma>
+    <comment>Frames file for '특정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>특정.01</id>
+      <edef>specify</edef>
+      <roleset>
+	<role argnum="0" argrole="specifier"/>
+	<role argnum="1" argrole="thing specified"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>특정하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>자 그럼, 45 보병 사단이 어떻게 특정한 임무를 띠고 있는지 말해 봐.</text>
+	  <parse>
+(S (INTJ 자/IJ)
+   (ADVP 그럼/ADV)
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (VP (S-OBJ (NP-SBJ 45/NNU
+                             보병/NNC
+                             사단/NNC+이/PCA)
+                     (VP (VP (ADVP 어떻게/ADV)
+                             (VP (NP-OBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (ADJP (VJ 특정/NNC+하/XSJ+은/EAN))))
+                                         (NP 임무/NNC+을/PCA))
+                                 띠/VV+고/ECS))
+                         있/VX+는지/EFN))
+              말하/VV+어/ECS)
+          보/VX+어/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=임무</term>
+	    </Arg>
+	    <Rel>
+	      <term>특정한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>특정하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 사고 원인을 조사 중인 운수성과 전문가 합동반은 "현시점에서는 하나의 요인을 특정할 수 없으며, 단독 또는 복수의 요인이 탈선을 일으킨 것으로 보인다"는 중간 보고서를 마련했다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+		 (S (NP-SBJ *T*-1)
+		    (VP (VP (NP-OBJ 사고/NNC
+					원인/NNC+을/PCA)
+			    (VV 조사/NNC))
+			(VX 중/NNX+이/CO+은/EAN))))
+	      (NP (NP (NP 운수성/NNC+과/PCJ)
+		      (NP 전문가/NNC))
+		  (NP 합동반/NNC+은/PAU)))
+      (VP (NP-OBJ (S "/SLQ
+		     (S (NP-SBJ *pro*)
+			(VP (VP (NP-ADV 현시점/NNC+에서/PAD+은/PAU)
+				(VP (NP-OBJ 하나/NNU+의/PAN
+						요인/NNC+을/PCA)
+				    (VV 특정/NNC+하/XSV+을/EAN)))
+			    (VX 수/NNX
+				  없/VJ+으며/ECS)))
+		     ,/SCM
+		     (S (NP-SBJ *pro*)
+			(VP (NP-COMP (S (NP-SBJ (NP (NP 단독/NNC)
+						    (ADCP 또는/ADC)
+						    (NP 복수/NNC+의/PAN))
+						(NP 요인/NNC+이/PCA))
+					(VP (NP-OBJ 탈선/NNC+을/PCA)
+					    일으키/VV+은/EAN))
+				     (NP 것/NNX+으로/PAD))
+			    보이/VV+는다/EFN))
+		     "/SRQ
+		     은/PAU)
+		  (NP 중간/NNC
+			  보고서/NNC+을/PCA))
+	  (VV 마련/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현시점에서는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>하나의 요인</term>
+	    </Arg>
+	    <Rel>
+	      <term>특정할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없으며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>특정되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>수사 관계자는 "소환에 불응하더라도 혐의가 특정되거나 명확한 증거가 포착되지 않는 한 긴급체포 등 관련자에 대한 강제수사 계획은 없다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 수사/NNC
+           관계자/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP 소환/NNC+에/PAD)
+                      (VV 불응/NNC+하/XSV+더라도/ECS)))
+               (NP-ADV (S (S (NP-SBJ 혐의/NNC+이/PCA)
+                             (VP (VV 특정/NNC+되/XSV+거나/ECS)))
+                          (S (NP-SBJ (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (ADJP 명확하/VJ+은/EAN)))
+                                     (NP 증거/NNC+이/PCA))
+                             (VP (VP (VV 포착/NNC+되/XSV+지/ECS))
+                                 않/VX+는/EAN)))
+                       (NP 한/NNX))
+               (S (NP-SBJ (NP (NP 긴급/NNC+체포/NNC)
+                              (NP 등/NNX)
+                              (NP (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (VP (NP-COMP 관련자/NNC+에/PAD)
+                                            대하/VV+은/EAN)))
+                                  (NP 강제/NNC+수사/NNC)))
+                          (NP 계획/NNC+은/PAU))
+                  (ADJP 없/VJ+다/EFN))
+               "/SRQ
+               고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>혐의</term>
+	    </Arg>
+	    <Rel>
+	      <term>특정되거나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

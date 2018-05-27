@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>시달리</lemma>
+    <comment>Frames file for '시달리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>시달리.01</id>
+      <edef>trouble</edef>
+      <roleset>
+	<role argnum="0" argrole="cause of trouble"/>
+	<role argnum="1" argrole="experiencer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>시달리다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>WFP 대변인은 "인도주의적 참상이 빚어지는 모든 곳에서 기아의 공포에 시달리는 사람들의 대부분은 여성과 어린이"라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ WFP/NFW
+           대변인/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (NP-SBJ (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP-ADV (S (NP-SBJ 인도주의/NNC+적/XSF
+                                                        참상/NNC+이/PCA)
+                                                (VP (VV 빚/VV+어지/XSV+는/EAN)))
+                                             (NP 모든/DAN
+                                                 곳/NNX+에서/PAD))
+                                     (VP (NP-COMP (NP 기아/NNC+의/PAN)
+                                                  (NP 공포/NNC+에/PAD))
+                                         시달리/VV+는/EAN))))
+                           (NP 사람/NNC+들/XSF+의/PAN))
+                       (NP 대부분/NNC+은/PAU))
+               (VP (NP (NP 여성/NNC+과/PCJ)
+                       (NP 어린이/NNC)))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=사람들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>인도주의적 참상이 빚어지는 모든 곳에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>기아의 공포</term>
+	    </Arg>
+	    <Rel>
+	      <term>시달리는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

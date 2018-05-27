@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>다녀오</lemma>
+    <comment>Frames file for '다녀오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>다녀오.01</id>
+      <edef>come back</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>다녀오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 당국자는 "북측과 접촉을 가질 예정인 우리민족서로돕기운동 여성위 관계자 7 명이 7 일 북한 주민접촉 승인 신청을 했다"면서 "이미 이 단체는 북한을 다녀오기도 한 만큼 승인에는 별문제가 없을 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           당국자/NNC+은/PAU)
+   (VP (S-COMP (S "/SLQ
+                  (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *pro*)
+                                (VP (NP (S (NP-SBJ *T*-1)
+                                           (VP (NP-ADV 북/NPR+측/XSF+과/PAD)
+                                               (VP (NP-OBJ 접촉/NNC+을/PCA)
+                                                   가지/VV+을/EAN)))
+                                        (NP 예정/NNC+이/CO+은/EAN)))))
+                          (NP 우리민족서로돕기/NPR+운동/NNC
+                              여성위/NPR
+                              관계자/NNC
+                              7/NNU
+                              명/NNX+이/PCA))
+                  (VP (NP-ADV 7/NNU
+                              일/NNX)
+                      (VP (NP-OBJ 북한/NPR
+                                  주민/NNC+접촉/NNC
+                                  승인/NNC
+                                  신청/NNC+을/PCA)
+                          하/VV+었/EPF+다/EFN))
+                  "/SRQ
+                  면서/ECS)
+               (S "/SLQ
+                  (NP-ADV (S (ADVP 이미/ADV)
+                             (S (NP-SBJ 이/DAN
+                                        단체/NNC+은/PAU)
+                                (VP (VP (NP-OBJ 북한/NPR+을/PCA)
+                                        다녀오/VV+기/ENM+도/PAU)
+                                    하/VX+은/EAN)))
+                          (NP 만큼/NNX))
+                  (S (NP-COMP-2 승인/NNC+에/PAD+은/PAU)
+                     (S (NP-SBJ 별/XPF+문제/NNC+이/PCA)
+                        (VP (ADJP (NP-COMP *T*-2)
+                                  없/VJ+을/EAN)
+                            (VX 것/NNX))))
+                  "/SRQ
+                  이/CO+라/EFN+고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이미</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>이 단체</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Rel>
+	      <term>다녀오기도</term>
+	    </Rel>
+	    <Aux>
+	      <f>기도</f>
+	      <term>한</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

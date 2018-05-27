@@ -1,0 +1,93 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>동원</lemma>
+    <comment>Frames file for '동원' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>동원.01</id>
+      <edef>mobilize</edef>
+      <roleset>
+	<role argnum="0" argrole="mobilizer"/>
+	<role argnum="1" argrole="thing mobilized"/>
+	<role argnum="2" argrole="purpose"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>동원하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전투 시 군단은 후방 지역 전방에 1 개 야전 병원을 설치하며 모든 의료 시설을 동원하여 전방으로 이동한다.</text>
+	  <parse>
+(S (NP-ADV 전투/NNC
+           시/NNX)
+   (S (NP-SBJ 군단/NNC+은/PAU)
+      (VP (NP-COMP 후방/NNC
+                   지역/NNC
+                   전방/NNC+에/PAD)
+          (NP-OBJ 1/NNU
+                  개/NNX
+                  야전/NNC
+                  병원/NNC+을/PCA)
+          (VV 설치/NNC+하/XSV+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 모든/DAN
+                  의료/NNC
+                  시설/NNC+을/PCA)
+          (VV 동원/NNC+하/XSV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 전방/NNC+으로/PAD)
+          (VV 이동/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>모든 의료 시설</term>
+	    </Arg>
+	    <Rel>
+	      <term>동원하여</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>동원되다</rel>
+	  <mapitem src="np-adv" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전투 시엔 의료 시설들이 동원되어 전방으로 이동한다.</text>
+	  <parse>
+(S (NP-ADV 전투/NNC
+           시/NNX+에/PAD+은/PAU)
+   (S (NP-SBJ 의료/NNC
+              시설/NNC+들/XSF+이/PCA)
+      (VP (VV 동원/NNC+되/XSV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 전방/NNC+으로/PAD)
+          (VV 이동/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전투 시엔</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>의료 시설들</term>
+	    </Arg>
+	    <Rel>
+	      <term>동원되어</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

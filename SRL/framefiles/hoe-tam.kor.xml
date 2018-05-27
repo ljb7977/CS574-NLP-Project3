@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>회담</lemma>
+    <comment>Frames file for '회담' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>회담.01</id>
+      <edef>converse</edef>
+      <roleset>
+	<role argnum="0" argrole="one talker"/>
+	<role argnum="1" argrole="other talker(s)"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>회담하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 성명은 특히 양측이 "북한측과 테러문제에 관해서도 회담할 것"이라고 밝히고 이 테러회담의 미측 대표로는 국무부의 테러대책조정관인 마이클 쉬언 대사가 참석할 것이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           성명/NNC+은/PAU)
+   (VP (VP (ADVP 특히/ADV)
+           (VP (S-COMP (NP-SBJ 양측/NNC+이/PCA)
+                       "/SLQ
+                       (VP (VP (NP-COMP 북한/NPR+측/XSF+과/PAD)
+                               (VP (S (NP-SBJ *pro*)
+                                      (VP (NP-COMP 테러/NNC+문제/NNC+에/PAD)
+                                          관하/VV+어서/ECS+도/PAU))
+                                   (VP (VV 회담/NNC+하/XSV+을/EAN))))
+                           (VX 것/NNX))
+                       "/SRQ
+                       이/CO+라/EFN+고/PAD)
+               밝히/VV+고/ECS))
+       (VP (S-COMP (NP-ADV (NP 이/DAN
+                               테러/NNC+회담/NNC+의/PAN)
+                           (NP 미/NPR+측/XSF
+                               대표/NNC+으로/PAD+은/PAU))
+                   (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP (NP 국무부/NNC+의/PAN)
+                                            (NP 테러/NNC+대책/NNC+조정관/NNC+이/CO+은/EAN)))))
+                              (NP 마이클/NPR
+                                  쉬언/NPR
+                                  대사/NNC+이/PCA))
+                      (VP (VP (NP-COMP *pro*)
+                              (VV 참석/NNC+하/XSV+을/EAN))
+                          (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>양측</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>과</f>
+	      <term>북한측</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>테러문제에 관해서도</term>
+	    </Arg>
+	    <Rel>
+	      <term>회담할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

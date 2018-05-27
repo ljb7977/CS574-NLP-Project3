@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주최</lemma>
+    <comment>Frames file for '주최' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>주최.01</id>
+      <edef>sponsor</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing sponsored"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주최하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전세계 약 40 개국 대표들이 16 일 탄도미사일 및 미사일기술 확산 방지를 위한 신국제안보체제 창설 문제를 논의하기 위해 러시아가 주최한 국제회의에 참석했다고 러시아 관리들이 말했다.</text>
+	  <parse>
+(S (S-COMP-3 (NP-SBJ 전세계/NNC
+                     약/DAN
+                     40/NNU
+                     개국/NNX
+                     대표/NNC+들/XSF+이/PCA)
+             (VP (NP-ADV 16/NNU
+                         일/NNX)
+                 (S (NP-SBJ *pro*)
+                    (VP (S-OBJ (NP-SBJ *pro*)
+                               (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                  (S (NP-SBJ *T*-1)
+                                                     (VP (NP-OBJ (NP (NP 탄도/NNC+미사일/NNC)
+                                                                     (ADCP 및/ADC)
+                                                                     (NP 미사일/NNC+기술/NNC))
+                                                                 (NP 확산/NNC
+                                                                     방지/NNC+을/PCA))
+                                                         위하/VV+은/EAN)))
+                                               (NP 신/XPF+국제/NNC+안보/NNC+체제/NNC))
+                                           (NP 창설/NNC
+                                               문제/NNC+을/PCA))
+                                   (VV 논의/NNC+하/XSV+기/ENM)))
+                        위하/VV+어/ECS))
+                 (VP (NP-COMP (S (WHNP-2 *op*)
+                                 (S (NP-SBJ 러시아/NPR+이/PCA)
+                                    (VP (NP-OBJ *T*-2)
+                                        (VV 주최/NNC+하/XSV+은/EAN))))
+                              (NP 국제/NNC+회의/NNC+에/PAD))
+                     (VV 참석/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 러시아/NPR
+              관리/NNC+들/XSF+이/PCA)
+      (VP (S-COMP *T*-3)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>러시아</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=국제회의</term>
+	    </Arg>
+	    <Rel>
+	      <term>주최한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

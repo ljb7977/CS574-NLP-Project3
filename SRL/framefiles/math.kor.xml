@@ -1,0 +1,129 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>맡</lemma>
+    <comment>Frames file for '맡' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>맡.01</id>
+      <edef>have charge of</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing had charge of"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>맡다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 목표를 달성하기 위해서, 가끔 포 일 문 이상이 같은 구역을 맡습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ *pro*)
+                 (VP (NP-OBJ 이/DAN
+                             목표/NNC+을/PCA)
+                     (VV 달성/NNC+하/XSV+기/ENM)))
+          위하/VV+어서/ECS))
+   ,/SCM
+   (ADVP 가끔/ADV)
+   (S (NP-SBJ 포/NNC
+              일/NNU
+              문/NNX
+              이상/NNC+이/PCA)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP 같/VJ+은/EAN)))
+                  (NP 구역/NNC+을/PCA))
+          맡/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>이 목표를 달성하기 위해서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>가끔</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>포 일 문 이상</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>같은 구역</term>
+	    </Arg>
+	    <Rel>
+	      <term>맡습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>맡기다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일간 `가제타 슈키프타레', `세쿨리', `알바니아' 및 ATA 통신, 그리고 ATN 등 TV 채널들도 하루동안 제작을 여성 기자들에게 맡겼다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP 일간/NNC)
+               (NP (NP `/SLQ
+                       가제타/NPR
+                       슈키프타레/NPR
+                       '/SRQ)
+                   ,/SCM
+                   (NP `/SLQ
+                       세쿨리/NPR
+                       '/SRQ)
+                   ,/SCM
+                   (NP `/SLQ
+                       알바니아/NPR
+                       '/SRQ)))
+           (ADCP 및/ADC)
+           (NP (NP (NP (NP ATA/NFW
+                           통신/NNC)
+                       ,/SCM
+                       (ADCP 그리고/ADC)
+                       (NP ATN/NFW))
+                   (NP 등/NNX))
+               (NP TV/NFW
+                   채널/NNC+들/XSF+도/PAU)))
+   (VP (NP-ADV 하루/NNC+동안/NNX)
+       (VP (NP-OBJ 제작/NNC+을/PCA)
+           (NP-COMP 여성/NNC
+                    기자/NNC+들/XSF+에게/PAD)
+           맡기/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="A">
+	      <f>도</f>
+	      <term>일간 `가제타 슈키프타레', `세쿨리', `알바니아' 및 ATA 통신, 그리고 ATN 등 TV 채널들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>하루동안</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>제작</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에게</f>
+	      <term>여성 기자들</term>
+	    </Arg>
+	    <Rel>
+	      <term>맡겼다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

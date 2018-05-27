@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기념</lemma>
+    <comment>Frames file for '기념' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기념.01</id>
+      <edef>commemorate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent or memorial itself"/>
+	<role argnum="1" argrole="thing remembered"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기념하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>케임브리지 대학은 지난 92 년 김대통령이 영국에 머물면서 이 대학에서 국제정치학을 연구했던 것을 기념하기 위해 이같은 방안을 추진 중인 것으로 알려졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ 케임브리지/NPR
+                           대학/NPR+은/PAU)
+                   (VP (VP (S (NP-SBJ *pro*)
+			      (VP (S-OBJ (NP-SBJ *pro*)
+					 (VP (NP-OBJ (S (NP-ADV 지난/DAN
+								    92/NNU
+								    년/NNX)
+							(S (NP-SBJ 김/NPR+대통령/NNC+이/PCA)
+							   (VP (NP-COMP 영국/NPR+에/PAD)
+							       머물/VV+으면서/ECS))
+							(S (NP-SBJ *pro*)
+							   (VP (NP-ADV 이/DAN
+									 대학/NNC+에서/PAD)
+							       (VP (NP-OBJ 국제/NNC+정치학/NNC+을/PCA)
+								   (VV 연구/NNC+하/XSV+었/EPF+던/EAN)))))
+						     (NP 것/NNX+을/PCA))
+					     (VV 기념/NNC+하/XSV+기/ENM)))
+				  위하/VV+어/ECS))
+			   (VP (NP-OBJ 이같은/DAN
+					     방안/NNC+을/PCA)
+			       (VV 추진/NNC)))
+		       (VX 중/NNX+이/CO+은/EAN)))
+                (NP 것/NNX+으로/PAD))
+       (VV 알리/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지난 92 년 김대통령이 영국에 머물면서 이 대학에서 국제정치학을 연구했던 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>기념하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

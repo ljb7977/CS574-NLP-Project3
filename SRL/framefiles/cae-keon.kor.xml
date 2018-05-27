@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재건</lemma>
+    <comment>Frames file for '재건' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재건.01</id>
+      <edef>rebuild</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing rebuilt"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재건하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>현지 관리들은 모잠비크를 재건하는 데 수억달러가 소요될 것이라면서 서구 채권국들이 모잠비크의 대외채무 83 억달러를 탕감해 줄 것을 촉구했다.</text>
+	  <parse>
+(S (NP-SBJ 현지/NNC
+           관리/NNC+들/XSF+은/PAU)
+   (VP (S (NP-COMP-1 (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 모잠비크/NPR+을/PCA)
+                            (VV 재건/NNC+하/XSV+은/EAN)))
+                     (NP 데/NNX))
+          (S (NP-SBJ 수억/NNU+달러/NNX+이/PCA)
+             (VP (VP (NP-COMP *T*-1)
+                     (VV 소요/NNC+되/XSV+을/EAN))
+                 (VX 것/NNX+이/CO+라면서/ECS))))
+       (VP (NP-OBJ (S (NP-SBJ 서구/NNC
+				  채권국/NNC+들/XSF+이/PCA)
+		      (VP (VP (NP-OBJ (NP 모잠비크/NPR+의/PAN)
+				      (NP 대외/NNC+채무/NNC
+					      83/NNU
+					      억/NNU+달러/NNX+을/PCA))
+			      (VV 탕감/NNC+하/XSV+어/ECS))
+			  주/VX+을/EAN))
+		   (NP 것/NNX+을/PCA))
+           (VV 촉구/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>모잠비크</term>
+	    </Arg>
+	    <Rel>
+	      <term>재건하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

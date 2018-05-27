@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>휴무</lemma>
+    <comment>Frames file for '휴무' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>휴무.01</id>
+      <edef>take a break</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>휴무하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>그는 고혈압과 당뇨로 고생하는 것으로 알려져 있으며 지난달에는 바이러스 감염으로 진단받아 사흘간 휴무하기도 했었다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (S (NP-SBJ 그/NPN+은/PAU)
+                          (VP (NP-COMP (NP 고혈압/NNC+과/PCJ)
+                                       (NP 당뇨/NNC+으로/PAD))
+                              (VV 고생/NNC+하/XSV+는/EAN)))
+                       (NP 것/NNX+으로/PAD))
+              (VV 알리/VV+어지/XSV+어/ECS))
+          있/VX+으며/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-ADV 지난달/NNC+에/PAD+은/PAU)
+                     (VP (NP-COMP 바이러스/NNC
+                                  감염/NNC+으로/PAD)
+                         (VV 진단/NNC+받/XSV+어/ECS))))
+              (NP-ADV 사흘/NNC+간/XSF)
+              (VP (VV 휴무/NNC+하/XSV+기/ENM+도/PAU)))
+          하/VX+었었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>지난달에는 바이러스 감염으로 진단받아</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>사흘간</term>
+	    </Arg>
+	    <Rel>
+	      <term>휴무하기도</term>
+	    </Rel>
+	    <Aux>
+	      <f>기도</f>
+	      <term>했었다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

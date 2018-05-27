@@ -1,0 +1,154 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>감소</lemma>
+    <comment>Frames file for '감소' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>감소.01</id>
+      <edef>reduce</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing reduced"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>감소하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>그러나 총외채는 1 천 368 억달러로 작년 1 월말 1 천 466 달러보다 98 억달러, 6.9 퍼센트 감소했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 총/XPF+외채/NNC+은/PAU)
+      (VP (NP-COMP 1/NNU
+		   천/NNU
+		   368/NNU
+		   억/NNU+달러/NNX+으로/PAD)
+          (VP (NP-ADV (NP 작년/NNC
+			      1/NNU
+			      월/NNX+말/NNX)
+		      (NP 1/NNU
+			  천/NNU
+			  466/NNU
+			  달러/NNX+보다/PAD))
+	      (NP-ADV (NP 98/NNU
+			  억/NNU+달러/NNX)
+		      ,/SCM
+		      (NP 6.9/NNU
+			  퍼센트/NNX))
+	      (VP (VV 감소/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>총외채</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>1 천 368 억달러</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>작년 1 월말 1 천 466 달러보다</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>98 억달러, 6.9 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>감소했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>감소되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>보통 어두워진 다음에나 시정이 감소될 때 합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (ADVP 보통/ADV)
+       (NP-ADV (NP (S (NP-SBJ *pro*)
+                      (VP (VV 어둡/VJ+어지/XSV+은/EAN)))
+                   (NP 다음/NNC+에/PAD+이나/PCJ))
+               (NP (S (WHNP *op*)
+                      (S (NP-SBJ 시정/NNC+이/PCA)
+                         (VP (VV 감소/NNC+되/XSV+을/EAN))))
+                   (NP 때/NNC)))
+       (VP (NP-OBJ *pro*)
+           하/VV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>시정</term>
+	    </Arg>
+	    <Rel>
+	      <term>감소될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>감소시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>관상동맥 벽이 두꺼워지면 혈액이 흐르는 관의 굵기는 가늘어져 혈액공급을 감소시킴으로써 심장병 유발위험이 높아진다.</text>
+	  <parse>
+(S (S (S (S (NP-SBJ 관상/NNC+동맥/NNC
+			벽/NNC+이/PCA)
+	    (VP (VV 두껍/VJ+어지/XSV+으면/ECS)))
+	 (S (NP-SBJ (NP (S (WHNP-1 *op*)
+			   (S (NP-SBJ 혈액/NNC+이/PCA)
+			      (VP (NP-OBJ *T*-1)
+				  흐르/VV+는/EAN)))
+			(NP 관/NNC+의/PAN))
+		    (NP 굵기/NNC+은/PAU))
+	    (VP (VV 가늘/VJ+어지/XSV+어/ECS))))
+      (S (NP-SBJ *pro*)
+	 (VP (NP-OBJ 혈액/NNC+공급/NNC+을/PCA)
+	     (VV 감소/NNC+시키/XSV+음/ENM+으로써/PAD))))
+   (S (NP-SBJ 심장병/NNC
+              유발/NNC+위험/NNC+이/PCA)
+      (VP (VV 높/VJ+어지/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>관상동맥 벽이 두꺼워지면 혈액이 흐르는 관의 굵기는 가늘어져</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>혈액공급</term>
+	    </Arg>
+	    <Rel>
+	      <term>감소시킴으로써</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

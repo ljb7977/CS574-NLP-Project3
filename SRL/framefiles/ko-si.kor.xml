@@ -1,0 +1,129 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고시</lemma>
+    <comment>Frames file for '고시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>고시.01</id>
+      <edef>notify</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing notified"/>
+	<role argnum="2" argrole="notified to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고시하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>KBS의 수신료 중 공사로 전환되는 EBS의 지원비율은 3 퍼센트로 확정했고 민영 지상파방송사업자의 특정방송 의존비율은 50-85 퍼센트 범위에서 방송위원회가 고시하도록 한 당초의 안을 유지하기로 했다.</text>
+	  <parse>
+(S (S (NP-ADV (NP (NP KBS/NFW+의/PAN)
+		  (NP 수신료/NNC))
+	      (NP 중/NNX))
+      (S (NP-SBJ (NP (S (WHNP-1 0) 
+			(S (NP-SBJ *T*-1)
+			   (VP (NP-COMP 공사/NNC+으로/PAD)
+			       (VV 전환/NNC+되/XSV+는/EAN))))
+		     (NP EBS/NFW+의/PAN))
+		 (NP 지원/NNC+비율/NNC+은/PAU))
+	 (VP (NP-COMP 3/NNU
+		      퍼센트/NNX+으로/PAD)
+	     (VV 확정/NNC+하/XSV+었/EPF+고/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*) 
+		  (VP (NP-OBJ (S (WHNP-3 0)
+			         (S (NP-SBJ *T*-3) 
+				    (VP (S-COMP (NP-OBJ-2 (NP 민영/NNC
+		                                              지상파/NNC+방송/NNC+사업자/NNC+의/PAN)
+	                                                  (NP 특정/NNC+방송/NNC
+		                                              의존/NNC+비율/NNC+은/PAU))
+					        (S (NP-ADV 50/NNU+-/SSY+85/NFW
+				                           퍼센트/NNX
+				                           범위/NNC+에서/PAD)
+					           (S (NP-SBJ 방송/NNC+위원회/NNC+이/PCA)
+						      (VP (NP-OBJ *T*-2)
+							  (VV 고시/NNC+하/XSV+도록/ECS)))))
+					하/VV+은/EAN)))
+			      (NP (NP 당초/NNC+의/PAN)
+				  (NP 안/NNC+을/PCA)))
+		      (VV 유지/NNC+하/XSV+기/ENM+으로/PAD)))
+	  하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>민영 지상파방송사업자의 특정방송 의존비율</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>50-85 퍼센트 범위에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>방송위원회</term>
+	    </Arg>
+	    <Rel>
+	      <term>고시하도록</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>고시되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한편 용인경전철, 의정부경전철은 지역개발부담금 확보 등 재원대책이 마련돼 조만간 시설계획이 고시된다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ (NP 용인/NPR+경전철/NNC)
+              ,/SCM
+              (NP 의정부/NPR+경전철/NNC+은/PAU))
+      (S (S (NP-SBJ (NP (NP 지역/NNC+개발/NNC+부담금/NNC
+                            확보/NNC)
+                        (NP 등/NNX))
+                    (NP 재원/NNC+대책/NNC+이/PCA))
+            (VP (VV 마련/NNC+되/XSV+어/ECS)))
+         (S (ADVP 조만간/ADV)
+            (S (NP-SBJ 시설/NNC+계획/NNC+이/PCA)
+               (VP (VV 고시/NNC+되/XSV+는다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>한편</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>용인경전철, 의정부경전철</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>지역개발부담금 확보 등 재원대책이 마련돼</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>조만간</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>시설계획</term>
+	    </Arg>
+	    <Rel>
+	      <term>고시된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,126 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>쥐</lemma>
+    <comment>Frames file for '쥐' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>쥐.01</id>
+      <edef>clasp</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing clasped"/>
+	<role argnum="2" argrole="clasp with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>쥐다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>공화당의 선거자금 모금책 테드 웰치는 "내 계산으로는 그가 현재 손에 쥐고 있는 게 별로 없다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP 공화당/NPR+의/PAN)
+               (NP 선거/NNC+자금/NNC
+                   모금책/NNC))
+           (NP 테드/NPR
+               웰치/NPR+은/PAU))
+   (VP (S-COMP "/SLQ
+               (NP-ADV (NP 나/NPN+의/PAN)
+                       (NP 계산/NNC+으로/PAD+은/PAU))
+               (S (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ 그/NPN+이/PCA)
+                                (VP (VP (NP-ADV 현재/NNC)
+                                        (VP (NP-COMP 손/NNC+에/PAD)
+                                            (NP-OBJ *T*-1)
+                                            쥐/VV+고/ECS))
+                                    있/VX+는/EAN)))
+                          (NP 것/NNX+이/PCA))
+                  (ADJP (ADVP 별로/ADV)
+                        (ADJP 없/VJ+다/EFN)))
+               "/SRQ
+               고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현재</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>손</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=것</term>
+	    </Arg>
+	    <Rel>
+	      <term>쥐고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>사에키 사장은 지금까지 상장기업들은 주식시장을 선택할 기회가 없었지만 나스닥저팬의 출현으로 이제는 기업들이 주식거래의 주도권을 쥐게 됐다고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 사에키/NPR
+           사장/NNC+은/PAU)
+   (VP (S-COMP (S (NP-ADV 지금/NNC+까지/PAU)
+                  (S (NP-SBJ 상장/NNC+기업/NNC+들/XSF+은/PAU)
+                     (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                                       (VP (NP-OBJ 주식/NNC+시장/NNC+을/PCA)
+                                           (VV 선택/NNC+하/XSV+을/EAN)))
+                                    (NP 기회/NNC+이/PCA))
+                           없/VJ+었/EPF+지만/ECS)))
+               (S (NP-ADV (NP 나스닥저팬/NPR+의/PAN)
+                          (NP 출현/NNC+으로/PAD))
+                  (NP-ADV 이제/NNC+은/PAU)
+                  (S (NP-SBJ 기업/NNC+들/XSF+이/PCA)
+                     (VP (VP (NP-OBJ (NP 주식/NNC+거래/NNC+의/PAN)
+                                     (NP 주도권/NNC+을/PCA))
+                             쥐/VV+게/ECS)
+                         되/VX+었/EPF+다/EFN+고/PAD))))
+       (VV 강조/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>나스닥저팬의 출현으로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이제는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>기업들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>주식거래의 주도권</term>
+	    </Arg>
+	    <Rel>
+	      <term>쥐게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>됐다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

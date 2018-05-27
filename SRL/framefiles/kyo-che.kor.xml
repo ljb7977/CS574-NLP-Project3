@@ -1,0 +1,202 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>교체</lemma>
+    <comment>Frames file for '교체' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>교체.01</id>
+      <edef>replace</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing replaced"/>
+	<role argnum="2" argrole="old thing"/>
+	<role argnum="3" argrole="new thing"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>교체하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>작년 3월에 그 소총들을 AK 보총으로 교체했읍니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 작년/NNC
+               3/NNU
+               월/NNX+에/PAD)
+       (VP (NP-OBJ 그/DAN
+                   소총/NNC+들/XSF+을/PCA)
+           (NP-COMP AK/NFW
+                    보총/NNC+으로/PAD)
+           (VV 교체/NNC+하/XSV+었/EPF+읍니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>작년 3월에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>그 소총들</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>AK 보총</term>
+	    </Arg>
+	    <Rel>
+	      <term>교체했읍니다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>교체하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>감독은 최전방 공격선수를 차두리에서 이천수로 교체했다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>감독</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>최전방 공격선수</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>차두리</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>이천수</term>
+	    </Arg>
+	    <Rel>
+	      <term>교체했다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>교체되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>보스니아 주둔군은 현역 부대인 제 10 산악사단에서 텍사스 주방위군 제 49 기갑사단으로 교체된다.</text>
+	  <parse>
+(S (NP-SBJ 보스니아/NPR
+           주둔군/NNC+은/PAU)
+   (VP (NP-COMP (S (WHNP-1 *op*)
+                   (S (NP-SBJ *T*-1)
+                      (VP (NP 현역/NNC
+                              부대/NNC+이/CO+은/EAN))))
+                (NP 제/DAN
+                    10/NNU
+                    산악/NNC+사단/NNC+에서/PAD))
+       (NP-COMP (NP 텍사스/NPR
+                    주/NNC+방위군/NNC)
+                (NP 제/DAN
+                    49/NNU
+                    기갑/NNC+사단/NNC+으로/PAD))
+       (VV 교체/NNC+되/XSV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>보스니아 주둔군</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서 </f>
+	      <term>현역 부대인 제 10 산악사</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>텍사스 주방위군 제 49 기갑사단</term>
+	    </Arg>
+	    <Rel>
+	      <term>교체된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>교체되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>한나라당 부산 서구 공천을 받았다가 교체된 이상열씨가 3 일 `돈 공천 문제를 밝힐 결정적 근거를 가지고 있다'고 말한 가운데 민주당도 한나라당의 공천헌금 의혹을 거듭 제기, 파문이 확대되고 있다.</text>
+	  <parse>
+(S (S (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                            (S (S (NP-SBJ *T*-1)
+                                  (VP (NP-OBJ 한나라당/NPR
+                                              부산/NPR
+                                              서구/NPR
+                                              공천/NNC+을/PCA)
+                                      받/VV+었/EPF+다가/ECS))
+                               (S (NP-SBJ *T*-1)
+                                  (VP (VV 교체/NNC+되/XSV+은/EAN)))))
+                         (NP 이상열/NPR+씨/NNX+이/PCA))
+                 (VP (NP-ADV 3/NNU
+                             일/NNX)
+                     (VP (S-COMP `/SLQ
+                                 (NP-SBJ *pro*)
+                                 (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *T*-2)
+                                                       (VP (NP-OBJ 돈/NNC
+                                                                   공천/NNC
+                                                                   문제/NNC+을/PCA)
+                                                           밝히/VV+을/EAN)))
+                                                 (NP (NP 결정/NNC+적/XSF)
+                                                     (NP 근거/NNC+을/PCA)))
+                                         가지/VV+고/ECS)
+                                     있/VX+다/EFN)
+                                 '/SRQ
+                                 고/PAD)
+                         말하/VV+은/EAN)))
+              (NP 가운데/NNC))
+      (S (NP-SBJ 민주당/NPR+도/PAU)
+         (VP (NP-OBJ (NP 한나라당/NPR+의/PAN)
+                     (NP 공천/NNC+헌금/NNC
+                         의혹/NNC+을/PCA))
+             (VP (ADVP 거듭/ADV)
+                 (VP (VV 제기/NNC))))))
+   ,/SCM
+   (S (NP-SBJ 파문/NNC+이/PCA)
+      (VP (VP (VV 확대/NNC+되/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>한나라당 부산 서구 공천을 받았다가</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>*trace*=이상열씨</term>
+	    </Arg>
+	    <Rel>
+	      <term>교체된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

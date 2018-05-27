@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>국한</lemma>
+    <comment>Frames file for '국한' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>국한.01</id>
+      <edef>confine</edef>
+      <roleset>
+	<role argnum="0" argrole="confiner"/>
+	<role argnum="1" argrole="entity confined"/>
+	<role argnum="2" argrole="confined to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>국한되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>위원회는 IMF의 활동은 단기적인 경제위기를 겪고 있는 회원국에 긴급자금을 대출해 주는 본원적인 기능에 국한되야 한다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 위원회/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ (NP IMF/NFW+의/PAN)
+                       (NP 활동/NNC+은/PAU))
+               (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                                   (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                                                       (S (NP-SBJ *T*-2)
+                                                          (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                                             (S (NP-SBJ *T*-1)
+                                                                                (VP (NP 단기/NNC+적/XSF+이/CO+은/EAN))))
+                                                                          (NP 경제/NNC+위기/NNC+을/PCA))
+                                                                  겪/VV+고/ECS)
+                                                              있/VX+는/EAN)))
+                                                    (NP 회원국/NNC+에/PAD))
+                                           (NP-OBJ 긴급/NNC+자금/NNC+을/PCA)
+                                           (VV 대출/NNC+하/XSV+어/ECS))
+                                       주/VX+는/EAN))
+                                (NP (S (WHNP-3 *op*)
+                                       (S (NP-SBJ *T*-3)
+                                          (VP (NP 본원/NNC+적/XSF+이/CO+은/EAN))))
+                                    (NP 기능/NNC+에/PAD)))
+                       (VV 국한/NNC+되/XSV+어야/ECS))
+                   하/VX+는다/EFN+고/PAD))
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>IMF의 활동</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>단기적인 경제위기를 겪고 있는 회원국에 긴급자금을 대출해 주는 본원적인 기능</term>
+	    </Arg>
+	    <Rel>
+	      <term>국한되야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

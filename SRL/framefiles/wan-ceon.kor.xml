@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>완전</lemma>
+    <comment>Frames file for '완전' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>완전.01</id>
+      <edef>perfect</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being perfect"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>완전하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그렇지만 나는 귀관이 할 수 있는 한 정직하고 완전하게 내 질문에 대답하기를 바라오.</text>
+	  <parse>
+(S (ADCP 그렇지만/ADC)
+   (S (NP-SBJ 나/NPN+은/PAU)
+      (VP (S-OBJ (NP-SBJ 귀관/NPN+이/PCA)
+                 (VP (ADVP (NP-ADV (S (NP-SBJ *pro*)
+                                      (VP (VP (NP-OBJ *pro*)
+                                              하/VV+을/EAN)
+                                          (VX 수/NNX
+                                              있/VJ+는/EAN)))
+                                   (NP 한/NNX))
+                           (ADVP (ADV (VJ (VJ 정직/NNC+하/XSJ+고/ECS)
+                                          (VJ 완전/NNC+하/XSJ+게/ECS)))))
+                     (VP (NP-COMP (NP 나/NPN+의/PAN)
+                                  (NP 질문/NNC+에/PAD))
+                         (VV 대답/NNC+하/XSV+기/ENM+을/PCA))))
+          바라/VV+으오/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>완전하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

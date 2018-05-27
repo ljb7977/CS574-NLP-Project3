@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소비</lemma>
+    <comment>Frames file for '소비' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>소비.01</id>
+      <edef>spend</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="unit of time"/>
+	<role argnum="2" argrole="activity"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소비하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 포병 부대들은 전투 지원 제공을 준비하는 동안 하기 사항을 위해서 대부분의 시간을 소비한다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           포병/NNC
+           부대/NNC+들/XSF+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 전투/NNC
+                              지원/NNC
+                              제공/NNC+을/PCA)
+                      (VV 준비/NNC+하/XSV+는/EAN)))
+               (NP 동안/NNX))
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 하기/NNC
+                      사항/NNC+을/PCA)
+              위하/VV+어서/ECS))
+       (VP (NP-OBJ (NP 대부분/NNC+의/PAN)
+                   (NP 시간/NNC+을/PCA))
+           (VV 소비/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이 포병 부대들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전투 지원 제공을 준비하는 동안</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>하기 사항을 위해서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대부분의 시간</term>
+	    </Arg>
+	    <Rel>
+	      <term>소비한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

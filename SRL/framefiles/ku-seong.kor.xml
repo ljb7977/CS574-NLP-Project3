@@ -1,0 +1,106 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>구성</lemma>
+    <comment>Frames file for '구성' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>구성.01</id>
+      <edef>compose</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing composed"/>
+	<role argnum="2" argrole="composed of"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>구성하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>데이콤은 이사회의 절반을 사외이사로 구성하고 소액주주의 의견을 수렴, 사외이사 후보를 추천받는 등 참여연대의 제안을 대폭 수용하기로 했다.</text>
+	  <parse>
+(S (NP-SBJ 데이콤/NPR+은/PAU)
+   (VP (NP-ADV (S (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP 이사회/NNC+의/PAN)
+                                 (NP 절반/NNC+을/PCA))
+                         (NP-COMP 사외/NNC+이사/NNC+으로/PAD)
+                         (VV 구성/NNC+하/XSV+고/ECS)))
+                  (S (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (NP 소액/NNC+주주/NNC+의/PAN)
+                                    (NP 의견/NNC+을/PCA))
+                            (VV 수렴/NNC)))
+                     ,/SCM
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 사외/NNC+이사/NNC
+                                    후보/NNC+을/PCA)
+                            (VV 추천/NNC+받/XSV+는/EAN)))))
+               (NP 등/NNX))
+       (VP (S-COMP (NP-SBJ *pro*)
+		   (VP (NP-OBJ (NP 참여/NNC+연대/NNC+의/PAN)
+			       (NP 제안/NNC+을/PCA))
+		       (VP (ADVP 대폭/ADV)
+			   (VP (VV 수용/NNC+하/XSV+기/ENM+으로/PAD)))))
+           하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이사회의 절반</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>사외이사</term>
+	    </Arg>
+	    <Rel>
+	      <term>구성하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>구성되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>경보병 중대는 중대부, 4개 경보병 분대, 1개 박격포 분대로 구성된다.</text>
+	  <parse>
+(S (NP-SBJ 경보병/NNC
+           중대/NNC+은/PAU)
+   (VP (NP-COMP (NP 중대부/NNC)
+                ,/SCM
+                (NP (NP 4/NNU
+                        개/NNX)
+                    (NP 경보병/NNC
+                        분대/NNC))
+                ,/SCM
+                (NP (NP 1/NNU
+                        개/NNX)
+                    (NP 박격포/NNC
+                        분대/NNC+으로/PAD)))
+       (VV 구성/NNC+되/XSV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>경보병 중대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>중대부, 4개 경보병 분대, 1개 박격포 분대</term>
+	    </Arg>
+	    <Rel>
+	      <term>구성된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

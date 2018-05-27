@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잠정추계</lemma>
+    <comment>Frames file for '잠정추계' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>잠정추계.01</id>
+      <edef>estimate temporarily</edef>
+      <roleset>
+	<role argnum="0" argrole="thing estimating"/>
+	<role argnum="1" argrole="thing estimated"/>
+	<role argnum="2" argrole="estimate as"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잠정추계하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한편 일본 통산성은 당초 전년도 동기 대비 0.9 퍼센트로 잠정추계했던 1 월의 산업생산액 증가율을 0.2 퍼센트로 낮춘다고 이날 발표했다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ 일본/NPR
+		  통산성/NNC+은/PAU)
+      (VP (S-COMP (NP-SBJ *pro*)
+		  (VP (NP-OBJ (S (WHNP-1 *op*) 
+				 (S (NP-SBJ *pro*)
+				    (VP (NP-ADV 당초/NNC)
+					(VP (NP-COMP 전년도/NNC
+							   동기/NNC
+							   대비/NNC
+							   0.9/NNU
+							   퍼센트/NNX+으로/PAD)
+					    (NP-OBJ *T*-1)
+					    (VV 잠정추계/NNC+하/XSV+었/EPF+던/EAN)))))
+			      (NP (NP 1/NNU
+				      월/NNX+의/PAN)
+				  (NP 산업/NNC+생산액/NNC
+					  증가율/NNC+을/PCA)))
+		      (NP-COMP 0.2/NNU
+			       퍼센트/NNX+으로/PAD)
+		      낮추/VV+는다/EFN+고/PAD))
+	  (NP-ADV 이날/NNC)
+	  (VP (VV 발표/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>당초</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>전년도 동기 대비 0.9 퍼센트</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=1 월의 산업생산액 증가율</term>
+	    </Arg>
+	    <Rel>
+	      <term>잠정추계했던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

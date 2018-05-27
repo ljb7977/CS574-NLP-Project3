@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재처리</lemma>
+    <comment>Frames file for '재처리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재처리.01</id>
+      <edef>reprocess</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing reprocessed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재처리하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>보고서는 노르망디 해안 라아그에 위치한 코제마 재처리 공장에 다른 국가들이 이 공장으로 보낸 연료봉들을 재처리한 뒤 남은 폐기물들을 보관한 1 만 6 천개의 컨테이너가 쌓여 있다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 보고서/NNC+은/PAU)
+   (VP (S-COMP (NP-COMP-5 (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-COMP 노르망디/NPR
+                                             해안/NNC
+                                             라아그/NPR+에/PAD)
+                                    (VV 위치/NNC+하/XSV+은/EAN))))
+                          (NP 코제마/NPR
+                              재처리/NNC
+                              공장/NNC+에/PAD))
+               (S (NP-SBJ (S (WHNP-4 *op*)
+                             (S (NP-SBJ *T*-4)
+                                (VP (NP-OBJ (S (WHNP-3 *op*)
+                                               (S (NP-SBJ *T*-3)
+                                                  (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                                 (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                                (S (NP-SBJ 다른/DAN
+                                                                                           국가/NNC+들/XSF+이/PCA)
+                                                                                   (VP (NP-COMP 이/DAN
+                                                                                                공장/NNC+으로/PAD)
+                                                                                       (NP-OBJ *T*-2)
+                                                                                       보내/VV+은/EAN)))
+                                                                             (NP 연료봉/NNC+들/XSF+을/PCA))
+                                                                     (VV 재처리/NNC+하/XSV+은/EAN)))
+                                                              (NP 뒤/NNC))
+                                                      (VP 남/VV+은/EAN))))
+                                            (NP 폐기물/NNC+들/XSF+을/PCA))
+                                    (VV 보관/NNC+하/XSV+은/EAN))))
+                          (NP (NP 1/NNU
+                                  만/NNU
+                                  6/NNU
+                                  천/NNU+개/NNX+의/PAN)
+                              (NP 컨테이너/NNC+이/PCA)))
+                  (VP (VP (S-COMP *T*-5)
+                          쌓이/VV+어/ECS)
+                      있/VX+다/EFN+고/PAD)))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>다른 국가들이 이 공장으로 보낸 연료봉들</term>
+	    </Arg>
+	    <Rel>
+	      <term>재처리한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

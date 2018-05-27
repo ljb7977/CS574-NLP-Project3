@@ -1,0 +1,123 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>늘</lemma>
+    <comment>Frames file for '늘' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>늘.01</id>
+      <edef>increase</edef>
+      <roleset>
+	<role argnum="0" argrole="causal agent"/>
+	<role argnum="1" argrole="thing increasing"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>늘다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>김 특무장, 너는 161 포병 연대의 2개 122 미리 고사포 대대에 포의 수가 늘었다고 말했다.</text>
+	  <parse>
+(S (NP-VOC 김/NPR
+	   특무장/NNC)
+   ,/SCM
+   (S (NP-SBJ 너/NPN+는/PAU)
+      (VP (S-COMP (NP-ADV (NP 161/NNU
+			      포병/NNC
+			      연대/NNC+의/PCA)
+			  (NP 2/NNU
+			      개/NNX
+			      122/NNU
+			      미리/NNX
+			      고사포/NNC
+			      대대/NNC+에/PAD))
+		  (S (NP-SBJ (NP 포/NNC+의/PCA)
+			     (NP 수/NNC+가/PCA))
+		     (VP 늘/VV+었/EPF+다/EFN+고/PQO)))
+	  말하/VV+었/EPF+다/EFN))
+   ./SFN )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>161 포병 연대의 2개 122 미리 고사포 대대에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>포의 수</term>
+	    </Arg>
+	    <Rel>
+	      <term>늘었다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>늘리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>독일 정부는 모잠비크에 대한 긴급 지원금을 150 만달러에서 530 만달러로 늘리는 한편 구조 활동을 돕기 위해 헬기 10 대를 보내기로 했다고 정부 관리들이 말했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 독일/NPR
+                     정부/NNC+은/PAU)
+             (VP (NP-ADV (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ (S (WHNP-2 *op*)
+                                           (S (NP-SBJ *T*-2)
+                                              (VP (NP-COMP 모잠비크/NPR+에/PAD)
+                                                  대하/VV+은/EAN)))
+                                        (NP 긴급/NNC
+                                            지원/NNC+금/XSF+을/PCA))
+                                (NP-COMP 150/NNU
+                                         만/NNU+달러/NNX+에서/PAD)
+                                (NP-COMP 530/NNU
+                                         만/NNU+달러/NNX+으로/PAD)
+                                늘리/VV+는/EAN))
+                         (NP 한편/NNC))
+                 (S (NP-SBJ *pro*)
+                    (VP (S-OBJ (NP-SBJ *pro*)
+			       (VP (NP-OBJ 구조/NNC
+					       활동/NNC+을/PCA)
+				   돕/VV+기/ENM))
+                        위하/VV+어/ECS))
+                 (VP (VP (NP-OBJ 헬기/NNC
+                                 10/NNU
+                                 대/NNX+을/PCA)
+                         보내/VV+기/ENM+으로/PAD)
+                     하/VX+었/EPF+다/EFN+고/PAD)))
+   (S (NP-SBJ 정부/NNC
+              관리/NNC+들/XSF+이/PCA)
+      (VP (S-COMP *T*-1)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>모잠비크에 대한 긴급 지원금</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>150 만달러</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>530 만달러</term>
+	    </Arg>
+	    <Rel>
+	      <term>늘리는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>근무</lemma>
+    <comment>Frames file for '근무' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>근무.01</id>
+      <edef>work</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>근무하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저는 거기서 근무한 일이 없기 때문에 확실히 말씀드리기는 어렵습니다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ (S (NP-SBJ 저/NPN+은/PAU)
+                         (VP (NP-ADV 거기/NPN+서/PAD)
+                             (VP (VV 근무/NNC+하/XSV+은/EAN))))
+                      (NP 일/NNC+이/PCA))
+              (ADJP 없/VJ+기/ENM))
+           (NP 때문/NNX+에/PAD))
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ *pro*)
+                     (VP (ADVP 확실히/ADV)
+                         (VP 말씀드리/VV+기/ENM+은/PAU)))))
+      (ADJP 어렵/VJ+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>서</f>
+	      <term>거기</term>
+	    </Arg>
+	    <Rel>
+	      <term>근무한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

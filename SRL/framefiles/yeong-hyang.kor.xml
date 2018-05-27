@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>영향</lemma>
+    <comment>Frames file for '영향' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>영향.01</id>
+      <edef>influence</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing influenced"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>영향받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>은행대출은 1 조 8 천억원이 증가, 전달에 비해 증가세가 둔화됐는데 가계대출의 경우 금리 인하 등에 영향받아 1 조 9 천억원이 증가한 반면 기업대출은 자금비수기를 맞아 400 억원이 감소했다.</text>
+	  <parse>
+(S (S (S (NP-SBJ 은행/NNC+대출/NNC+은/PAU)
+         (VP (NP-ADV 1/NNU
+                     조/NNU
+                     8/NNU
+                     천억/NNU+원/NNX+이/PCA)
+             (VP (VV 증가/NNC))))
+      ,/SCM
+      (S (NP-SBJ *pro*)
+         (VP (NP-COMP 전달/NNC+에/PAD)
+             비하/VV+어/ECS))
+      (S (NP-SBJ 증가세/NNC+이/PCA)
+         (VP (VV 둔화/NNC+되/XSV+었/EPF+는데/ECS))))
+   (S (NP-ADV (S (NP-ADV (NP 가계/NNC+대출/NNC+의/PAN)
+                         (NP 경우/NNC))
+                 (S (NP-SBJ *pro*)
+                    (VP (NP-COMP 금리/NNC
+                                 인하/NNC
+                                 등/NNX+에/PAD)
+                        (VV 영향/NNC+받/XSV+어/ECS)))
+                 (S (NP-SBJ 1/NNU
+                            조/NNU
+                            9/NNU
+                            천억/NNU+원/NNX+이/PCA)
+                    (VP (VV 증가/NNC+하/XSV+은/EAN))))
+              (NP 반면/NNC))
+      (S (NP-SBJ 기업/NNC+대출/NNC+은/PAU)
+         (VP (S (NP-SBJ *pro*)
+                (VP (NP-OBJ 자금/NNC+비수기/NNC+을/PCA)
+                    맞/VV+어/ECS))
+             (NP-ADV 400/NNU
+                     억/NNU+원/NNX+이/PCA)
+             (VP (VV 감소/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TOC</f>
+	      <term>가계대출의 경우</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>금리 인하 등</term>
+	    </Arg>
+	    <Rel>
+	      <term>영향받아</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

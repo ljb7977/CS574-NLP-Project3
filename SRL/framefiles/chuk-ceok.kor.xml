@@ -1,0 +1,121 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>축적</lemma>
+    <comment>Frames file for '축적' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>축적.01</id>
+      <edef>accumulate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing accumulated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>축적하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이같은 양당간 합당방안은 민국당 출범이전에 영남권 신당을 추진했던 인사들 사이에서 `지역정당'이란 여론의 비난을 모면하고 신당 창당의 명분을 축적할 수 있다는 차원에서 이미 논의됐었던 것으로 알려졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ 이같은/DAN
+                           양당/NNC+간/XSF
+                           합당/NNC+방안/NNC+은/PAU)
+                   (VP (NP-ADV (NP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (VP (NP-ADV 민국당/NPR
+                                                     출범/NNC+이전/NNC+에/PAD)
+                                             (VP (NP-OBJ 영남/NPR+권/XSF
+                                                         신당/NNC+을/PCA)
+                                                 (VV 추진/NNC+하/XSV+었/EPF+던/EAN)))))
+                                   (NP 인사/NNC+들/XSF))
+                               (NP 사이/NNC+에서/PAD))
+                       (NP-ADV (S (NP-SBJ *pro*)
+                                  (VP (VP (VP (NP-OBJ (NP `/SLQ
+                                                          지역/NNC+정당/NNC
+                                                          '/SRQ
+                                                          이란/PAN)
+                                                      (NP (NP 여론/NNC+의/PAN)
+                                                          (NP 비난/NNC+을/PCA)))
+                                              (VV 모면/NNC+하/XSV+고/ECS))
+                                          (VP (NP-OBJ (NP 신당/NNC
+                                                          창당/NNC+의/PAN)
+                                                      (NP 명분/NNC+을/PCA))
+                                              (VV 축적/NNC+하/XSV+을/EAN)))
+                                      (VX 수/NNX
+                                          있/VJ+다는/EAN)))
+                               (NP 차원/NNC+에서/PAD))
+                       (ADVP 이미/ADV)
+                       (VP (VV 논의/NNC+되/XSV+었었/EPF+던/EAN))))
+                (NP 것/NNX+으로/PAD))
+       (VV 알리/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>신당 창당 명분</term>
+	    </Arg>
+	    <Rel>
+	      <term>축적할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>축적되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>프랑스 국립보건의학연구소(INSERM) 연구팀은 15 일 발표한 연구보고서를 통해 장기간 태양노출량이 축적되면 백내장 위험이 최고 4 배까지 높아진다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 프랑스/NPR
+           국립/NNC+보건/NNC+의학/NNC+연구소/NNC
+           (PRN -LRB-/SLQ
+                INSERM/NFW
+                -RRB-/SRQ)
+           연구/NNC+팀/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *pro*)
+                            (VP (NP-ADV 15/NNU
+                                        일/NNX)
+                                (VP (NP-OBJ *T*-1)
+                                    (VV 발표/NNC+하/XSV+은/EAN)))))
+                      (NP 연구/NNC+보고서/NNC+을/PCA))
+              통하/VV+어/ECS))
+       (VP (S-COMP (S (NP-SBJ 장기간/NNC
+                              태양/NNC+노출량/NNC+이/PCA)
+                      (VP (VV 축적/NNC+되/XSV+으면/ECS)))
+                   (S (NP-SBJ 백내장/NNC
+                              위험/NNC+이/PCA)
+                      (VP (NP-COMP 최고/NNC
+				       4/NNU
+				       배/NNX+까지/PAU)
+                          (VV 높/VJ+어지/XSV+는다/EFN+고/PAD))))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>장기간 태양노출량</term>
+	    </Arg>
+	    <Rel>
+	      <term>축적되면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

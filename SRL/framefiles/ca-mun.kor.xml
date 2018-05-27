@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자문</lemma>
+    <comment>Frames file for '자문' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>자문.01</id>
+      <edef>consult</edef>
+      <roleset>
+	<role argnum="0" argrole="thing consulting"/>
+	<role argnum="1" argrole="thing consulted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자문하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 피노체트 석방 조치를 저지하기 위해 벨기에 정부가 영국 법원에 제기했던 소송 담당 변호사들이 피노체트의 귀국을 법적으로 막기 어렵다고 항소 포기를 자문했다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (NP-SBJ (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *pro*)
+                                 (VP (S-OBJ (NP-SBJ *pro*)
+					    (VP (NP-OBJ 피노체트/NPR
+								석방/NNC
+								조치/NNC+을/PCA)
+						(VV 저지/NNC+하/XSV+기/ENM)))
+                                     위하/VV+어/ECS))
+                              (S (NP-SBJ 벨기에/NPR
+                                         정부/NNC+이/PCA)
+                                 (VP (NP-ADV 영국/NPR
+                                             법원/NNC+에/PAD)
+                                     (VP (NP-OBJ *T*-1)
+                                         (VV 제기/NNC+하/XSV+었/EPF+던/EAN)))))
+                           (NP 소송/NNC))
+                       (NP 담당/NNC
+                           변호사/NNC+들/XSF+이/PCA))
+               (VP (S (S-SBJ (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP 피노체트/NPR+의/PAN)
+                                         (NP 귀국/NNC+을/PCA))
+                                 (VP (NP-ADV 법적/NNC+으로/PAD)
+                                     (VP 막/VV+기/ENM))))
+                      (ADJP 어렵/VJ+다/EFN+고/PAD))
+                   (VP (NP-OBJ 항소/NNC
+                               포기/NNC+을/PCA)
+                       (VV 자문/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>피노체트 석방 조치를 저지하기 위해 벨기에 정부가 영국 법원에 제기했던 소송 담당 변호사들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>피노체트의 귀국을 법적으로 막기 어렵다고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>항소 포기</term>
+	    </Arg>
+	    <Rel>
+	      <term>자문했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,262 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>들어가</lemma>
+    <comment>Frames file for '들어가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>들어가.01</id>
+      <edef>go in</edef>
+      <roleset>
+	<role argnum="0" argrole="thing going in"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>들어가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>다리를 지나고 나서 이 도로는 연대 지휘부 지역으로 곧장 들어갑니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 다리/NNC+을/PCA)
+              지나/VV+고/ECS)
+          나/VX+어서/ECS))
+   (S (NP-SBJ 이/DAN
+              도로/NNC+은/PAU)
+      (VP (NP-COMP 연대/NNC
+                   지휘부/NNC
+                   지역/NNC+으로/PAD)
+          (VP (ADVP 곧장/ADV)
+              (VP 들어가/VV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>다리를 지나고 나서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이 도로</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>연대 지휘부 지역</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>곧장</term>
+	    </Arg>
+	    <Rel>
+	      <term>들어갑니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>우리가 철원에 들어갈 때까지는 그 경보병 정찰대하고 행동을 늘 같이 했습니다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ 우리/NPN+이/PCA)
+                 (VP (NP-COMP 철원/NPR+에/PAD)
+                     들어가/VV+을/EAN)))
+           (NP 때/NNC+까지/PAU+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV 그/DAN
+                  경보병/NNC
+                  정찰대/NNC+하고/PAD)
+          (VP (NP-OBJ-LV 행동/NNC+을/PCA)
+              (VP (ADVP 늘/ADV)
+                  (ADVP 같이/ADV)
+                  (VP (LV 하/VV+었/EPF+습니다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>우리</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>철원</term>
+	    </Arg>
+	    <Rel>
+	      <term>들어갈</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>들어가.02</id>
+      <edef>enter</edef>
+      <roleset>
+	<role argnum="1" argrole="entity entering"/>
+	<role argnum="2" argrole="place or thing entered"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>들어가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>국에는 보통 어떤 남새가 들어가는가?</text>
+	  <parse>
+(S (NP-COMP-1 국/NNC+에/PAD+은/PAU)
+   (S (ADVP 보통/ADV)
+      (S (NP-SBJ 어떤/DAN
+                 남새/NNC+이/PCA)
+         (VP (NP-COMP *T*-1)
+             들어가/VV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>보통</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>어떤 남새</term>
+	    </Arg>
+	    <Rel>
+	      <term>들어가는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>들어가.03</id>
+      <edef>begin</edef>
+      <roleset>
+	<role argnum="0" argrole="beginner"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>들어가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>실제로 야전 훈련 평가에 들어가기 전에, 장비 전투 준비 점검을 포대 주차장에서 실시했죠.</text>
+	  <parse>
+(S (NP-ADV (NP (S (NP-SBJ *pro*)
+		  (VP (NP-ADV 실제/NNC+로/PAD)
+		      (VP (NP-COMP 야전/NNC
+				   훈련/NNC
+				   평가/NNC+에/PAD)
+			  들어가/VV+기/ENM))))
+	   (NP 전/NNC+에/PAD))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 장비/NNC
+		  전투/NNC
+		  준비/NNC
+		  점검/NNC+을/PCA)
+	  (VP (NP-ADV 포대/NNC
+		      주차장/NNC+에서/PAD)
+	      (VP (VV 실시/NNC+하/XSV+었/EPF+죠/EFN)))))
+   ./SFN )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>실제로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>야전 훈련 평가</term>
+	    </Arg>
+	    <Rel>
+	      <term>들어가기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>흘러 들어가</lemma>
+    <comment>Frames file for '흘러 들어가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>들어가.04</id>
+      <edef>flow in-CV</edef>
+      <roleset>
+	<role argnum="1" argrole="thing flowing"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>흘러 들어가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>대대 지역 북방 약 2 킬로 되는 지점에 금화 저수지로 흘러 들어가는 개울이 하나 있는데, 그 개울에 놓여 있는 다리의 남쪽 끝엔 차단소가 하나 있었지요.</text>
+	  <parse>
+(S (S (NP-COMP-3 (S (WHNP-2 *op*)
+                    (S (NP-SBJ *T*-2)
+                       (VP (NP-COMP (NP 대대/NNC
+                                        지역/NNC)
+                                    (NP 북방/NNC)
+                                    (NP 약/DAN
+                                        2/NNU
+                                        킬로/NNX))
+                           되/VV+는/EAN)))
+                 (NP 지점/NNC+에/PAD))
+      (S (NP-SBJ (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-COMP 금화/NPR
+                                    저수지/NNC+으로/PAD)
+                           (CV 흐르/VV+어/ECS
+                               들어가/VV+는/EAN))))
+                 (NP 개울/NNC+이/PCA))
+         (ADJP (NP-ADV 하나/NNU)
+               (ADJP (NP-COMP *T*-3)
+                     있/VJ+는데/ECS))))
+   ,/SCM
+   (S (NP-COMP-4 (NP (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (VP (NP-COMP 그/DAN
+                                            개울/NNC+에/PAD)
+                                   놓이/VV+어/ECS)
+                               있/VX+는/EAN)))
+                     (NP 다리/NNC+의/PAN))
+                 (NP 남쪽/NNC
+                     끝/NNC+에/PAD+은/PAU))
+      (S (NP-SBJ 차단소/NNC+이/PCA)
+         (ADJP (NP-ADV 하나/NNU)
+               (ADJP (NP-COMP *T*-4)
+                     있/VJ+었/EPF+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=개울</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>금화 저수지</term>
+	    </Arg>
+	    <Rel>
+	      <term>흘러 들어가는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>어기</lemma>
+    <comment>Frames file for '어기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>어기.01</id>
+      <edef>violate</edef>
+      <roleset>
+	<role argnum="0" argrole="thing violating"/>
+	<role argnum="1" argrole="thing violated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>어기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>콜 총리는 금년초 자신이 총리와 CDU 당수로서 200 만 마르크의 헌금을 받았으나 1 만 마르크를 초과하는 헌금은 신고하도록 돼 있는 법을 어기고 이를 당 계좌에 입금하지 않았음을 시인했다.</text>
+	  <parse>
+(S (NP-SBJ 콜/NPR
+           총리/NNC+은/PAU)
+   (VP (S-OBJ (S (NP-ADV 금년/NNC+초/NNX)
+		 (S (NP-SBJ 자신/NNC+이/PCA)
+		    (VP (NP-ADV (NP 총리/NNC+과/PCJ)
+				(NP CDU/NFW
+				    당수/NNC+으로서/PAD))
+			(VP (NP-OBJ (NP 200/NNU
+					만/NNU
+					마르크/NNX+의/PAN)
+				    (NP 헌금/NNC+을/PCA))
+			    받/VV+었/EPF+으나/ECS))))
+	      (S (NP-SBJ *pro*)
+		 (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+				    (S (NP-SBJ *T*-2)
+				       (VP (VP (S-COMP (NP-SBJ *pro*)
+						       (VP (NP-OBJ (S (WHNP-1 *op*)
+								      (S (NP-SBJ *T*-1)
+									 (VP (NP-OBJ 1/NNU
+										     만/NNU
+										     마르크/NNX+을/PCA)
+									     (VV 초과/NNC+하/XSV+는/EAN))))
+								   (NP 헌금/NNC+은/PAU))
+							   (VV 신고/NNC+하/XSV+도록/ECS)))
+					       되/VV+어/ECS)
+					   있/VX+는/EAN)))
+				 (NP 법/NNC+을/PCA))
+			 어기/VV+고/ECS)
+		     (VP (VP (NP-OBJ 이/NPN+을/PCA)
+			     (NP-COMP 당/NNC
+					계좌/NNC+에/PAD)
+			     (VV 입금/NNC+하/XSV+지/ECS))
+			 않/VX+었/EPF+음/ENM+을/PCA))))
+       (VV 시인/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>1 만 마르크를 초과하는 헌금은 신고하도록 돼 있는 법</term>
+	    </Arg>
+	    <Rel>
+	      <term>어기고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

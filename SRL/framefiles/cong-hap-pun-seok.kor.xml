@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>종합분석</lemma>
+    <comment>Frames file for '종합분석' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>종합분석.01</id>
+      <edef>analyze globally</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing analyzed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>종합분석하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>ACCJ는 지난 80 년부터 99 년까지 일-미 양국이 체결한 63 개 무역협정의 내용과 이행여부, 결과등을 종합분석해 각 분야별로 계량화한 수치를 제시하면서 이같이 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ ACCJ/NFW+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                    (S (NP-ADV 지난/DAN
+						   80/NNU
+						   년/NNX+부터/PAU)
+                                       (NP-ADV 99/NNU
+                                               년/NNX+까지/PAU)
+                                       (S (NP-SBJ 일/NPR
+						    -/SSY
+						    미/NPR
+						    양국/NNC+이/PCA)
+                                          (VP (NP-OBJ *T*-1)
+                                              (VV 체결/NNC+하/XSV+은/EAN)))))
+                                 (NP 63/NNU
+                                     개/NNX
+                                     무역/NNC+협정/NNC+의/PAN))
+                             (NP (NP 내용/NNC+과/PCJ)
+                                 (NP 이행/NNC+여부/NNC)
+                                 ,/SCM
+                                 (NP 결과/NNC+등/NNX+을/PCA)))
+                     (VV 종합분석/NNC+하/XSV+어/ECS)))
+              (VP (NP-OBJ (S (WHNP *op*)
+                             (S (NP-SBJ *pro*)
+                                (VP (NP-ADV 각/DAN
+                                            분야/NNC+별/XSF+으로/PAD)
+                                    (VP (NP-OBJ *pro*)
+                                        (VV 계량화/NNC+하/XSV+은/EAN)))))
+                          (NP 수치/NNC+을/PCA))
+                  (VV 제시/NNC+하/XSV+으면서/ECS))))
+       (ADVP 이같이/ADV)
+       (VP (NP-OBJ *pro*)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지난 80 년부터 99 년까지 일-미 양국이 체결한 63 개 무역협정의 내용과 이행여부, 결과등</term>
+	    </Arg>
+	    <Rel>
+	      <term>종합분석해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

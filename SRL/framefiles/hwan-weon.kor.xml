@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>환원</lemma>
+    <comment>Frames file for '환원' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>환원.01</id>
+      <edef>restore</edef>
+      <roleset>
+	<role argnum="0" argrole="restorer"/>
+	<role argnum="1" argrole="thing restored"/>
+	<role argnum="2" argrole="restored to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>환원하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 또 수하르토 전 대통령이 만일 자신의 죄를 인정하고 재산을 사회에 환원한다면 용서할 수도 있다고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (S (NP-SBJ 수하르토/NPR
+                              전/DAN
+                              대통령/NNC+이/PCA)
+                      (VP (ADVP 만일/ADV)
+                          (VP (VP (NP-OBJ 자신/NNC+의/PAN
+                                          죄/NNC+을/PCA)
+                                  (VV 인정/NNC+하/XSV+고/ECS))
+                              (VP (NP-OBJ 재산/NNC+을/PCA)
+                                  (NP-COMP 사회/NNC+에/PAD)
+                                  (VV 환원/NNC+하/XSV+는다면/ECS)))))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ *pro*)
+                              (VV 용서/NNC+하/XSV+을/EAN))
+                          (VX 수/NNX+도/PAU
+                              있/VJ+다/EFN+고/PAD))))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>수하르토 전 대통령</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>만일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>재산</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>사회</term>
+	    </Arg>
+	    <Rel>
+	      <term>환원한다면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

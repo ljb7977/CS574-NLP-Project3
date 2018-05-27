@@ -1,0 +1,215 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>물</lemma>
+    <comment>Frames file for '물' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>물.01</id>
+      <edef>bite</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity bitten"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>물리다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전세계적으로 모기에 물린 후 심한 열과 뼈까지 떨리는 오한, 관절통, 구토 등을 수반하는 말라리아로 숨지는 사람은 매년 300 만명에 이른다.</text>
+	  <parse>
+(S (ADVP (ADV 전세계/NNC+적/XSF+으로/PAD))
+   (S (NP-SBJ (S (WHNP-3 *op*)
+                 (S (NP-SBJ *T*-3)
+                    (VP (NP-ADV (S (NP-SBJ *pro*)
+                                   (VP (NP-COMP 모기/NNC+에/PAD)
+                                       물리/VV+은/EAN))
+                                (NP 후/NNC))
+                        (NP-ADV (S (WHNP-2 *op*)
+                                   (S (NP-SBJ *T*-2)
+                                      (VP (NP-OBJ (NP (NP (S (WHNP-1 *op*)
+                                                             (S (NP-SBJ *T*-1)
+                                                                (ADJP 심하/VJ+은/EAN)))
+                                                          (NP 열/NNC+과/PCJ))
+                                                      (NP (S (WHNP-4 *op*)
+                                                             (S (NP-SBJ 뼈/NNC+까지/PAU)
+                                                                (VP (NP-COMP *T*-4)
+                                                                    떨리/VV+는/EAN)))
+                                                          (NP 오한/NNC))
+                                                      ,/SCM
+                                                      (NP 관절통/NNC)
+                                                      ,/SCM
+                                                      (NP 구토/NNC))
+                                                  (NP 등/NNX+을/PCA))
+                                          (VV 수반/NNC+하/XSV+는/EAN))))
+                                (NP 말라리아/NNC+으로/PAD))
+                        (VP 숨지/VV+는/EAN))))
+              (NP 사람/NNC+은/PAU))
+      (VP (NP-ADV 매년/NNC)
+          (VP (NP-COMP 300/NNU
+                       만/NNU+명/NNX+에/PAD)
+              이르/VV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>모기</term>
+	    </Arg>
+	    <Rel>
+	      <term>물린</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>물.02</id>
+      <edef>pay</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="payer"/>
+	<role argnum="1" argrole="thing paid"/>
+	<role argnum="2" argrole="person being paid"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>물다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>독일은 지난 99 년 유럽연합(EU)이 내린 영국산 쇠고기 금수해제 조치를 따르지 않을 경우 벌금을 물어야 한다.</text>
+	  <parse>
+(S (NP-SBJ 독일/NPR+은/PAU)
+   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                         (S (NP-ADV 지난/DAN
+                                                    99/NNU
+                                                    년/NNX)
+                                            (S (NP-SBJ 유럽/NPR+연합/NNC
+                                                       (PRN -LRB-/SLQ
+                                                            (NP EU/NFW)
+                                                            -RRB-/SRQ)
+                                                       이/PCA)
+                                               (VP (NP-OBJ *T*-1)
+                                                   내리/VV+은/EAN))))
+                                      (NP (NP 영국/NPR+산/XSF
+						  쇠고기/NNC)
+                                          (NP 금수/NNC+해제/NNC
+						  조치/NNC+을/PCA)))
+                              따르/VV+지/ECS)
+                          않/VX+을/EAN))
+                   (NP 경우/NNC))
+           (VP (NP-OBJ 벌금/NNC+을/PCA)
+               물/VV+어야/ECS))
+       하/VX+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>중국이 농업에서 통신에 이르는 광범위한 시장을 개방하는 대신 미국은 중국과의 무역 관계를 정상화</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>독일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>지난 99 년 유럽연합(EU)이 내린 영국산 쇠고기 금수해제 조치를 따르지 않을 경우</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>벌금</term>
+	    </Arg>
+	    <Rel>
+	      <term>물어야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>한다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>물리다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국과 중국은 지난해 무역협정을 맺고 중국이 농업에서 통신에 이르는 광범위한 시장을 개방하는 대신 미국은 중국과의 무역 관계를 정상화, 미국에 수입되는 중국 제품에도 다른 나라 제품들과 마찬가지로 낮은 관세를 물리기로 합의했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 미국/NPR+과/PCJ)
+           (NP 중국/NPR+은/PAU))
+   (VP (VP (NP-ADV 지난해/NNC)
+           (VP (NP-OBJ 무역/NNC+협정/NNC+을/PCA)
+               맺/VV+고/ECS))
+       (VP (S-COMP (NP-ADV (S (NP-SBJ 중국/NPR+이/PCA)
+                              (VP (NP-OBJ (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP-COMP 농업/NNC+에서/PAD)
+                                                    (NP-COMP 통신/NNC+에/PAD)
+                                                    이르/VV+는/EAN)))
+                                          (NP (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (ADJP (VJ 광범위/NNC+하/XSJ+은/EAN))))
+                                              (NP 시장/NNC+을/PCA)))
+                                  (VV 개방/NNC+하/XSV+는/EAN)))
+                           (NP 대신/NNC))
+                   (S (NP-SBJ 미국/NPR+은/PAU)
+                      (VP (NP-OBJ (NP 중국/NPR+과/PAD+의/PAN)
+                                  (NP 무역/NNC
+                                      관계/NNC+을/PCA))
+                          (VV 정상화/NNC)))
+                   ,/SCM
+                   (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (S (WHNP-3 *op*)
+                                      (S (NP-SBJ *T*-3)
+                                         (VP (NP-ADV 미국/NPR+에/PAD)
+                                             (VP (VV 수입/NNC+되/XSV+는/EAN)))))
+                                   (NP 중국/NPR
+                                       제품/NNC+에/PAD+도/PAU))
+                          (VP (NP-ADV (NP-COMP 다른/DAN
+                                               나라/NNC
+                                               제품/NNC+들/XSF+과/PAD)
+                                      마찬가지/NNC+으로/PAD)
+                              (VP (NP-OBJ (S (WHNP-4 *op*)
+                                             (S (NP-SBJ *T*-4)
+                                                (ADJP 낮/VJ+은/EAN)))
+                                          (NP 관세/NNC+을/PCA))
+                                  물리/VV+기/ENM+으로/PAD)))))
+           (VV 합의/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>중국이 농업에서 통신에 이르는 광범위한 시장을 개방하는 대신 미국은 중국과의 무역 관계를 정상화</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에도</f>
+	      <term>미국에 수입되는 중국 제품</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>다른 나라 제품들과 마찬가지로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>낮은 관세</term>
+	    </Arg>
+	    <Rel>
+	      <term>물리기로</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

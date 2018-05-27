@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>떠오르</lemma>
+    <comment>Frames file for '떠오르' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>떠오르.01</id>
+      <edef>visualize</edef>
+      <roleset>
+	<role argnum="1" argrole="thing seen"/>
+	<role argnum="2" argrole="seen at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>떠오르다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>귀관이 생포된 지역을 마음 속에 떠오르게 해서 그 지역에 있는 중요한 지형 지물을 설명해 보도록 하시오.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP *op*)
+                     (S (NP-SBJ 귀관/NPN+이/PCA)
+                        (VP (VV 생포/NNC+되/XSV+은/EAN))))
+                  (NP 지역/NNC+을/PCA))
+          (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-COMP 마음/NNC
+                               속/NNC+에/PAD)
+                      떠오르/VV+게/ECS))
+          하/VV+어서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (ADJP (NP-COMP 그/DAN
+                                               지역/NNC+에/PAD)
+                                      있/VJ+는/EAN)))
+                          (NP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (ADJP (VJ 중요/NNC+하/XSJ+은/EAN))))
+                              (NP 지형/NNC
+                                  지물/NNC+을/PCA)))
+                  (VV 설명/NNC+하/XSV+어/ECS))
+              보/VX+도록/ECS)
+          하/VX+으시/EPF+으오/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>마음 속</term>
+	    </Arg>
+	    <Rel>
+	      <term>떠오르게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

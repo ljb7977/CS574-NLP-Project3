@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>회견</lemma>
+    <comment>Frames file for '회견' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>회견.01</id>
+      <edef>interview</edef>
+      <roleset>
+	<role argnum="0" argrole="interviewer"/>
+	<role argnum="1" argrole="interviewee"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>회견하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>후안 가브리엘 발데스 외무장관은 일간 '메르쿠리오'와 회견하는 가운데 피노체트 의원이 헌법상 보장된 상원의원직을 계속 유지한다 해도 17 년간의 통치기간에 일어났던 인권유린 범죄행위로 인해 재판을 면할 수가 없다며 이같이 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 후안/NPR
+           가브리엘/NPR
+           발데스/NPR
+           외무/NNC+장관/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-COMP 일간/NNC
+                               '/SLQ
+                               메르쿠리오/NPR
+                               '/SRQ
+                               과/PAD)
+                      (VV 회견/NNC+하/XSV+는/EAN)))
+               (NP 가운데/NNC))
+       (S (S (NP-SBJ *pro*)
+             (VP (S-COMP (NP-SBJ 피노체트/NPR
+                                 의원/NNC+이/PCA)
+                         (VP (NP-OBJ (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP-ADV 헌법/NNC+상/XSF)
+                                               (VP (VV 보장/NNC+되/XSV+은/EAN)))))
+                                     (NP 상원/NNC+의원/NNC+직/NNC+을/PCA))
+                             (VP (NP-ADV 계속/NNC)
+                                 (VP (VV 유지/NNC+하/XSV+는다/EFN)))))
+                 하/VV+어도/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (NP-COMP (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (NP-ADV (NP 17/NNU
+                                                년/NNX+간/XSF+의/PAN)
+                                            (NP 통치/NNC+기간/NNC+에/PAD))
+                                    (VP 일어나/VV+었/EPF+던/EAN))))
+                          (NP 인권/NNC+유린/NNC
+                              범죄/NNC+행위/NNC+으로/PAD))
+                 인하/VV+어/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (VP (NP-OBJ 재판/NNC+을/PCA)
+                     면하/VV+을/EAN)
+                 (VX 수/NNX+이/PCA
+                     없/VJ+다며/ECS))))
+       (NP-ADV 이/NPN+같이/PAD)
+       (VP 밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>와</f>
+	      <term>일간 '메르쿠리오'</term>
+	    </Arg>
+	    <Rel>
+	      <term>회견하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

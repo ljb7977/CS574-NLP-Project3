@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>절박하</lemma>
+    <comment>Frames file for '절박하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>절박하.01</id>
+      <edef>urgent</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being urgent"/>
+	<role argnum="2" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>절박하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>접적이 절박하면 탱크 소대들은 공격대형으로 전개합니다.</text>
+	  <parse>
+(S (S (NP-SBJ 접적/NNC+이/PCA)
+      (ADJP 절박하/VJ+으면/ECS))
+   (S (NP-SBJ 탱크/NNC
+              소대/NNC+들/XSF+은/PAU)
+      (VP (NP-COMP 공격/NNC
+                   대형/NNC+으로/PAD)
+          (VV 전개/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>접적</term>
+	    </Arg>
+	    <Rel>
+	      <term>절박하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>클린턴 대통령의 이번 방문은 공식적으로는 방글라데시에 절박한 외국투자와 무역을 촉진하는 계기가 될 것으로 인식되고 있다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=외국투자와 무역</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>방글라데시</term>
+	    </Arg>
+	    <Rel>
+	      <term>절박한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

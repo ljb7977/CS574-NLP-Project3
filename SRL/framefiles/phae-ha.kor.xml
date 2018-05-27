@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>패하</lemma>
+    <comment>Frames file for '패하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>패하.01</id>
+      <edef>lose</edef>
+      <roleset>
+	<role argnum="0" argrole="loser"/>
+	<role argnum="1" argrole="winner"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel></rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 로스앤젤레스 민사지법은 14 일 지난달 회장선거에서 패한 스카렛 엄씨가 제기한 LA 한인회(회장 서영석) 업무정지 가처분 신청을 기각했다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR
+           로스앤젤레스/NPR
+           민사/NNC+지법/NNC+은/PAU)
+   (VP (NP-ADV 14/NNU
+               일/NNX)
+       (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP (NP-ADV 지난달/NNC
+                                                   회장/NNC+선거/NNC+에서/PAD)
+                                           (VP 패하/VV+은/EAN))))
+                                 (NP 스카렛/NPR
+                                     엄/NPR+씨/NNX+이/PCA))
+                         (VP (NP-OBJ *T*-1)
+                             (VV 제기/NNC+하/XSV+은/EAN))))
+                   (NP LA/NFW
+                       한인회/NNC
+                       (PRN -LRB-/SLQ
+                            회장/NNC
+                            서영석/NPR
+                            -RRB-/SRQ)
+                       업무/NNC+정지/NNC
+                       가처분/NNC
+                       신청/NNC+을/PCA))
+           (VV 기각/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=스카렛 엄씨</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난달 회장선거에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>패한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>규탄</lemma>
+    <comment>Frames file for '규탄' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>규탄.01</id>
+      <edef>denounce</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing denounced"/>
+	<role argnum="2" argrole="grounds, reason"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>규탄하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>정구도(45) 대책위 대변인과 양해찬(63)씨 등 피해자들은 이날 회견에서 "노근리사건은 혼돈이나 시급한 위험이 없는 가운데 미군이 피난민을 쌍굴다리 밑으로 밀어넣고 80 여시간에 걸쳐 저지른 만행"이라고 규탄했다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP (NP 정구도/NPR
+                       (PRN -LRB-/SLQ
+                            (NP 45/NNU)
+                            -RRB-/SRQ)
+                       대책위/NNC
+                       대변인/NNC+과/PCJ)
+                   (NP 양해찬/NPR
+                       (PRN -LRB-/SLQ
+                            (NP 63/NNU)
+                            -RRB-/SRQ)
+                       씨/NNX))
+               (NP 등/NNX))
+           (NP 피해자/NNC+들/XSF+은/PAU))
+   (VP (NP-ADV 이날/NNC)
+       (NP-ADV 회견/NNC+에서/PAD)
+       (VP (S-COMP "/SLQ
+		   (NP-SBJ 노근리/NPR+사건/NNC+은/PAU)
+		   (VP (NP (S (WHNP-2 *op*)
+			      (S (NP-ADV (S (NP-SBJ (NP 혼돈/NNC+이나/PCJ)
+						    (NP (S (WHNP-1 *op*)
+							   (S (NP-SBJ *T*-1)
+							      (ADJP (VJ 시급/NNC+하/XSJ+은/EAN))))
+							(NP 위험/NNC+이/PCA)))
+					    (ADJP 없/VJ+는/EAN))
+					 (NP 가운데/NNC))
+				 (S (NP-SBJ 미군/NNC+이/PCA)
+				    (VP (VP (NP-OBJ 피난민/NNC+을/PCA)
+					    (NP-COMP 쌍굴다리/NPR
+							     밑/NNC+으로/PAD)
+					    밀어넣/VV+고/ECS)
+					(VP (S (NP-SBJ *pro*)
+					       (VP (NP-COMP 80/NNU
+							    여/XSF+시간/NNX+에/PAD)
+						   걸치/VV+어/ECS))
+					    (VP (NP-OBJ *T*-2)
+						저지르/VV+은/EAN))))))
+			   (NP 만행/NNC)))
+		   "/SRQ
+		   이/CO+라/EFN+고/PAD)
+	   (VV 규탄/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>정구도(45) 대책위 대변인과 양해찬(63)씨 등 피해자들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>회견에서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>고</f>
+	      <term>"노근리사건은 혼돈이나 시급한 위험이 없는 가운데 미군이 피난민을 쌍굴다리 밑으로 밀어넣고 80 여시간에 걸쳐 저지른 만행"이라</term>
+	    </Arg>
+	    <Rel>
+	      <term>규탄했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

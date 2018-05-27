@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>승리</lemma>
+    <comment>Frames file for '승리' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>승리.01</id>
+      <edef>win</edef>
+      <roleset>
+	<role argnum="0" argrole="winner"/>
+	<role argnum="1" argrole="loser"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>승리하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인민군 장병들은 인민군이 반드시 승리할 것을 믿고 있습니다.</text>
+	  <parse>
+(S (NP-SBJ 인민군/NNC
+           장병/NNC+들/XSF+은/PAU)
+   (VP (VP (NP-OBJ (S (NP-SBJ 인민군/NNC+이/PCA)
+                      (VP (ADVP 반드시/ADV)
+                          (VP (VV 승리/NNC+하/XSV+을/EAN))))
+                   (NP 것/NNX+을/PCA))
+           믿/VV+고/ECS)
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>인민군</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>반드시</term>
+	    </Arg>
+	    <Rel>
+	      <term>승리할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

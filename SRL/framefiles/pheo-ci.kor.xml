@@ -1,0 +1,157 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>퍼지</lemma>
+    <comment>Frames file for '퍼지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>퍼지.01</id>
+      <edef>spread</edef>
+      <roleset>
+	<role argnum="1" argrole="thing spreading"/>
+	<role argnum="2" argrole="thing spread through"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>퍼지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인도네시아 환경당국은 수마트라섬 중앙부에서 짙은 연기가 급격히 퍼지고 있으며 2 주전 우기가 끝나면서 증가하기 시작한 산불발생 지역도 지난달 28 일의 80 곳에서 지난 3 일에는 165 곳으로 급증했다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 인도네시아/NPR
+           환경/NNC+당국/NNC+은/PAU)
+   (VP (S-COMP (S (NP-ADV 수마트라/NPR+섬/NNC
+                          중앙부/NNC+에서/PAD)
+                  (S (NP-SBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP 짙/VJ+은/EAN)))
+                             (NP 연기/NNC+이/PCA))
+                     (VP (VP (ADVP 급격히/ADV)
+                             (VP 퍼지/VV+고/ECS))
+                         있/VX+으며/ECS)))
+               (S (NP-SBJ (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (S-OBJ (NP-SBJ *pro*)
+                                           (VP (S (NP-ADV 2/NNU
+                                                          주/NNX+전/NNC)
+                                                  (S (NP-SBJ 우기/NNC+이/PCA)
+                                                     (VP 끝나/VV+으면서/ECS)))
+                                               (VP (VV 증가/NNC+하/XSV+기/ENM))))
+                                    (VV 시작/NNC+하/XSV+은/EAN))))
+                          (NP 산불/NNC+발생/NNC
+                              지역/NNC+도/PAU))
+                  (VP (NP-COMP (NP 지난달/NNC
+                                   28/NNU
+                                   일/NNX+의/PAN)
+                               (NP 80/NNU
+                                   곳/NNX+에서/PAD))
+                      (NP-COMP (NP 지난/DAN
+                                   3/NNU
+                                   일/NNX+에/PAD+은/PAU)
+                               (NP 165/NNU
+                                   곳/NNX+으로/PAD))
+                      (VV 급증/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>수마트라섬 중앙부에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>짙은 연기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>급격히</term>
+	    </Arg>
+	    <Rel>
+	      <term>퍼지고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있으며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>울려 퍼지</lemma>
+    <comment>Frames file for '울려 퍼지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>퍼지.02</id>
+      <edef>resonate-CV</edef>
+      <roleset>
+	<role argnum="1" argrole="sound"/>
+	<role argnum="2" argrole="direction"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>울려 퍼지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>화창한 봄날을 맞아 유럽 주요 도시들에 평화와 정의의 노래가 울려 퍼진 반면 아프간 수도 카불에선 이슬람 원리주의 정권인 탈레반 주도로 무겁고 조촐한 행사가 열렸다.</text>
+	  <parse>
+(S (NP-ADV (S (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP 화창하/VJ+은/EAN)))
+                             (NP 봄날/NNC+을/PCA))
+                     맞/VV+어/ECS))
+              (S (NP-COMP-2 유럽/NPR
+                            주요/NNC
+                            도시/NNC+들/XSF+에/PAD)
+                 (S (NP-SBJ (NP (NP 평화/NNC+과/PCJ)
+                                (NP 정의/NNC+의/PAN))
+                            (NP 노래/NNC+이/PCA))
+                    (VP (NP-COMP *T*-2)
+                        (CV 울리/VV+어/ECS
+                            퍼지/VV+은/EAN)))))
+           (NP 반면/NNC))
+   (NP-ADV 아프간/NPR
+           수도/NNC
+           카불/NPR+에서/PAD+은/PAU)
+   (NP-ADV (NP (S (WHNP-3 *op*)
+                  (S (NP-SBJ *T*-3)
+                     (VP (NP 이슬람/NNC
+                             원리/NNC+주의/NNC
+                             정권/NNC+이/CO+은/EAN))))
+               (NP 탈레반/NPR))
+           (NP 주도/NNC+으로/PAD))
+   (S (NP-SBJ (S (WHNP-4 *op*)
+                 (S (NP-SBJ *T*-4)
+                    (ADJP (VJ 무겁/VJ+고/ECS
+				  조촐하/VJ+은/EAN))))
+              (NP 행사/NNC+이/PCA))
+      (VP 열리/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>화창한 봄날을 맞아</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>유럽 주요 도시들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>평화와 정의의 노래</term>
+	    </Arg>
+	    <Rel>
+	      <term>울려 퍼진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

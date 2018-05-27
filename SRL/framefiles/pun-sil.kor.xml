@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>분실</lemma>
+    <comment>Frames file for '분실' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>분실.01</id>
+      <edef>lose</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing lost"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>분실되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>오스카상 트로피는 55 개가 지난 10 일 로스앤젤레스 벨에서 하역 도중 분실됐으며 아카데미상 위원회는 오는 26 일 시상식을 열 계획이다.</text>
+	  <parse>
+(S (S (NP-SBJ 오스카상/NPR
+              트로피/NNC+은/PAU)
+      (VP (NP-ADV 55/NNU
+                  개/NNX+이/PCA)
+          (NP-ADV 지난/DAN
+                  10/NNU
+                  일/NNX)
+          (NP-ADV 로스앤젤레스/NPR
+                  벨/NPR+에서/PAD)
+          (NP-ADV 하역/NNC
+                  도중/NNC)
+          (VP (VV 분실/NNC+되/XSV+었/EPF+으며/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 아카데미상/NPR
+                         위원회/NNC+은/PAU)
+                 (VP (NP-ADV 오는/DAN
+                             26/NNU
+                             일/NNX)
+                     (VP (NP-OBJ 시상식/NNC+을/PCA)
+                         열/VV+을/EAN)))
+              (NP 계획/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>오스카상 트로피</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>55 개</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 10 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>로스앤젤레스 벨에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>하역 도중</term>
+	    </Arg>
+	    <Rel>
+	      <term>분실됐으며</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument-floating quantifier</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

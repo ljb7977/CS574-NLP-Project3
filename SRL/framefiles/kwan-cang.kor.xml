@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>관장</lemma>
+    <comment>Frames file for '관장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>관장.01</id>
+      <edef>take charge of</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="task"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>관장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중국공산당 정치국원이며 군사 문제를 관장하는 군사위위원인 장와이앤은 "대만의 독립은 전쟁을 뜻하고 분리주의는 평화가 없음을 뜻한다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP 중국/NPR+공산당/NPR
+                             정치/NNC+국원/NNC+이/CO+으며/ECS))
+                     (VP (NP (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (VP (NP-OBJ 군사/NNC
+                                               문제/NNC+을/PCA)
+                                       (VV 관장/NNC+하/XSV+는/EAN))))
+                             (NP 군사위/NNC+위원/NNC+이/CO+은/EAN))))))
+           (NP 장와이앤/NPR+은/PAU))
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ (NP 대만/NPR+의/PAN)
+                          (NP 독립/NNC+은/PAU))
+                  (VP (NP-OBJ 전쟁/NNC+을/PCA)
+                      뜻하/VV+고/ECS))
+               (S (NP-SBJ 분리/NNC+주의/NNC+은/PAU)
+                  (VP (S-OBJ (NP-SBJ 평화/NNC+이/PCA)
+                             (ADJP 없/VJ+음/ENM+을/PCA))
+                      뜻하/VV+는다/EFN))
+               "/SRQ
+               고/PAD)
+       (VV 강조/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=군사위위원</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>군사 문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>관장하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

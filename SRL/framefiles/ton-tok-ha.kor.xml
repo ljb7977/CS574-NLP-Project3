@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돈독하</lemma>
+    <comment>Frames file for '돈독하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>돈독하.01</id>
+      <edef>hearty</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being hearty"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돈독하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>서울에서 수신된 이 방송은 이 연맹의 간사장이 무라야마 도미이치(촌산부시) 연맹 회장에 이어 중요한 위치라고 지적하면서 노나카 자민당 간사장 대리는 북한과 돈독한 채널을 갖고 있기 때문에 간사장에 선출된 것으로 알려지고 있다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 서울/NPR+에서/PAD)
+                     (VP (VV 수신/NNC+되/XSV+은/EAN)))))
+           (NP 이/DAN
+               방송/NNC+은/PAU))
+   (VP (VP (S-COMP (NP-SBJ (NP 이/DAN
+                               연맹/NNC+의/PAN)
+                           (NP 간사장/NNC+이/PCA))
+                   (VP (ADVP (NP-COMP 무라야마/NPR
+                                      도미이치/NPR
+                                      (PRN -LRB-/SLQ
+                                           촌산부시/NPR
+                                           -RRB-/SRQ)
+                                      연맹/NNC
+                                      회장/NNC+에/PAD)
+                             이어/ADV)
+                       (VP (NP (S (WHNP-2 *op*)
+                                  (S (NP-SBJ *T*-2)
+                                     (ADJP (VJ 중요/NNC+하/XSJ+은/EAN))))
+                               (NP 위치/NNC+이/CO+라/EFN+고/PAD)))))
+           (VV 지적/NNC+하/XSV+으면서/ECS))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (VP (NP-COMP (S (NP-SBJ 노나카/NPR
+                                               자민당/NPR
+                                               간사장/NNC
+                                               대리/NNC+은/PAU)
+                                       (VP (NP-ADV (S (NP-SBJ *pro*)
+						      (VP (VP (NP-ADV 북한/NPR+과/PAD)
+							      (VP (NP-OBJ (S (WHNP-3 *op*)
+									     (S (NP-SBJ *T*-3)
+										(ADJP 돈독하/VJ+은/EAN)))
+									  (NP 채널/NNC+을/PCA))
+								  갖/VV+고/ECS))
+							  있/VX+기/ENM))
+                                                   (NP 때문/NNX+에/PAD))
+                                           (VP (NP-COMP 간사장/NNC+에/PAD)
+                                               (VV 선출/NNC+되/XSV+은/EAN))))
+                                    (NP 것/NNX+으로/PAD))
+                           (VV 알리/VV+어지/XSV+고/ECS))
+                       있/VX+다/EFN+고/PAD))
+           전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=채널</term>
+	    </Arg>
+	    <Rel>
+	      <term>돈독한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

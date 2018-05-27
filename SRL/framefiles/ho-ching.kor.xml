@@ -1,0 +1,53 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>호칭</lemma>
+    <comment>Frames file for '호칭' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>호칭.01</id>
+      <edef>designate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity designated"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>호칭하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 대대는 제3 탱크 연대 제3 탱크 대대라고 호칭합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-OBJ 그/DAN
+               대대/NNC+은/PAU)
+       (NP-COMP (NP 제/XPF+3/NNU
+                    탱크/NNC
+                    연대/NNC)
+                (NP 제/XPF+3/NNU
+                    탱크/NNC
+                    대대/NNC+이라고/PAD))
+       (VV 호칭/NNC+하/XSV+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>그 대대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>라고</f>
+	      <term>제3 탱크 연대 제3 탱크 대대</term>
+	    </Arg>
+	    <Rel>
+	      <term>호칭합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

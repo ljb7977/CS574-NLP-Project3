@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불어넣</lemma>
+    <comment>Frames file for '불어넣' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불어넣.01</id>
+      <edef>give</edef>
+      <roleset>
+	<role argnum="0" argrole="giver"/>
+	<role argnum="1" argrole="thing given"/>
+	<role argnum="2" argrole="receiver"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불어넣다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그녀는 또 자명종이 공기중에 소량의 감귤류 향이나 박하향을 살포, 주인의 잠을 깨우거나 활기를 불어넣어 주게 될지도 모른다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그녀/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (S-COMP (NP-SBJ 자명종/NNC+이/PCA)
+                               (VP (VP (S (NP-SBJ *pro*)
+                                          (VP (NP-ADV 공기/NNC+중/NNX+에/PAD)
+                                              (VP (NP-OBJ (NP 소량/NNC+의/PAN)
+                                                          (NP (NP 감귤류/NNC
+                                                                  향/NNC+이나/PCJ)
+                                                              (NP 박하향/NNC+을/PCA)))
+                                                  (VV 살포/NNC))))
+                                       ,/SCM
+                                       (VP (VP (VP (NP-OBJ (NP 주인/NNC+의/PAN)
+                                                           (NP 잠/NNC+을/PCA))
+                                                   깨우/VV+거나/ECS)
+                                               (VP (NP-OBJ 활기/NNC+을/PCA)
+                                                   (VP 불어넣/VV+어/ECS)))
+                                           주/VX+게/ECS))
+                                   되/VX+을지/EFN+도/PAU))
+                       모르/VV+는다/EFN+고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>자명종</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>공기중에 소량의 감귤류 향이나 박하향을 살포</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>활기</term>
+	    </Arg>
+	    <Rel>
+	      <term>불어넣어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>주게</term>
+	    </Aux>
+	    <Aux>
+	      <f>게</f>
+	      <term>될지도</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

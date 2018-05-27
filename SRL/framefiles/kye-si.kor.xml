@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>계시</lemma>
+    <comment>Frames file for '계시' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>계시.01</id>
+      <edef>exist</edef>
+      <roleset>
+	<role argnum="1" argrole="entity existing"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>계시다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>오늘 훈련의 심판관은 장 중좌인데 지금 지휘 관측소에 계십니다.</text>
+	  <parse>
+(S (S (NP-ADV 오늘/NNC)
+      (S (NP-SBJ (NP 훈련/NNC+의/PCA)
+		 (NP 심판관/NNC+은/PAU))
+	 (VP (NP 장/NPR
+		 중좌/NNC+이/CO+은데/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 지금/ADV)
+	  (VP (NP-COMP 지휘/NNC
+		       관측소/NNC+에/PAD)
+	      계시/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>오늘 훈련의 심판관은 장 중좌인데</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지금</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>지휘 관측소</term>
+	    </Arg>
+	    <Rel>
+	      <term>계십니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

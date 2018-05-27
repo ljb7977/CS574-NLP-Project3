@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부득이</lemma>
+    <comment>Frames file for '부득이' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부득이</id>
+      <edef>unavoidable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being unavoidable"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부득이하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>교황이 집전하는 의식의 책임자인 피에로 마리니 주교는 "과오와 죄에 대한 언급은 솔직하고 죄를 명시해야 하지만 20 세기에 저지른 과오의 숫자를 고려하면 부득이하게 개략적일 수밖에 없을 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP (NP (S (WHNP-2 *op*)
+                                (S (NP-SBJ 교황/NNC+이/PCA)
+                                   (VP (NP-OBJ *T*-2)
+                                       (VV 집전/NNC+하/XSV+는/EAN))))
+                             (NP 의식/NNC+의/PAN))
+                         (NP 책임자/NNC+이/CO+은/EAN)))))
+           (NP 피에로/NPR
+               마리니/NPR
+               주교/NNC+은/PAU))
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ (S (WHNP-3 *op*)
+                             (S (NP-SBJ *T*-3)
+                                (VP (NP-COMP (NP 과오/NNC+과/PCJ)
+                                             (NP 죄/NNC+에/PAD))
+                                    대하/VV+은/EAN)))
+                          (NP 언급/NNC+은/PAU))
+                  (VP (VP (ADJP 솔직하/VJ+고/ECS)
+			  (VP (NP-OBJ 죄/NNC+을/PCA)
+			      (VV 명시/NNC+하/XSV+어야/ECS)))
+		      하/VX+지만/ECS))
+               (S (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP (S (WHNP-4 *op*)
+                                        (S (NP-SBJ *pro*)
+                                           (VP (NP-ADV 20/NNU
+                                                       세기/NNX+에/PAD)
+                                               (VP (NP-OBJ *T*-4)
+                                                   저지르/VV+은/EAN))))
+                                     (NP 과오/NNC+의/PAN))
+                                 (NP 숫자/NNC+을/PCA))
+                         (VV 고려/NNC+하/XSV+으면/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (VP (ADVP (ADV (VJ 부득이/NNC+하/XSJ+게/ECS)))
+                                 (VP (NP 개략/NNC+적/XSF+이/CO+을/EAN)))
+                             (VX 수/NNX+밖에/PAU
+                                 없/VJ+을/EAN))
+                         (VX 것/NNX))))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>부득이하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

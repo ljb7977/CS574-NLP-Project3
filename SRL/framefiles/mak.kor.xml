@@ -1,0 +1,140 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>막</lemma>
+    <comment>Frames file for '막' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>막.01</id>
+      <edef>block</edef>
+      <roleset>
+	<role argnum="0" argrole="blocker"/>
+	<role argnum="1" argrole="thing blocked"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>막다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>의료품은 낭비를 막기 위해 철저히 통제를 합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-OBJ 의료품/NNC+은/PAU)
+       (VP (S (NP-SBJ *pro*)
+              (VP (S-OBJ (NP-SBJ *pro*)
+                         (VP (NP-OBJ 낭비/NNC+을/PCA)
+                             막/VV+기/ENM))
+                  위하/VV+어/ECS))
+           (ADVP 철저히/ADV)
+           (VP (NP-OBJ-LV 통제/NNC+을/PCA)
+               (LV 하/VV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>낭비</term>
+	    </Arg>
+	    <Rel>
+	      <term>막기</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>적이 탱크로 침입해 오는 것을 반전차조가 막았습니다.</text>
+	  <parse>
+(S (NP-OBJ-1 (S (NP-SBJ 적/NNC+이/PCA)
+                (VP (NP-COMP *pro*)
+                    (VP (S (NP-SBJ *pro*)
+			   (VP (NP-ADV 탱크/NNC+으로/PAD)
+			       (VP (VV 침입/NNC+하/XSV+어/ECS))))
+                        (VP 오/VV+는/EAN))))
+             (NP 것/NNX+을/PCA))
+   (S (NP-SBJ 반전차조/NNC+이/PCA)
+      (VP (NP-OBJ *T*-1)
+          막/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적이 탱크로 침입해 오는 것</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>반전차조</term>
+	    </Arg>
+	    <Rel>
+	      <term>막았습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>막히다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>화석연료인 천연가스, 디젤, 휘발유 같은 탄화 수소 화합물을 연료 전지에 사용하려면 먼저 수소로 전환시켜야 하는데 이 과정에서 탄소가 누적돼 전지가 꽉 막혀 버리기 때문이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (ADJP (NP-COMP (S (WHNP-1 *op*)
+                                                     (S (NP-SBJ *T*-1)
+                                                        (VP (NP 화석/NNC+연료/NNC+이/CO+은/EAN))))
+                                                  (NP (NP 천연가스/NNC)
+                                                      ,/SCM
+                                                      (NP 디젤/NNC)
+                                                      ,/SCM
+                                                      (NP 휘발유/NNC)))
+                                         같/VJ+은/EAN)))
+                             (NP 탄화/NNC
+				     수소/NNC
+				     화합물/NNC+을/PCA))
+                     (NP-COMP 연료/NNC
+				  전지/NNC+에/PAD)
+		     (VV 사용/NNC+하/XSV+으려면/ECS)))
+              (S (NP-SBJ *pro*)
+                 (VP (VP (ADVP 먼저/ADV)
+                         (VP (NP-COMP 수소/NNC+으로/PAD)
+                             (NP-OBJ *pro*)
+                             (VV 전환/NNC+시키/XSV+어야/ECS)))
+                     하/VX+는데/ECS))
+              (S (NP-ADV 이/DAN
+                         과정/NNC+에서/PAD)
+                 (S (NP-SBJ 탄소/NNC+이/PCA)
+                    (VP (VV 누적/NNC+되/XSV+어/ECS))))
+              (S (NP-SBJ 전지/NNC+이/PCA)
+                 (VP (VP (ADVP 꽉/ADV)
+                         (VP 막히/VV+어/ECS))
+                     버리/VX+기/ENM)))
+           (NP 때문/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이 과정에서 탄소가 누적돼</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>전지</term>
+	    </Arg>
+	    <Rel>
+	      <term>막혀</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>버리기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

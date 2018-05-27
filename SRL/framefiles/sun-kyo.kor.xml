@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>순교</lemma>
+    <comment>Frames file for '순교' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>순교.01</id>
+      <edef>martyr</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity martyred"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>순교하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>20 세기에 들어 순교한 1 천 300 여명의 가톨릭 선교사들 가운데 488 명만이 시복을 받았다.</text>
+	  <parse>
+(S (NP-ADV (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (NP-COMP 20/NNU
+                                         세기/NNX+에/PAD)
+                                들/VV+어/ECS))
+                         (VP (VV 순교/NNC+하/XSV+은/EAN)))))
+               (NP (NP 1/NNU
+                       천/NNU
+                       300/NNU
+                       여/XSF+명/NNX+의/PAN)
+                   (NP 가톨릭/NNC
+                       선교사/NNC+들/XSF)))
+           (NP 가운데/NNC))
+   (S (NP-SBJ 488/NNU
+              명/NNX+만/PAU+이/PCA)
+      (VP (NP-OBJ 시복/NNC+을/PCA)
+          받/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=1 천 300 여명의 가톨릭 선교사들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>20 세기에 들어</term>
+	    </Arg>
+	    <Rel>
+	      <term>순교한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,135 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>의존</lemma>
+    <comment>Frames file for '의존' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>의존.01</id>
+      <edef>rely</edef>
+      <roleset>
+	<role argnum="0" argrole="relier"/>
+	<role argnum="1" argrole="relied on"/>
+	<role argnum="2" argrole="purpose"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>의존하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="s" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전시에는 포병 작전을 지원하기에 충분한 대량의 탄약 보급을 위해서 국외 자원에 의존해야 할 것이다.</text>
+	  <parse>
+(S (NP-ADV 전시/NNC+에/PAD+은/PAU)
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-OBJ (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (ADJP (S-COMP (NP-SBJ *pro*)
+                                         (VP (NP-OBJ 포병/NNC
+                                                     작전/NNC+을/PCA)
+                                             (VV 지원/NNC+하/XSV+기/ENM+에/PAD)))
+                                 충분하/VJ+은/EAN)))
+                     (NP (NP 대량/NNC+의/PAN)
+                         (NP 탄약/NNC
+                             보급/NNC+을/PCA)))
+             위하/VV+어서/ECS))
+      (S (NP-SBJ *pro*)
+         (VP (VP (VP (NP-COMP 국외/NNC
+                              자원/NNC+에/PAD)
+                     (VV 의존/NNC+하/XSV+어야/ECS))
+                 하/VX+을/EAN)
+             (VX 것/NNX+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전시에는</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>포병 작전을 지원하기에 충분한 대량의 탄약 보급을 위해서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>국외 자원</term>
+	    </Arg>
+	    <Rel>
+	      <term>의존해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>아야</f>
+	      <term>할</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>의존하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 외국에서 정부의 공기업 민영화 정책기조가 흔들리는 것이 아니냐는 문의가 늘고 있다면서 과거에는 외자유치를 차입금에 의존했지만 앞으로는 차입금을 줄이고 투자를 늘려야만 경제의 안정성을 도모할 수 있다고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-ADV 외국/NNC+에서/PAD)
+                  (S (NP-SBJ (S (NP-SBJ (S (NP-SBJ (NP 정부/NNC+의/PAN)
+                                                   (NP 공기업/NNC
+                                                       민영/NNC+화/XSF
+                                                       정책/NNC+기조/NNC+이/PCA))
+                                           (VP 흔들리/VV+는/EAN))
+                                        (NP 것/NNX+이/PCA))
+                                (ADJP 아니/VJ+냐는/EAN))
+                             (NP 문의/NNC+이/PCA))
+                     (VP (VP 늘/VV+고/ECS)
+                         있/VX+다면서/ECS)))
+               (S (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 과거/NNC+에/PAD+은/PAU)
+                         (VP (NP-OBJ 외자/NNC+유치/NNC+을/PCA)
+                             (NP-COMP 차입금/NNC+에/PAD)
+                             (VV 의존/NNC+하/XSV+었/EPF+지만/ECS))))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 앞/NNC+으로/PAD+은/PAU)
+                         (VP (VP (NP-OBJ 차입금/NNC+을/PCA)
+                                 줄이/VV+고/ECS)
+                             (VP (NP-OBJ 투자/NNC+을/PCA)
+                                 늘리/VV+어야/ECS+만/PAU))))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-OBJ (NP 경제/NNC+의/PAN)
+                                     (NP 안정성/NNC+을/PCA))
+                             (VV 도모/NNC+하/XSV+을/EAN))
+                         (VX 수/NNX
+                             있/VJ+다/EFN+고/PAD)))))
+       (VV 강조/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>과거에는</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>외자유치</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>차입금</term>
+	    </Arg>
+	    <Rel>
+	      <term>의존했지만</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

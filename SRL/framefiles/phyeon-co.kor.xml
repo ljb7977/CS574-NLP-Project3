@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>편조</lemma>
+    <comment>Frames file for '편조' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>편조.01</id>
+      <edef>task-organize</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing organized"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>편조하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>전차 부대는 임무 수행을 위해서 융통성 있게 편조할 수 있습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-OBJ 전차/NNC
+                   부대/NNC+은/PAU)
+           (VP (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 임무/NNC
+                              수행/NNC+을/PCA)
+                      위하/VV+어서/ECS))
+               (S (NP-SBJ 융통성/NNC)
+                  (ADJP 있/VJ+게/ECS))
+               (VP (VV 편조/NNC+하/XSV+을/EAN))))
+       (VX 수/NNX
+           있/VJ+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>전차 부대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>임무 수행을 위해서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>융통성 있게</term>
+	    </Arg>
+	    <Rel>
+	      <term>편조할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>숨지</lemma>
+    <comment>Frames file for '숨지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>숨지.01</id>
+      <edef>die</edef>
+      <roleset>
+	<role argnum="1" argrole="entity dying"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>숨지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 기간동안 체첸군도 6 백여명이 숨졌다고 동부전선 사령관인 세레게이 마르코프는 말했다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-ADV 이/DAN
+                     기간/NNC+동안/NNX)
+             (S (NP-SBJ 체첸/NPR+군/NNC+도/PAU)
+                (VP (NP-ADV 6/NNU
+                            백/NNU+여/XSF+명/NNX+이/PCA)
+                    (VP 숨지/VV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP 동부/NNC+전선/NNC
+                            사령관/NNC+이/CO+은/EAN))))
+              (NP 세레게이/NPR
+                  마르코프/NPR+은/PAU))
+      (VP (S-COMP *T*-2)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이 기간동안</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>체첸군</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>6 백여명</term>
+	    </Arg>
+	    <Rel>
+	      <term>숨졌다고</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

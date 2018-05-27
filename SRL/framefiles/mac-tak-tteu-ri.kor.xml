@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>맞닥뜨리</lemma>
+    <comment>Frames file for '맞닥뜨리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>맞닥뜨리.01</id>
+      <edef>be confronted</edef>
+      <roleset>
+	<role argnum="1" argrole="entity confronted"/>
+	<role argnum="2" argrole="confronted with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>맞닥뜨리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>딜레이 총무는 이날 NBC 방송의 시사대담 프로그램 '언론과의 대화'에 출연, 빌 클린턴 대통령의 중국 정책을 비판하면서 미국은 타이완을 방어해야 하며 특히 중국의 군사적 공격 위협에 맞닥뜨리고 있는 상황에서는 더욱 그렇다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 딜레이/NPR
+           총무/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 이날/NNC)
+              (VP (NP-COMP (NP (NP NBC/NFW
+                                   방송/NNC+의/PAN)
+                               (NP 시사/NNC+대담/NNC
+                                   프로그램/NNC))
+                           (NP '/SLQ
+                               (NP 언론/NNC+과/PAD+의/PAN)
+                               (NP 대화/NNC)
+                               '/SRQ
+                               에/PAD))
+                  (VV 출연/NNC))))
+       ,/SCM
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (NP 빌/NPR
+                          클린턴/NPR
+                          대통령/NNC+의/PAN)
+                      (NP 중국/NPR
+                          정책/NNC+을/PCA))
+              (VV 비판/NNC+하/XSV+으면서/ECS)))
+       (VP (S-COMP (S (NP-SBJ 미국/NPR+은/PAU)
+                      (VP (VP (NP-OBJ 타이완/NPR+을/PCA)
+                              (VV 방어/NNC+하/XSV+어야/ECS))
+                          하/VX+으며/ECS))
+                   (S (NP-SBJ *pro*)
+                      (ADJP (ADVP 특히/ADV)
+                            (NP-ADV (S (NP-SBJ *pro*)
+                                       (VP (VP (NP-COMP (NP 중국/NPR+의/PAN)
+                                                        (NP 군사/NNC+적/XSF
+                                                            공격/NNC
+                                                            위협/NNC+에/PAD))
+                                               맞닥뜨리/VV+고/ECS)
+                                           있/VX+는/EAN))
+                                    (NP 상황/NNC+에서/PAD+은/PAU))
+                            (ADVP 더욱/ADV)
+                            (ADJP 그렇/VJ+다/EFN+고/PAD))))
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>중국의 군사적 공격 위협</term>
+	    </Arg>
+	    <Rel>
+	      <term>맞닥뜨리고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

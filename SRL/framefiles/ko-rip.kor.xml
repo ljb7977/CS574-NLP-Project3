@@ -1,0 +1,116 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고립</lemma>
+    <comment>Frames file for '고립' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>고립.01</id>
+      <edef>isolate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity isolated"/>
+	<role argnum="2" argrole="group"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고립시키다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그리고 이 작전의 성공은 제2 탱크 대대가 문산 남쪽에서 문산을 성공적으로 고립시키는 데에 달렸다고 우리 사단장 동지가 말했습니다.</text>
+	  <parse>
+(S (ADCP 그리고/ADC)
+   (S (S-COMP-1 (NP-SBJ (NP 이/DAN
+                            작전/NNC+의/PAN)
+                        (NP 성공/NNC+은/PAU))
+                (VP (NP-COMP (S (NP-SBJ 제/XPF+2/NNU
+                                        탱크/NNC
+                                        대대/NNC+이/PCA)
+                                (VP (NP-ADV 문산/NPR
+                                            남쪽/NNC+에서/PAD)
+                                    (VP (NP-OBJ 문산/NPR+을/PCA)
+                                        (VP (ADVP (ADV 성공/NNC+적/XSF+으로/PAD))
+                                            (VP (VV 고립/NNC+시키/XSV+는/EAN))))))
+                             (NP 데/NNX+에/PAD))
+                    달리/VV+었/EPF+다/EFN+고/PAD))
+      (S (NP-SBJ 우리/NPN
+                 사단장/NNC
+                 동지/NNC+이/PCA)
+         (VP (S-COMP *T*-1)
+             말하/VV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>제2 탱크 대대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>문산 남쪽에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>문산</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>성공적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>고립시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>고립되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인민군의 한 구분대가 공격 작전 중에 주력 부대로부터 고립되면 어떻게 하기로 되어 있는가?</text>
+	  <parse>
+(S (S (NP-SBJ (NP 인민군/NNC+의/PAN)
+              (NP 한/NNU
+                  구분대/NNC+이/PCA))
+      (VP (NP-ADV 공격/NNC
+                  작전/NNC
+                  중/NNX+에/PAD)
+          (VP (NP-COMP 주력/NNC
+                       부대/NNC+으로부터/PAD)
+              (VV 고립/NNC+되/XSV+으면/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (ADVP 어떻게/ADV)
+                          (VP 하/VV+기/ENM+으로/PAD)))
+              되/VV+어/ECS)
+          있/VX+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>인민군의 한 구분대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>공격 작전 중에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로부터</f>
+	      <term>주력 부대</term>
+	    </Arg>
+	    <Rel>
+	      <term>고립되면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

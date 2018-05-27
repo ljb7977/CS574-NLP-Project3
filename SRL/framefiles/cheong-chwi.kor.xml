@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>청취</lemma>
+    <comment>Frames file for '청취' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>청취.01</id>
+      <edef>monitor</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing monitored"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>청취하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북조선에서는 남조선 방송을 아무도 청취하지 못합니다.</text>
+	  <parse>
+(S (NP-ADV 북조선/NPR+에서/PAD+은/PAU)
+   (S (NP-OBJ-1 남조선/NPR
+                방송/NNC+을/PCA)
+      (S (NP-SBJ 아무/NPN+도/PAU)
+         (VP (VP (NP-OBJ *T*-1)
+                 (VV 청취/NNC+하/XSV+지/ECS))
+             못하/VX+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>북조선에서는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>남조선 방송</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>아무</term>
+	    </Arg>
+	    <Rel>
+	      <term>청취하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못합니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

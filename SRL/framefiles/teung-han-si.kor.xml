@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>등한시</lemma>
+    <comment>Frames file for '등한시' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>등한시.01</id>
+      <edef>neglect</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing neglected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>등한시되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 나스닥 시장에서는 지나치게 성장성만이 강조되면서 기업의 내재가치가 등한시되는 경향이 있어 한순간 폭락할 것이란 우려도 상존하고 있다고 전문가들은 덧붙였다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (S-COMP-1 (S (NP-ADV 나스닥/NPR
+                           시장/NNC+에서/PAD+은/PAU)
+                   (S (NP-SBJ (S (S (S (NP-SBJ *pro*)
+                                       (VP 지나치/VV+게/ECS))
+                                    (S (NP-SBJ 성장성/NNC+만/PAU+이/PCA)
+                                       (VP (VV 강조/NNC+되/XSV+으면서/ECS))))
+                                 (S (NP-SBJ (NP 기업/NNC+의/PAN)
+                                            (NP 내재/NNC+가치/NNC+이/PCA))
+                                    (VP (VV 등한시/NNC+되/XSV+는/EAN))))
+                              (NP 경향/NNC+이/PCA))
+                      (ADJP 있/VJ+어/ECS)))
+                (S (NP-SBJ (NP (S (NP-SBJ *pro*)
+                                  (VP (NP-ADV 한순간/NNC)
+                                      (VP (VV 폭락/NNC+하/XSV+을/EAN))))
+                               (NP 것/NNX+이란/PAN))
+                           (NP 우려/NNC+도/PAU))
+                   (VP (VP (VV 상존/NNC+하/XSV+고/ECS))
+                       있/VX+다/EFN+고/PAD)))
+      (S (NP-SBJ 전문가/NNC+들/XSF+은/PAU)
+         (VP (S-COMP *T*-1)
+             덧붙이/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>지나치게 성장성만이 강조되면서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>기업의 내재가치</term>
+	    </Arg>
+	    <Rel>
+	      <term>등한시되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

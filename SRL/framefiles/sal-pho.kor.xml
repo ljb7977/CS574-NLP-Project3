@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>살포</lemma>
+    <comment>Frames file for '살포' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>살포.01</id>
+      <edef>scatter</edef>
+      <roleset>
+	<role argnum="0" argrole="scatterer"/>
+	<role argnum="1" argrole="thing scattered"/>
+	<role argnum="2" argrole="scattered on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>살포하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>북한은 그러나 2 월 들어 전방지역 국군병사들에게 월북시 주어지는 혜택과 월북방법을 자세히 소개한 전단을 집중 살포하는 등 국군의 월북을 종용하고 있다고 합참은 밝혔다.</text>
+	  <parse>
+(S (S-COMP-3 (NP-SBJ 북한/NPR+은/PAU)
+             (VP (ADCP 그러나/ADC)
+                 (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                    (VP (S (NP-SBJ *pro*)
+                                           (VP (NP-COMP 2/NNU
+                                                        월/NNX)
+                                               들/VV+어/ECS))
+                                        (VP (NP-COMP (NP 전방/NNC+지역/NNC)
+                                                     (NP 국군/NNC+병사/NNC+들/XSF+에게/PAD))
+                                            (NP-OBJ (S (WHNP-2 *op*)
+                                                       (S (NP-SBJ *T*-2)
+                                                          (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                                             (S (NP-SBJ *T*-1)
+                                                                                (VP (NP-ADV 월북/NNC+시/NNX)
+                                                                                    (VP (NP-COMP *pro*)
+                                                                                        (VV 주/VV+어지/XSV+는/EAN)))))
+                                                                          (NP 혜택/NNC+과/PCJ))
+                                                                      (NP 월북/NNC+방법/NNC+을/PCA))
+                                                              (VP (ADVP 자세히/ADV)
+                                                                  (VP (VV 소개/NNC+하/XSV+은/EAN))))))
+                                                    (NP 전단/NNC+을/PCA))
+                                            (VP (NP-ADV 집중/NNC)
+                                                (VP (VV 살포/NNC+하/XSV+는/EAN))))))
+                                 (NP 등/NNX))
+                         (VP (NP-OBJ (NP 국군/NNC+의/PAN)
+                                     (NP 월북/NNC+을/PCA))
+                             (VV 종용/NNC+하/XSV+고/ECS)))
+                     있/VX+다/EFN+고/PAD)))
+   (S (NP-SBJ 합참/NNC+은/PAU)
+      (VP (S-COMP *T*-3)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>2 월 들어</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>전방지역 국군병사들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>월북시 주어지는 혜택과 월북방법을 자세히 소개한 전단</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>집중</term>
+	    </Arg>
+	    <Rel>
+	      <term>살포하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

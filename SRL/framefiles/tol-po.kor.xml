@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌보</lemma>
+    <comment>Frames file for '돌보' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>돌보.01</id>
+      <edef>take care of</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity taken care of"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>스투퍼의 책에는 바로 해리 포터 시리즈의 책제목인 해리 포터라는 주인공이 나올 뿐 아니라 고아 소년 2 명을 돌보는 `머글'이라는 소인들이 등장하는데 `머글'은 해리 포터 시리즈에서 마법사들이 인간을 지칭하는 말로 쓰인다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-COMP-2 (NP 스투퍼/NPR+의/PAN)
+                            (NP 책/NNC+에/PAD+은/PAU))
+                 (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (NP (NP 바로/DAN
+                                                  해리/NPR
+                                                  포터/NPR
+                                                  시리즈/NNC+의/PAN)
+                                              (NP 책/NNC+제목/NNC+이/CO+은/EAN)))))
+                                (NP 해리/NPR
+                                    포터/NPR+이라는/PAN))
+                            (NP 주인공/NNC+이/PCA))
+                    (VP (NP-COMP *T*-2)
+                        나오/VV+을/EAN)))
+              (NP 뿐/NNX))
+      (ADJP 아니/VJ+라/ECS))
+   (S (NP-SBJ (S (WHNP-3 *op*)
+                 (S (NP-SBJ *T*-3)
+                    (VP (NP-OBJ 고아/NNC
+                                소년/NNC
+                                2/NNU
+                                명/NNX+을/PCA)
+                        돌보/VV+는/EAN)))
+              (NP (NP `/SLQ
+                      머글/NPR
+                      '/SRQ
+                      이라는/PAN)
+                  (NP 소인/NNC+들/XSF+이/PCA)))
+      (VP (VV 등장/NNC+하/XSV+는데/ECS)))
+   (S (NP-SBJ `/SLQ
+              머글/NPR
+              '/SRQ
+              은/PAU)
+      (VP (NP-ADV 해리/NPR
+                  포터/NPR
+                  시리즈/NNC+에서/PAD)
+          (VP (NP-COMP (S (WHNP-4 *op*)
+                          (S (NP-SBJ 마법사/NNC+들/XSF+이/PCA)
+                             (VP (NP-COMP *T*-4)
+                                 (NP-OBJ 인간/NNC+을/PCA)
+                                 (VV 지칭/NNC+하/XSV+는/EAN))))
+                       (NP 말/NNC+으로/PAD))
+              쓰이/VV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=`머글'이라는 소인들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>고아 소년 2 명</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌보는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

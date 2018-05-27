@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>명예롭</lemma>
+    <comment>Frames file for '명예롭' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>명예롭.01</id>
+      <edef>honorable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being honorable"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>명예롭다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 그가 지난 29 일 말한 것처럼 명예로운 돌파구를 찾기 위해 노력하고 있으며 문제해결에 시간이 필요하다고 말해 이같은 가능성을 높이고 있다.</text>
+	  <parse>
+(S (ADCP 또/ADC)
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-ADV (S (WHNP-1 *op*)
+                        (S (NP-SBJ 그/NPN+이/PCA)
+                           (VP (NP-ADV 지난/DAN
+                                       29/NNU
+                                       일/NNX)
+                               (VP (NP-OBJ *T*-1)
+                                   말하/VV+은/EAN))))
+                     (NP 것/NNX+처럼/PAD))
+             (VP (S-COMP (S (NP-SBJ *pro*)
+                            (VP (VP (S (NP-SBJ *pro*)
+                                       (VP (S-OBJ (NP-SBJ *pro*)
+						  (VP (NP-OBJ (S (WHNP-2 *op*)
+								 (S (NP-SBJ *T*-2)
+								    (ADJP 명예롭/VJ+은/EAN)))
+							      (NP 돌파구/NNC+을/PCA))
+						      찾/VV+기/ENM))
+                                           위하/VV+어/ECS))
+                                    (VP (VV 노력/NNC+하/XSV+고/ECS)))
+                                있/VX+으며/ECS))
+                         (S (NP-COMP-3 문제/NNC+해결/NNC+에/PAD)
+                            (S (NP-SBJ 시간/NNC+이/PCA)
+                               (ADJP (NP-COMP *T*-3)
+                                     (VJ 필요/NNC+하/XSJ+다/EFN+고/PAD)))))
+                 말하/VV+어/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (VP (NP-OBJ 이같은/DAN
+                         가능성/NNC+을/PCA)
+                 높이/VV+고/ECS)
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=돌파구</term>
+	    </Arg>
+	    <Rel>
+	      <term>명예로운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,137 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>입국</lemma>
+    <comment>Frames file for '입국' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>입국.01</id>
+      <edef>enter a country</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="thing entering"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입국하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>북한을 탈출해 제 3 국에 체류하던 북한이탈주민 15 명이 10 일 오전 김포공항을 통해 입국했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 북한/NPR+을/PCA)
+                            (VV 탈출/NNC+하/XSV+어/ECS)))
+                     (VP (NP-COMP 제/DAN
+                                  3/NNU
+                                  국/NNX+에/PAD)
+                         (VV 체류/NNC+하/XSV+던/EAN)))))
+           (NP (NP 북한/NPR+이탈/NNC+주민/NNC)
+               (NP 15/NNU
+                   명/NNX+이/PCA)))
+   (VP (NP-ADV 10/NNU
+               일/NNX
+               오전/NNC)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 김포/NPR+공항/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (VP (VV 입국/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>북한을 탈출해 제 3 국에 체류하던 북한이탈주민 15 명</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>10 일 오전</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>김포공항을 통해</term>
+	    </Arg>
+	    <Rel>
+	      <term>입국했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>입국시키다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>외교통상부는 이들이 96 년부터 99 년 사이에 북한을 탈출해 제 3 국으로 이동, 남한 정착을 희망해 옴에 따라 제 3 국 정부의 협조를 받아 입국시켰으며 현재 관계당국에서 이들의 정확한 신원과 탈북동기 및 경위 등을 조사하고 있다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 외교통상부/NNC+은/PAU)
+   (VP (S-COMP (S (S (NP-SBJ *pro*)
+                     (VP (S-COMP (S (NP-SBJ 이/NPN+들/XSF+이/PCA)
+                                    (VP (NP-ADV (NP (NP 96/NNU
+                                                        년/NNX+부터/PAU)
+                                                    (NP 99/NNU
+                                                        년/NNX))
+                                                (NP 사이/NNC+에/PAD))
+                                        (VP (NP-OBJ 북한/NPR+을/PCA)
+                                            (VV 탈출/NNC+하/XSV+어/ECS))))
+                                 (S (NP-SBJ *pro*)
+                                    (VP (NP-COMP 제/DAN
+                                                 3/NNU
+                                                 국/NNX+으로/PAD)
+                                        (VV 이동/NNC)))
+                                 ,/SCM
+                                 (S (NP-SBJ *pro*)
+                                    (VP (VP (NP-OBJ 남한/NPR
+                                                    정착/NNC+을/PCA)
+                                            (VV 희망/NNC+하/XSV+어/ECS))
+                                        오/VX+음/ENM+에/PAD)))
+                         따르/VV+어/ECS))
+                  (S (NP-SBJ *pro*)
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ (NP (NP 제/DAN
+                                                3/NNU
+                                                국/NNX)
+                                            (NP 정부/NNC+의/PAN))
+                                        (NP 협조/NNC+을/PCA))
+                                받/VV+어/ECS))
+                         (VP (NP-OBJ *pro*)
+                             (VV 입국/NNC+시키/XSV+었/EPF+으며/ECS)))))
+               (S (NP-ADV 현재/NNC)
+                  (S (NP-SBJ 관계/NNC+당국/NNC+에서/PCA)
+                     (VP (VP (NP-OBJ (NP 이/NPN+들/XSF+의/PAN)
+                                     (NP (NP (NP (S (WHNP-1 *op*)
+                                                    (S (NP-SBJ *T*-1)
+                                                       (ADJP (VJ 정확/NNC+하/XSJ+은/EAN))))
+                                                 (NP 신원/NNC+과/PCJ))
+                                             (NP 탈북/NNC+동기/NNC)
+                                             (ADCP 및/ADC)
+                                             (NP 경위/NNC))
+                                         (NP 등/NNX+을/PCA)))
+                             (VV 조사/NNC+하/XSV+고/ECS))
+                         있/VX+다/EFN+고/PAD))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이들이 96 년부터 99 년 사이에 북한을 탈출해 제 3 국으로 이동, 남한 정착을 희망해 옴에 따라</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>제 3 국 정부의 협조를 받아</term>
+	    </Arg>
+	    <Rel>
+	      <term>입국시켰으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

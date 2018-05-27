@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>속</lemma>
+    <comment>Frames file for '속' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>속.01</id>
+      <edef>deceive</edef>
+      <roleset>
+	<role argnum="0" argrole="liar"/>
+	<role argnum="1" argrole="lied to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>속다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러니까 더 이상 그런 선전에는 속지 마!</text>
+	  <parse>
+(S (ADCP 그러니까/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (ADVP 더/ADV)
+                      (NP 이상/NNC))
+              (VP (NP-COMP 그런/DAN
+                           선전/NNC+에/PAD+은/PAU)
+                  속/VV+지/ECS))
+          말/VX+어/EFN))
+   !/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러니까</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>더 이상</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>그런 선전</term>
+	    </Arg>
+	    <Rel>
+	      <term>속지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>마</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>속이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>제..제가 그 땐 속이려고 했지요.</text>
+	  <parse>
+(S (NP-SBJ 제/NPN
+           ../SSY
+           제/NPN+이/PCA)
+   (VP (VP (NP-ADV 그/DAN
+                   때/NNC+은/PAU)
+           (VP (NP-OBJ *pro*)
+               속이/VV+으려고/ECS))
+       하/VX+었/EPF+지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>제..제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그 땐</term>
+	    </Arg>
+	    <Rel>
+	      <term>속이려고</term>
+	    </Rel>
+	    <Aux>
+	      <f>려고</f>
+	      <term>했지요</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

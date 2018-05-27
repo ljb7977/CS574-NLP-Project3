@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>깔끔하</lemma>
+    <comment>Frames file for '깔끔하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>깔끔하.01</id>
+      <edef>neat</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being neat"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>깔끔하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김선우는 8 일(이하 한국시간) 미국 플로리다주 포트 마이어스에서 열린 메이저리그 피츠버그 파이어리츠와의 경기에서 선발 라몬 마르티네스에 이어 2 번째 투수로 등판해 1 이닝동안 1 안타만을 허용하고 무실점으로 깔끔하게 막았다.</text>
+	  <parse>
+(S (NP-SBJ 김선우/NPR+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+	  (VP (NP-ADV 8/NNU
+		      일/NNX
+		      (PRN -LRB-/SLQ
+			   이하/NNC
+			   한국/NPR+시간/NNC
+			   -RRB-/SRQ))
+	      (NP-ADV (S (WHNP-1 *op*)
+			 (S (NP-SBJ *T*-1)
+			    (VP (NP-ADV 미국/NPR
+					    플로리다/NPR+주/NNC
+					    포트/NPR
+					    마이어스/NPR+에서/PAD)
+				(VP 열리/VV+은/EAN))))
+		      (NP (NP 메이저리그/NPR)
+			  (NP 피츠버그/NPR
+				      파이어리츠/NPR+과/PAD+의/PAN)
+			  (NP 경기/NNC+에서/PAD)))
+	      (ADVP (NP-COMP 선발/NNC
+				 라몬/NPR
+				 마르티네스/NPR+에/PAD)
+		    이어/ADV)
+	      (NP-ADV 2/NNU
+		      번째/NNX
+		      투수/NNC+으로/PAD)
+	      (VP (VV 등판/NNC+하/XSV+어/ECS))))
+       (VP (VP (NP-ADV 1/NNU
+		       이닝/NNX+동안/NNX)
+	       (VP (NP-OBJ 1/NNU
+			   안타/NNC+만/PAU+을/PCA)
+		   (VV 허용/NNC+하/XSV+고/ECS)))
+	   (VP (NP-ADV 무실점/NNC+으로/PAD)
+	       (ADVP (ADV 깔끔하/VJ+게/ECS))
+	       (VP (NP-OBJ *pro*)
+		   막/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>깔끔하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

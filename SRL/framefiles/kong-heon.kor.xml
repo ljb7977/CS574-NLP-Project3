@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>공헌</lemma>
+    <comment>Frames file for '공헌' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>공헌.01</id>
+      <edef>contribute</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="contributed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>공헌하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 리 원장은 천 후보가 당선시 행정원장에 임명하겠다고 선언한 것에 대해 "관직에 아무 관심이 없으며 학계에 남아 사회발전에 공헌하고 싶다"고 말했으나 양안간의 관계개선을 위한 중재에 나설 의향은 있다고 밝혔다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ 리/NPR
+              원장/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP (S (NP-SBJ 천/NPR
+                                     후보/NNC+이/PCA)
+                             (VP (S-COMP (NP-SBJ *pro*)
+                                         (VP (NP-ADV 당선/NNC+시/XSF)
+                                             (VP (NP-COMP 행정/NNC+원장/NNC+에/PAD)
+                                                 (NP-OBJ *pro*)
+                                                 (VV 임명/NNC+하/XSV+겠/EPF+다/EFN+고/PAD))))
+                                 (VV 선언/NNC+하/XSV+은/EAN)))
+                          (NP 것/NNX+에/PAD))
+                 대하/VV+어/ECS))
+          (VP (S-COMP "/SLQ
+                      (S (NP-COMP-2 관직/NNC+에/PAD)
+                         (S (NP-SBJ 아무/DAN
+                                    관심/NNC+이/PCA)
+                            (ADJP (NP-COMP *T*-2)
+                                  없/VJ+으며/ECS)))
+                      (S (S (NP-SBJ *pro*)
+                            (VP (NP-COMP 학계/NNC+에/PAD)
+                                남/VV+어/ECS))
+                         (S (NP-SBJ *pro*)
+                            (VP (VP (NP-COMP 사회/NNC+발전/NNC+에/PAD)
+                                    (VV 공헌/NNC+하/XSV+고/ECS))
+                                싶/VX+다/EFN)))
+                      "/SRQ
+                      고/PAD)
+              말하/VV+었/EPF+으나/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ (S (NP-SBJ *pro*)
+                             (VP (NP-COMP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (NP-OBJ (NP 양안/NNC+간/XSF+의/PAN)
+                                                            (NP 관계/NNC+개선/NNC+을/PCA))
+                                                    위하/VV+은/EAN)))
+                                          (NP 중재/NNC+에/PAD))
+                                 나서/VV+을/EAN))
+                          (NP 의향/NNC+은/PAU))
+                  (ADJP 있/VJ+다/EFN+고/PAD))
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>관직에 아무 관심이 없으며</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>학계에 남아</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>사회발전</term>
+	    </Arg>
+	    <Rel>
+	      <term>공헌하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>싶다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

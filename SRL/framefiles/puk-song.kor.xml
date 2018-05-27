@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>북송</lemma>
+    <comment>Frames file for '북송' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>북송.01</id>
+      <edef>send to north Korea</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing sent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>북송하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>축협과 우리민족서로돕기운동은 2000 년에 2 천만 북한 동포에게 2 천만개의 계란을 보내는 `트리플 2000 캠페인'을 통해 16 억원을 모금했으며, 지난해 12 월과 지난 1 월 각 500 만개의 계란을 북송했다.</text>
+	  <parse>
+(S (S (NP-SBJ 축협/NPR+과/PCJ
+              우리민족서로돕기/NPR+운동/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (NP-SBJ *pro*)
+                            (VP (NP-ADV 2000/NNU
+                                        년/NNX+에/PAD)
+                                (VP (NP-COMP 2/NNU
+                                             천만/NNU
+                                             북한/NPR
+                                             동포/NNC+에게/PAD)
+                                    (NP-OBJ (NP 2/NNU
+                                                천만/NNU+개/NNX+의/PAN)
+                                            (NP 계란/NNC+을/PCA))
+                                    보내/VV+는/EAN)))
+                         (NP `/SLQ
+                             트리플/NNC
+                             2000/NNU
+                             캠페인/NNC
+                             '/SRQ
+                             을/PCA))
+                 통하/VV+어/ECS))
+          (VP (NP-OBJ 16/NNU
+                      억/NNU+원/NNX+을/PCA)
+              (VV 모금/NNC+하/XSV+었/EPF+으며/ECS))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (NP 지난해/NNC
+                      12/NNU
+                      월/NNX+과/PCJ)
+                  (NP 지난/DAN
+                      1/NNU
+                      월/NNX))
+          (VP (NP-OBJ (NP 각/DAN
+                          500/NNU
+                          만/NNU+개/NNX+의/PAN)
+                      (NP 계란/NNC+을/PCA))
+              (VV 북송/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해 12 월과 지난 1 월</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>각 500 만개의 계란</term>
+	    </Arg>
+	    <Rel>
+	      <term>북송했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

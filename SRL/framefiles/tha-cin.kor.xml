@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>타진</lemma>
+    <comment>Frames file for '타진' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>타진.01</id>
+      <edef>ask</edef>
+      <roleset>
+	<role argnum="0" argrole="asker"/>
+	<role argnum="1" argrole="question"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>타진하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>구미지역을 기반으로 하고 있는 다임러는 아시아시장 진출면에서 라이벌인 GM 및 포드에 크게 뒤져 있는 데다 소형차 전략에서도 명확한 비전을 그리지 못해 미쓰비시측에 제휴를 타진한 것으로 알려졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (VP (NP-OBJ 구미/NPR+지역/NNC+을/PCA)
+                                         (NP-COMP 기반/NNC+으로/PAD)
+                                         (LV 하/VV+고/ECS))
+                                     있/VX+는/EAN)))
+                           (NP 다임러/NPR+은/PAU))
+                   (VP (NP-ADV (S (NP-SBJ *pro*)
+                                  (VP (VP (NP-ADV 아시아/NPR+시장/NNC
+                                                  진출/NNC+면/NNC+에서/PAD)
+                                          (VP (NP-COMP (S (WHNP-2 *op*)
+                                                          (S (NP-SBJ *T*-2)
+                                                             (VP (NP 라이벌/NNC+이/CO+은/EAN))))
+                                                       (NP (NP GM/NFW)
+                                                           (ADCP 및/ADC)
+                                                           (NP 포드/NPR+에/PAD)))
+                                              (VP (ADVP (ADV 크/VJ+게/ECS))
+                                                  (VP 뒤지/VV+어/ECS))))
+                                      있/VX+는/EAN))
+                               (NP 데/NNX+다/PAU))
+                       (S (NP-SBJ *pro*)
+                          (VP (VP (NP-ADV 소형차/NNC
+                                          전략/NNC+에서/PAD+도/PAU)
+                                  (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                 (S (NP-SBJ *T*-3)
+                                                    (ADJP 명확하/VJ+은/EAN)))
+                                              (NP 비전/NNC+을/PCA))
+                                      그리/VV+지/ECS))
+                              못하/VX+어/ECS))
+                       (VP (NP-COMP 미쓰비시/NPR+측/XSF+에/PAD)
+                           (NP-OBJ 제휴/NNC+을/PCA)
+                           (VV 타진/NNC+하/XSV+은/EAN))))
+                (NP 것/NNX+으로/PAD))
+       (VV 알리/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>구미지역을 기반으로 하고 있는 다임러</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>아시아시장 진출면에서 라이벌인 GM 및 포드에 크게 뒤져 있는 데다 소형차 전략에서도 명확한 비전을 그리지 못해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>미쓰비시측</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>제휴</term>
+	    </Arg>
+	    <Rel>
+	      <term>타진한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

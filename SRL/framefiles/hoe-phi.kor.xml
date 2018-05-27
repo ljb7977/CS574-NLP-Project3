@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>회피</lemma>
+    <comment>Frames file for '회피' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>회피.01</id>
+      <edef>evade</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing evaded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>회피하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포드 유럽법인 대변인은 이 보도에 대한 논평을 회피했다.</text>
+	  <parse>
+(S (NP-SBJ 포드/NPR
+           유럽/NPR+법인/NNC
+           대변인/NNC+은/PAU)
+   (VP (NP-OBJ (S (WHNP-1 *op*)
+		  (S (NP-SBJ *T*-1)
+		     (VP (NP-COMP 이/DAN
+				    보도/NNC+에/PAD)
+			 대하/VV+은/EAN)))
+               (NP 논평/NNC+을/PCA))
+       (VV 회피/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>포드 유럽법인 대변인</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 보도에 대한 논평</term>
+	    </Arg>
+	    <Rel>
+	      <term>회피했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

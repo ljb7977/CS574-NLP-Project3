@@ -1,0 +1,100 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고맙</lemma>
+    <comment>Frames file for '고맙' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>고맙.01</id>
+      <edef>thankful</edef>
+      <roleset>
+	<role argnum="1" argrole="person feeling thankful"/>
+	<role argnum="2" argrole="for what"/>
+	<role argnum="3" argrole="person thanked"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고맙다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>고맙습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (ADJP (NP-COMP *pro*)
+	 고맙/VJ+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>고맙습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>고마워하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>그는 대북 문제와 관련해 "툭하면 (북한에) 갖다준다고 하지만 그들은 고마워하지 않으며 잠수함이나 보내고 있다"며 김 대통령의 `베를린 선언'에 비판적인 입장을 취했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP 대/XPF+북/NPR
+                       문제/NNC+과/PAD)
+              (VV 관련/NNC+하/XSV+어/ECS)))
+       (S "/SLQ
+          (S (NP-SBJ *pro*)
+             (VP (S-COMP (NP-SBJ *pro*)
+                         (VP (ADVP 툭하면/ADV)
+                             (PRN -LRB-/SLQ
+                                  (NP-COMP 북한/NPR+에/PAD)
+                                  -RRB-/SRQ)
+                             (VP (NP-OBJ *pro*)
+                                 갖다주/VV+는다/EFN+고/PAD)))
+                 하/VV+지만/ECS))
+          (S (NP-SBJ 그/NPN+들/XSF+은/PAU)
+             (VP (VP (VV 고맙/VJ+어하/XSV+지/ECS))
+                 않/VX+으며/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (VP (NP-OBJ 잠수함/NNC+이나/PAU)
+                     보내/VV+고/ECS)
+                 있/VX+다/EFN))
+          "/SRQ
+          며/ECS)
+       (VP (NP-ADV (NP 김/NPR
+                       대통령/NNC+의/PAN)
+                   (NP `/SLQ
+                       베를린/NPR
+                       선언/NNC
+                       '/SRQ
+                       에/PAD))
+           (VP (NP-OBJ (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP 비판/NNC+적/XSF+이/CO+은/EAN))))
+                       (NP 입장/NNC+을/PCA))
+               취하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그들</term>
+	    </Arg>
+	    <Rel>
+	      <term>고마워하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않으며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

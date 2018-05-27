@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>화기애애하</lemma>
+    <comment>Frames file for '화기애애하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>화기애애하.01</id>
+      <edef>congenial</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being congenial"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>화기애애하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>자살 대변인은 이들 회동에 대해 "셀레즈뇨프 의장과의 회동은 모두 화기애애한 분위기에서 진행됐으며 인도와 러시아 양국관계의 전략적 특성에 대한 논의가 있었다"고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 자살/NPR
+           대변인/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP 이/NPN+들/XSF
+                       회동/NNC+에/PAD)
+              대하/VV+어/ECS))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ (NP 셀레즈뇨프/NPR
+                                  의장/NNC+과/PAD+의/PAN)
+                              (NP 회동/NNC+은/PAU))
+                      (VP (ADVP 모두/ADV)
+                          (NP-ADV (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (ADJP 화기애애하/VJ+은/EAN)))
+                                  (NP 분위기/NNC+에서/PAD))
+                          (VP (VV 진행/NNC+되/XSV+었/EPF+으며/ECS))))
+                   (S (NP-SBJ (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP-COMP (NP (NP (NP 인도/NPR+과/PCJ)
+                                                         (NP 러시아/NPR))
+                                                     (NP 양국/NNC+관계/NNC+의/PAN))
+                                                 (NP 전략/NNC+적/XSF
+                                                     특성/NNC+에/PAD))
+                                        대하/VV+은/EAN)))
+                              (NP 논의/NNC+이/PCA))
+                      (ADJP 있/VJ+었/EPF+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=분위기</term>
+	    </Arg>
+	    <Rel>
+	      <term>화기애애한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

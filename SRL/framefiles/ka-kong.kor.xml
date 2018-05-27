@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가공</lemma>
+    <comment>Frames file for '가공' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가공.01</id>
+      <edef>process</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing processed"/>
+	<role argnum="2" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가공하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>위세정보기술은 인터넷 기반 기업들이 축적한 방대한 데이터를 분석, 가공하여 의사결정에 반영하도록 돕는 인터넷 비즈니스 인텔리전스 사업을 주로 하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 위세정보기술/NPR+은/PAU)
+   (VP (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (S (WHNP-1 *op*)
+                                        (S (S (NP-SBJ 인터넷/NNC
+                                                      기반/NNC
+                                                      기업/NNC+들/XSF+이/PCA)
+                                              (VP (NP-OBJ *T*-1)
+                                                  (VV 축적/NNC+하/XSV+은/EAN)))
+                                           (S (NP-SBJ *T*-1)
+                                              (ADJP (VJ 방대/NNC+하/XSJ+은/EAN)))))
+                                     (NP 데이터/NNC+을/PCA))
+                             (VV (VV 분석/NNC)
+                                 ,/SCM
+                                 (VV 가공/NNC+하/XSV+어/ECS))))
+                      (S (NP-SBJ *pro*)
+                         (VP (S-COMP (NP-SBJ *pro*)
+                                     (VP (NP-COMP 의사/NNC+결정/NNC+에/PAD)
+                                         (NP-OBJ *pro*)
+                                         (VV 반영/NNC+하/XSV+도록/ECS)))
+                             돕/VV+는/EAN)))
+                   (NP 인터넷/NNC
+                       비즈니스/NNC
+                       인텔리전스/NNC
+                       사업/NNC+을/PCA))
+           (VP (ADVP 주로/ADV)
+               (VP 하/VV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>인터넷 기반 기업들이 축적한 방대한 데이터</term>
+	    </Arg>
+	    <Rel>
+	      <term>가공하여</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

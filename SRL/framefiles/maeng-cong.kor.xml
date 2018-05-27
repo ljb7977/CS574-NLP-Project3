@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>맹종</lemma>
+    <comment>Frames file for '맹종' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>맹종.01</id>
+      <edef>follow blindly</edef>
+      <roleset>
+	<role argnum="0" argrole="pursuer"/>
+	<role argnum="1" argrole="thing followed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>맹종하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 위원장은 "현 정권이 국제통화기금(IMF) 지시에 맹종해 과도한 구조조정과 살인적인 고금리 정책을 쓰는 바람에 기업들이 연쇄부도, 대량 실업자가 발생했으며 외국인과 부유층만 돈을 벌게 하는 정책으로 빈부격차가 심화된 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           위원장/NNC+은/PAU)
+   (VP (NP-COMP "/SLQ
+                (S (NP-ADV (S (S (NP-SBJ 현/DAN
+                                         정권/NNC+이/PCA)
+                                 (VP (NP-COMP 국제통화기금/NPR
+                                              (PRN -LRB-/SLQ
+                                                   (NP IMF/NFW)
+                                                   -RRB-/SRQ)
+                                              지시/NNC+에/PAD)
+                                     (VV 맹종/NNC+하/XSV+어/ECS)))
+                              (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                                    (S (NP-SBJ *T*-1)
+                                                       (ADJP (VJ 과도/NNC+하/XSJ+은/EAN))))
+                                                 (NP 구조/NNC+조정/NNC+과/PCJ))
+                                             (NP (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *T*-2)
+                                                       (VP (NP 살인/NNC+적/XSF+이/CO+은/EAN))))
+                                                 (NP 고/XPF+금리/NNC
+                                                     정책/NNC+을/PCA)))
+                                     쓰/VV+는/EAN)))
+                           (NP 바람/NNX+에/PAD))
+                   (S (NP-SBJ 기업/NNC+들/XSF+이/PCA)
+                      (VP (VV 연쇄/NNC+부도/NNC)))
+                   ,/SCM
+                   (S (NP-SBJ 대량/NNC
+                              실업자/NNC+이/PCA)
+                      (VP (VV 발생/NNC+하/XSV+었/EPF+으며/ECS)))
+                   (S (NP-ADV (S (WHNP-3 *op*)
+                                 (S (NP-SBJ *T*-3)
+                                    (VP (S-COMP (NP-SBJ (NP 외국인/NNC+과/PCJ)
+                                                        (NP 부유층/NNC+만/PAU))
+                                                (VP (NP-OBJ 돈/NNC+을/PCA)
+                                                    벌/VV+게/ECS))
+                                        하/VV+는/EAN)))
+                              (NP 정책/NNC+으로/PAD))
+                      (S (NP-SBJ 빈부/NNC+격차/NNC+이/PCA)
+                         (VP (VV 심화/NNC+되/XSV+은/EAN)))))
+                (NP 것/NNX)
+                "/SRQ
+                이라고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>현 정권</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>국제통화기금(IMF) 지시</term>
+	    </Arg>
+	    <Rel>
+	      <term>맹종해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

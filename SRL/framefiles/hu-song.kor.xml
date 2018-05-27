@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>후송</lemma>
+    <comment>Frames file for '후송' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>후송.01</id>
+      <edef>send back</edef>
+      <roleset>
+	<role argnum="0" argrole="sender"/>
+	<role argnum="1" argrole="entity sent"/>
+	<role argnum="2" argrole="sent to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>후송하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>중대에서는 정비를 요하는 화기를 즉시 대대로 후송하게 됩니다.</text>
+	  <parse>
+(S (NP-SBJ 중대/NNC+에서/PCA+은/PAU)
+   (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (NP-OBJ 정비/NNC+을/PCA)
+                             요하/VV+는/EAN)))
+                   (NP 화기/NNC+을/PCA))
+           (VP (ADVP 즉시/ADV)
+               (VP (NP-COMP 대대/NNC+으로/PAD)
+                   (VV 후송/NNC+하/XSV+게/ECS))))
+       되/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>중대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>정비를 요하는 화기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>즉시</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>대대</term>
+	    </Arg>
+	    <Rel>
+	      <term>후송하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>됩니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>후송되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>중상자는 우선 응급 처치를 한 뒤에 후송될 때까지 은폐된 장소에 옮겨 둡니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-OBJ 중상자/NNC+은/PAU)
+           (VP (NP-ADV (S (NP-SBJ *pro*)
+                          (VP (ADVP 우선/ADV)
+                              (VP (NP-COMP *pro*)
+                                  (VP (NP-OBJ-LV 응급/NNC
+                                                 처치/NNC+을/PCA)
+                                      (LV 하/VV+은/EAN)))))
+                       (NP 뒤/NNC+에/PAD))
+               (NP-ADV (S (WHNP *op*)
+                          (S (NP-SBJ *pro*)
+                             (VP (VV 후송/NNC+되/XSV+을/EAN))))
+                       (NP 때/NNC+까지/PAU))
+               (VP (NP-COMP (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (VP (VV 은폐/NNC+되/XSV+은/EAN))))
+                            (NP 장소/NNC+에/PAD))
+                   옮기/VV+어/ECS)))
+       두/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>후송될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

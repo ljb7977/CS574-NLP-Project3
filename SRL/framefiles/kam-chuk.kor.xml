@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>감축</lemma>
+    <comment>Frames file for '감축' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>감축.01</id>
+      <edef>reduce</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing falling"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>감축하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>산유국들은 지난해 전세계 산유량을 하루 210 만배럴 감축했으며 이로 인해 국제 유가가 3 배나 급등했다.</text>
+	  <parse>
+(S (S (NP-SBJ 산유국/NNC+들/XSF+은/PAU)
+      (VP (NP-ADV 지난해/NNC)
+          (VP (NP-OBJ 전세계/NNC
+                      산유량/NNC+을/PCA)
+              (VP (NP-ADV 하루/NNC
+                          210/NNU
+                          만/NNU+배럴/NNX)
+                  (VP (VV 감축/NNC+하/XSV+었/EPF+으며/ECS))))))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-COMP 이/NPN+으로/PAD)
+             인하/VV+어/ECS))
+      (S (NP-SBJ 국제/NNC
+                 유가/NNC+이/PCA)
+         (VP (NP-ADV 3/NNU
+                     배/NNX+이나/PAU)
+             (VP (VV 급등/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>산유국들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>전세계 산유량</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>하루 210 만배럴</term>
+	    </Arg>
+	    <Rel>
+	      <term>감축했으며</term>
+	    </Rel>
+	  </relation>
+	  <comment>floating quantifier</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

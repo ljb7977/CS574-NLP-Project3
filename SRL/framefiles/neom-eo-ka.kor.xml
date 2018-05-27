@@ -1,0 +1,148 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>넘어가</lemma>
+    <comment>Frames file for '넘어가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>넘어가.01</id>
+      <edef>be transferred</edef>
+      <roleset>
+	<role argnum="1" argrole="thing transferred"/>
+	<role argnum="2" argrole="source"/>
+	<role argnum="3" argrole="goal"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>넘어가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이에 따라 최근의 하이반 터널공사 A 구간은 7 천만달러짜리 공사가 4 천 257 만달러에 일본회사에 넘어가고 B 구간은 4 천만달러짜리가 2 천 600 만달러에 한국의 동아건설에 낙찰됐다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          따르/VV+어/ECS))
+   (S (NP-SBJ (NP 최근/NNC+의/PAN)
+              (NP 하이반/NPR
+                  터널/NNC+공사/NNC
+                  A/NFW
+                  구간/NNC+은/PAU))
+      (S (NP-SBJ (NP 7/NNU
+                     천만/NNU+달러/NNX+짜리/XSF)
+                 (NP 공사/NNC+이/PCA))
+         (VP (NP-ADV 4/NNU
+                     천/NNU
+                     257/NNU
+                     만/NNU+달러/NNX+에/PAD)
+             (VP (NP-COMP 일본/NPR+회사/NNC+에/PAD)
+                 넘어가/VV+고/ECS))))
+   (S (NP-SBJ B/NFW
+              구간/NNC+은/PAU)
+      (S (NP-SBJ 4/NNU
+                 천만/NNU+달러/NNX+짜리/XSF+이/PCA)
+         (VP (NP-ADV 2/NNU
+                     천/NNU
+                     600/NNU
+                     만/NNU+달러/NNX+에/PAD)
+             (VP (NP-COMP (NP 한국/NPR+의/PAN)
+                          (NP 동아/NPR+건설/NNC+에/PAD))
+                 (VV 낙찰/NNC+되/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이에 따라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>최근의 하이반 터널공사 A 구간</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>7 천만달러짜리 공사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>4 천 257 만달러에</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>일본회사</term>
+	    </Arg>
+	    <Rel>
+	      <term>넘어가고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>넘어가.02</id>
+      <edef>pass</edef>
+      <roleset>
+	<role argnum="1" argrole="time"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>넘어가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>하지만 대우채 환매 최종시한이 별탈없이 넘어가고 대우그룹 계열사의 워크아웃에 대한 채권단의 협상도 사실상 마무리된 올 2 월에도 잔고는 15 조 8 천억원이나 빠져 투자자들의 불안심리는 가시지 않았음을 보여 주었다.</text>
+	  <parse>
+(S (ADCP 하지만/ADC)
+   (S (S (NP-ADV (S (WHNP *op*)
+                    (S (S (NP-SBJ 대우/NPR+채/NNX
+                                  환매/NNC
+                                  최종/NNC+시한/NNC+이/PCA)
+                          (VP (ADVP 별탈/NNC+없이/ADV)
+                              (VP 넘어가/VV+고/ECS)))
+                       (S (NP-SBJ (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (NP-COMP (NP 대우/NPR+그룹/NNC
+                                                         계열사/NNC+의/PAN)
+                                                     (NP 워크아웃/NNC+에/PAD))
+                                            대하/VV+은/EAN)))
+                                  (NP (NP 채권단/NNC+의/PAN)
+                                      (NP 협상/NNC+도/PAU)))
+                          (VP (NP-ADV 사실/NNC+상/XSF)
+                              (VP (VV 마무리/NNC+되/XSV+은/EAN))))))
+                 (NP 올/NNC
+                     2/NNU
+                     월/NNX+에/PAD+도/PAU))
+         (S (NP-SBJ 잔고/NNC+은/PAU)
+            (S (NP-SBJ 15/NNU
+                       조/NNU
+                       8/NNU
+                       천억/NNU+원/NNX+이나/PAU)
+               (VP 빠지/VV+어/ECS))))
+      (S (NP-SBJ *pro*)
+         (VP (VP (S-OBJ (NP-SBJ (NP 투자자/NNC+들/XSF+의/PAN)
+                                (NP 불안/NNC+심리/NNC+은/PAU))
+                        (VP (VP 가시/VV+지/ECS)
+                            않/VX+었/EPF+음/ENM+을/PCA))
+                 보이/VV+어/ECS)
+             주/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>대우채 환매 최종시한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>별탈없이</term>
+	    </Arg>
+	    <Rel>
+	      <term>넘어가고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

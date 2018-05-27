@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>죽</lemma>
+    <comment>Frames file for '죽' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>죽.01</id>
+      <edef>die</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="entity dying"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>죽다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>세렬 포탄이 폭발해서 하전사 세 사람이 죽었습니다.</text>
+	  <parse>
+(S (S (NP-SBJ 세렬/NNC
+              포탄/NNC+이/PCA)
+      (VP (VV 폭발/NNC+하/XSV+어서/ECS)))
+   (S (NP-SBJ 하전사/NNC
+              세/NNU
+              사람/NNC+이/PCA)
+      (VP 죽/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>세렬 포탄이 폭발해서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>하전사 세 사람</term>
+	    </Arg>
+	    <Rel>
+	      <term>죽었습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>죽이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>소리가 나지 않도록 적병을 단도로 죽였다.</text>
+	  <parse>
+(S (S (NP-SBJ 소리/NNC+가/PCA)
+      (VP (VP 나/VV+지/EAU)
+	  않/VX+도록/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 적병/NNC+을/PCA)
+	  (VP (NP-ADV 단도/NNC+로/PAD)
+	      (VP 죽이/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>소리가 나지 않도록</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적병</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>단도로</term>
+	    </Arg>
+	    <Rel>
+	      <term>죽였다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

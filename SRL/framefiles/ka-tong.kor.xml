@@ -1,0 +1,137 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가동</lemma>
+    <comment>Frames file for '가동' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가동.01</id>
+      <edef>operate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing operated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가동하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 LG는 지난 7 일 베트남회사와 합작으로 베트남 남부의 동나이에 연간 화장품 100 만개, 샴푸 5 백만개 생산능력의 대규모 드봉 화장품 공장을 가동하기 시작했다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ LG/NFW+은/PAU)
+                 (VP (NP-ADV 지난/DAN
+                             7/NNU
+                             일/NNX)
+                     (NP-ADV (NP-COMP 베트남/NPR+회사/NNC+과/PAD)
+                             합작/NNC+으로/PAD)
+                     (NP-ADV (NP 베트남/NPR
+                                 남부/NNC+의/PAN)
+                             (NP 동나이/NPR+에/PAD))
+                     (VP (NP-OBJ (NP (NP 연간/NNC)
+                                     (NP (NP (NP 화장품/NNC)
+                                             (NP 100/NNU
+                                                 만/NNU+개/NNX))
+                                         ,/SCM
+                                         (NP (NP 샴푸/NNC)
+                                             (NP 5/NNU
+                                                 백만/NNU+개/NNX)))
+                                     (NP 생산/NNC+능력/NNC+의/PAN))
+                                 (NP 대규모/NNC
+                                     드봉/NPR
+                                     화장품/NPR
+                                     공장/NNC+을/PCA))
+                         (VV 가동/NNC+하/XSV+기/ENM))))
+          (VV 시작/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>LG</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 7 일</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>베트남회사와 합작으로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>베트남 남부의 동나이에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>연간 화장품 100 만개, 샴푸 5 백만개 생산능력의 대규모 드봉 화장품 공장</term>
+	    </Arg>
+	    <Rel>
+	      <term>가동하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>가동되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 현지에는 한국의 현대건설이 만든 베트남 최대의 조선소가 한국과 베트남 합작회사인 현대비나신에 의해 가동되고 있다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (NP-ADV 현지/NNC+에/PAD+은/PAU)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ (NP 한국/NPR+의/PAN)
+                            (NP 현대/NPR+건설/NNC+이/PCA))
+                    (VP (NP-OBJ *T*-1)
+                        만들/VV+은/EAN)))
+              (NP (NP 베트남/NPR
+                      최대/NNC+의/PAN)
+                  (NP 조선소/NNC+이/PCA)))
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP (NP 한국/NPR+과/PCJ)
+                                            (NP 베트남/NPR
+                                                합작/NNC+회사/NNC+이/CO+은/EAN)))))
+                              (NP 현대비나신/NPR+에/PAD))
+                     의하/VV+어/ECS))
+              (VP (VV 가동/NNC+되/XSV+고/ECS)))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>현지에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>한국의 현대건설이 만든 베트남 최대의 조선소</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에 의해</f>
+	      <term>한국과 베트남 합작회사인 현대비나신</term>
+	    </Arg>
+	    <Rel>
+	      <term>가동되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

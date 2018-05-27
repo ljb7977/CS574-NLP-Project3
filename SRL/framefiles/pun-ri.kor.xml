@@ -1,0 +1,186 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>분리</lemma>
+    <comment>Frames file for '분리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>분리.01</id>
+      <edef>separate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing separated"/>
+	<role argnum="2" argrole="separated from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>분리하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>양측은 고위급회담의 일정과 수석대표 등을 합의가 되는 대로 발표한 뒤 북한의 테러지원국 명단해제 문제를 준비회담에서 분리해 별도의 회담을 이어 갈 것으로 알려졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ 양측/NNC+은/PAU)
+                   (VP (NP-ADV (S (NP-SBJ *pro*)
+				  (VP (NP-OBJ (NP (NP (NP 고위급/NNC+회담/NNC+의/PAN)
+						      (NP 일정/NNC+과/PCJ))
+						  (NP 수석/NNC+대표/NNC))
+					      (NP 등/NNX+을/PCA))
+				      (VP (NP-ADV (S (NP-SBJ 합의/NNC+이/PCA)
+						     (VP 되/VV+는/EAN))
+						  (NP 대로/NNX))
+					  (VP (VV 발표/NNC+하/XSV+은/EAN)))))
+			       (NP 뒤/NNC))
+		       (VP (VP (NP-OBJ (NP 북한/NPR+의/PAN)
+				       (NP 테러/NNC+지원국/NNC
+					       명단/NNC+해제/NNC
+					       문제/NNC+을/PCA))
+			       (NP-COMP 준비/NNC+회담/NNC+에서/PAD)
+			       (VV 분리/NNC+하/XSV+어/ECS))
+			   (VP (VP (NP-OBJ (NP 별도/NNC+의/PAN)
+					   (NP 회담/NNC+을/PCA))
+				   잇/VV+어/ECS)
+			       가/VX+을/EAN))))
+                (NP 것/NNX+으로/PAD))
+       (VV 알리/VV+어지/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>양측</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>고위급회담의 일정과 수석대표 등을 합의가 되는 대로 발표한 뒤</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>북한의 테러지원국 명단해제 문제</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>준비회담</term>
+	    </Arg>
+	    <Rel>
+	      <term>분리해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>분리되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이에 따라 지난해 은행감독원이 한국은행으로부터 분리된 이후 처음으로 한국은행과 금감원이 함께 시중은행에 대한 검사에 나서게 됐다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          따르/VV+어/ECS))
+   (S (NP-ADV (S (NP-ADV 지난해/NNC)
+                 (S (NP-SBJ 은행/NNC+감독원/NNC+이/PCA)
+                    (VP (NP-COMP 한국/NPR+은행/NNC+으로부터/PAD)
+                        (VV 분리/NNC+되/XSV+은/EAN))))
+              (NP 이후/NNC))
+      (NP-ADV 처음/NNC+으로/PAD)
+      (S (NP-SBJ (NP 한국/NPR+은행/NNC+과/PCJ)
+                 (NP 금감원/NPR+이/PCA))
+         (VP (VP (ADVP 함께/ADV)
+                 (VP (NP-COMP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-COMP 시중/NNC+은행/NNC+에/PAD)
+                                        대하/VV+은/EAN)))
+                              (NP 검사/NNC+에/PAD))
+                     나서/VV+게/ECS))
+             되/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>은행감독원</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로부터</f>
+	      <term>한국은행</term>
+	    </Arg>
+	    <Rel>
+	      <term>분리된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>분리시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>국영 TV와 관영 신화통신으로 보도된 발언에서 장와이 앤은 중국 인민해방군은 "조국을 분리시키려는 음모가 우세해질 경우 중국의 주권과 영토보존을 지킬 결의와 확신, 능력을 갖고 있으며 이를 묵과하거나 좌시하지도 않을 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP (NP 국영/NNC
+                                  TV/NFW+과/PCJ)
+                              (NP 관영/NNC
+                                  신화/NPR+통신/NNC+으로/PAD))
+                     (VV 보도/NNC+되/XSV+은/EAN))))
+           (NP 발언/NNC+에서/PAD))
+   (S (NP-SBJ 장와이/NPR
+              앤/NPR+은/PAU)
+      (VP (S-COMP (NP-SBJ 중국/NPR
+                          인민/NNC+해방군/NNC+은/PAU)
+                  (VP "/SLQ
+                      (VP (VP (NP-ADV (S (NP-SBJ (S (NP-SBJ *pro*)
+                                                    (VP (NP-OBJ 조국/NNC+을/PCA)
+                                                        (VV 분리/NNC+시키/XSV+으려는/EAN)))
+                                                 (NP 음모/NNC+이/PCA))
+                                         (VP (VV (VJ 우세/NNC+하/XSJ+어지/XSV+을/EAN))))
+                                      (NP 경우/NNC))
+                              (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                             (VP (NP-OBJ (NP 중국/NPR+의/PAN)
+                                                         (NP (NP 주권/NNC+과/PCJ)
+                                                             (NP 영토/NNC+보존/NNC+을/PCA)))
+                                                 지키/VV+을/EAN))
+                                          (NP (NP 결의/NNC+과/PCJ)
+                                              (NP 확신/NNC)
+                                              ,/SCM
+                                              (NP 능력/NNC+을/PCA)))
+                                  갖/VV+고/ECS))
+                          있/VX+으며/ECS)
+                      (VP (VP (VP (NP-OBJ 이/NPN+을/PCA)
+                                  (VV (VV 묵과/NNC+하/XSV+거나/ECS)
+                                      (VV 좌시/NNC+하/XSV+지/ECS+도/PAU)))
+                              않/VX+을/EAN)
+                          (VX 것/NNX))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD))
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>조국</term>
+	    </Arg>
+	    <Rel>
+	      <term>분리시키려는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,39 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>놀랍</lemma>
+    <comment>Frames file for '놀랍' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>놀랍.01</id>
+      <edef>surprising</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being surprising"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>놀랍다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이건 놀라운 일입니다.</text>
+	  <parse>
+(S (NP-SBJ 이것/NPN+은/PAU)
+   (VP (NP (S (WHNP-1 0)
+	      (S (NP-SBJ *T*-1)
+		 (ADJP 놀랍/VJ+은/EAN)))
+	   (NP 일/NNC+이/CO+습니다/EFN)))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=일</term>
+	    </Arg>
+	    <Rel>
+	      <term>놀라운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

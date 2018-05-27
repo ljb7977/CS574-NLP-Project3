@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>독립</lemma>
+    <comment>Frames file for '독립' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>독립.01</id>
+      <edef>become independent</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="independent of"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>독립하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>훈련을 다 받은 다음에 저희 포반은 소대로부터 독립해서 행동했습니다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ *pro*)
+              (VP (NP-OBJ-LV 훈련/NNC+을/PCA)
+                  (VP (ADVP 다/ADV)
+                      (VP (LV 받/VV+은/EAN)))))
+           (NP 다음/NNC+에/PAD))
+   (S (NP-SBJ 저희/NPN
+              포반/NNC+은/PAU)
+      (VP (NP-COMP 소대/NNC+으로/PAD+부터/PAU)
+          (VV 독립/NNC+하/XSV+어서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VV 행동/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>저희 포반</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로부터</f>
+	      <term>소대</term>
+	    </Arg>
+	    <Rel>
+	      <term>독립해서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>독립.02</id>
+      <edef>separate</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing separated"/>
+	<role argnum="2" argrole="separated from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>독립되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>법안에 따르면 방위청을 내각부에서 독립된 국방성으로 하고 장을 국방상으로 하되, 방위출동이나 치안출동에 관한 총리의 명령권한은 종전대로 유지토록 하고 있다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=국방성</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>내각부</term>
+	    </Arg>
+	    <Rel>
+	      <term>독립된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

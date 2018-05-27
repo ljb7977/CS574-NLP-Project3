@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>외치</lemma>
+    <comment>Frames file for '외치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>외치.01</id>
+      <edef>cry out</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing cried out"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>외치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인도 국민들의 대다수는 클린턴 대통령의 인도방문을 반겼지만 적지 않은 민족주의자와 공산주의자들은 그의 방문목적은 미국의 경제적 이익을 위해 인도를 이용하려는 데 있다고 비난했으며 뉴델리에서는 시위대들이 "클린턴에게 죽음을, 다국적 기업의 제국주의에 죽음을"이라는 구호를 외치며 시위를 벌이기도 했다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 인도/NPR
+                  국민/NNC+들/XSF+의/PAN)
+              (NP 대다수/NNC+은/PAU))
+      (VP (NP-OBJ (NP 클린턴/NPR
+                      대통령/NNC+의/PAN)
+                  (NP 인도/NPR+방문/NNC+을/PCA))
+          반기/VV+었/EPF+지만/ECS))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (ADJP 적/VJ+지/ECS)
+                        않/VX+은/EAN)))
+              (NP (NP 민족주의자/NNC+과/PCJ)
+                  (NP 공산주의자/NNC+들/XSF+은/PAU)))
+      (VP (S-COMP (NP-SBJ (NP 그/NPN+의/PAN)
+                          (NP 방문/NNC+목적/NNC+은/PAU))
+                  (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                                    (VP (S (NP-SBJ *pro*)
+                                           (VP (NP-OBJ (NP 미국/NPR+의/PAN)
+                                                       (NP (NP 경제/NNC+적/XSF)
+                                                           (NP 이익/NNC+을/PCA)))
+                                               위하/VV+어/ECS))
+                                        (VP (NP-OBJ 인도/NPR+을/PCA)
+                                            (VV 이용/NNC+하/XSV+으려는/EAN))))
+                                 (NP 데/NNX))
+                        있/VJ+다/EFN+고/PAD))
+          (VV 비난/NNC+하/XSV+었/EPF+으며/ECS)))
+   (S (NP-ADV 뉴델리/NPR+에서/PAD+은/PAU)
+      (S (NP-SBJ 시위대/NNC+들/XSF+이/PCA)
+         (VP (VP (S (NP-SBJ *pro*)
+                    (VP (NP-OBJ (NP "/SLQ
+                                    (NP (NP 클린턴/NPR+에게/PAD)
+                                        (NP 죽음/NNC+을/PCA))
+                                    ,/SCM
+                                    (NP (NP (NP 다국적/NNC
+                                                기업/NNC+의/PAN)
+                                            (NP 제국주의/NNC+에/PAD))
+                                        (NP 죽음/NNC+을/PCA))
+                                    "/SRQ
+                                    이라는/PAN)
+                                (NP 구호/NNC+을/PCA))
+                        외치/VV+으며/ECS))
+                 (VP (NP-OBJ 시위/NNC+을/PCA)
+                     벌이/VV+기/ENM+도/PAU))
+             하/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>"클린턴에게 죽음을, 다국적 기업의 제국주의에 죽음을"이라는 구호</term>
+	    </Arg>
+	    <Rel>
+	      <term>외치며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

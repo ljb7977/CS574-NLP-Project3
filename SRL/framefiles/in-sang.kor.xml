@@ -1,0 +1,216 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>인상</lemma>
+    <comment>Frames file for '인상' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>인상.01</id>
+      <edef>raise</edef>
+      <roleset>
+	<role argnum="0" argrole="thing raising"/>
+	<role argnum="1" argrole="thing raised"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>인상하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	  <mapitem src="np-comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>대한항공은 서울-뉴욕 노선도 115 만원에서 127 만원으로 인상하고 서울-홍콩 노선은 50 만원에서 54 만원으로 올리기로 했다.</text>
+	  <parse>
+(S (NP-SBJ 대한/NPR+항공/NNC+은/PAU)
+   (VP (VP (VP (NP-OBJ 서울/NPR
+                       -/SSY
+                       뉴욕/NPR
+                       노선/NNC+도/PAU)
+               (NP-COMP 115/NNU
+                        만/NNU+원/NNX+에서/PAD)
+               (NP-COMP 127/NNU
+                        만/NNU+원/NNX+으로/PAD)
+               (VV 인상/NNC+하/XSV+고/ECS))
+           (VP (NP-OBJ 서울/NPR
+                       -/SSY
+                       홍콩/NPR
+                       노선/NNC+은/PAU)
+               (NP-COMP 50/NNU
+                        만/NNU+원/NNX+에서/PAD)
+               (NP-COMP 54/NNU
+                        만/NNU+원/NNX+으로/PAD)
+               올리/VV+기/ENM+으로/PAD))
+       하/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>대한항공</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>서울-뉴욕 노선</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>115 만원</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>127 만원</term>
+	    </Arg>
+	    <Rel>
+	      <term>인상하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>인상하다</rel>
+	  <comment>split argument</comment>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	  <mapitem src="np-comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>대한항공은 서울-로스앤젤레스 노선의 요금(이하 개인 왕복요금 기준)을 96 만원에서 105 만원으로 9.4 퍼센트 올리고 이 노선의 휴가시즌(7-8 월) 요금은 110 만원에서 120 만원으로 9.1 퍼센트 인상키로 했다.</text>
+	  <parse>
+(S (NP-SBJ 대한/NPR+항공/NNC+은/PAU)
+   (VP (VP (VP (NP-OBJ (NP 서울/NPR
+                           -/SSY
+                           로스앤젤레스/NPR
+                           노선/NNC+의/PAN)
+                       (NP 요금/NNC
+                           (PRN -LRB-/SLQ
+                                이하/NNC
+                                개인/NNC
+                                왕복/NNC+요금/NNC
+                                기준/NNC
+                                -RRB-/SRQ)
+                           을/PCA))
+               (NP-COMP 96/NNU
+                        만/NNU+원/NNX+에서/PAD)
+               (NP-COMP 105/NNU
+                        만/NNU+원/NNX+으로/PAD)
+               (NP-COMP 9.4/NNU
+                        퍼센트/NNX)
+               올리/VV+고/ECS)
+           (VP (NP-OBJ (NP 이/DAN
+                           노선/NNC+의/PAN)
+                       (NP 휴가/NNC+시즌/NNC
+                           (PRN -LRB-/SLQ
+                                7-8/NNU
+                                월/NNX
+                                -RRB-/SRQ)
+                           요금/NNC+은/PAU))
+               (NP-COMP 110/NNU
+                        만/NNU+원/NNX+에서/PAD)
+               (NP-COMP 120/NNU
+                        만/NNU+원/NNX+으로/PAD)
+               (NP-COMP 9.1/NNU
+                        퍼센트/NNX)
+               (VV 인상/NNC+하/XSV+기/ENM+으로/PAD)))
+       하/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>대한항공</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>이 노선의 휴가시즌(7-8 월) 요금</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>110 만원</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>120 만원</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>9.1 퍼센트</term>
+	    </Arg>
+	    <Rel>
+	      <term>인상키로</term>
+	    </Rel>
+	    <Aux>
+	      <f>으로</f>
+	      <term>했다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>인상되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	  <mapitem src="np-comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>무어 사령관은 이날 아랍에미리트연합(UAE)의 아부다비에서 열린 방위산업 박람회에서 "지난해 9 월 유가가 인상되면서 이윤이 커지자 밀수량도 대폭 늘어나기 시작했다"고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 무어/NPR
+           사령관/NNC+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-ADV 이날/NNC)
+                         (NP-ADV (NP 아랍에미리트/NPR+연합/NNC
+                                     (PRN -LRB-/SLQ
+                                          UAE/NFW
+                                          -RRB-/SRQ)
+                                     의/PAN)
+                                 (NP 아부다비/NPR+에서/PAD))
+                         (VP 열리/VV+은/EAN))))
+               (NP 방위/NNC+산업/NNC
+                   박람회/NNC+에서/PAD))
+       (VP (S-COMP "/SLQ
+                   (S (S (NP-ADV 지난해/NNC
+                                 9/NNU
+                                 월/NNX)
+                         (S (NP-SBJ 유가/NNC+이/PCA)
+                            (VP (VV 인상/NNC+되/XSV+으면서/ECS))))
+                      (S (NP-SBJ 이윤/NNC+이/PCA)
+                         (VP (VV 크/VJ+어지/XSV+자/ECS))))
+                   (S (NP-SBJ 밀수량/NNC+도/PAU)
+                      (VP (S-OBJ (NP-SBJ *pro*)
+                                 (VP (ADVP 대폭/ADV)
+                                     (VP 늘어나/VV+기/ENM)))
+                          (VV 시작/NNC+하/XSV+었/EPF+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해 9 월</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>유가</term>
+	    </Arg>
+	    <Rel>
+	      <term>인상되면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

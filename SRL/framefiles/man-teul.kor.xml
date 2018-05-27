@@ -1,0 +1,255 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>만들</lemma>
+    <comment>Frames file for '만들' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>만들.01</id>
+      <edef>make</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing made"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>만들다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>오리 고기로 어떤 음식을 만드는가?</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 오리/NNC
+               고기/NNC+으로/PAD)
+       (VP (NP-OBJ 어떤/DAN
+                   음식/NNC+을/PCA)
+           만들/VV+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>오리 고기로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>어떤 음식</term>
+	    </Arg>
+	    <Rel>
+	      <term>만드는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>우리가 거마 철조망을 다섯 개 만들었습니다.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN+이/PCA)
+   (VP (NP-OBJ 거마/NNC
+               철조망/NNC+을/PCA)
+       (VP (NP-ADV 다섯/NNU
+                   개/NNX)
+           (VP 만들/VV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>우리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>거마 철조망</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>다섯 개</term>
+	    </Arg>
+	    <Rel>
+	      <term>만들었습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>만들어지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한국이 만든 전통 태권도 전용체육관이 베트남전 당시 한국군 백마부대의 본거지였던 나창에 만들어졌다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ 한국/NPR+이/PCA)
+                 (VP (NP-OBJ *T*-1)
+                     만들/VV+은/EAN)))
+           (NP 전통/NNC
+               태권도/NNC
+               전용/NNC+체육관/NNC+이/PCA))
+   (VP (NP-ADV (S (WHNP-2 *op*)
+                  (S (NP-SBJ *T*-2)
+                     (VP (NP-ADV 베트남/NPR+전/XSF
+                                 당시/NNC)
+                         (VP (NP (NP 한국군/NNC
+                                     백마/NPR+부대/NNC+의/PAN)
+                                 (NP 본거지/NNC+이/CO+었/EPF+던/EAN))))))
+               (NP 나창/NPR+에/PAD))
+       (VP (VV 만들/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>한국이 만든 전통 태권도 전용체육관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>베트남전 당시 한국군 백마부대의 본거지였던 나창에</term>
+	    </Arg>
+	    <Rel>
+	      <term>만들어졌다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>만들.02</id>
+      <edef>change</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing changing"/>
+	<role argnum="2" argrole="changed into"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>만들다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>나는 한국을 정보강국, 과학대국, 벤처천국으로 만들고자 최선을 다하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 나/NPN+은/PAU)
+   (VP (VP (S (NP-SBJ *pro*)
+              (VP (NP-OBJ 한국/NPR+을/PCA)
+                  (NP-COMP 정보/NNC+강국/NNC
+                           ,/SCM
+                           과학/NNC+대국/NNC
+                           ,/SCM
+                           벤처/NNC+천국/NNC+으로/PAD)
+                  만들/VV+고자/ECS))
+           (VP (NP-OBJ 최선/NNC+을/PCA)
+               다하/VV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>한국</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>정보강국, 과학대국, 벤처천국</term>
+	    </Arg>
+	    <Rel>
+	      <term>만들고자</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>만들.03</id>
+      <edef>cause</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="action, state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>만들다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>정부가 마련한 새 법안은 BNP 은행과 소시에테 제네랄, 파리바 등 3 개은행이 인수전을 벌였을 때 금융 규제당국이 제때 개입해서 강제로 이견을 해소하도록 만들 수 없었던 것에 정부당국이 불만을 갖고 있었기 때문에 기업인수 등의 분야에서 금융규제 당국에 더 많은 권한을 주도록 돼 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ 정부/NNC+이/PCA)
+                 (VP (NP-OBJ *T*-1)
+                     (VV 마련/NNC+하/XSV+은/EAN))))
+           (NP 새/DAN
+               법안/NNC+은/PAU))
+   (VP (VP (NP-ADV (S (NP-ADV (S (NP-ADV (S (NP-SBJ (NP (NP (NP BNP/NFW
+                                                                은행/NNC+과/PCJ)
+                                                            (NP 소시에테/NPR
+                                                                제네랄/NPR)
+                                                            ,/SCM
+                                                            (NP 파리바/NPR))
+                                                        (NP 등/NNX))
+                                                    (NP 3/NNU
+                                                        개/NNX+은행/NNC+이/PCA))
+                                            (VP (NP-OBJ 인수전/NNC+을/PCA)
+                                                벌이/VV+었/EPF+을/EAN))
+                                         (NP 때/NNC))
+                                 (S (NP-SBJ 금융/NNC
+                                            규제/NNC+당국/NNC+이/PCA)
+                                    (VP (NP-ADV 제때/NNC)
+                                        (VP (NP-COMP *pro*)
+                                            (VV 개입/NNC+하/XSV+어서/ECS))))
+                                 (S (NP-SBJ *pro*)
+                                    (VP (VP (NP-ADV 강제/NNC+으로/PAD)
+                                            (VP (S-COMP (NP-SBJ *pro*)
+                                                        (VP (NP-OBJ 이견/NNC+을/PCA)
+                                                            (VV 해소/NNC+하/XSV+도록/ECS)))
+                                                만들/VV+을/EAN))
+                                        (VX 수/NNX
+                                            없/VJ+었/EPF+던/EAN))))
+                              (NP 것/NNX+에/PAD))
+                      (S (NP-SBJ 정부/NNC+당국/NNC+이/PCA)
+                         (VP (VP (NP-OBJ 불만/NNC+을/PCA)
+                                 갖/VV+고/ECS)
+                             있/VX+었/EPF+기/ENM)))
+                   (NP 때문/NNX+에/PAD))
+           (VP (S-COMP (NP-SBJ *pro*)
+                       (VP (NP-ADV (NP (NP 기업/NNC+인수/NNC)
+                                       (NP 등/NNX+의/PAN))
+                                   (NP 분야/NNC+에서/PAD))
+                           (VP (NP-COMP 금융/NNC+규제/NNC
+                                        당국/NNC+에/PAD)
+                               (NP-OBJ (S (WHNP-2 *op*)
+                                          (S (NP-SBJ *T*-2)
+                                             (ADJP (ADVP 더/ADV)
+                                                   (ADJP 많/VJ+은/EAN))))
+                                       (NP 권한/NNC+을/PCA))
+                               주/VV+도록/ECS)))
+               되/VV+어/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>강제로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도록</f>
+	      <term>이견을 해소하</term>
+	    </Arg>
+	    <Rel>
+	      <term>만들</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없었던</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

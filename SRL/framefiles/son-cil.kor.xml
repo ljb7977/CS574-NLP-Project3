@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>손질</lemma>
+    <comment>Frames file for '손질' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>손질.01</id>
+      <edef>clean</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing cleaned"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>손질하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중대 성원들은 모두 자기네 화기를 철저히 손질합니다.</text>
+	  <parse>
+(S (NP-SBJ 중대/NNC
+           성원/NNC+들/XSF+은/PAU)
+   (VP (ADVP 모두/ADV)
+       (VP (NP-OBJ (NP 자기/NPN+네/XSF)
+                   (NP 화기/NNC+을/PCA))
+           (VP (ADVP 철저히/ADV)
+               (VP (VV 손질/NNC+하/XSV+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>중대 성원들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>모두</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>자기네 화기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>철저히</term>
+	    </Arg>
+	    <Rel>
+	      <term>손질합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

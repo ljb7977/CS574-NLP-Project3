@@ -1,0 +1,136 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>위험</lemma>
+    <comment>Frames file for '위험' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>위험</id>
+      <edef>dangerous</edef>
+      <roleset>
+	<role argnum="1" argrole="thing dangerous"/>
+	<role argnum="2" argrole="dangerous for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>위험하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>너멀 앤드루스 UNEP 아태국장은 금주 초 약 1 천 200 군데의 산불이 수마트라와 보르네오의 칼리만탄에서 발견됐다고 말하고 이들 지역의 오염은 건강에 위험한 수준인 오염기준지수(PSI) 300을 넘었다고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 너멀/NPR
+           앤드루스/NPR
+           UNEP/NFW
+           아태국장/NNC+은/PAU)
+   (VP (VP (S-COMP (NP-ADV 금주/NNC
+                           초/NNX)
+                   (S (NP-SBJ (NP 약/DAN
+                                  1/NNU
+                                  천/NNU
+                                  200/NNU
+                                  군데/NNX+의/PAN)
+                              (NP 산불/NNC+이/PCA))
+                      (VP (NP-ADV (NP 수마트라/NPR+과/PCJ)
+                                  (NP (NP 보르네오/NPR+의/PAN)
+                                      (NP 칼리만탄/NPR+에서/PAD)))
+                          (VP (VV 발견/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))))
+           말하/VV+고/ECS)
+       (VP (S-COMP (NP-SBJ (NP 이/NPN+들/XSF
+                               지역/NNC+의/PAN)
+                           (NP 오염/NNC+은/PAU))
+                   (VP (NP-OBJ (S (WHNP-2 *op*)
+                                  (S (NP-SBJ *T*-2)
+                                     (VP (NP (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (ADJP (NP-COMP 건강/NNC+에/PAD)
+                                                         (VJ 위험/NNC+하/XSJ+은/EAN))))
+                                             (NP 수준/NNC+이/CO+은/EAN)))))
+                               (NP 오염/NNC+기준/NNC+지수/NNC
+                                   (PRN -LRB-/SLQ
+                                        (NP PSI/NFW)
+                                        -RRB-/SRQ)
+                                   300/NNU+을/PCA))
+                       넘/VV+었/EPF+다/EFN+고/PAD))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=수준</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>건강</term>
+	    </Arg>
+	    <Rel>
+	      <term>위험한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>위험스럽다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이들은 면화, 콩, 옥수수 같은 1 세대 생명공학 작물의 재배 역사가 겨우 5 년여에 지나지 않은 만큼 환경 및 건강에 대한 장기적인 영향이 위험스럽게도 아직 안 알려져 있다고 우려했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPN+들/XSF+은/PAU)
+   (VP (S-COMP (NP-ADV (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (ADJP (NP-COMP (NP 면화/NNC)
+                                                           ,/SCM
+                                                           (NP 콩/NNC)
+                                                           ,/SCM
+                                                           (NP 옥수수/NNC))
+                                                  같/VJ+은/EAN)))
+                                      (NP 1/NNU
+                                          세대/NNX
+                                          생명/NNC+공학/NNC
+                                          작물/NNC+의/PAN))
+                                  (NP 재배/NNC
+                                      역사/NNC+이/PCA))
+                          (VP (VP (ADVP 겨우/ADV)
+                                  (VP (NP-COMP 5/NNU
+                                               년/NNX+여/XSF+에/PAD)
+                                      지나/VV+지/ECS))
+                              않/VX+은/EAN))
+                       (NP 만큼/NNX))
+               (S (NP-SBJ (S (WHNP-3 *op*)
+                             (S (NP-SBJ *T*-3)
+                                (VP (NP-COMP (NP 환경/NNC)
+                                             (ADCP 및/ADC)
+                                             (NP 건강/NNC+에/PAD))
+                                    대하/VV+은/EAN)))
+                          (NP (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP 장기/NNC+적/XSF+이/CO+은/EAN))))
+                              (NP 영향/NNC+이/PCA)))
+                  (VP (VP (ADVP (ADV (VJ 위험/NNC+스럽/XSJ+게/ECS+도/PAU)))
+                          (ADVP 아직/ADV)
+                          (ADVP 안/ADV)
+                          (VP (VV 알리/VV+어지/XSV+어/ECS)))
+                      있/VX+다/EFN+고/PAD)))
+       (VV 우려/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>위험스럽게도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

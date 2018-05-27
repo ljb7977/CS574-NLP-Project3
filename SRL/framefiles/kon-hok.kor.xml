@@ -1,0 +1,97 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>곤혹</lemma>
+    <comment>Frames file for '곤혹' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>곤혹.01</id>
+      <edef>perplex</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="experiencer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>곤혹스럽다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일본의 대표적 보수 논객인 이시하라 지사는 그동안 중국에 대해서도 돌출 발언을 해 중앙정부를 곤혹스럽게 하는 등 지자체장으로서의 권한을 벗어난 언행으로 물의를 빚어 왔다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP (NP 일본/NPR+의/PAN)
+                                        (NP 대표/NNC+적/XSF
+                                            보수/NNC
+                                            논객/NNC+이/CO+은/EAN)))))
+                          (NP 이시하라/NPR
+                              지사/NNC+은/PAU))
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-ADV 그동안/NNC)
+                             (S (NP-SBJ *pro*)
+                                (VP (NP-COMP 중국/NPR+에/PAD)
+                                    대하/VV+어서/ECS+도/PAU))
+                             (VP (NP-OBJ 돌출/NNC
+                                         발언/NNC+을/PCA)
+                                 하/VV+어/ECS)))
+                      (VP (NP-OBJ 중앙/NNC+정부/NNC+을/PCA)
+                          (S-COMP (NP-SBJ *pro*)
+                                  (ADJP (VJ 곤혹/NNC+스럽/XSJ+게/ECS)))
+                          하/VV+는/EAN)))
+               (NP 등/NNX))
+       (NP-ADV (S (WHNP-2 *op*)
+                  (S (NP-SBJ *T*-2)
+                     (VP (NP-OBJ (NP 지자체/NNC+장/XSF+으로서/PAD+의/PAN)
+                                 (NP 권한/NNC+을/PCA))
+                         벗어나/VV+은/EAN)))
+               (NP 언행/NNC+으로/PAD))
+       (VP (VP (NP-OBJ 물의/NNC+을/PCA)
+               빚/VV+어/ECS)
+           오/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>곤혹스럽게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>곤혹스러워하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이밖에 프랑스 자크 시라크 대통령과의 정상회담을 앞두고 청와대측은 유라시아 초고속정보통신망이 적극적으로 논의될 것으로 사전 브리핑을 했다가 정작 회담에서는 한마디도 나오지 않자 곤혹스러워했다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이밖에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>프랑스 자크 시라크 대통령과의 정상회담을 앞두고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>청와대측</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f></f>
+	      <term>유라시아 초고속정보통신망이 적극적으로 논의될 것으로 사전 브리핑을 했다가 정작 회담에서는 한마디도 나오지 않자</term>
+	    </Arg>
+	    <Rel>
+	      <term>곤혹스러워했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

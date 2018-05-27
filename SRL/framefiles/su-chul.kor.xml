@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수출</lemma>
+    <comment>Frames file for '수출' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수출.01</id>
+      <edef>export</edef>
+      <roleset>
+	<role argnum="0" argrole="exporter"/>
+	<role argnum="1" argrole="product"/>
+	<role argnum="2" argrole="importer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수출하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>16 일 산업자원부에 따르면 국내 반도체 업체들이 장기공급계약에 따라 고정거래선으로 수출하는 64 메가 D 램의 평균 가격이 개당 5.75 달러로 폭락, 지난 2 월말에 비해 1.30 달러나 떨어졌다.</text>
+	  <parse>
+(S (S (NP-ADV 16/NNU
+              일/NNX)
+      (S (NP-SBJ *pro*)
+         (VP (NP-COMP 산업자원부/NNC+에/PAD)
+             따르/VV+으면/ECS)))
+   (S (NP-SBJ (NP (S (WHNP-1 *op*)
+		     (S (NP-SBJ 국내/NNC
+				    반도체/NNC
+				    업체/NNC+들/XSF+이/PCA)
+			(VP (S (NP-SBJ *pro*)
+			       (VP (NP-COMP 장기/NNC+공급/NNC+계약/NNC+에/PAD)
+				   따르/VV+어/ECS))
+			    (VP (NP-COMP 고정/NNC+거래선/NNC+으로/PAD)
+				(NP-OBJ *T*-1)
+				(VV 수출/NNC+하/XSV+는/EAN)))))
+                  (NP 64/NNU
+                      메가/NNX
+                      D/NFW
+                      램/NNC+의/PAN))
+              (NP 평균/NNC
+                  가격/NNC+이/PCA))
+      (VP (NP-COMP 개당/NNC
+		       5.75/NNU
+		       달러/NNX+으로/PAD)
+          (VV 폭락/NNC)))
+   ,/SCM
+   (S (S (NP-SBJ *pro*)
+	 (VP (NP-COMP 지난/DAN
+                          2/NNU
+                          월/NNX+말/NNX+에/PAD)
+	     비하/VV+어/ECS))
+      (S (NP-SBJ 1.30/NNU
+		 달러/NNX+이나/PAU)
+	 (VP 떨어지/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>국내 반도체 업체들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>장기공급계약에 따라</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>고정거래선</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=64 메가 D 램</term>
+	    </Arg>
+	    <Rel>
+	      <term>수출하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

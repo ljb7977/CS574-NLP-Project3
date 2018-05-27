@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부적합</lemma>
+    <comment>Frames file for '부적합' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부적합.01</id>
+      <edef>unsuitable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being unsuitable"/>
+	<role argnum="2" argrole="unsuitable to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부적합하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한편 피노체트는 면책특권이 박탈되더라도 재판을 받기에 정신적으로 부적합한 것으로 판명될 경우 여전히 기소를 모면할 수 있는 데다 특히 의원직을 유지하는 한 사법처리는 전혀 불가능하다고 후안 가브리엘 발데스 외무장관이 지적했다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (S-COMP-1 (NP-ADV (S (NP-SBJ 피노체트/NPR+은/PAU)
+                           (VP (VP (S (NP-SBJ 면책/NNC+특권/NNC+이/PCA)
+                                      (VP (VV 박탈/NNC+되/XSV+더라도/ECS)))
+                                   (NP-ADV (S (NP-SBJ *pro*)
+                                              (VP (NP-COMP (S (NP-SBJ *pro*)
+                                                              (ADJP (S-COMP (NP-SBJ *pro*)
+									    (VP (NP-OBJ 재판/NNC+을/PCA)
+										받/VV+기/ENM+에/PAD))
+                                                                    (ADJP (ADVP (ADV 정신/NNC+적/XSF+으로/PAD))
+                                                                          (ADJP (VJ 부적합/NNC+하/XSJ+은/EAN)))))
+                                                           (NP 것/NNX+으로/PAD))
+                                                  (VV 판명/NNC+되/XSV+을/EAN)))
+                                           (NP 경우/NNC))
+                                   (ADVP 여전히/ADV)
+                                   (VP (NP-OBJ 기소/NNC+을/PCA)
+                                       (VV 모면/NNC+하/XSV+을/EAN)))
+                               (VX 수/NNX
+                                   있/VJ+는/EAN)))
+                        (NP 데/NNX+다/ECS))
+                (ADVP 특히/ADV)
+                (NP-ADV (S (NP-SBJ *pro*)
+                           (VP (NP-OBJ 의원직/NNC+을/PCA)
+                               (VV 유지/NNC+하/XSV+는/EAN)))
+                        (NP 한/NNX))
+                (S (NP-SBJ 사법/NNC+처리/NNC+은/PAU)
+                   (ADJP (ADVP 전혀/ADV)
+                         (ADJP (VJ 불가능/NNC+하/XSJ+다/EFN+고/PAD)))))
+      (S (NP-SBJ 후안/NPR
+                 가브리엘/NPR
+                 발데스/NPR
+                 외무/NNC+장관/NNC+이/PCA)
+         (VP (S-COMP *T*-1)
+             (VV 지적/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>재판을 받기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>정신적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>부적합한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

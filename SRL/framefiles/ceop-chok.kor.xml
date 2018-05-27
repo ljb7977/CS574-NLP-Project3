@@ -1,0 +1,150 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>접촉</lemma>
+    <comment>Frames file for '접촉' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>접촉.01</id>
+      <edef>contact</edef>
+      <roleset>
+	<role argnum="0" argrole="thing contacting"/>
+	<role argnum="1" argrole="contact with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>접촉하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>환구시보는 평양 주재 장 싱화 특파원이 쓴 '북한외교 사방으로 출격하다'는 제하의 기사에서 또 북한이 미국과 적극적으로 접촉하고 대미 관계 개선을 외교의 중요임무로 삼는 이유는 첫째는 안보상의 압력을 해소하고 둘째는 사회주의 건설을 촉진하기 위한 것이라고 분석했다.</text>
+	  <parse>
+(S (NP-SBJ 환구시보/NPR+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ 평양/NPR
+                             주재/NNC
+                             장/NPR
+                             싱화/NPR
+                             특파원/NNC+이/PCA)
+                     (VP (NP-OBJ *T*-1)
+                         쓰/VV+은/EAN)))
+ㅌ               (NP (NP (S '/SLQ
+                          (NP-SBJ 북한/NPR+외교/NNC)
+                          (VP (NP-ADV 사방/NNC+으로/PAD)
+                              (VP (VV 출격/NNC+하/XSV+다/EFN)))
+                          '/SRQ
+                          는/EAN)
+                       (NP 제하/NNC+의/PAN))
+                   (NP 기사/NNC+에서/PAD)))
+       (VP (S-COMP (NP-SBJ (S (WHNP *op*)
+                              (S (ADVP 또/ADV)
+                                 (S (NP-SBJ 북한/NPR+이/PCA)
+                                    (VP (VP (NP-COMP 미국/NPR+과/PAD)
+                                            (VP (NP-ADV 적극/NNC+적/XSF+으로/PAD)
+                                                (VP (VV 접촉/NNC+하/XSV+고/ECS))))
+                                        (VP (NP-OBJ 대미/NNC
+                                                    관계/NNC
+                                                    개선/NNC+을/PCA)
+                                            (NP-COMP (NP 외교/NNC+의/PAN)
+                                                     (NP 중요/NNC+임무/NNC+으로/PAD))
+                                            삼/VV+는/EAN)))))
+                           (NP 이유/NNC+은/PAU))
+                   (VP (NP (S (S (NP-ADV 첫째/NNU+은/PAU)
+                                 (S (NP-SBJ *pro*)
+				    (VP (NP-OBJ (NP 안보/NNC+상/XSF+의/PAN)
+						(NP 압력/NNC+을/PCA))
+					(VV 해소/NNC+하/XSV+고/ECS))))
+                              (S (NP-ADV 둘째/NNU+은/PAU)
+                                 (S (NP-SBJ *pro*)
+				    (VP (S-OBJ (NP-SBJ *pro*)
+					       (VP (NP-OBJ 사회/NNC+주의/NNC
+							       건설/NNC+을/PCA)
+						   (VV 촉진/NNC+하/XSV+기/ENM)))
+					위하/VV+은/EAN))))
+                           (NP 것/NNX+이/CO+라/EFN+고/PAD))))
+           (VV 분석/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>과</f>
+	      <term>미국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>적극적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>접촉하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>접촉하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>허경만 부사장을 팀장으로 하는 자산관리공사 투자설명회 대표단은 미국 투자기관을 접촉한 결과 이들 투자기관이 한국 금융기관이나 공기업의 해외채권발행에 높은 관심을 보이고 있어 채권발행조건이 작년에 비해 훨씬 호전될 것으로 낙관했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-OBJ 허경만/NPR
+                             부사장/NNC+을/PCA)
+                     (NP-COMP 팀장/NNC+으로/PAD)
+                     하/VV+는/EAN)))
+           (NP 자산/NNC+관리/NNC+공사/NNC
+               투자/NNC+설명회/NNC
+               대표단/NNC+은/PAU))
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 미국/NPR
+                              투자/NNC+기관/NNC+을/PCA)
+                      (VV 접촉/NNC+하/XSV+은/EAN)))
+               (NP 결과/NNC))
+       (S (NP-SBJ 이/NPN+들/XSF
+                  투자/NNC+기관/NNC+이/PCA)
+          (VP (VP (NP-COMP (NP (NP 한국/NPR
+                                   금융/NNC+기관/NNC+이나/PCJ)
+                               (NP 공기업/NNC+의/PAN))
+                           (NP 해외/NNC+채권/NNC+발행/NNC+에/PAD))
+                  (NP-OBJ (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (ADJP 높/VJ+은/EAN)))
+                          (NP 관심/NNC+을/PCA))
+                  보이/VV+고/ECS)
+              있/VX+어/ECS))
+       (VP (NP-COMP (S (NP-SBJ 채권/NNC+발행/NNC+조건/NNC+이/PCA)
+                       (VP (S (NP-SBJ *pro*)
+                              (VP (NP-COMP 작년/NNC+에/PAD)
+                                  비하/VV+어/ECS))
+                           (ADVP 훨씬/ADV)
+                           (VP (VV 호전/NNC+되/XSV+을/EAN))))
+                    (NP 것/NNX+으로/PAD))
+           (VV 낙관/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>미국 투자기관</term>
+	    </Arg>
+	    <Rel>
+	      <term>접촉한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,149 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일관</lemma>
+    <comment>Frames file for '일관' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>일관.01</id>
+      <edef>consistent</edef>
+      <roleset>
+	<role argnum="1" argrole="thing consistent"/>
+	<role argnum="2" argrole="consistent in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일관하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 롄 후보 진영에서는 리 총통의 지원설에 대해 묵묵부답으로 일관해 온 천 후보가 막판에 리 총통 카드를 꺼내 이같은 소문을 사실인 양 암시함으로써 선거 전략에 차질이 빚어지지 않을까 긴장하고 있는 것으로 알려졌다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 롄/NPR
+                              후보/NNC
+                              진영/NNC+에서/PCA+은/PAU)
+                      (VP (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (VP (S (NP-SBJ *pro*)
+                                                          (VP (NP-COMP (NP 리/NPR
+                                                                           총통/NNC+의/PAN)
+                                                                       (NP 지원/NNC+설/NNC+에/PAD))
+                                                              대하/VV+어/ECS))
+                                                       (VP (NP-COMP 묵묵부답/NNC+으로/PAD)
+                                                           (VV 일관/NNC+하/XSV+어/ECS)))
+                                                   오/VX+은/EAN)))
+                                         (NP 천/NPR
+                                             후보/NNC+이/PCA))
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-ADV 막판/NNC+에/PAD)
+                                            (VP (NP-OBJ 리/NPR
+                                                        총통/NNC
+                                                        카드/NNC+을/PCA)
+                                                꺼내/VV+어/ECS)))
+                                     (VP (NP-OBJ 이같은/DAN
+						       소문/NNC+을/PCA)
+                                         (NP-COMP (S (NP-SBJ *pro*)
+						     (VP (NP 사실/NNC+이/CO+은/EAN)))
+						  (NP 양/NNX))
+					 (VV 암시/NNC+하/XSV+음/ENM+으로써/PAD))))
+                              (S (NP-COMP-2 선거/NNC
+						전략/NNC+에/PAD)
+                                 (S (NP-SBJ 차질/NNC+이/PCA)
+                                    (VP (VP (NP-COMP *T*-2)
+					    (VV 빚/VV+어지/XSV+지/ECS))
+                                        않/VX+을까/EFN)))
+                              (VP (VV 긴장/NNC+하/XSV+고/ECS)))
+                          있/VX+는/EAN))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=천 후보</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>리 총통의 지원설에 대해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>묵묵부답</term>
+	    </Arg>
+	    <Rel>
+	      <term>일관해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>온</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>일관되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>북한은 8 일 관영 중앙통신 논평을 통해 미 국무부의 '연례인권보고서'는 전도된 가치관과 흑백전도의 논리로 일관돼 있다며 재론할 일고의 가치도 없다고 일축했다.</text>
+	  <parse>
+(S (NP-SBJ 북한/NPR+은/PAU)
+   (VP (NP-ADV 8/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 관영/NNC
+                      중앙/NNC+통신/NNC
+                      논평/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (S (NP-SBJ (NP 미/NPR
+                      국무부/NNC+의/PAN)
+                  (NP '/SLQ
+                      연례/NNC+인권/NNC+보고서/NNC
+                      '/SRQ
+                      은/PAU))
+          (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (VV 전도/NNC+되/XSV+은/EAN))))
+                               (NP 가치관/NNC+과/PCJ))
+                           (NP (NP 흑백/NNC+전도/NNC+의/PAN)
+                               (NP 논리/NNC+으로/PAD)))
+                  (VV 일관/NNC+되/XSV+어/ECS))
+              있/VX+다며/ECS))
+       (VP (S-COMP (NP-SBJ (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ *pro*)
+                                  (VV 재론/NNC+하/XSV+을/EAN)))
+                           (NP (NP 일고/NNC+의/PAN)
+                               (NP 가치/NNC+도/PAU)))
+                   (ADJP 없/VJ+다/EFN+고/PAD))
+           (VV 일축/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>미 국무부의 '연례인권보고서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>전도된 가치관과 흑백전도의 논리</term>
+	    </Arg>
+	    <Rel>
+	      <term>일관돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

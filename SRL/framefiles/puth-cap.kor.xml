@@ -1,0 +1,139 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>붙잡</lemma>
+    <comment>Frames file for '붙잡' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>붙잡.01</id>
+      <edef>catch</edef>
+      <roleset>
+	<role argnum="0" argrole="getter"/>
+	<role argnum="1" argrole="thing gotten"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>붙잡다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>검찰측은 당시 슈워츠가 루이마를 바닥에서 일어나지 못하도록 붙잡았으며 위즈와 브루더는 슈워츠와 사전 공모해 슈워츠의 고문 가담 사실을 은폐하려 했다면서 이들의 전화통화 기록을 증거로 제시했다.</text>
+	  <parse>
+(S (NP-SBJ 검찰/NNC+측/XSF+은/PAU)
+   (VP (S (NP-ADV 당시/NNC)
+          (S (NP-SBJ 슈워츠/NPR+이/PCA)
+             (VP (NP-OBJ 루이마/NPR+을/PCA)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (VP (NP-ADV 바닥/NNC+에서/PAD)
+                                (VP 일어나/VV+지/ECS))
+                            못하/VX+도록/ECS))
+                     (VP 붙잡/VV+었/EPF+으며/ECS)))))
+       (S (NP-SBJ (NP 위즈/NPR+과/PCJ)
+                  (NP 브루더/NPR+은/PAU))
+          (VP (VP (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 슈워츠/NPR+과/PAD)
+                         (VP (NP-ADV 사전/NNC)
+                             (VP (VV 공모/NNC+하/XSV+어/ECS)))))
+                  (VP (NP-OBJ (NP 슈워츠/NPR+의/PAN)
+                              (NP 고문/NNC
+                                  가담/NNC
+                                  사실/NNC+을/PCA))
+                      (VV 은폐/NNC+하/XSV+으려/ECS)))
+              하/VX+었/EPF+다면서/ECS))
+       (VP (NP-OBJ (NP 이/NPN+들/XSF+의/PAN)
+                   (NP 전화/NNC+통화/NNC
+                       기록/NNC+을/PCA))
+           (NP-COMP 증거/NNC+으로/PAD)
+           (VV 제시/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>당시</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>슈워츠</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>루이마</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>바닥에서 일어나지 못하도록</term>
+	    </Arg>
+	    <Rel>
+	      <term>붙잡았으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>붙잡히다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>10 대 때부터 해킹을 해 오던 미트닉은 미 연방수사국(FBI) 수배를 받은 뒤에도 3 년 동안이나 붙잡히지 않은 채 계속해서 각종 컴퓨터망에 침입하는 실력을 과시, 해커 세계의 유명인사로 떠올랐다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-ADV 10/NNU
+                                 대/NNX
+                                 때/NNC+부터/PAU)
+                         (VP (NP-OBJ 해킹/NNC+을/PCA)
+                             하/VV+어/ECS))
+                     오/VX+던/EAN)))
+           (NP 미트닉/NPR+은/PAU))
+   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ-LV 미/NPR
+                                     연방/NNC+수사국/NNC
+                                     (PRN -LRB-/SLQ
+                                          FBI/NFW
+                                          -RRB-/SRQ)
+                                     수배/NNC+을/PCA)
+                          (LV 받/VV+은/EAN)))
+                   (NP 뒤/NNC+에/PAD+도/PAU))
+           (NP-ADV (S (NP-SBJ *pro*)
+                      (VP (VP (NP-ADV 3/NNU
+                                      년/NNX
+                                      동안/NNC+이나/PAU)
+                              (VP 붙잡히/VV+지/ECS))
+                          않/VX+은/EAN))
+                   (NP 채/NNX))
+           (S (NP-SBJ *pro*)
+              (VP (VV 계속/NNC+하/XSV+어서/ECS)))
+           (VP (NP-OBJ (S (NP-SBJ *pro*)
+                          (VP (NP-COMP 각종/NNC
+                                       컴퓨터/NNC+망/NNC+에/PAD)
+                              (VV 침입/NNC+하/XSV+는/EAN)))
+                       (NP 실력/NNC+을/PCA))
+               (VV 과시/NNC)))
+       ,/SCM
+       (VP (NP-COMP (NP 해커/NNC
+                        세계/NNC+의/PAN)
+                    (NP 유명/NNC+인사/NNC+으로/PAD))
+           떠오르/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>3 년 동안이나</term>
+	    </Arg>
+	    <Rel>
+	      <term>붙잡히지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않은</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

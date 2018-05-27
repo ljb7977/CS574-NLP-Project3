@@ -1,0 +1,112 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>설명</lemma>
+    <comment>Frames file for '설명' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>설명.01</id>
+      <edef>explain</edef>
+      <roleset>
+	<role argnum="0" argrole="explainer"/>
+	<role argnum="1" argrole="thing explained"/>
+	<role argnum="2" argrole="explained to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>설명하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 지역은 제 포대장이 저한테 설명한 지역과 흡사합니다.</text>
+	  <parse>
+(S (NP-SBJ 그/DAN
+           지역/NNC+은/PAU)
+   (ADJP (NP-COMP (S (WHNP-1 *op*)
+                     (S (NP-SBJ (NP 저/NPN+의/PAN)
+                                (NP 포대장/NNC+이/PCA))
+                        (VP (NP-COMP 저/NPN+한테/PAD)
+                            (NP-OBJ *T*-1)
+                            (VV 설명/NNC+하/XSV+은/EAN))))
+                  (NP 지역/NNC+과/PAD))
+         (VJ 흡사/NNC+하/XSJ+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>제 포대장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>한테</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=지역</term>
+	    </Arg>
+	    <Rel>
+	      <term>설명한</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>횡렬 지뢰원을 어떻게 설치하는지 설명하게.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-OBJ (NP-SBJ *pro*)
+              (VP (NP-OBJ 횡렬/NNC
+                          지뢰원/NNC+을/PCA)
+                  (VP (ADVP 어떻게/ADV)
+                      (VP (VV 설치/NNC+하/XSV+는지/EFN)))))
+       (VV 설명/NNC+하/XSV+게/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>횡렬 지뢰원을 어떻게 설치하는지</term>
+	    </Arg>
+	    <Rel>
+	      <term>설명하게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>설명드리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 무전기에 대해선 설명드릴 수가 없습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-COMP 그/DAN
+                                무전기/NNC+에/PAD)
+                       대하/VV+어서/ECS+은/PAU))
+           설명/NNC+드리/XSV+을/EAN)
+       (VX 수/NNX+이/PCA
+           없/VJ+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>그 무전기에 대해선</term>
+	    </Arg>
+	    <Rel>
+	      <term>설명드릴</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수가 없습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

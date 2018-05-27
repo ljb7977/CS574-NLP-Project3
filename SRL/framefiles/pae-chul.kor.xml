@@ -1,0 +1,291 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>배출</lemma>
+    <comment>Frames file for '배출' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>배출.01</id>
+      <edef>produce</edef>
+      <roleset>
+	<role argnum="0" argrole="producer"/>
+	<role argnum="1" argrole="talent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>배출하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>또 김 명예총재는 지역감정 문제에 대해 "지역감정은 내 고장에서 대통령을 배출하자고 (여야 정당이) 극심하게 대립하는 바람에 생긴 것이며, 대통령제와 대통령선거라는 근원적인 문제를 고치지 않는 한 없어지지 않는다"며 내각책임제로의 개헌을 거듭 주장했다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 김/NPR
+              명예/NNC+총재/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 지역/NNC+감정/NNC
+                          문제/NNC+에/PAD)
+                 대하/VV+어/ECS))
+          (S "/SLQ
+             (S (NP-SBJ 지역/NNC+감정/NNC+은/PAU)
+                (VP (NP (S (WHNP-1 *op*)
+                           (S (NP-ADV (S (S (NP-SBJ *pro*)
+                                            (VP (NP-COMP (NP 나/NPN+의/PAN)
+							 (NP 고장/NNC+에서/PAD))
+                                                (NP-OBJ 대통령/NNC+을/PCA)
+						(VV 배출/NNC+하/XSV+자/EFN+고/PAD)))
+                                         (S (NP-SBJ (PRN -LRB-/SLQ
+                                                         여야/NNC
+                                                         정당/NNC+이/PCA
+                                                         -RRB-/SRQ))
+                                            (VP (ADVP (ADV 극심하/VJ+게/ECS))
+                                                (VP (VV 대립/NNC+하/XSV+는/EAN)))))
+                                      (NP 바람/NNX+에/PAD))
+                              (S (NP-SBJ *T*-1)
+                                 (VP 생기/VV+은/EAN))))
+                        (NP 것/NNX+이/CO+으며/ECS))))
+             ,/SCM
+             (S (NP-ADV (S (NP-SBJ *pro*)
+                           (VP (VP (NP-OBJ (NP (NP 대통령제/NNC+과/PCJ)
+                                               (NP 대통령/NNC+선거/NNC+이라는/PAN))
+                                           (NP (S (WHNP-3 *op*)
+                                                  (S (NP-SBJ *T*-3)
+                                                     (VP (NP 근원/NNC+적/XSF+이/CO+은/EAN))))
+                                               (NP 문제/NNC+을/PCA)))
+                                   고치/VV+지/ECS)
+                               않/VX+는/EAN))
+                        (NP 한/NNC))
+                (S (NP-SBJ *pro*)
+                   (VP (VP (VV 없/VJ+어지/XSV+지/ECS))
+                       않/VX+는다/EFN)))
+             "/SRQ
+             며/ECS)
+          (VP (NP-OBJ (NP 내각책임제/NNC+으로/PAD+의/PAN)
+                      (NP 개헌/NNC+을/PCA))
+              (VP (ADVP 거듭/ADV)
+                  (VP (VV 주장/NNC+하/XSV+었/EPF+다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>내 고장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대통령</term>
+	    </Arg>
+	    <Rel>
+	      <term>배출하자고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>배출되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>북한을 탈출한 후 사회 적응교육 기관인 하나원에서 교육을 받고 사회로 배출된 북한 이탈주민은 3 일 현재 66 명이며 이들 중 10 명에게는 창업융자금 8 억여원이 지원된 것으로 집계됐다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-ADV (S (NP-SBJ *pro*)
+                                   (VP (NP-OBJ 북한/NPR+을/PCA)
+                                       (VV 탈출/NNC+하/XSV+은/EAN)))
+                                (NP 후/NNC))
+                        (VP (VP (NP-ADV (S (WHNP-2 *op*)
+                                           (S (NP-SBJ *T*-2)
+                                              (VP (NP 사회/NNC
+                                                      적응/NNC+교육/NNC
+                                                      기관/NNC+이/CO+은/EAN))))
+                                        (NP 하나원/NPR+에서/PAD))
+                                (VP (NP-OBJ 교육/NNC+을/PCA)
+                                    받/VV+고/ECS))
+                            (VP (NP-COMP 사회/NNC+으로/PAD)
+                                (VV 배출/NNC+되/XSV+은/EAN))))))
+              (NP 북한/NPR
+                  이탈/NNC+주민/NNC+은/PAU))
+      (VP (NP-ADV 3/NNU
+                  일/NNX
+                  현재/NNC)
+          (VP (NP 66/NNU
+                  명/NNX+이/CO+으며/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-COMP-3 이/NPN+들/XSF
+                                 중/NNX
+                                 10/NNU
+                                 명/NNX+에게/PAD+은/PAU)
+                      (S (NP-SBJ 창업/NNC+융자금/NNC
+                                 8/NNU
+                                 억/NNU+여/XSF+원/NNX+이/PCA)
+                         (VP (NP-COMP *T*-3)
+                             (VV 지원/NNC+되/XSV+은/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 집계/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=북한 이탈주민</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>북한을 탈출한 후</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>사회</term>
+	    </Arg>
+	    <Rel>
+	      <term>배출된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>배출.02</id>
+      <edef>eject</edef>
+      <roleset>
+	<role argnum="0" argrole="ejector"/>
+	<role argnum="1" argrole="thing ejected"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>배출하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이들은 미국 자동차 업체의 선호생산 품목인 픽업 트럭이나 경주용 등의 스포츠카가 일반 승용차보다 기름을 더 연소하고 배기가스를 더 많이 배출하기 때문이라고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPN+들/XSF+은/PAU)
+   (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP (NP 미국/NPR
+                                             자동차/NNC
+                                             업체/NNC+의/PAN)
+                                         (NP 선호/NNC+생산/NNC
+                                             품목/NNC+이/CO+은/EAN)))))
+                           (NP (NP 픽업/NNC
+                                   트럭/NNC+이나/PCJ)
+                               (NP (NP (NP 경주/NNC+용/XSF)
+                                       (NP 등/NNX+의/PAN))
+                                   (NP 스포츠카/NNC+이/PCA))))
+                   (VP (NP-ADV 일반/NNC
+                                   승용차/NNC+보다/PAD)
+		       (VP (VP (NP-OBJ 기름/NNC+을/PCA)
+			       (VP (ADVP 더/ADV)
+				   (VP (VV 연소/NNC+하/XSV+고/ECS))))
+			   (VP (NP-OBJ 배기/NNC+가스/NNC+을/PCA)
+			       (VP (ADVP (ADVP 더/ADV)
+					 (ADVP 많이/ADV))
+				   (VP (VV 배출/NNC+하/XSV+기/ENM)))))))
+                (NP 때문/NNX+이라고/PAD))
+       (VV 설명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>미국 자동차 업체의 선호생산 품목인 픽업 트럭이나 경주용 등의 스포츠카</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>일반 승용차보다</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>배기가스</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더 많이</term>
+	    </Arg>
+	    <Rel>
+	      <term>배출하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>배출되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>즉 HIV-1 바이러스가 점막조직과 접촉할 때 나무가지 세포 표면에서 배출된 DC-SIGN이라는 단백질에 들러붙게 되며 DC-SIGN은 이 세포를 전염시키지 않으면서 에이즈 바이러스가 림프선에 있는 면역세포까지 운반될 수 있도록 한다는 것이다.</text>
+	  <parse>
+(S (ADCP 즉/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (S (NP-SBJ HIV-1/NFW
+                            바이러스/NNC+이/PCA)
+                    (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                       (VP (NP-COMP 점막/NNC+조직/NNC+과/PAD)
+                                           (VV 접촉/NNC+하/XSV+을/EAN)))
+                                    (NP 때/NNC))
+                            (VP (NP-COMP (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (NP-COMP 나무/NNC+가지/NNC
+								세포/NNC
+								표면/NNC+에서/PAD)
+                                                   (VV 배출/NNC+되/XSV+은/EAN))))
+                                         (NP (NP DC-SIGN/NFW+이라는/PAN)
+                                             (NP 단백질/NNC+에/PAD)))
+                                들러붙/VV+게/ECS))
+                        되/VX+으며/ECS))
+                 (S (NP-SBJ DC-SIGN/NFW+은/PAU)
+                    (VP (S (NP-SBJ *pro*)
+                           (VP (VP (NP-OBJ 이/DAN
+                                           세포/NNC+을/PCA)
+                                   (VV 전염/NNC+시키/XSV+지/ECS))
+                               않/VX+으면서/ECS))
+                        (VP (S-COMP (NP-SBJ 에이즈/NNC
+                                            바이러스/NNC+이/PCA)
+                                    (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                                                        (S (NP-SBJ *T*-2)
+                                                           (ADJP (NP-COMP 림프선/NNC+에/PAD)
+                                                                 있/VJ+는/EAN)))
+                                                     (NP 면역/NNC+세포/NNC+까지/PAU))
+                                            (VV 운반/NNC+되/XSV+을/EAN))
+                                        (VX 수/NNX
+                                            있/VJ+도록/ECS)))
+                            하/VV+는다는/EAN))))
+              (NP 것/NNX+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=DC-SIGN이라는 단백질</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>나무가지 세포 표면</term>
+	    </Arg>
+	    <Rel>
+	      <term>배출된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

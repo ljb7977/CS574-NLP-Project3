@@ -1,0 +1,251 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>빚</lemma>
+    <comment>Frames file for '빚' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>빚.01</id>
+      <edef>bring about</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing coming to be"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>빚다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 수석은 또 최근 정치권에서 논란을 빚고 있는 국가 채무 규모와 관련, "작년말 현재 IMF(국제통화기금)가 정한 국제분류기준에 의한 국가채무는 지방정부 채무 18 조원을 포함해 108 조원이며, 이는 국내총생산(GDP)의 22 퍼센트 수준으로 경제협력개발기구(OECD) 회원국 29 개국중 가장 낮다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           수석/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (VP (NP-COMP 최근/NNC
+                                              정치/NNC+권/XSF+에서/PAD)
+                                     (NP-OBJ 논란/NNC+을/PCA)
+                                     빚/VV+고/ECS)
+                                 있/VX+는/EAN)))
+                       (NP 국가/NNC
+                           채무/NNC
+                           규모/NNC+과/PAD))
+              (VV 관련/NNC)))
+       ,/SCM
+       (VP (S-COMP "/SLQ
+                   (S (NP-ADV 작년/NNC+말/NNX
+                              현재/NNC)
+                      (S (NP-SBJ (S (WHNP-3 *op*)
+                                    (S (NP-SBJ *T*-3)
+                                       (VP (NP-COMP (S (WHNP-2 *op*)
+                                                       (S (NP-SBJ IMF/NFW
+                                                                  (PRN -LRB-/SLQ
+                                                                       (NP 국제/NNC+통화/NNC+기금/NNC)
+                                                                       -RRB-/SRQ)
+                                                                  이/PCA)
+                                                          (VP (NP-OBJ *T*-2)
+                                                              정하/VV+은/EAN)))
+                                                    (NP 국제/NNC+분류/NNC+기준/NNC+에/PAD))
+                                           의하/VV+은/EAN)))
+                                 (NP 국가/NNC+채무/NNC+은/PAU))
+                         (VP (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ 지방/NNC+정부/NNC
+                                            채무/NNC
+                                            18/NNU
+                                            조/NNU+원/NNX+을/PCA)
+                                    (VV 포함/NNC+하/XSV+어/ECS)))
+                             (VP (NP 108/NNU
+                                     조/NNU+원/NNX+이/CO+으며/ECS)))))
+                   ,/SCM
+                   (S (NP-SBJ 이/NPN+은/PAU)
+                      (ADJP (NP-ADV (NP 국내총생산/NNC
+                                        (PRN -LRB-/SLQ
+                                             (NP GDP/NFW)
+                                             -RRB-/SRQ)
+                                        의/PAN)
+                                    (NP 22/NNU
+                                        퍼센트/NNX
+                                        수준/NNC+으로/PAD))
+                            (NP-ADV 경제/NNC+협력/NNC+개발/NNC+기구/NNC
+                                    (PRN -LRB-/SLQ
+                                         (NP OECD/NFW)
+                                         -RRB-/SRQ)
+                                    회원국/NNC
+                                    29/NNU
+                                    개국/NNX+중/NNX)
+                            (ADVP 가장/ADV)
+                            (ADJP 낮/VJ+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=국가 채무 규모</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>최근 정치권</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>논란</term>
+	    </Arg>
+	    <Rel>
+	      <term>빚고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>빚다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 공기업 민영화가 국부유출이라는 야당의 주장에 대해서도 한국전력이 한국통신에 비해 주가가 낮은 것은 통신업이 미래의 성장산업이기 때문만은 아니며 여기에는 전력산업 구조개편안이 국회에 계류돼 민영화가 차질을 빚은 것이 또 다른 원인으로 작용하고 있다고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (NP-SBJ 공기업/NNC
+                                  민영/NNC+화/XSF+이/PCA)
+                          (VP (NP 국부/NNC+유출/NNC+이/CO+라는/EAN)))
+                       (NP (NP 야당/NNC+의/PAN)
+                           (NP 주장/NNC+에/PAD)))
+              대하/VV+어서/ECS+도/PAU))
+       (VP (S-COMP (S (NP-SBJ (S (NP-SBJ 한국/NPR+전력/NNC+이/PCA)
+                                 (ADJP (S (NP-SBJ *pro*)
+                                          (VP (NP-COMP 한국/NPR+통신/NNC+에/PAD)
+                                              비하/VV+어/ECS))
+                                       (ADJP (NP-COMP 주가/NNC+이/PCA)
+                                             낮/VJ+은/EAN)))
+                              (NP 것/NNX+은/PAU))
+                      (ADJP (NP-COMP (S (NP-SBJ 통신업/NNC+이/PCA)
+					(VP (NP (NP 미래/NNC+의/PAN)
+						(NP 성장/NNC+산업/NNC+이/CO+기/ENM))))
+                                     (NP 때문/NNX+만/PAU+은/PAU))
+                            아니/VJ+으며/ECS))
+                   (S (NP-COMP-1 여기/NPN+에/PAD+은/PAU)
+                      (S (NP-SBJ (S (S (NP-SBJ 전력/NNC+산업/NNC
+                                               구조/NNC+개편/NNC+안/NNC+이/PCA)
+                                       (VP (NP-COMP 국회/NNC+에/PAD)
+                                           (VV 계류/NNC+되/XSV+어/ECS)))
+                                    (S (NP-SBJ 민영/NNC+화/XSF+이/PCA)
+                                       (VP (NP-OBJ 차질/NNC+을/PCA)
+                                           빚/VV+은/EAN)))
+                                 (NP 것/NNX+이/PCA))
+                         (VP (VP (NP-ADV (DANP (ADVP 또/ADV)
+                                               (DANP 다른/DAN))
+                                         원인/NNC+으로/PAD)
+                                 (VP (NP-COMP *T*-1)
+                                     (VV 작용/NNC+하/XSV+고/ECS)))
+                             있/VX+다/EFN+고/PAD))))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>전력산업 구조개편안이 국회에 계류돼</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>가</f>
+	      <term>민영화</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>차질</term>
+	    </Arg>
+	    <Rel>
+	      <term>빚은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>빚어지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 롄 후보 진영에서는 리 총통의 지원설에 대해 묵묵부답으로 일관해 온 천 후보가 막판에 리 총통 카드를 꺼내 이같은 소문을 사실인 양 암시함으로써 선거 전략에 차질이 빚어지지 않을까 긴장하고 있는 것으로 알려졌다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 롄/NPR
+                              후보/NNC
+                              진영/NNC+에서/PCA+은/PAU)
+                      (VP (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (VP (S (NP-SBJ *pro*)
+                                                          (VP (NP-COMP (NP 리/NPR
+                                                                           총통/NNC+의/PAN)
+                                                                       (NP 지원/NNC+설/NNC+에/PAD))
+                                                              대하/VV+어/ECS))
+                                                       (VP (NP-COMP 묵묵부답/NNC+으로/PAD)
+                                                           (VV 일관/NNC+하/XSV+어/ECS)))
+                                                   오/VX+은/EAN)))
+                                         (NP 천/NPR
+                                             후보/NNC+이/PCA))
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-ADV 막판/NNC+에/PAD)
+                                            (VP (NP-OBJ 리/NPR
+                                                        총통/NNC
+                                                        카드/NNC+을/PCA)
+                                                꺼내/VV+어/ECS)))
+                                     (VP (NP-OBJ 이같은/DAN
+                                                 소문/NNC+을/PCA)
+                                         (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                        (VP (NP 사실/NNC+이/CO+은/EAN)))
+                                                     (NP 양/NNX))
+                                             (VP (VV 암시/NNC+하/XSV+음/ENM+으로써/PAD))))))
+                              (S (NP-COMP-2 선거/NNC
+						전략/NNC+에/PAD)
+                                 (S (NP-SBJ 차질/NNC+이/PCA)
+                                    (VP (VP (NP-COMP *T*-2)
+					    (VV 빚/VV+어지/XSV+지/ECS))
+                                        않/VX+을까/EFN)))
+                              (VP (VV 긴장/NNC+하/XSV+고/ECS)))
+                          있/VX+는/EAN))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>선거 전략</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>차질</term>
+	    </Arg>
+	    <Rel>
+	      <term>빚어지지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않을까</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,202 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>사용</lemma>
+    <comment>Frames file for '사용' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>사용.01</id>
+      <edef>use</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing used"/>
+	<role argnum="2" argrole="purpose"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>사용하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>중대는 경기관총 분대하고 통신하는 데 어떤 장비를 사용하는가?</text>
+	  <parse>
+(S (NP-SBJ 중대/NNC+은/PAU)
+   (VP (NP-COMP (S (NP-SBJ *pro*)
+                   (VP (NP-COMP 경기관총/NNC
+                                분대/NNC+하고/PAD)
+                       (VV 통신/NNC+하/XSV+는/EAN)))
+                (NP 데/NNX))
+       (NP-OBJ 어떤/DAN
+               장비/NNC+을/PCA)
+       (VV 사용/NNC+하/XSV+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>중대</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>경기관총 분대하고 통신하는 데</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>어떤 장비</term>
+	    </Arg>
+	    <Rel>
+	      <term>사용하는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>때로는 무선 전화수가 철선을 공중선으로 사용했습니다만, 대개는 마디식 공중선을 사용했죠.</text>
+	  <parse>
+(S (S (ADVP 때로/ADV+은/PAU)
+      (S (NP-SBJ 무선/NNC
+                 전화수/NNC+이/PCA)
+         (VP (NP-OBJ 철선/NNC+을/PCA)
+             (NP-COMP 공중선/NNC+으로/PAD)
+             (VV 사용/NNC+하/XSV+었/EPF+습니다만/ECS))))
+   ,/SCM
+   (S (ADVP 대개/ADV+은/PAU)
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ (NP 마디/NNC+식/XSF)
+                     (NP 공중선/NNC+을/PCA))
+             (VV 사용/NNC+하/XSV+었/EPF+죠/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>때로는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>무선 전화수</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>철선</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>공중선</term>
+	    </Arg>
+	    <Rel>
+	      <term>사용했습니다만</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>저희 소대에는 사격 진지 담당 군관이나 소대장이 포대 지휘 감시소와 통신하기 위해서 사용한 떼아이-43 야전 전화기가 한 대 있었습니다.</text>
+	  <parse>
+(S (NP-COMP-2 저희/NPN
+              소대/NNC+에/PAD+은/PAU)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ (NP 사격/NNC
+                                진지/NNC
+                                담당/NNC
+                                군관/NNC+이나/PCJ)
+                            (NP 소대장/NNC+이/PCA))
+                    (VP (S-COMP (NP-SBJ *pro*)
+                                (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                               (VP (NP-COMP 포대/NNC
+                                                            지휘/NNC
+                                                            감시소/NNC+과/PAD)
+                                                   (VV 통신/NNC+하/XSV+기/ENM))))
+                                    위하/VV+어서/ECS))
+                        (NP-OBJ *T*-1)
+                        (VV 사용/NNC+하/XSV+은/EAN))))
+              (NP 떼아이-43/NNC
+                  야전/NNC
+                  전화기/NNC+이/PCA))
+      (ADJP (NP-ADV 한/NNU
+                    대/NNX)
+            (ADJP (NP-COMP *T*-2)
+                  있/VJ+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>사격 진지 담당 군관이나 소대장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>포대 지휘 감시소와 통신하기 위해서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=떼아이-43 야전 전화기</term>
+	    </Arg>
+	    <Rel>
+	      <term>사용한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>사용되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희 포반에는 무전기가 한 대도 없었습니다만, 저희 소대에는 에르-108 무선 송수신기가 한 대 있었는데, 그건 비상시에 지휘 감시소와 통신하는 데 사용됐습니다.</text>
+	  <parse>
+(S (S (NP-COMP-4 저희/NPN
+                 포반/NNC+에/PAD+은/PAU)
+      (S (NP-SBJ 무전기/NNC+이/PCA)
+         (ADJP (NP-ADV 한/NNU
+                       대/NNX+도/PAU)
+               (ADJP (NP-COMP *T*-4)
+                     없/VJ+었/EPF+습니다만/ECS))))
+   ,/SCM
+   (S (NP-COMP-5 저희/NPN
+                 소대/NNC+에/PAD+은/PAU)
+      (S (NP-SBJ 에르-108/NNC
+                 무선/NNC
+                 송수신기/NNC+이/PCA)
+         (ADJP (NP-ADV 한/NNU
+                       대/NNX)
+               (ADJP (NP-COMP *T*-5)
+                     있/VJ+었/EPF+는데/ECS))))
+   ,/SCM
+   (S (NP-SBJ 그것/NPN+은/PAU)
+      (VP (NP-COMP (S (NP-SBJ *pro*)
+                      (VP (NP-ADV 비상시/NNC+에/PAD)
+                          (VP (NP-COMP 지휘/NNC
+                                       감시소/NNC+과/PAD)
+                              (VV 통신/NNC+하/XSV+는/EAN))))
+                   (NP 데/NNX))
+          (VV 사용/NNC+되/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>저희 포반에는 무전기가 한 대도 없었습니다만</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>저희 소대에는 에르-108 무선 송수신기가 한 대 있었는데</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Arg n="2">
+	      <term>비상시에 지휘 감시소와 통신하는 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>사용되었습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

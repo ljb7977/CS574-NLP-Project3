@@ -1,0 +1,132 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>항의</lemma>
+    <comment>Frames file for '항의' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>항의.01</id>
+      <edef>protest</edef>
+      <roleset>
+	<role argnum="0" argrole="protester"/>
+	<role argnum="1" argrole="thing being objectionable"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>항의하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>영국 외무부는 짐바브웨 공항 세관이 영국의 외교행낭을 강제로 개봉한 것에 항의해 9 일 짐바브웨 주재 대사를 소환했다.</text>
+	  <parse>
+(S (S (NP-SBJ 영국/NPR
+              외무부/NNC+은/PAU)
+      (VP (NP-COMP (S (NP-SBJ 짐바브웨/NPR
+                              공항/NNC
+                              세관/NNC+이/PCA)
+                      (VP (NP-OBJ (NP 영국/NPR+의/PAN)
+                                  (NP 외교/NNC+행낭/NNC+을/PCA))
+                          (VP (NP-ADV 강제/NNC+으로/PAD)
+                              (VP (VV 개봉/NNC+하/XSV+은/EAN)))))
+                   (NP 것/NNX+에/PAD))
+          (VV 항의/NNC+하/XSV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV 9/NNU
+		  일/NNX)
+          (VP (NP-OBJ 짐바브웨/NPR
+                      주재/NNC
+                      대사/NNC+을/PCA)
+              (VV 소환/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>영국 외무부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>짐바브웨 공항 세관이 영국의 외교행낭을 강제로 개봉한 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>항의해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>항의.02</id>
+      <edef>protest</edef>
+      <roleset>
+	<role argnum="0" argrole="speaker"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>항의하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>코카콜라사의 전 인력자원부서 매니저였던 래리 존스는 자신이 2 주전 포기각서와 관련 잭 스탈 코카콜라의 회장에게 직접 항의했다는 이유로 해고당했다면서 회사가 포기각서 제출안을 철회한 것은 올바른 일이라고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP (NP 코카콜라/NPR+사/XSF+의/PAN)
+                         (NP 전/DAN
+                             인력/NNC+자원/NNC+부서/NNC
+                             매니저/NNC+이/CO+었/EPF+던/EAN)))))
+           (NP 래리/NPR
+               존스/NPR+은/PAU))
+   (VP (S (NP-SBJ 자신/NNC+이/PCA)
+          (VP (NP-ADV 2/NNU
+                      주/NNX+전/NNC)
+              (NP-ADV (S (S (NP-SBJ *pro*)
+                            (VP (NP-COMP 포기/NNC+각서/NNC+과/PAD)
+                                (VV 관련/NNC)))
+                         (S (NP-SBJ *pro*)
+                            (VP (NP-COMP (NP 잭/NPR
+                                             스탈/NPR)
+                                         (NP (NP 코카콜라/NPR+의/PAN)
+                                             (NP 회장/NNC+에게/PAD)))
+                                (VP (ADVP 직접/ADV)
+                                    (VP (VV 항의/NNC+하/XSV+었/EPF+다는/EAN))))))
+                      (NP 이유/NNC+으로/PAD))
+              (VP (VV 해고/NNC+당하/XSV+었/EPF+다면서/ECS))))
+       (VP (S-COMP (NP-SBJ (S (NP-SBJ 회사/NNC+이/PCA)
+                              (VP (NP-OBJ 포기/NNC+각서/NNC
+                                          제출안/NNC+을/PCA)
+                                  (VV 철회/NNC+하/XSV+은/EAN)))
+                           (NP 것/NNX+은/PAU))
+                   (VP (NP (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (ADJP 올바르/VJ+은/EAN)))
+                           (NP 일/NNC+이/CO+라/EFN+고/PAD))))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>포기각서와 관련</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>잭 스탈 코카콜라의 회장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>직접</term>
+	    </Arg>
+	    <Rel>
+	      <term>항의했다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

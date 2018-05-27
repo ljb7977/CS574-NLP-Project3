@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>받</lemma>
+    <comment>Frames file for '받' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>받.01</id>
+      <edef>receive</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="source"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>받다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>만약 최초의 곡사포가 몹시 파손됐을 경우에는, 그게 수리되고 있는 동안에 연대로부터 대체용 곡사포를 받았습니다.</text>
+	  <parse>
+(S (ADVP 만약/ADV)
+   (NP-ADV (S (NP-SBJ (NP 최초/NNC+의/PCA) 
+		      (NP 곡사포/NNC+가/PCA))
+	      (VP (ADVP 몹시/ADV)
+		  (VP (VV 파손/NNC+되/XSV+었/EPF+을/EAN)))) 
+	   (NP 경우/NNC+에/PAD+는/PAU))
+   ,/SCM 
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (NP-SBJ 그것/NPN+이/PCA)
+		     (VP (VP (VV 수리/NNC+되/XSV+고/EAU))
+			 있/VX+는/EAN)) 
+		  (NP 동안/NNX+에/PAD)) 
+	  (VP (NP-COMP 연대/NNC+으로/PAD+부터/PAU) 
+	      (NP-OBJ 대체/NNC+용/XSF 
+		      곡사포/NNC+를/PCA)
+	      받/VV+았/EPF+습니다/EFN)))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>만약 최초의 곡사포가 몹시 파손됐을 경우에는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그게 수리되고 있는 동안에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로부터</f>
+	      <term>연대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대체용 곡사포</term>
+	    </Arg>
+	    <Rel>
+	      <term>받았습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>적한테서 양면 공격을 받았다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP 적/NNC+한테서/PAD) 
+       (VP (NP-OBJ-LV 양면/NNC
+		      공격/NNC+을/PCA) 
+           (LV 받/VV+았/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>한테서</f>
+	      <term>적</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>양면 공격</term>
+	    </Arg>
+	    <Rel>
+	      <term>받았다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

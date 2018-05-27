@@ -1,0 +1,156 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전개</lemma>
+    <comment>Frames file for '전개' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>전개.01</id>
+      <edef>deploy</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing deployed"/>
+	<role argnum="2" argrole="start state"/>
+	<role argnum="3" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전개하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>그것은 3개 분대를 일렬로 전개한 겁니다.</text>
+	  <parse>
+(S (NP-SBJ 그것/NPN+은/PAU)
+   (VP (NP (S (NP-SBJ *pro*)
+              (VP (NP-OBJ 3/NNU
+                          개/NNX
+                          분대/NNC+을/PCA)
+                  (NP-COMP 일렬/NNC+으로/PAD)
+                  (VV 전개/NNC+하/XSV+은/EAN)))
+           (NP 것/NNX+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>3개 분대</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>일렬</term>
+	    </Arg>
+	    <Rel>
+	      <term>전개한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전개되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>저는 제3 탱크 대대 전체가 그 도로를 따라서 약 1 내지 2 킬로미터 정도 거리에 전개돼 있는 걸 보았습니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (NP-OBJ (S (NP-SBJ 제/XPF+3/NNU
+                          탱크/NNC
+                          대대/NNC
+                          전체/NNC+이/PCA)
+                  (VP (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ 그/DAN
+                                         도로/NNC+을/PCA)
+                                 따르/VV+어서/ECS))
+                          (NP-ADV (NP (DANP 약/DAN)
+                                      (NP (NP 1/NNU)
+                                          (ADCP 내지/ADC)
+                                          (NP 2/NNU))
+                                      (NP 킬로미터/NNX))
+                                  (NP 정도/NNC)
+                                  (NP 거리/NNC+에/PAD))
+                          (VP (VV 전개/NNC+되/XSV+어/ECS)))
+                      있/VX+는/EAN))
+               (NP 것/NNX+을/PCA))
+       보/VV+었/EPF+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>제3 탱크 대대 전체</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>그 도로를 따라서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>약 1 내지 2 킬로미터 정도 거리에</term>
+	    </Arg>
+	    <Rel>
+	      <term>전개돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>전개.02</id>
+      <edef>deploy</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start state"/>
+	<role argnum="3" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전개하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>접적이 절박하면 탱크 소대들은 공격대형으로 전개합니다.</text>
+	  <parse>
+(S (S (NP-SBJ 접적/NNC+이/PCA)
+      (ADJP 절박하/VJ+으면/ECS))
+   (S (NP-SBJ 탱크/NNC
+              소대/NNC+들/XSF+은/PAU)
+      (VP (NP-COMP 공격/NNC
+                   대형/NNC+으로/PAD)
+          (VV 전개/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>접적이 절박하면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>탱크 소대들</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>공격대형</term>
+	    </Arg>
+	    <Rel>
+	      <term>전개합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

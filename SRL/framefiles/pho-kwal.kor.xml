@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>포괄</lemma>
+    <comment>Frames file for '포괄' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>포괄.01</id>
+      <edef>comprise</edef>
+      <roleset>
+	<role argnum="1" argrole="group"/>
+	<role argnum="2" argrole="parts or members"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>포괄하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>GCS가 미사일 보유 및 비보유 국가를 모두 포괄하고 있어 만약 이 체제가 출범하면 MTCR가 흡수되거나 무력화될 가능성도 제기되고 있지만 전망은 지극히 불투명한 상태다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (S (NP-SBJ GCS/NFW+이/PCA)
+                    (VP (VP (NP-OBJ (NP 미사일/NNC)
+                                    (NP (NP 보유/NNC)
+                                        (ADCP 및/ADC)
+                                        (NP 비/XPF+보유/NNC))
+                                    (NP 국가/NNC+을/PCA))
+                            (VP (ADVP 모두/ADV)
+                                (VP (VV 포괄/NNC+하/XSV+고/ECS))))
+                        있/VX+어/ECS))
+                 (S (ADVP 만약/ADV)
+                    (S (NP-SBJ 이/DAN
+                               체제/NNC+이/PCA)
+                       (VP (VV 출범/NNC+하/XSV+으면/ECS))))
+                 (S (NP-SBJ MTCR/NFW+이/PCA)
+                    (VP (VV (VV 흡수/NNC+되/XSV+거나/ECS)
+                            (VV 무력화/NNC+되/XSV+을/EAN)))))
+              (NP 가능성/NNC+도/PAU))
+      (VP (VP (VV 제기/NNC+되/XSV+고/ECS))
+          있/VX+지만/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 전망/NNC+은/PAU)
+                 (ADJP (ADVP 지극히/ADV)
+                       (ADJP (VJ 불투명/NNC+하/XSJ+은/EAN))))
+              (NP 상태/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>GCS</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>미사일 보유 및 비보유 국가</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>모두</term>
+	    </Arg>
+	    <Rel>
+	      <term>포괄하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있어</term>
+	    </Aux>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>실직</lemma>
+    <comment>Frames file for '실직' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>실직.01</id>
+      <edef>lose a job</edef>
+      <roleset>
+	<role argnum="1" argrole="person losing a job"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>실직하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 도이체 방크 감독위원회의 한 간부는 양 은행 합병으로 향후 2003 년까지 1 만 6 천명이 실직할 것이라고 내다봤다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ (NP 도이체/NPR
+                  방크/NPR
+                  감독/NNC+위원회/NNC+의/PAN)
+              (NP 한/NNU
+                  간부/NNC+은/PAU))
+      (VP (S-COMP (NP-ADV 양/DAN
+                          은행/NNC
+                          합병/NNC+으로/PAD)
+                  (NP-ADV 향후/NNC
+                          2003/NNU
+                          년/NNX+까지/PAU)
+                  (S (NP-SBJ 1/NNU
+                             만/NNU
+                             6/NNU
+                             천/NNU+명/NNX+이/PCA)
+                     (VP (VP (VV 실직/NNC+하/XSV+을/EAN))
+                         (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+          내다보/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>양 은행 합병으로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>향후 2003 년까지</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>1 만 6 천명</term>
+	    </Arg>
+	    <Rel>
+	      <term>실직할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

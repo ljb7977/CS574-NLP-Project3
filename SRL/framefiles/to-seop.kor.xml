@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>도섭</lemma>
+    <comment>Frames file for '도섭' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>도섭.01</id>
+      <edef>ford</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="barrier"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>도섭하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>너의 정찰대는 남대천을 어디서 도섭했는가?</text>
+	  <parse>
+(S (NP-SBJ (NP 너/NPN+의/PCA)
+	   (NP 정찰대/NNC+은/PAU)) 
+   (VP (NP-OBJ 남대천/NPR+을/PCA) 
+       (VP (NP-ADV 어디/NPN+서/PAD) 
+	   (VP (VV 도섭/NNC+하/XSV+었/EPF+는가/EFN)))) 
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>너의 정찰대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>남대천</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>어디서</term>
+	    </Arg>
+	    <Rel>
+	      <term>도섭했는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>광범하</lemma>
+    <comment>Frames file for '광범하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>광범하.01</id>
+      <edef>immense</edef>
+      <roleset>
+	<role argnum="1" argrole="immense"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>광범하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>만약 스트로 장관이 피노체트의 석방을 결정할 경우 이에 대한 항소가 다시 가능하나 인도문제의 경우 내무장관이 광범한 재량권을 갖고 있어 성공할 가능성이 많지 않다.</text>
+	  <parse>
+(S (S (NP-ADV (S (ADVP 만약/ADV)
+                 (S (NP-SBJ 스트로/NPR
+                            장관/NNC+이/PCA)
+                    (VP (NP-OBJ (NP 피노체트/NPR+의/PAN)
+                                (NP 석방/NNC+을/PCA))
+                        (VV 결정/NNC+하/XSV+을/EAN))))
+              (NP 경우/NNC))
+      (S (NP-SBJ (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-COMP 이/NPN+에/PAD)
+                           대하/VV+은/EAN)))
+                 (NP 항소/NNC+이/PCA))
+         (ADJP (ADVP 다시/ADV)
+               (ADJP (VJ 가능/NNC+하/XSJ+으나/ECS)))))
+   (S (NP-ADV (NP 인도/NNC+문제/NNC+의/PAN)
+              (NP 경우/NNC))
+      (S (NP-SBJ 내무/NNC+장관/NNC+이/PCA)
+         (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                            (S (NP-SBJ *T*-2)
+                               (ADJP 광범하/VJ+은/EAN)))
+                         (NP 재량권/NNC+을/PCA))
+                 갖/VV+고/ECS)
+             있/VX+어/ECS))
+      (S (NP-SBJ (S (NP-SBJ *pro*)
+                    (VP (VV 성공/NNC+하/XSV+을/EAN)))
+                 (NP 가능성/NNC+이/PCA))
+         (VP (ADJP 많/VJ+지/ECS)
+             않/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=재량권</term>
+	    </Arg>
+	    <Rel>
+	      <term>광범한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

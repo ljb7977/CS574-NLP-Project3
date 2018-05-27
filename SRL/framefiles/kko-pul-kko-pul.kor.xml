@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>꼬불꼬불</lemma>
+    <comment>Frames file for '꼬불꼬불' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>꼬불꼬불.01</id>
+      <edef>winding</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being winding"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>꼬불꼬불하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대대 지휘소 가까이에 있는 꼬불꼬불한 길을 따라 이 길하고 만날 때까지 갑니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP (NP-COMP 대대/NNC
+                                       지휘소/NNC
+                                       가까이/NNC+에/PAD)
+                              있/VJ+는/EAN)))
+                  (NP (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (ADJP (VJ 꼬불꼬불/NNC+하/XSJ+은/EAN))))
+                      (NP 길/NNC+을/PCA)))
+          따르/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (WHNP *op*)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-COMP 이/DAN
+                                     길/NNC+하고/PAD)
+                            만나/VV+을/EAN)))
+                  (NP 때/NNC+까지/PAU))
+          (VP 가/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=길</term>
+	    </Arg>
+	    <Rel>
+	      <term>꼬불꼬불한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

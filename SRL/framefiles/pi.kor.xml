@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>비</lemma>
+    <comment>Frames file for '비' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>비.01</id>
+      <edef>be empty</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being empty"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>비다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>집합지역 동쪽 끝에 있는 텅 빈 마을 부근에 탱크하고 트럭이 몇 대 있는 것만 봤지요.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-OBJ (S (NP-COMP-2 (NP (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (ADJP (NP-COMP 집합/NNC
+                                                      지역/NNC
+                                                      동쪽/NNC
+                                                      끝/NNC+에/PAD)
+                                             있/VJ+는/EAN)))
+                                 (NP (S (WHNP *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (ADVP 텅/ADV)
+                                               (VP 비/VV+은/EAN))))
+                                     (NP 마을/NNC)))
+                             (NP 부근/NNC+에/PAD))
+                  (S (NP-SBJ (NP 탱크/NNC+하고/PCJ)
+                             (NP 트럭/NNC+이/PCA))
+                     (ADJP (NP-ADV 몇/NNU
+                                   대/NNX)
+                           (ADJP (NP-COMP *T*-2)
+                                 있/VJ+는/EAN))))
+               (NP 것/NNX+만/PAU))
+       보/VV+었/EPF+지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=마을</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>텅</term>
+	    </Arg>
+	    <Rel>
+	      <term>빈</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

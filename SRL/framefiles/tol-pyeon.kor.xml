@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌변</lemma>
+    <comment>Frames file for '돌변' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>돌변.01</id>
+      <edef>change suddenly</edef>
+      <roleset>
+	<role argnum="1" argrole="thing changing"/>
+	<role argnum="2" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌변하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>코스닥 시장이 사상 최고치를 경신한 지 하루 만에 폭락세로 돌변했다.</text>
+	  <parse>
+(S (NP-SBJ 코스닥/NPR
+           시장/NNC+이/PCA)
+   (VP (NP-ADV (NP (S (NP-SBJ *pro*)
+		      (VP (NP-OBJ 사상/NNC
+				      최고치/NNC+을/PCA)
+			  (VV 경신/NNC+하/XSV+은/EAN)))
+		   (NP 지/NNX))
+	       (NP 하루/NNC
+		       만/NNX+에/PAD))
+       (VP (NP-COMP 폭락세/NNC+으로/PAD)
+           (VV 돌변/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>코스닥 시장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>사상 최고치를 경신한 지 하루 만에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>폭락세</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌변했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

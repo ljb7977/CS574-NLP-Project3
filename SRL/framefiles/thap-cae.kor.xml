@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탑재</lemma>
+    <comment>Frames file for '탑재' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>탑재.01</id>
+      <edef>mount</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity mounted"/>
+	<role argnum="2" argrole="vehicle"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탑재되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>에르-123 주파수 변조식 무전기는 통상 차량에 탑재됩니다.</text>
+	  <parse>
+(S (NP-SBJ 에르-123/NNC 
+	   주파수/NNC 
+	   변조식/NNC 
+	   무전기/NNC+는/PAU) 
+   (VP (ADVP 통상/ADV) 
+       (VP (NP-COMP 차량/NNC+에/PAD) 
+	   (VV 탑재/NNC+되/XSV+습니다/EFN))) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>에르-123 주파수 변조식 무전기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>통상</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>차량</term>
+	    </Arg>
+	    <Rel>
+	      <term>탑재됩니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,166 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>추출</lemma>
+    <comment>Frames file for '추출' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>추출.01</id>
+      <edef>abstract</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing abstracted"/>
+	<role argnum="2" argrole="abstract from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>추출하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국 과학자들은 악어 혈액에서 표준 항생물질에 대해 면역성이 있는 인간의 감염을 막아 줄 수 있는 강력한 물질을 추출해 냈다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR
+           과학자/NNC+들/XSF+은/PAU)
+   (VP (VP (NP-COMP 악어/NNC
+                    혈액/NNC+에서/PAD)
+           (NP-OBJ (S (WHNP-2 *op*)
+                      (S (NP-SBJ *T*-2)
+                         (VP (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (ADJP (S (NP-SBJ *pro*)
+                                                            (VP (NP-COMP 표준/NNC
+                                                                         항생/NNC+물질/NNC+에/PAD)
+                                                                대하/VV+어/ECS))
+                                                         (ADJP (NP-COMP 면역성/NNC+이/PCA)
+                                                               있/VJ+는/EAN))))
+                                             (NP (NP 인간/NNC+의/PAN)
+                                                 (NP 감염/NNC+을/PCA)))
+                                     막/VV+어/ECS)
+                                 주/VX+을/EAN)
+                             (VX 수/NNX
+                                 있/VJ+는/EAN))))
+                   (NP (S (WHNP-3 *op*)
+                          (S (NP-SBJ *T*-3)
+                             (ADJP 강력하/VJ+은/EAN)))
+                       (NP 물질/NNC+을/PCA)))
+           (VV 추출/NNC+하/XSV+어/ECS))
+       내/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>미국 과학자들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>악어 혈액</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>표준 항생물질에 대해 면역성이 있는 인간의 감염을 막아 줄 수 있는 강력한 물질</term>
+	    </Arg>
+	    <Rel>
+	      <term>추출해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>냈다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>추출되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>KEI는 지난 95 년 경상가격을 기준으로 할 때 국내 생물다양성의 총가치는 목재생산, 생태관광, 식물로부터 추출되는 의약품, 화장품, 산림에서 방출되는 이산화탄소 등 모두 25 조 6 천 915 억 9 천 400 만원에 이르러 같은해 국내총생산 (GDP) 351 조 9 천 714 억원의 7.3 퍼센트를 차지하는 것으로 분석됐다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ KEI/NFW+은/PAU)
+   (VP (S-COMP (NP-ADV (S (NP-SBJ *pro*)
+                          (VP (NP-COMP (NP-OBJ 지난/DAN
+                                               95/NNU
+                                               년/NNX
+                                               경상/NNC+가격/NNC+을/PCA)
+                                       기준/NNC+으로/PAD)
+                              하/VV+을/EAN))
+                       (NP 때/NNC))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (S (NP-SBJ (NP 국내/NNC
+                                                 생물/NNC+다양성/NNC+의/PAN)
+                                             (NP 총/NNC+가치/NNC+은/PAU))
+                                     (VP (NP-ADV (NP (NP 목재/NNC+생산/NNC)
+                                                     ,/SCM
+                                                     (NP 생태/NNC+관광/NNC)
+                                                     ,/SCM
+                                                     (NP (S (WHNP-1 *op*)
+                                                            (S (NP-SBJ *T*-1)
+                                                               (VP (NP-COMP 식물/NNC+으로부터/PAD)
+                                                                   (VV 추출/NNC+되/XSV+는/EAN))))
+                                                         (NP (NP 의약품/NNC)
+                                                             ,/SCM
+                                                             (NP 화장품/NNC)))
+                                                     ,/SCM
+                                                     (NP (S (WHNP-2 *op*)
+                                                            (S (NP-SBJ *T*-2)
+                                                               (VP (NP-COMP 산림/NNC+에서/PAD)
+                                                                   (VV 방출/NNC+되/XSV+는/EAN))))
+                                                         (NP 이산화탄소/NNC)))
+                                                 (NP 등/NNX))
+                                         (VP (NP-COMP 모두/NNC
+                                                      25/NNU
+                                                      조/NNU
+                                                      6/NNU
+                                                      천/NNU
+                                                      915/NNU
+                                                      억/NNU
+                                                      9/NNU
+                                                      천/NNU
+                                                      400/NNU
+                                                      만/NNU+원/NNX+에/PAD)
+                                             이르/VV+어/ECS)))
+                                  (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ (NP 같은해/NNC
+                                                     국내총생산/NNC
+                                                     (PRN -LRB-/SLQ
+                                                          GDP/NFW
+                                                          -RRB-/SRQ)
+                                                     351/NNU
+                                                     조/NNU
+                                                     9/NNU
+                                                     천/NNU
+                                                     714/NNU
+                                                     억/NNU+원/NNX+의/PAN)
+                                                 (NP 7.3/NNU
+                                                     퍼센트/NNX+을/PCA))
+                                         (VV 차지/NNC+하/XSV+는/EAN))))
+                               (NP 것/NNX+으로/PAD))
+                      (VV 분석/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=의약품, 화장품</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로부터</f>
+	      <term>식물</term>
+	    </Arg>
+	    <Rel>
+	      <term>추출되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

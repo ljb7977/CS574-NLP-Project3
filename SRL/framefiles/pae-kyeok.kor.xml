@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>배격</lemma>
+    <comment>Frames file for '배격' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>배격.01</id>
+      <edef>reject</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing rejected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>배격하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>특히 인도의 아탈 비하리 바지파이 총리는 클린턴 대통령 도착 수시간 전 "우리의 안보에 관련된 문제는 어떠한 외부 압력도 배격하고 우리 스스로가 결정할 것"이라며 말했으며 싱 외무장관은 17 일 "그 동안의 경험에 비쳐볼 때 제 3 자의 어떠한 종류의 개입이나 중재도 남아시아에서는 항상 실패했다"며 미리 선을 그었다.</text>
+	  <parse>
+(S (S (ADVP 특히/ADV)
+      (S (NP-SBJ (NP 인도/NPR+의/PAN)
+                 (NP 아탈/NPR
+                     비하리/NPR
+                     바지파이/NPR
+                     총리/NNC+은/PAU))
+         (VP (NP-ADV (NP 클린턴/NPR
+                         대통령/NNC
+                         도착/NNC)
+                     (NP 수/NNU+시간/NNX
+                         전/NNC))
+             (VP (S-COMP "/SLQ
+                         (NP-OBJ-2 (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (VP (NP-COMP (NP 우리/NPN+의/PAN)
+                                                      (NP 안보/NNC+에/PAD))
+                                             (VV 관련/NNC+되/XSV+은/EAN))))
+                                   (NP 문제/NNC+은/PAU))
+                         (S (S (NP-SBJ *pro*)
+                               (VP (NP-OBJ 어떠한/DAN
+                                           외부/NNC
+                                           압력/NNC+도/PAU)
+                                   (VV 배격/NNC+하/XSV+고/ECS)))
+                            (S (NP-SBJ 우리/NPN
+                                       스스로/NNC+이/PCA)
+                               (VP (VP (NP-OBJ *T*-2)
+                                       (VV 결정/NNC+하/XSV+을/EAN))
+                                   (VX 것/NNX))))
+                         "/SRQ
+                         이/CO+라며/ECS)
+                 말하/VV+었/EPF+으며/ECS))))
+   (S (NP-SBJ 싱/NPR
+              외무/NNC+장관/NNC+은/PAU)
+      (VP (NP-ADV 17/NNU
+                  일/NNX)
+          (S "/SLQ
+             (NP-ADV (S (NP-SBJ *pro*)
+                        (VP (NP-COMP (NP 그/DAN
+                                         동안/NNC+의/PAN)
+                                     (NP 경험/NNC+에/PAD))
+                            비쳐보/VV+을/EAN))
+                     (NP 때/NNC))
+             (S (NP-SBJ (NP 제/DAN
+                            3/NNU
+                            자/NNX+의/PAN)
+                        (NP (NP 어떠한/DAN
+                                종류/NNC+의/PAN)
+                            (NP (NP 개입/NNC+이나/PCJ)
+                                (NP 중재/NNC+도/PAU))))
+                (VP (NP-ADV 남아시아/NPR+에서/PAD+은/PAU)
+                    (ADVP 항상/ADV)
+                    (VP (VV 실패/NNC+하/XSV+었/EPF+다/EFN))))
+             "/SRQ
+             며/ECS)
+          (ADVP 미리/ADV)
+          (VP (NP-OBJ 선/NNC+을/PCA)
+              긋/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>어떠한 외부 압력</term>
+	    </Arg>
+	    <Rel>
+	      <term>배격하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

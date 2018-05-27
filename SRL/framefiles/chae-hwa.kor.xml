@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>채화</lemma>
+    <comment>Frames file for '채화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>채화.01</id>
+      <edef>bring fire</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="fire"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>채화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>부산시는 2002 년 부산 아시안게임에 북한이 참가하도록 하고 백두산에서 성화를 채화하는 방안을 추진하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 부산시/NPR+은/PAU)
+   (VP (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+                         (VP (S-COMP (NP-COMP-1 2002/NNU
+                                                년/NNX
+                                                부산/NPR
+                                                아시안게임/NPR+에/PAD)
+                                     (S (NP-SBJ 북한/NPR+이/PCA)
+                                        (VP (NP-COMP *T*-1)
+                                            (VV 참가/NNC+하/XSV+도록/ECS))))
+                             하/VV+고/ECS))
+                      (S (NP-SBJ *pro*)
+                         (VP (NP-ADV 백두산/NPR+에서/PAD)
+                             (VP (NP-OBJ 성화/NNC+을/PCA)
+                                 (VV 채화/NNC+하/XSV+는/EAN)))))
+                   (NP 방안/NNC+을/PCA))
+           (VV 추진/NNC+하/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>백두산에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>성화</term>
+	    </Arg>
+	    <Rel>
+	      <term>채화하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

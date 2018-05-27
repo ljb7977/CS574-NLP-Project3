@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>옮겨오</lemma>
+    <comment>Frames file for '옮겨오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>옮겨오.01</id>
+      <edef>move</edef>
+      <roleset>
+	<role argnum="0" argrole="thing moving"/>
+	<role argnum="1" argrole="start point"/>
+	<role argnum="2" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>옮겨오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>증시전문가들은 최근 투자자들이 코스닥시장에서 거래소시장으로 옮겨오고 있다는 기대감이 확산되고 있어 종전과 같은 급락은 없을 것으로 보이지만 개별종목들의 상승탄력성이 둔화된 데다 각종 악재들이 포진해 있어 상승세도 제한돼 종합주가지수 900 선을 놓고 등락이 예상된다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 증시/NNC+전문가/NNC+들/XSF+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (S (NP-ADV 최근/NNC)
+                                     (S (NP-SBJ (S (NP-SBJ 투자자/NNC+들/XSF+이/PCA)
+                                                   (VP (VP (NP-COMP 코스닥/NPR+시장/NNC+에서/PAD)
+                                                           (NP-COMP 거래소/NNC+시장/NNC+으로/PAD)
+                                                           옮겨오/VV+고/ECS)
+                                                       있/VX+다는/EAN))
+                                                (NP 기대감/NNC+이/PCA))
+                                        (VP (VP (VV 확산/NNC+되/XSV+고/ECS))
+                                            있/VX+어/ECS)))
+                                  (S (NP-SBJ (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (ADJP (NP-COMP 종전/NNC+과/PAD)
+                                                         같/VJ+은/EAN)))
+                                             (NP 급락/NNC+은/PAU))
+                                     (ADJP 없/VJ+을/EAN)))
+                               (NP 것/NNX+으로/PAD))
+                      보이/VV+지만/ECS))
+               (S (NP-ADV (S (NP-SBJ (NP 개별/NNC+종목/NNC+들/XSF+의/PAN)
+                                     (NP 상승/NNC+탄력성/NNC+이/PCA))
+                             (VP (VV 둔화/NNC+되/XSV+은/EAN)))
+                          (NP 데/NNX+다/PAU))
+                  (S (NP-SBJ 각종/NNC
+                             악재/NNC+들/XSF+이/PCA)
+                     (VP (VP (VV 포진/NNC+하/XSV+어/ECS))
+                         있/VX+어/ECS)))
+               (S (NP-SBJ 상승세/NNC+도/PAU)
+                  (VP (VV 제한/NNC+되/XSV+어/ECS)))
+               (S (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP 종합/NNC+주가/NNC+지수/NNC)
+                                 (NP 900/NNU
+				     선/NNC+을/PCA))
+                         놓/VV+고/ECS))
+                  (S (NP-SBJ 등락/NNC+이/PCA)
+                     (VP (VV 예상/NNC+되/XSV+는다/EFN+고/PAD)))))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>투자자들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>코스닥시장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>거래소시장</term>
+	    </Arg>
+	    <Rel>
+	      <term>옮겨오고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

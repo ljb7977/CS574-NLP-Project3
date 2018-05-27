@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>귀가</lemma>
+    <comment>Frames file for '귀가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>귀가.01</id>
+      <edef>return home</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>귀가하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>어머니 윤성희씨는 이날 나윤양과 14 살짜리 남동생을 승용차에 태우고 페어팍스 카운티 7 번가를 달리며 귀가하던 중 차안에서 말다툼을 벌이는 남매를 제지하기 위해 차를 세웠다.</text>
+	  <parse>
+(S (NP-SBJ 어머니/NNC
+           윤성희/NPR+씨/NNX+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (VP (NP-OBJ (NP 나윤/NPR+양/NNX+과/PCJ)
+                                  (NP (NP 14/NNU
+                                          살/NNX+짜리/XSF)
+                                      (NP 남동생/NNC+을/PCA)))
+                          (NP-COMP 승용차/NNC+에/PAD)
+                          태우/VV+고/ECS)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP 페어팍스/NPR
+                                             카운티/NNC)
+                                         (NP 7/NNU
+                                             번가/NNX+을/PCA))
+                                 달리/VV+으며/ECS))
+                          (VP (VV 귀가/NNC+하/XSV+던/EAN)))))
+               (NP 중/NNX))
+       (S (NP-SBJ *pro*)
+          (VP (S-OBJ (NP-SBJ *pro*)
+                     (VP (NP-OBJ (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP-ADV 차안/NNC+에서/PAD)
+                                           (VP (NP-OBJ 말다툼/NNC+을/PCA)
+                                               벌이/VV+는/EAN))))
+                                 (NP 남매/NNC+을/PCA))
+                         (VV 제지/NNC+하/XSV+기/ENM)))
+              위하/VV+어/ECS))
+       (VP (NP-OBJ 차/NNC+을/PCA)
+           세우/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>페어팍스 카운티 7 번가를 달리며</term>
+	    </Arg>
+	    <Rel>
+	      <term>귀가하던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

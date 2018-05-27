@@ -1,0 +1,152 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>체결</lemma>
+    <comment>Frames file for '체결' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>체결.01</id>
+      <edef>enter into</edef>
+      <roleset>
+	<role argnum="0" argrole="one party"/>
+	<role argnum="1" argrole="treaty"/>
+	<role argnum="2" argrole="other party"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>체결하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>신규 무기 주문의 70 퍼센트이상이 중동 지역에서 이루어지는 가운데 프랑스는 최신 형 미라주 2000-9 제트 전투기를 아랍에미리트연합 (UAE)에 판매하는 계약을 체결한 데 이어 이 지역에 대한 무기 판매 확대에 주력하고 있다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ (NP 신규/NNC
+                          무기/NNC
+                          주문/NNC+의/PAN)
+                      (NP 70/NNU
+                          퍼센트/NNC+이상/NNC+이/PCA))
+              (VP (NP-ADV 중동/NPR
+                          지역/NNC+에서/PAD)
+                  (VP (VV 이루/VV+어지/XSV+는/EAN))))
+           (NP 가운데/NNC))
+   (S (NP-SBJ 프랑스/NPR+은/PAU)
+      (VP (VP (ADVP (NP-COMP (S (NP-SBJ *pro*)
+			    (VP (NP-OBJ (S (NP-SBJ *pro*)
+					   (VP (NP-OBJ 최신/NNC
+							   형/NNC
+							   미라주/NPR
+							   2000-9/NNU
+							   제트/NNC
+							   전투기/NNC+을/PCA)
+					       (NP-COMP 아랍에미리트/NPR+연합/NNC
+								    (PRN -LRB-/SLQ
+									 UAE/NFW
+									 -RRB-/SRQ)
+								    에/PAD)
+					       (VV 판매/NNC+하/XSV+는/EAN)))
+					(NP 계약/NNC+을/PCA))
+				(VV 체결/NNC+하/XSV+는/EAN)))
+			 (NP 데/NNX))
+		이어/ADV)
+          (VP (NP-OBJ (S (WHNP-1 *op*)
+		         (S (NP-SBJ *T*-1)
+			    (VP (NP-COMP 이/DAN
+				         지역/NNC+에/PAD)
+			        대하/VV+은/EAN)))
+                      (NP 무기/NNC
+			  판매/NNC
+			  확대/NNC+에/PAD))
+              (VV 주력/NNC+하/XSV+고/ECS)))
+      있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>최신 형 미라주 2000-9 제트 전투기를 아랍에미리트연합 (UAE)에 판매하는 계약</term>
+	    </Arg>
+	    <Rel>
+	      <term>체결한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>체결되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>중국에 대한 영구적인 NTR 지위 부여는 지난해 11 월 체결돼 중국의 세계무역기구(WTO) 가입의 길을 열어 놓은 미-중 협정의 내용에 포함된 것으로 미국은 중국의 관세인하와 기타 시장개방 조치에 대한 화답으로 이를 약속했다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+		 (S (NP-SBJ *T*-1)
+		    (VP (NP-COMP 중국/NPR+에/PAD)
+			대하/VV+은/EAN)))
+	      (NP (S (WHNP-2 *op*)
+		     (S (NP-SBJ *T*-2)
+			(VP (NP 영구/NNC+적/XSF+이/CO+은/EAN))))
+		  (NP NTR/NFW
+		      지위/NNC
+		      부여/NNC+은/PAU)))
+      (VP (NP (S (WHNP-5 *op*)
+		 (S (NP-SBJ *T*-5)
+		    (VP (NP-COMP (NP (S (WHNP-3 *op*)
+					(S (S (NP-SBJ *T*-3)
+					      (VP (NP-ADV 지난해/NNC
+								11/NNU
+								월/NNX)
+						  (VP (VV 체결/NNC+되/XSV+어/ECS))))
+					   (S (NP-SBJ *T*-3)
+					      (VP (VP (NP-OBJ (NP (NP 중국/NPR+의/PAN)
+								  (NP 세계/NNC+무역/NNC+기구/NNC
+										  (PRN -LRB-/SLQ
+										       (NP WTO/NFW)
+										       -RRB-/SRQ)
+										  가입/NNC+의/PAN))
+							      (NP 길/NNC+을/PCA))
+						      열/VV+어/ECS)
+						  놓/VX+은/EAN))))
+				     (NP 미/NPR
+					   -/SSY
+					   중/NPR
+					   협정/NNC+의/PAN))
+				 (NP 내용/NNC+에/PAD))
+			(VV 포함/NNC+되/XSV+은/EAN))))
+	      (NP 것/NNX+으로/PAD))))
+   (S (NP-SBJ 미국/NPR+은/PAU)
+      (VP (NP-ADV (S (WHNP-4 *op*)
+                     (S (NP-SBJ *T*-4)
+                        (VP (NP-COMP (NP 중국/NPR+의/PAN)
+                                     (NP (NP 관세/NNC+인하/NNC+과/PCJ)
+                                         (NP 기타/NNC
+						 시장/NNC+개방/NNC
+						 조치/NNC+에/PAD)))
+                            대하/VV+은/EAN)))
+                  (NP 화답/NNC+으로/PAD))
+          (VP (NP-OBJ 이/NPN+을/PCA)
+              (VV 약속/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=미-중 협정</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해 11 월</term>
+	    </Arg>
+	    <Rel>
+	      <term>체결돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung, revised by Shijong</comment>
+</framefile>

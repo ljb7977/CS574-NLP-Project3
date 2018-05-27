@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전수</lemma>
+    <comment>Frames file for '전수' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>전수.01</id>
+      <edef>hand down</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing handed down"/>
+	<role argnum="2" argrole="hand down to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전수하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>베트남 전쟁 당시 한국군이 가장 많이 주둔했던 나창을 포함한 캉화성 일대는 당시 한국군이 건설한 도로와 전수한 태권도 등이 그대로 남아 있으며 격전지였던 관계로 전쟁 고아와 라이따이한 등이 가장 많은 지역이기도 하다.</text>
+	  <parse>
+(S (S (NP-COMP-5 (S (WHNP-2 *op*)
+                    (S (NP-SBJ *T*-2)
+                       (VP (NP-OBJ (S (WHNP-1 *op*)
+                                      (S (NP-ADV 베트남/NPR
+                                                 전쟁/NNC
+                                                 당시/NNC)
+                                         (S (NP-SBJ 한국군/NNC+이/PCA)
+                                            (VP (ADVP (ADVP 가장/ADV)
+                                                      (ADVP 많이/ADV))
+                                                (VP (NP-COMP *T*-1)
+                                                    (VV 주둔/NNC+하/XSV+었/EPF+던/EAN))))))
+                                   (NP 나창/NPR+을/PCA))
+                           (VV 포함/NNC+하/XSV+은/EAN))))
+                 (NP 캉화성/NPR
+                     일대/NNC+은/PAU))
+      (S (NP-SBJ (NP (NP (S (WHNP-3 *op*)
+                            (S (NP-ADV 당시/NNC)
+                               (S (NP-SBJ 한국군/NNC+이/PCA)
+                                  (VP (NP-OBJ *T*-3)
+                                      (VV 건설/NNC+하/XSV+은/EAN)))))
+                         (NP 도로/NNC+과/PCJ))
+                     (NP (S (WHNP-4 *op*)
+                            (S (NP-SBJ *pro*)
+                               (VP (NP-OBJ *T*-4)
+                                   (VV 전수/NNC+하/XSV+은/EAN))))
+                         (NP 태권도/NNC)))
+                 (NP 등/NNX+이/PCA))
+         (VP (VP (ADVP 그대로/ADV)
+                 (VP (NP-COMP *T*-5)
+                     남/VV+어/ECS))
+             있/VX+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                         (VP (NP 격전지/NNC+이/CO+었/EPF+던/EAN)))
+                      (NP 관계/NNC+으로/PAD))
+              (VP (NP (S (WHNP *op*)
+                         (S (NP-SBJ (NP (NP 전쟁/NNC
+                                            고아/NNC+과/PCJ)
+                                        (NP 라이따이한/NNC))
+                                    (NP 등/NNX+이/PCA))
+                            (ADJP (ADVP 가장/ADV)
+                                  (ADJP 많/VJ+은/EAN))))
+                      (NP 지역/NNC+이/CO+기/ENM+도/PAU))))
+          하/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=태권도</term>
+	    </Arg>
+	    <Rel>
+	      <term>전수한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

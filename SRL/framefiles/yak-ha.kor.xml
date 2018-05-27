@@ -1,0 +1,116 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>약하</lemma>
+    <comment>Frames file for '약하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>약하.01</id>
+      <edef>vulnerable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being vulnerable"/>
+	<role argnum="2" argrole="stimulus"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>약하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>T-54 탱크는 장갑이 얇아서 반전차 화기에 극히 약하다.</text>
+	  <parse>
+(S (NP-SBJ T-54/NFW
+           탱크/NNC+은/PAU)
+   (ADJP (S (NP-SBJ 장갑/NNC+이/PCA)
+            (ADJP 얇/VJ+어서/ECS))
+         (ADJP (NP-COMP 반전차/NNC
+                        화기/NNC+에/PAD)
+               (ADJP (ADVP 극히/ADV)
+                     (ADJP 약하/VJ+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>T-54 탱크</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>장갑이 얇아서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>반전차 화기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>극히</term>
+	    </Arg>
+	    <Rel>
+	      <term>약하다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>약해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 특히 "정부 기구들이 약해졌든지 아니면 소연방 해체 이후 충분한 힘을 찾지 못했기 때문에 CIS 국가들이 현재 테러의 최대 목표가 되고 있다"면서 CIS가 국제테러와의 전쟁을 위해 공동전선을 구축할 것을 촉구했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 특히/ADV)
+       (S "/SLQ
+          (NP-ADV (S (S (NP-SBJ 정부/NNC
+                                기구/NNC+들/XSF+이/PCA)
+                        (VP (VV 약하/VJ+어지/XSV+었/EPF+든지/ECS)))
+                     (ADCP 아니면/ADC)
+                     (S (NP-SBJ *pro*)
+                        (VP (VP (NP-ADV 소연방/NPR
+                                        해체/NNC
+                                        이후/NNC)
+                                (VP (NP-OBJ (S (WHNP-1 *op*)
+                                               (S (NP-SBJ *T*-1)
+                                                  (ADJP 충분하/VJ+은/EAN)))
+                                            (NP 힘/NNC+을/PCA))
+                                    찾/VV+지/ECS))
+                            못하/VX+었/EPF+기/ENM)))
+                  (NP 때문/NNX+에/PAD))
+          (S (NP-SBJ CIS/NFW
+                     국가/NNC+들/XSF+이/PCA)
+             (VP (VP (NP-ADV 현재/NNC)
+                     (VP (NP-COMP (NP 테러/NNC+의/PAN)
+                                  (NP 최대/NNC
+                                      목표/NNC+이/PCA))
+                         되/VV+고/ECS))
+                 있/VX+다/EFN))
+          "/SRQ
+          면서/ECS)
+       (VP (NP-OBJ (S (NP-SBJ CIS/NFW+이/PCA)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP 국제/NNC+테러/NNC+과/PAD+의/PAN)
+                                         (NP 전쟁/NNC+을/PCA))
+                                 위하/VV+어/ECS))
+                          (VP (NP-OBJ 공동/NNC+전선/NNC+을/PCA)
+                              (VV 구축/NNC+하/XSV+을/EAN))))
+                   (NP 것/NNX+을/PCA))
+           (VV 촉구/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>정부 기구들</term>
+	    </Arg>
+	    <Rel>
+	      <term>약해졌든지</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상존</lemma>
+    <comment>Frames file for '상존' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>상존.01</id>
+      <edef>exist all the time</edef>
+      <roleset>
+	<role argnum="1" argrole="thing existing"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상존하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>김 대통령은 독일 통일의 또 하나 교훈으로 통일비용과 통일후의 갈등을 지적한 뒤 "때문에 가장 현실적이고 합리적인 정책은 당장 통일을 추진하기보다 한반도에 아직도 상존하고 있는 상호위협을 해소하고 남북한이 화해, 협력하면서 공존공영을 추구하는 것"이라고 규정했다.</text>
+	  <parse>
+(S (NP-SBJ 김/NPR
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-ADV (NP 독일/NPR
+                                  통일/NNC+의/PAN)
+                              (NP (NP (ADVP 또/ADV)
+                                      (NP 하나/NNU))
+                                  (NP 교훈/NNC+으로/PAD)))
+                      (VP (NP-OBJ (NP 통일/NNC+비용/NNC+과/PCJ)
+                                  (NP (NP 통일/NNC+후/NNC+의/PAN)
+                                      (NP 갈등/NNC+을/PCA)))
+                          (VV 지적/NNC+하/XSV+은/EAN))))
+               (NP 뒤/NNC))
+       (VP (S-COMP "/SLQ
+                   (NP-ADV 때문/NNX+에/PAD)
+                   (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (ADVP 가장/ADV)
+                                        (VP (VP (NP 현실/NNC+적/XSF+이/CO+고/ECS))
+                                            (VP (NP 합리/NNC+적/XSF+이/CO+은/EAN))))))
+                              (NP 정책/NNC+은/PAU))
+                      (VP (NP (S (S (NP-SBJ *pro*)
+                                    (VP (S (NP-SBJ *pro*)
+                                           (VP (ADVP 당장/ADV)
+                                               (VP (NP-OBJ 통일/NNC+을/PCA)
+                                                   (VV 추진/NNC+하/XSV+기/ENM+보다/PAD))))
+                                        (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                       (S (NP-SBJ *T*-2)
+                                                          (VP (VP (NP-COMP 한반도/NPR+에/PAD)
+                                                                  (VP (ADVP 아직/ADV+도/PAU)
+                                                                      (VP (VV 상존/NNC+하/XSV+고/ECS))))
+                                                              있/VX+는/EAN)))
+                                                    (NP 상호/NNC+위협/NNC+을/PCA))
+                                            (VV 해소/NNC+하/XSV+고/ECS))))
+                                 (S (NP-SBJ 남북한/NPR+이/PCA)
+                                    (VP (S (NP-SBJ *pro*)
+                                           (VP (VV (VV 화해/NNC)
+                                                   ,/SCM
+                                                   (VV 협력/NNC+하/XSV+으면서/ECS))))
+                                        (VP (NP-OBJ 공존/NNC+공영/NNC+을/PCA)
+                                            (VV 추구/NNC+하/XSV+는/EAN)))))
+                              (NP 것/NNX))))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VV 규정/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=상호위협</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>한반도</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>아직도</term>
+	    </Arg>
+	    <Rel>
+	      <term>상존하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

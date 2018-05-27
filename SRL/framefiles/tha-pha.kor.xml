@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>타파</lemma>
+    <comment>Frames file for '타파' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>타파.01</id>
+      <edef>abolish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing abolished"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>타파하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이어 그는 "민주당은 반드시 호남과 충청, 경상도 등 모든 지역에서 지지를 받아 의석을 갖는 전국정당이 될 것"이라면서 "망국적 지역감정을 타파하고 미래를 이끌 역량 있는 일꾼을 뽑는 선거혁명 바람의 중심지가 대전이 되어 달라"고 호소했다.</text>
+	  <parse>
+(S (ADVP 이어/ADV)
+   (S (NP-SBJ 그/NPN+은/PAU)
+      (VP (S "/SLQ
+             (NP-SBJ 민주당/NPR+은/PAU)
+             (VP (VP (ADVP 반드시/ADV)
+                     (VP (NP-COMP (S (WHNP-1 *op*)
+                                     (S (S (NP-SBJ *T*-1)
+                                           (VP (NP-ADV (NP (NP (NP 호남/NPR+과/PCJ)
+                                                               (NP 충청/NPR)
+                                                               ,/SCM
+                                                               (NP 경상도/NPR))
+                                                           (NP 등/NNX))
+                                                       (NP 모든/DAN
+							       지역/NNC+에서/PAD))
+                                               (VP (NP-OBJ 지지/NNC+을/PCA)
+                                                   받/VV+어/ECS)))
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP-OBJ 의석/NNC+을/PCA)
+                                               갖/VV+는/EAN))))
+                                  (NP 전국/NNC+정당/NNC+이/PCA))
+                         되/VV+을/EAN))
+                 (VX 것/NNX))
+	     "/SRQ
+	     이/CO+라면서/ECS)
+          (VP (S-COMP "/SLQ
+                      (NP-SBJ (NP (S (NP-SBJ *pro*)
+                                     (VP (VP (NP-OBJ 망국/NNC+적/XSF
+                                                     지역/NNC+감정/NNC+을/PCA)
+                                             (VV 타파/NNC+하/XSV+고/ECS))
+                                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                        (S (S (NP-SBJ *T*-2)
+                                                              (VP (NP-OBJ 미래/NNC+을/PCA)
+                                                                  이끌/VV+을/EAN))
+                                                           (S (NP-SBJ *T*-2)
+                                                              (ADJP (NP-COMP 역랑/NNC)
+								    있/VJ+는/EAN))))
+                                                     (NP 일꾼/NNC+을/PCA))
+                                             뽑/VV+는/EAN)))
+                                  (NP 선거/NNC+혁명/NNC
+                                      바람/NNC+의/PAN))
+                              (NP 중심지/NNC+이/PCA))
+                      (VP (VP (NP-COMP 대전/NPR+이/PCA)
+                              되/VV+어/ECS)
+                          달/VX+라/EFN)
+                      "/SRQ
+                      고/PAD)
+              (VV 호소/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>망국적 지역감정</term>
+	    </Arg>
+	    <Rel>
+	      <term>타파하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

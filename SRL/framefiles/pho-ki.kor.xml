@@ -1,0 +1,117 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>포기</lemma>
+    <comment>Frames file for '포기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>포기.01</id>
+      <edef>give up</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing given up"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>포기하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신문은 한 예로 추부 전력회사가 현지 주민의 강력한 반발 때문에 미에현 아시하마에 원전을 건설하려던 계획을 포기했음을 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 신문/NNC+은/PAU)
+   (VP (NP-ADV 한/NNU
+               예/NNC+으로/PAD)
+       (VP (S-OBJ (NP-SBJ 추부/NPR
+                          전력/NNC+회사/NNC+이/PCA)
+                  (VP (NP-ADV (NP (NP 현지/NNC
+                                      주민/NNC+의/PAN)
+                                  (NP (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (ADJP 강력하/VJ+은/EAN)))
+                                      (NP 반발/NNC)))
+                              (NP 때문/NNX+에/PAD))
+                      (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                     (VP (NP-ADV 미에/NPR+현/NNC
+                                                 아시하마/NPR+에/PAD)
+                                         (VP (NP-OBJ 원전/NNC+을/PCA)
+                                             (VV 건설/NNC+하/XSV+으려던/EAN))))
+                                  (NP 계획/NNC+을/PCA))
+                          (VV 포기/NNC+하/XSV+었/EPF+음/ENM+을/PCA))))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>추부 전력회사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>현지 주민의 강력한 반발 때문에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>미에현 아시하마에 원전을 건설하려던 계획</term>
+	    </Arg>
+	    <Rel>
+	      <term>포기했음을</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>포기시키다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국은 이를 통해 북한의 핵무기개발을 포기시키고 북한을 외부세계로 끌어내려 하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 이/NPN+을/PCA)
+              통하/VV+어/ECS))
+       (VP (VP (VP (VP (NP-OBJ (NP 북한/NPR+의/PAN)
+			       (NP 핵무기/NNC+개발/NNC+을/PCA))
+		       (VV 포기/NNC+시키/XSV+고/ECS))
+		   (VP (NP-OBJ 북한/NPR+을/PCA)
+		       (NP-COMP 외부/NNC+세계/NNC+으로/PAD)
+		       끌어내/VV+으려/ECS))
+	       하/VX+고/ECS)
+	   있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>미국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>이를 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>북한의 핵무기개발</term>
+	    </Arg>
+	    <Rel>
+	      <term>포기시키고</term>
+	    </Rel>
+	    <Aux>
+	      <f>으려</f>
+	      <term>하고</term>
+	    </Aux>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

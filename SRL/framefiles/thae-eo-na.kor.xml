@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>태어나</lemma>
+    <comment>Frames file for '태어나' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>태어나.01</id>
+      <edef>be born</edef>
+      <roleset>
+	<role argnum="1" argrole="person"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>태어나다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>제가 문선에서 태어났기 때문에 그곳 지리에는 아주 익숙합니다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 제/NPN+이/PCA)
+              (VP (NP-ADV 문선/NPR+에서/PAD)
+                  (VP 태어나/VV+었/EPF+기/ENM)))
+           (NP 때문/NNX+에/PAD))
+   (S (NP-SBJ *pro*)
+      (ADJP (NP-COMP 그곳/NPN
+                     지리/NNC+에/PAD+은/PAU)
+            (ADJP (ADVP 아주/ADV)
+                  (ADJP 익숙하/VJ+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>문선에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>태어났기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

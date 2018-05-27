@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기권</lemma>
+    <comment>Frames file for '기권' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기권.01</id>
+      <edef>abstain</edef>
+      <roleset>
+	<role argnum="0" argrole="entity abstaining"/>
+	<role argnum="1" argrole="abstaining from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기권하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한 관계자는 코흐-베저 차관을 노골적으로 반대하고 있는 미국이 기권할 가능성이 높기 때문에 첫 투표에서는 지지도가 가장 낮은 후보를 탈락시키는 정도에 그칠 공산이 큰 것으로 내다봤다.</text>
+	  <parse>
+(S (NP-SBJ 한/NNU
+           관계자/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (VP (NP-OBJ (NP 코흐/NPR
+                                                               -/SSY
+                                                               베저/NPR)
+                                                           (NP 차관/NNC+을/PCA))
+                                                   (VP (ADVP (ADV 노골/NNC+적/XSF+으로/PAD))
+                                                       (VP (VV 반대/NNC+하/XSV+고/ECS))))
+                                               있/VX+는/EAN)))
+                                     (NP 미국/NPR+이/PCA))
+                             (VP (VV 기권/NNC+하/XSV+을/EAN)))
+                          (NP 가능성/NNC+이/PCA))
+                  (ADJP 높/VJ+기/ENM))
+               (NP 때문/NNX+에/PAD))
+       (VP (NP-COMP (S (NP-ADV 첫/NNU
+                               투표/NNC+에서/PAD+은/PAU)
+                       (S (NP-SBJ (S (NP-SBJ *pro*)
+                                     (VP (NP-COMP (S (NP-SBJ *pro*)
+                                                     (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                    (S (NP-SBJ *T*-2)
+                                                                       (S (NP-SBJ 지지도/NNC+이/PCA)
+                                                                          (ADJP (ADVP 가장/ADV)
+                                                                                (ADJP 낮/VJ+은/EAN)))))
+                                                                 (NP 후보/NNC+을/PCA))
+                                                         (VV 탈락/NNC+시키/XSV+는/EAN)))
+                                                  (NP 정도/NNC+에/PAD))
+                                         그치/VV+을/EAN))
+                                  (NP 공산/NNC+이/PCA))
+                          (ADJP 크/VJ+은/EAN)))
+                    (NP 것/NNX+으로/PAD))
+           내다보/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>코흐-베저 차관을 노골적으로 반대하고 있는 미국</term>
+	    </Arg>
+	    <Rel>
+	      <term>기권할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

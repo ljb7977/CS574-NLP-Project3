@@ -1,0 +1,118 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>빠져나오</lemma>
+    <comment>Frames file for '빠져나오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>빠져나오.01</id>
+      <edef>come out</edef>
+      <roleset>
+	<role argnum="0" argrole="entity in motion"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>빠져나오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>등 뒤에 계란 2 개를 맞은 올브라이트 장관은 경호원들에 의해 현장에서 빠져나왔다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-ADV 등/NNC
+                             뒤/NNC+에/PAD)
+                     (VP (NP-OBJ 계란/NNC
+                                 2/NNU
+                                 개/NNX+을/PCA)
+                         맞/VV+은/EAN))))
+           (NP 올브라이트/NPR
+               장관/NNC+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP 경호원/NNC+들/XSF+에/PAD)
+              의하/VV+어/ECS))
+       (VP (NP-COMP 현장/NNC+에서/PAD)
+           빠져나오/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>등 뒤에 계란 2 개를 맞은 올브라이트 장관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>경호원들에 의해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>현장</term>
+	    </Arg>
+	    <Rel>
+	      <term>빠져나왔다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>빠져나오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>아슬란 마스하도프 체첸 대통령은 연방군 포위를 빠져나오는 반군이 날로 늘어나면서 베데모 협곡에 재집결하자 군사회의를 열기 위해 모든 최고위 야전군 사령관들을 소집했다고 이 대변인은 전했다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-SBJ (NP 아슬란/NPR
+                         마스하도프/NPR)
+                     (NP 체첸/NPR
+                         대통령/NNC+은/PAU))
+             (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (VP (NP-OBJ 연방군/NNC
+                                              포위/NNC+을/PCA)
+                                      빠져나오/VV+는/EAN)))
+                            (NP 반군/NNC+이/PCA))
+                    (VP (S (NP-SBJ *pro*)
+                           (VP (ADVP 날로/ADV)
+                               (VP 늘어나/VV+으면서/ECS)))
+                        (VP (NP-COMP 베데모/NPR
+                                     협곡/NNC+에/PAD)
+                            (VV 재집결/NNC+하/XSV+자/ECS))))
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (S-OBJ (NP-SBJ *pro*)
+				   (VP (NP-OBJ 군사/NNC+회의/NNC+을/PCA)
+				       열/VV+기/ENM))
+                            위하/VV+어/ECS))
+                     (VP (NP-OBJ 모든/DAN
+                                 최고위/NNC
+                                 야전군/NNC
+                                 사령관/NNC+들/XSF+을/PCA)
+                         (VV 소집/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))))
+   (S (NP-SBJ 이/DAN
+              대변인/NNC+은/PAU)
+      (VP (S-COMP *T*-2)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=반군</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>연방군 포위</term>
+	    </Arg>
+	    <Rel>
+	      <term>빠져나오는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

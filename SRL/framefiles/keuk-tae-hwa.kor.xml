@@ -1,0 +1,119 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>극대화</lemma>
+    <comment>Frames file for '극대화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>극대화.01</id>
+      <edef>maximize</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing becoming the most"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>극대화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또한 양국 공동대응의 효과를 극대화하기 위해 유럽연합(EU)과도 공조를 추진키로 했으며 EU측도 이에 대해 긍정적인 반응을 보인 것으로 알려졌다.</text>
+	  <parse>
+(S (ADVP 또한/ADV)
+   (S (S (NP-SBJ *pro*)
+         (VP (S-OBJ (NP-SBJ *pro*)
+		    (VP (NP-OBJ (NP 양국/NNC
+					공동/NNC+대응/NNC+의/PAN)
+				(NP 효과/NNC+을/PCA))
+			(VV 극대화/NNC+하/XSV+기/ENM)))
+             위하/VV+어/ECS))
+      (S (NP-SBJ *pro*)
+         (VP (S-COMP (NP-SBJ *pro*)
+                     (VP (NP-COMP 유럽연합/NPR
+                                  (PRN -LRB-/SLQ
+                                       EU/NFW
+                                       -RRB-/SRQ)
+                                  과/PAD+도/PAU)
+                         (VP (NP-OBJ 공조/NNC+을/PCA)
+                             (VV 추진/NNC+하/XSV+기/ENM+으로/PAD))))
+             하/VV+었/EPF+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ EU/NFW+측/NNX+도/PAU)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-COMP 이/NPN+에/PAD)
+                                 대하/VV+어/ECS))
+                          (VP (NP-OBJ (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (NP 긍정/NNC+적/XSF+이/CO+은/EAN))))
+                                      (NP 반응/NNC+을/PCA))
+                              보이/VV+은/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>양국 공동대응의 효과</term>
+	    </Arg>
+	    <Rel>
+	      <term>극대화하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>극대화시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 지금까지는 국내외 매각에만 초점이 맞춰졌으나 이번에는 독자생존과 외자유치를 통한 합작 등 대우증권의 가치를 극대화시킬 수 있는 방안이 다각도로 검토될 것이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-ADV 지금/NNC+까지/PAU+은/PAU)
+                  (S (NP-COMP-1 국내외/NNC
+                                매각/NNC+에/PAD+만/PAU)
+                     (S (NP-SBJ 초점/NNC+이/PCA)
+                        (VP (NP-COMP *T*-1)
+                            (VV 맞추/VV+어지/XSV+었/EPF+으나/ECS)))))
+               (S (NP-ADV 이번/NNC+에/PAD+은/PAU)
+                  (S (NP-SBJ (NP (NP (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (VP (NP-OBJ (NP 독자/NNC+생존/NNC+과/PCJ)
+                                                       (NP 외자/NNC+유치/NNC+을/PCA))
+                                               통하/VV+은/EAN)))
+                                     (NP 합작/NNC))
+                                 (NP 등/NNX))
+                             (NP (S (NP-SBJ *pro*)
+                                    (VP (VP (NP-OBJ (NP 대우증권/NPR+의/PAN)
+                                                    (NP 가치/NNC+을/PCA))
+                                            (VV 극대화/NNC+시키/XSV+을/EAN))
+                                        (VX 수/NNX
+                                            있/VJ+는/EAN)))
+                                 (NP 방안/NNC+이/PCA)))
+                     (VP (VP (NP-ADV 다각도/NNC+으로/PAD)
+                             (VP (VV 검토/NNC+되/XSV+을/EAN)))
+                         (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>대우증권의 가치</term>
+	    </Arg>
+	    <Rel>
+	      <term>극대화시킬</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

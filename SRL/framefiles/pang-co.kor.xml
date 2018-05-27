@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>방조</lemma>
+    <comment>Frames file for '방조' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>방조.01</id>
+      <edef>aid and abet</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="crime"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>방조하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>다벤그와 장관은 정부가 침공을 배후에서 조종했다는 의혹을 부인하면서도 흑인들이 농장으로 들어가 시위할 수 있는 민주적 권한을 침범하지 말라고 경찰에 지시했다고 밝혀 폭력사태를 사실상 방조했음을 시인했다.</text>
+	  <parse>
+(S (NP-SBJ 다벤그와/NPR
+           장관/NNC+은/PAU)
+   (VP (VP (NP-OBJ (S (NP-SBJ 정부/NNC+이/PCA)
+                      (VP (NP-OBJ 침공/NNC+을/PCA)
+                          (NP-COMP 배후/NNC+에서/PAD)
+                          (VV 조종/NNC+하/XSV+었/EPF+다는/EAN)))
+                   (NP 의혹/NNC+을/PCA))
+           (VV 부인/NNC+하/XSV+으면서/ECS+도/PAU))
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (S-COMP (NP-SBJ *pro*)
+                               (VP (VP (NP-OBJ (S (NP-SBJ 흑인/NNC+들/XSF+이/PCA)
+                                                  (VP (VP (VP (NP-COMP 농장/NNC+으로/PAD)
+                                                              들어가/VV+어/ECS)
+                                                          (VP (VV 시위/NNC+하/XSV+을/EAN)))
+                                                      (VX 수/NNX
+                                                          있/VJ+는/EAN)))
+                                               (NP 민주/NNC+적/XSF
+                                                   권한/NNC+을/PCA))
+                                       (VV 침범/NNC+하/XSV+지/ECS))
+                                   말/VX+라/EFN+고/PAD))
+                       (NP-COMP 경찰/NNC+에/PAD)
+                       (VV 지시/NNC+하/XSV+었/EPF+다/EFN+고/PAD)))
+           밝히/VV+어/ECS)
+       (VP (S-OBJ (NP-SBJ *pro*)
+		  (VP (NP-OBJ 폭력/NNC+사태/NNC+을/PCA)
+		      (VP (NP-ADV 사실/NNC+상/XSF)
+			  (VP (VV 방조/NNC+하/XSV+었/EPF+음/ENM+을/PCA)))))
+           (VV 시인/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>폭력사태</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>사실상</term>
+	    </Arg>
+	    <Rel>
+	      <term>방조했음을</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

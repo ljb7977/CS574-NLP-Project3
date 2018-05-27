@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부족</lemma>
+    <comment>Frames file for '부족' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>부족.01</id>
+      <edef>lack</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being short"/>
+	<role argnum="2" argrole="lack in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부족하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>부대마다 다른 탄약보다는 통상 고폭 세렬탄을 더 많이 사용하기 때문에 이 포탄이 언제나 부족합니다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 부대/NNC+마다/PAU)
+              (VP (NP-ADV 다른/DAN
+                          탄약/NNC+보다/PAD+은/PAU)
+                  (ADVP 통상/ADV)
+                  (VP (NP-OBJ 고폭/NNC
+                              세렬탄/NNC+을/PCA)
+                      (VP (ADVP (ADVP 더/ADV)
+                                (ADVP 많이/ADV))
+                          (VP (VV 사용/NNC+하/XSV+기/ENM))))))
+           (NP 때문/NNX+에/PAD))
+   (S (NP-SBJ 이/DAN
+              포탄/NNC+이/PCA)
+      (ADJP (ADVP 언제나/ADV)
+            (ADJP (VJ 부족/NNC+하/XSJ+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>부대마다 다른 탄약보다는 통상 고폭 세렬탄을 더 많이 사용하기 때문</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이 포탄</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>언제나</term>
+	    </Arg>
+	    <Rel>
+	      <term>부족합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

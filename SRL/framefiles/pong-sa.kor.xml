@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>봉사</lemma>
+    <comment>Frames file for '봉사' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>봉사.01</id>
+      <edef>serve</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity served"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>봉사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 "공화당원 다수가 부시 지사를 대통령으로 선호하고 있음을 분명히 했고 이들의 결정을 존중한다"며 "선거운동을 중단하고 신디(부인)와 함께 최근의 경험을 돌이켜 보며 어떻게 하면 국가에 가장 봉사할 것인가를 결정할 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S "/SLQ
+                  (S (NP-SBJ 공화/NNC+당원/NNC
+                             다수/NNC+이/PCA)
+                     (VP (S-OBJ (NP-SBJ *pro*)
+                                (VP (VP (NP-OBJ 부시/NPR
+                                                지사/NNC+을/PCA)
+                                        (VP (NP-ADV 대통령/NNC+으로/PAD)
+                                            (VP (VV 선호/NNC+하/XSV+고/ECS))))
+                                    있/VX+음/ENM+을/PCA))
+                         (VP (ADVP 분명히/ADV)
+                             (VP 하/VV+었/EPF+고/ECS))))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP 이/NPN+들/XSF+의/PAN)
+                                 (NP 결정/NNC+을/PCA))
+                         (VV 존중/NNC+하/XSV+는다/EFN)))
+                  "/SRQ
+                  며/ECS)
+               (S "/SLQ
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-OBJ 선거/NNC+운동/NNC+을/PCA)
+                             (VV 중단/NNC+하/XSV+고/ECS))
+                         (VP (VP (ADVP (NP-COMP 신디/NPR
+                                                (PRN -LRB-/SLQ
+                                                     부인/NNC
+                                                     -RRB-/SRQ)
+                                                과/PAD)
+                                       함께/ADV)
+                                 (VP (NP-OBJ (NP 최근/NNC+의/PAN)
+                                             (NP 경험/NNC+을/PCA))
+                                     돌이키/VV+어/ECS))
+                             보/VX+으며/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (S-OBJ (NP-SBJ *pro*)
+                                    (VP (VP (S (NP-SBJ *pro*)
+                                               (VP (ADVP 어떻게/ADV)
+                                                   (VP 하/VV+으면/ECS)))
+                                            (VP (NP-COMP 국가/NNC+에/PAD)
+                                                (VP (ADVP 가장/ADV)
+                                                    (VP (VV 봉사/NNC+하/XSV+을/EAN)))))
+                                        (VX 것/NNX+이/CO+은가/EFN+을/PCA)))
+                             (VV 결정/NNC+하/XSV+을/EAN))
+                         (VX 것/NNX)))
+                  "/SRQ
+                  이/CO+라/EFN+고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>어떻게 하면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>국가</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>가장</term>
+	    </Arg>
+	    <Rel>
+	      <term>봉사할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것인가를</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

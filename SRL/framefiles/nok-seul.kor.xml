@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>녹슬</lemma>
+    <comment>Frames file for '녹슬' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>녹슬.01</id>
+      <edef>rust</edef>
+      <roleset>
+	<role argnum="1" argrole="rusty thing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>녹슬다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>운전수는 차가 녹슬지 않게 해야지요.</text>
+	  <parse>
+(S (NP-SBJ 운전수/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ 차/NNC+이/PCA)
+               (VP (VP 녹슬/VV+지/ECS)
+                   않/VX+게/ECS))
+       하/VV+어야지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>차</term>
+	    </Arg>
+	    <Rel>
+	      <term>녹슬지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않게</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

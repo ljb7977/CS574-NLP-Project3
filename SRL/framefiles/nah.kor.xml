@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>낳</lemma>
+    <comment>Frames file for '낳' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>낳.01</id>
+      <edef>bring about</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing coming to be"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>낳다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 수입이 수출과의 높은 연계성, 유가급등등으로 크게 늘어날 가능성도 있어 거액의 무역수지 흑자가 과연 지속될 수 있을 지 우려를 낳고 있다고 모건 스탠리는 덧붙였다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (S-COMP-2 (S (NP-SBJ (S (NP-SBJ 수입/NNC+이/PCA)
+                              (VP (NP-ADV (NP (NP 수출/NNC+과/PAD+의/PAN)
+                                              (NP (S (WHNP-1 *op*)
+                                                     (S (NP-SBJ *T*-1)
+                                                        (ADJP 높/VJ+은/EAN)))
+                                                  (NP 연계성/NNC)))
+                                          ,/SCM
+                                          (NP 유가/NNC+급등/NNC+등/NNX+으로/PAD))
+                                  (ADVP (ADV 크/VJ+게/ECS))
+                                  (VP 늘어나/VV+을/EAN)))
+                           (NP 가능성/NNC+도/PAU))
+                   (ADJP 있/VJ+어/ECS))
+                (S (NP-SBJ *pro*)
+                   (VP (VP (NP-OBJ (NP (S (NP-SBJ (NP 거액/NNC+의/PAN)
+                                                  (NP 무역/NNC+수지/NNC
+                                                      흑자/NNC+이/PCA))
+                                          (VP (VP (ADVP 과연/ADV)
+                                                  (VP (VV 지속/NNC+되/XSV+을/EAN)))
+                                              (VX 수/NNX
+                                                  있/VJ+을/EAN)))
+                                       (NP 지/NNX))
+                                   (NP 우려/NNC+을/PCA))
+                           낳/VV+고/ECS)
+                       있/VX+다/EFN+고/PAD)))
+      (S (NP-SBJ 모건/NPR
+                 스탠리/NPR+은/PAU)
+         (VP (S-COMP *T*-2)
+             덧붙이/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>수입이 수출과의 높은 연계성, 유가급등등으로 크게 늘어날 가능성도 있어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>거액의 무역수지 흑자가 과연 지속될 수 있을 지 우려</term>
+	    </Arg>
+	    <Rel>
+	      <term>낳고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

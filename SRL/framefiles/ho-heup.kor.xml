@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>호흡</lemma>
+    <comment>Frames file for '호흡' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>호흡.01</id>
+      <edef>get along with</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="other party"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>호흡하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>앞서 김 대통령은 이날 오후 파리 시내 대연회장인 파비용 가브리엘에서 가진 프랑스 경제인연합회 초청 연설에서 "한국은 기업회계에서부터 금융관행, 무역관행에 이르기까지 세계와 함께 호흡할 수 없는 모든 것을 바꿀 것"이라며 프랑스 경제인들의 대한 투자를 요청했다.</text>
+	  <parse>
+(S (ADVP 앞서/ADV)
+   (S (NP-SBJ 김/NPR
+              대통령/NNC+은/PAU)
+      (VP (NP-ADV (S (WHNP-2 *op*)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-ADV 이날/NNC
+                                    오후/NNC)
+                            (NP-ADV (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (NP 파리/NPR
+                                                  시내/NNC
+                                                  대/XPF+연회장/NNC+이/CO+은/EAN))))
+                                    (NP 파비용/NPR
+                                        가브리엘/NPR+에서/PAD))
+                            (VP (NP-OBJ *T*-2)
+                                가지/VV+은/EAN))))
+                  (NP 프랑스/NPR
+                      경제인/NNC+연합회/NNC
+                      초청/NNC
+                      연설/NNC+에서/PAD))
+          (S "/SLQ
+             (NP-SBJ 한국/NPR+은/PAU)
+             (VP (VP (S (NP-SBJ *pro*)
+                        (VP (NP-ADV 기업/NNC+회계/NNC+에서부터/PAD)
+                            (VP (NP-COMP 금융/NNC+관행/NNC
+                                         ,/SCM
+                                         무역/NNC+관행/NNC+에/PAD)
+                                이르/VV+기/ENM+까지/PAU)))
+                     (VP (NP-OBJ (S (WHNP-3 *op*)
+                                    (S (NP-SBJ *pro*)
+                                       (VP (VP (ADVP-COMP (NP-COMP 세계/NNC+과/PAD)
+                                                          함께/ADV)
+                                               (NP-OBJ *T*-3)
+                                               (VV 호흡/NNC+하/XSV+을/EAN))
+                                           (VX 수/NNX
+                                               없/VJ+는/EAN))))
+                                 (NP 모든/DAN
+                                     것/NNX+을/PCA))
+                         바꾸/VV+을/EAN))
+                 (VX 것/NNX))
+             "/SRQ
+             이/CO+라며/ECS)
+          (VP (NP-OBJ (NP 프랑스/NPR
+                          경제인/NNC+들/XSF+의/PAN)
+                      (NP 대/XPF+한/NPR
+                          투자/NNC+을/PCA))
+              (VV 요청/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f></f>
+	      <term>세계와 함께</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=모든 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>호흡할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없는 </term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

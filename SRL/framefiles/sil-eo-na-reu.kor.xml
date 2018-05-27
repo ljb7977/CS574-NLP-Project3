@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>실어나르</lemma>
+    <comment>Frames file for '실어나르' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>실어나르.01</id>
+      <edef>ferry</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing moved"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>실어나르다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이라크 항공의 라빈 모하마드 살레 사장은 알 라시드공항에서 기자들에게 약 400 명의 순례자들을 실어나르기 위해 이날 3-4 회의 비행편이 추가로 마련될 것이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 이라크/NPR
+               항공/NNC+의/PAN)
+           (NP 라빈/NPR
+               모하마드/NPR
+               살레/NPR
+               사장/NNC+은/PAU))
+   (VP (NP-ADV 알/NPR
+               라시드/NPR+공항/NNC+에서/PAD)
+       (VP (NP-COMP 기자/NNC+들/XSF+에게/PAD)
+           (S-COMP (S (NP-SBJ *pro*)
+                      (VP (S-OBJ (NP-SBJ *pro*)
+				 (VP (NP-OBJ (NP 약/DAN
+						 400/NNU
+						 명/NNX+의/PAN)
+					     (NP 순례자/NNC+들/XSF+을/PCA))
+				     실어나르/VV+기/ENM))
+                          위하/VV+어/ECS))
+                   (S (NP-ADV 이날/NNC)
+                      (S (NP-SBJ (NP 3-4/NNU
+                                     회/NNX+의/PAN)
+                                 (NP 비행/NNC+편/XSF+이/PCA))
+                         (VP (VP (NP-ADV 추가/NNC+으로/PAD)
+                                 (VP (VV 마련/NNC+되/XSV+을/EAN)))
+                             (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>약 400 명의 순례자들</term>
+	    </Arg>
+	    <Rel>
+	      <term>실어나르기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,108 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수술</lemma>
+    <comment>Frames file for '수술' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수술.01</id>
+      <edef>operate</edef>
+      <roleset>
+	<role argnum="0" argrole="doctor"/>
+	<role argnum="1" argrole="patient"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수술하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 지역에 수술할 수 있는 위생 시설이 어디에 있지?</text>
+	  <parse>
+(S (NP-COMP-1 이/DAN
+              지역/NNC+에/PAD)
+   (S (NP-SBJ (S (WHNP *op*)
+                 (S (NP-SBJ *pro*)
+                    (VP (VP (NP-OBJ *pro*)
+                            (VV 수술/NNC+하/XSV+을/EAN))
+                        (VX 수/NNX
+                            있/VJ+는/EAN))))
+              (NP 위생/NNC
+                  시설/NNC+이/PCA))
+      (ADJP (NP-COMP *T*-1)
+            (ADJP (NP-ADV 어디/NPN+에/PAD)
+                  (ADJP 있/VJ+지/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>수술할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>수술받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>가수로 활동하고 있는 로저 클린턴의 나안시력은 0.04로 그는 이날 왼쪽 눈을, 8 일에는 오른쪽 눈을 수술받은 뒤 9 일 최종 수술결과를 확인하고 출국할 예정이다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (VP (NP-COMP 가수/NNC+으로/PAD)
+                                (VV 활동/NNC+하/XSV+고/ECS))
+                            있/VX+는/EAN)))
+                  (NP 로저/NPR
+                      클린턴/NPR+의/PAN))
+              (NP 나안/NNC+시력/NNC+은/PAU))
+      (VP (NP 0.04/NNU+으로/PAD)))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 그/NPN+은/PAU)
+                 (VP (VP (NP-ADV (S (S (NP-SBJ *pro*)
+                                       (VP (NP-ADV 이날/NNC)
+                                           (VP (NP-OBJ 왼쪽/NNC
+                                                       눈/NNC+을/PCA)
+                                               (VV *?*))))
+                                    ,/SCM
+                                    (S (NP-SBJ *pro*)
+                                       (VP (NP-ADV 8/NNU
+                                                   일/NNX+에/PAD+은/PAU)
+                                           (VP (NP-OBJ 오른쪽/NNC
+                                                       눈/NNC+을/PCA)
+                                               (VV 수술/NNC+받/XSV+은/EAN)))))
+                                 (NP 뒤/NNC))
+                         (NP-ADV 9/NNU
+                                 일/NNX)
+                         (VP (NP-OBJ 최종/NNC
+                                     수술/NNC+결과/NNC+을/PCA)
+                             (VV 확인/NNC+하/XSV+고/ECS)))
+                     (VP (VV 출국/NNC+하/XSV+을/EAN))))
+              (NP 예정/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>8 일에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>오른쪽 눈</term>
+	    </Arg>
+	    <Rel>
+	      <term>수술받은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

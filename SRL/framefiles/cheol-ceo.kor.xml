@@ -1,0 +1,41 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>철저</lemma>
+    <comment>Frames file for '철저' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>철저.01</id>
+      <edef>thorough</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being thorough"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>철저하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>무선 송신은 철저한 보안을 요한다.</text>
+	  <parse>
+(S (NP-SBJ 무선/NNC
+           송신/NNC+은/PAU)
+   (VP (NP-OBJ (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (ADJP (VJ 철저/NNC+하/XSJ+은/EAN))))
+               (NP 보안/NNC+을/PCA))
+       요하/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=보안</term>
+	    </Arg>
+	    <Rel>
+	      <term>철저한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

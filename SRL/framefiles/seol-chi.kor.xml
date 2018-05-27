@@ -1,0 +1,109 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>설치</lemma>
+    <comment>Frames file for '설치' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>설치.01</id>
+      <edef>build</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing built"/>
+	<role argnum="2" argrole="location"/>    
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>설치하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>사단 통신 대대 성원들이 약 한 달 전에 저희 탱크에다 이 새 무전기를 설치했습니다.</text>
+	  <parse>
+(S (NP-SBJ 사단/NNC
+           통신/NNC
+           대대/NNC
+           성원/NNC+들/XSF+이/PCA)
+   (VP (NP-ADV 약/DAN
+               한/NNU
+               달/NNX
+               전/NNC+에/PAD)
+       (VP (NP-COMP 저희/NPN
+                    탱크/NNC+에다/PAD)
+           (NP-OBJ 이/DAN
+                   새/DAN
+                   무전기/NNC+을/PCA)
+           (VV 설치/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>사단 통신 대대 성원들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>약 한 달 전에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에다</f>
+	      <term>저희 탱크</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 새 무전기</term>
+	    </Arg>
+	    <Rel>
+	      <term>설치했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>설치되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>아까 제가 말씀드린 것처럼 에르-123 무전기가 중대급 이하 탱크에 설치된 유일한 무전기입니다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP-3 *op*)
+              (S (ADVP 아까/ADV)
+                 (S (NP-SBJ 제/NPN+이/PCA)
+                    (VP (NP-OBJ *T*-3)
+                        말씀드리/VV+은/EAN))))
+           (NP 것/NNX+처럼/PAD))
+   (S (NP-SBJ 에르-123/NNC
+              무전기/NNC+이/PCA)
+      (VP (NP (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP 중대급/NNC
+                                 이하/NNC
+                                 탱크/NNC+에/PAD)
+                        (VV 설치/NNC+되/XSV+은/EAN))))
+              (NP (S (WHNP-2 *op*)
+                     (S (NP-SBJ *T*-2)
+                        (ADJP (VJ 유일/NNC+하/XSJ+은/EAN))))
+                  (NP 무전기/NNC+이/CO+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=유일한 무전기</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>중대급 이하 탱크</term>
+	    </Arg>
+	    <Rel>
+	      <term>설치된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

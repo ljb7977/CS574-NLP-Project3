@@ -1,0 +1,116 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>착륙</lemma>
+    <comment>Frames file for '착륙' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>착륙.01</id>
+      <edef>land</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing landed"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>착륙하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 신문은 이 전세기가 라우 대통령이 자주 휴가 여행을 가던 스피커루크 섬 부근의 군용 비행장에 착륙했다고 전하고 이 비행장은 민간 비행기의 착륙이 금지돼 있는 곳이라고 덧붙였다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이 전세기</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>라우 대통령이 자주 휴가 여행을 가던 스피커루크 섬 부근의 군용 비행장</term>
+	    </Arg>
+	    <Rel>
+	      <term>착륙했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>착륙시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이들과 다른 납치범은 지난 70 년 항공기를 납치한 뒤 김포공항을 거쳐 평양에 납치 항공기를 강제로 착륙시키고 나서 북한당국에 투항했다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 이/NPN+들/XSF+과/PCJ)
+              (NP 다른/DAN
+                  납치범/NNC+은/PAU))
+      (VP (VP (NP-ADV 지난/DAN
+                      70/NNU
+                      년/NNX)
+              (NP-ADV (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ 항공기/NNC+을/PCA)
+                             (VV 납치/NNC+하/XSV+은/EAN)))
+                      (NP 뒤/NNC))
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 김포/NPR+공항/NNC+을/PCA)
+                     거치/VV+어/ECS))
+              (VP (NP-COMP 평양/NPR+에/PAD)
+                  (NP-OBJ 납치/NNC
+                          항공기/NNC+을/PCA)
+                  (VP (NP-ADV 강제/NNC+으로/PAD)
+                      (VP (VV 착륙/NNC+시키/XSV+고/ECS)))))
+          나/VX+어서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 북한/NPR+당국/NNC+에/PAD)
+          (VV 투항/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이들과 다른 납치범</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 70 년</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>항공기를 납치한 뒤</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>김포공항을 거쳐</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>평양</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>납치 항공기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>강제로</term>
+	    </Arg>
+	    <Rel>
+	      <term>착륙시키고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>나서</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>침해</lemma>
+    <comment>Frames file for '침해' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>침해.01</id>
+      <edef>infringe</edef>
+      <roleset>
+	<role argnum="1" argrole="thing infringing"/>
+	<role argnum="2" argrole="thing infringed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>침해하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>롤링과 타임 워너는 이미 지난해 11 월 뉴욕 법원에 해리 포터 시리즈가 스투퍼의 저작권을 침해하지 않았음을 확인해 줄 것을 요청한 바 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ (NP 롤링/NPR+과/PCJ)
+                      (NP 타임/NPR
+                          워너/NPR+은/PAU))
+              (VP (ADVP 이미/ADV)
+                  (NP-ADV 지난해/NNC
+                          11/NNU
+                          월/NNX)
+                  (VP (NP-COMP 뉴욕/NPR
+                               법원/NNC+에/PAD)
+                      (NP-OBJ (S (NP-SBJ *pro*)
+                                 (VP (VP (S-OBJ (NP-SBJ 해리/NPR
+                                                        포터/NPR
+                                                        시리즈/NNC+이/PCA)
+                                                (VP (VP (NP-OBJ (NP 스투퍼/NPR+의/PAN)
+                                                                (NP 저작권/NNC+을/PCA))
+                                                        (VV 침해/NNC+하/XSV+지/ECS))
+                                                    않/VX+었/EPF+음/ENM+을/PCA))
+                                         (VV 확인/NNC+하/XSV+어/ECS))
+                                     주/VX+을/EAN))
+                              (NP 것/NNX+을/PCA))
+                      (VV 요청/NNC+하/XSV+은/EAN))))
+           (NP 바/NNX))
+   (ADJP 있/VJ+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>해리 포터 시리즈</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>스투퍼의 저작권</term>
+	    </Arg>
+	    <Rel>
+	      <term>침해하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았음을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

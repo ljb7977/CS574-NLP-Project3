@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>띄</lemma>
+    <comment>Frames file for '띄' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>띄.01</id>
+      <edef>be in sight</edef>
+      <roleset>
+	<role argnum="1" argrole="entity noticed"/>
+	<role argnum="2" argrole="entity noticing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>띄다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>요새 우리 경보병들이 괴뢰군 군복을 입고 있는 것이 자주 눈에 띕니다.</text>
+	  <parse>
+(S (NP-ADV 요새/NNC)
+   (S (NP-SBJ (S (NP-SBJ 우리/NPN
+                         경보병/NNC+들/XSF+이/PCA)
+                 (VP (VP (NP-OBJ 괴뢰군/NNC
+                                 군복/NNC+을/PCA)
+                         입/VV+고/ECS)
+                     있/VX+는/EAN))
+              (NP 것/NNX+이/PCA))
+      (VP (ADVP 자주/ADV)
+          (VP (NP-COMP 눈/NNC+에/PAD)
+              띄/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>요새</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>우리 경보병들이 괴뢰군 군복을 입고 있는 것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>자주</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>눈</term>
+	    </Arg>
+	    <Rel>
+	      <term>띕니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

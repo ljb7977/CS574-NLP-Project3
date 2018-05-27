@@ -1,0 +1,144 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보고</lemma>
+    <comment>Frames file for '보고' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보고.01</id>
+      <edef>report</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing reported"/>
+	<role argnum="2" argrole="reported to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보고하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>만약 전투 중에 탱크가 탄약이 떨어지면 전차장이 이런 상황을 소대장에게 보고합니다.</text>
+	  <parse>
+(S (S (ADCP 만약/ADC)
+      (NP-ADV 전투/NNC
+	      중/NNC+에/PAD) 
+      (S (NP-SBJ 탱크/NNC+이/PCA)
+	 (S (NP-SBJ 탄약/NNC+이/PCA) 
+	    (VP 떨어지/VV+면/ECS)))) 
+   (S (NP-SBJ 전차장/NNC+이/PCA)
+      (VP (NP-OBJ 이런/DAN 
+		  상황/NNC+을/PCA)
+	  (NP-COMP 소대장/NNC+에게/PAD) 
+	  (VV 보고/NNC+하/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>만약 전투 중에 탱크가 탄약이 떨어지면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>전차장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이런 상황</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>소대장</term>
+	    </Arg>
+	    <Rel>
+	      <term>보고합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>그 사람들이 적 부대의 위치와 지탱점들의 위치를 그 두 분한테 보고하죠.</text>
+	  <parse>
+(S (NP-SBJ 그/DAN 
+	   사람/NNC+들/XSF+이/PCA) 
+   (VP (NP-OBJ (NP (NP 적/NNC 
+		       부대/NNC+의/PCA) 
+		   (NP 위치/NNC+과/PCJ)) 
+	       (NP (NP 지탱점/NNC+들/XSF+의/PCA) 
+		   (NP 위치/NNC+을/PCA)))
+       (NP-COMP 그/DAN 
+		두/NNU
+		분/NNX+한테/PAD) 
+       (VV 보고/NNC+하/XSV+죠/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>그 사람들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적 부대의 위치와 지탱점들의 위치</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>한테</f>
+	      <term>그 두 분</term>
+	    </Arg>
+	    <Rel>
+	      <term>보고하죠</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보고되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 선언문의 내용은 올해 열리는 아-태환경개발각료회의와 2002 년에 열리는 지구환경정상회의에 보고될 예정이라고 외교부는 설명했다.</text>
+	  <parse>
+(S (NP-COMP-3 (S (NP-SBJ (NP 이/DAN
+                             선언문/NNC+의/PAN)
+                         (NP 내용/NNC+은/PAU))
+                 (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (NP-ADV 올해/NNC)
+                                            (VP 열리/VV+는/EAN))))
+                                  (NP 아/NPR
+                                      -/SSY
+                                      태/NPR+환경/NNC+개발/NNC+각료/NNC+회의/NNC+과/PCJ))
+                              (NP (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (VP (NP-ADV 2002/NNU
+                                                    년/NNX+에/PAD)
+                                            (VP 열리/VV+는/EAN))))
+                                  (NP 지구/NNC+환경/NNC+정상/NNC+회의/NNC+에/PAD)))
+                     (VV 보고/NNC+되/XSV+을/EAN)))
+              (NP 예정/NNC+이라고/PAD))
+   (S (NP-SBJ 외교부/NNC+은/PAU)
+      (VP (NP-COMP *T*-3)
+          (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>이 선언문의 내용</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>올해 열리는 아-태환경개발각료회의와 2002 년에 열리는 지구환경정상회의</term>
+	    </Arg>
+	    <Rel>
+	      <term>보고될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

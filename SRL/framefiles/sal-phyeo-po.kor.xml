@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>살펴보</lemma>
+    <comment>Frames file for '살펴보' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>살펴보.01</id>
+      <edef>search</edef>
+      <roleset>
+	<role argnum="0" argrole="searcher"/>
+	<role argnum="1" argrole="searched for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>살펴보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>하나로통신은 심사가 최종 통과되는 대로 미 현지 로드쇼등을 통해 투자자들의 반응을 살펴본 뒤 공모가를 결정할 계획이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 하나로/NPR+통신/NNC+은/PAU)
+              (VP (NP-ADV (S (NP-SBJ *pro*)
+                             (VP (NP-ADV (S (NP-SBJ 심사/NNC+이/PCA)
+                                            (VP (NP-ADV 최종/NNC)
+                                                (VP (VV 통과/NNC+되/XSV+는/EAN))))
+                                         (NP 대로/NNX))
+                                 (S (NP-SBJ *pro*)
+                                    (VP (NP-OBJ 미/NPR
+                                                현지/NNC
+                                                로드쇼/NNC+등/NNX+을/PCA)
+                                        통하/VV+어/ECS))
+                                 (VP (NP-OBJ (NP 투자자/NNC+들/XSF+의/PAN)
+                                             (NP 반응/NNC+을/PCA))
+                                     살펴보/VV+은/EAN)))
+                          (NP 뒤/NNC))
+                  (VP (NP-OBJ 공모/NNC+가/XSF+을/PCA)
+                      (VV 결정/NNC+하/XSV+을/EAN))))
+           (NP 계획/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>심사가 최종 통과되는 대로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>미 현지 로드쇼등을 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>투자자들의 반응</term>
+	    </Arg>
+	    <Rel>
+	      <term>살펴본</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>촉박</lemma>
+    <comment>Frames file for '촉박' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>촉박.01</id>
+      <edef>pressing</edef>
+      <roleset>
+	<role argnum="1" argrole="thing pressing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>촉박하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일단 양당이 합당을 하기에는 너무 시간이 촉박하다는 현실적 요인과 함께 민국당에 나름대로 영향력을 미치고 있는 김영삼 전 대통령이 어떤 태도를 보일지도 미지수이기 때문이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (ADVP (NP-COMP (S (ADVP 일단/ADV)
+                                (S (NP-SBJ 양당/NNC+이/PCA)
+                                   (VP (NP-OBJ 합당/NNC+을/PCA)
+                                       하/VV+기/ENM+에/PAD+은/PAU))
+                                (ADVP 너무/ADV)
+                                (S (NP-SBJ 시간/NNC+이/PCA)
+                                   (ADJP (VJ 촉박/NNC+하/XSJ+다는/EAN))))
+                             (NP 현실/NNC+적/XSF
+                                 요인/NNC+과/PAD))
+                    함께/ADV)
+              (S (S-SBJ (NP-SBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (VP (NP-COMP 민국당/NPR+에/PAD)
+                                              (VP (ADVP 나름대로/ADV)
+                                                  (VP (NP-OBJ 영향력/NNC+을/PCA)
+                                                      미치/VV+고/ECS)))
+                                          있/VX+는/EAN)))
+                                (NP 김영삼/NPR
+                                    전/DAN
+                                    대통령/NNC+이/PCA))
+                        (VP (NP-OBJ 어떤/DAN
+                                    태도/NNC+을/PCA)
+                            보이/VV+을지/EFN+도/PAU))
+                 (VP (NP 미지수/NNC+이/CO+기/ENM))))
+           (NP 때문/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>일단</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>양당이 합당을 하기에는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>너무</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>시간</term>
+	    </Arg>
+	    <Rel>
+	      <term>촉박하다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

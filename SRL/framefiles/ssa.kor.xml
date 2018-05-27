@@ -1,0 +1,231 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>싸</lemma>
+    <comment>Frames file for '싸' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>싸.01</id>
+      <edef>wrap</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing wrapped"/>
+	<role argnum="2" argrole="wrapped with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>싸다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국의 인구가 3 억 가까이 되는 점을 감안할 때 많은 수는 아니지만 최근에 델라웨어의 한 대학생 부부가 신생아를 모텔의 쓰레기통에 버리고 뉴저지에서는 10 대 소녀가 무도회에 참석했다 화장실에서 출산을 한 뒤 신생아를 비닐에 싸 유기하고 춤을 추러 가는 사건 등이 잇따라 알려지면서 사회적으로 문제가 된 바 있다.</text>
+	  <parse>
+(S (S (NP-ADV (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (S (NP-SBJ (NP 미국/NPR+의/PAN)
+                                        (NP 인구/NNC+이/PCA))
+                                (VP (NP-COMP 3/NNU
+                                             억/NNU
+                                             가까이/NNC)
+                                    되/VV+는/EAN))
+                             (NP 점/NNC+을/PCA))
+                     (VV 감안/NNC+하/XSV+을/EAN)))
+              (NP 때/NNC))
+      (S (NP-SBJ *pro*)
+         (ADJP (NP-COMP (S (WHNP-1 *op*)
+                           (S (NP-SBJ *T*-1)
+                              (ADJP 많/VJ+은/EAN)))
+                        (NP 수/NNC+은/PAU))
+               (ADJP 아니/VJ+지만/ECS))))
+   (S (S (NP-ADV 최근/NNC+에/PAD)
+         (S (NP-SBJ (NP (S (S (NP-SBJ (NP 델라웨어/NPR+의/PAN)
+                                      (NP 한/NNU
+                                          대학생/NNC
+                                          부부/NNC+이/PCA))
+                              (VP (NP-OBJ 신생아/NNC+을/PCA)
+                                  (NP-COMP (NP 모텔/NNC+의/PAN)
+                                           (NP 쓰레기통/NNC+에/PAD))
+                                  버리/VV+고/ECS))
+                           (S (NP-ADV 뉴저지/NPR+에서/PAD+은/PAU)
+                              (S (NP-SBJ 10/NNU
+                                         대/NNX
+                                         소녀/NNC+이/PCA)
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-COMP 무도회/NNC+에/PAD)
+                                            (VV 참석/NNC+하/XSV+었/EPF+다/ECS)))
+                                     (NP-ADV (S (NP-SBJ *pro*)
+                                                (VP (NP-ADV 화장실/NNC+에서/PAD)
+                                                    (VP (NP-OBJ 출산/NNC+을/PCA)
+                                                        (LV 하/VV+은/EAN))))
+                                             (NP 뒤/NNC))
+                                     (VP (VP (NP-OBJ 신생아/NNC+을/PCA)
+                                             (VP (S (NP-SBJ *pro*)
+                                                    (VP (NP-OBJ *pro*)
+                                                        (NP-COMP 비닐/NNC+에/PAD)
+                                                        싸/VV+어/ECS))
+                                                 (VP (VV 유기/NNC+하/XSV+고/ECS))))
+                                         (VP (S (NP-SBJ *pro*)
+                                                (VP (NP-OBJ 춤/NNC+을/PCA)
+                                                    추/VV+러/ECS))
+                                             (VP 가/VV+는/EAN)))))))
+                        (NP 사건/NNC))
+                    (NP 등/NNX+이/PCA))
+            (VP (ADVP 잇따라/ADV)
+                (VP (VV 알리/VV+어지/XSV+으면서/ECS)))))
+      (S (NP-SBJ (S (NP-SBJ *pro*)
+                    (VP (NP-ADV 사회/NNC+적/XSF+으로/PAD)
+                        (VP (NP-COMP 문제/NNC+이/PCA)
+                            되/VV+은/EAN)))
+                 (NP 바/NNX))
+         (ADJP 있/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>비닐</term>
+	    </Arg>
+	    <Rel>
+	      <term>싸</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>싸이다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>슈워츠 박사의 주장이 사실인지 여부를 떠나 이번 사건은 베일에 싸인 미사일 방어망에 대한 논란을 더욱 가열시킬 전망이다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ (NP 슈워츠/NPR
+                                 박사/NNC+의/PAN)
+                             (NP 주장/NNC+이/PCA))
+                     (VP (NP 사실/NNC+이/CO+은지/EFN)))
+                  (NP 여부/NNC+을/PCA))
+          떠나/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 이번/NNC
+                         사건/NNC+은/PAU)
+                 (VP (NP-OBJ (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (VP (NP-COMP (S (WHNP-1 *op*)
+                                                   (S (NP-SBJ *T*-1)
+                                                      (VP (NP-COMP 베일/NPR+에/PAD)
+                                                          싸이/VV+은/EAN)))
+                                                (NP 미사일/NNC
+                                                    방어망/NNC+에/PAD))
+                                       대하/VV+은/EAN)))
+                             (NP 논란/NNC+을/PCA))
+                     (VP (ADVP 더욱/ADV)
+                         (VP (VV 가열/NNC+시키/XSV+을/EAN)))))
+              (NP 전망/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=미사일 방어망</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>베일</term>
+	    </Arg>
+	    <Rel>
+	      <term>싸인</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>싸.02</id>
+      <edef>cheap</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being cheap"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>싸다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일본은행이 장기 금리를 안정시키기 위해 "다량의 국채를 매입하라는 압력을 받게 될 것"이라고 지적한 우에다 위원은 그러나 "어느 시점에는 보다 싼 값에 시장에 되팔 수밖에 없을 것이기 때문에 결과적으로 중앙은행 재정에 큰 타격이 가해질 것"이라고 우려했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-4 *op*)
+              (S (NP-SBJ *T*-4)
+                 (VP (S-COMP (NP-SBJ 일본/NPR+은행/NNC+이/PCA)
+                             (VP (S (NP-SBJ *pro*)
+                                    (VP (S-OBJ (NP-SBJ *pro*)
+                                               (VP (NP-OBJ 장기/NNC
+                                                           금리/NNC+을/PCA)
+                                                   (VV 안정/NNC+시키/XSV+기/ENM)))
+                                        위하/VV+어/ECS))
+                                 (VP "/SLQ
+                                     (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                        (VP (NP-OBJ (NP 다량/NNC+의/PAN)
+                                                                    (NP 국채/NNC+을/PCA))
+                                                            (VV 매입/NNC+하/XSV+으라는/EAN)))
+                                                     (NP 압력/NNC+을/PCA))
+                                             받/VV+게/ECS)
+                                         되/VX+을/EAN)
+                                     (VX 것/NNX)
+                                     "/SRQ
+                                     이/CO+라/EFN+고/PAD)))
+                     (VV 지적/NNC+하/XSV+은/EAN))))
+           (NP 우에다/NPR
+               위원/NNC+은/PAU))
+   (VP (ADCP 그러나/ADC)
+       (VP (S-COMP "/SLQ
+                   (NP-ADV (S (NP-SBJ *pro*)
+                              (VP (VP (VP (NP-ADV 어느/DAN
+                                                  시점/NNC+에/PAD+은/PAU)
+                                          (NP-ADV (S (WHNP-1 *op*)
+                                                     (S (NP-SBJ *T*-1)
+                                                        (ADJP (ADVP 보다/ADV)
+                                                              (ADJP 싸/VJ+은/EAN))))
+                                                  (NP 값/NNC+에/PAD))
+                                          (VP (NP-COMP 시장/NNC+에/PAD)
+                                              (NP-OBJ *pro*)
+                                              되팔/VV+을/EAN))
+                                      (VX 수/NNX+밖에/PAU
+                                          없/VJ+을/EAN))
+                                  (VX 것/NNX+이/CO+기/ENM)))
+                           (NP 때문/NNX+에/PAD))
+                   (NP-ADV 결과/NNC+적/XSF+으로/PAD)
+                   (S (NP-COMP-3 중앙/NNC+은행/NNC
+                                 재정/NNC+에/PAD)
+                      (S (NP-SBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (ADJP 크/VJ+은/EAN)))
+                                 (NP 타격/NNC+이/PCA))
+                         (VP (VP (NP-COMP *T*-3)
+                                 (VV 가하/VV+어지/XSV+을/EAN))
+                             (VX 것/NNX))))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VV 우려/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=값</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>보다</term>
+	    </Arg>
+	    <Rel>
+	      <term>싼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,223 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보도</lemma>
+    <comment>Frames file for '보도' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보도.01</id>
+      <edef>report</edef>
+      <roleset>
+	<role argnum="0" argrole="mass media"/>
+	<role argnum="1" argrole="thing reported"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보도하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>현지 KDKA-TV 방송은 범인이 현재 인근 건물에서 인질을 잡고 경찰과 대치 중이라고 보도했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 현지/NNC)
+           (NP KDKA-TV/NFW
+               방송/NNC+은/PAU))
+   (VP (S-COMP (NP-SBJ 범인/NNC+이/PCA)
+               (VP (VP (NP-ADV 현재/NNC)
+                       (VP (VP (NP-ADV 인근/NNC
+                                       건물/NNC+에서/PAD)
+                               (VP (NP-OBJ 인질/NNC+을/PCA)
+                                   잡/VV+고/ECS))
+                           (VP (NP-COMP 경찰/NNC+과/PAD)
+                               (VV 대치/NNC))))
+                   (VX 중/NNX+이/CO+라/EFN+고/PAD)))
+       (VV 보도/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>현지 KDKA-TV 방송</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>범인이 현재 인근 건물에서 인질을 잡고 경찰과 대치 중이라</term>
+	    </Arg>
+	    <Rel>
+	      <term>보도했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보도하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>AP 통신은 한국전 초기 참전 미군들에 의해 저질러진 노근리 양민학살 사건을 특종 보도한 데 이은 일련의 기사로 조지 포크 국제보도상 수상작으로 선정됐다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (S (WHNP-2 *op*)
+                  (S (NP-SBJ *T*-2)
+                     (VP (NP-COMP (S (NP-SBJ AP/NFW
+                                             통신/NNC+은/PAU)
+                                     (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                    (S (NP-SBJ *T*-1)
+                                                       (VP (S (NP-SBJ *pro*)
+                                                              (VP (NP-COMP 한국전/NPR
+                                                                           초기/NNC
+                                                                           참전/NNC
+                                                                           미군/NNC+들/XSF+에/PAD)
+                                                                  의하/VV+어/ECS))
+                                                           (VP (VV 저지르/VV+어지/XSV+은/EAN)))))
+                                                 (NP 노근리/NPR
+                                                     양민/NNC+학살/NNC
+                                                     사건/NNC+을/PCA))
+                                         (VP (NP-ADV 특종/NNC)
+                                             (VP (VV 보도/NNC+하/XSV+은/EAN)))))
+                                  (NP 데/NNX))
+                         잇/VV+은/EAN)))
+               (NP (NP 일련/NNC+의/PAN)
+                   (NP 기사/NNC+으로/PAD)))
+       (VP (NP-COMP 조지/NPR
+                    포크/NPR
+                    국제/NNC+보도/NNC+상/NNC
+                    수상작/NNC+으로/PAD)
+           (VV 선정/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>AP 통신</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>한국전 초기 참전 미군들에 의해 저질러진 노근리 양민학살 사건</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>특종</term>
+	    </Arg>
+	    <Rel>
+	      <term>보도한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보도되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>국영 TV와 관영 신화통신으로 보도된 발언에서 장와이 앤은 중국 인민해방군은 "조국을 분리시키려는 음모가 우세해질 경우 중국의 주권과 영토보존을 지킬 결의와 확신, 능력을 갖고 있으며 이를 묵과하거나 좌시하지도 않을 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP (NP 국영/NNC
+                                  TV/NFW+과/PCJ)
+                              (NP 관영/NNC
+                                  신화/NPR+통신/NNC+으로/PAD))
+                     (VV 보도/NNC+되/XSV+은/EAN))))
+           (NP 발언/NNC+에서/PAD))
+   (S (NP-SBJ 장와이/NPR
+              앤/NPR+은/PAU)
+      (VP (S-COMP (NP-SBJ 중국/NPR
+                          인민/NNC+해방군/NNC+은/PAU)
+                  (VP "/SLQ
+                      (VP (VP (NP-ADV (S (NP-SBJ (S (NP-SBJ *pro*)
+                                                    (VP (NP-OBJ 조국/NNC+을/PCA)
+                                                        (VV 분리/NNC+시키/XSV+으려는/EAN)))
+                                                 (NP 음모/NNC+이/PCA))
+                                         (VP (VV (VJ 우세/NNC+하/XSJ+어지/XSV+을/EAN))))
+                                      (NP 경우/NNC))
+                              (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                             (VP (NP-OBJ (NP 중국/NPR+의/PAN)
+                                                         (NP (NP 주권/NNC+과/PCJ)
+                                                             (NP 영토/NNC+보존/NNC+을/PCA)))
+                                                 지키/VV+을/EAN))
+                                          (NP (NP 결의/NNC+과/PCJ)
+                                              (NP 확신/NNC)
+                                              ,/SCM
+                                              (NP 능력/NNC+을/PCA)))
+                                  갖/VV+고/ECS))
+                          있/VX+으며/ECS)
+                      (VP (VP (VP (NP-OBJ 이/NPN+을/PCA)
+                                  (VV (VV 묵과/NNC+하/XSV+거나/ECS)
+                                      (VV 좌시/NNC+하/XSV+지/ECS+도/PAU)))
+                              않/VX+을/EAN)
+                          (VX 것/NNX))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD))
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=발언</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>으로</f>
+	      <term>국영 TV와 관영 신화통신</term>
+	    </Arg>
+	    <Rel>
+	      <term>보도된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보도되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>다임러크라이슬러는 혼다 및 미쓰비시 자동차와 제휴 문제를 협상하고 있다고 다임러크라이슬러 간부가 프랑스 신문에 밝힌 것으로 2 일 보도됐다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (S-COMP-1 (NP-SBJ 다임크라이슬러/NPR+은/PAU)
+                             (VP (VP (NP-COMP (NP 혼다/NPR)
+                                              (ADCP 및/ADC)
+                                              (NP 미쓰비시/NPR
+                                                  자동차/NNC+과/PAD))
+                                     (NP-OBJ 제휴/NNC
+                                             문제/NNC+을/PCA)
+                                     (VV 협상/NNC+하/XSV+고/ECS))
+                                 있/VX+다/EFN+고/PAD))
+                   (S (NP-SBJ 다임러크라이슬러/NPR
+                              간부/NNC+이/PCA)
+                      (VP (NP-COMP 프랑스/NPR
+                                   신문/NNC+에/PAD)
+                          (S-COMP *T*-1)
+                          밝히/VV+은/EAN)))
+                (NP 것/NNX+으로/PAD))
+       (VP (NP-ADV 2/NNU
+                   일/NNX)
+           (VP (VV 보도/NNC+되/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>다임러크라이슬러는 혼다 및 미쓰비시 자동차와 제휴 문제를 협상하고 있다고 다임러크라이슬러 간부가 프랑스 신문에 밝힌 것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>2 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>보도됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

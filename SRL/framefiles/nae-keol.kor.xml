@@ -1,0 +1,131 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>내걸</lemma>
+    <comment>Frames file for '내걸' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>내걸.01</id>
+      <edef>hang out</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing hung"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내걸다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이들은 '디젤유 연방세금 철폐' 등의 플래카드를 내걸고 경찰의 호위를 받으며 트럭을 몰고 워싱턴 북쪽 메릴랜드주의 고속도로를 통해 워싱턴에 들어왔다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPN+들/XSF+은/PAU)
+   (VP (VP (NP-OBJ (NP '/SLQ
+                       디젤유/NNC
+                       연방/NNC+세금/NNC
+                       철폐/NNC
+                       '/SRQ
+                       등/NNX+의/PAN)
+                   (NP 플래카드/NNC+을/PCA))
+           내걸/VV+고/ECS)
+       (VP (VP (NP-OBJ (NP 경찰/NNC+의/PAN)
+                       (NP 호위/NNC+을/PCA))
+               받/VV+으며/ECS)
+           (VP (NP-OBJ 트럭/NNC+을/PCA)
+               몰/VV+고/ECS))
+       (VP (S (NP-SBJ *pro*)
+              (VP (NP-OBJ (NP 워싱턴/NPR
+                              북쪽/NNC
+                              메릴랜드/NPR+주/NNC+의/PAN)
+                          (NP 고속도로/NNC+을/PCA))
+                  통하/VV+어/ECS))
+           (VP (NP-COMP 워싱턴/NPR+에/PAD)
+	       들어오/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>'디젤유 연방세금 철폐' 등의 플래카드</term>
+	    </Arg>
+	    <Rel>
+	      <term>내걸고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>내걸.02</id>
+      <edef>offer</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="price"/>
+	<role argnum="2" argrole="purpose"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내걸다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>네덜란드의 헤이그에 소재한 국제전범재판소는 지난해 5 월 코소보 사태와 관련해 밀로세비치 신유고연방 대통령을 기소했으며 미국 정부는 기소직후 현상금을 내걸었으나 그동안 수배전단을 배포하지는 않았었다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-8 *op*)
+                 (S (NP-SBJ *T*-8)
+                    (VP (NP-COMP (NP 네덜란드/NPR+의/PAN)
+                                 (NP 헤이그/NPR+에/PAD))
+                        (VV 소재/NNC+하/XSV+은/EAN))))
+              (NP 국제/NNC+전범/NNC+재판소/NNC+은/PAU))
+      (VP (NP-ADV 지난해/NNC
+                  5/NNU
+                  월/NNX)
+          (S (NP-SBJ *pro*)
+             (VP (NP-COMP 코소보/NPR
+                          사태/NNC+과/PAD)
+                 (VV 관련/NNC+하/XSV+어/ECS)))
+          (VP (NP-OBJ (NP 밀로세비치/NPR)
+                      (NP 신/DAN+유고/NPR+연방/NNC)
+                      (NP 대통령/NNC+을/PCA))
+              (VV 기소/NNC+하/XSV+었/EPF+으며/ECS))))
+   (S (NP-SBJ 미국/NPR
+              정부/NNC+은/PAU)
+      (VP (VP (NP-ADV 기소/NNC+직후/NNC)
+              (VP (NP-OBJ 현상금/NNC+을/PCA)
+                  내걸/VV+었/EPF+으나/ECS))
+          (VP (NP-ADV 그동안/NNC)
+              (VP (VP (NP-OBJ 수배/NNC+전단/NNC+을/PCA)
+                      (VV 배포/NNC+하/XSV+지/EFN+은/PAU))
+                  않/VX+었었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>미국 정부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>기소직후</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>현상금</term>
+	    </Arg>
+	    <Rel>
+	      <term>내걸었으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

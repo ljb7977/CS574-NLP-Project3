@@ -1,0 +1,158 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>분석</lemma>
+    <comment>Frames file for '분석' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>분석.01</id>
+      <edef>analyze</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing analyzed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>분석하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>참모부에서 상기한 임무를 수행하는 동안, 일선 기동 부대를 지원하고 있는 포병 부대 (포병군과 대대급 이상의 포병 부대)는 상급 제대의 화력 지원 계획을 분석하고 목표를 선정하며 그들 자신의 화력 계획을 준비한다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 참모부/NNC+에서/PCA)
+              (VP (NP-OBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ *T*-1)
+                                    (VV 상기/NNC+하/XSV+은/EAN))))
+                          (NP 임무/NNC+을/PCA))
+                  (VV 수행/NNC+하/XSV+는/EAN)))
+           (NP 동안/NNX))
+   ,/SCM
+   (S (NP-SBJ (S (WHNP-17 *op*)
+                 (S (NP-SBJ *T*-17)
+                    (VP (VP (NP-OBJ 일선/NNC
+                                    기동/NNC
+                                    부대/NNC+을/PCA)
+                            (VV 지원/NNC+하/XSV+고/ECS))
+                        있/VX+는/EAN)))
+              (NP 포병/NNC
+                  부대/NNC
+                  (PRN -LRB-/SLQ
+                       (NP 포병/NNC
+                           군/NNC+과/PCJ)
+                       (NP (NP 대대/NNC+급/XSF
+                               이상/NNC+의/PAN)
+                           (NP 포병/NNC
+                               부대/NNC))
+                       -RRB-/SRQ)
+                  은/PAU))
+      (VP (VP (NP-OBJ (NP 상급/NNC
+                          제대/NNC+의/PAN)
+                      (NP 화력/NNC
+                          지원/NNC
+                          계획/NNC+을/PCA))
+              (VV 분석/NNC+하/XSV+고/ECS))
+          (VP (NP-OBJ 목표/NNC+을/PCA)
+              (VV 선정/NNC+하/XSV+으며/ECS))
+          (VP (NP-OBJ (NP 그/NPN+들/XSF
+                          자신/NNC+의/PAN)
+                      (NP 화력/NNC
+                          계획/NNC+을/PCA))
+              (VV 준비/NNC+하/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>참모부에서 상기한 임무를 수행하는 동안</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>일선 기동 부대를 지원하고 있는 포병 부대 (포병군과 대대급 이상의 포병 부대)</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>상급 제대의 화력 지원 계획</term>
+	    </Arg>
+	    <Rel>
+	      <term>분석하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>분석되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난해 통합 추진을 선언한 유럽 8 개국 증시 중 3 개 증시가 1 차적 통합을 추진하고 있는 이유는 전체 통합이 진전되지 않고 있는 데다 3 국이 지리적 인접성 및 상호 보완적 시장 특성으로 통합의 기대 효과가 큰 때문으로 분석되고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ (NP (NP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-ADV 지난해/NNC)
+                                        (VP (NP-OBJ 통합/NNC
+                                                    추진/NNC+을/PCA)
+                                            (VV 선언/NNC+하/XSV+은/EAN)))))
+                              (NP 유럽/NPR
+                                  8/NNU
+                                  개국/NNC
+                                  증시/NNC))
+                          (NP 중/NNX))
+                      (NP 3/NNU
+                          개/NNX
+                          증시/NNC+이/PCA))
+              (VP (VP (NP-OBJ 1/NNU
+                              차/NNC+적/XSF
+                              통합/NNC+을/PCA)
+                      (VV 추진/NNC+하/XSV+고/ECS))
+                  있/VX+는/EAN))
+           (NP 이유/NNC+은/PAU))
+   (VP (VP (NP-COMP (S (NP-ADV (S (NP-SBJ 전체/NNC
+                                          통합/NNC+이/PCA)
+                                  (VP (VP (VP (VV 진전/NNC+되/XSV+지/ECS))
+                                          않/VX+고/ECS)
+                                      있/VX+는/EAN))
+			       (NP 데/NNX+에다/PAD))
+                       (S (NP-SBJ 3/NNU
+                                  국/NNC+이/PCA)
+                          (ADJP (NP-ADV (NP 지리/NNC+적/XSF
+						인접성/NNC)
+					(ADCP 및/ADC)
+					(NP 상호/NNC
+						보완/NNC+적/XSF
+						시장/NNC
+						특성/NNC+으로/PAD))
+				(ADJP (NP-COMP (NP 통합/NNC+의/PAN)
+					       (NP 기대/NNC
+						       효과/NNC+이/PCA))
+				      (ADJP 크/VJ+은/EAN)))))
+                    (NP 때문/NNX+으로/PAD))
+           (VV 분석/NNC+되/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>지난해 통합 추진을 선언한 유럽 8 개국 증시 중 3 개 증시가 1 차적 통합을 추진하고 있는 이유</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>전체 통합이 진전되지 않고 있는 데다 3 국이 지리적 인접성 및 상호 보완적 시장 특성으로 통합의 기대 효과가 큰 때문</term>
+	    </Arg>
+	    <Rel>
+	      <term>분석되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

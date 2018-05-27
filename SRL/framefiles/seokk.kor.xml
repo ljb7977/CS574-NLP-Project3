@@ -1,0 +1,129 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>섞</lemma>
+    <comment>Frames file for '섞' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>섞.01</id>
+      <edef>mix</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="ingredient one"/>
+	<role argnum="2" argrole="ingredient two"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>섞다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>뉴욕주와 캘리포니아주의 IBM 연구소가 공동으로 실시한 이번 연구에서 과학자들은 뜨거운 용액 상태의 철과 백금을 섞은 결과 수 천개의 원자크기만 한 조그만 자기 입자들이 각각 정확한 시차를 두고 차례로 자기들끼리 합치는 화학 반응을 일으키는 것을 발견했다고 말했다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP-1 *op*)
+              (S (NP-SBJ (NP (NP 뉴욕/NPR+주/NNC+과/PCJ)
+                             (NP 캘리포니아/NPR+주/NNC+의/PAN))
+                         (NP IBM/NFW
+                             연구소/NNC+이/PCA))
+                 (VP (NP-ADV 공동/NNC+으로/PAD)
+                     (VP (NP-OBJ *T*-1)
+                         (VV 실시/NNC+하/XSV+은/EAN)))))
+           (NP 이번/NNC
+               연구/NNC+에서/PAD))
+   (S (NP-SBJ 과학자/NNC+들/XSF+은/PAU)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-ADV (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ (NP (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *T*-2)
+                                                       (ADJP 뜨겁/VJ+은/EAN)))
+                                                 (NP 용액/NNC
+                                                     상태/NNC+의/PAN))
+                                             (NP (NP 철/NNC+과/PCJ)
+                                                 (NP 백금/NNC+을/PCA)))
+                                     섞/VV+은/EAN))
+                              (NP 결과/NNC))
+                      (VP (NP-OBJ (S (NP-SBJ (NP 수/DAN
+                                                 천/NNU+개/NNX+의/PAN)
+                                             (NP (S (WHNP-3 *op*)
+                                                    (S (NP-SBJ *T*-3)
+                                                       (VP (NP-COMP 원자/NNC+크기/NNC+만/PAU)
+						           하/VV+은/EAN)))
+                                                 (NP (S (WHNP-4 *op*)
+                                                        (S (NP-SBJ *T*-4)
+                                                           (ADJP 조그맣/VJ+은/EAN)))
+                                                     (NP 자기/NNC
+                                                         입자/NNC+들/XSF+이/PCA))))
+                                     (VP (NP-OBJ (S (ADVP 각각/ADV)
+                                                    (S (NP-SBJ *pro*)
+                                                       (VP (NP-OBJ (S (WHNP-5 *op*)
+                                                                      (S (NP-SBJ *T*-5)
+                                                                         (ADJP (VJ 정확/NNC+하/XSJ+은/EAN))))
+                                                                   (NP 시차/NNC+을/PCA))
+                                                           두/VV+고/ECS))
+                                                    (NP-ADV 차례/NNC+으로/PAD)
+                                                    (S (NP-SBJ 자기/NNC+들/XSF+끼리/XSF)
+                                                       (VP 합치/VV+는/EAN)))
+                                                 (NP 화학/NNC
+                                                     반응/NNC+을/PCA))
+                                         일으키/VV+는/EAN))
+                                  (NP 것/NNX+을/PCA))
+                          (VV 발견/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>뜨거운 용액 상태의 철과 백금</term>
+	    </Arg>
+	    <Rel>
+	      <term>섞은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>섞이다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지뢰군에는 보통 여러 가지 지뢰가 섞여 있습니다.</text>
+	  <parse>
+(S (NP-ADV 지뢰군/NNC+에/PAD+는/PAU)
+   (ADVP 보통/ADV) 
+   (S (NP-SBJ (NP 여러/DAN 가지/NNX)
+	      (NP 지뢰/NNC+가/PCA))
+      (VP (VP 섞이/VV+어/EAU) 
+	  있/VX+습니다/EFN))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>지뢰군에는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>보통</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>여러 가지 지뢰</term>
+	    </Arg>
+	    <Rel>
+	      <term>섞여</term>
+	    </Rel>
+	    <AUX>
+	      <f>어</f>
+	      <term>있습니다</term>
+	    </AUX>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

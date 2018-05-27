@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>만료</lemma>
+    <comment>Frames file for '만료' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>만료.01</id>
+      <edef>complete</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="task coming to an end"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>만료되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>레빗 위원장은 사적으로 전달된 정보라도 반드시 공시해야 한다는 규정을 제정하기로 하고 공개적인 의견청취에 들어갔으며 90 일간으로 예정된 의견 청취기한은 3 월 29 일로 만료된다.</text>
+	  <parse>
+(S (S (NP-SBJ 레빗/NPR
+              위원장/NNC+은/PAU)
+      (VP (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+                                        (VP (NP (S (WHNP-2 *op*)
+                                                   (S (NP-SBJ *T*-2)
+                                                      (VP (NP-ADV 사적/NNC+으로/PAD)
+                                                          (VP (VV 전달/NNC+되/XSV+은/EAN)))))
+                                                (NP 정보/NNC+이/CO+라/EFN+도/PAU))))
+                                     (S (NP-SBJ *pro*)
+                                        (VP (VP (ADVP 반드시/ADV)
+                                                (VP (NP-OBJ *pro*)
+                                                    (VV 공시/NNC+하/XSV+어야/ECS)))
+                                            하/VX+는다는/EAN)))
+                                  (NP 규정/NNC+을/PCA))
+                          (VV 제정/NNC+하/XSV+기/ENM+으로/PAD)))
+              하/VV+고/ECS)
+          (VP (NP-COMP (S (WHNP-3 *op*)
+                          (S (NP-SBJ *T*-3)
+                             (VP (NP 공개/NNC+적/XSF+이/CO+은/EAN))))
+                       (NP 의견/NNC+청취/NNC+에/PAD))
+              들어가/VV+었/EPF+으며/ECS)))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP 90/NNU
+                                 일/NNX+간/XSF+으로/PAD)
+                        (VV 예정/NNC+되/XSV+은/EAN))))
+              (NP 의견/NNC
+                  청취/NNC+기한/NNC+은/PAU))
+      (VP (NP-ADV 3/NNU
+                  월/NNX
+                  29/NNU
+                  일/NNX+으로/PAD)
+          (VP (VV 만료/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>레빗 위원장은 사적으로 전달된 정보라도 반드시 공시해야 한다는 규정을 제정하기로 하고 공개적인 의견청취에 들어갔으며</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>90 일간으로 예정된 의견 청취기한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>3 월 29 일로</term>
+	    </Arg>
+	    <Rel>
+	      <term>만료된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>비싸</lemma>
+    <comment>Frames file for '비싸' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>비싸.01</id>
+      <edef>expensive</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being expensive"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>비싸다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이들이 개발한 연료 전지는 크기가 1 평방센티미터도 채 안되고 재료도 비싼 편이 아니지만 메탄, 에탄, 부탄 등의 여러 가스를 시험해 봤을 때 깨끗한 동력을 생산하면서도 부산물로는 물과 무시해도 좋을 만한 미량의 이산화 탄소만이 나왔다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ 이/NPN+들/XSF+이/PCA)
+                    (VP (NP-OBJ *T*-1)
+                        (VV 개발/NNC+하/XSV+은/EAN))))
+              (NP 연료/NNC
+                  전지/NNC+은/PAU))
+      (S (S (NP-SBJ 크기/NNC+이/PCA)
+            (VP (NP-COMP 1/NNU
+                         평방/NNX+센티미터/NNX+도/PAU)
+                (VP (ADVP 채/ADV)
+                    (VP 안되/VV+고/ECS))))
+         (S (NP-SBJ (S (NP-SBJ 재료/NNC+도/PAU)
+                       (ADJP 비싸/VJ+은/EAN))
+                    (NP 편/NNX+이/PCA))
+            (ADJP 아니/VJ+지만/ECS))))
+   (S (NP-ADV (S (NP-SBJ *pro*)
+                 (VP (VP (NP-OBJ (NP (NP (NP 메탄/NNC)
+                                         ,/SCM
+                                         (NP 에탄/NNC)
+                                         ,/SCM
+                                         (NP 부탄/NNC))
+                                     (NP 등/NNX+의/PAN))
+                                 (NP 여러/DAN
+                                     가스/NNC+을/PCA))
+                         (VV 시험/NNC+하/XSV+어/ECS))
+                     보/VX+었/EPF+을/EAN))
+              (NP 때/NNC))
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ (S (WHNP-2 *op*)
+                        (S (NP-SBJ *T*-2)
+                           (ADJP 깨끗하/VJ+은/EAN)))
+                     (NP 동력/NNC+을/PCA))
+             (VV 생산/NNC+하/XSV+으면서/ECS+도/PAU)))
+      (S (NP-ADV 부산물/NNC+으로/PAD+은/PAU)
+         (S (NP-SBJ (NP 물/NNC+과/PCJ)
+                    (NP (S (WHNP-3 *op*)
+                           (S (NP-SBJ *pro*)
+			      (VP (ADJP (S (NP-SBJ *pro*)
+					   (VP (NP-OBJ *T*-3)
+					       (VV 무시/NNC+하/XSV+어도/ECS)))
+					(ADJP 좋/VJ+을/EAN))
+				  만하/VX+은/EAN)))
+                        (NP (NP 미량/NNC+의/PAN)
+                            (NP 이산화/NNC
+                                탄소/NNC+만/PAU+이/PCA))))
+            (VP 나오/VV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>재료</term>
+	    </Arg>
+	    <Rel>
+	      <term>비싼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

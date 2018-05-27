@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>여행</lemma>
+    <comment>Frames file for '여행' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>여행.01</id>
+      <edef>travel</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>여행하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 이번에 민간 기업의 전세기를 타고 휴양지로 여행한 사실이 드러나고 민간 항공기의 이착륙이 금지된 군용 비행장을 자신의 지위를 이용해 사적으로 이용한 사실이 확인될 경우 치명적인 타격을 입을 것으로 전망된다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-ADV (S (NP-ADV 이번/NNC+에/PAD)
+                 (S (S (NP-SBJ (S (NP-SBJ *pro*)
+                                  (VP (VP (NP-OBJ (NP 민간/NNC
+                                                      기업/NNC+의/PAN)
+                                                  (NP 전세기/NNC+을/PCA))
+                                          타/VV+고/ECS)
+                                      (VP (NP-COMP 휴양지/NNC+으로/PAD)
+                                          (VV 여행/NNC+하/XSV+은/EAN))))
+                               (NP 사실/NNC+이/PCA))
+                       (VP 드러나/VV+고/ECS))
+                    (S (NP-SBJ (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ (S (WHNP *op*)
+                                                 (S (NP-SBJ (NP 민간/NNC
+                                                                항공기/NNC+의/PAN)
+                                                            (NP 이착륙/NNC+이/PCA))
+                                                    (VP (VV 금지/NNC+되/XSV+은/EAN))))
+                                              (NP 군용/NNC
+                                                  비행장/NNC+을/PCA))
+                                      (VP (S (NP-SBJ *pro*)
+                                             (VP (NP-OBJ (NP 자신/NNC+의/PAN)
+                                                         (NP 지위/NNC+을/PCA))
+                                                 (VV 이용/NNC+하/XSV+어/ECS)))
+                                          (NP-ADV 사적/NNC+으로/PAD)
+                                          (VP (VV 이용/NNC+하/XSV+은/EAN)))))
+                               (NP 사실/NNC+이/PCA))
+                       (VP (VV 확인/NNC+되/XSV+을/EAN)))))
+              (NP 경우/NNC))
+      (S (NP-SBJ *pro*)
+         (VP (NP-COMP (S (NP-SBJ *pro*)
+			 (VP (NP-OBJ (S (WHNP-1 *op*)
+					(S (NP-SBJ *T*-1)
+					   (VP (NP 치명/NNC+적/XSF+이/CO+은/EAN))))
+				     (NP 타격/NNC+을/PCA))
+			     입/VV+을/EAN))
+		      (NP 것/NNX+으로/PAD))
+             (VV 전망/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>민간 기업의 전세기를 타고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>휴양지</term>
+	    </Arg>
+	    <Rel>
+	      <term>여행한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

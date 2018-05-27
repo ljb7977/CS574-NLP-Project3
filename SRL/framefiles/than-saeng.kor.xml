@@ -1,0 +1,177 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탄생</lemma>
+    <comment>Frames file for '탄생' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탄생.01</id>
+      <edef>come into being</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing coming into being"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탄생하다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>양 은행의 합병으로 총자산 2 조 5 천억마르크(1 조 2 천억달러) 규모의 세계 최대 은행이 탄생하게 되었다.</text>
+	  <parse>
+(S (NP-COMP-1 (NP 양/DAN
+		    은행/NNC+의/PAN)
+	      (NP 합병/NNC+으로/PAD))
+   (S (NP-SBJ (NP 총/XPF+자산/NNC
+                  2/NNU
+                  조/NNU
+                  5/NNU
+                  천억/NNU+마르크/NNX
+                  (PRN -LRB-/SLQ
+                       (NP 1/NNU
+                           조/NNU
+                           2/NNU
+                           천억/NNU+달러/NNX)
+                       -RRB-/SRQ)
+                  규모/NNC+의/PAN)
+              (NP 세계/NNC
+                  최대/NNC
+                  은행/NNC+이/PCA))
+      (VP (VP (NP-COMP *T*-1)
+	      (VV 탄생/NNC+하/XSV+게/ECS))
+          되/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>으로</f>
+	      <term>양 은행의 합병</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>총자산 2 조 5 천억마르크(1 조 2 천억달러) 규모의 세계 최대 은행</term>
+	    </Arg>
+	    <Rel>
+	      <term>탄생하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>되었다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>탄생되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 이어 러시아의 군사목표는 아프가니스탄 등지에 기반을 둔 급진주의 세력의 지원으로 탄생된 반군 그룹을 분쇄하는 것이라고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (VP (S-COMP (NP-SBJ (NP 러시아/NPR+의/PAN)
+                           (NP 군사/NNC+목표/NNC+은/PAU))
+                   (VP (NP (S (NP-SBJ *pro*)
+                              (VP (NP-OBJ (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                                                    (S (NP-SBJ *T*-1)
+                                                                       (VP (NP-COMP 아프가니스탄/NPR
+                                                                                    등지/NNX+에/PAD)
+                                                                           (NP-OBJ 기반/NNC+을/PCA)
+                                                                           두/VV+은/EAN)))
+                                                                 (NP 급진주의/NNC
+                                                                     세력/NNC+의/PAN))
+                                                             (NP 지원/NNC+으로/PAD))
+                                                    (VV 탄생/NNC+되/XSV+은/EAN))))
+                                          (NP 반군/NNC
+                                              그룹/NNC+을/PCA))
+                                  (VV 분쇄/NNC+하/XSV+는/EAN)))
+                           (NP 것/NNX+이/CO+라/EFN+고/PAD))))
+           (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=반군 그룹</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>으로</f>
+	      <term>아프가니스탄 등지에 기반을 둔 급진주의 세력의 지원</term>
+	    </Arg>
+	    <Rel>
+	      <term>탄생된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>탄생시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>아일랜드에 본사를 둔 인터넷 은행인 퍼스트 -e와 스페인의 인터넷 은행 우노 -e가 합병, 세계 최초의 글로벌 온라인 은행을 탄생시킬 것이라고 파이낸셜 타임스가 7 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-2 (S (NP-SBJ (NP (S (WHNP-1 *op*)
+			       (S (S (NP-SBJ *T*-1)
+				     (VP (NP-COMP 아일랜드/NPR+에/PAD)
+					 (NP-OBJ 본사/NNC+을/PCA)
+					 두/VV+은/EAN))
+				  (S (NP-SBJ *T*-1)
+				     (VP (NP 인터넷/NNC
+						   은행/NNC+이/CO+은/EAN)))))
+			    (NP 퍼스트/NPR
+				      -/SSY
+				      e/NFW+과/PCJ))
+			(NP (NP (NP 스페인/NPR+의/PAN)
+				(NP 인터넷/NNC
+					  은행/NNC))
+			    (NP 우노/NPR
+				    -/SSY
+				    e/NFW+이/PCA)))
+		(VP (VV 합병/NNC)))
+	     ,/SCM
+	     (S (NP-SBJ *pro*)
+		(VP (VP (NP-OBJ (NP 세계/NNC
+					최초/NNC+의/PAN)
+				(NP 글로벌/NNC
+					  온라인/NNC
+					  은행/NNC+을/PCA))
+			(VV 탄생/NNC+시키/XSV+을/EAN))
+		    (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+   (S (NP-SBJ 파이낸셜/NPR
+              타임스/NPR+이/PCA)
+      (VP (NP-ADV 7/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-2)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>아일랜드에 본사를 둔 인터넷 은행인 퍼스트 -e와 스페인의 인터넷 은행 우노 -e가 합병</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>세계 최초의 글로벌 온라인 은행</term>
+	    </Arg>
+	    <Rel>
+	      <term>탄생시킬</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

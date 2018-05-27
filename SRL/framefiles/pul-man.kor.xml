@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불만</lemma>
+    <comment>Frames file for '불만' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불만.01</id>
+      <edef>dissatisfied</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="person feeling dissatisfaction"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불만스러워하다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>채권단의 지원 부족 문제에 대해서는 "터널끝에 빛이 보이는데 금융기관들의 지원 부족으로 발목이 잡혀 있다"면서 불만스러워했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-COMP (NP-SBJ *pro*)
+	       (VP (NP-COMP (NP 채권단/NNC+의/PAN)
+			    (NP 지원/NNC
+				    부족/NNC
+				    문제/NNC+에/PAD))
+		   대하/VV+어서/ECS+은/PAU))
+       (VP (S "/SLQ
+	      (S (NP-ADV 터널/NNC+끝/NNC+에/PAD)
+		 (S (NP-SBJ 빛/NNC+이/PCA)
+		    (VP 보이/VV+는데/ECS)))
+	      (S (NP-ADV (NP 금융/NNC+기관/NNC+들/XSF+의/PAN)
+			 (NP 지원/NNC
+				 부족/NNC+으로/PAD))
+		 (S (NP-SBJ 발목/NNC+이/PCA)
+		    (VP (VP 잡히/VV+어/ECS)
+			있/VX+다/EFN)))
+	      "/SRQ
+	      면서/ECS)
+	   (VP (VV (VJ 불만/NNC+스럽/XSJ+어하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에 대해서는</f>
+	      <term>채권단의 지원 부족 문제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>"터널끝에 빛이 보이는데 금융기관들의 지원 부족으로 발목이 잡혀 있다"면서</term>
+	    </Arg>
+	    <Rel>
+	      <term>불만스러워했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

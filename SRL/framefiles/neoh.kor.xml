@@ -1,0 +1,303 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>넣</lemma>
+    <comment>Frames file for '넣' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>넣.01</id>
+      <edef>put in</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing put in"/>
+	<role argnum="2" argrole="where put in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>넣다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>기름하고 구리스 같은 윤활유는 150 리터 내지 500 리터 드럼통에 넣어 저장도 하고 수송도 합니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*) 
+      (VP (NP-OBJ (S (WHNP-1 0) 
+		     (S (NP-SBJ *T*-1)
+			(ADJP (NP-COMP (NP 기름/NNC+하고/PCJ) 
+				       (NP 구리스/NNC))
+			      같/VJ+은/EAN))) 
+		  (NP 윤활유/NNC+는/PAU))
+	  (NP-COMP (NP (NP 150/NNU
+			   리터/NNX)
+		       (ADCP 내지/ADC) 
+		       (NP 500/NNU 
+			   리터/NNX)) 
+		   (NP 드럼통/NNC+에/PAD))
+	  넣/VV+어/ECS)) 
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ *pro*) 
+	      (NP-OBJ-LV 저장/NNC+도/PAU)
+	      (LV 하/VV+고/ECS))
+	  (VP (NP-OBJ *pro*) 
+	      (NP-OBJ-LV 수송/NNC+도/PAU) 
+	      (LV 하/VV+습니다/EFN))))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>기름하고 구리스 같은 윤활유</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>150 리터 내지 500 리터 드럼통</term>
+	    </Arg>
+	    <Rel>
+	      <term>넣어</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>넣어지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>사이토씨는 "1910 년 안의사가 묻힐 당시 중국인들의 매장습관과는 달리 뉜 상태로 십자가등과 함께 목관에 넣어진 것으로 알려져 있어 식별해 내기는 어렵지 않을 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 사이토/NPR+씨/NNX+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ *pro*)
+                  (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                                      (VP (ADVP (NP-COMP (NP (S (NP-ADV 1910/NNU
+                                                                        년/NNX)
+                                                                (S (NP-SBJ 안/NPR+의사/NNC+이/PCA)
+                                                                   (VP 묻히/VV+을/EAN)))
+                                                             (NP 당시/NNC))
+                                                         (NP (NP 중국인/NNC+들/XSF+의/PAN)
+                                                             (NP 매장/NNC+습관/NNC+과/PAD+은/PAU)))
+                                                달리/ADV)
+                                          (NP-ADV (S (NP-SBJ *pro*)
+                                                     (VP (NP-OBJ *pro*)
+                                                         뉘/VV+은/EAN))
+                                                  (NP 상태/NNC+으로/PAD))
+                                          (ADVP (NP-COMP 십자가/NNC+등/NNX+과/PAD)
+                                                함께/ADV)
+                                          (VP (NP-COMP 목관/NNC+에/PAD)
+                                              (VV 넣/VV+어지/XSV+은/EAN))))
+                                   (NP 것/NNX+으로/PAD))
+                          (VV 알리/VV+어지/XSV+어/ECS))
+                      있/VX+어/ECS))
+               (S (S-SBJ (NP-SBJ *pro*)
+                         (VP (VP (NP-OBJ *pro*)
+                                 (VV 식별/NNC+하/XSV+어/ECS))
+                             내/VX+기/ENM+은/PAU))
+                  (VP (VP (ADJP 어렵/VJ+지/ECS)
+                          않/VX+을/EAN)
+                      (VX 것/NNX)))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>1910 년 안의사가 묻힐 당시 중국인들의 매장습관과는 달리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>뉜 상태로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>십자가등과 함께</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>목관</term>
+	    </Arg>
+	    <Rel>
+	      <term>넣어진</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>갈아 넣</lemma>
+    <frameset>
+      <id>넣.02</id>
+      <edef>replace-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="old thing"/>
+	<role argnum="2" argrole="new thing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>갈아 넣다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>냉각제를 운전수들은 몇 달에 한번씩 갈아 넣는가?</text>
+	  <parse>
+(S (NP-OBJ-1 냉각제/NNC+을/PCA)
+   (S (NP-SBJ 운전수/NNC+들/XSF+은/PAU)
+      (VP (NP-ADV (NP 몇/NNU
+                      달/NNX+에/PAD)
+                  (NP 한번/NNC+씩/XSF))
+          (VP (NP-OBJ *T*-1)
+              (CV 갈/VV+어/ECS
+                  넣/VV+는가/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>냉각제</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>운전수들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>몇 달에 한번씩</term>
+	    </Arg>
+	    <Rel>
+	      <term>갈아 넣는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>잡아 넣</lemma>
+    <frameset>
+      <id>넣.03</id>
+      <edef>confine-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity confined"/>
+	<role argnum="2" argrole="confined to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잡아 넣다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>아마 너를 감옥에 잡아 넣기까지 할지도 몰라.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (ADVP 아마/ADV)
+           (VP (S-OBJ (NP-SBJ *pro*)
+                      (VP (NP-OBJ 너/NPN+을/PCA)
+                          (NP-COMP 감옥/NNC+에/PAD)
+                          (CV 잡/VV+어/ECS
+                              넣/VV+기/ENM+까지/PAU)))
+               하/VV+을지/EFN+도/PAU))
+       모르/VX+어/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>너</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>감옥</term>
+	    </Arg>
+	    <Rel>
+	      <term>잡아 넣기까지</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>끼워 넣</lemma>
+    <frameset>
+      <id>넣.04</id>
+      <edef>insert-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="inserter"/>
+	<role argnum="1" argrole="thing inserted"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>끼워 넣다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>싱가포르 천식협회의 의사 여 초 치엔은 천식환자들은 특별 의료지시를 따르고 에어컨에 필터를 끼워 넣도록 하라고 당부했으며 리 옥수앤 싱가포르 환경부장관은 지난 97 년 만큼 연무가 심해지면 안면 마스크를 착용해야 한다고 경고했다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 싱가포르/NPR
+                  천식/NNC+협회/NNC+의/PAN)
+              (NP 의사/NNC
+                  여/NPR
+                  초/NPR
+                  치엔/NPR+은/PAU))
+      (VP (S-COMP (NP-SBJ 천식/NNC+환자/NNC+들/XSF+은/PAU)
+                  (VP (VP (NP-OBJ 특별/NNC
+                                  의료/NNC+지시/NNC+을/PCA)
+                          따르/VV+고/ECS)
+                      (VP (S-COMP (NP-SBJ *pro*)
+                                  (VP (NP-COMP 에어컨/NNC+에/PAD)
+                                      (NP-OBJ 필터/NNC+을/PCA)
+                                      (CV 끼우/VV+어/ECS
+                                          넣/VV+도록/ECS)))
+                          하/VV+으라/EFN+고/PAD)))
+          (VV 당부/NNC+하/XSV+었/EPF+으며/ECS)))
+   (S (NP-SBJ 리/NPR
+              옥수앤/NPR
+              싱가포르/NPR
+              환경부장관/NNC+은/PAU)
+      (VP (S-COMP (S (NP-ADV 지난/DAN
+                             97/NNU
+                             년/NNX
+                             만큼/NNX)
+                     (S (NP-SBJ 연무/NNC+이/PCA)
+                        (VP (VV 심하/VJ+어지/XSV+으면/ECS))))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-OBJ 안면/NNC
+                                     마스크/NNC+을/PCA)
+                             (VV 착용/NNC+하/XSV+어야/ECS))
+                         하/VX+는다/EFN+고/PAD)))
+          (VV 경고/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>에어컨</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>필터</term>
+	    </Arg>
+	    <Rel>
+	      <term>끼워 넣도록</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

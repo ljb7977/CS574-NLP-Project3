@@ -1,0 +1,104 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>도입</lemma>
+    <comment>Frames file for '도입' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>도입.01</id>
+      <edef>introduce</edef>
+      <roleset>
+	<role argnum="0" argrole="introducer"/>
+	<role argnum="1" argrole="entity introduced"/>
+	<role argnum="2" argrole="introduced from"/>
+	<role argnum="3" argrole="introduced to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>도입하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>인민군에서는 로켓 발사기용 포탄을 국외에서 도입하고 있습니다.</text>
+	  <parse>
+(S (NP-SBJ 인민군/NNC+에서/PCA+는/PAU) 
+   (VP (VP (NP-OBJ 로켓/NNC 
+		   발사기/NNC+용/XSF 
+		   포탄/NNC+을/PCA) 
+	   (VP (NP-ADV 국외/NNC+에서/PAD) 
+	       (VP (VV 도입/NNC+하/XSV+고/EAU)))) 
+       있/VX+습니다/EFN))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>인민군</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>로켓 발사기용 포탄</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>국외</term>
+	    </Arg>
+	    <Rel>
+	      <term>도입하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>도입되다</rel>
+	  <mapitem src="np-adv" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이런 이유 때문에 이것들이 중공이나 소련에서 많이 도입된다.</text>
+	  <parse>
+(S (NP-ADV 이런/DAN
+           이유/NNC
+           때문/NNX+에/PAD)
+   (S (NP-SBJ 이것/NPN+들/XSF+이/PCA)
+      (VP (NP-COMP (NP 중공/NPR+이나/PCJ)
+                   (NP 소련/NPR+에서/PAD))
+          (VP (ADVP 많이/ADV)
+              (VP (VV 도입/NNC+되/XSV+는다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이런 이유 때문에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이것들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>중공이나 소련</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>많이</term>
+	    </Arg>
+	    <Rel>
+	      <term>도입된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

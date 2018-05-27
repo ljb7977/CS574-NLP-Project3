@@ -1,0 +1,108 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>되팔</lemma>
+    <comment>Frames file for '되팔' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>되팔.01</id>
+      <edef>resell</edef>
+      <roleset>
+	<role argnum="0" argrole="seller"/>
+	<role argnum="1" argrole="thing sold"/>
+	<role argnum="2" argrole="buyer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>되팔다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일본은행이 장기 금리를 안정시키기 위해 "다량의 국채를 매입하라는 압력을 받게될 것"이라고 지적한 우에다 위원은 그러나 "어느 시점에는 보다 싼 값에 시장에 되팔 수밖에 없을 것이기 때문에 결과적으로 중앙은행 재정에 큰 타격이 가해질 것"이라고 우려했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-4 *op*)
+              (S (NP-SBJ *T*-4)
+                 (VP (S-COMP (NP-SBJ 일본/NPR+은행/NNC+이/PCA)
+                             (VP (S (NP-SBJ *pro*)
+                                    (VP (S-OBJ (NP-SBJ *pro*)
+                                               (VP (NP-OBJ 장기/NNC
+                                                           금리/NNC+을/PCA)
+                                                   (VV 안정/NNC+시키/XSV+기/ENM)))
+                                        위하/VV+어/ECS))
+                                 (VP "/SLQ
+                                     (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                        (VP (NP-OBJ (NP 다량/NNC+의/PAN)
+                                                                    (NP 국채/NNC+을/PCA))
+                                                            (VV 매입/NNC+하/XSV+으라는/EAN)))
+                                                     (NP 압력/NNC+을/PCA))
+                                             받/VV+게/ECS)
+                                         되/VX+을/EAN)
+                                     (VX 것/NNX)
+                                     "/SRQ
+                                     이/CO+라/EFN+고/PAD)))
+                     (VV 지적/NNC+하/XSV+은/EAN))))
+           (NP 우에다/NPR
+               위원/NNC+은/PAU))
+   (VP (ADCP 그러나/ADC)
+       (VP (S-COMP "/SLQ
+                   (NP-ADV (S (NP-SBJ *pro*)
+                              (VP (VP (VP (NP-ADV 어느/DAN
+                                                  시점/NNC+에/PAD+은/PAU)
+                                          (NP-ADV (S (WHNP-1 *op*)
+                                                     (S (NP-SBJ *T*-1)
+                                                        (ADJP (ADVP 보다/ADV)
+                                                              (ADJP 싸/VJ+은/EAN))))
+                                                  (NP 값/NNC+에/PAD))
+                                          (VP (NP-COMP 시장/NNC+에/PAD)
+                                              (NP-OBJ *pro*)
+                                              되팔/VV+을/EAN))
+                                      (VX 수/NNX+밖에/PAU
+                                          없/VJ+을/EAN))
+                                  (VX 것/NNX+이/CO+기/ENM)))
+                           (NP 때문/NNX+에/PAD))
+                   (ADVP (ADV 결과/NNC+적/XSF+으로/PAD))
+                   (S (NP-COMP-3 중앙/NNC+은행/NNC
+                                 재정/NNC+에/PAD)
+                      (S (NP-SBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (ADJP 크/VJ+은/EAN)))
+                                 (NP 타격/NNC+이/PCA))
+                         (VP (VP (NP-COMP *T*-3)
+                                 (VV 가하/VV+어지/XSV+을/EAN))
+                             (VX 것/NNX))))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           (VV 우려/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>어느 시점에는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>보다 싼 값에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>시장</term>
+	    </Arg>
+	    <Rel>
+	      <term>되팔</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수밖에 없을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잠적</lemma>
+    <comment>Frames file for '잠적' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>잠적.01</id>
+      <edef>conceal oneself</edef>
+      <roleset>
+	<role argnum="0" argrole="thing concealing oneself"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잠적하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>정부통계에 따르면 지난 10 년간 12 만 6 천명의 망명희망자들이 잠적했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 정부/NNC+통계/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   (NP-ADV 지난/DAN
+           10/NNU
+           년/NNX+간/XSF)
+   (S (NP-SBJ (NP 12/NNU
+                  만/NNU
+                  6/NNU
+                  천/NNU+명/NNX+의/PAN)
+              (NP 망명/NNC+희망자/NNC+들/XSF+이/PCA))
+      (VP (VV 잠적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>정부통계에 따르면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 10 년간</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>12 만 6 천명의 망명희망자들</term>
+	    </Arg>
+	    <Rel>
+	      <term>잠적했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

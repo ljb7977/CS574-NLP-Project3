@@ -1,0 +1,149 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>표출</lemma>
+    <comment>Frames file for '표출' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>표출.01</id>
+      <edef>express</edef>
+      <roleset>
+	<role argnum="0" argrole="speaker"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>표출하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>실제로 북한이 특정한 대북정책이나 대북제의에 거부감을 가질 때는 조평통 성명. 담화. 서기국 보도 또는 당기관지 노동신문, 관영 중앙통신 논평등을 통해 자신들의 의사를 적극적으로 표출해 왔다.</text>
+	  <parse>
+(S (NP-ADV 실제/NNC+으로/PAD)
+   (S (NP-SBJ 북한/NPR+이/PCA)
+      (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                         (VP (NP-ADV (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (ADJP (VJ 특정/NNC+하/XSJ+은/EAN))))
+                                     (NP (NP 대/XPF+북/NPR+정책/NNC+이나/PCJ)
+                                         (NP 대/XPF+북/NPR+제의/NNC+에/PAD)))
+                             (VP (NP-OBJ 거부감/NNC+을/PCA)
+                                 가지/VV+을/EAN)))
+                      (NP 때/NNC+은/PAU))
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (NP (NP 조평통/NPR)
+                                 (NP (NP 성명/NNC)
+                                     ./SSY
+                                     (NP 담화/NNC)))
+                             ./SSY
+                             (NP 서기국/NNC
+                                 보도/NNC)
+                             (ADCP 또는/ADC)
+                             (NP (NP (NP 당/NNC+기관지/NNC
+                                         노동/NPR+신문/NNC)
+                                     ,/SCM
+                                     (NP 관영/NNC
+                                         중앙/NNC+통신/NNC))
+                                 (NP 논평/NNC+등/NNX+을/PCA)))
+                     통하/VV+어/ECS))
+              (VP (NP-OBJ (NP 자신/NNC+들/XSF+의/PAN)
+                          (NP 의사/NNC+을/PCA))
+                  (VP (NP-ADV 적극/NNC+적/XSF+으로/PAD)
+                      (VP (VV 표출/NNC+하/XSV+어/ECS)))))
+          오/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>실제로</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>특정한 대북정책이나 대북제의에 거부감을 가질 때는</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>조평통 성명. 담화. 서기국 보도 또는 당기관지 노동신문, 관영 중앙통신 논평등을 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>자신들의 의사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>적극적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>표출해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>표출되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 회의에 앞서 GM 식품에 대한 모라토리엄(일시금지조치)을 촉구했던 환경운동가들은 다양한 견해가 표출되지 못했다면서 에든버러 회의를 비판했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (S (NP-SBJ *pro*)
+                       (VP (NP-COMP 회의/NNC+에/PAD)
+                           앞서/VV+어/ECS))
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-OBJ (S (WHNP-2 *op*)
+                                      (S (NP-SBJ *T*-2)
+                                         (VP (NP-COMP GM/NFW
+                                                      식품/NNC+에/PAD)
+                                             대하/VV+은/EAN)))
+                                   (NP 모라토리엄/NNC
+                                       (PRN -LRB-/SLQ
+                                            일시/NNC+금지/NNC+조치/NNC
+                                            -RRB-/SRQ)
+                                       을/PCA))
+                           (VV 촉구/NNC+하/XSV+었/EPF+던/EAN)))))
+              (NP 환경/NNC+운동가/NNC+들/XSF+은/PAU))
+      (VP (S-COMP (NP-SBJ (S (WHNP-3 *op*)
+			     (S (NP-SBJ *T*-3)
+				(ADJP (VJ 다양/NNC+하/XSJ+은/EAN))))
+			  (NP 견해/NNC+이/PCA))
+		  (VP (VP (VV 표출/NNC+되/XSV+지/ECS))
+		      못하/VX+었/EPF+다면서/ECS))
+          (NP-OBJ 에든버러/NPR
+			  회의/NNC+을/PCA)
+	  (VV 비판/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>다양한 견해</term>
+	    </Arg>
+	    <Rel>
+	      <term>표출되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못했다면서</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

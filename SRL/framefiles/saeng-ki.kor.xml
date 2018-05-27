@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>생기</lemma>
+    <comment>Frames file for '생기' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>생기.01</id>
+      <edef>happen</edef>
+      <roleset>
+	<role argnum="1" argrole="thing happening"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>생기다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그렇지만 거기에 지금 한 대밖에 없으니까 대대 전체에 계속적으로 공급품을 공급하는 데 문제가 생깁니다.</text>
+	  <parse>
+(S (ADCP 그렇지만/ADC)
+   (S (NP-SBJ *pro*)
+      (ADJP (NP-COMP 거기/NPN+에/PAD)
+            (ADJP (NP-ADV 지금/NNC)
+                  (NP-ADV 한/NNU
+                          대/NNX+밖에/PAU)
+                  (ADJP 없/VJ+으니까/ECS))))
+   (S (NP-COMP-1 (S (NP-SBJ *pro*)
+		    (VP (NP-COMP 대대/NNC
+				     전체/NNC+에/PAD)
+			(VP (ADVP (ADV 계속/NNC+적/XSF+으로/PAD))
+			    (VP (NP-OBJ 공급품/NNC+을/PCA)
+				(VV 공급/NNC+하/XSV+는/EAN)))))
+		 (NP 데/NNX))
+      (S (NP-SBJ 문제/NNC+이/PCA)
+         (VP (NP-COMP *T*-1)
+	     생기/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그렇지만</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>거기에 지금 한 대밖에 없으니까</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>대대 전체에 계속적으로 공급품을 공급하는 데</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>생깁니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

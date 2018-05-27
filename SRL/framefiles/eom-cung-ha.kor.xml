@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>엄중하</lemma>
+    <comment>Frames file for '엄중하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>엄중하.01</id>
+      <edef>severe</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being severe"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>엄중하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인민군에서는 누구나 상관을 비난하면 엄중한 벌을 받습니다.</text>
+	  <parse>
+(S (NP-ADV 인민군/NNC+에서/PAD+은/PAU)
+   (S (NP-SBJ 누구/NPN+이나/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 상관/NNC+을/PCA)
+                 (VV 비난/NNC+하/XSV+으면/ECS)))
+          (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (ADJP 엄중하/VJ+은/EAN)))
+                      (NP 벌/NNC+을/PCA))
+              받/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=벌</term>
+	    </Arg>
+	    <Rel>
+	      <term>엄중한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

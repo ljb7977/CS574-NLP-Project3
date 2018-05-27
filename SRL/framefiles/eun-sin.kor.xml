@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>은신</lemma>
+    <comment>Frames file for '은신' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>은신.01</id>
+      <edef>take refuge</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>은신하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중국공안당국도 경찰 수사에 적극 협조, 김씨등이 은신해 있을 것으로 추정되는 옌지(연길)시에 형사대를 급파, 이들의 소재파악에 나서는 등 검거 활동을 벌이고 있다.</text>
+	  <parse>
+(S (NP-SBJ 중국/NPR+공안/NNC+당국/NNC+도/PAU)
+   (VP (VP (NP-OBJ (NP (S (S (NP-SBJ *pro*)
+                             (VP (NP-COMP 경찰/NNC
+                                          수사/NNC+에/PAD)
+                                 (VP (NP-ADV 적극/NNC)
+                                     (VP (VV 협조/NNC)))))
+                          ,/SCM
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-COMP (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (NP-COMP (S (NP-SBJ 김/NPR+씨/NNX+등/NNX+이/PCA)
+                                                                (VP (VP (NP-COMP *pro*)
+                                                                        (VV 은신/NNC+하/XSV+어/ECS))
+                                                                    있/VX+을/EAN))
+                                                             (NP 것/NNX+으로/PAD))
+                                                    (VV 추정/NNC+되/XSV+는/EAN))))
+                                          (NP 옌지/NPR
+                                              (PRN -LRB-/SLQ
+                                                   (NP 연길/NPR)
+                                                   -RRB-/SRQ)
+                                              시/NNC+에/PAD))
+                                 (NP-OBJ 형사대/NNC+을/PCA)
+                                 (VV 급파/NNC)))
+                          ,/SCM
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-COMP (NP 이/NPN+들/XSF+의/PAN)
+                                          (NP 소재/NNC+파악/NNC+에/PAD))
+                                 나서/VV+는/EAN)))
+                       (NP 등/NNX))
+                   (NP 검거/NNC
+                       활동/NNC+을/PCA))
+           벌이/VV+고/ECS)
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>김씨등이</term>
+	    </Arg>
+	    <Rel>
+	      <term>은신해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

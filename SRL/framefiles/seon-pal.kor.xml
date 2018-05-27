@@ -1,0 +1,143 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>선발</lemma>
+    <comment>Frames file for '선발' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>선발.01</id>
+      <edef>select</edef>
+      <roleset>
+	<role argnum="0" argrole="selector"/>
+	<role argnum="1" argrole="entity selected"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>선발하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한편 민주노총은 이번 서울대회에 참가할 남측 대표팀을 선발하기 위해 오는 6 월까지 지역예선전을 그리고 7 월 17 일 결승전을 가질 계획이다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 민주노총/NPR+은/PAU)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (S-OBJ (NP-SBJ *pro*)
+                                   (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                  (S (NP-SBJ *T*-1)
+                                                     (VP (NP-COMP 이번/NNC
+                                                                  서울/NPR+대회/NNC+에/PAD)
+                                                         (VV 참가/NNC+하/XSV+을/EAN))))
+                                               (NP 남/NPR+측/XSF
+                                                   대표팀/NNC+을/PCA))
+                                       (VV 선발/NNC+하/XSV+기/ENM)))
+                            위하/VV+어/ECS))
+                     (VP (VP (NP-ADV 오는/DAN
+                                     6/NNU
+                                     월/NNX+까지/PAU)
+                             (VP (NP-OBJ 지역/NNC+예선전/NNC+을/PCA)
+                                 (VV *?*)))
+                         (ADCP 그리고/ADC)
+                         (VP (NP-ADV 7/NNU
+                                     월/NNX
+                                     17/NNU
+                                     일/NNX)
+                             (VP (NP-OBJ 결승전/NNC+을/PCA)
+                                 가지/VV+을/EAN)))))
+              (NP 계획/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이번 서울대회에 참가할 남측 대표팀</term>
+	    </Arg>
+	    <Rel>
+	      <term>선발하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>선발되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한통프리텔의 새 사장 선임은 공채형식으로 이뤄졌으나 경영능력과 통솔력, 비전제시 등을 감안해 전문가를 기용하겠다는 당초 취지와는 달리 한국통신 인사가 선발된 데다 한국통신이 최근 초고속 인터넷시장에서 실패한 ISDN과 퇴출된 시티폰 등을 적극 추진하거나 담당한 인사를 선정했다는 점에서 논란의 여지를 남겨 두고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 한통프리텔/NPR+의/PAN)
+              (NP 새/DAN
+                  사장/NNC
+                  선임/NNC+은/PAU))
+      (VP (NP-ADV 공채/NNC+형식/NNC+으로/PAD)
+          (VP (VV 이루/VV+어지/XSV+었/EPF+으나/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (S (NP-ADV (S (ADVP (NP-COMP (S (NP-SBJ *pro*)
+                                                      (VP (S (NP-SBJ *pro*)
+                                                             (VP (NP-OBJ (NP (NP 경영/NNC+능력/NNC+과/PCJ)
+                                                                             (NP 통솔력/NNC)
+                                                                             ,/SCM
+                                                                             (NP 비전/NNC+제시/NNC))
+                                                                         (NP 등/NNX+을/PCA))
+                                                                 (VV 감안/NNC+하/XSV+어/ECS)))
+                                                          (VP (NP-OBJ 전문가/NNC+을/PCA)
+                                                              (VV 기용/NNC+하/XSV+겠/EPF+다는/EAN))))
+                                                   (NP 당초/NNC
+                                                       취지/NNC+과/PAD+은/PAU))
+                                          달리/ADV)
+                                    (S (NP-SBJ 한국/NPR+통신/NNC
+                                               인사/NNC+이/PCA)
+                                       (VP (VV 선발/NNC+되/XSV+은/EAN))))
+                                 (NP 데/NNX+다/PAU))
+                         (S (NP-SBJ 한국/NPR+통신/NNC+이/PCA)
+                            (VP (NP-OBJ (S (WHNP-3 *op*)
+                                           (S (NP-SBJ *T*-3)
+                                              (VP (NP-OBJ (NP (NP (S (WHNP-2 *op*)
+                                                                     (S (NP-SBJ *T*-2)
+                                                                        (VP (NP-ADV 최근/NNC)
+                                                                            (NP-ADV 초/XPF+고속/NNC
+                                                                                    인터넷/NNC+시장/NNC+에서/PAD)
+                                                                            (VP (VV 실패/NNC+하/XSV+은/EAN)))))
+                                                                  (NP ISDN/NFW+과/PCJ))
+                                                              (NP (S (WHNP-1 *op*)
+                                                                     (S (NP-SBJ *T*-1)
+                                                                        (VP (VV 퇴출/NNC+되/XSV+은/EAN))))
+                                                                  (NP 시티폰/NNC)))
+                                                          (NP 등/NNX+을/PCA))
+                                                  (VP (ADVP 적극/ADV)
+                                                      (VP (VV (VV 추진/NNC+하/XSV+거나/ECS)
+                                                              (VV 담당/NNC+하/XSV+은/EAN)))))))
+                                        (NP 인사/NNC+을/PCA))
+                                (VV 선정/NNC+하/XSV+었/EPF+다는/EAN))))
+                      (NP 점/NNX+에서/PAD))
+              (VP (VP (NP-OBJ (NP 논란/NNC+의/PAN)
+                              (NP 여지/NNC+을/PCA))
+                      남기/VV+어/ECS)
+                  두/VX+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>경영능력과 통솔력, 비전제시 등을 감안해 전문가를 기용하겠다는 당초 취지와는 달리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>한국통신 인사</term>
+	    </Arg>
+	    <Rel>
+	      <term>선발된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

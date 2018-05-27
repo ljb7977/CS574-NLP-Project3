@@ -1,0 +1,43 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불구하</lemma>
+    <comment>Frames file for '불구하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>불구하.01</id>
+      <edef>in spite of</edef>
+      <roleset>
+	<role argnum="1" argrole="in spite of what"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불구하다</rel>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>비가 퍼붓는 데도 불구하고 우리는 계속 전진했습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 비/NNC+가/PCA) 
+		      (VP 퍼붓/VV+는/EAN)) 
+		   (NP 데/NNX+도/PAU)) 
+	  (VV 불구/NNC+하/XSV+고/ECS))) 
+   (S (NP-SBJ 우리/NPN+는/PAU) 
+      (VP (NP-ADV 계속/NNC)
+	  (VP (VV 전진/NNC+하/XSV+었/EPF+습니다/EFN))))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>도</f>
+	      <term>비가 퍼붓는 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>불구하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

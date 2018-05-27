@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>창조</lemma>
+    <comment>Frames file for '창조' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>창조.01</id>
+      <edef>create</edef>
+      <roleset>
+	<role argnum="0" argrole="thing creating"/>
+	<role argnum="1" argrole="thing created"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>창조하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>마블사와 더불어 세계굴지의 만화 출판사들중 하나인 'DC 코믹스'사가 처음으로 남성 동성애자 슈퍼 주인공들을 창조하고 있다고 영국의 선데이 타임스지가 최근 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (S (WHNP-2 *op*)
+                        (S (NP-SBJ *T*-2)
+                           (VP (ADVP (NP-COMP 마블/NPR+사/XSF+과/PAD)
+                                     더불어/ADV)
+                               (VP (NP (NP 세계/NNC+굴지/NNC+의/PAN)
+                                       (NP 만화/NNC
+                                           출판사/NNC+들/XSF+중/NNX
+                                           하나/NNU+이/CO+은/EAN))))))
+                     (NP '/SLQ
+                         DC/NFW
+                         코믹스/NPR
+                         '/SRQ
+                         사/XSF+이/PCA))
+             (VP (VP (NP-ADV 처음/NNC+으로/PAD)
+                     (VP (NP-OBJ 남성/NNC
+                                 동성애자/NNC
+                                 슈퍼/NNC
+                                 주인공/NNC+들/XSF+을/PCA)
+                         (VV 창조/NNC+하/XSV+고/ECS)))
+                 있/VX+다/EFN+고/PAD))
+   (S (NP-SBJ (NP 영국/NPR+의/PAN)
+              (NP 선데이/NPR
+                  타임스/NPR+지/XSF+이/PCA))
+      (VP (NP-ADV 최근/NNC)
+          (VP (S-COMP *T*-1)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>마블사와 더불어 세계굴지의 만화 출판사들중 하나인 'DC 코믹스'사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>처음으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>남성 동성애자 슈퍼 주인공들</term>
+	    </Arg>
+	    <Rel>
+	      <term>창조하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

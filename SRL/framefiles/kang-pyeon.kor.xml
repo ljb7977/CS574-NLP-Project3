@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>강변</lemma>
+    <comment>Frames file for '강변' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>강변.01</id>
+      <edef>sophisticate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="argument"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>강변하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 독일 내에도 3 만 2 천명의 정보통신 인력이 실업상태에 있다고 강변하면서 기업이 외국인 전문가를 고용하려는 것은 오직 임금을 낮추기 위한 전략이라고 주장하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (VP (S-COMP (NP-ADV 독일/NPR
+                           내/NNC+에/PAD+도/PAU)
+                   (S (NP-SBJ (NP 3/NNU
+                                  만/NNU
+                                  2/NNU
+                                  천/NNU+명/NNX+의/PAN)
+                              (NP 정보/NNC+통신/NNC
+                                  인력/NNC+이/PCA))
+                      (ADJP (NP-COMP 실업/NNC+상태/NNC+에/PAD)
+                            있/VJ+다/EFN+고/PAD)))
+           (VV 강변/NNC+하/XSV+으면서/ECS))
+       (VP (VP (S-COMP (NP-SBJ (S (NP-SBJ 기업/NNC+이/PCA)
+                                  (VP (NP-OBJ 외국인/NNC
+                                              전문가/NNC+을/PCA)
+                                      (VV 고용/NNC+하/XSV+으려는/EAN)))
+                               (NP 것/NNX+은/PAU))
+                       (VP (ADVP 오직/ADV)
+                           (VP (NP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (VP (S-OBJ (NP-SBJ *pro*)
+						    (VP (NP-OBJ 임금/NNC+을/PCA)
+							낮추/VV+기/ENM))
+                                             위하/VV+은/EAN)))
+                                   (NP 전략/NNC+이/CO+라/EFN+고/PAD)))))
+               (VV 주장/NNC+하/XSV+고/ECS))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>독일 내에도 3 만 2 천명의 정보통신 인력이 실업상태에 있다</term>
+	    </Arg>
+	    <Rel>
+	      <term>강변하면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

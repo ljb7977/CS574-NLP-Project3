@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>함유</lemma>
+    <comment>Frames file for '함유' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>함유.01</id>
+      <edef>contain</edef>
+      <roleset>
+	<role argnum="0" argrole="container"/>
+	<role argnum="1" argrole="contents"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>함유하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>아쓰기 주둔 미국 해군은 그동안 부대 부근의 소각로가 인체에 치명적인 다이옥신을 다량으로 함유한 매연을 배출, 반경 8KM 이내에서 생활하는 해군 장병과 관계자의 건강이 위협받고 있다고 주장해 왔다.</text>
+	  <parse>
+(S (NP-SBJ 아쓰기/NPR
+           주둔/NNC
+           미국/NPR
+           해군/NNC+은/PAU)
+   (VP (VP (S-COMP (S (NP-ADV 그동안/NNC)
+                      (S (NP-SBJ (NP 부대/NNC
+                                     부근/NNC+의/PAN)
+                                 (NP 소각로/NNC+이/PCA))
+                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                          (S (NP-SBJ *T*-1)
+                                                             (VP (NP-COMP 인체/NNC+에/PAD)
+                                                                 (VP (NP 치명/NNC+적/XSF+이/CO+은/EAN)))))
+                                                       (NP 다이옥신/NNC+을/PCA))
+                                               (VP (NP-ADV 다량/NNC+으로/PAD)
+                                                   (VP (VV 함유/NNC+하/XSV+은/EAN))))))
+                                     (NP 매연/NNC+을/PCA))
+                             (VV 배출/NNC))))
+                   ,/SCM
+                   (S (NP-SBJ (NP (S (WHNP-3 *op*)
+                                     (S (NP-SBJ *T*-3)
+                                        (VP (NP-COMP 반경/NNC
+							 8/NNU+KM/NFW
+							 이내/NNC+에서/PAD)
+                                            (VV 생활/NNC+하/XSV+는/EAN))))
+                                  (NP (NP 해군/NNC
+                                          장병/NNC+과/PCJ)
+                                      (NP 관계자/NNC+의/PAN)))
+                              (NP 건강/NNC+이/PCA))
+                      (VP (VP (VV 위협/NNC+받/XSV+고/ECS))
+                          있/VX+다/EFN+고/PAD)))
+           (VV 주장/NNC+하/XSV+어/ECS))
+       오/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=매연</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>인체에 치명적인 다이옥신</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>다량으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>함유한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

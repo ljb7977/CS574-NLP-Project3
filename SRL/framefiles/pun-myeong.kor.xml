@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>분명</lemma>
+    <comment>Frames file for '분명' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>분명.01</id>
+      <edef>clear</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being clear"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>분명하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 책을 어제 샀는데 인쇄가 분명치 않아서 반환해야겠다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 이/DAN
+                  책/NNC+을/PCA)
+          (VP (NP-ADV 어제/NNC)
+              (VP 사/VV+었/EPF+는데/ECS))))
+   (S (S (NP-SBJ 인쇄/NNC+이/PCA)
+         (VP (ADJP (VJ 분명/NNC+하/XSJ+지/ECS))
+             않/VX+어서/ECS))
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ *pro*)
+             (VV 반환/NNC+하/XSV+어야겠/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>인쇄</term>
+	    </Arg>
+	    <Rel>
+	      <term>분명치</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않아서</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

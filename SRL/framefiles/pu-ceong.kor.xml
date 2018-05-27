@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부정</lemma>
+    <comment>Frames file for '부정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부정.01</id>
+      <edef>unchaste</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being unchaste"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부정하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>유엔아동기금(UNICEF)은 부정한 성관계를 가진 여성 친인척을 남성들이 살해할 수 있도록 하는 아랍국가들의 관행인 `명예범죄'가 증가추세에 있다고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 유엔/NPR+아동/NNC+기금/NNC
+           (PRN -LRB-/SLQ
+                (NP UNICEF/NFW)
+                -RRB-/SRQ)
+           은/PAU)
+   (VP (S-COMP (NP-SBJ (S (WHNP-4 *op*)
+                          (S (NP-SBJ *T*-4)
+                             (VP (S-COMP (NP-OBJ-3 (S (WHNP-2 *op*)
+                                                      (S (NP-SBJ *T*-2)
+                                                         (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                                        (S (NP-SBJ *T*-1)
+                                                                           (ADJP (VJ 부정/NNC+하/XSJ+은/EAN))))
+                                                                     (NP 성관계/NNC+을/PCA))
+                                                             가지/VV+은/EAN)))
+                                                   (NP 여성/NNC
+                                                       친인척/NNC+을/PCA))
+                                         (S (NP-SBJ 남성/NNC+들/XSF+이/PCA)
+                                            (VP (VP (NP-OBJ *T*-3)
+                                                    (VV 살해/NNC+하/XSV+을/EAN))
+                                                (VX 수/NNX
+                                                    있/VJ+도록/ECS))))
+                                 하/VV+는/EAN)))
+                       (NP (S (WHNP-5 *op*)
+                              (S (NP-SBJ *T*-5)
+                                 (VP (NP (NP 아랍/NPR+국가/NNC+들/XSF+의/PAN)
+                                         (NP 관행/NNC+이/CO+은/EAN)))))
+                           (NP `/SLQ
+                               명예/NNC+범죄/NNC
+                               '/SRQ
+                               이/PCA)))
+               (ADJP (NP-COMP 증가/NNC+추세/NNC+에/PAD)
+                     있/VJ+다/EFN+고/PAD))
+       (VV 지적/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=성관계</term>
+	    </Arg>
+	    <Rel>
+	      <term>부정한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

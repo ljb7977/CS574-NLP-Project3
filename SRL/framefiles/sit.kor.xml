@@ -1,0 +1,174 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>싣</lemma>
+    <comment>Frames file for '싣' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>싣.01</id>
+      <edef>load</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>싣다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 다음에 대대 군의소에 알려 주면 위생병들이 와서 부상병을 들것에 실어 후송하게 됩니다.</text>
+	  <parse>
+(S (S (NP-ADV 그/DAN
+              다음/NNC+에/PAD)
+      (S (NP-SBJ *pro*)
+         (VP (VP (NP-COMP 대대/NNC
+                          군의소/NNC+에/PAD)
+                 (NP-OBJ *pro*)
+                 알리/VV+어/ECS)
+             주/VX+으면/ECS)))
+   (S (S (NP-SBJ 위생병/NNC+들/XSF+이/PCA)
+         (VP 오/VV+어서/ECS))
+      (S (NP-SBJ *pro*)
+         (VP (VP (S (NP-SBJ *pro*)
+                    (VP (NP-OBJ 부상병/NNC+을/PCA)
+                        (NP-COMP 들것/NNC+에/PAD)
+                        싣/VV+어/ECS))
+                 (VP (NP-OBJ *pro*)
+                     (VV 후송/NNC+하/XSV+게/ECS)))
+             되/VX+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>부상병</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>들것</term>
+	    </Arg>
+	    <Rel>
+	      <term>실어</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>실리다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 대만 환경보호서의 한 관리는 "유럽으로 선적된 컨테이너에는 수은 오염 폐기물이 실려 있지 않았다"면서 "다만 드럼통과 오염된 보호복만이 유럽으로 운송됐을 뿐"이라고 강조했다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ (NP 대만/NPR
+                  환경/NNC+보호서/NNC+의/PAN)
+              (NP 한/NNU
+                  관리/NNC+은/PAU))
+      (VP (S "/SLQ
+             (NP-COMP-1 (S (WHNP-2 *op*)
+                           (S (NP-SBJ *T*-2)
+                              (VP (NP-COMP 유럽/NPR+으로/PAD)
+                                  (VV 선적/NNC+되/XSV+은/EAN))))
+                        (NP 컨테이너/NNC+에/PAD+은/PAU))
+             (S (NP-SBJ 수은/NNC
+                        오염/NNC
+                        폐기물/NNC+이/PCA)
+                (VP (VP (VP (NP-COMP *T*-1)
+                            실리/VV+어/ECS)
+                        있/VX+지/ECS)
+                    않/VX+었/EPF+다/EFN))
+             "/SRQ
+             면서/ECS)
+          (VP (S-COMP "/SLQ
+                      (ADVP 다만/ADV)
+                      (S (NP-SBJ (NP 드럼통/NNC+과/PCJ)
+                                 (NP (S (WHNP-3 *op*)
+                                        (S (NP-SBJ *T*-3)
+                                           (VP (VV 오염/NNC+되/XSV+은/EAN))))
+                                     (NP 보호복/NNC+만/PAU+이/PCA)))
+                         (VP (VP (NP-COMP 유럽/NPR+으로/PAD)
+                                 (VV 운송/NNC+되/XSV+었/EPF+을/EAN))
+                             (VX 뿐/NNX)))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD)
+              (VV 강조/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>유럽으로 선적된 컨테이너</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>수은 오염 폐기물</term>
+	    </Arg>
+	    <Rel>
+	      <term>실려</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있지</term>
+	    </Aux>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>싣.02</id>
+      <edef>print</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="document"/>
+	<role argnum="2" argrole="printed in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>실리다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 발표는 과학잡지 `사이언스' 17 일자에 실렸다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           발표/NNC+은/PAU)
+   (VP (NP-COMP 과학/NNC+잡지/NNC
+                `/SLQ
+                사이언스/NPR
+                '/SRQ
+                17/NNU
+                일자/NNX+에/PAD)
+       실리/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>이 발표</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>과학잡지 `사이언스' 17 일자</term>
+	    </Arg>
+	    <Rel>
+	      <term>실렸다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

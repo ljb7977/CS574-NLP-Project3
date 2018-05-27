@@ -1,0 +1,147 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>걸</lemma>
+    <comment>Frames file for '걸' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>걸.01</id>
+      <edef>apply</edef>
+      <roleset>
+	<role argnum="0" argrole="applier"/>
+	<role argnum="1" argrole="thing applied"/>
+	<role argnum="2" argrole="applied to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>걸다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>하지만 민국당은 선거가 진행되면서 김영삼 전 대통령의 마음이 자신들 쪽으로 기울 여지가 있기 때문에 강삼재, 박종웅 의원 등 상도동계 의원들의 이동 가능성에 기대를 걸고 있는 눈치이다.</text>
+	  <parse>
+(S (ADCP 하지만/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 민국당/NPR+은/PAU)
+                 (VP (VP (NP-ADV (S (S (NP-SBJ 선거/NNC+이/PCA)
+                                       (VP (VV 진행/NNC+되/XSV+으면서/ECS)))
+                                    (S (NP-SBJ (S (NP-SBJ (NP 김영삼/NPR
+                                                              전/DAN
+                                                              대통령/NNC+의/PAN)
+                                                          (NP 마음/NNC+이/PCA))
+                                                  (VP (NP-COMP 자신/NNC+들/XSF
+                                                               쪽/NNX+으로/PAD)
+                                                      기울/VV+을/EAN))
+                                               (NP 여지/NNC+이/PCA))
+                                       (ADJP 있/VJ+기/ENM)))
+                                 (NP 때문/NNX+에/PAD))
+                         (VP (NP-COMP (NP (NP (NP (NP 강삼재/NPR
+                                                      ,/SCM
+                                                      박종웅/NPR)
+                                                  (NP 의원/NNC))
+                                              (NP 등/NNX))
+                                          (NP 상도동/NPR+계/XSF
+                                              의원/NNC+들/XSF+의/PAN))
+                                      (NP 이동/NNC
+                                          가능성/NNC+에/PAD))
+                             (NP-OBJ 기대/NNC+을/PCA)
+                             걸/VV+고/ECS))
+                     있/VX+는/EAN))
+              (NP 눈치/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>민국당</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>선거가 진행되면서 김영삼 전 대통령의 마음이 자신들 쪽으로 기울 여지가 있기 때문에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>강삼재, 박종웅 의원 등 상도동계 의원들의 이동 가능성</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>기대</term>
+	    </Arg>
+	    <Rel>
+	      <term>걸고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>걸다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-adv" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>슈워츠 박사는 4 년전 TRW를 상대로 소송을 걸었으나 군사 기밀에 관한 사항이라 지금까지 비공개로 소송이 진행돼 오다 최근에야 관련 문건이 공개되면서 새로 조명 받게 됐다.</text>
+	  <parse>
+(S (S (NP-SBJ 슈워츠/NPR
+              박사/NNC+은/PAU)
+      (VP (NP-ADV 4/NNU
+                  년/NNX+전/NNC)
+          (NP-ADV (NP-OBJ TRW/NFW+을/PCA)
+                  상대/NNC+으로/PAD)
+          (VP (NP-OBJ 소송/NNC+을/PCA)
+              걸/VV+었/EPF+으나/ECS)))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-COMP 군사/NNC
+                                    기밀/NNC+에/PAD)
+                           관하/VV+은/EAN)))
+                 (NP 사항/NNC+이/CO+라/EFN))))
+      (NP-ADV 지금/NNC+까지/PAU)
+      (NP-ADV 비공개/NNC+으로/PAD)
+      (S (NP-SBJ 소송/NNC+이/PCA)
+         (VP (VP (VV 진행/NNC+되/XSV+어/ECS))
+             오/VX+다/EFN)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S (NP-ADV 최근/NNC+에/PAD+이야/PAU)
+                 (S (NP-SBJ 관련/NNC
+                            문건/NNC+이/PCA)
+                    (VP (VV 공개/NNC+되/XSV+으면서/ECS))))
+              (VP (ADVP 새로/ADV)
+                  (VP (NP-OBJ-LV 조명/NNC)
+                      (LV 받/VV+게/ECS))))
+          되/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>슈워츠 박사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>4 년전</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>TRW를 상대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>소송</term>
+	    </Arg>
+	    <Rel>
+	      <term>걸었으나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

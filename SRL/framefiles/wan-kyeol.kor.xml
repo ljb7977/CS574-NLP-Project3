@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>완결</lemma>
+    <comment>Frames file for '완결' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>완결.01</id>
+      <edef>end</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing ended"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>완결되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 또 "노근리 사건은 조사결과에 따라 관련자에 대한 처벌여부가 결정될 것이며 경북지역에서 발생한 사건에 대해서는 노근리 사건이 완결된 뒤 한국정부와 협의, 추후 조치를 결정하겠다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 노근리/NPR
+                              사건/NNC+은/PAU)
+                      (S (S (NP-SBJ *pro*)
+                            (VP (NP-COMP 조사/NNC+결과/NNC+에/PAD)
+                                따르/VV+어/ECS))
+                         (S (NP-SBJ (S (WHNP-1 *op*)
+                                       (S (NP-SBJ *T*-1)
+                                          (VP (NP-COMP 관련자/NNC+에/PAD)
+                                              대하/VV+은/EAN)))
+                                    (NP 처벌/NNC+여부/NNC+이/PCA))
+                            (VP (VP (VV 결정/NNC+되/XSV+을/EAN))
+                                (VX 것/NNX+이/CO+으며/ECS)))))
+                   (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-COMP (S (WHNP-2 *op*)
+                                             (S (NP-SBJ *T*-2)
+                                                (VP (NP-ADV 경북/NPR+지역/NNC+에서/PAD)
+                                                    (VP (VV 발생/NNC+하/XSV+은/EAN)))))
+                                          (NP 사건/NNC+에/PAD))
+                                 대하/VV+어서/ECS+은/PAU))
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-ADV (S (NP-SBJ 노근리/NPR
+                                                    사건/NNC+이/PCA)
+                                            (VP (VV 완결/NNC+되/XSV+은/EAN)))
+                                         (NP 뒤/NNC))
+                                 (VP (NP-COMP 한국/NPR+정부/NNC+과/PAD)
+                                     (VV 협의/NNC))))
+                          ,/SCM
+                          (VP (NP-OBJ 추후/NNC
+                                      조치/NNC+을/PCA)
+                              (VV 결정/NNC+하/XSV+겠/EPF+다/EFN))))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>노근리 사건</term>
+	    </Arg>
+	    <Rel>
+	      <term>완결된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

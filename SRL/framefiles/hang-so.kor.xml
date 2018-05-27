@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>항소</lemma>
+    <comment>Frames file for '항소' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>항소.01</id>
+      <edef>appeal</edef>
+      <roleset>
+	<role argnum="0" argrole="appealer"/>
+	<role argnum="1" argrole="decision disagreed with"/>
+	<role argnum="2" argrole="appealed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>항소하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>루이 미셸 벨기에 외무장관은 영국 정부의 피노체트 석방 조치에 항소하지 않을 방침이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 루이/NPR
+           미셸/NPR
+           벨기에/NPR
+           외무/NNC+장관/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (NP (S (NP-SBJ *pro*)
+                          (VP (VP (NP-COMP (NP 영국/NPR
+                                               정부/NNC+의/PAN)
+                                           (NP 피노체트/NPR
+                                               석방/NNC
+                                               조치/NNC+에/PAD))
+                                  (VV 항소/NNC+하/XSV+지/ECS))
+                              않/VX+을/EAN))
+                       (NP 방침/NNC+이/CO+라/EFN+고/PAD))))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>영국 정부의 피노체트 석방 조치</term>
+	    </Arg>
+	    <Rel>
+	      <term>항소하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

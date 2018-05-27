@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>해체</lemma>
+    <comment>Frames file for '해체' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>해체.01</id>
+      <edef>disband</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing disbanded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>해체하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 군 참모총장인 위도도 해군 대장에게 이 두 기관을 1 개월 내에 해체하는 임무를 와히드 대통령이 부여했다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (NP-COMP-2 (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP 군/NNC
+                                        참모/NNC+총장/NNC+이/CO+은/EAN))))
+                          (NP 위도도/NPR
+                              해군/NNC
+                              대장/NNC+에게/PAD))
+               (NP-OBJ-3 (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ 이/DAN
+                                        두/NNU
+                                        기관/NNC+을/PCA)
+                                (VP (NP-ADV 1/NNU
+                                            개월/NNX
+                                            내/NNX+에/PAD)
+                                    (VP (VV 해체/NNC+하/XSV+는/EAN)))))
+                         (NP 임무/NNC+을/PCA))
+               (S (NP-SBJ 와히드/NPR
+                          대통령/NNC+이/PCA)
+                  (VP (NP-COMP *T*-2)
+                      (NP-OBJ *T*-3)
+                      (VV 부여/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+       덧붙이/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 두 기관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>1 개월 내에</term>
+	    </Arg>
+	    <Rel>
+	      <term>해체하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

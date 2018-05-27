@@ -1,0 +1,142 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>묘사</lemma>
+    <comment>Frames file for '묘사' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>묘사.01</id>
+      <edef>depict</edef>
+      <roleset>
+	<role argnum="0" argrole="depictor"/>
+	<role argnum="1" argrole="thing depicted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>묘사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 한 노동자의 일상생활과 그와 아들과의 관계를 묘사한 아르헨티나의 신예 파블로 트라페로 감독의 첫 장편영화 '문도 그루아 (Mundo Grua)'가 최우수 각본상, 영화기자상, 심사위원상 및 국제영화클럽연맹이 수여하는 돈키호테상을 받았다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-OBJ (NP (NP 한/NNU
+                                        노동자/NNC+의/PAN)
+                                    (NP 일상/NNC+생활/NNC+과/PCJ))
+                                (NP (NP (NP 그/NPN+과/PCJ)
+                                        (NP 아들/NNC+과/PAD+의/PAN))
+                                    (NP 관계/NNC+을/PCA)))
+                        (VV 묘사/NNC+하/XSV+은/EAN))))
+              (NP (NP (NP (NP (NP 아르헨티나/NPR+의/PAN)
+                              (NP 신예/NNC))
+                          (NP 파블로/NPR
+                              트라페로/NPR
+                              감독/NNC+의/PAN))
+                      (NP 첫/DAN
+                          장편/NNC+영화/NNC))
+                  (NP '/SLQ
+                      문도/NPR
+                      그루아/NPR
+                      (PRN -LRB-/SLQ
+                           (NP Mundo/NFW
+                               Grua/NFW)
+                           -RRB-/SRQ)
+                      '/SRQ
+                      이/PCA)))
+      (VP (NP-OBJ (NP 최우수/NNC
+                      각본/NNC+상/NNC)
+                  ,/SCM
+                  (NP 영화/NNC+기자/NNC+상/NNC)
+                  ,/SCM
+                  (NP 심사/NNC+위원/NNC+상/NNC)
+                  (ADCP 및/ADC)
+                  (NP (S (WHNP-2 *op*)
+                         (S (NP-SBJ 국제/NNC+영화/NNC+클럽/NNC+연맹/NNC+이/PCA)
+                            (VP (NP-OBJ *T*-2)
+                                (VV 수여/NNC+하/XSV+는/EAN))))
+                      (NP 돈키호테/NPR+상/NNC+을/PCA)))
+          받/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=아르헨티나의 신예 파블로 트라페로 감독의 첫 장편영화 '문도 그루아 (Mundo Grua)'</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>한 노동자의 일상생활과 그와 아들과의 관계</term>
+	    </Arg>
+	    <Rel>
+	      <term>묘사한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>묘사되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 만화속에서 이들 주인공은 서로 키스할 뿐 아니라 '브리티시 설레브리티'란 가상의 잡지에 "지상 최고의 커플"로 묘사되어 있는 것으로 그려져 있다.</text>
+	  <parse>
+(S (NP-ADV 이/DAN
+           만화/NNC+속/NNC+에서/PAD)
+   (S (NP-SBJ 이/NPN+들/XSF
+              주인공/NNC+은/PAU)
+      (VP (VP (NP-COMP (S (S (NP-SBJ (S (NP-SBJ *pro*)
+                                        (VP (ADVP 서로/ADV)
+                                            (VP (VV 키스/NNC+하/XSV+을/EAN))))
+                                     (NP 뿐/NNX))
+                             (ADJP 아니/VJ+라/ECS))
+                          (S (NP-SBJ *pro*)
+                             (VP (VP (NP-ADV (NP '/SLQ
+                                                 브리티시/NPR
+                                                 설레브리티/NPR
+                                                 '/SRQ
+                                                 이란/PAN)
+                                             (NP (NP 가상/NNC+의/PAN)
+                                                 (NP 잡지/NNC+에/PAD)))
+                                     (VP (NP-COMP "/SLQ
+                                                  (NP 지상/NNC
+                                                      최고/NNC+의/PAN)
+                                                  (NP 커플/NNC)
+                                                  "/SRQ
+                                                  으로/PAD)
+                                         (VV 묘사/NNC+되/XSV+어/ECS)))
+                                 있/VX+는/EAN)))
+                       (NP 것/NNX+으로/PAD))
+              (VV 그리/VV+어지/XSV+어/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>서로 키스할 뿐 아니라</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>'브리티시 설레브리티'란 가상의 잡지에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>"지상 최고의 커플"</term>
+	    </Arg>
+	    <Rel>
+	      <term>묘사되어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

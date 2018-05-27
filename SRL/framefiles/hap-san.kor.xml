@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>합산</lemma>
+    <comment>Frames file for '합산' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>합산.01</id>
+      <edef>add</edef>
+      <roleset>
+	<role argnum="0" argrole="adder"/>
+	<role argnum="1" argrole="thing added"/>
+	<role argnum="2" argrole="thing added to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>합산하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일본 정부는 작년말부터 일반회계와 38 개항의 특별회계를 합산한 `연결베이스'의 대차대조표 작성에 들어갔는데 도쿄 (동경) 도와미에 (삼중) 현 등 일부 지방자치단체가 이미 만들어 공개하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 일본/NPR
+              정부/NNC+은/PAU)
+      (VP (NP-ADV 작년/NNC+말/NNX+부터/PAU)
+          (VP (NP-COMP (NP (S (NP-SBJ *pro*)
+			      (VP (NP-COMP 일반/NNC+회계/NNC+과/PAD)
+				  (NP-OBJ (NP 38/NNU
+					      개/NNX+항/NNC+의/PAN)
+					  (NP 특별/NNC+회계/NNC+을/PCA))
+				  (VV 합산/NNC+하/XSV+은/EAN)))
+			   (NP (NP `/SLQ
+				   연결/NNC+베이스/NNC
+				   '/SRQ
+				   의/PAN)
+			       (NP 대차대조표/NNC)))
+		       (NP 작성/NNC+에/PAD))
+              들어가/VV+었/EPF+는데/ECS)))
+   (S (NP-SBJ (NP (NP (NP 도쿄/NPR
+                          (PRN -LRB-/SLQ
+                               (NP 동경/NPR)
+                               -RRB-/SRQ))
+                      (NP 도와미에/NPR
+                          (PRN -LRB-/SLQ
+                               (NP 삼중/NNC)
+                               -RRB-/SRQ)
+                          현/NNC))
+                  (NP 등/NNX))
+              (NP 일부/NNC
+                  지방/NNC+자치/NNC+단체/NNC+이/PCA))
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (ADVP 이미/ADV)
+                     (VP (NP-OBJ *pro*)
+                         만들/VV+어/ECS)))
+              (VP (NP-OBJ *pro*)
+                  (VV 공개/NNC+하/XSV+고/ECS)))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>와</f>
+	      <term>일반회계</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>38 개항의 특별회계</term>
+	    </Arg>
+	    <Rel>
+	      <term>합산한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

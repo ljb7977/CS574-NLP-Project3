@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>폭락</lemma>
+    <comment>Frames file for '폭락' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>폭락.01</id>
+      <edef>plunge</edef>
+      <roleset>
+	<role argnum="1" argrole="thing falling"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>폭락하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>지난해 말 64 메가 D 램의 수출가격이 개당 10-12 달러선을 유지한 것과 비교하면 최근 수출단가는 절반수준으로 폭락한 것이다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-ADV 지난해/NNC
+                              말/NNX)
+                      (S (NP-SBJ (NP 64/NNU
+                                     메가/NNX
+                                     D/NFW
+                                     램/NNC+의/PAN)
+                                 (NP 수출/NNC+가격/NNC+이/PCA))
+                         (VP (NP-OBJ 개당/NNC
+                                     10-12/NNU
+                                     달러/NNX+선/XSF+을/PCA)
+                             (VV 유지/NNC+하/XSV+은/EAN))))
+                   (NP 것/NNX+과/PAD))
+          (VV 비교/NNC+하/XSV+으면/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 최근/NNC
+                         수출/NNC+단가/NNC+은/PAU)
+                 (VP (NP-COMP 절반/NNC+수준/NNC+으로/PAD)
+                     (VV 폭락/NNC+하/XSV+은/EAN)))
+              (NP 것/NNX+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>최근 수출단가</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>절반수준</term>
+	    </Arg>
+	    <Rel>
+	      <term>폭락한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

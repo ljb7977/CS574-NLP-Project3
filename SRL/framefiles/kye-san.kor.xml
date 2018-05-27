@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>계산</lemma>
+    <comment>Frames file for '계산' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>계산.01</id>
+      <edef>calculate</edef>
+      <roleset>
+	<role argnum="0" argrole="calculator"/>
+	<role argnum="1" argrole="thing calculated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>계산하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>정상교육을 받은 사람은 누구나 자기가 세금을 계산해 납부할 수 있도록 양도, 근로소득세 등 생활관련세금의 내용과 신고절차를 개선키로 했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-COMP (NP-SBJ *pro*)
+	       (VP (S (NP-SBJ (S (WHNP-1 *op*)
+				 (S (NP-SBJ *T*-1)
+				    (VP (NP-OBJ 정상/NNC+교육/NNC+을/PCA)
+					받/VV+은/EAN)))
+			      (NP 사람/NNC+은/PAU))
+		      (VP (VP (NP-ADV 누구나/NPN)
+			      (NP-ADV 자기/NPN+이/PCA)
+			      (VP (NP-OBJ 세금/NNC+을/PCA)
+				  (VV (VV 계산/NNC+하/XSV+어/ECS)
+				      (VV 납부/NNC+하/XSV+을/EAN))))
+			  (VX 수/NNX
+				있/VJ+도록/ECS)))
+		   (VP (NP-OBJ (NP (NP (NP 양도/NNC
+					       ,/SCM
+					       근로/NNC+소득세/NNC)
+				       (NP 등/NNX))
+				   (NP 생활/NNC+관련/NNC+세금/NNC+의/PAN))
+			       (NP (NP 내용/NNC+과/PCJ)
+				   (NP 신고/NNC+절차/NNC+을/PCA)))
+		       (VV 개선/NNC+하/XSV+기/ENM+으로/PAD))))
+       하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>정상교육을 받은 사람</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>누구나 자기</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>세금</term>
+	    </Arg>
+	    <Rel>
+	      <term>계산해</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

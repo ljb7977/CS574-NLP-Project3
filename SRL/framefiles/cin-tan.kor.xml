@@ -1,0 +1,171 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>진단</lemma>
+    <comment>Frames file for '진단' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>진단.01</id>
+      <edef>diagnose</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing diagnosed"/>
+	<role argnum="2" argrole="patient"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>진단하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text> FRB는 지난 1 월 19 일 발간된 보고서에서는 휴일 쇼핑의 증가로 인해 작년 12 월과 1 월초 경제가 크게 신장됐다고 진단했었다.</text>
+	  <parse>
+(S (NP-SBJ FRB/NFW+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-ADV 지난/DAN
+                                 1/NNU
+                                 월/NNX
+                                 19/NNU
+                                 일/NNX)
+                         (VP (VV 발간/NNC+되/XSV+은/EAN)))))
+               (NP 보고서/NNC+에서/PAD+은/PAU))
+       (VP (S-COMP (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (NP 휴일/NNC
+                                       쇼핑/NNC+의/PAN)
+                                   (NP 증가/NNC+으로/PAD))
+                          인하/VV+어/ECS))
+                   (S (NP-ADV (NP 작년/NNC
+                               12/NNU
+                               월/NNX+과/PCJ)
+                           (NP 1/NNU
+                               월/NNX+초/NNX))
+                   (S (NP-SBJ 경제/NNC+이/PCA)
+                      (VP (ADVP (ADV 크/VJ+게/ECS))
+                          (VP (VV 신장/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))))
+           (VV 진단/NNC+하/XSV+었었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>FRB</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>LOC</f>
+	      <term>지난 1 월 19 일 발간된 보고서에서는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>휴일 쇼핑의 증가로 인해 작년 12 월과 1 월초 경제가 크게 신장됐다</term>
+	    </Arg>
+	    <Rel>
+	      <term>진단했었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>진단하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 약간 복잡하긴 하지만 폐의 분비물에 대한 검사로 폐암과 관련된 변화들을 진단할 수 있었다고 시드란스키 박사는 덧붙였다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S-COMP-1 (NP-ADV (S (WHNP-2 *op*)
+                        (S (NP-SBJ *T*-2)
+                           (VP (ADJP (ADVP 약간/ADV)
+				     (ADJP 복잡하/VJ+기/ENM+은/PAU))
+			       하/VX+지만/ECS)))
+                     (NP (S (WHNP-3 *op*)
+                            (S (NP-SBJ *T*-3)
+                               (VP (NP-COMP (NP 폐/NNC+의/PAN)
+                                            (NP 분비물/NNC+에/PAD))
+                                   대하/VV+은/EAN)))
+                         (NP 검사/NNC+으로/PAD)))
+             (S (NP-SBJ *pro*)
+                (VP (VP (NP-OBJ (S (WHNP-4 *op*)
+                                   (S (NP-SBJ *T*-4)
+                                      (VP (NP-COMP 폐암/NNC+과/PAD)
+                                          (VV 관련/NNC+되/XSV+은/EAN))))
+                                (NP 변화/NNC+들/XSF+을/PCA))
+                        (VV 진단/NNC+하/XSV+을/EAN))
+                    (VX 수/NNX
+                        있/VJ+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 시드란스키/NPR
+              박사/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>약간 복잡하긴 하지만 폐의 분비물에 대한 검사로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>폐암과 관련된 변화들</term>
+	    </Arg>
+	    <Rel>
+	      <term>진단할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있었다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <comment>split argument</comment>
+	  <rel>진단받다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 고혈압과 당뇨로 고생하는 것으로 알려져 있으며 지난달에는 바이러스 감염으로 진단받아 사흘간 휴무하기도 했었다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (S (NP-SBJ 그/NPN+은/PAU)
+                          (VP (NP-COMP (NP 고혈압/NNC+과/PCJ)
+                                       (NP 당뇨/NNC+으로/PAD))
+                              (VV 고생/NNC+하/XSV+는/EAN)))
+                       (NP 것/NNX+으로/PAD))
+              (VV 알리/VV+어지/XSV+어/ECS))
+          있/VX+으며/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-ADV 지난달/NNC+에/PAD+은/PAU)
+                     (VP (NP-COMP 바이러스/NNC
+                                  감염/NNC+으로/PAD)
+                         (VV 진단/NNC+받/XSV+어/ECS))))
+              (NP-ADV 사흘/NNC+간/XSF)
+              (VP (VV 휴무/NNC+하/XSV+기/ENM+도/PAU)))
+          하/VX+었었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난달에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>바이러스 감염</term>
+	    </Arg>
+	    <Rel>
+	      <term>진단받아</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,100 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가시화</lemma>
+    <comment>Frames file for '가시화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가시화.01</id>
+      <edef>reveal</edef>
+      <roleset>
+	<role argnum="0" argrole="revealer"/>
+	<role argnum="1" argrole="thing revealed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가시화되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이에 따라 전교조 등 다른 부문, 직능별 단체와의 연대투쟁 전선 구축이 점차 가시화될 전망이다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          따르/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ (NP (NP (NP 전교조/NPR)
+                                 (NP 등/NNX))
+                             (NP (NP 다른/DAN
+                                     부문/NNC)
+                                 ,/SCM
+                                 (NP 직능/NNC+별/XSF
+                                     단체/NNC+과/PAD+의/PAN)))
+                         (NP 연대/NNC+투쟁/NNC
+                             전선/NNC
+                             구축/NNC+이/PCA))
+                 (VP (ADVP 점차/ADV)
+                     (VP (VV 가시화/NNC+되/XSV+을/EAN))))
+              (NP 전망/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>전교조 등 다른 부문, 직능별 단체와의 연대투쟁 전선 구축</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>점차</term>
+	    </Arg>
+	    <Rel>
+	      <term>가시화될</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>이날 경영권 분쟁이 가시화된 골드뱅크(1 천 60 원)는 폭락세속에 가격제한폭까지 상승해 눈길을 끌었다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (S (NP-ADV 이날/NNC)
+                       (S (NP-SBJ 경영권/NNC
+                                  분쟁/NNC+이/PCA)
+                          (VP (VV 가시화/NNC+되/XSV+은/EAN))))))
+              (NP 골드뱅크/NPR
+                  (PRN -LRB-/SLQ
+                       (NP 1/NNU
+                           천/NNU
+                           60/NNU
+                           원/NNX)
+                       -RRB-/SRQ)
+                  은/PAU))
+      (VP (NP-ADV 폭락세/NNC+속/NNC+에/PAD)
+          (NP-ADV 가격제한폭/NNC+까지/PAU)
+          (VP (VV 상승/NNC+하/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 눈길/NNC+을/PCA)
+          끌/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=골드뱅크(1 천 60 원)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>경영권 분쟁</term>
+	    </Arg>
+	    <Rel>
+	      <term>가시화된</term>
+	    </Rel>
+	  </relation>
+	  <comment>double nominative</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

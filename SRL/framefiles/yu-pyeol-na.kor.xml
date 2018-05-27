@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유별나</lemma>
+    <comment>Frames file for '유별나' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유별나.01</id>
+      <edef>special</edef>
+      <roleset>
+	<role argnum="1" argrole="thing special"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유별나다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>뿐만 아니라 두산그룹은 정수창 전 두산그룹 회장도 지난 80 년부터 8 년간 상의 회장을 역임한 바 있어 두산(OB)과 상의와의 인연은 유별나다.</text>
+	  <parse>
+(S (S (NP-SBJ 뿐/NNX+만/PAU)
+      (ADJP 아니/VJ+라/ECS))
+   (S (NP-SBJ (S (NP-SBJ 두산/NPR+그룹/NNC+은/PAU)
+                 (S (NP-SBJ (NP 정수창/NPR)
+                            (NP 전/DAN
+                                두산/NPR+그룹/NNC
+                                회장/NNC+도/PAU))
+                    (VP (NP-ADV 지난/DAN
+                                80/NNU
+                                년/NNX+부터/PAU)
+                        (NP-ADV 8/NNU
+                                년/NNX+간/XSF)
+                        (VP (NP-OBJ 상의/NNC
+                                    회장/NNC+을/PCA)
+                            (VV 역임/NNC+하/XSV+은/EAN)))))
+              (NP 바/NNX))
+      (ADJP 있/VJ+어/ECS))
+   (S (NP-SBJ (NP (NP 두산/NPR
+                      (PRN -LRB-/SLQ
+                           (NP OB/NFW)
+                           -RRB-/SRQ)
+                      과/PCJ)
+                  (NP 상의/NNC+과/PAD+의/PAN))
+              (NP 인연/NNC+은/PAU))
+      (ADJP 유별나/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>뿐만 아니라</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>두산그룹은 정수창 전 두산그룹 회장도 지난 80 년부터 8 년간 상의 회장을 역임한 바 있어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>두산(OB)과 상의와의 인연</term>
+	    </Arg>
+	    <Rel>
+	      <term>유별나다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

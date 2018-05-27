@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>올라서</lemma>
+    <comment>Frames file for '올라서' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>올라서.01</id>
+      <edef>ascend</edef>
+      <roleset>
+	<role argnum="1" argrole="thing ascending"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>올라서다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	  <mapitem src="np-comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>아시아나측은 지난해부터 자사가 한-중 노선 수송실적 점유율 27.7 퍼센트로 수위에 올라섰다면서 여세를 몰아 점유율 30 퍼센트 이상에 도전하겠다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 아시아나/NPR+측/XSF+은/PAU)
+   (VP (S (NP-ADV 지난해/NNC+부터/PAU)
+	  (S (NP-SBJ 자사/NNC+이/PCA)
+	     (VP (NP-ADV (NP 한/NPR
+			       -/SSY
+			       중/NPR
+			       노선/NNC)
+			 (NP 수송/NNC+실적/NNC
+				 점유/NNC+율/XSF)
+			 (NP 27.7/NNU
+			     퍼센트/NNX+으로/PAD))
+		 (VP (NP-COMP 수위/NNC+에/PAD)
+		     올라서/VV+었/EPF+다면서/ECS))))
+       (VP (S-COMP (NP-SBJ *pro*)
+		   (VP (S (NP-SBJ *pro*)
+			  (VP (NP-OBJ 여세/NNC+을/PCA)
+			      몰/VV+어/ECS))
+		       (VP (NP-COMP (NP 점유/NNC+율/XSF
+					    30/NNU
+					    퍼센트/NNX)
+				    (NP 이상/NNC+에/PAD))
+			   (VV 도전/NNC+하/XSV+겠/EPF+다/EFN+고/PAD))))
+	   말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>자사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>한-중 노선 수송실적 점유율 27.7 퍼센트로</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>수위</term>
+	    </Arg>
+	    <Rel>
+	      <term>올라섰다면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

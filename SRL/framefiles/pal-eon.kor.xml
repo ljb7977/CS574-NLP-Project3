@@ -1,0 +1,96 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발언</lemma>
+    <comment>Frames file for '발언' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발언.01</id>
+      <edef>utter</edef>
+      <roleset>
+	<role argnum="0" argrole="speaker"/>
+	<role argnum="1" argrole="utterance"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발언하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>제임스 폴리 국무부 대변인은 블라디미르 푸틴 러시아 대통령 직무대행이 지난 주말 러시아가 언젠가는 나토에 정식 가입할 수도 있을 것이라고 발언한 데 대해 언급, 러시아가 당장 나토에 가입하려는 것으로 해석할 수는 없지만 나토와의 관계를 개선하려는 새로운 의지를 시사하는 것으로는 볼 수 있다고 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ 제임스/NPR
+              폴리/NPR
+              국무부/NNC
+              대변인/NNC+은/PAU)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-COMP (S (NP-SBJ 블라디미르/NPR
+                                          푸틴/NPR
+                                          러시아/NPR
+                                          대통령/NNC
+                                          직무/NNC+대행/NNC+이/PCA)
+                                  (VP (NP-ADV 지난/DAN
+                                              주말/NNC)
+                                      (VP (S-COMP (NP-SBJ 러시아/NPR+이/PCA)
+                                                  (VP (VP (VP (ADVP 언젠가/ADV+은/PAU)
+                                                              (VP (NP-COMP 나토/NPR+에/PAD)
+                                                                  (VP (NP-ADV 정식/NNC)
+                                                                      (VP (VV 가입/NNC+하/XSV+을/EAN)))))
+                                                          (VX 수/NNX+도/PAU
+                                                              있/VJ+을/EAN))
+                                                      (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+                                          (VV 발언/NNC+하/XSV+은/EAN))))
+                               (NP 데/NNX))
+                      대하/VV+어/ECS))
+          (VV 언급/NNC)))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (S (NP-SBJ *pro*)
+                     (VP (VP (NP-COMP (S (NP-SBJ 러시아/NPR+이/PCA)
+                                         (VP (ADVP 당장/ADV)
+                                             (VP (NP-COMP 나토/NPR+에/PAD)
+                                                 (VV 가입/NNC+하/XSV+으려는/EAN))))
+                                      (NP 것/NNX+으로/PAD))
+                             (VV 해석/NNC+하/XSV+을/EAN))
+                         (VX 수/NNX+은/PAU
+                             없/VJ+지만/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                                         (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                        (VP (NP-OBJ (NP 나토/NPR+과/PAD+의/PAN)
+                                                                    (NP 관계/NNC+을/PCA))
+                                                            (VV 개선/NNC+하/XSV+으려는/EAN)))
+                                                     (NP (S (WHNP-1 *op*)
+                                                            (S (NP-SBJ *T*-1)
+                                                               (ADJP 새롭/VJ+은/EAN)))
+                                                         (NP 의지/NNC+을/PCA)))
+                                             (VV 시사/NNC+하/XSV+는/EAN)))
+                                      (NP 것/NNX+으로/PAD+은/PAU))
+                             보/VV+을/EAN)
+                         (VX 수/NNX
+                             있/VJ+다/EFN+고/PAD))))
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>블라디미르 푸틴 러시아 대통령 직무대행</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 주말</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>러시아가 언젠가는 나토에 정식 가입할 수도 있을 것이라</term>
+	    </Arg>
+	    <Rel>
+	      <term>발언한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

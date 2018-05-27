@@ -1,0 +1,97 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불가피하</lemma>
+    <comment>Frames file for '불가피하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불가피하.01</id>
+      <edef>unavoidable</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being unavoidable"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불가피하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>업계에서는 그러나 금강산 카지노사업이 법률적으로 논란의 소지가 있는 데다 카지노영업에 대한 정부의 허가가 불가피해 실현 가능성에 회의를 표하고도 있다.</text>
+	  <parse>
+(S (NP-SBJ 업계/NNC+에서/PCA+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (VP (NP-ADV (S (NP-SBJ 금강산/NPR
+                                  카지노/NNC+사업/NNC+이/PCA)
+                          (ADJP (NP-ADV 법률/NNC+적/XSF+으로/PAD)
+                                (ADJP (NP-COMP (NP 논란/NNC+의/PAN)
+                                               (NP 소지/NNC+이/PCA))
+                                      있/VJ+는/EAN)))
+		       (NP 데/NNX+에다/PAD))
+               (S (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-COMP 카지노/NNC+영업/NNC+에/PAD)
+                                    대하/VV+은/EAN)))
+                          (NP (NP 정부/NNC+의/PAN)
+                              (NP 허가/NNC+이/PCA)))
+                  (ADJP 불가피하/VJ+어/ECS))
+               (VP (NP-COMP 실현/NNC
+                            가능성/NNC+에/PAD)
+                   (NP-OBJ 회의/NNC+을/PCA)
+                   표하/VV+고/ECS+도/PAU))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>카지노영업에 대한 정부의 허가</term>
+	    </Arg>
+	    <Rel>
+	      <term>불가피해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>불가피해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이렇게 되면 중앙은행의 자본 재편이 불가피해질 것이라고 우에다 위원은 전망했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ *pro*)
+                (VP (ADVP-COMP 이렇게/ADV)
+                    되/VV+으면/ECS))
+             (S (NP-SBJ (NP 중앙/NNC+은행/NNC+의/PAN)
+                        (NP 자본/NNC
+                            재편/NNC+이/PCA))
+                (VP (VP (VV 불가피하/VJ+어지/XSV+을/EAN))
+                    (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+   (S (NP-SBJ 우에다/NPR
+              위원/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          (VV 전망/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>이렇게 되면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>중앙은행의 자본 재편</term>
+	    </Arg>
+	    <Rel>
+	      <term>불가피해질</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

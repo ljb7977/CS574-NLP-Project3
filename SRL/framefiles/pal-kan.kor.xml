@@ -1,0 +1,99 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발간</lemma>
+    <comment>Frames file for '발간' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>발간.01</id>
+      <edef>publish</edef>
+      <roleset>
+	<role argnum="0" argrole="publisher"/>
+	<role argnum="1" argrole="book"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발간하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 사단장이 침투 전술에 대한 책자를 발간했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+           사단장/NNC+이/PCA)
+   (VP (NP-OBJ (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-COMP 침투/NNC
+                                  전술/NNC+에/PAD)
+                         대하/VV+은/EAN)))
+               (NP 책자/NNC+을/PCA))
+       (VV 발간/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>저희 사단장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>침투 전술에 대한 책자</term>
+	    </Arg>
+	    <Rel>
+	      <term>발간했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>발간되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>FRB는 지난 1 월 19 일 발간된 보고서에서는 휴일 쇼핑의 증가로 인해 작년 12 월과 1 월초 경제가 크게 신장됐다고 진단했었다.</text>
+	  <parse>
+(S (NP-SBJ FRB/NFW+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (VP (NP-ADV 지난/DAN
+                                 1/NNU
+                                 월/NNX
+                                 19/NNU
+                                 일/NNX)
+                         (VP (VV 발간/NNC+되/XSV+은/EAN)))))
+               (NP 보고서/NNC+에서/PAD+은/PAU))
+       (VP (S-COMP (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (NP 휴일/NNC
+                                       쇼핑/NNC+의/PAN)
+                                   (NP 증가/NNC+으로/PAD))
+                          인하/VV+어/ECS))
+                   (NP-ADV (NP 작년/NNC
+                               12/NNU
+                               월/NNX+과/PCJ)
+                           (NP 1/NNU
+                               월/NNX+초/NNX))
+                   (S (NP-SBJ 경제/NNC+이/PCA)
+                      (VP (ADVP (ADV 크/VJ+게/ECS))
+                          (VP (VV 신장/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))))
+           (VV 진단/NNC+하/XSV+었었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=보고서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 1 월 19 일</term>
+	    </Arg>
+	    <Rel>
+	      <term>발간된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

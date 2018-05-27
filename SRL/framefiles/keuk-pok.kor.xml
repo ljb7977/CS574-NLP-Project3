@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>극복</lemma>
+    <comment>Frames file for '극복' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>극복.01</id>
+      <edef>conquer</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing conquered"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>극복하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이에 따라 나스닥 시장이 뉴욕 증시 상장자격 미달기업 주식의 거래소란 인식을 극복했으며 이제는 가장 빠르게 성장하는 살아 있는 주식시장이란 찬사를 한 몸에 받고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          따르/VV+어/ECS))
+   (S (NP-SBJ 나스닥/NPR
+              시장/NNC+이/PCA)
+      (VP (NP-OBJ (NP (NP 뉴욕/NPR
+                          증시/NNC
+                          상장/NNC+자격/NNC
+                          미달/NNC+기업/NNC
+                          주식/NNC+의/PAN)
+                      (NP 거래소/NNC+이란/PAN))
+                  (NP 인식/NNC+을/PCA))
+          (VV 극복/NNC+하/XSV+었/EPF+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV 이제/NNC+은/PAU)
+              (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                 (S (S (NP-SBJ *T*-1)
+                                       (VP (ADVP (ADVP 가장/ADV)
+                                                 (ADVP (ADV 빠르/VJ+게/ECS)))
+                                           (VP (VV 성장/NNC+하/XSV+는/EAN))))
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (VP 살/VV+어/ECS)
+                                           있/VX+는/EAN))))
+                              (NP 주식/NNC+시장/NNC+이란/PAN))
+                          (NP 찬사/NNC+을/PCA))
+                  (VP (NP-ADV 한/NNU
+                              몸/NNC+에/PAD)
+                      (VP 받/VV+고/ECS))))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>나스닥 시장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>뉴욕 증시 상장자격 미달기업 주식의 거래소란 인식</term>
+	    </Arg>
+	    <Rel>
+	      <term>극복했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

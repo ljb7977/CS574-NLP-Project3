@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>접근</lemma>
+    <comment>Frames file for '접근' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>접근.01</id>
+      <edef>approach</edef>
+      <roleset>
+	<role argnum="0" argrole="entity in motion"/>
+	<role argnum="2" argrole="destination"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>접근하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>보통 공격준비사격은 공격하기 25분부터 40분전에 시작하고 1 제대 탱크들이 적진지 150 미터부터 200 미터 안에 접근하면 중지합니다.</text>
+	  <parse>
+(S (S (ADVP 보통/ADV)
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ 공격/NNC
+                     준비/NNC
+                     사격/NNC+은/PAU)
+             (VP (NP-ADV (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ *pro*)
+                                (VV 공격/NNC+하/XSV+기/ENM)))
+                         (NP (NP (NP 25/NNU
+                                     분/NNX+부터/PAU)
+                                 (NP 40/NNU
+                                     분/NNX))
+                             (NP 전/NNC+에/PAD)))
+                 (VP (VV 시작/NNC+하/XSV+고/ECS))))))
+   (S (NP-SBJ *pro*)
+      (VP (S (NP-SBJ 1/NNU
+                     제대/NNC
+                     탱크/NNC+들/XSF+이/PCA)
+             (VP (NP-COMP (NP 적/NNC
+                              진지/NNC)
+                          (NP (NP 150/NNU
+                                  미터/NNX+부터/PAU)
+                              (NP 200/NNU
+                                  미터/NNX))
+                          (NP 안/NNC+에/PAD))
+                 (VV 접근/NNC+하/XSV+으면/ECS)))
+          (VP (NP-OBJ *pro*)
+              (VV 중지/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>1 제대 탱크들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>적진지 150 미터부터 200 미터 안</term>
+	    </Arg>
+	    <Rel>
+	      <term>접근하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

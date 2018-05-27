@@ -1,0 +1,38 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>틀리</lemma>
+    <comment>Frames file for '틀리' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>틀리.01</id>
+      <edef>wrong</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being wrong"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>틀리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 지도가 틀렸습니다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+	   지도/NNC+이/PCA)
+   (ADJP 틀리/VV+었/EPF+습니다/EFN)
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>이 지도</term>
+	    </Arg>
+	    <Rel>
+	      <term>틀렸습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

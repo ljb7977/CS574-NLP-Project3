@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>메</lemma>
+    <comment>Frames file for '메' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>메.01</id>
+      <edef>shoulder</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, carrier"/>
+	<role argnum="1" argrole="burden"/>
+	<role argnum="2" argrole="shoulder, back"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>메다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인민군에서는 구보 시에 보통 자기 보총을 메고 합니다.</text>
+	  <parse>
+(S (NP-ADV 인민군/NNC+에서/PAD+은/PAU)
+   (NP-ADV 구보/NNC
+           시/NNX+에/PAD)
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 보통/ADV)
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ 자기/NPN
+                         보총/NNC+을/PCA)
+                 메/VV+고/ECS))
+          (VP (NP-OBJ *pro*)
+              하/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자기 보총</term>
+	    </Arg>
+	    <Rel>
+	      <term>메고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

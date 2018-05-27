@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>당선</lemma>
+    <comment>Frames file for '당선' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>당선.01</id>
+      <edef>elect</edef>
+      <roleset>
+	<role argnum="0" argrole="voters"/>
+	<role argnum="1" argrole="candidate"/>
+	<role argnum="2" argrole="office or position"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>당선되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>천수이볜 (진수편) 민진당 후보가 대만 총통에 당선된 뒤 중국 전투기 1 백여대가 19 일 대만쪽을 향해 비행한 것이 목격됐다고 홍콩의 사우스차이나 모닝 포스트가 현지 주민들의 말을 인용, 20 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-ADV (S (NP-SBJ (NP 천수이볜/NPR
+                                    (PRN -LRB-/SLQ
+                                         (NP 진수편/NPR)
+                                         -RRB-/SRQ))
+                                (NP 민진당/NPR
+                                    후보/NNC+이/PCA))
+                        (VP (NP-COMP 대만/NPR
+                                     총통/NNC+에/PAD)
+                            (VV 당선/NNC+되/XSV+은/EAN)))
+                     (NP 뒤/NNC))
+             (S (NP-SBJ (S (NP-SBJ 중국/NPR
+                                   전투기/NNC
+                                   1/NNU
+                                   백/NNU+여/XSF+대/NNX+이/PCA)
+                           (VP (NP-ADV 19/NNU
+                                       일/NNX)
+                               (S (NP-SBJ *pro*)
+                                  (VP (NP-OBJ 대만/NPR+쪽/NNX+을/PCA)
+                                      향하/VV+어/ECS))
+                               (VP (VV 비행/NNC+하/XSV+은/EAN))))
+                        (NP 것/NNX+이/PCA))
+                (VP (VV 목격/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ (NP 홍콩/NPR+의/PAN)
+              (NP 사우스차이나/NPR
+                  모닝/NPR
+                  포스트/NPR+이/PCA))
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (NP 현지/NNC
+                             주민/NNC+들/XSF+의/PAN)
+                         (NP 말/NNC+을/PCA))
+                 (VV 인용/NNC)))
+          ,/SCM
+          (NP-ADV 20/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>천수이볜 (진수편) 민진당 후보</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>대만 총통</term>
+	    </Arg>
+	    <Rel>
+	      <term>당선된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

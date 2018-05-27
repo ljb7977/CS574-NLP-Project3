@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>적당하</lemma>
+    <comment>Frames file for '적당하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>적당하.01</id>
+      <edef>proper</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being proper"/>
+	<role argnum="2" argrole="proper to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>적당하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그 일은 저에게 적당하지 못합니다.</text>
+	  <parse>
+(S (NP-SBJ 그/DAN
+           일/NNC+은/PAU)
+   (VP (ADJP (NP-COMP 저/NPN+에게/PAD)
+             적당하/VJ+지/ECS)
+       못하/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그 일</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>저</term>
+	    </Arg>
+	    <Rel>
+	      <term>적당하지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못합니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

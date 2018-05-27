@@ -1,0 +1,166 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>만나</lemma>
+    <comment>Frames file for '만나' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>만나.01</id>
+      <edef>meet</edef>
+      <roleset>
+	<role argnum="0" argrole="person/entity/obeject meeting"/>
+	<role argnum="1" argrole="person/entity/obeject being met"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>만나다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>너는 그 사람들을 집합지역에서 만났다고 했다.</text>
+	  <parse>
+(S (NP-SBJ 너/NPN+은/PAU) 
+   (VP (S-COMP (NP-SBJ *pro*) 
+	       (VP (NP-OBJ 그/DAN
+	                   사람/NNC+들/XSF+을/PCA) 
+		   (VP (NP-ADV 집합/NNC+지역/NNC+에서/PAD) 
+		       (VP 만나/VV+었/EPF+다/EFN+고/PAD)))) 
+       하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>trace=너</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그 사람들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>집합지역에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>만났다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>너와 그 사람들이 집합지역에서 만났니?</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>너와 그 사람들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>집합지역에서</term>
+	    </Arg>
+	    <Rel>
+	      <term>만났니</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>우리 배는 바다 한가운데에서 폭풍우를 만났다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>우리 배</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>바다 한가운데에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>폭풍우</term>
+	    </Arg>
+	    <Rel>
+	      <term>만났다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>만나다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대자연의 신비와 만나는 기회는 흔하지 않다.</text>
+	  <relation>
+	    <Arg n="1">
+	      <f>와</f>
+	      <term>대자연의 신비</term>
+	    </Arg>
+	    <Rel>
+	      <term>만나는</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>대대 지휘소 가까이에 있는 꼬불꼬불한 길을 따라 이 길하고 만날 때까지 갑니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP (NP-COMP 대대/NNC
+                                       지휘소/NNC
+                                       가까이/NNC+에/PAD)
+                              있/VJ+는/EAN)))
+                  (NP (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (ADJP (VJ 꼬불꼬불/NNC+하/XSJ+은/EAN))))
+                      (NP 길/NNC+을/PCA)))
+          따르/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (WHNP *op*)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-COMP 이/DAN
+                                     길/NNC+하고/PAD)
+                            만나/VV+을/EAN)))
+                  (NP 때/NNC+까지/PAU))
+          (VP 가/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>하고</f>
+	      <term>이 길</term>
+	    </Arg>
+	    <Rel>
+	      <term>만날</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>마름모에서 두 대각선은 서로 수직으로 만난다.</text>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>마름모</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>두 대각선</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>서로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>수직으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>만난다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌려주</lemma>
+    <comment>Frames file for '돌려주' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>돌려주.01</id>
+      <edef>return</edef>
+      <roleset>
+	<role argnum="0" argrole="giver"/>
+	<role argnum="1" argrole="thing given"/>
+	<role argnum="2" argrole="entity given to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌려주다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>우리 이야기가 끝나는 대로 이걸 너한테 돌려주지.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ (NP 우리/NPN)
+                      (NP 이야기/NNC+이/PCA))
+              (VP 끝나/VV+는/EAN))
+           (NP 대로/NNX))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 이것/NPN+을/PCA)
+          (NP-COMP 너/NPN+한테/PAD)
+          돌려주/VV+지/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>우리 이야기가 끝나는 대로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이것</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>한테</f>
+	      <term>너</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌려주지</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

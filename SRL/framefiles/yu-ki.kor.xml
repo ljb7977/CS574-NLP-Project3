@@ -1,0 +1,115 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유기</lemma>
+    <comment>Frames file for '유기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유기.01</id>
+      <edef>abandon</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing abandoned"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유기하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국의 인구가 3 억 가까이 되는 점을 감안할 때 많은 수는 아니지만 최근에 델라웨어의 한 대학생 부부가 신생아를 모텔의 쓰레기통에 버리고 뉴저지에서는 10 대 소녀가 무도회에 참석했다 화장실에서 출산을 한 뒤 신생아를 비닐에 싸 유기하고 춤을 추러 가는 사건 등이 잇따라 알려지면서 사회적으로 문제가 된 바 있다.</text>
+	  <parse>
+(S (S (NP-ADV (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (S (NP-SBJ (NP 미국/NPR+의/PAN)
+                                        (NP 인구/NNC+이/PCA))
+                                (VP (NP-COMP 3/NNU
+                                             억/NNU
+                                             가까이/NNC)
+                                    되/VV+는/EAN))
+                             (NP 점/NNC+을/PCA))
+                     (VV 감안/NNC+하/XSV+을/EAN)))
+              (NP 때/NNC))
+      (S (NP-SBJ *pro*)
+         (ADJP (NP-COMP (S (WHNP-1 *op*)
+                           (S (NP-SBJ *T*-1)
+                              (ADJP 많/VJ+은/EAN)))
+                        (NP 수/NNC+은/PAU))
+               (ADJP 아니/VJ+지만/ECS))))
+   (S (S (NP-ADV 최근/NNC+에/PAD)
+         (S (NP-SBJ (NP (S (S (NP-SBJ (NP 델라웨어/NPR+의/PAN)
+                                      (NP 한/NNU
+                                          대학생/NNC
+                                          부부/NNC+이/PCA))
+                              (VP (NP-OBJ 신생아/NNC+을/PCA)
+                                  (VP (NP-ADV (NP 모텔/NNC+의/PAN)
+                                              (NP 쓰레기통/NNC+에/PAD))
+                                      (VP 버리/VV+고/ECS))))
+                           (S (NP-ADV 뉴저지/NPR+에서/PAD+은/PAU)
+                              (S (NP-SBJ 10/NNU
+                                         대/NNX
+                                         소녀/NNC+이/PCA)
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-COMP 무도회/NNC+에/PAD)
+                                            (VV 참석/NNC+하/XSV+었/EPF+다/ECS)))
+                                     (NP-ADV (S (NP-SBJ *pro*)
+                                                (VP (NP-ADV 화장실/NNC+에서/PAD)
+                                                    (VP (NP-OBJ 출산/NNC+을/PCA)
+                                                        (LV 하/VV+은/EAN))))
+                                             (NP 뒤/NNC))
+                                     (VP (VP (NP-OBJ 신생아/NNC+을/PCA)
+                                             (VP (S (NP-SBJ *pro*)
+                                                    (VP (NP-OBJ *pro*)
+                                                        (VP (NP-ADV 비닐/NNC+에/PAD)
+                                                            (VP 싸/VV+어/ECS))))
+                                                 (VP (VV 유기/NNC+하/XSV+고/ECS))))
+                                         (VP (S (NP-SBJ *pro*)
+                                                (VP (NP-OBJ 춤/NNC+을/PCA)
+                                                    추/VV+러/ECS))
+                                             (VP 가/VV+는/EAN)))))))
+                        (NP 사건/NNC))
+                    (NP 등/NNX+이/PCA))
+            (VP (ADVP 잇따라/ADV)
+                (VP (VV 알리/VV+어지/XSV+으면서/ECS)))))
+      (S (NP-SBJ (S (NP-SBJ *pro*)
+                    (VP (NP-ADV 사회/NNC+적/XSF+으로/PAD)
+                        (VP (NP-COMP 문제/NNC+이/PCA)
+                            되/VV+은/EAN)))
+                 (NP 바/NNX))
+         (ADJP 있/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>뉴저지에서는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>10 대 소녀</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>무도회에 참석했다</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>화장실에서 출산을 한 뒤</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>신생아</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>비닐에 싸</term>
+	    </Arg>
+	    <Rel>
+	      <term>유기하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

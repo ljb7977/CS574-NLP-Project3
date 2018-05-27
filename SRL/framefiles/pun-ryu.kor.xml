@@ -1,0 +1,120 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>분류</lemma>
+    <comment>Frames file for '분류' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>분류.01</id>
+      <edef>classify</edef>
+      <roleset>
+	<role argnum="0" argrole="classifier"/>
+	<role argnum="1" argrole="thing being classified"/>
+	<role argnum="2" argrole="classified among"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>분류하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>조선 인민군에서 공급품을 분류하는 데 사용하는 제도에 대해서 설명해 보시오.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (NP-COMP (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *pro*)
+                                      (VP (NP-COMP (S (NP-SBJ 조선/NPR
+                                                              인민군/NNC+에서/PCA)
+                                                      (VP (NP-OBJ 공급품/NNC+을/PCA)
+                                                          (VV 분류/NNC+하/XSV+는/EAN)))
+                                                   (NP 데/NNX))
+                                          (NP-OBJ *T*-1)
+                                          (VV 사용/NNC+하/XSV+는/EAN))))
+                                (NP 제도/NNC+에/PAD))
+                       대하/VV+어서/ECS))
+           (VV 설명/NNC+하/XSV+어/ECS))
+       보/VX+으시/EPF+으오/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서</f>
+	      <term>조선 인민군</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>공급품</term>
+	    </Arg>
+	    <Rel>
+	      <term>분류하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>분류되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>공격 시 포병 사격 지원은 대개 3 단계로 분류되는데, 그것은 공격 준비 사격, 공격간 사격, 그리고 전투 지역 중심에 대한 사격 지원이다.</text>
+	  <parse>
+(S (S (NP-ADV 공격/NNC
+              시/NNX)
+      (S (NP-SBJ 포병/NNC
+                 사격/NNC
+                 지원/NNC+은/PAU)
+         (VP (ADVP 대개/ADV)
+             (VP (NP-COMP 3/NNU
+                          단계/NNC+으로/PAD)
+                 (VV 분류/NNC+되/XSV+는데/ECS)))))
+   ,/SCM
+   (S (NP-SBJ 그것/NPN+은/PAU)
+      (VP (NP (NP 공격/NNC
+                  준비/NNC
+                  사격/NNC)
+              ,/SCM
+              (NP 공격/NNC+간/XSF
+                  사격/NNC)
+              ,/SCM
+              (ADCP 그리고/ADC)
+              (NP (S (WHNP-10 *op*)
+                     (S (NP-SBJ *T*-10)
+                        (VP (NP-COMP 전투/NNC
+                                     지역/NNC
+                                     중심/NNC+에/PAD)
+                            대하/VV+은/EAN)))
+                  (NP 사격/NNC
+                      지원/NNC+이/CO+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>공격 시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>포병 사격 지원</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>대개</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>3 단계</term>
+	    </Arg>
+	    <Rel>
+	      <term>분류되는데</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상고</lemma>
+    <comment>Frames file for '상고' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>상고.01</id>
+      <edef>appeal</edef>
+      <roleset>
+	<role argnum="0" argrole="appealer"/>
+	<role argnum="1" argrole="decision disagreed with"/>
+	<role argnum="2" argrole="appealed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상고하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>항소법원은 원고 및 피고측 의견을 들은 뒤 피노체트의 면책특권 박탈여부를 결정할 예정이며 어느 한 쪽이 이 결정에 불복할 경우 대법원에 상고할 수 있기 때문에 최종 결정이 나오기까지는 수개월이 소요될 전망이다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 항소/NNC+법원/NNC+은/PAU)
+		 (VP (NP-ADV (S (NP-SBJ *pro*)
+				(VP (NP-OBJ (NP (NP 원고/NNC)
+						(ADCP 및/ADC)
+						(NP 피고/NNC+측/NNX))
+					    (NP 의견/NNC+을/PCA))
+				    듣/VV+은/EAN))
+			     (NP 뒤/NNC))
+		     (VP (NP-OBJ (NP (NP 피노체트/NPR+의/PAN)
+				     (NP 면책/NNC+특권/NNC))
+				 (NP 박탈/NNC+여부/NNC+을/PCA))
+			 (VV 결정/NNC+하/XSV+을/EAN))))
+	      (NP 예정/NNC+이/CO+으며/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-ADV (S (NP-ADV (S (NP-SBJ 어느/DAN
+						   한/NNU
+						   쪽/NNX+이/PCA)
+				       (VP (NP-COMP 이/DAN
+						      결정/NNC+에/PAD)
+					   (VV 불복/NNC+하/XSV+을/EAN)))
+				    (NP 경우/NNC))
+			    (S (NP-SBJ *pro*)
+			       (VP (VP (NP-COMP 대법원/NNC+에/PAD)
+				       (VV 상고/NNC+하/XSV+을/EAN))
+				   (VX 수/NNX
+					 있/VJ+기/ENM))))
+			 (NP 때문/NNX+에/PAD))
+		 (S (NP-SBJ 최종/NNC
+				결정/NNC+이/PCA)
+		    (VP 나오/VV+기/ENM+까지/PAU+은/PAU))
+		 (S (NP-SBJ 수/NNU+개월/NNX+이/PCA)
+		    (VP (VV 소요/NNC+되/XSV+을/EAN))))
+	      (NP 전망/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>어느 한 쪽이 이 결정에 불복할 경우</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>대법원</term>
+	    </Arg>
+	    <Rel>
+	      <term>상고할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

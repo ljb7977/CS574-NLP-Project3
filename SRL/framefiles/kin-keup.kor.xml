@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>긴급</lemma>
+    <comment>Frames file for '긴급' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>긴급.01</id>
+      <edef>urgent</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being urgent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>긴급하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>유엔산하 세계식량계획(WFP)도 성명을 통해 30 여만명에 이르는 모잠비크 주민들이 구조, 수색, 또는 구호를 기다리고 있다면서 이를 위해 긴급한 지원이 필요하다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 유엔/NPR+산하/NNC
+           세계식량계획/NPR
+           (PRN -LRB-/SLQ
+                WFP/NFW
+                -RRB-/SRQ)
+           도/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 성명/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (VP (S-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-COMP 30/NNU
+                                                 여/XSF+만/NNU+명/NNX+에/PAD)
+                                        이르/VV+는/EAN)))
+                              (NP 모잠비크/NPR
+                                  주민/NNC+들/XSF+이/PCA))
+                      (VP (VP (NP-OBJ (NP 구조/NNC)
+                                      ,/SCM
+                                      (NP 수색/NNC)
+                                      ,/SCM
+                                      (ADCP 또는/ADC)
+                                      (NP 구호/NNC+을/PCA))
+                              기다리/VV+고/ECS)
+                          있/VX+다면서/ECS))
+                   (S (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ 이/NPN+을/PCA)
+                             위하/VV+어/ECS))
+                      (S (NP-SBJ (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (ADJP (VJ 긴급/NNC+하/XSJ+은/EAN))))
+                                 (NP 지원/NNC+이/PCA))
+                         (ADJP (VJ 필요/NNC+하/XSJ+다/EFN+고/PAD)))))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=지원</term>
+	    </Arg>
+	    <Rel>
+	      <term>긴급한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

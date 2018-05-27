@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>되돌아보</lemma>
+    <comment>Frames file for '되돌아보' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>되돌아보.01</id>
+      <edef>review</edef>
+      <roleset>
+	<role argnum="0" argrole="reviewer"/>
+	<role argnum="1" argrole="thing reviewed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>되돌아보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 이것은 과거의 모습을 되돌아보게 해 주는 하나의 훌륭한 거울이다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 이것/NPN+은/PAU)
+      (VP (NP (S (WHNP-2 *op*)
+		 (S (NP-SBJ *T*-2)
+		    (VP (VP (S-COMP (NP-SBJ *pro*)
+				    (VP (NP-OBJ (NP 과거/NNC+의/PAN)
+						(NP 모습/NNC+을/PCA))
+					되돌아보/VV+게/ECS))
+			    하/VV+어/ECS)
+			주/VX+는/EAN)))
+              (NP (NP 하나/NNU+의/PAN)
+                  (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (ADJP 훌륭하/VJ+은/EAN)))
+                      (NP 거울/NNC+이/CO+다/EFN))))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>과거의 모습</term>
+	    </Arg>
+	    <Rel>
+	      <term>되돌아보게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>막론하</lemma>
+    <comment>Frames file for '막론하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>막론하.01</id>
+      <edef>be needless to say</edef>
+      <roleset>
+	<role argnum="1" argrole="thing"/>
+	<role argnum="2" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>막론하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국은 현역이나 예비역, 또는 주방위군을 막론하고 미군의 해외 주둔 기간을 6 개월로 통일할 계획이라고 5 일 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR+은/PAU)
+   (VP (NP-COMP (S (NP-SBJ *pro*)
+                   (VP (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ (NP 현역/NNC+이나/PCJ)
+                                      (NP 예비역/NNC)
+                                      ,/SCM
+                                      (ADCP 또는/ADC)
+                                      (NP 주/NNC+방위군/NNC+을/PCA))
+                              막론하/VV+고/ECS))
+                       (VP (NP-OBJ (NP 미군/NNC+의/PAN)
+                                   (NP 해외/NNC
+                                       주둔/NNC
+                                       기간/NNC+을/PCA))
+                           (NP-COMP 6/NNU
+                                    개월/NNX+으로/PAD)
+                           (VV 통일/NNC+하/XSV+을/EAN))))
+                (NP 계획/NNC+이라고/PAD))
+       (VP (NP-ADV 5/NNU
+                   일/NNX)
+           (VP 밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>현역이나 예비역, 또는 주방위군</term>
+	    </Arg>
+	    <Rel>
+	      <term>막론하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

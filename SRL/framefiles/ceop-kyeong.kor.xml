@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>접경</lemma>
+    <comment>Frames file for '접경' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>접경.01</id>
+      <edef>border</edef>
+      <roleset>
+	<role argnum="1" argrole="thing bordering"/>
+	<role argnum="2" argrole="border on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>접경하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>티베트와 접경한 인도북부 히마찰 프라데시주의 한 무인 철도건널목에서 7 일 밤 열차와 버스가 충돌, 10 명이 숨지고 32 명이 다쳤다고 현지 경찰이 8 일 밝혔다.</text>
+	  <parse>
+(S (S-COMP-2 (S (NP-ADV (NP (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (VP (NP-COMP 티베트/NPR+과/PAD)
+                                      (VV 접경/NNC+하/XSV+은/EAN))))
+                            (NP 인도/NPR+북부/NNC
+                                히마찰/NPR
+                                프라데시/NPR+주/NNC+의/PAN))
+                        (NP 한/NNU
+                            무인/NNC
+                            철도/NNC+건널목/NNC+에서/PAD))
+                (NP-ADV 7/NNU
+                        일/NNX
+                        밤/NNC)
+                (S (NP-SBJ (NP 열차/NNC+과/PCJ)
+                           (NP 버스/NNC+이/PCA))
+                   (VP (VV 충돌/NNC))))
+             ,/SCM
+             (S (NP-SBJ 10/NNU
+                        명/NNX+이/PCA)
+                (VP 숨지/VV+고/ECS))
+             (S (NP-SBJ 32/NNU
+                        명/NNX+이/PCA)
+                (VP 다치/VV+었/EPF+다/EFN+고/PAD)))
+   (S (NP-SBJ 현지/NNC
+              경찰/NNC+이/PCA)
+      (VP (NP-ADV 8/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-2)
+              밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=인도북부 히마찰 프라데시주</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>티베트</term>
+	    </Arg>
+	    <Rel>
+	      <term>접경한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

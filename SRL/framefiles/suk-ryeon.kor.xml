@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>숙련</lemma>
+    <comment>Frames file for '숙련' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>숙련.01</id>
+      <edef>learn</edef>
+      <roleset>
+	<role argnum="0" argrole="learner"/>
+	<role argnum="1" argrole="skill"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>숙련되다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>시장 조사 기관인 IDC와 마이크로소프트(MS)가 공동 조사를 실시해 발표한 보고서에 따르면, 유럽에서는 오는 2003 년까지 1 천 300 만명의 숙련된 정보기술 인력이 필요하지만 양성된 인력은 1 천 130 만명에 그치게 돼 170 만명이 부족하게 될 것으로 보인다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (WHNP-2 *op*)
+                      (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP 시장/NNC
+                                                   조사/NNC
+                                                   기관/NNC+이/CO+은/EAN))))
+                                     (NP ICD/NFW+과/PCJ))
+                                 (NP 마이크로소프트/NPR
+                                     (PRN -LRB-/SLQ
+                                          MS/NFW
+                                          -RRB-/SRQ)
+                                     이/PCA))
+                         (VP (S (NP-SBJ *pro*)
+                                (VP (NP-ADV 공동/NNC)
+                                    (VP (NP-OBJ 조사/NNC+을/PCA)
+                                        (VV 실시/NNC+하/XSV+어/ECS))))
+                             (VP (NP-OBJ *T*-2)
+                                 (VV 발표/NNC+하/XSV+은/EAN)))))
+                   (NP 보고서/NNC+에/PAD))
+          따르/VV+으면/ECS))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (S (NP-ADV 유럽/NPR+에서/PAD+은/PAU)
+                         (NP-ADV 오는/DAN
+                                 2003/NNU
+                                 년/NNX+까지/PAU)
+                         (S (NP-SBJ (NP 1/NNU
+                                        천/NNU
+                                        300/NNU
+                                        만/NNU+명/NNX+의/PAN)
+                                    (NP (S (WHNP-3 *op*)
+                                           (S (NP-SBJ *T*-3)
+                                              (VP (VV 숙련/NNC+되/XSV+은/EAN))))
+                                        (NP 정보/NNC+기술/NNC
+                                            인력/NNC+이/PCA)))
+                            (ADJP (VJ 필요/NNC+하/XSJ+지만/ECS))))
+                      (S (NP-SBJ (S (WHNP-4 *op*)
+                                    (S (NP-SBJ *T*-4)
+                                       (VP (VV 양성/NNC+되/XSV+은/EAN))))
+                                 (NP 인력/NNC+은/PAU))
+                         (VP (VP (NP-COMP 1/NNU
+                                          천/NNU
+                                          130/NNU
+                                          만/NNU+명/NNX+에/PAD)
+                                 그치/VV+게/ECS)
+                             되/VX+어/ECS))
+                      (S (NP-SBJ 170/NNU
+                                 만/NNU+명/NNX+이/PCA)
+                         (VP (ADJP (VJ 부족/NNC+하/XSJ+게/ECS))
+                             되/VX+을/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=정보기술 인력</term>
+	    </Arg>
+	    <Rel>
+	      <term>숙련된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

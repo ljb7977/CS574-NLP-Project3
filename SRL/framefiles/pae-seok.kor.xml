@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>배석</lemma>
+    <comment>Frames file for '배석' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>배석.01</id>
+      <edef>sit with</edef>
+      <roleset>
+	<role argnum="0" argrole="sitter"/>
+	<role argnum="1" argrole="meeting"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>배석하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한편 양국 대통령 회담에 배석한 람베르토 디니 이탈리아 외무 장관은 "우리가 북한과 국교를 맺은 큰 목적은 평화를 위한 것"이라고 설명하고 "북한과의 관계정상화가 한반도에 평화를 정착시키고 한반도에서 냉전을 종식시키는 데 기여하는 쪽으로 노력하겠다"고 김 대통령에게 다짐했다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP 양국/NNC
+                                 대통령/NNC
+                                 회담/NNC+에/PAD)
+                        (VV 배석/NNC+하/XSV+은/EAN))))
+              (NP 람베르토/NPR
+                  디니/NPR
+                  이탈리아/NPR
+                  외무/NNC
+                  장관/NNC+은/PAU))
+      (VP (VP (S-COMP "/SLQ
+                      (NP-SBJ (S (NP-SBJ 우리/NPN+이/PCA)
+                                 (VP (NP-COMP 북한/NPR+과/PAD)
+                                     (NP-OBJ 국교/NNC+을/PCA)
+                                     맺/VV+은/EAN))
+                              (NP (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (ADJP 크/VJ+은/EAN)))
+                                  (NP 목적/NNC+은/PAU)))
+                      (VP (NP (S (WHNP-3 *op*)
+                                 (S (NP-SBJ *T*-3)
+                                    (VP (NP-OBJ 평화/NNC+을/PCA)
+                                        위하/VV+은/EAN)))
+                              (NP 것/NNX)))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD)
+              (VV 설명/NNC+하/XSV+고/ECS))
+          (VP (S-COMP "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (NP-COMP (S (NP-SBJ (NP 북한/NPR+과/PAD+의/PAN)
+                                              (NP 관계/NNC+정상화/NNC+이/PCA))
+                                      (VP (NP-COMP (S (S (NP-SBJ *pro*)
+                                                         (VP (NP-ADV 한반도/NPR+에/PAD)
+                                                             (VP (NP-OBJ 평화/NNC+을/PCA)
+                                                                 (VV 정착/NNC+시키/XSV+고/ECS))))
+                                                      (S (NP-SBJ *pro*)
+                                                         (VP (NP-ADV 한반도/NPR+에서/PAD)
+                                                             (VP (NP-OBJ 냉전/NNC+을/PCA)
+                                                                 (VV 종식/NNC+시키/XSV+는/EAN)))))
+                                                   (NP 데/NNX))
+                                          (VV 기여/NNC+하/XSV+는/EAN)))
+                                   (NP 쪽/NNX+으로/PAD))
+                          (VV 노력/NNC+하/XSV+겠/EPF+다/EFN))
+                      "/SRQ
+                      고/PAD)
+              (NP-COMP 김/NPR
+                       대통령/NNC+에게/PAD)
+              (VV 다짐/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=람베르토 디니 이탈리아 외무 장관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>양국 대통령 회담</term>
+	    </Arg>
+	    <Rel>
+	      <term>배석한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

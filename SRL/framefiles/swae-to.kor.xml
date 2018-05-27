@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>쇄도</lemma>
+    <comment>Frames file for '쇄도' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>쇄도.01</id>
+      <edef>rush</edef>
+      <roleset>
+	<role argnum="1" argrole="thing rushing"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>쇄도하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>커츠먼과 배럿 기자는 지난 98 년 전기 집필을 처음 밝힐 때만 해도 출판업자를 구하지 못해 애를 먹었으나 힐러리가 출마의사를 밝히면서 출판업자들로부터 계약요청이 쇄도한 것으로 알려졌다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP (NP 커츠먼/NPR+과/PCJ)
+                  (NP 배럿/NPR))
+              (NP 기자/NNC+은/PAU))
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP (S (NP-SBJ *pro*)
+                             (VP (NP-ADV 지난/DAN
+                                         98/NNU
+                                         년/NNX)
+                                 (VP (NP-OBJ 전기/NNC
+                                             집필/NNC+을/PCA)
+                                     (VP (ADVP 처음/ADV)
+                                         (VP 밝히/VV+을/EAN)))))
+                          (NP 때/NNC+만/PAU))
+                 하/VV+어도/ECS))
+          (S (NP-SBJ *pro*)
+             (VP (VP (NP-OBJ 출판/NNC+업자/NNC+을/PCA)
+                     구하/VV+지/ECS)
+                 못하/VX+어/ECS))
+          (VP (NP-OBJ 애/NNC+을/PCA)
+              먹/VV+었/EPF+으나/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (S (NP-SBJ 힐러리/NPR+이/PCA)
+                         (VP (NP-OBJ 출마/NNC+의사/NNC+을/PCA)
+                             밝히/VV+으면서/ECS))
+                      (S (NP-COMP-1 출판/NNC+업자/NNC+들/XSF+으로부터/PAD)
+                         (S (NP-SBJ 계약/NNC+요청/NNC+이/PCA)
+                            (VP (NP-COMP *T*-1)
+				(VV 쇄도/NNC+하/XSV+은/EAN)))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>힐러리가 출마의사를 밝히면서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로부터</f>
+	      <term>출판업자들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>계약요청</term>
+	    </Arg>
+	    <Rel>
+	      <term>쇄도한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

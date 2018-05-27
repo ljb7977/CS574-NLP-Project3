@@ -1,0 +1,102 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>드리</lemma>
+    <comment>Frames file for '드리' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>드리.01</id>
+      <edef>give</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing given"/>
+	<role argnum="2" argrole="given to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>드리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저는 개성 탱크 사단과 2 군단 편성에 관해서 제가 알고 있는 첩보를 모두 다 드렸습니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+는/PAU)
+   (VP (S (NP-SBJ *pro*)
+	  (VP (NP-COMP (NP 개성/NPR
+			   탱크/NNC
+			   사단/NNC+과/PCJ)
+		       (NP 2/NNU
+			   군단/NNC
+			   편성/NNC+에/PAD))
+	      관하/VV+어서/ECS))
+       (VP (NP-OBJ (S (WHNP-1 0)
+		      (S (NP-SBJ 제/NPN+가/PCA)
+			 (VP (VP (NP-OBJ *T*-1)
+				 알/VV+고/EAU)
+			     있/VX+는/EAN)))
+		   (NP 첩보/NNC+을/PCA))
+	   (VP (ADVP 모두/ADV)
+	       (ADVP 다/ADV)
+	       (VP 드리/VV+었/EPF+습니다/EFN))))
+   ./SFN )
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>개성 탱크 사단과 2 군단 편성에 관해서 제가 알고 있는 첩보</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>모두</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>다</term>
+	    </Arg>
+	    <Rel>
+	      <term>드렸습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>전에 이걸 다 설명 드렸습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV 전/NNC+에/PAD)
+       (VP (NP-OBJ 이것/NPN+을/PCA)
+           (VP (ADVP 다/ADV)
+               (VP (NP-OBJ-LV 설명/NNC)
+                   (LV 드리/VV+었/EPF+습니다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>다</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>설명</term>
+	    </Arg>
+	    <Rel>
+	      <term>드렸습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

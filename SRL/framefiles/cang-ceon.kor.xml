@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>장전</lemma>
+    <comment>Frames file for '장전' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>장전.01</id>
+      <edef>charge</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="charge with"/>
+	<role argnum="2" argrole="thing charged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>장전되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>경찰에 따르면 문제의 남학생은 지난 달 29 일 뷰엘 초등학교 교실안에서 전날 운동장에서 말다툼을 한 케일라 롤랜드라는 같은 반 여학생에게 겁을 주기 위해 탄알이 장전된 32 구경 권총을 겨누었다가 총알이 발사되는 사고를 냈다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 경찰/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   (S (NP-SBJ (NP 문제/NNC+의/PAN)
+              (NP 남학생/NNC+은/PAU))
+      (VP (NP-ADV 지난/DAN
+                  달/NNX
+                  29/NNU
+                  일/NNX)
+          (NP-ADV 뷰엘/NPR
+                  초등학교/NNC
+                  교실/NNC+안/NNC+에서/PAD)
+          (S (NP-SBJ *pro*)
+             (VP (S-OBJ (NP-SBJ *pro*)
+                        (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *pro*)
+                                               (VP (NP-ADV 전날/NNC)
+                                                   (NP-ADV 운동장/NNC+에서/PAD)
+                                                   (VP (NP-COMP *T*-1)
+                                                       (VP (NP-OBJ 말다툼/NNC+을/PCA)
+                                                           하/VV+은/EAN)))))
+                                         (NP 케일라/NPR
+                                             롤랜드/NPR+이라는/PAN))
+                                     (NP (NP (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (ADJP 같/VJ+은/EAN)))
+                                             (NP 반/NNC))
+                                         (NP 여학생/NNC+에게/PAD)))
+                            (NP-OBJ 겁/NNC+을/PCA)
+                            주/VV+기/ENM))
+                 위하/VV+어/ECS))
+          (VP (NP-OBJ (S (WHNP-3 *op*)
+                         (S (NP-SBJ 탄알/NNC+이/PCA)
+                            (VP (NP-COMP *T*-3)
+                                (VV 장전/NNC+되/XSV+은/EAN))))
+                      (NP 32/NNU
+                          구경/NNC
+                          권총/NNC+을/PCA))
+              겨누/VV+었/EPF+다가/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ 총알/NNC+이/PCA)
+                     (VP (VV 발사/NNC+되/XSV+는/EAN)))
+                  (NP 사고/NNC+을/PCA))
+          내/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>탄알</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>*trace*=32 구경 권총</term>
+	    </Arg>
+	    <Rel>
+	      <term>장전된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

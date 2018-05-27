@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>와전</lemma>
+    <comment>Frames file for '와전' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>와전.01</id>
+      <edef>misrepresent</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing misrepresented"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>와전되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 데이비드 리(이대유) 대만 외교부 정무차관은 타이 대사가 이날 아침 자신과의 전화통화에서 보도된 내용을 부인했다고 말하면서 대사의 발언이 와전됐다고 밝혔다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 데이비드/NPR
+              리/NPR
+              (PRN -LRB-/SLQ
+                   (NP 이대유/NPR)
+                   -RRB-/SRQ)
+              대만/NPR
+              외교부/NNC
+              정무차관/NNC+은/PAU)
+      (VP (S-COMP (NP-SBJ 타이/NPR
+                          대사/NNC+이/PCA)
+                  (VP (NP-ADV 이날/NNC
+                              아침/NNC)
+                      (NP-ADV (NP 자신/NNC+과/PAD+의/PAN)
+                              (NP 전화/NNC+통화/NNC+에서/PAD))
+                      (VP (NP-OBJ (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (VV 보도/NNC+되/XSV+은/EAN))))
+                                  (NP 내용/NNC+을/PCA))
+                          (VV 부인/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+          말하/VV+으면서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ (NP 대사/NNC+의/PAN)
+                          (NP 발언/NNC+이/PCA))
+                  (VP (VV 와전/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>대사의 발언</term>
+	    </Arg>
+	    <Rel>
+	      <term>와전됐다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

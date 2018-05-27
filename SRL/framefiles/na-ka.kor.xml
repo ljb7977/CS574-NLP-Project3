@@ -1,0 +1,290 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>나가</lemma>
+    <comment>Frames file for '나가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>나가.01</id>
+      <edef>go out</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>나가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="np-comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>저는 저의 중대 지역 밖으로 나가 본 적이 없기 때문에 거기에 신병이 전부 몇 명이나 있었는지 모르겠습니다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ (S (NP-SBJ 저/NPN+은/PAU)
+                         (VP (VP (NP-COMP (NP (NP 저/NPN+의/PAN)
+                                              (NP 중대/NNC
+                                                  지역/NNC))
+                                          (NP 밖/NNC+으로/PAD))
+                                 나가/VV+어/ECS)
+                             보/VX+은/EAN))
+                      (NP 적/NNX+이/PCA))
+              (ADJP 없/VJ+기/ENM))
+           (NP 때문/NNX+에/PAD))
+   (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-COMP-1 거기/NPN+에/PAD)
+                 (S (NP-SBJ 신병/NNC+이/PCA)
+                    (ADJP (ADVP 전부/ADV)
+                          (NP-ADV 몇/NNU
+                                  명/NNX+이나/PAU)
+                          (ADJP (NP-COMP *T*-1)
+                                있/VJ+었/EPF+는지/EFN))))
+          모르/VV+겠/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>저의 중대 지역 밖</term>
+	    </Arg>
+	    <Rel>
+	      <term>나가</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>본</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>나는 지금 너무나 화가 나서 바람을 쐬러 나간다.</text>
+	  <parse>
+(S (NP-SBJ 나/NPN+은/PAU)
+   (VP (S (NP-ADV 지금/NNC)
+          (ADVP 너무나/ADV)
+          (S (NP-SBJ 화/NNC+이/PCA)
+             (VP 나/VV+어서/ECS)))
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 바람/NNC+을/PCA)
+              쐬/VV+으러/ECS))
+       (VP 나가/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>지금 너무나 화가 나서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>바람을 쐬러</term>
+	    </Arg>
+	    <Rel>
+	      <term>나간다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>나가.02</id>
+      <edef>get out of order</edef>
+      <roleset>
+	<role argnum="1" argrole="thing getting out of order"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>나가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한 대는 축전지가 다 나갔고, 다른 한 대는 제동기가 고장났다고 했습니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (S-COMP (S (NP-SBJ 한/NNU
+                          대/NNX+은/PAU)
+                  (S (NP-SBJ 축전지/NNC+이/PCA)
+                     (VP (ADVP 다/ADV)
+                         (VP 나가/VV+었/EPF+고/ECS))))
+               ,/SCM
+               (S (NP-SBJ 다른/DAN
+                          한/NNU
+                          대/NNX+은/PAU)
+                  (S (NP-SBJ 제동기/NNC+이/PCA)
+                     (VP 고장나/VV+었/EPF+다/EFN+고/PAD))))
+       하/VV+었/EPF+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>한 대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>축전지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>다</term>
+	    </Arg>
+	    <Rel>
+	      <term>나갔고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>나가.03</id>
+      <edef>do-light verb</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="deverbal noun"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>나가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="np-comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>조 대위, 어떤 부대들이 개성 탱크 사단에 파견 나갔소?</text>
+	  <parse>
+(S (NP-VOC 조/NPR
+	   대위/NNC)
+   ,/SCM
+   (S (NP-SBJ 어떤/DAN
+	      부대/NNC+들/XSF+이/PCA)
+      (VP (NP-COMP 개성/NPR
+		   탱크/NNC
+		   사단/NNC+에/PAD)
+	  (VP (NP-OBJ-LV 파견/NNC)
+	      (LV 나가/VV+았/EPF+소/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>조 대위</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>어떤 부대들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>개성 탱크 사단</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>파견</term>
+	    </Arg>
+	    <Rel>
+	      <term>나갔소</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>밀고 나가</lemma>
+    <comment>Frames file for '밀고 나가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>나가.04</id>
+      <edef>puth through-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing pushed through"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>밀고 나가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>자신과 견원지간이 된 무소속의 쑹추위(송초유) 후보 당선 저지에 골몰해 온 리총통은 천 후보만이 쑹의 적수가 될 수 있으며 `양국론'으로 대표되는 독립정책을 밀고 나갈 적임자로 판단, 천을 비밀리에 지원했다는 게 대다수 관측통들의 견해다.</text>
+	  <parse>
+(S (NP-SBJ (S (S (NP-SBJ (S (WHNP-2 *op*)
+                            (S (NP-SBJ *T*-2)
+                               (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                                       (S (NP-SBJ *T*-1)
+                                                          (VP (NP-COMP (NP 자신/NNC+과/PAD)
+                                                                       (NP 견원지간/NNC+이/PCA))
+                                                              되/VV+은/EAN)))
+                                                    (NP (NP 무소속/NNC+의/PAN)
+                                                        (NP 쑹추위/NPR
+                                                            (PRN -LRB-/SLQ
+                                                                 (NP 송초유/NPR)
+                                                                 -RRB-/SRQ)
+                                                            후보/NNC)))
+                                                (NP 당선/NNC
+                                                    저지/NNC+에/PAD))
+                                       (VV 골몰/NNC+하/XSV+어/ECS))
+                                   오/VX+은/EAN)))
+                         (NP 리/NPR+총통/NNC+은/PAU))
+                 (VP (S (NP-SBJ 천/NPR
+                                후보/NNC+만/PAU+이/PCA)
+                        (VP (VP (NP-COMP (NP 쑹/NPR+의/PAN)
+                                         (NP 적수/NNC+이/PCA))
+                                되/VV+을/EAN)
+                            (VX 수/NNX
+                                있/VJ+으며/ECS)))
+                     (VP (NP-COMP (S (WHNP-4 *op*)
+                                     (S (NP-SBJ *T*-4)
+                                        (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                       (S (NP-SBJ *T*-3)
+                                                          (VP (NP-COMP `/SLQ
+                                                                       양국론/NNC
+                                                                       '/SRQ
+                                                                       으로/PAD)
+                                                              (VV 대표/NNC+되/XSV+는/EAN))))
+                                                    (NP 독립/NNC+정책/NNC+을/PCA))
+                                            (CV 밀/VV+고/ECS
+                                                나가/VV+을/EAN))))
+                                  (NP 적임자/NNC+으로/PAD))
+                         (NP-OBJ *pro*)
+                         (VV 판단/NNC))))
+              ,/SCM
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 천/NPR+을/PCA)
+                     (VP (NP-ADV 비밀리/NNC+에/PAD)
+                         (VP (VV 지원/NNC+하/XSV+었/EPF+다는/EAN))))))
+           (NP 것/NNX+이/PCA))
+   (VP (NP (NP 대다수/NNC
+               관측통/NNC+들/XSF+의/PAN)
+           (NP 견해/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=적임자</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>`양국론'으로 대표되는 독립정책</term>
+	    </Arg>
+	    <Rel>
+	      <term>밀고 나갈</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

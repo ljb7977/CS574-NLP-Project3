@@ -1,0 +1,126 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>과대평가</lemma>
+    <comment>Frames file for '과대평가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>과대평가.01</id>
+      <edef>overestimate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing overestimated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>과대평가하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 국방부는 주계약사인 TRW사가 미사일 요격 실험결과를 날조하고 핵심 구성요소의 효율성을 과대평가했다는 비난을 받는 등 비판이 고조되자 국가미사일방위체제 계획을 적극 옹호하고 나섰다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR
+           국방부/NNC+은/PAU)
+   (VP (S (NP-SBJ (NP (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                                   (S (NP-SBJ *T*-1)
+                                                      (VP (NP 주/XPF+계약/NNC+사/XSF+이/CO+은/EAN))))
+                                                (NP TRW/NFW+사/XSF+이/PCA))
+                                        (VP (VP (NP-OBJ 미사일/NNC
+                                                        요격/NNC
+                                                        실험/NNC+결과/NNC+을/PCA)
+                                                (VV 날조/NNC+하/XSV+고/ECS))
+                                            (VP (NP-OBJ (NP 핵심/NNC
+                                                            구성/NNC+요소/NNC+의/PAN)
+                                                        (NP 효율성/NNC+을/PCA))
+                                                (VV 과대평가/NNC+하/XSV+었/EPF+다는/EAN))))
+                                     (NP 비난/NNC+을/PCA))
+                             받/VV+는/EAN))
+                      (NP 등/NNX))
+                  (NP 비판/NNC+이/PCA))
+          (VP (VV 고조/NNC+되/XSV+자/ECS)))
+       (VP (NP-OBJ 국가/NNC+미사일/NNC+방위/NNC+체제/NNC
+                   계획/NNC+을/PCA)
+           (VP (ADVP 적극/ADV)
+               (VP (VV (VV 옹호/NNC+하/XSV+고/ECS)
+                       나서/VV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>주계약사인 TRW사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>핵심 구성요소의 효율성</term>
+	    </Arg>
+	    <Rel>
+	      <term>과대평가했다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>과대평가되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 특히 지난 98 년 북한이 미사일을 시험발사한 이후 북한의 군사력이 과대평가되고 있다면서 북한 미사일이 일본에 타격을 가할 수 있지만 일본내 미군기지를 정확하게 타격할 수준은 되지 못한다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 특히/ADV)
+       (S (NP-ADV (S (NP-ADV 지난/DAN
+                             98/NNU
+                             년/NNX)
+                     (S (NP-SBJ 북한/NPR+이/PCA)
+                        (VP (NP-OBJ 미사일/NNC+을/PCA)
+                            (VV 시험발사/NNC+하/XSV+은/EAN))))
+                  (NP 이후/NNC))
+          (S (NP-SBJ (NP 북한/NPR+의/PAN)
+                     (NP 군사력/NNC+이/PCA))
+             (VP (VP (VV 과대평가/NNC+되/XSV+고/ECS))
+                 있/VX+다면서/ECS)))
+       (VP (S-COMP (S (NP-SBJ 북한/NPR
+                              미사일/NNC+이/PCA)
+                      (VP (VP (NP-COMP 일본/NPR+에/PAD)
+                              (NP-OBJ 타격/NNC+을/PCA)
+                              가하/VV+을/EAN)
+                          (VX 수/NNX
+                              있/VJ+지만/ECS)))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                                          (VP (NP-OBJ 일본/NPR+내/NNX
+                                                      미군/NNC+기지/NNC+을/PCA)
+                                              (VP (ADVP (ADV (VJ 정확/NNC+하/XSJ+게/ECS)))
+                                                  (VP (VV 타격/NNC+하/XSV+을/EAN)))))
+                                       (NP 수준/NNC+은/PAU))
+                              되/VV+지/ECS)
+                          못하/VX+는다/EFN+고/PAD)))
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 98 년 북한이 미사일을 시험발사한 이후</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>북한의 군사력</term>
+	    </Arg>
+	    <Rel>
+	      <term>과대평가되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다면서</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

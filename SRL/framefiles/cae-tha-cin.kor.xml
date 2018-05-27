@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재타진</lemma>
+    <comment>Frames file for '재타진' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재타진.01</id>
+      <edef>retap</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing retapped"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재타진하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>소식통들은 북한이 베이징 주재 필리핀 대사관을 통해 오는 7 월의 방콕 ARF 참가를 재타진해 왔다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 소식통/NNC+들/XSF+은/PAU)
+   (VP (S-COMP (NP-SBJ 북한/NPR+이/PCA)
+               (VP (VP (S (NP-SBJ *pro*)
+			  (VP (NP-OBJ (NP 베이징/NPR
+						주재/NNC)
+				      (NP 필리핀/NPR
+						대사관/NNC+을/PCA))
+			      통하/VV+어/ECS))
+		       (VP (NP-OBJ (NP 오는/DAN
+					   7/NNU
+					   월/NNX+의/PAN)
+				   (NP 방콕/NPR
+					   ARF/NFW
+					   참가/NNC+을/PCA))
+			   (VV 재타진/NNC+하/XSV+어/ECS)))
+		   오/VX+었/EPF+다/EFN+고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>베이징 주재 필리핀 대사관을 통해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>오는 7 월의 방콕 ARF 참가</term>
+	    </Arg>
+	    <Rel>
+	      <term>재타진해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

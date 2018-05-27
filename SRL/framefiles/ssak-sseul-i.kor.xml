@@ -1,0 +1,129 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>싹쓸이</lemma>
+    <comment>Frames file for '싹쓸이' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>싹쓸이.01</id>
+      <edef>sweep</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing swept"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>싹쓸이하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이어 이 총재는 최근 박상희 중소기협회장의 민주당 입당과 관련, "현정권은 총선에서 이기기 위해 중소기협회장, 미용사협회장, 꽃꽂이회장 등 직능단체장들을 무더기로 싹쓸이하고 있다"며 "제 2 건국위 한다면서 싹쓸이하더니 이젠 총선을 위해 싹쓸이하고 있다"고 비난했다.</text>
+	  <parse>
+(S (ADVP 이어/ADV)
+   (S (NP-SBJ 이/NPR
+              총재/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-ADV 최근/NNC)
+                 (VP (NP-COMP (NP 박상희/NPR
+                                  중소기협/NNC+회장/NNC+의/PAN)
+                              (NP 민주당/NPR
+                                  입당/NNC+과/PAD))
+                     (VV 관련/NNC))))
+          ,/SCM
+          (VP (S-COMP (S "/SLQ
+                         (NP-SBJ 현정권/NNC+은/PAU)
+                         (VP (VP (S (NP-SBJ *pro*)
+                                    (VP (S-OBJ (NP-SBJ *pro*)
+                                               (VP (NP-ADV 총선/NNC+에서/PAD)
+                                                   (VP 이기/VV+기/ENM)))
+                                        위하/VV+어/ECS))
+                                 (VP (NP-OBJ (NP (NP (NP 중소기협/NNC+회장/NNC)
+                                                     ,/SCM
+                                                     (NP 미용사협/NNC+회장/NNC)
+                                                     ,/SCM
+                                                     (NP 꽃꽂이/NNC+회장/NNC))
+                                                 (NP 등/NNX))
+                                             (NP 직능/NNC+단체장/NNC+들/XSF+을/PCA))
+                                     (VP (NP-ADV 무더기/NNC+으로/PAD)
+                                         (VP (VV 싹쓸이/NNC+하/XSV+고/ECS)))))
+                             있/VX+다/EFN)
+                         "/SRQ
+                         며/ECS)
+                      (S "/SLQ
+                         (S (NP-SBJ *pro*)
+			    (VP (S (NP-SBJ *pro*)
+				   (VP (NP-OBJ 제/DAN
+						 2/NNU
+						 건국위/NNC)
+				       하/VV+는다면서/ECS))
+				(VP (NP-OBJ *pro*)
+				    (VV 싹쓸이/NNC+하/XSV+더니/ECS))))
+                         (S (NP-SBJ *pro*)
+                            (VP (VP (NP-ADV 이제/NNC+은/PAU)
+                                    (S (NP-SBJ *pro*)
+                                       (VP (NP-OBJ 총선/NNC+을/PCA)
+                                           위하/VV+어/ECS))
+                                    (VP (NP-OBJ *pro*)
+					(VV 싹쓸이/NNC+하/XSV+고/ECS)))
+                                있/VX+다/EFN))
+                         "/SRQ
+                         고/PAD))
+              (VV 비난/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>현정권</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>총선에서 이기기 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>중소기협회장, 미용사협회장, 꽃꽂이회장 등 직능단체장들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>무더기로</term>
+	    </Arg>
+	    <Rel>
+	      <term>싹쓸이하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>제 2 건국위 한다면서</term>
+	    </Arg>
+	    <Rel>
+	      <term>싹쓸이하더니</term>
+	    </Rel>
+	  </relation>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이젠</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>총선을 위해</term>
+	    </Arg>
+	    <Rel>
+	      <term>싹쓸이하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

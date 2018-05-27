@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고정</lemma>
+    <comment>Frames file for '고정' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>고정.01</id>
+      <edef>fix</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, setter"/>
+	<role argnum="1" argrole="thing set"/>
+	<role argnum="2" argrole="location, position"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고정되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인민군 포병에서는 고정된 레이더나 또는 레이더 지휘 및 통제소에 사격할 때도 똑같은 목표를 달성하려고 한다.</text>
+	  <parse>
+(S (NP-SBJ 인민군/NNC
+           포병/NNC+에서/PCA+은/PAU)
+   (VP (NP-ADV (S (WHNP *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (VV 고정/NNC+되/XSV+은/EAN))))
+                                      (NP 레이더/NNC+이나/PCJ))
+                                  (ADCP 또는/ADC)
+                                  (NP (NP 레이더/NNC
+                                          지휘/NNC)
+                                      (ADCP 및/ADC)
+                                      (NP 통제소/NNC+에/PAD)))
+                         (VV 사격/NNC+하/XSV+을/EAN))))
+               (NP 때/NNC+도/PAU))
+       (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (ADJP 똑같/VJ+은/EAN)))
+                       (NP 목표/NNC+을/PCA))
+               (VV 달성/NNC+하/XSV+으려고/ECS))
+           하/VX+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>고정된</term>
+	    </Rel>
+	    <Arg n="1">
+	      <term>*trace*=레이더</term>
+	    </Arg>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,43 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>존중</lemma>
+    <comment>Frames file for '존중' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>존중.01</id>
+      <edef>respect</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity respected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>존중하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>공산당에서는 인민들의 여론을 존중한다고 합니다.</text>
+	  <parse>
+(S (NP-SBJ 공산당/NNC+에서/PCA+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (NP-OBJ (NP 인민/NNC+들/XSF+의/PAN)
+                           (NP 여론/NNC+을/PCA))
+                   (VV 존중/NNC+하/XSV+는다/EFN+고/PAD)))
+       하/VV+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>인민들의 여론</term>
+	    </Arg>
+	    <Rel>
+	      <term>존중한다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

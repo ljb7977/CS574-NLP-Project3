@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>해묵</lemma>
+    <comment>Frames file for '해묵' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>해묵.01</id>
+      <edef>long-pending</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being long-pending"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>해묵다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중국과 인도는 해묵은 상호불신을 해소하기 위해 핵문제 등이 의제로 포함된 양국 안보 회담을 6 일 처음으로 개최했다고 베이징(북경) 주재 외교관들이 AFP에 전했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP 중국/NPR+과/PCJ)
+                     (NP 인도/NPR+은/PAU))
+             (VP (S (NP-SBJ *pro*)
+                    (VP (S-OBJ (NP-SBJ *pro*)
+                               (VP (NP-OBJ (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (VP 해묵/VV+은/EAN)))
+                                           (NP 상호/NNC+불신/NNC+을/PCA))
+                                   (VV 해소/NNC+하/XSV+기/ENM)))
+                        위하/VV+어/ECS))
+                 (VP (NP-OBJ (S (WHNP-3 *op*)
+                                (S (NP-SBJ (NP 핵/NNC+문제/NNC)
+                                           (NP 등/NNX+이/PCA))
+                                   (VP (NP-ADV 의제/NNC+으로/PAD)
+                                       (VP (NP-COMP *T*-3)
+                                           (VV 포함/NNC+되/XSV+은/EAN)))))
+                             (NP 양국/NNC
+                                 안보/NNC
+                                 회담/NNC+을/PCA))
+                     (VP (NP-ADV 6/NNU
+                                 일/NNX)
+                         (NP-ADV 처음/NNC+으로/PAD)
+                         (VP (VV 개최/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))))
+   (S (NP-SBJ 베이징/NPR
+              (PRN -LRB-/SLQ
+                   북경/NPR
+                   -RRB-/SRQ)
+              주재/NNC
+              외교관/NNC+들/XSF+이/PCA)
+      (VP (NP-COMP AFP/NFW+에/PAD)
+          (S-COMP *T*-1)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=상호불신</term>
+	    </Arg>
+	    <Rel>
+	      <term>해묵은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

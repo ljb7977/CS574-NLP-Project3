@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>희</lemma>
+    <comment>Frames file for '희' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>희.01</id>
+      <edef>white</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being white"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>희다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>풀기어씨는 쓰레기장에서 흰 스티로폼 상자를 발견해 열어 보니 오스카상 트로피가 들어 있었다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 풀기어/NPR+씨/NNX+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (VP (NP-ADV 쓰레기장/NNC+에서/PAD)
+                          (VP (NP-OBJ (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (ADJP 희/VJ+은/EAN)))
+                                      (NP 스티로폼/NNC
+                                          상자/NNC+을/PCA))
+                              (VV (VV 발견/NNC+하/XSV+어/ECS)
+                                  열/VV+어/ECS)))
+                      보/VX+니/ECS))
+               (S (NP-SBJ 오스카상/NPR
+                          트로피/NNC+이/PCA)
+                  (VP (VP 들/VV+어/ECS)
+                      있/VX+었/EPF+다/EFN+고/PAD)))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=스티로폼 상자</term>
+	    </Arg>
+	    <Rel>
+	      <term>흰</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

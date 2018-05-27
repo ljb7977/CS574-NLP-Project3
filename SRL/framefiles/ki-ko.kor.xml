@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기고</lemma>
+    <comment>Frames file for '기고' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기고.01</id>
+      <edef>contribute</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="article"/>
+	<role argnum="2" argrole="journal etc"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기고하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>남아프리카공화국 더반 소재 의료연구소의 애스마눈드 딜라지 교수는 최근 의학잡지 랜싯에 기고한 연구보고서에서 "대규모 홍역퇴치 운동이 점차 확대되면서 비주사 백신이 확실히 바람직하다"고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ (NP 남아프리카공화국/NPR
+               더반/NPR
+               소재/NNC
+               의료/NNC+연구소/NNC+의/PAN)
+           (NP 애스마눈드/NPR
+               딜라지/NPR
+               교수/NNC+은/PAU))
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 최근/NNC)
+                         (VP (NP-COMP 의학/NNC+잡지/NNC
+                                      랜싯/NPR+에/PAD)
+                             (NP-OBJ *T*-1)
+                             (VV 기고/NNC+하/XSV+은/EAN)))))
+               (NP 연구/NNC+보고서/NNC+에서/PAD))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 대규모/NNC
+                              홍역/NNC+퇴치/NNC
+                              운동/NNC+이/PCA)
+                      (VP (ADVP 점차/ADV)
+                          (VP (VV 확대/NNC+되/XSV+으면서/ECS))))
+                   (S (NP-SBJ 비주사/NNC
+                              백신/NNC+이/PCA)
+                      (ADJP (ADVP 확실히/ADV)
+                            (ADJP (VJ 바람직/NNC+하/XSJ+다/EFN))))
+                   "/SRQ
+                   고/PAD)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>최근</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>의학잡지 랜싯</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=연구보고서</term>
+	    </Arg>
+	    <Rel>
+	      <term>기고한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

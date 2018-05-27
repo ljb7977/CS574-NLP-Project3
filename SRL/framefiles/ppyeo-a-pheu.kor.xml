@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뼈아프</lemma>
+    <comment>Frames file for '뼈아프' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뼈아프.01</id>
+      <edef>painful</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being painful"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뼈아프다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>정동영 대변인도 "베를린 장벽의 붕괴는 한민족에게도 냉전구조 해체 장정의 좋은 출발점이었으나 지난 92 년말 대통령선거때 (당시 여당이) 국내정치에 남북관계를 예속시킴으로써 이러한 역사적 기회를 무위로 돌린 뼈아픈 기억이 있다"고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 정동영/NPR
+           대변인/NNC+도/PAU)
+   (VP (S-COMP "/SLQ
+               (NP-SBJ (S (S (NP-SBJ (NP 베를린/NPR
+                                         장벽/NNC+의/PAN)
+                                     (NP 붕괴/NNC+은/PAU))
+                             (VP (NP-ADV 한민족/NPR+에게/PAD+도/PAU)
+                                 (VP (NP (NP 냉전/NNC+구조/NNC
+                                             해체/NNC
+                                             장정/NNC+의/PAN)
+                                         (NP (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (ADJP 좋/VJ+은/EAN)))
+                                             (NP 출발점/NNC+이/CO+었/EPF+으나/ECS))))))
+                          (S (NP-SBJ *pro*)
+                             (VP (S (NP-ADV (NP 지난/DAN
+                                                92/NNU
+                                                년/NNX+말/NNX)
+                                            (NP 대통령/NNC+선거/NNC+때/NNC))
+                                    (S (PRN -LRB-/SLQ
+                                            (NP-SBJ 당시/NNC
+                                                    여당/NNC+이/PCA)
+                                            -RRB-/SRQ)
+                                       (VP (NP-COMP 국내/NNC+정치/NNC+에/PAD)
+                                           (NP-OBJ 남북/NNC+관계/NNC+을/PCA)
+                                           (VV 예속/NNC+시키/XSV+음/ENM+으로써/PAD))))
+                                 (VP (NP-OBJ 이러한/DAN
+                                             역사/NNC+적/XSF
+                                             기회/NNC+을/PCA)
+                                     (NP-COMP 무위/NNC+으로/PAD)
+                                     돌리/VV+은/EAN))))
+                       (NP (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (ADJP 뼈아프/VJ+은/EAN)))
+                           (NP 기억/NNC+이/PCA)))
+               (ADJP 있/VJ+다/EFN)
+               "/SRQ
+               고/PAD)
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=기억</term>
+	    </Arg>
+	    <Rel>
+	      <term>뼈아픈</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

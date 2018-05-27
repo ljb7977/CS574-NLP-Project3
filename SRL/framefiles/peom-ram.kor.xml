@@ -1,0 +1,121 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>범람</lemma>
+    <comment>Frames file for '범람' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>범람.01</id>
+      <edef>overflow</edef>
+      <roleset>
+	<role argnum="1" argrole="container"/>
+	<role argnum="2" argrole="substance"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>범람하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>레오나르도 시마오 외무장관도 국제 구호단체 관계자들과 만난 자리에서 "폭우가 계속돼 일부 하천이 또다시 범람할 수도 있다"고 우려했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 레오나르도/NPR
+               시마오/NPR)
+           (NP 외무/NNC+장관/NNC+도/PAU))
+   (VP (NP-ADV (S (WHNP *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 국제/NNC
+                                  구호/NNC+단체/NNC
+                                  관계자/NNC+들/XSF+과/PAD)
+                         만나/VV+은/EAN)))
+               (NP 자리/NNC+에서/PAD))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ 폭우/NNC+이/PCA)
+                      (VP (VV 계속/NNC+되/XSV+어/ECS)))
+                   (S (NP-SBJ 일부/NNC
+                              하천/NNC+이/PCA)
+                      (VP (VP (ADVP 또다시/ADV)
+                              (VP (VV 범람/NNC+하/XSV+을/EAN)))
+                          (VX 수/NNX+도/PAU
+                              있/VJ+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 우려/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>폭우가 계속돼</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>일부 하천</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>또다시</term>
+	    </Arg>
+	    <Rel>
+	      <term>범람할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수도 있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>범람하다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>리마의 비상대책기구 직원은 "강물이 범람하고 있다"면서 리막강은 초당 120 의 흐름을 유지할 수 있으나 이미 이달말 한계에 다다라 위험수준이라고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 리마/NPR+의/PAN)
+           (NP 비상/NNC+대책/NNC+기구/NNC
+               직원/NNC+은/PAU))
+   (VP (S-COMP (S "/SLQ
+                  (NP-SBJ 강물/NNC+이/PCA)
+                  (VP (VP (VV 범람/NNC+하/XSV+고/ECS))
+                      있/VX+다/EFN)
+		  "/SRQ
+		  면서/ECS)
+               (S (S (NP-SBJ 리막/NPR+강/NNC+은/PAU)
+                     (VP (VP (NP-OBJ (NP 초/NNC+당/NNX
+                                         120/NNU+의/PAN)
+                                     (NP 흐름/NNC+을/PCA))
+                             (VV 유지/NNC+하/XSV+을/EAN))
+                         (VX 수/NNX
+                             있/VJ+으나/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (ADVP 이미/ADV)
+                                (NP-ADV 이달말/NNC)
+                                (VP (NP-COMP 한계/NNC+에/PAD)
+                                    다다르/VV+어/ECS)))
+                         (VP (NP 위험/NNC+수준/NNC+이/CO+라/EFN+고/PAD))))))
+       (VV 설명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>이</f>
+	      <term>강물</term>
+	    </Arg>
+	    <Rel>
+	      <term>범람하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

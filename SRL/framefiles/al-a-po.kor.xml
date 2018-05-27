@@ -1,0 +1,99 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>알아보</lemma>
+    <comment>Frames file for '알아보' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>알아보.01</id>
+      <edef>recognize</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>알아보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>예, 남대천과 도로 몇 개는 제가 이 지도에서 쉽게 알아볼 수 있었으니까요.</text>
+	  <parse>
+(S (INTJ 예/IJ)
+   ,/SCM
+   (S (NP-OBJ-1 (NP 남대천/NPR+과/PCJ)
+                (NP (NP 도로/NNC)
+                    (NP 몇/NNU
+                        개/NNX+은/PAU)))
+      (S (NP-SBJ 제/NPN+이/PCA)
+         (VP (VP (VP (NP-ADV 이/DAN
+                             지도/NNC+에서/PAD)
+                     (ADVP (ADV 쉽/VJ+게/ECS))
+                     (VP (NP-OBJ *T*-1)
+                         알아보/VV+을/EAN)))
+             (VX 수/NNX
+                 있/VJ+었/EPF+으니까요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>예</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>남대천과 도로 몇 개</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>제</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>이 지도에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>쉽게</term>
+	    </Arg>
+	    <Rel>
+	      <term>알아볼</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있었으니까요</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>저는 그곳에 뭐 뭣이 있었는지 알아볼 틈이 없었지요.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 저/NPN+은/PAU)
+              (VP (S-OBJ (NP-COMP-1 그곳/NPN+에/PAD)
+                         (S (NP-SBJ (NP 뭐/NPN)
+                                    (NP 뭣/NPN+이/PCA))
+                            (ADJP (NP-COMP *T*-1)
+                                  있/VJ+었/EPF+는지/EFN)))
+                  알아보/VV+을/EAN))
+           (NP 틈/NNC+이/PCA))
+   (ADJP 없/VJ+었/EPF+지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>그곳에 뭐 뭣이 있었는지</term>
+	    </Arg>
+	    <Rel>
+	      <term>알아볼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

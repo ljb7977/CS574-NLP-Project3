@@ -1,0 +1,348 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>치</lemma>
+    <comment>Frames file for '치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>치.01</id>
+      <edef>strike, attack</edef>
+      <roleset>
+	<role argnum="0" argrole="hitter, attacker"/>
+	<role argnum="1" argrole="thing hit, attacked"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대대 정치 군관이 우리 소대장의 얼굴을 쳤습니다.</text>
+	  <parse>
+(S (NP-SBJ 대대/NNC
+           정치/NNC
+           군관/NNC+이/PCA)
+   (VP (NP-OBJ (NP 우리/NPN
+                   소대장/NNC+의/PAN)
+               (NP 얼굴/NNC+을/PCA))
+       치/VV+었/EPF+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>대대 정치 군관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>우리 소대장의 얼굴</term>
+	    </Arg>
+	    <Rel>
+	      <term>쳤습니다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>치.02</id>
+      <edef>set</edef>
+      <roleset>
+	<role argnum="0" argrole="setter"/>
+	<role argnum="1" argrole="thing set"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>러시아 남성들은 아내와 어머니 또는 여자친구에게 선물할 수선화와 장미를 사느라 장사진을 쳤으며 일부 여성들은 차가운 모스크바의 강물에 몸을 담그기도 했다.</text>
+	  <parse>
+(S (S (NP-SBJ 러시아/NPR
+              남성/NNC+들/XSF+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (WHNP-1 *op*)
+                            (S (NP-SBJ *pro*)
+                               (VP (NP-COMP (NP 아내/NNC+과/PCJ)
+                                            (NP 어머니/NNC)
+                                            (ADCP 또는/ADC)
+                                            (NP 여자/NNC+친구/NNC+에게/PAD))
+                                   (NP-OBJ *T*-1)
+                                   (VV 선물/NNC+하/XSV+을/EAN))))
+                         (NP (NP 수선화/NNC+과/PCJ)
+                             (NP 장미/NNC+을/PCA)))
+                 사/VV+느라/ECS))
+          (VP (NP-OBJ 장사진/NNC+을/PCA)
+              치/VV+었/EPF+으며/ECS)))
+   (S (NP-SBJ 일부/NNC
+              여성/NNC+들/XSF+은/PAU)
+      (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (ADJP 차갑/VJ+은/EAN)))
+                       (NP (NP 모스크바/NPR+의/PAN)
+                           (NP 강물/NNC+에/PAD)))
+              (NP-OBJ 몸/NNC+을/PCA)
+              담그/VV+기/ENM+도/PAU)
+          하/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>러시아 남성들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>아내와 어머니 또는 여자친구에게 선물할 수선화와 장미를 사느라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>장사진</term>
+	    </Arg>
+	    <Rel>
+	      <term>쳤으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>치.03</id>
+      <edef>run over</edef>
+      <roleset>
+	<role argnum="0" argrole="car"/>
+	<role argnum="1" argrole="victim"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>윤양은 지난 8 일 밤 남동생과 말다툼을 벌이다 어머니가 갓길에 차를 세우고 나무라자 남동생과 함께 차에서 내려 서로 반대쪽으로 걸어가다 뺑소니차에 치여 숨졌으며 제인 와그너라는 여변호사는 사고 이틀만에 자수한 후 "사슴을 친 줄 알았다"고 진술하고 있어 음주 운전을 은폐하려는 게 아니냐는 의혹이 일고 있다.</text>
+	  <parse>
+(S (S (S (NP-SBJ 윤/NPR+양/NNX+은/PAU)
+         (VP (NP-ADV 지난/DAN
+			 8/NNU
+			 일/NNX
+			 밤/NNC)
+             (NP-ADV 남동생/NNC+과/PAD)
+	     (VP (NP-OBJ 말다툼/NNC+을/PCA)
+		 벌이/VV+다/ECS)))
+      (S (NP-SBJ 어머니/NNC+이/PCA)
+         (VP (VP (NP-ADV 갓길/NNC+에/PAD)
+                 (VP (NP-OBJ 차/NNC+을/PCA)
+                     세우/VV+고/ECS))
+             (VP (NP-OBJ *pro*)
+                 나무라/VV+자/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (ADVP (NP-COMP 남동생/NNC+과/PAD)
+                   함께/ADV)
+             (VP (NP-COMP 차/NNC+에서/PAD)
+                 내리/VV+어/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (ADVP 서로/ADV)
+             (NP-ADV 반대쪽/NNC+으로/PAD)
+             (VP 걸어가/VV+다/ECS)))
+      (S (NP-SBJ *pro*)
+         (VP (NP-COMP 뺑소니차/NNC+에/PAD)
+             치이/VV+어/ECS))
+      (S (NP-SBJ *pro*)
+         (VP 숨지/VV+었/EPF+으며/ECS)))
+   (S (S (NP-SBJ (NP 제인/NPR
+                     와그너/NPR+이라는/PAN)
+                 (NP 여/XPF+변호사/NNC+은/PAU))
+         (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                            (VP (NP-ADV 사고/NNC
+                                        이틀/NNC+만/NNX+에/PAD)
+                                (VP (VV 자수/NNC+하/XSV+은/EAN))))
+                         (NP 후/NNC))
+                 (VP (S-COMP "/SLQ
+                             (NP-SBJ *pro*)
+                             (VP (NP-COMP (S (NP-SBJ *pro*)
+                                             (VP (NP-OBJ 사슴/NNC+을/PCA)
+                                                 치/VV+은/EAN))
+                                          (NP 줄/NNX))
+                                 알/VV+었/EPF+다/EFN)
+                             "/SRQ
+                             고/PAD)
+                     (VV 진술/NNC+하/XSV+고/ECS)))
+             있/VX+어/ECS))
+      (S (NP-SBJ (S (NP-SBJ (S (NP-SBJ *pro*)
+                               (VP (NP-OBJ 음주/NNC
+                                           운전/NNC+을/PCA)
+                                   (VV 은폐/NNC+하/XSV+으려는/EAN)))
+                            (NP 것/NNX+이/PCA))
+                    (ADJP 아니/VJ+냐는/EAN))
+                 (NP 의혹/NNC+이/PCA))
+         (VP (VP 일/VV+고/ECS)
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>사슴</term>
+	    </Arg>
+	    <Rel>
+	      <term>친</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>치이다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>밀스는 93 년 경찰 모터사이클에 치여 왼쪽 무릎밑 다리를 잘라 내는 아픔을 겪으면서 장애인 돕는 일에 앞장섰는데 작년 장애인들을 위한 자선 공연인 '보이스'를 매카트니가 도와 주면서 두사람의 관계가 발전했다.</text>
+	  <parse>
+(S (S (NP-SBJ 밀스/NPR+은/PAU)
+      (VP (NP-ADV 93/NNU
+                  년/NNX)
+          (VP (NP-COMP 경찰/NNC
+                       모터/NNC+사이클/NNC+에/PAD)
+              치이/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ *pro*)
+                     (VP (VP (NP-OBJ 왼쪽/NNC
+                                     무릎/NNC+밑/NNC
+                                     다리/NNC+을/PCA)
+                             자르/VV+어/ECS)
+                         내/VX+는/EAN))
+                  (NP 아픔/NNC+을/PCA))
+          겪/VV+으면서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ 장애인/NNC)
+                          돕/VV+는/EAN))
+                   (NP 일/NNC+에/PAD))
+          앞장서/VV+었/EPF+는데/ECS))
+   (S (NP-ADV 작년/NNC)
+      (S (NP-OBJ-1 (S (WHNP-2 *op*)
+                      (S (NP-SBJ *T*-2)
+                         (VP (NP (S (WHNP-3 *op*)
+                                    (S (NP-SBJ *T*-3)
+                                       (VP (NP-OBJ 장애인/NNC+들/XSF+을/PCA)
+                                           위하/VV+은/EAN)))
+                                 (NP 자선/NNC
+                                     공연/NNC+이/CO+은/EAN)))))
+                   (NP (PRN '/SLQ
+                            보이스/NPR
+                            '/SRQ)
+                       을/PCA))
+         (S (NP-SBJ 매카트니/NPR+이/PCA)
+            (VP (VP (NP-OBJ *T*-1)
+                    돕/VV+어/ECS)
+                주/VX+으면서/ECS))))
+   (S (NP-SBJ (NP 두/NNU+사람/NNC+의/PAN)
+              (NP 관계/NNC+이/PCA))
+      (VP (VV 발전/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>밀스</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>93 년</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>경찰 모터사이클</term>
+	    </Arg>
+	    <Rel>
+	      <term>치여</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>치.04</id>
+      <edef>run away</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="flight"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>주민들의 인정 어린 행동은 사고 후 뺑소니를 치고도 계속 발뺌만 하고 있는 29 세의 미국인 여변호사의 태도와는 너무 대조적이어서 '추악한 미국인과 선한 미국인'의 정형을 적나라하게 보여 주고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ (NP 주민/NNC+들/XSF+의/PAN)
+              (NP (S (WHNP-1 *op*)
+                     (S (NP-SBJ 인정/NNC)
+                        (VP (NP-COMP *T*-1)
+			    어리/VV+은/EAN)))
+                  (NP 행동/NNC+은/PAU)))
+      (VP (NP-COMP (NP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (VP (VP (NP-ADV 사고/NNC
+                                             후/NNC)
+                                     (VP (NP-OBJ 뺑소니/NNC+을/PCA)
+                                         치/VV+고/ECS+도/PAU))
+                                 (VP (VP (ADVP 계속/ADV)
+                                         (VP (NP-OBJ 발뺌/NNC+만/PAU)
+                                             하/VV+고/ECS))
+                                     있/VX+는/EAN))))
+                       (NP (NP 29/NNU
+                               세/NNX+의/PAN)
+                           (NP 미국/NPR+인/XSF
+                               여/XPF+변호사/NNC+의/PAN)))
+                   (NP 태도/NNC+과/PAD+은/PAU))
+          (VP (ADVP 너무/ADV)
+              (VP (NP 대조/NNC+적/XSF+이/CO+어서/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (VP (NP-OBJ (NP '/SLQ
+                              (NP (S (WHNP-3 *op*)
+                                     (S (NP-SBJ *T*-3)
+                                        (ADJP 추악하/VJ+은/EAN)))
+                                  (NP 미국/NPR+인/XSF+과/PCJ))
+                              (NP (S (WHNP-4 *op*)
+                                     (S (NP-SBJ *T*-4)
+                                        (ADJP 선하/VJ+은/EAN)))
+                                  (NP 미국/NPR+인/XSF))
+                              '/SRQ
+                              의/PAN)
+                          (NP 정형/NNC+을/PCA))
+                  (VP (ADVP (ADV 적나라하/VJ+게/ECS))
+                      (VP 보이/VV+어/ECS)))
+              주/VX+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=29 세의 미국인 여변호사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>사고 후</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>뺑소니</term>
+	    </Arg>
+	    <Rel>
+	      <term>치고도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>
+

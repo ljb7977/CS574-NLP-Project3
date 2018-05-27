@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>물리치</lemma>
+    <comment>Frames file for '물리치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>물리치.01</id>
+      <edef>decline</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing declined"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>물리치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 김영삼 전 대통령과의 관계정립 문제에 대해 "김 전 대통령이 우리의 창당취지를 이해한다면 굳이 (그의 지원을) 물리칠 필요가 없다"고 말해 상도동의 지원에 기대를 표시했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (NP (NP 김영삼/NPR
+                                      전/DAN
+                                      대통령/NNC+과/PAD+의/PAN)
+                                  (NP 관계/NNC+정립/NNC))
+                              (NP 문제/NNC+에/PAD))
+                     대하/VV+어/ECS))
+              (VP (S-COMP "/SLQ
+                          (S (NP-SBJ 김/NPR
+                                     전/DAN
+                                     대통령/NNC+이/PCA)
+                             (VP (NP-OBJ (NP 우리/NPN+의/PAN)
+                                         (NP 창당/NNC+취지/NNC+을/PCA))
+                                 (VV 이해/NNC+하/XSV+는다면/ECS)))
+                          (S (NP-SBJ (S (NP-SBJ *pro*)
+                                        (VP (ADVP 굳이/ADV)
+                                            (PRN -LRB-/SLQ
+                                                 (NP-OBJ-1 (NP 그/NPN+의/PAN)
+                                                           (NP 지원/NNC+을/PCA))
+                                                 -RRB-/SRQ)
+                                            (VP (NP-OBJ *T*-1)
+                                                물리치/VV+을/EAN)))
+                                     (NP 필요/NNC+이/PCA))
+                             (ADJP 없/VJ+다/EFN))
+                          "/SRQ
+                          고/PAD)
+                  말하/VV+어/ECS)))
+       (NP-ADV (NP 상도동/NPR+의/PAN)
+               (NP 지원/NNC+에/PAD))
+       (VP (NP-OBJ 기대/NNC+을/PCA)
+           (VV 표시/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>굳이</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그의 지원</term>
+	    </Arg>
+	    <Rel>
+	      <term>물리칠</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

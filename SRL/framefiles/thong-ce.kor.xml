@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>통제</lemma>
+    <comment>Frames file for '통제' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>통제.01</id>
+      <edef>control</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing controlled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>통제하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>인민군에서는 의료품을 철저히 통제하고 있습니다.</text>
+	  <parse>
+(S (NP-SBJ 인민군/NNC+에서/PCA+은/PAU)
+   (VP (VP (NP-OBJ 의료품/NNC+을/PCA)
+           (VP (ADVP 철저히/ADV)
+               (VP (VV 통제/NNC+하/XSV+고/ECS))))
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>인민군</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>의료품</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>철저히</term>
+	    </Arg>
+	    <Rel>
+	      <term>통제하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>통제되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>시-시간은 우리 구분대들이 적의 방어 전연에 돌입해야 하는 시간이기 때문에 엄격히 통제되고 있습니다.</text>
+	  <parse>
+(S (NP-SBJ 시-시간/NNC+은/PAU)
+   (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                      (VP (NP (S (WHNP *op*)
+                                 (S (NP-SBJ 우리/NPN
+                                            구분대/NNC+들/XSF+이/PCA)
+                                    (VP (VP (NP-COMP (NP 적/NNC+의/PAN)
+                                                     (NP 방어/NNC
+                                                         전연/NNC+에/PAD))
+                                            (VV 돌입/NNC+하/XSV+어야/ECS))
+                                        하/VX+는/EAN)))
+                              (NP 시간/NNC+이/CO+기/ENM))))
+                   (NP 때문/NNX+에/PAD))
+           (ADVP 엄격히/ADV)
+           (VP (VV 통제/NNC+되/XSV+고/ECS)))
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>시-시간</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>우리 구분대들이 적의 방어 전연에 돌입해야 하는 시간이기 때문에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>엄격히</term>
+	    </Arg>
+	    <Rel>
+	      <term>통제되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

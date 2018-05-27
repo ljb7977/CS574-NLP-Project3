@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>강력하</lemma>
+    <comment>Frames file for '강력하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>강력하.01</id>
+      <edef>strong</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being strong"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>강력하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>강력한 타격력이 전차의 특징 중의 하나입니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (ADJP 강력하/VJ+은/EAN)))
+           (NP 타격력/NNC+이/PCA))
+   (VP (NP (NP (NP (NP 전차/NNC+의/PAN)
+                   (NP 특징/NNC))
+               (NP 중/NNX+의/PAN))
+           (NP 하나/NNU+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=타격력</term>
+	    </Arg>
+	    <Rel>
+	      <term>강력한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>강력해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 중국의 군사력이 강력해질수록 국가 안보와 재통일이 더욱 굳건히 보장될 것이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S (NP-SBJ (NP 중국/NPR+의/PAN)
+                          (NP 군사력/NNC+이/PCA))
+                  (VP (VV 강력하/VJ+어지/XSV+을수록/ECS)))
+               (S (NP-SBJ (NP 국가/NNC
+                              안보/NNC+과/PCJ)
+                          (NP 재/XPF+통일/NNC+이/PCA))
+                  (VP (ADVP (ADVP 더욱/ADV)
+                            (ADVP 굳건히/ADV))
+                      (VP (VV 보장/NNC+되/XSV+을/EAN)
+                          (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+       덧붙이/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>중국의 군사력</term>
+	    </Arg>
+	    <Rel>
+	      <term>강력해질수록</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

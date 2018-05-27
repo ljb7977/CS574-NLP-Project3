@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>연합</lemma>
+    <comment>Frames file for '연합' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>연합.01</id>
+      <edef>combine</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing combined"/>
+	<role argnum="2" argrole="end product"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>연합되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>조선 인민군의 전차 사단은 제병과로 연합되어 있습니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 조선/NPR
+               인민군/NNC+의/PAN)
+           (NP 전차/NNC
+               사단/NNC+은/PAU))
+   (VP (VP (NP-COMP 제병과/NNC+으로/PAD)
+           (VV 연합/NNC+되/XSV+어/ECS))
+       있/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>조선 인민군의 전차 사단</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>제병과</term>
+	    </Arg>
+	    <Rel>
+	      <term>연합되어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있습니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

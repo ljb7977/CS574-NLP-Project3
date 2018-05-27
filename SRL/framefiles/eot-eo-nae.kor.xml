@@ -1,0 +1,104 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>얻어내</lemma>
+    <comment>Frames file for '얻어내' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>얻어내.01</id>
+      <edef>gain</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing gained"/>
+	<role argnum="2" argrole="gain from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>얻어내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>식량사정이 여전히 극심한 북한은 김 총비서의 방중 대가로 중국으로부터 상당한 원조를 얻어내기 위해 흥정을 밀어붙이고 있으며 김 총비서는 지난해 북한의 제 2 인자인 김영남 최고인민회의 상임위원장이 중국에 사정했던 곡물 15 만 t과 석탄 4 만 t 이상을 (중국으로부터) 끌어낼 것이라고 이 잡지는 전망했다.</text>
+	  <parse>
+(S (S-COMP-5 (S (NP-SBJ (S (WHNP-1 *op*)
+                           (S (NP-SBJ *T*-1)
+                              (S (NP-SBJ 식량/NNC+사정/NNC+이/PCA)
+                                 (ADJP (ADVP 여전히/ADV)
+                                       (ADJP 극심하/VJ+은/EAN)))))
+                        (NP 북한/NPR+은/PAU))
+                (VP (VP (S (NP-SBJ *pro*)
+                           (VP (S-OBJ (NP-SBJ *pro*)
+                                      (VP (NP-ADV (NP 김/NPR
+                                                      총비서/NNC+의/PAN)
+                                                  (NP 방중/NNC
+                                                      대가/NNC+으로/PAD))
+                                          (VP (NP-COMP 중국/NPR+으로부터/PAD)
+                                              (NP-OBJ (S (WHNP-2 *op*)
+                                                         (S (NP-SBJ *T*-2)
+                                                            (ADJP (VJ 상당/NNC+하/XSJ+은/EAN))))
+                                                      (NP 원조/NNC+을/PCA))
+                                              얻어내/VV+기/ENM)))
+                               위하/VV+어/ECS))
+                        (VP (NP-OBJ 흥정/NNC+을/PCA)
+                            밀어붙이/VV+고/ECS))
+                    있/VX+으며/ECS))
+             (S (NP-SBJ 김/NPR
+                        총비서/NNC+은/PAU)
+                (VP (VP (NP-OBJ (S (WHNP-4 *op*)
+                                   (S (NP-ADV 지난해/NNC)
+                                      (S (NP-SBJ (S (WHNP-3 *op*)
+                                                    (S (NP-SBJ *T*-3)
+                                                       (VP (NP (NP 북한/NPR+의/PAN)
+                                                               (NP 제/DAN
+                                                                   2/NNU
+                                                                   인자/NNX+이/CO+은/EAN)))))
+                                                 (NP 김영남/NPR
+                                                     최고/NNC+인민/NNC+회의/NNC
+                                                     상임/NNC+위원장/NNC+이/PCA))
+                                         (VP (NP-COMP 중국/NPR+에/PAD)
+                                             (NP-OBJ *T*-4)
+                                             (VV 사정/NNC+하/XSV+었/EPF+던/EAN)))))
+                                (NP (NP (NP 곡물/NNC
+                                            15/NNU
+                                            만/NNU
+                                            t/NFW+과/PCJ)
+                                        (NP 석탄/NNC
+                                            4/NNU
+                                            만/NNU
+                                            t/NFW))
+                                    (NP 이상/NNC+을/PCA)))
+                        (PRN -LRB-/SLQ
+                             (NP-COMP 중국/NPR+으로부터/PAD)
+                             -RRB-/SRQ)
+                        끌어내/VV+을/EAN)
+                    (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+   (S (NP-SBJ 이/DAN
+              잡지/NNC+은/PAU)
+      (VP (S-COMP *T*-5)
+          (VV 전망/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>김 총비서의 방중 대가로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로부터</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>상당한 원조</term>
+	    </Arg>
+	    <Rel>
+	      <term>얻어내기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

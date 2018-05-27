@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>예상</lemma>
+    <comment>Frames file for '예상' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>예상.01</id>
+      <edef>expect</edef>
+      <roleset>
+	<role argnum="0" argrole="expecter"/>
+	<role argnum="1" argrole="thing expected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>예상하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>단 한가지 문제가 될 것으로 생각한 것은 저희 탱크들이 예상했던 것보다 훨씬 더 많은 연료를 소모한 겁니다.</text>
+	  <parse>
+(S (NP-ADV 단/DAN
+           한/NNU
+           가지/NNX)
+   (S (NP-SBJ (S (WHNP-4 *op*)
+                 (S (NP-SBJ *pro*)
+                    (VP (NP-OBJ *T*-4)
+                        (NP-COMP (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP (NP-COMP 문제/NNC+이/PCA)
+                                           되/VV+을/EAN)))
+                                 (NP 것/NNX+으로/PAD))
+                        (VV 생각/NNC+하/XSV+은/EAN))))
+              (NP 것/NNX+은/PAU))
+      (VP (NP (S (NP-SBJ 저희/NPN
+                         탱크/NNC+들/XSF+이/PCA)
+                 (VP (NP-OBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP (NP-ADV (S (WHNP-3 *op*)
+                                                    (S (NP-SBJ *pro*)
+                                                       (VP (NP-OBJ *T*-3)
+                                                           (VV 예상/NNC+하/XSV+었/EPF+던/EAN))))
+                                                 (NP 것/NNX+보다/PAD))
+                                         (ADVP (ADVP 훨씬/ADV)
+                                               (ADVP 더/ADV))
+                                         (ADJP 많/VJ+은/EAN))))
+                             (NP 연료/NNC+을/PCA))
+                     (VV 소모/NNC+하/XSV+은/EAN)))
+              (NP 것/NNX+이/CO+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=것</term>
+	    </Arg>
+	    <Rel>
+	      <term>예상했던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>예상되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신문관은 나가서 정보 장교에게 예상되는 공격에 대한 추가적인 긴급 보고를 낸다.</text>
+	  <parse>
+(S (NP-SBJ 신문관/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP 나가/VV+어서/ECS))
+       (VP (NP-COMP 정보/NNC
+                    장교/NNC+에게/PAD)
+           (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (NP-COMP (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (VP (VV 예상/NNC+되/XSV+는/EAN))))
+                                      (NP 공격/NNC+에/PAD))
+                             대하/VV+은/EAN)))
+                   (NP (S (WHNP-3 *op*)
+                          (S (NP-SBJ *T*-3)
+                             (VP (NP 추가/NNC+적/XSF+이/CO+은/EAN))))
+                       (NP 긴급/NNC
+                           보고/NNC+을/PCA)))
+           내/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=공격</term>
+	    </Arg>
+	    <Rel>
+	      <term>예상되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

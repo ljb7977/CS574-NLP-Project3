@@ -1,0 +1,7 @@
+1. root_label (-grl):ROOT
+2. covered_root (-pcr):none
+3. parsing_algorithm (-a):nivreeager
+4. marking_strategy (-pp):path
+7. allow_root (-nr):true
+8. allow_reduce (-ne):false
+8. feature_model (-F):replicateDeprelPostagSubtractingFeature2.xml

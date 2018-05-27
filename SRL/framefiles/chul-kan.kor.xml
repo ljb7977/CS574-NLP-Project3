@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>출간</lemma>
+    <comment>Frames file for '출간' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>출간.01</id>
+      <edef>publish</edef>
+      <roleset>
+	<role argnum="0" argrole="thing publishing"/>
+	<role argnum="1" argrole="thing published"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>출간되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>뉴욕주 상원의원 자리를 놓고 힐러리 클린턴과 백중세의 경합을 벌이고 있는 루돌프 줄리아니 뉴욕시장이 올 여름께 잇따라 출간될 악평을 담은 전기 때문에 곤혹스런 입장에 처해 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ 뉴욕/NPR+주/NNC
+					    상원/NNC+의원/NNC
+					    자리/NNC+을/PCA)
+                                놓/VV+고/ECS))
+                         (NP-ADV 힐러리/NPR
+				       클린턴/NPR+과/PAD)
+			 (VP (NP-OBJ (NP 백중세/NNC+의/PAN)
+				     (NP 경합/NNC+을/PCA))
+			     벌이/VV+고/ECS))
+                     있/VX+는/EAN)))
+           (NP 루돌프/NPR
+               줄리아니/NPR
+               뉴욕/NPR+시장/NNC+이/PCA))
+   (VP (NP-ADV (NP (S (WHNP-2 *op*)
+                      (S (S (NP-SBJ *T*-2)
+                            (VP (NP-ADV 올/DAN
+                                        여름/NNC+께/XSF)
+                                (ADVP 잇따라/ADV)
+                                (VP (VV 출간/NNC+되/XSV+을/EAN))))
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-OBJ 악평/NNC+을/PCA)
+                                담/VV+은/EAN))))
+                   (NP 전기/NNC))
+               (NP 때문/NNX+에/PAD))
+       (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+                           (ADJP (VJ 곤혹/NNC+스럽/XSJ+은/EAN)))
+                        (NP 입장/NNC+에/PAD))
+               (VP 처하/VV+어/ECS))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=전기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올 여름께</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>잇따라</term>
+	    </Arg>
+	    <Rel>
+	      <term>출간될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>증설</lemma>
+    <comment>Frames file for '증설' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>증설.01</id>
+      <edef>increase</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing increased"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>증설하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>양국은 또 한국과 프랑스간 항공운항 편수를 증설하는 협상을 재개키로 합의했다.</text>
+	  <parse>
+(S (NP-SBJ 양국/NNC+은/PAU)
+   (VP (ADCP 또/ADC)
+       (VP (S-COMP (NP-SBJ *pro*)
+		   (VP (NP-OBJ (S (NP-SBJ *pro*)
+				  (VP (NP-OBJ (NP (NP 한국/NPR+과/PCJ)
+						  (NP 프랑스/NPR+간/XSF))
+					      (NP 항공/NNC+운항/NNC
+						      편/NNC+수/NNC+을/PCA))
+				      (VV 증설/NNC+하/XSV+는/EAN)))
+			       (NP 협상/NNC+을/PCA))
+		       (VV 재개/NNC+하/XSV+기/ENM+으로/PAD)))
+           (VV 합의/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>한국과 프랑스간 항공운항 편수</term>
+	    </Arg>
+	    <Rel>
+	      <term>증설하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

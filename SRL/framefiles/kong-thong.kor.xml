@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>공통</lemma>
+    <comment>Frames file for '공통' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>공통.01</id>
+      <edef>be common</edef>
+      <roleset>
+	<role argnum="1" argrole="common thing"/>
+	<role argnum="2" argrole="group"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>공통되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>스트로 장관은 의회에 보낸 답변서에서 "앞으로 망명요구를 위해 항공기를 납치하는 행위를 막아야 한다는 공통된 의견에서 이번 결정을 내렸다"면서 "망명이 허용된 2 명은 비행기 탑승전에 이미 망명 신청을 했었다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 스트로/NPR
+           장관/NNC+은/PAU)
+   (VP (NP-ADV (S (WHNP-1 *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 의회/NNC+에/PAD)
+                         (NP-OBJ *T*-1)
+                         보내/VV+은/EAN)))
+               (NP 답변서/NNC+에서/PAD))
+       (S "/SLQ
+          (NP-SBJ *pro*)
+          (VP (NP-ADV (S (NP-SBJ *pro*)
+                         (VP (VP (NP-ADV 앞/NNC+으로/PAD)
+                                 (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+                                                   (VP (NP-OBJ 망명/NNC+요구/NNC+을/PCA)
+                                                       위하/VV+어/ECS))
+                                                (S (NP-SBJ *pro*)
+                                                   (VP (NP-OBJ 항공기/NNC+을/PCA)
+                                                       (VV 납치/NNC+하/XSV+는/EAN))))
+                                             (NP 행위/NNC+을/PCA))
+                                     막/VV+어야/ECS))
+                             하/VX+는다는/EAN))
+                      (NP (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (VV 공통/NNC+되/XSV+은/EAN))))
+                          (NP 의견/NNC+에서/PAD)))
+              (VP (NP-OBJ 이번/NNC
+                          결정/NNC+을/PCA)
+                  내리/VV+었/EPF+다/EFN))
+          "/SRQ
+          면서/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (S (WHNP *op*)
+                              (S (NP-SBJ 망명/NNC+이/PCA)
+                                 (VP (NP-COMP *T*-3)
+                                     (VV 허용/NNC+되/XSV+은/EAN))))
+                           (NP-3 2/NNU
+                                 명/NNX+은/PAU))
+                   (VP (NP-ADV 비행기/NNC
+                               탑승/NNC+전/NNC+에/PAD)
+                       (ADVP 이미/ADV)
+                       (VP (NP-OBJ 망명/NNC
+                                   신청/NNC+을/PCA)
+                           하/VV+었었/EPF+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=의견</term>
+	    </Arg>
+	    <Rel>
+	      <term>공통된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

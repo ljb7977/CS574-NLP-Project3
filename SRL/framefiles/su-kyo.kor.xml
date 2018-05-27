@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수교</lemma>
+    <comment>Frames file for '수교' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수교.01</id>
+      <edef>establish diplomatic relations</edef>
+      <roleset>
+	<role argnum="0" argrole="one nation"/>
+	<role argnum="1" argrole="other nation(s)"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수교하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이에 앞서 대만의 연합보는 교황청이 조만간 대만과 단교하고 중국과 수교할 것이라고 레이먼드 타이 교황청 주재 대만대사의 말을 인용 보도했다.</text>
+	  <parse>
+(S (ADVP (NP-COMP 이/NPN+에/PAD)
+         앞서/ADV)
+   (S (NP-SBJ (NP 대만/NPR+의/PAN)
+              (NP 연합보/NPR+은/PAU))
+      (VP (S-COMP (NP-SBJ 교황청/NNC+이/PCA)
+                  (VP (VP (ADVP 조만간/ADV)
+                          (VP (VP (NP-COMP 대만/NPR+과/PAD)
+                                  (VV 단교/NNC+하/XSV+고/ECS))
+                              (VP (NP-COMP 중국/NPR+과/PAD)
+                                  (VV 수교/NNC+하/XSV+을/EAN))))
+                      (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+          (VP (S (NP-SBJ *pro*)
+		 (VP (NP-OBJ (NP 레이먼드/NPR
+					 타이/NPR
+					 교황청/NNC
+					 주재/NNC
+					 대만/NPR+대사/NNC+의/PAN)
+			     (NP 말/NNC+을/PCA))
+		     (VV 인용/NNC)))
+	      (VP (VV 보도/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>교황청</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>조만간</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>과</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Rel>
+	      <term>수교할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

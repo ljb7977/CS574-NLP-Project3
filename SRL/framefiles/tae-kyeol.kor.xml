@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대결</lemma>
+    <comment>Frames file for '대결' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대결.01</id>
+      <edef>confront</edef>
+      <roleset>
+	<role argnum="1" argrole="entity confronted"/>
+	<role argnum="2" argrole="confronted with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대결하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>결선투표까지 가는 경우 지지도 24 퍼센트로 대통령후보들중 2 위를 달리고 있는 겐나디 쥬가노프 공산당수와 푸틴 대행이 대결하게 될 가능성이 가장 크다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ *pro*)
+              (VP (NP-COMP 결선/NNC+투표/NNC+까지/PAU)
+                  가/VV+는/EAN))
+           (NP 경우/NNC))
+   (S (NP-SBJ (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (VP (VP (NP-ADV (NP 지지도/NNC)
+                                                   (NP 24/NNU
+                                                       퍼센트/NNX+으로/PAD))
+                                           (NP-ADV 대통령/NNC+후보/NNC+들/XSF+중/NNX)
+                                           (VP (NP-OBJ 2/NNU
+                                                       위/NNX+을/PCA)
+                                               달리/VV+고/ECS))
+                                       있/VX+는/EAN)))
+                             (NP 겐나디/NPR
+                                 쥬가노프/NPR
+                                 공산/NNC+당수/NNC+과/PCJ))
+                         (NP 푸틴/NPR
+                             대행/NNC+이/PCA))
+                 (VP (VP (VV 대결/NNC+하/XSV+게/ECS))
+                     되/VX+을/EAN))
+              (NP 가능성/NNC+이/PCA))
+      (ADJP (ADVP 가장/ADV)
+            (ADJP 크/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>지지도 24 퍼센트로 대통령후보들중 2 위를 달리고 있는 겐나디 쥬가노프 공산당수와 푸틴 대행</term>
+	    </Arg>
+	    <Rel>
+	      <term>대결하게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>될</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

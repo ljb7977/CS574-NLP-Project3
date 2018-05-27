@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>분신자살</lemma>
+    <comment>Frames file for '분신자살' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>분신자살.01</id>
+      <edef>commit suicide by fire</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>분신자살하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>이타르 타스 통신등에 따르면 `독립 우크라이나'란 단체 소속이라고 밝힌 수십명의 청년들은 이날 낮 공산당 중앙당사에 난입, 건물안에 휘발유를 뿌린 뒤 경찰이 강제진압할 경우, 당사에 불을 지르고 분신자살하겠다고 위협하고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이타르/NPR
+                   타스/NPR
+                   통신/NNC+등/NNX+에/PAD)
+          (VP 따르/VV+으면/ECS)))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+		 (S (NP-SBJ *T*-1)
+		    (VP (S-COMP (NP-SBJ *pro*)
+				(VP (NP (NP `/SLQ
+					    독립/NNC
+					    우크라이나/NPR
+					    '/SRQ
+					    이라는/PAN)
+					(NP 단체/NNC
+						소속/NNC+이/CO+라고/PAD))))
+			밝히/VV+은/EAN)))
+	      (NP (NP 수십/NNU+명/NNX+의/PAN)
+		  (NP 청년/NNC+들/XSF+은/PAU)))
+      (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+			 (VP (S (NP-SBJ *pro*)
+				(VP (NP-ADV 이날/NNC
+						낮/NNC)
+				    (VP (NP-COMP 공산당/NPR
+						       중앙/NNC+당사/NNC+에/PAD)
+					(VV 난입/NNC))))
+			     ,/SCM
+			     (VP (NP-COMP 건물/NNC+안/NNC+에/PAD)
+				 (NP-OBJ 휘발유/NNC+을/PCA)
+				 뿌리/VV+은/EAN)))
+		      (NP 뒤/NNC))
+	      (VP (S-COMP (NP-ADV (S (NP-SBJ 경찰/NNC+이/PCA)
+				     (VP (NP-OBJ *pro*)
+					 (VV 강제진압/NNC+하/XSV+을/EAN)))
+				  (NP 경우/NNC))
+			  ,/SCM
+			  (S (NP-SBJ *pro*)
+			     (VP (VP (NP-COMP 당사/NNC+에/PAD)
+				     (NP-OBJ 불/NNC+을/PCA)
+				     지르/VV+고/ECS)
+				 (VP (VV 분신자살/NNC+하/XSV+겠/EPF+다/EFN+고/PAD)))))
+		  (VV 위협/NNC+하/XSV+고/ECS)))
+	  있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>경찰이 강제진압할 경우</term>
+	    </Arg>
+	    <Rel>
+	      <term>분신자살하겠다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>축출</lemma>
+    <comment>Frames file for '축출' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>축출.01</id>
+      <edef>expel</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing expelled"/>
+	<role argnum="2" argrole="expel from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>축출되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 신문은 자체 여론조사 결과를 인용, 노동당에서 축출된 리빙스턴에게 표를 던지겠다는 응답자가 68 퍼센트에 달해 13 퍼센트를 얻는 데 그친 돕슨 후보를 크게 앞질렀다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           신문/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 자체/NNC
+                      여론/NNC+조사/NNC
+                      결과/NNC+을/PCA)
+              (VV 인용/NNC)))
+       ,/SCM
+       (VP (S-COMP (NP-SBJ (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (VP (NP-COMP (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (VP (NP-COMP 노동당/NPR+에서/PAD)
+                                                        (VV 축출/NNC+되/XSV+은/EAN))))
+                                              (NP 리빙스턴/NPR+에게/PAD))
+                                     (NP-OBJ 표/NNC+을/PCA)
+                                     던지/VV+겠/EPF+다는/EAN)))
+                           (NP 응답자/NNC+이/PCA))
+                   (VP (S (NP-SBJ *pro*)
+                          (VP (NP-COMP 68/NNU
+                                       퍼센트/NNX+에/PAD)
+                              달하/VV+어/ECS))
+                       (VP (NP-OBJ (S (WHNP-3 *op*)
+                                      (S (NP-SBJ *T*-3)
+                                         (VP (NP-COMP (S (NP-SBJ *pro*)
+                                                         (VP (NP-OBJ 13/NNU
+                                                                     퍼센트/NNX+을/PCA)
+                                                             얻/VV+은/EAN))
+                                                      (NP 데/NNX))
+                                             그치/VV+은/EAN)))
+                                   (NP 돕슨/NPR
+                                       후보/NNC+을/PCA))
+                           (VP (ADVP (ADV 크/VJ+게/ECS))
+                               (VP 앞지르/VV+었/EPF+다/EFN+고/PAD)))))
+           전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=리빙스턴</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>노동당</term>
+	    </Arg>
+	    <Rel>
+	      <term>축출된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

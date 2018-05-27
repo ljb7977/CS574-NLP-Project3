@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+<predicate>
+  <lemma>강경하다</lemma>
+  <comment>Frames file for '강경하다' based on sentences in Virginia and
+  Newswire Corpus</comment>
+  <frameset>
+    <id>강경하.01</id>
+    <edef>firm</edef>
+    <roleset>
+      <role argnum="1" argrole="firm thing"/>
+    </roleset>
+    <frame>
+      <mapping>
+	<rel/>
+	<mapitem src="sbj" trg="arg1"/>
+      </mapping>
+      <example>
+	<text>3200014:9: 미국은 18 일 총통 선거에서 야당인 민진당의 천수이볜 (진수편) 후보가 당선된 타이완을 방어하기 위해 중국에 대해 더욱 강경한 입장을 취해야 한다고 토머스 딜레이 미 하원 공화당 원내총무가 19 일 말했다.</text>
+        <parse>
+(S (S-COMP-3 (NP-SBJ 미국/NPR+은/PAU)
+             (VP (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                       (VP (NP-OBJ (S (NP-ADV 18/NNU
+                                                              일/NNX)
+                                                      (NP-ADV 총통/NNC
+                                                              선거/NNC+에서/PAD)
+                                                      (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                                                        (S (NP-SBJ *T*-1)
+                                                                           (VP (NP 야당/NNC+이/CO+은/EAN))))
+                                                                     (NP 민진당/NPR+의/PAN))
+                                                                 (NP 천수이볜/NPR
+                                                                     (PRN -LRB-/SLQ
+                                                                          (NP ^CNT+진수편/NPR)
+                                                                          ^CNT+-RRB-/SRQ)
+                                                                     후보/NNC+이/PCA))
+                                                         (VP (VV 당선/NNC+되/XSV+은/EAN))))
+                                                   (NP 타이완/NPR+을/PCA))
+                                           (VV 방어/NNC+하/XSV+기/ENM))))
+                            위하/VV+어/ECS))
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (NP-COMP 중국/NPR+에/PAD)
+                                대하/VV+어/ECS))
+                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (ADJP (ADVP 더욱/ADV)
+                                                 (ADJP (VJ 강경/NNC+하/XSJ+은/EAN)))))
+                                     (NP 입장/NNC+을/PCA))
+                             취하/VV+어야/ECS)))
+                 하/VX+는다/EFN+고/PAD))
+   (S (NP-SBJ (NP 토머스/NPR
+                  딜레이/NPR)
+              (NP 미/NPR
+                  하원/NNC
+                  공화당/NPR
+                  원내/NNC+총무/NNC+이/PCA))
+      (VP (NP-ADV 19/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-3)
+              말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	</parse>
+        <relation>
+	  <Arg n="1">
+	    <term>*trace*=입장</term>
+	  </Arg>
+	  <Arg n="M">
+	    <f>ADV</f>
+	    <term>더욱</term>
+	  </Arg>
+	  <Rel>
+	    <term>강경한</term>
+	  </Rel>
+        </relation>
+      </example>
+    </frame>
+  </frameset>
+</predicate>
+</framefile>

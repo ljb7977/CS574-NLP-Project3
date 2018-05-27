@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>불분명</lemma>
+    <comment>Frames file for '불분명' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>불분명.01</id>
+      <edef>obscure</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being obscure"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>불분명하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>매케인 의원은 이날 중 기자회견을 갖고 이러한 결심을 발표할 예정이지만 경선을 완전히 포기하는 것인지, 아니면 선거운동을 잠시 중단하는 것인지의 여부는 아직 불분명하다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 매케인/NPR
+                         의원/NNC+은/PAU)
+                 (VP (NP-ADV 이날/NNC
+                             중/NNX)
+                     (VP (VP (NP-OBJ 기자/NNC+회견/NNC+을/PCA)
+                             갖/VV+고/ECS)
+                         (VP (NP-OBJ 이러한/DAN
+                                     결심/NNC+을/PCA)
+                             (VV 발표/NNC+하/XSV+을/EAN)))))
+              (NP 예정/NNC+이/CO+지만/ECS))))
+   (S (NP-SBJ (S (S (NP-SBJ *pro*)
+                    (VP (VP (NP-OBJ 경선/NNC+을/PCA)
+                            (VP (ADVP 완전히/ADV)
+                                (VP (VV 포기/NNC+하/XSV+는/EAN))))
+                        (VX 것/NNX+이/CO+는지/EFN)))
+                 ,/SCM
+                 (ADCP 아니면/ADC)
+                 (S (NP-SBJ *pro*)
+                    (VP (VP (NP-OBJ 선거/NNC+운동/NNC+을/PCA)
+                            (VP (NP-ADV 잠시/NNC)
+                                (VP (VV 중단/NNC+하/XSV+는/EAN))))
+                        (VX 것/NNX+이/CO+은지/EFN+의/PAN))))
+              (NP 여부/NNC+은/PAU))
+      (ADJP (ADVP 아직/ADV)
+            (ADJP (VJ 불분명/NNC+하/XSJ+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>경선을 완전히 포기하는 것인지, 아니면 선거운동을 잠시 중단하는 것인지의 여부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>아직</term>
+	    </Arg>
+	    <Rel>
+	      <term>불분명하다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

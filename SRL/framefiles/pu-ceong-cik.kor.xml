@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부정직</lemma>
+    <comment>Frames file for '부정직' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부정직.01</id>
+      <edef>dishonest</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being dishonest"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부정직하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 증권거래위원회(SEC)가 기업의 부정직한 영업 실적 신고와 재무보고서의 내용부실에 관해 주의를 촉구하고 나섰다.</text>
+	  <parse>
+(S (NP-SBJ 미국/NPR
+           증권/NNC+거래/NNC+위원회/NNC
+           (PRN -LRB-/SLQ
+                SEC/NFW
+                -RRB-/SRQ)
+           이/PCA)
+   (VP (VP (S (NP-SBJ *pro*)
+              (VP (NP-COMP (NP 기업/NNC+의/PAN)
+                           (NP (NP (S (WHNP-1 *op*)
+                                      (S (NP-SBJ *T*-1)
+                                         (ADJP (VJ 부정직/NNC+하/XSJ+은/EAN))))
+                                   (NP 영업/NNC
+                                       실적/NNC
+                                       신고/NNC+과/PCJ))
+                               (NP (NP 재무/NNC+보고서/NNC+의/PAN)
+                                   (NP 내용/NNC+부실/NNC+에/PAD))))
+                  관하/VV+어/ECS))
+           (VP (NP-OBJ 주의/NNC+을/PCA)
+               (VV 촉구/NNC+하/XSV+고/ECS)))
+       (VP 나서/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=영업 실적 신고</term>
+	    </Arg>
+	    <Rel>
+	      <term>부정직한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고안</lemma>
+    <comment>Frames file for '고안' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>고안.01</id>
+      <edef>devise</edef>
+      <roleset>
+	<role argnum="0" argrole="deviser"/>
+	<role argnum="1" argrole="thing devised"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고안하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이와 관련, 세계은행은 "가난한 공동체사회는 독자적으로 그들 자신의 부족함을 평가하고 삶의 조건을 개선하기 위한 방안을 고안해 나갈 수 있다"고 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+과/PAD)
+          (VV 관련/NNC)))
+   ,/SCM
+   (S (NP-SBJ 세계은행/NPR+은/PAU)
+      (VP (S-COMP "/SLQ
+                  (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (ADJP (VJ 가난/NNC+하/XSJ+은/EAN))))
+                          (NP 공동체/NNC+사회/NNC+은/PAU))
+                  (VP (VP (VP (ADVP (ADV 독자/NNC+적/XSF+으로/PAD))
+                              (VP (VP (NP-OBJ (NP 그/NPN+들/XSF
+                                                  자신/NNC+의/PAN)
+                                              (NP 부족함/NNC+을/PCA))
+                                      (VV 평가/NNC+하/XSV+고/ECS))
+                                  (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                 (S (NP-SBJ *T*-2)
+                                                    (VP (S-OBJ (NP-SBJ *pro*)
+                                                               (VP (NP-OBJ (NP 삶/NNC+의/PAN)
+                                                                           (NP 조건/NNC+을/PCA))
+                                                                   (VV 개선/NNC+하/XSV+기/ENM)))
+                                                        위하/VV+은/EAN)))
+                                              (NP 방안/NNC+을/PCA))
+                                      (VV 고안/NNC+하/XSV+어/ECS))))
+                          나가/VX+을/EAN)
+                      (VX 수/NNX
+                          있/VJ+다/EFN))
+                  "/SRQ
+                  고/PAD)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>가난한 공동체사회</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>독자적으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>삶의 조건을 개선하기 위한 방안</term>
+	    </Arg>
+	    <Rel>
+	      <term>고안해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>나갈</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

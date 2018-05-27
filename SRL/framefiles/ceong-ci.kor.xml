@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>정지</lemma>
+    <comment>Frames file for '정지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>정지.01</id>
+      <edef>stop</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing stopped"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>정지시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>방송은 그러나 카드 회사가 이번 절도 사건을 금융기관에 통보했음에도 불구, 금융기관들이 이 사실을 고객들에게 알려 주거나 또는 해당 카드의 거래를 정지시키지 않았다면서 문제의 카드 계좌 상당수가 현재까지도 열려 있다고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 방송/NNC+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S-COMP (S (NP-SBJ *pro*)
+                      (VP (S-COMP (NP-SBJ 카드/NNC
+					      회사/NNC+이/PCA)
+				  (VP (NP-OBJ 이번/NNC
+						  절도/NNC
+						  사건/NNC+을/PCA)
+				      (NP-COMP 금융/NNC+기관/NNC+에/PAD)
+				      (VV 통보/NNC+하/XSV+었/EPF+음/ENM+에/PAD+도/PAU)))
+                          (VV 불구/NNC)))
+                   ,/SCM
+                   (S (NP-SBJ 금융/NNC+기관/NNC+들/XSF+이/PCA)
+                      (VP (VP (VP (NP-OBJ 이/DAN
+                                          사실/NNC+을/PCA)
+                                  (NP-COMP 고객/NNC+들/XSF+에게/PAD)
+                                  알리/VV+어/ECS)
+                              주/VX+거나/ECS)
+                          (ADCP 또는/ADC)
+                          (VP (VP (NP-OBJ (NP 해당/NNC
+                                              카드/NNC+의/PAN)
+                                          (NP 거래/NNC+을/PCA))
+                                  (VV 정지/NNC+시키/XSV+지/ECS))
+                              않/VX+었/EPF+다면서/ECS)))
+                   (S (NP-SBJ (NP (NP 문제/NNC+의/PAN)
+                                  (NP 카드/NNC
+                                      계좌/NNC))
+                              (NP 상당수/NNC+이/PCA))
+                      (VP (VP (NP-ADV 현재/NNC+까지/PAU+도/PAU)
+                              (VP 열리/VV+어/ECS))
+                          있/VX+다/EFN+고/PAD)))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>카드 회사가 이번 절도 사건을 금융기관에 통보했음에도 불구</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>금융기관들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>해당 카드의 거래</term>
+	    </Arg>
+	    <Rel>
+	      <term>정지시키지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았다면서</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

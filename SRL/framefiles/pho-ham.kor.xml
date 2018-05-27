@@ -1,0 +1,149 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>포함</lemma>
+    <comment>Frames file for '포함' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>포함.01</id>
+      <edef>include</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing included"/>
+	<role argnum="2" argrole="group"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>포함하다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>위에 열거한 세 가지 상황은 개활지나 급조한 거점에서 관측된 표적들만을 포함하고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ *T*-1)
+                     (VP (NP-ADV 위/NNC+에/PAD)
+                         (VP (VV 열거/NNC+하/XSV+은/EAN))))))
+           (NP 세/NNU
+               가지/NNC
+               상황/NNC+은/PAU))
+   (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                      (S (NP-SBJ *T*-2)
+                         (VP (NP-ADV (NP 개활지/NNC+이나/PCJ)
+                                     (NP (S (WHNP-3 *op*)
+                                            (S (NP-SBJ *pro*)
+                                               (VP (NP-OBJ *T*-3)
+                                                   (VV 급조/NNC+하/XSV+은/EAN))))
+                                         (NP 거점/NNC+에서/PAD)))
+                             (VP (VV 관측/NNC+되/XSV+은/EAN)))))
+                   (NP 표적/NNC+들/XSF+만/PAU+을/PCA))
+           (VV 포함/NNC+하/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>위에 열거한 세 가지 상황</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>만을</f>
+	      <term>개활지나 급조한 거점에서 관측된 표적들</term>
+	    </Arg>
+	    <Rel>
+	      <term>포함하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>포함되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>표적 일람표에는 통상 어떤 표적들이 포함되는가?</text>
+	  <parse>
+(S (NP-COMP-1 표적/NNC
+              일람표/NNC+에/PAD+은/PAU)
+   (S (ADVP 통상/ADV)
+      (S (NP-SBJ 어떤/DAN
+                 표적/NNC+들/XSF+이/PCA)
+         (VP (NP-COMP *T*-1)
+             (VV 포함/NNC+되/XSV+는가/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>표적 일람표</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>통상</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>어떤 표적들</term>
+	    </Arg>
+	    <Rel>
+	      <term>포함되는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>포함시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>김 특무장, 나는 네 보고에 거짓말을 했다는 걸 포함시키지 않기로 했다.</text>
+	  <parse>
+(S (NP-VOC 김/NPR
+           특무장/NNC)
+   ,/SCM
+   (S (NP-SBJ 나/NPN+은/PAU)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (VP (NP-COMP 너/NPN+의/PAN
+                                   보고/NNC+에/PAD)
+                          (NP-OBJ (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ-LV 거짓말/NNC+을/PCA)
+                                         (LV 하/VV+었/EPF+다는/EAN)))
+                                  (NP 것/NNX+을/PCA))
+                          (VV 포함/NNC+시키/XSV+지/ECS))
+                      않/VX+기/ENM+으로/PAD))
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>네 보고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>거짓말을 했다는 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>포함시키지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않기로</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

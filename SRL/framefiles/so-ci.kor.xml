@@ -1,0 +1,69 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소지</lemma>
+    <comment>Frames file for '소지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>소지.01</id>
+      <edef>carry</edef>
+      <roleset>
+	<role argnum="0" argrole="carrier"/>
+	<role argnum="1" argrole="thing carried"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>호주를 방문한 영국 여왕 엘리자베스 2 세가 시드니의 회의장에 도착하기 직전 칼과 폭발물을 소지한 무장괴한이 경찰에 체포됐다고 영국 BBC 방송이 20 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-3 (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+				   (S (NP-SBJ *T*-1)
+				      (VP (NP-OBJ 호주/NPR+을/PCA)
+					  (VV 방문/NNC+하/XSV+은/EAN))))
+				(NP 영국/NPR
+                                        여왕/NNC
+                                        엘리자베스/NPR
+                                        2/NNU
+                                        세/NNX+이/PCA))
+			(VP (NP-COMP (NP 시드니/NPR+의/PAN)
+				     (NP 회의장/NNC+에/PAD))
+			    (VV 도착/NNC+하/XSV+기/ENM)))
+                     (NP 직전/NNC))
+             (S (NP-SBJ (S (WHNP-2 *op*)
+                           (S (NP-SBJ *T*-2)
+                              (VP (NP-OBJ (NP 칼/NNC+과/PCJ)
+                                          (NP 폭발물/NNC+을/PCA))
+                                  (VV 소지/NNC+하/XSV+은/EAN))))
+                        (NP 무장/NNC+괴한/NNC+이/PCA))
+                (VP (NP-COMP 경찰/NNC+에/PAD)
+                    (VV 체포/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 영국/NPR
+              BBC/NFW
+              방송/NNC+이/PCA)
+      (VP (NP-ADV 20/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-3)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=무장괴한</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>칼과 폭발물</term>
+	    </Arg>
+	    <Rel>
+	      <term>소지한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

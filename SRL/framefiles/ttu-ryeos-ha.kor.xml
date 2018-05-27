@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뚜렷하</lemma>
+    <comment>Frames file for '뚜렷하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뚜렷하.01</id>
+      <edef>positive</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being positive"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뚜렷하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>특히 런던시장 선거 후보들의 선거유인물 발송비용을 정부가 부담하도록 하는 법안이 내주 중 의회에서 확정될 예정이어서 이때까지는 뚜렷한 결정이 내려지지 않을 것으로 보인다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (ADVP 특히/ADV)
+          (VP (NP (S (NP-SBJ (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (VP (S-COMP (NP-OBJ-1 (NP 런던/NPR+시장/NNC
+                                                             선거/NNC
+                                                             후보/NNC+들/XSF+의/PAN)
+                                                         (NP 선거/NNC+유인물/NNC
+                                                             발송/NNC+비용/NNC+을/PCA))
+                                               (S (NP-SBJ 정부/NNC+이/PCA)
+                                                  (VP (NP-OBJ *T*-1)
+                                                      (VV 부담/NNC+하/XSV+도록/ECS))))
+                                       하/VV+는/EAN)))
+                             (NP 법안/NNC+이/PCA))
+                     (VP (NP-ADV 내주/NNC
+                                 중/NNX)
+                         (NP-ADV 의회/NNC+에서/PAD)
+                         (VP (VV 확정/NNC+되/XSV+을/EAN))))
+                  (NP 예정/NNC+이/CO+어서/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-ADV 이때/NNC+까지/PAU+은/PAU)
+                      (S (NP-SBJ (S (WHNP-3 *op*)
+                                    (S (NP-SBJ *T*-3)
+                                       (ADJP 뚜렷하/VJ+은/EAN)))
+                                 (NP 결정/NNC+이/PCA))
+                         (VP (VP (VV 내리/VV+어지/XSV+지/ECS))
+                             않/VX+을/EAN)))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=결정</term>
+	    </Arg>
+	    <Rel>
+	      <term>뚜렷한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

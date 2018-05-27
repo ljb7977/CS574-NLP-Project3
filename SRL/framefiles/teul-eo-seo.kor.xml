@@ -1,0 +1,138 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>들어서</lemma>
+    <comment>Frames file for '들어서' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>들어서.01</id>
+      <edef>get into</edef>
+      <roleset>
+	<role argnum="1" argrole="entity in motion"/>
+	<role argnum="2" argrole="destination"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>들어서다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>러시아 연방군의 대 체첸 테러 작전은 현재 "완료국면에 들어섰다"고 블라디미르 푸틴 대통령 직무대행겸 총리가 10 일 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP 러시아/NPR
+                         연방군/NNC+의/PAN)
+                     (NP 대/DAN
+                         체첸/NPR
+                         테러/NNC
+                         작전/NNC+은/PAU))
+             (VP (NP-ADV 현재/NNC)
+                 "/SLQ
+                 (VP (NP-COMP 완료/NNC+국면/NNC+에/PAD)
+                     들어서/VV+었/EPF+다/EFN)
+                 "/SRQ
+                 고/PAD))
+   (S (NP-SBJ 블라디미르/NPR
+              푸틴/NPR
+              대통령/NNC
+              직무/NNC+대행/NNC+겸/NNX
+              총리/NNC+이/PCA)
+      (VP (NP-ADV 10/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>러시아 연방군의 대 체첸 테러 작전</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현재</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>완료국면</term>
+	    </Arg>
+	    <Rel>
+	      <term>들어섰다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>송국장은 "관련 지도는 뤼순(여순) 감옥 근처 매장지 부근을 표시, 신빙성이 매우 높다"면서 "1 만 5 천여평에 이르는 문제의 장소는 당초 항일운동을 하던 중국 애국자의 묘소였으나 현재는 공동묘지로 바뀌었으며 부근에 아파트가 들어서고 있다"고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 송/NPR+국장/NNC+은/PAU)
+   (VP (S "/SLQ
+          (S (NP-SBJ 관련/DAN
+                     지도/NNC+은/PAU)
+             (VP (NP-OBJ 뤼순/NPR
+                         (PRN -LRB-/SLQ
+                              (NP 여순/NPR)
+                              -RRB-/SRQ)
+                         감옥/NNC
+                         근처/NNC
+                         매장지/NNC
+                         부근/NNC+을/PCA)
+                 (VV 표시/NNC)))
+          ,/SCM
+          (S (NP-SBJ 신빙성/NNC+이/PCA)
+             (ADJP (ADVP 매우/ADV)
+                   (ADJP 높/VJ+다/EFN)))
+          "/SRQ
+          면서/ECS)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP-COMP 1/NNU
+                                                 만/NNU
+                                                 5/NNU
+                                                 천/NNU+여/XSF+평/NNX+에/PAD)
+                                        이르/VV+는/EAN)))
+                              (NP (NP 문제/NNC+의/PAN)
+                                  (NP 장소/NNC+은/PAU)))
+                      (VP (NP-ADV 당초/NNC)
+                          (VP (NP (NP (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (VP (NP-OBJ 항일/NNC+운동/NNC+을/PCA)
+                                                하/VV+던/EAN)))
+                                      (NP 중국/NPR
+                                          애국자/NNC+의/PAN))
+                                  (NP 묘소/NNC+이/CO+었/EPF+으나/ECS)))))
+                   (S (NP-SBJ *pro*)
+                      (VP (NP-ADV 현재/NNC+은/PAU)
+                          (VP (NP-COMP 공동/NNC+묘지/NNC+으로/PAD)
+                              바뀌/VV+었/EPF+으며/ECS)))
+                   (S (NP-COMP-3 부근/NNC+에/PAD)
+                      (S (NP-SBJ 아파트/NNC+이/PCA)
+                         (VP (VP (NP-COMP *T*-3)
+				 들어서/VV+고/ECS)
+                             있/VX+다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 설명/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>부근</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>아파트</term>
+	    </Arg>
+	    <Rel>
+	      <term>들어서고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

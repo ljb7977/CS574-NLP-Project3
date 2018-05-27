@@ -1,0 +1,350 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수용</lemma>
+    <comment>Frames file for '수용' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수용.01</id>
+      <edef>accommodate</edef>
+      <roleset>
+	<role argnum="0" argrole="entity accommodating"/>
+	<role argnum="1" argrole="entity accommodated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수용하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>대대 위생소에서는 환자를 몇 명이나 수용할 수 있지?</text>
+	  <parse>
+(S (NP-SBJ 대대/NNC
+	       위생소/NNC+에서/PCA+은/PAU)
+   (VP (VP (NP-OBJ 환자/NNC+을/PCA)
+	   (VP (NP-ADV 몇/NNU
+			 명/NNX+이나/PAU)
+	       (VP (VV 수용/NNC+하/XSV+을/EAN))))
+       (VX 수/NNX
+	     있/VJ+지/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>대대 위생소</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>환자</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>몇 명이나</term>
+	    </Arg>
+	    <Rel>
+	      <term>수용할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있지</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>수용되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 또 "모잠비크에서 가장 많은 4 만 5 천명의 이재민이 수용돼 있는 치하켈라네 수용소와 이제 막 주민들이 돌아오기 시작한 초크웨 마을의 식수난은 매우 심각한 상황"이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADCP 또/ADC)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (NP (NP (S (WHNP-4 *op*)
+				      (S (NP-SBJ (NP (S (WHNP-1 *op*)
+							(S (NP-SBJ *T*-1)
+							   (ADJP (NP-ADV 모잠비크/NPR+에서/PAD)
+								 (ADVP 가장/ADV)
+								 (ADJP 많/VJ+은/EAN))))
+						     (NP 4/NNU
+							 만/NNU
+							 5/NNU
+							 천/NNU+명/NNX+의/PAN))
+						 (NP 이재민/NNC+이/PCA))
+					 (VP (VP (NP-COMP *T*-4)
+					         (VV 수용/NNC+되/XSV+어/ECS))
+					     있/VX+는/EAN)))
+                                   (NP 치하켈라네/NPR
+						 수용소/NNC+과/PCJ))
+                               (NP (S (WHNP-2 *op*)
+                                      (S (ADVP (ADVP 이제/ADV)
+                                               (ADVP 막/ADV))
+                                         (S (NP-SBJ 주민/NNC+들/XSF+이/PCA)
+                                            (VP (S-OBJ (NP-SBJ *pro*)
+						       (VP (NP-COMP *T*-2)
+							   돌아오/VV+기/ENM))
+                                                (VV 시작/NNC+하/XSV+은/EAN)))))
+                                   (NP 초크웨/NPR
+                                       마을/NNC+의/PAN)))
+                           (NP 식수난/NNC+은/PAU))
+                   (VP (NP (S (WHNP-3 *op*)
+                              (S (NP-SBJ *T*-3)
+                                 (ADJP (ADVP 매우/ADV)
+                                       (ADJP 심각하/VJ+은/EAN))))
+                           (NP 상황/NNC)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD)
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>모잠비크에서 가장 많은 4 만 5 천명의 이재민</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=치하켈라네 수용소</term>
+	    </Arg>
+	    <Rel>
+	      <term>수용돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>수용.02</id>
+      <edef>accept</edef>
+      <roleset>
+	<role argnum="0" argrole="acceptor"/>
+	<role argnum="1" argrole="thing accepted"/>
+	<role argnum="2" argrole="accepted from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수용하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일본 자동차메이커들의 경우 닛산(일산) 자동차가 프랑스 르노로부터 36.8 퍼센트, 마쓰다가 미국 포드로부터 33.4 퍼센트의 출자를 수용한 이외에 후지(부사) 중공업도 미 제너랄 모터스(GM)로부터 20.0 퍼센트를 받아들이기로 하는 등 외국과의 자본 제휴가 잇따르고 있다.</text>
+	  <parse>
+(S (NP-ADV (NP 일본/NPR
+               자동차/NNC+메이커/NNC+들/XSF+의/PAN)
+           (NP 경우/NNC))
+   (NP-ADV (S (S (NP-SBJ 닛산/NPR
+                         (PRN -LRB-/SLQ
+                              (NP 일산/NPR)
+                              -RRB-/SRQ)
+                         자동차/NNC+이/PCA)
+                 (VP (NP-COMP 프랑스/NPR
+                              르노/NPR+으로부터/PAD)
+                     (NP-OBJ 36.8/NNU
+                             퍼센트/NNX)
+                     (VV *?*)))
+              ,/SCM
+              (S (NP-SBJ 마쓰다/NPR+이/PCA)
+                 (VP (NP-COMP 미국/NPR
+                              포드/NPR+으로부터/PAD)
+                     (NP-OBJ (NP 33.4/NNU
+                                 퍼센트/NNX+의/PAN)
+                             (NP 출자/NNC+을/PCA))
+                     (VV 수용/NNC+하/XSV+은/EAN))))
+           (NP 이외/NNC+에/PAD))
+   (S (NP-SBJ (NP (S (NP-SBJ *pro*)
+                     (VP (S-COMP (NP-SBJ 후지/NPR
+                                         (PRN -LRB-/SLQ
+                                              (NP 부사/NPR)
+                                              -RRB-/SRQ)
+                                         중공업/NNC+도/PAU)
+                                 (VP (NP-COMP 미/NPR
+                                              제너랄/NPR
+                                              모터스/NPR
+                                              (PRN -LRB-/SLQ
+                                                   (NP GM/NFW)
+                                                   -RRB-/SRQ)
+                                              으로부터/PAD)
+                                     (NP-OBJ 20.0/NNU
+                                             퍼센트/NNX+을/PCA)
+                                     받아들이/VV+기/ENM+으로/PAD))
+                         하/VV+는/EAN))
+                  (NP 등/NNX))
+              (NP (NP 외국/NNC+과/PAD+의/PAN)
+                  (NP 자본/NNC
+                      제휴/NNC+이/PCA)))
+      (VP (VP 잇따르/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>마쓰다</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로부터</f>
+	      <term>미국 포드</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>33.4 퍼센트의 출자</term>
+	    </Arg>
+	    <Rel>
+	      <term>수용한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>수용되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>박총장은 또 "시민단체들의 낙천, 낙선운동이 정치권에 전폭적으로 수용되지 않아 시민단체들이 불만을 품고 있는 것으로 알고 있지만 현행법 테두리 안에서 활동할 것을 기대한다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 박/NPR+총장/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-COMP (S (S (NP-SBJ (NP 시민/NNC+단체/NNC+들/XSF+의/PAN)
+                                                     (NP (NP 낙천/NNC)
+                                                         ,/SCM
+                                                         (NP 낙선/NNC+운동/NNC+이/PCA)))
+                                             (VP (VP (NP-COMP 정치권/NNC+에/PAD)
+                                                     (VP (NP-ADV 전폭/NNC+적/XSF+으로/PAD)
+                                                         (VP (VV 수용/NNC+되/XSV+지/ECS))))
+                                                 않/VX+어/ECS))
+                                          (S (NP-SBJ 시민/NNC+단체/NNC+들/XSF+이/PCA)
+                                             (VP (VP (NP-OBJ 불만/NNC+을/PCA)
+                                                     품/VV+고/ECS)
+                                                 있/VX+는/EAN)))
+                                       (NP 것/NNX+으로/PAD))
+                              알/VV+고/ECS)
+                          있/VX+지만/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                     (VP (NP-ADV 현행법/NNC
+                                                 테두리/NNC
+                                                 안/NNX+에서/PAD)
+                                         (VP (VV 활동/NNC+하/XSV+을/EAN))))
+                                  (NP 것/NNX+을/PCA))
+                          (VV 기대/NNC+하/XSV+는다/EFN)))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>시민단체들의 낙천, 낙선운동</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>정치권</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>전폭적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>수용되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않아</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>수용.03</id>
+      <edef>expropriate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing expropriated"/>
+	<role argnum="2" argrole="expropriated from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel></rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>로버트 무가베 대통령은 이날 발행한 임시관보를 통해 정부가 백인소유의 농지를 보상없이 수용할 수 있는 권한을 갖도록 헌법을 개정할 계획이라고 밝히고 흑인들의 침범행위를 중단하라고 지시했다.</text>
+	  <parse>
+(S (NP-SBJ 로버트/NPR
+           무가베/NPR
+           대통령/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *pro*)
+                            (VP (NP-ADV 이날/NNC)
+                                (VP (NP-OBJ *T*-1)
+                                    (VV 발행/NNC+하/XSV+은/EAN)))))
+                      (NP 임시/NNC+관보/NNC+을/PCA))
+              통하/VV+어/ECS))
+       (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+			   (VP (S (NP-SBJ *pro*)
+				  (VP (NP-OBJ (S (NP-SBJ 정부/NNC+이/PCA)
+						 (VP (VP (NP-OBJ (NP 백인/NNC+소유/NNC+의/PAN)
+								 (NP 농지/NNC+을/PCA))
+							 (VP (ADVP 보상/NNC+없이/ADV)
+							     (VP (VV 수용/NNC+하/XSV+을/EAN))))
+						     (VX 수/NNX
+							   있/VJ+는/EAN)))
+					      (NP 권한/NNC+을/PCA))
+				      갖/VV+도록/ECS))
+			       (VP (NP-OBJ 헌법/NNC+을/PCA)
+				   (VV 개정/NNC+하/XSV+을/EAN))))
+			(NP 계획/NNC+이라고/PAD))
+               밝히/VV+고/ECS)
+           (VP (S-COMP (NP-SBJ *pro*)
+                       (VP (NP-OBJ (NP 흑인/NNC+들/XSF+의/PAN)
+                                   (NP 침범/NNC+행위/NNC+을/PCA))
+                           (VV 중단/NNC+하/XSV+으라/EFN+고/PAD)))
+               (VV 지시/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>정부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>백인소유의 농지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>보상없이</term>
+	    </Arg>
+	    <Rel>
+	      <term>수용할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

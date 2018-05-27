@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탑승</lemma>
+    <comment>Frames file for '탑승' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>탑승.01</id>
+      <edef>board</edef>
+      <roleset>
+	<role argnum="0" argrole="passenger"/>
+	<role argnum="1" argrole="vehicle"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탑승하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>차량 행군 중엔 선두 차량에 있는 포대 선임 군관의 총신문을 중계할 수 있도록 포반마다 성원 한 명이 차량의 잘 보이는 위치에 탑승합니다.</text>
+	  <parse>
+(S (NP-ADV 차량/NNC
+           행군/NNC
+           중/NNX+에/PAD+은/PAU)
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (ADJP (NP-COMP 선두/NNC
+                                               차량/NNC+에/PAD)
+                                      있/VJ+는/EAN)))
+                          (NP 포대/NNC
+                              선임/NNC
+                              군관/NNC+의/PAN))
+                      (NP 통신문/NNC+을/PCA))
+              (VV 중계/NNC+하/XSV+을/EAN))
+          (VX 수/NNX
+              있/VJ+도록/ECS)))
+   (S (NP-ADV 포반/NNC+마다/PAU)
+      (S (NP-SBJ 성원/NNC
+                 한/NNU
+                 명/NNX+이/PCA)
+         (VP (NP-COMP (NP 차량/NNC+의/PAN)
+                      (NP (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (ADVP 잘/ADV)
+                                    (VP 보이/VV+는/EAN))))
+                          (NP 위치/NNC+에/PAD)))
+             (VV 탑승/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>차량 행군 중엔</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>선두 차량에 있는 포대 선임 군관의 총신문을 중계할 수 있도록</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>포반마다 성원 한 명</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>차량의 잘 보이는 위치</term>
+	    </Arg>
+	    <Rel>
+	      <term>탑승합니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

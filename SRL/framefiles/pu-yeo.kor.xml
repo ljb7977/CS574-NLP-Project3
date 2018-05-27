@@ -1,0 +1,139 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부여</lemma>
+    <comment>Frames file for '부여' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>부여.01</id>
+      <edef>give</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing given"/>
+	<role argnum="2" argrole="given to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부여하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>노동당은 윤 대장에게 전군의 지휘 권한을 부여했다.</text>
+	  <parse>
+(S (NP-SBJ 노동당/NNC+은/PAU)
+   (VP (NP-COMP 윤/NPR
+		대장/NNC+에게/PAD)
+       (NP-OBJ 전군/NNC+의/PCA
+	       지휘/NNC
+	       권한/NNC+을/PCA)
+       (VV 부여/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN )
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>노동당</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>윤 대장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>전군의 지휘 권한</term>
+	    </Arg>
+	    <Rel>
+	      <term>부여했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>부여되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>탄약 분배에 늘 첫째 우선 순위가 부여됩니다.</text>
+	  <parse>
+(S (NP-COMP-1 탄약/NNC 
+	      분배/NNC+에/PAD) 
+   (ADVP 늘/ADV)
+   (S (NP-SBJ 첫째/NNU 
+	      우선/NNC 
+	      순위/NNC+이/PCA) 
+      (VP (NP-COMP *T*-1)
+	  (VV 부여/NNC+되/XSV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>탄약 분배</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>늘</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>첫째 우선 순위</term>
+	    </Arg>
+	    <Rel>
+	      <term>부여됩니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>부여받다</rel>
+	  <mapitem src="np-comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희 중대는 연대 목표 6을 탈취한 다음에는 안산동에 저지 진지를 편성하라는 임무를 부여받았지요.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+           중대/NNC+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 연대/NNC
+                              목표/NNC
+                              6/NNU+을/PCA)
+                      (VV 탈취/NNC+하/XSV+은/EAN)))
+               (NP 다음/NNC+에/PAD+은/PAU))
+       (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (NP-ADV 안산/NPR+동/XSF+에/PAD)
+                          (VP (NP-OBJ 저지/NNC
+                                      진지/NNC+을/PCA)
+                              (VV 편성/NNC+하/XSV+으라는/EAN))))
+                   (NP 임무/NNC+을/PCA))
+           (VV 부여/NNC+받/XSV+었/EPF+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>저희 중대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>연대 목표 6을 탈취한 다음에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>안산동에 저지 진지를 편성하라는 임무</term>
+	    </Arg>
+	    <Rel>
+	      <term>부여받았지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

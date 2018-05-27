@@ -1,0 +1,92 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뭉치</lemma>
+    <comment>Frames file for '뭉치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뭉치.01</id>
+      <edef>unite</edef>
+      <roleset>
+	<role argnum="0" argrole="uniter"/>
+	<role argnum="1" argrole="thing unified"/>
+	<role argnum="2" argrole="other things"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뭉치다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그는 또 최근 정치권에서 거론되고 있는 합당론을 의식한 듯 "민주당은 신의를 지키지 않는 정당, 한나라당은 나라를 망치고도 책임을 지키지 않는 정당, 민국당은 공천 탈락자들이 선거용으로 뭉친 정당이기 때문에 이들 정당에게는 기대할 것이 없다"고 비난했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (VP (NP-ADV 최근/NNC)
+                                            (NP-ADV 정치권/NNC+에서/PAD)
+                                            (VP (VV 거론/NNC+되/XSV+고/ECS)))
+                                        있/VX+는/EAN)))
+                              (NP 합당론/NNC+을/PCA))
+                      (VV 의식/NNC+하/XSV+은/EAN)))
+               (NP 듯/NNX))
+       (VP (S-COMP "/SLQ
+                   (NP-ADV (S (S (NP-SBJ 민주당/NPR+은/PAU)
+                                 (VP (NP (S (WHNP-2 *op*)
+                                            (S (NP-SBJ *T*-2)
+                                               (VP (VP (NP-OBJ 신의/NNC+을/PCA)
+                                                       지키/VV+지/ECS)
+                                                   않/VX+는/EAN)))
+                                         (NP 정당/NNC))))
+                              ,/SCM
+                              (S (NP-SBJ 한나라당/NPR+은/PAU)
+                                 (VP (NP (S (WHNP-3 *op*)
+                                            (S (NP-SBJ *T*-3)
+                                               (VP (VP (S (NP-SBJ *pro*)
+                                                          (VP (NP-OBJ 나라/NNC+을/PCA)
+                                                              망치/VV+고/ECS+도/PAU))
+                                                       (VP (NP-OBJ 책임/NNC+을/PCA)
+                                                           지키/VV+지/ECS))
+                                                   않/VX+는/EAN)))
+                                         (NP 정당/NNC))))
+                              ,/SCM
+                              (S (NP-SBJ 민국당/NPR+은/PAU)
+                                 (VP (NP (S (NP-SBJ 공천/NNC
+                                                    탈락자/NNC+들/XSF+이/PCA)
+                                            (VP (NP-ADV 선거/NNC+용/XSF+으로/PAD)
+                                                (VP 뭉치/VV+은/EAN)))
+                                         (NP 정당/NNC+이/CO+기/ENM)))))
+                           (NP 때문/NNX+에/PAD))
+                   (S (NP-SBJ (S (WHNP-4 *op*)
+                                 (S (NP-SBJ *pro*)
+                                    (VP (NP-COMP 이/NPN+들/XSF
+                                                 정당/NNC+에게/PAD+은/PAU)
+                                        (NP-OBJ *T*-4)
+                                        (VV 기대/NNC+하/XSV+을/EAN))))
+                              (NP 것/NNX+이/PCA))
+                      (ADJP 없/VJ+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           (VV 비난/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>공천 탈락자들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>선거용으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>뭉친</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

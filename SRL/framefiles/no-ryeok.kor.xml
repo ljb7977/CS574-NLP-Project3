@@ -1,0 +1,137 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>노력</lemma>
+    <comment>Frames file for '노력' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>노력.01</id>
+      <edef>endeavor</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="proposition"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>노력하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>9 일 미 언론 보도에 따르면 CIA와 FBI는 금년초 하원 특별정보위원회에 제출한 보고서에서 중국이 지난 90 년대 초부터 미국내 유학생은 물론 심지어 관광객들까지도 첩보원으로 이용, 군사 및 군사관련 기술 정보와 경제정보를 획득하려고 노력해 왔다고 보고했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (NP 9/NNU
+                       일/NNX)
+                   (NP 미/NPR
+                       언론/NNC
+                       보도/NNC+에/PAD))
+          따르/VV+으면/ECS))
+   (S (NP-SBJ (NP CIA/NFW+과/PCJ)
+              (NP FBI/NFW+은/PAU))
+      (VP (NP-ADV (S (WHNP-1 *op*)
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-ADV 금년/NNC+초/NNX)
+                            (VP (NP-COMP 하원/NNC
+                                         특별/NNC+정보/NNC+위원회/NNC+에/PAD)
+                                (NP-OBJ *T*-1)
+                                (VV 제출/NNC+하/XSV+은/EAN)))))
+                  (NP 보고서/NNC+에서/PAD))
+          (VP (S-COMP (NP-SBJ 중국/NPR+이/PCA)
+                      (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV 지난/DAN
+                                             90/NNU
+                                             년대/NNX
+                                             초/NNX+부터/PAU)
+                                     (ADVP (NP-COMP (NP 미국/NPR+내/NNX)
+                                                    (NP 유학생/NNC+은/PAU))
+                                           물론/ADV)
+                                     (ADVP 심지어/ADV)
+                                     (VP (NP-OBJ 관광객/NNC+들/XSF+까지/PAU+도/PAU)
+                                         (NP-COMP 첩보원/NNC+으로/PAD)
+                                         (VV 이용/NNC))))
+                              ,/SCM
+                              (VP (S-COMP (NP-SBJ *pro*)
+                                          (VP (NP-OBJ (NP (NP (NP 군사/NNC)
+                                                              (ADCP 및/ADC)
+                                                              (NP 군사/NNC+관련/NNC
+                                                                  기술/NNC))
+                                                          (NP 정보/NNC+과/PCJ))
+                                                      (NP 경제/NNC+정보/NNC+을/PCA))
+                                              (VV 획득/NNC+하/XSV+으려고/ECS)))
+                                  (VV 노력/NNC+하/XSV+어/ECS)))
+                          오/VX+었/EPF+다/EFN+고/PAD))
+              (VV 보고/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>지난 90 년대 초부터 미국내 유학생은 물론 심지어 관광객들까지도 첩보원으로 이용</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>려고</f>
+	      <term>군사 및 군사관련 기술 정보와 경제정보를 획득하</term>
+	    </Arg>
+	    <Rel>
+	      <term>노력해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>왔다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>앞으로는 세계적인 무한경쟁에서 생존할 수 있는 힘을 기르는 데 한층 노력해야 하기 때문이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ *pro*)
+              (VP (VP (NP-ADV 앞/NNC+으로/PAD+은/PAU)
+                      (VP (NP-COMP (S (NP-SBJ *pro*)
+                                      (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                     (VP (VP (NP-ADV (S (WHNP-1 *op*)
+                                                                        (S (NP-SBJ *T*-1)
+                                                                           (VP (NP 세계/NNC+적/XSF+이/CO+은/EAN))))
+                                                                     (NP 무한/NNC+경쟁/NNC+에서/PAD))
+                                                             (VP (VV 생존/NNC+하/XSV+을/EAN)))
+                                                         (VX 수/NNX
+                                                             있/VJ+는/EAN)))
+                                                  (NP 힘/NNC+을/PCA))
+                                          기르/VV+는/EAN))
+                                   (NP 데/NNX))
+                          (VP (ADVP 한층/ADV)
+                              (VP (VV 노력/NNC+하/XSV+어야/ECS)))))
+                  하/VX+기/ENM))
+           (NP 때문/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>앞으로는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>세계적인 무한경쟁에서 생존할 수 있는 힘을 기르는 데</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>한층</term>
+	    </Arg>
+	    <Rel>
+	      <term>노력해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>하기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

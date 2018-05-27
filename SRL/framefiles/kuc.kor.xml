@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>궂</lemma>
+    <comment>Frames file for '궂' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>궂.01</id>
+      <edef>bad</edef>
+      <roleset>
+	<role argnum="1" argrole="weather or work"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>궂다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>궂은 날씨 속에 등판한 박찬호는 4 이닝동안 7 안타와 볼 넷 2 개로 4 점을 잃으며 다시 제구력에 문제점을 노출했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (NP-ADV (NP (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (ADJP 궂/VJ+은/EAN)))
+                                 (NP 날씨/NNC))
+                             (NP 속/NNC+에/PAD))
+                     (VP (VV 등판/NNC+하/XSV+은/EAN)))))
+           (NP 박찬호/NPR+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 4/NNU
+                      이닝/NNX+동안/NNX)
+              (NP-ADV (NP 7/NNU
+                          안타/NNC+과/PCJ)
+                      (NP 볼/NNC
+                          넷/NNC
+                          2/NNU
+                          개/NNX+으로/PAD))
+              (VP (NP-OBJ 4/NNU
+                          점/NNX+을/PCA)
+                  잃/VV+으며/ECS)))
+       (VP (ADVP 다시/ADV)
+           (VP (NP-COMP 제구력/NNC+에/PAD)
+               (NP-OBJ 문제점/NNC+을/PCA)
+               (VV 노출/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=날씨</term>
+	    </Arg>
+	    <Rel>
+	      <term>궂은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

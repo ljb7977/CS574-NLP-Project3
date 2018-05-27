@@ -1,0 +1,56 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>파</lemma>
+    <comment>Frames file for '파' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>파.01</id>
+      <edef>dig</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="end product"/>
+	<role argnum="2" argrole="thing removed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>파다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>보병들이 전연에서 참호를 파고 있다.</text>
+	  <parse>
+(S (NP-SBJ 보병/NNC+들/XSF+이/PCA)
+   (VP (VP (NP-ADV 전연/NNC+에서/PAD)
+           (VP (NP-OBJ 참호/NNC+을/PCA)
+               파/VV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>보병들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>전연에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>참호</term>
+	    </Arg>
+	    <Rel>
+	      <term>파고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,70 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주력</lemma>
+    <comment>Frames file for '주력' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>주력.01</id>
+      <edef>concentrate oneself</edef>
+      <roleset>
+	<role argnum="0" argrole="thing concentrating oneself"/>
+	<role argnum="1" argrole="concentrate on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주력하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>아이헬 장관은 또 IMF 총재 후보 지명과정에서 드러난 미국과의 긴장을 해소하는 데 주력할 것이라고 분석가들은 말했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 아이헬/NPR
+                     장관/NNC+은/PAU)
+             (VP (ADCP 또/ADC)
+		 (VP (VP (NP-COMP (S (NP-SBJ *pro*)
+				     (VP (NP-OBJ (S (WHNP-2 *op*)
+						    (S (NP-SBJ *T*-2)
+						       (VP (NP-ADV IMF/NFW
+								   총재/NNC
+								   후보/NNC
+								   지명/NNC+과정/NNC+에서/PAD)
+							   (VP 드러나/VV+은/EAN))))
+						 (NP (NP 미국/NPR+과/PAD+의/PAN)
+						     (NP 긴장/NNC+을/PCA)))
+					 (VV 해소/NNC+하/XSV+은/EAN)))
+				  (NP 데/NNX))
+			 (VV 주력/NNC+하/XSV+을/EAN))
+		     (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+   (S (NP-SBJ 분석가/NNC+들/XSF+은/PAU)
+      (VP (S-COMP *T*-1)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>아이헬 장관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>또</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>IMF 총재 후보 지명과정에서 드러난 미국과의 긴장을 해소하는 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>주력할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

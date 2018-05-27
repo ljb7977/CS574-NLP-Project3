@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>증산</lemma>
+    <comment>Frames file for '증산' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>증산.01</id>
+      <edef>increase</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing increased"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>증산하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이란과 알제리, 리비아는 석유수출국기구(OPEC)가 이달말부터 원유를 증산하려는 어떠한 기도에도 반대하고 있다고 이란 관영 IRNA 통신이 비잔 남다르 잔가네 이란 석유 장관의 말을 인용, 6 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ (NP 이란/NPR+과/PCJ)
+                     (NP 알제리/NPR)
+                     ,/SCM
+                     (NP 리비아/NPR+은/PAU))
+             (VP (VP (NP-COMP (S (NP-SBJ 석유/NNC+수출국/NNC+기구/NNC
+                                         (PRN -LRB-/SLQ
+                                              OPEC/NFW
+                                              -RRB-/SRQ)
+                                         이/PCA)
+                                 (VP (NP-ADV 이달/NNC+말/NNX+부터/PAU)
+                                     (VP (NP-OBJ 원유/NNC+을/PCA)
+                                         (VV 증산/NNC+하/XSV+으려는/EAN))))
+                              (NP 어떠한/DAN
+                                  기도/NNC+에/PAD+도/PAU))
+                     (VV 반대/NNC+하/XSV+고/ECS))
+                 있/VX+다/EFN+고/PAD))
+   (S (NP-SBJ 이란/NPR
+              관영/NNC
+              IRNA/NFW
+              통신/NNC+이/PCA)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (NP 비잔/NPR
+				 남다르/NPR
+				 잔가네/NPR
+				 이란/NPR
+				 석유/NNC
+				 장관/NNC+의/PAN)
+                         (NP 말/NNC+을/PCA))
+                 (VV 인용/NNC)))
+          ,/SCM
+          (NP-ADV 6/NNU
+		  일/NNX)
+	  (VP (S-COMP *T*-1)
+	      (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term> 석유수출국기구(OPEC)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이달말부터</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>원유</term>
+	    </Arg>
+	    <Rel>
+	      <term>증산하려는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

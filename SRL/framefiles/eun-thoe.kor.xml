@@ -1,0 +1,77 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>은퇴</lemma>
+    <comment>Frames file for '은퇴' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>은퇴.01</id>
+      <edef>retire</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="retire from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>은퇴하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>공화당측은 그러나 이번 선거에서 대니얼 모이니핸 등 4 명의 민주당 현역의원들이 한꺼번에 정계에서 은퇴해 양당 후보들이 똑같은 출발점에서 경쟁을 벌이는 데 은근히 기대를 걸고 있다.</text>
+	  <parse>
+(S (NP-SBJ 공화당/NPR+측/XSF+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (VP (NP-COMP (S (NP-ADV 이번/NNC
+                                   선거/NNC+에서/PAD)
+                           (S (NP-SBJ (NP (NP 대니얼/NPR
+                                              모이니핸/NPR)
+                                          (NP 등/NNX))
+                                      (NP (NP 4/NNU
+                                              명/NNX+의/PAN)
+                                          (NP 민주당/NPR
+                                              현역/NNC+의원/NNC+들/XSF+이/PCA)))
+                              (VP (ADVP 한꺼번에/ADV)
+                                  (VP (NP-COMP 정계/NNC+에서/PAD)
+                                      (VV 은퇴/NNC+하/XSV+어/ECS))))
+                           (S (NP-SBJ 양당/NNC
+                                      후보/NNC+들/XSF+이/PCA)
+                              (VP (NP-ADV (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (ADJP 똑같/VJ+은/EAN)))
+                                          (NP 출발점/NNC+에서/PAD))
+                                  (VP (NP-OBJ 경쟁/NNC+을/PCA)
+                                      벌이/VV+는/EAN))))
+                        (NP 데/NNX))
+               (VP (ADVP 은근히/ADV)
+                   (VP (NP-OBJ 기대/NNC+을/PCA)
+                       걸/VV+고/ECS)))
+           있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이번 선거에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>대니얼 모이니핸 등 4 명의 민주당 현역의원들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>한꺼번에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>정계</term>
+	    </Arg>
+	    <Rel>
+	      <term>은퇴해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

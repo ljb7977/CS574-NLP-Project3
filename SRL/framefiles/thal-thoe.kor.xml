@@ -1,0 +1,130 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탈퇴</lemma>
+    <comment>Frames file for '탈퇴' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탈퇴.01</id>
+      <edef>secede</edef>
+      <roleset>
+	<role argnum="0" argrole="ex-member"/>
+	<role argnum="1" argrole="organization"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탈퇴하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>리 당수는 이날 리아오(이오) 후보와 함께 기자회견을 갖고 "대만 독립 반대자들은 분열해서는 안되며 모두 쑹 후보를 지지해야 한다"고 밝혔으며 자신은 이를 위해 신당을 탈퇴한다고 덧붙였다.</text>
+	  <parse>
+(S (S (NP-SBJ 리/NPR
+              당수/NNC+은/PAU)
+      (VP (NP-ADV 이날/NNC)
+          (ADVP (NP-COMP 리아오/NPR
+                         (PRN -LRB-/SLQ
+                              (NP 이오/NPR)
+                              -RRB-/SRQ)
+                         후보/NNC+과/PAD)
+                함께/ADV)
+          (VP (NP-OBJ 기자/NNC+회견/NNC+을/PCA)
+              갖/VV+고/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP "/SLQ
+                  (S (S (NP-SBJ 대만/NPR
+                                독립/NNC
+                                반대자/NNC+들/XSF+은/PAU)
+                        (VP (VV 분열/NNC+하/XSV+어서/ECS+은/PAU)))
+                     (S (NP-SBJ *pro*)
+                        (VP 안되/VV+으며/ECS)))
+                  (S (NP-SBJ 모두/NNC)
+                     (VP (VP (NP-OBJ 쑹/NPR
+                                     후보/NNC+을/PCA)
+                             (VV 지지/NNC+하/XSV+어야/ECS))
+                         하/VX+는다/EFN))
+                  "/SRQ
+                  고/PAD)
+          밝히/VV+었/EPF+으며/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ 자신/NNC+은/PAU)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ 이/NPN+을/PCA)
+                             위하/VV+어/ECS))
+                      (VP (NP-OBJ 신당/NNC+을/PCA)
+                          (VV 탈퇴/NNC+하/XSV+는다/EFN+고/PAD))))
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>자신</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>이를 위해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>신당</term>
+	    </Arg>
+	    <Rel>
+	      <term>탈퇴한다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>탈퇴하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>몬테네그로는 그동안 밀로세비치 대통령이 민주적 개혁에 실패하거나 친서방 경향을 띠고 있는 정치지도부에 대한 강경입장을 유지한다면 유고연방에서 탈퇴하겠다고 위협해 왔다.</text>
+	  <parse>
+(S (NP-SBJ 몬테네그로/NPR+은/PAU)
+   (VP (VP (NP-ADV 그동안/NNC)
+           (VP (S-COMP (S (NP-SBJ 밀로세비치/NPR
+                                  대통령/NNC+이/PCA)
+                          (VP (VP (NP-COMP 민주/NNC+적/XSF
+                                           개혁/NNC+에/PAD)
+                                  (VV 실패/NNC+하/XSV+거나/ECS))
+                              (VP (NP-OBJ (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (NP-COMP (S (WHNP-2 *op*)
+                                                                (S (NP-SBJ *T*-2)
+                                                                   (VP (VP (NP-OBJ 친/XPF+서방/NNC
+                                                                                   경향/NNC+을/PCA)
+                                                                           띠/VV+고/ECS)
+                                                                       있/VX+는/EAN)))
+                                                             (NP 정치/NNC+지도부/NNC+에/PAD))
+                                                    대하/VV+은/EAN)))
+                                          (NP 강경/NNC+입장/NNC+을/PCA))
+                                  (VV 유지/NNC+하/XSV+는다면/ECS))))
+                       (S (NP-SBJ *pro*)
+                          (VP (NP-COMP 유고/NPR+연방/NNC+에서/PAD)
+                              (VV 탈퇴/NNC+하/XSV+겠/EPF+다/EFN+고/PAD))))
+               (VV 위협/NNC+하/XSV+어/ECS)))
+       오/VX+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>밀로세비치 대통령이 민주적 개혁에 실패하거나 친서방 경향을 띠고 있는 정치지도부에 대한 강경입장을 유지한다면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>유고연방</term>
+	    </Arg>
+	    <Rel>
+	      <term>탈퇴하겠다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

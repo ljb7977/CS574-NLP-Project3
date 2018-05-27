@@ -1,0 +1,98 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>연습</lemma>
+    <comment>Frames file for '연습' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>연습.01</id>
+      <edef>give practice</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="practicer"/>
+	<role argnum="1" argrole="skill"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>연습시키다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>통제 소대 성원들한테 그들의 기술을 연습시키기 위해서, 그들이 한 계산이 훈련의 일부로 포함되었습니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-SBJ *pro*)
+                 (VP (NP-COMP (NP 통제/NNC
+                                  소대/NNC)
+                              (NP 성원/NNC+들/XSF+한테/PAD))
+                     (NP-OBJ (NP 그/NPN+들/XSF+의/PAN)
+                             (NP 기술/NNC+을/PCA))
+                     (VV 연습/NNC+시키/XSV+기/ENM)))
+          위하/VV+어서/ECS))
+   ,/SCM
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ 그/NPN+들/XSF+이/PCA)
+                    (VP (NP-OBJ-LV *T*-1)
+                        (LV 하/VV+은/EAN))))
+              (NP 계산/NNC+이/PCA))
+      (VP (NP-COMP (NP 훈련/NNC+의/PAN)
+                   (NP 일부/NNC+으로/PAD))
+          (VV 포함/NNC+되/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>한테</f>
+	      <term>통제 소대 성원들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그들의 기술</term>
+	    </Arg>
+	    <Rel>
+	      <term>연습시키기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>연습하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희들은 이 훈련의 모든 분야를 다 연습한 다음 강평을 받았습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN+들/XSF+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (NP 이/DAN
+                                  훈련/NNC+의/PAN)
+                              (NP 모든/DAN
+                                  분야/NNC+을/PCA))
+                      (VP (ADVP 다/ADV)
+                          (VP (VV 연습/NNC+하/XSV+은/EAN)))))
+               (NP 다음/NNC))
+       (VP (NP-OBJ-LV 강평/NNC+을/PCA)
+           (LV 받/VV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이 훈련의 모든 분야</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>다</term>
+	    </Arg>
+	    <Rel>
+	      <term>연습한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

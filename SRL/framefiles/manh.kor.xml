@@ -1,0 +1,90 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>많</lemma>
+    <comment>Frames file for '많' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>많.01</id>
+      <edef>many, much</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being abundant"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>많다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>네 말에는 앞뒤가 맞지 않는 모순이 많다.</text>
+	  <parse>
+(S (NP-COMP-1 (NP 너/NPN+의/PAN)
+              (NP 말/NNC+에/PAD+은/PAU))
+   (S (NP-SBJ (S (NP-SBJ 앞뒤/NNC+이/PCA)
+                 (VP (VP 맞/VV+지/ECS)
+                     않/VX+는/EAN))
+              (NP 모순/NNC+이/PCA))
+      (ADJP (NP-COMP *T*-1)
+            많/VJ+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>네 말</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>앞뒤가 맞지 않는 모순</term>
+	    </Arg>
+	    <Rel>
+	      <term>많다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>많다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희들은 이 무전기에 숙달될 만한 시간이 많지 않았습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN+들/XSF+은/PAU)
+   (S (NP-SBJ (S (WHNP *op*)
+                        (S (NP-SBJ *pro*)
+                            (VP (VP (NP-COMP 이/DAN
+                                             무전기/NNC+에/PAD)
+                                    (VV 숙달/NNC+되/XSV+을/EAN))
+                                만하/VX+은/EAN)))
+                      (NP 시간/NNC+이/PCA))
+      (VP (ADJP 많/VJ+지/ECS)
+          않/VX+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>저희들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이 무전기에 숙달될 만한 시간</term>
+	    </Arg>
+	    <Rel>
+	      <term>많지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않았습니다</term>
+	    </Aux>
+	  </relation>
+	  <comment>double nominative case</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

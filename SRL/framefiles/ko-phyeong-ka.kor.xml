@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>고평가</lemma>
+    <comment>Frames file for '고평가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>고평가.01</id>
+      <edef>estimate high</edef>
+      <roleset>
+	<role argnum="0" argrole="estimator"/>
+	<role argnum="1" argrole="thing estimated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>고평가되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그린스펀 의장은 다우지수가 3,800 포인트선으로 회복된 11 월 회의에서도 "주가수익률이 개선되기는 했으나 증시가 여전히 약간은 고평가돼 있는 것으로 판단하고 있다"고 우려를 표명한 것으로 나타나 있다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-COMP (S (NP-SBJ 그린스펀/NPR
+                               의장/NNC+은/PAU)
+                       (VP (NP-ADV (NP (S (WHNP *op*)
+                                          (S (NP-SBJ 다우/NPR+지수/NNC+이/PCA)
+                                             (VP (NP-COMP 3,800/NNU
+							  포인트/NNX+선/NNC+으로/PAD)
+                                                 (VV 회복/NNC+되/XSV+은/EAN))))
+                                       (NP 11/NNU
+                                           월/NNX))
+                                   (NP 회의/NNC+에서/PAD+도/PAU))
+                           (S "/SLQ
+			      (S (NP-SBJ 주가/NNC+수익률/NNC+이/PCA)
+				 (VP (VP (VV 개선/NNC+되/XSV+기는/ECS))
+				     하/VX+었/EPF+으나/ECS))
+			      (S (NP-SBJ *pro*)
+				 (VP (VP (NP-COMP (S (NP-SBJ 증시/NNC+이/PCA)
+						     (VP (VP (ADVP 여전히/ADV)
+							     (NP-ADV 약간/NNC+은/PAU)
+							     (VP (VV 고평가/NNC+되/XSV+어/ECS)))
+							 있/VX+는/EAN))
+						  (NP 것/NNX+으로/PAD))
+					 (VV 판단/NNC+하/XSV+고/ECS))
+				     있/VX+다/EFN))
+			      "/SRQ
+			      고/PAD)
+			   (VP (NP-OBJ 우려/NNC+을/PCA)
+			       (VV 표명/NNC+하/XSV+은/EAN))))
+                    (NP 것/NNX+으로/PAD))
+           나타나/VV+어/ECS)
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>증시</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>여전히</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>약간은</term>
+	    </Arg>
+	    <Rel>
+	      <term>고평가돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

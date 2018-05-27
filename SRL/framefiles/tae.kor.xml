@@ -1,0 +1,121 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대</lemma>
+    <comment>Frames file for '대' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>대.01</id>
+      <edef>provide</edef>
+      <roleset>
+	<role argnum="0" argrole="provider"/>
+	<role argnum="1" argrole="thing provided"/>
+	<role argnum="2" argrole="entity provided for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>대대가 대대 무전망에 있는 무전소들을 모두 동시에 호출할 때는 "전체 들을 것, 여기는" 이렇게 말하고 그날의 대대 호출대호를 댑니다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ 대대/NNC+이/PCA)
+                 (VP (NP-OBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP (NP-COMP 대대/NNC
+                                                  무전망/NNC+에/PAD)
+                                         있/VJ+는/EAN)))
+                             (NP 무전소/NNC+들/XSF+을/PCA))
+                     (VP (ADVP 모두/ADV)
+                         (NP-ADV 동시/NNC+에/PAD)
+                         (VP (VV 호출/NNC+하/XSV+을/EAN))))))
+           (NP 때/NNC+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ "/SLQ
+                      (NP (S (NP-SBJ 전체/NNC)
+                             (VP (NP-OBJ *pro*)
+                                 듣/VV+을/EAN))
+                          (NP 것/NNX))
+                      ,/SCM
+                      (NP 여기/NPN+은/PAU)
+                      "/SRQ)
+              (VP (ADVP 이렇게/ADV)
+                  (VP 말하/VV+고/ECS)))
+          (VP (NP-OBJ (NP 그날/NNC+의/PAN)
+                      (NP 대대/NNC
+                          호출/NNC
+                          대호/NNC+을/PCA))
+              대/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>대대가 대대 무전망에 있는 무전소들을 모두 동시에 호출할 때는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그날의 대대 호출대호</term>
+	    </Arg>
+	    <Rel>
+	      <term>댑니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>대.02</id>
+      <edef>put on</edef>
+      <roleset>
+	<role argnum="0" argrole="putter"/>
+	<role argnum="1" argrole="thing put on"/>
+	<role argnum="2" argrole="where put on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>중대장 동지는 왜 다리에 부목을 댔는가?</text>
+	  <parse>
+(S (NP-SBJ 중대장/NNC
+           동지/NNC+은/PAU)
+   (VP (ADVP 왜/ADV)
+       (VP (NP-COMP 다리/NNC+에/PAD)
+           (NP-OBJ 부목/NNC+을/PCA)
+           대/VV+었/EPF+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>중대장 동지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>왜</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>다리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>부목</term>
+	    </Arg>
+	    <Rel>
+	      <term>댔는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

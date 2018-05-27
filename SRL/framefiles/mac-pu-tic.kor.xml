@@ -1,0 +1,86 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>맞부딪</lemma>
+    <comment>Frames file for '맞부딪' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>맞부딪.01</id>
+      <edef>collide</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, causer"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="thing collided with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>맞부딪치다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 총재는 이날 오후 부산 구덕체육관에서 열린 `4.13 총선 필승결의대회'에 참석, 치사를 통해 "총선이 끝나면 내각제 개헌으로 장기집권을 꾀하는 세력과 대통령제인 헌법을 지키려는 호헌세력이 맞부딪치는 정국이 될 것"이라며 이같이 말했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           총재/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP-ADV 이날/NNC
+                                         오후/NNC)
+                                 (NP-ADV 부산/NPR
+                                         구덕체육관/NPR+에서/PAD)
+                                 (VP 열리/VV+은/EAN))))
+                       (NP `/SLQ
+                           4.13/NNU
+                           총선/NNC
+                           필승/NNC+결의/NNC+대회/NNC
+                           '/SRQ
+                           에/PAD))
+              (VV 참석/NNC)))
+       ,/SCM
+       (S (NP-SBJ *pro*)
+          (VP (NP-OBJ 치사/NNC+을/PCA)
+              통하/VV+어/ECS))
+       (S "/SLQ
+          (S (NP-SBJ 총선/NNC+이/PCA)
+             (VP 끝나/VV+으면/ECS))
+          (S (NP-SBJ (S (NP-SBJ (NP (S (WHNP-2 *op*)
+                                       (S (NP-SBJ *T*-2)
+                                          (VP (NP-ADV 내각제/NNC
+                                                      개헌/NNC+으로/PAD)
+                                              (VP (NP-OBJ 장기/NNC+집권/NNC+을/PCA)
+                                                  꾀하/VV+는/EAN))))
+                                    (NP 세력/NNC+과/PCJ))
+                                (NP (S (WHNP-4 *op*)
+                                       (S (NP-SBJ *T*-4)
+                                          (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                         (S (NP-SBJ *T*-3)
+                                                            (VP (NP 대통령제/NNC+이/CO+은/EAN))))
+                                                      (NP 헌법/NNC+을/PCA))
+                                              지키/VV+으려는/EFN)))
+                                    (NP 호헌/NNC+세력/NNC+이/PCA)))
+                        (VP 맞부딪치/VV+는/EAN))
+                     (NP 정국/NNC+이/PCA))
+             (VP (VP 되/VV+을/EAN)
+                 (VX 것/NNX
+                     "/SRQ
+                     이/CO+라며/ECS))))
+       (ADVP 이같이/ADV)
+       (VP (NP-OBJ *pro*)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>내각제 개헌으로 장기집권을 꾀하는 세력과 대통령제인 헌법을 지키려는 호헌세력</term>
+	    </Arg>
+	    <Rel>
+	      <term>맞부딪치는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

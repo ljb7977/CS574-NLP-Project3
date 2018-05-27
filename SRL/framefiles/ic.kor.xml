@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잊</lemma>
+    <comment>Frames file for '잊' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>잊.01</id>
+      <edef>forget</edef>
+      <roleset>
+	<role argnum="0" argrole="forgetter"/>
+	<role argnum="1" argrole="thing forgotten"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잊다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>집합지역에서 우리가 아침 여섯 시에 만난다는 걸 저는 깜빡 잊어 버렸지요.</text>
+	  <parse>
+(S (NP-OBJ-1 (S (NP-ADV 집합/NNC
+                        지역/NNC+에서/PAD)
+                (S (NP-SBJ 우리/NPN+이/PCA)
+                   (VP (NP-ADV (NP 아침/NNC)
+                               (NP 여섯/NNU
+                                   시/NNX+에/PAD))
+                       (VP 만나/VV+는다는/EAN))))
+             (NP 것/NNX+을/PCA))
+   (S (NP-SBJ 저/NPN+은/PAU)
+      (VP (VP (ADVP 깜빡/ADV)
+              (VP (NP-OBJ *T*-1)
+                  잊/VV+어/ECS))
+          버리/VX+었/EPF+지요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>집합지역에서 우리가 아침 여섯 시에 만난다는 것</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>깜빡</term>
+	    </Arg>
+	    <Rel>
+	      <term>잊어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>버렸지요</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

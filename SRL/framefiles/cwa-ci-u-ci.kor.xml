@@ -1,0 +1,93 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>좌지우지</lemma>
+    <comment>Frames file for '좌지우지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>좌지우지.01</id>
+      <edef>lead by the nose</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing led by the nose"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>좌지우지되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>재경부 관계자는 "무역수지 흑자가 지난달에 8 억달러에 불과한 만큼 환율은 전적으로 외국인들에 의해 좌지우지되고 있는 상황"이라면서 "급속한 환율하락은 경상수지 악화를 초래해 회복기 경제에 치명타를 가할 수 있다"고 우려했다.</text>
+	  <parse>
+(S (NP-SBJ 재경부/NNC
+           관계자/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP "/SLQ
+                          (S (NP-ADV (S (NP-SBJ 무역/NNC+수지/NNC
+                                                흑자/NNC+이/PCA)
+                                        (ADJP (NP-ADV 지난달/NNC+에/PAD)
+                                              (ADJP (NP-COMP 8/NNU
+                                                             억/NNU+달러/NNX+에/PAD)
+                                                    (VJ 불과/NNC+하/XSJ+은/EAN))))
+                                     (NP 만큼/NNX))
+                             (S (NP-SBJ 환율/NNC+은/PAU)
+                                (VP (VP (NP-ADV 전적/NNC+으로/PAD)
+                                        (S (NP-SBJ *pro*)
+                                           (VP (NP-COMP 외국인/NNC+들/XSF+에/PAD)
+                                               의하/VV+어/ECS))
+                                        (VP (VV 좌지우지/NNC+되/XSV+고/ECS)))
+                                    있/VX+는/EAN)))
+                          (NP 상황/NNC)
+                          "/SRQ
+                          이/CO+라면서/ECS)))
+               (S "/SLQ
+                  (S (NP-SBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ *T*-1)
+                                   (ADJP (VJ 급속/NNC+하/XSJ+은/EAN))))
+                             (NP 환율/NNC+하락/NNC+은/PAU))
+                     (VP (NP-OBJ 경상/NPR+수지/NNC
+                                 악화/NNC+을/PCA)
+                         (VV 초래/NNC+하/XSV+어/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-COMP 회복기/NNC
+                                      경제/NNC+에/PAD)
+                             (NP-OBJ 치명타/NNC+을/PCA)
+                             가하/VV+을/EAN)
+                         (VX 수/NNX
+                             있/VJ+다/EFN)))
+                  "/SRQ
+                  고/PAD))
+       (VV 우려/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>무역수지 흑자가 지난달에 8 억달러에 불과한 만큼</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>환율</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>전적으로</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에 의해</f>
+	      <term>외국인들</term>
+	    </Arg>
+	    <Rel>
+	      <term>좌지우지되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,167 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>성공</lemma>
+    <comment>Frames file for '성공' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>성공.01</id>
+      <edef>succeed</edef>
+      <roleset>
+	<role argnum="0" argrole="entity succeeding"/>
+	<role argnum="1" argrole="task"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>성공하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리 연대는 마침내 한강을 도하하는 데 성공했습니다.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN
+           연대/NNC+은/PAU)
+   (VP (ADVP 마침내/ADV)
+       (VP (NP-COMP (S (NP-SBJ *pro*)
+                       (VP (NP-OBJ 한강/NPR+을/PCA)
+                           (VV 도하/NNC+하/XSV+는/EAN)))
+                    (NP 데/NNX))
+           (VV 성공/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>우리 연대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>마침내</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>한강을 도하하는 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>성공했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>성공하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>만약 공격이 성공했다면, 또 어떤 차후 임무가 1 포대에 부여됐겠는가?</text>
+	  <parse>
+(S (S (ADVP 만약/ADV)
+      (S (NP-SBJ 공격/NNC+이/PCA)
+         (VP (VV 성공/NNC+하/XSV+었/EPF+다면/ECS))))
+   ,/SCM
+   (S (ADVP 또/ADV)
+      (S (NP-SBJ 어떤/DAN
+                 차후/NNC
+                 임무/NNC+이/PCA)
+         (VP (NP-COMP 1/NNU
+                      포대/NNC+에/PAD)
+             (VV 부여/NNC+되/XSV+었겠/EPF+는가/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>만약</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>공격</term>
+	    </Arg>
+	    <Rel>
+	      <term>성공했다면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>성공시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>`나에게 걸레면 남에게도 걸레'라는 소위 걸레론을 유행시키며 부동산에 대한 애착, 성역, 외형 콤플렉스, 알짜에 대한 집착, 캠페인 만능주의 등 이른바 5 적을 이겨야 구조조정을 성공시킬 수 있다는 주장을 펴 화제가 됐다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S `/SLQ
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-ADV 나/NPN+에게/PAD)
+                            (VP (NP 걸레/NNC+이/CO+으면/ECS))))
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-ADV 남/NNC+에게/PAD+도/PAU)
+                            (VP (NP 걸레/NNC))))
+                     '/SRQ
+                     이/CO+라는/EAN)
+                  (NP (ADVP 소위/ADV)
+                      (NP 걸레/NNC+론/XSF+을/PCA)))
+          (VV 유행/NNC+시키/XSV+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ *pro*)
+                     (VP (VP (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ (NP (NP (NP (S (WHNP-1 *op*)
+                                                           (S (NP-SBJ *T*-1)
+                                                              (VP (NP-COMP 부동산/NNC+에/PAD)
+                                                                  대하/VV+은/EAN)))
+                                                        (NP 애착/NNC))
+                                                    ,/SCM
+                                                    (NP 성역/NNC)
+                                                    ,/SCM
+                                                    (NP 외형/NNC
+                                                        콤플렉스/NNC)
+                                                    ,/SCM
+                                                    (NP (S (WHNP-2 *op*)
+                                                           (S (NP-SBJ *T*-2)
+                                                              (VP (NP-COMP 알짜/NNC+에/PAD)
+                                                                  대하/VV+은/EAN)))
+                                                        (NP 집착/NNC))
+                                                    ,/SCM
+                                                    (NP 캠페인/NNC
+                                                        만능/NNC+주의/NNC))
+                                                (NP 등/NNX))
+                                            (NP (ADVP 이른바/ADV)
+                                                (NP 5/NNU
+                                                    적/NNC+을/PCA)))
+                                    이기/VV+어야/ECS))
+                             (VP (NP-OBJ 구조/NNC+조정/NNC+을/PCA)
+                                 (VV 성공/NNC+시키/XSV+을/EAN)))
+                         (VX 수/NNX
+                             있/VJ+다는/EAN)))
+                  (NP 주장/NNC+을/PCA))
+          펴/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP 화제/NNC+이/PCA)
+          되/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>부동산에 대한 애착, 성역, 외형 콤플렉스, 알짜에 대한 집착, 캠페인 만능주의 등 이른바 5 적을 이겨야</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>구조조정</term>
+	    </Arg>
+	    <Rel>
+	      <term>성공시킬</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

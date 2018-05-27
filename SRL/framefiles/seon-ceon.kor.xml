@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>선전</lemma>
+    <comment>Frames file for '선전' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>선전.01</id>
+      <edef>advertise</edef>
+      <roleset>
+	<role argnum="0" argrole="advertiser"/>
+	<role argnum="1" argrole="thing advertised"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>선전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난 1950 년대의 에이븐 광고방송은 실내복을 걸친 매력 없는 여인이라도 에이븐 향수 한 방울만 쓰면 바로 공주가 될 수 있다고 선전하고 있다.</text>
+	  <parse>
+(S (NP-SBJ (NP 지난/DAN
+               1950/NNU
+               년대/NNX+의/PAN)
+           (NP 에이븐/NPR
+               광고/NNC+방송/NNC+은/PAU))
+   (VP (VP (S-COMP (S (NP-SBJ *pro*)
+                      (VP (NP (S (WHNP-1 *op*)
+                                 (S (S (NP-SBJ *T*-1)
+                                       (VP (NP-OBJ 실내복/NNC+을/PCA)
+                                           걸치/VV+은/EAN))
+                                    (S (NP-SBJ *T*-1)
+                                       (ADJP (NP-COMP 매력/NNC)
+                                             없/VJ+는/EAN))))
+                              (NP 여인/NNC+이/CO+라/EFN+도/PAU))))
+                   (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ 에이븐/NPR
+                                  향수/NNC
+                                  한/NNU
+                                  방울/NNX+만/PAU)
+                          쓰/VV+으면/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (ADVP 바로/ADV)
+                              (VP (NP-COMP 공주/NNC+이/PCA)
+                                  되/VV+을/EAN))
+                          (VX 수/NNX
+                              있/VJ+다/EFN+고/PAD))))
+           (VV 선전/NNC+하/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>지난 1950 년대의 에이븐 광고방송</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>실내복을 걸친 매력 없는 여인이라도 에이븐 향수 한 방울만 쓰면 바로 공주가 될 수 있다</term>
+	    </Arg>
+	    <Rel>
+	      <term>선전하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,202 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>전환</lemma>
+    <comment>Frames file for '전환' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>전환.01</id>
+      <edef>shift</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing moved"/>
+	<role argnum="2" argrole="start state"/>
+	<role argnum="3" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>전환하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이 사격은 단일 선상에나 또는 2개 선상에 동시에 실시할 수 있고, 하나의 선에서 다른 하나의 선으로 사격을 전환하기도 한다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 이/DAN
+                      사격/NNC+은/PAU)
+              (VP (NP-ADV (NP 단일/NNC
+                              선상/NNC+에/PAD+이나/PCJ)
+                          (ADCP 또는/ADC)
+                          (NP 2/NNU
+                              개/NNX
+                              선상/NNC+에/PAD))
+                  (NP-ADV 동시/NNC+에/PAD)
+                  (VP (VV 실시/NNC+하/XSV+을/EAN))))
+          (VX 수/NNX
+              있/VJ+고/ECS)))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (NP 하나/NNU+의/PAN)
+                       (NP 선/NNC+에서/PAD))
+              (NP-COMP (DANP 다른/DAN)
+                       (NP (NP 하나/NNU+의/PAN)
+                           (NP 선/NNC+으로/PAD)))
+              (NP-OBJ 사격/NNC+을/PCA)
+              (VV 전환/NNC+하/XSV+기도/ECS))
+          하/VX+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>하나의 선</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>다른 하나의 선</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>사격</term>
+	    </Arg>
+	    <Rel>
+	      <term>전환하기도</term>
+	    </Rel>
+	    <Aux>
+	      <f>기도</f>
+	      <term>한다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전환되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>사격은 대부분의 전진 부대가 탄착 구역을 벗어나올 때까지 각 선에다 계속하는데, 이때 사격은 다음 집중 사격선으로 전환된다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 사격/NNC+은/PAU)
+          (VP (NP-ADV (S (WHNP *op*)
+                         (S (NP-SBJ (NP 대부분/NNC+의/PAN)
+                                    (NP 전진/NNC
+                                        부대/NNC+이/PCA))
+                            (VP (NP-OBJ 탄착/NNC
+                                        구역/NNC+을/PCA)
+                                벗어나오/VV+을/EAN)))
+                      (NP 때/NNC+까지/PAU))
+              (NP-ADV 각/DAN
+                      선/NNC+에다/PAD)
+              (VP (VV 계속/NNC+하/XSV+는데/ECS)))))
+   ,/SCM
+   (S (NP-ADV 이때/NNC)
+      (S (NP-SBJ 사격/NNC+은/PAU)
+         (VP (NP-COMP 다음/NNC
+                      집중/NNC
+                      사격선/NNC+으로/PAD)
+             (VV 전환/NNC+되/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>사격은 대부분의 전진 부대가 탄착 구역을 벗어나올 때까지 각 선에다 계속하는데</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이때</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>사격</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>다음 집중 사격선</term>
+	    </Arg>
+	    <Rel>
+	      <term>전환된다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>전환시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>화석연료인 천연가스, 디젤, 휘발유 같은 탄화 수소 화합물을 연료 전지에 사용하려면 먼저 수소로 전환시켜야 하는데 이 과정에서 탄소가 누적돼 전지가 꽉 막혀 버리기 때문이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (S (WHNP-2 *op*)
+                                (S (NP-SBJ *T*-2)
+                                   (ADJP (NP-COMP (S (WHNP-1 *op*)
+                                                     (S (NP-SBJ *T*-1)
+                                                        (VP (NP 화석/NNC+연료/NNC+이/CO+은/EAN))))
+                                                  (NP (NP 천연가스/NNC)
+                                                      ,/SCM
+                                                      (NP 디젤/NNC)
+                                                      ,/SCM
+                                                      (NP 휘발유/NNC)))
+                                         같/VJ+은/EAN)))
+                             (NP 탄화/NNC
+				     수소/NNC
+				     화합물/NNC+을/PCA))
+                     (NP-COMP 연료/NNC
+				  전지/NNC+에/PAD)
+		     (VV 사용/NNC+하/XSV+으려면/ECS)))
+              (S (NP-SBJ *pro*)
+                 (VP (VP (ADVP 먼저/ADV)
+                         (VP (NP-COMP 수소/NNC+으로/PAD)
+                             (NP-OBJ *pro*)
+                             (VV 전환/NNC+시키/XSV+어야/ECS)))
+                     하/VX+는데/ECS))
+              (S (NP-ADV 이/DAN
+                         과정/NNC+에서/PAD)
+                 (S (NP-SBJ 탄소/NNC+이/PCA)
+                    (VP (VV 누적/NNC+되/XSV+어/ECS))))
+              (S (NP-SBJ 전지/NNC+이/PCA)
+                 (VP (VP (ADVP 꽉/ADV)
+                         (VP 막히/VV+어/ECS))
+                     버리/VX+기/ENM)))
+           (NP 때문/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>화석연료인 천연가스, 디젤, 휘발유 같은 탄화 수소 화합물을 연료 전지에 사용하려면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>먼저</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>수소</term>
+	    </Arg>
+	    <Rel>
+	      <term>전환시켜야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>하는데</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

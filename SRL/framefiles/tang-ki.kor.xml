@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>당기</lemma>
+    <comment>Frames file for '당기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>당기.01</id>
+      <edef>cause</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="impelled action"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>당기다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 사건이 발생한 지 2 주일 뒤 마틴 루터 킹 목사는 연방법원의 보호 아래 수도인 워싱턴에서 수 백명을 이끌고 행진해 민권운동의 불을 당겼다.</text>
+	  <parse>
+(S (NP-ADV (NP (S (NP-SBJ 이/DAN
+                          사건/NNC+이/PCA)
+                  (VP (VV 발생/NNC+하/XSV+은/EAN)))
+               (NP 지/NNX))
+           (NP 2/NNU
+               주일/NNX
+               뒤/NNC))
+   (S (NP-SBJ 마틴/NPR
+              루터/NPR
+              킹/NPR
+              목사/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-ADV (NP (NP 연방/NNC+법원/NNC+의/PAN)
+                             (NP 보호/NNC))
+                         (NP 아래/NNC))
+                 (NP-ADV (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (VP (NP 수도/NNC+이/CO+은/EAN))))
+                         (NP 워싱턴/NPR+에서/PAD))
+                 (VP (VP (NP-OBJ 수/NNU
+                                 백/NNU+명/NNX+을/PCA)
+                         이끌/VV+고/ECS)
+                     (VP (VV 행진/NNC+하/XSV+어/ECS)))))
+          (VP (NP-OBJ (NP 민권/NNC+운동/NNC+의/PAN)
+                      (NP 불/NNC+을/PCA))
+              당기/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이 사건이 발생한 지 2 주일 뒤</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>마틴 루터 킹 목사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>연방법원의 보호 아래 수도인 워싱턴에서 수 백명을 이끌고 행진해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>민권운동의 불</term>
+	    </Arg>
+	    <Rel>
+	      <term>당겼다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

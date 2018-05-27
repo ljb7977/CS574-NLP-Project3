@@ -1,0 +1,104 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>범하</lemma>
+    <comment>Frames file for '범하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>범하.01</id>
+      <edef>perpetrate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing perpetrated"/>
+	<role argnum="2" argrole="victim"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>범하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>라칭거 추기경은 기독교 2000 년 역사를 통해 교회가 인류에게 범했던 각종 과오를 공식 인정하는 `회상과 화해: 교회의 과거실수'라는 40 쪽 분량의 문건을 교황청에 제출하면서 "이 문건 발표로 기독교에 대한 신뢰를 높이고 우리의 화해 노력도 증진시킬 수 있을 것"이라고 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ 라칭거/NPR
+              추기경/NNC+은/PAU)
+      (VP (NP-OBJ (NP (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ (S (WHNP-2 *op*)
+                                        (S (S (NP-SBJ *pro*)
+                                              (VP (NP-OBJ 기독교/NNC
+                                                          2000/NNU
+                                                          년/NNX
+                                                          역사/NNC+을/PCA)
+                                                  통하/VV+어/ECS))
+                                           (S (NP-SBJ 교회/NNC+이/PCA)
+                                              (VP (NP-COMP 인류/NNC+에게/PAD)
+                                                  (NP-OBJ *T*-2)
+                                                  범하/VV+었/EPF+던/EAN))))
+                                     (NP 각종/NNC
+                                         과오/NNC+을/PCA))
+                             (VP (NP-ADV 공식/NNC)
+                                 (VP (VV 인정/NNC+하/XSV+는/EAN)))))
+                      (NP `/SLQ
+                          (NP (NP 회상/NNC+과/PCJ)
+                              (NP 화해/NNC))
+                          :/SSY
+                          (NP (NP 교회/NNC+의/PAN)
+                              (NP 과거/NNC+실수/NNC))
+                          '/SRQ
+                          이라는/PAN))
+                  (NP (NP 40/NNU
+                          쪽/NNX
+                          분량/NNC+의/PAN)
+                      (NP 문건/NNC+을/PCA)))
+          (NP-COMP 교황청/NNC+에/PAD)
+          (VV 제출/NNC+하/XSV+으면서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP "/SLQ
+                  (NP-ADV 이/DAN
+                          문건/NNC
+                          발표/NNC+으로/PAD)
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                (S (NP-SBJ *T*-1)
+                                                   (VP (NP-COMP 기독교/NNC+에/PAD)
+                                                       대하/VV+은/EAN)))
+                                             (NP 신뢰/NNC+을/PCA))
+                                     높이/VV+고/ECS)
+                                 (VP (NP-OBJ (NP 우리/NPN+의/PAN)
+                                             (NP 화해/NNC
+                                                 노력/NNC+도/PAU))
+                                     (VV 증진/NNC+시키/XSV+을/EAN)))
+                             (VX 수/NNX
+                                 있/VJ+을/EAN))
+                         (VX 것/NNX)))
+                  "/SRQ
+                  이/CO+라/EFN+고/PAD)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>기독교 2000 년 역사를 통해</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>교회</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>인류</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>*trace*=각종 과오</term>
+	    </Arg>
+	    <Rel>
+	      <term>범했던</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

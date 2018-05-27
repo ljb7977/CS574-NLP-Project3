@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>동결</lemma>
+    <comment>Frames file for '동결' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>동결.01</id>
+      <edef>freeze</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="thing freezing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>동결되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>파산법원의 이같은 결정에 따라 TPI는 최근 2 년동안 이자도 내지 못한 부채의 상환이 잠정 동결돼 구조조정을 할 수 있는 기회를 얻었다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (NP 파산/NNC+법원/NNC+의/PAN)
+                   (NP 이같은/DAN
+                       결정/NNC+에/PAD))
+          따르/VV+어/ECS))
+   (S (NP-SBJ TPI/NFW+은/PAU)
+      (VP (S (NP-SBJ (NP (S (NP-SBJ *pro*)
+                            (VP (VP (NP-ADV 최근/NNC
+                                            2/NNU
+                                            년/NNX+동안/NNX)
+                                    (VP (NP-OBJ 이자/NNC+도/PAU)
+                                        내/VV+지/ECS))
+                                못하/VX+은/EAN))
+                         (NP 부채/NNC+의/PAN))
+                     (NP 상환/NNC+이/PCA))
+             (VP (NP-ADV 잠정/NNC)
+                 (VP (VV 동결/NNC+되/XSV+어/ECS))))
+          (VP (NP-OBJ (S (NP-SBJ *pro*)
+                         (VP (VP (NP-OBJ 구조/NNC+조정/NNC+을/PCA)
+                                 하/VV+을/EAN)
+                             (VX 수/NNX
+                                 있/VJ+는/EAN)))
+                      (NP 기회/NNC+을/PCA))
+              얻/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>최근 2 년동안 이자도 내지 못한 부채의 상환</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>잠정</term>
+	    </Arg>
+	    <Rel>
+	      <term>동결돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

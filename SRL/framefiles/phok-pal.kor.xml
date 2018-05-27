@@ -1,0 +1,102 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>폭발</lemma>
+    <comment>Frames file for '폭발' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>폭발.01</id>
+      <edef>explode</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, causer"/>
+	<role argnum="1" argrole="thing exploded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>폭발하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그 철조망에 설치한 지뢰는 인발선에 의해서 폭발하는 지뢰입니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (NP-COMP 그/DAN
+                              철조망/NNC+에/PAD)
+                     (NP-OBJ *T*-1)
+                     (VV 설치/NNC+하/XSV+은/EAN))))
+           (NP 지뢰/NNC+은/PAU))
+   (VP (NP (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-COMP 인발선/NNC+에/PAD)
+                            의하/VV+어서/ECS))
+                     (VP (VV 폭발/NNC+하/XSV+는/EAN)))))
+           (NP 지뢰/NNC+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=지뢰</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f></f>
+	      <term>인발선에 의해서</term>
+	    </Arg>
+	    <Rel>
+	      <term>폭발하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>폭발시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>70 미터쯤에 이르면 분대 전원이 최대한의 긴장 사격을 가하며 미리 설치해 놓은 돌폭뢰를 폭발시킵니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 70/NNU
+                   미터/NNX+쯤/XSF+에/PAD)
+          이르/VV+으면/ECS))
+   (S (NP-SBJ 분대/NNC
+              전원/NNC+이/PCA)
+      (VP (VP (NP-OBJ (NP 최대한/NNC+의/PAN)
+                      (NP 긴장/NNC
+                          사격/NNC+을/PCA))
+              가하/VV+으며/ECS)
+          (VP (NP-OBJ (S (WHNP-1 *op*)
+                         (S (NP-SBJ *pro*)
+                            (VP (VP (ADVP 미리/ADV)
+                                    (VP (NP-OBJ *T*-1)
+                                        (VV 설치/NNC+하/XSV+어/ECS)))
+                                놓/VX+은/EAN)))
+                      (NP 돌폭뢰/NNC+을/PCA))
+              (VV 폭발/NNC+시키/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>70 미터쯤에 이르면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>분대 전원</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>미리 설치해 놓은 돌폭뢰</term>
+	    </Arg>
+	    <Rel>
+	      <term>폭발시킵니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

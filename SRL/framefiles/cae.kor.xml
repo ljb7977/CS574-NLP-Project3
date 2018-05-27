@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재</lemma>
+    <comment>Frames file for '재' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>재.01</id>
+      <edef>measure</edef>
+      <roleset>
+	<role argnum="0" argrole="measurer"/>
+	<role argnum="1" argrole="thing measured"/>
+	<role argnum="2" argrole="instrument"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>화기의 구경을 재는 데에 사용하는 측정 단위는 뭔가?</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ (NP 화기/NNC+의/PAN)
+                                             (NP 구경/NNC+을/PCA))
+                                     재/VV+는/EAN))
+                              (NP 데/NNX+에/PAD))
+                     (NP-OBJ *T*-1)
+                     (VV 사용/NNC+하/XSV+는/EAN))))
+           (NP 측정/NNC
+               단위/NNC+은/PAU))
+   (VP (NP 무엇/NPN+이/CO+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>화기의 구경</term>
+	    </Arg>
+	    <Rel>
+	      <term>재는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

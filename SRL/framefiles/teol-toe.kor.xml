@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>덜되</lemma>
+    <comment>Frames file for '덜되' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>덜되.01</id>
+      <edef>unfinished</edef>
+      <roleset>
+	<role argnum="1" argrole="thing unfinished"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>덜되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리나라는 양허안에서 현재 부처간 검토 작업을 벌이는 농수산물과 임산물 부문을, 칠레측은 자국내 의견수렴이 덜된 분야를 각각 제외시켰다고 외교부는 말했다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ 우리나라/NNC+은/PAU)
+                (VP (NP-COMP 양허/NNC+안/NNC+에서/PAD)
+                    (NP-OBJ (S (NP-SBJ *pro*)
+			       (VP (NP-ADV 현재/NNC)
+				   (VP (NP-OBJ (NP 부처/NNC+간/XSF)
+					       (NP 검토/NNC
+						       작업/NNC+을/PCA))
+				       벌이/VV+는/EAN)))
+			    (NP (NP 농수산물/NNC+과/PCJ)
+				(NP 임산물/NNC
+					  부문/NNC+을/PCA)))
+		    (VV *?*)))
+             ,/SCM
+             (S (NP-SBJ 칠레/NPR+측/XSF+은/PAU)
+                (VP (NP-COMP *pro*)
+		    (NP-OBJ (S (NP-SBJ (NP 자국/NNC+내/NNX)
+				       (NP 의견/NNC+수렴/NNC+이/PCA))
+			       (ADJP 덜되/VJ+은/EAN))
+			    (NP 분야/NNC+을/PCA))
+                    (VP (ADVP 각각/ADV)
+                        (VP (VV 제외/NNC+시키/XSV+었/EPF+다/EFN+고/PAD))))))
+   (S (NP-SBJ 외교부/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>자국내 의견수렴</term>
+	    </Arg>
+	    <Rel>
+	      <term>덜된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

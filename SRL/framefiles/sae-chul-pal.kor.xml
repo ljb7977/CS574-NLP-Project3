@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>새출발</lemma>
+    <comment>Frames file for '새출발' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>새출발.01</id>
+      <edef>make a fresh start</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>새출발하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>`도이체 방크 AG'란 이름으로 새출발하는 새 은행의 지분은 독일 최대 개인은행인 도이체 방크가 60-64 퍼센트를 갖게 되고 제 3 위 은행인 드레스드너는 나머지를 보유하게 된다.</text>
+	  <parse>
+(S (NP-OBJ-4 (NP (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (VP (NP-ADV (NP `/SLQ
+                                       도이체/NPR
+                                       방크/NPR
+                                       AG/NFW
+                                       '/SRQ
+                                       이란/PAN)
+                                   (NP 이름/NNC+으로/PAD))
+                           (VP (VV 새출발/NNC+하/XSV+는/EAN)))))
+                 (NP 새/DAN
+                     은행/NNC+의/PAN))
+             (NP 지분/NNC+은/PAU))
+   (S (S (NP-SBJ (S (WHNP-2 *op*)
+                    (S (NP-SBJ *T*-2)
+                       (VP (NP 독일/NPR
+                               최대/NNC
+                               개인/NNC+은행/NNC+이/CO+은/EAN))))
+                 (NP 도이체/NPR
+                     방크/NPR+이/PCA))
+         (VP (VP (NP-ADV 60-64/NNU
+                         퍼센트/NNX+을/PCA)
+                 (VP (NP-OBJ *T*-4)
+                     갖/VV+게/ECS))
+             되/VX+고/ECS))
+      (S (NP-SBJ (S (WHNP-3 *op*)
+                    (S (NP-SBJ *T*-3)
+                       (VP (NP 제/DAN
+                               3/NNU
+                               위/NNX
+                               은행/NNC+이/CO+은/EAN))))
+                 (NP 드레스드너/NPR+은/PAU))
+         (VP (VP (NP-ADV 나머지/NNC+을/PCA)
+                 (VP (NP-OBJ *T*-4)
+                     (VV 보유/NNC+하/XSV+게/ECS)))
+             되/VX+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=새 은행</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>`도이체 방크 AG'란 이름으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>새출발하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

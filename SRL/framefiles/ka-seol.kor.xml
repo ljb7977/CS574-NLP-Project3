@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가설</lemma>
+    <comment>Frames file for '가설' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>가설.01</id>
+      <edef>set up</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, setter"/>
+	<role argnum="1" argrole="thing set"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가설하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>철조망을 가설할 때는 보통 철주를 사용합니다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 철조망/NNC+을/PCA)
+                     (VV 가설/NNC+하/XSV+을/EAN))))
+           (NP 때/NNC+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (ADVP 보통/ADV)
+          (VP (NP-OBJ 철주/NNC+을/PCA)
+              (VV 사용/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>철조망</term>
+	    </Arg>
+	    <Rel>
+	      <term>가설할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

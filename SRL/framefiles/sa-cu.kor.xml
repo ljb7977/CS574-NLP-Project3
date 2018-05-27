@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>사주</lemma>
+    <comment>Frames file for '사주' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>사주.01</id>
+      <edef>incite</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="person incited"/>
+	<role argnum="2" argrole="action incited"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>사주하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>모슬리는 체포된 후 마약사용자며 매춘부 출신에다 포르노 여배우인 다이애나 히로나가를 고용, 딘을 감시하도록 지시했으나 관계가 계속되자 리처드 머릴로 등 2 명을 사주해 청부살인을 저질렀다고 실토했다.</text>
+	  <parse>
+(S (NP-SBJ 모슬리/NPR+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (VV 체포/NNC+되/XSV+은/EAN)))
+               (NP 후/NNC))
+       (VP (S-COMP (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (S (WHNP-1 *op*)
+                                            (S (S (NP-SBJ *T*-1)
+                                                  (VP (NP 마약/NNC+사용자/NNC+이/CO+으며/ECS)))
+                                               (S (NP-SBJ *T*-1)
+                                                  (VP (NP-ADV 매춘부/NNC
+                                                              출신/NNC+에다/PAD)
+                                                      (VP (NP 포르노/NNC
+                                                              여배우/NNC+이/CO+은/EAN))))))
+                                         (NP 다이애나/NPR
+                                             히로나가/NPR+을/PCA))
+                                 (VV 고용/NNC)))
+                          ,/SCM
+                          (VP (S-COMP (NP-SBJ *pro*)
+                                      (VP (NP-OBJ 딘/NPR+을/PCA)
+                                          (VV 감시/NNC+하/XSV+도록/ECS)))
+                              (VV 지시/NNC+하/XSV+었/EPF+으나/ECS))))
+                   (S (NP-SBJ 관계/NNC+이/PCA)
+                      (VP (VV 계속/NNC+되/XSV+자/ECS)))
+                   (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP (NP 리처드/NPR
+                                                 머릴로/NPR)
+                                             (NP 등/NNX))
+                                         (NP 2/NNU
+                                             명/NNX+을/PCA))
+                                 (VV 사주/NNC+하/XSV+어/ECS)))
+                          (VP (NP-OBJ 청부/NNC+살인/NNC+을/PCA)
+                              저지르/VV+었/EPF+다/EFN+고/PAD))))
+           (VV 실토/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>리처드 머릴로 등 2 명</term>
+	    </Arg>
+	    <Rel>
+	      <term>사주해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

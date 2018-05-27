@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>숙지</lemma>
+    <comment>Frames file for '숙지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>숙지.01</id>
+      <edef>become well-informed of</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing known"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>숙지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>화력 계획 내용을 숙지하는 데는 시간이 많이 걸립니다.</text>
+	  <parse>
+(S (NP-COMP-1 (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 화력/NNC
+                             계획/NNC
+                             내용/NNC+을/PCA)
+                     (VV 숙지/NNC+하/XSV+는/EAN)))
+              (NP 데/NNX+은/PAU))
+   (S (NP-SBJ 시간/NNC+이/PCA)
+      (VP (ADVP 많이/ADV)
+          (VP (NP-COMP *T*-1)
+              걸리/VV+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>화력 계획 내용</term>
+	    </Arg>
+	    <Rel>
+	      <term>숙지하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

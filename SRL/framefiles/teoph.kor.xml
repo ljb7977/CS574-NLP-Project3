@@ -1,0 +1,224 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>덮</lemma>
+    <comment>Frames file for '덮' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>덮.01</id>
+      <edef>cover</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing covered"/>
+	<role argnum="2" argrole="instrument, covered by"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>덮다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>데이비스 대변인은 "이 지역 주민들의 생활환경은 사람과 동물의 사체에서 뿜어져 나오는 지독한 냄새와 집들을 덮고 있는 진흙더미 등으로 인해 매우 끔찍한 상황"이라고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 데이비스/NPR
+           대변인/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (NP-SBJ (NP 이/DAN
+                           지역/NNC
+                           주민/NNC+들/XSF+의/PAN)
+                       (NP 생활/NNC+환경/NNC+은/PAU))
+               (VP (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (NP (NP (S (WHNP-1 *op*)
+                                              (S (NP-SBJ *T*-1)
+                                                 (VP (NP-COMP (NP (NP 사람/NNC+과/PCJ)
+                                                                  (NP 동물/NNC+의/PAN))
+                                                              (NP 사체/NNC+에서/PAD))
+                                                     (VV 뿜/VV+어지/XSV+어/ECS
+                                                         나오/VV+는/EAN))))
+                                           (NP (S (WHNP-2 *op*)
+                                                  (S (NP-SBJ *T*-2)
+                                                     (ADJP 지독하/VJ+은/EAN)))
+                                               (NP 냄새/NNC+과/PCJ)))
+                                       (NP (S (WHNP-3 *op*)
+                                              (S (NP-SBJ *T*-3)
+                                                 (VP (VP (NP-OBJ 집/NNC+들/XSF+을/PCA)
+                                                         덮/VV+고/ECS)
+                                                     있/VX+는/EAN)))
+                                           (NP 진흙/NNC+더미/NNC)))
+                                   (NP 등/NNX+으로/PAD))
+                          인하/VV+어/ECS))
+                   (VP (NP (S (WHNP-4 *op*)
+                              (S (NP-SBJ *T*-4)
+                                 (ADJP (ADVP 매우/ADV)
+                                       (ADJP 끔찍하/VJ+은/EAN))))
+                           (NP 상황/NNC))))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       (VV 설명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <term>*trace*=진흙더미</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>집들</term>
+	    </Arg>
+	    <Rel>
+	      <term>덮고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>덮다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인호는 나뭇가지로 굴의 입구를 덮었다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>인호</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>나뭇가지</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>굴의 입구</term>
+	    </Arg>
+	    <Rel>
+	      <term>덮었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>덮다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>민수는 상자 뚜껑 위에 보자기를 덮었다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>민수</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>상자 뚜껑 위</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>보자기</term>
+	    </Arg>
+	    <Rel>
+	      <term>덮었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>덮이다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 보호장치는 엷은 유리이며 유리 표면은 인듐 산화물과 주석으로 만드는 투명 전극으로 덮여 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 이/DAN
+              보호/NNC+장치/NNC+은/PAU)
+      (VP (NP (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (ADJP 엷/VJ+은/EAN)))
+              (NP 유리/NNC+이/CO+으며/ECS))))
+   (S (NP-SBJ 유리/NNC
+              표면/NNC+은/PAU)
+      (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-ADV (NP 인듐/NNC
+                                             산화물/NNC+과/PCJ)
+                                         (NP 주석/NNC+으로/PAD))
+                                 (VP (NP-OBJ *T*-2)
+                                     만들/VV+는/EAN))))
+                       (NP 투명/NNC
+                           전극/NNC+으로/PAD))
+              덮이/VV+어/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이 보호장치는 엷은 유리이며</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>유리 표면</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>인듐 산화물과 주석으로 만드는 투명 전극</term>
+	    </Arg>
+	    <Rel>
+	      <term>덮여</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>덮이다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>일꾼들에 의해 각 조각품에 적당한 크기의 흰 천이 덮였다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에 의해</f>
+	      <term>일꾼들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>각 조각품</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>이</f>
+	      <term>적당한 크기의 흰 천</term>
+	    </Arg>
+	    <Rel>
+	      <term>덮였다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>침략</lemma>
+    <comment>Frames file for '침략' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>침략.01</id>
+      <edef>invade</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity invaded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>침략하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>제 말씀은 모든 훈련을 남조선이 북조선을 정말로 침략한 것처럼 실시했다는 말씀입니다.</text>
+	  <parse>
+(S (NP-SBJ (NP 저/NPN+의/PAN)
+           (NP 말씀/NNC+은/PAU))
+   (VP (NP (S (NP-SBJ *pro*)
+              (VP (NP-OBJ 모든/DAN
+                          훈련/NNC+을/PCA)
+                  (VP (NP-ADV (S (NP-SBJ 남조선/NPR+이/PCA)
+                                 (VP (NP-OBJ 북조선/NPR+을/PCA)
+                                     (VP (ADVP 정말로/ADV)
+                                         (VP (VV 침략/NNC+하/XSV+은/EAN)))))
+                              (NP 것/NNX+처럼/PAD))
+                      (VP (VV 실시/NNC+하/XSV+었/EPF+다는/EAN)))))
+           (NP 말씀/NNC+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>남조선</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>북조선</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>정말로</term>
+	    </Arg>
+	    <Rel>
+	      <term>침략한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

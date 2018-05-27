@@ -1,0 +1,102 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>물러나</lemma>
+    <comment>Frames file for '물러나' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>물러나.01</id>
+      <edef>withdraw</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="start point"/>
+	<role argnum="2" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>물러나다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>천 대사는 이날 TV 아사히 네트워크의 한 프로그램에 출연해 "리 총통의 방일은 설사 그가 총통직에서 물러난 뒤라 하더라도 결코 중국으로서는 받아들일 수 없는 일"이라면서 "이는 중 - 일 관계의 기반을 근본적으로 뒤흔들게 됨은 물론 주 총리의 방일에도 예기치 못한 결과를 가져올 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 천/NPR
+           대사/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 이날/NNC)
+              (VP (NP-COMP (NP TV/NFW
+                               아사히/NPR
+                               네트워크/NNC+의/PAN)
+                           (NP 한/DAN
+                               프로그램/NNC+에/PAD))
+                  (VV 출연/NNC+하/XSV+어/ECS))))
+       (VP (S "/SLQ
+              (NP-SBJ (NP 리/NPR
+                          총통/NNC+의/PAN)
+                      (NP 방일/NNC+은/PAU))
+              (VP (NP (S (WHNP-1 *op*)
+                         (S (S (NP-SBJ *pro*)
+                               (VP (ADVP 설사/ADV)
+                                   (VP (S-COMP (NP-SBJ *pro*)
+                                               (VP (NP (S (NP-SBJ 그/NPN+이/PCA)
+                                                          (VP (NP-COMP 총통/NNC+직/NNC+에서/PAD)
+                                                              물러나/VV+은/EAN))
+                                                       (NP 뒤/NNC+이/CO+라/EFN))))
+                                       하/VV+더라도/ECS)))
+                            (ADVP 결코/ADV)
+                            (S (NP-SBJ *pro*)
+                               (VP (VP (NP-ADV 중국/NPR+으로서/PAD+은/PAU)
+                                       (VP (NP-OBJ *T*-1)
+                                           받아들이/VV+을/EAN))
+                                   (VX 수/NNX
+                                       없/VJ+는/EAN)))))
+                      (NP 일/NNC)))
+              "/SRQ
+              이/CO+라면서/ECS)
+           (VP (S-COMP "/SLQ
+                       (NP-SBJ 이/NPN+은/PAU)
+                       (VP (VP (ADVP (S-COMP (NP-SBJ *pro*)
+                                             (VP (VP (NP-OBJ (NP 중/NPR
+                                                                 -/SSY
+                                                                 일/NPR
+                                                                 관계/NNC+의/PAN)
+                                                             (NP 기반/NNC+을/PCA))
+                                                     (VP (NP-ADV 근본/NNC+적/XSF+으로/PAD)
+                                                         (VP 뒤흔들/VV+게/ECS)))
+                                                 되/VX+음/ENM+은/PAU))
+                                     물론/ADV)
+                               (VP (NP-COMP (NP 주/NPR
+                                                총리/NNC+의/PAN)
+                                            (NP 방일/NNC+에/PAD+도/PAU))
+                                   (NP-OBJ (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *pro*)
+                                                 (VP (VP (NP-OBJ *T*-2)
+                                                         (VV 예기/NNC+하/XSV+지/ECS))
+                                                     못하/VX+은/EAN)))
+                                           (NP 결과/NNC+을/PCA))
+                                   가져오/VV+을/EAN))
+                           (VX 것/NNX))
+                       "/SRQ
+                       이/CO+라/EFN+고/PAD)
+               말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>총통직</term>
+	    </Arg>
+	    <Rel>
+	      <term>물러난</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

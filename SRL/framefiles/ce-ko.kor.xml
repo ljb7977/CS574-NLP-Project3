@@ -1,0 +1,53 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>제고</lemma>
+    <comment>Frames file for '제고' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>제고.01</id>
+      <edef>uplift</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing uplifted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>제고하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 농림수산성의 농업 정책 효율성을 제고하는 작업도 난관이 많을 것으로 판단하고 있다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (ADVP 또/ADV)
+           (VP (NP-COMP (S (NP-COMP-1 (S (NP-SBJ *pro*)
+                                         (VP (NP-OBJ (NP 농림수산성/NNC+의/PAN)
+                                                     (NP 농업/NNC
+                                                         정책/NNC
+                                                         효율성/NNC+을/PCA))
+                                             (VV 제고/NNC+하/XSV+는/EAN)))
+                                      (NP 작업/NNC+도/PAU))
+                           (S (NP-SBJ 난관/NNC+이/PCA)
+                              (ADJP (NP-COMP *T*-1)
+                                    많/VJ+을/EAN)))
+                        (NP 것/NNX+으로/PAD))
+               (VV 판단/NNC+하/XSV+고/ECS)))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>농림수산성의 농업 정책 효율성</term>
+	    </Arg>
+	    <Rel>
+	      <term>제고하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>다각화</lemma>
+    <comment>Frames file for '다각화' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>다각화.01</id>
+      <edef>diversify</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing becoming diverse"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>다각화하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>오 회장은 "오피콤을 21 세기 첨단 통신장비 종합 메이커로 만들겠다는 목표를 가지고 있으며 이러한 목표를 달성하기 위해 인터넷 및 정보통신 장비분야로 사업을 다각화할 계획"이라고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 오/NPR
+           회장/NNC+은/PAU)
+   (VP (NP-COMP "/SLQ
+                (S (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                         (VP (NP-OBJ 오피콤/NPR+을/PCA)
+                                             (NP-COMP 21/NNU
+                                                      세기/NNX
+                                                      첨단/NNC
+                                                      통신/NNC+장비/NNC
+                                                      종합/NNC
+                                                      메이커/NNC+으로/PAD)
+                                             만들/VV+겠/EPF+다는/EAN))
+                                      (NP 목표/NNC+을/PCA))
+                              가지/VV+고/ECS)
+                          있/VX+으며/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (S-OBJ (NP-SBJ *pro*)
+                                        (VP (NP-OBJ 이러한/DAN
+							  목표/NNC+을/PCA)
+                                            (VV 달성/NNC+하/XSV+기/ENM)))
+                                 위하/VV+어/ECS))
+                          (VP (NP-COMP (NP (NP 인터넷/NNC)
+				           (ADCP 및/ADC)
+				           (NP 정보/NNC+통신/NNC))
+				       (NP 장비/NNC+분야/NNC+으로/PAD))
+			      (NP-OBJ 사업/NNC+을/PCA)
+			      (VV 다각화/NNC+하/XSV+을/EAN)))))
+                (NP 계획/NNC)
+                "/SRQ
+                이라고/PAD)
+       (VV 강조/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>이러한 목표를 달성하기 위해</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>인터넷 및 정보통신 장비분야</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>사업</term>
+	    </Arg>
+	    <Rel>
+	      <term>다각화할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

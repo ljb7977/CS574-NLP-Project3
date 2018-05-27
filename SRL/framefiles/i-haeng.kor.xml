@@ -1,0 +1,149 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이행</lemma>
+    <comment>Frames file for '이행' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>이행.01</id>
+      <edef>perform</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing performed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이행하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국은 앞서 일본측이 즉각 접속료를 50 퍼센트 인하할 것을 요구했으나 이달초 실무 회담에서 당초 입장을 완화, 50 퍼센트라는 인하폭을 받아들인다면 수년간 단계적으로 이행하는 방안을 수용한다는 방침이다.</text>
+	  <parse>
+(S (S (NP-SBJ 미국/NPR+은/PAU)
+      (VP (ADVP 앞서/ADV)
+          (VP (NP-OBJ (S (NP-SBJ 일본/NPR+측/XSF+이/PCA)
+                         (VP (ADVP 즉각/ADV)
+                             (VP (NP-OBJ 접속료/NNC+을/PCA)
+                                 (VP (NP-ADV 50/NNU
+                                             퍼센트/NNX)
+                                     (VP (VV 인하/NNC+하/XSV+을/EAN))))))
+                      (NP 것/NNX+을/PCA))
+              (VV 요구/NNC+하/XSV+었/EPF+으나/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV 이달/NNC+초/NNX)
+          (NP-ADV 실무/NNC
+                  회담/NNC+에서/PAD)
+          (VP (NP-OBJ 당초/NNC
+                      입장/NNC+을/PCA)
+              (VV 완화/NNC))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (NP 50/NNU
+                      퍼센트/NNX+이라는/PAN)
+                  (NP 인하/NNC+폭/NNC+을/PCA))
+          받아들이/VV+는다면/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                (VP (NP-ADV 수/XPF+년/NNX+간/XSF)
+                                    (NP-ADV 단계/NNC+적/XSF+으로/PAD)
+                                    (VP (NP-OBJ *pro*)
+                                        (VV 이행/NNC+하/XSV+는/EAN))))
+                             (NP 방안/NNC+을/PCA))
+                     (VV 수용/NNC+하/XSV+는다는/EAN)))
+              (NP 방침/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>수년간</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>단계적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>이행하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>이행되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>중국이 실제로 대만을 공격할 가능성이 있느냐는 질문에 올브라이트장관은 "중국 지도부는 대만에 대한 공격이 미국에 중대한 결과가 될 것"이라고 강조하고, 대만이 방어능력을 유지하도록 하는 한편 만약 대만이 공격을 받을 경우 대만을 돕는다는 미국의 의무는 이행될 것이라 말했다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ (S (NP-SBJ 중국/NPR+이/PCA)
+                         (VP (NP-ADV 실제/NNC+으로/PAD)
+                             (VP (NP-OBJ 대만/NPR+을/PCA)
+                                 (VV 공격/NNC+하/XSV+을/EAN))))
+                      (NP 가능성/NNC+이/PCA))
+              (ADJP 있/VJ+느냐는/EAN))
+           (NP 질문/NNC+에/PAD))
+   (S (NP-SBJ 올브라이트/NPR+장관/NNC+은/PAU)
+      (VP (VP (S-COMP "/SLQ
+                      (NP-ADV 중국/NPR
+                              지도부/NNC+은/PAU)
+                      (S (NP-SBJ (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP-COMP 대만/NPR+에/PAD)
+                                           대하/VV+은/EAN)))
+                                 (NP 공격/NNC+이/PCA))
+                         (VP (VP (NP-COMP (S (WHNP-2 *op*)
+					     (S (NP-SBJ *T*-2)
+						(ADJP (NP-COMP 미국/NPR+에/PAD)
+						      (VJ 중대/NNC+하/XSJ+은/EAN))))
+					  (NP 결과/NNC+이/PCA))
+                                 되/VV+을/EAN)
+                             (VX 것/NNX)))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD)
+              (VV 강조/NNC+하/XSV+고/ECS))
+          ,/SCM
+          (VP (S-COMP (NP-SBJ (NP (S (WHNP-3 *op*)
+                                     (S (NP-SBJ *T*-3)
+                                        (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                       (VP (S-COMP (NP-SBJ 대만/NPR+이/PCA)
+                                                                   (VP (NP-OBJ 방어/NNC+능력/NNC+을/PCA)
+                                                                       (VV 유지/NNC+하/XSV+도록/ECS)))
+                                                           하/VV+는/EAN))
+                                                    (NP 한편/NNC))
+                                            (NP-ADV (S (ADVP 만약/ADV)
+                                                       (S (NP-SBJ 대만/NPR+이/PCA)
+                                                          (VP (NP-OBJ 공격/NNC+을/PCA)
+                                                              받/VV+을/EAN)))
+                                                    (NP 경우/NNC))
+                                            (VP (NP-OBJ 대만/NPR+을/PCA)
+                                                돕/VV+는다는/EAN))))
+                                  (NP 미국/NPR+의/PAN))
+                              (NP 의무/NNC+은/PAU))
+                      (VP (VP (VV 이행/NNC+되/XSV+을/EAN))
+                          (VX 것/NNX+이/CO+라/EFN)))
+              말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>대만이 방어능력을 유지하도록 하는 한편 만약 대만이 공격을 받을 경우 대만을 돕는다는 미국의 의무</term>
+	    </Arg>
+	    <Rel>
+	      <term>이행될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

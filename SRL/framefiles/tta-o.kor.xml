@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>따오</lemma>
+    <comment>Frames file for '따오' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>따오.01</id>
+      <edef>quote</edef>
+      <roleset>
+	<role argnum="0" argrole="quoter"/>
+	<role argnum="1" argrole="thing quoted"/>
+	<role argnum="2" argrole="quoted from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>따오다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>PAC의 이름은 예비선거 기간에 선풍적인 인기를 끌었던 유세버스인 `직설 특급 '(Straight Talk Ex-press)에서 따온 것이다.</text>
+	  <parse>
+(S (NP-SBJ (NP PAC/NFW+의/PAN)
+	   (NP 이름/NNC+은/PAU))
+   (VP (NP (S (WHNP-4 *op*)
+	      (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (NP (S (WHNP-2 *op*)
+                                               (S (NP-SBJ *T*-2)
+                                                  (VP (NP-ADV 예비/NNC+선거/NNC
+								  기간/NNC+에/PAD)
+                                                      (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                                     (S (NP-SBJ *T*-3)
+                                                                        (VP (NP 선풍/NNC+적/XSF+이/CO+은/EAN))))
+                                                                  (NP 인기/NNC+을/PCA))
+                                                          끌/VV+었/EPF+던/EAN))))
+                                            (NP 유세/NNC+버스/NNC+이/CO+은/EAN)))))
+                              (NP `/SLQ
+                                  직설/NNC
+                                  특급/NNC
+                                  '/SLQ
+                                  (PRN -LRB-/SLQ
+                                       Straight/NFW
+                                       Talk/NFW
+                                       Ex-press/NFW
+                                       -RRB-/SRQ)
+                                  에서/PAD))
+		     (NP-OBJ *T*-4)
+		     따오/VV+은/EAN)))
+           (NP 것/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>예비선거 기간에 선풍적인 인기를 끌었던 유세버스인 `직설 특급 '(Straight Talk Ex-press)</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=것</term>
+	    </Arg>
+	    <Rel>
+	      <term>따온</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

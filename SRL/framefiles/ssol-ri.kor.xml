@@ -1,0 +1,105 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>쏠리</lemma>
+    <comment>Frames file for '쏠리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>쏠리.01</id>
+      <edef>focus</edef>
+      <roleset>
+	<role argnum="1" argrole="thing focussed"/>
+	<role argnum="2" argrole="focussed on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>쏠리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한 민간단체 관계자는 "북한 사람 7 명이 러시아로 탈출했다 지난 1 월 북한으로 송환되면서 탈북자 문제에 지나친 관심이 쏠리고 있다"며 "우리의 경우도 남한을 떠난 사람, 즉 '탈남자'라고 할 수 있는 사람들이 다수임을 상기할 필요가 있다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 한/NNU
+           민간/NNC+단체/NNC
+           관계자/NNC+은/PAU)
+   (VP (S-COMP (S "/SLQ
+                  (S (NP-SBJ 북한/NPR
+                             사람/NNC
+                             7/NNU
+                             명/NNX+이/PCA)
+                     (VP (S (NP-SBJ *pro*)
+                            (VP (NP-COMP 러시아/NPR+으로/PAD)
+                                (VV 탈출/NNC+하/XSV+었/EPF+다/ECS)))
+                         (NP-ADV 지난/DAN
+                                 1/NNU
+                                 월/NNX)
+                         (VP (NP-COMP 북한/NPR+으로/PAD)
+                             (VV 송환/NNC+되/XSV+으면서/ECS))))
+                  (S (NP-COMP-2 탈북자/NNC
+                                문제/NNC+에/PAD)
+                     (S (NP-SBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (ADJP 지나치/VJ+은/EAN)))
+                                (NP 관심/NNC+이/PCA))
+                        (VP (VP (NP-COMP *T*-2)
+                                쏠리/VV+고/ECS)
+                            있/VX+다/EFN)))
+                  "/SRQ
+                  며/ECS)
+               (S "/SLQ
+                  (NP-SBJ (S (NP-SBJ *pro*)
+                             (VP (S-OBJ (NP-ADV (NP 우리/NPN+의/PAN)
+                                                (NP 경우/NNC+도/PAU))
+                                        (S (NP-SBJ (NP (S (WHNP-3 *op*)
+                                                          (S (NP-SBJ *T*-3)
+                                                             (VP (NP-OBJ 남한/NPR+을/PCA)
+                                                                 떠나/VV+은/EAN)))
+                                                       (NP 사람/NNC))
+                                                   ,/SCM
+                                                   (ADCP 즉/ADC)
+                                                   (NP (S (WHNP-4 *op*)
+                                                          (S (NP-SBJ *pro*)
+                                                             (VP (VP (NP-COMP '/SLQ
+                                                                              탈남자/NNC
+                                                                              '/SRQ
+                                                                              이라고/PAD)
+                                                                     (NP-OBJ *T*-4)
+                                                                     하/VV+을/EAN)
+                                                                 (VX 수/NNX
+                                                                     있/VJ+는/EAN))))
+                                                       (NP 사람/NNC+들/XSF+이/PCA)))
+                                           (VP (NP 다수/NNC+이/CO+음/ENM+을/PCA))))
+                                 (VV 상기/NNC+하/XSV+을/EAN)))
+                          (NP 필요/NNC+이/PCA))
+                  (ADJP 있/VJ+다/EFN)
+                  "/SRQ
+                  고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>북한 사람 7 명이 러시아로 탈출했다 지난 1 월 북한으로 송환되면서</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>탈북자 문제</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>지나친 관심</term>
+	    </Arg>
+	    <Rel>
+	      <term>쏠리고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

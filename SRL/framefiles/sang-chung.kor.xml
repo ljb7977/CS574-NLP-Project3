@@ -1,0 +1,92 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>상충</lemma>
+    <comment>Frames file for '상충' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>상충.01</id>
+      <edef>conflict</edef>
+      <roleset>
+	<role argnum="1" argrole="thing under consideration"/>
+	<role argnum="2" argrole="conflicted with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>상충되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>여기에 자민련은 충청권을 기반으로 하고 있는 반면 민국당은 부산-경남을 중심으로 하고 있어 지역적으로 상충되지 않기 때문에 양당간 합당이 현재의 지역당 한계를 극복할 수 있는 `시너지 효과'를 기대할 수 있다는 점에서 양당간 합당설을 계속 주시할 필요가 있다는 관측이 대두되고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-ADV (S (NP-SBJ *pro*)
+                         (VP (VP (NP-ADV 여기/NPN+에/PAD)
+                                 (NP-ADV (S (NP-SBJ *pro*)
+                                            (VP (VP (S (NP-ADV (S (NP-SBJ 자민련/NPR+은/PAU)
+								  (VP (VP (NP-OBJ 충청/NPR+권/XSF+을/PCA)
+									  (NP-COMP 기반/NNC+으로/PAD)
+									  하/VV+고/ECS)
+								      있/VX+는/EAN))
+							       (NP 반면/NNC))
+						       (S (NP-SBJ 민국당/NPR+은/PAU)
+							  (VP (VP (NP-OBJ 부산/NPR
+									      -/SSY
+									      경남/NPR+을/PCA)
+								  (NP-COMP 중심/NNC+으로/PAD)
+								  하/VV+고/ECS)
+							      있/VX+어/ECS)))
+                                                    (NP-ADV 지역/NNC+적/XSF+으로/PAD)
+                                                    (VP (VV 상충/NNC+되/XSV+지/ECS)))
+                                                않/VX+기/ENM))
+                                         (NP 때문/NNX+에/PAD))
+                                 (VP (NP-OBJ (S (NP-SBJ 양당/NNC+간/XSF
+                                                        합당/NNC+이/PCA)
+                                                (VP (VP (NP-OBJ (NP 현재/NNC+의/PAN)
+                                                                (NP 지역/NNC+당/NNC
+                                                                    한계/NNC+을/PCA))
+                                                        (VV 극복/NNC+하/XSV+을/EAN))
+                                                    (VX 수/NNX
+                                                        있/VJ+는/EAN)))
+                                             (NP `/SLQ
+                                                 시너지/NNC
+                                                 효과/NNC
+                                                 '/SRQ
+                                                 을/PCA))
+                                     (VV 기대/NNC+하/XSV+을/EAN)))
+                             (VX 수/NNX
+                                 있/VJ+다는/EAN)))
+                      (NP 점/NNX+에서/PAD))
+              (S (NP-SBJ (S (NP-SBJ *pro*)
+                            (VP (NP-OBJ 양당/NNC+간/XSF
+                                        합당/NNC+설/NNC+을/PCA)
+                                (VP (ADVP 계속/ADV)
+                                    (VP (VV 주시/NNC+하/XSV+을/EAN)))))
+                         (NP 필요/NNC+이/PCA))
+                 (ADJP 있/VJ+다는/EAN)))
+           (NP 관측/NNC+이/PCA))
+   (VP (VP (VV 대두/NNC+되/XSV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>자민련은 충청권을 기반으로 하고 있는 반면 민국당은 부산-경남을 중심으로 하고 있어</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>지역적으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>상충되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

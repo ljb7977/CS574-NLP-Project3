@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>띠</lemma>
+    <comment>Frames file for '띠' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>띠.01</id>
+      <edef>be charged with</edef>
+      <roleset>
+	<role argnum="0" argrole="thing in charge"/>
+	<role argnum="1" argrole="charged with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>띠다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리는 기습 임무를 띠고 있었지요.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN+은/PAU) 
+   (VP (VP (NP-OBJ 기습/NNC 임무/NNC+을/PCA) 
+	   띠/VV+고/ECS)
+       있/VX+었/EPF+지요/EFN) 
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>우리</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>기습 임무</term>
+	    </Arg>
+	    <Rel>
+	      <term>띠고</term>
+	    </Rel>
+	    <AUX>
+	      <f>고</f>
+	      <term>있었지요</term>
+	    </AUX>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

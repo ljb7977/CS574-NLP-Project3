@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이탈</lemma>
+    <comment>Frames file for '이탈' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>이탈.01</id>
+      <edef>defect</edef>
+      <roleset>
+	<role argnum="0" argrole="thing defecting"/>
+	<role argnum="1" argrole="defect from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이탈하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>많은 공화당원들은 아직도 매케인을 조직에서 이탈한 `이단자'로 보고 있기 때문이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ (S (WHNP-1 *op*)
+			 (S (NP-SBJ *T*-1)
+			    (ADJP 많/VJ+은/EAN)))
+		      (NP 공화당원/NNC+들/XSF+은/PAU))
+	      (VP (VP (ADVP 아직도/ADV)
+		      (VP (NP-OBJ 매케인/NPR+을/PCA)
+			  (NP-COMP (S (WHNP-2 *op*)
+				      (S (NP-SBJ *T*-2)
+					 (VP (NP-COMP 조직/NNC+에서/PAD)
+					     (VV 이탈/NNC+하/XSV+은/EAN))))
+				   (NP `/SLQ
+				       이단자/NNC
+				       '/SRQ
+				       으로/PAD))
+			  보/VV+고/ECS))
+		  있/VX+기/ENM))
+           (NP 때문/NNX+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=이단자</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에서</f>
+	      <term>조직</term>
+	    </Arg>
+	    <Rel>
+	      <term>이탈한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재집결</lemma>
+    <comment>Frames file for '재집결' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>재집결.01</id>
+      <edef>gather again</edef>
+      <roleset>
+	<role argnum="0" argrole="thing gathering again"/>
+	<role argnum="1" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재집결하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>아슬란 마스하도프 체첸 대통령은 연방군 포위를 빠져나오는 반군이 날로 늘어나면서 베데모 협곡에 재집결하자 군사회의를 열기 위해 모든 최고위 야전군 사령관들을 소집했다고 이 대변인은 전했다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-SBJ (NP 아슬란/NPR
+                         마스하도프/NPR)
+                     (NP 체첸/NPR
+                         대통령/NNC+은/PAU))
+             (VP (S (NP-SBJ (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (VP (NP-OBJ 연방군/NNC
+						    포위/NNC+을/PCA)
+                                      빠져나오/VV+는/EAN)))
+                            (NP 반군/NNC+이/PCA))
+                    (VP (S (NP-SBJ *pro*)
+                           (VP (ADVP 날로/ADV)
+                               (VP 늘어나/VV+으면서/ECS)))
+                        (VP (NP-COMP 베데모/NPR
+					   협곡/NNC+에/PAD)
+                            (VV 재집결/NNC+하/XSV+자/ECS))))
+                 (S (NP-SBJ *pro*)
+		    (VP (S-OBJ (NP-SBJ *pro*)
+			       (VP (NP-OBJ 군사/NNC+회의/NNC+을/PCA)
+				   열/VV+기/ENM))
+			위하/VV+어/ECS))
+		 (VP (NP-OBJ 모든/DAN
+                                 최고위/NNC
+                                 야전군/NNC
+                                 사령관/NNC+들/XSF+을/PCA)
+		     (VV 소집/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 이/DAN
+              대변인/NNC+은/PAU)
+      (VP (S-COMP *T*-2)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>연방군 포위를 빠져나오는 반군</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>날로 늘어나면서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>베데모 협곡</term>
+	    </Arg>
+	    <Rel>
+	      <term>재집결하자</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

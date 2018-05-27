@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>미흡</lemma>
+    <comment>Frames file for '미흡' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>미흡.01</id>
+      <edef>unsatisfactory</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being unsatisfactory"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>미흡하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김대중 대통령 집권 2 년간의 공약이행률이 30 퍼센트에 그치는 등 개혁추진이 미흡하다는 시민단체의 주장이 나왔다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-ADV (S (NP-SBJ (NP 김대중/NPR
+                                     대통령/NNC
+                                     집권/NNC
+                                     2/NNU
+                                     년/NNX+간/XSF+의/PAN)
+                                 (NP 공약/NNC+이행/NNC+률/XSF+이/PCA))
+                         (VP (NP-COMP 30/NNU
+                                      퍼센트/NNX+에/PAD)
+                             그치/VV+는/EAN))
+                      (NP 등/NNX))
+              (S (NP-SBJ 개혁/NNC+추진/NNC+이/PCA)
+                 (ADJP (VJ 미흡/NNC+하/XSJ+다는/EAN))))
+           (NP (NP 시민/NNC+단체/NNC+의/PAN)
+               (NP 주장/NNC+이/PCA)))
+   (VP 나오/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>김대중 대통령 집권 2 년간의 공약이행률이 30 퍼센트에 그치는 등</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>개혁추진</term>
+	    </Arg>
+	    <Rel>
+	      <term>미흡하다는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

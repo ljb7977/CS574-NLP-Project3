@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>매복</lemma>
+    <comment>Frames file for '매복' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>매복.01</id>
+      <edef>ambush</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>매복하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>천입 부대가 적 퇴로에 매복하고 있었지요.</text>
+	  <parse>
+(S (NP-SBJ 천입/NNC
+           부대/NNC+이/PCA)
+   (VP (VP (NP-COMP 적/NNC
+                    퇴로/NNC+에/PAD)
+           (VV 매복/NNC+하/XSV+고/ECS))
+       있/VX+었/EPF+지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>천입 부대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>적 퇴로</term>
+	    </Arg>
+	    <Rel>
+	      <term>매복하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있었지요</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

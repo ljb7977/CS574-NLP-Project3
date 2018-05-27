@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>내정</lemma>
+    <comment>Frames file for '내정' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>내정.01</id>
+      <edef>appoint informally</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="appointee, employee"/>
+	<role argnum="2" argrole="job, position"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내정되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>016 이동통신사업자 한국통신프리텔의 새 사장에 이용경 한국통신 연구 개발본부장이 내정됐다.</text>
+	  <parse>
+(S (NP-COMP-1 (NP 016/NNU
+                  이동/NNC+통신/NNC+사업자/NNC
+                  한국통신프리텔/NPR+의/PAN)
+              (NP 새/DAN
+                  사장/NNC+에/PAD))
+   (S (NP-SBJ 이용경/NPR
+              한국통신/NPR
+              연구/NNC
+              개발/NNC+본부장/NNC+이/PCA)
+      (VP (NP-COMP *T*-1)
+          (VV 내정/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>016 이동통신사업자 한국통신프리텔의 새 사장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이용경 한국통신 연구 개발본부장</term>
+	    </Arg>
+	    <Rel>
+	      <term>내정됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

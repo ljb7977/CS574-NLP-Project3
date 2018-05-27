@@ -1,0 +1,89 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>감</lemma>
+    <comment>Frames file for '감' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>감.01</id>
+      <edef>wind, dress</edef>
+      <roleset>
+	<role argnum="0" argrole="roller"/>
+	<role argnum="1" argrole="thing rolled"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>감다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="np-comp" trg="arg1"/>
+	  <mapitem src="np-obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전사들이 전투 중에 휴대하는 의료품은 상처를 감을 붕대 한 두개뿐입니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (NP-SBJ 전사/NNC+들/XSF+이/PCA)
+                 (VP (NP-ADV 전투/NNC
+                             중/NNX+에/PAD)
+                     (VP (NP-OBJ *T*-2)
+                         (VV 휴대/NNC+하/XSV+는/EAN)))))
+           (NP 의료품/NNC+은/PAU))
+   (VP (NP (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ 상처/NNC+을/PCA)
+                         (NP-COMP *T*-1)
+                         감/VV+을/EAN)))
+               (NP (NP 붕대/NNC)
+                   (NP 한/NNU
+                       두/NNU
+                       개/NNX)))
+           (NP 뿐/NNX+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>상처</term>
+	    </Arg>
+	    <Rel>
+	      <term>감을</term>
+	    </Rel>
+	    <Arg n="1">
+	      <term>*trace*=붕대 한 두개</term>
+	    </Arg>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>감다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전사들이 상처에 붕대를 감았다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>전사들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>상처</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>붕대</term>
+	    </Arg>
+	    <Rel>
+	      <term>감았다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>입건</lemma>
+    <comment>Frames file for '입건' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>입건.01</id>
+      <edef>book on a charge of</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="person booked"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입건되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>데니스 모런이라는 이 소년은 2 건의 컴퓨터 시스템 불법침입 혐의로 지난 8 일 입건됐다.</text>
+	  <parse>
+(S (NP-SBJ (NP 데니스/NPR
+               모런/NPR+이라는/PAN)
+           (NP 이/DAN
+               소년/NNC+은/PAU))
+   (VP (NP-COMP (NP (NP 2/NNU
+                        건/NNX+의/PAN)
+                    (NP 컴퓨터/NNC
+                        시스템/NNC
+                        불법/NNC+침입/NNC))
+                (NP 혐의/NNC+으로/PAD))
+       (VP (NP-ADV 지난/DAN
+                   8/NNU
+                   일/NNX)
+           (VP (VV 입건/NNC+되/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>데니스 모런이라는 이 소년</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>2 건의 컴퓨터 시스템 불법침입 혐의로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 8일</term>
+	    </Arg>
+	    <Rel>
+	      <term>입건됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

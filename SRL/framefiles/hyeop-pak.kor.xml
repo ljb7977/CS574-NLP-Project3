@@ -1,0 +1,93 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>협박</lemma>
+    <comment>Frames file for '협박' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>협박.01</id>
+      <edef>threaten</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity threaten"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>협박하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>매케인은 94 년에 북-미 핵합의가 체결되자 상원 단상에서 클린턴 행정부가 "바보짓을 했다"면서 대북한 정책을 공격하고 북한이 이미 "한국과 일본을 협박하고" 이란과 시리아, 리비아 등에 공급할 수 있는 충분한 양의 플루토늄을 보유하고 있다고 주장한 바 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 매케인/NPR+은/PAU)
+              (VP (VP (S (NP-ADV 94/NNU
+                                 년/NNX+에/PAD)
+                         (S (NP-SBJ 북/NPR
+                                    -/SSY
+                                    미/NPR
+                                    핵/NNC+합의/NNC+이/PCA)
+                            (VP (VV 체결/NNC+되/XSV+자/ECS))))
+                      (NP-ADV 상원/NNC
+                              단상/NNC+에서/PAD)
+                      (S (NP-SBJ 클린턴/NPR
+				       행정부/NNC+이/PCA)
+                         (VP "/SLQ
+			     (NP-OBJ 바보짓/NNC+을/PCA)
+			     하/VV+었/EPF+다/EFN
+			     "/SRQ
+			     면서/ECS))
+                      (VP (NP-OBJ 대/XPF+북한/NPR
+                                  정책/NNC+을/PCA)
+                          (VV 공격/NNC+하/XSV+고/ECS)))
+                  (VP (S-COMP (NP-SBJ 북한/NPR+이/PCA)
+                              (VP (ADVP 이미/ADV)
+                                  (VP (VP "/SLQ
+                                          (NP-OBJ (NP 한국/NPR+과/PCJ)
+                                                  (NP 일본/NPR+을/PCA))
+                                          (VV 협박/NNC+하/XSV+고/ECS)
+                                          "/SRQ)
+                                      (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                         (S (NP-SBJ *pro*)
+                                                            (VP (VP (NP-COMP (NP (NP 이란/NPR+과/PCJ)
+                                                                                 (NP 시리아/NPR)
+                                                                                 ,/SCM
+                                                                                 (NP 리비아/NPR))
+                                                                             (NP 등/NNX+에/PAD))
+                                                                    (NP-OBJ *T*-2)
+                                                                    (VV 공급/NNC+하/XSV+을/EAN))
+                                                                (VX 수/NNX
+                                                                    있/VJ+는/EAN))))
+                                                      (NP (NP (S (WHNP-1 *op*)
+                                                                 (S (NP-SBJ *T*-1)
+                                                                    (ADJP 충분하/VJ+은/EAN)))
+                                                              (NP 양/NNC+의/PAN))
+                                                          (NP 플루토늄/NNC+을/PCA)))
+                                              (VV 보유/NNC+하/XSV+고/ECS))
+                                          있/VX+다/EFN+고/PAD))))
+                      (VV 주장/NNC+하/XSV+은/EAN))))
+           (NP 바/NNX))
+   (ADJP 있/VJ+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이미</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>한국과 일본</term>
+	    </Arg>
+	    <Rel>
+	      <term>협박하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

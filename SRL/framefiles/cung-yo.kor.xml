@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>중요</lemma>
+    <comment>Frames file for '중요' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>중요.01</id>
+      <edef>important</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being important"/>
+	<role argnum="2" argrole="important to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>중요하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전투 시 부대간의 호상 협조는 대단히 중요하다.</text>
+	  <parse>
+(S (NP-ADV 전투/NNC
+	   시/NNX)
+   (S (NP-SBJ (NP 부대/NNC+간/XSF+의/PCA)
+	      (NP 호상/NNC
+		  협조/NNC+은/PAU))
+      (ADJP (ADVP 대단히/ADV)
+	    (ADJP (VJ 중요/NNC+하/XSJ+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>전투 시</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>부대간의 호상 협조</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>대단히</term>
+	    </Arg>
+	    <Rel>
+	      <term>중요하다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

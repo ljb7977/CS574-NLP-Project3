@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유출</lemma>
+    <comment>Frames file for '유출' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유출.01</id>
+      <edef>steal</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing stolen"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유출되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 "나토는 내부 의사결정 과정의 절차가 유출되지 않도록 극도의 보안을 유지했다"면서 "나토의 작전계획에 심각한 오점이 있었다면 어떻게 78 일간 3 만 8 천차례나 출격한 공습 과정에서 불과 2 대의 전투기만 잃을 수 있겠느냐"고 반문했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ 나토/NPR+은/PAU)
+          (VP (S (NP-SBJ (NP 내부/NNC
+                             의사/NNC+결정/NNC
+                             과정/NNC+의/PAN)
+                         (NP 절차/NNC+이/PCA))
+                 (VP (VP (VV 유출/NNC+되/XSV+지/ECS))
+                     않/VX+도록/ECS))
+              (VP (NP-OBJ (NP 극도/NNC+의/PAN)
+                          (NP 보안/NNC+을/PCA))
+                  (VV 유지/NNC+하/XSV+었/EPF+다/EFN)))
+          "/SRQ
+          면서/ECS)
+       (VP (S-COMP "/SLQ
+                   (S (NP-COMP-2 (NP 나토/NPR+의/PAN)
+                                 (NP 작전/NNC+계획/NNC+에/PAD))
+                      (S (NP-SBJ (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (ADJP 심각하/VJ+은/EAN)))
+                                 (NP 오점/NNC+이/PCA))
+                         (ADJP (NP-COMP *T*-2)
+                               있/VJ+었/EPF+다면/ECS)))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (ADVP 어떻게/ADV)
+                              (NP-ADV (S (NP-SBJ *pro*)
+                                         (VP (NP-ADV 78/NNU
+                                                     일/NNX+간/XSF)
+                                             (NP-ADV 3/NNU
+                                                     만/NNU
+                                                     8/NNU
+                                                     천/NNU+차례/NNX+이나/PAU)
+                                             (VP (VV 출격/NNC+하/XSV+은/EAN))))
+                                      (NP 공습/NNC
+                                          과정/NNC+에서/PAD))
+                              (VP (NP-OBJ (NP (ADVP 불과/ADV)
+                                              (NP 2/NNU
+                                                  대/NNX+의/PAN))
+                                          (NP 전투기/NNC+만/PAU))
+                                  잃/VV+을/EAN))
+                          (VX 수/NNX
+                              있/VJ+겠/EPF+느냐/EFN)))
+                   "/SRQ
+                   고/PAD)
+           (VV 반문/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>내부 의사결정 과정의 절차</term>
+	    </Arg>
+	    <Rel>
+	      <term>유출되지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

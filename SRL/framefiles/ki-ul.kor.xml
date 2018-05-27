@@ -1,0 +1,324 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>기울</lemma>
+    <comment>Frames file for '기울' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>기울.01</id>
+      <edef>incline</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing inclined"/>
+	<role argnum="2" argrole="inclined to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>기울다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>하지만 민국당은 선거가 진행되면서 김영삼 전 대통령의 마음이 자신들 쪽으로 기울 여지가 있기 때문에 강삼재, 박종웅 의원 등 상도동계 의원들의 이동 가능성에 기대를 걸고 있는 눈치이다.</text>
+	  <parse>
+(S (ADCP 하지만/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ 민국당/NPR+은/PAU)
+                 (VP (VP (NP-ADV (S (S (NP-SBJ 선거/NNC+이/PCA)
+                                       (VP (VV 진행/NNC+되/XSV+으면서/ECS)))
+                                    (S (NP-SBJ (S (NP-SBJ (NP 김영삼/NPR
+                                                              전/DAN
+                                                              대통령/NNC+의/PAN)
+                                                          (NP 마음/NNC+이/PCA))
+                                                  (VP (NP-COMP 자신/NNC+들/XSF
+                                                               쪽/NNX+으로/PAD)
+                                                      기울/VV+을/EAN))
+                                               (NP 여지/NNC+이/PCA))
+                                       (ADJP 있/VJ+기/ENM)))
+                                 (NP 때문/NNX+에/PAD))
+                         (VP (NP-COMP (NP (NP (NP (NP (NP 강삼재/NPR)
+                                                      ,/SCM
+                                                      (NP 박종웅/NPR))
+                                                  (NP 의원/NNC))
+                                              (NP 등/NNX))
+                                          (NP 상도동/NPR+계/XSF
+                                              의원/NNC+들/XSF+의/PAN))
+                                      (NP 이동/NNC
+                                          가능성/NNC+에/PAD))
+                             (NP-OBJ 기대/NNC+을/PCA)
+                             걸/VV+고/ECS))
+                     있/VX+는/EAN))
+              (NP 눈치/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>김영삼 전 대통령의 마음</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>자신들 쪽</term>
+	    </Arg>
+	    <Rel>
+	      <term>기울</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>기울어지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>카니얼 편집인은 "앞으로 10 년 내에 중국이 군사적 우위로 전환하기 시작하기 전에는 양안 간의 군사적 균형은 현재 대만쪽에 유리하게 기울어져 있다"고 지적하고 중국해군이 대만의 우수한 공군력을 제압하기에는 일격에 대만에 2 개 전투 사단 이상의 병력을 이동시킬 수 있는 수륙양용 군사력이 턱없이 부족하다고 분석했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 카니얼/NPR)
+           (NP 편집인/NNC+은/PAU))
+   (VP (VP (S-COMP "/SLQ
+                   (NP-ADV (S (NP-ADV 앞/NNC+으로/PAD)
+			      (NP-ADV 10/NNU
+				      년/NNX
+				      내/NNX+에/PAD)
+			      (S (NP-SBJ 중국/NPR+이/PCA)
+				 (VP (S-OBJ (NP-SBJ *pro*)
+					    (VP (NP-COMP 군사/NNC+적/XSF
+							     우위/NNC+으로/PAD)
+						(VV 전환/NNC+하/XSV+기/ENM)))
+				     (VV 시작/NNC+하/XSV+기/ENM))))
+                           (NP 전/NNC+에/PAD+은/PAU))
+                   (S (NP-SBJ (NP 양안/NNC
+                                  간/NNX+의/PAN)
+                              (NP 군사/NNC+적/XSF
+                                  균형/NNC+은/PAU))
+                      (VP (VP (NP-ADV 현재/NNC)
+                              (VP (S-COMP (NP-SBJ *pro*)
+                                          (ADJP (NP-COMP 대만/NPR+쪽/NNX+에/PAD)
+                                                (VJ 유리/NNC+하/XSJ+게/ECS)))
+                                  (VV 기울/VV+어지/XSV+어/ECS)))
+                          있/VX+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           (VV 지적/NNC+하/XSV+고/ECS))
+       (VP (S-COMP (S-COMP-2 (NP-SBJ 중국/NPR+해군/NNC+이/PCA)
+			     (VP (NP-OBJ (NP 대만/NPR+의/PAN)
+					 (NP (S (WHNP-3 *op*)
+						(S (NP-SBJ *T*-3)
+						   (ADJP (VJ 우수/NNC+하/XSJ+은/EAN))))
+					     (NP 공군력/NNC+을/PCA)))
+				 (VV 제압/NNC+하/XSV+기/ENM+에/PAD+은/PAU)))
+                   (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (VP (VP (NP-ADV 일격/NNC+에/PAD)
+                                            (VP (NP-COMP 대만/NPR+에/PAD)
+                                                (NP-OBJ (NP 2/NNU
+                                                            개/NNX
+                                                            전투/NNC
+                                                            사단/NNC
+                                                            이상/NNC+의/PAN)
+                                                        (NP 병력/NNC+을/PCA))
+                                                (VV 이동/NNC+시키/XSV+을/EAN)))
+                                        (VX 수/NNX
+					      있/VJ+는/EAN))))
+                              (NP 수륙/NNC+양용/NNC
+				      군사력/NNC+이/PCA))
+                      (ADJP (ADVP 턱없이/ADV)
+                            (ADJP (S-COMP *T*-2)
+				  (VJ 부족/NNC+하/XSJ+다/EFN+고/PAD)))))
+           (VV 분석/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>앞으로 10 년 내에 중국이 군사적 우위로 전환하기 시작하기 전에는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>양안 간의 군사적 균형</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현재</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>게</f>
+	      <term>대만쪽에 유리하</term>
+	    </Arg>
+	    <Rel>
+	      <term>기울어져</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>기울이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>코언은 베트남 방문중 미군 실종자 확인에 가장 큰 관심을 기울였었다.</text>
+	  <parse>
+(S (NP-SBJ 코언/NPR+은/PAU)
+   (VP (NP-ADV 베트남/NPR
+               방문/NNC+중/NNX)
+       (VP (NP-COMP 미군/NNC
+                    실종자/NNC
+                    확인/NNC+에/PAD)
+           (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP (ADVP 가장/ADV)
+                               (ADJP 크/VJ+은/EAN))))
+                   (NP 관심/NNC+을/PCA))
+           기울이/VV+었었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>코언</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>베트남 방문중</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>미군 실종자 확인</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>가장 큰 관심</term>
+	    </Arg>
+	    <Rel>
+	      <term>기울였었다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>그는 또 미국 - 시리아 정상회담 개최설과 관련, "클린턴 대통령은 시리아 - 이스라엘, 시리아 - 레바논간 문제를 해결하기 위해 진지한 노력을 기울이고 있다" 면서 "더이상은 언급하고 싶지 않다" 고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (ADCP 또/ADC)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP 미국/NPR
+                       -/SSY
+                       시리아/NPR
+                       정상/NNC+회담/NNC
+                       개최설/NNC+과/PAD)
+              (VV 관련/NNC)))
+       ,/SCM
+       (VP (S-COMP (S "/SLQ
+                      (NP-SBJ 클린턴/NPR
+                              대통령/NNC+은/PAU)
+                      (VP (VP (S-COMP (NP-SBJ *pro*)
+                                      (VP (NP-COMP (S (NP-SBJ *pro*)
+                                                      (VP (NP-OBJ 시리아/NPR
+                                                                  -/SSY
+                                                                  이스라엘/NPR
+                                                                  ,/SCM
+                                                                  시리아/NPR
+                                                                  -/SSY
+                                                                  레바논/NNC+간/XSF
+                                                                  문제/NNC+을/PCA)
+                                                          (VV 해결/NNC+하/XSV+기/ENM))))
+                                          위하/VV+어/ECS))
+                              (NP-OBJ (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (ADJP (VJ 진지/NNC+하/XSJ+은/EAN))))
+                                      (NP 노력/NNC+을/PCA))
+                              기울이/VV+고/ECS)
+                          있/VX+다/EFN)
+                      "/SRQ
+                      면서/ECS)
+                   (S "/SLQ
+                      (NP-SBJ *pro*)
+                      (VP (VP (VP (NP-OBJ 더이상/ADV+은/PAU)
+                                  (VV 언급/NNC+하/XSV+고/ECS))
+                              싶/VX+지/ECS)
+                          않/VX+다/EFN)
+                      "/SRQ
+                      고/PAD))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>클린턴 대통령</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>기 위해</f>
+	      <term>시리아 - 이스라엘, 시리아 - 레바논간 문제를 해결하</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>진지한 노력</term>
+	    </Arg>
+	    <Rel>
+	      <term>기울이고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>미로노프 대표는 금년 제네바에서 열리는 유엔 인권회의에서 어떠한 반중국안도 가결되지 않도록 러시아가 모든 노력을 기울이겠다고 말한 것으로 신화통신은 덧붙였다.</text>
+	  <parse>
+(S (NP-COMP-2 (S (NP-SBJ 미로노프/NPR
+                         대표/NNC+은/PAU)
+                 (VP (S-COMP (S-COMP-3 (NP-ADV (S (WHNP-1 *op*)
+                                                  (S (NP-SBJ *T*-1)
+                                                     (VP (NP-ADV 금년/NNC)
+                                                         (NP-ADV 제네바/NPR+에서/PAD)
+                                                         (VP 열리/VV+는/EAN))))
+                                               (NP 유엔/NPR
+                                                   인권/NNC+회의/NNC+에서/PAD))
+                                       (S (NP-SBJ 어떠한/DAN
+                                                  반/XPF+중국/NPR+안/NNC+도/PAU)
+                                          (VP (VP (VV 가결/NNC+되/XSV+지/ECS))
+                                              않/VX+도록/ECS)))
+                             (S (NP-SBJ 러시아/NPR+이/PCA)
+                                (VP (NP-COMP *T*-3)
+				    (NP-OBJ 모든/DAN
+                                            노력/NNC+을/PCA)
+                                    기울이/VV+겠/EPF+다/EFN+고/PAD)))
+                     말하/VV+은/EAN))
+              (NP 것/NNX+으로/PAD))
+   (S (NP-SBJ 신화통신/NPR+은/PAU)
+      (VP (NP-COMP *T*-2)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>도록</f>
+	      <term>금년 제네바에서 열리는 유엔 인권회의에서 어떠한 반중국안도 가결되지 않</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>러시아</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>모든 노력</term>
+	    </Arg>
+	    <Rel>
+	      <term>기울이겠다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

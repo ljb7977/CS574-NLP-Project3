@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뛰쳐나가</lemma>
+    <comment>Frames file for '뛰쳐나가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뛰쳐나가.01</id>
+      <edef>rush out</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뛰쳐나가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이들 소년 수감자는 이날 아침 망치와 쇠막대 등으로 철문과 벽을 부수고 길가로 뛰쳐나가 도망했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPN+들/XSF
+           소년/NNC
+           수감자/NNC+은/PAU)
+   (VP (NP-ADV 이날/NNC
+               아침/NNC)
+       (S (NP-SBJ *pro*)
+          (VP (VP (NP-ADV (NP (NP 망치/NNC+과/PCJ)
+                              (NP 쇠막대/NNC))
+                          (NP 등/NNX+으로/PAD))
+                  (VP (NP-OBJ (NP 철문/NNC+과/PCJ)
+                              (NP 벽/NNC+을/PCA))
+                      부수/VV+고/ECS))
+              (VP (NP-COMP 길가/NNC+으로/PAD)
+                  뛰쳐나가/VV+어/ECS)))
+       (VP (VV 도망/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>길가</term>
+	    </Arg>
+	    <Rel>
+	      <term>뛰쳐나가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

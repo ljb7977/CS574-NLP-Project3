@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뛰어오르</lemma>
+    <comment>Frames file for '뛰어오르' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뛰어오르.01</id>
+      <edef>jump</edef>
+      <roleset>
+	<role argnum="1" argrole="thing jumping"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뛰어오르다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>결과적으로 손 사장의 재산은 지난해 7 월 64 억달러에서 640 억달러로 뛰어올랐다.</text>
+	  <parse>
+(S (ADVP (ADV 결과/NNC+적/XSF+으로/PAD))
+   (S (NP-SBJ (NP 손/NPR
+                  사장/NNC+의/PAN)
+              (NP 재산/NNC+은/PAU))
+      (VP (NP-COMP (NP 지난해/NNC
+                       7/NNU
+                       월/NNX)
+                   (NP 64/NNU
+                       억/NNU+달러/NNX+에서/PAD))
+          (NP-COMP 640/NNU
+                   억/NNU+달러/NNX+으로/PAD)
+          뛰어오르/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>결과적으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>손 사장의 재산</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>지난해 7 월 64 억달러</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>640 억달러</term>
+	    </Arg>
+	    <Rel>
+	      <term>뛰어올랐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

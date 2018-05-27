@@ -1,0 +1,118 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가맹</lemma>
+    <comment>Frames file for '가맹' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가맹.01</id>
+      <edef>join</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing joined"/>
+	<role argnum="2" argrole="group"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가맹되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>EUN에는 현재 5 백개 이상의 학교가 가맹돼 교육 정보 자료를 교환하고 있다.</text>
+	  <parse>
+(S (S (NP-COMP-1 EUN/NFW+에/PAD+은/PAU)
+      (S (NP-ADV 현재/NNC)
+	 (S (NP-SBJ (NP 5/NNU
+			백/NNU+개/NNX
+			이상/NNC+의/PAN)
+		    (NP 학교/NNC+이/PCA))
+	    (VP (NP-COMP *T*-1)
+		(VV 가맹/NNC+되/XSV+어/ECS)))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ 교육/NNC
+			  정보/NNC
+			  자료/NNC+을/PCA)
+	      (VV 교환/NNC+하/XSV+고/ECS))
+	  있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에는</f>
+	      <term>EUN</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현재</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>5 백개 이상의 학교</term>
+	    </Arg>
+	    <Rel>
+	      <term>가맹돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>가맹.02</id>
+      <edef>join</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, entity joining"/>
+	<role argnum="2" argrole="group"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가맹하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>메르코수르는 브라질, 아르헨티나, 우루과이 및 파라과이 4 개국이 정회원국이며 칠레와 볼리비아가 준회원으로 가맹하고 있다.</text>
+	  <parse>
+(S (NP-SBJ 메르코수르/NPR+은/PAU)
+   (S (S (NP-SBJ (NP (NP 브라질/NPR)
+                     ,/SCM
+                     (NP 아르헨티나/NPR)
+                     ,/SCM
+                     (NP 우루과이/NPR)
+                     (ADCP 및/ADC)
+                     (NP 파라과이/NPR))
+                 (NP 4/NNU
+                     개국/NNX+이/PCA))
+         (VP (NP 정/XPF+회원/NNC+국/NNC+이/CO+으며/ECS)))
+      (S (NP-SBJ (NP 칠레/NPR+과/PCJ)
+                 (NP 볼리비아/NPR+이/PCA))
+         (VP (VP (NP-ADV 준/XPF+회원/NNC+으로/PAD)
+                 (VP (VV 가맹/NNC+하/XSV+고/ECS)))
+             있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>는</f>
+	      <term>메르코수르</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>칠레와 볼리비아</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>준회원으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>가맹하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

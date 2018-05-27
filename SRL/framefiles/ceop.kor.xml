@@ -1,0 +1,95 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>접</lemma>
+    <comment>Frames file for '접' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>접.01</id>
+      <edef>fold</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing folded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>접다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>선거전이 본격화되기 전까지만 해도 시골 출신 정치인 정도로 치부된 매케인 의원은 뉴햄프셔 예비선거에서 돌풍을 일으킨 후 부시 지사와 엎치락뒤치락하는 오랫만의 명승부를 연출하며 전국적인 인물로 뛰어올랐으나 13 개주가 한꺼번에 선거를 치른 7 일의 `슈퍼 화요일' 대회전에서 대패, 대권 도전의 꿈을 접게 됐다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (S (NP-SBJ *pro*)
+                           (VP (NP-OBJ (S (NP-SBJ 선거전/NNC+이/PCA)
+                                          (VP (VV 본격화/NNC+되/XSV+기/ENM)))
+                                       (NP 전/NNC+까지/PAU+만/PAU))
+                               (VP 하/VV+어도/ECS)))
+                        (VP (NP-COMP (NP 시골/NNC
+                                         출신/NNC)
+                                     (NP 정치인/NNC
+                                         정도/NNC+으로/PAD))
+                            (VV 치부/NNC+되/XSV+은/EAN)))))
+              (NP 매케인/NPR
+                  의원/NNC+은/PAU))
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 뉴햄프셔/NPR
+                                 예비/NNC+선거/NNC+에서/PAD)
+                         (VP (NP-OBJ 돌풍/NNC+을/PCA)
+                             일으키/VV+은/EAN)))
+                  (NP 후/NNC))
+          (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (NP-SBJ *pro*)
+                            (VP (NP-COMP 부시/NPR
+                                         지사/NNC+과/PAD)
+                                (VV 엎치락뒤치락/NNC+하/XSV+는/EAN)))
+                         (NP (NP 오랜만/NNC+의/PAN)
+                             (NP 명승부/NNC+을/PCA)))
+                 (VV 연출/NNC+하/XSV+으며/ECS)))
+          (VP (NP-COMP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (VP (NP 전국/NNC+적/XSF+이/CO+은/EAN))))
+                       (NP 인물/NNC+으로/PAD))
+              뛰어오르/VV+었/EPF+으나/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (S (NP-SBJ 13/NNU
+                                 개주/NNC+이/PCA)
+                         (VP (NP-ADV 한꺼번/NNC+에/PAD)
+                             (VP (NP-OBJ 선거/NNC+을/PCA)
+				 치르/VV+은/EAN)))
+                      (NP (NP 7/NNU
+                              일/NNX+의/PAN)
+                          (NP `/SLQ
+                              슈퍼/NNC
+                              화요일/NNC
+                              '/SRQ
+                              대회전/NNC+에서/PAD)))
+              (VP (VV 대패/NNC)))
+          ,/SCM
+          (VP (VP (NP-OBJ (NP 대권/NNC
+                              도전/NNC+의/PAN)
+                          (NP 꿈/NNC+을/PCA))
+                  접/VV+게/ECS)
+              되/VX+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대권 도전의 꿈</term>
+	    </Arg>
+	    <Rel>
+	      <term>접게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>됐다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

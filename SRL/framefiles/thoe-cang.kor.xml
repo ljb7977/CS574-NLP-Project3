@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>퇴장</lemma>
+    <comment>Frames file for '퇴장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>퇴장.01</id>
+      <edef>leave</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="place left"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>퇴장하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 마르틴 오브리 노동장관은 하원에서 앞으로 성차별 발언이 나올 경우 여성의원들은 전원 퇴장할 것이라고 경고했다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 마르틴/NPR
+              오브리/NPR
+              노동장관/NNC+은/PAU)
+      (VP (NP-ADV 하원/NNC+에서/PAD)
+          (VP (S-COMP (NP-ADV 앞/NNC+으로/PAD)
+                      (NP-ADV (S (NP-SBJ 성/NNC+차별/NNC
+                                         발언/NNC+이/PCA)
+                                 (VP 나오/VV+을/EAN))
+                              (NP 경우/NNC))
+                      (S (NP-SBJ 여성/NNC+의원/NNC+들/XSF+은/PAU)
+                         (VP (VP (NP-ADV 전원/NNC)
+                                 (VP (VV 퇴장/NNC+하/XSV+을/EAN)))
+                             (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+              (VV 경고/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>앞으로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>성차별 발언이 나올 경우</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>여성의원들</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f></f>
+	      <term>전원</term>
+	    </Arg>
+	    <Rel>
+	      <term>퇴장할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

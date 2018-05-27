@@ -1,0 +1,104 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수송</lemma>
+    <comment>Frames file for '수송' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>수송.01</id>
+      <edef>transport</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing transported"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수송하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>탄약을 저희 연대 탄약 저장소에서 저희 사격 진지까지 수송하는 게 저희 공급반의 책임이었죠.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+              (VP (NP-OBJ 탄약/NNC+을/PCA)
+                  (NP-COMP 저희/NPN
+                           연대/NNC
+                           탄약/NNC
+                           저장소/NNC+에서/PAD)
+                  (NP-COMP 저희/NPN
+                           사격/NNC
+                           진지/NNC+까지/PAU)
+                  (VV 수송/NNC+하/XSV+는/EAN)))
+           (NP 것/NNX+이/PCA))
+   (VP (NP (NP 저희/NPN
+               공급반/NNC+의/PAN)
+           (NP 책임/NNC+이/CO+었/EPF+죠/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>탄약</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>저희 연대 탄약 저장소</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>까지</f>
+	      <term>저희 사격 진지</term>
+	    </Arg>
+	    <Rel>
+	      <term>수송하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>수송되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>공급품이 사단에서 중대까지 어떻게 수송되오?</text>
+	  <parse>
+(S (NP-SBJ 공급품/NNC+이/PCA)
+   (VP (NP-COMP 사단/NNC+에서/PAD)
+       (NP-COMP 중대/NNC+까지/PAU)
+       (VP (ADVP 어떻게/ADV)
+           (VP (VV 수송/NNC+되/XSV+으오/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>공급품</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>사단</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>까지</f>
+	      <term>중대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어떻게</term>
+	    </Arg>
+	    <Rel>
+	      <term>수송되오</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

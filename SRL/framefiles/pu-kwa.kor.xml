@@ -1,0 +1,147 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>부과</lemma>
+    <comment>Frames file for '부과' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>부과.01</id>
+      <edef>impose</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing imposed"/>
+	<role argnum="2" argrole="imposed on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>부과하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 WTO 규정은 오직 해당국 정부만이 자국산업 보호를 위해 필요할 경우 덤핑관세를 부과할 수 있도록 하고 있다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ WTO/NFW
+              규정/NNC+은/PAU)
+      (VP (VP (S-COMP (ADVP 오직/ADV)
+                      (S (NP-SBJ 해당/NNC+국/XSF
+                                 정부/NNC+만/PAU+이/PCA)
+                         (VP (VP (S (NP-SBJ *pro*)
+                                    (VP (NP-OBJ 자국/NNC+산업/NNC
+                                                보호/NNC+을/PCA)
+                                        위하/VV+어/ECS))
+                                 (NP-ADV (S (NP-SBJ *pro*)
+                                            (ADJP (VJ 필요/NNC+하/XSJ+을/EAN)))
+                                         (NP 경우/NNC))
+                                 (VP (NP-OBJ 덤핑/NNC+관세/NNC+을/PCA)
+                                     (VV 부과/NNC+하/XSV+을/EAN)))
+                             (VX 수/NNX
+                                 있/VJ+도록/ECS))))
+              하/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>오직</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>만이</f>
+	      <term>해당국 정부</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>자국산업 보호를 위해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>필요할 경우</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>덤핑관세</term>
+	    </Arg>
+	    <Rel>
+	      <term>부과할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>부과되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>경제주간지 비르트샤프츠 보헤는 1 일 비밀 자금을 관리했다는 이유로 2 천 100 만유로 벌금이 부과된 CDU을 지원하기 위해 콜 전총리가 '300 만 유로 모금'에 나서 독일 전역을 순회하고 있다고 보도했다.</text>
+	  <parse>
+(S (NP-SBJ 경제/NNC+주간지/NNC
+           비르트샤프츠/NPR
+           보헤/NPR+은/PAU)
+   (VP (NP-ADV 1/NNU
+               일/NNX)
+       (VP (S-COMP (S (NP-SBJ *pro*)
+                      (VP (S-OBJ (NP-SBJ *pro*)
+				 (VP (NP-OBJ (S (WHNP-1 *op*)
+						(S (NP-ADV (S (NP-SBJ *pro*)
+							      (VP (NP-OBJ 비밀/NNC
+									      자금/NNC+을/PCA)
+								  (VV 관리/NNC+하/XSV+었/EPF+다는/EAN)))
+							   (NP 이유/NNC+으로/PAD))
+						   (S (NP-SBJ 2/NNU
+							      천/NNU
+							      100/NNU
+							      만/NNU+유로/NNX
+							      벌금/NNC+이/PCA)
+						      (VP (NP-COMP *T*-1)
+							  (VV 부과/NNC+되/XSV+은/EAN)))))
+					     (NP CDU/NFW+을/PCA))
+				     (VV 지원/NNC+하/XSV+기/ENM)))
+                          위하/VV+어/ECS))
+                   (S (NP-SBJ 콜/NPR
+                              전/XPF+총리/NNC+이/PCA)
+                      (VP (NP-COMP '/SLQ
+                                   300/NNU
+                                   만/NNU
+                                   유로/NNX
+                                   모금/NNX
+                                   '/SRQ
+                                   에/PAD)
+                          나서/VV+어/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ 독일/NPR
+                                      전역/NNC+을/PCA)
+                              (VV 순회/NNC+하/XSV+고/ECS))
+                          있/VX+다/EFN+고/PAD)))
+           (VV 보도/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>비밀 자금을 관리했다는 이유로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>2 천 100 만유로 벌금</term>
+	    </Arg>
+	    <Arg n="2">
+	      <term>*trace*=CDU</term>
+	    </Arg>
+	    <Rel>
+	      <term>부과된</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

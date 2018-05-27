@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주재</lemma>
+    <comment>Frames file for '주재' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>주재.01</id>
+      <edef>lead</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing leaded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주재하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>요한 바오로 2 세 교황은 5 일 브라질, 태국, 베트남, 벨로루시, 서태평양 마리아나 제도 등의 순교자 44 명에게 성인의 아래 단계인 복자의 칭호를 주는 시복행사를 주재했다.</text>
+	  <parse>
+(S (NP-SBJ 요한/NPR
+           바오로/NPR
+           2/NNU
+           세/NNX
+           교황/NNC+은/PAU)
+   (VP (NP-ADV 5/NNU
+               일/NNX)
+       (VP (NP-OBJ (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (NP (NP (NP 브라질/NPR)
+                                           ,/SCM
+                                           (NP 태국/NPR)
+                                           ,/SCM
+                                           (NP 베트남/NPR)
+                                           ,/SCM
+                                           (NP 벨로루시/NPR)
+                                           ,/SCM
+                                           (NP 서/NNC+태평양/NPR
+                                               마리아나/NPR
+                                               제도/NNC))
+                                       (NP 등/NNX+의/PAN))
+                                   (NP 순교자/NNC
+                                       44/NNU
+                                       명/NNX+에게/PAD))
+                          (NP-OBJ (NP (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (VP (NP (NP 성인/NNC+의/PAN)
+                                                    (NP 아래/NNC
+                                                        단계/NNC+이/CO+은/EAN)))))
+                                      (NP 복자/NNC+의/PAN))
+                                  (NP 칭호/NNC+을/PCA))
+                          주/VV+는/EAN))
+                   (NP 시복/NNC+행사/NNC+을/PCA))
+           (VV 주재/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>요한 바오로 2 세 교황</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>5 일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>브라질, 태국, 베트남, 벨로루시, 서태평양 마리아나 제도 등의 순교자 44 명에게 성인의 아래 단계인 복자의 칭호를 주는 시복행사</term>
+	    </Arg>
+	    <Rel>
+	      <term>주재했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

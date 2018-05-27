@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>취소</lemma>
+    <comment>Frames file for '취소' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>취소.01</id>
+      <edef>cancel</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing cancelled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>취소하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>2 대대에서는 그 행군 명령을 취소했습니다.</text>
+	  <parse>
+(S (NP-SBJ 2/NNU
+           대대/NNC+에서/PCA+은/PAU)
+   (VP (NP-OBJ 그/DAN
+               행군/NNC
+               명령/NNC+을/PCA)
+       (VV 취소/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서는</f>
+	      <term>2 대대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>그 행군 명령</term>
+	    </Arg>
+	    <Rel>
+	      <term>취소했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>취소되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>왜 그 인원 손실에 대한 보통 계획이 취소됐는가?</text>
+	  <parse>
+(S (ADVP 왜/ADV)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-COMP 그/DAN
+                                 인원/NNC
+                                 손실/NNC+에/PAD)
+                        대하/VV+은/EAN)))
+              (NP 보통/NNC
+                  계획/NNC+이/PCA))
+      (VP (VV 취소/NNC+되/XSV+었/EPF+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>왜</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>그 인원 손실에 대한 보통 계획</term>
+	    </Arg>
+	    <Rel>
+	      <term>취소됐는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

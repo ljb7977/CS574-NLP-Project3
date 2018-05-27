@@ -1,0 +1,306 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>등록</lemma>
+    <comment>Frames file for '등록' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>등록.01</id>
+      <edef>register</edef>
+      <roleset>
+	<role argnum="0" argrole="entity registering, causer"/>
+	<role argnum="1" argrole="thing registered"/>
+	<role argnum="2" argrole="register"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>등록하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국 나스닥시장에 상장한 두루넷 주식 (전체 발행물량의 14 퍼센트)를 제외하고 나머지 86 퍼센트만을 코스닥시장에 등록해야 하기 때문이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ *pro*)
+	      (VP (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+				     (S (NP-SBJ *pro*)
+					(VP (NP-COMP 미국/NPR
+                                                         나스닥/NPR+시장/NNC+에/PAD)
+					    (NP-OBJ *T*-1)
+					    (VV 상장/NNC+하/XSV+은/EAN))))
+				  (NP 두루넷/NPR
+					    주식/NNC
+					    (PRN -LRB-/SLQ
+						 (NP (NP 전체/NNC
+							     발행/NNC+물량/NNC+의/PAN)
+						     (NP 14/NNU
+							 퍼센트/NNX))
+						 -RRB-/SRQ)
+					    을/PCA))
+			  (VV 제외/NNC+하/XSV+고/ECS))
+		      (VP (NP-OBJ 나머지/NNC
+					86/NNU
+					퍼센트/NNX+만/PAU+을/PCA)
+			  (NP-COMP 코스닥/NPR+시장/NNC+에/PAD)
+			  (VV 등록/NNC+하/XSV+어야/ECS)))
+		  하/VX+기/ENM))
+           (NP 때문/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>만을</f>
+	      <term>나머지 86 퍼센트</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>코스닥시장</term>
+	    </Arg>
+	    <Rel>
+	      <term>등록해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>하기</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>등록되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지난 65 년 앨라배마주 셀마에서는 흑인들은 매달 첫째 또는 셋째 주에만 선거인 명부에 등록할 수 있다는 규정과 그나마 등록을 시도할 때마다 경찰의 몽둥이 세례를 받는 현실 때문에 투표를 할 수 있는 나이가 된 흑인들 중 실제 유권자 명부에 등록된 사람의 비율은 2.1 퍼센트에 불과했다.</text>
+	  <parse>
+(S (NP-ADV 지난/DAN
+           65/NNU
+           년/NNX)
+   (NP-ADV 앨라배마/NPR+주/NNC
+           셀마/NPR+에서/PAD+은/PAU)
+   (NP-ADV (NP (NP (S (NP-SBJ 흑인/NNC+들/XSF+은/PAU)
+                      (VP (VP (NP-ADV (NP 매달/NNC)
+                                      (NP (NP (NP 첫째/NNU)
+                                              (ADCP 또는/ADC)
+                                              (NP 셋째/NNU))
+                                          (NP 주/NNX+에/PAD+만/PAU)))
+                              (VP (NP-COMP 선거인/NNC
+                                           명부/NNC+에/PAD)
+                                  (VV 등록/NNC+하/XSV+을/EAN)))
+                          (VX 수/NNX
+                              있/VJ+다는/EAN)))
+                   (NP 규정/NNC+과/PCJ))
+               (NP (S (NP-SBJ *pro*)
+                      (VP (NP-ADV (S (WHNP *op*)
+                                     (S (NP-SBJ *pro*)
+                                        (VP (ADVP 그나마/ADV)
+                                            (VP (NP-OBJ 등록/NNC+을/PCA)
+                                                (VV 시도/NNC+하/XSV+을/EAN)))))
+                                  (NP 때/NNC+마다/PAU))
+                          (VP (NP-OBJ (NP 경찰/NNC+의/PAN)
+                                      (NP 몽둥이/NNC
+                                          세례/NNC+을/PCA))
+                              받/VV+는/EAN)))
+                   (NP 현실/NNC)))
+           (NP 때문/NNC+에/PAD))
+   (S (NP-SBJ (NP (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (VP (NP-COMP (S (WHNP *op*)
+                                            (S (NP-SBJ *pro*)
+                                               (VP (VP (NP-OBJ 투표/NNC+을/PCA)
+                                                       하/VV+을/EAN)
+                                                   (VX 수/NNX
+                                                       있/VJ+는/EAN))))
+                                         (NP 나이/NNC+이/PCA))
+                                되/VV+은/EAN)))
+                      (NP 흑인/NNC+들/XSF))
+                  (NP 중/NNX))
+              (NP (NP (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-COMP 실제/NNC
+                                         유권자/NNC
+                                         명부/NNC+에/PAD)
+                                (VV 등록/NNC+되/XSV+은/EAN))))
+                      (NP 사람/NNC+의/PAN))
+                  (NP 비율/NNC+은/PAU)))
+      (ADJP (NP-COMP 2.1/NNU
+                     퍼센트/NNX+에/PAD)
+            (VJ 불과/NNC+하/XSJ+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=사람</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>실제 유권자 명부</term>
+	    </Arg>
+	    <Rel>
+	      <term>등록된</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>사티아나라얀 자티아 노동장관은 실업 규모와 관련, 지난해 12 월 말 현재 1 천 800 만명이 실업 상태인 것으로 공식 등록됐다고 밝혔으나 취업 통계가 부풀려진 점을 감안한다면 실질 실업은 이보다 훨씬 클 것으로 노동부 관리들이 추산했다.</text>
+	  <parse>
+(S (S (NP-SBJ 사티아나라얀/NPR
+              자티아/NPR
+              노동/NNC+장관/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP 실업/NNC
+                          규모/NNC+과/PAD)
+                 (VV 관련/NNC)))
+          ,/SCM
+          (VP (S-COMP (NP-ADV 지난해/NNC
+                              12/NNU
+                              월/NNX
+                              말/NNC
+                              현재/NNC)
+                      (S (NP-SBJ 1/NNU
+                                 천/NNU
+                                 800/NNU
+                                 만/NNU+명/NNX+이/PCA)
+                         (VP (NP-COMP (S (NP-SBJ *pro*)
+                                         (VP (NP 실업/NNC
+                                                 상태/NNC+이/CO+은/EAN)))
+                                      (NP 것/NNX+으로/PAD))
+                             (VP (NP-ADV 공식/NNC)
+                                 (VP (VV 등록/NNC+되/XSV+었/EPF+다/EFN+고/PAD))))))
+              밝히/VV+었/EPF+으나/ECS)))
+   (S (NP-COMP-1 (S (S (NP-SBJ *pro*)
+                       (VP (NP-OBJ (S (NP-SBJ 취업/NNC
+                                              통계/NNC+이/PCA)
+                                      (VP (VV 부풀리/VV+어지/XSV+은/EAN)))
+                                   (NP 점/NNX+을/PCA))
+                           (VV 감안/NNC+하/XSV+는다면/ECS)))
+                    (S (NP-SBJ 실질/NNC
+                               실업/NNC+은/PAU)
+                       (ADJP (NP-COMP 이/NPN+보다/PAD)
+                             (ADVP 훨씬/ADV)
+                             (ADJP 크/VJ+을/EAN))))
+                 (NP 것/NNX+으로/PAD))
+      (S (NP-SBJ 노동부/NNC
+                 관리/NNC+들/XSF+이/PCA)
+         (VP (NP-COMP *T*-1)
+             (VV 추산/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해 12 월 말 현재</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>1 천 800 만명</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>실업 상태인 것</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>공식</term>
+	    </Arg>
+	    <Rel>
+	      <term>등록됐다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>등록시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 재경장관은 코스닥 거품논쟁과 관련 '현재의 벤처기업 그 자체가 거품이라고 보지는 않는다'며 '그러나 일부 기업들이 애매모호한 사업계획으로 돈버는 데만 급급하고 있으므로 이를 자본시장에 소개하고 상장. 등록시키는 일을 맡고 있는 증권사들이 유능한 인재를 고용, 정확한 정보를 시장에 공급해야 한다'고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           재경/NNC+장관/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP 코스닥/NPR
+                       거품/NNC+논쟁/NNC+과/PAD)
+              (VV 관련/NNC)))
+       (S '/SLQ
+          (NP-SBJ *pro*)
+          (VP (VP (S-COMP (NP-SBJ (NP (NP 현재/NNC+의/PAN)
+                                      (NP 벤처/NNC+기업/NNC))
+                                  (NP 그/DAN
+                                      자체/NNC+이/PCA))
+                          (VP (NP 거품/NNC+이/CO+라/EFN+고/PAD)))
+                  보/VV+지/ECS+은/PAU)
+              않/VX+는다/EFN)
+          '/SRQ
+          며/ECS)
+       (VP (S-COMP '/SLQ
+                   (ADCP 그러나/ADC)
+                   (S (NP-SBJ 일부/NNC
+                              기업/NNC+들/XSF+이/PCA)
+                      (VP (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                                            (VP (NP-ADV (S (WHNP-1 *op*)
+                                                           (S (NP-SBJ *T*-1)
+                                                              (ADJP (VJ 애매모호/NNC+하/XSJ+은/EAN))))
+                                                        (NP 사업/NNC+계획/NNC+으로/PAD))
+                                                (VP (NP-OBJ 돈/NNC)
+                                                    벌/VV+는/EAN)))
+                                         (NP 데/NNX+만/PAU))
+                                급급하/VJ+고/ECS)
+                          있/VX+으므로/ECS))
+                   (S (NP-SBJ (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                       (VP (NP-OBJ 이/NPN+을/PCA)
+                                                           (NP-COMP 자본/NNC+시장/NNC+에/PAD)
+                                                           (VV (VV 소개/NNC+하/XSV+고/ECS)
+                                                               (VV 상장/NNC)
+                                                               ,/SCM
+                                                               (VV 등록/NNC+시키/XSV+는/EAN))))
+                                                    (NP 일/NNC+을/PCA))
+                                            맡/VV+고/ECS)
+                                        있/VX+는/EAN)))
+                              (NP 증권사/NNC+들/XSF+이/PCA))
+                      (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                (S (NP-SBJ *T*-3)
+                                                   (ADJP (VJ 유능/NNC+하/XSJ+은/EAN))))
+                                             (NP 인재/NNC+을/PCA))
+                                     (VV 고용/NNC)))
+                              ,/SCM
+                              (VP (NP-OBJ (S (WHNP-4 *op*)
+                                             (S (NP-SBJ *T*-4)
+                                                (ADJP (VJ 정확/NNC+하/XSJ+은/EAN))))
+                                          (NP 정보/NNC+을/PCA))
+                                  (NP-COMP 시장/NNC+에/PAD)
+                                  (VV 공급/NNC+하/XSV+어야/ECS)))
+                          하/VX+는다/EFN))
+                   '/SRQ
+                   고/PAD)
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>자본시장</term>
+	    </Arg>
+	    <Rel>
+	      <term>등록시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

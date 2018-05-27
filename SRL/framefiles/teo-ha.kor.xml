@@ -1,0 +1,135 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>더하</lemma>
+    <comment>Frames file for '더하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>더하.01</id>
+      <edef>add</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing added"/>
+	<role argnum="2" argrole="thing added to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>더하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>유럽연합(EU)은 이미 발표된 7 천 800 만달러 원조금에 더해 도로 및 교량 복구비로 2 천 400 만달러를 제공할 것이라고 지난주 모잠비크 마푸토에 도착한 폴 닐슨 EU 인도주의 지원 담당관이 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 유럽/NPR+연합/NNC
+                     (PRN -LRB-/SLQ
+                          EU/NFW
+                          -RRB-/SRQ)
+                     은/PAU)
+             (VP (VP (S (NP-SBJ *pro*)
+                        (VP (NP-COMP (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (VP (ADVP 이미/ADV)
+                                               (VP (VV 발표/NNC+되/XSV+은/EAN)))))
+                                     (NP 7/NNU
+                                         천/NNU
+                                         800/NNU
+                                         만/NNU+달러/NNX
+                                         원조금/NNC+에/PAD))
+                            (NP-OBJ *pro*)
+                            (VV 더하/VV+어/ECS)))
+                     (VP (NP-ADV (NP (NP 도로/NNC)
+                                     (ADCP 및/ADC)
+                                     (NP 교량/NNC))
+                                 (NP 복구비/NNC+으로/PAD))
+                         (VP (NP-COMP *pro*)
+                             (NP-OBJ 2/NNU
+                                     천/NNU
+                                     400/NNU
+                                     만/NNU+달러/NNX+을/PCA)
+                             (VV 제공/NNC+하/XSV+을/EAN))))
+                 (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+   (S (NP-SBJ (S (WHNP-3 *op*)
+                 (S (NP-SBJ *T*-3)
+                    (VP (NP-ADV 지난주/NNC)
+                        (VP (NP-COMP 모잠비크/NPR
+                                     마푸토/NPR+에/PAD)
+                            (VV 도착/NNC+하/XSV+은/EAN)))))
+              (NP 폴/NPR
+                  닐슨/NPR
+                  EU/NFW
+                  인도주의/NNC
+                  지원/NNC
+                  담당관/NNC+이/PCA))
+      (VP (S-COMP *T*-1)
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>이미 발표된 7 천 800 만달러 원조금</term>
+	    </Arg>
+	    <Rel>
+	      <term>더해</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>전날 미시간주에서 초등학교 1 학년인 6 살짜리 남학생이 같은 반의 여학생을 총으로 살해한 사건의 충격이 채 가시기도 전에 또 다시 총기 사고가 발생해 충격의 도를 더하고 있다.</text>
+	  <parse>
+(S (S (NP-ADV (S (NP-SBJ (NP (S (NP-ADV 전날/NNC)
+                                (NP-ADV 미시간/NPR+주/NNC+에서/PAD)
+                                (S (NP-SBJ (S (WHNP-1 *op*)
+                                              (S (NP-SBJ *T*-1)
+                                                 (VP (NP 초등학교/NNC
+                                                         1/NNU
+                                                         학년/NNX+이/CO+은/EAN))))
+                                           (NP 6/NNU
+                                               살/NNX+짜리/XSF
+                                               남학생/NNC+이/PCA))
+                                   (VP (NP-OBJ (NP 같은/DAN
+                                                   반/NNC+의/PAN)
+                                               (NP 여학생/NNC+을/PCA))
+                                       (VP (NP-ADV 총/NNC+으로/PAD)
+                                           (VP (VV 살해/NNC+하/XSV+은/EAN))))))
+                             (NP 사건/NNC+의/PAN))
+                         (NP 충격/NNC+이/PCA))
+                 (VP (ADVP 채/ADV)
+                     (VP 가시/VV+기/ENM+도/PAU)))
+              (NP 전/NNC+에/PAD))
+      (ADVP (ADVP 또/ADV)
+            (ADVP 다시/ADV))
+      (S (NP-SBJ 총기/NNC
+                 사고/NNC+이/PCA)
+         (VP (VV 발생/NNC+하/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP *pro*)
+              (NP-OBJ (NP 충격/NNC+의/PAN)
+                      (NP 도/NNC+을/PCA))
+              더하/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>전날 미시간주에서 초등학교 1 학년인 6 살짜리 남학생이 같은 반의 여학생을 총으로 살해한 사건의 충격이 채 가시기도 전에 또 다시 총기 사고가 발생해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>충격의 도</term>
+	    </Arg>
+	    <Rel>
+	      <term>더하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

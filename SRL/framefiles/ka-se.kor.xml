@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가세</lemma>
+    <comment>Frames file for '가세' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가세.01</id>
+      <edef>take sides with</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity taken sides with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가세하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>브뤼셀과 파리, 암스테르담 증시 통합에 유럽의 다른 나라가 가세할 것이라고 디디에 렝데르 벨기에 재무장관이 20 일 말했다.</text>
+	  <parse>
+(S (S-COMP-2 (NP-COMP-1 (NP (NP 브뤼셀/NPR+과/PCJ)
+                            (NP 파리/NPR)
+                            ,/SCM
+                            (NP 암스테르담/NPR))
+                        (NP 증시/NNC
+                            통합/NNC+에/PAD))
+             (S (NP-SBJ (NP 유럽/NPR+의/PAN)
+                        (NP 다른/DAN
+                            나라/NNC+이/PCA))
+                (VP (VP (NP-COMP *T*-1)
+                        (VV 가세/NNC+하/XSV+을/EAN))
+                    (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+   (S (NP-SBJ 디디에/NPR
+              렝데르/NPR
+              벨기에/NPR
+              재무/NNC+장관/NNC+이/PCA)
+      (VP (NP-ADV 20/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-2)
+              말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>브뤼셀과 파리, 암스테르담 증시 통합</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>유럽의 다른 나라</term>
+	    </Arg>
+	    <Rel>
+	      <term>가세할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

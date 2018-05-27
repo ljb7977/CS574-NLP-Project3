@@ -1,0 +1,45 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>달아나</lemma>
+    <comment>Frames file for '달아나' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>달아나.01</id>
+      <edef>flee</edef>
+      <roleset>
+	<role argnum="0" argrole="fleer"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>달아나다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>적을 매복하여 치고 달아나는 게 유격 전술의 하나지요.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ *pro*)
+              (VP (VP (NP-OBJ 적/NNC+을/PCA)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (VV 매복/NNC+하/XSV+어/ECS)))
+                          (VP 치/VV+고/ECS)))
+                  (VP 달아나/VV+는/EAN)))
+           (NP 것/NNX+이/PCA))
+   (VP (NP (NP 유격/NNC
+               전술/NNC+의/PAN)
+           (NP 하나/NNU+이/CO+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>달아나는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

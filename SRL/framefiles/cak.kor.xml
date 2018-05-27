@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>작</lemma>
+    <comment>Frames file for '작' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>작.01</id>
+      <edef>small</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being small"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>작다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>포대보다 더 작은 포병 부대가 보병 중대보다 더 작은 보병 부대에 배속될 수도 있는가?</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*) 
+	      (S (NP-SBJ *T*-1)
+		 (ADJP (NP-ADV 포대/NNC+보다/PAD) 
+		       (ADVP 더/ADV) 
+		       (ADJP 작/VJ+은/EAN)))) 
+	   (NP 포병/NNC 
+		   부대/NNC+이/PCA))
+   (VP (VP (NP-COMP (S (WHNP-2 *op*) 
+		       (S (NP-SBJ *T*-2)
+			  (ADJP (NP-ADV 보병/NNC
+			                중대/NNC+보다/PAD) 
+				(ADVP 더/ADV)
+				(ADJP 작/VJ+은/EAN)))) 
+		    (NP 보병/NNC
+			부대/NNC+에/PAD)) 
+	   (VV 배속/NNC+되/XSV+을/ECS)) 
+       (VX 수/NNX+도/PAU 
+	   있/VJ+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=포병 부대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>포대보다</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더</term>
+	    </Arg>
+	    <Rel>
+	      <term>작은</term>
+	    </Rel>
+	  </relation>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=보병 부대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>보병 중대보다</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더</term>
+	    </Arg>
+	    <Rel>
+	      <term>작은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

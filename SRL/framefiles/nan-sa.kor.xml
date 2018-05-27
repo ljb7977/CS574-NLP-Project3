@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>난사</lemma>
+    <comment>Frames file for '난사' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>난사.01</id>
+      <edef>shoot at random</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="projectile"/>
+	<role argnum="2" argrole="target"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>난사하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>경찰에 따르면 멤피스의 한 가옥에서 화재가 발생했다는 신고를 받고 소방관들이 현장에 도착했으며 안전요원들이 가옥에 접근하는 순간 화염에 싸인 가옥의 주차장에서 한 남자가 나타나 총기를 난사했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 경찰/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-OBJ (S (NP-COMP-2 (NP 멤피스/NPR+의/PAN)
+                                   (NP 한/NNU
+                                       가옥/NNC+에서/PAD))
+                        (S (NP-SBJ 화재/NNC+이/PCA)
+                           (VP (NP-COMP *T*-2)
+                               (VV 발생/NNC+하/XSV+었/EPF+다는/EAN))))
+                     (NP 신고/NNC+을/PCA))
+             받/VV+고/ECS))
+      (S (NP-SBJ 소방관/NNC+들/XSF+이/PCA)
+         (VP (NP-COMP 현장/NNC+에/PAD)
+             (VV 도착/NNC+하/XSV+었/EPF+으며/ECS))))
+   (S (S (NP-ADV (S (NP-SBJ 안전/NNC+요원/NNC+들/XSF+이/PCA)
+                    (VP (NP-COMP 가옥/NNC+에/PAD)
+                        (VV 접근/NNC+하/XSV+는/EAN)))
+                 (NP 순간/NNC))
+         (S (NP-COMP-3 (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP-COMP 화염/NNC+에/PAD)
+                                     싸이/VV+은/EAN)))
+                           (NP 가옥/NNC+의/PAN))
+                       (NP 주차장/NNC+에서/PAD))
+            (S (NP-SBJ 한/NNU
+                       남자/NNC+이/PCA)
+               (VP (NP-COMP *T*-3)
+                   나타나/VV+어/ECS))))
+      (S (NP-SBJ *pro*)
+         (VP (NP-OBJ 총기/NNC+을/PCA)
+             (VV 난사/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>경찰에 따르면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>멤피스의 한 가옥에서 화재가 발생했다는 신고를 받고 소방관들이 현장에 도착했으며</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>안전요원들이 가옥에 접근하는 순간 화염에 싸인 가옥의 주차장에서 한 남자가 나타나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>총기</term>
+	    </Arg>
+	    <Rel>
+	      <term>난사했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

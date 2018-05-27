@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>어떻</lemma>
+    <comment>Frames file for '어떻' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>어떻.01</id>
+      <edef>how</edef>
+      <roleset>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>어떻다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>R-106 무전기에 있는 송신기의 성능이 어떤가?</text>
+	  <parse>
+(S (NP-SBJ (NP (S (WHNP-1 *op*)
+                  (S (NP-SBJ *T*-1)
+                     (ADJP (NP-COMP R-106/NFW
+                                    무전기/NNC+에/PAD)
+                           있/VJ+는/EAN)))
+               (NP 송신기/NNC+의/PAN))
+           (NP 성능/NNC+이/PCA))
+   (ADJP 어떻/VJ+은가/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>R-106 무전기에 있는 송신기의 성능</term>
+	    </Arg>
+	    <Rel>
+	      <term>어떤가</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>AK 보총은 성능이 어떤가?</text>
+	  <parse>
+(S (NP-SBJ AK/NFW
+           보총/NNC+은/PAU)
+   (S (NP-SBJ 성능/NNC+이/PCA)
+      (ADJP 어떻/VJ+은가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>AK 보총</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>성능</term>
+	    </Arg>
+	    <Rel>
+	      <term>어떤가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

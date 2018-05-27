@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>졸업</lemma>
+    <comment>Frames file for '졸업' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>졸업.01</id>
+      <edef>graduate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="school"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>졸업하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>군의 학교를 언제 졸업했는가?</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-OBJ 군의/NNC
+               학교/NNC+을/PCA)
+       (VP (NP-ADV 언제/NPN)
+           (VP (VV 졸업/NNC+하/XSV+었/EPF+는가/EFN))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>군의 학교</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>언제</term>
+	    </Arg>
+	    <Rel>
+	      <term>졸업했는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

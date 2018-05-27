@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유력</lemma>
+    <comment>Frames file for '유력' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유력.01</id>
+      <edef>strong</edef>
+      <roleset>
+	<role argnum="1" argrole="thing strong"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유력하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또 미쓰비시는 차세대 환경대책기술 등에서 대규모 투자가 필요한데도 사업 부진으로 충분한 자금을 확보하지 못해 유력한 제휴 상대를 탐색했다고 요미우리는 설명했다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (S-COMP-3 (NP-SBJ 미쓰비시/NPR+은/PAU)
+                (VP (S (NP-SBJ *pro*)
+                       (ADJP (NP-ADV (NP 차세대/NNC
+                                         환경/NNC+대책/NNC+기술/NNC)
+                                     (NP 등/NNX+에서/PAD))
+                             (ADJP (NP-COMP 대규모/NNC
+                                            투자/NNC+이/PCA)
+                                   (VJ 필요/NNC+하/XSJ+은데/ECS+도/PAU))))
+                    (S (NP-SBJ *pro*)
+                       (VP (VP (NP-ADV 사업/NNC
+                                       부진/NNC+으로/PAD)
+                               (VP (NP-OBJ (S (WHNP-1 *op*)
+                                              (S (NP-SBJ *T*-1)
+                                                 (ADJP 충분하/VJ+은/EAN)))
+                                           (NP 자금/NNC+을/PCA))
+                                   (VV 확보/NNC+하/XSV+지/ECS)))
+                           못하/VX+어/ECS))
+                    (VP (NP-OBJ (S (WHNP-2 *op*)
+                                   (S (NP-SBJ *T*-2)
+                                      (ADJP (VJ 유력/NNC+하/XSJ+은/EAN))))
+                                (NP 제휴/NNC
+                                    상대/NNC+을/PCA))
+                        (VV 탐색/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+      (S (NP-SBJ 요미우리/NPR+은/PAU)
+         (VP (S-COMP *T*-3)
+             (VV 설명/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=제휴 상대</term>
+	    </Arg>
+	    <Rel>
+	      <term>유력한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

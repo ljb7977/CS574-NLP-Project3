@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일삼</lemma>
+    <comment>Frames file for '일삼' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>일삼.01</id>
+      <edef>indulge</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="indulge in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일삼다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>정부는 또 프랑스 3 개 주요 은행들이 서로 온갖 비난을 일삼는 인수전쟁을 벌여 은행규제 당국이 마침내 개입해서 문제를 해결할 수밖에 없었던 사태가 벌어진 것이 품위 있는 시장으로서의 프랑스의 이미지에 타격을 줬다고 우려했다.</text>
+	  <parse>
+(S (NP-SBJ 정부/NNC+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (NP-SBJ (S (NP-SBJ (S (S (NP-SBJ 프랑스/NPR
+                                                    3/NNU
+                                                    개/NNX
+                                                    주요/NNC
+                                                    은행/NNC+들/XSF+이/PCA)
+                                            (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                           (VP (ADVP 서로/ADV)
+                                                               (VP (NP-OBJ 온갖/DAN
+                                                                           비난/NNC+을/PCA)
+                                                                   일삼/VV+는/EAN)))
+                                                        (NP 인수/NNC+전쟁/NNC+을/PCA))
+                                                벌이/VV+어/ECS))
+                                         (S (NP-SBJ 은행/NNC+규제/NNC
+                                                    당국/NNC+이/PCA)
+                                            (VP (ADVP 마침내/ADV)
+                                                (VP (NP-COMP *pro*)
+                                                    (VV 개입/NNC+하/XSV+어서/ECS))))
+                                         (S (NP-SBJ *pro*)
+                                            (VP (VP (NP-OBJ 문제/NNC+을/PCA)
+                                                    (VV 해결/NNC+하/XSV+을/EAN))
+                                                (VX 수/NNX+밖에/PAU
+                                                    없/VJ+었/EPF+던/EAN))))
+                                      (NP 사태/NNC+이/PCA))
+                              (VP 벌어지/VV+은/EAN))
+                           (NP 것/NNX+이/PCA))
+                   (VP (NP-COMP (NP (NP (S (WHNP-1 *op*)
+                                           (S (NP-SBJ *T*-1)
+                                              (S (NP-SBJ 품위/NNC)
+						 (ADJP 있/VJ+은/EAN))))
+                                        (NP 시장/NNC+으로서/PAD+의/PAN))
+                                    (NP 프랑스/NPR+의/PAN))
+                                (NP 이미지/NNC+에/PAD))
+                       (NP-OBJ 타격/NNC+을/PCA)
+                       주/VV+었/EPF+다/EFN+고/PAD))
+           (VV 우려/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>서로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>온갖 비난</term>
+	    </Arg>
+	    <Rel>
+	      <term>일삼는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

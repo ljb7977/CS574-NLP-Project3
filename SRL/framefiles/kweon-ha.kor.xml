@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>권하</lemma>
+    <comment>Frames file for '권하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>권하.01</id>
+      <edef>recommend</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing recommended"/>
+	<role argnum="2" argrole="recommended to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>권하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>나는 여러분에게 한국에 투자하기를 자신있게 권하고 싶다.</text>
+	  <parse>
+(S (NP-SBJ 나/NPN+은/PAU)
+   (VP (VP (NP-COMP 여러분/NPN+에게/PAD)
+           (S-OBJ (NP-SBJ *pro*)
+                  (VP (NP-COMP 한국/NPR+에/PAD)
+                      (VV 투자/NNC+하/XSV+기/ENM+을/PCA)))
+           (VP (ADVP (ADV (NP-COMP 자신/NNC)
+                          있/VJ+게/ECS))
+               (VP 권하/VV+고/ECS)))
+       싶/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>나</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>여러분</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>한국에 투자하기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>자신있게</term>
+	    </Arg>
+	    <Rel>
+	      <term>권하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>싶다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

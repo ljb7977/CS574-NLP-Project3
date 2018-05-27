@@ -1,0 +1,157 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>좁</lemma>
+    <comment>Frames file for '좁' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>좁.01</id>
+      <edef>narrow</edef>
+      <roleset>
+	<role argnum="0" argrole="causer, agent"/>
+	<role argnum="1" argrole="thing being narrow"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>좁다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리 상석주원에서부터 고지를 몇 개 넘고 야지를 횡단하여 이 초소 앞에 있는 좁은 길에 도착했지요.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN+은/PAU)
+   (VP (NP-COMP 상석주원/NPR+에서/PAD+부터/PAU)
+       (VP (S (NP-SBJ *pro*)
+              (VP (VP (NP-OBJ 고지/NNC+을/PCA)
+                      (VP (NP-ADV 몇/NNU
+                                  개/NNX)
+                          (VP 넘/VV+고/ECS)))
+                  (VP (NP-OBJ 야지/NNC+을/PCA)
+                      (VV 횡단/NNC+하/XSV+어/ECS))))
+           (VP (NP-COMP (S (WHNP-2 *op*)
+                           (S (NP-SBJ *T*-2)
+                              (ADJP (NP-COMP 이/DAN
+                                             초소/NNC
+                                             앞/NNC+에/PAD)
+                                    있/VJ+는/EAN)))
+                        (NP (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (ADJP 좁/VJ+은/EAN)))
+                            (NP 길/NNC+에/PAD)))
+               (VV 도착/NNC+하/XSV+었/EPF+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=길</term>
+	    </Arg>
+	    <Rel>
+	      <term>좁은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>좁히다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신무역라운드 협상 착수의 계기가 된 지난해말 WTO 시애틀 각료회담은 이견을 좁히지 못해 결렬됐다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP (NP 신/XPF+무역/NNC+라운드/NNC
+                                  협상/NNC
+                                  착수/NNC+의/PAN)
+                              (NP 계기/NNC+이/PCA))
+                     되/VV+은/EAN)))
+           (NP (NP 지난해/NNC+말/NNX)
+               (NP WTO/NFW
+                   시애틀/NPR
+                   각료/NNC+회담/NNC+은/PAU)))
+   (VP (S (NP-SBJ *pro*)
+          (VP (VP (NP-OBJ 이견/NNC+을/PCA)
+                  좁히/VV+지/ECS)
+              못하/VX+어/ECS))
+       (VP (VV 결렬/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이견</term>
+	    </Arg>
+	    <Rel>
+	      <term>좁히지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못해</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>좁혀지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>아울러 "교착상태에 빠진 이스라엘-시리아-레바논간의 평화회담도 재개될 것으로 낙관한다"면서 "조만간 당사자들의 견해차가 좁혀질 것"이라고 무바라크 대통령은 말했다.</text>
+	  <parse>
+(S (ADVP 아울러/ADV)
+   (S (S-COMP-1 (S "/SLQ
+                   (NP-SBJ *pro*)
+                   (VP (NP-COMP (S (NP-SBJ (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (VP (NP-COMP 교착/NNC+상태/NNC+에/PAD)
+                                                     빠지/VV+은/EAN)))
+                                           (NP (NP 이스라엘/NPR
+                                                   -/SSY
+                                                   시리아/NPR
+                                                   -/SSY
+                                                   레바논/NPR+간/NNX+의/PAN)
+                                               (NP 평화/NNC+회담/NNC+도/PAU)))
+                                   (VP (VV 재개/NNC+되/XSV+을/EAN)))
+                                (NP 것/NNX+으로/PAD))
+                       (VV 낙관/NNC+하/XSV+는다/EFN))
+                   "/SRQ
+                   면서/ECS)
+                (S "/SLQ
+                   (ADVP 조만간/ADV)
+                   (S (NP-SBJ (NP 당사자/NNC+들/XSF+의/PAN)
+                              (NP 견해/NNC+차/NNC+이/PCA))
+                      (VP (VP (VV 좁히/VV+어지/XSV+을/EAN))
+                          (VX 것/NNX)))
+                   "/SRQ
+                   이/CO+라/EFN+고/PAD))
+      (S (NP-SBJ 무바라크/NPR
+                 대통령/NNC+은/PAU)
+         (VP (S-COMP *T*-1)
+             말하/VV+었/EPF+다/EFN))
+      ./SFN))
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>조만간</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>당사자들의 견해차</term>
+	    </Arg>
+	    <Rel>
+	      <term>좁혀질</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>혹평</lemma>
+    <comment>Frames file for '혹평' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>혹평.01</id>
+      <edef>criticize bitterly</edef>
+      <roleset>
+	<role argnum="0" argrole="critic"/>
+	<role argnum="1" argrole="thing criticized"/>
+	<role argnum="2" argrole="on what grounds"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>혹평하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>반면 야당측의 마리 테레스 부아소는 `세계 여성의 날' 전날에 즈음해 다수파들이 저지른 정치적 술수라고 혹평했다.</text>
+	  <parse>
+(S (ADCP 반면/ADC)
+   (S (NP-SBJ (NP 야당/NNC+측/XSF+의/PAN)
+              (NP 마리/NPR
+                  테레스/NPR
+                  부아소/NPR+은/PAU))
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP (S (WHNP-1 *op*)
+                             (S (S (NP-SBJ *pro*)
+                                   (VP (NP-COMP (NP `/SLQ
+                                                    (NP 세계/NNC
+                                                        여성/NNC+의/PAN)
+                                                    (NP 날/NNC)
+                                                    '/SRQ)
+                                                (NP 전날/NNC+에/PAD))
+                                       (VV 즈음/NNC+하/XSV+어/ECS)))
+                                (S (NP-SBJ 다수파/NNC+들/XSF+이/PCA)
+                                   (VP (NP-OBJ *T*-1)
+                                       저지르/VV+은/EAN))))
+                          (NP 정치/NNC+적/XSF
+                              술수/NNC+이/CO+라/EFN+고/PAD))))
+          (VV 혹평/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>반면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>야당측의 마리 테레스 부아소</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>고</f>
+	      <term>`세계 여성의 날' 전날에 즈음해 다수파들이 저지른 정치적 술수라</term>
+	    </Arg>
+	    <Rel>
+	      <term>혹평했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유포</lemma>
+    <comment>Frames file for '유포' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유포.01</id>
+      <edef>spread</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing spreaded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유포하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>마포을지구당 황수관 위원장도 `5 천만원을 주고 한나라당 사무국장을 매수했다'는 흑색선전을 유포한 혐의로 한나라당 관계자들을 고발할 방침이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 마포을/NPR+지구당/NNC
+           황수관/NPR
+           위원장/NNC+도/PAU)
+   (VP (NP-COMP (S (NP-SBJ *pro*)
+                   (VP (NP-COMP (S (NP-SBJ *pro*)
+				   (VP (NP-OBJ (S `/SLQ
+						  (NP-SBJ *pro*)
+						  (VP (VP (NP-OBJ 5/NNU
+								  천만/NNU+원/NNX+을/PCA)
+							  주/VV+고/ECS)
+						      (VP (NP-OBJ 한나라당/NPR
+									  사무/NNC+국장/NNC+을/PCA)
+							  (VV 매수/NNC+하/XSV+었/EPF+다/EFN)))
+						  '/SRQ
+						  는/EAN)
+					       (NP 흑색/NNC+선전/NNC+을/PCA))
+				       (VV 유포/NNC+하/XSV+은/EAN)))
+				(NP 혐의/NNC+으로/PAD))
+                       (NP-OBJ 한나라당/NPR
+				       관계자/NNC+들/XSF+을/PCA)
+		       (VV 고발/NNC+하/XSV+을/EAN)))
+                (NP 방침/NNC+이라고/PAD))
+       밝히/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>`5 천만원을 주고 한나라당 사무국장을 매수했다'는 흑색선전</term>
+	    </Arg>
+	    <Rel>
+	      <term>유포한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

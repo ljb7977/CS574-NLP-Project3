@@ -1,0 +1,200 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>증대</lemma>
+    <comment>Frames file for '증대' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>증대.01</id>
+      <edef>enlarge</edef>
+      <roleset>
+	<role argnum="0" argrole="thing enlarging"/>
+	<role argnum="1" argrole="thing enlarged"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>증대하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>메리 로빈슨 유엔인권고등판무관은 2 일 중국의 인권 상황이 더욱 악화되고 있으며 기본적인 자유를 억압하는 데 대한 비난들이 증대하고 있다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 메리/NPR
+           로빈슨/NPR
+           유엔/NPR+인권/NNC+고등/NNC+판무관/NNC+은/PAU)
+   (VP (NP-ADV 2/NNU
+               일/NNX)
+       (VP (S-COMP (S (NP-SBJ (NP 중국/NPR+의/PAN)
+                              (NP 인권/NNC
+                                  상황/NNC+이/PCA))
+                      (VP (VP (ADVP 더욱/ADV)
+                              (VP (VV 악화/NNC+되/XSV+고/ECS)))
+                          있/VX+으며/ECS))
+                   (S (NP-SBJ (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (NP-COMP (S (NP-SBJ *pro*)
+                                                    (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                                   (S (NP-SBJ *T*-1)
+                                                                      (VP (NP 기본/NNC+적/XSF+이/CO+은/EAN))))
+                                                                (NP 자유/NNC+을/PCA))
+                                                        (VV 억압/NNC+하/XSV+는/EAN)))
+                                                 (NP 데/NNX))
+                                        대하/VV+은/EAN)))
+                              (NP 비난/NNC+들/XSF+이/PCA))
+                      (VP (VP (VV 증대/NNC+하/XSV+고/ECS))
+                          있/VX+다/EFN+고/PAD)))
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>기본적인 자유를 억압하는 데 대한 비난들</term>
+	    </Arg>
+	    <Rel>
+	      <term>증대하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>증대되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>또 중국은 한국으로부터 섬유류, 원피 등 221 개 품목에 대해 평균 30 퍼센트 인하된 특혜관세를 적용받을 수 있게 돼 양국간 교역이 크게 증대될 것으로 보인다.</text>
+	  <parse>
+(S (ADVP 또/ADV)
+   (S (NP-SBJ 중국/NPR+은/PAU)
+      (VP (VP (VP (NP-COMP 한국/NPR+으로부터/PAD)
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-COMP (NP (NP (NP 섬유/NNC+류/XSF)
+                                              ,/SCM
+                                              (NP 원피/NNC))
+                                          (NP 등/NNX))
+                                      (NP 221/NNU
+                                          개/NNX
+                                          품목/NNC+에/PAD))
+                             대하/VV+어/ECS))
+                      (VP (NP-OBJ (S (NP-SBJ 평균/NNC
+                                             30/NNU
+                                             퍼센트/NNX)
+                                     (VP (VV 인하/NNC+되/XSV+은/EAN)))
+                                  (NP 특혜/NNC+관세/NNC+을/PCA))
+                          (VV 적용/NNC+받/XSV+을/EAN))))
+              (VX 수/NNX
+                  있/VJ+게/ECS))
+          되/VX+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ (NP 양국/NNC+간/XSF)
+                              (NP 교역/NNC+이/PCA))
+                      (VP (ADVP (ADV 크/VJ+게/ECS))
+                          (VP (VV 증대/NNC+되/XSV+을/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>양국간 교역</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>크게</term>
+	    </Arg>
+	    <Rel>
+	      <term>증대될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>증대시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>그린스펀 의장은 생산성 향상에 힘입은 증시의 활황이 수요를 공급이 따를 수 없는 정도의 수준으로 증대시켰다고 지적하고 상품과 용역의 전반적인 수요가 장기간에 걸쳐 공급 증가율을 상회할 수는 없다면서 "수요의 팽창이 완화되어야 한다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그린스펀/NPR
+           의장/NNC+은/PAU)
+   (VP (VP (S-COMP (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP-COMP 생산성/NNC
+                                              향상/NNC+에/PAD)
+                                     힘입/VV+은/EAN)))
+                           (NP (NP 증시/NNC+의/PAN)
+                               (NP 활황/NNC+이/PCA)))
+                   (VP (NP-OBJ 수요/NNC+을/PCA)
+                       (NP-COMP (NP (S (NP-SBJ 공급/NNC+이/PCA)
+                                       (VP (VP (NP-OBJ *pro*)
+                                               따르/VV+을/EAN)
+                                           (VX 수/NNX
+                                               없/VJ+는/EAN)))
+                                    (NP 정도/NNC+의/PAN))
+                                (NP 수준/NNC+으로/PAD))
+                       (VV 증대/NNC+시키/XSV+었/EPF+다/EFN+고/PAD)))
+           (VV 지적/NNC+하/XSV+고/ECS))
+       (VP (S (NP-SBJ (NP (NP 상품/NNC+과/PCJ)
+                          (NP 용역/NNC+의/PAN))
+                      (NP (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (NP 전반/NNC+적/XSF+이/CO+은/EAN))))
+                          (NP 수요/NNC+이/PCA)))
+              (VP (VP (S (NP-SBJ *pro*)
+                         (VP (NP-COMP 장기간/NNC+에/PAD)
+                             걸치/VV+어/ECS))
+                      (VP (NP-OBJ 공급/NNC
+                                  증가율/NNC+을/PCA)
+                          (VV 상회/NNC+하/XSV+을/EAN)))
+                  (VX 수/NNX+은/PAU
+                      없/VJ+다면서/ECS)))
+           (VP (S-COMP "/SLQ
+                       (NP-SBJ (NP 수요/NNC+의/PAN)
+                               (NP 팽창/NNC+이/PCA))
+                       (VP (VP (VV 완화/NNC+되/XSV+어야/ECS))
+                           하/VX+는다/EFN)
+                       "/SRQ
+                       고/PAD)
+               말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>생산성 향상에 힘입은 증시의 활황</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>수요</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>공급이 따를 수 없는 정도의 수준</term>
+	    </Arg>
+	    <Rel>
+	      <term>증대시켰다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

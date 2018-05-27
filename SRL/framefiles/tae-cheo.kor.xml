@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대처</lemma>
+    <comment>Frames file for '대처' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>대처.01</id>
+      <edef>cope with</edef>
+      <roleset>
+	<role argnum="0" argrole="entity coping"/>
+	<role argnum="1" argrole="coping with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대처하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 통계는 계획 목적만을 위해서 사용되며, 실제 상황에 대처하기 위해서 달라질 수 있다.</text>
+	  <parse>
+(S (S (NP-SBJ 이/DAN
+              통계/NNC+은/PAU)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-OBJ 계획/NNC
+                              목적/NNC+만/PAU+을/PCA)
+                      위하/VV+어서/ECS))
+          (VV 사용/NNC+되/XSV+으며/ECS)))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (S-OBJ (NP-SBJ *pro*)
+                            (VP (NP-COMP 실제/NNC
+                                         상황/NNC+에/PAD)
+                                (VV 대처/NNC+하/XSV+기/ENM)))
+                     위하/VV+어서/ECS))
+              (VP (VV 다르/VJ+어지/XSV+을/EAN)))
+          (VX 수/NNX
+              있/VJ+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>실제 상황</term>
+	    </Arg>
+	    <Rel>
+	      <term>대처하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

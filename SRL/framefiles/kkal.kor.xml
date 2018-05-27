@@ -1,0 +1,251 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>깔</lemma>
+    <comment>Frames file for '깔' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>깔.01</id>
+      <edef>lay</edef>
+      <roleset>
+	<role argnum="0" argrole="layer"/>
+	<role argnum="1" argrole="thing laid"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>깔다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그러나 자동차업계의 전문가들은 "현대가 대우차를 실제로 인수하지 못할 경우에 대비해 포석을 깔아 둘 수는 있을 것"이라며 "만약 GM이 대우차를, 다임러크라이슬러가 쌍용차를, 르노가 삼성차를 인수해 국내시장이 사분될 경우 자동차 내수시장에서 현대의 입지가 줄어드는 것은 자명하다"고 분석하고 있다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 자동차/NNC+업계/NNC+의/PAN
+              전문가/NNC+들/XSF+은/PAU)
+      (VP (VP (S-COMP (S "/SLQ
+			 (NP-SBJ *pro*)
+			 (VP (VP (VP (VP (S (NP-SBJ *pro*)
+					    (VP (NP-OBJ (S (NP-SBJ 현대/NPR+이/PCA)
+							   (VP (VP (NP-OBJ 대우/NPR+차/NNC+을/PCA)
+								   (VP (NP-ADV 실제/NNC+으로/PAD)
+								       (VP (VV 인수/NNC+하/XSV+지/ECS))))
+							       못하/VX+을/EAN))
+							(NP 경우/NNC+에/PAD))
+						(VV 대비/NNC+하/XSV+어/ECS)))
+					 (VP (NP-OBJ 포석/NNC+을/PCA)
+					     깔/VV+어/ECS))
+				     두/VX+을/EAN)
+				 (VX 수/NNX+은/PAU
+				       있/VX+을/EAN))
+			     (VX 것/NNX))
+			 "/SRQ
+			 이/CO+라며/ECS)
+		      (S "/SLQ
+			 (NP-ADV (S (ADVP 만약/ADV)
+				    (S (S (S (NP-SBJ GM/NFW+이/PCA)
+					     (VP (NP-OBJ 대우/NPR+차/NNC+을/PCA)
+						 (VV *?*)))
+					  ,/SCM
+					  (S (NP-SBJ 다임러크라이슬러/NPR+이/PCA)
+					     (VP (NP-OBJ 쌍용/NPR+차/NNC+을/PCA)
+						 (VV *?*)))
+					  ,/SCM
+					  (S (NP-SBJ 르노/NPR+이/PCA)
+					     (VP (NP-OBJ 삼성/NPR+차/NNC+을/PCA)
+						 (VV 인수/NNC+하/XSV+어/ECS))))
+				       (S (NP-SBJ 국내/NNC+시장/NNC+이/PCA)
+					  (VP (VV 사분/NNC+되/XSV+을/EAN)))))
+				 (NP 경우/NNC))
+			 (S (NP-SBJ (S (NP-ADV 자동차/NNC
+						     내수/NNC+시장/NNC+에서/PAD)
+				       (S (NP-SBJ (NP 현대/NPR+의/PAN)
+						  (NP 입지/NNC+이/PCA))
+					  (VP 줄어들/VV+는/EAN)))
+				    (NP 것/NNX+은/PAU))
+			    (ADJP 자명하/VJ+다/EFN))
+			 "/SRQ
+			 고/PAD))
+              (VV 분석/NNC+하/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>현대가 대우차를 실제로 인수하지 못할 경우에 대비해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>포석</term>
+	    </Arg>
+	    <Rel>
+	      <term>깔아</term>
+	    </Rel>
+	    <Aux>
+	      <f>아</f>
+	      <term>둘</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>수는 있을</term>
+	    </Aux>
+	    <Aux>
+	      <f>을</f>
+	      <term>것"이라며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>깔리다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인도네시아의 안타라통신은 파칸바르주정부가 의약품 제조회사에 외과용 마스크를 주문했으며 주민들에게 연기가 짙게 깔려 있을 동안에는 바깥 출입 등 외부 활동을 가급적 자제해 줄 것을 촉구했다고 보도했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 인도네시아/NPR+의/PAN)
+           (NP 안타라/NPR+통신/NNC+은/PAU))
+   (VP (S-COMP (S (NP-SBJ 파칸바르/NPR+주정부/NNC+이/PCA)
+                  (VP (NP-COMP 의약품/NNC
+                               제조/NNC+회사/NNC+에/PAD)
+                      (NP-OBJ 외과/NNC+용/XSF
+                              마스크/NNC+을/PCA)
+                      (VV 주문/NNC+하/XSV+었/EPF+으며/ECS)))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP 주민/NNC+들/XSF+에게/PAD)
+                      (NP-OBJ (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-ADV (S (WHNP *op*)
+                                                    (S (NP-SBJ 연기/NNC+이/PCA)
+                                                       (VP (VP (ADVP (ADV 짙/VJ+게/ECS))
+                                                               (VP 깔리/VV+어/ECS))
+                                                           있/VX+을/EAN)))
+                                                 (NP 동안/NNX+에/PAD+은/PAU))
+                                         (VP (NP-OBJ (NP (NP 바깥/NNC
+                                                             출입/NNC)
+                                                         (NP 등/NNX))
+                                                     (NP 외부/NNC
+                                                         활동/NNC+을/PCA))
+                                             (VP (NP-ADV 가급적/NNC)
+                                                 (VP (VV 자제/NNC+하/XSV+어/ECS)))))
+                                     주/VX+을/EAN))
+                              (NP 것/NNX+을/PCA))
+                      (VV 촉구/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+       (VV 보도/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>연기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>짙게</term>
+	    </Arg>
+	    <Rel>
+	      <term>깔려</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있을</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>깔.02</id>
+      <edef>assume</edef>
+      <roleset>
+	<role argnum="0" argrole="thinker"/>
+	<role argnum="1" argrole="thought"/>
+	<role argnum="2" argrole="attribute"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>깔다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>당의 한 관계자는 "`중간평가'는 잘했는지, 못했는지 선거로 확인하자는 중립적 의미이나 `심판'이란 개념은 현 정권의 실정을 기본 전제로 깔고 이에 대해 국민들이 따끔한 맛을 보여 줘야 한다는 공격적, 적극적인 의지를 담은 것"이라고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 당/NNC+의/PAN)
+           (NP 한/NNU
+               관계자/NNC+은/PAU))
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ `/SLQ
+                          중간/NNC+평가/NNC
+                          '/SRQ
+                          은/PAU)
+                  (VP (NP (S (NP-SBJ *pro*)
+                             (VP (S-OBJ (S (NP-SBJ *pro*)
+                                           (VP 잘하/VV+었/EPF+는지/EFN))
+                                        ,/SCM
+                                        (S (NP-SBJ *pro*)
+                                           (VP 못하/VV+었/EPF+는지/EFN)))
+                                 (VP (NP-ADV 선거/NNC+으로/PAD)
+                                     (VP (VV 확인/NNC+하/XSV+자는/EAN)))))
+                          (NP (NP 중립/NNC+적/XSF)
+                              (NP 의미/NNC+이/CO+으나/ECS)))))
+               (S (NP-SBJ (NP `/SLQ
+                              심판/NNC
+                              '/SRQ
+                              이란/PAN)
+                          (NP 개념/NNC+은/PAU))
+                  (VP (NP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (S (S (NP-SBJ *pro*)
+                                               (VP (NP-OBJ (NP 현/DAN
+                                                               정권/NNC+의/PAN)
+                                                           (NP 실정/NNC+을/PCA))
+                                                   (NP-COMP 기본/NNC
+                                                            전제/NNC+으로/PAD)
+                                                   깔/VV+고/ECS))
+                                            (S (S (NP-SBJ *pro*)
+						  (VP (NP-COMP 이/NPN+에/PAD)
+						      대하/VV+어/ECS))
+					       (S (NP-SBJ 국민/NNC+들/XSF+이/PCA)
+						  (VP (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+									 (S (NP-SBJ *T*-1)
+									    (ADJP (VJ 따끔/NNC+하/XSJ+은/EAN))))
+								      (NP 맛/NNC+을/PCA))
+							      보이/VV+어/ECS)
+							  주/VX+어야/ECS)
+						      하/VX+는다는/EAN))))
+                                         (NP (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (VP (NP (NP 공격/NNC+적/XSF)
+                                                           ,/SCM
+                                                           (NP 적극/NNC+적/XSF+이/CO+은/EAN)))))
+                                             (NP 의지/NNC+을/PCA)))
+                                 담/VV+은/EAN))
+                          (NP 것/NNX))))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       (VV 설명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>현 정권의 실정</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>기본 전제</term>
+	    </Arg>
+	    <Rel>
+	      <term>깔고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

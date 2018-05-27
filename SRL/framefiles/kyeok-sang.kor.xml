@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>격상</lemma>
+    <comment>Frames file for '격상' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>격상.01</id>
+      <edef>promote</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing promoted"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>격상하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이들은 이와 함께 소련군에 대항해 싸운 전몰용사의 지위를 격상하고 교육과 과학분야에서의 탈러시아화를 추진하며 소련 공산당과 우크라이나 공산당 출신 인사의 공무원 채용 금지를 주장하면서 자신의 요청을 TV 생중계 해줄 것을 요청하고 있다.</text>
+	  <parse>
+(S (NP 이/NPN+들/XSF+은/PAU)
+   (VP (ADVP (NP-COMP 이/NPN+과/PAD)
+             함께/ADV)
+       (VP (S (S (NP-SBJ *pro*)
+                 (VP (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (VP (NP-COMP 소련/NPR+군/NNC+에/PAD)
+                                                   (VV 대항/NNC+하/XSV+어/ECS))
+                                               싸우/VV+은/EAN)))
+                                     (NP 전몰/NNC+용사/NNC+의/PAN))
+                                 (NP 지위/NNC+을/PCA))
+                         (VV 격상/NNC+하/XSV+고/ECS))
+                     (VP (NP-OBJ (NP (NP 교육/NNC+과/PCJ)
+                                     (NP 과학/NNC+분야/NNC+에서/PAD+의/PAN))
+                                 (NP 탈러시아화/NNC+을/PCA))
+                         (VV 추진/NNC+하/XSV+으며/ECS))))
+              (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ (NP (NP (NP 소련/NPR
+                                         공산당/NPR+과/PAD)
+                                     (NP 우크라이나/NPR
+                                         공산당/NPR))
+                                 (NP 출신/NNC
+                                     인사/NNC+의/PAN))
+                             (NP 공무원/NNC
+                                 채용/NNC
+                                 금지/NNC+을/PCA))
+                     (VV 주장/NNC+하/XSV+으면서/ECS))))
+           (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                              (VP (VP (NP-OBJ (NP 자신/NNC+의/PAN)
+                                              (NP 요청/NNC+을/PCA))
+                                      (VP (NP-OBJ-LV TV/NFW
+                                                     생중계/NNC)
+                                          (LV 하/VV+어/ECS)))
+                                  주/VX+을/EAN))
+                           (NP 것/NNX+을/PCA))
+                   (VV 요청/NNC+하/XSV+고/ECS))
+               있/VX+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>소련군에 대항해 싸운 전몰용사의 지위</term>
+	    </Arg>
+	    <Rel>
+	      <term>격상하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

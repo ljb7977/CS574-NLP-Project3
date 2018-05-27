@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>긴요하</lemma>
+    <comment>Frames file for '긴요하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>긴요하.01</id>
+      <edef>important</edef>
+      <roleset>
+	<role argnum="1" argrole="important thing"/>
+	<role argnum="2" argrole="important to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>긴요하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>보고서는 "미국과 주요 교역 상대국의 건전한 국내 정책이 중요하다"며 "현재와 같은 불균형을 시정하기 위해서는 미국내 자금 비축을 늘리고 주요 교역상대국의 내수진작을 유도하는 정책이 긴요하다"고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 보고서/NNC+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ (NP (NP 미국/NPR+과/PCJ)
+                      (NP 주요/NNC
+                          교역/NNC
+                          상대국/NNC+의/PAN))
+                  (NP (S (WHNP-1 *op*)
+                         (S (NP-SBJ *T*-1)
+                            (ADJP (VJ 건전/NNC+하/XSJ+은/EAN))))
+                      (NP 국내/NNC
+                          정책/NNC+이/PCA)))
+          (ADJP (VJ 중요/NNC+하/XSJ+다/EFN))
+          "/SRQ
+          며/ECS)
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (VP (S-OBJ (NP-SBJ *pro*)
+                                 (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                (S (NP-SBJ *T*-2)
+                                                   (ADJP (NP-COMP 현재/NNC+과/PAD)
+                                                         같/VJ+은/EAN)))
+                                             (NP 불균형/NNC+을/PCA))
+                                     (VV 시정/NNC+하/XSV+기/ENM)))
+                          위하/VV+어서/ECS+은/PAU))
+                   (S (NP-SBJ (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-OBJ (NP 미국/NPR+내/NNX)
+                                                 (NP 자금/NNC
+                                                     비축/NNC+을/PCA))
+                                         늘리/VV+고/ECS)
+                                     (VP (NP-OBJ (NP 주요/NNC
+                                                     교역/NNC+상대국/NNC+의/PAN)
+                                                 (NP 내수/NNC+진작/NNC+을/PCA))
+                                         (VV 유도/NNC+하/XSV+는/EAN))))
+                              (NP 정책/NNC+이/PCA))
+                      (ADJP 긴요하/VJ+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>현재와 같은 불균형을 시정하기 위해서는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>미국내 자금 비축을 늘리고 주요 교역상대국의 내수진작을 유도하는 정책</term>
+	    </Arg>
+	    <Rel>
+	      <term>긴요하다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

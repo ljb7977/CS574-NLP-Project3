@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>반문</lemma>
+    <comment>Frames file for '반문' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>반문.01</id>
+      <edef>ask in return</edef>
+      <roleset>
+	<role argnum="0" argrole="asker"/>
+	<role argnum="1" argrole="question"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>반문하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>세계유태인총회(WJC)의 엘런 스타인버그 전무이사는 "영국에서만 350 점의 도난 미술품이 있는데 미국 박물관들에서는 한 점도 없다는 것이 가능한 일이냐"고 반문했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 세계/NNC+유태인/NNC+총회/NNC
+               (PRN -LRB-/SLQ
+                    WJC/NFW
+                    -RRB-/SRQ)
+               의/PAN)
+           (NP 엘런/NPR
+               스타인버그/NPR
+               전무/NNC+이사/NNC+은/PAU))
+   (VP (S-COMP "/SLQ
+               (S (NP-ADV 영국/NPR+에서/PAD+만/PAU)
+                  (S (NP-SBJ (NP 350/NNU
+                                 점/NNX+의/PAN)
+                             (NP 도난/NNC
+                                 미술품/NNC+이/PCA))
+                     (ADJP 있/VJ+는데/ECS)))
+               (S (NP-SBJ (S (NP-ADV 미국/NPR
+                                     박물관/NNC+들/XSF+에서/PAD+은/PAU)
+                             (S (NP-SBJ *pro*)
+                                (ADJP (NP-ADV 한/NNU
+                                              점/NNX+도/PAU)
+                                      (ADJP 없/VJ+다는/EAN))))
+                          (NP 것/NNX+이/PCA))
+                  (VP (NP (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (ADJP (VJ 가능/NNC+하/XSJ+은/EAN))))
+                          (NP 일/NNX+이/CO+냐/EFN))))
+               "/SRQ
+               고/PAD)
+       (VV 반문/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>세계유태인총회(WJC)의 엘런 스타인버그 전무이사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>"영국에서만 350 점의 도난 미술품이 있는데 미국 박물관들에서는 한 점도 없다는 것이 가능한 일이냐"</term>
+	    </Arg>
+	    <Rel>
+	      <term>반문했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

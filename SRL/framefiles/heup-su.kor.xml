@@ -1,0 +1,155 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>흡수</lemma>
+    <comment>Frames file for '흡수' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>흡수.01</id>
+      <edef>absorb</edef>
+      <roleset>
+	<role argnum="0" argrole="absorber"/>
+	<role argnum="1" argrole="thing absorbed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>흡수하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>여야 3 당은 16 대 총선이 40 일(4 일) 앞으로 다가오고 민주국민당(민국당) 변수가 다소 안정기미를 보임에 따라 전국 지역구에 대한 초반판세 분석을 바탕으로 지지층을 확산하고 부동층을 흡수하기 위한 전략수립에 착수했다.</text>
+	  <parse>
+(S (NP-SBJ 여야/NNC
+           3/NNU
+           당/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (S-COMP (S (NP-SBJ 16/NNU
+				 대/NNX
+				 총선/NNC+이/PCA)
+			 (VP (NP-COMP 40/NNU
+				      일/NNX
+				      (PRN -LRB-/SLQ
+					   4/NNU
+					   일/NNX
+					   -RRB-/SRQ)
+				      앞/NNC+으로/PAD)
+			     다가오/VV+고/ECS))
+		      (S (NP-SBJ 민주국민당/NPR
+					   (PRN -LRB-/SLQ
+						민국당/NPR
+						-RRB-/SRQ)
+					   변수/NNC+이/PCA)
+			 (VP (ADVP 다소/ADV)
+			     (VP (NP-OBJ 안정/NNC+기미/NNC+을/PCA)
+				 보이/VV+음/ENM+에/PAD))))
+              따르/VV+어/ECS))
+       (NP-ADV (NP-OBJ (S (WHNP-1 *op*)
+                          (S (NP-SBJ *T*-1)
+                             (VP (NP-COMP 전국/NNC
+                                          지역구/NNC+에/PAD)
+                                 대하/VV+은/EAN)))
+                       (NP 초반/NNC+판세/NNC
+                           분석/NNC+을/PCA))
+               바탕/NNC+으로/PAD)
+       (VP (NP-COMP (S (WHNP-2 *op*)
+                       (S (NP-SBJ *T*-2)
+                          (VP (S-OBJ (S (NP-SBJ *pro*)
+					(VP (NP-OBJ 지지층/NNC+을/PCA)
+					    (VV 확산/NNC+하/XSV+고/ECS)))
+				     (S (NP-SBJ *pro*)
+					(VP (NP-OBJ 부동층/NNC+을/PCA)
+					    (VV 흡수/NNC+하/XSV+기/ENM))))
+                              위하/VV+은/EAN)))
+                    (NP 전략/NNC+수립/NNC+에/PAD))
+           (VV 착수/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>부동층</term>
+	    </Arg>
+	    <Rel>
+	      <term>흡수하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>흡수되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>최근 연준위(FR)가 발표한 분기별 자금 동향에 따르면 뉴욕증시, 나스닥 등 증권시장의 호황으로 더욱 더 많은 개인 재산이 주식시장으로 흡수되고 있으며 이같은 추세는 당분간 계속될 것으로 보인다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (WHNP-1 *op*)
+                      (S (NP-ADV 최근/NNC)
+                         (S (NP-SBJ 연준위/NPR
+                                    (PRN -LRB-/SLQ
+                                         (NP FR/NFW)
+                                         -RRB-/SRQ)
+                                    이/PCA)
+                            (VP (NP-OBJ *T*-1)
+                                (VV 발표/NNC+하/XSV+은/EAN)))))
+                   (NP 분기/NNC+별/XSF
+                       자금/NNC
+                       동향/NNC+에/PAD))
+          따르/VV+으면/ECS))
+   (S (NP-ADV (NP (NP (NP 뉴욕/NPR+증시/NNC
+                          ,/SCM
+                          나스닥/NPR)
+                      (NP 등/NNX))
+                  (NP 증권/NNC+시장/NNC+의/PAN))
+              (NP 호황/NNC+으로/PAD))
+      (S (NP-SBJ (S (WHNP-2 *op*)
+                    (S (NP-SBJ *T*-2)
+                       (ADJP (ADVP (ADVP 더욱/ADV)
+                                   (ADVP 더/ADV))
+                             (ADJP 많/VJ+은/EAN))))
+                 (NP 개인/NNC
+                     재산/NNC+이/PCA))
+         (VP (VP (NP-COMP 주식/NNC+시장/NNC+으로/PAD)
+                 (VV 흡수/NNC+되/XSV+고/ECS))
+             있/VX+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 이같은/DAN
+                              추세/NNC+은/PAU)
+                      (VP (NP-ADV 당분간/NNC)
+                          (VP (VV 계속/NNC+되/XSV+을/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          보이/VV+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>최근 연준위(FR)가 발표한 분기별 자금 동향에 따르면</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>뉴욕증시, 나스닥 등 증권시장의 호황으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>더욱 더 많은 개인 재산</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>으로</f>
+	      <term>주식시장</term>
+	    </Arg>
+	    <Rel>
+	      <term>흡수되고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있으며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

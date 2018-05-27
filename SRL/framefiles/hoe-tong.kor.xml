@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>회동</lemma>
+    <comment>Frames file for '회동' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>회동.01</id>
+      <edef>meet</edef>
+      <roleset>
+	<role argnum="0" argrole="meeter"/>
+	<role argnum="1" argrole="person met"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>회동하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>쾰러 후보는 이날 피셔 부총재를 만난 데 이어 로런스 서머스 미국 재무장관과도 회동했다.</text>
+	  <parse>
+(S (NP-SBJ 쾰러/NPR
+           후보/NNC+은/PAU)
+   (VP (ADVP (NP-COMP (S (NP-SBJ *pro*)
+			 (VP (NP-ADV 이날/NNC)
+			     (VP (NP-OBJ 피셔/NPR
+					 부총재/NNC+을/PCA)
+				 만나/VV+은/EAN)))
+		      (NP 데/NNX))
+	     이어/ADV)
+       (VP (NP-COMP 로런스/NPR
+		    서머스/NPR
+		    미국/NPR
+		    재무/NNC+장관/NNC+과/PAD+도/PAU)
+           (VV 회동/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>쾰러 후보</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날 피셔 부총재를 만난 데 이어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>과도</f>
+	      <term>로런스 서머스 미국 재무장관</term>
+	    </Arg>
+	    <Rel>
+	      <term>회동했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

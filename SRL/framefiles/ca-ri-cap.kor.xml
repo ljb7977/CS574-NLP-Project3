@@ -1,0 +1,68 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자리잡</lemma>
+    <comment>Frames file for '자리잡' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>자리잡.01</id>
+      <edef>place oneself</edef>
+      <roleset>
+	<role argnum="0" argrole="thing placing oneself"/>
+	<role argnum="1" argrole="place at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자리잡다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>기상청은 "이동성 고기압의 뒷면에 자리잡은 따뜻한 남서기류가 지속적으로 한반도로 유입되면서 오늘 전국의 기온이 예년보다 10-12 도가 높은 고온현상이 나타났다"고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 기상청/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-COMP (NP 이동성/NNC
+                                                 고기압/NNC+의/PAN)
+                                             (NP 뒷면/NNC+에/PAD))
+                                    자리잡/VV+은/EAN))
+                             (S (NP-SBJ *T*-1)
+                                (ADJP 따뜻하/VJ+은/EAN)))
+                          (NP 남서/NNC+기류/NNC+이/PCA))
+                  (VP (NP-ADV 지속/NNC+적/XSF+으로/PAD)
+                      (VP (NP-COMP 한반도/NNC+으로/PAD)
+                          (VV 유입/NNC+되/XSV+으면서/ECS))))
+               (S (NP-SBJ (S (NP-SBJ (NP 오늘/NNC)
+                                     (NP (NP 전국/NNC+의/PAN)
+                                         (NP 기온/NNC+이/PCA)))
+                             (ADJP (NP-ADV 예년/NNC+보다/PAD)
+                                   (NP-ADV 10/NNU+-/SSY+12/NNU
+                                           도/NNX+이/PCA)
+                                   (ADJP 높/VJ+은/EAN)))
+                          (NP 고온/NNC+현상/NNC+이/PCA))
+                  (VP 나타나/VV+었/EPF+다/EFN))
+               "/SRQ
+               고/PAD)
+       (VV 설명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=남서기류</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>이동성 고기압의 뒷면</term>
+	    </Arg>
+	    <Rel>
+	      <term>자리잡은</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

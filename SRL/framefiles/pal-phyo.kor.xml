@@ -1,0 +1,157 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>발표</lemma>
+    <comment>Frames file for '발표' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>발표.01</id>
+      <edef>announce</edef>
+      <roleset>
+	<role argnum="0" argrole="announcer"/>
+	<role argnum="1" argrole="announcement"/>
+	<role argnum="2" argrole="announced to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>발표하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>도이체 방크와 드레스드너 방크는 8 일 각각 감독위원회를 열고 합병 문제를 논의할 예정이며 양사 대표는 수일내에 합병 협상 결과를 발표할 것으로 알려졌다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ (NP 도이체/NPR
+                             방크/NPR+과/PCJ)
+                         (NP 드레스드너/NPR
+                             방크/NPR+은/PAU))
+                 (VP (VP (NP-ADV 8/NNU
+                                 일/NNX)
+                         (ADVP 각각/ADV)
+                         (VP (NP-OBJ 감독/NNC+위원회/NNC+을/PCA)
+                             열/VV+고/ECS))
+                     (VP (NP-OBJ 합병/NNC
+                                 문제/NNC+을/PCA)
+                         (VV 논의/NNC+하/XSV+을/EAN))))
+              (NP 예정/NNC+이/CO+으며/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ 양사/NNC
+                              대표/NNC+은/PAU)
+                      (VP (NP-ADV 수일/NNC+내/NNX+에/PAD)
+                          (VP (NP-OBJ 합병/NNC
+                                      협상/NNC
+                                      결과/NNC+을/PCA)
+                              (VV 발표/NNC+하/XSV+을/EAN))))
+                   (NP 것/NNX+으로/PAD))
+          (VV 알리/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>양사 대표</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>수일내에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>합병 협상 결과</term>
+	    </Arg>
+	    <Rel>
+	      <term>발표할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>발표하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>로런스 서머스 재무장관은 지난 1 월 국채 300 억달러를 올해 안에 갚을 계획이라고 발표했다.</text>
+	  <parse>
+(S (NP-SBJ 로런스/NPR
+           서머스/NPR
+           재무/NNC+장관/NNC+은/PAU)
+   (VP (NP-ADV 지난/DAN
+               1/NNU
+               월/NNX)
+       (VP (NP-COMP (S (NP-SBJ *pro*)
+		       (VP (NP-OBJ 국채/NNC
+				       300/NNU
+				       억/NNU+달러/NNX+을/PCA)
+			   (VP (NP-ADV 올해/NNC
+					   안/NNC+에/PAD)
+			       (VP 갚/VV+을/EAN))))
+		    (NP 계획/NNC+이라고/PAD))
+           (VV 발표/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>로런스 서머스 재무장관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 1 월</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이라고</f>
+	      <term>국채 300 억달러를 올해 안에 갚을 계획</term>
+	    </Arg>
+	    <Rel>
+	      <term>발표했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>발표되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국에서는 최근 매년 약 10 만명이 의료사고로 목숨을 잃는다는 조사가 발표돼 큰 논란을 불러일으켰었다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (NP-ADV 미국/NPR+에서/PAD+은/PAU)
+                 (NP-ADV 최근/NNC)
+                 (NP-ADV 매년/NNC)
+                 (S (NP-SBJ 약/DAN
+                            10/NNU
+                            만/NNU+명/NNX+이/PCA)
+                    (VP (NP-ADV 의료/NNC+사고/NNC+으로/PAD)
+                        (VP (NP-OBJ 목숨/NNC+을/PCA)
+                            잃/VV+는다는/EAN))))
+              (NP 조사/NNC+이/PCA))
+      (VP (VV 발표/NNC+되/XSV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (ADJP 크/VJ+은/EAN)))
+                  (NP 논란/NNC+을/PCA))
+          불러일으키/VV+었었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>미국에서는 최근 매년 약 10 만명이 의료사고로 목숨을 잃는다는 조사</term>
+	    </Arg>
+	    <Rel>
+	      <term>발표돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

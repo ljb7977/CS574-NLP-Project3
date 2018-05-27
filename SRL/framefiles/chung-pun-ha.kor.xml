@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>충분하</lemma>
+    <comment>Frames file for '충분하' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>충분하.01</id>
+      <edef>sufficient</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being sufficient"/>
+	<role argnum="2" argrole="sufficient to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>충분하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전시에는 포병 작전을 지원하기에 충분한 대량의 탄약 보급을 위해서 국외 자원에 의존해야 할 것이다.</text>
+	  <parse>
+(S (NP-ADV 전시/NNC+에/PAD+은/PAU)
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-OBJ (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (ADJP (S-COMP (NP-SBJ *pro*)
+                                         (VP (NP-OBJ 포병/NNC
+                                                     작전/NNC+을/PCA)
+                                             (VV 지원/NNC+하/XSV+기/ENM+에/PAD)))
+                                 충분하/VJ+은/EAN)))
+                     (NP (NP 대량/NNC+의/PAN)
+                         (NP 탄약/NNC
+                             보급/NNC+을/PCA)))
+             위하/VV+어서/ECS))
+      (S (NP-SBJ *pro*)
+         (VP (VP (VP (NP-COMP 국외/NNC
+                              자원/NNC+에/PAD)
+                     (VV 의존/NNC+하/XSV+어야/ECS))
+                 하/VX+을/EAN)
+             (VX 것/NNX+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=대량의 탄약 보급</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>기에</f>
+	      <term>포병 작전을 지원하</term>
+	    </Arg>
+	    <Rel>
+	      <term>충분한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

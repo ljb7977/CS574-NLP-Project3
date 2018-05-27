@@ -1,0 +1,49 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>살아나</lemma>
+    <comment>Frames file for '살아나' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>살아나.01</id>
+      <edef>restore</edef>
+      <roleset>
+	<role argnum="1" argrole="thing restored"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>살아나다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국 뉴욕증시의 다우지수 폭등 소식에 투자심리가 살아나며 종합주가지수가 오름세로 돌아섰다.</text>
+	  <parse>
+(S (S (NP-ADV (NP 미국/NPR
+                  뉴욕/NPR+증시/NNC+의/PAN)
+              (NP 다우/NPR+지수/NNC
+                  폭등/NNC
+                  소식/NNC+에/PAD))
+      (S (NP-SBJ 투자/NNC+심리/NNC+이/PCA)
+         (VP 살아나/VV+으며/ECS)))
+   (S (NP-SBJ 종합/NNC+주가/NNC+지수/NNC+이/PCA)
+      (VP (NP-COMP 오름세/NNC+으로/PAD)
+          돌아서/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>미국 뉴욕증시의 다우지수 폭등 소식에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>투자심리</term>
+	    </Arg>
+	    <Rel>
+	      <term>살아나며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

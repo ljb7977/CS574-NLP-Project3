@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>옮겨가</lemma>
+    <comment>Frames file for '옮겨가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>옮겨가</id>
+      <edef>move</edef>
+      <roleset>
+	<role argnum="1" argrole="thing moving"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>옮겨가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	  <mapitem src="np-comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>이는 종전까지 금리인상 우려가 제기될 때마다 구경제 종목을 매도하고 첨단 기술주로 옮겨가던 것과는 정반대 현상으로 다우지수가 3 퍼센트 이상 상승하고 나스닥지수는 2 퍼센트 이상 빠지며 두 지수간에 급등락이 엇갈린 것은 87 년 10 월 20 일 이후 처음이다.</text>
+	  <parse>
+(S (S (NP-SBJ 이/NPN+은/PAU)
+      (VP (NP-ADV (S (NP-ADV 종전/NNC+까지/PAU)
+                     (NP-ADV (S (NP-SBJ 금리/NNC+인상/NNC
+                                        우려/NNC+이/PCA)
+                                (VP (VV 제기/NNC+되/XSV+을/EAN)))
+                             (NP 때/NNC+마다/PAU))
+                     (S (NP-SBJ *pro*)
+                        (VP (VP (NP-OBJ 구/XPF+경제/NNC
+                                        종목/NNC+을/PCA)
+                                (VV 매도/NNC+하/XSV+고/ECS))
+                            (VP (NP-COMP 첨단/NNC
+                                         기술/NNC+주/NNC+으로/PAD)
+                                옮겨가/VV+던/EAN))))
+                  (NP 것/NNX+과/PAD+은/PAU))
+          (VP (NP 정반대/NNC
+                  현상/NNC+으로/PAD))))
+   (S (NP-SBJ (S (S (S (NP-SBJ 다우/NPR+지수/NNC+이/PCA)
+                       (VP (NP-COMP 3/NNU
+                                    퍼센트/NNX
+                                    이상/NNC)
+                           (VV 상승/NNC+하/XSV+고/ECS)))
+                    (S (NP-SBJ 나스닥/NPR+지수/NNC+은/PAU)
+                       (VP (NP-COMP 2/NNU
+                                    퍼센트/NNX
+                                    이상/NNC)
+                           빠지/VV+으며/ECS)))
+                 (S (NP-ADV 두/NNU
+                            지수/NNC+간/NNX+에/PAD)
+                    (S (NP-SBJ 급등락/NNC+이/PCA)
+                       (VP 엇갈리/VV+은/EAN))))
+              (NP 것/NNX+은/PAU))
+      (VP (NP-ADV 87/NNU
+                  년/NNX
+                  10/NNU
+                  월/NNX
+                  20/NNU
+                  일/NNX
+                  이후/NNC)
+          (VP (NP 처음/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>미국 뉴욕증시에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>15 일(현지시간)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>첨단 기술주에서 자금이 빠져</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>`구경제' 종목</term>
+	    </Arg>
+	    <Rel>
+	      <term>옮겨가면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

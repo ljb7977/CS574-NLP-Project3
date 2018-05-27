@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>조심</lemma>
+    <comment>Frames file for '조심' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>조심.01</id>
+      <edef>careful</edef>
+      <roleset>
+	<role argnum="0" argrole="experiencer"/>
+	<role argnum="1" argrole="careful to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>조심스럽다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>분대장은 그 부상병의 눈을 조심스럽게 들여다보았습니다.</text>
+	  <parse>
+(S (NP-SBJ 분대장/NNC+은/PAU)
+   (VP (NP-OBJ (NP 그/DAN
+                   부상병/NNC+의/PAN)
+               (NP 눈/NNC+을/PCA))
+       (VP (ADVP (ADV (VJ 조심/NNC+스럽/XSJ+게/ECS)))
+           (VP 들여다보/VV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>조심스럽게</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>조심하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>마투테스 장관은 "스페인의 사법식민주의에 대한 승리는 없었다"며 대처여사가 발언을 더욱 조심해 주도록 촉구했다.</text>
+	  <parse>
+	  </parse>
+(S (NP-SBJ 마투테스/NPR
+           장관/NNC+은/PAU)
+   (VP (S "/SLQ
+          (NP-SBJ (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-COMP (NP 스페인/NPR+의/PAN)
+                                     (NP 사법/NNC+식민/NNC+주의/NNC+에/PAD))
+                            대하/VV+은/EAN)))
+                  (NP 승리/NNC+은/PAU))
+          (ADJP 없/VJ+었/EPF+다/EFN)
+          "/SRQ
+          며/ECS)
+       (VP (S-COMP (NP-SBJ 대처/NPR+여사/NNC+이/PCA)
+                   (VP (VP (NP-OBJ 발언/NNC+을/PCA)
+                           (VP (ADVP 더욱/ADV)
+                               (VP (VV 조심/NNC+하/XSV+어/ECS))))
+                       주/VX+도록/ECS))
+           (VV 촉구/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>대처여사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>발언</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>더욱</term>
+	    </Arg>
+	    <Rel>
+	      <term>조심해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>주도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

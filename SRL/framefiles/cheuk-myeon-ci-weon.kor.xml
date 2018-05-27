@@ -1,0 +1,72 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>측면지원</lemma>
+    <comment>Frames file for '측면지원' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>측면지원.01</id>
+      <edef>support indirectly</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing supported"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>측면지원하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일본내 친북조직인 조총련 산하 고등학교가 미국 고교를 초청, 친선게임을 갖기로 해 북-미 관계 개선을 측면지원하는 민간교류의 일환으로 관심을 끌고 있다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ (NP (NP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (NP (NP 일본/NPR+내/NNX)
+                                                (NP 친북/NNC+조직/NNC+이/CO+은/EAN)))))
+                                  (NP 조총련/NPR))
+                              (NP 산하/NNC))
+                          (NP 고등학교/NNC+이/PCA))
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ 미국/NPR
+                                     고교/NNC+을/PCA)
+                             (VV 초청/NNC)))
+                      ,/SCM
+                      (VP (NP-OBJ 친선/NNC+게임/NNC+을/PCA)
+                          갖/VV+기/ENM+으로/PAD)))
+          하/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-ADV (NP (S (WHNP-2 *op*)
+                             (S (NP-SBJ *T*-2)
+                                (VP (NP-OBJ 북/NPR
+                                            -/SSY
+                                            미/NPR
+                                            관계/NNC
+                                            개선/NNC+을/PCA)
+                                    (VV 측면지원/NNC+하/XSV+는/EAN))))
+                          (NP 민간/NNC+교류/NNC+의/PAN))
+                      (NP 일환/NNC+으로/PAD))
+              (VP (NP-OBJ 관심/NNC+을/PCA)
+                  끌/VV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=민간교류</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>북-미 관계 개선</term>
+	    </Arg>
+	    <Rel>
+	      <term>측면지원하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

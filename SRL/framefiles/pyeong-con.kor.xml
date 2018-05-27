@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>병존</lemma>
+    <comment>Frames file for '병존' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>병존.01</id>
+      <edef>coexist</edef>
+      <roleset>
+	<role argnum="1" argrole="thing existing"/>
+	<role argnum="2" argrole="existed with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>병존하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>선진국에서는 과체중 인구가 늘어나고 가난한 나라에서는 체중미달 인구가 계속 늘어나는 현상이 병존하고 있으며 양쪽이 모두 영양 결핍 상태라고 이 보고서는 말했다.</text>
+	  <parse>
+(S (S-COMP-2 (S (NP-SBJ (S (S (NP-ADV 선진국/NNC+에서/PAD+은/PAU)
+                              (S (NP-SBJ 과/XPF+체중/NNC
+                                         인구/NNC+이/PCA)
+                                 (VP 늘어나/VV+고/ECS)))
+                           (S (NP-ADV (S (WHNP-1 *op*)
+                                         (S (NP-SBJ *T*-1)
+                                            (ADJP (VJ 가난/NNC+하/XSJ+은/EAN))))
+                                      (NP 나라/NNC+에서/PAD+은/PAU))
+                              (S (NP-SBJ 체중/NNC+미달/NNC
+                                         인구/NNC+이/PCA)
+                                 (VP (ADVP 계속/ADV)
+                                     (VP 늘어나/VV+는/EAN)))))
+                        (NP 현상/NNC+이/PCA))
+                (VP (VP (VV 병존/NNC+하/XSV+고/ECS))
+                    있/VX+으며/ECS))
+             (S (NP-SBJ 양쪽/NNC+이/PCA)
+                (VP (ADVP 모두/ADV)
+                    (VP (NP 영양/NNC
+                            결핍/NNC
+                            상태/NNC+이/CO+라/EFN+고/PAD)))))
+   (S (NP-SBJ 이/DAN
+              보고서/NNC+은/PAU)
+      (VP (S-COMP *T*-2)
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>선진국에서는 과체중 인구가 늘어나고 가난한 나라에서는 체중미달 인구가 계속 늘어나는 현상</term>
+	    </Arg>
+	    <Rel>
+	      <term>병존하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있으며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

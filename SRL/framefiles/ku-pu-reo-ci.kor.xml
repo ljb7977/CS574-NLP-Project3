@@ -1,0 +1,46 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>구부러지</lemma>
+    <comment>Frames file for '구부러지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>구부러지.01</id>
+      <edef>be bent</edef>
+      <roleset>
+	<role argnum="1" argrole="thing forming a curve"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>구부러지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>네가 말하는 도로는 작고 구부러져서 더 넓은 도로와 교차한다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-2 *op*)
+                 (S (NP-SBJ 네/NPN+이/PCA)
+                    (VP (NP-OBJ *T*-2)
+                        말하/VV+는/EAN)))
+              (NP 도로/NNC+은/PAU))
+      (ADJP 작/VJ+고/ECS))
+   (S (NP-SBJ *pro*)
+      (VP 구부러지/VV+어서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP (ADVP 더/ADV)
+                               (ADJP 넓/VJ+은/EAN))))
+                   (NP 도로/NNC+과/PAD))
+          (VV 교차/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>구부러져서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

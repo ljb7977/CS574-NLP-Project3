@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>건설</lemma>
+    <comment>Frames file for '건설' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>건설.01</id>
+      <edef>construct</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing constructed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>건설하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>연대 공병 중대가 그 도로를 건설했습니다.</text>
+	  <parse>
+(S (NP-SBJ 연대/NNC
+           공병/NNC
+           중대/NNC+이/PCA)
+   (VP (NP-OBJ 그/DAN
+               도로/NNC+을/PCA)
+       (VV 건설/NNC+하/XSV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>연대 공병 중대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>그 도로</term>
+	    </Arg>
+	    <Rel>
+	      <term>건설했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

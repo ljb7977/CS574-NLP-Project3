@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>빈발</lemma>
+    <comment>Frames file for '빈발' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>빈발.01</id>
+      <edef>occur frequently</edef>
+      <roleset>
+	<role argnum="1" argrole="event"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>빈발하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국에서 부모들로부터 버림받은 영아들이 숨진 채 발견되는 사례가 빈발하자 '안전한 곳'에 자식을 버린 부모에 대해서는 영아 유기죄로 기소하지 않는 고육책이 확산되고 있다.</text>
+	  <parse>
+(S (S (NP-ADV 미국/NPR+에서/PAD)
+      (S (NP-SBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                               (S (NP-SBJ *T*-1)
+                                  (VP (NP-COMP 부모/NNC+들/XSF+으로부터/PAD)
+                                      버림받/VV+은/EAN)))
+                            (NP 영아/NNC+들/XSF+이/PCA))
+                    (VP (NP-ADV (S (NP-SBJ *pro*)
+                                   (VP 숨지/VV+은/EAN))
+                                (NP 채/NNX))
+                        (VP (VV 발견/NNC+되/XSV+는/EAN))))
+                 (NP 사례/NNC+이/PCA))
+         (VP (VV 빈발/NNC+하/XSV+자/ECS))))
+   (S (NP-SBJ (S (S (NP-SBJ *pro*)
+                    (VP (NP-COMP (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP (NP-ADV '/SLQ
+                                                   (S (WHNP-3 *op*)
+                                                      (S (NP-SBJ *T*-3)
+                                                         (ADJP (VJ 안전/NNC+하/XSJ+은/EAN))))
+                                                   (NP 곳/NNX)
+						   '/SRQ
+						   에/PAD)
+                                           (VP (NP-OBJ 자식/NNC+을/PCA)
+                                               버리/VV+은/EAN))))
+                                 (NP 부모/NNC+에/PAD))
+                        대하/VV+어서/ECS+은/PAU))
+                 (S (NP-SBJ *pro*)
+                    (VP (VP (NP-OBJ *pro*)
+                            (NP-COMP 영아/NNC
+                                     유기죄/NNC+으로/PAD)
+                            (VV 기소/NNC+하/XSV+지/ECS))
+                        않/VX+는/EAN)))
+              (NP 고육책/NNC+이/PCA))
+      (VP (VP (VV 확산/NNC+되/XSV+고/ECS))
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>미국에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>부모들로부터 버림받은 영아들이 숨진 채 발견되는 사례</term>
+	    </Arg>
+	    <Rel>
+	      <term>빈발하자</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,88 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>통신</lemma>
+    <comment>Frames file for '통신' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>통신.01</id>
+      <edef>correspond</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="correspond with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>통신하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희는 어제 밤에 불꽃 신호로 3 소대와 통신했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN+은/PAU)
+   (VP (NP-ADV 어제/NNC
+               밤/NNC+에/PAD)
+       (NP-ADV 불꽃/NNC
+               신호/NNC+으로/PAD)
+       (VP (NP-COMP 3/NNU
+                    소대/NNC+과/PAD)
+           (VV 통신/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>저희</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>어제 밤에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>불꽃 신호로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>와</f>
+	      <term>3 소대</term>
+	    </Arg>
+	    <Rel>
+	      <term>통신했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>사단이 그 예하 부대들하고 통신하는 데에는 무슨 통신 장비를 사용하는가?</text>
+	  <parse>
+(S (NP-COMP-1 (S (NP-SBJ 사단/NNC+이/PCA)
+                 (VP (NP-COMP 그/DAN
+                              예하/NNC
+                              부대/NNC+들/XSF+하고/PAD)
+                     (VV 통신/NNC+하/XSV+는/EAN)))
+              (NP 데/NNX+에/PAD+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ 무슨/DAN
+                  통신/NNC
+                  장비/NNC+을/PCA)
+          (NP-COMP *T*-1)
+          (VV 사용/NNC+하/XSV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>사단</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>하고</f>
+	      <term>그 예하 부대들</term>
+	    </Arg>
+	    <Rel>
+	      <term>통신하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

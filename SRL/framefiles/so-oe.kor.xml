@@ -1,0 +1,92 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>소외</lemma>
+    <comment>Frames file for '소외' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>소외.01</id>
+      <edef>alienate</edef>
+      <roleset>
+	<role argnum="0" argrole="causer"/>
+	<role argnum="1" argrole="entity alienated"/>
+	<role argnum="2" argrole="group"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>소외되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한편 영상압축기술개발 소식이 전해진 오피콤(1 만 1 천 500 원)도 외국인 매수 속에 강세였으나 장세에서 소외됐다 수일간 강세를 보여 온 골드뱅크(-1 천 250 원), 인터파크(-1 천 50 원) 등은 다시 동반 하한가를 기록했다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-SBJ (S (NP-SBJ 영상/NNC+압축/NNC+기술/NNC+개발/NNC
+                         소식/NNC+이/PCA)
+                 (VP (VV 전하/VV+어지/XSV+은/EAN)))
+              (NP 오피콤/NPR
+                  (PRN -LRB-/SLQ
+                       (NP 1/NNU
+                           만/NNU
+                           1/NNU
+                           천/NNU
+                           500/NNU
+                           원/NNX)
+                       -RRB-/SRQ)
+                  도/PAU))
+      (VP (NP-ADV 외국인/NNC
+                  매수/NNC
+                  속/NNC+에/PAD)
+          (VP (NP 강세/NNC+이/CO+었/EPF+으나/ECS))))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+		 (S (S (NP-SBJ *T*-1)
+		       (VP (NP-COMP 장세/NNC+에서/PAD)
+			   (VV 소외/NNC+되/XSV+었/EPF+다/ECS)))
+		    (S (NP-SBJ *T*-1)
+		       (VP (VP (NP-ADV 수일간/NNC)
+			       (VP (NP-OBJ 강세/NNC+을/PCA)
+				   보이/VV+어/ECS))
+			   오/VX+은/EAN))))
+	      (NP (NP (NP 골드뱅크/NPR
+				  (PRN -LRB-/SLQ
+				       (NP -/SSY
+					   1/NNU
+					   천/NNU
+					   250/NNU
+					   원/NNX)
+				       -RRB-/SRQ))
+		      ,/SCM
+		      (NP 인터파크/NPR
+				  (PRN -LRB-/SLQ
+				       (NP -/SSY
+					   1/NNU
+					   천/NNU
+					   50/NNU
+					   원/NNX)
+				       -RRB-/SRQ)))
+		  (NP 등/NNX+은/PAU)))
+      (VP (ADVP 다시/ADV)
+          (VP (NP-OBJ 동반/NNC
+                      하한가/NNC+을/PCA)
+              (VV 기록/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=골드뱅크(-1 천 250 원), 인터파크(-1 천 50 원) 등</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>장세</term>
+	    </Arg>
+	    <Rel>
+	      <term>소외됐다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

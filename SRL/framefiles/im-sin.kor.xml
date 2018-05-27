@@ -1,0 +1,127 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>임신</lemma>
+    <comment>Frames file for '임신' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>임신.01</id>
+      <edef>conceive</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="thing conceiving"/>
+	<role argnum="1" argrole="thing conceived"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>임신하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 날 법원문이 열리자마자 소장을 낸 여성들 가운데 한 명인 니르민 모하메디는 남편의 상습적인 구타를 견디다 못해 첫 아기를 임신하고 있음에도 불구하고 이혼 서류를 접수시켰다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-2 *op*)
+              (S (NP-SBJ *T*-2)
+                 (VP (NP (NP (NP (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP-ADV 이/DAN
+                                                   날/NNC)
+                                           (S (NP-SBJ 법원/NNC+문/NNC+이/PCA)
+                                              (VP 열리/VV+자마자/ECS))
+                                           (VP (NP-OBJ 소장/NNC+을/PCA)
+                                               내/VV+은/EAN))))
+                                 (NP 여성/NNC+들/XSF))
+                             (NP 가운데/NNC))
+                         (NP 한/NNU
+                             명/NNX+이/CO+은/EAN)))))
+           (NP 니르민/NPR
+               모하메디/NPR+은/PAU))
+   (VP (S (NP-SBJ *pro*)
+	  (VP (VP (NP-OBJ (NP 남편/NNC+의/PAN)
+			  (NP (S (WHNP-3 *op*)
+				 (S (NP-SBJ *T*-3)
+				    (VP (NP 상습/NNC+적/XSF+이/CO+은/EAN))))
+			      (NP 구타/NNC+을/PCA)))
+		  견디/VV+다/EFN)
+	      못하/VX+어/ECS))
+       (S (NP-SBJ *pro*)
+	  (VP (S-COMP (NP-SBJ *pro*)
+		      (VP (VP (NP-OBJ 첫/NNU
+					아기/NNC+을/PCA)
+			      (VV 임신/NNC+하/XSV+고/ECS))
+			  있/VX+음/ENM+에/PAD+도/PAU))
+	      불구하/VV+고/ECS))
+       (VP (NP-OBJ 이혼/NNC
+                       서류/NNC+을/PCA)
+	   (VV 접수/NNC+시키/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>첫 아기</term>
+	    </Arg>
+	    <Rel>
+	      <term>임신하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있음에도</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>임신시키다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="obj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>일본에서 세계 최초로 복제소의 정자를 이용한 인공수정으로 2 마리의 암소를 임신시키는 데 성공했다고 교도(공동) 통신이 17 일 보도했다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 일본/NPR+에서/PCA)
+             (VP (NP-ADV 세계/NNC
+                         최초/NNC+으로/PAD)
+                 (VP (NP-COMP (S (NP-SBJ *pro*)
+                                 (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                (VP (NP-OBJ (NP 복제/NNC+소/NNC+의/PAN)
+                                                            (NP 정자/NNC+을/PCA))
+                                                    (VV 이용/NNC+하/XSV+은/EAN)))
+                                             (NP 인공/NNC+수정/NNC+으로/PAD))
+                                     (VP (NP-OBJ (NP 2/NNU
+                                                     마리/NNX+의/PAN)
+                                                 (NP 암소/NNC+을/PCA))
+                                         (VV 임신/NNC+시키/XSV+는/EAN))))
+                              (NP 데/NNX))
+                     (VV 성공/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+   (S (NP-SBJ 교도/NPR
+              (PRN -LRB-/SLQ
+                   (NP 공동/NPR)
+                   -RRB-/SRQ)
+              통신/NNC+이/PCA)
+      (VP (NP-ADV 17/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>복제소의 정자를 이용한 인공수정으로</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>을</f>
+	      <term>2 마리의 암소</term>
+	    </Arg>
+	    <Rel>
+	      <term>임신시키는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

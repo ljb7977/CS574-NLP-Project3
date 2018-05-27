@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>자진해체</lemma>
+    <comment>Frames file for '자진해체' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>자진해체.01</id>
+      <edef>disperse voluntarily</edef>
+      <roleset>
+	<role argnum="0" argrole="thing dispersing"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>자진해체하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>이에 따라 지난 1 월 22 일 전격적으로 발족된 선수협은 자진해체하고 선수협 잔류 선수 20 명은 곧바로 소속 구단에 합류, 11 일부터 시작되는 시범경기에 참가할 수 있게 됐다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          따르/VV+어/ECS))
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-ADV 지난/DAN
+                                1/NNU
+                                월/NNX
+                                22/NNU
+                                일/NNX)
+                        (NP-ADV 전격/NNC+적/XSF+으로/PAD)
+                        (VP (VV 발족/NNC+되/XSV+은/EAN)))))
+              (NP 선수협/NNC+은/PAU))
+      (VP (VV 자진해체/NNC+하/XSV+고/ECS)))
+   (S (NP-SBJ 선수협/NNC
+              잔류/NNC
+              선수/NNC
+              20/NNU
+              명/NNX+은/PAU)
+      (VP (ADVP 곧바로/ADV)
+          (VP (NP-COMP 소속/NNC
+                       구단/NNC+에/PAD)
+              (VV 합류/NNC))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                              (S (NP-SBJ *T*-2)
+                                 (VP (NP-ADV 11/NNU
+                                             일/NNX+부터/PAU)
+                                     (VP (VV 시작/NNC+되/XSV+는/EAN)))))
+                           (NP 시범/NNC+경기/NNC+에/PAD))
+                  (VV 참가/NNC+하/XSV+을/EAN))
+              (VX 수/NNX
+                  있/VJ+게/ECS))
+          되/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이에 따라</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>지난 1 월 22 일 전격적으로 발족된 선수협</term>
+	    </Arg>
+	    <Rel>
+	      <term>자진해체하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

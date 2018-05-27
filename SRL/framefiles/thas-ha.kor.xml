@@ -1,0 +1,73 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>탓하</lemma>
+    <comment>Frames file for '탓하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>탓하.01</id>
+      <edef>blame</edef>
+      <roleset>
+	<role argnum="0" argrole="blamer"/>
+	<role argnum="1" argrole="entity blamed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>탓하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>스미스 박사는 최근 외과의의 실수로 신장을 잘못 제거한 경우처럼 의료사고가 일어났을 때 개인 의사만을 탓하는 경향이 있다면서 의료사고는 단지 의사의 잘못만이 아니라 질병치료시스템, 나아가 전 사회의 문제라고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 스미스/NPR
+           박사/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ (S (NP-SBJ *pro*)
+                             (VP (NP-ADV (S (NP-ADV (S (NP-SBJ *pro*)
+                                                       (VP (NP-ADV 최근/NNC)
+                                                           (NP-ADV (NP 외과의/NNC+의/PAN)
+                                                                   (NP 실수/NNC+으로/PAD))
+                                                           (VP (NP-OBJ 신장/NNC+을/PCA)
+                                                               (VP (ADVP 잘못/ADV)
+                                                                   (VP (VV 제거/NNC+하/XSV+은/EAN))))))
+                                                    (NP 경우/NNC+처럼/PAD))
+                                            (S (NP-SBJ 의료/NNC+사고/NNC+이/PCA)
+                                               (VP 일어나/VV+었/EPF+을/EAN)))
+                                         (NP 때/NNC))
+                                 (VP (NP-OBJ 개인/NNC
+                                             의사/NNC+만/PAU+을/PCA)
+                                     탓하/VV+는/EAN)))
+                          (NP 경향/NNC+이/PCA))
+                  (ADJP 있/VJ+다면서/ECS))
+               (S (S (NP-SBJ 의료/NNC+사고/NNC+은/PAU)
+                     (ADJP (ADVP 단지/ADV)
+                           (ADJP (NP-COMP (NP 의사/NNC+의/PAN)
+                                          (NP 잘못/NNC+만/PAU+이/PCA))
+                                 아니/VJ+라/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP (NP 질병/NNC+치료/NNC+시스템/NNC)
+                             ,/SCM
+                             (ADVP 나아가/ADV)
+                             (NP (NP 전/DAN
+                                     사회/NNC+의/PAN)
+                                 (NP 문제/NNC+이/CO+라/EFN+고/PAD)))))))
+       (VV 지적/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>최근 외과의의 실수로 신장을 잘못 제거한 경우처럼 의료사고가 일어났을 때</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>만을</f>
+	      <term>개인 의사</term>
+	    </Arg>
+	    <Rel>
+	      <term>탓하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

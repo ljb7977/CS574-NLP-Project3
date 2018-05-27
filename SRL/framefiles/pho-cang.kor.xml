@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>포장</lemma>
+    <comment>Frames file for '포장' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>포장.01</id>
+      <edef>pack</edef>
+      <roleset>
+	<role argnum="0" argrole="packer"/>
+	<role argnum="1" argrole="thing packed"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>포장되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>경찰은 이 트로피들이 비닐과 스티로폼으로 포장돼 있어 상태가 양호한 것 같다고 설명했다.</text>
+	  <parse>
+(S (NP-SBJ 경찰/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ 이/DAN
+                          트로피/NNC+들/XSF+이/PCA)
+                  (VP (VP (NP-ADV (NP 비닐/NNC+과/PCJ)
+                                  (NP 스티로폼/NNC+으로/PAD))
+                          (VP (VV 포장/NNC+되/XSV+어/ECS)))
+                      있/VX+어/ECS))
+               (S (NP-SBJ 상태/NNC+이/PCA)
+                  (VP (ADJP (VJ 양호/NNC+하/XSJ+은/EAN))
+                      (VX 것/NNX
+                          같/VJ+다/EFN+고/PAD))))
+       (VV 설명/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이 트로피들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>비닐과 스티로폼으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>포장돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있어</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

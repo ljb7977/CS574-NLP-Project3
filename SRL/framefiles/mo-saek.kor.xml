@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>모색</lemma>
+    <comment>Frames file for '모색' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>모색.01</id>
+      <edef>explore</edef>
+      <roleset>
+	<role argnum="0" argrole="explorer"/>
+	<role argnum="1" argrole="thing explored"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>모색하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>엘살바도르 정부는 경제를 "달러화"하는 방안을 모색하고 있다고 호세 루이스 트리게로스 경제장관이 16 일 밝혔다.</text>
+	  <parse>
+(S (S-COMP-1 (NP-SBJ 엘살바도르/NPR
+                     정부/NNC+은/PAU)
+             (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                (VP (NP-OBJ 경제/NNC+을/PCA)
+                                    (VV "/SLQ
+                                        달러화/NNC
+                                        "/SRQ
+                                        하/XSV+는/EAN)))
+                             (NP 방안/NNC+을/PCA))
+                     (VV 모색/NNC+하/XSV+고/ECS))
+                 있/VX+다/EFN+고/PAD))
+   (S (NP-SBJ 호세/NPR
+              루이스/NPR
+              트리게로스/NPR
+              경제/NNC+장관/NNC+이/PCA)
+      (VP (NP-ADV 16/NNU
+                  일/NNX)
+          (VP (S-COMP *T*-1)
+              밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>엘살바도르 정부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>경제를 "달러화"하는 방안</term>
+	    </Arg>
+	    <Rel>
+	      <term>모색하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

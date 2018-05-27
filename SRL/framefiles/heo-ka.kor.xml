@@ -1,0 +1,55 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>허가</lemma>
+    <comment>Frames file for '허가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>허가.01</id>
+      <edef>allow</edef>
+      <roleset>
+	<role argnum="0" argrole="allower"/>
+	<role argnum="1" argrole="action allowed"/>
+	<role argnum="2" argrole="allowed agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>허가하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>현재 핵폐기물 처리가 가능하고 해당 정부가 이를 허가한 시설은 전세계적으로 소수에 불과하다.</text>
+	  <parse>
+(S (NP-ADV 현재/NNC)
+   (S (NP-SBJ (S (S (NP-SBJ 핵/NNC+폐기물/NNC
+                            처리/NNC+이/PCA)
+                    (ADJP (VJ 가능/NNC+하/XSJ+고/ECS)))
+                 (S (NP-SBJ 해당/NNC
+                            정부/NNC+이/PCA)
+                    (VP (NP-OBJ 이/NPN+을/PCA)
+                        (VV 허가/NNC+하/XSV+은/EAN))))
+              (NP 시설/NNC+은/PAU))
+      (ADJP (NP-ADV 전세계/NNC+적/XSF+으로/PAD)
+            (ADJP (NP-COMP 소수/NNC+에/PAD)
+                  (VJ 불과/NNC+하/XSJ+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>해당 정부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>이</term>
+	    </Arg>
+	    <Rel>
+	      <term>허가한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

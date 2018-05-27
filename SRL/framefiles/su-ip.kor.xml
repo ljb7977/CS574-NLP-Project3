@@ -1,0 +1,102 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수입</lemma>
+    <comment>Frames file for '수입' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수입.01</id>
+      <edef>import</edef>
+      <roleset>
+	<role argnum="0" argrole="importer"/>
+	<role argnum="1" argrole="thing imported"/>
+	<role argnum="2" argrole="exporter"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수입하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>정보통신 인력난에 봉착하고 있는 독일에서 외국인 전문 인력을 수입하는 문제를 둘러싸고 찬반 논쟁이 벌어지고 있다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>외국인 전문 인력</term>
+	    </Arg>
+	    <Rel>
+	      <term>수입하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>수입되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미국은 지난 2 월 18 일 멕시코와 캐나다를 제외한 모든 국가로부터 수입되는 강관(Pipe Line)에 대해 향후 3 년간 11-19 퍼센트의 추가관세를 순차적으로 부과키로 한 바 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 미국/NPR+은/PAU)
+              (VP (NP-ADV 지난/DAN
+                          2/NNU
+                          월/NNX
+                          18/NNU
+                          일/NNX)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (NP-COMP (S (WHNP-2 *op*)
+                                                        (S (NP-SBJ *pro*)
+                                                           (VP (NP-COMP *T*-2)
+                                                               (NP-OBJ (NP 멕시코/NPR+과/PCJ)
+                                                                       (NP 캐나다/NPR+을/PCA))
+                                                               (VV 제외/NNC+하/XSV+은/EAN))))
+                                                     (NP 모든/DAN
+                                                         국가/NNC+으로부터/PAD))
+                                            (VV 수입/NNC+되/XSV+는/EAN))))
+                                  (NP 강관/NNC)
+                                  (PRN -LRB-/SLQ
+                                       Pipe/NFW
+                                       Line/NFW
+                                       -RRB-/SRQ)
+                                  에/PAD)
+                         대하/VV+어/ECS))
+                  (VP (S-COMP (NP-SBJ *pro*)
+                              (VP (NP-ADV 향후/NNC
+                                          3/NNU
+                                          년/NNX+간/XSF)
+                                  (VP (NP-OBJ (NP 11-19/NNU
+                                                  퍼센트/NNX+의/PAN)
+                                              (NP 추가/NNC+관세/NNC+을/PCA))
+                                      (VP (NP-ADV 순차/NNC+적/XSF+으로/PAD)
+                                          (VP (VV 부과/NNC+하/XSV+기/ENM+으로/PAD))))))
+                      하/VV+은/EAN)))
+           (NP 바/NNX))
+   (ADJP 있/VJ+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=강관(Pipe Line)</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로부터</f>
+	      <term>멕시코와 캐나다를 제외한 모든 국가</term>
+	    </Arg>
+	    <Rel>
+	      <term>수입되는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

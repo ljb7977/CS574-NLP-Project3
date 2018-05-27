@@ -1,0 +1,105 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>안심</lemma>
+    <comment>Frames file for '안심' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>안심.01</id>
+      <edef>relieve</edef>
+      <roleset>
+	<role argnum="0" argrole="thing relieving"/>
+	<role argnum="1" argrole="thing relieved"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>안심하다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이날 연설에서 김 대통령은 정부차원의 협력사업으로 본격적인 경협을 위한 도로, 항만, 철도, 전력, 통신 등 사회간접자본의 확충 투자보장협정과 이중과세 방지협정 등 민간기업이 안심하고 투자할 수 있는 환경조성 식량난 해결을 위한 비료지원, 농기구 개량, 관개시설 개선 등 근본적인 농업개혁 등을 적시한 뒤" 이는 민간경협 방식으로는 한계가 있다"고 강조했다.</text>
+	  <parse>
+(S (NP-ADV 이날/NNC
+           연설/NNC+에서/PAD)
+   (S (NP-SBJ 김/NPR
+              대통령/NNC+은/PAU)
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (NP 정부/NNC+차원/NNC+의/PAN)
+                                  (NP 협력/NNC+사업/NNC+으로/PAD))
+                         (NP-OBJ (NP (NP (S (WHNP-2 *op*)
+                                            (S (NP-SBJ *T*-2)
+                                               (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                              (S (NP-SBJ *T*-1)
+                                                                 (VP (NP 본격/NNC+적/XSF+이/CO+은/EAN))))
+                                                           (NP 경협/NNC+을/PCA))
+                                                   위하/VV+은/EAN)))
+                                         (NP (NP (NP (NP 도로/NNC
+                                                         ,/SCM
+                                                         항만/NNC
+                                                         ,/SCM
+                                                         철도/NNC
+                                                         ,/SCM
+                                                         전력/NNC
+                                                         ,/SCM
+                                                         통신/NNC)
+                                                     (NP 등/NNX))
+                                                 (NP 사회/NNC+간접/NNC+자본/NNC+의/PAN))
+                                             (NP 확충/NNC)))
+                                     (NP (NP (NP (NP 투자/NNC+보장/NNC+협정/NNC+과/PCJ)
+                                                 (NP 이중/NNC+과세/NNC
+                                                     방지/NNC+협정/NNC))
+                                             (NP 등/NNX))
+                                         (NP (S (NP-SBJ 민간/NNC+기업/NNC+이/PCA)
+                                                (VP (VP (S (NP-SBJ *pro*)
+                                                           (VP (VV 안심/NNC+하/XSV+고/ECS)))
+                                                        (VP (NP-OBJ *pro*)
+                                                            (VV 투자/NNC+하/XSV+을/EAN)))
+                                                    (VX 수/NNX
+                                                        있/VJ+는/EAN)))
+                                             (NP 환경/NNC+조성/NNC)))
+                                     (NP (S (WHNP-4 *op*)
+                                            (S (NP-SBJ *T*-4)
+                                               (VP (NP-OBJ 식량난/NNC
+                                                           해결/NNC+을/PCA)
+                                                   위하/VV+은/EAN)))
+                                         (NP (NP (NP (NP 비료/NNC+지원/NNC)
+                                                     ,/SCM
+                                                     (NP 농기구/NNC
+                                                         개량/NNC)
+                                                     ,/SCM
+                                                     (NP 관개/NNC+시설/NNC
+                                                         개선/NNC))
+                                                 (NP 등/NNX))
+                                             (NP (S (WHNP-3 *op*)
+                                                    (S (NP-SBJ *T*-3)
+                                                       (VP (NP 근본/NNC+적/XSF+이/CO+은/EAN))))
+                                                 (NP 농업/NNC+개혁/NNC)))))
+                                 (NP 등/NNX+을/PCA))
+                         (VV 적시/NNC+하/XSV+은/EAN)))
+                  (NP 뒤/NNC))
+          (VP (S-COMP "/SRQ
+                      (NP-SBJ 이/NPN+은/PAU)
+                      (S (NP-ADV 민간/NNC+경협/NNC
+                                 방식/NNC+으로/PAD+은/PAU)
+                         (S (NP-SBJ 한계/NNC+이/PCA)
+                            (ADJP 있/VJ+다/EFN)))
+                      "/SRQ
+                      고/PAD)
+              (VV 강조/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term>안심하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

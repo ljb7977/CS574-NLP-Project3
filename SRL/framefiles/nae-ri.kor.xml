@@ -1,0 +1,345 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>내리</lemma>
+    <comment>Frames file for '내리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>내리.01</id>
+      <edef>put down</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing put down"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>교차로 가까이에 있는 건물들 앞에서 (CT675477을 가리키며) 병사들이 드럼통을 트럭에서 내리는 것을 봤지요.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (NP (S (WHNP-1 0)
+		      (S (NP-SBJ *T*-1)
+			 (ADJP (NP-COMP 교차로/NNC 가까이/NNC+에/PAD)
+			       있/VJ+는/EAN)))
+		   (NP 건물/NNC+들/XSF))
+	       (NP 앞/NNC+에서/PAD))
+       (PRN -LRB-/SLQ (S (NP-SBJ *pro*) 
+			 (VP (NP-OBJ CT675477/NFW+을/PCA) 
+			     가리키/VV+며/ECS)) 
+	    -RRB-/SRQ) 
+       (VP (NP-OBJ (S (NP-SBJ 병사/NNC+들/XSF+이/PCA)
+		      (VP (NP-OBJ 드럼통/NNC+을/PCA)
+			  (NP-COMP 트럭/NNC+에서/PAD)
+			  내리/VV+는/EAN))
+		   (NP 것/NNX+을/PCA))
+	   보/VV+았/EPF+지요/EFN)) 
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>병사들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>드럼통</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>트럭</term>
+	    </Arg>
+	    <Rel>
+	      <term>내리는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>내리.02</id>
+      <edef>get off</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="vehicle"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 지휘관은 행군 중에 이런 명령을 통해서 포차에 타고 내리는 저희들의 능력을 평가했죠.</text>
+	  <parse>
+(S (S (NP-SBJ 저희/NPN
+	      지휘관/NNC+은/PAU)
+      (VP (NP-ADV 행군/NNC
+		  중/NNC+에/PAD)
+	  (VP (NP-OBJ 이런/DAN
+		      명령/NNC+을/PCA)
+	      통하/VV+어서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ *pro*)
+		     (VP (NP-COMP 포차/NNC+에/PAD)
+			 (VV 타/VV+고/ECS
+			     내리/VV+는/EAN)))
+		  (NP (NP 저희/NPN+들/XSF+의/PCA)
+		      (NP 능력/NNC+을/PCA)))
+	  (VV 평가/NNC+하/XSV+었/EPF+죠/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>포차</term>
+	    </Arg>
+	    <Rel>
+	      <term>내리는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>내리.03</id>
+      <edef>give-light verb</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="deverbal noun"/>
+	<role argnum="2" argrole="given to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내리다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>누가 너한테 거기에 있으라고 명령을 내렸는가?</text>
+	  <parse>
+(S (NP-SBJ 누구/NPN+이/PCA)
+   (VP (NP-COMP 너/NPN+한테/PAD)
+       (S-COMP (NP-SBJ *pro*)
+	       (ADJP (NP-COMP 거기/NPN+에/PAD)
+		     (ADJP 있/VJ+으라/EFN+고/PQO)))
+       (VP (NP-OBJ 명령/NNC+을/PCA)
+	   (LV 내리/VV+었/EPF+는가/EFN)))
+   ?/SFN )
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>누구</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>한테</f>
+	      <term>너</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>거기에 있으라</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>명령</term>
+	    </Arg>
+	    <Rel>
+	      <term>내렸는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>내려지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>제네시 카운티의 교육구청 대변인은 미시간주에는 "교내에 총기를 반입하거나 사용할 경우 의무적으로 90 일간 정학시키도록 규정한 법"이 있다면서 이에 따라 문제의 학생에게 그러한 처벌이 내려질 것이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 제네시/NPR
+               카운티/NNC+의/PAN)
+           (NP 교육구청/NNC
+               대변인/NNC+은/PAU))
+   (VP (S (NP-COMP-2 미시간/NPR+주/NNC+에/PAD+은/PAU)
+          (S (NP-SBJ "/SLQ
+                     (S (WHNP-1 *op*)
+                        (S (NP-SBJ *T*-1)
+                           (VP (NP-ADV (S (NP-SBJ *pro*)
+                                          (VP (VP (NP-COMP 교내/NNC+에/PAD)
+                                                  (NP-OBJ 총기/NNC+을/PCA)
+                                                  (VV 반입/NNC+하/XSV+거나/ECS))
+                                              (VP (NP-OBJ *pro*)
+                                                  (VV 사용/NNC+하/XSV+을/EAN))))
+                                       (NP 경우/NNC))
+                               (VP (S-COMP (NP-SBJ *pro*)
+                                           (VP (NP-ADV 의무/NNC+적/XSF+으로/PAD)
+                                               (NP-ADV 90/NNU
+                                                       일/NNX+간/XSF)
+                                               (VP (NP-OBJ *pro*)
+                                                   (VV 정학/NNC+시키/XSV+도록/ECS))))
+                                   (VV 규정/NNC+하/XSV+은/EAN)))))
+                     (NP 법/NNC)
+                     "/SRQ
+                     이/PCA)
+             (ADJP (NP-COMP *T*-2)
+                   있/VJ+다면서/ECS)))
+       (VP (S-COMP (S (NP-SBJ *pro*)
+                      (VP (NP-COMP 이/NPN+에/PAD)
+                          따르/VV+어/ECS))
+                   (S (NP-COMP-3 (NP 문제/NNC+의/PAN)
+                                 (NP 학생/NNC+에게/PAD))
+                      (S (NP-SBJ 그러한/DAN
+                                 처벌/NNC+이/PCA)
+                         (VP (VP (NP-COMP *T*-3)
+                                 (VV 내리/VV+어지/XSV+을/EAN))
+                             (VX 것/NNX+이/CO+라/EFN+고/PAD)))))
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>이에 따라</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>문제의 학생</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>그러한 처벌</term>
+	    </Arg>
+	    <Rel>
+	      <term>내려질</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>내리.04</id>
+      <edef>fall</edef>
+      <roleset>
+	<role argnum="1" argrole="thing falling"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>기관투자가들이 관망세를 보이면서 금리는 보합세를 유지했고 환율은 소폭 내렸다.</text>
+	  <parse>
+(S (S (NP-SBJ 기관/NNC+투자가/NNC+들/XSF+이/PCA)
+      (VP (NP-OBJ 관망세/NNC+을/PCA)
+          보이/VV+으면서/ECS))
+   (S (NP-SBJ 금리/NNC+은/PAU)
+      (VP (NP-OBJ 보합세/NNC+을/PCA)
+          (VV 유지/NNC+하/XSV+었/EPF+고/ECS)))
+   (S (NP-SBJ 환율/NNC+은/PAU)
+      (VP (NP-ADV 소폭/NNC)
+          (VP 내리/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>환율</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>소폭</term>
+	    </Arg>
+	    <Rel>
+	      <term>내렸다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>무너져 내리</lemma>
+    <comment>Frames file for '무너져 내리' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>내리.05</id>
+      <edef>collapse-CV</edef>
+      <roleset>
+	<role argnum="1" argrole="stock"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>무너져 내리다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>결국 코스닥 지수는 249.55로 전날보다 15.95 포인트 떨어지는 폭락세로 마감되면서 심리적 마지노선인 250 선 아래로 무너져 내리고 말았다.</text>
+	  <parse>
+(S (ADVP 결국/ADV)
+   (S (NP-SBJ 코스닥/NPR
+              지수/NNC+은/PAU)
+      (VP (NP-ADV 249.55/NNU+으로/PAD)
+          (NP-ADV (S (NP-ADV 전날/NNC+보다/PAD)
+		     (S (NP-SBJ 15.95/NNU
+				포인트/NNX)
+			(VP 떨어지/VV+는/EAN)))
+		  (NP 폭락/NNC+세/XSF+으로/PAD))
+	  (VP (VV 마감/NNC+되/XSV+으면서/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP 심리/NNC+적/XSF
+                                         마지노/NPR+선/NNC+이/CO+은/EAN))))
+                           (NP 250/NNU
+                               선/NNX))
+                       (NP 아래/NNC+으로/PAD))
+              (VP (CV 무너지/VV+어/ECS
+                      내리/VV+고/ECS)))
+          말/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>결국</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>심리적 마지노선인 250 선 아래</term>
+	    </Arg>
+	    <Rel>
+	      <term>무너져 내리고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>말았다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

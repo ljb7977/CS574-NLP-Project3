@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>떠돌</lemma>
+    <comment>Frames file for '떠돌' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>떠돌.01</id>
+      <edef>wander</edef>
+      <roleset>
+	<role argnum="0" argrole="entity in motion"/>
+	<role argnum="1" argrole="path, range"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>떠돌다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>미국과 일본에 불법체류자 신분으로 떠도는 남한사람의 수가 10 만여명에 이르는 것으로 나타났다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP (NP-COMP (NP 미국/NPR+과/PCJ)
+                                                  (NP 일본/NPR+에/PAD))
+                                         (VP (NP-ADV 불법/NNC+체류/NNC+자/XSF
+                                                     신분/NNC+으로/PAD)
+                                             (VP 떠돌/VV+는/EAN)))))
+                               (NP 남한/NPR+사람/NNC+의/PAN))
+                           (NP 수/NNC+이/PCA))
+                   (VP (NP-COMP 10/NNU
+                                만/NNU+여/XSF+명/NNX+에/PAD)
+                       이르/VV+는/EAN))
+                (NP 것/NNX+으로/PAD))
+       나타나/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <term>*trace*=남한사람</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>미국과 일본</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>불법체류자 신분으로</term>
+	    </Arg>
+	    <Rel>
+	      <term>떠도는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

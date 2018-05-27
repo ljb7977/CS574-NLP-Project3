@@ -1,0 +1,148 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>움직이</lemma>
+    <comment>Frames file for '움직이' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>움직이.01</id>
+      <edef>move</edef>
+      <roleset>
+	<role argnum="0" argrole="mover"/>
+	<role argnum="1" argrole="thing moved"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>움직이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="np-obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>미풍이 나뭇잎을 움직인다.</text>
+	  <parse>
+(S (NP-SBJ 미풍/NNC+이/PCA)
+   (VP (NP-OBJ 나뭇잎/NNC+을/PCA)
+        움직이/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>미풍</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>나뭇잎</term>
+	    </Arg>
+	    <Rel>
+	      <term>움직인다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>움직이다</rel>
+	  <mapitem src="np-sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>나뭇잎이 움직인다.</text>
+	  <parse>
+(S (NP-SBJ 나뭇잎/NNC+이/PCA)
+   (VP 움직이/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>나뭇잎</term>
+	    </Arg>
+	    <Rel>
+	      <term>움직인다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>움직이.02</id>
+      <edef>move</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>  
+      <frame>
+	<mapping>
+	  <rel>움직이다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>그 아이가 움직인다.</text>
+	  <parse>
+(S (NP-SBJ 그/DAN
+           아이/NNC+가/PCA)
+   (VP 움직이/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>그 아이</term>
+	    </Arg>
+	    <Rel>
+	      <term>움직인다</term>
+	    </Rel>
+	  </relation>    
+	</example>
+	<example>
+	  <text>탱크 부대가 계속 전연으로 움직이고 있다.</text>
+	  <parse>
+(S (NP-SBJ 탱크/NNC
+           부대/NNC+이/PCA)
+   (VP (VP (ADVP 계속/ADV)
+           (VP (NP-COMP 전연/NNC+으로/PAD)
+               움직이/VV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>탱크 부대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>계속</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>전연</term>
+	    </Arg>
+	    <Rel>
+	      <term>움직이고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>    
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>
+
+
+
+
+
+
+

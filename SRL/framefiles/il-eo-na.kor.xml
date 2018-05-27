@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일어나</lemma>
+    <comment>Frames file for '일어나' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>일어나</id>
+      <edef>happen</edef>
+      <roleset>
+	<role argnum="1" argrole="thing happening"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일어나다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>어떤 경우에 무전기에 혼선이 일어나는가?</text>
+	  <parse>
+(S (NP-ADV 어떤/DAN
+           경우/NNC+에/PAD)
+   (S (NP-COMP-1 무전기/NNC+에/PAD)
+      (S (NP-SBJ 혼신/NNC+이/PCA)
+         (VP (NP-COMP *T*-1)
+	     일어나/VV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>어떤 경우에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>무전기</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>혼선</term>
+	    </Arg>
+	    <Rel>
+	      <term>일어나는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

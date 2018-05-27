@@ -1,0 +1,143 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>입증</lemma>
+    <comment>Frames file for '입증' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>입증.01</id>
+      <edef>prove</edef>
+      <roleset>
+	<role argnum="1" argrole="thing proving"/>
+	<role argnum="2" argrole="thing proved"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>입증하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>변호인단은 "인삼연초연구원에 대한 현장검증이 이뤄질 경우 타르, 니코틴 등 화학성분과 중독성 연구자료, 신제품 분석자료, 니코틴 함유량 비율 등 담배의 유해성을 입증할 수 있는 증거를 확보할 수 있을 것"이라고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 변호인/NNC+단/XSF+은/PAU)
+   (VP (S-COMP "/SLQ
+               (NP-SBJ *pro*)
+               (VP (VP (VP (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+                                                 (S (NP-SBJ *T*-1)
+                                                    (VP (NP-COMP 인삼/NNC+연초/NNC+연구원/NNC+에/PAD)
+                                                        대하/VV+은/EAN)))
+                                              (NP 현장/NNC+검증/NNC+이/PCA))
+                                      (VP (VV 이루/VV+어지/XSV+을/EAN)))
+                                   (NP 경우/NNC))
+                           (VP (NP-OBJ (NP (NP (NP (NP (NP (NP 타르/NNC)
+                                                           ,/SCM
+                                                           (NP 니코틴/NNC))
+                                                       (NP 등/NNX))
+                                                   (NP 화학/NNC+성분/NNC+과/PCJ))
+                                               (NP 중독성/NNC
+                                                   연구/NNC+자료/NNC)
+                                               ,/SCM
+                                               (NP 신제품/NNC
+                                                   분석/NNC+자료/NNC)
+                                               ,/SCM
+                                               (NP 니코틴/NNC
+                                                   함유량/NNC
+                                                   비율/NNC))
+                                           (NP 등/NNX))
+                                       (NP (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (VP (VP (NP-OBJ (NP 담배/NNC+의/PAN)
+                                                                 (NP 유해성/NNC+을/PCA))
+                                                         (VV 입증/NNC+하/XSV+을/EAN))
+                                                     (VX 수/NNX
+                                                         있/VJ+는/EAN))))
+                                           (NP 증거/NNC+을/PCA)))
+                               (VV 확보/NNC+하/XSV+을/EAN)))
+                       (VX 수/NNX
+                           있/VJ+을/EAN))
+                   (VX 것/NNX))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       (VV 주장/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=증거</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>을</f>
+	      <term>담배의 유해성</term>
+	    </Arg>
+	    <Rel>
+	      <term>입증할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>입증되다</rel>
+	  <mapitem src="s" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이와 관련, 그는 항생물질을 칠한 체내 삽입용 카테터와 같은 신장비가 의료시설내 감염 확산을 방지하는 데 효과적인 것으로 입증됐다고 밝혔다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 이/NPN+과/PAD)
+          (VV 관련/NNC)))
+   ,/SCM
+   (S (NP-SBJ 그/NPN+은/PAU)
+      (VP (S-COMP (NP-SBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (ADJP (NP-COMP (S (WHNP-2 *op*)
+                                                  (S (NP-SBJ *pro*)
+                                                     (VP (NP-COMP *T*-2)
+                                                         (NP-OBJ 항생/NNC+물질/NNC+을/PCA)
+                                                         칠하/VV+은/EAN)))
+                                               (NP 체내/NNC
+                                                   삽입/NNC+용/XSF
+                                                   카테터/NNC+과/PAD))
+                                      같/VJ+은/EAN)))
+                          (NP 신/XPF+장비/NNC+이/PCA))
+                  (VP (NP-COMP (S (WHNP-3 *op*)
+                                  (S (NP-SBJ *T*-3)
+                                     (VP (NP-COMP (S (NP-SBJ *pro*)
+                                                     (VP (NP-OBJ 의료/NNC+시설/NNC+내/NNX
+                                                                 감염/NNC
+                                                                 확산/NNC+을/PCA)
+                                                         (VV 방지/NNC+하/XSV+는/EAN)))
+                                                  (NP 데/NNX))
+                                         (VP (NP 효과/NNC+적/XSF+이/CO+은/EAN)))))
+                               (NP 것/NNX+으로/PAD))
+                      (VV 입증/NNC+되/XSV+었/EPF+다/EFN+고/PAD)))
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>가</f>
+	      <term>항생물질을 칠한 체내 삽입용 카테터와 같은 신장비</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>의료시설내 감염 확산을 방지하는 데 효과적인 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>입증됐다고</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

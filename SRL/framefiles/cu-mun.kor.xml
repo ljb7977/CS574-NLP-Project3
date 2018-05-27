@@ -1,0 +1,76 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>주문</lemma>
+    <comment>Frames file for '주문' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>주문.01</id>
+      <edef>order</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing ordered"/>
+	<role argnum="2" argrole="recipient"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>주문하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>인도네시아의 안타라통신은 파칸바르주정부가 의약품 제조회사에 외과용 마스크를 주문했으며 주민들에게 연기가 짙게 깔려 있을 동안에는 바깥 출입 등 외부 활동을 가급적 자제해 줄 것을 촉구했다고 보도했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 인도네시아/NPR+의/PAN)
+           (NP 안타라/NPR+통신/NNC+은/PAU))
+   (VP (S-COMP (S (NP-SBJ 파칸바르/NPR+주정부/NNC+이/PCA)
+                  (VP (NP-COMP 의약품/NNC
+                               제조/NNC+회사/NNC+에/PAD)
+                      (NP-OBJ 외과/NNC+용/XSF
+                              마스크/NNC+을/PCA)
+                      (VV 주문/NNC+하/XSV+었/EPF+으며/ECS)))
+               (S (NP-SBJ *pro*)
+                  (VP (NP-COMP 주민/NNC+들/XSF+에게/PAD)
+                      (NP-OBJ (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-ADV (S (WHNP *op*)
+                                                    (S (NP-SBJ 연기/NNC+이/PCA)
+                                                       (VP (VP (ADVP (ADV 짙/VJ+게/ECS))
+                                                               (VP 깔리/VV+어/ECS))
+                                                           있/VX+을/EAN)))
+                                                 (NP 동안/NNX+에/PAD+은/PAU))
+                                         (VP (NP-OBJ (NP (NP 바깥/NNC
+                                                             출입/NNC)
+                                                         (NP 등/NNX))
+                                                     (NP 외부/NNC
+                                                         활동/NNC+을/PCA))
+                                             (VP (NP-ADV 가급적/NNC)
+                                                 (VP (VV 자제/NNC+하/XSV+어/ECS)))))
+                                     주/VX+을/EAN))
+                              (NP 것/NNX+을/PCA))
+                      (VV 촉구/NNC+하/XSV+었/EPF+다/EFN+고/PAD))))
+       (VV 보도/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>파칸바르주정부</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>의약품 제조회사</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>외과용 마스크</term>
+	    </Arg>
+	    <Rel>
+	      <term>주문했으며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

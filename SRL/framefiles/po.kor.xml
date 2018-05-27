@@ -1,0 +1,563 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보</lemma>
+    <comment>Frames file for '보' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보.01</id>
+      <edef>see</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="seer"/>
+	<role argnum="1" argrole="thing seen"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>외관만 보고는 모른다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*) 
+      (VP (NP-OBJ 외관/NNC+만/PAU) 
+	  보/VV+고/ECS+는/PAU)) 
+   (S (NP-SBJ *pro*) 
+      (VP 모르/VV+은다/EFN)) 
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>만</f>
+	      <term>외관</term>
+	    </Arg>
+	    <Rel>
+	      <term>보고는</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>연대 지휘부 전면의 도로 상에선 트럭과 견인포가 많이 움직이는 걸 봤습니다.</text>
+	  <parse>
+(S (NP-ADV (NP 연대/NNC 지휘부/NNC 전면/NNC+의/PCA)
+	   (NP 도로/NNC 상/NNC+에서/PAD+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ  (S (NP-SBJ (NP 트럭/NNC+과/PCJ)
+			      (NP 견인포/NNC+이/PCA))
+		      (VP (ADVP 많이/ADV)
+			  (VP 움직이/VV+는/EAN)))
+		   (NP 것/NNX+을/PCA))
+	  보/VV+았/EPF+습니다/EFN))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>연대 지휘부 전면의 도로 상에선</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>트럭과 견인포가 많이 움직이는 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>봤습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보이다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 경비에게 가짜 신분증을 보여 주었다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>그</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>경비</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>가짜 신분증</term>
+	    </Arg>
+	    <Rel>
+	      <term>보여</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>주었다</term>
+	    </Aux>
+	  </relation>
+	</example>
+	<example>
+	  <text>그녀는 주위 사람들에게 눈물을 보이지 않으려고 고개를 돌렸다.</text>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>그녀</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에게</f>
+	      <term>주위 사람들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>눈물</term>
+	    </Arg>
+	    <Rel>
+	      <term>보이지</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>않으려고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>보여지다</rel>
+	  <mapitem src="s" trg="argA"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>이 프로그램에서는 10 명의 남녀가 하나의 공동체를 이뤄 한 집에서 생활하는 모습이 침실, 화장실, 심지어 냉장고 안에까지 설치된 28 대의 카메라를 통해 그대로 보여진다.</text>
+	  <parse>
+(S (NP-ADV 이/DAN
+           프로그램/NNC+에서/PAD+은/PAU)
+   (S (NP-SBJ (S (NP-SBJ (NP 10/NNU
+                             명/NNX+의/PAN)
+                         (NP 남녀/NNC+이/PCA))
+                 (VP (VP (NP-OBJ (NP 하나/NNU+의/PAN)
+                                 (NP 공동체/NNC+을/PCA))
+                         이루/VV+어/ECS)
+                     (VP (NP-COMP 한/NNU
+                                  집/NNC+에서/PAD)
+                         (VV 생활/NNC+하/XSV+는/EAN))))
+              (NP 모습/NNC+이/PCA))
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-OBJ (S (WHNP-1 *op*)
+                            (S (NP-SBJ *T*-1)
+                               (VP (NP-COMP (NP 침실/NNC)
+					    ,/SCM
+					    (NP 화장실/NNC)
+					    ,/SCM
+					    (ADVP 심지어/ADV)
+					    (NP 냉장고/NNC
+						안/NNC+에/PAD+까지/PAU))
+				   (VV 설치/NNC+되/XSV+은/EAN))))
+                         (NP (NP 28/NNU
+                                 대/NNX+의/PAN)
+                             (NP 카메라/NNC+을/PCA)))
+                 통하/VV+어/ECS))
+          (ADVP 그대로/ADV)
+          (VP (VV 보이/VV+어지/XSV+는다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>이 프로그램에서는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>10 명의 남녀가 하나의 공동체를 이뤄 한 집에서 생활하는 모습</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>침실, 화장실, 심지어 냉장고 안에까지 설치된 28 대의 카메라를 통해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>그대로</term>
+	    </Arg>
+	    <Rel>
+	      <term>보여진다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>보.02</id>
+      <edef>regard</edef>
+      <roleset>
+	<role argnum="0" argrole="seer"/>
+	<role argnum="1" argrole="thing regarded"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보이다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>약 1년 전 제가 마지막으로 거기에 있었을 때엔 그 건물들은 보급품 저장과 차량 정비용으로만 사용되고 있었던 것 같이 보였습니다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP *op*)
+              (S (NP-ADV 약/DAN
+                         1/NNU
+                         년/NNX
+                         전/NNC)
+                 (S (NP-SBJ 제/NPN+이/PCA)
+                    (ADJP (NP-ADV 마지막/NNC+으로/PAD)
+                          (ADJP (NP-COMP 거기/NPN+에/PAD)
+                                있/VJ+었/EPF+을/EAN)))))
+           (NP 때/NNC+에/PAD+은/PAU))
+   (S (NP-SBJ 그/DAN
+              건물/NNC+들/XSF+은/PAU)
+      (VP (ADVP-COMP (NP-COMP (S (NP-SBJ *pro*)
+                                 (VP (VP (NP-COMP (NP 보급품/NNC
+                                                      저장/NNC+과/PCJ)
+                                                  (NP 차량/NNC
+                                                      정비/NNC+용/XSF+으로/PAD+만/PAU))
+                                         (VV 사용/NNC+되/XSV+고/ECS))
+                                     있/VX+었/EPF+던/EAN))
+                              (NP 것/NNX))
+                     같이/ADV)
+          보이/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>약 1년 전 제가 마지막으로 거기에 있었을 때엔</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그 건물들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <term>보급품 저장과 차량 정비용으로만 사용되고 있었던 것 같이</term>
+	    </Arg>
+	    <Rel>
+	      <term>보였습니다</term>
+	    </Rel>
+	  </relation>
+	  <comment>small clause</comment>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>보.03</id>
+      <edef>according to</edef>
+      <roleset>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보다</rel>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>부속품의 수로 봐서 중기관총이 가장 많이 정비를 요하는 화기라고 생각합니다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*) 
+      (VP (NP-COMP (NP 부속품/NNC+의/PCA) 
+		   (NP 수/NNC+로/PAD))
+	  보/VV+어서/ECS)) 
+   (S (NP-SBJ *pro*) 
+      (VP (S-COMP (NP-SBJ 중기관총/NNC+이/PCA)
+		  (VP (NP (S (WHNP-1 0) 
+			     (S (NP-SBJ *T*-1)
+				(VP (ADVP (ADVP 가장/ADV) 
+					  (ADVP 많이/ADV))
+				    (VP (NP-OBJ 정비/NNC+를/PCA)
+					요하/VV+는/EAN)))) 
+			  (NP 화기/NNC+이/CO+라고/PQO)))) 
+	  (VV 생각/NNC+하/XSV+습니다/EFN)))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>부속품의 수</term>
+	    </Arg>
+	    <Rel>
+	      <term>봐서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>보.04</id>
+      <edef>get to</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="end state"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>양국은 자국 차원에서 법률적 검토를 거쳐 이달중순에 상호 의견을 교환키로 했으며 양측 모두가 WTO 제소가 불가피하다고 의견일치를 보면 곧 바로 WTO에 제소키로 했다.</text>
+	  <parse>
+(S (S (NP-SBJ 양국/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-ADV 자국/NNC
+                         차원/NNC+에서/PAD)
+                 (VP (NP-OBJ 법률/NNC+적/XSF
+                             검토/NNC+을/PCA)
+                     거치/VV+어/ECS)))
+          (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (NP-ADV 이달/NNC+중순/NNC+에/PAD)
+                          (VP (NP-OBJ 상호/NNC
+                                      의견/NNC+을/PCA)
+                              (VV 교환/NNC+하/XSV+기/ENM+으로/PAD))))
+              하/VV+었/EPF+으며/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (S (NP-SBJ 양측/NNC
+                                 모두/NNC+이/PCA)
+                         (VP (S (NP-SBJ WTO/NFW
+                                        제소/NNC+이/PCA)
+                                (ADJP 불가피하/VJ+다/EFN+고/PAD))
+                             (VP (NP-OBJ 의견/NNC+일치/NNC+을/PCA)
+                                 보/VV+으면/ECS)))
+                      (ADVP (ADVP 곧/ADV)
+                            (ADVP 바로/ADV))
+                      (VP (NP-COMP WTO/NFW+에/PAD)
+                          (NP-OBJ *pro*)
+                          (VV 제소/NNC+하/XSV+기/ENM+으로/PAD))))
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>양측 모두</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>WTO 제소가 불가피하다</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>의견일치</term>
+	    </Arg>
+	    <Rel>
+	      <term>보면</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>두고 보</lemma>
+    <comment>Frames file for '두고 보' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>보.05</id>
+      <edef>You will pay for this-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>두고 보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>두고 보자.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (CV 두/VV+고/ECS
+           보/VV+자/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Rel>
+	      <term>두고 보자</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>미뤄 보</lemma>
+    <comment>Frames file for '미뤄 보' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보.06</id>
+      <edef>infer-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="belief"/>
+	<role argnum="2" argrole="source of belief"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>미뤄 보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>통일부 당국자는 "김 총비서의 수행 인사로는 외무성 관리가 없고 지재룡 당 국제부 부부장 1 명 뿐인 점과 그의 통상적인 수행 인사 구성으로 미뤄 볼 때 북한당국이 김 총비서의 중국대사관 방문에 외교적으로 특별한 의미를 부여하지는 않은 것 같다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 통일부/NNC
+           당국자/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (NP-ADV (S (WHNP *op*)
+                          (S (NP-SBJ *pro*)
+                             (VP (NP-COMP (NP (S (NP-ADV (NP 김/NPR
+							       총비서/NNC+의/PAN)
+							 (NP 수행/NNC
+								 인사/NNC+으로/PAD+은/PAU))
+						 (S (S (NP-SBJ 외무성/NNC
+								     관리/NNC+이/PCA)
+						       (ADJP 없/VJ+고/ECS))
+						    (S (NP-SBJ *pro*)
+						       (VP (NP (NP (NP 지재룡/NPR)
+								   (NP 당/NNC
+									 국제부/NNC
+									 부부장/NNC)
+								   (NP 1/NNU
+								       명/NNX))
+							       (NP 뿐/NNX+이/CO+은/EAN))))))
+					      (NP 점/NNC+과/PCJ))
+					  (NP (NP 그/NPN+의/PAN)
+					      (NP (S (WHNP-1 *op*)
+						     (S (NP-SBJ *T*-1)
+							(VP (NP 통상/NNC+적/XSF+이/CO+은/EAN))))
+						  (NP 수행/NNC
+							  인사/NNC
+							  구성/NNC+으로/PAD)))) 
+				 (NP-OBJ *pro*)
+				 (CV 미루/VV+어/ECS
+					 보/VV+을/EAN))))
+                       (NP 때/NNC))
+               (S (NP-SBJ 북한/NPR+당국/NNC+이/PCA)
+                  (VP (VP (VP (NP-COMP (NP 김/NPR
+                                           총비서/NNC+의/PAN)
+                                       (NP 중국/NPR+대사관/NNC
+                                           방문/NNC+에/PAD))
+                              (NP-OBJ (S (WHNP-2 *op*)
+                                         (S (NP-SBJ *T*-2)
+                                            (ADJP (NP-ADV 외교/NNC+적/XSF+으로/PAD)
+                                                  (ADJP (VJ 특별/NNC+하/XSJ+은/EAN)))))
+                                      (NP 의미/NNC+을/PCA))
+                              (VV 부여/NNC+하/XSV+지/EFN+은/PAU))
+                          않/VX+은/EAN)
+                      (VX 것/NNX
+                          같/VJ+다/EFN)))
+               "/SRQ
+               고/PAD)
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>김 총비서의 수행 인사로는 외무성 관리가 없고 지재룡 당 국제부 부부장 1 명 뿐인 점과 그의 통상적인 수행 인사 구성</term>
+	    </Arg>
+	    <Rel>
+	      <term>미뤄 볼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>돌이켜 보</lemma>
+    <comment>Frames file for '돌이켜 보' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보.07</id>
+      <edef>look back-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing looked back"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌이켜 보다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 "공화당원 다수가 부시 지사를 대통령으로 선호하고 있음을 분명히 했고 이들의 결정을 존중한다"며 "선거운동을 중단하고 신디(부인)와 함께 최근의 경험을 돌이켜 보며 어떻게 하면 국가에 가장 봉사할 것인가를 결정할 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (S-COMP (S "/SLQ
+                  (S (NP-SBJ 공화/NNC+당원/NNC
+                             다수/NNC+이/PCA)
+                     (VP (S-OBJ (NP-SBJ *pro*)
+                                (VP (VP (NP-OBJ 부시/NPR
+                                                지사/NNC+을/PCA)
+                                        (VP (NP-ADV 대통령/NNC+으로/PAD)
+                                            (VP (VV 선호/NNC+하/XSV+고/ECS))))
+                                    있/VX+음/ENM+을/PCA))
+                         (VP (ADVP 분명히/ADV)
+                             (VP 하/VV+었/EPF+고/ECS))))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP 이/NPN+들/XSF+의/PAN)
+                                 (NP 결정/NNC+을/PCA))
+                         (VV 존중/NNC+하/XSV+는다/EFN)))
+                  "/SRQ
+                  며/ECS)
+               (S "/SLQ
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-OBJ 선거/NNC+운동/NNC+을/PCA)
+                             (VV 중단/NNC+하/XSV+고/ECS))
+                         (VP (ADVP (NP-COMP 신디/NPR
+                                            (PRN -LRB-/SLQ
+                                                 부인/NNC
+                                                 -RRB-/SRQ)
+                                            과/PAD)
+                                   함께/ADV)
+                             (VP (NP-OBJ (NP 최근/NNC+의/PAN)
+                                         (NP 경험/NNC+을/PCA))
+                                 (CV 돌이키/VV+어/ECS
+                                     보/VV+으며/ECS)))))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (S-OBJ (NP-SBJ *pro*)
+                                    (VP (VP (S (NP-SBJ *pro*)
+                                               (VP (ADVP 어떻게/ADV)
+                                                   (VP 하/VV+으면/ECS)))
+                                            (VP (NP-COMP 국가/NNC+에/PAD)
+                                                (VP (ADVP 가장/ADV)
+                                                    (VP (VV 봉사/NNC+하/XSV+을/EAN)))))
+                                        (VX 것/NNX+이/CO+은가/EFN+을/PCA)))
+                             (VV 결정/NNC+하/XSV+을/EAN))
+                         (VX 것/NNX)))
+                  "/SRQ
+                  이/CO+라/EFN+고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>신디(부인)와 함께</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>최근의 경험</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌이켜 보며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

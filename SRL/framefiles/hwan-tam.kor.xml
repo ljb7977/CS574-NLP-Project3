@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>환담</lemma>
+    <comment>Frames file for '환담' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>환담.01</id>
+      <edef>have a pleasant talk</edef>
+      <roleset>
+	<role argnum="0" argrole="one party"/>
+	<role argnum="1" argrole="other party"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>환담하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>특히 이번 순방에서는 가는 곳마다 시청을 방문해 시장과 환담하고 현지 시민들과 만나는가 하면 경제인 초청 연설과 주요기업 총수들을 잇따라 만나는 등 적극적인 세일즈 외교를 펼치는 바람에 수행원들을 눈코 뜰 새 없이 바쁘게 했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (S (S (NP-SBJ *pro*)
+                     (VP (VP (ADVP 특히/ADV)
+                             (NP-ADV 이번/NNC
+                                     순방/NNC+에서/PAD+은/PAU)
+                             (VP (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-ADV (S (WHNP-1 *op*)
+                                                       (S (NP-SBJ *pro*)
+                                                          (VP (NP-COMP *T*-1)
+                                                              가/VV+는/EAN)))
+                                                    (NP 곳/NNC+마다/PAU))
+                                            (VP (NP-OBJ 시청/NNC+을/PCA)
+                                                (VV 방문/NNC+하/XSV+어/ECS))))
+                                     (VP (NP-COMP 시장/NNC+과/PAD)
+                                         (VV 환담/NNC+하/XSV+고/ECS)))
+                                 (VP (NP-COMP 현지/NNC
+                                              시민/NNC+들/XSF+과/PAD)
+                                     만나/VV+는가/EFN)))
+                         하/VX+으면/ECS))
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-OBJ (NP 경제인/NNC
+                                     초청/NNC
+                                     연설/NNC+과/PCJ)
+                                 (NP (NP (S (NP-SBJ *pro*)
+                                            (VP (NP-OBJ 주요/NNC+기업/NNC
+                                                        총수/NNC+들/XSF+을/PCA)
+                                                (VP (ADVP 잇따라/ADV)
+                                                    (VP 만나/VV+는/EAN))))
+                                         (NP 등/NNX))
+                                     (NP (S (WHNP-2 *op*)
+                                            (S (NP-SBJ *T*-2)
+                                               (VP (NP 적극/NNC+적/XSF+이/CO+은/EAN))))
+                                         (NP 세일즈/NNC
+                                             외교/NNC+을/PCA))))
+                         펼치/VV+는/EAN)))
+               (NP 바람/NNX+에/PAD))
+       (VP (NP-OBJ 수행원/NNC+들/XSF+을/PCA)
+           (S-COMP (NP-SBJ *pro*)
+                   (ADJP (ADVP (NP-COMP (S (NP-SBJ *pro*)
+                                           (VP (NP-OBJ 눈/NNC+코/NNC)
+                                               뜨/VV+을/EAN))
+                                        (NP 새/NNX))
+                               없이/ADV)
+                         (ADJP 바쁘/VJ+게/ECS)))
+           하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>특히</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이번 순방에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>가는 곳마다 시청을 방문해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>과</f>
+	      <term>시장</term>
+	    </Arg>
+	    <Rel>
+	      <term>환담하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

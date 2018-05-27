@@ -1,0 +1,127 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>올라가</lemma>
+    <comment>Frames file for '올라가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>올라가.01</id>
+      <edef>go up</edef>
+      <roleset>
+	<role argnum="0" argrole="goer"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>올라가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>에, 우리는 도로의 북쪽으로 올라가고 있었는데 약 1킬로 전방에 큰 고지가 하나 있었지요.</text>
+	  <parse>
+(S (INTJ 에/IJ)
+   ,/SCM
+   (S (NP-SBJ 우리/NPN+은/PAU)
+      (VP (VP (NP-COMP (NP 도로/NNC+의/PAN)
+                       (NP 북쪽/NNC+으로/PAD))
+              올라가/VV+고/ECS)
+          있/VX+었/EPF+는데/ECS))
+   (S (NP-COMP-2 약/DAN
+                 1/NNU
+                 킬로/NNX
+                 전방/NNC+에/PAD)
+      (S (NP-SBJ (S (WHNP-1 *op*)
+                    (S (NP-SBJ *T*-1)
+                       (ADJP 크/VJ+은/EAN)))
+                 (NP 고지/NNC+이/PCA))
+         (ADJP (NP-ADV 하나/NNU)
+               (ADJP (NP-COMP *T*-2)
+                     있/VJ+었/EPF+지요/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>우리</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>도로의 북쪽</term>
+	    </Arg>
+	    <Rel>
+	      <term>올라가고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있었는데</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>거슬러 올라가</lemma>
+    <comment>Frames file for '거슬러 올라가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>올라가.02</id>
+      <edef>go back-CV</edef>
+      <roleset>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>거슬러 올라가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>영국과 러시아간의 간첩 스캔들은 구 소련 시절, 냉전이 극에 달했던 때로 거슬러 올라가는 오랜 역사를 갖고 있다.</text>
+	  <parse>
+(S (NP-SBJ (NP (NP 영국/NPR+과/PCJ)
+               (NP 러시아/NPR+간/XSF+의/PAN))
+           (NP 간첩/NNC
+               스캔들/NNC+은/PAU))
+   (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (VP (NP-COMP (NP 구/DAN
+                                          소련/NPR
+                                          시절/NNC)
+                                      ,/SCM
+                                      (NP (S (NP-SBJ 냉전/NNC+이/PCA)
+                                             (VP (NP-COMP 극/NNC+에/PAD)
+                                                 달하/VV+었/EPF+던/EAN))
+                                          (NP 때/NNC+으로/PAD)))
+                             (CV 거스르/VV+어/ECS
+                                 올라가/VV+는/EAN))))
+                   (NP 오랜/DAN
+                       역사/NNC+을/PCA))
+           갖/VV+고/ECS)
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=오랜 역사</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>로</f>
+	      <term>구 소련 시절, 냉전이 극에 달했던 때</term>
+	    </Arg>
+	    <Rel>
+	      <term>거슬러 올라가는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

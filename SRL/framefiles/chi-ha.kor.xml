@@ -1,0 +1,97 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>치하</lemma>
+    <comment>Frames file for '치하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>치하.01</id>
+      <edef>appreciate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing appreciated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>치하하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>결의에 앞서 가진 강연에서 이 재경장관은 지난해 대우 사태 등 금융시장에 산적한 어려움을 해결하는 데 증권사 사장단이 앞장서 준 데 대해 치하하고 금융시장의 가장 큰 문제였던 투신권의 클린업도 빠르면 이달내에 마무리될 수 있을 것으로 본다고 말했다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP-1 *op*)
+              (S (NP-SBJ *pro*)
+                 (VP (ADVP (NP-COMP 결의/NNC+에/PAD)
+                           앞서/ADV)
+                     (VP (NP-OBJ *T*-1)
+                         가지/VV+은/EAN))))
+           (NP 강연/NNC+에서/PAD))
+   (S (NP-SBJ 이/NPR
+              재경/NNC+장관/NNC+은/PAU)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (S (NP-ADV 지난해/NNC)
+                                 (S (NP-COMP-5 (S (NP-SBJ *pro*)
+                                                  (VP (NP-OBJ (NP (NP 대우/NPR
+                                                                      사태/NNC)
+                                                                  (NP 등/NNX))
+                                                              (NP (S (WHNP-2 *op*)
+                                                                     (S (NP-SBJ *T*-2)
+                                                                        (VP (NP-COMP 금융/NNC+시장/NNC+에/PAD)
+                                                                            (VV 산적/NNC+하/XSV+은/EAN))))
+                                                                  (NP 어려움/NNC+을/PCA)))
+                                                      (VV 해결/NNC+하/XSV+는/EAN)))
+                                               (NP 데/NNX))
+                                    (S (NP-SBJ 증권사/NNC
+                                               사장단/NNC+이/PCA)
+                                       (VP (VP (NP-COMP *T*-5)
+                                               앞장서/VV+어/ECS)
+                                           주/VX+은/EAN))))
+                              (NP 데/NNX))
+                     대하/VV+어/ECS))
+              (VP (NP-OBJ *pro*)
+                  (VV 치하/NNC+하/XSV+고/ECS)))
+          (VP (S-COMP (NP-SBJ *pro*)
+                      (VP (NP-COMP (S (NP-SBJ (S (WHNP-4 *op*)
+                                                 (S (NP-SBJ *T*-4)
+                                                    (VP (NP (NP 금융/NNC+시장/NNC+의/PAN)
+                                                            (NP (S (WHNP-3 *op*)
+                                                                   (S (NP-SBJ *T*-3)
+                                                                      (ADJP (ADVP 가장/ADV)
+                                                                            (ADJP 크/VJ+은/EAN))))
+                                                                (NP 문제/NNC+이/CO+었/EPF+던/EAN))))))
+                                              (NP (NP 투신/NNC+권/XSF+의/PAN)
+                                                  (NP 클린업/NNC+도/PAU)))
+                                      (VP (VP (S (NP-SBJ *pro*)
+                                                 (ADJP 빠르/VJ+으면/ECS))
+                                              (NP-ADV 이달/NNC+내/NNX+에/PAD)
+                                              (VP (VV 마무리/NNC+되/XSV+을/EAN)))
+                                          (VX 수/NNX
+                                              있/VJ+을/EAN)))
+                                   (NP 것/NNX+으로/PAD))
+                          보/VV+는다/EFN+고/PAD))
+              말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>결의에 앞서 가진 강연에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>이 재경장관</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>지난해 대우 사태 등 금융시장에 산적한 어려움을 해결하는 데 증권사 사장단이 앞장서 준 데 대해</term>
+	    </Arg>
+	    <Rel>
+	      <term>치하하고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

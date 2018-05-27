@@ -1,0 +1,53 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>초라하</lemma>
+    <comment>Frames file for '초라하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>초라하.01</id>
+      <edef>poor</edef>
+      <roleset>
+	<role argnum="1" argrole="thing poor"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>초라하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>마약상용자였던 45 세의 마르겔라는 라스베이거스 환락가 근처의 초라한 모텔에서 숨진 채 발견됐다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP 마약/NNC+상용자/NNC+이/CO+었/EPF+던/EAN))))
+           (NP (NP 45/NNU
+                   세/NNX+의/PAN)
+               (NP 마르겔라/NPR+은/PAU)))
+   (VP (NP-ADV (NP 라스베이거스/NPR
+                   환락가/NNC
+                   근처/NNC+의/PAN)
+               (NP (S (WHNP-2 *op*)
+                      (S (NP-SBJ *T*-2)
+                         (ADJP 초라하/VJ+은/EAN)))
+                   (NP 모텔/NNC+에서/PAD)))
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP 숨지/VV+은/EAN))
+               (NP 채/NNX))
+       (VP (VV 발견/NNC+되/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=모텔</term>
+	    </Arg>
+	    <Rel>
+	      <term>초라한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,133 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>영입</lemma>
+    <comment>Frames file for '영입' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>영입.01</id>
+      <edef>appoint</edef>
+      <roleset>
+	<role argnum="0" argrole="thing appointing"/>
+	<role argnum="1" argrole="thing appointed"/>
+	<role argnum="2" argrole="appoint as"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>영입하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또한 주니치를 비롯해 국내 여러 구단들은 풍부한 경험을 지닌 선동열을 지도자로 영입하기 위해 물밑 경쟁을 벌이기도 했으나 본인은 올 한 해동안 가족들과 보내며 새로운 인생을 설계할 계획이다.</text>
+	  <parse>
+(S (S (ADCP 또한/ADC)
+      (S (NP-SBJ (S (NP-SBJ *pro*)
+                    (VP (NP-OBJ 주니치/NPR+을/PCA)
+                        비롯하/VV+어/ECS))
+                 (NP 국내/NNC
+                     여러/DAN
+                     구단/NNC+들/XSF+은/PAU))
+         (VP (VP (S (NP-SBJ *pro*)
+                    (VP (S-OBJ (NP-SBJ *pro*)
+                               (VP (NP-OBJ (S (WHNP-2 *op*)
+                                              (S (NP-SBJ *T*-2)
+                                                 (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                                (S (NP-SBJ *T*-1)
+                                                                   (ADJP 풍부하/VJ+은/EAN)))
+                                                             (NP 경험/NNC+을/PCA))
+                                                     지니/VV+은/EAN)))
+                                           (NP 선동열/NPR+을/PCA))
+                                   (NP-COMP 지도자/NNC+으로/PAD)
+                                   (VV 영입/NNC+하/XSV+기/ENM)))
+                        위하/VV+어/ECS))
+                 (VP (NP-OBJ 물밑/NNC
+                             경쟁/NNC+을/PCA)
+                     벌이/VV+기/ENM+도/PAU))
+             하/VX+었/EPF+으나/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (S (NP-SBJ 본인/NNC+은/PAU)
+                    (VP (NP-OBJ 올/NNC
+                                한/NNU
+                                해/NNX+동안/NNX)
+                        (VP (NP-ADV 가족/NNC+들/XSF+과/PAD)
+                            (VP 보내/VV+으며/ECS))))
+                 (S (NP-SBJ *pro*)
+                    (VP (NP-OBJ (S (WHNP-3 *op*)
+                                   (S (NP-SBJ *T*-3)
+                                      (ADJP 새롭/VJ+은/EAN)))
+                                (NP 인생/NNC+을/PCA))
+                        (VV 설계/NNC+하/XSV+을/EAN))))
+              (NP 계획/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>풍부한 경험을 지닌 선동열</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>지도자</term>
+	    </Arg>
+	    <Rel>
+	      <term>영입하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>영입되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>루빈 전 장관은 작년 10 월 시티그룹의 공동회장으로 영입되면서 보수에 관해 장관시절 연봉보다 많이 받을 것이라고만 밝힌 바 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 루빈/NPR
+                      전/DAN
+                      장관/NNC+은/PAU)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 작년/NNC
+                                 10/NNU
+                                 월/NNX)
+                         (VP (NP-COMP (NP 시티/NPR+그룹/NNC+의/PAN)
+                                      (NP 공동/NNC+회장/NNC+으로/PAD))
+                             (VV 영입/NNC+되/XSV+으면서/ECS))))
+                  (VP (S-COMP (NP-SBJ *pro*)
+                              (VP (VP (S (NP-SBJ *pro*)
+                                         (VP (NP-COMP 보수/NNC+에/PAD)
+                                             관하/VV+어/ECS))
+                                      (ADVP (NP-ADV (NP 장관/NNC+시절/NNC)
+						    (NP 연봉/NNC+보다/PAD))
+					    (ADVP 많이/ADV))
+                                      (VP (NP-OBJ *pro*)
+                                          받/VV+을/EAN))
+                                  (VX 것/NNX+이/CO+라/EFN+고/PAD+만/PAU)))
+                      밝히/VV+은/EAN)))
+           (NP 바/NNX))
+   (ADJP 있/VJ+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>작년 10 월</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>으로</f>
+	      <term>시티그룹의 공동회장</term>
+	    </Arg>
+	    <Rel>
+	      <term>영입되면서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

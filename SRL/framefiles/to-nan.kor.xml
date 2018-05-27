@@ -1,0 +1,100 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>도난</lemma>
+    <comment>Frames file for '도난' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>도난.01</id>
+      <edef>steal</edef>
+      <roleset>
+	<role argnum="0" argrole="thief, agent"/>
+	<role argnum="1" argrole="thing stolen"/>
+	<role argnum="2" argrole="stolen from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>도난당하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>한편 재판이 진행되는 동안 샤리프의 변호인단이 감시와 전화도청을 당했다는 주장이 나오고 있는 가운데 경찰은 2 주전 라드의 사무실에서 팩시밀리 1 대와 전화 1 대가 도난당했다고 밝혔다.</text>
+	  <parse>
+(S (ADCP 한편/ADC)
+   (S (NP-ADV (S (NP-SBJ (S (NP-ADV (S (NP-SBJ 재판/NNC+이/PCA)
+                                       (VP (VV 진행/NNC+되/XSV+는/EAN)))
+                                    (NP 동안/NNC))
+                            (S (NP-SBJ (NP 샤리프/NPR+의/PAN)
+                                       (NP 변호인/NNC+단/XSF+이/PCA))
+                               (VP (NP-OBJ (NP 감시/NNC+과/PCJ)
+                                           (NP 전화/NNC+도청/NNC+을/PCA))
+                                   당하/VV+었/EPF+다는/EAN)))
+                         (NP 주장/NNC+이/PCA))
+                 (VP (VP 나오/VV+고/ECS)
+                     있/VX+는/EAN))
+              (NP 가운데/NNC))
+      (S (NP-SBJ 경찰/NNC+은/PAU)
+         (VP (S-COMP (NP-ADV 2/NNU
+                             주/NNX+전/NNC)
+                     (S (NP-COMP-1 (NP 라드/NPR+의/PAN)
+                                   (NP 사무실/NNC+에서/PAD))
+                        (S (NP-SBJ (NP 팩시밀리/NNC
+                                       1/NNU
+                                       대/NNX+과/PCJ)
+                                   (NP 전화/NNC
+                                       1/NNU
+                                       대/NNX+이/PCA))
+                           (VP (NP-COMP *T*-1)
+                               (VV 도난/NNC+당하/XSV+었/EPF+다/EFN+고/PAD)))))
+             밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>2 주전</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>라드의 사무실</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>팩시밀리 1 대와 전화 1 대</term>
+	    </Arg>
+	    <Rel>
+	      <term>도난당했다고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>도난당하다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>그녀는 돈을 도난당했다.</text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>는</f>
+	      <term>그녀</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>돈</term>
+	    </Arg>
+	    <Rel>
+	      <term>도난당했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

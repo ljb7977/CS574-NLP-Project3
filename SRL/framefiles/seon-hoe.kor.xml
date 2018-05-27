@@ -1,0 +1,71 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>선회</lemma>
+    <comment>Frames file for '선회' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>선회.01</id>
+      <edef>turn</edef>
+      <roleset>
+	<role argnum="0" argrole="turner"/>
+	<role argnum="1" argrole="thing turning"/>
+	<role argnum="2" argrole="direction"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>선회하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>바로 그때 차량 1 대가 그녀 앞으로 돌진하다가 나윤양이 걸어간 갓길로 방향을 선회한 뒤 다시 도로로 내려와 시야에서 사라졌다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (S (NP-ADV 바로/DAN
+                                그때/NNC)
+                        (S (NP-SBJ 차량/NNC
+                                   1/NNU
+                                   대/NNX+이/PCA)
+                           (VP (NP-COMP 그녀/NPN
+                                        앞/NNC+으로/PAD)
+                               (VV 돌진/NNC+하/XSV+다가/ECS))))
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-COMP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ 나윤/NPR+양/NNX+이/PCA)
+                                           (VP (NP-OBJ *T*-1)
+                                               걸어가/VV+은/EAN)))
+                                     (NP 갓길/NNC+으로/PAD))
+                            (NP-OBJ 방향/NNC+을/PCA)
+                            (VV 선회/NNC+하/XSV+은/EAN))))
+                  (NP 뒤/NNC))
+          (ADVP 다시/ADV)
+          (VP (NP-COMP 도로/NNC+으로/PAD)
+              내려오/VV+어/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV 시야/NNC+에서/PAD)
+          (VP 사라지/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>바로 그때 차량 1 대가 그녀 앞으로 돌진하다가</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>로</f>
+	      <term>나윤양이 걸어간 갓길</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>방향</term>
+	    </Arg>
+	    <Rel>
+	      <term>선회한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

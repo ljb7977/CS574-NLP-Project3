@@ -1,0 +1,189 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>승인</lemma>
+    <comment>Frames file for '승인' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>승인.01</id>
+      <edef>admit</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing admitted"/>
+	<role argnum="2" argrole="to whom"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>승인하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>미 의회는 중국의 세계무역기구(WTO) 가입에 앞서 올해 중에 중국에 정상무역관계(NTR)를 승인하는 문제로 진통을 겪을 것으로 보인다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ 미/NPR
+			     의회/NNC+은/PAU)
+		   (VP (NP-ADV (S (NP-SBJ *pro*)
+				  (VP (ADVP (NP-COMP (NP 중국/NPR+의/PAN)
+						     (NP 세계/NNC+무역/NNC+기구/NNC
+							     (PRN -LRB-/SLQ
+								  WTO/NFW
+								  -RRB-/SRQ)
+							     가입/NNC+에/PAD))
+					    앞서/ADV)
+				      (NP-ADV 올해/NNC
+						  중/NNX+에/PAD)
+				      (VP (NP-COMP 중국/NPR+에/PAD)
+					  (NP-OBJ 정상/NNC+무역/NNC+관계/NNC
+						      (PRN -LRB-/SLQ
+							   NTR/NFW
+							   -RRB-/SRQ)
+						      을/PCA)
+					  (VV 승인/NNC+하/XSV+는/EAN))))
+			       (NP 문제/NNC+으로/PAD))
+		       (VP (NP-OBJ 진통/NNC+을/PCA)
+			   겪/VV+을/EAN)))
+		(NP 것/NNX+으로/PAD))
+       보이/VV+는다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>중국의 세계무역기구(WTO) 가입에 앞서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>올해 중에</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>중국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>정상무역관계(NTR)</term>
+	    </Arg>
+	    <Rel>
+	      <term>승인하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>승인되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이스라엘에서 시리아와의 평화협정이 최종 승인되기 위해서는 국무회의 통과, 의회에서 120 명 재적 의원 중 61 명 이상 찬성, 국민투표 가결등의 3 단계를 거쳐야 한다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (S-OBJ (NP-ADV 이스라엘/NPR+에서/PAD)
+		 (S (NP-SBJ (NP 시리아/NPR+과/PAD+의/PAN)
+			    (NP 평화/NNC+협정/NNC+이/PCA))
+		    (VP (NP-ADV 최종/NNC)
+			(VP (VV 승인/NNC+되/XSV+기/ENM)))))
+          위하/VV+어서/ECS+은/PAU))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (NP (NP 국무/NNC+회의/NNC
+				  통과/NNC)
+                          ,/SCM
+                          (NP (NP-ADV 의회/NNC+에서/PAD)
+			      (NP (NP 120/NNU
+				      명/NNX
+				      재적/NNC
+				      의원/NNC)
+				  (NP 중/NNX))
+			      (NP 61/NNU
+				  명/NNX
+				  이상/NNC)
+			      (NP 찬성/NNC))
+                          ,/SCM
+                          (NP 국민/NNC+투표/NNC
+				  가결/NNC+등/NNX+의/PAN))
+                      (NP 3/NNU
+                          단계/NNC+을/PCA))
+              거치/VV+어야/ECS)
+          하/VX+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>이스라엘에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>시리아와의 평화협정</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>최종</term>
+	    </Arg>
+	    <Rel>
+	      <term>승인되기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>승인받다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>전국교직원노동조합은 지난 6 일 통일부로부터 남북교사교류를 위한 북한주민 접촉을 승인받아 조만간 북측에 교류를 정식으로 제의할 예정이라고 8 일 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 전국/NNC+교직원/NNC+노동조합/NNC+은/PAU)
+   (VP (NP-COMP (S (NP-SBJ *pro*)
+                   (VP (S (NP-SBJ *pro*)
+                          (VP (NP-ADV 지난/DAN
+                                      6/NNU
+                                      일/NNX)
+                              (VP (NP-COMP 통일부/NNC+으로부터/PAD)
+                                  (NP-OBJ (S (WHNP-1 *op*)
+                                             (S (NP-SBJ *T*-1)
+                                                (VP (NP-OBJ 남북/NNC+교사/NNC+교류/NNC+을/PCA)
+                                                    위하/VV+은/EAN)))
+                                          (NP 북한/NPR+주민/NNC
+                                              접촉/NNC+을/PCA))
+                                  (VV 승인/NNC+받/XSV+어/ECS))))
+                       (ADVP 조만간/ADV)
+                       (VP (NP-COMP 북/NPR+측/XSF+에/PAD)
+                           (NP-OBJ 교류/NNC+을/PCA)
+                           (VP (NP-ADV 정식/NNC+으로/PAD)
+                               (VP (VV 제의/NNC+하/XSV+을/EAN))))))
+                (NP 예정/NNC+이라고/PAD))
+       (VP (NP-ADV 8/NNU
+                   일/NNX)
+           (VP 밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 6 일</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>로부터</f>
+	      <term>통일부</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>남북교사교류를 위한 북한주민 접촉</term>
+	    </Arg>
+	    <Rel>
+	      <term>승인받아</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

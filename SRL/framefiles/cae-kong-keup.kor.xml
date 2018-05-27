@@ -1,0 +1,108 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>재공급</lemma>
+    <comment>Frames file for '재공급' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>재공급.01</id>
+      <edef>resupply</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing provided"/>
+	<role argnum="2" argrole="entity provided for"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>재공급하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>귀관이 재고로 가지고 있던 탄약을 다 소모한 다음에는, 귀관의 곡사포에 탄약을 어떻게 재공급했는가?</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ 귀관/NPN+이/PCA)
+              (VP (NP-OBJ (S (WHNP-1 *op*)
+                             (S (NP-SBJ *pro*)
+                                (VP (VP (NP-ADV 재고/NNC+으로/PAD)
+                                        (VP (NP-OBJ *T*-1)
+                                            가지/VV+고/ECS))
+                                    있/VX+던/EAN)))
+                          (NP 탄약/NNC+을/PCA))
+                  (VP (ADVP 다/ADV)
+                      (VP (VV 소모/NNC+하/XSV+은/EAN)))))
+           (NP 다음/NNC+에/PAD+은/PAU))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (NP 귀관/NPN+의/PAN)
+                   (NP 곡사포/NNC+에/PAD))
+          (NP-OBJ 탄약/NNC+을/PCA)
+          (VP (ADVP 어떻게/ADV)
+              (VP (VV 재공급/NNC+하/XSV+었/EPF+는가/EFN)))))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>귀관이 재고로 가지고 있던 탄약을 다 소모한 다음에는</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>귀관의 곡사포</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>탄약</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어떻게</term>
+	    </Arg>
+	    <Rel>
+	      <term>재공급했는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>재공급받다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="sbj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>제3 소대 제1 포반은 얼마나 자주 탄약을 재공급받았는가?</text>
+	  <parse>
+(S (NP-SBJ (NP 제/XPF+3/NNU
+               소대/NNC)
+           (NP 제/XPF+1/NNU
+               포반/NNC+은/PAU))
+   (VP (ADVP (ADVP 얼마나/ADV)
+             (ADVP 자주/ADV))
+       (VP (NP-OBJ 탄약/NNC+을/PCA)
+           (VV 재공급/NNC+받/XSV+었/EPF+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>제3 소대 제1 포반</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>얼마나 자주</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>탄약</term>
+	    </Arg>
+	    <Rel>
+	      <term>재공급받았는가</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

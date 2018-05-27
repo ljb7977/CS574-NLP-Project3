@@ -1,0 +1,74 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>당면</lemma>
+    <comment>Frames file for '당면' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>당면.01</id>
+      <edef>face</edef>
+      <roleset>
+	<role argnum="1" argrole="facer"/>
+	<role argnum="2" argrole="thing faced"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>당면하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>즉 서민들의 생활 보장을 위해 금년 10 조원의 예산을 편성, 대처해 나갈 것이며 민주주의, 시장경제, 생산적 복지 3 가지를 기본 원칙으로 당면한 문제를 해결할 것이라고 약속했다.</text>
+	  <parse>
+(S (ADCP 즉/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (S (NP-SBJ *pro*)
+                     (VP (VP (VP (S (NP-SBJ *pro*)
+                                    (VP (S (NP-SBJ *pro*)
+                                           (VP (NP-OBJ (NP 서민/NNC+들/XSF+의/PAN)
+                                                       (NP 생활/NNC
+                                                           보장/NNC+을/PCA))
+                                               위하/VV+어/ECS))
+                                        (NP-ADV 금년/NNC)
+                                        (VP (NP-OBJ (NP 10/NNU
+                                                        조/NNU+원/NNX+의/PAN)
+                                                    (NP 예산/NNC+을/PCA))
+                                            (VV 편성/NNC))))
+                                 ,/SCM
+                                 (VP (NP-COMP *pro*)
+                                     (VV 대처/NNC+하/XSV+어/ECS)))
+                             나가/VX+을/EAN)
+                         (VX 것/NNX+이/CO+으며/ECS)))
+                  (S (NP-SBJ *pro*)
+                     (VP (VP (NP-ADV (NP-OBJ (NP (NP 민주주의/NNC)
+                                                 ,/SCM
+                                                 (NP 시장/NNC+경제/NNC)
+                                                 ,/SCM
+                                                 (NP (NP 생산/NNC+적/XSF)
+                                                     (NP 복지/NNC)))
+                                             (NP 3/NNU
+                                                 가지/NNX+을/PCA))
+                                     (NP 기본/NNC
+                                         원칙/NNC+으로/PAD))
+                             (VP (NP-OBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *pro*)
+                                               (VP (NP-COMP *T*-1)
+                                                   (VV 당면/NNC+하/XSV+은/EAN))))
+                                         (NP 문제/NNC+을/PCA))
+                                 (VV 해결/NNC+하/XSV+을/EAN)))
+                         (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+          (VV 약속/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <term>*trace*=문제</term>
+	    </Arg>
+	    <Rel>
+	      <term>당면한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

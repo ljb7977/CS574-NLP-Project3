@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌이키</lemma>
+    <comment>Frames file for '돌이키' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>돌이키.01</id>
+      <edef>reverse</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, causer"/>
+	<role argnum="1" argrole="thing turning around"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌이키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>민주당은 "대만 지역의 민주화 과정은 돌이킬 수 없으며 중국 민주화의 문을 여는 것"이라고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 민주당/NPR+은/PAU)
+   (VP (NP-COMP "/SLQ
+                (S (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ (NP 대만/NPR
+                                          지역/NNC+의/PAN)
+                                      (NP 민주/NNC+화/XSF
+                                          과정/NNC+은/PAU))
+                              돌이키/VV+을/EAN)
+                          (VX 수/NNX
+                              없/VJ+으며/ECS)))
+                   (S (NP-SBJ *pro*)
+                      (VP (NP-OBJ (NP 중국/NPR
+                                      민주/NNC+화/XSF+의/PAN)
+                                  (NP 문/NNC+을/PCA))
+                          열/VV+는/EAN)))
+                (NP 것/NNX)
+                "/SRQ
+                이라고/PAD)
+       덧붙이/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>대만 지역의 민주화 과정</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌이킬</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없으며</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,110 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>건지</lemma>
+    <comment>Frames file for '건지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>건지.01</id>
+      <edef>save</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing saved"/>
+	<role argnum="2" argrole="saved from"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>건지다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>민주당은 3 일 초반판세 분석결과 호남지역 29 개 의석석권에 서울 25 개 내외, 인천 6 개 내외, 경기 26 개 내외 등 수도권 97 개 중 55 퍼센트 안팎의 의석을 확보하는 것을 비롯, 전국적으로 지역구(총 227 개)에서만 '100 석 +'를 건져 제 1 당을 만드는 것이 가능하다고 보고 있다.</text>
+	  <parse>
+(S (NP-SBJ 민주당/NPR+은/PAU)
+   (VP (VP (NP-ADV 3/NNU
+                   일/NNX
+                   초반/NNC+판세/NNC
+                   분석/NNC+결과/NNC)
+           (VP (S-COMP (S (NP-SBJ *pro*)
+                          (VP (NP-ADV 호남/NPR+지역/NNC
+                                      29/NNU
+                                      개/NNX
+                                      의석/NNC+석권/NNC+에/PAD)
+                              (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                             (VP (NP-OBJ (NP (NP (NP (NP 서울/NPR
+                                                                         25/NNU
+                                                                         개/NNX
+                                                                         내외/NNC)
+                                                                     ,/SCM
+                                                                     (NP 인천/NPR
+                                                                         6/NNU
+                                                                         개/NNX
+                                                                         내외/NNC)
+                                                                     ,/SCM
+                                                                     (NP 경기/NPR
+                                                                         26/NNU
+                                                                         개/NNX
+                                                                         내외/NNC))
+                                                                 (NP 등/NNX))
+                                                             (NP 수도권/NNC
+                                                                 97/NNU
+                                                                 개/NNX
+                                                                 중/NNX
+                                                                 55/NNU
+                                                                 퍼센트/NNX
+                                                                 안팎/NNC+의/PAN))
+                                                         (NP 의석/NNC+을/PCA))
+                                                 (VV 확보/NNC+하/XSV+는/EAN)))
+                                          (NP 것/NNX+을/PCA))
+                                  (VV 비롯/NNC)))
+                          ,/SCM)
+                       (S (NP-SBJ *pro*)
+                          (VP (NP-ADV 전국/NNC+적/XSF+으로/PAD)
+                              (VP (NP-COMP 지역구/NNC
+                                           (PRN -LRB-/SLQ
+                                                총/DAN
+                                                227/NNU
+                                                개/NNX
+                                                -RRB-/SRQ)
+                                           에서/PAD+만/PAU)
+                                  (NP-OBJ '/SLQ
+                                          100/NNU
+                                          석/NNX
+                                          -PLU-/SSY
+                                          '/SRQ
+                                          을/PCA)
+                                  건지/VV+어/ECS)))
+                       (S (NP-SBJ (S (NP-SBJ *pro*)
+                                     (VP (NP-OBJ 제/DAN
+                                                 1/NNU
+                                                 당/NNC+을/PCA)
+                                         만들/VV+는/EAN))
+                                  (NP 것/NNX+이/PCA))
+                          (ADJP (VJ 가능/NNC+하/XSJ+다/EFN+고/PAD))))
+               보/VV+고/ECS))
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>전국적으로</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에서만</f>
+	      <term>지역구(총 227 개)</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>'100 석 +'</term>
+	    </Arg>
+	    <Rel>
+	      <term>건져</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

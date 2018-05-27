@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>멈춰서</lemma>
+    <comment>Frames file for '멈춰서' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>멈춰서.01</id>
+      <edef>stop</edef>
+      <roleset>
+	<role argnum="0" argrole="entity moving"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>멈춰서다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>사고 여객기는 그러나 다행히 셰브론 주유소를 30여M 앞두고 멈춰서는 바람에 대형사고는 면했다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-ADV (S (NP-SBJ 사고/NNC
+                          여객기/NNC+은/PAU)
+                  (VP (ADCP 그러나/ADC)
+                      (VP (ADVP 다행히/ADV)
+                          (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ 셰브론/NPR
+                                             주유소/NNC+을/PCA)
+                                     (VP (NP-ADV 30/NNU+여/XSF+M/NFW)
+                                         (VP 앞두/VV+고/ECS))))
+                              (VP 멈춰서/VV+는/EAN)))))
+               (NP 바람/NNC+에/PAD))
+       (VP (NP-OBJ 대형/NNC+사고/NNC+은/PAU)
+           면하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>사고 여객기</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>다행히</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>셰브론 주유소를 30여M 앞두고</term>
+	    </Arg>
+	    <Rel>
+	      <term>멈춰서는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,210 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>금지</lemma>
+    <comment>Frames file for '금지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>금지.01</id>
+      <edef>prohibit</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="action prohibited"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>금지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>8 세 이상 여성의 노동과 학교 수업을 금지하고 있는 탈레반 정권은 카불시내 유일의 여성 전용 병원에서 남성들의 출입을 금한 채 여성들만을 위한 기념행사를 가졌다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-OBJ (NP (NP 8/NNU
+                                         세/NNX
+                                         이상/NNC)
+                                     (NP 여성/NNC+의/PAN))
+                                 (NP (NP 노동/NNC+과/PCJ)
+                                     (NP 학교/NNC
+                                         수업/NNC+을/PCA)))
+                         (VV 금지/NNC+하/XSV+고/ECS))
+                     있/VX+는/EAN)))
+           (NP 탈레반/NPR
+               정권/NNC+은/PAU))
+   (VP (NP-ADV (NP 카불/NPR+시내/NNC
+                   유일/NNC+의/PAN)
+               (NP 여성/NNC
+                   전용/NNC
+                   병원/NNC+에서/PAD))
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (NP 남성/NNC+들/XSF+의/PAN)
+                              (NP 출입/NNC+을/PCA))
+                      금하/VV+은/EAN))
+               (NP 채/NNX))
+       (VP (NP-OBJ (S (WHNP-2 *op*)
+                      (S (NP-SBJ *T*-2)
+                         (VP (NP-OBJ 여성/NNC+들/XSF+만/PAU+을/PCA)
+                             위하/VV+은/EAN)))
+                   (NP 기념/NNC+행사/NNC+을/PCA))
+           가지/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term>*trace*=탈레반 정권</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>8 세 이상 여성의 노동과 학교 수업</term>
+	    </Arg>
+	    <Rel>
+	      <term>금지하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>금지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 다른 관계자는 선거법 60 조(선거운동을 할 수 없는 자)를 지적, "이 법에서 명시적으로 선거운동을 못하도록 금지한 사람 외에는 모두 선거운동을 할 수 있다"며 "중소기협중앙회는 이 조항에 해당되지 않는다"고 말해 선거운동을 할 수 있다고 밝혔다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ 다른/DAN
+              관계자/NNC+은/PAU)
+      (VP (NP-OBJ 선거법/NNC
+                  60/NNU
+                  조/NNX
+                  (PRN -LRB-/SLQ
+                       (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (VP (NP-OBJ 선거/NNC+운동/NNC+을/PCA)
+                                         하/VV+을/EAN)
+                                     (VX 수/NNX
+                                         없/VJ+는/EAN))))
+                           (NP 자/NNX))
+                       -RRB-/SRQ)
+                  을/PCA)
+          (VV 지적/NNC)))
+   ,/SCM
+   (S "/SLQ
+      (NP-ADV (NP (S (WHNP-2 *op*)
+                     (S (NP-SBJ 이/DAN
+				  법/NNC+에서/PCA)
+			(VP (NP-ADV 명시/NNC+적/XSF+으로/PAD)
+			    (VP (S-COMP (NP-SBJ *T*-2)
+					(VP (NP-OBJ 선거/NNC+운동/NNC+을/PCA)
+					    못하/VV+도록/ECS))
+				(VV 금지/NNC+하/XSV+은/EAN)))))
+                  (NP 사람/NNC))
+              (NP 외/NNX+에/PAD+은/PAU))
+      (S (NP-SBJ 모두/NNC)
+         (VP (VP (NP-OBJ 선거/NNC+운동/NNC+을/PCA)
+                 하/VV+을/EAN)
+             (VX 수/NNX
+                 있/VJ+다/EFN)))
+      "/SRQ
+      며/ECS)
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP "/SLQ
+                  (NP-SBJ 중소기협/NNC+중앙회/NNC+은/PAU)
+                  (VP (VP (NP-COMP 이/DAN
+                                   조항/NNC+에/PAD)
+                          (VV 해당/NNC+되/XSV+지/ECS))
+                      않/VX+는다/EFN)
+                  "/SRQ
+                  고/PAD)
+          말하/VV+어/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (VP (NP-OBJ 선거/NNC+운동/NNC+을/PCA)
+                          하/VV+을/EAN)
+                      (VX 수/NNX
+                          있/VJ+다/EFN+고/PAD)))
+          밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>에서</f>
+	      <term>이 법</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>명시적으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>도록</f>
+	      <term>선거운동을 못하</term>
+	    </Arg>
+	    <Rel>
+	      <term>금지한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>금지되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>북한이 국무부의 테러지원국 명단에 빠지게 되면 그 동안 금지되어 온 특정의 경제적 혜택을 누릴 수 있는 자격을 갖게 된다.</text>
+	  <parse>
+(S (S (NP-SBJ 북한/NPR+이/PCA)
+      (VP (VP (NP-COMP (NP 국무부/NNC+의/PAN)
+                       (NP 테러/NNC+지원/NNC+국/XSF
+                           명단/NNC+에/PAD))
+              빠지/VV+게/ECS)
+          되/VX+으면/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                         (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (VP (VP (NP-ADV 그/NPN
+                                                               동안/NNX)
+                                                       (VP (VV 금지/NNC+되/XSV+어/ECS)))
+                                                   오/VX+은/EAN)))
+                                         (NP (NP 특정/NNC+의/PAN)
+                                             (NP 경제/NNC+적/XSF
+                                                 혜택/NNC+을/PCA)))
+                                 누리/VV+을/EAN)
+                             (VX 수/NNX
+                                 있/VJ+는/EAN)))
+                      (NP 자격/NNC+을/PCA))
+              갖/VV+게/ECS)
+          되/VX+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=특정의 경제적 혜택</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>그 동안</term>
+	    </Arg>
+	    <Rel>
+	      <term>금지되어</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>온</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

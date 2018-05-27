@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>수락</lemma>
+    <comment>Frames file for '수락' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>수락.01</id>
+      <edef>accept</edef>
+      <roleset>
+	<role argnum="0" argrole="acceptor"/>
+	<role argnum="1" argrole="thing accepted"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>수락하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 대통령은 이어 "이러한 문제를 효과적으로 해결하기 위해서는 남북한 당국간 대화가 필요하다"고 역설하고 "북한은 2 년전 남북기본 합의서 이행을 위해 제의한 특사교환을 수락할 것을 촉구한다"고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 김/NPR
+           대통령/NNC+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (VP (VP (S-COMP "/SLQ
+                       (S (NP-SBJ *pro*)
+                          (VP (S-OBJ (NP-SBJ *pro*)
+                                     (VP (NP-OBJ 이러한/DAN
+                                                 문제/NNC+을/PCA)
+                                         (VP (NP-ADV 효과/NNC+적/XSF+으로/PAD)
+                                             (VP (VV 해결/NNC+하/XSV+기/ENM)))))
+                              위하/VV+어서/ECS+은/PAU))
+                       (S (NP-COMP-1 남북한/NPR
+                                     당국/NNC+간/XSF)
+                          (S (NP-SBJ 대화/NNC+이/PCA)
+                             (ADJP (NP-COMP *T*-1)
+                                   (VJ 필요/NNC+하/XSJ+다/EFN))))
+                       "/SRQ
+                       고/PAD)
+               (VV 역설/NNC+하/XSV+고/ECS))
+           (VP (S-COMP "/SLQ
+                       (NP-SBJ *pro*)
+                       (VP (NP-OBJ (S (NP-SBJ 북한/NPR+은/PAU)
+                                      (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                     (S (NP-SBJ *pro*)
+                                                        (VP (S (NP-SBJ *pro*)
+                                                               (VP (NP-OBJ (NP 2/NNU
+                                                                               년/NNX+전/NNC)
+                                                                           (NP 남북/NNC+기본/NNC
+                                                                               합의서/NNC)
+                                                                           (NP 이행/NNC+을/PCA))
+                                                                   위하/VV+어/ECS))
+                                                            (VP (NP-OBJ *T*-2)
+                                                                (VV 제의/NNC+하/XSV+은/EAN)))))
+                                                  (NP 특사/NNC+교환/NNC+을/PCA))
+                                          (VV 수락/NNC+하/XSV+을/EAN)))
+                                   (NP 것/NNX+을/PCA))
+                           (VV 촉구/NNC+하/XSV+는다/EFN))
+                       "/SRQ
+                       고/PAD)
+               밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>북한</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>2 년전 남북기본 합의서 이행을 위해 제의한 특사교환</term>
+	    </Arg>
+	    <Rel>
+	      <term>수락할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

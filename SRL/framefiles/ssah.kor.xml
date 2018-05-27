@@ -1,0 +1,147 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>쌓</lemma>
+    <comment>Frames file for '쌓' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>쌓.01</id>
+      <edef>heap</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing heaped"/>
+	<role argnum="2" argrole="heaped on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>쌓다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>스위스 프리부르주의 주도인 프리부르는 지난 86 년 이후 모두 14 번의 영화제를 개최하면서 남반구 출신 감독들의 등용문으로 명성을 쌓아 오고 있다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP (NP 스위스/NPR
+                             프리부르/NPR+주/NNC+의/PAN)
+                         (NP 주도/NNC+이/CO+은/EAN)))))
+           (NP 프리부르/NPR+은/PAU))
+   (VP (VP (VP (S (NP-SBJ *pro*)
+                  (VP (NP-ADV 지난/DAN
+                              86/NNU
+                              년/NNX
+                              이후/NNC)
+                      (VP (NP-OBJ (NP 모두/NNC
+                                      14/NNU
+                                      번/NNX+의/PAN)
+                                  (NP 영화제/NNC+을/PCA))
+                          (VV 개최/NNC+하/XSV+으면서/ECS))))
+               (VP (NP-OBJ (NP (NP 남반구/NNC
+					 출신/NNC
+					 감독/NNC+들/XSF+의/PAN)
+			       (NP 등용문/NNC+으로/PAD))
+			   (NP 명성/NNC+을/PCA))
+                   쌓/VV+어/ECS))
+           오/VX+고/ECS)
+       있/VX+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>스위스 프리부르주의 주도인 프리부르</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>지난 86 년 이후 모두 14 번의 영화제를 개최하면서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>남반구 출신 감독들의 등용문으로 명성</term>
+	    </Arg>
+	    <Rel>
+	      <term>쌓아</term>
+	    </Rel>
+	    <Aux>
+	      <f>아</f>
+	      <term>오고</term>
+	    </Aux>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>쌓이다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>보고서는 노르망디 해안 라아그에 위치한 코제마 재처리 공장에 다른 국가들이 이 공장으로 보낸 연료봉들을 재처리한 뒤 남은 폐기물들을 보관한 1 만 6 천개의 컨테이너가 쌓여 있다고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 보고서/NNC+은/PAU)
+   (VP (S-COMP (NP-COMP-5 (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-COMP 노르망디/NPR
+                                             해안/NNC
+                                             라아그/NPR+에/PAD)
+                                    (VV 위치/NNC+하/XSV+은/EAN))))
+                          (NP 코제마/NPR
+                              재처리/NNC
+                              공장/NNC+에/PAD))
+               (S (NP-SBJ (S (WHNP-4 *op*)
+                             (S (NP-SBJ *T*-4)
+                                (VP (NP-OBJ (S (WHNP-3 *op*)
+                                               (S (NP-SBJ *T*-3)
+                                                  (VP (NP-ADV (S (NP-SBJ *pro*)
+                                                                 (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                                                (S (NP-SBJ 다른/DAN
+                                                                                           국가/NNC+들/XSF+이/PCA)
+                                                                                   (VP (NP-COMP 이/DAN
+                                                                                                공장/NNC+으로/PAD)
+                                                                                       (NP-OBJ *T*-2)
+                                                                                       보내/VV+은/EAN)))
+                                                                             (NP 연료봉/NNC+들/XSF+을/PCA))
+                                                                     (VV 재처리/NNC+하/XSV+은/EAN)))
+                                                              (NP 뒤/NNC))
+                                                      (VP 남/VV+은/EAN))))
+                                            (NP 폐기물/NNC+들/XSF+을/PCA))
+                                    (VV 보관/NNC+하/XSV+은/EAN))))
+                          (NP (NP 1/NNU
+                                  만/NNU
+                                  6/NNU
+                                  천/NNU+개/NNX+의/PAN)
+                              (NP 컨테이너/NNC+이/PCA)))
+                  (VP (VP (S-COMP *T*-5)
+                          쌓이/VV+어/ECS)
+                      있/VX+다/EFN+고/PAD)))
+       전하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>노르망디 해안 라아그에 위치한 코제마 재처리 공장</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>다른 국가들이 이 공장으로 보낸 연료봉들을 재처리한 뒤 남은 폐기물들을 보관한 1 만 6 천개의 컨테이너</term>
+	    </Arg>
+	    <Rel>
+	      <term>쌓여</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

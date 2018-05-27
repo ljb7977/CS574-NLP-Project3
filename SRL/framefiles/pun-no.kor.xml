@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>분노</lemma>
+    <comment>Frames file for '분노' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>분노.01</id>
+      <edef>get angry</edef>
+      <roleset>
+	<role argnum="1" argrole="entity getting angry"/>
+	<role argnum="2" argrole="angry at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>분노하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 보고서는 은행들의 독점적 영업행태보다는 그 원인과 경쟁촉진 가능부분에 초점을 맞추고 있으며 전자상거래가 획기적으로 발전하고 있는 상황에서 수표결제에 3 일이 걸린다는 사실에 고객들은 분노하고 있다는 것을 강조하고 있는 것으로 전해졌다.</text>
+	  <parse>
+(S (S (NP-SBJ 이/DAN
+              보고서/NNC+은/PAU)
+      (VP (VP (NP-ADV (NP 은행/NNC+들/XSF+의/PAN)
+                      (NP 독점/NNC+적/XSF
+                          영업/NNC+행태/NNC+보다/PAD+은/PAU))
+              (VP (NP-COMP (NP 그/DAN
+                               원인/NNC+과/PCJ)
+                           (NP 경쟁/NNC+촉진/NNC
+                               가능/NNC+부분/NNC+에/PAD))
+                  (NP-OBJ 초점/NNC+을/PCA)
+                  맞추/VV+고/ECS))
+          있/VX+으며/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (NP-SBJ *pro*)
+                      (VP (VP (NP-OBJ (S (NP-COMP-2 (S (NP-ADV (S (NP-SBJ 전자/NNC+상거래/NNC+이/PCA)
+                                                                  (VP (VP (NP-ADV 획기적/NNC+으로/PAD)
+                                                                          (VP (VV 발전/NNC+하/XSV+고/ECS)))
+                                                                      있/VX+는/EAN))
+                                                               (NP 상황/NNC+에서/PAD))
+                                                       (S (NP-COMP-1 수표/NNC+결제/NNC+에/PAD)
+                                                          (S (NP-SBJ 3/NNU
+                                                                     일/NNX+이/PCA)
+                                                             (VP (NP-COMP *T*-1)
+                                                                 걸리/VV+는다는/EAN))))
+                                                    (NP 사실/NNC+에/PAD))
+                                         (S (NP-SBJ 고객/NNC+들/XSF+은/PAU)
+                                            (VP (VP (NP-COMP *T*-2)
+                                                    (VV 분노/NNC+하/XSV+고/ECS))
+                                                있/VX+다는/EAN)))
+                                      (NP 것/NNX+을/PCA))
+                              (VV 강조/NNC+하/XSV+고/ECS))
+                          있/VX+는/EAN))
+                   (NP 것/NNX+으로/PAD))
+          (VV 전하/VV+어지/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>전자상거래가 획기적으로 발전하고 있는 상황에서 수표결제에 3 일이 걸린다는 사실</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>고객들</term>
+	    </Arg>
+	    <Rel>
+	      <term>분노하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

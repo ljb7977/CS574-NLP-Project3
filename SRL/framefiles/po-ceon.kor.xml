@@ -1,0 +1,114 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보전</lemma>
+    <comment>Frames file for '보전' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>보전.01</id>
+      <edef>preserve</edef>
+      <roleset>
+	<role argnum="0" argrole="preserver"/>
+	<role argnum="1" argrole="thing preserved"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 그러나 중국군은 주권을 수호하고 영토을 보전할 의무, 결의, 능력을 갖고 있다고 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S-COMP (NP-SBJ 중국/NPR+군/NNC+은/PAU)
+                   (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                      (VP (VP (NP-OBJ 주권/NNC+을/PCA)
+                                              (VV 수호/NNC+하/XSV+고/ECS))
+                                          (VP (NP-OBJ 영토/NNC+을/PCA)
+                                              (VV 보전/NNC+하/XSV+을/EAN))))
+                                   (NP (NP 의무/NNC)
+                                       ,/SCM
+                                       (NP 결의/NNC)
+                                       ,/SCM
+                                       (NP 능력/NNC+을/PCA)))
+                           갖/VV+고/ECS)
+                       있/VX+다/EFN+고/PAD))
+           (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>영토</term>
+	    </Arg>
+	    <Rel>
+	      <term>보전할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>보전.02</id>
+      <edef>supplement</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing supplemented"/>
+	<role argnum="2" argrole="supplemented with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>고객들은 또 로이드 경영진들이 이런 점을 사전에 알고 있었으면서도 이를 속이고 잠재적 손실금을 보전하기 위해 전 세계 수천명의 신규 고객들을 유치하는 데 열을 올렸다고 주장했다.</text>
+	  <parse>
+(S (NP-SBJ 고객/NNC+들/XSF+은/PAU)
+   (VP (ADVP 또/ADV)
+       (VP (S-COMP (NP-SBJ 로이드/NPR
+                           경영진/NNC+들/XSF+이/PCA)
+                   (VP (VP (S (NP-SBJ *pro*)
+                              (VP (VP (NP-OBJ 이런/DAN
+                                              점/NNC+을/PCA)
+                                      (VP (NP-ADV 사전/NNC+에/PAD)
+                                          (VP 알/VV+고/ECS)))
+                                  있/VX+었/EPF+으면서/ECS+도/PAU))
+                           (VP (NP-OBJ 이/NPN+을/PCA)
+                               속이/VV+고/ECS))
+                       (VP (S (NP-SBJ *pro*)
+                              (VP (S-OBJ (NP-SBJ *pro*)
+                                         (VP (NP-OBJ (NP 잠재/NNC+적/XSF)
+                                                     (NP 손실금/NNC+을/PCA))
+                                             (VV 보전/NNC+하/XSV+기/ENM)))
+                                  위하/VV+어/ECS))
+                           (VP (NP-COMP (S (NP-SBJ *pro*)
+                                           (VP (NP-OBJ (NP 전/DAN
+							     세계/NNC
+							     수천/NNU+명/NNX+의/PAN)
+                                                       (NP 신규/NNC
+							       고객/NNC+들/XSF+을/PCA))
+                                               (VV 유치/NNC+하/XSV+는/EAN)))
+                                        (NP 데/NNX))
+                               (NP-OBJ 열/NNC+을/PCA)
+			       올리/VV+었/EPF+다/EFN+고/PAD))))
+           (VV 주장/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>잠재적 손실금</term>
+	    </Arg>
+	    <Rel>
+	      <term>보전하기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

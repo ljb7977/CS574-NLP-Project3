@@ -1,0 +1,34 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>도전</lemma>
+    <comment>Frames file for '도전' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>도전.01</id>
+      <edef>challenge</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>도전하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text></text>
+	  <parse>
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f></f>
+	      <term></term>
+	    </Arg>
+	    <Rel>
+	      <term></term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

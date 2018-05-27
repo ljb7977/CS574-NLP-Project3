@@ -1,0 +1,61 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>등판</lemma>
+    <comment>Frames file for '등판' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>등판.01</id>
+      <edef>go to the mound</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="baseball game"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>등판하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>선동열은 9 일 오후 1 시 일본 나고야돔에서 열리는 일본 프로야구 주니치 드래곤스와 요미우리 자이언츠와의 시범경기에 등판해 은퇴식을 치를 예정이다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP (S (NP-SBJ 선동열/NPR+은/PAU)
+              (VP (S (NP-SBJ *pro*)
+                     (VP (NP-COMP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (NP-ADV 9/NNU
+                                                    일/NNX
+                                                    오후/NNC
+                                                    1/NNU
+                                                    시/NNX)
+                                            (NP-ADV 일본/NPR
+                                                    나고야/NPR+돔/NNC+에서/PAD)
+                                            (VP 열리/VV+는/EAN))))
+                                  (NP (NP (NP 일본/NPR
+                                              프로야구/NNC
+                                              주니치/NPR
+                                              드래곤스/NPR+과/PCJ)
+                                          (NP 요미우리/NPR
+                                              자이언츠/NPR+과/PAD+의/PAN))
+                                      (NP 시범/NNC+경기/NNC+에/PAD)))
+                         (VV 등판/NNC+하/XSV+어/ECS)))
+                  (VP (NP-OBJ 은퇴/NNC+식/XSF+을/PCA)
+                      치르/VV+을/EAN)))
+           (NP 예정/NNC+이/CO+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>9 일 오후 1 시 일본 나고야돔에서 열리는 일본 프로야구 주니치 드래곤스와 요미우리 자이언츠와의 시범경기</term>
+	    </Arg>
+	    <Rel>
+	      <term>등판해</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

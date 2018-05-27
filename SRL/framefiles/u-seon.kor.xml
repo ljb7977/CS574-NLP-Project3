@@ -1,0 +1,147 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>우선</lemma>
+    <comment>Frames file for '우선' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>우선.01</id>
+      <edef>have priority</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing having priority"/>
+	<role argnum="2" argrole="prior to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>우선하다.01</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>루이 미셸 외무장관은 벨기에에서 인권 유린 혐의로 피소된 라프산자니 전 대통령에 대한 법원의 조사 개시 판결과 관련, "이란과의 우호 관계가 계속되기를 바라나 외교가 법보다 우선할 수 없다"고 말한 것으로 벨기에 일간 라리브르 벨지크가 6 일 보도했다.</text>
+	  <parse>
+(S (NP-COMP-3 (S (NP-SBJ (NP 루이/NPR
+                             미셸/NPR)
+                         (NP 외무/NNC+장관/NNC+은/PAU))
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (NP-COMP (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (VP (NP-COMP (S (WHNP-1 *op*)
+                                                           (S (NP-SBJ *T*-1)
+                                                              (VP (NP-ADV 벨기에/NPR+에서/PAD)
+                                                                  (VP (NP-COMP 인권/NNC
+                                                                               유린/NNC
+                                                                               혐의/NNC+으로/PAD)
+                                                                      (VV 피소/NNC+되/XSV+은/EAN)))))
+                                                        (NP (NP 라프산자니/NPR)
+                                                            (NP 전/DAN
+                                                                대통령/NNC+에/PAD)))
+                                               대하/VV+은/EAN)))
+                                     (NP (NP 법원/NNC+의/PAN)
+                                         (NP 조사/NNC
+                                             개시/NNC
+                                             판결/NNC+과/PAD)))
+                            (VV 관련/NNC)))
+                     ,/SCM
+                     (VP (S-COMP "/SLQ
+                                 (S (NP-SBJ *pro*)
+                                    (VP (S-OBJ (NP-SBJ (NP 이란/NPR+과/PAD+의/PAN)
+                                                       (NP 우호/NNC
+                                                           관계/NNC+이/PCA))
+                                               (VP (VV 계속/NNC+되/XSV+기/ENM+을/PCA)))
+                                        바라/VV+으나/ECS))
+                                 (S (NP-SBJ 외교/NNC+이/PCA)
+                                    (VP (VP (NP-COMP 법/NNC+보다/PAD)
+                                            (VV 우선/NNC+하/XSV+을/EAN))
+                                        (VX 수/NNX
+                                            없/VJ+다/EFN)))
+                                 "/SRQ
+                                 고/PAD)
+                         말하/VV+은/EAN)))
+              (NP 것/NNX+으로/PAD))
+   (S (NP-SBJ (NP 벨기에/NPR
+                  일간/NNC)
+              (NP 라리브르/NPR
+                  벨지크/NPR+이/PCA))
+      (VP (NP-ADV 6/NNU
+                  일/NNX)
+          (VP (NP-COMP *T*-3)
+              (VV 보도/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>외교</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>보다</f>
+	      <term>법</term>
+	    </Arg>
+	    <Rel>
+	      <term>우선할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<!-- one of (mapping comment) -->
+	<mapping>
+	  <rel>우선하다.02</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>프랑스의 핵폐기물 관리가 조직적으로 이루어지지 못하고 있으며 국영 핵발전소 경영자들은 안전보다는 이익을 우선하고 있는 것으로 지적됐다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (S (NP-SBJ (NP 프랑스/NPR+의/PAN)
+                              (NP 핵/NNC+폐기물/NNC
+                                  관리/NNC+이/PCA))
+                      (VP (VP (VP (NP-ADV 조직/NNC+적/XSF+으로/PAD)
+                                  (VP (VV 이루/VV+어지/XSV+지/ECS)))
+                              못하/VX+고/ECS)
+                          있/VX+으며/ECS))
+                   (S (NP-SBJ 국영/NNC
+                              핵발전소/NNC
+                              경영자/NNC+들/XSF+은/PAU)
+                      (VP (VP (NP-COMP 안전/NNC+보다/PAD+은/PAU)
+                              (NP-OBJ 이익/NNC+을/PCA)
+                              (VV 우선/NNC+하/XSV+고/ECS))
+                          있/VX+는/EAN)))
+                (NP 것/NNX+으로/PAD))
+       (VV 지적/NNC+되/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>국영 핵발전소 경영자들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>보다는</f>
+	      <term>안전</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이익</term>
+	    </Arg>
+	    <Rel>
+	      <term>우선하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

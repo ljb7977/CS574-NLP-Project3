@@ -1,0 +1,84 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>양립</lemma>
+    <comment>Frames file for '양립' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>양립.01</id>
+      <edef>coexist</edef>
+      <roleset>
+	<role argnum="0" argrole="thing making coexist"/>
+	<role argnum="1" argrole="thing coexisting"/>
+	<role argnum="2" argrole="coexist with"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>양립시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="np-comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>또 2008 년에 유럽에서 도입하는 새로운 연비 기준을 달성하기 위해 양사의 기술을 활용, 저연비와 저가격을 양립시킬 수 있도록 노력할 것으로 신문은 전했다.</text>
+	  <parse>
+(S (NP-COMP-2 (S (NP-SBJ *pro*)
+                 (VP (S (NP-SBJ *pro*)
+                        (VP (S-OBJ (NP-SBJ *pro*)
+                                   (VP (ADVP 또/ADV)
+                                       (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                      (S (S (NP-ADV 2008/NNU
+                                                                    년/NNX+에/PAD)
+                                                            (S (NP-SBJ 유럽/NPR+에서/PCA)
+                                                               (VP (NP-OBJ *T*-1)
+                                                                   (VV 도입/NNC+하/XSV+는/EAN))))
+                                                         (S (NP-SBJ *T*-1)
+                                                            (ADJP 새롭/VJ+은/EAN))))
+                                                   (NP 연비/NNC
+                                                       기준/NNC+을/PCA))
+                                           (VV 달성/NNC+하/XSV+기/ENM))))
+                            위하/VV+어/ECS))
+                     (VP (S-COMP (NP-SBJ *pro*)
+                                 (VP (VP (S (NP-SBJ *pro*)
+                                            (VP (NP-OBJ (NP 양사/NNC+의/PAN)
+                                                        (NP 기술/NNC+을/PCA))
+                                                (VV 활용/NNC)))
+                                         ,/SCM
+                                         (VP (NP-OBJ (NP 저/XPF+연비/NNC+과/PCJ)
+                                                     (NP 저/XPF+가격/NNC+을/PCA))
+                                             (VV 양립/NNC+시키/XSV+을/EAN)))
+                                     (VX 수/NNX
+                                         있/VJ+도록/ECS)))
+                         (VV 노력/NNC+하/XSV+을/EAN))))
+              (NP 것/NNX+으로/PAD))
+   (S (NP-SBJ 신문/NNC+은/PAU)
+      (VP (NP-COMP *T*-2)
+          전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>또 2008 년에 유럽에서 도입하는 새로운 연비 기준을 달성하기 위해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>양사의 기술을 활용</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>저연비와 저가격</term>
+	    </Arg>
+	    <Rel>
+	      <term>양립시킬</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있도록</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>손실</lemma>
+    <comment>Frames file for '손실' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>손실.01</id>
+      <edef>lose</edef>
+      <roleset>
+	<role argnum="0" argrole="entity losing something"/>
+	<role argnum="1" argrole="thing lost"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>손실되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그런데 문산 공격 때 적의 포병 사격에 하전사 네 명이 손실됐습니다.</text>
+	  <parse>
+(S (ADCP 그런데/ADC)
+   (NP-ADV 문산/NPR
+           공격/NNC
+           때/NNC)
+   (NP-ADV (NP 적/NNC+의/PAN)
+           (NP 포병/NNC
+               사격/NNC+에/PAD))
+   (S (NP-SBJ 하전사/NNC
+              네/NNU
+              명/NNX+이/PCA)
+      (VP (VV 손실/NNC+되/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그런데</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>문산 공격 때</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>적의 포병 사격에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>하전사 네 명</term>
+	    </Arg>
+	    <Rel>
+	      <term>손실됐습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,63 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>차지</lemma>
+    <comment>Frames file for '차지' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>차지.01</id>
+      <edef>occupy</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing occupied"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>차지하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그렇지만 우리가 이동해 나가면 1 대대가 우리대대 진지를 차지할 거라고 들었습니다.</text>
+	  <parse>
+(S (ADCP 그렇지만/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (S (NP-SBJ 우리/NPN+이/PCA)
+		     (VP (S (NP-SBJ *pro*)
+			    (VP (VV 이동/NNC+하/XSV+어/ECS)))
+                         (VP 나가/VV+으면/ECS)))
+                  (S (NP-SBJ 1/NNU
+                             대대/NNC+이/PCA)
+                     (VP (VP (NP-OBJ 우리/NPN
+                                     대대/NNC
+                                     진지/NNC+을/PCA)
+                             (VV 차지/NNC+하/XSV+을/EAN))
+                         (VX 것/NNX+이/CO+으라/EFN+고/PAD))))
+          듣/VV+었/EPF+습니다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>우리가 이동해 나가면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>1 대대</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>우리대대 진지</term>
+	    </Arg>
+	    <Rel>
+	      <term>차지할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,45 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>보수</lemma>
+    <comment>Frames file for '보수' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>보수.01</id>
+      <edef>repair</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity repaired"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>보수하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>도로를 보수하는 데 어떤 장비를 사용하는가?</text>
+	  <parse>
+(S (NP-COMP-1 (S (NP-SBJ *pro*)
+		 (VP (NP-OBJ 도로/NNC+을/PCA) 
+		     (VV 보수/NNC+하/XSV+는/EAN))) 
+	      (NP 데/NNX)) 
+   (S (NP-SBJ *pro*) 
+      (VP (NP-COMP *T*-1)
+	  (NP-OBJ 어떤/DAN 장비/NNC+을/PCA) 
+	  (VV 사용/NNC+하/XSV+는가/EFN)))
+   ?/SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>도로</term>
+	    </Arg>
+	    <Rel>
+	      <term>보수하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

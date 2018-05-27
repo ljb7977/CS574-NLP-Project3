@@ -1,0 +1,51 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>돌진</lemma>
+    <comment>Frames file for '돌진' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>돌진.01</id>
+      <edef>dash</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="dashed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>돌진하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>우리 소대 성원들은 과감하게 목표에 돌진했습니다.</text>
+	  <parse>
+(S (NP-SBJ 우리/NPN
+           소대/NNC
+           성원/NNC+들/XSF+은/PAU)
+   (VP (ADVP (ADV 과감하/VJ+게/ECS))
+       (VP (NP-COMP 목표/NNC+에/PAD)
+           (VV 돌진/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>우리 소대 성원들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>과감하게</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>목표</term>
+	    </Arg>
+	    <Rel>
+	      <term>돌진했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

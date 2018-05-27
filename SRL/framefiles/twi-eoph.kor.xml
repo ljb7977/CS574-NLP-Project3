@@ -1,0 +1,75 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뒤엎</lemma>
+    <comment>Frames file for '뒤엎' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뒤엎.01</id>
+      <edef>overturn</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing overturned"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뒤엎다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>김 대통령은 북한에 대해 인내심과 일관성, 성의를 갖고 "북한이 개혁, 개방하는 것이 자신들의 이익이 되며 한국이 북한 체제를 뒤엎는 것이 아니라는 확신"을 주도록 노력할 것이라고 다짐했다.</text>
+	  <parse>
+(S (NP-SBJ 김/NPR
+           대통령/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ *pro*)
+               (VP (VP (VP (S (NP-SBJ *pro*)
+			      (VP (NP-COMP 북한/NPR+에/PAD)
+				  대하/VV+어/ECS))
+			   (VP (NP-OBJ (NP 인내심/NNC+과/PCJ)
+				       (NP 일관성/NNC)
+				       ,/SCM
+				       (NP 성의/NNC+을/PCA))
+			       갖/VV+고/ECS))
+                       (VP (S-COMP (NP-SBJ *pro*)
+                                   (VP (NP-OBJ "/SLQ
+                                               (S (S (NP-SBJ (S (NP-SBJ 북한/NPR+이/PCA)
+                                                                (VP (VV (VV 개혁/NNC)
+                                                                        ,/SCM
+                                                                        (VV 개방/NNC+하/XSV+는/EAN))))
+                                                             (NP 것/NNX+이/PCA))
+                                                     (VP (NP-COMP (NP 자신/NNC+들/XSF+의/PAN)
+                                                                  (NP 이익/NNC+이/PCA))
+                                                         되/VV+으며/ECS))
+                                                  (S (NP-SBJ (S (NP-SBJ 한국/NPR+이/PCA)
+                                                                (VP (NP-OBJ 북한/NPR
+										체제/NNC+을/PCA)
+                                                                    뒤엎/VV+는/EAN))
+                                                             (NP 것/NNX+이/PCA))
+                                                     (ADJP 아니/VJ+라는/EAN)))
+                                               (NP 확신/NNC)
+                                               "/SRQ
+                                               을/PCA)
+                                       주/VV+도록/ECS))
+                           (VV 노력/NNC+하/XSV+을/EAN)))
+                   (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+       (VV 다짐/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>한국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>북한 체제</term>
+	    </Arg>
+	    <Rel>
+	      <term>뒤엎는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

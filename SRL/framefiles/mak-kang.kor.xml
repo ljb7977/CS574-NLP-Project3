@@ -1,0 +1,64 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>막강</lemma>
+    <comment>Frames file for '막강' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>막강.01</id>
+      <edef>mighty</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being mighty"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>막강하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>루트는 한국의 막강한 재벌이 여전히 엄청난 부채를 외면하고 있고 극소수가 너무 많은 부를 소유하고 있으며 부패가 정치, 사법체제를 손상시키고 있는 것을 이유로 들었다.</text>
+	  <parse>
+(S (NP-SBJ 루트/NPR+은/PAU)
+   (VP (NP-OBJ (S (S (NP-SBJ (NP 한국/NPR+의/PAN)
+                             (NP (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (ADJP (VJ 막강/NNC+하/XSJ+은/EAN))))
+                                 (NP 재벌/NNC+이/PCA)))
+                     (VP (VP (ADVP 여전히/ADV)
+                             (VP (NP-OBJ (S (WHNP-2 *op*)
+                                            (S (NP-SBJ *T*-2)
+                                               (ADJP 엄청나/VJ+은/EAN)))
+                                         (NP 부채/NNC+을/PCA))
+                                 (VV 외면/NNC+하/XSV+고/ECS)))
+                         있/VX+고/ECS))
+                  (S (NP-SBJ 극소수/NNC+이/PCA)
+                     (VP (VP (NP-OBJ (S (WHNP-3 *op*)
+                                        (S (NP-SBJ *T*-3)
+                                           (ADJP (ADVP 너무/ADV)
+                                                 (ADJP 많/VJ+은/EAN))))
+                                     (NP 부/NNC+을/PCA))
+                             (VV 소유/NNC+하/XSV+고/ECS))
+                         있/VX+으며/ECS))
+                  (S (NP-SBJ 부패/NNC+이/PCA)
+                     (VP (VP (NP-OBJ 정치/NNC
+                                     ,/SCM
+                                     사법/NNC+체제/NNC+을/PCA)
+                             (VV 손상/NNC+시키/XSV+고/ECS))
+                         있/VX+는/EAN)))
+               (NP 것/NNX+을/PCA))
+       (NP-COMP 이유/NNC+으로/PAD)
+       들/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=재벌</term>
+	    </Arg>
+	    <Rel>
+	      <term>막강한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

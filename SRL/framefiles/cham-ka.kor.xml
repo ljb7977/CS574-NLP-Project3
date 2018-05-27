@@ -1,0 +1,57 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>참가</lemma>
+    <comment>Frames file for '참가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>참가.01</id>
+      <edef>participate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="participated in"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>참가하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 포대는 제병 연합 부대의 일부로 "통일 작전"에 참가했습니다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+	   포대/NNC+은/PAU)
+   (VP (NP-ADV (NP 제병/NNC
+		   연합/NNC
+		   부대/NNC+의/PCA)
+	       (NP 일부/NNC+으로/PAD))
+       (VP (NP-COMP "/SLQ
+		    (NP 통일/NNC
+			작전/NNC)
+		    "/SRQ
+		    에/PAD)
+	   (VV 참가/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>저희 포대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRD</f>
+	      <term>제병 연합 부대의 일부로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>"통일 작전"</term>
+	    </Arg>
+	    <Rel>
+	      <term>참가했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

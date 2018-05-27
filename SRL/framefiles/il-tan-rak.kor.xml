@@ -1,0 +1,62 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>일단락</lemma>
+    <comment>Frames file for '일단락' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>일단락.01</id>
+      <edef>settle temporarily</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing settled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>일단락되다</rel>
+	  <mapitem src="s-comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>따라서 온갖 흑색선전을 동원한 양측의 깎아내리기 경쟁은 일단락됐고 양측 서로의 필요에 의해 내주까지는 소강상태가 이어질 전망이다.</text>
+	  <parse>
+(S (ADCP 따라서/ADC)
+   (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-OBJ 온갖/DAN
+                                흑색/NNC+선전/NNC+을/PCA)
+                        (VV 동원/NNC+하/XSV+은/EAN))))
+              (NP (NP 양측/NNC+의/PAN)
+                  (NP 깎아내리기/NNC
+                      경쟁/NNC+은/PAU)))
+      (VP (VV 일단락/NNC+되/XSV+었/EPF+고/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (S (NP-SBJ *pro*)
+                    (VP (NP-COMP (NP 양측/NNC
+                                     서로/NNC+의/PAN)
+                                 (NP 필요/NNC+에/PAD))
+                        의하/VV+어/ECS))
+                 (S (NP-ADV 내주/NNC+까지/PAU+은/PAU)
+                    (S (NP-SBJ 소강/NNC+상태/NNC+이/PCA)
+                       (VP (VV 잇/VV+어지/XSV+을/EAN)))))
+              (NP 전망/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>따라서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>온갖 흑색선전을 동원한 양측의 깎아내리기 경쟁</term>
+	    </Arg>
+	    <Rel>
+	      <term>일단락되었고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

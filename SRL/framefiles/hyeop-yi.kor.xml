@@ -1,0 +1,232 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>협의</lemma>
+    <comment>Frames file for '협의' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>협의.01</id>
+      <edef>discuss</edef>
+      <roleset>
+	<role argnum="0" argrole="discussant"/>
+	<role argnum="1" argrole="topic"/>
+	<role argnum="2" argrole="conversation partner"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>협의하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>보스워스 주한 미국대사는 7 일 경북 칠곡군과 구미시를 차례로 방문해 지역현황을 청취하고 관계자들과 투자방안을 협의했다.</text>
+	  <parse>
+(S (NP-SBJ 보스워스/NPR
+           주한/NNC
+           미국/NPR+대사/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-ADV 7/NNU
+                      일/NNX)
+              (VP (NP-OBJ (NP 경북/NPR)
+                          (NP (NP 칠곡군/NPR+과/PCJ)
+                              (NP 구미시/NPR+을/PCA)))
+                  (VP (NP-ADV 차례/NNC+으로/PAD)
+                      (VP (VV 방문/NNC+하/XSV+어/ECS))))))
+       (VP (VP (NP-OBJ 지역/NNC+현황/NNC+을/PCA)
+               (VV 청취/NNC+하/XSV+고/ECS))
+           (VP (NP-COMP 관계자/NNC+들/XSF+과/PAD)
+               (NP-OBJ 투자/NNC+방안/NNC+을/PCA)
+               (VV 협의/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>보스워스 주한 미국대사</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>7 일 경북 칠곡군과 구미시를 차례로 방문해</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>관계자들</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>투자방안</term>
+	    </Arg>
+	    <Rel>
+	      <term>협의했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>협의하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 통신은 호세 빈센트 랑헬 베네수엘라 외무장관의 말을 인용, 차베스 대통령이 이란을 비롯한 이들 4 개 석유수출국기구(OPEC) 회원국과 향후 석유에너지 전략에 대해 협의할 것이라고 전했다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           통신/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-OBJ (NP 호세/NPR
+                          빈센트/NPR
+                          랑헬/NPR
+                          베네수엘라/NPR
+                          외무/NNC+장관/NNC+의/PAN)
+                      (NP 말/NNC+을/PCA))
+              (VV 인용/NNC)))
+       ,/SCM
+       (VP (S-COMP (NP-SBJ 차베스/NPR
+                           대통령/NNC+이/PCA)
+                   (VP (VP (NP-COMP (S (WHNP-1 *op*)
+				       (S (NP-SBJ *T*-1)
+					  (VP (NP-OBJ 이란/NPR+을/PCA)
+					      비롯하/VV+은/EAN)))
+                                    (NP 이/NPN+들/XSF
+                                        4/NNU
+                                        개/NNX
+                                        석유/NNC+수출국/NNC+기구/NNC
+                                        (PRN -LRB-/SLQ
+                                             (NP OPEC/NFW)
+                                             -RRB-/SRQ)
+                                        회원국/NNC+과/PAD))
+                           (S-COMP (NP-SBJ *pro*)
+                                   (VP (NP-COMP 향후/NNC
+                                                석유/NNC+에너지/NNC
+                                                전략/NNC+에/PAD)
+                                       대하/VV+어/ECS))
+                           (VV 협의/NNC+하/XSV+을/EAN))
+                       (VX 것/NNX+이/CO+라/EFN+고/PAD)))
+           전하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>차베스 대통령</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>과</f>
+	      <term>이란을 비롯한 이들 4 개 석유수출국기구(OPEC) 회원국</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에 대해</f>
+	      <term>향후 석유에너지 전략</term>
+	    </Arg>
+	    <Rel>
+	      <term>협의할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>것이라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>협의되다</rel>
+	  <mapitem src="comp" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>WFP는 일본이 제공할 자금으로 쌀의 구입과 수송을 담당하며, 구체적인 지원 절차는 일본 정부와 WFP간에 추후 협의될 예정이다.</text>
+	  <parse>
+(S (S (NP-SBJ WFP/NFW+은/PAU)
+      (VP (NP-ADV (S (WHNP-1 *op*)
+                     (S (NP-SBJ 일본/NPR+이/PCA)
+                        (VP (NP-OBJ *T*-1)
+                            (VV 제공/NNC+하/XSV+을/EAN))))
+                  (NP 자금/NNC+으로/PAD))
+          (VP (NP-OBJ (NP 쌀/NNC+의/PAN)
+                      (NP (NP 구입/NNC+과/PCJ)
+                          (NP 수송/NNC+을/PCA)))
+              (VV 담당/NNC+하/XSV+으며/ECS))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP (S (NP-SBJ (S (WHNP-2 *op*)
+			    (S (NP-SBJ *T*-2)
+			       (VP (NP 구체/NNC+적/XSF+이/CO+은/EAN))))
+			 (NP 지원/NNC
+				 절차/NNC+은/PAU))
+		 (VP (NP-COMP (NP 일본/NPR
+				      정부/NNC+과/PCJ)
+			      (NP WFP/NFW+간/XSF+에/PAD))
+		     (VP (NP-ADV 추후/NNC)
+			 (VP (VV 협의/NNC+되/XSV+을/EAN)))))
+	      (NP 예정/NNC+이/CO+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>구체적인 지원 절차</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에</f>
+	      <term>일본 정부와 WFP간</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>추후</term>
+	    </Arg>
+	    <Rel>
+	      <term>협의될</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>백 외무상은 필리핀 방문에서는 국교정상화 문제가 협의될 것으로 보여 특히 주목되고 있으며, 우루과이와도 관계 정상화가 협의될 가능성이 있다고 통신은 덧붙였다.</text>
+	  <parse>
+(S (S-COMP-1 (S (NP-SBJ 백/NPR
+                        외무상/NNC+은/PAU)
+                (VP (VP (S (NP-SBJ *pro*)
+                           (VP (NP-COMP (S (NP-ADV 필리핀/NPR
+                                                   방문/NNC+에서/PAD+은/PAU)
+                                           (S (NP-SBJ 국교/NNC+정상화/NNC
+                                                      문제/NNC+이/PCA)
+                                              (VP (VV 협의/NNC+되/XSV+을/EAN))))
+                                        (NP 것/NNX+으로/PAD))
+                               보이/VV+어/ECS))
+                        (ADVP 특히/ADV)
+                        (VP (VV 주목/NNC+되/XSV+고/ECS)))
+                    있/VX+으며/ECS))
+             ,/SCM
+             (S (NP-SBJ (S (NP-COMP-2 우루과이/NPR+과/PAD+도/PAU)
+                           (S (NP-SBJ 관계/NNC
+                                      정상화/NNC+이/PCA)
+                              (VP (NP-COMP *T*-2)
+                                  (VV 협의/NNC+되/XSV+을/EAN))))
+                        (NP 가능성/NNC+이/PCA))
+                (ADJP 있/VJ+다/EFN+고/PAD)))
+   (S (NP-SBJ 통신/NNC+은/PAU)
+      (VP (S-COMP *T*-1)
+          덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>와도</f>
+	      <term>우루과이</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>관계 정상화</term>
+	    </Arg>
+	    <Rel>
+	      <term>협의될</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

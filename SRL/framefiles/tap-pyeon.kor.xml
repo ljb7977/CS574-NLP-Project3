@@ -1,0 +1,87 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>답변</lemma>
+    <comment>Frames file for '답변' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>답변.01</id>
+      <edef>answer</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="in response to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>답변하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>조스팽 총리는 특히 프랑스 르노자동차의 삼성자동차 인수문제를 거론, "70 퍼센트 지분을 인수하는 방식으로 한국에 진출하고 싶다"는 의사를 밝혔으며 이에 김 대통령은 "값을 충분히 내면 얼마든지 가능하다"고 답변했다.</text>
+	  <parse>
+(S (S (NP-SBJ 조스팽/NPR
+              총리/NNC+은/PAU)
+      (VP (S (NP-SBJ *pro*)
+             (VP (ADVP 특히/ADV)
+                 (VP (NP-OBJ (NP 프랑스/NPR
+                                 르노/NPR+자동차/NNC+의/PAN)
+                             (NP 삼성/NPR+자동차/NNC
+                                 인수/NNC+문제/NNC+을/PCA))
+                     (VV 거론/NNC))))
+          ,/SCM
+          (VP (NP-OBJ (S "/SLQ
+                         (NP-SBJ *pro*)
+                         (VP (VP (NP-ADV (S (NP-SBJ *pro*)
+                                            (VP (NP-OBJ 70/NNU
+                                                        퍼센트/NNX
+                                                        지분/NNC+을/PCA)
+                                                (VV 인수/NNC+하/XSV+는/EAN)))
+                                         (NP 방식/NNC+으로/PAD))
+                                 (VP (NP-COMP 한국/NPR+에/PAD)
+                                     (VV 진출/NNC+하/XSV+고/ECS)))
+                             싶/VX+다/EFN)
+                         "/SRQ
+                         은/EAN)
+                      (NP 의사/NNC+을/PCA))
+              밝히/VV+었/EPF+으며/ECS)))
+   (S (NP-COMP-1 이/NPN+에/PAD)
+      (S (NP-SBJ 김/NPR
+                 대통령/NNC+은/PAU)
+         (VP (NP-COMP *T*-1)
+             (S-COMP "/SLQ
+                     (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ 값/NNC+을/PCA)
+                            (VP (ADVP 충분히/ADV)
+                                (VP 내/VV+으면/ECS))))
+                     (S (NP-SBJ *pro*)
+                        (ADJP (ADVP 얼마든지/ADV)
+                              (ADJP (VJ 가능/NNC+하/XSJ+다/EFN))))
+                     "/SRQ
+                     이라고/PAD)
+             (VV 답변/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>이</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>김 대통령</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>"값을 충분히 내면 얼마든지 가능하다"</term>
+	    </Arg>
+	    <Rel>
+	      <term>답변했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

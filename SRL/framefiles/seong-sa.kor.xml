@@ -1,0 +1,124 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>성사</lemma>
+    <comment>Frames file for '성사' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>성사.01</id>
+      <edef>accomplish</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing accomplished"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>성사되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신문은 이같은 제휴가 성사되더라도 피아트의 파올로 프레스코 회장과 파올로 칸타렐라 사장의 입지가 위축되지 않을 것이라고 분석했다.</text>
+	  <parse>
+(S (NP-SBJ 신문/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ 이같은/DAN
+                          제휴/NNC+이/PCA)
+                  (VP (VV 성사/NNC+되/XSV+더라도/ECS)))
+               (S (NP-SBJ (NP 피아트/NPR+의/PAN)
+                          (NP (NP 파올로/NPR
+                                  프레스코/NPR
+                                  회장/NNC+과/PCJ)
+                              (NP 파올로/NPR
+                                  칸타렐라/NPR
+                                  사장/NNC+의/PAN))
+                          (NP 입지/NNC+이/PCA))
+                  (VP (VP (VP (VV 위축/NNC+되/XSV+지/ECS))
+                          않/VX+을/EAN)
+                      (VX 것/NNX+이/CO+라/EFN+고/PAD))))
+       (VV 분석/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>이같은 제휴</term>
+	    </Arg>
+	    <Rel>
+	      <term>성사되더라도</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>성사시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>지난 98 년 12 월 김대중 대통령의 베트남 방문을 성사시킨 데 이어 한국투자기업들의 노사문제를 해결해 냈고 국제통화기금(IMF) 관리체제로 어려운 상황에서 한국기업들이 베트남에 자리를 잡을 수 있도록 한 것 등은 거의 큰 공적 중 하나로 꼽힌다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (VP (ADVP (NP-COMP (S (NP-SBJ *pro*)
+                                (VP (NP-ADV 지난/DAN
+                                            98/NNU
+                                            년/NNX
+                                            12/NNU
+                                            월/NNX)
+                                    (VP (NP-OBJ (NP 김대중/NPR
+                                                    대통령/NNC+의/PAN)
+                                                (NP 베트남/NPR
+                                                    방문/NNC+을/PCA))
+                                        (VV 성사/NNC+시키/XSV+은/EAN))))
+                             (NP 데/NNX))
+                    이어/ADV)
+              (VP (NP-OBJ (NP 한국/NPR+투자/NNC+기업/NNC+들/XSF+의/PAN)
+                          (NP 노사/NNC+문제/NNC+을/PCA))
+                  (VV 해결/NNC+하/XSV+어/ECS)))
+          내/VX+었/EPF+고/ECS))
+   (S (NP-SBJ (NP (S (NP-SBJ *pro*)
+                     (VP (S-COMP (NP-ADV (S (WHNP-1 *op*)
+                                            (S (NP-SBJ *T*-1)
+                                               (ADJP (NP-ADV 국제/NNC+통화/NNC+기금/NNC
+                                                             (PRN -LRB-/SLQ
+                                                                  (NP IMF/NFW)
+                                                                  -RRB-/SRQ)
+                                                             관리/NNC+체제/NNC+으로/PAD)
+                                                     (ADJP 어렵/VJ+은/EAN))))
+                                         (NP 상황/NNC+에서/PAD))
+                                 (S (NP-SBJ 한국/NPR+기업/NNC+들/XSF+이/PCA)
+                                    (VP (VP (NP-COMP 베트남/NPR+에/PAD)
+                                            (NP-OBJ 자리/NNC+을/PCA)
+                                            잡/VV+을/EAN)
+                                        (VX 수/NNX
+                                            있/VJ+도록/ECS))))
+                         하/VV+은/EAN))
+                  (NP 것/NNX))
+              (NP 등/NNX+은/PAU))
+      (VP (ADVP 거의/ADV)
+          (VP (NP-COMP (NP (NP (S (WHNP-2 *op*)
+                                  (S (NP-SBJ *T*-2)
+                                     (ADJP 크/VJ+은/EAN)))
+                               (NP 공적/NNC))
+                           (NP 중/NNX))
+                       (NP 하나/NNU+으로/PAD))
+              꼽히/VV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 98 년 12 월</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>김대중 대통령의 베트남 방문</term>
+	    </Arg>
+	    <Rel>
+	      <term>성사시킨</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

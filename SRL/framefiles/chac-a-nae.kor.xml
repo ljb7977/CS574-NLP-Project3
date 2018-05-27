@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>찾아내</lemma>
+    <comment>Frames file for '찾아내' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>찾아내.01</id>
+      <edef>find out</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing found"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>찾아내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>신속히 이동하는 공격 상황에서 대대 후방부장은 어떻게 탄약을 요하는 탱크의 위치를 찾아내오?</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ *pro*)
+              (VP (ADVP 신속히/ADV)
+                  (VP (VV 이동/NNC+하/XSV+는/EAN))))
+           (NP 공격/NNC
+               상황/NNC+에서/PAD))
+   (S (NP-SBJ 대대/NNC
+              후방/NNC
+              부장/NNC+은/PAU)
+      (VP (ADVP 어떻게/ADV)
+          (VP (NP-OBJ (NP (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (NP-OBJ 탄약/NNC+을/PCA)
+                                    요하/VV+는/EAN)))
+                          (NP 탱크/NNC+의/PAN))
+                      (NP 위치/NNC+을/PCA))
+              찾아내/VV+으오/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>신속히 이동하는 공격 상황에서</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>대대 후방부장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>어떻게</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>탄약을 요하는 탱크의 위치</term>
+	    </Arg>
+	    <Rel>
+	      <term>찾아내오</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

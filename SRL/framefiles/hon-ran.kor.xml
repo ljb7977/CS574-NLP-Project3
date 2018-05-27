@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>혼란</lemma>
+    <comment>Frames file for '혼란' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>혼란.01</id>
+      <edef>confuse</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="entity confused"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>혼란시키다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>연막은 공격방향에 대해 적을 혼란시키기 위해 또는 전술상의 철수를 은폐하기 위해 사용 하기도 합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-OBJ 연막/NNC+은/PAU)
+           (S-COMP (S (NP-SBJ *pro*)
+                      (VP (S-OBJ (NP-SBJ *pro*)
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (NP-COMP 공격/NNC
+                                                     방향/NNC+에/PAD)
+                                            대하/VV+어/ECS))
+                                     (VP (NP-OBJ 적/NNC+을/PCA)
+                                         (VV 혼란/NNC+시키/XSV+기/ENM))))
+                          위하/VV+어/ECS))
+                   (ADCP 또는/ADC)
+                   (S (NP-SBJ *pro*)
+                      (VP (S-OBJ (NP-SBJ *pro*)
+                                 (VP (NP-OBJ (NP 전술/NNC+상/XSF+의/PAN)
+                                             (NP 철수/NNC+을/PCA))
+                                     (VV 은폐/NNC+하/XSV+기/ENM)))
+                          위하/VV+어/ECS)))
+           (VP (NP-OBJ-LV 사용/NNC)
+               (LV 하/VV+기도/ECS)))
+       하/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>공격방향에 대해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>적</term>
+	    </Arg>
+	    <Rel>
+	      <term>혼란시키기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>혼란해지다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>일단 적이 혼란해지고 철수하기 시작하면 우리는 적이 완전히 섬멸될 때까지 추격합니다.</text>
+	  <parse>
+(S (S (ADVP 일단/ADV)
+      (S (S (NP-SBJ 적/NNC+이/PCA)
+            (VP (VV (VJ 혼란/NNC+하/XSJ+어지/XSV+고/ECS))))
+         (S (NP-SBJ *pro*)
+            (VP (S-OBJ (NP-SBJ *pro*)
+                       (VP (VV 철수/NNC+하/XSV+기/ENM)))
+                (VV 시작/NNC+하/XSV+으면/ECS)))))
+   (S (NP-SBJ 우리/NPN+은/PAU)
+      (VP (NP-ADV (S (WHNP *op*)
+                     (S (NP-SBJ 적/NNC+이/PCA)
+                        (VP (ADVP 완전히/ADV)
+                            (VP (VV 섬멸/NNC+되/XSV+을/EAN)))))
+                  (NP 때/NNC+까지/PAU))
+          (VP (NP-OBJ *pro*)
+              (VV 추격/NNC+하/XSV+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>일단</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>적</term>
+	    </Arg>
+	    <Rel>
+	      <term>혼란해지고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

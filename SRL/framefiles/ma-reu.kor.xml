@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>마르</lemma>
+    <comment>Frames file for '마르' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>마르.01</id>
+      <edef>dry</edef>
+      <roleset>
+	<role argnum="1" argrole="thing dried"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>마르다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>겨울엔 대부분 물이 마르거나 얼지요.</text>
+	  <parse>
+(S (NP-ADV 겨울/NNC+에/PAD+ㄴ/PAU)
+   (ADVP 대부분/ADV)
+   (S (NP-SBJ 물/NNC+이/PCA)
+      (VP  (VP 마르/VV+거나/ECS)
+	   (VP 얼/VV+지요/EFN)))
+   ./SFN  )
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>겨울엔</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>대부분</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>물</term>
+	    </Arg>
+	    <Rel>
+	      <term>마르거나</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

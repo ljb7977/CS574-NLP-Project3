@@ -1,0 +1,91 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>감염</lemma>
+    <comment>Frames file for '감염' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>감염.01</id>
+      <edef>infect</edef>
+      <roleset>
+	<role argnum="0" argrole="causer of infection"/>
+	<role argnum="1" argrole="thing infected"/>
+	<role argnum="2" argrole="germ, disease"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>감염되다</rel>
+	  <mapitem src="np-adv" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>CDC 병원감염프로그램 담당자인 윌리엄 자르비스 박사도 미국에서 매년 200 만명이 의료기관에서 감염돼 약 8 만 8 천명이 숨지고 있다면서 특히 병원신세를 많이 지는 노령인구의 병원내 감염에 대한 특별한 조치가 마련돼야 할 것으로 지적했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP CDC/NFW
+                         병원/NNC+감염/NNC+프로그램/NNC
+                         담당자/NNC+이/CO+은/EAN))))
+           (NP 윌리엄/NPR
+               자르비스/NPR
+               박사/NNC+도/PAU))
+   (VP (S (NP-ADV 미국/NPR+에서/PAD)
+          (NP-ADV 매년/NNC)
+          (S (S (NP-SBJ 200/NNU
+                        만/NNU+명/NNX+이/PCA)
+                (VP (NP-ADV 의료/NNC+기관/NNC+에서/PAD)
+                    (VP (VV 감염/NNC+되/XSV+어/ECS))))
+             (S (NP-SBJ 약/DAN
+                        8/NNU
+                        만/NNU
+                        8/NNU
+                        천/NNU+명/NNX+이/PCA)
+                (VP (VP 숨지/VV+고/ECS)
+                    있/VX+다면서/ECS))))
+       (ADVP 특히/ADV)
+       (VP (NP-COMP (S (NP-SBJ (S (WHNP-2 *op*)
+                                  (S (S (NP-SBJ *T*-2)
+                                        (VP (NP-COMP (NP (S (WHNP-3 *op*)
+                                                            (S (NP-SBJ *T*-3)
+                                                               (VP (NP-OBJ 병원/NNC+신세/NNC+을/PCA)
+                                                                   (VP (ADVP 많이/ADV)
+                                                                       (VP 지/VV+는/EAN)))))
+                                                         (NP 노령/NNC+인구/NNC+의/PAN))
+                                                     (NP (NP 병원/NNC+내/NNX)
+                                                         (NP 감염/NNC+에/PAD)))
+                                            대하/VV+은/EAN))
+                                     (S (NP-SBJ *T*-2)
+                                        (ADJP (VJ 특별/NNC+하/XSJ+은/EAN)))))
+                               (NP 조치/NNC+이/PCA))
+                       (VP (VP (VV 마련/NNC+되/XSV+어야/ECS))
+                           하/VX+을/EAN))
+                    (NP 것/NNX+으로/PAD))
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>미국에서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>매년</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>200 만명</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>에서</f>
+	      <term>의료기관</term>
+	    </Arg>
+	    <Rel>
+	      <term>감염돼</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,65 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>예기</lemma>
+    <comment>Frames file for '예기' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>예기.01</id>
+      <edef>anticipate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing anticipated"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>예기하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그러나 예기치 못한 레이저 공격으로부터 첩보위성의 감지기를 보호하려면 열고 닫는 속도가 훨씬 더 빠르도록 기능이 개선돼야만 한다.</text>
+	  <parse>
+(S (ADCP 그러나/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-COMP (S (WHNP-1 *op*)
+		      (S (NP-SBJ *pro*)
+			 (VP (VP (NP-OBJ *T*-1)
+				 (VV 예기/NNC+하/XSV+지/ECS))
+			     못하/VX+은/EAN)))
+		   (NP 레이저/NNC
+			     공격/NNC+으로부터/PAD))
+          (NP-OBJ (NP 첩보/NNC+위성/NNC+의/PAN)
+		  (NP 감지기/NNC+을/PCA))
+	  (VV 보호/NNC+하/XSV+으려면/ECS)))
+   (S (NP-SBJ (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ *pro*)
+                     (VV 열/VV+고/ECS
+                         닫/VV+는/EAN)))
+              (NP 속도/NNC+이/PCA))
+      (ADJP (ADVP (ADVP 훨씬/ADV)
+                  (ADVP 더/ADV))
+            (ADJP 빠르/VJ+도록/ECS)))
+   (S (NP-SBJ 기능/NNC+이/PCA)
+      (VP (VP (VV 개선/NNC+되/XSV+어야/ECS+만/PAU))
+          하/VX+는다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=레이저 공격</term>
+	    </Arg>
+	    <Rel>
+	      <term>예기치</term>
+	    </Rel>
+	    <Aux>
+	      <f>지</f>
+	      <term>못한</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

@@ -1,0 +1,67 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>유치</lemma>
+    <comment>Frames file for '유치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>유치.01</id>
+      <edef>induce</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing induced"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>유치하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>때문에 수행진 일각에서는 이번 순방외교에서 대규모 투자를 유치해 낸 것은 이같은 김 대통령의 `상품성' 덕분이라는 얘기도 나왔다.</text>
+	  <parse>
+(S (NP-ADV 때문/NNX+에/PAD)
+   (S (NP-COMP-1 수행진/NNC
+                 일각/NNC+에서/PAD+은/PAU)
+      (S (NP-SBJ (S (NP-SBJ (S (NP-SBJ *pro*)
+                               (VP (VP (NP-ADV 이번/NNC
+                                               순방/NNC+외교/NNC+에서/PAD)
+                                       (VP (NP-OBJ 대규모/NNC
+                                                   투자/NNC+을/PCA)
+                                           (VV 유치/NNC+하/XSV+어/ECS)))
+                                   내/VX+은/EAN))
+                            (NP 것/NNX+은/PAU))
+                    (VP (NP (NP (DANP 이같은/DAN)
+                                (NP (NP 김/NPR
+                                        대통령/NNC+의/PAN)
+                                    (NP `/SLQ
+                                        상품/NNC+성/XSF
+                                        '/SRQ)))
+                            (NP 덕분/NNC+이/CO+라는/EAN))))
+                 (NP 얘기/NNC+도/PAU))
+         (VP (NP-COMP *T*-1)
+             나오/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이번 순방외교에서</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>대규모 투자</term>
+	    </Arg>
+	    <Rel>
+	      <term>유치해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>낸</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

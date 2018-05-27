@@ -1,0 +1,80 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>배열</lemma>
+    <comment>Frames file for '배열' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>배열.01</id>
+      <edef>arrange</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing arranged"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>배열하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>또한 프랑크푸르트 상공회의소 방문시 연설에 앞서 독일 경제인들과의 간단한 미팅에서는 김 대통령과 현지상의 관계자들의 좌석을 차등없이 배열하는 바람에 의전상 문제가 있다는 지적을 받았다.</text>
+	  <parse>
+(S (ADCP 또한/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV (S (NP-SBJ *pro*)
+                     (VP (NP-ADV 프랑크푸르트/NPR
+                                 상공/NNC+회의소/NNC
+                                 방문/NNC+시/NNX)
+                         (ADVP (NP-COMP 연설/NNC+에/PAD)
+                               앞서/ADV)
+                         (NP-ADV (NP 독일/NPR
+                                     경제인/NNC+들/XSF+과/PAD+의/PAN)
+                                 (NP (S (WHNP-1 *op*)
+                                        (S (NP-SBJ *T*-1)
+                                           (ADJP 간단하/VJ+은/EAN)))
+                                     (NP 미팅/NNC+에서/PAD+은/PAU)))
+                         (VP (NP-OBJ (NP (NP 김/NPR
+                                             대통령/NNC+과/PCJ)
+                                         (NP 현지/NNC+상의/NNC
+                                             관계자/NNC+들/XSF+의/PAN))
+                                     (NP 좌석/NNC+을/PCA))
+                             (ADVP-COMP 차등없이/ADV)
+                             (VV 배열/NNC+하/XSV+는/EAN))))
+                  (NP 바람/NNX+에/PAD))
+          (VP (NP-OBJ (S (NP-SBJ (NP 의전/NNC+상/XSF)
+                                 (NP 문제/NNC+이/PCA))
+                         (ADJP 있/VJ+다는/EAN))
+                      (NP 지적/NNC+을/PCA))
+              받/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>프랑크푸르트 상공회의소 방문시</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>연설에 앞서</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>독일 경제인들과의 간단한 미팅에서는</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>김 대통령과 현지상의 관계자들의 좌석</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>차등없이</term>
+	    </Arg>
+	    <Rel>
+	      <term>배열하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

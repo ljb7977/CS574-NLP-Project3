@@ -1,0 +1,122 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>우세</lemma>
+    <comment>Frames file for '우세' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>우세.01</id>
+      <edef>superior</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being superior"/>
+	<role argnum="2" argrole="superior to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>우세하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>저희 포대가 보병 중대에 배속되는 경우는 피지원 부대가 수적으로 훨씬 우세한 적과 대치하고 있을 땝니다.</text>
+	  <parse>
+(S (NP-SBJ (S (NP-SBJ 저희/NPN
+                      포대/NNC+이/PCA)
+              (VP (NP-COMP 보병/NNC
+                           중대/NNC+에/PAD)
+                  (VV 배속/NNC+되/XSV+는/EAN)))
+           (NP 경우/NNC+은/PAU))
+   (VP (NP (S (WHNP *op*)
+              (S (NP-SBJ 피지원/NNC
+                         부대/NNC+이/PCA)
+                 (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (ADJP (ADVP (ADV 수/NNC+적/XSF+으로/PAD))
+                                              (ADVP 훨씬/ADV)
+                                              (ADJP (VJ 우세/NNC+하/XSJ+은/EAN)))))
+                                  (NP 적/NNC+과/PAD))
+                         (VV 대치/NNC+하/XSV+고/ECS))
+                     있/VX+을/EAN)))
+           (NP 때/NNC+이/CO+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=적</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>수적으로</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>훨씬</term>
+	    </Arg>
+	    <Rel>
+	      <term>우세한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>우세해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>국영 TV와 관영 신화통신으로 보도된 발언에서 장와이 앤은 중국 인민해방군은 "조국을 분리시키려는 음모가 우세해질 경우 중국의 주권과 영토보존을 지킬 결의와 확신, 능력을 갖고 있으며 이를 묵과하거나 좌시하지도 않을 것"이라고 말했다.</text>
+	  <parse>
+(S (NP-ADV (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP-COMP (NP 국영/NNC
+                                  TV/NFW+과/PCJ)
+                              (NP 관영/NNC
+                                  신화/NPR+통신/NNC+으로/PAD))
+                     (VV 보도/NNC+되/XSV+은/EAN))))
+           (NP 발언/NNC+에서/PAD))
+   (S (NP-SBJ 장와이/NPR
+              앤/NPR+은/PAU)
+      (VP (S-COMP (NP-SBJ 중국/NPR
+                          인민/NNC+해방군/NNC+은/PAU)
+                  (VP "/SLQ
+                      (VP (VP (NP-ADV (S (NP-SBJ (S (NP-SBJ *pro*)
+                                                    (VP (NP-OBJ 조국/NNC+을/PCA)
+                                                        (VV 분리/NNC+시키/XSV+으려는/EAN)))
+                                                 (NP 음모/NNC+이/PCA))
+                                         (VP (VV (VJ 우세/NNC+하/XSJ+어지/XSV+을/EAN))))
+                                      (NP 경우/NNC))
+                              (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                             (VP (NP-OBJ (NP 중국/NPR+의/PAN)
+                                                         (NP (NP 주권/NNC+과/PCJ)
+                                                             (NP 영토/NNC+보존/NNC+을/PCA)))
+                                                 지키/VV+을/EAN))
+                                          (NP (NP 결의/NNC+과/PCJ)
+                                              (NP 확신/NNC)
+                                              ,/SCM
+                                              (NP 능력/NNC+을/PCA)))
+                                  갖/VV+고/ECS))
+                          있/VX+으며/ECS)
+                      (VP (VP (VP (NP-OBJ 이/NPN+을/PCA)
+                                  (VV (VV 묵과/NNC+하/XSV+거나/ECS)
+                                      (VV 좌시/NNC+하/XSV+지/ECS+도/PAU)))
+                              않/VX+을/EAN)
+                          (VX 것/NNX))
+                      "/SRQ
+                      이/CO+라/EFN+고/PAD))
+          말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>가</f>
+	      <term>조국을 분리시키려는 음모</term>
+	    </Arg>
+	    <Rel>
+	      <term>우세해질</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,344 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>타</lemma>
+    <comment>Frames file for '타' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>타.01</id>
+      <edef>ride</edef>
+      <roleset>
+	<role argnum="A" argrole="causer"/>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="vehicle"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>타다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저는 제 친구가 그 어느 한 대에 타고 있지 않나 하는 생각도 해 봤지요.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (VP (NP-OBJ-LV (S (NP-SBJ *pro*)
+                         (VP (S-COMP (NP-SBJ (NP 저/NPN+의/PAN)
+                                             (NP 친구/NNC+이/PCA))
+                                     (VP (VP (VP (NP-COMP 그/DAN
+                                                          어느/DAN
+                                                          한/NNU
+                                                          대/NNX+에/PAD)
+                                                 타/VV+고/ECS)
+                                             있/VX+지/ECS)
+                                         않/VX+나/EFN))
+                             하/VV+는/EAN))
+                      (NP 생각/NNC+도/PAU))
+           (LV 하/VV+어/ECS))
+       보/VX+었/EPF+지요/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>제 친구</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>그 어느 한 대</term>
+	    </Arg>
+	    <Rel>
+	      <term>타고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있지</term>
+	    </Aux>
+	    <Aux>
+	      <f>지</f>
+	      <term>않나</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>타다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>모터사이클을 타고 순찰하는 사회 안전원도 있습니다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (S (NP-SBJ *pro*)
+		        (VP (NP-OBJ 모터사이클/NNC+을/PCA)
+			    타/VV+고/ECS))
+                     (VP (NP-OBJ *pro*)
+                         (VV 순찰/NNC+하/XSV+는/EAN)))))
+           (NP 사회/NNC
+               안전원/NNC+도/PAU))
+   (ADJP 있/VJ+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>모터사이클</term>
+	    </Arg>
+	    <Rel>
+	      <term>타고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>태우다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>승객과 승무원 등 총 142 명을 태운 미국 사우스웨스트 항공 소속 여객기 1 대가 5 일 캘리포니아주 버뱅크 공항에서 활주로 이탈사고를 일으켜 8 명이 부상했다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-1 *op*)
+                 (S (NP-SBJ *T*-1)
+                    (VP (NP-OBJ (NP (NP (NP 승객/NNC+과/PCJ)
+                                        (NP 승무원/NNC))
+                                    (NP 등/NNX))
+                                (NP 총/DAN
+                                    142/NNU
+                                    명/NNX+을/PCA))
+                        태우/VV+은/EAN)))
+              (NP 미국/NPR
+                  사우스웨스트/NPR
+                  항공/NNC
+                  소속/NNC
+                  여객기/NNC
+                  1/NNU
+                  대/NNX+이/PCA))
+      (VP (NP-ADV 5/NNU
+                  일/NNX)
+          (NP-ADV 캘리포니아/NPR+주/NNC
+                  버뱅크/NPR
+                  공항/NNC+에서/PAD)
+          (VP (NP-OBJ 활주로/NNC
+                      이탈/NNC+사고/NNC+을/PCA)
+              일으키/VV+어/ECS)))
+   (S (NP-SBJ 8/NNU
+              명/NNX+이/PCA)
+      (VP (VV 부상/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=미국 사우스웨스트 항공 소속 여객기 1 대</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>을</f>
+	      <term>승객과 승무원 등 총 142 명</term>
+	    </Arg>
+	    <Rel>
+	      <term>태운</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>태우다</rel>
+	  <mapitem src="sbj" trg="argA"/>
+	  <mapitem src="obj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>어머니 윤성희씨는 이날 나윤양과 14 살짜리 남동생을 승용차에 태우고 페어팍스 카운티 7 번가를 달리며 귀가하던 중 차안에서 말다툼을 벌이는 남매를 제지하기 위해 차를 세웠다.</text>
+	  <parse>
+(S (NP-SBJ 어머니/NNC
+           윤성희/NPR+씨/NNX+은/PAU)
+   (VP (NP-ADV 이날/NNC)
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (VP (NP-OBJ (NP 나윤/NPR+양/NNX+과/PCJ)
+                                  (NP (NP 14/NNU
+                                          살/NNX+짜리/XSF)
+                                      (NP 남동생/NNC+을/PCA)))
+                          (NP-COMP 승용차/NNC+에/PAD)
+                          태우/VV+고/ECS)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP 페어팍스/NPR
+                                             카운티/NNC)
+                                         (NP 7/NNU
+                                             번가/NNX+을/PCA))
+                                 달리/VV+으며/ECS))
+                          (VP (VV 귀가/NNC+하/XSV+던/EAN)))))
+               (NP 중/NNX))
+       (S (NP-SBJ *pro*)
+          (VP (S-OBJ (NP-SBJ *pro*)
+                     (VP (NP-OBJ (S (WHNP-1 *op*)
+                                    (S (NP-SBJ *T*-1)
+                                       (VP (NP-ADV 차안/NNC+에서/PAD)
+                                           (VP (NP-OBJ 말다툼/NNC+을/PCA)
+                                               벌이/VV+는/EAN))))
+                                 (NP 남매/NNC+을/PCA))
+                         (VV 제지/NNC+하/XSV+기/ENM)))
+              위하/VV+어/ECS))
+       (VP (NP-OBJ 차/NNC+을/PCA)
+           세우/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>을</f>
+	      <term>나윤양과 14 살짜리 남동생</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>승용차</term>
+	    </Arg>
+	    <Rel>
+	      <term>태우고</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>타.02</id>
+      <edef>take</edef>
+      <roleset>
+	<role argnum="1" argrole="taker"/>
+	<role argnum="2" argrole="thing taken"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>타다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="obj" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이란 개혁파의 총선 승리를 계기로 미국의 이란에 대한 관계 개선 움직임이 급류를 타고 있다.</text>
+	  <parse>
+(S (NP-ADV (NP-OBJ (NP 이란/NPR
+                       개혁파/NNC+의/PAN)
+                   (NP 총선/NNC
+                       승리/NNC+을/PCA))
+           계기/NNC+으로/PAD)
+   (S (NP-SBJ (NP 미국/NPR+의/PAN)
+              (NP (S (WHNP-1 *op*)
+                     (S (NP-SBJ *T*-1)
+                        (VP (NP-COMP 이란/NPR+에/PAD)
+                            대하/VV+은/EAN)))
+                  (NP 관계/NNC
+                      개선/NNC
+                      움직임/NNC+이/PCA)))
+      (VP (VP (NP-OBJ 급류/NNC+을/PCA)
+              타/VV+고/ECS)
+          있/VX+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이란 개혁파의 총선 승리를 계기로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>미국의 이란에 대한 관계 개선 움직임</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>를</f>
+	      <term>급류</term>
+	    </Arg>
+	    <Rel>
+	      <term>타고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>타.03</id>
+      <edef>burn</edef>
+      <roleset>
+	<role argnum="1" argrole="thing burning"/>
+	<role argnum="2" argrole="fire"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>타다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>나이지리아 북부 카두나 시에서 이슬람 율법의 시행을 요구하는 이슬람교도들의 요구로 야기된 소요로 약 1 천명이 사망한 것으로 집계된 가운데 또다른 북부 도시 소코토에서 7 일 이슬람학생들의 소요사태가 발생해 3 명이 사망하고 교회 2 곳이 불에 타 무너졌다고 목격자들이 전했다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-ADV (NP 나이지리아/NPR
+                          북부/NNC)
+                      (NP 카두나/NPR
+                          시/NNC+에서/PAD))
+              (NP-ADV (S (WHNP-2 *op*)
+                         (S (NP-SBJ *T*-2)
+                            (VP (NP-COMP (NP (S (WHNP-3 *op*)
+                                                (S (NP-SBJ *T*-3)
+                                                   (VP (NP-OBJ (NP 이슬람/NNC
+                                                                   율법/NNC+의/PAN)
+                                                               (NP 시행/NNC+을/PCA))
+                                                       (VV 요구/NNC+하/XSV+는/EAN))))
+                                             (NP 이슬람교도/NNC+들/XSF+의/PAN))
+                                         (NP 요구/NNC+으로/PAD))
+                                (VV 야기/NNC+되/XSV+은/EAN))))
+                      (NP 소요/NNC+으로/PAD))
+              (S (NP-SBJ *pro*)
+                 (VP (NP-COMP (S (NP-SBJ 약/DAN
+                                         1/NNU
+                                         천/NNU+명/NNX+이/PCA)
+                                 (VP (VV 사망/NNC+하/XSV+은/EAN)))
+                              (NP 것/NNX+으로/PAD))
+                     (VV 집계/NNC+되/XSV+은/EAN))))
+           (NP 가운데/NNC))
+   (S (S-COMP-1 (NP-ADV 또다른/DAN
+                        북부/NNC
+                        도시/NNC
+                        소코토/NPR+에서/PAD)
+                (NP-ADV 7/NNU
+                        일/NNX)
+                (S (S (NP-SBJ (NP 이슬람/NNC+학생/NNC+들/XSF+의/PAN)
+                              (NP 소요/NNC+사태/NNC+이/PCA))
+                      (VP (VV 발생/NNC+하/XSV+어/ECS)))
+                   (S (S (NP-SBJ 3/NNU
+                                 명/NNX+이/PCA)
+                         (VP (VV 사망/NNC+하/XSV+고/ECS)))
+                      (S (NP-SBJ 교회/NNC
+                                 2/NNU
+                                 곳/NNX+이/PCA)
+                         (VP (VP (NP-COMP 불/NNC+에/PAD)
+                                 타/VV+어/ECS)
+                             (VP 무너지/VV+었/EPF+다/EFN+고/PAD))))))
+      (S (NP-SBJ 목격자/NNC+들/XSF+이/PCA)
+         (VP (S-COMP *T*-1)
+             전하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>교회 2 곳</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>불</term>
+	    </Arg>
+	    <Rel>
+	      <term>타</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

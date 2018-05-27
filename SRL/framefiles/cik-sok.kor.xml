@@ -1,0 +1,59 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>직속</lemma>
+    <comment>Frames file for '직속' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>직속.01</id>
+      <edef>subordinate</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing being subordinate"/>
+	<role argnum="2" argrole="thing being superordinate"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>직속되다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>어떤 부대들이 개성 탱크 사단 12 탱크 연대의 제2 탱크 대대에 직속돼 있소?</text>
+	  <parse>
+(S (NP-SBJ 어떤/DAN
+	   부대/NNC+들/XSF+이/PCA)
+   (VP (VP (NP-COMP (NP (NP 개성/NPR
+			    탱크/NNC
+			    사단/NNC)
+			(NP 12/NNU
+			    탱크/NNC
+			    연대/NNC+의/PCA))
+		    (NP 제/XPF+2/NNU
+			탱크/NNC
+			대대/NNC+에/PAD))
+	   (VV 직속/NNC+되/XSV+어/EAU))
+       있/VX+소/EFN)
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>어떤 부대들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>개성 탱크 사단 12 탱크 연대의 제2 탱크 대대</term>
+	    </Arg>
+	    <Rel>
+	      <term>직속돼</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>있소</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

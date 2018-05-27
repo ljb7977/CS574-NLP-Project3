@@ -1,0 +1,58 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>사소하</lemma>
+    <comment>Frames file for '사소하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>사소하.01</id>
+      <edef>trifle</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being trifle"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>사소하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>심장재단은 성불능 문제가 사소한 것이라면서 남성들이 성불능 위험 때문에 스타틴 계열 심장병약을 복용하지 않는다면 생명을 위험에 빠뜨릴 수도 있다고 경고했다.</text>
+	  <parse>
+(S (NP-SBJ 심장/NNC+재단/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ 성/NNC+불능/NNC
+			    문제/NNC+이/PCA)
+		  (VP (NP (S (WHNP-1 *op*)
+			     (S (NP-SBJ *T*-1)
+				(ADJP 사소하/VJ+은/EAN)))
+			  (NP 것/NNX+이/CO+라면서/ECS))))
+               (S (NP-SBJ 남성/NNC+들/XSF+이/PCA)
+                  (VP (VP (NP-ADV 성/NNC+불능/NNC
+				    위험/NNC
+				    때문/NNX+에/PAD)
+                          (VP (NP-OBJ 스타틴/NPR
+					    계열/NNC
+					    심장병/NNC+약/NNC+을/PCA)
+                              (VV 복용/NNC+하/XSV+지/ECS)))
+                      않/VX+는다면/ECS))
+               (S (NP-SBJ *pro*)
+                  (VP (VP (NP-OBJ 생명/NNC+을/PCA)
+                          (NP-COMP 위험/NNC+에/PAD)
+                          빠뜨리/VV+을/EAN)
+                      (VX 수/NNX+도/PAU
+			    있/VJ+다/EFN+고/PAD))))
+       (VV 경고/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=것</term>
+	    </Arg>
+	    <Rel>
+	      <term>사소한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

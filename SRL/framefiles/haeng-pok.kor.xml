@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>행복</lemma>
+    <comment>Frames file for '행복' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>행복.01</id>
+      <edef>happy</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being happy"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>행복해지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 또 "충청도 당이 집권하면 충청도 상인이 행복해지고, 경상도 당이 된다고 경상도 농민이 행복해지느냐"고 반문한 뒤 "특정지역의 지역감정을 부추기려는 탐욕스런 세력에 대해 국민들은 결코 용납하지 않을 것"이라고 거듭 강조했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (S-COMP "/SLQ
+                              (S (S (NP-SBJ 충청도/NPR
+						  당/NNC+이/PCA)
+				    (VP (VV 집권/NNC+하/XSV+으면/ECS)))
+				 (S (NP-SBJ 충청도/NPR
+						  상인/NNC+이/PCA)
+				    (VP (VV (VJ 행복/NNC+하/XSJ+어지/XSV+고/ECS)))))
+			      ,/SCM
+			      (S (S (NP-SBJ 경상도/NPR
+						  당/NNC+이/PCA)
+				    (VP (NP-COMP *pro*)
+					되/VV+는다고/ECS))
+				 (S (NP-SBJ 경상도/NPR
+						  농민/NNC+이/PCA)
+				    (VP (VV (VJ 행복/NNC+하/XSJ+어지/XSV+느냐/EFN)))))
+                              "/SRQ
+                              고/PAD)
+                      (VV 반문/NNC+하/XSV+은/EAN)))
+               (NP 뒤/NNC))
+       (VP (S-COMP "/SLQ
+                   (S (NP-SBJ *pro*)
+                      (VP (NP-COMP (S (WHNP-1 *op*)
+                                      (S (S (NP-SBJ *T*-1)
+                                            (VP (NP-OBJ (NP 특정/NNC+지역/NNC+의/PAN)
+                                                        (NP 지역/NNC+감정/NNC+을/PCA))
+                                                부추기/VV+으려는/EAN))
+                                         (S (NP-SBJ *T*-1)
+                                            (ADJP (VJ 탐욕/NNC+스럽/XSJ+은/EAN)))))
+                                   (NP 세력/NNC+에/PAD))
+                          대하/VV+어/ECS))
+                   (S (NP-SBJ 국민/NNC+들/XSF+은/PAU)
+                      (VP (VP (VP (ADVP 결코/ADV)
+                                  (VP (VV 용납/NNC+하/XSV+지/ECS)))
+                              않/VX+을/EAN)
+                          (VX 것/NNX
+                              "/SRQ
+                              이/CO+라/EFN+고/PAD))))
+           (VP (ADVP 거듭/ADV)
+               (VP (VV 강조/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>충청도 당이 집권하면</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>충청도 상인</term>
+	    </Arg>
+	    <Rel>
+	      <term>행복해지고</term>
+	    </Rel>
+	  </relation>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>경상도 당이 된다고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>경상도 농민</term>
+	    </Arg>
+	    <Rel>
+	      <term>행복해지느냐</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

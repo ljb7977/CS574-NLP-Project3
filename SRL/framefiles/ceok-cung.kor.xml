@@ -1,0 +1,66 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>적중</lemma>
+    <comment>Frames file for '적중' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>적중.01</id>
+      <edef>hit</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing hit"/>
+	<role argnum="2" argrole="target"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>적중하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>귀관이 쏜 포탄이 귀관이 사격하려고 하는 목표에 적중할 수 있다는 걸 어떻게 보장할 수 있는가?</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-OBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                 (S (NP-SBJ 귀관/NPN+이/PCA)
+                                    (VP (NP-OBJ *T*-1)
+                                        쏘/VV+은/EAN)))
+                              (NP 포탄/NNC+이/PCA))
+                      (VP (VP (NP-COMP (S (WHNP-2 *op*)
+                                          (S (NP-SBJ 귀관/NPN+이/PCA)
+                                             (VP (VP (NP-COMP *T*-2)
+                                                     (VV 사격/NNC+하/XSV+으려고/ECS))
+                                                 하/VX+는/EAN)))
+                                       (NP 목표/NNC+에/PAD))
+                              (VV 적중/NNC+하/XSV+을/EAN))
+                          (VX 수/NNX
+                              있/VJ+다는/EAN)))
+                   (NP 것/NNX+을/PCA))
+           (VP (ADVP 어떻게/ADV)
+               (VP (VV 보장/NNC+하/XSV+을/EAN))))
+       (VX 수/NNX
+           있/VJ+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>귀관이 쏜 포탄</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>귀관이 사격하려고 하는 목표</term>
+	    </Arg>
+	    <Rel>
+	      <term>적중할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 있다는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

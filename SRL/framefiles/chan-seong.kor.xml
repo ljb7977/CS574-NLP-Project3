@@ -1,0 +1,83 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>찬성</lemma>
+    <comment>Frames file for '찬성' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>찬성.01</id>
+      <edef>approve</edef>
+      <roleset>
+	<role argnum="0" argrole="thing approving"/>
+	<role argnum="1" argrole="thing approved"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>찬성하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>현재 하원 다수당인 공화당 소속 222 명의 의원 중 151 명만이 중국에 대한 영구적인 NTR 지위부여에 찬성하고 있어 하원 승인을 위해서는 민주당 의원 약 100 명의 찬성이 필요하다.</text>
+	  <parse>
+(S (S (NP-ADV 현재/NNC)
+      (S (NP-SBJ (NP (NP (NP (NP (NP (S (WHNP-2 *op*)
+                                        (S (NP-SBJ *T*-2)
+                                           (VP (NP 하원/NNC
+                                                   다수당/NNC+이/CO+은/EAN))))
+                                     (NP 공화당/NPR))
+                                 (NP 소속/NNC))
+                             (NP 222/NNU
+                                 명/NNX+의/PAN))
+                         (NP 의원/NNC))
+                     (NP 중/NNX))
+                 (NP 151/NNU
+                     명/NNX+만/PAU+이/PCA))
+         (VP (VP (NP-COMP (S (WHNP-1 *op*)
+                             (S (NP-SBJ *T*-1)
+                                (VP (VP (NP-COMP 중국/NPR+에/PAD)
+                                        대하/VV+은/EAN)
+                                    (VP (NP 영구/NNC+적/XSF+이/CO+은/EAN)))))
+                          (NP NTR/NFW
+                              지위/NNC+부여/NNC+에/PAD))
+                 (VV 찬성/NNC+하/XSV+고/ECS))
+             있/VX+어/ECS)))
+   (S (S (NP-SBJ *pro*)
+         (VP (NP-OBJ 하원/NNC
+                     승인/NNC+을/PCA)
+             위하/VV+어서/ECS+은/PAU))
+      (S (NP-SBJ (NP 민주당/NPR
+                     의원/NNC
+                     약/DAN
+                     100/NNU
+                     명/NNX+의/PAN)
+                 (NP 찬성/NNC+이/PCA))
+         (ADJP (VJ 필요/NNC+하/XSJ+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>현재</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>하원 다수당인 공화당 소속 222 명의 의원 중 151 명만</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>중국에 대한 영구적인 NTR 지위부여</term>
+	    </Arg>
+	    <Rel>
+	      <term>찬성하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있어</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

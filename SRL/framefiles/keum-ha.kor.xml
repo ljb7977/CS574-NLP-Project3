@@ -1,0 +1,146 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>금하</lemma>
+    <comment>Frames file for '금하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>금하.01</id>
+      <edef>prohibit</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="action prohibited"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>금하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>8 세 이상 여성의 노동과 학교 수업을 금지하고 있는 탈레반 정권은 카불시내 유일의 여성 전용 병원에서 남성들의 출입을 금한 채 여성들만을 위한 기념행사를 가졌다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (VP (NP-OBJ (NP (NP 8/NNU
+                                         세/NNX
+                                         이상/NNC)
+                                     (NP 여성/NNC+의/PAN))
+                                 (NP (NP 노동/NNC+과/PCJ)
+                                     (NP 학교/NNC
+                                         수업/NNC+을/PCA)))
+                         (VV 금지/NNC+하/XSV+고/ECS))
+                     있/VX+는/EAN)))
+           (NP 탈레반/NPR
+               정권/NNC+은/PAU))
+   (VP (NP-ADV (NP 카불/NPR+시내/NNC
+                   유일/NNC+의/PAN)
+               (NP 여성/NNC
+                   전용/NNC
+                   병원/NNC+에서/PAD))
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (NP 남성/NNC+들/XSF+의/PAN)
+                              (NP 출입/NNC+을/PCA))
+                      금하/VV+은/EAN))
+               (NP 채/NNX))
+       (VP (NP-OBJ (S (WHNP-2 *op*)
+                      (S (NP-SBJ *T*-2)
+                         (VP (NP-OBJ 여성/NNC+들/XSF+만/PAU+을/PCA)
+                             위하/VV+은/EAN)))
+                   (NP 기념/NNC+행사/NNC+을/PCA))
+           가지/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>남성들의 출입</term>
+	    </Arg>
+	    <Rel>
+	      <term>금한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>금하.02</id>
+      <edef>suppress</edef>
+      <roleset>
+	<role argnum="0" argrole="suppressor"/>
+	<role argnum="1" argrole="emotion"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>금하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조부영 선거대책본부장은 이날 오전 마포당사에서 `공명선거실천 대국민선언'을 발표하고 "이번 선거가 지역감정 유발, 흑색선전과 불법, 탈법 선거운동등으로 날로 혼탁, 과열돼 가는 것에 심한 걱정과 우려를 금할 수 없다"며 이같이 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 조부영/NPR
+           선거/NNC+대책/NNC+본부장/NNC+은/PAU)
+   (VP (VP (NP-ADV 이날/NNC
+                   오전/NNC)
+           (NP-ADV 마포/NPR+당사/NNC+에서/PAD)
+           (VP (NP-OBJ `/SLQ
+                       공명/NNC+선거/NNC+실천/NNC
+                       대/XPF+국민/NNC+선언/NNC
+                       '/SRQ
+                       을/PCA)
+               (VV 발표/NNC+하/XSV+고/ECS)))
+       (VP (S "/SLQ
+              (NP-SBJ *pro*)
+              (VP (VP (NP-ADV (S (NP-SBJ 이번/NNC
+                                         선거/NNC+이/PCA)
+                                 (VP (VP (NP-ADV (NP 지역/NNC+감정/NNC
+                                                     유발/NNC)
+                                                 ,/SCM
+                                                 (NP 흑색/NNC+선전/NNC+과/PCJ)
+                                                 (NP 불법/NNC
+                                                     ,/SCM
+                                                     탈법/NNC
+                                                     선거/NNC+운동/NNC+등/NNX+으로/PAD))
+                                         (NP-ADV 날/NNC+으로/PAD)
+                                         (VP (VV (VV 혼탁/NNC)
+                                                 ,/SCM
+                                                 (VV 과열/NNC+되/XSV+어/ECS))))
+                                     가/VX+는/EAN))
+                              (NP 것/NNX+에/PAD))
+                      (VP (NP-OBJ (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (ADJP 심하/VJ+은/EAN)))
+                                  (NP (NP 걱정/NNC+과/PCJ)
+                                      (NP 우려/NNC+을/PCA)))
+                          금하/VV+을/EAN))
+                  (VX 수/NNX
+                      없/VJ+다/EFN))
+              "/SRQ
+              며/ECS)
+           (ADVP 이같이/ADV)
+           (VP (NP-OBJ *pro*)
+               밝히/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CAU</f>
+	      <term>이번 선거가 지역감정 유발, 흑색선전과 불법, 탈법 선거운동등으로 날로 혼탁, 과열돼 가는 것에</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>심한 걱정과 우려</term>
+	    </Arg>
+	    <Rel>
+	      <term>금할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>수 없다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

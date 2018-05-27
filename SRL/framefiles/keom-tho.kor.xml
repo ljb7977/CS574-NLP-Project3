@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>검토</lemma>
+    <comment>Frames file for '검토' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>검토.01</id>
+      <edef>check</edef>
+      <roleset>
+	<role argnum="0" argrole="checker"/>
+	<role argnum="1" argrole="thing checked"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>검토하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>귀관은 내가 이 첩보에 대한 정확성을 검토할 거라는 걸 염두에 두시오.</text>
+	  <parse>
+(S (NP-SBJ 귀관/NPN+은/PAU)
+   (VP (NP-OBJ (S (NP-SBJ 내/NPN+이/PCA)
+                  (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                                     (S (NP-SBJ *T*-1)
+                                        (VP (NP-COMP 이/DAN
+                                                     첩보/NNC+에/PAD)
+                                            대하/VV+은/EAN)))
+                                  (NP 정확성/NNC+을/PCA))
+                          (VV 검토/NNC+하/XSV+을/EAN))
+                      (VX 것/NNX+이/CO+으라는/EAN)))
+               (NP 것/NNX+을/PCA))
+       (NP-COMP 염두/NNC+에/PAD)
+       두/VV+으시/EPF+으오/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>내</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이 첩보에 대한 정확성</term>
+	    </Arg>
+	    <Rel>
+	      <term>검토할</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>거라는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>검토되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그리고 귀관이 나에게 주는 모든 첩보는 정확성이 검토될 거라는 걸 염두에 두시오.</text>
+	  <parse>
+(S (ADCP 그리고/ADC)
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (NP-SBJ (S (WHNP-1 *op*)
+                                (S (NP-SBJ 귀관/NPN+이/PCA)
+                                   (VP (NP-COMP 나/NPN+에게/PAD)
+                                       (NP-OBJ *T*-1)
+                                       (VP 주/VV+는/EAN))))
+                             (NP 모든/DAN
+                                 첩보/NNC+은/PAU))
+                     (S (NP-SBJ 정확성/NNC+이/PCA)
+                        (VP (VP (VV 검토/NNC+되/XSV+을/EAN))
+                            (VX 것/NNX+이/CO+으라는/EAN))))
+                  (NP 것/NNX+을/PCA))
+          (NP-COMP 염두/NNC+에/PAD)
+          두/VV+으시/EPF+으오/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>는</f>
+	      <term>귀관이 나에게 주는 모든 첩보</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>정확성</term>
+	    </Arg>
+	    <Rel>
+	      <term>검토될</term>
+	    </Rel>
+	    <Aux>
+	      <f>을</f>
+	      <term>거라는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

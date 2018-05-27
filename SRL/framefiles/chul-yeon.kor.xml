@@ -1,0 +1,168 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>출연</lemma>
+    <comment>Frames file for '출연' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>출연.01</id>
+      <edef>appear</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="appear at"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>출연하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>로스 차관보는 이날 오후 싱가포르 `뉴스 아시아' 방송의 `미국과 새 아시아'라는 프로그램에 출연하여 대선 후에도 "미국의 대아시아 정책에는 연속성이 많을 것으로 본다"며 이같이 전망했다.</text>
+	  <parse>
+(S (S (NP-SBJ 로스/NPR
+              차관보/NNC+은/PAU)
+      (VP (NP-ADV 이날/NNC
+                  오후/NNC)
+          (VP (NP-COMP (NP 싱가포르/NPR
+                           `/SLQ
+                           뉴스/NNC
+                           아시아/NPR
+                           '/SRQ
+                           방송/NNC+의/PAN)
+                       (NP (NP `/SLQ
+                               (NP 미국/NPR+과/PCJ)
+                               (NP 새/DAN
+                                   아시아/NPR)
+                               '/SRQ
+                               이라는/PAN)
+                           (NP 프로그램/NNC+에/PAD)))
+              (VV 출연/NNC+하/XSV+어/ECS))))
+   (S (NP-SBJ *pro*)
+      (VP (S (NP-SBJ *pro*)
+             (VP (NP-COMP (S (NP-ADV 대선/NNC
+                                     후/NNC+에/PAD+도/PAU)
+                             "/SLQ
+                             (S (NP-COMP-1 (NP 미국/NPR+의/PAN)
+                                           (NP 대/XPF+아시아/NPR
+                                               정책/NNC+에/PAD+은/PAU))
+                                (S (NP-SBJ 연속성/NNC+이/PCA)
+                                   (ADJP (NP-COMP *T*-1)
+                                         많/VJ+을/EAN))))
+                          (NP 것/NNX+으로/PAD))
+                 보/VV+는다/EFN
+                 "/SRQ
+                 며/ECS))
+          (ADVP 이같이/ADV)
+          (VP (NP-OBJ *pro*)
+              (VV 전망/NNC+하/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>로스 차관보</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>이날 오후</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>싱가포르 `뉴스 아시아' 방송의 `미국과 새 아시아'라는 프로그램</term>
+	    </Arg>
+	    <Rel>
+	      <term>출연하여</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>출연.02</id>
+      <edef>collect</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing collected"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>출연하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>선언문에 따르면 참여국가는 환경 사업을 추진하기 위해 자발적으로 기금을 출연하는 한편 2002 년까지 환경 협력을 통해 환경 문제를 실질적으로 풀 수 있는 종합 실천 계획의 성격을 띤 '지역 환경 프로그램'을 만들기로 했다.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP 선언문/NNC+에/PAD)
+          따르/VV+으면/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ *pro*)
+                  (VP (NP-ADV (S (NP-SBJ 참여/NNC+국가/NNC+은/PAU)
+                                 (VP (S (NP-SBJ *pro*)
+                                        (VP (S-OBJ (NP-SBJ *pro*)
+                                                   (VP (NP-OBJ 환경/NNC
+                                                               사업/NNC+을/PCA)
+                                                       (VV 추진/NNC+하/XSV+기/ENM)))
+                                            위하/VV+어/ECS))
+                                     (NP-ADV 자발/NNC+적/XSF+으로/PAD)
+                                     (VP (NP-OBJ 기금/NNC+을/PCA)
+                                         (VV 출연/NNC+하/XSV+는/EAN))))
+                              (NP 한편/NNC))
+                      (VP (NP-OBJ (S (WHNP-1 *op*)
+                                     (S (S (NP-SBJ *T*-1)
+                                           (VP (VP (NP-ADV 2002/NNU
+                                                           년/NNX+까지/PAU)
+                                                   (S (NP-SBJ *pro*)
+                                                      (VP (NP-OBJ 환경/NNC
+                                                                  협력/NNC+을/PCA)
+                                                          통하/VV+어/ECS))
+                                                   (VP (NP-OBJ 환경/NNC
+                                                               문제/NNC+을/PCA)
+                                                       (VP (NP-ADV 실질/NNC+적/XSF+으로/PAD)
+                                                           (VP 풀/VV+을/EAN))))
+                                               (VX 수/NNX
+                                                   있/VJ+는/EAN)))
+                                        (S (NP-SBJ *T*-1)
+                                           (VP (NP-OBJ (NP 종합/NNC
+                                                           실천/NNC
+                                                           계획/NNC+의/PAN)
+                                                       (NP 성격/NNC+을/PCA))
+                                               띠/VV+은/EAN))))
+                                  (NP '/SLQ
+                                      지역/NNC
+                                      환경/NNC
+                                      프로그램/NNC
+                                      '/SRQ
+                                      을/PCA))
+                          만들/VV+기/ENM+으로/PAD)))
+          하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>참여국가</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>PRP</f>
+	      <term>환경 사업을 추진하기 위해</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>MNR</f>
+	      <term>자발적으로</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>기금</term>
+	    </Arg>
+	    <Rel>
+	      <term>출연하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

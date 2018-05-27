@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>존재</lemma>
+    <comment>Frames file for '존재' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>존재.01</id>
+      <edef>exist</edef>
+      <roleset>
+	<role argnum="1" argrole="thing existing"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>존재하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>무어 총장은 "미국과 유럽연합 사이에 걸려 있는 큰 현안이 많기 때문에 앞으로도 긴장은 항상 있을 것"이라고 내다보면서 "긴장이 존재하는 분야로는 농업, 노동, 반덤핑, 투자경쟁 등이 있다"고 말했다.</text>
+	  <parse>
+(S (S (NP-SBJ 무어/NPR
+              총장/NNC+은/PAU)
+      (VP (S-COMP "/SLQ
+                  (NP-ADV (S (NP-SBJ (S (WHNP-1 *op*)
+					(S (NP-SBJ *T*-1)
+					   (VP (VP (NP-ADV (NP (NP 미국/NPR+과/PCJ)
+							       (NP 유럽/NPR+연합/NNC))
+							   (NP 사이/NNC+에/PAD))
+						   (VP 걸리/VV+어/ECS))
+					       있/VX+는/EAN)))
+				     (NP (S (WHNP-2 *op*)
+					    (S (NP-SBJ *T*-2)
+					       (ADJP 크/VJ+은/EAN)))
+					 (NP 현안/NNC+이/PCA)))
+			     (ADJP 많/VJ+기/ENM))
+                          (NP 때문/NNX+에/PAD))
+                  (NP-ADV 앞/NNC+으로/PAD+도/PAU)
+                  (S (NP-SBJ 긴장/NNC+은/PAU)
+                     (VP (ADVP 항상/ADV)
+                         (VP (ADJP 있/VJ+을/EAN)
+                             (VX 것/NNX))))
+                  "/SRQ
+                  이/CO+라/EFN+고/PAD)
+          내다보/VV+으면서/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP "/SLQ
+                  (NP-ADV (S (WHNP-3 *op*)
+                             (S (NP-SBJ 긴장/NNC+이/PCA)
+                                (VP (NP-COMP *T*-3)
+                                    (VV 존재/NNC+하/XSV+는/EAN))))
+                          (NP 분야/NNC+으로/PAD+은/PAU))
+                  (S (NP-SBJ (NP 농업/NNC
+                                 ,/SCM
+                                 노동/NNC
+                                 ,/SCM
+                                 반덤핑/NNC
+                                 ,/SCM
+                                 투자/NNC+경쟁/NNC)
+                             (NP 등/NNX+이/PCA))
+                     (ADJP 있/VJ+다/EFN))
+                  "/SRQ
+                  고/PAD)
+          (VP 말하/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>긴장</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f></f>
+	      <term>*trace*=분야</term>
+	    </Arg>
+	    <Rel>
+	      <term>존재하는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

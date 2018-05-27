@@ -1,0 +1,47 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>참석</lemma>
+    <comment>Frames file for '참석' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>참석.01</id>
+      <edef>attend</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing attended"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>참석하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>저희 포대 성원들은 사격 대회에 참석하러 사단 지휘부에 갔다.</text>
+	  <parse>
+(S (NP-SBJ 저희/NPN
+	   포대/NNC
+	   성원/NNC+들/XSF+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+	  (VP (NP-COMP 사격/NNC
+		       대회/NNC+에/PAD)
+	      (VV 참석/NNC+하/XSV+러/ECS)))
+       (VP (NP-COMP 사단/NNC
+		    지휘부/NNC+에/PAD)
+	   가/VV+았/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>사격 대회</term>
+	    </Arg>
+	    <Rel>
+	      <term>참석하러</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

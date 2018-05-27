@@ -1,0 +1,85 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>납득</lemma>
+    <comment>Frames file for '납득' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>납득.01</id>
+      <edef>understand</edef>
+      <roleset>
+	<role argnum="0" argrole="understander"/>
+	<role argnum="1" argrole="thing understood"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>납득하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>이 관계자는 "5 조원이라는 막대한 자금을 들여 만든 삼성차를 10 분의 1에 해당하는 가격에, 그것도 국내 업체도 아닌 해외업체에 매각한다면 국민들이 과연 납득하겠느냐"고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           관계자/NNC+은/PAU)
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ (S (WHNP-3 *op*)
+                                 (S (S (NP-SBJ *pro*)
+                                       (VP (NP-OBJ (NP 5/NNU
+                                                       조/NNU+원/NNX+이라는/PAN)
+                                                   (NP (S (WHNP-4 *op*)
+                                                          (S (NP-SBJ *T*-4)
+                                                             (ADJP 막대하/VJ+은/EAN)))
+                                                       (NP 자금/NNC+을/PCA)))
+                                           들이/VV+어/ECS))
+                                    (S (NP-SBJ *pro*)
+                                       (VP (NP-OBJ *T*-3)
+                                           만들/VV+은/EAN))))
+                              (NP 삼성/NPR+차/NNC+을/PCA))
+                      (VP (NP-ADV (S (WHNP-2 *op*)
+                                     (S (NP-SBJ *T*-2)
+                                        (VP (NP-COMP (NP 10/NNU
+                                                         분/NNX+의/PAN)
+                                                     (NP 1/NNU+에/PAD))
+                                            (VV 해당/NNC+하/XSV+는/EAN))))
+                                  (NP 가격/NNC+에/PAD))
+                          ,/SCM
+                          (VP (NP-COMP (S (WHNP-1 *op*)
+					  (S (NP-SBJ *T*-1)
+					     (ADJP (NP-ADV 그것/NPN+도/PAU)
+						   (ADJP (NP-COMP 국내/NNC
+								      업체/NNC+도/PAU)
+							 아니/VJ+은/EAN))))
+                                       (NP 해외/NNC+업체/NNC+에/PAD))
+                              (VV 매각/NNC+하/XSV+는다면/ECS)))))
+               (S (NP-SBJ 국민/NNC+들/XSF+이/PCA)
+                  (VP (ADVP 과연/ADV)
+                      (VP (NP-OBJ *pro*)
+                          (VV 납득/NNC+하/XSV+겠/EPF+느냐/EFN))))
+               "/SRQ
+               고/PAD)
+       덧붙이/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>5 조원이라는 막대한 자금을 들여 만든 삼성차를 10 분의 1에 해당하는 가격에, 그것도 국내 업체도 아닌 해외업체에 매각한다면</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>국민들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>과연</term>
+	    </Arg>
+	    <Rel>
+	      <term>납득하겠느냐</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

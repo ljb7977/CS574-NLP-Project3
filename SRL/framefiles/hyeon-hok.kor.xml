@@ -1,0 +1,100 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>현혹</lemma>
+    <comment>Frames file for '현혹' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>현혹.01</id>
+      <edef>mislead</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing misled"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>현혹하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>명동성당 농성 5 일째인 총선연대는 결의문에서 "이회창 한나라당 총재는 대구를 `마음의 고향'이라 하고 민주당 이인제 선대위원장은 `뜨는 해 지는 해'를 되풀이하고 있으며 김종필씨는 `지역감정 책임론'을 들어 충청도민을 현혹하고 있다"면서 이런 입장을 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP 명동/NPR+성당/NNC
+                         농성/NNC
+                         5/NNU
+                         일/NNX+째/XSF+이/CO+은/EAN))))
+           (NP 총선/NNC+연대/NNC+은/PAU))
+   (VP (NP-ADV 결의문/NNC+에서/PAD)
+       (S "/SLQ
+          (S (NP-SBJ 이회창/NPR
+                     한나라당/NPR
+                     총재/NNC+은/PAU)
+             (VP (NP-OBJ 대구/NPR+을/PCA)
+                 (NP-COMP `/SLQ
+                          (NP 마음/NNC+의/PAN)
+                          (NP 고향/NNC)
+                          '/SRQ
+                          이라/PAD)
+                 하/VV+고/ECS))
+          (S (NP-SBJ 민주당/NPR
+                     이인제/NPR
+                     선대/NNC+위원장/NNC+은/PAU)
+             (VP (VP (NP-OBJ `/SLQ
+                             (NP (S (WHNP-2 *op*)
+                                    (S (NP-SBJ *T*-2)
+                                       (VP 뜨/VV+는/EAN)))
+                                 (NP 해/NNC))
+                             (NP (S (WHNP-3 *op*)
+                                    (S (NP-SBJ *T*-3)
+                                       (VP 지/VV+는/EAN)))
+                                 (NP 해/NNC))
+                             '/SRQ
+                             을/PCA)
+                     (VV 되풀이/NNC+하/XSV+고/ECS))
+                 있/VX+으며/ECS))
+          (S (NP-SBJ 김종필/NPR+씨/NNX+은/PAU)
+             (VP (VP (S (NP-SBJ *pro*)
+                        (VP (NP-OBJ `/SLQ
+                                    지역/NNC+감정/NNC
+                                    책임론/NNC
+                                    '/SRQ
+                                    을/PCA)
+                            들/VV+어/ECS))
+                     (VP (NP-OBJ 충청/NPR+도민/NNC+을/PCA)
+                         (VV 현혹/NNC+하/XSV+고/ECS)))
+                 있/VX+다/EFN))
+          "/SRQ
+          면서/ECS)
+       (VP (NP-OBJ 이런/DAN
+                   입장/NNC+을/PCA)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>김종필씨</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>`지역감정 책임론'을 들어</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>충청도민</term>
+	    </Arg>
+	    <Rel>
+	      <term>현혹하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

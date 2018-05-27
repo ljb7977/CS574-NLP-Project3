@@ -1,0 +1,82 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>잇달</lemma>
+    <comment>Frames file for '잇달' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>잇달.01</id>
+      <edef>continuous</edef>
+      <roleset>
+	<role argnum="1" argrole="thing continuous"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>잇달다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>그는 또 `전심'을 잡기 위한 정치권 인사들의 잇단 면담요청과 관련, "대한민국 국민이면 누구든지 만날 것"이라며 "여든 야든 언제든지 (찾아오면) 상의 대상은 될 수 있다"고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 그/NPN+은/PAU)
+   (VP (ADVP 또/ADV)
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (S (WHNP-2 *op*)
+                          (S (NP-SBJ *T*-2)
+                             (VP (S-OBJ (NP-SBJ *pro*)
+                                        (VP (NP-OBJ `/SLQ
+                                                    전심/NNC
+                                                    '/SRQ
+                                                    을/PCA)
+                                            잡/VV+기/ENM))
+                                 위하/VV+은/EAN)))
+                       (NP (NP 정치/NNC+권/XSF
+                               인사/NNC+들/XSF+의/PAN)
+                           (NP (S (WHNP-1 *op*)
+                                  (S (NP-SBJ *T*-1)
+                                     (VP 잇달/VV+은/EAN)))
+                               (NP 면담/NNC+요청/NNC+과/PAD))))
+              (VV 관련/NNC)))
+       ,/SCM
+       (S "/SLQ
+          (NP-SBJ *pro*)
+          (VP (VP (S (NP-SBJ *pro*)
+                     (VP (NP 대한민국/NPR
+                             국민/NNC+이/CO+으면/ECS)))
+                  (VP (NP-OBJ 누구/NPN+든지/PAU)
+                      만나/VV+을/EAN))
+              (VX 것/NNX))
+          "/SRQ
+          이/CO+라며/ECS)
+       (VP (S-COMP "/SLQ
+                   (NP-SBJ (NP 여/NNC+이든/PCJ)
+                           (NP 야/NNC+이든/PCJ))
+                   (VP (VP (ADVP 언제든지/ADV)
+                           (PRN -LRB-/SLQ
+                                (S (NP-SBJ *pro*)
+                                   (VP 찾아오/VV+으면/ECS))
+                                -RRB-/SRQ)
+                           (VP (NP-COMP 상의/NNC
+                                        대상/NNC+은/PAU)
+                               되/VV+을/EAN))
+                       (VX 수/NNX
+                           있/VJ+다/EFN))
+                   "/SRQ
+                   고/PAD)
+           말하/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=면담요청</term>
+	    </Arg>
+	    <Rel>
+	      <term>잇단</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

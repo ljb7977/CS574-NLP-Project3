@@ -1,0 +1,102 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>뒤떨어지</lemma>
+    <comment>Frames file for '뒤떨어지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>뒤떨어지.01</id>
+      <edef>fall behind</edef>
+      <roleset>
+	<role argnum="1" argrole="entity falling behind"/>
+	<role argnum="2" argrole="entity fallen behind"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>뒤떨어지다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>서부 캘리포니아주에서 동부 매사추세츠주에 이르는 모든 주에서 고어 부통령에게 눌리고 있는 브래들리 전 의원은 심지어 프로 농구선수로 활약했던 뉴욕주와 출생주인 미주리주에서도 각각 32 퍼센트 포인트와 20 퍼센트 포인트의 차이로 뒤떨어지고 있는 것으로 최근 여론조사 결과 밝혀졌다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-SBJ (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (VP (NP-ADV (S (WHNP-2 *op*)
+                                                    (S (NP-SBJ *T*-2)
+                                                       (VP (NP-COMP 서부/NNC
+                                                                    캘리포니아/NPR+주/NNC+에서/PAD)
+                                                           (NP-COMP 동부/NNC
+                                                                    매사추세츠/NPR+주/NNC+에/PAD)
+                                                           이르/VV+는/EAN)))
+                                                 (NP 모든/DAN
+                                                     주/NNC+에서/PAD))
+                                         (VP (NP-COMP 고어/NPR
+                                                      부통령/NNC+에게/PAD)
+                                             눌리/VV+고/ECS))
+                                     있/VX+는/EAN)))
+                           (NP (NP 브래들리/NPR)
+                               (NP 전/DAN
+                                   의원/NNC+은/PAU)))
+                   (VP (VP (ADVP 심지어/ADV)
+                           (NP-ADV (NP (S (WHNP *op*)
+                                          (S (NP-SBJ *pro*)
+                                             (VP (NP-COMP 프로/NNC
+                                                          농구/NNC+선수/NNC+으로/PAD)
+                                                 (VV 활약/NNC+하/XSV+었/EPF+던/EAN))))
+                                       (NP 뉴욕/NPR+주/NNC+과/PCJ))
+                                   (NP (S (WHNP-3 *op*)
+                                          (S (NP-SBJ *T*-3)
+                                             (VP (NP 출생/NNC+주/NNC+이/CO+은/EAN))))
+                                       (NP 미주리/NPR+주/NNC+에서/PAD+도/PAU)))
+                           (ADVP 각각/ADV)
+                           (NP-ADV (NP (NP 32/NNU
+                                           퍼센트/NNX
+                                           포인트/NNX+과/PCJ)
+                                       (NP 20/NNU
+                                           퍼센트/NNX
+                                           포인트/NNX+의/PAN))
+                                   (NP 차이/NNC+으로/PAD))
+                           (VP 뒤떨어지/VV+고/ECS))
+                       있/VX+는/EAN))
+                (NP 것/NNX+으로/PAD))
+       (VP (NP-ADV (NP 최근/NNC
+                       여론/NNC+조사/NNC)
+                   (NP 결과/NNC))
+           (VP (VV 밝히/VV+어지/XSV+었/EPF+다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>서부 캘리포니아주에서 동부 매사추세츠주에 이르는 모든 주에서 고어 부통령에게 눌리고 있는 브래들리 전 의원</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>심지어</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>프로 농구선수로 활약했던 뉴욕주와 출생주인 미주리주에서도</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>ADV</f>
+	      <term>각각</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>32 퍼센트 포인트와 20 퍼센트 포인트의 차이로</term>
+	    </Arg>
+	    <Rel>
+	      <term>뒤떨어지고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

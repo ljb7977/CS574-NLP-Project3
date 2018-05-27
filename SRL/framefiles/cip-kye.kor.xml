@@ -1,0 +1,53 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>집계</lemma>
+    <comment>Frames file for '집계' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>집계.01</id>
+      <edef>totalize</edef>
+      <roleset>
+	<role argnum="0" argrole="thing totalizing"/>
+	<role argnum="1" argrole="thing totalized"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>집계되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>금년 영화제에서는 모두 1 만 8 천여 관객이 출품작들을 감상한 것으로 집계됐다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (NP-COMP (S (NP-ADV 금년/NNC
+                           영화제/NNC+에서/PAD+은/PAU)
+                   (S (NP-SBJ 모두/NNC
+                              1/NNU
+                              만/NNU
+                              8/NNU
+                              천/NNU+여/XSF
+                              관객/NNC+이/PCA)
+                      (VP (NP-OBJ 출품작/NNC+들/XSF+을/PCA)
+                          (VV 감상/NNC+하/XSV+은/EAN))))
+                (NP 것/NNX+으로/PAD))
+       (VV 집계/NNC+되/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>으로</f>
+	      <term>금년 영화제에서는 모두 1 만 8 천여 관객이 출품작들을 감상한 것</term>
+	    </Arg>
+	    <Rel>
+	      <term>집계됐다</term>
+	    </Rel>
+	  </relation>
+	  <comment>split argument</comment>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

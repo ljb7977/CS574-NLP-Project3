@@ -1,0 +1,94 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>완료</lemma>
+    <comment>Frames file for '완료' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>완료.01</id>
+      <edef>complete</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="task"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>완료하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>접적 이동은 최단 시간 내에 완료해야 합니다.</text>
+	  <parse>
+(S (NP-SBJ *pro*)
+   (VP (VP (NP-OBJ 접적/NNC
+                   이동/NNC+은/PAU)
+           (VP (NP-ADV 최단/NNC
+                       시간/NNC
+                       내/NNC+에/PAD)
+               (VP (VV 완료/NNC+하/XSV+어야/ECS))))
+       하/VX+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>접적 이동</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>최단 시간 내에</term>
+	    </Arg>
+	    <Rel>
+	      <term>완료해야</term>
+	    </Rel>
+	    <Aux>
+	      <f>어야</f>
+	      <term>합니다</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>완료되다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>한보철강은 그러나 자산매각이 완료되면 한보철강은 상장 폐지 또는 청산 절차를 밟을 가능성이 있으므로 투자에 각별히 유의해야 한다고 덧붙였다.</text>
+	  <parse>
+(S (NP-SBJ 한보/NPR+철강/NNC+은/PAU)
+   (VP (ADCP 그러나/ADC)
+       (VP (S-COMP (S (NP-SBJ 자산/NNC+매각/NNC+이/PCA)
+                      (VP (VV 완료/NNC+되/XSV+으면/ECS)))
+                   (S (NP-SBJ (S (NP-SBJ 한보/NPR+철강/NNC+은/PAU)
+                                 (VP (NP-OBJ (NP 상장/NNC
+                                                 폐지/NNC)
+                                             (ADCP 또는/ADC)
+                                             (NP 청산/NNC
+                                                 절차/NNC+을/PCA))
+                                     밟/VV+을/EAN))
+                              (NP 가능성/NNC+이/PCA))
+                      (ADJP 있/VJ+으므로/ECS))
+                   (S (NP-SBJ *pro*)
+                      (VP (VP (NP-COMP 투자/NNC+에/PAD)
+                              (VP (ADVP 각별히/ADV)
+                                  (VP (VV 유의/NNC+하/XSV+어야/ECS))))
+                          하/VX+는다/EFN+고/PAD)))
+           덧붙이/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>자산매각</term>
+	    </Arg>
+	    <Rel>
+	      <term>완료되면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

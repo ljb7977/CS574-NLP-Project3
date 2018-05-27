@@ -1,0 +1,135 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>대여</lemma>
+    <comment>Frames file for '대여' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>대여.01</id>
+      <edef>lend</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing lent"/>
+	<role argnum="2" argrole="lent to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>대여하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>북한의 이성록 당시 국제무역촉진위원회 위원장은 일본 방문 중 연립여당 대표단과 회담하는 자리에서 쌀 부족을 시인하고 여분의 쌀을 대여해 달라고 요청을 하는 가운데 이같은 의사를 시사했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 북한/NPR+의/PAN)
+           (NP (NP 이성록/NPR)
+               (NP 당시/NNC)
+               (NP 국제/NNC+무역/NNC+촉진/NNC+위원회/NNC
+                   위원장/NNC+은/PAU)))
+   (VP (NP-ADV 일본/NPR
+               방문/NNC
+               중/NNX)
+       (NP-ADV (S (WHNP *op*)
+                  (S (NP-SBJ *pro*)
+                     (VP (NP-COMP 연립/NNC+여당/NNC
+                                  대표단/NNC+과/PAD)
+                         (VV 회담/NNC+하/XSV+는/EAN))))
+               (NP 자리/NNC+에서/PAD))
+       (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (VP (NP-OBJ 쌀/NNC
+                                  부족/NNC+을/PCA)
+                          (VV 시인/NNC+하/XSV+고/ECS))
+                      (VP (S-COMP (NP-SBJ *pro*)
+                                  (VP (VP (NP-COMP *pro*)
+                                          (NP-OBJ (NP 여분/NNC+의/PAN)
+                                                  (NP 쌀/NNC+을/PCA))
+                                          (VV 대여/NNC+하/XSV+어/ECS))
+                                      달/VX+라/EFN+고/PAD))
+                          (VP (NP-OBJ-LV 요청/NNC+을/PCA)
+                              (LV 하/VV+는/EAN)))))
+               (NP 가운데/NNC))
+       (VP (NP-OBJ 이같은/DAN
+                   의사/NNC+을/PCA)
+           (VV 시사/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>여분의 쌀</term>
+	    </Arg>
+	    <Rel>
+	      <term>대여해</term>
+	    </Rel>
+	    <Aux>
+	      <f>어</f>
+	      <term>달라고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>대여받다</rel>
+	  <mapitem src="sbj" trg="arg2"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>퍼셀 대변인은 이번에 리콜되는 차량의 소유자들은 결함이 완전히 제거될 때까지 연료비 등을 포함해 새로운 대체차량을 대여받게 된다고 말했다.</text>
+	  <parse>
+(S (NP-SBJ 퍼셀/NPR
+           대변인/NNC+은/PAU)
+   (VP (S-COMP (NP-SBJ (NP (S (WHNP-1 *op*)
+                              (S (NP-SBJ *T*-1)
+                                 (VP (NP-ADV 이번/NNC+에/PAD)
+                                     (VP (VV 리콜/NNC+되/XSV+는/EAN)))))
+                           (NP 차량/NNC+의/PAN))
+                       (NP 소유자/NNC+들/XSF+은/PAU))
+               (VP (VP (NP-ADV (S (NP-SBJ 결함/NNC+이/PCA)
+                                  (VP (ADVP 완전히/ADV)
+                                      (VP (VV 제거/NNC+되/XSV+을/EAN))))
+                               (NP 때/NNC+까지/PAU))
+                       (S (NP-SBJ *pro*)
+                          (VP (NP-OBJ 연료비/NNC
+                                      등/NNX+을/PCA)
+                              (VV 포함/NNC+하/XSV+어/ECS)))
+                       (VP (NP-OBJ (S (WHNP-2 *op*)
+                                      (S (NP-SBJ *T*-2)
+                                         (ADJP 새롭/VJ+은/EAN)))
+                                   (NP 대체/NNC+차량/NNC+을/PCA))
+                           (VV 대여/NNC+받/XSV+게/ECS)))
+                   되/VX+는다/EFN+고/PAD))
+       말하/VV+었/EPF+다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>이번에 리콜되는 차량의 소유자들</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>결함이 완전히 제거될 때까지</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>연료비 등을 포함해</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>새로운 대체차량</term>
+	    </Arg>
+	    <Rel>
+	      <term>대여받게</term>
+	    </Rel>
+	    <Aux>
+	      <f>게</f>
+	      <term>된다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

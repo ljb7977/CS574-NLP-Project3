@@ -1,0 +1,54 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가정</lemma>
+    <comment>Frames file for '가정' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>가정.01</id>
+      <edef>assume</edef>
+      <roleset>
+	<role argnum="0" argrole="thinker"/>
+	<role argnum="1" argrole="thought"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가정하다</rel>
+	  <mapitem src="np-sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>자, 모든 일이 계획대로 진행된다고 가정하면 2대대는 접적 행군을 위해서 어떻게 편성될 것인가?</text>
+	  <parse>
+(S (INTJ 자/IJ)
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (S-COMP (NP-SBJ 모든/DAN
+                          일/NNC+이/PCA)
+                  (VP (NP-ADV 계획/NNC+대로/PAD)
+                      (VP (VV 진행/NNC+되/XSV+는다/EFN+고/PAD))))
+          (VV 가정/NNC+하/XSV+으면/ECS)))
+   (S (NP-SBJ 2/NNU
+              대대/NNC+은/PAU)
+      (VP (VP (S (NP-SBJ *pro*)
+                 (VP (NP-OBJ 접적/NNC
+                             행군/NNC+을/PCA)
+                     위하/VV+어서/ECS))
+              (VP (ADVP-COMP 어떻게/ADV)
+                  (VV 편성/NNC+되/XSV+을/EAN)))
+          (VX 것/NNX+이/CO+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>모든 일이 계획대로 진행된다</term>
+	    </Arg>
+	    <Rel>
+	      <term>가정하면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

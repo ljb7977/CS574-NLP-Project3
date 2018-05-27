@@ -1,0 +1,48 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>경신</lemma>
+    <comment>Frames file for '경신' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>경신.01</id>
+      <edef>renew</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing becoming newish"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>경신하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>코스닥 시장이 사상 최고치를 경신한 지 하루 만에 폭락세로 돌변했다.</text>
+	  <parse>
+(S (NP-SBJ 코스닥/NPR
+           시장/NNC+이/PCA)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 사상/NNC
+                              최고치/NNC+을/PCA)
+                      (VV 경신/NNC+하/XSV+은/EAN)))
+               (NP 지/NNX))
+       (NP-ADV 하루/NNC
+               만/NNX+에/PAD)
+       (VP (NP-COMP 폭락세/NNC+으로/PAD)
+           (VV 돌변/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>사상 최고치</term>
+	    </Arg>
+	    <Rel>
+	      <term>경신한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

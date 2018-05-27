@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>집결</lemma>
+    <comment>Frames file for '집결' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>집결.01</id>
+      <edef>assemble</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="2" argrole="location"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>집결하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>어느 좌표 방안에 적이 집결하고 있는가?</text>
+	  <parse>
+(S (NP-COMP-1 어느/DAN
+              좌표/NNC
+              방안/NNC+에/PAD)
+   (S (NP-SBJ 적/NNC+이/PCA)
+      (VP (VP (NP-COMP *T*-1)
+              (VV 집결/NNC+하/XSV+고/ECS))
+          있/VX+는가/EFN))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>어느 좌표 방안</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>적</term>
+	    </Arg>
+	    <Rel>
+	      <term>집결하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있는가</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

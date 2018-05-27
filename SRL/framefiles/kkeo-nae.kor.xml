@@ -1,0 +1,142 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>꺼내</lemma>
+    <comment>Frames file for '꺼내' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>꺼내.01</id>
+      <edef>bring out</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing brought out"/>
+	<role argnum="2" argrole="source"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>꺼내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지난달 24 일 뉴욕주 올버니 법원 배심원단은 지난해 2 월 디알로(당시 22 세)가 지갑을 꺼내는 것을 총기로 대응하려는 것으로 오인, 무려 41 발의 총탄을 발사해 사망케 한 뉴욕시 경찰 4 명에 대해 무죄평결을 내렸고 인권단체들은 이에 거세게 반발했다.</text>
+	  <parse>
+(S (S (NP-ADV 지난달/NNC
+              24/NNU
+              일/NNX)
+      (S (NP-SBJ 뉴욕/NPR+주/NNC
+                 올버니/NPR
+                 법원/NNC
+                 배심원단/NNC+은/PAU)
+         (VP (S (NP-SBJ *pro*)
+                (VP (NP-COMP (S (WHNP-1 *op*)
+                                (S (S (NP-SBJ *T*-1)
+                                      (VP (NP-OBJ (S (NP-ADV 지난해/NNC
+                                                             2/NNU
+                                                             월/NNX)
+                                                     (S (NP-SBJ 디알로/NPR
+                                                                (PRN -LRB-/SLQ
+                                                                     당시/NNC
+                                                                     22/NNU
+                                                                     세/NNX
+                                                                     -RRB-/SRQ)
+                                                                이/PCA)
+                                                        (VP (NP-OBJ 지갑/NNC+을/PCA)
+                                                            꺼내/VV+는/EAN)))
+                                                  (NP 것/NNX+을/PCA))
+                                          (NP-COMP (S (NP-SBJ *pro*)
+                                                      (VP (NP-ADV 총기/NNC+으로/PAD)
+                                                          (VP (VV 대응/NNC+하/XSV+으려는/EAN))))
+                                                   (NP 것/NNX+으로/PAD))
+                                          (VV 오인/NNC)))
+                                   ,/SCM
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (NP-OBJ (NP (ADVP 무려/ADV)
+                                                      (NP 41/NNU
+                                                          발/NNX+의/PAN))
+                                                  (NP 총탄/NNC+을/PCA))
+                                          (VV 발사/NNC+하/XSV+어/ECS)))
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (S-COMP (NP-SBJ *pro*)
+                                                  (VP (VV 사망/NNC+하/XSV+게/ECS)))
+                                          하/VV+은/EAN))))
+                             (NP 뉴욕/NPR+시/NNC
+                                 경찰/NNC
+                                 4/NNU
+                                 명/NNX+에/PAD))
+                    대하/VV+어/ECS))
+             (VP (NP-OBJ 무죄/NNC+평결/NNC+을/PCA)
+                 내리/VV+었/EPF+고/ECS))))
+   (S (NP-SBJ 인권/NNC+단체/NNC+들/XSF+은/PAU)
+      (VP (NP-COMP 이/NPN+에/PAD)
+          (VP (ADVP (ADV 거세/VJ+게/ECS))
+              (VP (VV 반발/NNC+하/XSV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난해 2 월</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>디알로(당시 22 세)</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>지갑</term>
+	    </Arg>
+	    <Rel>
+	      <term>꺼내는</term>
+	    </Rel>
+	  </relation>
+	</example>
+	<example>
+	  <text>롄후보 경선본부의 천쉐셩(진학성) 대변인은 "천수이볜이 리총통 카드를 꺼냈지만 리총통은 그를 도울 리 만무하며 이는 어리석은 자의 잠꼬대"라고 일축했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 롄/NPR+후보/NNC
+               경선/NNC+본부/NNC+의/PAN)
+           (NP 천쉐셩/NPR
+               (PRN -LRB-/SLQ
+                    (NP 진학성/NPR)
+                    -RRB-/SRQ)
+               대변인/NNC+은/PAU))
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ 천수이볜/NPR+이/PCA)
+                  (VP (NP-OBJ 리/NPR+총통/NNC
+                              카드/NNC+을/PCA)
+                      꺼내/VV+었/EPF+지만/ECS))
+               (S (NP-SBJ (S (NP-SBJ 리/NPR+총통/NNC+은/PAU)
+                             (VP (NP-OBJ 그/NPN+을/PCA)
+                                 돕/VV+을/EAN))
+                          (NP 리/NNX))
+                  (ADJP (VJ 만무/NNC+하/XSJ+으며/ECS)))
+               (S (NP-SBJ 이/NPN+은/PAU)
+                  (VP (NP (NP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (ADJP 어리석/VJ+은/EAN)))
+                              (NP 자/NNC+의/PAN))
+                          (NP 잠꼬대/NNC))))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       (VV 일축/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>천수이볜</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>를</f>
+	      <term>리총통 카드</term>
+	    </Arg>
+	    <Rel>
+	      <term>꺼냈지만</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

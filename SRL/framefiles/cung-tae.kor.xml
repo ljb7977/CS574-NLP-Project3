@@ -1,0 +1,44 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>중대</lemma>
+    <comment>Frames file for '중대' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>중대.01</id>
+      <edef>important</edef>
+      <roleset>
+	<role argnum="1" argrole="thing being important"/>
+	<role argnum="2" argrole="important to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>중대하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>정찰대는 중대한 임무를 띠고 막 출발했습니다.</text>
+	  <parse>
+(S (NP-SBJ 정찰대/NNC+은/PAU)
+   (VP (VP (NP-OBJ (S (WHNP-1 *op*)
+                      (S (NP-SBJ *T*-1)
+                         (ADJP (VJ 중대/NNC+하/XSJ+은/EAN))))
+                   (NP 임무/NNC+을/PCA))
+           띠/VV+고/ECS)
+       (VP (ADVP 막/ADV)
+           (VP (VV 출발/NNC+하/XSV+었/EPF+습니다/EFN))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>*trace*=임무</term>
+	    </Arg>
+	    <Rel>
+	      <term>중대한</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

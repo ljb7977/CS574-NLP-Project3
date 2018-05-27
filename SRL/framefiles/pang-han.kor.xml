@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>방한</lemma>
+    <comment>Frames file for '방한' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>방한.01</id>
+      <edef>visit Korea</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>방한하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>디츠 위원장은 이어 "오는 5 월 한-독 산업협력위원회의 서울 개최시 장관급을 단장으로 한 대규모 독일 경제사절단이 방한할 예정"이라면서 "연구단지 조성도 이 회의에서 논의될 예정"이라고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 디츠/NPR
+           위원장/NNC+은/PAU)
+   (VP (ADVP 이어/ADV)
+       (S (NP-SBJ *pro*)
+          (VP (NP "/SLQ
+                  (S (NP-ADV 오는/DAN
+                             5/NNU
+                             월/NNX)
+                     (NP-ADV (NP 한/NPR
+                                 -/SSY
+                                 독/NPR
+                                 산업/NNC+협력/NNC+위원회/NNC+의/PAN)
+                             (NP 서울/NPR
+                                 개최/NNC+시/NNX))
+                     (S (NP-SBJ (S (WHNP-1 *op*)
+                                   (S (NP-SBJ *T*-1)
+                                      (VP (NP-OBJ 장관/NNC+급/XSF+을/PCA)
+                                          (NP-COMP 단장/NNC+으로/PAD)
+                                          하/VV+은/EAN)))
+                                (NP 대규모/NNC
+                                    독일/NPR
+                                    경제/NNC+사절단/NNC+이/PCA))
+                        (VP (VV 방한/NNC+하/XSV+을/EAN))))
+                  (NP 예정/NNC)
+                  "/SRQ
+                  이/CO+라면서/ECS)))
+       (VP (NP-COMP "/SLQ
+                    (S (NP-SBJ 연구/NNC+단지/NNC
+                               조성/NNC+도/PAU)
+                       (VP (NP-ADV 이/DAN
+                                   회의/NNC+에서/PAD)
+                           (VP (VV 논의/NNC+되/XSV+을/EAN))))
+                    (NP 예정/NNC)
+                    "/SRQ
+                    이라고/PAD)
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>오는 5 월</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>한-독 산업협력위원회의 서울 개최시</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>장관급을 단장으로 한 대규모 독일 경제사절단</term>
+	    </Arg>
+	    <Rel>
+	      <term>방한할</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

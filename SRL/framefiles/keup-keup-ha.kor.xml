@@ -1,0 +1,110 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>급급하</lemma>
+    <comment>Frames file for '급급하' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>급급하.01</id>
+      <edef>intent</edef>
+      <roleset>
+	<role argnum="1" argrole="entity being intent"/>
+	<role argnum="2" argrole="intent on"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>급급하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 재경장관은 코스닥 거품논쟁과 관련 '현재의 벤처기업 그 자체가 거품이라고 보지는 않는다'며 '그러나 일부 기업들이 애매모호한 사업계획으로 돈버는 데만 급급하고 있으므로 이를 자본시장에 소개하고 상장. 등록시키는 일을 맡고 있는 증권사들이 유능한 인재를 고용, 정확한 정보를 시장에 공급해야 한다'고 지적했다.</text>
+	  <parse>
+(S (NP-SBJ 이/NPR
+           재경/NNC+장관/NNC+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (NP-COMP 코스닥/NPR
+                       거품/NNC+논쟁/NNC+과/PAD)
+              (VV 관련/NNC)))
+       (S '/SLQ
+          (NP-SBJ *pro*)
+          (VP (VP (S-COMP (NP-SBJ (NP (NP 현재/NNC+의/PAN)
+                                      (NP 벤처/NNC+기업/NNC))
+                                  (NP 그/DAN
+                                      자체/NNC+이/PCA))
+                          (VP (NP 거품/NNC+이/CO+라/EFN+고/PAD)))
+                  보/VV+지/ECS+은/PAU)
+              않/VX+는다/EFN)
+          '/SRQ
+          며/ECS)
+       (VP (S-COMP '/SLQ
+                   (ADCP 그러나/ADC)
+                   (S (NP-SBJ 일부/NNC
+                              기업/NNC+들/XSF+이/PCA)
+                      (VP (ADJP (NP-COMP (S (NP-SBJ *pro*)
+                                            (VP (NP-ADV (S (WHNP-1 *op*)
+                                                           (S (NP-SBJ *T*-1)
+                                                              (ADJP (VJ 애매모호/NNC+하/XSJ+은/EAN))))
+                                                        (NP 사업/NNC+계획/NNC+으로/PAD))
+                                                (VP (NP-OBJ 돈/NNC)
+                                                    벌/VV+는/EAN)))
+                                         (NP 데/NNX+만/PAU))
+                                급급하/VJ+고/ECS)
+                          있/VX+으므로/ECS))
+                   (S (NP-SBJ (S (WHNP-2 *op*)
+                                 (S (NP-SBJ *T*-2)
+                                    (VP (VP (NP-OBJ (S (NP-SBJ *pro*)
+                                                       (VP (NP-OBJ 이/NPN+을/PCA)
+                                                           (NP-COMP 자본/NNC+시장/NNC+에/PAD)
+                                                           (VV (VV 소개/NNC+하/XSV+고/ECS)
+                                                               (VV 상장/NNC)
+                                                               ,/SCM
+                                                               (VV 등록/NNC+시키/XSV+는/EAN))))
+                                                    (NP 일/NNC+을/PCA))
+                                            맡/VV+고/ECS)
+                                        있/VX+는/EAN)))
+                              (NP 증권사/NNC+들/XSF+이/PCA))
+                      (VP (VP (S (NP-SBJ *pro*)
+                                 (VP (NP-OBJ (S (WHNP-3 *op*)
+                                                (S (NP-SBJ *T*-3)
+                                                   (ADJP (VJ 유능/NNC+하/XSJ+은/EAN))))
+                                             (NP 인재/NNC+을/PCA))
+                                     (VV 고용/NNC)))
+                              ,/SCM
+                              (VP (NP-OBJ (S (WHNP-4 *op*)
+                                             (S (NP-SBJ *T*-4)
+                                                (ADJP (VJ 정확/NNC+하/XSJ+은/EAN))))
+                                          (NP 정보/NNC+을/PCA))
+                                  (NP-COMP 시장/NNC+에/PAD)
+                                  (VV 공급/NNC+하/XSV+어야/ECS)))
+                          하/VX+는다/EFN))
+                   '/SRQ
+                   고/PAD)
+           (VV 지적/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>그러나</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>일부 기업들</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>만</f>
+	      <term>애매모호한 사업계획으로 돈버는 데</term>
+	    </Arg>
+	    <Rel>
+	      <term>급급하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있으므로</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

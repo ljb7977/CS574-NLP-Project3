@@ -1,0 +1,79 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>열띠</lemma>
+    <comment>Frames file for '열띠' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>열띠.01</id>
+      <edef>ardent</edef>
+      <roleset>
+	<role argnum="1" argrole="thing ardent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>열띠다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>영국 에든버러에서 지난 28 일 개막, 3 일간 계속된 이 회의에는 기업 로비스트, 과학자, 환경운동가, 정부 당국자 등 4 백여명이 참석, 열띤 논쟁을 벌였으나 명확한 결론을 내지는 못했다.</text>
+	  <parse>
+(S (S (NP-COMP-2 (S (WHNP-1 *op*)
+                    (S (S (NP-ADV 영국/NPR
+                                  에든버러/NPR+에서/PAD)
+                          (NP-ADV 지난/DAN
+                                  28/NNU
+                                  일/NNX)
+                          (S (NP-SBJ *T*-1)
+                             (VP (VV 개막/NNC))))
+                       ,/SCM
+                       (S (NP-SBJ *T*-1)
+                          (VP (NP-ADV 3/NNU
+                                      일/NNX+간/XSF)
+                              (VP (VV 계속/NNC+되/XSV+은/EAN))))))
+                 (NP 이/DAN
+                     회의/NNC+에/PAD+은/PAU))
+      (S (NP-SBJ (NP (NP (NP 기업/NNC
+                             로비스트/NNC)
+                         ,/SCM
+                         (NP 과학자/NNC)
+                         ,/SCM
+                         (NP 환경/NNC+운동가/NNC)
+                         ,/SCM
+                         (NP 정부/NNC
+                             당국자/NNC))
+                     (NP 등/NNX))
+                 (NP 4/NNU
+                     백/NNU+여/XSF+명/NNX+이/PCA))
+         (VP (NP-COMP *T*-2)
+             (VV 참석/NNC))))
+   ,/SCM
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ (S (WHNP-3 *op*)
+                     (S (NP-SBJ *T*-3)
+                        (VP 열띠/VV+은/EAN)))
+                  (NP 논쟁/NNC+을/PCA))
+          벌이/VV+었/EPF+으나/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (VP (NP-OBJ (S (WHNP-4 *op*)
+                         (S (NP-SBJ *T*-4)
+                            (ADJP 명확하/VJ+은/EAN)))
+                      (NP 결론/NNC+을/PCA))
+              내/VV+지/EFN+은/PAU)
+          못하/VX+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=논쟁</term>
+	    </Arg>
+	    <Rel>
+	      <term>열띤</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>

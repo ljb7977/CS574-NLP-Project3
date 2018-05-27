@@ -1,0 +1,60 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>만무</lemma>
+    <comment>Frames file for '만무' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>만무.01</id>
+      <edef>out of the question</edef>
+      <roleset>
+	<role argnum="1" argrole="proposition being out of the question"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>만무하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>롄후보 경선본부의 천쉐셩(진학성) 대변인은 "천수이볜이 리총통 카드를 꺼냈지만 리총통은 그를 도울 리 만무하며 이는 어리석은 자의 잠꼬대"라고 일축했다.</text>
+	  <parse>
+(S (NP-SBJ (NP 롄/NPR+후보/NNC
+               경선/NNC+본부/NNC+의/PAN)
+           (NP 천쉐셩/NPR
+               (PRN -LRB-/SLQ
+                    (NP 진학성/NPR)
+                    -RRB-/SRQ)
+               대변인/NNC+은/PAU))
+   (VP (S-COMP "/SLQ
+               (S (NP-SBJ 천수이볜/NPR+이/PCA)
+                  (VP (NP-OBJ 리/NPR+총통/NNC
+                              카드/NNC+을/PCA)
+                      꺼내/VV+었/EPF+지만/ECS))
+               (S (NP-SBJ (S (NP-SBJ 리/NPR+총통/NNC+은/PAU)
+                             (VP (NP-OBJ 그/NPN+을/PCA)
+                                 돕/VV+을/EAN))
+                          (NP 리/NNX))
+                  (ADJP (VJ 만무/NNC+하/XSJ+으며/ECS)))
+               (S (NP-SBJ 이/NPN+은/PAU)
+                  (VP (NP (NP (S (WHNP-1 *op*)
+                                 (S (NP-SBJ *T*-1)
+                                    (ADJP 어리석/VJ+은/EAN)))
+                              (NP 자/NNC+의/PAN))
+                          (NP 잠꼬대/NNC))))
+               "/SRQ
+               이/CO+라/EFN+고/PAD)
+       (VV 일축/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <term>리총통은 그를 도울 리</term>
+	    </Arg>
+	    <Rel>
+	      <term>만무하며</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

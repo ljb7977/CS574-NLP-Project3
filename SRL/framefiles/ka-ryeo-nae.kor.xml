@@ -1,0 +1,81 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가려내</lemma>
+    <comment>Frames file for '가려내' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가려내.01</id>
+      <edef>pick out</edef>
+      <roleset>
+	<role argnum="0" argrole="picker"/>
+	<role argnum="1" argrole="thing picked"/>
+	<role argnum="2" argrole="group or source"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가려내다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>지난 88 년 이른바 국가안보에 위협을 주는 시민을 가려내기 위한 목적의 국가 안보기관이었던 '코프캄비트'를 대체해서 설립된 바코르스트라나스는 최고 군사령관 직속으로 활동하고 있으며 지방에서는 이 기관이 현지 군사령관 직속으로 활동한다.</text>
+	  <parse>
+(S (S (NP-SBJ (S (WHNP-4 *op*)
+                 (S (NP-SBJ *T*-4)
+                    (VP (NP-ADV 지난/DAN
+                                88/NNU
+                                년/NNX)
+                        (S (NP-SBJ *pro*)
+                           (VP (NP-OBJ (S (WHNP-3 *op*)
+                                          (S (NP-SBJ *T*-3)
+                                             (VP (NP (NP (S (WHNP-2 *op*)
+                                                            (S (NP-SBJ *T*-2)
+                                                               (VP (S-OBJ (NP-SBJ *pro*)
+                                                                          (VP (NP-OBJ (S (WHNP-1 *op*)
+                                                                                         (S (NP-SBJ *T*-1)
+                                                                                            (VP (ADVP 이른바/ADV)
+                                                                                                (VP (NP-COMP 국가/NNC+안보/NNC+에/PAD)
+                                                                                                    (NP-OBJ 위협/NNC+을/PCA)
+                                                                                                    주/VV+는/EAN))))
+                                                                                      (NP 시민/NNC+을/PCA))
+                                                                              가려내/VV+기/ENM))
+                                                                   위하/VV+은/EAN)))
+                                                         (NP 목적/NNC+의/PAN))
+                                                     (NP 국가/NNC
+                                                         안보/NNC+기관/NNC+이/CO+었/EPF+던/EAN)))))
+                                       (NP '/SLQ
+                                           코프캄비트/NPR
+                                           '/SRQ
+                                           을/PCA))
+                               (VV 대체/NNC+하/XSV+어서/ECS)))
+                        (VP (VV 설립/NNC+되/XSV+은/EAN)))))
+              (NP 바코르스트라나스/NPR+은/PAU))
+      (VP (VP (NP-ADV 최고/NNC
+                      군사령관/NNC
+                      직속/NNC+으로/PAD)
+              (VP (VV 활동/NNC+하/XSV+고/ECS)))
+          있/VX+으며/ECS))
+   (S (NP-ADV 지방/NNC+에서/PAD+은/PAU)
+      (S (NP-SBJ 이/DAN
+                 기관/NNC+이/PCA)
+         (VP (NP-ADV 현지/NNC
+                     군사령관/NNC
+                     직속/NNC+으로/PAD)
+             (VP (VV 활동/NNC+하/XSV+는다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>이른바 국가안보에 위협을 주는 시민</term>
+	    </Arg>
+	    <Rel>
+	      <term>가려내기</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,103 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>내비치</lemma>
+    <comment>Frames file for '내비치' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>내비치.01</id>
+      <edef>hint</edef>
+      <roleset>
+	<role argnum="0" argrole="sayer"/>
+	<role argnum="1" argrole="hint"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>내비치다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>당초 미국 담배업계는 식품의약국(FDA)이 담배산업에 대한 감독권을 가져야 한다는 정부 주장을 대법원이 수용할 경우 의회에 로비를 해 담배산업에 유리한 방향으로 규제 내용을 만든다는 입장이었으나 패리시 부회장은 법원에서 FDA 감독권이 인정되지 않더라도 정부의 규제권을 인정하는 방향으로 의회와 협상할 방침을 내비쳤다.</text>
+	  <parse>
+(S (S (NP-ADV 당초/NNC)
+      (S (NP-SBJ 미국/NPR
+                 담배/NNC+업계/NNC+은/PAU)
+         (VP (NP-ADV (S (NP-OBJ-1 (S (NP-SBJ 식품의약국/NPR
+                                             (PRN -LRB-/SLQ
+                                                  FDA/NFW
+                                                  -RRB-/SRQ)
+                                             이/PCA)
+                                     (VP (VP (NP-OBJ (S (WHNP-2 *op*)
+                                                        (S (NP-SBJ *T*-2)
+                                                           (VP (NP-COMP 담배/NNC+산업/NNC+에/PAD)
+                                                               대하/VV+은/EAN)))
+                                                     (NP 감독권/NNC+을/PCA))
+                                             가지/VV+어야/ECS)
+                                         하/VX+는다는/EAN))
+                                  (NP 정부/NNC
+                                      주장/NNC+을/PCA))
+                        (S (NP-SBJ 대법원/NNC+이/PCA)
+                           (VP (NP-OBJ *T*-1)
+                               (VV 수용/NNC+하/XSV+을/EAN))))
+                     (NP 경우/NNC))
+             (VP (NP (S (S (NP-SBJ *pro*)
+                           (VP (NP-COMP 의회/NNC+에/PAD)
+                               (NP-OBJ 로비/NNC+을/PCA)
+                               하/VV+어/ECS))
+                        (S (NP-SBJ *pro*)
+                           (VP (NP-COMP (S (WHNP-3 *op*)
+                                           (S (NP-SBJ *T*-3)
+                                              (ADJP (NP-COMP 담배/NNC+산업/NNC+에/PAD)
+                                                    (VJ 유리/NNC+하/XSJ+은/EAN))))
+                                        (NP 방향/NNC+으로/PAD))
+                               (NP-OBJ 규제/NNC
+                                       내용/NNC+을/PCA)
+                               만들/VV+는다는/EAN)))
+                     (NP 입장/NNC+이/CO+었/EPF+으나/ECS))))))
+   (S (NP-SBJ 패리시/NPR
+              부회장/NNC+은/PAU)
+      (VP (S (NP-ADV 법원/NNC+에서/PAD)
+             (S (NP-SBJ FDA/NFW
+                        감독권/NNC+이/PCA)
+                (VP (VP (VV 인정/NNC+되/XSV+지/ECS))
+                    않/VX+더라도/ECS)))
+          (VP (NP-OBJ (S (NP-SBJ *pro*)
+                         (VP (NP-ADV (S (NP-SBJ *pro*)
+                                        (VP (NP-OBJ (NP 정부/NNC+의/PAN)
+                                                    (NP 규제권/NNC+을/PCA))
+                                            (VV 인정/NNC+하/XSV+는/EAN)))
+                                     (NP 방향/NNC+으로/PAD))
+                             (VP (NP-COMP 의회/NNC+과/PAD)
+                                 (VV 협상/NNC+하/XSV+을/EAN))))
+                      (NP 방침/NNC+을/PCA))
+              내비치/VV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>당초 미국 담배업계는 식품의약국(FDA)이 담배산업에 대한 감독권을 가져야 한다는 정부 주장을 대법원이 수용할 경우 의회에 로비를 해 담배산업에 유리한 방향으로 규제 내용을 만든다는 입장이었으나</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>은</f>
+	      <term>패리시 부회장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>법원에서 FDA 감독권이 인정되지 않더라도</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>정부의 규제권을 인정하는 방향으로 의회와 협상할 방침</term>
+	    </Arg>
+	    <Rel>
+	      <term>내비췄다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

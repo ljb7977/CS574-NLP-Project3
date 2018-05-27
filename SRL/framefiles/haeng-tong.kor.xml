@@ -1,0 +1,50 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>행동</lemma>
+    <comment>Frames file for '행동' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>행동.01</id>
+      <edef>act</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>행동하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	</mapping>
+	<example>
+	  <text>훈련을 다 받은 다음에 저희 포반은 소대로부터 독립해서 행동했습니다.</text>
+	  <parse>
+(S (NP-ADV (S (NP-SBJ *pro*)
+              (VP (NP-OBJ-LV 훈련/NNC+을/PCA)
+                  (VP (ADVP 다/ADV)
+                      (VP (LV 받/VV+은/EAN)))))
+           (NP 다음/NNC+에/PAD))
+   (S (NP-SBJ 저희/NPN
+              포반/NNC+은/PAU)
+      (VP (NP-COMP 소대/NNC+으로부터/PAD)
+          (VV 독립/NNC+하/XSV+어서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VV 행동/NNC+하/XSV+었/EPF+습니다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>훈련을 다 받은 다음에</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>DIS</f>
+	      <term>저희 포반은 소대로부터 독립해서</term>
+	    </Arg>
+	    <Rel>
+	      <term>행동했습니다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

@@ -1,0 +1,399 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>가</lemma>
+    <comment>Frames file for '가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가.01</id>
+      <edef>go</edef>
+      <roleset>
+	<role argnum="0" argrole="entity going"/>
+	<role argnum="1" argrole="path"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>2 대대 지휘소에서 109 연대 지휘부로 가려면 어떤 길로 가는가?</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-COMP (NP 2/NNU 대대/NNC 지휘소/NNC+에서/PAD)
+		   (NP 109/NNU 연대/NNC 지휘부/NNC+으로/PAD))
+	  가/VV+으려면/ECS))
+   (S (NP-SBJ *pro*)
+      (VP (NP-ADV 어떤/DAN 길/NNC+으로/PAD)
+	  (VP 가/VV+는가/EFN)))
+   ?/SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="2">
+	      <f>에서</f>
+	      <term>2 대대 지휘소</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>109 연대 지휘부</term>
+	    </Arg>
+	    <Rel>
+	      <term>가려면</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>가.02</id>
+      <edef>amount to</edef>
+      <roleset>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="quantity"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>이 축전지들은 아무리 많이 써도 일주일은 가지요.</text>
+	  <parse>
+(S (NP-SBJ 이/DAN
+           축전지/NNC+들/XSF+은/PAU)
+   (VP (S (NP-SBJ *pro*)
+          (VP (ADVP 아무리/ADV)
+              (ADVP 많이/ADV)
+              (VP (NP-OBJ *pro*)
+                  쓰/VV+어도/ECS)))
+       (VP (NP-COMP 일/NNU
+                    주일/NNX+은/PAU)
+           가/VV+지요/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>이 축전지들은</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>CND</f>
+	      <term>아무리 많이 써도</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>은</f>
+	      <term>일주일</term>
+	    </Arg>
+	    <Rel>
+	      <term>가지요</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+    <frameset>
+      <id>가.03</id>
+      <edef>make-light verb</edef>
+      <roleset>
+	<role argnum="1" argrole="deverbal noun"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>조 대위, 그건 이해가 가지만 별로 나에겐 도움이 되지 않소.</text>
+	  <parse>
+(S (NP-VOC 조/NPR
+           대위/NNC)
+   ,/SCM
+   (S (NP-SBJ-LV (NP 그것/NPN+은/PAU)
+                 (NP 이해/NNC+이/PCA))
+      (VP (LV 가/VV+지만/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (VP (ADVP 별로/ADV)
+              (NP-ADV 나/NPN+에게/PAD+은/PAU)
+              (VP (NP-COMP 도움/NNC+이/PCA)
+                  되/VV+지/ECS))
+          않/VX+소/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>그것</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>이해</term>
+	    </Arg>
+	    <Rel>
+	      <term>가지만</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>가지고 가</lemma>
+    <comment>Frames file for '가지고 가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>가.04</id>
+      <edef>take-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing taken"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>가지고 가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>대대 통신 소대에 가지고 가서 수리를 받지요.</text>
+	  <parse>
+(S (S (NP-SBJ *pro*)
+      (VP (NP-OBJ *pro*)
+          (NP-COMP 대대/NNC
+                   통신/NNC
+                   소대/NNC+에/PAD)
+          (CV 가지/VV+고/ECS
+              가/VV+어서/ECS)))
+   (S (NP-SBJ *pro*)
+      (VP (NP-OBJ-LV 수리/NNC+을/PCA)
+          (LV 받/VV+지요/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="3">
+	      <f>에</f>
+	      <term>대대 통신 소대</term>
+	    </Arg>
+	    <Rel>
+	      <term>가지고 가서</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>끌고 가</lemma>
+    <comment>Frames file for '끌고 가' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>가.05</id>
+      <edef>draw-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="thing drawn"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>끌고 가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>저는 질-151 트럭 몇 대가 이 도로를 따라 동쪽으로 자주포 수문을 끌고 가는 걸 보았습니다.</text>
+	  <parse>
+(S (NP-SBJ 저/NPN+은/PAU)
+   (VP (NP-OBJ (S (NP-SBJ (NP 질-151/NNC
+                              트럭/NNC)
+                          (NP 몇/NNU
+                              대/NNX+이/PCA))
+                  (VP (S (NP-SBJ *pro*)
+                         (VP (NP-OBJ 이/DAN
+                                     도로/NNC+을/PCA)
+                             따르/VV+어/ECS))
+                      (VP (NP-COMP 동쪽/NNC+으로/PAD)
+                          (NP-OBJ 자주포/NNC
+                                  수/XPF+문/NNX+을/PCA)
+                          (CV 끌/VV+고/ECS
+                              가/VV+는/EAN))))
+               (NP 것/NNX+을/PCA))
+       보/VV+었/EPF+습니다/EFN)
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>질-151 트럭 몇 대</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>LOC</f>
+	      <term>이 도로를 따라</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>동쪽</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>자주포 수문</term>
+	    </Arg>
+	    <Rel>
+	      <term>끌고 가는</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>실려 가</lemma>
+    <comment>Frames file for '실려 가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가.06</id>
+      <edef>transport-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent, causer"/>
+	<role argnum="1" argrole="thing in motion"/>
+	<role argnum="2" argrole="start point"/>
+	<role argnum="3" argrole="end point"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>실려 가다</rel>
+	  <mapitem src="s" trg="arg0"/>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	  <mapitem src="comp" trg="arg3"/>
+	</mapping>
+	<example>
+	  <text>학생과 교장은 모두 머리에 생명이 위독할 정도의 상처를 입고 헬리콥터로 병원으로 실려 갔다.</text>
+	  <parse>
+(S (NP-SBJ (NP 학생/NNC+과/PCJ)
+           (NP 교장/NNC+은/PAU))
+   (VP (ADVP 모두/ADV)
+       (VP (VP (NP-ADV 머리/NNC+에/PAD)
+	       (VP (NP-OBJ (NP (S (NP-SBJ 생명/NNC+이/PCA)
+				  (ADJP 위독하/VJ+을/EAN))
+			       (NP 정도/NNC+의/PAN))
+			   (NP 상처/NNC+을/PCA))
+		   입/VV+고/ECS))
+	   (VP (NP-ADV 헬리콥터/NNC+으로/PAD)
+	       (VP (NP-COMP 병원/NNC+으로/PAD)
+		   (CV 실리/VV+어/ECS
+	               가/VV+었/EPF+다/EFN)))))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="1">
+	      <f>은</f>
+	      <term>학생과 교장</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>모두</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>INS</f>
+	      <term>헬리콥터로</term>
+	    </Arg>
+	    <Arg n="3">
+	      <f>으로</f>
+	      <term>병원</term>
+	    </Arg>
+	    <Rel>
+	      <term>실려 갔다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <predicate>
+    <lemma>약탈해 가</lemma>
+    <comment>Frames file for '약탈해 가' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>가.07</id>
+      <edef>loot-CV</edef>
+      <roleset>
+	<role argnum="0" argrole="agent"/>
+	<role argnum="1" argrole="theme"/>
+	<role argnum="2" argrole="source"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>약탈해 가다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>자크 시라크 프랑스 대통령은 6 일 지난 1866 년 병인양요 당시 프랑스군이 약탈해 간 외규장각 고문서 반환 문제와 관련, `조화로운' 해결책이 조속히 이뤄지기를 바란다고 밝혔다.</text>
+	  <parse>
+(S (NP-SBJ 자크/NPR
+           시라크/NPR
+           프랑스/NPR
+           대통령/NNC+은/PAU)
+   (VP (NP-ADV 6/NNU
+               일/NNX)
+       (S (NP-SBJ *pro*)
+          (VP (NP-COMP (NP (S (WHNP-1 *op*)
+                              (S (NP-ADV 지난/DAN
+                                         1866/NNU
+                                         년/NNX
+                                         병인양요/NPR
+                                         당시/NNC)
+                                 (S (NP-SBJ 프랑스/NPR+군/NNC+이/PCA)
+                                    (VP (NP-OBJ *T*-1)
+                                        (CV (VV 약탈/NNC+하/XSV+어/ECS)
+                                            가/VV+은/EAN)))))
+                           (NP 외규장각/NPR
+                               고문서/NNC))
+                       (NP 반환/NNC
+                           문제/NNC+과/PAD))
+              (VV 관련/NNC)))
+       ,/SCM
+       (VP (S-COMP (NP-SBJ *pro*)
+                   (VP (S-OBJ (NP-SBJ (S (WHNP-2 *op*)
+					 (S (NP-SBJ *T*-2)
+					    (ADJP `/SLQ
+						  조화롭/VJ+은/EAN
+						  '/SRQ)))
+				      (NP 해결책/NNC+이/PCA))
+			      (VP (ADVP 조속히/ADV)
+				  (VP (VV 이루/VV+어지/XSV+기/ENM+을/PCA))))
+                       바라/VV+는다/EFN+고/PAD))
+           밝히/VV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>지난 1866 년 병인양요 당시</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>이</f>
+	      <term>프랑스군</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f></f>
+	      <term>*trace*=외규장각 고문서</term>
+	    </Arg>
+	    <Rel>
+	      <term>약탈해 간</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

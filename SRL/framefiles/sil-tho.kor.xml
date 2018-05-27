@@ -1,0 +1,150 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>실토</lemma>
+    <comment>Frames file for '실토' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>실토.01</id>
+      <edef>confess</edef>
+      <roleset>
+	<role argnum="0" argrole="speaker"/>
+	<role argnum="1" argrole="utterance"/>
+	<role argnum="2" argrole="hearer"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>실토하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="obj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>비틀스의 전 멤버였던 폴 매카트니(57)가 15 일 함께 자선 사업을 펼치다 친해진 수영복 모델 출신 헤더 밀스(32)와 서로 가까운 관계임을 실토했다.</text>
+	  <parse>
+(S (NP-SBJ (S (WHNP-1 *op*)
+              (S (NP-SBJ *T*-1)
+                 (VP (NP (NP 비틀스/NPR+의/PAN)
+                         (NP 전/DAN
+                             멤버/NNC+이/CO+었/EPF+던/EAN)))))
+           (NP 폴/NPR
+               매카트니/NPR
+               (PRN -LRB-/SLQ
+                    57/NNU
+                    -RRB-/SRQ)
+               이/PCA))
+   (VP (NP-ADV 15/NNU
+               일/NNX)
+       (VP (S-OBJ (NP-SBJ *pro*)
+                  (VP (NP (S (NP-SBJ *pro*)
+                             (ADJP (NP-COMP (S (WHNP-2 *op*)
+                                               (S (NP-SBJ *pro*)
+                                                  (VP (S (NP-SBJ *pro*)
+                                                         (VP (ADVP 함께/ADV)
+                                                             (VP (NP-OBJ 자선/NNC
+                                                                         사업/NNC+을/PCA)
+                                                                 펼치/VV+다/ECS)))
+                                                      (VP (NP-COMP *T*-2)
+                                                          (VV 친하/VJ+어지/XSV+은/EAN)))))
+                                            (NP 수영복/NNC
+                                                모델/NNC
+                                                출신/NNC
+                                                헤더/NPR
+                                                밀스/NPR
+                                                (PRN -LRB-/SLQ
+                                                     32/NNU
+                                                     -RRB-/SRQ)
+                                                과/PAD))
+                                   (ADJP (ADVP 서로/ADV)
+                                         (ADJP 가깝/VJ+은/EAN))))
+                          (NP 관계/NNC+이/CO+음/ENM+을/PCA))))
+           (VV 실토/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>가</f>
+	      <term>비틀스의 전 멤버였던 폴 매카트니(57)</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>15 일</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>을</f>
+	      <term>함께 자선 사업을 펼치다 친해진 수영복 모델 출신 헤더 밀스(32)와 서로 가까운 관계임</term>
+	    </Arg>
+	    <Rel>
+	      <term>실토했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+      <frame>
+	<mapping>
+	  <rel>실토하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="s-comp" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>모슬리는 체포된 후 마약사용자며 매춘부 출신에다 포르노 여배우인 다이애나 히로나가를 고용, 딘을 감시하도록 지시했으나 관계가 계속되자 리처드 머릴로 등 2 명을 사주해 청부살인을 저질렀다고 실토했다.</text>
+	  <parse>
+(S (NP-SBJ 모슬리/NPR+은/PAU)
+   (VP (NP-ADV (S (NP-SBJ *pro*)
+                  (VP (VV 체포/NNC+되/XSV+은/EAN)))
+               (NP 후/NNC))
+       (VP (S-COMP (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (S (WHNP-1 *op*)
+                                            (S (S (NP-SBJ *T*-1)
+                                                  (VP (NP 마약/NNC+사용자/NNC+이/CO+으며/ECS)))
+                                               (S (NP-SBJ *T*-1)
+                                                  (VP (NP-ADV 매춘부/NNC
+                                                              출신/NNC+에다/PAD)
+                                                      (VP (NP 포르노/NNC
+                                                              여배우/NNC+이/CO+은/EAN))))))
+                                         (NP 다이애나/NPR
+                                             히로나가/NPR+을/PCA))
+                                 (VV 고용/NNC)))
+                          ,/SCM
+                          (VP (S-COMP (NP-SBJ *pro*)
+                                      (VP (NP-OBJ 딘/NPR+을/PCA)
+                                          (VV 감시/NNC+하/XSV+도록/ECS)))
+                              (VV 지시/NNC+하/XSV+었/EPF+으나/ECS))))
+                   (S (NP-SBJ 관계/NNC+이/PCA)
+                      (VP (VV 계속/NNC+되/XSV+자/ECS)))
+                   (S (NP-SBJ *pro*)
+                      (VP (S (NP-SBJ *pro*)
+                             (VP (NP-OBJ (NP (NP 리처드/NPR
+                                                 머릴로/NPR)
+                                             (NP 등/NNX))
+                                         (NP 2/NNU
+                                             명/NNX+을/PCA))
+                                 (VV 사주/NNC+하/XSV+어/ECS)))
+                          (VP (NP-OBJ 청부/NNC+살인/NNC+을/PCA)
+                              저지르/VV+었/EPF+다/EFN+고/PAD))))
+           (VV 실토/NNC+하/XSV+었/EPF+다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="0">
+	      <f>는</f>
+	      <term>모슬리</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>체포된 후</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>고</f>
+	      <term>마약사용자며 매춘부 출신에다 포르노 여배우인 다이애나 히로나가를 고용, 딘을 감시하도록 지시했으나 관계가 계속되자 리처드 머릴로 등 2 명을 사주해 청부살인을 저질렀다</term>
+	    </Arg>
+	    <Rel>
+	      <term>실토했다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

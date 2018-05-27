@@ -1,0 +1,52 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>반대</lemma>
+    <comment>Frames file for '반대' based on sentences in Virginia Corpus</comment>
+    <frameset>
+      <id>반대.01</id>
+      <edef>oppose</edef>
+      <roleset>
+	<role argnum="0" argrole="opposer"/>
+	<role argnum="1" argrole="opposed to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>반대하다</rel>
+	  <mapitem src="sbj" trg="arg0"/>
+	  <mapitem src="comp" trg="arg1"/>
+	</mapping>
+	<example>
+	  <text>때로는 인민군 군관도 김 일성의 명령에 반대한다.</text>
+	  <parse>
+(S (ADVP 때로/ADV+은/PAU)
+   (S (NP-SBJ 인민군/NNC
+              군관/NNC+도/PAU)
+      (VP (NP-COMP (NP 김/NPR
+                       일성/NPR+의/PAN)
+                   (NP 명령/NNC+에/PAD))
+          (VV 반대/NNC+하/XSV+는다/EFN)))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>때로는</term>
+	    </Arg>
+	    <Arg n="0">
+	      <f>도</f>
+	      <term>인민군 군관</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>에</f>
+	      <term>김 일성의 명령</term>
+	    </Arg>
+	    <Rel>
+	      <term>반대한다</term>
+	    </Rel>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+</framefile>

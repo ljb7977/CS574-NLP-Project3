@@ -1,0 +1,78 @@
+<!DOCTYPE predicate SYSTEM "verb.dtd">
+<framefile>
+  <predicate>
+    <lemma>이바지</lemma>
+    <comment>Frames file for '이바지' based on sentences in Virginia and Newswire Corpus</comment>
+    <frameset>
+      <id>이바지.01</id>
+      <edef>contribute</edef>
+      <roleset>
+	<role argnum="1" argrole="thing contributing"/>
+	<role argnum="2" argrole="contribute to"/>
+      </roleset>
+      <frame>
+	<mapping>
+	  <rel>이바지하다</rel>
+	  <mapitem src="sbj" trg="arg1"/>
+	  <mapitem src="comp" trg="arg2"/>
+	</mapping>
+	<example>
+	  <text>양국 장관은 2002 년 월드컵 한일 공동개최를 앞두고 식생활 분야에서 양국간 음식문화의 상호교류가 확산돼 가는 추세가 한일 파트너십 구축에 크게 이바지하고 있다고 평가했다.</text>
+	  <parse>
+(S (NP-SBJ 양국/NNC
+           장관/NNC+은/PAU)
+   (VP (S-COMP (S (NP-SBJ *pro*)
+                  (VP (NP-OBJ 2002/NNU
+                              년/NNX
+                              월드컵/NPR
+                              한/NPR+일/NPR
+                              공동/NNC+개최/NNC+을/PCA)
+                      앞두/VV+고/ECS))
+               (S (NP-SBJ (S (NP-ADV 식생활/NNC
+                                     분야/NNC+에서/PAD)
+                             (S (NP-SBJ (NP 양국/NNC+간/XSF)
+                                        (NP (NP 음식/NNC+문화/NNC+의/PAN)
+                                            (NP 상호/NNC+교류/NNC+이/PCA)))
+                                (VP (VP (VV 확산/NNC+되/XSV+어/ECS))
+                                    가/VX+는/EAN)))
+                          (NP 추세/NNC+이/PCA))
+                  (VP (VP (NP-COMP 한/NPR+일/NPR
+                                   파트너십/NNC
+                                   구축/NNC+에/PAD)
+                          (VP (ADVP (ADV 크/VJ+게/ECS))
+                              (VP (VV 이바지/NNC+하/XSV+고/ECS))))
+                      있/VX+다/EFN+고/PAD)))
+       (VV 평가/NNC+하/XSV+었/EPF+다/EFN))
+   ./SFN)
+	  </parse>
+	  <relation>
+	    <Arg n="M">
+	      <f>TMP</f>
+	      <term>2002 년 월드컵 한일 공동개최를 앞두고</term>
+	    </Arg>
+	    <Arg n="1">
+	      <f>이</f>
+	      <term>식생활 분야에서 양국간 음식문화의 상호교류가 확산돼 가는 추세</term>
+	    </Arg>
+	    <Arg n="2">
+	      <f>에</f>
+	      <term>한일 파트너십 구축</term>
+	    </Arg>
+	    <Arg n="M">
+	      <f>EXT</f>
+	      <term>크게</term>
+	    </Arg>
+	    <Rel>
+	      <term>이바지하고</term>
+	    </Rel>
+	    <Aux>
+	      <f>고</f>
+	      <term>있다고</term>
+	    </Aux>
+	  </relation>
+	</example>
+      </frame>
+    </frameset>
+  </predicate>
+  <comment>frames created by Jinyoung</comment>
+</framefile>
