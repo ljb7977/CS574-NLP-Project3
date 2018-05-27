@@ -1,0 +1,56 @@
+{
+    "frameName": "Arrest",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.87454",
+            "examples": [
+                {
+                    "frameName": "Arrest",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "법원은 김씨를 이번 사건의 참고인 자격으로 소환했다.",
+                    "target": "소환했다",
+                    "ko_annotation_id": "sejong.87454",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.87455",
+            "examples": [
+                {
+                    "frameName": "Arrest",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "국회의원들은 검찰이 소환해도 불응하는 경우가 빈번하다.",
+                    "target": "소환해도",
+                    "ko_annotation_id": "sejong.87455",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 202,
+    "ko_pos": "VV",
+    "ko_lu": "소환하다.v.Arrest",
+    "lu_id": 7573,
+    "en_lus": [
+        "summons.v.11865"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "frameName": "Placing",
+    "patterns": [],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "호주머니에 넣다.v.Placing",
+    "lu_id": 6421,
+    "en_lus": [
+        "pocket.v.2449"
+    ]
+}

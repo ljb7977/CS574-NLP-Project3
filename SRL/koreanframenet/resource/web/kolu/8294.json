@@ -1,0 +1,56 @@
+{
+    "frameName": "Recovery",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.51874",
+            "examples": [
+                {
+                    "frameName": "Recovery",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "비용을 경감시키는 것이 생산성 향상의 지름길이다.",
+                    "target": "경감시키는",
+                    "ko_annotation_id": "sejong.51874",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.51875",
+            "examples": [
+                {
+                    "frameName": "Recovery",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "에너지를 경감시키는 노력을 기울이지 않으면 곧 에너지 위기가 닥칠 것이다.",
+                    "target": "경감시키는",
+                    "ko_annotation_id": "sejong.51875",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 51,
+    "ko_pos": "VV",
+    "ko_lu": "경감시키다.v.Recovery",
+    "lu_id": 8294,
+    "en_lus": [
+        "ease.v.17535"
+    ]
+}

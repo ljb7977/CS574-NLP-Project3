@@ -1,0 +1,56 @@
+{
+    "frameName": "Communicate_categorization",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84887",
+            "examples": [
+                {
+                    "frameName": "Communicate_categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사회학자는 그 사회의 여러 가지 현상에 대해 기술한다.",
+                    "target": "기술한다",
+                    "ko_annotation_id": "sejong.84887",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.84888",
+            "examples": [
+                {
+                    "frameName": "Communicate_categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 31,
+                                "end": 35
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한 연구소에서는 박사 실업자가 해마다 수천명씩 생긴다고 기술했다.",
+                    "target": "기술했다",
+                    "ko_annotation_id": "sejong.84888",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 796,
+    "ko_pos": "VV",
+    "ko_lu": "기술하다.v.Communicate_categorization",
+    "lu_id": 7180,
+    "en_lus": [
+        "describe.v.9803"
+    ]
+}

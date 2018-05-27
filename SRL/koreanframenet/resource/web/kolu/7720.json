@@ -1,0 +1,78 @@
+{
+    "frameName": "Undergo_change",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.82292",
+            "examples": [
+                {
+                    "frameName": "Undergo_change",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "비가 금방이라도 떨어질 것 같다.",
+                    "target": "떨어질",
+                    "ko_annotation_id": "sejong.82292",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.82293",
+            "examples": [
+                {
+                    "frameName": "Undergo_change",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우박이 떨어져 농작물 피해가 크다.",
+                    "target": "떨어져",
+                    "ko_annotation_id": "sejong.82293",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.82294",
+            "examples": [
+                {
+                    "frameName": "Undergo_change",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나뭇잎이 하나 둘씩 떨어지기 시작한다.",
+                    "target": "떨어지기",
+                    "ko_annotation_id": "sejong.82294",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1172,
+    "ko_pos": "VV",
+    "ko_lu": "떨어지다.v.Undergo_change",
+    "lu_id": 7720,
+    "en_lus": [
+        "plummet.v.12960"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Revenge",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84833",
+            "examples": [
+                {
+                    "frameName": "Revenge",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 철수에게 꼭 복수하고야 말겠다.",
+                    "target": "복수하고야",
+                    "ko_annotation_id": "sejong.84833",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 347,
+    "ko_pos": "VV",
+    "ko_lu": "복수하다.v.Revenge",
+    "lu_id": 6911,
+    "en_lus": [
+        "avenge.v.6056"
+    ]
+}

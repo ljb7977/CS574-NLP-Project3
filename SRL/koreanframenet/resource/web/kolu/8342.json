@@ -1,0 +1,78 @@
+{
+    "frameName": "Being_in_control",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75625",
+            "examples": [
+                {
+                    "frameName": "Being_in_control",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여당이 이 단체를 배후에서 조종하고 있어요.",
+                    "target": "조종하고",
+                    "ko_annotation_id": "sejong.75625",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75626",
+            "examples": [
+                {
+                    "frameName": "Being_in_control",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 언제나 부하들을 효과적으로 통솔하고 조종한다.",
+                    "target": "조종한다",
+                    "ko_annotation_id": "sejong.75626",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75627",
+            "examples": [
+                {
+                    "frameName": "Being_in_control",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "누군가가 이 사건을 조종하고 있음에 틀림없다.",
+                    "target": "조종하고",
+                    "ko_annotation_id": "sejong.75627",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1800,
+    "ko_pos": "VV",
+    "ko_lu": "조종하다.v.Being_in_control",
+    "lu_id": 8342,
+    "en_lus": [
+        "manipulate.v.18154"
+    ]
+}

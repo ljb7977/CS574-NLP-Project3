@@ -1,0 +1,56 @@
+{
+    "frameName": "Subjective_influence",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.77418",
+            "examples": [
+                {
+                    "frameName": "Subjective_influence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그의 욕심이 결국 파멸을 초래하고 말 것이다.",
+                    "target": "초래하고",
+                    "ko_annotation_id": "sejong.77418",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.77419",
+            "examples": [
+                {
+                    "frameName": "Subjective_influence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그의 부주의가 위험을 초래하였다.",
+                    "target": "초래하였다",
+                    "ko_annotation_id": "sejong.77419",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1083,
+    "ko_pos": "VV",
+    "ko_lu": "초래하다.v.Subjective_influence",
+    "lu_id": 7878,
+    "en_lus": [
+        "push.v.13971"
+    ]
+}

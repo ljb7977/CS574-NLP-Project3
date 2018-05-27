@@ -1,0 +1,65 @@
+{
+    "frameName": "Distributed_position",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20025",
+            "examples": [
+                {
+                    "frameName": "Adorning",
+                    "denotations": [
+                        {
+                            "obj": "theme",
+                            "span": {
+                                "begin": 0,
+                                "end": 7
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "location",
+                            "span": {
+                                "begin": 12,
+                                "end": 26
+                            },
+                            "id": "3"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 28,
+                                "end": 30
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "enveloped"
+                    ],
+                    "ko_annotation_id": 20025,
+                    "text": "새로운 정체성이 에게 해 전역에서 그리스 사람들을 감쌌고, 그리하여 그리스를 확장하고 이질적인 정교회 주민들을 통합하기 위한 운동이 시작되었다.",
+                    "sent_id": 587,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "3",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 3103
+                }
+            ]
+        }
+    ],
+    "frameID": 76,
+    "ko_pos": "VV",
+    "ko_lu": "감싸다.v.Distributed_position",
+    "lu_id": 5686,
+    "en_lus": [
+        "envelop"
+    ]
+}

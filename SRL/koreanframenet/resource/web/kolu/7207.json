@@ -1,0 +1,34 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.87521",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 가방을 어깨에 둘러멨다.",
+                    "target": "둘러멨다",
+                    "ko_annotation_id": "sejong.87521",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "둘러메다.v.Self_motion",
+    "lu_id": 7207,
+    "en_lus": [
+        "shoulder.v.9951"
+    ]
+}

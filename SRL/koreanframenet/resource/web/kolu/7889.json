@@ -1,0 +1,56 @@
+{
+    "frameName": "Being_located",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49063",
+            "examples": [
+                {
+                    "frameName": "Being_located",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 내일 집에 있는다.",
+                    "target": "있는다",
+                    "ko_annotation_id": "sejong.49063",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49064",
+            "examples": [
+                {
+                    "frameName": "Being_located",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 그 곳에서 삼 년을 있었다.",
+                    "target": "있었다",
+                    "ko_annotation_id": "sejong.49064",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 960,
+    "ko_pos": "VV",
+    "ko_lu": "있다.v.Being_located",
+    "lu_id": 7889,
+    "en_lus": [
+        "sit.v.14174"
+    ]
+}

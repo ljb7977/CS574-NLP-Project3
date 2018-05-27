@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_be_wet",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79735",
+            "examples": [
+                {
+                    "frameName": "Cause_to_be_wet",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "할머니는 콩을 물에 불리셨다.",
+                    "target": "불리셨다",
+                    "ko_annotation_id": "sejong.79735",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79736",
+            "examples": [
+                {
+                    "frameName": "Cause_to_be_wet",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 밥통으로는 쌀을 많이 안 불려도 밥이 잘 된다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79736",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 309,
+    "ko_pos": "VV",
+    "ko_lu": "불리다.v.Cause_to_be_wet",
+    "lu_id": 6844,
+    "en_lus": [
+        "soak.v.5603"
+    ]
+}

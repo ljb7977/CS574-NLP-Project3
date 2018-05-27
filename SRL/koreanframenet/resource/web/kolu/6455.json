@@ -1,0 +1,56 @@
+{
+    "frameName": "Filling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.58693",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아내는 여름만 되면 아이들을 직접 샤워시킨다.",
+                    "target": "샤워시킨다",
+                    "ko_annotation_id": "sejong.58693",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.58694",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "고양이를 샤워시키는 것은 쉬운 일이 아니다.",
+                    "target": "샤워시키는",
+                    "ko_annotation_id": "sejong.58694",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 59,
+    "ko_pos": "VV",
+    "ko_lu": "샤워시키다.v.Filling",
+    "lu_id": 6455,
+    "en_lus": [
+        "shower.v.2592"
+    ]
+}

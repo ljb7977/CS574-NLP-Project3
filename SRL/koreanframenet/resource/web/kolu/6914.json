@@ -1,0 +1,78 @@
+{
+    "frameName": "Rotting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.86277",
+            "examples": [
+                {
+                    "frameName": "Rotting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "전체주의 국가들이 사멸하는 것은 필연적이다.",
+                    "target": "사멸하는",
+                    "ko_annotation_id": "sejong.86277",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.86278",
+            "examples": [
+                {
+                    "frameName": "Rotting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "남태평양에서 발생한 태풍이 한반도에 와서 사멸했다.",
+                    "target": "사멸했다",
+                    "ko_annotation_id": "sejong.86278",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.86279",
+            "examples": [
+                {
+                    "frameName": "Rotting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 33
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 물질을 투여하면 암세포 성장이 억제되고 암세포가 사멸하는 효과가 있다.",
+                    "target": "사멸하는",
+                    "ko_annotation_id": "sejong.86279",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 340,
+    "ko_pos": "VV",
+    "ko_lu": "사멸하다.v.Rotting",
+    "lu_id": 6914,
+    "en_lus": [
+        "perish.v.6089"
+    ]
+}

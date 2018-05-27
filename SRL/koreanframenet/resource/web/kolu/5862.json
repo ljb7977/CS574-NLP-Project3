@@ -1,0 +1,56 @@
+{
+    "frameName": "Posture",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76808",
+            "examples": [
+                {
+                    "frameName": "Posture",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "피곤하면 침대에 누워 있거라.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.76808",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76809",
+            "examples": [
+                {
+                    "frameName": "Posture",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "할아버지는 아랫목에 누우셔서 꼼짝도 안 하신다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.76809",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 18,
+    "ko_pos": "VV",
+    "ko_lu": "눕다.v.Posture",
+    "lu_id": 5862,
+    "en_lus": [
+        "lie.v.136"
+    ]
+}

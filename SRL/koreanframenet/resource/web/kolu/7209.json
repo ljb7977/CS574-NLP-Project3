@@ -1,0 +1,78 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.72750",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수가 등에 색을 메고 왔다.",
+                    "target": "메고",
+                    "ko_annotation_id": "sejong.72750",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72751",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기자는 어깨에 멘 카메라를 내려놓았다.",
+                    "target": "메라를",
+                    "ko_annotation_id": "sejong.72751",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72752",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "소가 등에 커다란 멍에를 메고 있었다.",
+                    "target": "메고",
+                    "ko_annotation_id": "sejong.72752",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "메다.v.Self_motion",
+    "lu_id": 7209,
+    "en_lus": [
+        "shoulder.v.9951"
+    ]
+}

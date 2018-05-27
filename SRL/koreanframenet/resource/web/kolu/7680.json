@@ -1,0 +1,56 @@
+{
+    "frameName": "Board_vehicle",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.56336",
+            "examples": [
+                {
+                    "frameName": "Board_vehicle",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 31,
+                                "end": 34
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대구행 열차를 타실 손님들은 3번 승강장에 있는 열차에 승차해 주시기 바랍니다.",
+                    "target": "승차해",
+                    "ko_annotation_id": "sejong.56336",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.56337",
+            "examples": [
+                {
+                    "frameName": "Board_vehicle",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "노인이 승차하기 전에 출발하는 것은 매우 위험하다.",
+                    "target": "승차하기",
+                    "ko_annotation_id": "sejong.56337",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1633,
+    "ko_pos": "VV",
+    "ko_lu": "승차하다.v.Board_vehicle",
+    "lu_id": 7680,
+    "en_lus": [
+        "board.v.12807"
+    ]
+}

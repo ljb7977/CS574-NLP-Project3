@@ -1,0 +1,12 @@
+{
+    "frameName": "Duplication",
+    "patterns": [],
+    "frameID": 11,
+    "ko_pos": "VV",
+    "ko_lu": "거듭되다.v.Duplication",
+    "lu_id": 8405,
+    "en_lus": [
+        "duplicate.v.12",
+        "reduplicate.v.15"
+    ]
+}

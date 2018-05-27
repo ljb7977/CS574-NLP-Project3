@@ -1,0 +1,56 @@
+{
+    "frameName": "Cotheme",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.67335",
+            "examples": [
+                {
+                    "frameName": "Cotheme",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 그 지역 지도자에게로 안내되었다.",
+                    "target": "안내되었다",
+                    "ko_annotation_id": "sejong.67335",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67336",
+            "examples": [
+                {
+                    "frameName": "Cotheme",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "도착한 대표단은 곧장 정중히 회의실로 안내되었다.",
+                    "target": "안내되었다",
+                    "ko_annotation_id": "sejong.67336",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 56,
+    "ko_pos": "VV",
+    "ko_lu": "안내되다.v.Cotheme",
+    "lu_id": 6069,
+    "en_lus": [
+        "guide.v.971"
+    ]
+}

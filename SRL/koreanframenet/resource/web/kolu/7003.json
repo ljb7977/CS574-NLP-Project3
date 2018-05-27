@@ -1,0 +1,34 @@
+{
+    "frameName": "Behind_the_scenes",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65871",
+            "examples": [
+                {
+                    "frameName": "Behind_the_scenes",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 2,
+                                "end": 5
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 감독은 최근에 영화를 2편 감독했다.",
+                    "target": "감독은",
+                    "ko_annotation_id": "sejong.65871",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 409,
+    "ko_pos": "VV",
+    "ko_lu": "감독하다.v.Behind_the_scenes",
+    "lu_id": 7003,
+    "en_lus": [
+        "direct.v.7560"
+    ]
+}

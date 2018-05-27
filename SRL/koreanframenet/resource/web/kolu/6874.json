@@ -1,0 +1,56 @@
+{
+    "frameName": "Releasing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84248",
+            "examples": [
+                {
+                    "frameName": "Releasing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정부는 막대한 양의 돈을 시중에 방출시켰다.",
+                    "target": "방출시켰다",
+                    "ko_annotation_id": "sejong.84248",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.84249",
+            "examples": [
+                {
+                    "frameName": "Releasing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 34
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "물가의 안정을 위해 정부는 비축한 농작물을 시장으로 방출시켰다.",
+                    "target": "방출시켰다",
+                    "ko_annotation_id": "sejong.84249",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 317,
+    "ko_pos": "VV",
+    "ko_lu": "방출시키다.v.Releasing",
+    "lu_id": 6874,
+    "en_lus": [
+        "release.v.5760"
+    ]
+}

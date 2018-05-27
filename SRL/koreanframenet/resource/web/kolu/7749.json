@@ -1,0 +1,34 @@
+{
+    "frameName": "Imitating",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89238",
+            "examples": [
+                {
+                    "frameName": "Imitating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "책을 몇 부를 복사해야 할까요?.",
+                    "target": "복사해야",
+                    "ko_annotation_id": "sejong.89238",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1672,
+    "ko_pos": "VV",
+    "ko_lu": "복사하다.v.Imitating",
+    "lu_id": 7749,
+    "en_lus": [
+        "copy.v.13034"
+    ]
+}

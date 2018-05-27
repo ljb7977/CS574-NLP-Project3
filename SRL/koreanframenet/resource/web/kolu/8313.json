@@ -1,0 +1,56 @@
+{
+    "frameName": "Communication_manner",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.77928",
+            "examples": [
+                {
+                    "frameName": "Communication_manner",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 33
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "술에 취한 사내는 경찰관에게 서울에 가야 한다고 횡설수설했다.",
+                    "target": "횡설수설했다",
+                    "ko_annotation_id": "sejong.77928",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.77929",
+            "examples": [
+                {
+                    "frameName": "Communication_manner",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "당황한 아내는 아이들이 없어졌다고 횡설수설했다.",
+                    "target": "횡설수설했다",
+                    "ko_annotation_id": "sejong.77929",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 38,
+    "ko_pos": "VV",
+    "ko_lu": "횡설수설하다.v.Communication_manner",
+    "lu_id": 8313,
+    "en_lus": [
+        "blabber.v.17599"
+    ]
+}

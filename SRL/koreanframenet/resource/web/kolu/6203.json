@@ -1,0 +1,56 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83330",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "동네에는 아이들이 뛰놀 만한 놀이터 하나 없다.",
+                    "target": "뛰놀",
+                    "ko_annotation_id": "sejong.83330",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83331",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선생님, 마음껏 뛰논 다음에는 공부가 더 잘되는 것 같아요.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.83331",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "뛰놀다.v.Self_motion",
+    "lu_id": 6203,
+    "en_lus": [
+        "romp.v.1206"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Light_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65756",
+            "examples": [
+                {
+                    "frameName": "Light_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여름낮의 이글대는 태양은 정말 견디기 힘들었다.",
+                    "target": "이글대는",
+                    "ko_annotation_id": "sejong.65756",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 131,
+    "ko_pos": "VV",
+    "ko_lu": "이글대다.v.Light_movement",
+    "lu_id": 6470,
+    "en_lus": [
+        "glow.v.2632"
+    ]
+}

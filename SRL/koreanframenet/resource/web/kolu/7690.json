@@ -1,0 +1,78 @@
+{
+    "frameName": "Regard",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55004",
+            "examples": [
+                {
+                    "frameName": "Regard",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 아직 사태의 심각성을 제대로 인식하지 못하고 있는 것 같았다.",
+                    "target": "인식하지",
+                    "ko_annotation_id": "sejong.55004",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55005",
+            "examples": [
+                {
+                    "frameName": "Regard",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 33,
+                                "end": 36
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그가 이 논문을 발표했을 당시에는 이 논문의 가치를 제대로 인식한 사람이 별로 없었다.",
+                    "target": "인식한",
+                    "ko_annotation_id": "sejong.55005",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55006",
+            "examples": [
+                {
+                    "frameName": "Regard",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정세를 정확하게 인식하는 것은 효과적인 실천을 위한 첫걸음이다.",
+                    "target": "인식하는",
+                    "ko_annotation_id": "sejong.55006",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1400,
+    "ko_pos": "VV",
+    "ko_lu": "인식하다.v.Regard",
+    "lu_id": 7690,
+    "en_lus": [
+        "appreciate.v.12865"
+    ]
+}

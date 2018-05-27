@@ -1,0 +1,34 @@
+{
+    "frameName": "Cause_to_experience",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.60028",
+            "examples": [
+                {
+                    "frameName": "Cause_to_experience",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "과학지식을 생활용품으로 변환시키는 것도 과학자들의 중요 임무 중 하나이다.",
+                    "target": "변환시키는",
+                    "ko_annotation_id": "sejong.60028",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 288,
+    "ko_pos": "VV",
+    "ko_lu": "변환시키다.v.Cause_to_experience",
+    "lu_id": 7606,
+    "en_lus": [
+        "divert.v.12088"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Putting_out_fire",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.56433",
+            "examples": [
+                {
+                    "frameName": "Putting_out_fire",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "동네 사람들이 모두 힘을 합해 산불을 끄려고 애썼다.",
+                    "target": "끄려고",
+                    "ko_annotation_id": "sejong.56433",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.56434",
+            "examples": [
+                {
+                    "frameName": "Putting_out_fire",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "호텔에 난 불을 끄려고 소방차가 여러 대 왔다.",
+                    "target": "끄려고",
+                    "ko_annotation_id": "sejong.56434",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2820,
+    "ko_pos": "VV",
+    "ko_lu": "끄다.v.Putting_out_fire",
+    "lu_id": 8276,
+    "en_lus": [
+        "douse.v.17436"
+    ]
+}

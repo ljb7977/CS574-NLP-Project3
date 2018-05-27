@@ -1,0 +1,34 @@
+{
+    "frameName": "Complaining",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.66608",
+            "examples": [
+                {
+                    "frameName": "Complaining",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "옆집 꼬마는 항상 형의 옷을 물려입기만 한다고 툴툴거렸다.",
+                    "target": "툴툴거렸다",
+                    "ko_annotation_id": "sejong.66608",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1621,
+    "ko_pos": "VV",
+    "ko_lu": "툴툴거리다.v.Complaining",
+    "lu_id": 7739,
+    "en_lus": [
+        "grumble.v.13002"
+    ]
+}

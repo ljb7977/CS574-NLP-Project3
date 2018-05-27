@@ -1,0 +1,56 @@
+{
+    "frameName": "Statement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76697",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀는 항상 남을 깎아내려서 같이 이야기하기 싫다.",
+                    "target": "깎아내려서",
+                    "ko_annotation_id": "sejong.76697",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76698",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "제발 집안 체면 좀 깎아내리지 마라.",
+                    "target": "깎아내리지",
+                    "ko_annotation_id": "sejong.76698",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 43,
+    "ko_pos": "VV",
+    "ko_lu": "깎아내리다.v.Statement",
+    "lu_id": 5963,
+    "en_lus": [
+        "avow.v.690"
+    ]
+}

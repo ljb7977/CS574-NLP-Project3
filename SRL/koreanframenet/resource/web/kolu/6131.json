@@ -1,0 +1,11 @@
+{
+    "frameName": "Motion_noise",
+    "patterns": [],
+    "frameID": 60,
+    "ko_pos": "VV",
+    "ko_lu": "윙윙 소리를 내며 돌다.v.Motion_noise",
+    "lu_id": 6131,
+    "en_lus": [
+        "whir.v.1052"
+    ]
+}

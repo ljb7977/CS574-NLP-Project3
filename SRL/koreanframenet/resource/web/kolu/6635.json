@@ -1,0 +1,56 @@
+{
+    "frameName": "Grooming",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.58279",
+            "examples": [
+                {
+                    "frameName": "Grooming",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 안경을 세척했다.",
+                    "target": "세척했다",
+                    "ko_annotation_id": "sejong.58279",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.58280",
+            "examples": [
+                {
+                    "frameName": "Grooming",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람은 독극물을 잘못 마셔서 위를 세척했다.",
+                    "target": "세척했다",
+                    "ko_annotation_id": "sejong.58280",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 159,
+    "ko_pos": "VV",
+    "ko_lu": "세척하다.v.Grooming",
+    "lu_id": 6635,
+    "en_lus": [
+        "wash.v.4734"
+    ]
+}

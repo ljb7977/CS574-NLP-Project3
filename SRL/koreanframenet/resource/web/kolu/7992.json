@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75491",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 재빨리 놓여 있는 물건들을 주머니에 쑤셔박았다.",
+                    "target": "쑤셔박았다",
+                    "ko_annotation_id": "sejong.75491",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75492",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 팔을 구멍에 쑤셔박고 안에 무엇이 들어 있는지 찾았다.",
+                    "target": "쑤셔박고",
+                    "ko_annotation_id": "sejong.75492",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 55,
+    "ko_pos": "VV",
+    "ko_lu": "쑤셔박다.v.Cause_motion",
+    "lu_id": 7992,
+    "en_lus": [
+        "stick.v.15120"
+    ]
+}

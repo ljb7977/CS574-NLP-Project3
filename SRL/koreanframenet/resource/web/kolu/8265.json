@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_change_of_position_on_a_scale",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79161",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "김 선장 일행은 뱃머리를 돌려 다시 남쪽으로 항해했다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79161",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79162",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한 팀은 등을 돌려서 맞댄 채 앞으로 달려가야 한다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79162",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 96,
+    "ko_pos": "VV",
+    "ko_lu": "돌리다.v.Cause_change_of_position_on_a_scale",
+    "lu_id": 8265,
+    "en_lus": [
+        "crank.v.17351"
+    ]
+}

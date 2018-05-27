@@ -1,0 +1,56 @@
+{
+    "frameName": "Board_vehicle",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48178",
+            "examples": [
+                {
+                    "frameName": "Board_vehicle",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "차장은 손님들을 차에 탑승시켰다.",
+                    "target": "탑승시켰다",
+                    "ko_annotation_id": "sejong.48178",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48179",
+            "examples": [
+                {
+                    "frameName": "Board_vehicle",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "많은 버스기사들이 장애우들을 버스에 탑승시키지 않는다.",
+                    "target": "탑승시키지",
+                    "ko_annotation_id": "sejong.48179",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1633,
+    "ko_pos": "VV",
+    "ko_lu": "탑승시키다.v.Board_vehicle",
+    "lu_id": 7685,
+    "en_lus": [
+        "emplane.v.12810"
+    ]
+}

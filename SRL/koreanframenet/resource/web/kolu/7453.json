@@ -1,0 +1,34 @@
+{
+    "frameName": "Undressing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76983",
+            "examples": [
+                {
+                    "frameName": "Undressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그가 그 책임을 벗어버리니 해방의 기쁨에 날 것 같았다.",
+                    "target": "벗어버리니",
+                    "ko_annotation_id": "sejong.76983",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1210,
+    "ko_pos": "VV",
+    "ko_lu": "벗어버리다.v.Undressing",
+    "lu_id": 7453,
+    "en_lus": [
+        "kick off.v.10985"
+    ]
+}

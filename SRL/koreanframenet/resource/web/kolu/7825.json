@@ -1,0 +1,34 @@
+{
+    "frameName": "Attempt_suasion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.86280",
+            "examples": [
+                {
+                    "frameName": "Attempt_suasion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "개혁당을 지지하는 사람들은 모두 그에게 표를 던졌다.",
+                    "target": "지지하는",
+                    "ko_annotation_id": "sejong.86280",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 87,
+    "ko_pos": "VV",
+    "ko_lu": "지지하다.v.Attempt_suasion",
+    "lu_id": 7825,
+    "en_lus": [
+        "advocate.v.13475"
+    ]
+}

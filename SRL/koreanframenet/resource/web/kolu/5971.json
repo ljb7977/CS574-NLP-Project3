@@ -1,0 +1,56 @@
+{
+    "frameName": "Statement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75650",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "목사가 앞에 나와 사람들에게 사랑에 대해 설교했다.",
+                    "target": "설교했다",
+                    "ko_annotation_id": "sejong.75650",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75651",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 32,
+                                "end": 36
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "목사가 앞에 나와 사람들에게 다른 종교도 존중해야 한다고 설교했다.",
+                    "target": "설교했다",
+                    "ko_annotation_id": "sejong.75651",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 43,
+    "ko_pos": "VV",
+    "ko_lu": "설교하다.v.Statement",
+    "lu_id": 5971,
+    "en_lus": [
+        "preach.v.732"
+    ]
+}

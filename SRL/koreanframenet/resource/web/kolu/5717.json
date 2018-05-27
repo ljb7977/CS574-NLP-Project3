@@ -1,0 +1,88 @@
+{
+    "frameName": "Traversing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20149",
+            "examples": [
+                {
+                    "frameName": "Traversing",
+                    "denotations": [
+                        {
+                            "obj": "Path",
+                            "span": {
+                                "begin": 3,
+                                "end": 6
+                            }
+                        },
+                        {
+                            "obj": "Target",
+                            "span": {
+                                "begin": 8,
+                                "end": 11
+                            }
+                        }
+                    ],
+                    "origin_lus": [
+                        "tadoru .たどる"
+                    ],
+                    "ko_annotation_id": 20149,
+                    "text": "우선 발자국을 따라서 주목의 가로수길로 나가보니, 과연 소택지 쪽으로 나가는 작은 문 근처에서 잠시 멈춰 서있었는지, 발자국이 흩어져 있었습니다.",
+                    "sent_id": 4369,
+                    "relations": [],
+                    "annotation_id": 0
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76000",
+            "examples": [
+                {
+                    "frameName": "Traversing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그때도 메리는 새벽장을 떠나시는 엄마를 따라나섰다.",
+                    "target": "따라나섰다",
+                    "ko_annotation_id": "sejong.76000",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76001",
+            "examples": [
+                {
+                    "frameName": "Traversing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "배웅을 위해 김경인 의원이 복도로 따라나섰다.",
+                    "target": "따라나섰다",
+                    "ko_annotation_id": "sejong.76001",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1310,
+    "ko_pos": "VV",
+    "ko_lu": "따라나서다.v.Traversing",
+    "lu_id": 5717,
+    "en_lus": [
+        "tadoru .たどる"
+    ]
+}

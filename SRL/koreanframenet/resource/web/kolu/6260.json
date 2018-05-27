@@ -1,0 +1,56 @@
+{
+    "frameName": "Make_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.56151",
+            "examples": [
+                {
+                    "frameName": "Make_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이웃집 아주머니들이 연예인들의 사생활에 대해 수다떨고 있었다.",
+                    "target": "수다떨고",
+                    "ko_annotation_id": "sejong.56151",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.56152",
+            "examples": [
+                {
+                    "frameName": "Make_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "너는 누구와 그렇게 수다떨고 있었니?",
+                    "target": "수다떨고",
+                    "ko_annotation_id": "sejong.56152",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 69,
+    "ko_pos": "VV",
+    "ko_lu": "수다떨다.v.Make_noise",
+    "lu_id": 6260,
+    "en_lus": [
+        "chatter.v.1366"
+    ]
+}

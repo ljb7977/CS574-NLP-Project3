@@ -1,0 +1,11 @@
+{
+    "frameName": "Operate_vehicle",
+    "patterns": [],
+    "frameID": 65,
+    "ko_pos": "VV",
+    "ko_lu": "압정으로 고정하다.v.Operate_vehicle",
+    "lu_id": 6237,
+    "en_lus": [
+        "tack.v.1289"
+    ]
+}

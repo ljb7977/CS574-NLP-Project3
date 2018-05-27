@@ -1,0 +1,56 @@
+{
+    "frameName": "Excreting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.59448",
+            "examples": [
+                {
+                    "frameName": "Excreting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정 씨는 기침 끝에 결국 구토하기 시작했다.",
+                    "target": "구토하기",
+                    "ko_annotation_id": "sejong.59448",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.59449",
+            "examples": [
+                {
+                    "frameName": "Excreting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "배가 아프더니, 이제는 구토하려고 한다.",
+                    "target": "구토하려고",
+                    "ko_annotation_id": "sejong.59449",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 270,
+    "ko_pos": "VV",
+    "ko_lu": "구토하다.v.Excreting",
+    "lu_id": 7197,
+    "en_lus": [
+        "throw up.v.9913"
+    ]
+}

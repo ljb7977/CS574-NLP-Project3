@@ -1,0 +1,34 @@
+{
+    "frameName": "Manipulation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65587",
+            "examples": [
+                {
+                    "frameName": "Manipulation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "박여사는 이민떠나는 아들의 손을 부여잡고 눈물을 글썽였다.",
+                    "target": "부여잡고",
+                    "ko_annotation_id": "sejong.65587",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 17,
+    "ko_pos": "VV",
+    "ko_lu": "부여잡다.v.Manipulation",
+    "lu_id": 8509,
+    "en_lus": [
+        "squeeze.v.125"
+    ]
+}

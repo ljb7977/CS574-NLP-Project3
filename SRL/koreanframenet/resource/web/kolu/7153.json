@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_impact",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.53879",
+            "examples": [
+                {
+                    "frameName": "Cause_impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "너는 무엇을 그렇게 덜그럭대면서 뛰냐?",
+                    "target": "덜그럭대면서",
+                    "ko_annotation_id": "sejong.53879",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.53880",
+            "examples": [
+                {
+                    "frameName": "Cause_impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 빈 도시락을 덜그럭대면서 집까지 걸어갔다",
+                    "target": "덜그럭대면서",
+                    "ko_annotation_id": "sejong.53880",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 395,
+    "ko_pos": "VV",
+    "ko_lu": "덜그럭대다.v.Cause_impact",
+    "lu_id": 7153,
+    "en_lus": [
+        "clatter.v.9772"
+    ]
+}

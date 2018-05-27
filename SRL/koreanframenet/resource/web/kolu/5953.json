@@ -1,0 +1,78 @@
+{
+    "frameName": "Request",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69614",
+            "examples": [
+                {
+                    "frameName": "Request",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "일본은 북한에 미사일 발사 계획 철회를 촉구하였다.",
+                    "target": "촉구하였다",
+                    "ko_annotation_id": "sejong.69614",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69615",
+            "examples": [
+                {
+                    "frameName": "Request",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 40,
+                                "end": 45
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리 정부는 일본에게 위안부 문제와 관련하여 정부 차원의 사과와 배상을 촉구하였다.",
+                    "target": "촉구하였다",
+                    "ko_annotation_id": "sejong.69615",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69616",
+            "examples": [
+                {
+                    "frameName": "Request",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "일본은 북한에 미사일 발사 계획 철회하라고 촉구하였다.",
+                    "target": "촉구하였다",
+                    "ko_annotation_id": "sejong.69616",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 41,
+    "ko_pos": "VV",
+    "ko_lu": "촉구하다.v.Request",
+    "lu_id": 5953,
+    "en_lus": [
+        "urge.v.659"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Subjective_influence",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83343",
+            "examples": [
+                {
+                    "frameName": "Subjective_influence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 놀이는 아이들에게 수학에 대한 흥미를 유발한다.",
+                    "target": "유발한다",
+                    "ko_annotation_id": "sejong.83343",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1083,
+    "ko_pos": "VV",
+    "ko_lu": "유발하다.v.Subjective_influence",
+    "lu_id": 7876,
+    "en_lus": [
+        "motivate.v.13927"
+    ]
+}

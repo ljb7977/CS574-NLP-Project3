@@ -1,0 +1,56 @@
+{
+    "frameName": "Thriving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74746",
+            "examples": [
+                {
+                    "frameName": "Thriving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 아이가 처신을 참 잘해서 혼나지 않았다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.74746",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74747",
+            "examples": [
+                {
+                    "frameName": "Thriving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "누가 잘했는지는 보면 안다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.74747",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1771,
+    "ko_pos": "VV",
+    "ko_lu": "잘하다.v.Thriving",
+    "lu_id": 7871,
+    "en_lus": [
+        "fare.v.13851"
+    ]
+}

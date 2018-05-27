@@ -1,0 +1,56 @@
+{
+    "frameName": "Text_creation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.73292",
+            "examples": [
+                {
+                    "frameName": "Text_creation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "국회의원들은 이번 정기국회에 제출할 법안들을 초안했다.",
+                    "target": "초안했다",
+                    "ko_annotation_id": "sejong.73292",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.73293",
+            "examples": [
+                {
+                    "frameName": "Text_creation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 결의문은 누가 초안했느냐?",
+                    "target": "초안했느냐",
+                    "ko_annotation_id": "sejong.73293",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 278,
+    "ko_pos": "VV",
+    "ko_lu": "초안하다.v.Text_creation",
+    "lu_id": 6711,
+    "en_lus": [
+        "draft.v.5069"
+    ]
+}

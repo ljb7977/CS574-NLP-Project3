@@ -1,0 +1,56 @@
+{
+    "frameName": "Making_faces",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48081",
+            "examples": [
+                {
+                    "frameName": "Making_faces",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "비가 오려는지 하늘이 잔뜩 찌푸렸다.",
+                    "target": "찌푸렸다",
+                    "ko_annotation_id": "sejong.48081",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48082",
+            "examples": [
+                {
+                    "frameName": "Making_faces",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 6
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "잔뜩 찌푸린 날씨에 바람까지 분다.",
+                    "target": "찌푸린",
+                    "ko_annotation_id": "sejong.48082",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 794,
+    "ko_pos": "VV",
+    "ko_lu": "찌푸리다.v.Making_faces",
+    "lu_id": 7147,
+    "en_lus": [
+        "frown.v.9733"
+    ]
+}

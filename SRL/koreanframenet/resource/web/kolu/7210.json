@@ -1,0 +1,122 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69351",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람은 어깨로 나를 밀치고 들어갔다.",
+                    "target": "밀치고",
+                    "ko_annotation_id": "sejong.69351",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69352",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람은 철문을 밀치고 뛰어 들어왔다.",
+                    "target": "밀치고",
+                    "ko_annotation_id": "sejong.69352",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69353",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 내 몸을 밀치고 지나갔다.",
+                    "target": "밀치고",
+                    "ko_annotation_id": "sejong.69353",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69354",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람은 밥상을 한쪽 구석에 밀쳐 놓고서 바둑을 두고 있었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.69354",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69355",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 덮던 이불을 한 쪽으로 밀쳐 놓고 앉았다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.69355",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "밀치다.v.Self_motion",
+    "lu_id": 7210,
+    "en_lus": [
+        "shoulder.v.9951"
+    ]
+}

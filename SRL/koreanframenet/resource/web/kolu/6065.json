@@ -1,0 +1,56 @@
+{
+    "frameName": "Cotheme",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.86619",
+            "examples": [
+                {
+                    "frameName": "Cotheme",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "소년원의 많은 아이들에 김목사에게 계도되었다.",
+                    "target": "계도되었다",
+                    "ko_annotation_id": "sejong.86619",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.86620",
+            "examples": [
+                {
+                    "frameName": "Cotheme",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이번 수련으로 그는 계도되어 5년 후에는 부지도자의 자리에 오르게 된다.",
+                    "target": "계도되어",
+                    "ko_annotation_id": "sejong.86620",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 56,
+    "ko_pos": "VV",
+    "ko_lu": "계도되다.v.Cotheme",
+    "lu_id": 6065,
+    "en_lus": [
+        "guide.v.971"
+    ]
+}

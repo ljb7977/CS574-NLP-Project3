@@ -1,0 +1,34 @@
+{
+    "frameName": "Attaching",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76065",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "껌이 머리카락에 늘어붙어 있다.",
+                    "target": "늘어붙어",
+                    "ko_annotation_id": "sejong.76065",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 197,
+    "ko_pos": "VV",
+    "ko_lu": "늘어붙다.v.Attaching",
+    "lu_id": 6592,
+    "en_lus": [
+        "stick.v.4539"
+    ]
+}

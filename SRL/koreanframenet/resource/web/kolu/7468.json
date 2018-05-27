@@ -1,0 +1,34 @@
+{
+    "frameName": "Manipulation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74914",
+            "examples": [
+                {
+                    "frameName": "Manipulation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "노신사는 꼬마의 머리를 쓰다듬었다.",
+                    "target": "쓰다듬었다",
+                    "ko_annotation_id": "sejong.74914",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 17,
+    "ko_pos": "VV",
+    "ko_lu": "쓰다듬다.v.Manipulation",
+    "lu_id": 7468,
+    "en_lus": [
+        "caress.v.11005"
+    ]
+}

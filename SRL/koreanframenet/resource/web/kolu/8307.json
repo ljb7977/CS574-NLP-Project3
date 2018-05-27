@@ -1,0 +1,56 @@
+{
+    "frameName": "Fire_burning",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.53082",
+            "examples": [
+                {
+                    "frameName": "Fire_burning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그에 대한 복수심이 그의 가슴에 타오르기 시작했다.",
+                    "target": "타오르기",
+                    "ko_annotation_id": "sejong.53082",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.53083",
+            "examples": [
+                {
+                    "frameName": "Fire_burning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그의 두 눈은 상대에 대한 복수심으로 이글이글 타올랐다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.53083",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2824,
+    "ko_pos": "VV",
+    "ko_lu": "타오르다.v.Fire_burning",
+    "lu_id": 8307,
+    "en_lus": [
+        "rage.v.17589"
+    ]
+}

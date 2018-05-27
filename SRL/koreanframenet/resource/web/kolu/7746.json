@@ -1,0 +1,56 @@
+{
+    "frameName": "Imitating",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.64057",
+            "examples": [
+                {
+                    "frameName": "Imitating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그가 선생님 목소리를 흉내내자 반 아이들이 모두 까르르 웃었다.",
+                    "target": "흉내내자",
+                    "ko_annotation_id": "sejong.64057",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.64058",
+            "examples": [
+                {
+                    "frameName": "Imitating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이는 엄마의 걷는 모습을 흉내내며 재롱을 부렸다.",
+                    "target": "흉내내며",
+                    "ko_annotation_id": "sejong.64058",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1672,
+    "ko_pos": "VV",
+    "ko_lu": "흉내내다.v.Imitating",
+    "lu_id": 7746,
+    "en_lus": [
+        "mimic.v.13032"
+    ]
+}

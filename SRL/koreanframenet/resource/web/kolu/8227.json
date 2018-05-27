@@ -1,0 +1,100 @@
+{
+    "frameName": "Offering",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52400",
+            "examples": [
+                {
+                    "frameName": "Offering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 찾아온 손님들을 대접했다.",
+                    "target": "대접했다",
+                    "ko_annotation_id": "sejong.52400",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52401",
+            "examples": [
+                {
+                    "frameName": "Offering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 하객들을 극진하게 대접했다.",
+                    "target": "대접했다",
+                    "ko_annotation_id": "sejong.52401",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52402",
+            "examples": [
+                {
+                    "frameName": "Offering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 찾아온 손님들에게 술을 대접했다.",
+                    "target": "대접했다",
+                    "ko_annotation_id": "sejong.52402",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52403",
+            "examples": [
+                {
+                    "frameName": "Offering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람은 나에게 차를 대접했다.",
+                    "target": "대접했다",
+                    "ko_annotation_id": "sejong.52403",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2239,
+    "ko_pos": "VV",
+    "ko_lu": "대접하다.v.Offering",
+    "lu_id": 8227,
+    "en_lus": [
+        "serve.v.17140"
+    ]
+}

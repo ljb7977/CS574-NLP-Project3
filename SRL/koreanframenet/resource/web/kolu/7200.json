@@ -1,0 +1,56 @@
+{
+    "frameName": "Reliance",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79501",
+            "examples": [
+                {
+                    "frameName": "Reliance",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어렸을 적에는 누구나 부모에게 기댄다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79501",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79502",
+            "examples": [
+                {
+                    "frameName": "Reliance",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 그런 호의에 기대어 신세를 지고 싶지는 않다.",
+                    "target": "기대어",
+                    "ko_annotation_id": "sejong.79502",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 901,
+    "ko_pos": "VV",
+    "ko_lu": "기대다.v.Reliance",
+    "lu_id": 7200,
+    "en_lus": [
+        "rely.v.9940"
+    ]
+}

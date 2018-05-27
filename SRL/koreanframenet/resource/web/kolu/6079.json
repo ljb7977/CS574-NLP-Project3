@@ -1,0 +1,56 @@
+{
+    "frameName": "Departing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.50847",
+            "examples": [
+                {
+                    "frameName": "Departing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "열차가 10분 늦게 시발되었다.",
+                    "target": "시발되었다",
+                    "ko_annotation_id": "sejong.50847",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.50848",
+            "examples": [
+                {
+                    "frameName": "Departing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그가 탑승하자 마자 비행기가 시발되었다.",
+                    "target": "시발되었다",
+                    "ko_annotation_id": "sejong.50848",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 57,
+    "ko_pos": "VV",
+    "ko_lu": "시발되다.v.Departing",
+    "lu_id": 6079,
+    "en_lus": [
+        "depart.v.983"
+    ]
+}

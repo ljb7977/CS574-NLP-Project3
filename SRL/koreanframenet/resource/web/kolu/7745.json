@@ -1,0 +1,34 @@
+{
+    "frameName": "Posing_as",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63174",
+            "examples": [
+                {
+                    "frameName": "Posing_as",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 이 학원 학생으로 가장하고 수업을 듣고 있다.",
+                    "target": "가장하고",
+                    "ko_annotation_id": "sejong.63174",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1670,
+    "ko_pos": "VV",
+    "ko_lu": "가장하다.v.Posing_as",
+    "lu_id": 7745,
+    "en_lus": [
+        "masquerade.v.13019"
+    ]
+}

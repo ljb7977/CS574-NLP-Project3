@@ -1,0 +1,56 @@
+{
+    "frameName": "Protest",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84335",
+            "examples": [
+                {
+                    "frameName": "Protest",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 33
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여성 단체는 경찰의 성고문 사건을 규탄하며 격렬히 시위하였다.",
+                    "target": "시위하였다",
+                    "ko_annotation_id": "sejong.84335",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.84336",
+            "examples": [
+                {
+                    "frameName": "Protest",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 35,
+                                "end": 39
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "학생들은 학교측이 등록금 인상안을 철회할 것을 요구하며 며칠째 시위하고 있다.",
+                    "target": "시위하고",
+                    "ko_annotation_id": "sejong.84336",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2587,
+    "ko_pos": "VV",
+    "ko_lu": "시위하다.v.Protest",
+    "lu_id": 8147,
+    "en_lus": [
+        "demonstrate.v.16432"
+    ]
+}

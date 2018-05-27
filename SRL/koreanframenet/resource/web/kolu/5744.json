@@ -1,0 +1,60 @@
+{
+    "frameName": "Clothing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20248",
+            "examples": [
+                {
+                    "frameName": "Clothing",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 23,
+                                "end": 25
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "boots"
+                    ],
+                    "ko_annotation_id": 20248,
+                    "text": "나는 문의 삐걱거리는 소리와 자갈 위에서 부츠의 바삭바삭하는 소리를 들었다.",
+                    "sent_id": 3300,
+                    "relations": [],
+                    "annotation_id": 17581
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.44277",
+            "examples": [
+                {
+                    "frameName": "Clothing",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 0,
+                                "end": 2
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "text": "부츠를 신고 있는 그녀가 매우 도도해 보인다.",
+                    "target": "부츠",
+                    "ko_annotation_id": "sejong.44277",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 134,
+    "ko_pos": "NNG",
+    "ko_lu": "부츠.n.Clothing",
+    "lu_id": 5744,
+    "en_lus": [
+        "boot"
+    ]
+}

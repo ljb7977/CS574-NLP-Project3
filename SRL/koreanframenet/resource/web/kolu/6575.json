@@ -1,0 +1,11 @@
+{
+    "frameName": "Communication_means",
+    "patterns": [],
+    "frameID": 242,
+    "ko_pos": "VV",
+    "ko_lu": "(시스템에) 연결하다.v.Communication_means",
+    "lu_id": 6575,
+    "en_lus": [
+        "wire.v.4486"
+    ]
+}

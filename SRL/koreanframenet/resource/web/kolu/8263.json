@@ -1,0 +1,56 @@
+{
+    "frameName": "Becoming_silent",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83866",
+            "examples": [
+                {
+                    "frameName": "Becoming_silent",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선생님의 꾸중에 나는 입다물고 서 있었다.",
+                    "target": "입다물고",
+                    "ko_annotation_id": "sejong.83866",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83867",
+            "examples": [
+                {
+                    "frameName": "Becoming_silent",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아버지는 나에게 그만 입다물라고 소리를 지르셨다.",
+                    "target": "입다물라고",
+                    "ko_annotation_id": "sejong.83867",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 731,
+    "ko_pos": "VV",
+    "ko_lu": "입다물다.v.Becoming_silent",
+    "lu_id": 8263,
+    "en_lus": [
+        "seal (one's) lips.v.17337"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Impact",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89892",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "전쟁이 일어나면 군인들이 많은 인명을 해하는 상황이 반복될 수밖에 없다.",
+                    "target": "해하는",
+                    "ko_annotation_id": "sejong.89892",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89893",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 6
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "남을 해하면 자신도 그만큼 댓가를 치르게 마련이다.",
+                    "target": "해하면",
+                    "ko_annotation_id": "sejong.89893",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 311,
+    "ko_pos": "VV",
+    "ko_lu": "해하다.v.Impact",
+    "lu_id": 7471,
+    "en_lus": [
+        "touch.v.11007"
+    ]
+}

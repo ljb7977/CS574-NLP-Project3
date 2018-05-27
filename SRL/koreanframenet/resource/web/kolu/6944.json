@@ -1,0 +1,78 @@
+{
+    "frameName": "Surpassing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.66923",
+            "examples": [
+                {
+                    "frameName": "Surpassing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "열심히 하면 그를 능가하게 될 것이다.",
+                    "target": "능가하게",
+                    "ko_annotation_id": "sejong.66923",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66924",
+            "examples": [
+                {
+                    "frameName": "Surpassing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 그의 창의력을 능가할 수 없다.",
+                    "target": "능가할",
+                    "ko_annotation_id": "sejong.66924",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66925",
+            "examples": [
+                {
+                    "frameName": "Surpassing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리 회사의 경영 능력은 그 회사을 능가할 수 없다.",
+                    "target": "능가할",
+                    "ko_annotation_id": "sejong.66925",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 358,
+    "ko_pos": "VV",
+    "ko_lu": "능가하다.v.Surpassing",
+    "lu_id": 6944,
+    "en_lus": [
+        "surpass.v.6215"
+    ]
+}

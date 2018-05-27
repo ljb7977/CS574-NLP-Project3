@@ -1,0 +1,56 @@
+{
+    "frameName": "Being_attached",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76896",
+            "examples": [
+                {
+                    "frameName": "Being_attached",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "삼손이 던진 창이 정확히 사자의 심장에 꽂혔다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.76896",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76897",
+            "examples": [
+                {
+                    "frameName": "Being_attached",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "김 선수가 쏜 화살 열 발 중 아홉 발이 정확히 과녁 한복판에 꽂혔다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.76897",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 307,
+    "ko_pos": "VV",
+    "ko_lu": "꽂히다.v.Being_attached",
+    "lu_id": 6867,
+    "en_lus": [
+        "stick.v.5759"
+    ]
+}

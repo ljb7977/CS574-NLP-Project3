@@ -1,0 +1,78 @@
+{
+    "frameName": "Cause_fluidic_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83666",
+            "examples": [
+                {
+                    "frameName": "Cause_fluidic_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 31,
+                                "end": 36
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "공중도덕이 없는 사람들은 담배꽁초를 지하철 바닥에 그냥 떨어뜨리고 다닌다.",
+                    "target": "떨어뜨리고",
+                    "ko_annotation_id": "sejong.83666",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83667",
+            "examples": [
+                {
+                    "frameName": "Cause_fluidic_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "너는 왜 그렇게 방에다 과자를 떨어뜨리니.",
+                    "target": "떨어뜨리니",
+                    "ko_annotation_id": "sejong.83667",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83668",
+            "examples": [
+                {
+                    "frameName": "Cause_fluidic_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "콩쥐가 물에 신발을 떨어뜨렸다.",
+                    "target": "떨어뜨렸다",
+                    "ko_annotation_id": "sejong.83668",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 920,
+    "ko_pos": "VV",
+    "ko_lu": "떨어뜨리다.v.Cause_fluidic_motion",
+    "lu_id": 7512,
+    "en_lus": [
+        "drip.v.11119"
+    ]
+}

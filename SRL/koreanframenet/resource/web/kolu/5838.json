@@ -1,0 +1,56 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89631",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선생님은 고개를 가로저으시며 답이 틀렸다고 하셨다.",
+                    "target": "가로저으시며",
+                    "ko_annotation_id": "sejong.89631",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89632",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "엄마는 혀를 차며 고개를 가로저으셨다.",
+                    "target": "가로저으셨다",
+                    "ko_annotation_id": "sejong.89632",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "가로젓다.v.Body_movement",
+    "lu_id": 5838,
+    "en_lus": [
+        "shake.v.93"
+    ]
+}

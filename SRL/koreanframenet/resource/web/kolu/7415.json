@@ -1,0 +1,56 @@
+{
+    "frameName": "Moving_in_place",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74085",
+            "examples": [
+                {
+                    "frameName": "Moving_in_place",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "지하철 역이 진동되자 사람들은 당황하기 시작했다.",
+                    "target": "진동되자",
+                    "ko_annotation_id": "sejong.74085",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74086",
+            "examples": [
+                {
+                    "frameName": "Moving_in_place",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "천둥 번개 소리에 천지가 진동되는 것 같다.",
+                    "target": "진동되는",
+                    "ko_annotation_id": "sejong.74086",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 670,
+    "ko_pos": "VV",
+    "ko_lu": "진동되다.v.Moving_in_place",
+    "lu_id": 7415,
+    "en_lus": [
+        "quiver.v.10872"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "frameName": "Vehicle_landing",
+    "patterns": [],
+    "frameID": 2642,
+    "ko_pos": "VV",
+    "ko_lu": "착륙시키다.v.Vehicle_landing",
+    "lu_id": 8165,
+    "en_lus": [
+        "touch down.v.16576"
+    ]
+}

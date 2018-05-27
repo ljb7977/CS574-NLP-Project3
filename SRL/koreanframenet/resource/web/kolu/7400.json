@@ -1,0 +1,56 @@
+{
+    "frameName": "Transition_to_state",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.87689",
+            "examples": [
+                {
+                    "frameName": "Transition_to_state",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이제는 이번 회의를 결말낼 시간이다.",
+                    "target": "결말낼",
+                    "ko_annotation_id": "sejong.87689",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.87690",
+            "examples": [
+                {
+                    "frameName": "Transition_to_state",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사회자는 토의를 결말내려고 했지만 참가자들의 발언은 계속 이어졌다.",
+                    "target": "결말내려고",
+                    "ko_annotation_id": "sejong.87690",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1070,
+    "ko_pos": "VV",
+    "ko_lu": "결말내다.v.Transition_to_state",
+    "lu_id": 7400,
+    "en_lus": [
+        "end up.v.10845"
+    ]
+}

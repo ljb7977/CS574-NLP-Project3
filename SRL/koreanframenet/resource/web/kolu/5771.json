@@ -1,0 +1,81 @@
+{
+    "frameName": "Cardinal_numbers",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20340",
+            "examples": [
+                {
+                    "frameName": "Cardinal_numbers",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 0,
+                                "end": 2
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "Four",
+                        "hundred"
+                    ],
+                    "ko_annotation_id": 20340,
+                    "text": "사백 년 전 이 작물들은 영국 식민지 주민이 이 땅을 다스리도록 하였고 아프리카 노예들이 이 땅을 경작하도록 만들었다.",
+                    "sent_id": 893,
+                    "relations": [],
+                    "annotation_id": 4646
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: 20341",
+            "examples": [
+                {
+                    "frameName": "Cardinal_numbers",
+                    "denotations": [
+                        {
+                            "obj": "multiplier",
+                            "span": {
+                                "begin": 0,
+                                "end": 2
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 0,
+                                "end": 2
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "Four",
+                        "hundred"
+                    ],
+                    "ko_annotation_id": 20341,
+                    "text": "사백 년 전 이 작물들은 영국 식민지 주민이 이 땅을 다스리도록 하였고 아프리카 노예들이 이 땅을 경작하도록 만들었다.",
+                    "sent_id": 893,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 4646
+                }
+            ]
+        }
+    ],
+    "frameID": 218,
+    "ko_pos": "NNG",
+    "ko_lu": "사백.n.Cardinal_numbers",
+    "lu_id": 5771,
+    "en_lus": [
+        "hundred",
+        "Four"
+    ]
+}

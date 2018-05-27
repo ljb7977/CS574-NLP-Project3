@@ -1,0 +1,11 @@
+{
+    "frameName": "Placing",
+    "patterns": [],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "의식주를 제공하다.v.Placing",
+    "lu_id": 6156,
+    "en_lus": [
+        "lodge.v.1095"
+    ]
+}

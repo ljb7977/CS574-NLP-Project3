@@ -1,0 +1,100 @@
+{
+    "frameName": "Impact",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.71809",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 길거리에서 영수와 서로 부닥쳤다.",
+                    "target": "부닥쳤다",
+                    "ko_annotation_id": "sejong.71809",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.71810",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여객선이 화물선과 서로 부닥쳤다.",
+                    "target": "부닥쳤다",
+                    "ko_annotation_id": "sejong.71810",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.71811",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수와 영수가 길거리에서 서로 부닥쳤다.",
+                    "target": "부닥쳤다",
+                    "ko_annotation_id": "sejong.71811",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.71812",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여객선과 화물선이 서로 부닥쳤다.",
+                    "target": "부닥쳤다",
+                    "ko_annotation_id": "sejong.71812",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 311,
+    "ko_pos": "VV",
+    "ko_lu": "부닥치다.v.Impact",
+    "lu_id": 6851,
+    "en_lus": [
+        "collide.v.5635"
+    ]
+}

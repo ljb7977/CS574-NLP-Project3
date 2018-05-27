@@ -1,0 +1,100 @@
+{
+    "frameName": "Sign_agreement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61854",
+            "examples": [
+                {
+                    "frameName": "Sign_agreement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 회사는 저 회사와 차기 프로젝트 합작이 계약되어 있다.",
+                    "target": "계약되어",
+                    "ko_annotation_id": "sejong.61854",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61855",
+            "examples": [
+                {
+                    "frameName": "Sign_agreement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "저 회사와 이 회사는 차기 프로젝트 합작이 계약되어 있다.",
+                    "target": "계약되어",
+                    "ko_annotation_id": "sejong.61855",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61856",
+            "examples": [
+                {
+                    "frameName": "Sign_agreement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 회사는 저 회사와 차기 프로젝트를 합작하기로 계약되어 있다.",
+                    "target": "계약되어",
+                    "ko_annotation_id": "sejong.61856",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61857",
+            "examples": [
+                {
+                    "frameName": "Sign_agreement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "저 회사와 이 회사는 차기 프로젝트를 합작하기로 계약됐다.",
+                    "target": "계약됐다",
+                    "ko_annotation_id": "sejong.61857",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1151,
+    "ko_pos": "VV",
+    "ko_lu": "계약되다.v.Sign_agreement",
+    "lu_id": 7358,
+    "en_lus": [
+        "sign.v.10681"
+    ]
+}

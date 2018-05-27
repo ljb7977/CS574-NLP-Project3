@@ -1,0 +1,34 @@
+{
+    "frameName": "Mass_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48909",
+            "examples": [
+                {
+                    "frameName": "Mass_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어젯밤에 못잔 탓에 졸음이 퍼붓는다.",
+                    "target": "퍼붓는다",
+                    "ko_annotation_id": "sejong.48909",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 284,
+    "ko_pos": "VV",
+    "ko_lu": "퍼붓다.v.Mass_motion",
+    "lu_id": 6780,
+    "en_lus": [
+        "hail.v.5358"
+    ]
+}

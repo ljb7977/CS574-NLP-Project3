@@ -1,0 +1,56 @@
+{
+    "frameName": "Abounding_with",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65563",
+            "examples": [
+                {
+                    "frameName": "Abounding_with",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "백화점이 사람들로 북적인다.",
+                    "target": "북적인다",
+                    "ko_annotation_id": "sejong.65563",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65564",
+            "examples": [
+                {
+                    "frameName": "Abounding_with",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "체육관이 관중들로 북적였다.",
+                    "target": "북적였다",
+                    "ko_annotation_id": "sejong.65564",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 262,
+    "ko_pos": "VV",
+    "ko_lu": "북적이다.v.Abounding_with",
+    "lu_id": 6647,
+    "en_lus": [
+        "throng.v.4769"
+    ]
+}

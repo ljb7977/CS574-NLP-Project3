@@ -1,0 +1,11 @@
+{
+    "frameName": "Operational_testing",
+    "patterns": [],
+    "frameID": 1301,
+    "ko_pos": "VV",
+    "ko_lu": "시험비행하다.v.Operational_testing",
+    "lu_id": 7768,
+    "en_lus": [
+        "flight test.v.13084"
+    ]
+}

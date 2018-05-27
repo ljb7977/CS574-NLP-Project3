@@ -1,0 +1,11 @@
+{
+    "frameName": "Operate_vehicle",
+    "patterns": [],
+    "frameID": 65,
+    "ko_pos": "VV",
+    "ko_lu": "노를 젓다.v.Operate_vehicle",
+    "lu_id": 6231,
+    "en_lus": [
+        "paddle.v.1279"
+    ]
+}

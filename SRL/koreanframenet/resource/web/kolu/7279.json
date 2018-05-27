@@ -1,0 +1,34 @@
+{
+    "frameName": "Omen",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90961",
+            "examples": [
+                {
+                    "frameName": "Omen",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이같은 행동은 그의 전력을 암시한다.",
+                    "target": "암시한다",
+                    "ko_annotation_id": "sejong.90961",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 412,
+    "ko_pos": "VV",
+    "ko_lu": "암시하다.v.Omen",
+    "lu_id": 7279,
+    "en_lus": [
+        "announce.v.10368"
+    ]
+}

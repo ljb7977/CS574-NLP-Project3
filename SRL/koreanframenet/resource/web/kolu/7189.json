@@ -1,0 +1,56 @@
+{
+    "frameName": "Change_of_temperature",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.80477",
+            "examples": [
+                {
+                    "frameName": "Change_of_temperature",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "더운 여름밤에는 등골이 오싹한 무서운 이야기가 제격이다.",
+                    "target": "오싹한",
+                    "ko_annotation_id": "sejong.80477",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80478",
+            "examples": [
+                {
+                    "frameName": "Change_of_temperature",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "밤길을 가는데 갑자기 고양이가 나타나 오싹했다.",
+                    "target": "오싹했다",
+                    "ko_annotation_id": "sejong.80478",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 797,
+    "ko_pos": "VV",
+    "ko_lu": "오싹하다.v.Change_of_temperature",
+    "lu_id": 7189,
+    "en_lus": [
+        "chill.v.9818"
+    ]
+}

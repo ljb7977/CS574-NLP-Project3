@@ -1,0 +1,56 @@
+{
+    "frameName": "Rejuvenation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.56663",
+            "examples": [
+                {
+                    "frameName": "Rejuvenation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "젊은 여자를 데려다 산다고 늙은이가 회춘할 수 있을까?",
+                    "target": "회춘할",
+                    "ko_annotation_id": "sejong.56663",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.56664",
+            "examples": [
+                {
+                    "frameName": "Rejuvenation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 할아버지에게 요즘 회춘하시는 것 같다며 너스레를 떨었다.",
+                    "target": "회춘하시는",
+                    "ko_annotation_id": "sejong.56664",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1614,
+    "ko_pos": "VV",
+    "ko_lu": "회춘하다.v.Rejuvenation",
+    "lu_id": 7650,
+    "en_lus": [
+        "rejuvenate.v.12662"
+    ]
+}

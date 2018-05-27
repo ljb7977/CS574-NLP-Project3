@@ -1,0 +1,56 @@
+{
+    "frameName": "Ingestion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65693",
+            "examples": [
+                {
+                    "frameName": "Ingestion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어제 두 병의 소주를 마셨어.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.65693",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65694",
+            "examples": [
+                {
+                    "frameName": "Ingestion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어제 소주를 두 병 마셨어.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.65694",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 263,
+    "ko_pos": "VV",
+    "ko_lu": "마시다.v.Ingestion",
+    "lu_id": 6667,
+    "en_lus": [
+        "consume.v.4831"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "frameName": "Forging",
+    "patterns": [],
+    "frameID": 1661,
+    "ko_pos": "VV",
+    "ko_lu": "조작하다.v.Forging",
+    "lu_id": 7741,
+    "en_lus": [
+        "falsify.v.13010"
+    ]
+}

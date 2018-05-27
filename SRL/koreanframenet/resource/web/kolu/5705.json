@@ -1,0 +1,65 @@
+{
+    "frameName": "Means",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20107",
+            "examples": [
+                {
+                    "frameName": "Means",
+                    "denotations": [
+                        {
+                            "obj": "agent",
+                            "span": {
+                                "begin": 0,
+                                "end": 2
+                            },
+                            "id": "3"
+                        },
+                        {
+                            "obj": "purpose",
+                            "span": {
+                                "begin": 4,
+                                "end": 31
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 32,
+                                "end": 35
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "ways"
+                    ],
+                    "ko_annotation_id": 20107,
+                    "text": "우리는 장애를 가진 사람들이 노동 인구에 포함되도록 하는 방안들을 찾았습니다.",
+                    "sent_id": 400,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "3",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 2112
+                }
+            ]
+        }
+    ],
+    "frameID": 1790,
+    "ko_pos": "NN",
+    "ko_lu": "방안.n.Means",
+    "lu_id": 5705,
+    "en_lus": [
+        "way"
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "frameName": "Becoming_aware",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20153",
+            "examples": [
+                {
+                    "frameName": "Becoming_aware",
+                    "denotations": [
+                        {
+                            "obj": "time",
+                            "span": {
+                                "begin": 0,
+                                "end": 35
+                            },
+                            "id": "4"
+                        },
+                        {
+                            "obj": "cognizer",
+                            "span": {
+                                "begin": 39,
+                                "end": 43
+                            },
+                            "id": "3"
+                        },
+                        {
+                            "obj": "phenomenon",
+                            "span": {
+                                "begin": 45,
+                                "end": 81
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 83,
+                                "end": 86
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "observe"
+                    ],
+                    "ko_annotation_id": 20153,
+                    "text": "9월 11일 사건과 2001년 가을의 탄저병 편지 공격 사건 전에도, 분석가들은 화학 생물무기 테러리즘 위협의 전 세가지 차원에서 걱정스러운 전개를 관찰하기 시작하였다.",
+                    "sent_id": 2051,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "3",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "4",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 10039
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88235",
+            "examples": [
+                {
+                    "frameName": "Becoming_aware",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기상대는 날씨를 관찰하는 곳이다.",
+                    "target": "관찰하는",
+                    "ko_annotation_id": "sejong.88235",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88236",
+            "examples": [
+                {
+                    "frameName": "Becoming_aware",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나비의 생태를 관찰하시오.",
+                    "target": "관찰하시오",
+                    "ko_annotation_id": "sejong.88236",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 20,
+    "ko_pos": "VV",
+    "ko_lu": "관찰하다.v.Becoming_aware",
+    "lu_id": 5720,
+    "en_lus": [
+        "observe"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Hit_or_miss",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.67105",
+            "examples": [
+                {
+                    "frameName": "Hit_or_miss",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "밖에는 눈보라가 세차게 친다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.67105",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67106",
+            "examples": [
+                {
+                    "frameName": "Hit_or_miss",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "지난 여름에 폭풍우가 무섭게 쳤다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.67106",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1902,
+    "ko_pos": "VV",
+    "ko_lu": "치다.v.Hit_or_miss",
+    "lu_id": 7888,
+    "en_lus": [
+        "hit.v.14116"
+    ]
+}

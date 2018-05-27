@@ -1,0 +1,78 @@
+{
+    "frameName": "Occupy_rank",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68938",
+            "examples": [
+                {
+                    "frameName": "Occupy_rank",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 구부러진 안테나를 꼿꼿히 세웠다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.68938",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68939",
+            "examples": [
+                {
+                    "frameName": "Occupy_rank",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 청소를 다 하고 빗자루를 한 구석에 세워 두었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.68939",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68940",
+            "examples": [
+                {
+                    "frameName": "Occupy_rank",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "형은 넘어진 나를 일으켜 세워 주었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.68940",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1379,
+    "ko_pos": "VV",
+    "ko_lu": "세우다.v.Occupy_rank",
+    "lu_id": 7567,
+    "en_lus": [
+        "stand.v.11814"
+    ]
+}

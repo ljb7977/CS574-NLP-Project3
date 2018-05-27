@@ -1,0 +1,122 @@
+{
+    "frameName": "Path_shape",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.88209",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어떤 물체가 하늘에서 땅으로 하강하면서 빛을 낸다.",
+                    "target": "하강하면서",
+                    "ko_annotation_id": "sejong.88209",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88210",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "비행기가 전속력으로 하강했다.",
+                    "target": "하강했다",
+                    "ko_annotation_id": "sejong.88210",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88211",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "독수리 한마리가 바다위로 잽싸게 하강하면서 물고기를 낚아챘다.",
+                    "target": "하강하면서",
+                    "ko_annotation_id": "sejong.88211",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88212",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "특공대원들은 고공에서 낙하산으로 하강하면서 전투태세를 취했다.",
+                    "target": "하강하면서",
+                    "ko_annotation_id": "sejong.88212",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88213",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "뜨거운 공기는 상승하고 찬공기는 지표로 하강하면서 대류 현상이 일어납니다.",
+                    "target": "하강하면서",
+                    "ko_annotation_id": "sejong.88213",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 61,
+    "ko_pos": "VV",
+    "ko_lu": "하강하다.v.Path_shape",
+    "lu_id": 6138,
+    "en_lus": [
+        "descend.v.1058"
+    ]
+}

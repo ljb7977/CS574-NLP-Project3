@@ -1,0 +1,34 @@
+{
+    "frameName": "Killing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.56104",
+            "examples": [
+                {
+                    "frameName": "Killing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "양은파 폭력배들이 반대파 두목을 살해시켰다.",
+                    "target": "살해시켰다",
+                    "ko_annotation_id": "sejong.56104",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 590,
+    "ko_pos": "VV",
+    "ko_lu": "살해시키다.v.Killing",
+    "lu_id": 7078,
+    "en_lus": [
+        "murder.v.8639"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_impact",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69960",
+            "examples": [
+                {
+                    "frameName": "Cause_impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어머님이 음식을 하시는지 부엌에서 딸가닥거리는 소리가 난다.",
+                    "target": "딸가닥거리는",
+                    "ko_annotation_id": "sejong.69960",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69961",
+            "examples": [
+                {
+                    "frameName": "Cause_impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 나막신을 딸가닥거리며 돌아다닌다.",
+                    "target": "딸가닥거리며",
+                    "ko_annotation_id": "sejong.69961",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 395,
+    "ko_pos": "VV",
+    "ko_lu": "딸가닥거리다.v.Cause_impact",
+    "lu_id": 7154,
+    "en_lus": [
+        "clatter.v.9772"
+    ]
+}

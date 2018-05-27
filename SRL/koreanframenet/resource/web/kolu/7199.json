@@ -1,0 +1,56 @@
+{
+    "frameName": "Excreting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.86207",
+            "examples": [
+                {
+                    "frameName": "Excreting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이는 속이 안 좋은지 먹은 음식을 다 게워 냈다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.86207",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.86208",
+            "examples": [
+                {
+                    "frameName": "Excreting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "음식을 잘 게워 내는 사람은 비위가 약한 사람이다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.86208",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 270,
+    "ko_pos": "VV",
+    "ko_lu": "게우다.v.Excreting",
+    "lu_id": 7199,
+    "en_lus": [
+        "throw up.v.9913"
+    ]
+}

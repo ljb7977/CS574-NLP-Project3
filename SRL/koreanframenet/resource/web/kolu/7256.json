@@ -1,0 +1,56 @@
+{
+    "frameName": "Communication",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52549",
+            "examples": [
+                {
+                    "frameName": "Communication",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 31,
+                                "end": 35
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "현지 언론들은 테러 용의자의새 도피처로 인근 세 지역을 지목하고 있다.",
+                    "target": "지목하고",
+                    "ko_annotation_id": "sejong.52549",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52550",
+            "examples": [
+                {
+                    "frameName": "Communication",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 35
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "경찰은 외국으로 도피한 두 명을 유력한 살인용의자로 지목하고있다.",
+                    "target": "지목하고있다",
+                    "ko_annotation_id": "sejong.52550",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 6,
+    "ko_pos": "VV",
+    "ko_lu": "지목하다.v.Communication",
+    "lu_id": 7256,
+    "en_lus": [
+        "indicate.v.10151"
+    ]
+}

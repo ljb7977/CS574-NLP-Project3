@@ -1,0 +1,56 @@
+{
+    "frameName": "Motion_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49587",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "밤새 내린 눈을 밟는 소리가 유난히 사각댄다.",
+                    "target": "사각댄다",
+                    "ko_annotation_id": "sejong.49587",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49588",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어둠 속에서 사과먹는 소리만 사각댄다.",
+                    "target": "사각댄다",
+                    "ko_annotation_id": "sejong.49588",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 60,
+    "ko_pos": "VV",
+    "ko_lu": "사각대다.v.Motion_noise",
+    "lu_id": 6106,
+    "en_lus": [
+        "crunch.v.1031"
+    ]
+}

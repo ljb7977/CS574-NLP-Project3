@@ -1,0 +1,56 @@
+{
+    "frameName": "Apply_heat",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48598",
+            "examples": [
+                {
+                    "frameName": "Apply_heat",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 어머니는 호떡을 구워 팔며 자식들을 공부시켰다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48598",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48599",
+            "examples": [
+                {
+                    "frameName": "Apply_heat",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "크리스마스 이브 저녁이면 우리는 함께 케익용 빵을 구웠다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48599",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 236,
+    "ko_pos": "VV",
+    "ko_lu": "굽다.v.Apply_heat",
+    "lu_id": 8087,
+    "en_lus": [
+        "plank.v.15776"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Cause_fluidic_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.46843",
+            "examples": [
+                {
+                    "frameName": "Cause_fluidic_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "꼬마들은 목욕탕에서 함부로 물을 튀겼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.46843",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 920,
+    "ko_pos": "VV",
+    "ko_lu": "튀기다.v.Cause_fluidic_motion",
+    "lu_id": 7211,
+    "en_lus": [
+        "splatter.v.9961"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "frameName": "Breaking_apart",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63986",
+            "examples": [
+                {
+                    "frameName": "Breaking_apart",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "증거를 갖다대자 그는 쉽게 허물어졌다.",
+                    "target": "허물어졌다",
+                    "ko_annotation_id": "sejong.63986",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63987",
+            "examples": [
+                {
+                    "frameName": "Breaking_apart",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그들 부부사이의 정이 허물어지면서 이혼을 했다.",
+                    "target": "허물어지면서",
+                    "ko_annotation_id": "sejong.63987",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63988",
+            "examples": [
+                {
+                    "frameName": "Breaking_apart",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "안보 기반이허물어지면 우리나라는 끝장이다.",
+                    "target": "허물어지면",
+                    "ko_annotation_id": "sejong.63988",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1862,
+    "ko_pos": "VV",
+    "ko_lu": "허물어지다.v.Breaking_apart",
+    "lu_id": 8301,
+    "en_lus": [
+        "crumble.v.17568"
+    ]
+}

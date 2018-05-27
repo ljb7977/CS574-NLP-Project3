@@ -1,0 +1,100 @@
+{
+    "frameName": "Communicate_categorization",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89324",
+            "examples": [
+                {
+                    "frameName": "Communicate_categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 연쇄살인은 역사서에 최악의 사건으로 기술되어 있었다.",
+                    "target": "기술되어",
+                    "ko_annotation_id": "sejong.89324",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89325",
+            "examples": [
+                {
+                    "frameName": "Communicate_categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 연쇄살인은 역사서에 최악의 사건이었다고 기술되어 있었다.",
+                    "target": "기술되어",
+                    "ko_annotation_id": "sejong.89325",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89326",
+            "examples": [
+                {
+                    "frameName": "Communicate_categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "왕들의 일거수일투족이 왕조실록에 자세히 기술되어 있다.",
+                    "target": "기술되어",
+                    "ko_annotation_id": "sejong.89326",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89327",
+            "examples": [
+                {
+                    "frameName": "Communicate_categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "지난 8년간 일어났던 일이 그녀의 일기 속에 꼼꼼히 기술돼 있었다.",
+                    "target": "기술돼",
+                    "ko_annotation_id": "sejong.89327",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 796,
+    "ko_pos": "VV",
+    "ko_lu": "기술되다.v.Communicate_categorization",
+    "lu_id": 7179,
+    "en_lus": [
+        "describe.v.9803"
+    ]
+}

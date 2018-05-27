@@ -1,0 +1,56 @@
+{
+    "frameName": "Preventing_or_letting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.78840",
+            "examples": [
+                {
+                    "frameName": "Preventing_or_letting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사고를 미연에 방지하려면 미리미리 조심하는 게 좋다.",
+                    "target": "방지하려면",
+                    "ko_annotation_id": "sejong.78840",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.78841",
+            "examples": [
+                {
+                    "frameName": "Preventing_or_letting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정부에서는 탈세를 방지하기 위해 세무조사를 강화하기로 했다.",
+                    "target": "방지하기",
+                    "ko_annotation_id": "sejong.78841",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 516,
+    "ko_pos": "VV",
+    "ko_lu": "방지하다.v.Preventing_or_letting",
+    "lu_id": 7053,
+    "en_lus": [
+        "avert.v.8111"
+    ]
+}

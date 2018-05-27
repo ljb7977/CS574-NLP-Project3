@@ -1,0 +1,34 @@
+{
+    "frameName": "Feigning",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.53122",
+            "examples": [
+                {
+                    "frameName": "Feigning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "못된 녀석들이 맨날 언제 자기들이 그랬느냐고 거짓부렁시키네.",
+                    "target": "거짓부렁시키네",
+                    "ko_annotation_id": "sejong.53122",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 12,
+    "ko_pos": "VV",
+    "ko_lu": "거짓부렁시키다.v.Feigning",
+    "lu_id": 8413,
+    "en_lus": [
+        "counterfeit.v.21"
+    ]
+}

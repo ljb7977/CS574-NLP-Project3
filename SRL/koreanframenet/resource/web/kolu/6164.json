@@ -1,0 +1,11 @@
+{
+    "frameName": "Placing",
+    "patterns": [],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "속을 넣다.v.Placing",
+    "lu_id": 6164,
+    "en_lus": [
+        "stuff.v.1114"
+    ]
+}

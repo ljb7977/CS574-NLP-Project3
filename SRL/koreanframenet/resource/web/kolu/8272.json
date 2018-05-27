@@ -1,0 +1,56 @@
+{
+    "frameName": "Sharing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74354",
+            "examples": [
+                {
+                    "frameName": "Sharing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영수는 영희와 그 토지를 공유했다.",
+                    "target": "공유했다",
+                    "ko_annotation_id": "sejong.74354",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74355",
+            "examples": [
+                {
+                    "frameName": "Sharing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영수와 영희는 그 토지를 공유했다.",
+                    "target": "공유했다",
+                    "ko_annotation_id": "sejong.74355",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2810,
+    "ko_pos": "VV",
+    "ko_lu": "공유하다.v.Sharing",
+    "lu_id": 8272,
+    "en_lus": [
+        "share.v.17375"
+    ]
+}

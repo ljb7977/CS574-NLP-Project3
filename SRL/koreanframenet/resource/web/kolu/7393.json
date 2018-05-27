@@ -1,0 +1,34 @@
+{
+    "frameName": "Exchange_currency",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55343",
+            "examples": [
+                {
+                    "frameName": "Exchange_currency",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 옷을 바꾸러 가게에 갔다.",
+                    "target": "바꾸러",
+                    "ko_annotation_id": "sejong.55343",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1184,
+    "ko_pos": "VV",
+    "ko_lu": "바꾸다.v.Exchange_currency",
+    "lu_id": 7393,
+    "en_lus": [
+        "convert.v.10816"
+    ]
+}

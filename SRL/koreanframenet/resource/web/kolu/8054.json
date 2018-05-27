@@ -1,0 +1,56 @@
+{
+    "frameName": "Finish_game",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75265",
+            "examples": [
+                {
+                    "frameName": "Finish_game",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "청나라와의 싸움에서 승리한 일본군은 여세를 몰아 러시아와도 전쟁을 벌였다.",
+                    "target": "승리한",
+                    "ko_annotation_id": "sejong.75265",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75266",
+            "examples": [
+                {
+                    "frameName": "Finish_game",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 독재정권과 맞서 반드시 승리할 것입니다.",
+                    "target": "승리할",
+                    "ko_annotation_id": "sejong.75266",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2193,
+    "ko_pos": "VV",
+    "ko_lu": "승리하다.v.Finish_game",
+    "lu_id": 8054,
+    "en_lus": [
+        "win.v.15593"
+    ]
+}

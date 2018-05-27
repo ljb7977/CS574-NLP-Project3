@@ -1,0 +1,56 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.70791",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "시몬은 어깨에 십자가를 걸머메고 예수를 따랐다.",
+                    "target": "걸머메고",
+                    "ko_annotation_id": "sejong.70791",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70792",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "소들은 하나씩 등에 짐을 걸머메고 강을 건너고 있었다.",
+                    "target": "걸머메고",
+                    "ko_annotation_id": "sejong.70792",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "걸머메다.v.Self_motion",
+    "lu_id": 7206,
+    "en_lus": [
+        "shoulder.v.9951"
+    ]
+}

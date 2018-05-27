@@ -1,0 +1,56 @@
+{
+    "frameName": "Sound_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75558",
+            "examples": [
+                {
+                    "frameName": "Sound_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기차가 기적을 울리며 달린다.",
+                    "target": "울리며",
+                    "ko_annotation_id": "sejong.75558",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75559",
+            "examples": [
+                {
+                    "frameName": "Sound_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 배는 뱃고동을 울리며 빠른 속도로 항구를 벗어났다.",
+                    "target": "울리며",
+                    "ko_annotation_id": "sejong.75559",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 860,
+    "ko_pos": "VV",
+    "ko_lu": "울리다.v.Sound_movement",
+    "lu_id": 7143,
+    "en_lus": [
+        "reverberate.v.9620"
+    ]
+}

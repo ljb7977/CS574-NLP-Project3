@@ -1,0 +1,11 @@
+{
+    "frameName": "Renting",
+    "patterns": [],
+    "frameID": 1728,
+    "ko_pos": "VV",
+    "ko_lu": "전세내다.v.Renting",
+    "lu_id": 7782,
+    "en_lus": [
+        "charter.v.13156"
+    ]
+}

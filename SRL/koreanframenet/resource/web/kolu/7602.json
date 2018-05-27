@@ -1,0 +1,34 @@
+{
+    "frameName": "Cause_temperature_change",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.50935",
+            "examples": [
+                {
+                    "frameName": "Cause_temperature_change",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 전기난로를 너무 과열해서 불을 냈다.",
+                    "target": "과열해서",
+                    "ko_annotation_id": "sejong.50935",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 334,
+    "ko_pos": "VV",
+    "ko_lu": "과열하다.v.Cause_temperature_change",
+    "lu_id": 7602,
+    "en_lus": [
+        "overheat.v.12059"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Make_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90872",
+            "examples": [
+                {
+                    "frameName": "Make_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 노인이 키득대는 소리가 유달리 귀에 거슬렸다.",
+                    "target": "키득대는",
+                    "ko_annotation_id": "sejong.90872",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.90873",
+            "examples": [
+                {
+                    "frameName": "Make_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이들은 나의 당혹해하는 모습을 보고 연신 키득댔다.",
+                    "target": "키득댔다",
+                    "ko_annotation_id": "sejong.90873",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 69,
+    "ko_pos": "VV",
+    "ko_lu": "키득대다.v.Make_noise",
+    "lu_id": 6298,
+    "en_lus": [
+        "snicker.v.1475"
+    ]
+}

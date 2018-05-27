@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_land",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.81757",
+            "examples": [
+                {
+                    "frameName": "Cause_to_land",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "맥아더 장군은 연합군을 인천으로 상륙시켰다.",
+                    "target": "상륙시켰다",
+                    "ko_annotation_id": "sejong.81757",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.81758",
+            "examples": [
+                {
+                    "frameName": "Cause_to_land",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사령관은 새로 개발된 수륙양용차량을 적의 해안에 상륙시킬 계획이다.",
+                    "target": "상륙시킬",
+                    "ko_annotation_id": "sejong.81758",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2643,
+    "ko_pos": "VV",
+    "ko_lu": "상륙시키다.v.Cause_to_land",
+    "lu_id": 8169,
+    "en_lus": [
+        "land.v.16577"
+    ]
+}

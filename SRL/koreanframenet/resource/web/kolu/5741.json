@@ -1,0 +1,82 @@
+{
+    "frameName": "Body_parts",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20244",
+            "examples": [
+                {
+                    "frameName": "Observable_body_parts",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 37,
+                                "end": 39
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "body"
+                    ],
+                    "ko_annotation_id": 20244,
+                    "text": "화학무기 ( CW ) 작용제는 높은 독성이 있고 폐나 피부를 통해 신체에 들어갈 수 있는 살아있지 않고, 제조된 화학물질이다.",
+                    "sent_id": 2027,
+                    "relations": [],
+                    "annotation_id": 9877
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.4850",
+            "examples": [
+                {
+                    "frameName": "Body_parts",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 15,
+                                "end": 17
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "text": "그는 오랫동안 운동을 하여 신체가 잘 발달되어 있다.",
+                    "target": "신체",
+                    "ko_annotation_id": "sejong.4850",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.4851",
+            "examples": [
+                {
+                    "frameName": "Body_parts",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 7,
+                                "end": 9
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "text": "오랜 병으로 신체가 허약해 졌다.",
+                    "target": "신체",
+                    "ko_annotation_id": "sejong.4851",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 119,
+    "ko_pos": "NNG",
+    "ko_lu": "신체.n.Body_parts",
+    "lu_id": 5741,
+    "en_lus": [
+        "body"
+    ]
+}

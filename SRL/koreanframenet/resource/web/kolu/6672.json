@@ -1,0 +1,56 @@
+{
+    "frameName": "Dispersal",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79690",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "경찰이 호루라기를 불며 군중들을 헤쳐 보냈다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79690",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79691",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이들을 헤쳐 놀게 했다가 두 시간 후 다시 모이게 했다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79691",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 267,
+    "ko_pos": "VV",
+    "ko_lu": "헤치다.v.Dispersal",
+    "lu_id": 6672,
+    "en_lus": [
+        "disperse.v.4837"
+    ]
+}

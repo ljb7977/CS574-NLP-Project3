@@ -1,0 +1,34 @@
+{
+    "frameName": "Cause_fluidic_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.88946",
+            "examples": [
+                {
+                    "frameName": "Cause_fluidic_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀는 소리없이 눈물만 흘리면서 나를 떠났다.",
+                    "target": "흘리면서",
+                    "ko_annotation_id": "sejong.88946",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 920,
+    "ko_pos": "VV",
+    "ko_lu": "흘리다.v.Cause_fluidic_motion",
+    "lu_id": 7511,
+    "en_lus": [
+        "drip.v.11119"
+    ]
+}

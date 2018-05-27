@@ -1,0 +1,11 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "느릿느릿 걷다.v.Self_motion",
+    "lu_id": 6217,
+    "en_lus": [
+        "traipse.v.1249"
+    ]
+}

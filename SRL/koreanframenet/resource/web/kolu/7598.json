@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_change_of_consistency",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.77441",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_consistency",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이것은 농축시킨 유제품이라고 할 수 있다.",
+                    "target": "농축시킨",
+                    "ko_annotation_id": "sejong.77441",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.77442",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_consistency",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "바닷물을 최대로 농축시키면 소금이 된다.",
+                    "target": "농축시키면",
+                    "ko_annotation_id": "sejong.77442",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 383,
+    "ko_pos": "VV",
+    "ko_lu": "농축시키다.v.Cause_change_of_consistency",
+    "lu_id": 7598,
+    "en_lus": [
+        "inspissate.v.12020"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Hiring",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.70177",
+            "examples": [
+                {
+                    "frameName": "Hiring",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 이 증거물의 감정을 국립 과학수사연구소에 의뢰했다.",
+                    "target": "의뢰했다",
+                    "ko_annotation_id": "sejong.70177",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70178",
+            "examples": [
+                {
+                    "frameName": "Hiring",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "김 회장은 그 사건을 국제 교류전문 변호사에게 의뢰했다.",
+                    "target": "의뢰했다",
+                    "ko_annotation_id": "sejong.70178",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 322,
+    "ko_pos": "VV",
+    "ko_lu": "의뢰하다.v.Hiring",
+    "lu_id": 6881,
+    "en_lus": [
+        "commission.v.5777"
+    ]
+}

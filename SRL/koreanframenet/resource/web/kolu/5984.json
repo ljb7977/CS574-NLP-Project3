@@ -1,0 +1,56 @@
+{
+    "frameName": "Experiencer_obj",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75750",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 어지간한 일에는 화내지 않는 유순한 사람이었다.",
+                    "target": "화내지",
+                    "ko_annotation_id": "sejong.75750",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75751",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나름대로 사정이 있었을 터이니 그에게 너무 화내지 마라.",
+                    "target": "화내지",
+                    "ko_annotation_id": "sejong.75751",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 47,
+    "ko_pos": "VV",
+    "ko_lu": "화내다.v.Experiencer_obj",
+    "lu_id": 5984,
+    "en_lus": [
+        "anger.v.783"
+    ]
+}

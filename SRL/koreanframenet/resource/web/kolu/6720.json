@@ -1,0 +1,34 @@
+{
+    "frameName": "Attaching",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.86974",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 문제는 국회에 계류되어 있다.",
+                    "target": "계류되어",
+                    "ko_annotation_id": "sejong.86974",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 197,
+    "ko_pos": "VV",
+    "ko_lu": "계류되다.v.Attaching",
+    "lu_id": 6720,
+    "en_lus": [
+        "moor.v.5158"
+    ]
+}

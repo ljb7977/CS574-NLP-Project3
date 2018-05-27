@@ -1,0 +1,34 @@
+{
+    "frameName": "Manipulate_into_doing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57450",
+            "examples": [
+                {
+                    "frameName": "Manipulate_into_doing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "저 사람은 온갖 협잡질로 순진한 사람들을 속여 자신의 재산을 늘려 나갔다.",
+                    "target": "협잡질로",
+                    "ko_annotation_id": "sejong.57450",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 92,
+    "ko_pos": "VV",
+    "ko_lu": "협잡질하다.v.Manipulate_into_doing",
+    "lu_id": 6375,
+    "en_lus": [
+        "cheat.v.1953"
+    ]
+}

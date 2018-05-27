@@ -1,0 +1,11 @@
+{
+    "frameName": "Make_noise",
+    "patterns": [],
+    "frameID": 69,
+    "ko_pos": "VV",
+    "ko_lu": "(낮게)웅웅거리는 소리를 내다.v.Make_noise",
+    "lu_id": 6264,
+    "en_lus": [
+        "drone.v.1397"
+    ]
+}

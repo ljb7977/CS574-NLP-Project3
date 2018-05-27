@@ -1,0 +1,34 @@
+{
+    "frameName": "Communication",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90961",
+            "examples": [
+                {
+                    "frameName": "Communication",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이같은 행동은 그의 전력을 암시한다.",
+                    "target": "암시한다",
+                    "ko_annotation_id": "sejong.90961",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 6,
+    "ko_pos": "VV",
+    "ko_lu": "암시하다.v.Communication",
+    "lu_id": 7254,
+    "en_lus": [
+        "indicate.v.10151"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Experiencer_obj",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48192",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "엄마가 우는 아이를 달랬다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48192",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 47,
+    "ko_pos": "VV",
+    "ko_lu": "달래다.v.Experiencer_obj",
+    "lu_id": 6014,
+    "en_lus": [
+        "mollify.v.829"
+    ]
+}

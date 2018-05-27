@@ -1,0 +1,56 @@
+{
+    "frameName": "Breaking_apart",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.72098",
+            "examples": [
+                {
+                    "frameName": "Breaking_apart",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 인간은 부부 싸움만 하면 살림살이를 부수곤 했다.",
+                    "target": "부수곤",
+                    "ko_annotation_id": "sejong.72098",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72099",
+            "examples": [
+                {
+                    "frameName": "Breaking_apart",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "멀쩡한 장난감을 부수지 마라.",
+                    "target": "부수지",
+                    "ko_annotation_id": "sejong.72099",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1862,
+    "ko_pos": "VV",
+    "ko_lu": "부수다.v.Breaking_apart",
+    "lu_id": 8095,
+    "en_lus": [
+        "fragment.v.15870"
+    ]
+}

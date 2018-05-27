@@ -1,0 +1,52 @@
+{
+    "frameName": "Body_parts",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20007",
+            "examples": [
+                {
+                    "frameName": "Observable_body_parts",
+                    "denotations": [
+                        {
+                            "obj": "possessor",
+                            "span": {
+                                "begin": 33,
+                                "end": 35
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 37,
+                                "end": 38
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "necks"
+                    ],
+                    "ko_annotation_id": 20007,
+                    "text": "승객들은 어지럽게 변하는 항구의 모습을 얼핏얼핏 보기 위해 그들의 목을 길게 뺀다.",
+                    "sent_id": 1072,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 5596
+                }
+            ]
+        }
+    ],
+    "frameID": 119,
+    "ko_pos": "NNG",
+    "ko_lu": "목.n.Body_parts",
+    "lu_id": 5679,
+    "en_lus": [
+        "neck"
+    ]
+}

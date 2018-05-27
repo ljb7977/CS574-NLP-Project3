@@ -1,0 +1,56 @@
+{
+    "frameName": "Experiencer_obj",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74994",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "내가 잘못을 했으니 아버지께서 역정내시는 것도 당연하다.",
+                    "target": "역정내시는",
+                    "ko_annotation_id": "sejong.74994",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74995",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "웬일인지 할머니께서 나에게 역정내신다.",
+                    "target": "역정내신다",
+                    "ko_annotation_id": "sejong.74995",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 47,
+    "ko_pos": "VV",
+    "ko_lu": "역정내다.v.Experiencer_obj",
+    "lu_id": 5988,
+    "en_lus": [
+        "anger.v.783"
+    ]
+}

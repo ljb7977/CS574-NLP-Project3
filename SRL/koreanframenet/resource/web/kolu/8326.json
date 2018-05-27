@@ -1,0 +1,56 @@
+{
+    "frameName": "Infecting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49035",
+            "examples": [
+                {
+                    "frameName": "Infecting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "일본에서 수입된 돼지는 전염병을 전국에 퍼뜨렸다.",
+                    "target": "퍼뜨렸다",
+                    "ko_annotation_id": "sejong.49035",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49036",
+            "examples": [
+                {
+                    "frameName": "Infecting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 에이즈 환자는 병을 아무에게나 퍼뜨리고 다닌다.",
+                    "target": "퍼뜨리고",
+                    "ko_annotation_id": "sejong.49036",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2851,
+    "ko_pos": "VV",
+    "ko_lu": "퍼뜨리다.v.Infecting",
+    "lu_id": 8326,
+    "en_lus": [
+        "give.v.17700"
+    ]
+}

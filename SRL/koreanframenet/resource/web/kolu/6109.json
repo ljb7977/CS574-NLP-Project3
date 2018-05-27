@@ -1,0 +1,56 @@
+{
+    "frameName": "Motion_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.66689",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "과자가 아사삭댄다.",
+                    "target": "아사삭댄다",
+                    "ko_annotation_id": "sejong.66689",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66690",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "바람에 낙엽이 아사삭댄다.",
+                    "target": "아사삭댄다",
+                    "ko_annotation_id": "sejong.66690",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 60,
+    "ko_pos": "VV",
+    "ko_lu": "아사삭대다.v.Motion_noise",
+    "lu_id": 6109,
+    "en_lus": [
+        "crunch.v.1031"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Categorization",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.72254",
+            "examples": [
+                {
+                    "frameName": "Categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선생님은 우리에게 그 문장을 해석해 주셨다.",
+                    "target": "해석해",
+                    "ko_annotation_id": "sejong.72254",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72255",
+            "examples": [
+                {
+                    "frameName": "Categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 중국 시를 해석하고 있다.",
+                    "target": "해석하고",
+                    "ko_annotation_id": "sejong.72255",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 21,
+    "ko_pos": "VV",
+    "ko_lu": "해석하다.v.Categorization",
+    "lu_id": 5865,
+    "en_lus": [
+        "interpret.v.194"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Filling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75709",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "개울 물에 대야를 부시고 깨끗한 물을 받아 다시 방으로 돌아왔다.",
+                    "target": "부시고",
+                    "ko_annotation_id": "sejong.75709",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 59,
+    "ko_pos": "VV",
+    "ko_lu": "부시다.v.Filling",
+    "lu_id": 6456,
+    "en_lus": [
+        "shower.v.2592"
+    ]
+}

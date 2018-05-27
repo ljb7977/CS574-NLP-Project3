@@ -1,0 +1,56 @@
+{
+    "frameName": "Filling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75207",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이들이 진창을 덤벙거려서 옷이 더러워졌다.",
+                    "target": "덤벙거려서",
+                    "ko_annotation_id": "sejong.75207",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75208",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 물에서 덤벙거렸다.",
+                    "target": "덤벙거렸다",
+                    "ko_annotation_id": "sejong.75208",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 59,
+    "ko_pos": "VV",
+    "ko_lu": "덤벙거리다.v.Filling",
+    "lu_id": 6453,
+    "en_lus": [
+        "splatter.v.2588"
+    ]
+}

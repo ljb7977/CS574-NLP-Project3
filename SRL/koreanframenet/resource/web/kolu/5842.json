@@ -1,0 +1,56 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.82357",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀는 나에게 윙크하고는 총총 걸음을 걸어 도망쳤다.",
+                    "target": "윙크하고는",
+                    "ko_annotation_id": "sejong.82357",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.82358",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이상한 남자가 나에게 윙크하면서 추파를 던진다.",
+                    "target": "윙크하면서",
+                    "ko_annotation_id": "sejong.82358",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "윙크하다.v.Body_movement",
+    "lu_id": 5842,
+    "en_lus": [
+        "wink.v.107"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Surrounding",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68387",
+            "examples": [
+                {
+                    "frameName": "Surrounding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람은 내 팔의 상처 부위에 붕대를 둘러싸 주었다.",
+                    "target": "둘러싸",
+                    "ko_annotation_id": "sejong.68387",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68388",
+            "examples": [
+                {
+                    "frameName": "Surrounding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람은 내 팔의 상처 부위를 붕대로 둘러싸 주었다.",
+                    "target": "둘러싸",
+                    "ko_annotation_id": "sejong.68388",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2911,
+    "ko_pos": "VV",
+    "ko_lu": "둘러싸다.v.Surrounding",
+    "lu_id": 8332,
+    "en_lus": [
+        "ring.v.17890"
+    ]
+}

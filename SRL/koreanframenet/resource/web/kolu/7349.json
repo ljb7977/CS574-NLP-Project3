@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_end",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.81387",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사형제도는 철폐되어야 한다.",
+                    "target": "철폐되어야",
+                    "ko_annotation_id": "sejong.81387",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.81388",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "징병제가 철폐되어야 진정한 국가 발전을 기대할 수 있다.",
+                    "target": "철폐되어야",
+                    "ko_annotation_id": "sejong.81388",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1149,
+    "ko_pos": "VV",
+    "ko_lu": "철폐되다.v.Cause_to_end",
+    "lu_id": 7349,
+    "en_lus": [
+        "lift.v.10679"
+    ]
+}

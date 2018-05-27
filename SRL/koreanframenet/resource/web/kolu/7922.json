@@ -1,0 +1,34 @@
+{
+    "frameName": "Food_gathering",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.50199",
+            "examples": [
+                {
+                    "frameName": "Food_gathering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "올해는 비가 많이 와서 복숭아를 제 때 따지 못하겠다.",
+                    "target": "따지",
+                    "ko_annotation_id": "sejong.50199",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2008,
+    "ko_pos": "VV",
+    "ko_lu": "따다.v.Food_gathering",
+    "lu_id": 7922,
+    "en_lus": [
+        "pick.v.14773"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Placing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.60666",
+            "examples": [
+                {
+                    "frameName": "Placing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 이번 사건에 대한 신속한 조치로 훈장을 수여받았다.",
+                    "target": "수여받았다",
+                    "ko_annotation_id": "sejong.60666",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.60667",
+            "examples": [
+                {
+                    "frameName": "Placing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "내 친구는 전국 수석으로 상금을 수여받았다.",
+                    "target": "수여받았다",
+                    "ko_annotation_id": "sejong.60667",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "수여받다.v.Placing",
+    "lu_id": 6774,
+    "en_lus": [
+        "bestow.v.5354"
+    ]
+}

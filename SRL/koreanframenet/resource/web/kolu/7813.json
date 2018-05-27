@@ -1,0 +1,11 @@
+{
+    "frameName": "Change_operational_state",
+    "patterns": [],
+    "frameID": 1688,
+    "ko_pos": "VV",
+    "ko_lu": "부팅하다.v.Change_operational_state",
+    "lu_id": 7813,
+    "en_lus": [
+        "boot.v.13432"
+    ]
+}

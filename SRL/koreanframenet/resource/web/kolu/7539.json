@@ -1,0 +1,56 @@
+{
+    "frameName": "Activity_ongoing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74375",
+            "examples": [
+                {
+                    "frameName": "Activity_ongoing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 30,
+                                "end": 33
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "과연 이러한 불만들이 쌓이게 되면 원만한 결혼 생활을 영위해 나갈 수 있을까?",
+                    "target": "영위해",
+                    "ko_annotation_id": "sejong.74375",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74376",
+            "examples": [
+                {
+                    "frameName": "Activity_ongoing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 37,
+                                "end": 40
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "평생 동안 재액이 끊이질 않고 주위 사람들이 느끼기엔 행복한 삶을 영위해 나가는 것 같아 보여 자신의 역경을 남들이 알아주질 못합니다.",
+                    "target": "영위해",
+                    "ko_annotation_id": "sejong.74376",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 164,
+    "ko_pos": "VV",
+    "ko_lu": "영위하다.v.Activity_ongoing",
+    "lu_id": 7539,
+    "en_lus": [
+        "carry on.v.11353"
+    ]
+}

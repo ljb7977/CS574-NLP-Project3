@@ -1,0 +1,78 @@
+{
+    "frameName": "Simultaneity",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89841",
+            "examples": [
+                {
+                    "frameName": "Simultaneity",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "비 속에서 희미한 형체가 나타났다.",
+                    "target": "나타났다",
+                    "ko_annotation_id": "sejong.89841",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89842",
+            "examples": [
+                {
+                    "frameName": "Simultaneity",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 집에서 귀신이 종종 나타난다.",
+                    "target": "나타난다",
+                    "ko_annotation_id": "sejong.89842",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89843",
+            "examples": [
+                {
+                    "frameName": "Simultaneity",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "비 속에 희미한 형체가 나타났다.",
+                    "target": "나타났다",
+                    "ko_annotation_id": "sejong.89843",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1897,
+    "ko_pos": "VV",
+    "ko_lu": "나타나다.v.Simultaneity",
+    "lu_id": 7886,
+    "en_lus": [
+        "co-occur.v.14096"
+    ]
+}

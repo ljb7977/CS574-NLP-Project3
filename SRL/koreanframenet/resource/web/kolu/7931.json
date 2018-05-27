@@ -1,0 +1,56 @@
+{
+    "frameName": "Agriculture",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84317",
+            "examples": [
+                {
+                    "frameName": "Agriculture",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 배추를 농사짓는다.",
+                    "target": "농사짓는다",
+                    "ko_annotation_id": "sejong.84317",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.84318",
+            "examples": [
+                {
+                    "frameName": "Agriculture",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "쌀값 폭락으로 쌀을 농사짓는 농부들의 시름이 크다.",
+                    "target": "농사짓는",
+                    "ko_annotation_id": "sejong.84318",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2012,
+    "ko_pos": "VV",
+    "ko_lu": "농사짓다.v.Agriculture",
+    "lu_id": 7931,
+    "en_lus": [
+        "farm.v.14791"
+    ]
+}

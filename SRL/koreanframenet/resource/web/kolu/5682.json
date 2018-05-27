@@ -1,0 +1,52 @@
+{
+    "frameName": "Cure",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20016",
+            "examples": [
+                {
+                    "frameName": "Cure",
+                    "denotations": [
+                        {
+                            "obj": "affliction",
+                            "span": {
+                                "begin": 21,
+                                "end": 37
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 48,
+                                "end": 51
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "therapies"
+                    ],
+                    "ko_annotation_id": 20016,
+                    "text": "FDA의 미국 희귀의약품법은 회사들이 희귀 질병과 장애 치료를 위한 안전하고 효율적인 치료제를 개발하도록 지원하고 격려하는 것을 목적으로 한다.",
+                    "sent_id": 3212,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 16847
+                }
+            ]
+        }
+    ],
+    "frameID": 50,
+    "ko_pos": "NN",
+    "ko_lu": "치료제.n.Cure",
+    "lu_id": 5682,
+    "en_lus": [
+        "therapy"
+    ]
+}

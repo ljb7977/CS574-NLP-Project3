@@ -1,0 +1,34 @@
+{
+    "frameName": "Fining",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52104",
+            "examples": [
+                {
+                    "frameName": "Fining",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 품목에도 특소세를 부과합니까?.",
+                    "target": "부과합니까?",
+                    "ko_annotation_id": "sejong.52104",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 223,
+    "ko_pos": "VV",
+    "ko_lu": "부과하다.v.Fining",
+    "lu_id": 7313,
+    "en_lus": [
+        "amerce.v.10562"
+    ]
+}

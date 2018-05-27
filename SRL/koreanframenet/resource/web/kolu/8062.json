@@ -1,0 +1,56 @@
+{
+    "frameName": "Immobilization",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83783",
+            "examples": [
+                {
+                    "frameName": "Immobilization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 3명을 강간 치상 혐의로 구속하고 나머지 1명은 전국에 수배했다.",
+                    "target": "구속하고",
+                    "ko_annotation_id": "sejong.83783",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83784",
+            "examples": [
+                {
+                    "frameName": "Immobilization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 40,
+                                "end": 44
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "검찰은 원가의 10배까지 폭리를 취해 온 업자 8명을 식품위생법위반으로 구속했다.",
+                    "target": "구속했다",
+                    "ko_annotation_id": "sejong.83784",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 250,
+    "ko_pos": "VV",
+    "ko_lu": "구속하다.v.Immobilization",
+    "lu_id": 8062,
+    "en_lus": [
+        "straitjacket.v.15611"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_change_of_strength",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69588",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_strength",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "반란군이 왕권을 약화시켰다.",
+                    "target": "약화시켰다",
+                    "ko_annotation_id": "sejong.69588",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69589",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_strength",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대륙성 고기압이 태풍을 약화시켰다.",
+                    "target": "약화시켰다",
+                    "ko_annotation_id": "sejong.69589",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1781,
+    "ko_pos": "VV",
+    "ko_lu": "약화시키다.v.Cause_change_of_strength",
+    "lu_id": 7830,
+    "en_lus": [
+        "weaken.v.13533"
+    ]
+}

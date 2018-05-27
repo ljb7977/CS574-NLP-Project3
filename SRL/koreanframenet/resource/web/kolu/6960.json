@@ -1,0 +1,56 @@
+{
+    "frameName": "Escaping",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.62364",
+            "examples": [
+                {
+                    "frameName": "Escaping",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "범인은 몸을 숨기러 어두운 골목으로 달아났다.",
+                    "target": "달아났다",
+                    "ko_annotation_id": "sejong.62364",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.62365",
+            "examples": [
+                {
+                    "frameName": "Escaping",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이는 화가 난 아버지를 피해 산으로 달아났다.",
+                    "target": "달아났다",
+                    "ko_annotation_id": "sejong.62365",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 273,
+    "ko_pos": "VV",
+    "ko_lu": "달아나다.v.Escaping",
+    "lu_id": 6960,
+    "en_lus": [
+        "scarper.v.6619"
+    ]
+}

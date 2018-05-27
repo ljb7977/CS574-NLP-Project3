@@ -1,0 +1,34 @@
+{
+    "frameName": "Exchange",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54037",
+            "examples": [
+                {
+                    "frameName": "Exchange",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 동생에게 책을 교환시켰다.",
+                    "target": "교환시켰다",
+                    "ko_annotation_id": "sejong.54037",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1170,
+    "ko_pos": "VV",
+    "ko_lu": "교환시키다.v.Exchange",
+    "lu_id": 7382,
+    "en_lus": [
+        "swap.v.10786"
+    ]
+}

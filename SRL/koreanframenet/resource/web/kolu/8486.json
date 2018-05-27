@@ -1,0 +1,12 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "휘날리다.v.Body_movement",
+    "lu_id": 8486,
+    "en_lus": [
+        "flutter.v.78",
+        "wave.v.105"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "frameName": "Placing",
+    "patterns": [],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "(관세 지불 전까지 세관창고에)쌓아놓다.v.Placing",
+    "lu_id": 6510,
+    "en_lus": [
+        "warehouse.v.3915"
+    ]
+}

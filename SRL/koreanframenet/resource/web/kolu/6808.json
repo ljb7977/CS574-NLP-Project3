@@ -1,0 +1,56 @@
+{
+    "frameName": "Excreting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.91136",
+            "examples": [
+                {
+                    "frameName": "Excreting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "운동을 많이 했더니 땀난다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.91136",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91137",
+            "examples": [
+                {
+                    "frameName": "Excreting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "갑자기 몸에서 땀난다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.91137",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 270,
+    "ko_pos": "VV",
+    "ko_lu": "땀나다.v.Excreting",
+    "lu_id": 6808,
+    "en_lus": [
+        "sweat.v.5452"
+    ]
+}

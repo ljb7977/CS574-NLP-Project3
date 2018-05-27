@@ -1,0 +1,78 @@
+{
+    "frameName": "Communication_manner",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74901",
+            "examples": [
+                {
+                    "frameName": "Communication_manner",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람은 나에게 발 밑을 조심하라고 외쳤다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.74901",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74902",
+            "examples": [
+                {
+                    "frameName": "Communication_manner",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 지나가는 사람들에게 도와 달라고 외쳤지만 모두 외면하고 그냥 지나갔다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.74902",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74903",
+            "examples": [
+                {
+                    "frameName": "Communication_manner",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "억울하다고 아무리 외쳐도 들어 주는 사람이 없다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.74903",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 38,
+    "ko_pos": "VV",
+    "ko_lu": "외치다.v.Communication_manner",
+    "lu_id": 5909,
+    "en_lus": [
+        "chant.v.546"
+    ]
+}

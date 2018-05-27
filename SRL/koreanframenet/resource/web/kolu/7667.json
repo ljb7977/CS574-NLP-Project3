@@ -1,0 +1,56 @@
+{
+    "frameName": "Bragging",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.91843",
+            "examples": [
+                {
+                    "frameName": "Bragging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 32,
+                                "end": 37
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 친구들에게 무엇이든 필요한 게 있으면 도와 주겠다고 허풍떨었다.",
+                    "target": "허풍떨었다",
+                    "ko_annotation_id": "sejong.91843",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91844",
+            "examples": [
+                {
+                    "frameName": "Bragging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 31,
+                                "end": 36
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "남편은 아무 것도 가진 것이 없으면서도 늘 다 가진 척 허풍떨기를 좋아했다.",
+                    "target": "허풍떨기를",
+                    "ko_annotation_id": "sejong.91844",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1624,
+    "ko_pos": "VV",
+    "ko_lu": "허풍떨다.v.Bragging",
+    "lu_id": 7667,
+    "en_lus": [
+        "vaunt.v.12754"
+    ]
+}

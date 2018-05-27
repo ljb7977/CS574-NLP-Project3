@@ -1,0 +1,56 @@
+{
+    "frameName": "Condition_symptom_relation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61580",
+            "examples": [
+                {
+                    "frameName": "Condition_symptom_relation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사소한 감정싸움이 살인을 야기시켰다.",
+                    "target": "야기시켰다",
+                    "ko_annotation_id": "sejong.61580",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61581",
+            "examples": [
+                {
+                    "frameName": "Condition_symptom_relation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "김의원의 발언은 정게에 큰 혼란을 야기시켰다.",
+                    "target": "야기시켰다",
+                    "ko_annotation_id": "sejong.61581",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2718,
+    "ko_pos": "VV",
+    "ko_lu": "야기시키다.v.Condition_symptom_relation",
+    "lu_id": 8214,
+    "en_lus": [
+        "contribute.v.17101"
+    ]
+}

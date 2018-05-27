@@ -1,0 +1,100 @@
+{
+    "frameName": "Impact",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68682",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "버스가 트럭과 서로 맞부딪쳐서 굉장한 폭음을 냈다.",
+                    "target": "맞부딪쳐서",
+                    "ko_annotation_id": "sejong.68682",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68683",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "생각에 잠겨 걸어가다가 인애는 지나가는 사람과 맞부딪쳤다.",
+                    "target": "맞부딪쳤다",
+                    "ko_annotation_id": "sejong.68683",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68684",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "버스와 트럭이 서로 맞부딪쳐서 굉장한 폭음을 냈다.",
+                    "target": "맞부딪쳐서",
+                    "ko_annotation_id": "sejong.68684",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68685",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "체인을 감은 차바퀴와 눈길이 서로 맞부딪쳐 털털 소리를 냈다.",
+                    "target": "맞부딪쳐",
+                    "ko_annotation_id": "sejong.68685",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 311,
+    "ko_pos": "VV",
+    "ko_lu": "맞부딪치다.v.Impact",
+    "lu_id": 6850,
+    "en_lus": [
+        "collide.v.5635"
+    ]
+}

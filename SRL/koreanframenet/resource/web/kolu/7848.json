@@ -1,0 +1,56 @@
+{
+    "frameName": "Being_in_category",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76689",
+            "examples": [
+                {
+                    "frameName": "Being_in_category",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 전통적으로 가부장제도 하에 대가족을 이루며 살았다.",
+                    "target": "이루며",
+                    "ko_annotation_id": "sejong.76689",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76690",
+            "examples": [
+                {
+                    "frameName": "Being_in_category",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 옛날 한반도에는 사람들이 씨족공동체를 이루며 살고 있었다.",
+                    "target": "이루며",
+                    "ko_annotation_id": "sejong.76690",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1820,
+    "ko_pos": "VV",
+    "ko_lu": "이루다.v.Being_in_category",
+    "lu_id": 7848,
+    "en_lus": [
+        "constitute.v.13663"
+    ]
+}

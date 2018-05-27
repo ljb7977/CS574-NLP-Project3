@@ -1,0 +1,56 @@
+{
+    "frameName": "Change_event_duration",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.62866",
+            "examples": [
+                {
+                    "frameName": "Change_event_duration",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 체중을 줄이는데 실패했다.",
+                    "target": "줄이는데",
+                    "ko_annotation_id": "sejong.62866",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.62867",
+            "examples": [
+                {
+                    "frameName": "Change_event_duration",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "짐을 좀 줄여라.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.62867",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1770,
+    "ko_pos": "VV",
+    "ko_lu": "줄이다.v.Change_event_duration",
+    "lu_id": 7824,
+    "en_lus": [
+        "cut short.v.13470"
+    ]
+}

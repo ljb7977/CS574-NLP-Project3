@@ -1,0 +1,78 @@
+{
+    "frameName": "Separating",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.92365",
+            "examples": [
+                {
+                    "frameName": "Separating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선생님은 학생들을 두 편으로 가르셨다.",
+                    "target": "가르셨다",
+                    "ko_annotation_id": "sejong.92365",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.92366",
+            "examples": [
+                {
+                    "frameName": "Separating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사과를 세 조각으로 갈라라.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.92366",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.92367",
+            "examples": [
+                {
+                    "frameName": "Separating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "연구원들은 논문을 세 부류로 갈라 정리했다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.92367",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 15,
+    "ko_pos": "VV",
+    "ko_lu": "가르다.v.Separating",
+    "lu_id": 5803,
+    "en_lus": [
+        "part.v.58"
+    ]
+}

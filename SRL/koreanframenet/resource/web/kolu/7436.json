@@ -1,0 +1,56 @@
+{
+    "frameName": "Dressing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.64221",
+            "examples": [
+                {
+                    "frameName": "Dressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "하느님께서 사람의 몸을 입고 세상에 오시어 우리의 죄를 대속하시기 위해 고난을 받으셨다.",
+                    "target": "입고",
+                    "ko_annotation_id": "sejong.64221",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.64222",
+            "examples": [
+                {
+                    "frameName": "Dressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 도깨비는 사람의 몸을 입고 밤마다 마을로 내려왔다.",
+                    "target": "입고",
+                    "ko_annotation_id": "sejong.64222",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1211,
+    "ko_pos": "VV",
+    "ko_lu": "입다.v.Dressing",
+    "lu_id": 7436,
+    "en_lus": [
+        "don.v.10970"
+    ]
+}

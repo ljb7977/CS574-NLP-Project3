@@ -1,0 +1,56 @@
+{
+    "frameName": "Experiencer_obj",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.62501",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": 3
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "신문이 왜 이렇게 말렸냐?",
+                    "target": "",
+                    "ko_annotation_id": "sejong.62501",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.62502",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "치마가 말려서 올라갔다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.62502",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 47,
+    "ko_pos": "VV",
+    "ko_lu": "말리다.v.Experiencer_obj",
+    "lu_id": 6008,
+    "en_lus": [
+        "discourage.v.805"
+    ]
+}

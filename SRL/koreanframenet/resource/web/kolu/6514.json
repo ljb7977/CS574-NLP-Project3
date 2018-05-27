@@ -1,0 +1,56 @@
+{
+    "frameName": "Placing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.50026",
+            "examples": [
+                {
+                    "frameName": "Placing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "모두들 짐을 짊어지고 길을 재촉했다.",
+                    "target": "짊어지고",
+                    "ko_annotation_id": "sejong.50026",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.50027",
+            "examples": [
+                {
+                    "frameName": "Placing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그들은 어깨에 모래 부대를 짊어지고 열심히 날랐다.",
+                    "target": "짊어지고",
+                    "ko_annotation_id": "sejong.50027",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "짊어지다.v.Placing",
+    "lu_id": 6514,
+    "en_lus": [
+        "shoulder.v.3916"
+    ]
+}

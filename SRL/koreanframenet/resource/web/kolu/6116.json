@@ -1,0 +1,11 @@
+{
+    "frameName": "Motion_noise",
+    "patterns": [],
+    "frameID": 60,
+    "ko_pos": "VV",
+    "ko_lu": "콸콸 물 흐르는 소리가 나다.v.Motion_noise",
+    "lu_id": 6116,
+    "en_lus": [
+        "gurgle.v.1033"
+    ]
+}

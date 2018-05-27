@@ -1,0 +1,56 @@
+{
+    "frameName": "Reveal_secret",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.78963",
+            "examples": [
+                {
+                    "frameName": "Reveal_secret",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 36,
+                                "end": 40
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "저 팀은 지난 두 경기를 통해서 우리 팀에게 약점을 상당히 많이 노출했다.",
+                    "target": "노출했다",
+                    "ko_annotation_id": "sejong.78963",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.78964",
+            "examples": [
+                {
+                    "frameName": "Reveal_secret",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 사람들에게 내 치부를 노출한 것 같아서 얼굴이 화끈거렸다.",
+                    "target": "노출한",
+                    "ko_annotation_id": "sejong.78964",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1146,
+    "ko_pos": "VV",
+    "ko_lu": "노출하다.v.Reveal_secret",
+    "lu_id": 7341,
+    "en_lus": [
+        "disclose.v.10666"
+    ]
+}

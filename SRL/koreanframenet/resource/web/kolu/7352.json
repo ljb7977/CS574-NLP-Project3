@@ -1,0 +1,78 @@
+{
+    "frameName": "Cause_to_end",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52007",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 일이 마무리되기까지는 열흘 정도 걸릴 것이다.",
+                    "target": "마무리되기까지는",
+                    "ko_annotation_id": "sejong.52007",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52008",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이번 작품이 마무리되면 어딘가로 훌쩍 떠나고 싶다.",
+                    "target": "마무리되면",
+                    "ko_annotation_id": "sejong.52008",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52009",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 41,
+                                "end": 45
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "청계천 공사 구간에는 이미 하수관 등이 묻혔으며 양안 벽면 공사도 대부분 마무리돼 물길이 빠르게 드러나고 있다.",
+                    "target": "마무리돼",
+                    "ko_annotation_id": "sejong.52009",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1149,
+    "ko_pos": "VV",
+    "ko_lu": "마무리되다.v.Cause_to_end",
+    "lu_id": 7352,
+    "en_lus": [
+        "end.v.10680"
+    ]
+}

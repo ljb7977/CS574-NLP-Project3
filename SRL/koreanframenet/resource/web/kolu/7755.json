@@ -1,0 +1,56 @@
+{
+    "frameName": "Hiding_objects",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61257",
+            "examples": [
+                {
+                    "frameName": "Hiding_objects",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "강아지가 먹다 남은 뼈다귀를 땅 속에 숨기고 있었다.",
+                    "target": "숨기고",
+                    "ko_annotation_id": "sejong.61257",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61258",
+            "examples": [
+                {
+                    "frameName": "Hiding_objects",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "할아버지는 용돈을 책꽂이 뒤에 숨겨 놓고 계셨다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.61258",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1673,
+    "ko_pos": "VV",
+    "ko_lu": "숨기다.v.Hiding_objects",
+    "lu_id": 7755,
+    "en_lus": [
+        "hide.v.13036"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Posture",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76077",
+            "examples": [
+                {
+                    "frameName": "Posture",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여론은 파업노동자측으로 기울어졌다.",
+                    "target": "기울어졌다",
+                    "ko_annotation_id": "sejong.76077",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76078",
+            "examples": [
+                {
+                    "frameName": "Posture",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "언론은 그 계획을 취소해야 한다는 방향으로 기울어져 있다.",
+                    "target": "기울어져",
+                    "ko_annotation_id": "sejong.76078",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 18,
+    "ko_pos": "VV",
+    "ko_lu": "기울어지다.v.Posture",
+    "lu_id": 5861,
+    "en_lus": [
+        "lean.v.135"
+    ]
+}

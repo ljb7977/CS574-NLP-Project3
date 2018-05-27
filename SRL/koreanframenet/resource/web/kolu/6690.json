@@ -1,0 +1,78 @@
+{
+    "frameName": "Seeking",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54896",
+            "examples": [
+                {
+                    "frameName": "Seeking",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 집을 나간 딸을 찾아다닌다.",
+                    "target": "찾아다닌다",
+                    "ko_annotation_id": "sejong.54896",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54897",
+            "examples": [
+                {
+                    "frameName": "Seeking",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀는 잃어버린 반지를 찾아다녔다.",
+                    "target": "찾아다녔다",
+                    "ko_annotation_id": "sejong.54897",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54898",
+            "examples": [
+                {
+                    "frameName": "Seeking",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "짐승이 먹이를 찾아다니듯 그는 일거리를 찾아다닌다.",
+                    "target": "찾아다니듯",
+                    "ko_annotation_id": "sejong.54898",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 269,
+    "ko_pos": "VV",
+    "ko_lu": "찾아다니다.v.Seeking",
+    "lu_id": 6690,
+    "en_lus": [
+        "sniff.v.4898"
+    ]
+}

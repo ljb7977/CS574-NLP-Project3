@@ -1,0 +1,56 @@
+{
+    "frameName": "Fining",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61452",
+            "examples": [
+                {
+                    "frameName": "Fining",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어린이 유괴의 경우 공범자에게도 중형을 과해야 한다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.61452",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61453",
+            "examples": [
+                {
+                    "frameName": "Fining",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이를 어기면 100만 원 이하의 벌금형을 과하게 되어 있다.",
+                    "target": "과하게",
+                    "ko_annotation_id": "sejong.61453",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 223,
+    "ko_pos": "VV",
+    "ko_lu": "과하다.v.Fining",
+    "lu_id": 7314,
+    "en_lus": [
+        "amerce.v.10562"
+    ]
+}

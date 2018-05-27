@@ -1,0 +1,11 @@
+{
+    "frameName": "Make_noise",
+    "patterns": [],
+    "frameID": 69,
+    "ko_pos": "VV",
+    "ko_lu": "콧노래를 흥얼거리다.v.Make_noise",
+    "lu_id": 6268,
+    "en_lus": [
+        "hum.v.1422"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Arriving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90494",
+            "examples": [
+                {
+                    "frameName": "Arriving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 우리에게 맹수처럼 달려들었다.",
+                    "target": "달려들었다",
+                    "ko_annotation_id": "sejong.90494",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.90495",
+            "examples": [
+                {
+                    "frameName": "Arriving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "세퍼트가 갑자기 그에게 달려들었다.",
+                    "target": "달려들었다",
+                    "ko_annotation_id": "sejong.90495",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 54,
+    "ko_pos": "VV",
+    "ko_lu": "달려들다.v.Arriving",
+    "lu_id": 7697,
+    "en_lus": [
+        "descend (on).v.12883"
+    ]
+}

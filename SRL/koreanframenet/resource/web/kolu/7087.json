@@ -1,0 +1,56 @@
+{
+    "frameName": "Eclipse",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79912",
+            "examples": [
+                {
+                    "frameName": "Eclipse",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "온 산을 휘덮고 있는 단풍들을 보면서 우리는 탄성을 질렀다.",
+                    "target": "휘덮고",
+                    "ko_annotation_id": "sejong.79912",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79913",
+            "examples": [
+                {
+                    "frameName": "Eclipse",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "순간 탄성이 회의장을 휘덮었다.",
+                    "target": "휘덮었다",
+                    "ko_annotation_id": "sejong.79913",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 652,
+    "ko_pos": "VV",
+    "ko_lu": "휘덮다.v.Eclipse",
+    "lu_id": 7087,
+    "en_lus": [
+        "enshroud.v.8713"
+    ]
+}

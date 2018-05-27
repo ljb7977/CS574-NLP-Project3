@@ -1,0 +1,11 @@
+{
+    "frameName": "Placing",
+    "patterns": [],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "화분에 심다.v.Placing",
+    "lu_id": 6506,
+    "en_lus": [
+        "pot.v.3913"
+    ]
+}

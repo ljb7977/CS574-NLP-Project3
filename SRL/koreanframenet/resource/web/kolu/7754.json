@@ -1,0 +1,56 @@
+{
+    "frameName": "Hiding_objects",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68126",
+            "examples": [
+                {
+                    "frameName": "Hiding_objects",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이는 빌려온 만화책을 선반 뒤에 감추었다.",
+                    "target": "감추었다",
+                    "ko_annotation_id": "sejong.68126",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68127",
+            "examples": [
+                {
+                    "frameName": "Hiding_objects",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 여자는 돈을 뒤뜰의 항아리 속에 감추어 두었다.",
+                    "target": "감추어",
+                    "ko_annotation_id": "sejong.68127",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1673,
+    "ko_pos": "VV",
+    "ko_lu": "감추다.v.Hiding_objects",
+    "lu_id": 7754,
+    "en_lus": [
+        "hide.v.13036"
+    ]
+}

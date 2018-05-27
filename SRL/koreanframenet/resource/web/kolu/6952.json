@@ -1,0 +1,56 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84977",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 아파트는 3년이 지나서 보수되기 시작한다.",
+                    "target": "보수되기",
+                    "ko_annotation_id": "sejong.84977",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.84978",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이들을 위해서 오래된 초등학교는 보수되어야 한다.",
+                    "target": "보수되어야",
+                    "ko_annotation_id": "sejong.84978",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "보수되다.v.Self_motion",
+    "lu_id": 6952,
+    "en_lus": [
+        "repair.v.6403"
+    ]
+}

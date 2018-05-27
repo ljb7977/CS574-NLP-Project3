@@ -1,0 +1,34 @@
+{
+    "frameName": "Emotion_active",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52692",
+            "examples": [
+                {
+                    "frameName": "Emotion_active",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀는 칭얼대는 아이를 달래느라 진땀을 흘렸다.",
+                    "target": "칭얼대는",
+                    "ko_annotation_id": "sejong.52692",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 45,
+    "ko_pos": "VV",
+    "ko_lu": "칭얼대다.v.Emotion_active",
+    "lu_id": 5980,
+    "en_lus": [
+        "fret.v.766"
+    ]
+}

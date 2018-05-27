@@ -1,0 +1,56 @@
+{
+    "frameName": "Finish_competition",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.80473",
+            "examples": [
+                {
+                    "frameName": "Finish_competition",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 30,
+                                "end": 34
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "서울에서 평양까지의 거리는 서울에서 강릉까지의 거리와 맞먹는다.",
+                    "target": "맞먹는다",
+                    "ko_annotation_id": "sejong.80473",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80474",
+            "examples": [
+                {
+                    "frameName": "Finish_competition",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 35,
+                                "end": 39
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 자동차의 속도와 웬만한 야구선수가 던지는 공의 속도는 서로 맞먹는다.",
+                    "target": "맞먹는다",
+                    "ko_annotation_id": "sejong.80474",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 798,
+    "ko_pos": "VV",
+    "ko_lu": "맞먹다.v.Finish_competition",
+    "lu_id": 7195,
+    "en_lus": [
+        "tie.v.9834"
+    ]
+}

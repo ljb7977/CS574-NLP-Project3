@@ -1,0 +1,11 @@
+{
+    "frameName": "Operate_vehicle",
+    "patterns": [],
+    "frameID": 65,
+    "ko_pos": "VV",
+    "ko_lu": "터보건 썰매를 타다.v.Operate_vehicle",
+    "lu_id": 6239,
+    "en_lus": [
+        "toboggan.v.1291"
+    ]
+}

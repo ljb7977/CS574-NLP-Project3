@@ -1,0 +1,56 @@
+{
+    "frameName": "Fluidic_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.81191",
+            "examples": [
+                {
+                    "frameName": "Fluidic_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "간첩들은 이미 수사망을 빠져나갔다.",
+                    "target": "빠져나갔다",
+                    "ko_annotation_id": "sejong.81191",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.81192",
+            "examples": [
+                {
+                    "frameName": "Fluidic_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "간첩들은 해안선으로 빠져나갔다.",
+                    "target": "빠져나갔다",
+                    "ko_annotation_id": "sejong.81192",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 345,
+    "ko_pos": "VV",
+    "ko_lu": "빠져나가다.v.Fluidic_motion",
+    "lu_id": 7139,
+    "en_lus": [
+        "hiss.v.9506"
+    ]
+}

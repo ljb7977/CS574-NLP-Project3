@@ -1,0 +1,56 @@
+{
+    "frameName": "Change_event_duration",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55582",
+            "examples": [
+                {
+                    "frameName": "Change_event_duration",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "상부에서는 생산량을 늘리기 위해 쉬는 시간마저 단축시키려 하였다.",
+                    "target": "단축시키려",
+                    "ko_annotation_id": "sejong.55582",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55583",
+            "examples": [
+                {
+                    "frameName": "Change_event_duration",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이사회는 교육과정을 4년제에서 2년제로 단축시켰다.",
+                    "target": "단축시켰다",
+                    "ko_annotation_id": "sejong.55583",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1770,
+    "ko_pos": "VV",
+    "ko_lu": "단축시키다.v.Change_event_duration",
+    "lu_id": 7822,
+    "en_lus": [
+        "abbreviate.v.13466"
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "frameName": "Avoiding",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.66442",
+            "examples": [
+                {
+                    "frameName": "Avoiding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 일은 전혀 양심에 꺼릴 것이 없어요.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.66442",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66443",
+            "examples": [
+                {
+                    "frameName": "Avoiding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "너는 왜 요즘 나를 꺼리냐?",
+                    "target": "꺼리냐",
+                    "ko_annotation_id": "sejong.66443",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66444",
+            "examples": [
+                {
+                    "frameName": "Avoiding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 남의시선을 아주 꺼리는 것 같다.",
+                    "target": "꺼리는",
+                    "ko_annotation_id": "sejong.66444",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66445",
+            "examples": [
+                {
+                    "frameName": "Avoiding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 술자리를 꺼린다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.66445",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66446",
+            "examples": [
+                {
+                    "frameName": "Avoiding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영희는 철수와의 만남을 아주 꺼린다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.66446",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 274,
+    "ko_pos": "VV",
+    "ko_lu": "꺼리다.v.Avoiding",
+    "lu_id": 7581,
+    "en_lus": [
+        "shrink from.v.11921"
+    ]
+}

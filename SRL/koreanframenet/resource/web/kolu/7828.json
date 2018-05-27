@@ -1,0 +1,78 @@
+{
+    "frameName": "Rite",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.77934",
+            "examples": [
+                {
+                    "frameName": "Rite",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 그녀에게 장미꽃 한 다발을 바치며 구혼을 했다.",
+                    "target": "바치며",
+                    "ko_annotation_id": "sejong.77934",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.77935",
+            "examples": [
+                {
+                    "frameName": "Rite",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "노인은 자신의 전 재산을 모교에 바치겠다고 유언했다.",
+                    "target": "바치겠다고",
+                    "ko_annotation_id": "sejong.77935",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.77936",
+            "examples": [
+                {
+                    "frameName": "Rite",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 회사는 관계 당국에 뇌물을 바쳐 가며 이번 건에 대해 청탁을 했다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.77936",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 301,
+    "ko_pos": "VV",
+    "ko_lu": "바치다.v.Rite",
+    "lu_id": 7828,
+    "en_lus": [
+        "sacrifice.v.13515"
+    ]
+}

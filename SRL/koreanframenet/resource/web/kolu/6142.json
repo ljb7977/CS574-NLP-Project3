@@ -1,0 +1,11 @@
+{
+    "frameName": "Path_shape",
+    "patterns": [],
+    "frameID": 61,
+    "ko_pos": "VV",
+    "ko_lu": "방향을 틀다.v.Path_shape",
+    "lu_id": 6142,
+    "en_lus": [
+        "swerve.v.1073"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Dispersal",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84345",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "주변 동문들에게 동창회 개최 소식을 되도록 많이 전파해 주세요.",
+                    "target": "전파해",
+                    "ko_annotation_id": "sejong.84345",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.84346",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리 기술을 세계에 전파하여 그들이 우리를 찾게 만들어야 합니다.",
+                    "target": "전파하여",
+                    "ko_annotation_id": "sejong.84346",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 267,
+    "ko_pos": "VV",
+    "ko_lu": "전파하다.v.Dispersal",
+    "lu_id": 7558,
+    "en_lus": [
+        "disseminate.v.11707"
+    ]
+}

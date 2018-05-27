@@ -1,0 +1,11 @@
+{
+    "frameName": "Causation",
+    "patterns": [],
+    "frameID": 5,
+    "ko_pos": "VV",
+    "ko_lu": "이루다.v.Causation",
+    "lu_id": 8390,
+    "en_lus": [
+        "make.v.4"
+    ]
+}

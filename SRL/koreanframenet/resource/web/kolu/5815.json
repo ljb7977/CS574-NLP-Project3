@@ -1,0 +1,78 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54986",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영수는 고개를 떨군 채 말이 없었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.54986",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54987",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이는 풀이 죽어 어깨를 떨구고 있었다.",
+                    "target": "떨구고",
+                    "ko_annotation_id": "sejong.54987",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54988",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "더 이상 주인을 볼 낯이 없는지 그는 시선을 떨구었다.",
+                    "target": "떨구었다",
+                    "ko_annotation_id": "sejong.54988",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "떨구다.v.Body_movement",
+    "lu_id": 5815,
+    "en_lus": [
+        "drop.v.74"
+    ]
+}

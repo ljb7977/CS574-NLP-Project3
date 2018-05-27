@@ -1,0 +1,56 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.85419",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아기가 눈을 찡긋했다.",
+                    "target": "찡긋했다",
+                    "ko_annotation_id": "sejong.85419",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.85420",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "예쁜 아가씨가 이쪽을 바라보며 한쪽 눈을 찡긋했다.",
+                    "target": "찡긋했다",
+                    "ko_annotation_id": "sejong.85420",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "찡긋하다.v.Body_movement",
+    "lu_id": 5843,
+    "en_lus": [
+        "wink.v.107"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Firing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.58839",
+            "examples": [
+                {
+                    "frameName": "Firing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 친구는 입바른 소리를 하다가 회사에서 잘렸다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.58839",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.58840",
+            "examples": [
+                {
+                    "frameName": "Firing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 이전의 데모 경력 때문에 학교에서 잘렸다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.58840",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 326,
+    "ko_pos": "VV",
+    "ko_lu": "잘리다.v.Firing",
+    "lu_id": 6891,
+    "en_lus": [
+        "dismiss.v.5796"
+    ]
+}

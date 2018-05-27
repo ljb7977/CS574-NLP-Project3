@@ -1,0 +1,11 @@
+{
+    "frameName": "Prevent_or_allow_possession",
+    "patterns": [],
+    "frameID": 2056,
+    "ko_pos": "VV",
+    "ko_lu": "거부하다.v.Prevent_or_allow_possession",
+    "lu_id": 7956,
+    "en_lus": [
+        "deny.v.14972"
+    ]
+}

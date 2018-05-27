@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_change_of_position_on_a_scale",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.80567",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "얼굴이 부었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.80567",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80568",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 다리가 곪아 퉁퉁 부었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.80568",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 96,
+    "ko_pos": "VV",
+    "ko_lu": "붓다.v.Cause_change_of_position_on_a_scale",
+    "lu_id": 7137,
+    "en_lus": [
+        "swell.v.9502"
+    ]
+}

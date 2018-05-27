@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_resume",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.66643",
+            "examples": [
+                {
+                    "frameName": "Cause_to_resume",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "경제부 장관은 올해에 경기가 회복될 것이라 전망했다.",
+                    "target": "회복될",
+                    "ko_annotation_id": "sejong.66643",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66644",
+            "examples": [
+                {
+                    "frameName": "Cause_to_resume",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "두 나라의 관계가 정상적으로 회복되기까지는 다소간 시간이 걸릴 것으로 예측되고 있다.",
+                    "target": "회복되기까지는",
+                    "ko_annotation_id": "sejong.66644",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1372,
+    "ko_pos": "VV",
+    "ko_lu": "회복되다.v.Cause_to_resume",
+    "lu_id": 7566,
+    "en_lus": [
+        "reinstate.v.11813"
+    ]
+}

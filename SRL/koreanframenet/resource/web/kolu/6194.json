@@ -1,0 +1,56 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.47216",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "꼬마가 발을 절뚝거린다.",
+                    "target": "절뚝거린다",
+                    "ko_annotation_id": "sejong.47216",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47217",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 예전에 교통사고를 당해 한동안 다리를 절뚝거렸었다.",
+                    "target": "절뚝거렸었다",
+                    "ko_annotation_id": "sejong.47217",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "절뚝거리다.v.Self_motion",
+    "lu_id": 6194,
+    "en_lus": [
+        "limp.v.1187"
+    ]
+}

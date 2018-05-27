@@ -1,0 +1,56 @@
+{
+    "frameName": "Cogitation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.59553",
+            "examples": [
+                {
+                    "frameName": "Cogitation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그의 죽음 앞에 나는 삶의 의미를 다시 한번 성찰해 보았다.",
+                    "target": "성찰해",
+                    "ko_annotation_id": "sejong.59553",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.59554",
+            "examples": [
+                {
+                    "frameName": "Cogitation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철학자들은 죽음에 대해 깊이 성찰한다.",
+                    "target": "성찰한다",
+                    "ko_annotation_id": "sejong.59554",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 22,
+    "ko_pos": "VV",
+    "ko_lu": "성찰하다.v.Cogitation",
+    "lu_id": 5871,
+    "en_lus": [
+        "reflect.v.218"
+    ]
+}

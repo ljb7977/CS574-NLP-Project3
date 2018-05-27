@@ -1,0 +1,56 @@
+{
+    "frameName": "Motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65746",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 급히 약국에 뛰어가서 응급 약을 샀다.",
+                    "target": "뛰어가서",
+                    "ko_annotation_id": "sejong.65746",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65747",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "빨리 오라는 연락이 와서 그녀에게 뛰어갔다.",
+                    "target": "뛰어갔다",
+                    "ko_annotation_id": "sejong.65747",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 7,
+    "ko_pos": "VV",
+    "ko_lu": "뛰어가다.v.Motion",
+    "lu_id": 8394,
+    "en_lus": [
+        "move.v.6"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "frameName": "Cure",
+    "patterns": [],
+    "frameID": 50,
+    "ko_pos": "VV",
+    "ko_lu": "고통을 덜어주다.v.Cure",
+    "lu_id": 6529,
+    "en_lus": [
+        "ease.v.4035"
+    ]
+}

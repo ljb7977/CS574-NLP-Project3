@@ -1,0 +1,34 @@
+{
+    "frameName": "Ingest_substance",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.73498",
+            "examples": [
+                {
+                    "frameName": "Ingest_substance",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 약을 환자에게 하루 세 번 투여하세요.",
+                    "target": "투여하세요",
+                    "ko_annotation_id": "sejong.73498",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 386,
+    "ko_pos": "VV",
+    "ko_lu": "투여하다.v.Ingest_substance",
+    "lu_id": 6974,
+    "en_lus": [
+        "pop.v.6913"
+    ]
+}

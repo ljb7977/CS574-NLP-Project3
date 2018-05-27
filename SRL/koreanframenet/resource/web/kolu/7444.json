@@ -1,0 +1,100 @@
+{
+    "frameName": "Dressing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.64552",
+            "examples": [
+                {
+                    "frameName": "Dressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 항상 외투를 어깨에만 걸치고 다닌다.",
+                    "target": "걸치고",
+                    "ko_annotation_id": "sejong.64552",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.64553",
+            "examples": [
+                {
+                    "frameName": "Dressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대충 걸쳐 입고 그냥 나와라.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.64553",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.64554",
+            "examples": [
+                {
+                    "frameName": "Dressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 여자는 큰 안경을 작은 코에 걸치고 나타났다.",
+                    "target": "걸치고",
+                    "ko_annotation_id": "sejong.64554",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.64555",
+            "examples": [
+                {
+                    "frameName": "Dressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 여자는 몸에 실오라기 하나 걸치지 않고 있었다.",
+                    "target": "걸치지",
+                    "ko_annotation_id": "sejong.64555",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1211,
+    "ko_pos": "VV",
+    "ko_lu": "걸치다.v.Dressing",
+    "lu_id": 7444,
+    "en_lus": [
+        "don.v.10970"
+    ]
+}

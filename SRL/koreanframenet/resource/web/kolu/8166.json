@@ -1,0 +1,11 @@
+{
+    "frameName": "Cause_to_land",
+    "patterns": [],
+    "frameID": 2643,
+    "ko_pos": "VV",
+    "ko_lu": "착륙시키다.v.Cause_to_land",
+    "lu_id": 8166,
+    "en_lus": [
+        "land.v.16577"
+    ]
+}

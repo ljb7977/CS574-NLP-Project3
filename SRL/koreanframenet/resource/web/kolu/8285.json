@@ -1,0 +1,56 @@
+{
+    "frameName": "Conquering",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83322",
+            "examples": [
+                {
+                    "frameName": "Conquering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 지도는 실물의 10000분의 1로 축소된 것이다.",
+                    "target": "축소된",
+                    "ko_annotation_id": "sejong.83322",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83323",
+            "examples": [
+                {
+                    "frameName": "Conquering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "지난해에 비하면 올해 예산은 반으로 축소된 것이다.",
+                    "target": "축소된",
+                    "ko_annotation_id": "sejong.83323",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2021,
+    "ko_pos": "VV",
+    "ko_lu": "축소되다.v.Conquering",
+    "lu_id": 8285,
+    "en_lus": [
+        "reduce.v.17497"
+    ]
+}

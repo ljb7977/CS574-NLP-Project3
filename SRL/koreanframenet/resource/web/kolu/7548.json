@@ -1,0 +1,78 @@
+{
+    "frameName": "Forgoing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89508",
+            "examples": [
+                {
+                    "frameName": "Forgoing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 개울에 빠지지 않으려고 안간힘을 쓰며 건너뛰었다.",
+                    "target": "건너뛰었다",
+                    "ko_annotation_id": "sejong.89508",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89509",
+            "examples": [
+                {
+                    "frameName": "Forgoing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 이 절벽을 훌쩍 건너뛰었다.",
+                    "target": "건너뛰었다",
+                    "ko_annotation_id": "sejong.89509",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89510",
+            "examples": [
+                {
+                    "frameName": "Forgoing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이쪽 뚝으로 건너뛰지 말아라.",
+                    "target": "건너뛰지",
+                    "ko_annotation_id": "sejong.89510",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1304,
+    "ko_pos": "VV",
+    "ko_lu": "건너뛰다.v.Forgoing",
+    "lu_id": 7548,
+    "en_lus": [
+        "skip.v.11474"
+    ]
+}

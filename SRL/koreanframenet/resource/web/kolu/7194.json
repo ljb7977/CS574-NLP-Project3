@@ -1,0 +1,100 @@
+{
+    "frameName": "Finish_competition",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.77743",
+            "examples": [
+                {
+                    "frameName": "Finish_competition",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한국과 프랑스가 비겼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.77743",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.77744",
+            "examples": [
+                {
+                    "frameName": "Finish_competition",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한국이 프랑스와 비겼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.77744",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.77745",
+            "examples": [
+                {
+                    "frameName": "Finish_competition",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한국과 프랑스가 그 시합을 비겼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.77745",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.77746",
+            "examples": [
+                {
+                    "frameName": "Finish_competition",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한국이 프랑스와 그 시합을 비겼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.77746",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 798,
+    "ko_pos": "VV",
+    "ko_lu": "비기다.v.Finish_competition",
+    "lu_id": 7194,
+    "en_lus": [
+        "tie.v.9834"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "frameName": "Win_prize",
+    "patterns": [],
+    "frameID": 2072,
+    "ko_pos": "VV",
+    "ko_lu": "수상하다.v.Win_prize",
+    "lu_id": 7989,
+    "en_lus": [
+        "win.v.15119"
+    ]
+}

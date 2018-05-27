@@ -1,0 +1,11 @@
+{
+    "frameName": "Posture",
+    "patterns": [],
+    "frameID": 18,
+    "ko_pos": "VV",
+    "ko_lu": "도사리다.v.Posture",
+    "lu_id": 8525,
+    "en_lus": [
+        "crouch.v.131"
+    ]
+}

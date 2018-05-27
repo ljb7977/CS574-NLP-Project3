@@ -1,0 +1,56 @@
+{
+    "frameName": "Differentiation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.73738",
+            "examples": [
+                {
+                    "frameName": "Differentiation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "은행원은 반드시 위조지폐를 식별할 줄 알아야 한다.",
+                    "target": "식별할",
+                    "ko_annotation_id": "sejong.73738",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.73739",
+            "examples": [
+                {
+                    "frameName": "Differentiation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "서울과 수도권의 1ｍ 길이의 물체를 식별할 수 있는 1:1 만 축적의 초고해상도 위성지도가 제작되었습니다.",
+                    "target": "식별할",
+                    "ko_annotation_id": "sejong.73739",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 24,
+    "ko_pos": "VV",
+    "ko_lu": "식별하다.v.Differentiation",
+    "lu_id": 5878,
+    "en_lus": [
+        "differentiate.v.234"
+    ]
+}

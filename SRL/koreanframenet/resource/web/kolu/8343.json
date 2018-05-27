@@ -1,0 +1,11 @@
+{
+    "frameName": "Cause_to_move_in_place",
+    "patterns": [],
+    "frameID": 276,
+    "ko_pos": "VV",
+    "ko_lu": "곡예하다.v.Cause_to_move_in_place",
+    "lu_id": 8343,
+    "en_lus": [
+        "juggle.v.18205"
+    ]
+}

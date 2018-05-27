@@ -1,0 +1,11 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "다리를 절뚝이며 가다.v.Self_motion",
+    "lu_id": 6189,
+    "en_lus": [
+        "hobble.v.1180"
+    ]
+}

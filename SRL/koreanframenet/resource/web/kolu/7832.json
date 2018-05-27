@@ -1,0 +1,78 @@
+{
+    "frameName": "Grasp",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.62145",
+            "examples": [
+                {
+                    "frameName": "Grasp",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이번 기회는두 사람의 실력을 가늠해 볼 수 있는 좋은기회이다.",
+                    "target": "가늠해",
+                    "ko_annotation_id": "sejong.62145",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.62146",
+            "examples": [
+                {
+                    "frameName": "Grasp",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "너무 어두워서 방향을 가늠하기가 어려웠다.",
+                    "target": "가늠하기가",
+                    "ko_annotation_id": "sejong.62146",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.62147",
+            "examples": [
+                {
+                    "frameName": "Grasp",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 시합은 승부를 가늠하기 어려운 시합이 될 것 같습니다.",
+                    "target": "가늠하기",
+                    "ko_annotation_id": "sejong.62147",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 979,
+    "ko_pos": "VV",
+    "ko_lu": "가늠하다.v.Grasp",
+    "lu_id": 7832,
+    "en_lus": [
+        "fathom.v.13540"
+    ]
+}

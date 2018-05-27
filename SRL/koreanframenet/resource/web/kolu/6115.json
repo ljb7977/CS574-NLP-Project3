@@ -1,0 +1,56 @@
+{
+    "frameName": "Motion_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.51946",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "네가 계속 뭔가를 아작이는 통에 시끄러워서 잘 수가 없다.",
+                    "target": "아작이는",
+                    "ko_annotation_id": "sejong.51946",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.51947",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 숲은 조용해서 다람쥐가 도토리를 아작이는 소리도 들릴듯하다.",
+                    "target": "아작이는",
+                    "ko_annotation_id": "sejong.51947",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 60,
+    "ko_pos": "VV",
+    "ko_lu": "아작이다.v.Motion_noise",
+    "lu_id": 6115,
+    "en_lus": [
+        "crunch.v.1031"
+    ]
+}

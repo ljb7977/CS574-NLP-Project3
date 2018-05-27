@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.62367",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이의 신발한 짝이 어디론가 달아나 버렸다.",
+                    "target": "달아나",
+                    "ko_annotation_id": "sejong.62367",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.62368",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀는 달아난 단추를 찾으려고 책상 밑을 둘러보았다.",
+                    "target": "달아난",
+                    "ko_annotation_id": "sejong.62368",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 55,
+    "ko_pos": "VV",
+    "ko_lu": "달아나다.v.Cause_motion",
+    "lu_id": 7481,
+    "en_lus": [
+        "run.v.11008"
+    ]
+}

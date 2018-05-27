@@ -1,0 +1,35 @@
+{
+    "frameName": "Awareness",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90138",
+            "examples": [
+                {
+                    "frameName": "Awareness",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 동전을 던져서 승패를 판가름했다.",
+                    "target": "판가름했다",
+                    "ko_annotation_id": "sejong.90138",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 19,
+    "ko_pos": "VV",
+    "ko_lu": "판가름하다.v.Awareness",
+    "lu_id": 8536,
+    "en_lus": [
+        "believe.v.150",
+        "conceive.v.153"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Education_teaching",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52203",
+            "examples": [
+                {
+                    "frameName": "Education_teaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대학원 학생들은 새로 온 교수에게 상담하는 방법을 학습했다.",
+                    "target": "학습했다",
+                    "ko_annotation_id": "sejong.52203",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52204",
+            "examples": [
+                {
+                    "frameName": "Education_teaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "학생들이 일류 강사들에게 수학을 학습하는 경우에 강사료가 문제다.",
+                    "target": "학습하는",
+                    "ko_annotation_id": "sejong.52204",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 111,
+    "ko_pos": "VV",
+    "ko_lu": "학습하다.v.Education_teaching",
+    "lu_id": 7244,
+    "en_lus": [
+        "learn.v.10147"
+    ]
+}

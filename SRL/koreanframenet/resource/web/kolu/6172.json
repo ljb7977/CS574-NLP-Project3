@@ -1,0 +1,11 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "뒤로 가다.v.Self_motion",
+    "lu_id": 6172,
+    "en_lus": [
+        "back.v.1153"
+    ]
+}

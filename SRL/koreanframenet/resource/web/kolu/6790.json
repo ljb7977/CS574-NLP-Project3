@@ -1,0 +1,34 @@
+{
+    "frameName": "Giving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.70740",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그들은 용의자를 경찰에 인계하였다.",
+                    "target": "인계하였다",
+                    "ko_annotation_id": "sejong.70740",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 139,
+    "ko_pos": "VV",
+    "ko_lu": "인계하다.v.Giving",
+    "lu_id": 6790,
+    "en_lus": [
+        "hand over.v.5369"
+    ]
+}

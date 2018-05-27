@@ -1,0 +1,56 @@
+{
+    "frameName": "Communication_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.56966",
+            "examples": [
+                {
+                    "frameName": "Communication_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어린 놈이 버릇없이 어른에게 악쓰며 대들었다.",
+                    "target": "악쓰며",
+                    "ko_annotation_id": "sejong.56966",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.56967",
+            "examples": [
+                {
+                    "frameName": "Communication_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "조용히 말해도 다 알아들으니 악쓰지 마라.",
+                    "target": "악쓰지",
+                    "ko_annotation_id": "sejong.56967",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 39,
+    "ko_pos": "VV",
+    "ko_lu": "악쓰다.v.Communication_noise",
+    "lu_id": 5926,
+    "en_lus": [
+        "howl.v.594"
+    ]
+}

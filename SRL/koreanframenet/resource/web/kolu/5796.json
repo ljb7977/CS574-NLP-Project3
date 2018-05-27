@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_amalgamate",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55849",
+            "examples": [
+                {
+                    "frameName": "Cause_to_amalgamate",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정부는 수많은 도량형을 하나로 통일시켰다.",
+                    "target": "통일시켰다",
+                    "ko_annotation_id": "sejong.55849",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55850",
+            "examples": [
+                {
+                    "frameName": "Cause_to_amalgamate",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "모든 종교를 하나의 종교로 통일시키겠다는 생각은 헛소리에 불과하다.",
+                    "target": "통일시키겠다는",
+                    "ko_annotation_id": "sejong.55850",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 13,
+    "ko_pos": "VV",
+    "ko_lu": "통일시키다.v.Cause_to_amalgamate",
+    "lu_id": 5796,
+    "en_lus": [
+        "unify.v.43"
+    ]
+}

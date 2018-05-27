@@ -1,0 +1,34 @@
+{
+    "frameName": "Linguistic_meaning",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83270",
+            "examples": [
+                {
+                    "frameName": "Linguistic_meaning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대통령은 신임 국무총리에 사상 처음으로 여성을 지명하였다.",
+                    "target": "지명하였다",
+                    "ko_annotation_id": "sejong.83270",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 406,
+    "ko_pos": "VV",
+    "ko_lu": "지명하다.v.Linguistic_meaning",
+    "lu_id": 7000,
+    "en_lus": [
+        "designate.v.7486"
+    ]
+}

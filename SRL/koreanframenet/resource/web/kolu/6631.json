@@ -1,0 +1,34 @@
+{
+    "frameName": "Grooming",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69766",
+            "examples": [
+                {
+                    "frameName": "Grooming",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 아침에 일어나자마자 세수한다.",
+                    "target": "세수한다",
+                    "ko_annotation_id": "sejong.69766",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 159,
+    "ko_pos": "VV",
+    "ko_lu": "세수하다.v.Grooming",
+    "lu_id": 6631,
+    "en_lus": [
+        "wash.v.4734"
+    ]
+}

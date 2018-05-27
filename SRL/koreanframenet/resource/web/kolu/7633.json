@@ -1,0 +1,56 @@
+{
+    "frameName": "Bearing_arms",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.67742",
+            "examples": [
+                {
+                    "frameName": "Bearing_arms",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "폭발물을 소지한 자는 절대로 비행기에 탈 수 없다.",
+                    "target": "소지한",
+                    "ko_annotation_id": "sejong.67742",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67743",
+            "examples": [
+                {
+                    "frameName": "Bearing_arms",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기내에서 수하물로는 가방 1 개만 소지할 수 있습니다.",
+                    "target": "소지할",
+                    "ko_annotation_id": "sejong.67743",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 470,
+    "ko_pos": "VV",
+    "ko_lu": "소지하다.v.Bearing_arms",
+    "lu_id": 7633,
+    "en_lus": [
+        "carry.v.12574"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Amassing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.87157",
+            "examples": [
+                {
+                    "frameName": "Amassing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "차근차근 경험을 쌓고 영업 노하우를 축적하다 보면 어느덧 경력 5년 이상의 고액 연봉자가 된다.",
+                    "target": "축적하다",
+                    "ko_annotation_id": "sejong.87157",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1482,
+    "ko_pos": "VV",
+    "ko_lu": "축적하다.v.Amassing",
+    "lu_id": 7615,
+    "en_lus": [
+        "amass.v.12173"
+    ]
+}

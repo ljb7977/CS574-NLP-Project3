@@ -1,0 +1,34 @@
+{
+    "frameName": "Experiencer_focus",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61303",
+            "examples": [
+                {
+                    "frameName": "Experiencer_focus",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람은 친구의 죽음을 통상했다.",
+                    "target": "통상했다",
+                    "ko_annotation_id": "sejong.61303",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 48,
+    "ko_pos": "VV",
+    "ko_lu": "통상하다.v.Experiencer_focus",
+    "lu_id": 6028,
+    "en_lus": [
+        "grieve.v.873"
+    ]
+}

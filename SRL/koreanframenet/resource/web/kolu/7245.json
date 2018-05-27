@@ -1,0 +1,56 @@
+{
+    "frameName": "Education_teaching",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63451",
+            "examples": [
+                {
+                    "frameName": "Education_teaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리들은 지난 겨울에 산사에서 심신을 수양했다.",
+                    "target": "수양했다",
+                    "ko_annotation_id": "sejong.63451",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63452",
+            "examples": [
+                {
+                    "frameName": "Education_teaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "모름지기 선비란 마음을 수양하는 사람을 일컫는다.",
+                    "target": "수양하는",
+                    "ko_annotation_id": "sejong.63452",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 111,
+    "ko_pos": "VV",
+    "ko_lu": "수양하다.v.Education_teaching",
+    "lu_id": 7245,
+    "en_lus": [
+        "learn.v.10147"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Experiencer_obj",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.62189",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 상대방의 발언에 발끈해서 자리를 박차고 일어섰다.",
+                    "target": "발끈해서",
+                    "ko_annotation_id": "sejong.62189",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.62190",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 바보라는 소리에 발끈했다.",
+                    "target": "발끈했다",
+                    "ko_annotation_id": "sejong.62190",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 47,
+    "ko_pos": "VV",
+    "ko_lu": "발끈하다.v.Experiencer_obj",
+    "lu_id": 5986,
+    "en_lus": [
+        "anger.v.783"
+    ]
+}

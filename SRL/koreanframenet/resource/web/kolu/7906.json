@@ -1,0 +1,11 @@
+{
+    "frameName": "Visiting",
+    "patterns": [],
+    "frameID": 1911,
+    "ko_pos": "VV",
+    "ko_lu": "재방문하다.v.Visiting",
+    "lu_id": 7906,
+    "en_lus": [
+        "revisit.v.14405"
+    ]
+}

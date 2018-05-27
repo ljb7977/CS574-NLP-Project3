@@ -1,0 +1,34 @@
+{
+    "frameName": "Medical_conditions",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.60846",
+            "examples": [
+                {
+                    "frameName": "Medical_conditions",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "연구가 순조롭게 진행되지 않자 연구원들의 사기가 저하되었다.",
+                    "target": "진행되지",
+                    "ko_annotation_id": "sejong.60846",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 239,
+    "ko_pos": "VV",
+    "ko_lu": "진행되다.v.Medical_conditions",
+    "lu_id": 8242,
+    "en_lus": [
+        "develop.v.17190"
+    ]
+}

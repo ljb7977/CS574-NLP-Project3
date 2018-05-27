@@ -1,0 +1,34 @@
+{
+    "frameName": "Prevent_or_allow_possession",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.85777",
+            "examples": [
+                {
+                    "frameName": "Prevent_or_allow_possession",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "협회는 그 선수에게서 선수 자격을 박탈하였다.",
+                    "target": "박탈하였다",
+                    "ko_annotation_id": "sejong.85777",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2056,
+    "ko_pos": "VV",
+    "ko_lu": "박탈하다.v.Prevent_or_allow_possession",
+    "lu_id": 7953,
+    "en_lus": [
+        "deprive.v.14970"
+    ]
+}

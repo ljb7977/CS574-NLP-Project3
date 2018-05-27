@@ -1,0 +1,56 @@
+{
+    "frameName": "Becoming_separated",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65352",
+            "examples": [
+                {
+                    "frameName": "Becoming_separated",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "야, 너희들과 여기서 찢어져야겠다.",
+                    "target": "찢어져야겠다",
+                    "ko_annotation_id": "sejong.65352",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65353",
+            "examples": [
+                {
+                    "frameName": "Becoming_separated",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여기에서 그만 찢어지자.",
+                    "target": "찢어지자",
+                    "ko_annotation_id": "sejong.65353",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1863,
+    "ko_pos": "VV",
+    "ko_lu": "찢어지다.v.Becoming_separated",
+    "lu_id": 7858,
+    "en_lus": [
+        "separate.v.13702"
+    ]
+}

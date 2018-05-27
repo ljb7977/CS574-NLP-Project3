@@ -1,0 +1,56 @@
+{
+    "frameName": "Execution",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69646",
+            "examples": [
+                {
+                    "frameName": "Execution",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정부는 국회의 심의가 끝나지 않아서 예산을 집행하지 못하고 있다.",
+                    "target": "집행하지",
+                    "ko_annotation_id": "sejong.69646",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69647",
+            "examples": [
+                {
+                    "frameName": "Execution",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "간수는 사형수의 형을 집행하였다.",
+                    "target": "집행하였다",
+                    "ko_annotation_id": "sejong.69647",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 225,
+    "ko_pos": "VV",
+    "ko_lu": "집행하다.v.Execution",
+    "lu_id": 6500,
+    "en_lus": [
+        "execute.v.3887"
+    ]
+}

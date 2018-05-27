@@ -1,0 +1,34 @@
+{
+    "frameName": "Punctual_perception",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76009",
+            "examples": [
+                {
+                    "frameName": "Punctual_perception",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정화는 그 이론의 정확한 내용을 깨닫지 못했다.",
+                    "target": "깨닫지",
+                    "ko_annotation_id": "sejong.76009",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2075,
+    "ko_pos": "VV",
+    "ko_lu": "깨닫다.v.Punctual_perception",
+    "lu_id": 8002,
+    "en_lus": [
+        "glimpse.v.15132"
+    ]
+}

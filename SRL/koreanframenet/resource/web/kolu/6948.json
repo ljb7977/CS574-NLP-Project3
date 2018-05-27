@@ -1,0 +1,100 @@
+{
+    "frameName": "Motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.91454",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 31,
+                                "end": 36
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "내가 집에 들어섰을 때는 욕조의 물이 넘쳐 이미 거실로 흘러나가고 있었다.",
+                    "target": "흘러나가고",
+                    "ko_annotation_id": "sejong.91454",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91455",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그들은 불빛이 밖으로 흘러나가지 않도록 커튼을 내렸다.",
+                    "target": "흘러나가지",
+                    "ko_annotation_id": "sejong.91455",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91456",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "연기는 굴뚝으로 흘러나간다.",
+                    "target": "흘러나간다",
+                    "ko_annotation_id": "sejong.91456",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91457",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "빛이 창으로 흘러나갔다.",
+                    "target": "흘러나갔다",
+                    "ko_annotation_id": "sejong.91457",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 7,
+    "ko_pos": "VV",
+    "ko_lu": "흘러나가다.v.Motion",
+    "lu_id": 6948,
+    "en_lus": [
+        "float.v.6261"
+    ]
+}

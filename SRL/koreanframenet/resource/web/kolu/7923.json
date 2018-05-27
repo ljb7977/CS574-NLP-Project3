@@ -1,0 +1,56 @@
+{
+    "frameName": "Food_gathering",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54127",
+            "examples": [
+                {
+                    "frameName": "Food_gathering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "곡식을 추수하는 농부의 얼굴엔 수확의 기쁨이 넘쳐난다.",
+                    "target": "추수하는",
+                    "ko_annotation_id": "sejong.54127",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54128",
+            "examples": [
+                {
+                    "frameName": "Food_gathering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "예전과 달리 이제는 벼를 추수하는 일도 기계화되었다.",
+                    "target": "추수하는",
+                    "ko_annotation_id": "sejong.54128",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2008,
+    "ko_pos": "VV",
+    "ko_lu": "추수하다.v.Food_gathering",
+    "lu_id": 7923,
+    "en_lus": [
+        "harvest.v.14774"
+    ]
+}

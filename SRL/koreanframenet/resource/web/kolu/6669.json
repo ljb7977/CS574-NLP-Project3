@@ -1,0 +1,56 @@
+{
+    "frameName": "Dispersal",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69196",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "집회에 참석했던 군중은 경찰에게 강제로 해산되어 집으로 돌아갔다.",
+                    "target": "해산되어",
+                    "ko_annotation_id": "sejong.69196",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69197",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "시위대는 일부가 연행되고 일부는 경찰에 의해 해산되었다.",
+                    "target": "해산되었다",
+                    "ko_annotation_id": "sejong.69197",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 267,
+    "ko_pos": "VV",
+    "ko_lu": "해산되다.v.Dispersal",
+    "lu_id": 6669,
+    "en_lus": [
+        "disperse.v.4837"
+    ]
+}

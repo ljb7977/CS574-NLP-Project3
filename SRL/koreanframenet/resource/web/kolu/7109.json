@@ -1,0 +1,56 @@
+{
+    "frameName": "Forming_relationships",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84179",
+            "examples": [
+                {
+                    "frameName": "Forming_relationships",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "동생은 정희와 약혼했다.",
+                    "target": "약혼했다",
+                    "ko_annotation_id": "sejong.84179",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.84180",
+            "examples": [
+                {
+                    "frameName": "Forming_relationships",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "동생과 정희는 약혼했다.",
+                    "target": "약혼했다",
+                    "ko_annotation_id": "sejong.84180",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 723,
+    "ko_pos": "VV",
+    "ko_lu": "약혼하다.v.Forming_relationships",
+    "lu_id": 7109,
+    "en_lus": [
+        "betroth.v.9023"
+    ]
+}

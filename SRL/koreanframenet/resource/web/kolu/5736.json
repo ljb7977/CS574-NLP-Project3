@@ -1,0 +1,52 @@
+{
+    "frameName": "Stage_of_progress",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20237",
+            "examples": [
+                {
+                    "frameName": "Stage_of_progress",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 0,
+                                "end": 3
+                            },
+                            "id": "1"
+                        },
+                        {
+                            "obj": "entity",
+                            "span": {
+                                "begin": 4,
+                                "end": 23
+                            },
+                            "id": "2"
+                        }
+                    ],
+                    "origin_lus": [
+                        "modern"
+                    ],
+                    "ko_annotation_id": 20237,
+                    "text": "현대식 120 명의 승객이 승차하는 객차들은 약 8분만에 그 여정을 마친다.",
+                    "sent_id": 1077,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 5614
+                }
+            ]
+        }
+    ],
+    "frameID": 1341,
+    "ko_pos": "NN",
+    "ko_lu": "현대식.n.Stage_of_progress",
+    "lu_id": 5736,
+    "en_lus": [
+        "modern"
+    ]
+}

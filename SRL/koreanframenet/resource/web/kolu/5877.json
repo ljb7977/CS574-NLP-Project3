@@ -1,0 +1,56 @@
+{
+    "frameName": "Differentiation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.82783",
+            "examples": [
+                {
+                    "frameName": "Differentiation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선생님은 선악을 식별시키는 방법을 알려주었다.",
+                    "target": "식별시키는",
+                    "ko_annotation_id": "sejong.82783",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.82784",
+            "examples": [
+                {
+                    "frameName": "Differentiation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "진정한 지도자를 식별시킨 것은 우리의 냉철한 판단력이다.",
+                    "target": "식별시킨",
+                    "ko_annotation_id": "sejong.82784",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 24,
+    "ko_pos": "VV",
+    "ko_lu": "식별시키다.v.Differentiation",
+    "lu_id": 5877,
+    "en_lus": [
+        "differentiate.v.234"
+    ]
+}

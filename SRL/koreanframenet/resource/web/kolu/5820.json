@@ -1,0 +1,34 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89419",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "바람개비가 팔랑거리며 돌아가기 시작했다.",
+                    "target": "팔랑거리며",
+                    "ko_annotation_id": "sejong.89419",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "팔랑거리다.v.Body_movement",
+    "lu_id": 5820,
+    "en_lus": [
+        "flap.v.75"
+    ]
+}

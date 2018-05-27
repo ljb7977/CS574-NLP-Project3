@@ -1,0 +1,65 @@
+{
+    "frameName": "Being_attached",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20299",
+            "examples": [
+                {
+                    "frameName": "Being_attached",
+                    "denotations": [
+                        {
+                            "obj": "goal",
+                            "span": {
+                                "begin": 14,
+                                "end": 20
+                            },
+                            "id": "3"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 22,
+                                "end": 27
+                            },
+                            "id": "1"
+                        },
+                        {
+                            "obj": "item",
+                            "span": {
+                                "begin": 28,
+                                "end": 32
+                            },
+                            "id": "2"
+                        }
+                    ],
+                    "origin_lus": [
+                        "stuck"
+                    ],
+                    "ko_annotation_id": 20299,
+                    "text": "자주, 종지기들은 교회를 종탑의 바닥에 붙어 있는 어떤 것으로 생각한다.",
+                    "sent_id": 44,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "3",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 291
+                }
+            ]
+        }
+    ],
+    "frameID": 307,
+    "ko_pos": "VV",
+    "ko_lu": "붙다.v.Being_attached",
+    "lu_id": 5765,
+    "en_lus": [
+        "stuck"
+    ]
+}

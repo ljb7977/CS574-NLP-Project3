@@ -1,0 +1,56 @@
+{
+    "frameName": "Emotions_of_mental_activity",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.81626",
+            "examples": [
+                {
+                    "frameName": "Emotions_of_mental_activity",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "오늘은 뭔가 신나는 일이 없을까?.",
+                    "target": "신나는",
+                    "ko_annotation_id": "sejong.81626",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.81627",
+            "examples": [
+                {
+                    "frameName": "Emotions_of_mental_activity",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 친구의 불행이 신나는 사람이다.",
+                    "target": "신나는",
+                    "ko_annotation_id": "sejong.81627",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2045,
+    "ko_pos": "VV",
+    "ko_lu": "신나다.v.Emotions_of_mental_activity",
+    "lu_id": 8083,
+    "en_lus": [
+        "groove.v.15675"
+    ]
+}

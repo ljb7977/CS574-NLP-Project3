@@ -1,0 +1,56 @@
+{
+    "frameName": "Placing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89409",
+            "examples": [
+                {
+                    "frameName": "Placing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "힘없는 부녀자들을 주사한 당간부가 비판되었다.",
+                    "target": "주사한",
+                    "ko_annotation_id": "sejong.89409",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89410",
+            "examples": [
+                {
+                    "frameName": "Placing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "왕은 신하들을 주사해서 대비에게 사약을 내렸다.",
+                    "target": "주사해서",
+                    "ko_annotation_id": "sejong.89410",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "주사하다.v.Placing",
+    "lu_id": 6148,
+    "en_lus": [
+        "inject.v.1089"
+    ]
+}

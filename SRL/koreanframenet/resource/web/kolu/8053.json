@@ -1,0 +1,100 @@
+{
+    "frameName": "Finish_game",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79141",
+            "examples": [
+                {
+                    "frameName": "Finish_game",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한국 팀이 브라질 팀을 2대 1로 이겼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79141",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79142",
+            "examples": [
+                {
+                    "frameName": "Finish_game",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "네가 아무리 열심히 공부해도 수학에 있어서는 그에게 도저히 이길 수 없다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79142",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79143",
+            "examples": [
+                {
+                    "frameName": "Finish_game",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한국팀이 브라질팀에게 이겼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79143",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79144",
+            "examples": [
+                {
+                    "frameName": "Finish_game",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "운동에 있어서는 그에게 이기기가 어렵다.",
+                    "target": "이기기가",
+                    "ko_annotation_id": "sejong.79144",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2193,
+    "ko_pos": "VV",
+    "ko_lu": "이기다.v.Finish_game",
+    "lu_id": 8053,
+    "en_lus": [
+        "win.v.15593"
+    ]
+}

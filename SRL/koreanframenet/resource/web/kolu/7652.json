@@ -1,0 +1,100 @@
+{
+    "frameName": "Rejuvenation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63956",
+            "examples": [
+                {
+                    "frameName": "Rejuvenation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 36,
+                                "end": 40
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아버지는 마른 나무가지들을 주워 모아 모닥불의 꺼져 가던 불씨를 되살렸다.",
+                    "target": "되살렸다",
+                    "ko_annotation_id": "sejong.63956",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63957",
+            "examples": [
+                {
+                    "frameName": "Rejuvenation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 의사는 죽어가던 어린 생명을 되살렸다.",
+                    "target": "되살렸다",
+                    "ko_annotation_id": "sejong.63957",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63958",
+            "examples": [
+                {
+                    "frameName": "Rejuvenation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 구제 금융으로 회사를 되살렸다.",
+                    "target": "되살렸다",
+                    "ko_annotation_id": "sejong.63958",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63959",
+            "examples": [
+                {
+                    "frameName": "Rejuvenation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "구제 금융이 우리 회사를 되살렸다.",
+                    "target": "되살렸다",
+                    "ko_annotation_id": "sejong.63959",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1614,
+    "ko_pos": "VV",
+    "ko_lu": "되살리다.v.Rejuvenation",
+    "lu_id": 7652,
+    "en_lus": [
+        "refresh.v.12663"
+    ]
+}

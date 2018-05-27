@@ -1,0 +1,65 @@
+{
+    "frameName": "Part_orientational",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20240",
+            "examples": [
+                {
+                    "frameName": "Part_orientational",
+                    "denotations": [
+                        {
+                            "obj": "whole",
+                            "span": {
+                                "begin": 4,
+                                "end": 6
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "part_prop",
+                            "span": {
+                                "begin": 7,
+                                "end": 9
+                            },
+                            "id": "3"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 7,
+                                "end": 9
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "side"
+                    ],
+                    "ko_annotation_id": 20240,
+                    "text": "그들은 원탁 한쪽에서 나를 향해 그들의 옆모습을 보인채 앉았다.",
+                    "sent_id": 3295,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "3",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 17563
+                }
+            ]
+        }
+    ],
+    "frameID": 143,
+    "ko_pos": "NNG",
+    "ko_lu": "한쪽.n.Part_orientational",
+    "lu_id": 5739,
+    "en_lus": [
+        "side"
+    ]
+}

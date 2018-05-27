@@ -1,0 +1,56 @@
+{
+    "frameName": "Manipulation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.93135",
+            "examples": [
+                {
+                    "frameName": "Manipulation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "동욱은 주연을 간지럽히기를 좋아했다.",
+                    "target": "간지럽히기를",
+                    "ko_annotation_id": "sejong.93135",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.93136",
+            "examples": [
+                {
+                    "frameName": "Manipulation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "준영은 동생의 옆구리를 간지럽히고 도망가 버렸다.",
+                    "target": "간지럽히고",
+                    "ko_annotation_id": "sejong.93136",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 17,
+    "ko_pos": "VV",
+    "ko_lu": "간지럽히다.v.Manipulation",
+    "lu_id": 7979,
+    "en_lus": [
+        "tickle.v.15086"
+    ]
+}

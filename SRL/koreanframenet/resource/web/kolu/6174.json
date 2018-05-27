@@ -1,0 +1,56 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89064",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "승용차가 좁은 틈으로 끼어 들었다.",
+                    "target": "끼어",
+                    "ko_annotation_id": "sejong.89064",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89065",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리 차 앞으로 갑자기 버스가 끼어 들었다.",
+                    "target": "끼어",
+                    "ko_annotation_id": "sejong.89065",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "끼어들다.v.Self_motion",
+    "lu_id": 6174,
+    "en_lus": [
+        "barge.v.1154"
+    ]
+}

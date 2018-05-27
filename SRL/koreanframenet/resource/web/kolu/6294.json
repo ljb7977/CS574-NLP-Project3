@@ -1,0 +1,34 @@
+{
+    "frameName": "Make_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.70235",
+            "examples": [
+                {
+                    "frameName": "Make_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "고장난 문이 밤새 삐걱삐걱 소리내어 한 숨도 못잤다.",
+                    "target": "소리내어",
+                    "ko_annotation_id": "sejong.70235",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 69,
+    "ko_pos": "VV",
+    "ko_lu": "소리내다.v.Make_noise",
+    "lu_id": 6294,
+    "en_lus": [
+        "scrunch.v.1465"
+    ]
+}

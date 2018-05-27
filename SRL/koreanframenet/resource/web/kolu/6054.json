@@ -1,0 +1,56 @@
+{
+    "frameName": "Arriving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.81848",
+            "examples": [
+                {
+                    "frameName": "Arriving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 32,
+                                "end": 37
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "연섭이는 결혼한 그녀가 자신을 잊고 안정될 때까지 미국에 체류하기로 했다.",
+                    "target": "체류하기로",
+                    "ko_annotation_id": "sejong.81848",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.81849",
+            "examples": [
+                {
+                    "frameName": "Arriving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "독일에서 체류하고 있는 3년 동안 그는 그녀에게 매일 편지를 썼지만 한 번도 보내진 못했다.",
+                    "target": "체류하고",
+                    "ko_annotation_id": "sejong.81849",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 54,
+    "ko_pos": "VV",
+    "ko_lu": "체류하다.v.Arriving",
+    "lu_id": 6054,
+    "en_lus": [
+        "visit.v.947"
+    ]
+}

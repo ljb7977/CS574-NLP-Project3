@@ -1,0 +1,56 @@
+{
+    "frameName": "Experiencer_obj",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.77690",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 늘 자기 일을 지겨워한다.",
+                    "target": "지겨워한다",
+                    "ko_annotation_id": "sejong.77690",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.77691",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 늘 자기 일에 대해 지겨워한다.",
+                    "target": "지겨워한다",
+                    "ko_annotation_id": "sejong.77691",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 47,
+    "ko_pos": "VV",
+    "ko_lu": "지겨워하다.v.Experiencer_obj",
+    "lu_id": 6540,
+    "en_lus": [
+        "bore.v.4123"
+    ]
+}

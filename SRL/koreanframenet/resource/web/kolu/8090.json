@@ -1,0 +1,34 @@
+{
+    "frameName": "Filling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55409",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 노끈으로 책들을 얽어매었다.",
+                    "target": "얽어매었다",
+                    "ko_annotation_id": "sejong.55409",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 59,
+    "ko_pos": "VV",
+    "ko_lu": "얽어매다.v.Filling",
+    "lu_id": 8090,
+    "en_lus": [
+        "yoke.v.15779"
+    ]
+}

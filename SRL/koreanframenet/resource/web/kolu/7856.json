@@ -1,0 +1,78 @@
+{
+    "frameName": "Becoming_separated",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48963",
+            "examples": [
+                {
+                    "frameName": "Becoming_separated",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "축구협회는 두 패로 갈라져서 서로 험담을 일삼았다.",
+                    "target": "갈라져서",
+                    "ko_annotation_id": "sejong.48963",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48964",
+            "examples": [
+                {
+                    "frameName": "Becoming_separated",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "친회장파가 친부회장파와 그 일로 서로 갈라졌다.",
+                    "target": "갈라졌다",
+                    "ko_annotation_id": "sejong.48964",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48965",
+            "examples": [
+                {
+                    "frameName": "Becoming_separated",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "친회장파와 친부회장파가 그 일로 서로 갈라졌다.",
+                    "target": "갈라졌다",
+                    "ko_annotation_id": "sejong.48965",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1863,
+    "ko_pos": "VV",
+    "ko_lu": "갈라지다.v.Becoming_separated",
+    "lu_id": 7856,
+    "en_lus": [
+        "separate.v.13702"
+    ]
+}

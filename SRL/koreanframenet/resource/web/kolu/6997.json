@@ -1,0 +1,56 @@
+{
+    "frameName": "Linguistic_meaning",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.66868",
+            "examples": [
+                {
+                    "frameName": "Linguistic_meaning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 끝까지 우리에게 모습을 나타내지 않았다.",
+                    "target": "나타내지",
+                    "ko_annotation_id": "sejong.66868",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66869",
+            "examples": [
+                {
+                    "frameName": "Linguistic_meaning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "환경 파괴로 그 새는 이제 더 이상 서울에 모습을 나타내지 않는다.",
+                    "target": "나타내지",
+                    "ko_annotation_id": "sejong.66869",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 406,
+    "ko_pos": "VV",
+    "ko_lu": "나타내다.v.Linguistic_meaning",
+    "lu_id": 6997,
+    "en_lus": [
+        "denote.v.7480"
+    ]
+}

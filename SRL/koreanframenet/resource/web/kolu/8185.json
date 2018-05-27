@@ -1,0 +1,11 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "밀고가다.v.Self_motion",
+    "lu_id": 8185,
+    "en_lus": [
+        "press.v.16778"
+    ]
+}

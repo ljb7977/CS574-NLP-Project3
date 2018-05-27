@@ -1,0 +1,11 @@
+{
+    "frameName": "Placing",
+    "patterns": [],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "싣다.v.Placing",
+    "lu_id": 6155,
+    "en_lus": [
+        "load.v.1094"
+    ]
+}

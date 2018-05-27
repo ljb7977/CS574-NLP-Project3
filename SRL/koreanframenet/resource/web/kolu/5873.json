@@ -1,0 +1,100 @@
+{
+    "frameName": "Coming_to_believe",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.80467",
+            "examples": [
+                {
+                    "frameName": "Coming_to_believe",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 그 그림이 9세기의 통일신라시대 작품이라고 추측된다.",
+                    "target": "추측된다",
+                    "ko_annotation_id": "sejong.80467",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80468",
+            "examples": [
+                {
+                    "frameName": "Coming_to_believe",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그래도 바다에선 폭우를 쏟고 있으리라고 추측되었다.",
+                    "target": "추측되었다",
+                    "ko_annotation_id": "sejong.80468",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80469",
+            "examples": [
+                {
+                    "frameName": "Coming_to_believe",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 그림은 9세기의 통일신라시대 작품인 것으로 추측된다.",
+                    "target": "추측된다",
+                    "ko_annotation_id": "sejong.80469",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80470",
+            "examples": [
+                {
+                    "frameName": "Coming_to_believe",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그래도 바다에선 폭우를 쏟고 있을 것으로 추측되었다.",
+                    "target": "추측되었다",
+                    "ko_annotation_id": "sejong.80470",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 23,
+    "ko_pos": "VV",
+    "ko_lu": "추측되다.v.Coming_to_believe",
+    "lu_id": 5873,
+    "en_lus": [
+        "surmise.v.233"
+    ]
+}

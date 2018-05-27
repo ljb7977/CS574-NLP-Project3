@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_end",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89061",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "보험회사가 대신 돈을 지불하고 사건을 종결짓다.",
+                    "target": "종결짓다",
+                    "ko_annotation_id": "sejong.89061",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89062",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어떻게든 이번 일은 종결지어야 후환이 없어집니다.",
+                    "target": "종결지어야",
+                    "ko_annotation_id": "sejong.89062",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1149,
+    "ko_pos": "VV",
+    "ko_lu": "종결짓다.v.Cause_to_end",
+    "lu_id": 7357,
+    "en_lus": [
+        "end.v.10680"
+    ]
+}

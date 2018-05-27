@@ -1,0 +1,34 @@
+{
+    "frameName": "Cause_to_fragment",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74118",
+            "examples": [
+                {
+                    "frameName": "Cause_to_fragment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "국회에서는 그 문서를 파기하고 대체입법을 했다.",
+                    "target": "파기하고",
+                    "ko_annotation_id": "sejong.74118",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 414,
+    "ko_pos": "VV",
+    "ko_lu": "파기하다.v.Cause_to_fragment",
+    "lu_id": 7020,
+    "en_lus": [
+        "tear up.v.7593"
+    ]
+}

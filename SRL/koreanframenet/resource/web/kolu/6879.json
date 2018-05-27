@@ -1,0 +1,56 @@
+{
+    "frameName": "Hiring",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48782",
+            "examples": [
+                {
+                    "frameName": "Hiring",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "건설사는 아파트 시공에 인부를 쓴다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48782",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48783",
+            "examples": [
+                {
+                    "frameName": "Hiring",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사모님은 집안 청소에 파출부를 쓴다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48783",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 322,
+    "ko_pos": "VV",
+    "ko_lu": "쓰다.v.Hiring",
+    "lu_id": 6879,
+    "en_lus": [
+        "hire.v.5774"
+    ]
+}

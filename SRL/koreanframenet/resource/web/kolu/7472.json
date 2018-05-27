@@ -1,0 +1,11 @@
+{
+    "frameName": "Impact",
+    "patterns": [],
+    "frameID": 311,
+    "ko_pos": "VV",
+    "ko_lu": "영향을 주다.v.Impact",
+    "lu_id": 7472,
+    "en_lus": [
+        "touch.v.11007"
+    ]
+}

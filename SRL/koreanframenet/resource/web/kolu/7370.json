@@ -1,0 +1,34 @@
+{
+    "frameName": "Purpose",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.66613",
+            "examples": [
+                {
+                    "frameName": "Purpose",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수의 그 행동은 철수 자신에 의해 의도된 것이다.",
+                    "target": "의도된",
+                    "ko_annotation_id": "sejong.66613",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 513,
+    "ko_pos": "VV",
+    "ko_lu": "의도되다.v.Purpose",
+    "lu_id": 7370,
+    "en_lus": [
+        "intend.v.10717"
+    ]
+}

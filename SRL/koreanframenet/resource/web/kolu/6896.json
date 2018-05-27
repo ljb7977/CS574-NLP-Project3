@@ -1,0 +1,56 @@
+{
+    "frameName": "Firing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63993",
+            "examples": [
+                {
+                    "frameName": "Firing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "저 교수는 민주화 운동을 했다는 이유로 해직되었다가 이번에 다시 복직되었다.",
+                    "target": "해직되었다가",
+                    "ko_annotation_id": "sejong.63993",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63994",
+            "examples": [
+                {
+                    "frameName": "Firing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대부분 30대에 해직돼 어느새 모두 60세를 넘긴 투쟁위원회 위원들의 농성은 처절하기까지 했다.",
+                    "target": "해직돼",
+                    "ko_annotation_id": "sejong.63994",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 326,
+    "ko_pos": "VV",
+    "ko_lu": "해직되다.v.Firing",
+    "lu_id": 6896,
+    "en_lus": [
+        "fire.v.5798"
+    ]
+}

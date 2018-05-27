@@ -1,0 +1,11 @@
+{
+    "frameName": "Placing",
+    "patterns": [],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "쌓이다.v.Placing",
+    "lu_id": 6160,
+    "en_lus": [
+        "pile.v.1099"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Agree_or_refuse_to_act",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.73228",
+            "examples": [
+                {
+                    "frameName": "Agree_or_refuse_to_act",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 35,
+                                "end": 39
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 국회의원은 공직자가 검은 돈을 받아서는 안 된다며 비자금을 거절했다.",
+                    "target": "거절했다",
+                    "ko_annotation_id": "sejong.73228",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1625,
+    "ko_pos": "VV",
+    "ko_lu": "거절하다.v.Agree_or_refuse_to_act",
+    "lu_id": 7669,
+    "en_lus": [
+        "decline.v.12759"
+    ]
+}

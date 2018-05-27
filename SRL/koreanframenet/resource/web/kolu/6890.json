@@ -1,0 +1,56 @@
+{
+    "frameName": "Firing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48453",
+            "examples": [
+                {
+                    "frameName": "Firing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사장은 당장에 그를 잘랐다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48453",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48454",
+            "examples": [
+                {
+                    "frameName": "Firing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "지금 이 나이에 나를 자르면 어떡하라는 말입니까?.",
+                    "target": "자르면",
+                    "ko_annotation_id": "sejong.48454",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 326,
+    "ko_pos": "VV",
+    "ko_lu": "자르다.v.Firing",
+    "lu_id": 6890,
+    "en_lus": [
+        "dismiss.v.5796"
+    ]
+}

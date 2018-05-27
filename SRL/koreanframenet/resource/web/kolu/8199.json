@@ -1,0 +1,78 @@
+{
+    "frameName": "Attempt_suasion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.87343",
+            "examples": [
+                {
+                    "frameName": "Attempt_suasion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "김교수는 조교에 박군을 추천하였다.",
+                    "target": "추천하였다",
+                    "ko_annotation_id": "sejong.87343",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.87344",
+            "examples": [
+                {
+                    "frameName": "Attempt_suasion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 34
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "증권회사 직원은 투자 대상 업체로 신흥 벤쳐 기업을 추천하였다.",
+                    "target": "추천하였다",
+                    "ko_annotation_id": "sejong.87344",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.87345",
+            "examples": [
+                {
+                    "frameName": "Attempt_suasion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 건강식품으로 인삼을 추천했다.",
+                    "target": "추천했다",
+                    "ko_annotation_id": "sejong.87345",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 87,
+    "ko_pos": "VV",
+    "ko_lu": "추천하다.v.Attempt_suasion",
+    "lu_id": 8199,
+    "en_lus": [
+        "recommend.v.16934"
+    ]
+}

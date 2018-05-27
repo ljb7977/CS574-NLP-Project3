@@ -1,0 +1,91 @@
+{
+    "frameName": "Rejuvenation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20259",
+            "examples": [
+                {
+                    "frameName": "Rejuvenation",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 109,
+                                "end": 111
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "restored"
+                    ],
+                    "ko_annotation_id": 20259,
+                    "text": "이 시간들은 인디애나폴리스 미술 박물관에서 특별히 즐거운 시간들입니다 : J.K. Lilly 소유의 Oldfields가 계속해서 발전하고 있고, 우리들의 Ravine 정원은 그의 고유한 화려함을 되찾았고, 그리고 현재 개최되고 있는 일본 그림 전시회는 국민적 관심을 받고 있습니다. ( 내가 포함된 뉴욕 타임즈 기사를 참조하시기 바랍니다. ) 수 천 그루의 나무들과 꽃들이 피어있는 가운데 우리는 아름다운 봄을 즐기고 있습니다 !",
+                    "sent_id": 1540,
+                    "relations": [],
+                    "annotation_id": 7455
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: 20260",
+            "examples": [
+                {
+                    "frameName": "Rejuvenation",
+                    "denotations": [
+                        {
+                            "obj": "entity",
+                            "span": {
+                                "begin": 81,
+                                "end": 95
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "result",
+                            "span": {
+                                "begin": 97,
+                                "end": 107
+                            },
+                            "id": "3"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 109,
+                                "end": 111
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "restored"
+                    ],
+                    "ko_annotation_id": 20260,
+                    "text": "이 시간들은 인디애나폴리스 미술 박물관에서 특별히 즐거운 시간들입니다 : J.K. Lilly 소유의 Oldfields가 계속해서 발전하고 있고, 우리들의 Ravine 정원은 그의 고유한 화려함을 되찾았고, 그리고 현재 개최되고 있는 일본 그림 전시회는 국민적 관심을 받고 있습니다. ( 내가 포함된 뉴욕 타임즈 기사를 참조하시기 바랍니다. ) 수 천 그루의 나무들과 꽃들이 피어있는 가운데 우리는 아름다운 봄을 즐기고 있습니다 !",
+                    "sent_id": 1540,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "3",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 7455
+                }
+            ]
+        }
+    ],
+    "frameID": 1614,
+    "ko_pos": "VA",
+    "ko_lu": "되다.a.Rejuvenation",
+    "lu_id": 5749,
+    "en_lus": [
+        "restore"
+    ]
+}

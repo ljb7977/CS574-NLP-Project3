@@ -1,0 +1,56 @@
+{
+    "frameName": "Transition_to_state",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.59348",
+            "examples": [
+                {
+                    "frameName": "Transition_to_state",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이번 회의는 결국 실패로 결말났다.",
+                    "target": "결말났다",
+                    "ko_annotation_id": "sejong.59348",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.59349",
+            "examples": [
+                {
+                    "frameName": "Transition_to_state",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이번 각료 회의가 비교적 성공으로 결말난 데에는 협상단의 노력이 큰 역할을 했다.",
+                    "target": "결말난",
+                    "ko_annotation_id": "sejong.59349",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1070,
+    "ko_pos": "VV",
+    "ko_lu": "결말나다.v.Transition_to_state",
+    "lu_id": 7399,
+    "en_lus": [
+        "end up.v.10845"
+    ]
+}

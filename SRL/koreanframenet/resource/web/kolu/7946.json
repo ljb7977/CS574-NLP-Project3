@@ -1,0 +1,56 @@
+{
+    "frameName": "Soaking_up",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.92459",
+            "examples": [
+                {
+                    "frameName": "Soaking_up",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 나이 또래의 아이들은 많은 지식을 흡수할 수 있다.",
+                    "target": "흡수할",
+                    "ko_annotation_id": "sejong.92459",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.92460",
+            "examples": [
+                {
+                    "frameName": "Soaking_up",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "국제화되어 가는 시대에 맞춰 서양 문화를 올바르게 흡수하는 것이 필요하다.",
+                    "target": "흡수하는",
+                    "ko_annotation_id": "sejong.92460",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2032,
+    "ko_pos": "VV",
+    "ko_lu": "흡수하다.v.Soaking_up",
+    "lu_id": 7946,
+    "en_lus": [
+        "absorb.v.14844"
+    ]
+}

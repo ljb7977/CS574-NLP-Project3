@@ -1,0 +1,11 @@
+{
+    "frameName": "Location_of_light",
+    "patterns": [],
+    "frameID": 105,
+    "ko_pos": "VV",
+    "ko_lu": "햇볕에 타다.v.Location_of_light",
+    "lu_id": 6488,
+    "en_lus": [
+        "flame.v.3254"
+    ]
+}

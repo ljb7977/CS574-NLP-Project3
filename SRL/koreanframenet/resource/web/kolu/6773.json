@@ -1,0 +1,56 @@
+{
+    "frameName": "Placing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69142",
+            "examples": [
+                {
+                    "frameName": "Placing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "전교생에게 노력상장이 수여되었다.",
+                    "target": "수여되었다",
+                    "ko_annotation_id": "sejong.69142",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69143",
+            "examples": [
+                {
+                    "frameName": "Placing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우승자에게 금빛 트로피가 수여되었다.",
+                    "target": "수여되었다",
+                    "ko_annotation_id": "sejong.69143",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "수여되다.v.Placing",
+    "lu_id": 6773,
+    "en_lus": [
+        "bestow.v.5354"
+    ]
+}

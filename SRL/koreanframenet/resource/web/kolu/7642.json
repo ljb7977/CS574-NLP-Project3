@@ -1,0 +1,56 @@
+{
+    "frameName": "Proliferating_in_number",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.47186",
+            "examples": [
+                {
+                    "frameName": "Proliferating_in_number",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "재산이 증식되자 할아버지는 두려울 것이 아무것도 없었다.",
+                    "target": "증식되자",
+                    "ko_annotation_id": "sejong.47186",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47187",
+            "examples": [
+                {
+                    "frameName": "Proliferating_in_number",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "재산이 증식될수록 일은 쌓여만 간다.",
+                    "target": "증식될수록",
+                    "ko_annotation_id": "sejong.47187",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1599,
+    "ko_pos": "VV",
+    "ko_lu": "증식되다.v.Proliferating_in_number",
+    "lu_id": 7642,
+    "en_lus": [
+        "proliferate.v.12586"
+    ]
+}

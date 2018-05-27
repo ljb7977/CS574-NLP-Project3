@@ -1,0 +1,34 @@
+{
+    "frameName": "Cause_harm",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.77388",
+            "examples": [
+                {
+                    "frameName": "Cause_harm",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 적군의 다리를 부상시켰다.",
+                    "target": "부상시켰다",
+                    "ko_annotation_id": "sejong.77388",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 112,
+    "ko_pos": "VV",
+    "ko_lu": "부상시키다.v.Cause_harm",
+    "lu_id": 7040,
+    "en_lus": [
+        "wound.v.7950"
+    ]
+}

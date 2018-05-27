@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_end",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.88403",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아직도 집 앞에 쓰레기를 버리는 사람이 있다.",
+                    "target": "버리는",
+                    "ko_annotation_id": "sejong.88403",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88404",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람은 길에 아이를 버리고 도망갔다.",
+                    "target": "버리고",
+                    "ko_annotation_id": "sejong.88404",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1149,
+    "ko_pos": "VV",
+    "ko_lu": "버리다.v.Cause_to_end",
+    "lu_id": 8308,
+    "en_lus": [
+        "do away with.v.17591"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Filling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79649",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "할아버지는 쌀가마니를 달구지에 힘겹게 실으셨다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79649",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79650",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이렇게 큰 짐은 택시에는 실을 수 없습니다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.79650",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 59,
+    "ko_pos": "VV",
+    "ko_lu": "싣다.v.Filling",
+    "lu_id": 6083,
+    "en_lus": [
+        "load.v.1011"
+    ]
+}

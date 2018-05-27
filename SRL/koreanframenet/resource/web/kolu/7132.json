@@ -1,0 +1,56 @@
+{
+    "frameName": "Change_posture",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.47861",
+            "examples": [
+                {
+                    "frameName": "Change_posture",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그가 암으로 병석에 드러누운 지도 이제 넉 달이 넘었다.",
+                    "target": "드러누운",
+                    "ko_annotation_id": "sejong.47861",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47862",
+            "examples": [
+                {
+                    "frameName": "Change_posture",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "지나치게 무리를 한다 싶던 민수는 감기로 자리에 드러누워 며칠째 일어나질 못하고 있다.",
+                    "target": "드러누워",
+                    "ko_annotation_id": "sejong.47862",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 770,
+    "ko_pos": "VV",
+    "ko_lu": "드러눕다.v.Change_posture",
+    "lu_id": 7132,
+    "en_lus": [
+        "lie down.v.9369"
+    ]
+}

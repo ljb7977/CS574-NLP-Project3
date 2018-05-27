@@ -1,0 +1,56 @@
+{
+    "frameName": "Coming_to_be",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.50641",
+            "examples": [
+                {
+                    "frameName": "Coming_to_be",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "효도는 부모님에 대한 존경에서 시작된다.",
+                    "target": "시작된다",
+                    "ko_annotation_id": "sejong.50641",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.50642",
+            "examples": [
+                {
+                    "frameName": "Coming_to_be",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사랑은 작은 눈빛 교환에서 시작된다.",
+                    "target": "시작된다",
+                    "ko_annotation_id": "sejong.50642",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 316,
+    "ko_pos": "VV",
+    "ko_lu": "시작되다.v.Coming_to_be",
+    "lu_id": 6862,
+    "en_lus": [
+        "arise.v.5752"
+    ]
+}

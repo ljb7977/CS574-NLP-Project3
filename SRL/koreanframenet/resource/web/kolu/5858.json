@@ -1,0 +1,56 @@
+{
+    "frameName": "Manipulation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.60946",
+            "examples": [
+                {
+                    "frameName": "Manipulation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "젖은 빨래는 먼저 어느 정도 짠 다음에 말리는 편이 좋다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.60946",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.60947",
+            "examples": [
+                {
+                    "frameName": "Manipulation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": 2
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "너는 손목이 그렇게 약해서 걸레나 짤 수 있겠니?",
+                    "target": "",
+                    "ko_annotation_id": "sejong.60947",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 17,
+    "ko_pos": "VV",
+    "ko_lu": "짜다.v.Manipulation",
+    "lu_id": 5858,
+    "en_lus": [
+        "wring.v.128"
+    ]
+}

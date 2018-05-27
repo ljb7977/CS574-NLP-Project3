@@ -1,0 +1,11 @@
+{
+    "frameName": "Notification_of_charges",
+    "patterns": [],
+    "frameID": 129,
+    "ko_pos": "VV",
+    "ko_lu": "고발하다.v.Notification_of_charges",
+    "lu_id": 6460,
+    "en_lus": [
+        "charge.v.2602"
+    ]
+}

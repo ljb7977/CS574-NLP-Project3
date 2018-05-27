@@ -1,0 +1,34 @@
+{
+    "frameName": "Ingestion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55215",
+            "examples": [
+                {
+                    "frameName": "Ingestion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "음식을 골고루 먹어야 몸에 필요한 영양소가 다 섭취된다.",
+                    "target": "섭취된다",
+                    "ko_annotation_id": "sejong.55215",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 263,
+    "ko_pos": "VV",
+    "ko_lu": "섭취되다.v.Ingestion",
+    "lu_id": 6655,
+    "en_lus": [
+        "ingest.v.4803"
+    ]
+}

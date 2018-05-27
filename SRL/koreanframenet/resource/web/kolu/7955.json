@@ -1,0 +1,56 @@
+{
+    "frameName": "Prevent_or_allow_possession",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.51546",
+            "examples": [
+                {
+                    "frameName": "Prevent_or_allow_possession",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "밥 먹기 싫어하는 아이는 무조건 굶겨라.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.51546",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.51547",
+            "examples": [
+                {
+                    "frameName": "Prevent_or_allow_possession",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": 2
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "내가 너희에게 밥을 굶겼냐? 뭐를 굶겼냐?",
+                    "target": "",
+                    "ko_annotation_id": "sejong.51547",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2056,
+    "ko_pos": "VV",
+    "ko_lu": "굶기다.v.Prevent_or_allow_possession",
+    "lu_id": 7955,
+    "en_lus": [
+        "starve.v.14971"
+    ]
+}

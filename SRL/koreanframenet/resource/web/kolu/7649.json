@@ -1,0 +1,56 @@
+{
+    "frameName": "Adducing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49669",
+            "examples": [
+                {
+                    "frameName": "Adducing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 녀석은 항상 정보화 시대를 들먹이면서 막상 컴퓨터는 제대로 다룰 줄도 모른다.",
+                    "target": "들먹이면서",
+                    "ko_annotation_id": "sejong.49669",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49670",
+            "examples": [
+                {
+                    "frameName": "Adducing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사기꾼이 유명인의 이름을 들먹이는 바람에 모두 속아넘어갔다고 한다.",
+                    "target": "들먹이는",
+                    "ko_annotation_id": "sejong.49670",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1601,
+    "ko_pos": "VV",
+    "ko_lu": "들먹이다.v.Adducing",
+    "lu_id": 7649,
+    "en_lus": [
+        "point.v.12601"
+    ]
+}

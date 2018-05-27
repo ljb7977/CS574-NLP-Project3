@@ -1,0 +1,78 @@
+{
+    "frameName": "Attaching",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65315",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수가 순이에게 반지를 끼워 주고 결혼을 맹세했다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.65315",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65316",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 동생에게 장갑을 끼워 주었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.65316",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65317",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 영희 팔목에 팔찌를 끼우고 나니 흐뭇한 감정이 솟아올랐다.",
+                    "target": "끼우고",
+                    "ko_annotation_id": "sejong.65317",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 197,
+    "ko_pos": "VV",
+    "ko_lu": "끼우다.v.Attaching",
+    "lu_id": 7779,
+    "en_lus": [
+        "mount.v.13150"
+    ]
+}

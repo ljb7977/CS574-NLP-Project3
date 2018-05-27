@@ -1,0 +1,11 @@
+{
+    "frameName": "Fining",
+    "patterns": [],
+    "frameID": 223,
+    "ko_pos": "VV",
+    "ko_lu": "벌금을 물리다.v.Fining",
+    "lu_id": 6495,
+    "en_lus": [
+        "fine.v.3882"
+    ]
+}

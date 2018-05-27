@@ -1,0 +1,100 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74087",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "피곤한지 눈꺼풀이 자꾸 씰룩거린다.",
+                    "target": "씰룩거린다",
+                    "ko_annotation_id": "sejong.74087",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74088",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나도 모르게 입술이 씰룩거리는 증상이 나타나 병원에 갔다.",
+                    "target": "씰룩거리는",
+                    "ko_annotation_id": "sejong.74088",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74089",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 무엇이 기분나쁜지 입술을 자꾸 씰룩거렸다.",
+                    "target": "씰룩거렸다",
+                    "ko_annotation_id": "sejong.74089",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74090",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한 여자가 엉덩이를 씰룩거리며 걸어가는 장면이 목격됐다.",
+                    "target": "씰룩거리며",
+                    "ko_annotation_id": "sejong.74090",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "씰룩거리다.v.Body_movement",
+    "lu_id": 5839,
+    "en_lus": [
+        "wiggle.v.106"
+    ]
+}

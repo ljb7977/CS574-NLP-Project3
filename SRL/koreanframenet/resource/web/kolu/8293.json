@@ -1,0 +1,34 @@
+{
+    "frameName": "Recovery",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69105",
+            "examples": [
+                {
+                    "frameName": "Recovery",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 내 밥 공기에서 밥을 한 숫갈 덜어주었다.",
+                    "target": "덜어주었다",
+                    "ko_annotation_id": "sejong.69105",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 51,
+    "ko_pos": "VV",
+    "ko_lu": "덜어주다.v.Recovery",
+    "lu_id": 8293,
+    "en_lus": [
+        "ease.v.17535"
+    ]
+}

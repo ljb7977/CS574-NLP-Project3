@@ -1,0 +1,78 @@
+{
+    "frameName": "Breaking_apart",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.67603",
+            "examples": [
+                {
+                    "frameName": "Breaking_apart",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "접시가 깨질라 조심해라.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.67603",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67604",
+            "examples": [
+                {
+                    "frameName": "Breaking_apart",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "호수의 얼음이 깨져 빠져 죽었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.67604",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67605",
+            "examples": [
+                {
+                    "frameName": "Breaking_apart",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수가 던진 공에 영희의 이마가 깨졌다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.67605",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1862,
+    "ko_pos": "VV",
+    "ko_lu": "깨지다.v.Breaking_apart",
+    "lu_id": 8100,
+    "en_lus": [
+        "splinter.v.15872"
+    ]
+}

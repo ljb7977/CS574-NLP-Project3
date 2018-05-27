@@ -1,0 +1,56 @@
+{
+    "frameName": "Sending",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84108",
+            "examples": [
+                {
+                    "frameName": "Sending",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "국회는 그 안건을 정부에 회부하기로 결정했다.",
+                    "target": "회부하기로",
+                    "ko_annotation_id": "sejong.84108",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.84109",
+            "examples": [
+                {
+                    "frameName": "Sending",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "상부에서는 명령에 불복종한 그를 군법 재판에 회부할 방침이라고 밝혔다.",
+                    "target": "회부할",
+                    "ko_annotation_id": "sejong.84109",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 243,
+    "ko_pos": "VV",
+    "ko_lu": "회부하다.v.Sending",
+    "lu_id": 8213,
+    "en_lus": [
+        "refer.v.17095"
+    ]
+}

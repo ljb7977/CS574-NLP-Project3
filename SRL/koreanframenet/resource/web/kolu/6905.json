@@ -1,0 +1,34 @@
+{
+    "frameName": "Change_of_phase",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84442",
+            "examples": [
+                {
+                    "frameName": "Change_of_phase",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 그 기체를 수증기로 응결시켰다.",
+                    "target": "응결시켰다",
+                    "ko_annotation_id": "sejong.84442",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 336,
+    "ko_pos": "VV",
+    "ko_lu": "응결시키다.v.Change_of_phase",
+    "lu_id": 6905,
+    "en_lus": [
+        "condense.v.5944"
+    ]
+}

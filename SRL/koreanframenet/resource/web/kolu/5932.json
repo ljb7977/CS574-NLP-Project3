@@ -1,0 +1,56 @@
+{
+    "frameName": "Communication_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75566",
+            "examples": [
+                {
+                    "frameName": "Communication_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "전폭기의 폭음이 고막을 울렸다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.75566",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75567",
+            "examples": [
+                {
+                    "frameName": "Communication_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그의 고함 소리가 내 귀청을 울렸다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.75567",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 39,
+    "ko_pos": "VV",
+    "ko_lu": "울리다.v.Communication_noise",
+    "lu_id": 5932,
+    "en_lus": [
+        "roar.v.601"
+    ]
+}

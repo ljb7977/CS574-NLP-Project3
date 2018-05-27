@@ -1,0 +1,34 @@
+{
+    "frameName": "Bungling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.92947",
+            "examples": [
+                {
+                    "frameName": "Bungling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그가 사업을 하면서 결국 우리 집안을 망쳤다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.92947",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 266,
+    "ko_pos": "VV",
+    "ko_lu": "망치다.v.Bungling",
+    "lu_id": 6683,
+    "en_lus": [
+        "fuck up.v.4856"
+    ]
+}

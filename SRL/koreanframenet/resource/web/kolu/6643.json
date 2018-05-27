@@ -1,0 +1,56 @@
+{
+    "frameName": "Abounding_with",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63306",
+            "examples": [
+                {
+                    "frameName": "Abounding_with",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "군사들은 진창길을 포복해 적의 참호 가까이까지 갔다.",
+                    "target": "포복해",
+                    "ko_annotation_id": "sejong.63306",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63307",
+            "examples": [
+                {
+                    "frameName": "Abounding_with",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 소총을 손에 쥔 채 십여 미터를 포복해 기어갔다.",
+                    "target": "포복해",
+                    "ko_annotation_id": "sejong.63307",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 262,
+    "ko_pos": "VV",
+    "ko_lu": "포복하다.v.Abounding_with",
+    "lu_id": 6643,
+    "en_lus": [
+        "crawl.v.4768"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Recovery",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.66641",
+            "examples": [
+                {
+                    "frameName": "Recovery",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "수술 후에도 그의 상태는 회복될 가능성이 없어 보였다.",
+                    "target": "회복될",
+                    "ko_annotation_id": "sejong.66641",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66642",
+            "examples": [
+                {
+                    "frameName": "Recovery",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "의식이 회복된 후 그는 아내를 찾기 시작했다.",
+                    "target": "회복된",
+                    "ko_annotation_id": "sejong.66642",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 51,
+    "ko_pos": "VV",
+    "ko_lu": "회복되다.v.Recovery",
+    "lu_id": 6046,
+    "en_lus": [
+        "recover.v.910"
+    ]
+}

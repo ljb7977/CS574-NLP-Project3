@@ -1,0 +1,56 @@
+{
+    "frameName": "Planting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.56795",
+            "examples": [
+                {
+                    "frameName": "Planting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "단풍나무가 화분에 심긴 모습은 처음 본다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.56795",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.56796",
+            "examples": [
+                {
+                    "frameName": "Planting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "난은 땅보다는 화분에 심겨야 한다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.56796",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2015,
+    "ko_pos": "VV",
+    "ko_lu": "심기다.v.Planting",
+    "lu_id": 7927,
+    "en_lus": [
+        "plant.v.14788"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Institutionalization",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79982",
+            "examples": [
+                {
+                    "frameName": "Institutionalization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "포로들은 일단 모두 감옥에 수용시켰다.",
+                    "target": "수용시켰다",
+                    "ko_annotation_id": "sejong.79982",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79983",
+            "examples": [
+                {
+                    "frameName": "Institutionalization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 31,
+                                "end": 36
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "제2차 세계대전 때 독일군은 수많은 유대인들을 가스실에 수용시켰다.",
+                    "target": "수용시켰다",
+                    "ko_annotation_id": "sejong.79983",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1620,
+    "ko_pos": "VV",
+    "ko_lu": "수용시키다.v.Institutionalization",
+    "lu_id": 7657,
+    "en_lus": [
+        "commit.v.12715"
+    ]
+}

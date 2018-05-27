@@ -1,0 +1,56 @@
+{
+    "frameName": "Success_or_failure",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61672",
+            "examples": [
+                {
+                    "frameName": "Success_or_failure",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "명령을 들은 강아지는 불타는 링을 뛰어넘는 임무를 해내었다.",
+                    "target": "해내었다",
+                    "ko_annotation_id": "sejong.61672",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61673",
+            "examples": [
+                {
+                    "frameName": "Success_or_failure",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "특전단은 대통령을 구출하는 임무를 무사히 해내었다.",
+                    "target": "해내었다",
+                    "ko_annotation_id": "sejong.61673",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1388,
+    "ko_pos": "VV",
+    "ko_lu": "해내다.v.Success_or_failure",
+    "lu_id": 7689,
+    "en_lus": [
+        "manage.v.12830"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Change_accessibility",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.64375",
+            "examples": [
+                {
+                    "frameName": "Change_accessibility",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정문 수위실에서는 외부 차량의 출입을 통제하였다.",
+                    "target": "통제하였다",
+                    "ko_annotation_id": "sejong.64375",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.64376",
+            "examples": [
+                {
+                    "frameName": "Change_accessibility",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선임병은 후임병의 행동을 통제하였다.",
+                    "target": "통제하였다",
+                    "ko_annotation_id": "sejong.64376",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2686,
+    "ko_pos": "VV",
+    "ko_lu": "통제하다.v.Change_accessibility",
+    "lu_id": 8188,
+    "en_lus": [
+        "cordon off.v.16820"
+    ]
+}

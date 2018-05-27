@@ -1,0 +1,34 @@
+{
+    "frameName": "Evidence",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48362",
+            "examples": [
+                {
+                    "frameName": "Evidence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 인문대쪽을 손가락으로 가리켰다.",
+                    "target": "가리켰다",
+                    "ko_annotation_id": "sejong.48362",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 25,
+    "ko_pos": "VV",
+    "ko_lu": "가리키다.v.Evidence",
+    "lu_id": 7803,
+    "en_lus": [
+        "point (to).v.13329"
+    ]
+}

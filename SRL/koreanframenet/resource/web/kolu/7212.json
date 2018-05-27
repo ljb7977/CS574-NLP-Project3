@@ -1,0 +1,56 @@
+{
+    "frameName": "Arranging",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54509",
+            "examples": [
+                {
+                    "frameName": "Arranging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사병들은 8열종대로 배열됐다.",
+                    "target": "배열됐다",
+                    "ko_annotation_id": "sejong.54509",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54510",
+            "examples": [
+                {
+                    "frameName": "Arranging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "돌들이 특이한 모양으로 배열되어 있다.",
+                    "target": "배열되어",
+                    "ko_annotation_id": "sejong.54510",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 921,
+    "ko_pos": "VV",
+    "ko_lu": "배열되다.v.Arranging",
+    "lu_id": 7212,
+    "en_lus": [
+        "arrange.v.9975"
+    ]
+}

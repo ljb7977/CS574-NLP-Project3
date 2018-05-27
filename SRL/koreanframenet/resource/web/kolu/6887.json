@@ -1,0 +1,56 @@
+{
+    "frameName": "Quitting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.64663",
+            "examples": [
+                {
+                    "frameName": "Quitting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 서류에 이름을 사인하지 않으면 무효입니다.",
+                    "target": "사인하지",
+                    "ko_annotation_id": "sejong.64663",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.64664",
+            "examples": [
+                {
+                    "frameName": "Quitting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 서류를 사인해주세요.",
+                    "target": "사인해주세요",
+                    "ko_annotation_id": "sejong.64664",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 325,
+    "ko_pos": "VV",
+    "ko_lu": "사인하다.v.Quitting",
+    "lu_id": 6887,
+    "en_lus": [
+        "resign.v.5790"
+    ]
+}

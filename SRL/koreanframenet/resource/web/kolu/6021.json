@@ -1,0 +1,78 @@
+{
+    "frameName": "Experiencer_obj",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.67646",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 그녀가 아이를 낳았다는 소식에 대해 놀라자빠졌다.",
+                    "target": "놀라자빠졌다",
+                    "ko_annotation_id": "sejong.67646",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67647",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "너가 그 문제를 해결했다니 놀라자빠지겠네.",
+                    "target": "놀라자빠지겠네",
+                    "ko_annotation_id": "sejong.67647",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67648",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 소식을 들으면 네 부모님은 놀라자빠지실꺼야.",
+                    "target": "놀라자빠지실꺼야",
+                    "ko_annotation_id": "sejong.67648",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 47,
+    "ko_pos": "VV",
+    "ko_lu": "놀라자빠지다.v.Experiencer_obj",
+    "lu_id": 6021,
+    "en_lus": [
+        "startle.v.846"
+    ]
+}

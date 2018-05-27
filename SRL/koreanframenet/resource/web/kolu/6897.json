@@ -1,0 +1,56 @@
+{
+    "frameName": "Firing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76772",
+            "examples": [
+                {
+                    "frameName": "Firing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이사회는 그녀를 학교에서 해직했다.",
+                    "target": "해직했다",
+                    "ko_annotation_id": "sejong.76772",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76773",
+            "examples": [
+                {
+                    "frameName": "Firing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 30,
+                                "end": 35
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "자금 사정이 악화되자 회사측은 우선 나이 든 직원들을 해직하기로 했다.",
+                    "target": "해직하기로",
+                    "ko_annotation_id": "sejong.76773",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 326,
+    "ko_pos": "VV",
+    "ko_lu": "해직하다.v.Firing",
+    "lu_id": 6897,
+    "en_lus": [
+        "fire.v.5798"
+    ]
+}

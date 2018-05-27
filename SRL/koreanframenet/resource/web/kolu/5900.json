@@ -1,0 +1,34 @@
+{
+    "frameName": "Commitment",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.64547",
+            "examples": [
+                {
+                    "frameName": "Commitment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 병사들에게 충성을 맹세시켰다.",
+                    "target": "맹세시켰다",
+                    "ko_annotation_id": "sejong.64547",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 33,
+    "ko_pos": "VV",
+    "ko_lu": "맹세시키다.v.Commitment",
+    "lu_id": 5900,
+    "en_lus": [
+        "swear.v.482"
+    ]
+}

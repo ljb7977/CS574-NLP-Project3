@@ -1,0 +1,11 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "신나게 돌아다니다.v.Self_motion",
+    "lu_id": 6186,
+    "en_lus": [
+        "gallivant.v.1174"
+    ]
+}

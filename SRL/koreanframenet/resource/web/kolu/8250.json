@@ -1,0 +1,232 @@
+{
+    "frameName": "Judgment_direct_address",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68320",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영희의 대학합격을 모두들 기뻐한다.",
+                    "target": "기뻐한다",
+                    "ko_annotation_id": "sejong.68320",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68321",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이들은 선물을 한아름씩 안고 몹시 기뻐하였다.",
+                    "target": "기뻐하였다",
+                    "ko_annotation_id": "sejong.68321",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68322",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 친구의 성공을 진심으로 기뻐하였다.",
+                    "target": "기뻐하였다",
+                    "ko_annotation_id": "sejong.68322",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68323",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "모두가 그 사건의 해결을 몹시 기뻐하였다.",
+                    "target": "기뻐하였다",
+                    "ko_annotation_id": "sejong.68323",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68324",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "모두가 사건이 잘 해결되었다고 몹시 기뻐했다.",
+                    "target": "기뻐했다",
+                    "ko_annotation_id": "sejong.68324",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68325",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영수는 고향 소식을 듣고 무척 기뻐하였다.",
+                    "target": "기뻐하였다",
+                    "ko_annotation_id": "sejong.68325",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68326",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그렇다면 엘리티즘이 사라진다고 과연 기뻐해야 하는가?",
+                    "target": "기뻐해야",
+                    "ko_annotation_id": "sejong.68326",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68327",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 부모님의 수술이 성공한 데에 대해 몹시 기뻐했다.",
+                    "target": "기뻐했다",
+                    "ko_annotation_id": "sejong.68327",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68328",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그렇게 남편과 아이들이 기뻐하도록 노력하지만 문득 집안 일이 덫처럼 느껴질 때도 있다.",
+                    "target": "기뻐하도록",
+                    "ko_annotation_id": "sejong.68328",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68329",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리들은 피로가 금방 사라진 표정으로 소리를 치며 기뻐했다.",
+                    "target": "기뻐했다",
+                    "ko_annotation_id": "sejong.68329",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 711,
+    "ko_pos": "VV",
+    "ko_lu": "기뻐하다.v.Judgment_direct_address",
+    "lu_id": 8250,
+    "en_lus": [
+        "congratulate.v.17267"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Traversing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.81985",
+            "examples": [
+                {
+                    "frameName": "Traversing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 기차에 올랐다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.81985",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.81986",
+            "examples": [
+                {
+                    "frameName": "Traversing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영희가 차에 오르자, 사람들은 일제히 환호성을 질렀다.",
+                    "target": "오르자,",
+                    "ko_annotation_id": "sejong.81986",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1310,
+    "ko_pos": "VV",
+    "ko_lu": "오르다.v.Traversing",
+    "lu_id": 7555,
+    "en_lus": [
+        "mount.v.11526"
+    ]
+}

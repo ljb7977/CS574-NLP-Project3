@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_be_wet",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.92975",
+            "examples": [
+                {
+                    "frameName": "Cause_to_be_wet",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 낙엽이 떨어지자 가을 분위기에 젖어들었다.",
+                    "target": "젖어들었다",
+                    "ko_annotation_id": "sejong.92975",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.92976",
+            "examples": [
+                {
+                    "frameName": "Cause_to_be_wet",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "거리가 온통 축제 분위기에 젖어드는 것 같다.",
+                    "target": "젖어드는",
+                    "ko_annotation_id": "sejong.92976",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 309,
+    "ko_pos": "VV",
+    "ko_lu": "젖어들다.v.Cause_to_be_wet",
+    "lu_id": 6841,
+    "en_lus": [
+        "drench.v.5602"
+    ]
+}

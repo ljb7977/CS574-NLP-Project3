@@ -1,0 +1,78 @@
+{
+    "frameName": "Giving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52404",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 그를 선생으로 대접했다.",
+                    "target": "대접했다",
+                    "ko_annotation_id": "sejong.52404",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52405",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그들은 나를 그들의 은인으로 대접했다",
+                    "target": "대접했",
+                    "ko_annotation_id": "sejong.52405",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52406",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 어른과 아이들을 모두 평등하게 대접했다.",
+                    "target": "대접했다",
+                    "ko_annotation_id": "sejong.52406",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 139,
+    "ko_pos": "VV",
+    "ko_lu": "대접하다.v.Giving",
+    "lu_id": 7047,
+    "en_lus": [
+        "treat.v.8033"
+    ]
+}

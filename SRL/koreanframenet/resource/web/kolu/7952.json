@@ -1,0 +1,56 @@
+{
+    "frameName": "Prevent_or_allow_possession",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.80983",
+            "examples": [
+                {
+                    "frameName": "Prevent_or_allow_possession",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 남자는 그녀에게서 전 재산을 빼앗았다.",
+                    "target": "빼앗았다",
+                    "ko_annotation_id": "sejong.80983",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80984",
+            "examples": [
+                {
+                    "frameName": "Prevent_or_allow_possession",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "남에게서 물건을 억지로 빼앗는 것은 범죄행위이다.",
+                    "target": "빼앗는",
+                    "ko_annotation_id": "sejong.80984",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2056,
+    "ko_pos": "VV",
+    "ko_lu": "빼앗다.v.Prevent_or_allow_possession",
+    "lu_id": 7952,
+    "en_lus": [
+        "deprive.v.14970"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "frameName": "Evoking",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68336",
+            "examples": [
+                {
+                    "frameName": "Evoking",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "누구나 과거를 돌이켜보면 많은 후회가 남게 마련이다.",
+                    "target": "돌이켜보면",
+                    "ko_annotation_id": "sejong.68336",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68337",
+            "examples": [
+                {
+                    "frameName": "Evoking",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 지난 삽십 여년의 세월을 돌이켜보며 감회에 잠겼다.",
+                    "target": "돌이켜보며",
+                    "ko_annotation_id": "sejong.68337",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68338",
+            "examples": [
+                {
+                    "frameName": "Evoking",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이제 와서 지난 날 내 행동에 대해서 돌이켜보니 부끄러움만 남습니다.",
+                    "target": "돌이켜보니",
+                    "ko_annotation_id": "sejong.68338",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1012,
+    "ko_pos": "VV",
+    "ko_lu": "돌이켜보다.v.Evoking",
+    "lu_id": 7268,
+    "en_lus": [
+        "remind.v.10192"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "frameName": "Tasting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.87009",
+            "examples": [
+                {
+                    "frameName": "Tasting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "진영이는 새로 개발한 요리를 맛보고는 매우 흡족해 했다.",
+                    "target": "맛보고는",
+                    "ko_annotation_id": "sejong.87009",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.87010",
+            "examples": [
+                {
+                    "frameName": "Tasting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "명호는 국을 맛보다가 혀를 데었다.",
+                    "target": "맛보다가",
+                    "ko_annotation_id": "sejong.87010",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.87011",
+            "examples": [
+                {
+                    "frameName": "Tasting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리집 김치를 맛보면 뭔가 다를걸.",
+                    "target": "맛보면",
+                    "ko_annotation_id": "sejong.87011",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2330,
+    "ko_pos": "VV",
+    "ko_lu": "맛보다.v.Tasting",
+    "lu_id": 8106,
+    "en_lus": [
+        "try.v.15910"
+    ]
+}

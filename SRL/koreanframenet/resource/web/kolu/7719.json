@@ -1,0 +1,56 @@
+{
+    "frameName": "Create_representation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.59102",
+            "examples": [
+                {
+                    "frameName": "Create_representation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기호는 바위에 칼로 이름을 크게 새겼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.59102",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.59103",
+            "examples": [
+                {
+                    "frameName": "Create_representation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 도장에 이름을 새로 새겼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.59103",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1657,
+    "ko_pos": "VV",
+    "ko_lu": "새기다.v.Create_representation",
+    "lu_id": 7719,
+    "en_lus": [
+        "carve.v.12959"
+    ]
+}

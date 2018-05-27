@@ -1,0 +1,56 @@
+{
+    "frameName": "Gathering_up",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.71478",
+            "examples": [
+                {
+                    "frameName": "Gathering_up",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "예비군이 소집되다.",
+                    "target": "소집되다",
+                    "ko_annotation_id": "sejong.71478",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.71479",
+            "examples": [
+                {
+                    "frameName": "Gathering_up",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "예산결산위원회가 소집되었다.",
+                    "target": "소집되었다",
+                    "ko_annotation_id": "sejong.71479",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 260,
+    "ko_pos": "VV",
+    "ko_lu": "소집되다.v.Gathering_up",
+    "lu_id": 6641,
+    "en_lus": [
+        "bring together.v.4752"
+    ]
+}

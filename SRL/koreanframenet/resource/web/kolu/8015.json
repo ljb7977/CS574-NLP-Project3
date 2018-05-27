@@ -1,0 +1,56 @@
+{
+    "frameName": "Duration_relation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74478",
+            "examples": [
+                {
+                    "frameName": "Duration_relation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "경기는 계속되었다.",
+                    "target": "계속되었다",
+                    "ko_annotation_id": "sejong.74478",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74479",
+            "examples": [
+                {
+                    "frameName": "Duration_relation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "전쟁이 계속되었다.",
+                    "target": "계속되었다",
+                    "ko_annotation_id": "sejong.74479",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2121,
+    "ko_pos": "VV",
+    "ko_lu": "계속되다.v.Duration_relation",
+    "lu_id": 8015,
+    "en_lus": [
+        "last.v.15261"
+    ]
+}

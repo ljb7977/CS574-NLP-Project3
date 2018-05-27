@@ -1,0 +1,11 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "또박또박 걷다.v.Self_motion",
+    "lu_id": 6196,
+    "en_lus": [
+        "mince.v.1195"
+    ]
+}

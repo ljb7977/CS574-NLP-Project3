@@ -1,0 +1,56 @@
+{
+    "frameName": "Motion_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76005",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사내가 문을 쿵쾅대며 두들겼다.",
+                    "target": "쿵쾅대며",
+                    "ko_annotation_id": "sejong.76005",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76006",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이들이 신나서 북을 쿵쾅댔다.",
+                    "target": "쿵쾅댔다",
+                    "ko_annotation_id": "sejong.76006",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 60,
+    "ko_pos": "VV",
+    "ko_lu": "쿵쾅대다.v.Motion_noise",
+    "lu_id": 6099,
+    "en_lus": [
+        "clump.v.1026"
+    ]
+}

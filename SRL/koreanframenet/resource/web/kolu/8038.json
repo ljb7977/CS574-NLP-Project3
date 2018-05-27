@@ -1,0 +1,78 @@
+{
+    "frameName": "Fall_asleep",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.91425",
+            "examples": [
+                {
+                    "frameName": "Fall_asleep",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "김 여사는 그 소식에 기절했다.",
+                    "target": "기절했다",
+                    "ko_annotation_id": "sejong.91425",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91426",
+            "examples": [
+                {
+                    "frameName": "Fall_asleep",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "서울에 갔더니 기절할 정도로 자동차가 많더라.",
+                    "target": "기절할",
+                    "ko_annotation_id": "sejong.91426",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91427",
+            "examples": [
+                {
+                    "frameName": "Fall_asleep",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 자동차사고로 기절할 뻔했다.",
+                    "target": "기절할",
+                    "ko_annotation_id": "sejong.91427",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 292,
+    "ko_pos": "VV",
+    "ko_lu": "기절하다.v.Fall_asleep",
+    "lu_id": 8038,
+    "en_lus": [
+        "faint.v.15499"
+    ]
+}

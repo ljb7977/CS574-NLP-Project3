@@ -1,0 +1,66 @@
+{
+    "frameName": "Activity_ongoing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20238",
+            "examples": [
+                {
+                    "frameName": "Activity_ongoing",
+                    "denotations": [
+                        {
+                            "obj": "agent",
+                            "span": {
+                                "begin": 0,
+                                "end": 11
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "activity",
+                            "span": {
+                                "begin": 13,
+                                "end": 92
+                            },
+                            "id": "3"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 39,
+                                "end": 42
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "continue",
+                        "continues"
+                    ],
+                    "ko_annotation_id": 20238,
+                    "text": "시리아의 핵 프로그램은 국제적인 협조를 기반으로 민간인의 핵 연구에만 지속적으로 초점을 맞추고, 핵 전력 프로그램에 대해 계속되는 국내의 열망을 지원하기 위해 착수된 것 같다.",
+                    "sent_id": 3064,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "3",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 15941
+                }
+            ]
+        }
+    ],
+    "frameID": 164,
+    "ko_pos": "NN",
+    "ko_lu": "지속적.n.Activity_ongoing",
+    "lu_id": 5737,
+    "en_lus": [
+        "continue"
+    ]
+}

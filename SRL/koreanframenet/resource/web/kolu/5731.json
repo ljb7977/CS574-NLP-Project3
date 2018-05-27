@@ -1,0 +1,44 @@
+{
+    "frameName": "Locale_by_use",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20227",
+            "examples": [
+                {
+                    "frameName": "Locale_by_use",
+                    "denotations": [
+                        {
+                            "obj": "Locale",
+                            "span": {
+                                "begin": 10,
+                                "end": 12
+                            }
+                        },
+                        {
+                            "obj": "Target",
+                            "span": {
+                                "begin": 10,
+                                "end": 12
+                            }
+                        }
+                    ],
+                    "origin_lus": [
+                        "honbu .本部 "
+                    ],
+                    "ko_annotation_id": 20227,
+                    "text": "그것은, 무엇이든 본부가 관리하는 집권적 관리운영에 대한 반성 때문에, 분권관리와 함께 사업소 독립회계제도가 강조되었습니다.",
+                    "sent_id": 4357,
+                    "relations": [],
+                    "annotation_id": 0
+                }
+            ]
+        }
+    ],
+    "frameID": 196,
+    "ko_pos": "NNG",
+    "ko_lu": "본부.n.Locale_by_use",
+    "lu_id": 5731,
+    "en_lus": [
+        "honbu .本部 "
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Catching_fire",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63502",
+            "examples": [
+                {
+                    "frameName": "Catching_fire",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "너는 그 건달이 합격했다는 말에 의심이 안 나니?",
+                    "target": "나니",
+                    "ko_annotation_id": "sejong.63502",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63503",
+            "examples": [
+                {
+                    "frameName": "Catching_fire",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 0,
+                                "end": 2
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 정부 발표에 의심이 났다.",
+                    "target": "나는",
+                    "ko_annotation_id": "sejong.63503",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2827,
+    "ko_pos": "VV",
+    "ko_lu": "나다.v.Catching_fire",
+    "lu_id": 8279,
+    "en_lus": [
+        "break out.v.17461"
+    ]
+}

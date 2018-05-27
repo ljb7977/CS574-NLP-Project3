@@ -1,0 +1,56 @@
+{
+    "frameName": "Impact",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.92215",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "마차가 덜거덕거린다.",
+                    "target": "덜거덕거린다",
+                    "ko_annotation_id": "sejong.92215",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.92216",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "도시락 통 속에서 숫가락이 덜거덕거린다.",
+                    "target": "덜거덕거린다",
+                    "ko_annotation_id": "sejong.92216",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 311,
+    "ko_pos": "VV",
+    "ko_lu": "덜거덕거리다.v.Impact",
+    "lu_id": 7162,
+    "en_lus": [
+        "rattle.v.9782"
+    ]
+}

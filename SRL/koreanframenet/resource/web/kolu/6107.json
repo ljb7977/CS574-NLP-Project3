@@ -1,0 +1,78 @@
+{
+    "frameName": "Motion_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63292",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나뭇잎에 바람에 서걱거렸다.",
+                    "target": "서걱거렸다",
+                    "ko_annotation_id": "sejong.63292",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63293",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "몸을 뒤척일 때마다 빳빳하게 풀 먹인 이불이 서걱거렸다.",
+                    "target": "서걱거렸다",
+                    "ko_annotation_id": "sejong.63293",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63294",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "바람이 불자 갈대가 서걱거렸다.",
+                    "target": "서걱거렸다",
+                    "ko_annotation_id": "sejong.63294",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 60,
+    "ko_pos": "VV",
+    "ko_lu": "서걱거리다.v.Motion_noise",
+    "lu_id": 6107,
+    "en_lus": [
+        "crunch.v.1031"
+    ]
+}

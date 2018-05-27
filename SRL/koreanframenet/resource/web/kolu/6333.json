@@ -1,0 +1,56 @@
+{
+    "frameName": "Change_of_leadership",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57738",
+            "examples": [
+                {
+                    "frameName": "Change_of_leadership",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "강한 파도에 배가 전복하고 말았다.",
+                    "target": "전복하고",
+                    "ko_annotation_id": "sejong.57738",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57739",
+            "examples": [
+                {
+                    "frameName": "Change_of_leadership",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "빗길 커브에서 버스가 전복하는 사고가 발생했다.",
+                    "target": "전복하는",
+                    "ko_annotation_id": "sejong.57739",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 72,
+    "ko_pos": "VV",
+    "ko_lu": "전복하다.v.Change_of_leadership",
+    "lu_id": 6333,
+    "en_lus": [
+        "overthrow.v.1568"
+    ]
+}

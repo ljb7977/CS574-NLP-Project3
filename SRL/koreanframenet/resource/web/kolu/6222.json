@@ -1,0 +1,11 @@
+{
+    "frameName": "Operate_vehicle",
+    "patterns": [],
+    "frameID": 65,
+    "ko_pos": "VV",
+    "ko_lu": "팽창시키다.v.Operate_vehicle",
+    "lu_id": 6222,
+    "en_lus": [
+        "balloon.v.1265"
+    ]
+}

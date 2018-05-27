@@ -1,0 +1,56 @@
+{
+    "frameName": "Perception_body",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.53569",
+            "examples": [
+                {
+                    "frameName": "Perception_body",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "얼굴이 자꾸 따끔거렸다.",
+                    "target": "따끔거렸다",
+                    "ko_annotation_id": "sejong.53569",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.53570",
+            "examples": [
+                {
+                    "frameName": "Perception_body",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "난 그 때 벌에 쏘인 자리가 따끔거려 죽겠어.",
+                    "target": "따끔거려",
+                    "ko_annotation_id": "sejong.53570",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 68,
+    "ko_pos": "VV",
+    "ko_lu": "따끔거리다.v.Perception_body",
+    "lu_id": 6254,
+    "en_lus": [
+        "smart.v.1335"
+    ]
+}

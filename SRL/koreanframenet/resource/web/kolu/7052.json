@@ -1,0 +1,34 @@
+{
+    "frameName": "Thwarting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54556",
+            "examples": [
+                {
+                    "frameName": "Thwarting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "큰 눈이 내려 경부선 열차가 곡선 구간에서 탈선해 버렸다.",
+                    "target": "탈선해",
+                    "ko_annotation_id": "sejong.54556",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 518,
+    "ko_pos": "VV",
+    "ko_lu": "탈선하다.v.Thwarting",
+    "lu_id": 7052,
+    "en_lus": [
+        "derail.v.8102"
+    ]
+}

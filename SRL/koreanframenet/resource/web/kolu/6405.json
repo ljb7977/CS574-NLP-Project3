@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_harm",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.56516",
+            "examples": [
+                {
+                    "frameName": "Cause_harm",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아버지에게 맞은 다리가 시퍼렇게 멍들었다.",
+                    "target": "멍들었다",
+                    "ko_annotation_id": "sejong.56516",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.56517",
+            "examples": [
+                {
+                    "frameName": "Cause_harm",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그의 눈이 웬일인지 오늘 시퍼렇게 멍들어 있다.",
+                    "target": "멍들어",
+                    "ko_annotation_id": "sejong.56517",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 112,
+    "ko_pos": "VV",
+    "ko_lu": "멍들다.v.Cause_harm",
+    "lu_id": 6405,
+    "en_lus": [
+        "bruise.v.2352"
+    ]
+}

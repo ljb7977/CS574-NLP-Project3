@@ -1,0 +1,56 @@
+{
+    "frameName": "Origin",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79980",
+            "examples": [
+                {
+                    "frameName": "Origin",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 언어는 원시 게르만어에서 유래했다.",
+                    "target": "유래했다",
+                    "ko_annotation_id": "sejong.79980",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79981",
+            "examples": [
+                {
+                    "frameName": "Origin",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "판소리는 서사 무가에서 유래했을 것이라고 추측된다.",
+                    "target": "유래했을",
+                    "ko_annotation_id": "sejong.79981",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1103,
+    "ko_pos": "VV",
+    "ko_lu": "유래하다.v.Origin",
+    "lu_id": 8174,
+    "en_lus": [
+        "come from.v.16669"
+    ]
+}

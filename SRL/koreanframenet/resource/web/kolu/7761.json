@@ -1,0 +1,56 @@
+{
+    "frameName": "Required_event",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75154",
+            "examples": [
+                {
+                    "frameName": "Required_event",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "3반 학생들이 제일 마지막으로 산꼭대기에 도달했다.",
+                    "target": "도달했다",
+                    "ko_annotation_id": "sejong.75154",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75155",
+            "examples": [
+                {
+                    "frameName": "Required_event",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "올해 하버지는 에베레스트산에 도달하실 것이다.",
+                    "target": "도달하실",
+                    "ko_annotation_id": "sejong.75155",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1381,
+    "ko_pos": "VV",
+    "ko_lu": "도달하다.v.Required_event",
+    "lu_id": 7761,
+    "en_lus": [
+        "got to.v.13052"
+    ]
+}

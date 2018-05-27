@@ -1,0 +1,56 @@
+{
+    "frameName": "Coming_to_believe",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79263",
+            "examples": [
+                {
+                    "frameName": "Coming_to_believe",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 48,
+                                "end": 52
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 그녀가 아이들에게 설명을 잘 해주는 것으로 보아 그 여자의 직업을 유치원교사로 짐작했다.",
+                    "target": "짐작했다",
+                    "ko_annotation_id": "sejong.79263",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79264",
+            "examples": [
+                {
+                    "frameName": "Coming_to_believe",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아빠는 그 남자의 이야기를 듣고 그를 사기꾼으로 짐작하셨다.",
+                    "target": "짐작하셨다",
+                    "ko_annotation_id": "sejong.79264",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 23,
+    "ko_pos": "VV",
+    "ko_lu": "짐작하다.v.Coming_to_believe",
+    "lu_id": 7863,
+    "en_lus": [
+        "speculate.v.13780"
+    ]
+}

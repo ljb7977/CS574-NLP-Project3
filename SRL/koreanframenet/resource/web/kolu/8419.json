@@ -1,0 +1,56 @@
+{
+    "frameName": "Feigning",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84152",
+            "examples": [
+                {
+                    "frameName": "Feigning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "악덕업주가 비서에게 경리 기록을 날조시켜서 불로소득을 챙겼다.",
+                    "target": "날조시켜서",
+                    "ko_annotation_id": "sejong.84152",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.84153",
+            "examples": [
+                {
+                    "frameName": "Feigning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "돈을 챙긴 기자가 그에게 사건 기록을 날조시켜 허위사실을 유포하였다.",
+                    "target": "날조시켜",
+                    "ko_annotation_id": "sejong.84153",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 12,
+    "ko_pos": "VV",
+    "ko_lu": "날조시키다.v.Feigning",
+    "lu_id": 8419,
+    "en_lus": [
+        "counterfeit.v.21"
+    ]
+}

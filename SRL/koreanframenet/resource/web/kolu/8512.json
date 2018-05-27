@@ -1,0 +1,11 @@
+{
+    "frameName": "Posture",
+    "patterns": [],
+    "frameID": 18,
+    "ko_pos": "VV",
+    "ko_lu": "굴절하다.v.Posture",
+    "lu_id": 8512,
+    "en_lus": [
+        "bend.v.130"
+    ]
+}

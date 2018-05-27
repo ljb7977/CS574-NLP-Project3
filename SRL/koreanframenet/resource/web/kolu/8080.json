@@ -1,0 +1,56 @@
+{
+    "frameName": "Robbery",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48371",
+            "examples": [
+                {
+                    "frameName": "Robbery",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이는 어머니 지갑에서 돈을 훔쳐 게임방으로 갔다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48371",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48372",
+            "examples": [
+                {
+                    "frameName": "Robbery",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한 소매치기가 길 가던 행인에게서 가방을 훔치다 적발되었다.",
+                    "target": "훔치다",
+                    "ko_annotation_id": "sejong.48372",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 99,
+    "ko_pos": "VV",
+    "ko_lu": "훔치다.v.Robbery",
+    "lu_id": 8080,
+    "en_lus": [
+        "rifle.v.15670"
+    ]
+}

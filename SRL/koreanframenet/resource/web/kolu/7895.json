@@ -1,0 +1,56 @@
+{
+    "frameName": "Residence",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.85767",
+            "examples": [
+                {
+                    "frameName": "Residence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리 부대는 어제 습지에서 야영했다.",
+                    "target": "야영했다",
+                    "ko_annotation_id": "sejong.85767",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.85768",
+            "examples": [
+                {
+                    "frameName": "Residence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "보이스카웃은 어디에서나 야영한다.",
+                    "target": "야영한다",
+                    "ko_annotation_id": "sejong.85768",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 110,
+    "ko_pos": "VV",
+    "ko_lu": "야영하다.v.Residence",
+    "lu_id": 7895,
+    "en_lus": [
+        "bivouac.v.14241"
+    ]
+}

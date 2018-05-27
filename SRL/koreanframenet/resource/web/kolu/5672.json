@@ -1,0 +1,81 @@
+{
+    "frameName": "Existence",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 19996",
+            "examples": [
+                {
+                    "frameName": "Existence",
+                    "denotations": [
+                        {
+                            "obj": "Target",
+                            "span": {
+                                "begin": "42",
+                                "end": "43"
+                            }
+                        }
+                    ],
+                    "origin_lus": [
+                        "zan .残 "
+                    ],
+                    "ko_annotation_id": 19996,
+                    "text": "과제는, 기존의 상품진열에서, 단품별 입(발주 보충수.) ・출(판매수.) ・잔(재고수.)을 파악해, 적절하게 진열 위치를 바꾸고, 팔릴 때 팔릴만한 재고를 유지할 수 있는가이다.",
+                    "sent_id": 4550,
+                    "relations": [],
+                    "annotation_id": 0
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.7709",
+            "examples": [
+                {
+                    "frameName": "Existence",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 3,
+                                "end": 4
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "text": "그는 잔에 물을 가득 따라 마셨다.",
+                    "target": "잔",
+                    "ko_annotation_id": "sejong.7709",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.7710",
+            "examples": [
+                {
+                    "frameName": "Existence",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 4,
+                                "end": 5
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "text": "실수로 잔을 깨뜨렸다.",
+                    "target": "잔",
+                    "ko_annotation_id": "sejong.7710",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 660,
+    "ko_pos": "NNP",
+    "ko_lu": "잔.n.Existence",
+    "lu_id": 5672,
+    "en_lus": [
+        "zan .残 "
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Removing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63354",
+            "examples": [
+                {
+                    "frameName": "Removing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "미군은 후세인 정권 당시 고위관리들의 재산을 몰수하였다.",
+                    "target": "몰수하였다",
+                    "ko_annotation_id": "sejong.63354",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63355",
+            "examples": [
+                {
+                    "frameName": "Removing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정부는 비리 의원들의 재산을 조사 몰수하였다.",
+                    "target": "몰수하였다",
+                    "ko_annotation_id": "sejong.63355",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 63,
+    "ko_pos": "VV",
+    "ko_lu": "몰수하다.v.Removing",
+    "lu_id": 6166,
+    "en_lus": [
+        "confiscate.v.1119"
+    ]
+}

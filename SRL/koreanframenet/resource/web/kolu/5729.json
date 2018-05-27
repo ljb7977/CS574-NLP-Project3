@@ -1,0 +1,52 @@
+{
+    "frameName": "Clothing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20222",
+            "examples": [
+                {
+                    "frameName": "Clothing",
+                    "denotations": [
+                        {
+                            "obj": "use",
+                            "span": {
+                                "begin": 108,
+                                "end": 111
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 108,
+                                "end": 111
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "clothing"
+                    ],
+                    "ko_annotation_id": 20222,
+                    "text": "생물 무기 작용제와 치사 독성 화학물질의 연구, 생산 및 시험을 위한 주요 시설은 Pretoria 북쪽에 위치한 Roodeplaat  연구 실험소라 불리는 군의 표면상 회사였고, 다른 시설들은 보호복의 개발과 신형의 암살 장치 제조를 위해 설립되었다.",
+                    "sent_id": 3033,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 15694
+                }
+            ]
+        }
+    ],
+    "frameID": 134,
+    "ko_pos": "NN",
+    "ko_lu": "보호복.n.Clothing",
+    "lu_id": 5729,
+    "en_lus": [
+        "clothing"
+    ]
+}

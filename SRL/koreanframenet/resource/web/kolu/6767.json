@@ -1,0 +1,78 @@
+{
+    "frameName": "Emotion_active",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.51877",
+            "examples": [
+                {
+                    "frameName": "Emotion_active",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어머니는 딸에 대해 염려하는 마음에 안절부절 하셨다.",
+                    "target": "염려하는",
+                    "ko_annotation_id": "sejong.51877",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.51878",
+            "examples": [
+                {
+                    "frameName": "Emotion_active",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이번 주일 시험 칠 것을 염려하여 잠도 제대로 자지 못했다.",
+                    "target": "염려하여",
+                    "ko_annotation_id": "sejong.51878",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.51879",
+            "examples": [
+                {
+                    "frameName": "Emotion_active",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어머니는 딸이 나쁜 길에 빠질 것을 염려하여 안절부절 하셨다.",
+                    "target": "염려하여",
+                    "ko_annotation_id": "sejong.51879",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 45,
+    "ko_pos": "VV",
+    "ko_lu": "염려하다.v.Emotion_active",
+    "lu_id": 6767,
+    "en_lus": [
+        "lose sleep.v.5340"
+    ]
+}

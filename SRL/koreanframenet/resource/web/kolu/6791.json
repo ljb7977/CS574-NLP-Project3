@@ -1,0 +1,56 @@
+{
+    "frameName": "Giving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.78636",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 비법은 아들에게도 전수시킬 수 없을 정도로 귀중한 것이다.",
+                    "target": "전수시킬",
+                    "ko_annotation_id": "sejong.78636",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.78637",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 기능을 전수시킬 사람이 없으니 큰일이다.",
+                    "target": "전수시킬",
+                    "ko_annotation_id": "sejong.78637",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 139,
+    "ko_pos": "VV",
+    "ko_lu": "전수시키다.v.Giving",
+    "lu_id": 6791,
+    "en_lus": [
+        "hand over.v.5369"
+    ]
+}

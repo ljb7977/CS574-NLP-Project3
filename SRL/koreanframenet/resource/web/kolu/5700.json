@@ -1,0 +1,52 @@
+{
+    "frameName": "Increment",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20091",
+            "examples": [
+                {
+                    "frameName": "Increment",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 79,
+                                "end": 82
+                            },
+                            "id": "1"
+                        },
+                        {
+                            "obj": "class",
+                            "span": {
+                                "begin": 85,
+                                "end": 96
+                            },
+                            "id": "2"
+                        }
+                    ],
+                    "origin_lus": [
+                        "additional"
+                    ],
+                    "ko_annotation_id": 20091,
+                    "text": "또한 1989 년에, 인도의 국가무역회사는 60 톤 이상의 염화오닐 ( 신경 작용제 전구물질 ) 을 이란에 판매하였고 이것의 보급자는 이란에 추가적으로 257 톤의 화학물질을 선적할 계획이었다는 것을 시인하였다.",
+                    "sent_id": 2246,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 11247
+                }
+            ]
+        }
+    ],
+    "frameID": 1001,
+    "ko_pos": "NN",
+    "ko_lu": "추가적.n.Increment",
+    "lu_id": 5700,
+    "en_lus": [
+        "additional"
+    ]
+}

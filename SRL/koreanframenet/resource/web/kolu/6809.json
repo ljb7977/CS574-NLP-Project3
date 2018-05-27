@@ -1,0 +1,56 @@
+{
+    "frameName": "Excreting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65103",
+            "examples": [
+                {
+                    "frameName": "Excreting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 0,
+                                "end": 4
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "땀흘리는 말을 본 적이 있니?",
+                    "target": "땀흘리는",
+                    "ko_annotation_id": "sejong.65103",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65104",
+            "examples": [
+                {
+                    "frameName": "Excreting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 0,
+                                "end": 4
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "땀흘리는 청년의 얼굴이 바로 우리의 미래이다.",
+                    "target": "땀흘리는",
+                    "ko_annotation_id": "sejong.65104",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 270,
+    "ko_pos": "VV",
+    "ko_lu": "땀흘리다.v.Excreting",
+    "lu_id": 6809,
+    "en_lus": [
+        "sweat.v.5452"
+    ]
+}

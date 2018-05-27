@@ -1,0 +1,78 @@
+{
+    "frameName": "Giving_in",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75258",
+            "examples": [
+                {
+                    "frameName": "Giving_in",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "일본은 연합국에 항복했다.",
+                    "target": "항복했다",
+                    "ko_annotation_id": "sejong.75258",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75259",
+            "examples": [
+                {
+                    "frameName": "Giving_in",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "패잔병들이 무기를 버리고 아군에 항복했다.",
+                    "target": "항복했다",
+                    "ko_annotation_id": "sejong.75259",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75260",
+            "examples": [
+                {
+                    "frameName": "Giving_in",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아군은 적에게 항복하는 것을 거부했다.",
+                    "target": "항복하는",
+                    "ko_annotation_id": "sejong.75260",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1497,
+    "ko_pos": "VV",
+    "ko_lu": "항복하다.v.Giving_in",
+    "lu_id": 8358,
+    "en_lus": [
+        "cave.v.18443"
+    ]
+}

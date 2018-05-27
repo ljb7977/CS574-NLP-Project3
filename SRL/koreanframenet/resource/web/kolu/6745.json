@@ -1,0 +1,56 @@
+{
+    "frameName": "Silencing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90925",
+            "examples": [
+                {
+                    "frameName": "Silencing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 33,
+                                "end": 37
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대종상의 남우주연상의 수상자가 발표되는 순간 장내는 모두들 숨죽이고 발표자의 입을 주시하고 있었다.",
+                    "target": "숨죽이고",
+                    "ko_annotation_id": "sejong.90925",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.90926",
+            "examples": [
+                {
+                    "frameName": "Silencing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "강아지가 새끼를 낳는 순간 우리 가족들은 숨죽이고 새로운 생명의 탄생을 지켜보았다.",
+                    "target": "숨죽이고",
+                    "ko_annotation_id": "sejong.90926",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 285,
+    "ko_pos": "VV",
+    "ko_lu": "숨죽이다.v.Silencing",
+    "lu_id": 6745,
+    "en_lus": [
+        "quiet.v.5248"
+    ]
+}

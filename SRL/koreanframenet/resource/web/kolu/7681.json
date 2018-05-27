@@ -1,0 +1,56 @@
+{
+    "frameName": "Board_vehicle",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76654",
+            "examples": [
+                {
+                    "frameName": "Board_vehicle",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "파리행 비행기에 탑승하실 승객께서는 10번 탑승구로 나오시기 바랍니다.",
+                    "target": "탑승하실",
+                    "ko_annotation_id": "sejong.76654",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76655",
+            "examples": [
+                {
+                    "frameName": "Board_vehicle",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리나라 최초의 우주비행사가 드디어 우주왕복선에 탑승했다.",
+                    "target": "탑승했다",
+                    "ko_annotation_id": "sejong.76655",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1633,
+    "ko_pos": "VV",
+    "ko_lu": "탑승하다.v.Board_vehicle",
+    "lu_id": 7681,
+    "en_lus": [
+        "board.v.12807"
+    ]
+}

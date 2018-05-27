@@ -1,0 +1,56 @@
+{
+    "frameName": "Change_posture",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48607",
+            "examples": [
+                {
+                    "frameName": "Change_posture",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 6
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "손이 굽어서 연필잡기도 어렵다.",
+                    "target": "굽어서",
+                    "ko_annotation_id": "sejong.48607",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48608",
+            "examples": [
+                {
+                    "frameName": "Change_posture",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "할아버지는 등이 굽으셔서 걷기 힘드시다.",
+                    "target": "굽으셔서",
+                    "ko_annotation_id": "sejong.48608",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 770,
+    "ko_pos": "VV",
+    "ko_lu": "굽다.v.Change_posture",
+    "lu_id": 7145,
+    "en_lus": [
+        "hunch up.v.9722"
+    ]
+}

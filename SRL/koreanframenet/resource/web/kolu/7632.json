@@ -1,0 +1,56 @@
+{
+    "frameName": "Reforming_a_system",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.91138",
+            "examples": [
+                {
+                    "frameName": "Reforming_a_system",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 38,
+                                "end": 44
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 무용기본은 장족춤의 운율을 바탕으로 하여 가장 초보적인 동작들로 재구성되었다.",
+                    "target": "재구성되었다",
+                    "ko_annotation_id": "sejong.91138",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91139",
+            "examples": [
+                {
+                    "frameName": "Reforming_a_system",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 37,
+                                "end": 43
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 시리즈만은 예외로 괴물의 특성만 남겨두고 스토리는 완전히 새로 재구성되었다.",
+                    "target": "재구성되었다",
+                    "ko_annotation_id": "sejong.91139",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1571,
+    "ko_pos": "VV",
+    "ko_lu": "재구성되다.v.Reforming_a_system",
+    "lu_id": 7632,
+    "en_lus": [
+        "restructure.v.12553"
+    ]
+}

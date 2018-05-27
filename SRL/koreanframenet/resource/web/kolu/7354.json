@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_end",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.73332",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "저희 회사는 여름방학 중에 마무리지어야 할 중요한 사업이 아직 남아있습니다.",
+                    "target": "마무리지어야",
+                    "ko_annotation_id": "sejong.73332",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.73333",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이번 달 안에 나는 쓰고 있는 소설을 마무리지어야 한다.",
+                    "target": "마무리지어야",
+                    "ko_annotation_id": "sejong.73333",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1149,
+    "ko_pos": "VV",
+    "ko_lu": "마무리짓다.v.Cause_to_end",
+    "lu_id": 7354,
+    "en_lus": [
+        "end.v.10680"
+    ]
+}

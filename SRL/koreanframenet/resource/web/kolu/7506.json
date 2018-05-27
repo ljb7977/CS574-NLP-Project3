@@ -1,0 +1,56 @@
+{
+    "frameName": "Behind_the_scenes",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.67060",
+            "examples": [
+                {
+                    "frameName": "Behind_the_scenes",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 노래는 돌아가신 어머님을 위하여 작곡되었다.",
+                    "target": "작곡되었다",
+                    "ko_annotation_id": "sejong.67060",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67061",
+            "examples": [
+                {
+                    "frameName": "Behind_the_scenes",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 곡은 단시일에 작곡되었다.",
+                    "target": "작곡되었다",
+                    "ko_annotation_id": "sejong.67061",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 409,
+    "ko_pos": "VV",
+    "ko_lu": "작곡되다.v.Behind_the_scenes",
+    "lu_id": 7506,
+    "en_lus": [
+        "compose.v.11106"
+    ]
+}

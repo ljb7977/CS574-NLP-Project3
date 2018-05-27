@@ -1,0 +1,34 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68487",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여자들은 머리를 찰랑거리면 기분이 좋아진다고 한다.",
+                    "target": "찰랑거리면",
+                    "ko_annotation_id": "sejong.68487",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "찰랑거리다.v.Self_motion",
+    "lu_id": 6517,
+    "en_lus": [
+        "slosh.v.3921"
+    ]
+}

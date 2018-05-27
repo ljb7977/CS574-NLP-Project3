@@ -1,0 +1,56 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52822",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "비가 와서 땅이 온통 철벅거렸다.",
+                    "target": "철벅거렸다",
+                    "ko_annotation_id": "sejong.52822",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52823",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "얕은 내를 건너자 냇물이 철벅거렸다.",
+                    "target": "철벅거렸다",
+                    "ko_annotation_id": "sejong.52823",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "철벅거리다.v.Self_motion",
+    "lu_id": 6516,
+    "en_lus": [
+        "slosh.v.3921"
+    ]
+}

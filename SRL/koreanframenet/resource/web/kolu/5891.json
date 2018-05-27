@@ -1,0 +1,78 @@
+{
+    "frameName": "Judgment",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69345",
+            "examples": [
+                {
+                    "frameName": "Judgment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "놀부는 가난한 동생 흥부를 업신여겼다.",
+                    "target": "업신여겼다",
+                    "ko_annotation_id": "sejong.69345",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69346",
+            "examples": [
+                {
+                    "frameName": "Judgment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "서울 아이들은 내가 시골 출신이라고 업신여겼다.",
+                    "target": "업신여겼다",
+                    "ko_annotation_id": "sejong.69346",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69347",
+            "examples": [
+                {
+                    "frameName": "Judgment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "서울 아이들은 나를 시골 출신이라고 업신여겼다.",
+                    "target": "업신여겼다",
+                    "ko_annotation_id": "sejong.69347",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 28,
+    "ko_pos": "VV",
+    "ko_lu": "업신여기다.v.Judgment",
+    "lu_id": 5891,
+    "en_lus": [
+        "disdain.v.330"
+    ]
+}

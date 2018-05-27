@@ -1,0 +1,78 @@
+{
+    "frameName": "Cause_to_amalgamate",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49228",
+            "examples": [
+                {
+                    "frameName": "Cause_to_amalgamate",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "두 사람이 서로 잘 융합되었다.",
+                    "target": "융합되었다",
+                    "ko_annotation_id": "sejong.49228",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49229",
+            "examples": [
+                {
+                    "frameName": "Cause_to_amalgamate",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수가 그 사람들과 서로 잘 융합된다.",
+                    "target": "융합된다",
+                    "ko_annotation_id": "sejong.49229",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49230",
+            "examples": [
+                {
+                    "frameName": "Cause_to_amalgamate",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수가 팀에 잘 융합되었다.",
+                    "target": "융합되었다",
+                    "ko_annotation_id": "sejong.49230",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 13,
+    "ko_pos": "VV",
+    "ko_lu": "융합되다.v.Cause_to_amalgamate",
+    "lu_id": 5788,
+    "en_lus": [
+        "combine.v.39"
+    ]
+}

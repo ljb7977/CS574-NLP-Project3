@@ -1,0 +1,56 @@
+{
+    "frameName": "Experiencer_obj",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.78366",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 33
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "김교수는 시험 중에 벌어진 학생들의 부도덕한 행위에 격노했다.",
+                    "target": "격노했다",
+                    "ko_annotation_id": "sejong.78366",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.78367",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "야당의 날치기 통과에 대해 격노한 야당은 어떠한 협상도 거부했다.",
+                    "target": "격노한",
+                    "ko_annotation_id": "sejong.78367",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 47,
+    "ko_pos": "VV",
+    "ko_lu": "격노하다.v.Experiencer_obj",
+    "lu_id": 7591,
+    "en_lus": [
+        "outrage.v.11972"
+    ]
+}

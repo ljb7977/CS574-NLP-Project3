@@ -1,0 +1,34 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.50591",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "새의 작은 날개가 파닥댄다.",
+                    "target": "파닥댄다",
+                    "ko_annotation_id": "sejong.50591",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "파닥대다.v.Body_movement",
+    "lu_id": 5818,
+    "en_lus": [
+        "flap.v.75"
+    ]
+}

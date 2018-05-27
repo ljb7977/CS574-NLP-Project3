@@ -1,0 +1,56 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48829",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정부에서 내년부터 기름값을 내린다고 한다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48829",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48830",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "은행이 이자율을 내린다는 소문이 있다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48830",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "내리다.v.Body_movement",
+    "lu_id": 5814,
+    "en_lus": [
+        "drop.v.74"
+    ]
+}

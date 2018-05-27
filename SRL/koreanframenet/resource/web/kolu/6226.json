@@ -1,0 +1,11 @@
+{
+    "frameName": "Operate_vehicle",
+    "patterns": [],
+    "frameID": 65,
+    "ko_pos": "VV",
+    "ko_lu": "보트로 갈아타다.v.Operate_vehicle",
+    "lu_id": 6226,
+    "en_lus": [
+        "boat.v.1268"
+    ]
+}

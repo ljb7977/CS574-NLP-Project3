@@ -1,0 +1,11 @@
+{
+    "frameName": "Wearing",
+    "patterns": [],
+    "frameID": 160,
+    "ko_pos": "VV",
+    "ko_lu": "자랑스럽게 입다.v.Wearing",
+    "lu_id": 7458,
+    "en_lus": [
+        "sport.v.10993"
+    ]
+}

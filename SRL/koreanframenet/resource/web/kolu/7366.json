@@ -1,0 +1,56 @@
+{
+    "frameName": "Activity_resume",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89606",
+            "examples": [
+                {
+                    "frameName": "Activity_resume",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "회담이 속개되다",
+                    "target": "속개되",
+                    "ko_annotation_id": "sejong.89606",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89607",
+            "examples": [
+                {
+                    "frameName": "Activity_resume",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 차 삼 차로, 담판은 속개되어 청은 협박으로 밀고 나왔다.",
+                    "target": "속개되어",
+                    "ko_annotation_id": "sejong.89607",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1156,
+    "ko_pos": "VV",
+    "ko_lu": "속개되다.v.Activity_resume",
+    "lu_id": 7366,
+    "en_lus": [
+        "resume.v.10699"
+    ]
+}

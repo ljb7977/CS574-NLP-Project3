@@ -1,0 +1,100 @@
+{
+    "frameName": "Awareness",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.47905",
+            "examples": [
+                {
+                    "frameName": "Awareness",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 그의 결백을 확신한다.",
+                    "target": "확신한다",
+                    "ko_annotation_id": "sejong.47905",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47906",
+            "examples": [
+                {
+                    "frameName": "Awareness",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그들은 자신들의 성공을 확신하고 있었다.",
+                    "target": "확신하고",
+                    "ko_annotation_id": "sejong.47906",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47907",
+            "examples": [
+                {
+                    "frameName": "Awareness",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 아내가 결백하다고 확신했었다.",
+                    "target": "확신했었다",
+                    "ko_annotation_id": "sejong.47907",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47908",
+            "examples": [
+                {
+                    "frameName": "Awareness",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 이번 계획이 반드시 성공하리라고 확신한다.",
+                    "target": "확신한다",
+                    "ko_annotation_id": "sejong.47908",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 19,
+    "ko_pos": "VV",
+    "ko_lu": "확신하다.v.Awareness",
+    "lu_id": 8534,
+    "en_lus": [
+        "believe.v.150"
+    ]
+}

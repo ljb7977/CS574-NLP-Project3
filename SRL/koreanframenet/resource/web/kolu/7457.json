@@ -1,0 +1,144 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69512",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영철이는 방문을 닫고 나갔다.",
+                    "target": "닫고",
+                    "ko_annotation_id": "sejong.69512",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69513",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "음료수에 벌레가 들어가지 못하게 뚜껑을 닫아라.",
+                    "target": "닫아라",
+                    "ko_annotation_id": "sejong.69513",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69514",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 부채를 견디지 못 하고 공장문을 닫았다.",
+                    "target": "닫았다",
+                    "ko_annotation_id": "sejong.69514",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69515",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "새벽녘이 되어서야 가게 문을 닫았다.",
+                    "target": "닫았다",
+                    "ko_annotation_id": "sejong.69515",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69516",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 36,
+                                "end": 40
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아버지께서는 담배만 피워 무시더니 우리의 잘못에 대해서는 말문을 닫으셨다.",
+                    "target": "닫으셨다",
+                    "ko_annotation_id": "sejong.69516",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69517",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 증인은 줄곧 입을 다물고 있었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.69517",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "닫다.v.Body_movement",
+    "lu_id": 7457,
+    "en_lus": [
+        "shut.v.10992"
+    ]
+}

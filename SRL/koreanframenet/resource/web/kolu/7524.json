@@ -1,0 +1,34 @@
+{
+    "frameName": "Damaging",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.73010",
+            "examples": [
+                {
+                    "frameName": "Damaging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 36,
+                                "end": 41
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 애절한 노래는 고향을 떠나온 나 같은 사람의 가슴 깊은 곳을 쥐어뜯는다.",
+                    "target": "쥐어뜯는다",
+                    "ko_annotation_id": "sejong.73010",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 415,
+    "ko_pos": "VV",
+    "ko_lu": "쥐어뜯다.v.Damaging",
+    "lu_id": 7524,
+    "en_lus": [
+        "rend.v.11161"
+    ]
+}

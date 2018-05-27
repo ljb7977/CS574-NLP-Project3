@@ -1,0 +1,11 @@
+{
+    "frameName": "Communication_manner",
+    "patterns": [],
+    "frameID": 38,
+    "ko_pos": "VV",
+    "ko_lu": "입 모양으로만 말하다.v.Communication_manner",
+    "lu_id": 5913,
+    "en_lus": [
+        "mouth.v.553"
+    ]
+}

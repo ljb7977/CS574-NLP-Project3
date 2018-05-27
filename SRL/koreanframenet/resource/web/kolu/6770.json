@@ -1,0 +1,56 @@
+{
+    "frameName": "Giving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.53461",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 30,
+                                "end": 35
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한사코 싫다는데도 영수는 자기가 쓰던 자동차를 나한테 떠넘기고야 말았다.",
+                    "target": "떠넘기고야",
+                    "ko_annotation_id": "sejong.53461",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.53462",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 33
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "걸어 놓을 데도 없는데 또 네가 입던 옷을 나한테 떠넘기려고 하니?.",
+                    "target": "떠넘기려고",
+                    "ko_annotation_id": "sejong.53462",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 139,
+    "ko_pos": "VV",
+    "ko_lu": "떠넘기다.v.Giving",
+    "lu_id": 6770,
+    "en_lus": [
+        "foist.v.5347"
+    ]
+}

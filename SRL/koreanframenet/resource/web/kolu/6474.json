@@ -1,0 +1,56 @@
+{
+    "frameName": "Process_stop",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61903",
+            "examples": [
+                {
+                    "frameName": "Process_stop",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 비밀결사에서 빠졌다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.61903",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61904",
+            "examples": [
+                {
+                    "frameName": "Process_stop",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 어렵사리 불량 서클에서 빠질 수 있었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.61904",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 144,
+    "ko_pos": "VV",
+    "ko_lu": "빠지다.v.Process_stop",
+    "lu_id": 6474,
+    "en_lus": [
+        "quit.v.2792"
+    ]
+}

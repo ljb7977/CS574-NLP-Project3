@@ -1,0 +1,11 @@
+{
+    "frameName": "Nuclear_process",
+    "patterns": [],
+    "frameID": 1926,
+    "ko_pos": "VV",
+    "ko_lu": "핵분열하다.v.Nuclear_process",
+    "lu_id": 7898,
+    "en_lus": [
+        "fission.v.14321"
+    ]
+}

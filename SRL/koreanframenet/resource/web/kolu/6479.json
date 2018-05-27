@@ -1,0 +1,78 @@
+{
+    "frameName": "Process_stop",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83877",
+            "examples": [
+                {
+                    "frameName": "Process_stop",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "책을 읽으려다가 그만두었어요.",
+                    "target": "그만두었어요",
+                    "ko_annotation_id": "sejong.83877",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83878",
+            "examples": [
+                {
+                    "frameName": "Process_stop",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "찾아뵐까 하다가 그만두었어요.",
+                    "target": "그만두었어요",
+                    "ko_annotation_id": "sejong.83878",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83879",
+            "examples": [
+                {
+                    "frameName": "Process_stop",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "노래방을 운영하다가 지난 여름에 그만두었어요.",
+                    "target": "그만두었어요",
+                    "ko_annotation_id": "sejong.83879",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 144,
+    "ko_pos": "VV",
+    "ko_lu": "그만두다.v.Process_stop",
+    "lu_id": 6479,
+    "en_lus": [
+        "quit.v.2792"
+    ]
+}

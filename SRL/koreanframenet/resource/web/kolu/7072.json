@@ -1,0 +1,56 @@
+{
+    "frameName": "Categorization",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.80215",
+            "examples": [
+                {
+                    "frameName": "Categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "체신부는 봉투의 규격을 정형화하였다.",
+                    "target": "정형화하였다",
+                    "ko_annotation_id": "sejong.80215",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80216",
+            "examples": [
+                {
+                    "frameName": "Categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 회사는 업무 프로세스를 정형화하는 데에 주력하였다.",
+                    "target": "정형화하는",
+                    "ko_annotation_id": "sejong.80216",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 21,
+    "ko_pos": "VV",
+    "ko_lu": "정형화하다.v.Categorization",
+    "lu_id": 7072,
+    "en_lus": [
+        "stereotype.v.8601"
+    ]
+}

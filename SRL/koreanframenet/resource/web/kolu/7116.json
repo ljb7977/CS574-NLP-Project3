@@ -1,0 +1,56 @@
+{
+    "frameName": "Evading",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83477",
+            "examples": [
+                {
+                    "frameName": "Evading",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "경찰의 수배령이 내리자 그는 일단 친구 집에 피신하기로 했다.",
+                    "target": "피신하기로",
+                    "ko_annotation_id": "sejong.83477",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83478",
+            "examples": [
+                {
+                    "frameName": "Evading",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 30,
+                                "end": 35
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "괴한들의 습격을 받은 대사 일행은 다행히 인근 민가로 피신했다고 한다.",
+                    "target": "피신했다고",
+                    "ko_annotation_id": "sejong.83478",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 275,
+    "ko_pos": "VV",
+    "ko_lu": "피신하다.v.Evading",
+    "lu_id": 7116,
+    "en_lus": [
+        "get away.v.9135"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Rite",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.51777",
+            "examples": [
+                {
+                    "frameName": "Rite",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "박부장은 이사승진에다 집까지 장만했으니 복터졌다.",
+                    "target": "복터졌다",
+                    "ko_annotation_id": "sejong.51777",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.51778",
+            "examples": [
+                {
+                    "frameName": "Rite",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "로또로 복터진 사람들이 행복할까?",
+                    "target": "복터진",
+                    "ko_annotation_id": "sejong.51778",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 301,
+    "ko_pos": "VV",
+    "ko_lu": "복터지다.v.Rite",
+    "lu_id": 6814,
+    "en_lus": [
+        "bless.v.5492"
+    ]
+}

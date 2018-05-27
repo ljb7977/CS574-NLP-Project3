@@ -1,0 +1,56 @@
+{
+    "frameName": "Forgoing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48474",
+            "examples": [
+                {
+                    "frameName": "Forgoing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기말 보고서를 제출하느라고 며칠 끼니를 걸렀더니 하늘이 노랗게 보인다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48474",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48475",
+            "examples": [
+                {
+                    "frameName": "Forgoing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 6
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "식사 거르지 말고 제 때 제 때 먹어라.",
+                    "target": "거르지",
+                    "ko_annotation_id": "sejong.48475",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1304,
+    "ko_pos": "VV",
+    "ko_lu": "거르다.v.Forgoing",
+    "lu_id": 7547,
+    "en_lus": [
+        "skip.v.11474"
+    ]
+}

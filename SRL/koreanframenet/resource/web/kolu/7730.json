@@ -1,0 +1,56 @@
+{
+    "frameName": "Motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.82897",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "형사는 조용히 담장을 싸돌면서 범인을 추적해 나갔다.",
+                    "target": "싸돌면서",
+                    "ko_annotation_id": "sejong.82897",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.82898",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이스라엘 병사들은 여리고 성벽을 싸돌았다.",
+                    "target": "싸돌았다",
+                    "ko_annotation_id": "sejong.82898",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 7,
+    "ko_pos": "VV",
+    "ko_lu": "싸돌다.v.Motion",
+    "lu_id": 7730,
+    "en_lus": [
+        "circle.v.12980"
+    ]
+}

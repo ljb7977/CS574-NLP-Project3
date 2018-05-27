@@ -1,0 +1,56 @@
+{
+    "frameName": "Arriving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79426",
+            "examples": [
+                {
+                    "frameName": "Arriving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "버스가 우리 아파트 앞에 이르렀다.",
+                    "target": "이르렀다",
+                    "ko_annotation_id": "sejong.79426",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79427",
+            "examples": [
+                {
+                    "frameName": "Arriving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리들은 1시간이 지나서야 산꼭대기에 이르렀다.",
+                    "target": "이르렀다",
+                    "ko_annotation_id": "sejong.79427",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 54,
+    "ko_pos": "VV",
+    "ko_lu": "이르다.v.Arriving",
+    "lu_id": 6051,
+    "en_lus": [
+        "arrive.v.940"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Evidence",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76119",
+            "examples": [
+                {
+                    "frameName": "Evidence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "성공에는 항상 노력이 뒷받침되어야 한다.",
+                    "target": "뒷받침되어야",
+                    "ko_annotation_id": "sejong.76119",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76120",
+            "examples": [
+                {
+                    "frameName": "Evidence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이번 대회에서 우승하기 위해서는 강한 정신력이 뒷받침되어야 한다.",
+                    "target": "뒷받침되어야",
+                    "ko_annotation_id": "sejong.76120",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 25,
+    "ko_pos": "VV",
+    "ko_lu": "뒷받침되다.v.Evidence",
+    "lu_id": 7918,
+    "en_lus": [
+        "support.v.14741"
+    ]
+}

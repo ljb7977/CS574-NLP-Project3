@@ -1,0 +1,34 @@
+{
+    "frameName": "Arriving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.77300",
+            "examples": [
+                {
+                    "frameName": "Arriving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 책상으로 다가갔다.",
+                    "target": "다가갔다",
+                    "ko_annotation_id": "sejong.77300",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 54,
+    "ko_pos": "VV",
+    "ko_lu": "다가가다.v.Arriving",
+    "lu_id": 6050,
+    "en_lus": [
+        "approach.v.938"
+    ]
+}

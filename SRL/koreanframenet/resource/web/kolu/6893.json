@@ -1,0 +1,56 @@
+{
+    "frameName": "Firing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.60476",
+            "examples": [
+                {
+                    "frameName": "Firing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 40,
+                                "end": 44
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "훈련성과가 없고 전망이 희박하다고 판단되거나 건강이 나쁜 선수는 팀에서 제명하고 졸업예정일 전에 취업을 위해 팀을 이탈 또는 팀 운동을 저해한 선수는 제명한다.",
+                    "target": "제명하고",
+                    "ko_annotation_id": "sejong.60476",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.60477",
+            "examples": [
+                {
+                    "frameName": "Firing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 30,
+                                "end": 35
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "방송작가모임은 표절 혐의를 받고 있는 작가를 협회에서 제명하기로 결정했다.",
+                    "target": "제명하기로",
+                    "ko_annotation_id": "sejong.60477",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 326,
+    "ko_pos": "VV",
+    "ko_lu": "제명하다.v.Firing",
+    "lu_id": 6893,
+    "en_lus": [
+        "dismiss.v.5796"
+    ]
+}

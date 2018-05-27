@@ -1,0 +1,34 @@
+{
+    "frameName": "Categorization",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74620",
+            "examples": [
+                {
+                    "frameName": "Categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "흩트러진 형체를 정형화시킬 필요가 있다.",
+                    "target": "정형화시킬",
+                    "ko_annotation_id": "sejong.74620",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 21,
+    "ko_pos": "VV",
+    "ko_lu": "정형화시키다.v.Categorization",
+    "lu_id": 7071,
+    "en_lus": [
+        "stereotype.v.8601"
+    ]
+}

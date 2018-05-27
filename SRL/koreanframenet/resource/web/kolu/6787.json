@@ -1,0 +1,56 @@
+{
+    "frameName": "Giving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54260",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 어렸을 때, 사랑을 나누어주신 할머니를 잊지 못한다.",
+                    "target": "나누어주신",
+                    "ko_annotation_id": "sejong.54260",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54261",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "연말연시를 맞이하여, 이웃에게 따뜻한 온정을 나누어줍시다.",
+                    "target": "나누어줍시다",
+                    "ko_annotation_id": "sejong.54261",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 139,
+    "ko_pos": "VV",
+    "ko_lu": "나누어주다.v.Giving",
+    "lu_id": 6787,
+    "en_lus": [
+        "give out.v.5361"
+    ]
+}

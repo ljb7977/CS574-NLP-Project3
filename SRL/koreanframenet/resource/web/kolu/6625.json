@@ -1,0 +1,78 @@
+{
+    "frameName": "Grooming",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.91102",
+            "examples": [
+                {
+                    "frameName": "Grooming",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": 1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 샴프로 당신의 머리가 잘 감깁니까?",
+                    "target": "",
+                    "ko_annotation_id": "sejong.91102",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91103",
+            "examples": [
+                {
+                    "frameName": "Grooming",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 비누로는 머리가 잘 감기지 않는다.",
+                    "target": "감기지",
+                    "ko_annotation_id": "sejong.91103",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91104",
+            "examples": [
+                {
+                    "frameName": "Grooming",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "찬 물보다는 따뜻한 물이 머리가 잘 감긴다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.91104",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 159,
+    "ko_pos": "VV",
+    "ko_lu": "감기다.v.Grooming",
+    "lu_id": 6625,
+    "en_lus": [
+        "wash.v.4734"
+    ]
+}

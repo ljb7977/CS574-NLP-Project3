@@ -1,0 +1,11 @@
+{
+    "frameName": "Make_noise",
+    "patterns": [],
+    "frameID": 69,
+    "ko_pos": "VV",
+    "ko_lu": "후두둑 떨어지는 소리를 내다.v.Make_noise",
+    "lu_id": 6269,
+    "en_lus": [
+        "patter.v.1433"
+    ]
+}

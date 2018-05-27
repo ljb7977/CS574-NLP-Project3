@@ -1,0 +1,34 @@
+{
+    "frameName": "Arraignment",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48196",
+            "examples": [
+                {
+                    "frameName": "Arraignment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이번에 체포된 흉악범이 박검사에게 심문받았다.",
+                    "target": "심문받았다",
+                    "ko_annotation_id": "sejong.48196",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 120,
+    "ko_pos": "VV",
+    "ko_lu": "심문받다.v.Arraignment",
+    "lu_id": 6411,
+    "en_lus": [
+        "arraign.v.2424"
+    ]
+}

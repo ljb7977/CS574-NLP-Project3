@@ -1,0 +1,78 @@
+{
+    "frameName": "Mass_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.53244",
+            "examples": [
+                {
+                    "frameName": "Mass_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "분무기로 밭에 농약을 살포하는 일이 내 몫이다.",
+                    "target": "살포하는",
+                    "ko_annotation_id": "sejong.53244",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.53245",
+            "examples": [
+                {
+                    "frameName": "Mass_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "지난 69-70년 비무장지대에서 고엽제를 살포하다 그 후유증으로 장애인이 되었다는 증언이 나왔다.",
+                    "target": "살포하다",
+                    "ko_annotation_id": "sejong.53245",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.53246",
+            "examples": [
+                {
+                    "frameName": "Mass_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 31
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "해양수산부는 동해안의 적조현상을 위하여 황토를 살포하였다.",
+                    "target": "살포하였다",
+                    "ko_annotation_id": "sejong.53246",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 284,
+    "ko_pos": "VV",
+    "ko_lu": "살포하다.v.Mass_motion",
+    "lu_id": 6783,
+    "en_lus": [
+        "shower.v.5359"
+    ]
+}

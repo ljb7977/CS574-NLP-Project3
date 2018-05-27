@@ -1,0 +1,56 @@
+{
+    "frameName": "Sidereal_appearance",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.88718",
+            "examples": [
+                {
+                    "frameName": "Sidereal_appearance",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "태양이 수평선 너머에 떠올랐다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.88718",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88719",
+            "examples": [
+                {
+                    "frameName": "Sidereal_appearance",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "무지개가 산위에 떠오르고 있다.",
+                    "target": "떠오르고",
+                    "ko_annotation_id": "sejong.88719",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1430,
+    "ko_pos": "VV",
+    "ko_lu": "떠오르다.v.Sidereal_appearance",
+    "lu_id": 7599,
+    "en_lus": [
+        "rise.v.12023"
+    ]
+}

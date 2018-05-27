@@ -1,0 +1,34 @@
+{
+    "frameName": "Moving_in_place",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49281",
+            "examples": [
+                {
+                    "frameName": "Moving_in_place",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "거센 폭풍우에 천지가 뒤흔들리는 듯했다.",
+                    "target": "뒤흔들리는",
+                    "ko_annotation_id": "sejong.49281",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 670,
+    "ko_pos": "VV",
+    "ko_lu": "뒤흔들리다.v.Moving_in_place",
+    "lu_id": 7414,
+    "en_lus": [
+        "quiver.v.10872"
+    ]
+}

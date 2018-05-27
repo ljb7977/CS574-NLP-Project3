@@ -1,0 +1,56 @@
+{
+    "frameName": "Emotion_heat",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.50843",
+            "examples": [
+                {
+                    "frameName": "Emotion_heat",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 끓어오르는 울분을 참지 못하겠다.",
+                    "target": "끓어오르는",
+                    "ko_annotation_id": "sejong.50843",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.50844",
+            "examples": [
+                {
+                    "frameName": "Emotion_heat",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "젊은이들의 축제에 오니 정열이 끓어오른다.",
+                    "target": "끓어오른다",
+                    "ko_annotation_id": "sejong.50844",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 49,
+    "ko_pos": "VV",
+    "ko_lu": "끓어오르다.v.Emotion_heat",
+    "lu_id": 6035,
+    "en_lus": [
+        "burn.v.892"
+    ]
+}

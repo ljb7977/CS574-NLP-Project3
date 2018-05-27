@@ -1,0 +1,56 @@
+{
+    "frameName": "Attack",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49584",
+            "examples": [
+                {
+                    "frameName": "Attack",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 42,
+                                "end": 45
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 고지에서 쏟아붓는 비비탄을 피해 아군의 엄호를 받으며 약진, 풀숲에 매복해 있다.",
+                    "target": "매복해",
+                    "ko_annotation_id": "sejong.49584",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49585",
+            "examples": [
+                {
+                    "frameName": "Attack",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "물가에 매복해 있거나 얕은 물 속을 걸어 다니다가 부리로 물고기를 잡기도 하고, 간석지의 진흙 속에서 갯지렁이 등을 잡아먹는다.",
+                    "target": "매복해",
+                    "ko_annotation_id": "sejong.49585",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 424,
+    "ko_pos": "VV",
+    "ko_lu": "매복하다.v.Attack",
+    "lu_id": 7034,
+    "en_lus": [
+        "ambush.v.7771"
+    ]
+}

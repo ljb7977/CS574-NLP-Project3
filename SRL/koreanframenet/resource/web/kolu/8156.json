@@ -1,0 +1,56 @@
+{
+    "frameName": "Vehicle_departure_initial_stage",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79527",
+            "examples": [
+                {
+                    "frameName": "Vehicle_departure_initial_stage",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여객기는 김포공항에서 이륙한 지 10분도 안 되어 공항과의 교신이 끊어졌다.",
+                    "target": "이륙한",
+                    "ko_annotation_id": "sejong.79527",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79528",
+            "examples": [
+                {
+                    "frameName": "Vehicle_departure_initial_stage",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "비행기는 활주로를 이륙하자마자 좌우로 심하게 비틀거렸다.",
+                    "target": "이륙하자마자",
+                    "ko_annotation_id": "sejong.79528",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2627,
+    "ko_pos": "VV",
+    "ko_lu": "이륙하다.v.Vehicle_departure_initial_stage",
+    "lu_id": 8156,
+    "en_lus": [
+        "lift off.v.16535"
+    ]
+}

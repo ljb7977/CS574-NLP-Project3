@@ -1,0 +1,56 @@
+{
+    "frameName": "Questioning",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55775",
+            "examples": [
+                {
+                    "frameName": "Questioning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "김 형사는 그를 취조하는 동안 이성을 잃었다.",
+                    "target": "취조하는",
+                    "ko_annotation_id": "sejong.55775",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55776",
+            "examples": [
+                {
+                    "frameName": "Questioning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 6
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그를 취조한 형사는 가혹 행위가 없었다고 말했지만 아무도 그 말을 믿을 수 없었다.",
+                    "target": "취조한",
+                    "ko_annotation_id": "sejong.55776",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 40,
+    "ko_pos": "VV",
+    "ko_lu": "취조하다.v.Questioning",
+    "lu_id": 5942,
+    "en_lus": [
+        "interrogate.v.630"
+    ]
+}

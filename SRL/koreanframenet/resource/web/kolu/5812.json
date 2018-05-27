@@ -1,0 +1,78 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.86708",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "구조 대원들은 비행기에서 구호품을 낙하했다.",
+                    "target": "낙하했다",
+                    "ko_annotation_id": "sejong.86708",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.86709",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "119대원들은 헬기에서 건물 옥상으로 사다리를 낙하했다.",
+                    "target": "낙하했다",
+                    "ko_annotation_id": "sejong.86709",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.86710",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "헬기가 재해지역에 구호품을 낙하했다.",
+                    "target": "낙하했다",
+                    "ko_annotation_id": "sejong.86710",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "낙하하다.v.Body_movement",
+    "lu_id": 5812,
+    "en_lus": [
+        "drop.v.74"
+    ]
+}

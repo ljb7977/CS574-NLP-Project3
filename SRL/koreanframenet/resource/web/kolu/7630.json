@@ -1,0 +1,56 @@
+{
+    "frameName": "Adopt_selection",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.72298",
+            "examples": [
+                {
+                    "frameName": "Adopt_selection",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 작품은 운문의 형식을 취하고 있다.",
+                    "target": "취하고",
+                    "ko_annotation_id": "sejong.72298",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72299",
+            "examples": [
+                {
+                    "frameName": "Adopt_selection",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 새로운 방식을 취해 아이들을 가르친다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.72299",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1590,
+    "ko_pos": "VV",
+    "ko_lu": "취하다.v.Adopt_selection",
+    "lu_id": 7630,
+    "en_lus": [
+        "assume.v.12533"
+    ]
+}

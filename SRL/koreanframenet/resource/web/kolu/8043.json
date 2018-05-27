@@ -1,0 +1,34 @@
+{
+    "frameName": "Successful_action",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76028",
+            "examples": [
+                {
+                    "frameName": "Successful_action",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 중요한 시험에서는 꼭 실수한다.",
+                    "target": "실수한다",
+                    "ko_annotation_id": "sejong.76028",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1389,
+    "ko_pos": "VV",
+    "ko_lu": "실수하다.v.Successful_action",
+    "lu_id": 8043,
+    "en_lus": [
+        "go wrong.v.15525"
+    ]
+}

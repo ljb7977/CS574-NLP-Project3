@@ -1,0 +1,56 @@
+{
+    "frameName": "Opinion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61990",
+            "examples": [
+                {
+                    "frameName": "Opinion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 정직하게 살자는 생활신조를 죽을 때까지 고수하겠다.",
+                    "target": "고수하겠다",
+                    "ko_annotation_id": "sejong.61990",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61991",
+            "examples": [
+                {
+                    "frameName": "Opinion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "할아버지는 주장을 굽히지 않고 끝까지 고수하는 분이시다.",
+                    "target": "고수하는",
+                    "ko_annotation_id": "sejong.61991",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1412,
+    "ko_pos": "VV",
+    "ko_lu": "고수하다.v.Opinion",
+    "lu_id": 8058,
+    "en_lus": [
+        "hold.v.15598"
+    ]
+}

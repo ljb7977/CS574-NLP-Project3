@@ -1,0 +1,56 @@
+{
+    "frameName": "Attaching",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.59029",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이제 본문 끝 부분에부록을 덧붙이기만 하면 끝난다.",
+                    "target": "덧붙이기만",
+                    "ko_annotation_id": "sejong.59029",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.59030",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 30,
+                                "end": 35
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "날씨가 차가워지자 어머니께서는쪽문에 창호지를 한 겹더 덧붙이셨다.",
+                    "target": "덧붙이셨다",
+                    "ko_annotation_id": "sejong.59030",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 197,
+    "ko_pos": "VV",
+    "ko_lu": "덧붙이다.v.Attaching",
+    "lu_id": 7574,
+    "en_lus": [
+        "append.v.11872"
+    ]
+}

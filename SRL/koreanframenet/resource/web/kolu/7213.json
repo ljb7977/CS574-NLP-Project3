@@ -1,0 +1,56 @@
+{
+    "frameName": "Arranging",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.70501",
+            "examples": [
+                {
+                    "frameName": "Arranging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 사병들을 8열종대로 배열했다.",
+                    "target": "배열했다",
+                    "ko_annotation_id": "sejong.70501",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70502",
+            "examples": [
+                {
+                    "frameName": "Arranging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "제갈량은 무슨 생각에서인지 돌들을 특이한 모양으로 배열했다.",
+                    "target": "배열했다",
+                    "ko_annotation_id": "sejong.70502",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 921,
+    "ko_pos": "VV",
+    "ko_lu": "배열하다.v.Arranging",
+    "lu_id": 7213,
+    "en_lus": [
+        "arrange.v.9975"
+    ]
+}

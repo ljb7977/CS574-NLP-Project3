@@ -1,0 +1,34 @@
+{
+    "frameName": "Experiencer_obj",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.62178",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 진통제를 드시고 통증을 진정해 보세요.",
+                    "target": "진정해",
+                    "ko_annotation_id": "sejong.62178",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 47,
+    "ko_pos": "VV",
+    "ko_lu": "진정하다.v.Experiencer_obj",
+    "lu_id": 5995,
+    "en_lus": [
+        "calm.v.791"
+    ]
+}

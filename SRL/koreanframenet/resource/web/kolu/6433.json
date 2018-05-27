@@ -1,0 +1,34 @@
+{
+    "frameName": "Piracy",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.62209",
+            "examples": [
+                {
+                    "frameName": "Piracy",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리 아이가 그 정신질환자에게 유괴당했었다.",
+                    "target": "유괴당했었다",
+                    "ko_annotation_id": "sejong.62209",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 123,
+    "ko_pos": "VV",
+    "ko_lu": "유괴당하다.v.Piracy",
+    "lu_id": 6433,
+    "en_lus": [
+        "hijack.v.2471"
+    ]
+}

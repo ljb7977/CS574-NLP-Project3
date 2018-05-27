@@ -1,0 +1,34 @@
+{
+    "frameName": "Manipulation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.82815",
+            "examples": [
+                {
+                    "frameName": "Manipulation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "엄마는 차비하라고 나에게 3만원을 손에 쥐어주었다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.82815",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 17,
+    "ko_pos": "VV",
+    "ko_lu": "쥐이다.v.Manipulation",
+    "lu_id": 5848,
+    "en_lus": [
+        "grab.v.113"
+    ]
+}

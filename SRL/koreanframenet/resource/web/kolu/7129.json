@@ -1,0 +1,34 @@
+{
+    "frameName": "Cause_to_amalgamate",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.85054",
+            "examples": [
+                {
+                    "frameName": "Cause_to_amalgamate",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이불 솜이 뭉쳐서 다시 틀어야겠다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.85054",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 13,
+    "ko_pos": "VV",
+    "ko_lu": "뭉치다.v.Cause_to_amalgamate",
+    "lu_id": 7129,
+    "en_lus": [
+        "lump.v.9289"
+    ]
+}

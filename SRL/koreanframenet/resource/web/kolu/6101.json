@@ -1,0 +1,11 @@
+{
+    "frameName": "Motion_noise",
+    "patterns": [],
+    "frameID": 60,
+    "ko_pos": "VV",
+    "ko_lu": "꽝 소리를 내다.v.Motion_noise",
+    "lu_id": 6101,
+    "en_lus": [
+        "clunk.v.1027"
+    ]
+}

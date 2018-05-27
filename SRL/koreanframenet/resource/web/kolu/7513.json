@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_be_dry",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69791",
+            "examples": [
+                {
+                    "frameName": "Cause_to_be_dry",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 세탁기로 완전히 탈수된 옷을 한보따리 가지고 나왔다.",
+                    "target": "탈수된",
+                    "ko_annotation_id": "sejong.69791",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69792",
+            "examples": [
+                {
+                    "frameName": "Cause_to_be_dry",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "옷이 하도 젖어서 탈수기로도 완전히 탈수되지 않는다.",
+                    "target": "탈수기로도",
+                    "ko_annotation_id": "sejong.69792",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 337,
+    "ko_pos": "VV",
+    "ko_lu": "탈수되다.v.Cause_to_be_dry",
+    "lu_id": 7513,
+    "en_lus": [
+        "dehydrate.v.11135"
+    ]
+}

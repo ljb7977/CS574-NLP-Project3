@@ -1,0 +1,34 @@
+{
+    "frameName": "Motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55471",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "먼지들이 하늘을 떠돌다가 비가 오면 내려 앉는다.",
+                    "target": "떠돌다가",
+                    "ko_annotation_id": "sejong.55471",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 7,
+    "ko_pos": "VV",
+    "ko_lu": "떠돌다.v.Motion",
+    "lu_id": 6921,
+    "en_lus": [
+        "drift.v.6164"
+    ]
+}

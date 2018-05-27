@@ -1,0 +1,56 @@
+{
+    "frameName": "Categorization",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.85033",
+            "examples": [
+                {
+                    "frameName": "Categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 0,
+                                "end": 4
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정형화된 한국동요가 나타나는 시기는 1930년대이다.",
+                    "target": "정형화된",
+                    "ko_annotation_id": "sejong.85033",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.85034",
+            "examples": [
+                {
+                    "frameName": "Categorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기영이는 정형화된 외교관이라는 틀을 넘어 개방적인 대민업무를 해나갔다.",
+                    "target": "정형화된",
+                    "ko_annotation_id": "sejong.85034",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 21,
+    "ko_pos": "VV",
+    "ko_lu": "정형화되다.v.Categorization",
+    "lu_id": 7070,
+    "en_lus": [
+        "stereotype.v.8601"
+    ]
+}

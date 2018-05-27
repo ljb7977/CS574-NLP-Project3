@@ -1,0 +1,56 @@
+{
+    "frameName": "Adducing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69377",
+            "examples": [
+                {
+                    "frameName": "Adducing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 문제의 해결방안이 제시되지 않으면 더 이상 논의할 가치가 없다.",
+                    "target": "제시되지",
+                    "ko_annotation_id": "sejong.69377",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69378",
+            "examples": [
+                {
+                    "frameName": "Adducing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그를 통해 제시된 문제는 언제나 골치가 아프다.",
+                    "target": "제시된",
+                    "ko_annotation_id": "sejong.69378",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1601,
+    "ko_pos": "VV",
+    "ko_lu": "제시되다.v.Adducing",
+    "lu_id": 7647,
+    "en_lus": [
+        "adduce.v.12599"
+    ]
+}

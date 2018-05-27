@@ -1,0 +1,56 @@
+{
+    "frameName": "Giving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52798",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 해마다 고아원에 많은 돈을 기부한다.",
+                    "target": "기부한다",
+                    "ko_annotation_id": "sejong.52798",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52799",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 암 연구소에 그의 전 재산을 기부했다.",
+                    "target": "기부했다",
+                    "ko_annotation_id": "sejong.52799",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 139,
+    "ko_pos": "VV",
+    "ko_lu": "기부하다.v.Giving",
+    "lu_id": 6769,
+    "en_lus": [
+        "donate.v.5344"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_expansion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54693",
+            "examples": [
+                {
+                    "frameName": "Cause_expansion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 김 선생 앞에만 서면 스스로 오므라드는 자신을 느껴야 했다.",
+                    "target": "오므라드는",
+                    "ko_annotation_id": "sejong.54693",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54694",
+            "examples": [
+                {
+                    "frameName": "Cause_expansion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 36,
+                                "end": 42
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "큰소리를 치고 나섰건만 덩치 큰 상대와 맞서려니 두려움에 마음이 오므라들었다.",
+                    "target": "오므라들었다",
+                    "ko_annotation_id": "sejong.54694",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 77,
+    "ko_pos": "VV",
+    "ko_lu": "오므라들다.v.Cause_expansion",
+    "lu_id": 6344,
+    "en_lus": [
+        "shrink.v.1661"
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20003",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "obj": "Self_mover",
+                            "span": {
+                                "begin": 0,
+                                "end": 4
+                            }
+                        },
+                        {
+                            "obj": "Goal",
+                            "span": {
+                                "begin": 7,
+                                "end": 19
+                            }
+                        },
+                        {
+                            "obj": "Target",
+                            "span": {
+                                "begin": 20,
+                                "end": 23
+                            }
+                        }
+                    ],
+                    "origin_lus": [
+                        "isogu .急ぐ"
+                    ],
+                    "ko_annotation_id": 20003,
+                    "text": "헤이시치로는 하나카와도 하안을 향해 서두르고 있었다.",
+                    "sent_id": 4486,
+                    "relations": [],
+                    "annotation_id": 0
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80770",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": 2
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "빨리 서둘러라!",
+                    "target": "",
+                    "ko_annotation_id": "sejong.80770",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80771",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 수업에 늦지 않으려고급히 서둘렀다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.80771",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80772",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정부는 남북대화를 너무 서두른다.",
+                    "target": "서두른다",
+                    "ko_annotation_id": "sejong.80772",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80773",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 발걸음을 서둘러 급히역으로 갔다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.80773",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "서두르다.v.Self_motion",
+    "lu_id": 5677,
+    "en_lus": [
+        "isogu .急ぐ"
+    ]
+}

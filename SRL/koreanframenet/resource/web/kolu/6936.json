@@ -1,0 +1,56 @@
+{
+    "frameName": "Grinding",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.60672",
+            "examples": [
+                {
+                    "frameName": "Grinding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 감자를 으깨어 샐러드를 만들었다.",
+                    "target": "으깨어",
+                    "ko_annotation_id": "sejong.60672",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.60673",
+            "examples": [
+                {
+                    "frameName": "Grinding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "누나는 살구씨를 으깨어 얼굴에 발랐다.",
+                    "target": "으깨어",
+                    "ko_annotation_id": "sejong.60673",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 351,
+    "ko_pos": "VV",
+    "ko_lu": "으깨다.v.Grinding",
+    "lu_id": 6936,
+    "en_lus": [
+        "mill.v.6182"
+    ]
+}

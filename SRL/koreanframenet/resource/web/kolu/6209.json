@@ -1,0 +1,11 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "몽유병 증세를 보이다.v.Self_motion",
+    "lu_id": 6209,
+    "en_lus": [
+        "sleepwalk.v.1222"
+    ]
+}

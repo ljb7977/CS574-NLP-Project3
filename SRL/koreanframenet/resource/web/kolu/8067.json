@@ -1,0 +1,78 @@
+{
+    "frameName": "Filling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.88388",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "중공군이 우리 쪽으로 구름떼처럼 밀려온다.",
+                    "target": "밀려온다",
+                    "ko_annotation_id": "sejong.88388",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88389",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "강 저 편에서 적군이 새까맣게 밀려온다.",
+                    "target": "밀려온다",
+                    "ko_annotation_id": "sejong.88389",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88390",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "원근각처에서 빗장이들이 우리에게 밀려왔다.",
+                    "target": "밀려왔다",
+                    "ko_annotation_id": "sejong.88390",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 59,
+    "ko_pos": "VV",
+    "ko_lu": "밀려오다.v.Filling",
+    "lu_id": 8067,
+    "en_lus": [
+        "wash.v.15630"
+    ]
+}

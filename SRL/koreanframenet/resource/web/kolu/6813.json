@@ -1,0 +1,56 @@
+{
+    "frameName": "Rite",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.73157",
+            "examples": [
+                {
+                    "frameName": "Rite",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "해평 윤씨는 장수로서도 복받은 가문이다.",
+                    "target": "복받은",
+                    "ko_annotation_id": "sejong.73157",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.73158",
+            "examples": [
+                {
+                    "frameName": "Rite",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "클린턴은 확실히 복받은 나라의 대통령이라는 것이다.",
+                    "target": "복받은",
+                    "ko_annotation_id": "sejong.73158",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 301,
+    "ko_pos": "VV",
+    "ko_lu": "복받다.v.Rite",
+    "lu_id": 6813,
+    "en_lus": [
+        "bless.v.5492"
+    ]
+}

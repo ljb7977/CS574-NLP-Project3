@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_amalgamate",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61620",
+            "examples": [
+                {
+                    "frameName": "Cause_to_amalgamate",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 새로 온 선수들을 기존의 선수들과 잘 융합시켰다.",
+                    "target": "융합시켰다",
+                    "ko_annotation_id": "sejong.61620",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61621",
+            "examples": [
+                {
+                    "frameName": "Cause_to_amalgamate",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 새로 온 선수들과 기존의 선수들을 잘 융합시켰다.",
+                    "target": "융합시켰다",
+                    "ko_annotation_id": "sejong.61621",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 13,
+    "ko_pos": "VV",
+    "ko_lu": "융합시키다.v.Cause_to_amalgamate",
+    "lu_id": 5790,
+    "en_lus": [
+        "combine.v.39"
+    ]
+}

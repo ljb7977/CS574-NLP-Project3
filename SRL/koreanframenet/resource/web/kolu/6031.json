@@ -1,0 +1,78 @@
+{
+    "frameName": "Experiencer_focus",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.82590",
+            "examples": [
+                {
+                    "frameName": "Experiencer_focus",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 가진 사람들을 혐오했다.",
+                    "target": "혐오했다",
+                    "ko_annotation_id": "sejong.82590",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.82591",
+            "examples": [
+                {
+                    "frameName": "Experiencer_focus",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀는 조잡한 물건들을 혐오했다.",
+                    "target": "혐오했다",
+                    "ko_annotation_id": "sejong.82591",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.82592",
+            "examples": [
+                {
+                    "frameName": "Experiencer_focus",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 33
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 당신이 아니라 당신이 가진 그 저속한 생각들을 혐오하는 것입니다.",
+                    "target": "혐오하는",
+                    "ko_annotation_id": "sejong.82592",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 48,
+    "ko_pos": "VV",
+    "ko_lu": "혐오하다.v.Experiencer_focus",
+    "lu_id": 6031,
+    "en_lus": [
+        "loathe.v.878"
+    ]
+}

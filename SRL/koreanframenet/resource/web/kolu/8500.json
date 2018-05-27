@@ -1,0 +1,11 @@
+{
+    "frameName": "Manipulation",
+    "patterns": [],
+    "frameID": 17,
+    "ko_pos": "VV",
+    "ko_lu": "조작되다.v.Manipulation",
+    "lu_id": 8500,
+    "en_lus": [
+        "knead.v.116"
+    ]
+}

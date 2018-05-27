@@ -1,0 +1,11 @@
+{
+    "frameName": "Cause_motion",
+    "patterns": [],
+    "frameID": 55,
+    "ko_pos": "VV",
+    "ko_lu": "질질 끌다.v.Cause_motion",
+    "lu_id": 6057,
+    "en_lus": [
+        "drag.v.951"
+    ]
+}

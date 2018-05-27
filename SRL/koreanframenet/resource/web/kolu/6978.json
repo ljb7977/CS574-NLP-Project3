@@ -1,0 +1,56 @@
+{
+    "frameName": "Filling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74021",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 밀실은 길이 이십 척, 나비 이십 척, 높이 이십 척인데 순금으로 입혔다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.74021",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74022",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 메달에는 금이 입혀 있다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.74022",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 59,
+    "ko_pos": "VV",
+    "ko_lu": "입히다.v.Filling",
+    "lu_id": 6978,
+    "en_lus": [
+        "gild.v.7127"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "frameName": "Kidnapping",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.47894",
+            "examples": [
+                {
+                    "frameName": "Kidnapping",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "웬 괴한이 어젯밤 내 딸을 납치해 갔다.",
+                    "target": "납치해",
+                    "ko_annotation_id": "sejong.47894",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47895",
+            "examples": [
+                {
+                    "frameName": "Kidnapping",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정보 기관에서 반체제 인사를 모처로 납치해다가 모진 고문을 했다는 소문이 들린다.",
+                    "target": "납치해다가",
+                    "ko_annotation_id": "sejong.47895",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47896",
+            "examples": [
+                {
+                    "frameName": "Kidnapping",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 비행기는 미국에서 무단으로 납치해 간 것으로 보인다.",
+                    "target": "납치해",
+                    "ko_annotation_id": "sejong.47896",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 122,
+    "ko_pos": "VV",
+    "ko_lu": "납치하다.v.Kidnapping",
+    "lu_id": 6427,
+    "en_lus": [
+        "kidnap.v.2456"
+    ]
+}

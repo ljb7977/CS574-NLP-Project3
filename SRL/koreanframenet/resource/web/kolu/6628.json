@@ -1,0 +1,34 @@
+{
+    "frameName": "Grooming",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.45832",
+            "examples": [
+                {
+                    "frameName": "Grooming",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "엄마는 아이를 세면시키고 나서 품안에 안고 재웠다.",
+                    "target": "세면시키고",
+                    "ko_annotation_id": "sejong.45832",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 159,
+    "ko_pos": "VV",
+    "ko_lu": "세면시키다.v.Grooming",
+    "lu_id": 6628,
+    "en_lus": [
+        "wash.v.4734"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Reveal_secret",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.56307",
+            "examples": [
+                {
+                    "frameName": "Reveal_secret",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수가 말하는 책이 바로 이 책이다.",
+                    "target": "말하는",
+                    "ko_annotation_id": "sejong.56307",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1146,
+    "ko_pos": "VV",
+    "ko_lu": "말하다.v.Reveal_secret",
+    "lu_id": 7334,
+    "en_lus": [
+        "reveal.v.10665"
+    ]
+}

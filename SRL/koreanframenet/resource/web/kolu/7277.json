@@ -1,0 +1,56 @@
+{
+    "frameName": "Existence",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49063",
+            "examples": [
+                {
+                    "frameName": "Existence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 내일 집에 있는다.",
+                    "target": "있는다",
+                    "ko_annotation_id": "sejong.49063",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49064",
+            "examples": [
+                {
+                    "frameName": "Existence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 그 곳에서 삼 년을 있었다.",
+                    "target": "있었다",
+                    "ko_annotation_id": "sejong.49064",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 660,
+    "ko_pos": "VV",
+    "ko_lu": "있다.v.Existence",
+    "lu_id": 7277,
+    "en_lus": [
+        "there be.v.10329"
+    ]
+}

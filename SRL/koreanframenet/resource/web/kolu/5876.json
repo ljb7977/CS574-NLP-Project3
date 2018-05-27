@@ -1,0 +1,34 @@
+{
+    "frameName": "Differentiation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.58747",
+            "examples": [
+                {
+                    "frameName": "Differentiation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 34
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리 나라 상품이 세계 시장에서 돋보이도록 디자인을 차별화해야 한다.",
+                    "target": "차별화해야",
+                    "ko_annotation_id": "sejong.58747",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 24,
+    "ko_pos": "VV",
+    "ko_lu": "차별화하다.v.Differentiation",
+    "lu_id": 5876,
+    "en_lus": [
+        "differentiate.v.234"
+    ]
+}

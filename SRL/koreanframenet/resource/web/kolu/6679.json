@@ -1,0 +1,78 @@
+{
+    "frameName": "Dispersal",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90424",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 고사리는 높은 지대에서만 분포되어 있다.",
+                    "target": "분포되어",
+                    "ko_annotation_id": "sejong.90424",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.90425",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "인구가 전국에 골고루 분포되어 있지 못하다.",
+                    "target": "분포되어",
+                    "ko_annotation_id": "sejong.90425",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.90426",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정상급 선수들은 다양한 지역에 전국적으로 분포되어 있다.",
+                    "target": "분포되어",
+                    "ko_annotation_id": "sejong.90426",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 267,
+    "ko_pos": "VV",
+    "ko_lu": "분포되다.v.Dispersal",
+    "lu_id": 6679,
+    "en_lus": [
+        "distribute.v.4844"
+    ]
+}

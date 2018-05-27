@@ -1,0 +1,56 @@
+{
+    "frameName": "Moving_in_place",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49523",
+            "examples": [
+                {
+                    "frameName": "Moving_in_place",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "폭발음이 고막을 진동시켰다.",
+                    "target": "진동시켰다",
+                    "ko_annotation_id": "sejong.49523",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49524",
+            "examples": [
+                {
+                    "frameName": "Moving_in_place",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 쇠막대로 징을 마구 진동시켰다.",
+                    "target": "진동시켰다",
+                    "ko_annotation_id": "sejong.49524",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 670,
+    "ko_pos": "VV",
+    "ko_lu": "진동시키다.v.Moving_in_place",
+    "lu_id": 7416,
+    "en_lus": [
+        "quiver.v.10872"
+    ]
+}

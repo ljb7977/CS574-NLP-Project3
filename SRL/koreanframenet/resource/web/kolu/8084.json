@@ -1,0 +1,78 @@
+{
+    "frameName": "Commutative_process",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.71424",
+            "examples": [
+                {
+                    "frameName": "Commutative_process",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 포도주에 물을 더해 신맛을 없앴다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.71424",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.71425",
+            "examples": [
+                {
+                    "frameName": "Commutative_process",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 수소를 산소와 더해 물을 만들수 있다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.71425",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.71426",
+            "examples": [
+                {
+                    "frameName": "Commutative_process",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 수소와 산소를 더해 물을 만들수 있다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.71426",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2243,
+    "ko_pos": "VV",
+    "ko_lu": "더하다.v.Commutative_process",
+    "lu_id": 8084,
+    "en_lus": [
+        "add.v.15678"
+    ]
+}

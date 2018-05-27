@@ -1,0 +1,34 @@
+{
+    "frameName": "Surrounding",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69148",
+            "examples": [
+                {
+                    "frameName": "Surrounding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 개념은 지금가지 얘기된 것 모두를 아우르고 있다.",
+                    "target": "아우르고",
+                    "ko_annotation_id": "sejong.69148",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2911,
+    "ko_pos": "VV",
+    "ko_lu": "아우르다.v.Surrounding",
+    "lu_id": 8331,
+    "en_lus": [
+        "straddle.v.17889"
+    ]
+}

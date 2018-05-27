@@ -1,0 +1,34 @@
+{
+    "frameName": "Make_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90052",
+            "examples": [
+                {
+                    "frameName": "Make_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영화가 시작되기 전, 사람들이 속삭거렸다.",
+                    "target": "속삭거렸다",
+                    "ko_annotation_id": "sejong.90052",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 69,
+    "ko_pos": "VV",
+    "ko_lu": "속삭거리다.v.Make_noise",
+    "lu_id": 6321,
+    "en_lus": [
+        "whisper.v.1517"
+    ]
+}

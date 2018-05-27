@@ -1,0 +1,56 @@
+{
+    "frameName": "Path_shape",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57559",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "체증이 잘 내려가게 하려면 운동을 해야 한다.",
+                    "target": "내려가게",
+                    "ko_annotation_id": "sejong.57559",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57560",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "체한 음식은 웬만해서는 잘 내려가지 않는다.",
+                    "target": "내려가지",
+                    "ko_annotation_id": "sejong.57560",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 61,
+    "ko_pos": "VV",
+    "ko_lu": "내려가다.v.Path_shape",
+    "lu_id": 6137,
+    "en_lus": [
+        "descend.v.1058"
+    ]
+}

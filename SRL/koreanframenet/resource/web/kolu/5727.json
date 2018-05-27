@@ -1,0 +1,65 @@
+{
+    "frameName": "Front_for",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20220",
+            "examples": [
+                {
+                    "frameName": "Front_for",
+                    "denotations": [
+                        {
+                            "obj": "front",
+                            "span": {
+                                "begin": 4,
+                                "end": 9
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "illicit_activity",
+                            "span": {
+                                "begin": 11,
+                                "end": 68
+                            },
+                            "id": "3"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 69,
+                                "end": 71
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "front"
+                    ],
+                    "ko_annotation_id": 20220,
+                    "text": "게다가 이들 회사는 이란의 화학무기 프로그램으로 전환되어 사용되어지는 중요한 화학 전구물질 및 관련된 장비를 수입하기 위한 위장 역할을 한다고 주장되고 있다.",
+                    "sent_id": 2225,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "3",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 11119
+                }
+            ]
+        }
+    ],
+    "frameID": 1734,
+    "ko_pos": "NNG",
+    "ko_lu": "위장.n.Front_for",
+    "lu_id": 5727,
+    "en_lus": [
+        "front"
+    ]
+}

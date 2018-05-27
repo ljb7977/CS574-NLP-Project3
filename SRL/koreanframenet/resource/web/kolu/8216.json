@@ -1,0 +1,78 @@
+{
+    "frameName": "Condition_symptom_relation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.72570",
+            "examples": [
+                {
+                    "frameName": "Condition_symptom_relation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "바닥이 미끄러워서 실수가 자주 유발되었다.",
+                    "target": "유발되었다",
+                    "ko_annotation_id": "sejong.72570",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72571",
+            "examples": [
+                {
+                    "frameName": "Condition_symptom_relation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "흡연을 통해서 유발되는 질병은 상당히 다양하다.",
+                    "target": "유발되는",
+                    "ko_annotation_id": "sejong.72571",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72572",
+            "examples": [
+                {
+                    "frameName": "Condition_symptom_relation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 58,
+                                "end": 63
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "경기 부양을 목적으로 한 그 조치는 당장은 어느 정도 실효를 거두었지만 그로 인해 이후 상당한 부작용이 유발되었다.",
+                    "target": "유발되었다",
+                    "ko_annotation_id": "sejong.72572",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2718,
+    "ko_pos": "VV",
+    "ko_lu": "유발되다.v.Condition_symptom_relation",
+    "lu_id": 8216,
+    "en_lus": [
+        "induce.v.17102"
+    ]
+}

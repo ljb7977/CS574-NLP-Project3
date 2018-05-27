@@ -1,0 +1,122 @@
+{
+    "frameName": "Request",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55688",
+            "examples": [
+                {
+                    "frameName": "Request",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 인사부에 그의 해임을 지시했다.",
+                    "target": "지시했다",
+                    "ko_annotation_id": "sejong.55688",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55689",
+            "examples": [
+                {
+                    "frameName": "Request",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "경찰은 검사가 지시한 대로 화성 연쇄살인 사건의 재수사에 착수했다.",
+                    "target": "지시한",
+                    "ko_annotation_id": "sejong.55689",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55690",
+            "examples": [
+                {
+                    "frameName": "Request",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사장은 나에게 시장조사를 지시했다.",
+                    "target": "지시했다",
+                    "ko_annotation_id": "sejong.55690",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55691",
+            "examples": [
+                {
+                    "frameName": "Request",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대대장은 부관에게 차를 준비하라고 지시했다.",
+                    "target": "지시했다",
+                    "ko_annotation_id": "sejong.55691",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55692",
+            "examples": [
+                {
+                    "frameName": "Request",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사장은 비서에게 우산을 가져오라고 지시했다.",
+                    "target": "지시했다",
+                    "ko_annotation_id": "sejong.55692",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 41,
+    "ko_pos": "VV",
+    "ko_lu": "지시하다.v.Request",
+    "lu_id": 8238,
+    "en_lus": [
+        "instruct.v.17184"
+    ]
+}

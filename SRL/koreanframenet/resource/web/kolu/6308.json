@@ -1,0 +1,56 @@
+{
+    "frameName": "Make_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.81161",
+            "examples": [
+                {
+                    "frameName": "Make_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "강아지가 목에 배달은 방울을 짤랑거리며 영호에게 달려들었다.",
+                    "target": "짤랑거리며",
+                    "ko_annotation_id": "sejong.81161",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.81162",
+            "examples": [
+                {
+                    "frameName": "Make_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 항상 동전을 짤랑거리며 다닌다.",
+                    "target": "짤랑거리며",
+                    "ko_annotation_id": "sejong.81162",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 69,
+    "ko_pos": "VV",
+    "ko_lu": "짤랑거리다.v.Make_noise",
+    "lu_id": 6308,
+    "en_lus": [
+        "tinkle.v.1497"
+    ]
+}

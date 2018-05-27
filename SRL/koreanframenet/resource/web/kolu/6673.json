@@ -1,0 +1,56 @@
+{
+    "frameName": "Dispersal",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74625",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "연구실의 모든 것이 흐트러져서 아무 것도 찾을 수가 없다.",
+                    "target": "흐트러져서",
+                    "ko_annotation_id": "sejong.74625",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74626",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 0,
+                                "end": 4
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "흐트러진 연구실을 정리하느라 나는 반나절을 보냈다.",
+                    "target": "흐트러진",
+                    "ko_annotation_id": "sejong.74626",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 267,
+    "ko_pos": "VV",
+    "ko_lu": "흐트러지다.v.Dispersal",
+    "lu_id": 6673,
+    "en_lus": [
+        "disperse.v.4837"
+    ]
+}

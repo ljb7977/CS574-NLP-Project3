@@ -1,0 +1,11 @@
+{
+    "frameName": "Capacity",
+    "patterns": [],
+    "frameID": 2138,
+    "ko_pos": "VV",
+    "ko_lu": "돌아가다.v.Capacity",
+    "lu_id": 8052,
+    "en_lus": [
+        "serve.v.15592"
+    ]
+}

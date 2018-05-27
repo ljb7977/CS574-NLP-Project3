@@ -1,0 +1,56 @@
+{
+    "frameName": "Memorization",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.64528",
+            "examples": [
+                {
+                    "frameName": "Memorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한국인이면 누구나 김소월이나 윤동주의 시 한 구절은 왼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.64528",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.64529",
+            "examples": [
+                {
+                    "frameName": "Memorization",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 친구는 얼마나 축구를 좋아하는지 수학방정식은 못 풀어도 축구선수 이름은 줄줄 왼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.64529",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1132,
+    "ko_pos": "VV",
+    "ko_lu": "외다.v.Memorization",
+    "lu_id": 7324,
+    "en_lus": [
+        "memorise.v.10590"
+    ]
+}

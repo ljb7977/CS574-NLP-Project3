@@ -1,0 +1,56 @@
+{
+    "frameName": "Enforcing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.72111",
+            "examples": [
+                {
+                    "frameName": "Enforcing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "법은 누구에게나 엄정하게 집행되어야 한다.",
+                    "target": "집행되어야",
+                    "ko_annotation_id": "sejong.72111",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72112",
+            "examples": [
+                {
+                    "frameName": "Enforcing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "죄인의 사형이 집행되는 순간 구경꾼들은 눈을 질끈 감았다.",
+                    "target": "집행되는",
+                    "ko_annotation_id": "sejong.72112",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1813,
+    "ko_pos": "VV",
+    "ko_lu": "집행되다.v.Enforcing",
+    "lu_id": 7841,
+    "en_lus": [
+        "enforce.v.13639"
+    ]
+}

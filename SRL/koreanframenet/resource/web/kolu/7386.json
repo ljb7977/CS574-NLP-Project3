@@ -1,0 +1,56 @@
+{
+    "frameName": "Take_place_of",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.47214",
+            "examples": [
+                {
+                    "frameName": "Take_place_of",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "빵으로 식사를 대신했더니 영속이 불편하다.",
+                    "target": "대신했더니",
+                    "ko_annotation_id": "sejong.47214",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47215",
+            "examples": [
+                {
+                    "frameName": "Take_place_of",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "가벼운 눈웃음으로 인사를 대신하였다.",
+                    "target": "대신하였다",
+                    "ko_annotation_id": "sejong.47215",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1171,
+    "ko_pos": "VV",
+    "ko_lu": "대신하다.v.Take_place_of",
+    "lu_id": 7386,
+    "en_lus": [
+        "replace.v.10790"
+    ]
+}

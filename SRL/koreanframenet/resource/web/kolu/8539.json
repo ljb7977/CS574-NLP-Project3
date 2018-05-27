@@ -1,0 +1,13 @@
+{
+    "frameName": "Awareness",
+    "patterns": [],
+    "frameID": 19,
+    "ko_pos": "VV",
+    "ko_lu": "결론짓다.v.Awareness",
+    "lu_id": 8539,
+    "en_lus": [
+        "believe.v.150",
+        "conceive.v.153",
+        "think.v.169"
+    ]
+}

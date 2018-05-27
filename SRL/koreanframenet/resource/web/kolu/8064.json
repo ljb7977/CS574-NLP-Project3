@@ -1,0 +1,56 @@
+{
+    "frameName": "Separating",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.46617",
+            "examples": [
+                {
+                    "frameName": "Separating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 나라는 미국과 국교를 단절했다.",
+                    "target": "단절했다",
+                    "ko_annotation_id": "sejong.46617",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.46618",
+            "examples": [
+                {
+                    "frameName": "Separating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 나라와 미국은 국교를 단절했다.",
+                    "target": "단절했다",
+                    "ko_annotation_id": "sejong.46618",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 15,
+    "ko_pos": "VV",
+    "ko_lu": "단절하다.v.Separating",
+    "lu_id": 8064,
+    "en_lus": [
+        "sever.v.15617"
+    ]
+}

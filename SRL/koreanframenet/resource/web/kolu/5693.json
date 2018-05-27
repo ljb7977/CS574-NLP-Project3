@@ -1,0 +1,104 @@
+{
+    "frameName": "Medical_conditions",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20047",
+            "examples": [
+                {
+                    "frameName": "Medical_conditions",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 33,
+                                "end": 35
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "ailments"
+                    ],
+                    "ko_annotation_id": 20047,
+                    "text": "스페인의 경제 회복이 지금까지 치료에 실패한 원인으로 많은 병들을 지적할 수 있다",
+                    "sent_id": 79,
+                    "relations": [],
+                    "annotation_id": 531
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65621",
+            "examples": [
+                {
+                    "frameName": "Medical_conditions",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "병든 영혼을 구해 주소서.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.65621",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65622",
+            "examples": [
+                {
+                    "frameName": "Medical_conditions",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "인간은 병들어야 병든 인간의 설움을 안다.",
+                    "target": "병들어야",
+                    "ko_annotation_id": "sejong.65622",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65623",
+            "examples": [
+                {
+                    "frameName": "Medical_conditions",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "병든 까마귀 어물전 돌 듯 한다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.65623",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 239,
+    "ko_pos": "VV",
+    "ko_lu": "병들다.v.Medical_conditions",
+    "lu_id": 5693,
+    "en_lus": [
+        "ailment"
+    ]
+}

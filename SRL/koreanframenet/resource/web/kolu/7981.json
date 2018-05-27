@@ -1,0 +1,34 @@
+{
+    "frameName": "Cure",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.60511",
+            "examples": [
+                {
+                    "frameName": "Cure",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "수미는 아들을 간호하느라 한잠도 잘 수 없었다.",
+                    "target": "간호하느라",
+                    "ko_annotation_id": "sejong.60511",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 50,
+    "ko_pos": "VV",
+    "ko_lu": "간호하다.v.Cure",
+    "lu_id": 7981,
+    "en_lus": [
+        "nurse.v.15101"
+    ]
+}

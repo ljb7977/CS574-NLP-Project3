@@ -1,0 +1,56 @@
+{
+    "frameName": "Preserving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.88540",
+            "examples": [
+                {
+                    "frameName": "Preserving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "배추를 소금에 절여 두었다가 내일쯤 버무리자.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.88540",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88541",
+            "examples": [
+                {
+                    "frameName": "Preserving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어머니께서 고등어를 소금에 절여 두셨다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.88541",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 339,
+    "ko_pos": "VV",
+    "ko_lu": "절이다.v.Preserving",
+    "lu_id": 6903,
+    "en_lus": [
+        "pickle.v.5927"
+    ]
+}

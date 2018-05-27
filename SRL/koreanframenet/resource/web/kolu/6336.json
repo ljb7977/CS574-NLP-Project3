@@ -1,0 +1,56 @@
+{
+    "frameName": "Distributed_position",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.78521",
+            "examples": [
+                {
+                    "frameName": "Distributed_position",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀는 아버지의 묘지를 화려한 꽃들로 장식했다.",
+                    "target": "장식했다",
+                    "ko_annotation_id": "sejong.78521",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.78522",
+            "examples": [
+                {
+                    "frameName": "Distributed_position",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 선물 상자를 예쁜 리본으로 장식하기를 원했다.",
+                    "target": "장식하기를",
+                    "ko_annotation_id": "sejong.78522",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 76,
+    "ko_pos": "VV",
+    "ko_lu": "장식하다.v.Distributed_position",
+    "lu_id": 6336,
+    "en_lus": [
+        "deck.v.1636"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Dressing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61484",
+            "examples": [
+                {
+                    "frameName": "Dressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "날씨가 추워서 털모자를 머리에 깊이 뒤집어썼다.",
+                    "target": "뒤집어썼다",
+                    "ko_annotation_id": "sejong.61484",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1211,
+    "ko_pos": "VV",
+    "ko_lu": "뒤집어쓰다.v.Dressing",
+    "lu_id": 7440,
+    "en_lus": [
+        "don.v.10970"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Process_stop",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.74159",
+            "examples": [
+                {
+                    "frameName": "Process_stop",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 이제 그 일을 그만하고 싶다.",
+                    "target": "그만하고",
+                    "ko_annotation_id": "sejong.74159",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.74160",
+            "examples": [
+                {
+                    "frameName": "Process_stop",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "말도 안 되는 소리는 이제 그만해라.",
+                    "target": "그만해라",
+                    "ko_annotation_id": "sejong.74160",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 144,
+    "ko_pos": "VV",
+    "ko_lu": "그만하다.v.Process_stop",
+    "lu_id": 6480,
+    "en_lus": [
+        "quit.v.2792"
+    ]
+}

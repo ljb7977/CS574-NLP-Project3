@@ -1,0 +1,56 @@
+{
+    "frameName": "Ingestion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.82426",
+            "examples": [
+                {
+                    "frameName": "Ingestion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "점심을 라면으로 에웠다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.82426",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.82427",
+            "examples": [
+                {
+                    "frameName": "Ingestion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어제 먹다 남은 음식으로 끼니를 에웠다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.82427",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 263,
+    "ko_pos": "VV",
+    "ko_lu": "에우다.v.Ingestion",
+    "lu_id": 6652,
+    "en_lus": [
+        "snack.v.4793"
+    ]
+}

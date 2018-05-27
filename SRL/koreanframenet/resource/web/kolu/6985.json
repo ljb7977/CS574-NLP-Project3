@@ -1,0 +1,34 @@
+{
+    "frameName": "Reparation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55251",
+            "examples": [
+                {
+                    "frameName": "Reparation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 물건을 찾아 주시는 분에게는 후하게 보상하겠습니다.",
+                    "target": "보상하겠습니다",
+                    "ko_annotation_id": "sejong.55251",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 400,
+    "ko_pos": "VV",
+    "ko_lu": "보상하다.v.Reparation",
+    "lu_id": 6985,
+    "en_lus": [
+        "make up.v.7338"
+    ]
+}

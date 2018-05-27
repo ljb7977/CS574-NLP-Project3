@@ -1,0 +1,11 @@
+{
+    "frameName": "Operate_vehicle",
+    "patterns": [],
+    "frameID": 65,
+    "ko_pos": "VV",
+    "ko_lu": "오토바이를 타고 가다.v.Operate_vehicle",
+    "lu_id": 6224,
+    "en_lus": [
+        "bike.v.1267"
+    ]
+}

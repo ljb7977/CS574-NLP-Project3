@@ -1,0 +1,56 @@
+{
+    "frameName": "Hunting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.73774",
+            "examples": [
+                {
+                    "frameName": "Hunting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사냥꾼들은 호랑이를 서서히 포위해 갔다.",
+                    "target": "포위해",
+                    "ko_annotation_id": "sejong.73774",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.73775",
+            "examples": [
+                {
+                    "frameName": "Hunting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "매복 작전이 성공하여 아군은 적군을 완전히 포위했다.",
+                    "target": "포위했다",
+                    "ko_annotation_id": "sejong.73775",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2006,
+    "ko_pos": "VV",
+    "ko_lu": "포위하다.v.Hunting",
+    "lu_id": 7988,
+    "en_lus": [
+        "seal.v.15118"
+    ]
+}

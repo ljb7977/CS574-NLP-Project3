@@ -1,0 +1,52 @@
+{
+    "frameName": "Replacing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20032",
+            "examples": [
+                {
+                    "frameName": "Replacing",
+                    "denotations": [
+                        {
+                            "obj": "old",
+                            "span": {
+                                "begin": 13,
+                                "end": 19
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 21,
+                                "end": 22
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "changing"
+                    ],
+                    "ko_annotation_id": 20032,
+                    "text": "그래, 정말로, 이것은 애기 기저귀를 갈고 마루를 닦는 것으로부터 나의 오후를 해방시켰다.",
+                    "sent_id": 1938,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 9367
+                }
+            ]
+        }
+    ],
+    "frameID": 1121,
+    "ko_pos": "VV",
+    "ko_lu": "가다.v.Replacing",
+    "lu_id": 5688,
+    "en_lus": [
+        "change"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_fragment",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48451",
+            "examples": [
+                {
+                    "frameName": "Cause_to_fragment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "도인이 건네준 신검으로 큰 바위를 단칼에 잘랐다 해서 단석산이라고 부르게 됐다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48451",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48452",
+            "examples": [
+                {
+                    "frameName": "Cause_to_fragment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 면접 전날 교복을 깔끔하게 다리고 머리카락도 단정하게 잘랐다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48452",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 414,
+    "ko_pos": "VV",
+    "ko_lu": "자르다.v.Cause_to_fragment",
+    "lu_id": 7018,
+    "en_lus": [
+        "shred.v.7587"
+    ]
+}

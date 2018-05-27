@@ -1,0 +1,12 @@
+{
+    "frameName": "Manipulation",
+    "patterns": [],
+    "frameID": 17,
+    "ko_pos": "VV",
+    "ko_lu": "채다.v.Manipulation",
+    "lu_id": 8496,
+    "en_lus": [
+        "grab.v.113",
+        "grab hold.v.9197"
+    ]
+}

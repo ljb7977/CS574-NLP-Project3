@@ -1,0 +1,56 @@
+{
+    "frameName": "Attaching",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68307",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "관리사무소는 각 세대의 차에 주차스티커를 부탁시켜 관리를 유용하게 한다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.68307",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68308",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 글자 자석을 냉장고에 부착시켜 아이가 눈에 익히게 하면 좋겠다.",
+                    "target": "부착시켜",
+                    "ko_annotation_id": "sejong.68308",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 197,
+    "ko_pos": "VV",
+    "ko_lu": "부착시키다.v.Attaching",
+    "lu_id": 7778,
+    "en_lus": [
+        "mount.v.13150"
+    ]
+}

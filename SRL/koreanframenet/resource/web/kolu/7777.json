@@ -1,0 +1,78 @@
+{
+    "frameName": "Attaching",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.50701",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "발부해 드린 스티커를 자동차 앞창에 부착해 주시기 바랍니다.",
+                    "target": "부착해",
+                    "ko_annotation_id": "sejong.50701",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.50702",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선수들이 조의를 표하기 위해서 가슴에 전부 흉장을 부착하고 있었다.",
+                    "target": "부착하고",
+                    "ko_annotation_id": "sejong.50702",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.50703",
+            "examples": [
+                {
+                    "frameName": "Attaching",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 카메라는 망원렌즈를 부착하고 있었다.",
+                    "target": "부착하고",
+                    "ko_annotation_id": "sejong.50703",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 197,
+    "ko_pos": "VV",
+    "ko_lu": "부착하다.v.Attaching",
+    "lu_id": 7777,
+    "en_lus": [
+        "mount.v.13150"
+    ]
+}

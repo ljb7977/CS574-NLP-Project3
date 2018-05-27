@@ -1,0 +1,11 @@
+{
+    "frameName": "Operate_vehicle",
+    "patterns": [],
+    "frameID": 65,
+    "ko_pos": "VV",
+    "ko_lu": "노를 저어가다.v.Operate_vehicle",
+    "lu_id": 6235,
+    "en_lus": [
+        "row.v.1285"
+    ]
+}

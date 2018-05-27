@@ -1,0 +1,56 @@
+{
+    "frameName": "Communication_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.86796",
+            "examples": [
+                {
+                    "frameName": "Communication_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "호랑이는 혼자 으르렁거리다가 결국 그냥 가버렸다.",
+                    "target": "으르렁거리다가",
+                    "ko_annotation_id": "sejong.86796",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.86797",
+            "examples": [
+                {
+                    "frameName": "Communication_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "성난 개가 달려들 듯이 으르렁거렸다.",
+                    "target": "으르렁거렸다",
+                    "ko_annotation_id": "sejong.86797",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 39,
+    "ko_pos": "VV",
+    "ko_lu": "으르렁거리다.v.Communication_noise",
+    "lu_id": 5931,
+    "en_lus": [
+        "roar.v.601"
+    ]
+}

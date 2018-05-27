@@ -1,0 +1,56 @@
+{
+    "frameName": "Motion_directional",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57898",
+            "examples": [
+                {
+                    "frameName": "Motion_directional",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀의 마음은 그에게로 기울었다.",
+                    "target": "기울었다",
+                    "ko_annotation_id": "sejong.57898",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57899",
+            "examples": [
+                {
+                    "frameName": "Motion_directional",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대다수는 그를 돕자는 쪽으로 기울었다.",
+                    "target": "기울었다",
+                    "ko_annotation_id": "sejong.57899",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 362,
+    "ko_pos": "VV",
+    "ko_lu": "기울다.v.Motion_directional",
+    "lu_id": 7735,
+    "en_lus": [
+        "angle.v.12989"
+    ]
+}

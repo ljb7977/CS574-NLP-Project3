@@ -1,0 +1,78 @@
+{
+    "frameName": "Closure",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.78215",
+            "examples": [
+                {
+                    "frameName": "Closure",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "옆에 뚱뚱한 사람이 앉으니 자리가 조이네.",
+                    "target": "조이네",
+                    "ko_annotation_id": "sejong.78215",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.78216",
+            "examples": [
+                {
+                    "frameName": "Closure",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "저 뚱뚱한 사람이 우리 옆에 앉아서 우리 자리를 조인다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.78216",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.78217",
+            "examples": [
+                {
+                    "frameName": "Closure",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "저 틈새를 좀 조여 봐라.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.78217",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 254,
+    "ko_pos": "VV",
+    "ko_lu": "조이다.v.Closure",
+    "lu_id": 6606,
+    "en_lus": [
+        "fasten.v.4677"
+    ]
+}

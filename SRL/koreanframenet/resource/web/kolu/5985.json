@@ -1,0 +1,34 @@
+{
+    "frameName": "Experiencer_obj",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.91091",
+            "examples": [
+                {
+                    "frameName": "Experiencer_obj",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 공연히 아내에게 그 일에 대해 성내며 소리쳤다.",
+                    "target": "성내며",
+                    "ko_annotation_id": "sejong.91091",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 47,
+    "ko_pos": "VV",
+    "ko_lu": "성내다.v.Experiencer_obj",
+    "lu_id": 5985,
+    "en_lus": [
+        "anger.v.783"
+    ]
+}

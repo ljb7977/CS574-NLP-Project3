@@ -1,0 +1,78 @@
+{
+    "frameName": "Becoming_attached",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.66522",
+            "examples": [
+                {
+                    "frameName": "Becoming_attached",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아직 초저녁이건만 그 여자는 일찌감치 대문을 닫아걸었다.",
+                    "target": "닫아걸었다",
+                    "ko_annotation_id": "sejong.66522",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66523",
+            "examples": [
+                {
+                    "frameName": "Becoming_attached",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 54,
+                                "end": 59
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "혹시나 창가 쪽에 잘 정돈되어 있는 아이가 아끼는 화분이 깨지기라도 할까 최대한 조심해서 창문을 닫아걸었다.",
+                    "target": "닫아걸었다",
+                    "ko_annotation_id": "sejong.66523",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.66524",
+            "examples": [
+                {
+                    "frameName": "Becoming_attached",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "거리는 황량했고 상점들은 문을 닫아걸었다.",
+                    "target": "닫아걸었다",
+                    "ko_annotation_id": "sejong.66524",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 306,
+    "ko_pos": "VV",
+    "ko_lu": "닫아걸다.v.Becoming_attached",
+    "lu_id": 6824,
+    "en_lus": [
+        "fasten.v.5581"
+    ]
+}

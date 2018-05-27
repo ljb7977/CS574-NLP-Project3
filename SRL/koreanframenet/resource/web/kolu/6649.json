@@ -1,0 +1,11 @@
+{
+    "frameName": "Ingestion",
+    "patterns": [],
+    "frameID": 263,
+    "ko_pos": "VV",
+    "ko_lu": "시끄럽게 먹다.v.Ingestion",
+    "lu_id": 6649,
+    "en_lus": [
+        "slurp.v.4781"
+    ]
+}

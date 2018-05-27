@@ -1,0 +1,34 @@
+{
+    "frameName": "Impact",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.47889",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀의 몸은 더러워졌다.",
+                    "target": "더러워졌다",
+                    "ko_annotation_id": "sejong.47889",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 311,
+    "ko_pos": "VV",
+    "ko_lu": "더러워지다.v.Impact",
+    "lu_id": 7475,
+    "en_lus": [
+        "touch.v.11007"
+    ]
+}

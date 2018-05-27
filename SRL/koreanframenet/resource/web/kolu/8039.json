@@ -1,0 +1,11 @@
+{
+    "frameName": "Short_selling",
+    "patterns": [],
+    "frameID": 2180,
+    "ko_pos": "VV",
+    "ko_lu": "공매하다.v.Short_selling",
+    "lu_id": 8039,
+    "en_lus": [
+        "sell short.v.15511"
+    ]
+}

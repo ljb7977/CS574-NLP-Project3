@@ -1,0 +1,56 @@
+{
+    "frameName": "Make_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.80580",
+            "examples": [
+                {
+                    "frameName": "Make_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "내가 그 방에 들어갔을 때 시끄럽게 소리나는 선풍기만이 홀로 돌아가고있었다.",
+                    "target": "소리나는",
+                    "ko_annotation_id": "sejong.80580",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80581",
+            "examples": [
+                {
+                    "frameName": "Make_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "닫을 때 삐걱삐걱 소리나는 문을 고쳐야 겠다.",
+                    "target": "소리나는",
+                    "ko_annotation_id": "sejong.80581",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 69,
+    "ko_pos": "VV",
+    "ko_lu": "소리나다.v.Make_noise",
+    "lu_id": 8026,
+    "en_lus": [
+        "sound.v.15357"
+    ]
+}

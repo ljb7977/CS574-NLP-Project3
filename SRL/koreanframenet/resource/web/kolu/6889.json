@@ -1,0 +1,56 @@
+{
+    "frameName": "Quitting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.46333",
+            "examples": [
+                {
+                    "frameName": "Quitting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대통령은 김장관을 내무장관직에서 사임시켰다.",
+                    "target": "사임시켰다",
+                    "ko_annotation_id": "sejong.46333",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.46334",
+            "examples": [
+                {
+                    "frameName": "Quitting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한나라당은 당론에 반대해 온 김의원을 사임시키는 초강수를 두며 법안을 처리했다.",
+                    "target": "사임시키는",
+                    "ko_annotation_id": "sejong.46334",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 325,
+    "ko_pos": "VV",
+    "ko_lu": "사임시키다.v.Quitting",
+    "lu_id": 6889,
+    "en_lus": [
+        "resign.v.5790"
+    ]
+}

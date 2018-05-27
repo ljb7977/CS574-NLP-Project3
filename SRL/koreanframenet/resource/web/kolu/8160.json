@@ -1,0 +1,56 @@
+{
+    "frameName": "Getting_triggered",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52492",
+            "examples": [
+                {
+                    "frameName": "Getting_triggered",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 34
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여자의 시기와 허영이 때로는 비극적인 사랑의 종말을 촉발하기도 한다.",
+                    "target": "촉발하기도",
+                    "ko_annotation_id": "sejong.52492",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52493",
+            "examples": [
+                {
+                    "frameName": "Getting_triggered",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 41,
+                                "end": 46
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "늦은 나이에 데뷔하긴 했지만 그녀의 재치와 지적인 외모는 사람들의 관심을 촉발하기에 충분했다.",
+                    "target": "촉발하기에",
+                    "ko_annotation_id": "sejong.52493",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2640,
+    "ko_pos": "VV",
+    "ko_lu": "촉발하다.v.Getting_triggered",
+    "lu_id": 8160,
+    "en_lus": [
+        "trigger.v.16569"
+    ]
+}

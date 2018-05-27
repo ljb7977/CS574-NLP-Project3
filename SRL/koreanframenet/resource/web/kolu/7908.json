@@ -1,0 +1,56 @@
+{
+    "frameName": "Change_position_on_a_scale",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.91294",
+            "examples": [
+                {
+                    "frameName": "Change_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아이가 키가 갑자기 커진 것 같다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.91294",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91295",
+            "examples": [
+                {
+                    "frameName": "Change_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "목수가 소손 대자 의자는 금세 커졌다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.91295",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 91,
+    "ko_pos": "VV",
+    "ko_lu": "커지다.v.Change_position_on_a_scale",
+    "lu_id": 7908,
+    "en_lus": [
+        "balloon.v.14503"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Cause_to_land",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54802",
+            "examples": [
+                {
+                    "frameName": "Cause_to_land",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "연합군이 노르망디에 상륙했다.",
+                    "target": "상륙했다",
+                    "ko_annotation_id": "sejong.54802",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2643,
+    "ko_pos": "VV",
+    "ko_lu": "상륙하다.v.Cause_to_land",
+    "lu_id": 8168,
+    "en_lus": [
+        "land.v.16577"
+    ]
+}

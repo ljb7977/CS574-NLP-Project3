@@ -1,0 +1,56 @@
+{
+    "frameName": "Creating",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89032",
+            "examples": [
+                {
+                    "frameName": "Creating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기찬이는 복희와 사전에 모든 알리바이를 짜맞춘 것 같다.",
+                    "target": "짜맞춘",
+                    "ko_annotation_id": "sejong.89032",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89033",
+            "examples": [
+                {
+                    "frameName": "Creating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기찬이와 복희는 사전에 모든 알리바이를 짜맞춘 것 같다.",
+                    "target": "짜맞춘",
+                    "ko_annotation_id": "sejong.89033",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 319,
+    "ko_pos": "VV",
+    "ko_lu": "짜맞추다.v.Creating",
+    "lu_id": 7536,
+    "en_lus": [
+        "assemble.v.11322"
+    ]
+}

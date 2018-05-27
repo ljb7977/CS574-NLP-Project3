@@ -1,0 +1,56 @@
+{
+    "frameName": "Absorb_heat",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48596",
+            "examples": [
+                {
+                    "frameName": "Absorb_heat",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 5
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "고기 굽는 냄새가 온방안에 진동했다.",
+                    "target": "굽는",
+                    "ko_annotation_id": "sejong.48596",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48597",
+            "examples": [
+                {
+                    "frameName": "Absorb_heat",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "생선을 구웠는지 고소하면서도 비린내가 난다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.48597",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 830,
+    "ko_pos": "VV",
+    "ko_lu": "굽다.v.Absorb_heat",
+    "lu_id": 8296,
+    "en_lus": [
+        "grill.v.17546"
+    ]
+}

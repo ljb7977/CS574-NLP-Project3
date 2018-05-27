@@ -1,0 +1,56 @@
+{
+    "frameName": "Business_closure",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.47574",
+            "examples": [
+                {
+                    "frameName": "Business_closure",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사장은 적자에 허덕이던 백화점을 폐점하였다.",
+                    "target": "폐점하였다",
+                    "ko_annotation_id": "sejong.47574",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47575",
+            "examples": [
+                {
+                    "frameName": "Business_closure",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 브랜드는 영등포점을 폐점하기로 했다고 한다.",
+                    "target": "폐점하기로",
+                    "ko_annotation_id": "sejong.47575",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2590,
+    "ko_pos": "VV",
+    "ko_lu": "폐점하다.v.Business_closure",
+    "lu_id": 8154,
+    "en_lus": [
+        "founder.v.16511"
+    ]
+}

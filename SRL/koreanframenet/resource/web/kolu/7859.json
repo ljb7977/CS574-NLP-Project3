@@ -1,0 +1,56 @@
+{
+    "frameName": "Earnings_and_losses",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.62795",
+            "examples": [
+                {
+                    "frameName": "Earnings_and_losses",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 비싼 옷에 담뱃불 자국을 내다니.",
+                    "target": "내다니",
+                    "ko_annotation_id": "sejong.62795",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.62796",
+            "examples": [
+                {
+                    "frameName": "Earnings_and_losses",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 녀석이 내 새 운동화에 신발 자국을 냈어.",
+                    "target": "내",
+                    "ko_annotation_id": "sejong.62796",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1873,
+    "ko_pos": "VV",
+    "ko_lu": "내다.v.Earnings_and_losses",
+    "lu_id": 7859,
+    "en_lus": [
+        "net.v.13738"
+    ]
+}

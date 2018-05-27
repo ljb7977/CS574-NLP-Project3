@@ -1,0 +1,56 @@
+{
+    "frameName": "Seeking",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68117",
+            "examples": [
+                {
+                    "frameName": "Seeking",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그가 이 책에 대해서뭐라고 비평했습니까?.",
+                    "target": "비평했습니까?",
+                    "ko_annotation_id": "sejong.68117",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68118",
+            "examples": [
+                {
+                    "frameName": "Seeking",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그가 어느 책을 비평했습니까?.",
+                    "target": "비평했습니까?",
+                    "ko_annotation_id": "sejong.68118",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 269,
+    "ko_pos": "VV",
+    "ko_lu": "비평하다.v.Seeking",
+    "lu_id": 6698,
+    "en_lus": [
+        "pan.v.4912"
+    ]
+}

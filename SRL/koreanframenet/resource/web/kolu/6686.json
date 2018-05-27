@@ -1,0 +1,56 @@
+{
+    "frameName": "Cooking_creation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79368",
+            "examples": [
+                {
+                    "frameName": "Cooking_creation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "엄마는 음식을 조리할 때는 꼭 앞치마를 두르신다.",
+                    "target": "조리할",
+                    "ko_annotation_id": "sejong.79368",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79369",
+            "examples": [
+                {
+                    "frameName": "Cooking_creation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "남편이 조리한 음식이 너무 맛있었다.",
+                    "target": "조리한",
+                    "ko_annotation_id": "sejong.79369",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 268,
+    "ko_pos": "VV",
+    "ko_lu": "조리하다.v.Cooking_creation",
+    "lu_id": 6686,
+    "en_lus": [
+        "cook up.v.4891"
+    ]
+}

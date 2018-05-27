@@ -1,0 +1,82 @@
+{
+    "frameName": "Change_position_on_a_scale",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20232",
+            "examples": [
+                {
+                    "frameName": "Change_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 41,
+                                "end": 44
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "decline"
+                    ],
+                    "ko_annotation_id": 20232,
+                    "text": "그러나 Suleiman 죽었을 때, 예루살렘을 포함한 그의 제국은 장기간 쇠퇴하기 시작하였다.",
+                    "sent_id": 705,
+                    "relations": [],
+                    "annotation_id": 3709
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.90745",
+            "examples": [
+                {
+                    "frameName": "Change_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "잉카문명은 한 때 크게 번성했지만 쇠퇴하고 말았다.",
+                    "target": "쇠퇴하고",
+                    "ko_annotation_id": "sejong.90745",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.90746",
+            "examples": [
+                {
+                    "frameName": "Change_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "지금은 쇠퇴했지만 몽고인들은 아시아대륙을 지배하였다.",
+                    "target": "쇠퇴했지만",
+                    "ko_annotation_id": "sejong.90746",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 91,
+    "ko_pos": "VV",
+    "ko_lu": "쇠퇴하다.v.Change_position_on_a_scale",
+    "lu_id": 5734,
+    "en_lus": [
+        "decline"
+    ]
+}

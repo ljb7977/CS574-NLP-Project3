@@ -1,0 +1,56 @@
+{
+    "frameName": "Communication_manner",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69163",
+            "examples": [
+                {
+                    "frameName": "Communication_manner",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "추궁을 받자 그는 말꼬리를 늘어뜨렸다.",
+                    "target": "늘어뜨렸다",
+                    "ko_annotation_id": "sejong.69163",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69164",
+            "examples": [
+                {
+                    "frameName": "Communication_manner",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 32,
+                                "end": 37
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 자기 논리가 말이 안 되는 것을 느낀 듯 말꼬리를 늘어뜨렸다.",
+                    "target": "늘어뜨렸다",
+                    "ko_annotation_id": "sejong.69164",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 38,
+    "ko_pos": "VV",
+    "ko_lu": "늘어뜨리다.v.Communication_manner",
+    "lu_id": 5918,
+    "en_lus": [
+        "slur.v.563"
+    ]
+}

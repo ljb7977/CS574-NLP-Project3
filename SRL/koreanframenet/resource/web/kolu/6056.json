@@ -1,0 +1,35 @@
+{
+    "frameName": "Cause_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54144",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 가족마저 내던져 버리는 비정한 사람이었다.",
+                    "target": "내던져",
+                    "ko_annotation_id": "sejong.54144",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 55,
+    "ko_pos": "VV",
+    "ko_lu": "내던지다.v.Cause_motion",
+    "lu_id": 6056,
+    "en_lus": [
+        "chuck.v.950",
+        "toss.v.962"
+    ]
+}

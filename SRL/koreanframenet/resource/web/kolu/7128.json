@@ -1,0 +1,34 @@
+{
+    "frameName": "Light_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52350",
+            "examples": [
+                {
+                    "frameName": "Light_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "눈이 시퍼렇게 번뜩였다.",
+                    "target": "번뜩였다",
+                    "ko_annotation_id": "sejong.52350",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 131,
+    "ko_pos": "VV",
+    "ko_lu": "번뜩이다.v.Light_movement",
+    "lu_id": 7128,
+    "en_lus": [
+        "scintillate.v.9220"
+    ]
+}

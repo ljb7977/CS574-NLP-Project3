@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.81140",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어린이의 머리를 때려서는 안 된다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.81140",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.81141",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선생님은 개구쟁이 소년의 엉덩이를 세게 때렸다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.81141",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 55,
+    "ko_pos": "VV",
+    "ko_lu": "때리다.v.Cause_motion",
+    "lu_id": 8138,
+    "en_lus": [
+        "hit.v.16382"
+    ]
+}

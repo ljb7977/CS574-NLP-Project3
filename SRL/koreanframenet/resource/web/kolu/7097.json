@@ -1,0 +1,34 @@
+{
+    "frameName": "Judgment_communication",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61976",
+            "examples": [
+                {
+                    "frameName": "Judgment_communication",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "검찰은 그를 증인으로 호출했다.",
+                    "target": "호출했다",
+                    "ko_annotation_id": "sejong.61976",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 219,
+    "ko_pos": "VV",
+    "ko_lu": "호출하다.v.Judgment_communication",
+    "lu_id": 7097,
+    "en_lus": [
+        "cite.v.8903"
+    ]
+}

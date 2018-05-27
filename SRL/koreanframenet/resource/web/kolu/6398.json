@@ -1,0 +1,11 @@
+{
+    "frameName": "Residence",
+    "patterns": [],
+    "frameID": 110,
+    "ko_pos": "VV",
+    "ko_lu": "의식주를 제공하다.v.Residence",
+    "lu_id": 6398,
+    "en_lus": [
+        "lodge.v.2217"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Exclude_member",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.72165",
+            "examples": [
+                {
+                    "frameName": "Exclude_member",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "일군의 승려들이 이번 폭력 사태로 종단에서 파문되었다.",
+                    "target": "파문되었다",
+                    "ko_annotation_id": "sejong.72165",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72166",
+            "examples": [
+                {
+                    "frameName": "Exclude_member",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 친구는 불경죄로 수도회에서 파문되었다.",
+                    "target": "파문되었다",
+                    "ko_annotation_id": "sejong.72166",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1131,
+    "ko_pos": "VV",
+    "ko_lu": "파문되다.v.Exclude_member",
+    "lu_id": 7638,
+    "en_lus": [
+        "excommunicate.v.12576"
+    ]
+}

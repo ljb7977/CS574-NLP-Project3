@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_impact",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.85395",
+            "examples": [
+                {
+                    "frameName": "Cause_impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "부엌에서는 아침을 짓느라고 딸가닥대는 소리가 난다.",
+                    "target": "딸가닥대는",
+                    "ko_annotation_id": "sejong.85395",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.85396",
+            "examples": [
+                {
+                    "frameName": "Cause_impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "문고리를 딸가닥대며 방문을 열다.",
+                    "target": "딸가닥대며",
+                    "ko_annotation_id": "sejong.85396",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 395,
+    "ko_pos": "VV",
+    "ko_lu": "딸가닥대다.v.Cause_impact",
+    "lu_id": 7155,
+    "en_lus": [
+        "clatter.v.9772"
+    ]
+}

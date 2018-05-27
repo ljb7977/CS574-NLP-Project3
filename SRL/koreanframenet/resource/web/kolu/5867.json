@@ -1,0 +1,34 @@
+{
+    "frameName": "Cogitation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84612",
+            "examples": [
+                {
+                    "frameName": "Cogitation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀와의 아름다운 추억을 다시금 되새김하고 있다.",
+                    "target": "되새김하고",
+                    "ko_annotation_id": "sejong.84612",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 22,
+    "ko_pos": "VV",
+    "ko_lu": "되새김하다.v.Cogitation",
+    "lu_id": 5867,
+    "en_lus": [
+        "brood.v.205"
+    ]
+}

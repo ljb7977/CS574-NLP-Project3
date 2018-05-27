@@ -1,0 +1,11 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "살금살금 걷다.v.Self_motion",
+    "lu_id": 6211,
+    "en_lus": [
+        "slink.v.1223"
+    ]
+}

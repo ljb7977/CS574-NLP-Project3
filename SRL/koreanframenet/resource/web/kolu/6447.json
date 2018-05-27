@@ -1,0 +1,34 @@
+{
+    "frameName": "Placing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76199",
+            "examples": [
+                {
+                    "frameName": "Placing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영희는 집에 들어가서 차가운 물로 샤워했다.",
+                    "target": "샤워했다",
+                    "ko_annotation_id": "sejong.76199",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "샤워하다.v.Placing",
+    "lu_id": 6447,
+    "en_lus": [
+        "shower.v.2571"
+    ]
+}

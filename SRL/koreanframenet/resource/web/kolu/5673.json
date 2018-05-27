@@ -1,0 +1,38 @@
+{
+    "frameName": "Supporting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 19997",
+            "examples": [
+                {
+                    "frameName": "Supporting",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 30,
+                                "end": 32
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "support"
+                    ],
+                    "ko_annotation_id": 19997,
+                    "text": "나는 미국 News and World Report지의 지지에 감사하는 한편, 당신의 지원의 참된 가치는 Goodwill이 우리 모두에게 영향을 주는 문제들에 대해 취하는 방식으로 측정됩니다.",
+                    "sent_id": 370,
+                    "relations": [],
+                    "annotation_id": 1985
+                }
+            ]
+        }
+    ],
+    "frameID": 2000,
+    "ko_pos": "NNG",
+    "ko_lu": "지지.n.Supporting",
+    "lu_id": 5673,
+    "en_lus": [
+        "support"
+    ]
+}

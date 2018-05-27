@@ -1,0 +1,56 @@
+{
+    "frameName": "Soaking",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.67430",
+            "examples": [
+                {
+                    "frameName": "Soaking",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "민우는 양말을 벗고 냇물에 발을 담갔다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.67430",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67431",
+            "examples": [
+                {
+                    "frameName": "Soaking",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "고추를 간장에 푹 담가서 일 주일 간 숙성시킨다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.67431",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 333,
+    "ko_pos": "VV",
+    "ko_lu": "담그다.v.Soaking",
+    "lu_id": 6898,
+    "en_lus": [
+        "soak.v.5889"
+    ]
+}

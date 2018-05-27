@@ -1,0 +1,34 @@
+{
+    "frameName": "Cause_to_end",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90001",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 통쾌한 승리로 게임을 종결시켰다.",
+                    "target": "종결시켰다",
+                    "ko_annotation_id": "sejong.90001",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1149,
+    "ko_pos": "VV",
+    "ko_lu": "종결시키다.v.Cause_to_end",
+    "lu_id": 7356,
+    "en_lus": [
+        "end.v.10680"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Undressing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.70910",
+            "examples": [
+                {
+                    "frameName": "Undressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "가끔 기저귀를 벗겨 피부를 말리는 것이 아기의 피부를 짓무르지 않게 하는 방법입니다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.70910",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70911",
+            "examples": [
+                {
+                    "frameName": "Undressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "열이 날 때는 아이의 옷을 벗겨 주는 것이 좋다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.70911",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1210,
+    "ko_pos": "VV",
+    "ko_lu": "벗기다.v.Undressing",
+    "lu_id": 7435,
+    "en_lus": [
+        "take off.v.10964"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "frameName": "Emptying",
+    "patterns": [],
+    "frameID": 58,
+    "ko_pos": "VV",
+    "ko_lu": "뼈를 바르다.v.Emptying",
+    "lu_id": 6443,
+    "en_lus": [
+        "bone.v.2485"
+    ]
+}

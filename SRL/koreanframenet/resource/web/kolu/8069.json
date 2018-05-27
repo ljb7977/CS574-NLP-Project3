@@ -1,0 +1,11 @@
+{
+    "frameName": "Emptying",
+    "patterns": [],
+    "frameID": 58,
+    "ko_pos": "VV",
+    "ko_lu": "씻어내다.v.Emptying",
+    "lu_id": 8069,
+    "en_lus": [
+        "flush.v.15631"
+    ]
+}

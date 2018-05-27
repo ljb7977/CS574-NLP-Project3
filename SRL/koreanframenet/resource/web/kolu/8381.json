@@ -1,0 +1,56 @@
+{
+    "frameName": "Improvement_or_decline",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63018",
+            "examples": [
+                {
+                    "frameName": "Improvement_or_decline",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "근력의 저하로 운동성이 저하된다.",
+                    "target": "저하로",
+                    "ko_annotation_id": "sejong.63018",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63019",
+            "examples": [
+                {
+                    "frameName": "Improvement_or_decline",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아미노산 불균형상태에 있으므로 알부민의 합성능력이 저하된다.",
+                    "target": "저하된다",
+                    "ko_annotation_id": "sejong.63019",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 3012,
+    "ko_pos": "VV",
+    "ko_lu": "저하되다.v.Improvement_or_decline",
+    "lu_id": 8381,
+    "en_lus": [
+        "deteriorate.v.18715"
+    ]
+}

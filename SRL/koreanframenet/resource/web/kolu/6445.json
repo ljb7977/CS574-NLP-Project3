@@ -1,0 +1,11 @@
+{
+    "frameName": "Placing",
+    "patterns": [],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "(빽빽하게)채워넣다.v.Placing",
+    "lu_id": 6445,
+    "en_lus": [
+        "cram.v.2548"
+    ]
+}

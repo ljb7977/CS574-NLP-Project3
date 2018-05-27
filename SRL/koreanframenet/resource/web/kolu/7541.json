@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_be_sharp",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.82762",
+            "examples": [
+                {
+                    "frameName": "Cause_to_be_sharp",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "칼이 너무 무뎌져서 좀 갈아야겠는데 좀 도와주겠니?",
+                    "target": "갈아야겠는데",
+                    "ko_annotation_id": "sejong.82762",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.82763",
+            "examples": [
+                {
+                    "frameName": "Cause_to_be_sharp",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이발사가 면도칼을 가죽에 갈고 있다.",
+                    "target": "갈고",
+                    "ko_annotation_id": "sejong.82763",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1291,
+    "ko_pos": "VV",
+    "ko_lu": "갈다.v.Cause_to_be_sharp",
+    "lu_id": 7541,
+    "en_lus": [
+        "sharpen.v.11361"
+    ]
+}

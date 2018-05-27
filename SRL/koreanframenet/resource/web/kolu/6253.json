@@ -1,0 +1,11 @@
+{
+    "frameName": "Perception_body",
+    "patterns": [],
+    "frameID": 68,
+    "ko_pos": "VV",
+    "ko_lu": "쓰리다.v.Perception_body",
+    "lu_id": 6253,
+    "en_lus": [
+        "smart.v.1335"
+    ]
+}

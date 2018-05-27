@@ -1,0 +1,56 @@
+{
+    "frameName": "Practice",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65889",
+            "examples": [
+                {
+                    "frameName": "Practice",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어머니는 매일 나에게 피아노를 연습시키셨다.",
+                    "target": "연습시키셨다",
+                    "ko_annotation_id": "sejong.65889",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65890",
+            "examples": [
+                {
+                    "frameName": "Practice",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "중대장이 병사들에게 사격을 연습시켰다.",
+                    "target": "연습시켰다",
+                    "ko_annotation_id": "sejong.65890",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 962,
+    "ko_pos": "VV",
+    "ko_lu": "연습시키다.v.Practice",
+    "lu_id": 7224,
+    "en_lus": [
+        "practice.v.10029"
+    ]
+}

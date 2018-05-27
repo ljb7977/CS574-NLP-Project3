@@ -1,0 +1,56 @@
+{
+    "frameName": "Path_shape",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.78382",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 산맥은 저기 바다로 이어진다.",
+                    "target": "이어진다",
+                    "ko_annotation_id": "sejong.78382",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.78383",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "세검정 길은 북악산길에 이어진다.",
+                    "target": "이어진다",
+                    "ko_annotation_id": "sejong.78383",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 61,
+    "ko_pos": "VV",
+    "ko_lu": "이어지다.v.Path_shape",
+    "lu_id": 8327,
+    "en_lus": [
+        "run.v.17740"
+    ]
+}

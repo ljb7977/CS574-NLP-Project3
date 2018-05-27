@@ -1,0 +1,56 @@
+{
+    "frameName": "Activity_start",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89308",
+            "examples": [
+                {
+                    "frameName": "Activity_start",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선수들이 결승점 전 마지막 코너에 돌입하고 있다.",
+                    "target": "돌입하고",
+                    "ko_annotation_id": "sejong.89308",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89309",
+            "examples": [
+                {
+                    "frameName": "Activity_start",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 부부는 권태기로 돌입한 것같다.",
+                    "target": "돌입한",
+                    "ko_annotation_id": "sejong.89309",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 146,
+    "ko_pos": "VV",
+    "ko_lu": "돌입하다.v.Activity_start",
+    "lu_id": 7695,
+    "en_lus": [
+        "swing (into).v.12881"
+    ]
+}

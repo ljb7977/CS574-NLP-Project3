@@ -1,0 +1,56 @@
+{
+    "frameName": "Judgment_communication",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63045",
+            "examples": [
+                {
+                    "frameName": "Judgment_communication",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "세상 사람들은 한글의 우수성을 칭송한다.",
+                    "target": "칭송한다",
+                    "ko_annotation_id": "sejong.63045",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63046",
+            "examples": [
+                {
+                    "frameName": "Judgment_communication",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 수녀님에 대해 칭송하지 않는 사람이 없다.",
+                    "target": "칭송하지",
+                    "ko_annotation_id": "sejong.63046",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 219,
+    "ko_pos": "VV",
+    "ko_lu": "칭송하다.v.Judgment_communication",
+    "lu_id": 6989,
+    "en_lus": [
+        "acclaim.v.7364"
+    ]
+}

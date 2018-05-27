@@ -1,0 +1,56 @@
+{
+    "frameName": "Commitment",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.59083",
+            "examples": [
+                {
+                    "frameName": "Commitment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "수시 모집에 지원하는 수험생들은 대부분 학생부 성적이 좋기 때문에 심층 면접과 구술고사가 당락을 좌우한다.",
+                    "target": "지원하는",
+                    "ko_annotation_id": "sejong.59083",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.59084",
+            "examples": [
+                {
+                    "frameName": "Commitment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 수영을 전혀 못하지만 해군에 지원하고 싶다.",
+                    "target": "지원하고",
+                    "ko_annotation_id": "sejong.59084",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 33,
+    "ko_pos": "VV",
+    "ko_lu": "지원하다.v.Commitment",
+    "lu_id": 5902,
+    "en_lus": [
+        "volunteer.v.487"
+    ]
+}

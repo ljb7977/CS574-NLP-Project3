@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_fragment",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57753",
+            "examples": [
+                {
+                    "frameName": "Cause_to_fragment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나무가 반으로 부러졌다.",
+                    "target": "부러졌다",
+                    "ko_annotation_id": "sejong.57753",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57754",
+            "examples": [
+                {
+                    "frameName": "Cause_to_fragment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "쇠막대가 부러질 정도로 충격이 컸다.",
+                    "target": "부러질",
+                    "ko_annotation_id": "sejong.57754",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 414,
+    "ko_pos": "VV",
+    "ko_lu": "부러지다.v.Cause_to_fragment",
+    "lu_id": 7011,
+    "en_lus": [
+        "snap.v.7580"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_change",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63244",
+            "examples": [
+                {
+                    "frameName": "Cause_change",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 6
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "새로 수정된 공회법은 공회의 조직과 종업원들이 공회에 참가하는 권리 등에 대해 구체적으로 규정하였다.",
+                    "target": "수정된",
+                    "ko_annotation_id": "sejong.63244",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63245",
+            "examples": [
+                {
+                    "frameName": "Cause_change",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "또 다시 계획이 수정되어야 했다.",
+                    "target": "수정되어야",
+                    "ko_annotation_id": "sejong.63245",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 683,
+    "ko_pos": "VV",
+    "ko_lu": "수정되다.v.Cause_change",
+    "lu_id": 7390,
+    "en_lus": [
+        "modify.v.10805"
+    ]
+}

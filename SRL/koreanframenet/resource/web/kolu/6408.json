@@ -1,0 +1,144 @@
+{
+    "frameName": "Cause_harm",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83906",
+            "examples": [
+                {
+                    "frameName": "Cause_harm",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아군은 간첩들을 무차별적으로 공격했다.",
+                    "target": "공격했다",
+                    "ko_annotation_id": "sejong.83906",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83907",
+            "examples": [
+                {
+                    "frameName": "Cause_harm",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 32
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "전반전에서 한국 선수들이 이스라엘 선수들을 거칠게 공격했다.",
+                    "target": "공격했다",
+                    "ko_annotation_id": "sejong.83907",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83908",
+            "examples": [
+                {
+                    "frameName": "Cause_harm",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아군 비행기가 일본 군함을 공격했다.",
+                    "target": "공격했다",
+                    "ko_annotation_id": "sejong.83908",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83909",
+            "examples": [
+                {
+                    "frameName": "Cause_harm",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "북한 미사일이 워싱톤을 공격한다고 가정해 보자.",
+                    "target": "공격한다고",
+                    "ko_annotation_id": "sejong.83909",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83910",
+            "examples": [
+                {
+                    "frameName": "Cause_harm",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아군은 간첩들에게 무차별적으로 공격했다.",
+                    "target": "공격했다",
+                    "ko_annotation_id": "sejong.83910",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.83911",
+            "examples": [
+                {
+                    "frameName": "Cause_harm",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 33
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "전반전에서 한국 선수들이 이스라엘 선수들에게 거칠게 공격했다.",
+                    "target": "공격했다",
+                    "ko_annotation_id": "sejong.83911",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 112,
+    "ko_pos": "VV",
+    "ko_lu": "공격하다.v.Cause_harm",
+    "lu_id": 6408,
+    "en_lus": [
+        "maul.v.2359"
+    ]
+}

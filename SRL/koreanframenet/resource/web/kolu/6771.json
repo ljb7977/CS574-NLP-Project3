@@ -1,0 +1,34 @@
+{
+    "frameName": "Giving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65772",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 영희에게 조카 아이를 떠맡기고 나가 놀았다.",
+                    "target": "떠맡기고",
+                    "ko_annotation_id": "sejong.65772",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 139,
+    "ko_pos": "VV",
+    "ko_lu": "떠맡기다.v.Giving",
+    "lu_id": 6771,
+    "en_lus": [
+        "foist.v.5347"
+    ]
+}

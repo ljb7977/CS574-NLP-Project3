@@ -1,0 +1,56 @@
+{
+    "frameName": "Respond_to_proposal",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.71173",
+            "examples": [
+                {
+                    "frameName": "Respond_to_proposal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "김서방 댁 아가씨는 처음으로 선을 본 남자를 퇴짜놓았다.",
+                    "target": "퇴짜놓았다",
+                    "ko_annotation_id": "sejong.71173",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.71174",
+            "examples": [
+                {
+                    "frameName": "Respond_to_proposal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "팀장은 김씨의 의견에 퇴짜놓았다.",
+                    "target": "퇴짜놓았다",
+                    "ko_annotation_id": "sejong.71174",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1623,
+    "ko_pos": "VV",
+    "ko_lu": "퇴짜놓다.v.Respond_to_proposal",
+    "lu_id": 7662,
+    "en_lus": [
+        "rebuff.v.12744"
+    ]
+}

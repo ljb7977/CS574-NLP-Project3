@@ -1,0 +1,11 @@
+{
+    "frameName": "Make_noise",
+    "patterns": [],
+    "frameID": 69,
+    "ko_pos": "VV",
+    "ko_lu": "돌아다니면서 외치며 물건을 팔다.v.Make_noise",
+    "lu_id": 6266,
+    "en_lus": [
+        "hawk.v.1414"
+    ]
+}

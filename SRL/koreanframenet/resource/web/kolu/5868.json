@@ -1,0 +1,78 @@
+{
+    "frameName": "Cogitation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.47030",
+            "examples": [
+                {
+                    "frameName": "Cogitation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 선배가 한 그 말을 여러 번 곱씹어 보았다.",
+                    "target": "곱씹어",
+                    "ko_annotation_id": "sejong.47030",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47031",
+            "examples": [
+                {
+                    "frameName": "Cogitation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "좀 자제하라는 충고를 몇 번이나 곱씹었다.",
+                    "target": "곱씹었다",
+                    "ko_annotation_id": "sejong.47031",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.47032",
+            "examples": [
+                {
+                    "frameName": "Cogitation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 문제를 곰곰하게 곱씹어 보았으나 해결책이 나지 않았다.",
+                    "target": "곱씹어",
+                    "ko_annotation_id": "sejong.47032",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 22,
+    "ko_pos": "VV",
+    "ko_lu": "곱씹다.v.Cogitation",
+    "lu_id": 5868,
+    "en_lus": [
+        "brood.v.205"
+    ]
+}

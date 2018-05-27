@@ -1,0 +1,11 @@
+{
+    "frameName": "Placing",
+    "patterns": [],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "단지에 담다.v.Placing",
+    "lu_id": 6505,
+    "en_lus": [
+        "pot.v.3913"
+    ]
+}

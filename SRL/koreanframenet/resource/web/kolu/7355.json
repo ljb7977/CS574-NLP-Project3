@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_end",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76201",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사건이 미해결로 종결되었다.",
+                    "target": "종결되었다",
+                    "ko_annotation_id": "sejong.76201",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76202",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 0,
+                                "end": 3
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "종결된 사건은 재수사가 어렵다.",
+                    "target": "종결된",
+                    "ko_annotation_id": "sejong.76202",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1149,
+    "ko_pos": "VV",
+    "ko_lu": "종결되다.v.Cause_to_end",
+    "lu_id": 7355,
+    "en_lus": [
+        "end.v.10680"
+    ]
+}

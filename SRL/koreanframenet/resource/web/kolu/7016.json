@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_fragment",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89979",
+            "examples": [
+                {
+                    "frameName": "Cause_to_fragment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "단단한 얼음을 깨려고 하니 땀이 많이 났다.",
+                    "target": "깨려고",
+                    "ko_annotation_id": "sejong.89979",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89980",
+            "examples": [
+                {
+                    "frameName": "Cause_to_fragment",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어제 정우는 접시를 깼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.89980",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 414,
+    "ko_pos": "VV",
+    "ko_lu": "깨다.v.Cause_to_fragment",
+    "lu_id": 7016,
+    "en_lus": [
+        "splinter.v.7583"
+    ]
+}

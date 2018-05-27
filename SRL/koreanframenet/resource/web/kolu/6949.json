@@ -1,0 +1,56 @@
+{
+    "frameName": "Motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.88163",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여기 오면 연들이 푸른 하늘에 떠가는 것을 볼 수 있어 좋다.",
+                    "target": "떠가는",
+                    "ko_annotation_id": "sejong.88163",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.88164",
+            "examples": [
+                {
+                    "frameName": "Motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "구름이 하늘에 두둥실 떠가는 걸 보고 있으면 한결 마음이 나아진다.",
+                    "target": "떠가는",
+                    "ko_annotation_id": "sejong.88164",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 7,
+    "ko_pos": "VV",
+    "ko_lu": "떠가다.v.Motion",
+    "lu_id": 6949,
+    "en_lus": [
+        "float.v.6261"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "frameName": "Waking_up",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89972",
+            "examples": [
+                {
+                    "frameName": "Waking_up",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 그제서야 잠을 깼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.89972",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89973",
+            "examples": [
+                {
+                    "frameName": "Waking_up",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 그제서야 잠에서 깼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.89973",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89974",
+            "examples": [
+                {
+                    "frameName": "Waking_up",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 5
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "꿈이 깨고 나서 영수는 무척 허탈했다.",
+                    "target": "깨고",
+                    "ko_annotation_id": "sejong.89974",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 295,
+    "ko_pos": "VV",
+    "ko_lu": "깨다.v.Waking_up",
+    "lu_id": 7115,
+    "en_lus": [
+        "get up.v.9130"
+    ]
+}

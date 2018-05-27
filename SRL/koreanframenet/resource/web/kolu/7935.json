@@ -1,0 +1,56 @@
+{
+    "frameName": "Invading",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.64083",
+            "examples": [
+                {
+                    "frameName": "Invading",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "일본은 1592년에 우리 나라를 침략했다.",
+                    "target": "침략했다",
+                    "ko_annotation_id": "sejong.64083",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.64084",
+            "examples": [
+                {
+                    "frameName": "Invading",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "후백제 견훤은 신라를 침략했었다.",
+                    "target": "침략했었다",
+                    "ko_annotation_id": "sejong.64084",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2022,
+    "ko_pos": "VV",
+    "ko_lu": "침략하다.v.Invading",
+    "lu_id": 7935,
+    "en_lus": [
+        "invade.v.14806"
+    ]
+}

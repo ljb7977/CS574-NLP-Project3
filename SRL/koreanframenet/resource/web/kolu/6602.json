@@ -1,0 +1,34 @@
+{
+    "frameName": "Sending",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48918",
+            "examples": [
+                {
+                    "frameName": "Sending",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 가구들을 밖에 내보냈다.",
+                    "target": "내보냈다",
+                    "ko_annotation_id": "sejong.48918",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 243,
+    "ko_pos": "VV",
+    "ko_lu": "내보내다.v.Sending",
+    "lu_id": 6602,
+    "en_lus": [
+        "export.v.4607"
+    ]
+}

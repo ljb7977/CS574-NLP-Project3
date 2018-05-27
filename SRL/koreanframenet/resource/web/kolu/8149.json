@@ -1,0 +1,56 @@
+{
+    "frameName": "Performers_and_roles",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57952",
+            "examples": [
+                {
+                    "frameName": "Performers_and_roles",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "최근 미혼모들이 신문지상에서 주요 이슈로 등장한다.",
+                    "target": "등장한다",
+                    "ko_annotation_id": "sejong.57952",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57953",
+            "examples": [
+                {
+                    "frameName": "Performers_and_roles",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "올 봄에 유행할 신제품들이 백화점에 등장했다.",
+                    "target": "등장했다",
+                    "ko_annotation_id": "sejong.57953",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 413,
+    "ko_pos": "VV",
+    "ko_lu": "등장하다.v.Performers_and_roles",
+    "lu_id": 8149,
+    "en_lus": [
+        "appear.v.16437"
+    ]
+}

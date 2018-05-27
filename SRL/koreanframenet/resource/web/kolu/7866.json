@@ -1,0 +1,56 @@
+{
+    "frameName": "Assessing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.52478",
+            "examples": [
+                {
+                    "frameName": "Assessing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 작가는 재평가되어야 할 필요가 있다.",
+                    "target": "재평가되어야",
+                    "ko_annotation_id": "sejong.52478",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.52479",
+            "examples": [
+                {
+                    "frameName": "Assessing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 작품이 재평가되기까지는 많은 시간이 들었다.",
+                    "target": "재평가되기까지는",
+                    "ko_annotation_id": "sejong.52479",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 519,
+    "ko_pos": "VV",
+    "ko_lu": "재평가되다.v.Assessing",
+    "lu_id": 7866,
+    "en_lus": [
+        "reappraise.v.13791"
+    ]
+}

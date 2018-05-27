@@ -1,0 +1,11 @@
+{
+    "frameName": "Gathering_up",
+    "patterns": [],
+    "frameID": 260,
+    "ko_pos": "VV",
+    "ko_lu": "(특정방향으로)이동하게 하다.v.Gathering_up",
+    "lu_id": 6760,
+    "en_lus": [
+        "herd.v.5313"
+    ]
+}

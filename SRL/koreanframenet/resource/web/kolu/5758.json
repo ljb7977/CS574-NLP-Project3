@@ -1,0 +1,52 @@
+{
+    "frameName": "Operate_vehicle",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20277",
+            "examples": [
+                {
+                    "frameName": "Operate_vehicle",
+                    "denotations": [
+                        {
+                            "obj": "goal",
+                            "span": {
+                                "begin": 37,
+                                "end": 40
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 42,
+                                "end": 43
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "driving"
+                    ],
+                    "ko_annotation_id": 20277,
+                    "text": "Hall은 금요일에 요르단의 암만으로 비행기로 가고, 거기서 그는 이라크로 가기 전에 하룻밤을 보낼 것이다.",
+                    "sent_id": 1491,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 7078
+                }
+            ]
+        }
+    ],
+    "frameID": 65,
+    "ko_pos": "VV",
+    "ko_lu": "가다.v.Operate_vehicle",
+    "lu_id": 5758,
+    "en_lus": [
+        "drive"
+    ]
+}

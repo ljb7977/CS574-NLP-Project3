@@ -1,0 +1,34 @@
+{
+    "frameName": "Request",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.53703",
+            "examples": [
+                {
+                    "frameName": "Request",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 집들이에 직장 동료들을 청했다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.53703",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 41,
+    "ko_pos": "VV",
+    "ko_lu": "청하다.v.Request",
+    "lu_id": 7495,
+    "en_lus": [
+        "invite.v.11045"
+    ]
+}

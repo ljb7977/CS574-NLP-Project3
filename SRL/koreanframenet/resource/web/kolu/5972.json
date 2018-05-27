@@ -1,0 +1,56 @@
+{
+    "frameName": "Statement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.60198",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "대한민국은 민주공화국을 표방한다.",
+                    "target": "표방한다",
+                    "ko_annotation_id": "sejong.60198",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.60199",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정치개혁을 주장해 왔고 깨끗한 정치를 표방해 왔던 저로서는 입이 열 개라 해도 무어라 드릴 말씀이 없습니다.",
+                    "target": "표방해",
+                    "ko_annotation_id": "sejong.60199",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 43,
+    "ko_pos": "VV",
+    "ko_lu": "표방하다.v.Statement",
+    "lu_id": 5972,
+    "en_lus": [
+        "profess.v.735"
+    ]
+}

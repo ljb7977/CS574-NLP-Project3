@@ -1,0 +1,78 @@
+{
+    "frameName": "Attempt_suasion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54488",
+            "examples": [
+                {
+                    "frameName": "Attempt_suasion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아버지는 딸에게 외출을 금지하셨다.",
+                    "target": "금지하셨다",
+                    "ko_annotation_id": "sejong.54488",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54489",
+            "examples": [
+                {
+                    "frameName": "Attempt_suasion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "학교는 학생들에게 흡연을 금지했다.",
+                    "target": "금지했다",
+                    "ko_annotation_id": "sejong.54489",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54490",
+            "examples": [
+                {
+                    "frameName": "Attempt_suasion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "경찰은 국민들에게 도박을 금지하고 있다.",
+                    "target": "금지하고",
+                    "ko_annotation_id": "sejong.54490",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 87,
+    "ko_pos": "VV",
+    "ko_lu": "금지하다.v.Attempt_suasion",
+    "lu_id": 8366,
+    "en_lus": [
+        "enjoin.v.18519"
+    ]
+}

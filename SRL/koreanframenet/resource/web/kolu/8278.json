@@ -1,0 +1,56 @@
+{
+    "frameName": "Fire_going_out",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.51166",
+            "examples": [
+                {
+                    "frameName": "Fire_going_out",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "촛불이 타다 말고 금새 꺼졌다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.51166",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.51167",
+            "examples": [
+                {
+                    "frameName": "Fire_going_out",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "바람에 불이 꺼져 우리는 너무나 추웠다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.51167",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2823,
+    "ko_pos": "VV",
+    "ko_lu": "꺼지다.v.Fire_going_out",
+    "lu_id": 8278,
+    "en_lus": [
+        "die.v.17445"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "frameName": "Attaching",
+    "patterns": [],
+    "frameID": 197,
+    "ko_pos": "VV",
+    "ko_lu": "붕대를 감다.v.Attaching",
+    "lu_id": 6586,
+    "en_lus": [
+        "tape.v.4531"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Undergo_change",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49705",
+            "examples": [
+                {
+                    "frameName": "Undergo_change",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 33,
+                                "end": 39
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아들의 병역기피 문제로 그 국회의원에 대한 신임은 바닥으로 곤두박질치고 말았다.",
+                    "target": "곤두박질치고",
+                    "ko_annotation_id": "sejong.49705",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49706",
+            "examples": [
+                {
+                    "frameName": "Undergo_change",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 30,
+                                "end": 36
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "경쟁사의 신제품 개발로 우리 물건의 가격은 최저선으로 곤두박질치고 있다.",
+                    "target": "곤두박질치고",
+                    "ko_annotation_id": "sejong.49706",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1172,
+    "ko_pos": "VV",
+    "ko_lu": "곤두박질치다.v.Undergo_change",
+    "lu_id": 7722,
+    "en_lus": [
+        "plummet.v.12960"
+    ]
+}

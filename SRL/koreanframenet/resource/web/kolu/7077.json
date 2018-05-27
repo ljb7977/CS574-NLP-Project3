@@ -1,0 +1,56 @@
+{
+    "frameName": "Killing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.71032",
+            "examples": [
+                {
+                    "frameName": "Killing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 62,
+                                "end": 67
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 잔인한 왕은 광기에 휩싸여 주변의 많은 사람들을 살해했고 그의 영토 안에 거주하는 많은 사람들을 무자비하게 몰살시켰다.",
+                    "target": "몰살시켰다",
+                    "ko_annotation_id": "sejong.71032",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.71033",
+            "examples": [
+                {
+                    "frameName": "Killing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 28,
+                                "end": 33
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "새로운 권력자들은 지난날의 귀족들인 왕씨 일가들을 몰살시켰다.",
+                    "target": "몰살시켰다",
+                    "ko_annotation_id": "sejong.71033",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 590,
+    "ko_pos": "VV",
+    "ko_lu": "몰살시키다.v.Killing",
+    "lu_id": 7077,
+    "en_lus": [
+        "exterminate.v.8635"
+    ]
+}

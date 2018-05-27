@@ -1,0 +1,34 @@
+{
+    "frameName": "Filling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.71252",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리는 이삿짐을 꾸리느라 여념이 없었다.",
+                    "target": "꾸리느라",
+                    "ko_annotation_id": "sejong.71252",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 59,
+    "ko_pos": "VV",
+    "ko_lu": "꾸리다.v.Filling",
+    "lu_id": 6084,
+    "en_lus": [
+        "pack.v.1012"
+    ]
+}

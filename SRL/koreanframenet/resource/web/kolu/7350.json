@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_to_end",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.91689",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "정부는 사형제도를 철폐시켜야 한다.",
+                    "target": "철폐시켜야",
+                    "ko_annotation_id": "sejong.91689",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.91690",
+            "examples": [
+                {
+                    "frameName": "Cause_to_end",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "국방부가 징병제를 철폐시켜야 진정한 국가 발전을 기대할 수 있다.",
+                    "target": "철폐시켜야",
+                    "ko_annotation_id": "sejong.91690",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1149,
+    "ko_pos": "VV",
+    "ko_lu": "철폐시키다.v.Cause_to_end",
+    "lu_id": 7350,
+    "en_lus": [
+        "lift.v.10679"
+    ]
+}

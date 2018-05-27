@@ -1,0 +1,38 @@
+{
+    "frameName": "Architectural_part",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 19995",
+            "examples": [
+                {
+                    "frameName": "Architectural_part",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 37,
+                                "end": 39
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "foundation"
+                    ],
+                    "ko_annotation_id": 19995,
+                    "text": "1847 - 1849년에 건축된 보통 사람이 없는 이 영국 성공회 교단은 홍콩의 가장 오래된 교회이다.",
+                    "sent_id": 1060,
+                    "relations": [],
+                    "annotation_id": 5542
+                }
+            ]
+        }
+    ],
+    "frameID": 971,
+    "ko_pos": "NNG",
+    "ko_lu": "교단.n.Architectural_part",
+    "lu_id": 5671,
+    "en_lus": [
+        "foundation"
+    ]
+}

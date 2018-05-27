@@ -1,0 +1,56 @@
+{
+    "frameName": "Filling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90408",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 27,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 남자들은 작은 방에 많은 사람들을 무자비하게 밀어 넣었다.",
+                    "target": "밀어",
+                    "ko_annotation_id": "sejong.90408",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.90409",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀는 화가 나서 옷가방에 옷을 밀어 넣고 짐을 챙겨 나가 버렸다.",
+                    "target": "밀어",
+                    "ko_annotation_id": "sejong.90409",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 59,
+    "ko_pos": "VV",
+    "ko_lu": "밀어넣다.v.Filling",
+    "lu_id": 6087,
+    "en_lus": [
+        "stuff.v.1015"
+    ]
+}

@@ -1,0 +1,232 @@
+{
+    "frameName": "Cause_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.70223",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 자기 부모를 찾으러 야밤에 고아원에서도망갔다.",
+                    "target": "도망갔다",
+                    "ko_annotation_id": "sejong.70223",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70224",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영희는 자기 엄마에게로 도망갔다.",
+                    "target": "도망갔다",
+                    "ko_annotation_id": "sejong.70224",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70225",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "내가 어디로든지 도망가고 싶은 심정이다.",
+                    "target": "도망가고",
+                    "ko_annotation_id": "sejong.70225",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70226",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 자기 부모를 찾으러 야밤에 고아원을 도망갔다.",
+                    "target": "도망갔다",
+                    "ko_annotation_id": "sejong.70226",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70227",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 개가 결국 집에서 도망갔다.",
+                    "target": "도망갔다",
+                    "ko_annotation_id": "sejong.70227",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70228",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 개가 결국 나에게서 도망갔다.",
+                    "target": "도망갔다",
+                    "ko_annotation_id": "sejong.70228",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70229",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "죄수들이 서울로 도망갔다.",
+                    "target": "도망갔다",
+                    "ko_annotation_id": "sejong.70229",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70230",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "죄수들이 개구멍으로 도망갔다.",
+                    "target": "도망갔다",
+                    "ko_annotation_id": "sejong.70230",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70231",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "곤충들이 밖으로 도망갔다.",
+                    "target": "도망갔다",
+                    "ko_annotation_id": "sejong.70231",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70232",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "곤충들이 밖으로 도망갔다.",
+                    "target": "도망갔다",
+                    "ko_annotation_id": "sejong.70232",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 55,
+    "ko_pos": "VV",
+    "ko_lu": "도망가다.v.Cause_motion",
+    "lu_id": 7478,
+    "en_lus": [
+        "run.v.11008"
+    ]
+}

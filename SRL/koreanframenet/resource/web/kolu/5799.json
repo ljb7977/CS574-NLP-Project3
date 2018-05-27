@@ -1,0 +1,34 @@
+{
+    "frameName": "Separating",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83228",
+            "examples": [
+                {
+                    "frameName": "Separating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 7,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "엄마는 빵을 이등분시켜 두 아이에게 나눠줬다.",
+                    "target": "이등분시켜",
+                    "ko_annotation_id": "sejong.83228",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 15,
+    "ko_pos": "VV",
+    "ko_lu": "이등분시키다.v.Separating",
+    "lu_id": 5799,
+    "en_lus": [
+        "bisect.v.56"
+    ]
+}

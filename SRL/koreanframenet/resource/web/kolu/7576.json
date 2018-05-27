@@ -1,0 +1,78 @@
+{
+    "frameName": "Apply_heat",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.61225",
+            "examples": [
+                {
+                    "frameName": "Apply_heat",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어머니는 지지미를 지져서 반찬으로 내 놓으셨다.",
+                    "target": "지지미를",
+                    "ko_annotation_id": "sejong.61225",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61226",
+            "examples": [
+                {
+                    "frameName": "Apply_heat",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "할머니는 인절미를 화로에 지져서 내게 내미셨다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.61226",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.61227",
+            "examples": [
+                {
+                    "frameName": "Apply_heat",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "인호는 프라이펜에 고기를 지져서 한 입에 삼켰다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.61227",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 236,
+    "ko_pos": "VV",
+    "ko_lu": "지지다.v.Apply_heat",
+    "lu_id": 7576,
+    "en_lus": [
+        "sear.v.11885"
+    ]
+}

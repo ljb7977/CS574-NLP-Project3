@@ -1,0 +1,56 @@
+{
+    "frameName": "Subjective_influence",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.72267",
+            "examples": [
+                {
+                    "frameName": "Subjective_influence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "맥아더 장군이 적군을 원산으로 성공적으로 유인했다.",
+                    "target": "유인했다",
+                    "ko_annotation_id": "sejong.72267",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72268",
+            "examples": [
+                {
+                    "frameName": "Subjective_influence",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "스컹크는 악취를 뿜어서 천적을 다른 곳에 유인했다.",
+                    "target": "유인했다",
+                    "ko_annotation_id": "sejong.72268",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1083,
+    "ko_pos": "VV",
+    "ko_lu": "유인하다.v.Subjective_influence",
+    "lu_id": 8362,
+    "en_lus": [
+        "entice.v.18508"
+    ]
+}

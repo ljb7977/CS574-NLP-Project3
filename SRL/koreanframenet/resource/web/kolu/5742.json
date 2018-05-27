@@ -1,0 +1,52 @@
+{
+    "frameName": "Means",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20245",
+            "examples": [
+                {
+                    "frameName": "Means",
+                    "denotations": [
+                        {
+                            "obj": "descriptor",
+                            "span": {
+                                "begin": 84,
+                                "end": 87
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 88,
+                                "end": 90
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "tactics"
+                    ],
+                    "ko_annotation_id": 20245,
+                    "text": "동기 : 크게 염려되는 테러리스트 단체들은 무차별적 대량 사상자를 만들고 ( 무작위 ; 특정 사람이나 개인들을 표적으로 하지 않음 ) 그리고 획기적이고 위험한 전술을 사용할 동기를 가진다.",
+                    "sent_id": 2043,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 9980
+                }
+            ]
+        }
+    ],
+    "frameID": 1790,
+    "ko_pos": "NNG",
+    "ko_lu": "전술.n.Means",
+    "lu_id": 5742,
+    "en_lus": [
+        "tactic"
+    ]
+}

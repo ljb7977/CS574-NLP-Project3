@@ -1,0 +1,56 @@
+{
+    "frameName": "Excreting",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.84319",
+            "examples": [
+                {
+                    "frameName": "Excreting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 저녁에 먹은 음식을 모두 토했다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.84319",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.84320",
+            "examples": [
+                {
+                    "frameName": "Excreting",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 과음을 하면 마신 술을 토해 버린다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.84320",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 270,
+    "ko_pos": "VV",
+    "ko_lu": "토하다.v.Excreting",
+    "lu_id": 7198,
+    "en_lus": [
+        "throw up.v.9913"
+    ]
+}

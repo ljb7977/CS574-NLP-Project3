@@ -1,0 +1,56 @@
+{
+    "frameName": "Dispersal",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.46636",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "경찰은 시위대를 해산시켰다.",
+                    "target": "해산시켰다",
+                    "ko_annotation_id": "sejong.46636",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.46637",
+            "examples": [
+                {
+                    "frameName": "Dispersal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 31,
+                                "end": 35
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "바시르는 12월에 3개월간 국가비상사태를 선포, 의회를 해산시켜 버렸다.",
+                    "target": "해산시켜",
+                    "ko_annotation_id": "sejong.46637",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 267,
+    "ko_pos": "VV",
+    "ko_lu": "해산시키다.v.Dispersal",
+    "lu_id": 6670,
+    "en_lus": [
+        "disperse.v.4837"
+    ]
+}

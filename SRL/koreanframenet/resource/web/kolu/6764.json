@@ -1,0 +1,34 @@
+{
+    "frameName": "Emotion_active",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.70112",
+            "examples": [
+                {
+                    "frameName": "Emotion_active",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "6반 학생들은 한시도 담임 선생님을 걱정시키지 않는 적이 없다.",
+                    "target": "걱정시키지",
+                    "ko_annotation_id": "sejong.70112",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 45,
+    "ko_pos": "VV",
+    "ko_lu": "걱정시키다.v.Emotion_active",
+    "lu_id": 6764,
+    "en_lus": [
+        "lose sleep.v.5340"
+    ]
+}

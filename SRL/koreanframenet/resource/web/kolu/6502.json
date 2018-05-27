@@ -1,0 +1,56 @@
+{
+    "frameName": "Execution",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.50573",
+            "examples": [
+                {
+                    "frameName": "Execution",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 32,
+                                "end": 37
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "드디어 법무부에서 해당 지방 형무소에 그 사형수의 사형을 집형시켰다.",
+                    "target": "집형시켰다",
+                    "ko_annotation_id": "sejong.50573",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.50574",
+            "examples": [
+                {
+                    "frameName": "Execution",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "언제라도 그 사형수을 집형시키도록 할 수 있으나 몇가지 문제가 있어 지연되고 있을 뿐이다.",
+                    "target": "집형시키도록",
+                    "ko_annotation_id": "sejong.50574",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 225,
+    "ko_pos": "VV",
+    "ko_lu": "집형시키다.v.Execution",
+    "lu_id": 6502,
+    "en_lus": [
+        "execute.v.3887"
+    ]
+}

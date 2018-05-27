@@ -1,0 +1,56 @@
+{
+    "frameName": "Communication_response",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.50739",
+            "examples": [
+                {
+                    "frameName": "Communication_response",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀가 어머니께 말대답하는 것은 처음 보았다.",
+                    "target": "말대답하는",
+                    "ko_annotation_id": "sejong.50739",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.50740",
+            "examples": [
+                {
+                    "frameName": "Communication_response",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어른에게 말대답하는 것은 좋지 못한 버릇이다.",
+                    "target": "말대답하는",
+                    "ko_annotation_id": "sejong.50740",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 42,
+    "ko_pos": "VV",
+    "ko_lu": "말대답하다.v.Communication_response",
+    "lu_id": 5956,
+    "en_lus": [
+        "retort.v.671"
+    ]
+}

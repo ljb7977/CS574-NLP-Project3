@@ -1,0 +1,78 @@
+{
+    "frameName": "Body_movement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.62832",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한 용감한 쥐가 잠자는 고양이 목에 방울을 매달았다.",
+                    "target": "매달았다",
+                    "ko_annotation_id": "sejong.62832",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.62833",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "악당들이 지나가던 한 장사꾼을 나무에 매달았다.",
+                    "target": "매달았다",
+                    "ko_annotation_id": "sejong.62833",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.62834",
+            "examples": [
+                {
+                    "frameName": "Body_movement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "혼례가 끝난 후 신랑 친구들이 신랑을 대들보에 매달았다.",
+                    "target": "매달았다",
+                    "ko_annotation_id": "sejong.62834",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 16,
+    "ko_pos": "VV",
+    "ko_lu": "매달다.v.Body_movement",
+    "lu_id": 5829,
+    "en_lus": [
+        "hang.v.84"
+    ]
+}

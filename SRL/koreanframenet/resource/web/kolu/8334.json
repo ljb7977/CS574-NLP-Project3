@@ -1,0 +1,56 @@
+{
+    "frameName": "Cooking_creation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.53048",
+            "examples": [
+                {
+                    "frameName": "Cooking_creation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기차표를 어서 마련해야겠다.",
+                    "target": "마련해야겠다",
+                    "ko_annotation_id": "sejong.53048",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.53049",
+            "examples": [
+                {
+                    "frameName": "Cooking_creation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이제 우리나라에도 선진적인 제도를 마련해야 합니다.",
+                    "target": "마련해야",
+                    "ko_annotation_id": "sejong.53049",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 268,
+    "ko_pos": "VV",
+    "ko_lu": "마련하다.v.Cooking_creation",
+    "lu_id": 8334,
+    "en_lus": [
+        "fix.v.17923"
+    ]
+}

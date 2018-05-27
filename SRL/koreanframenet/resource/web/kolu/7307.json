@@ -1,0 +1,56 @@
+{
+    "frameName": "Replacing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63930",
+            "examples": [
+                {
+                    "frameName": "Replacing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "점심 메뉴는 원래 예정되었던 빵이 국수로 대신되었다.",
+                    "target": "대신되었다",
+                    "ko_annotation_id": "sejong.63930",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63931",
+            "examples": [
+                {
+                    "frameName": "Replacing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "부상당한 그 선수가 후보 선수로 대신되었다.",
+                    "target": "대신되었다",
+                    "ko_annotation_id": "sejong.63931",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1121,
+    "ko_pos": "VV",
+    "ko_lu": "대신되다.v.Replacing",
+    "lu_id": 7307,
+    "en_lus": [
+        "replace.v.10560"
+    ]
+}

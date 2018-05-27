@@ -1,0 +1,16 @@
+{
+    "frameName": "Duplication",
+    "patterns": [],
+    "frameID": 11,
+    "ko_pos": "VV",
+    "ko_lu": "재생하다.v.Duplication",
+    "lu_id": 8402,
+    "en_lus": [
+        "copy.v.10",
+        "duplicate.v.12",
+        "photocopy.v.14",
+        "reduplicate.v.15",
+        "replicate.v.16",
+        "reproduce.v.17"
+    ]
+}

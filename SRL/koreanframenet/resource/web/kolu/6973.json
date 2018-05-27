@@ -1,0 +1,34 @@
+{
+    "frameName": "Ingest_substance",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65872",
+            "examples": [
+                {
+                    "frameName": "Ingest_substance",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "간호사는 매일 밤 환자에게 안정제를 투약했다.",
+                    "target": "투약했다",
+                    "ko_annotation_id": "sejong.65872",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 386,
+    "ko_pos": "VV",
+    "ko_lu": "투약하다.v.Ingest_substance",
+    "lu_id": 6973,
+    "en_lus": [
+        "pop.v.6913"
+    ]
+}

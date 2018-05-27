@@ -1,0 +1,56 @@
+{
+    "frameName": "Elusive_goal",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.81191",
+            "examples": [
+                {
+                    "frameName": "Elusive_goal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 18
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "간첩들은 이미 수사망을 빠져나갔다.",
+                    "target": "빠져나갔다",
+                    "ko_annotation_id": "sejong.81191",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.81192",
+            "examples": [
+                {
+                    "frameName": "Elusive_goal",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "간첩들은 해안선으로 빠져나갔다.",
+                    "target": "빠져나갔다",
+                    "ko_annotation_id": "sejong.81192",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1305,
+    "ko_pos": "VV",
+    "ko_lu": "빠져나가다.v.Elusive_goal",
+    "lu_id": 7550,
+    "en_lus": [
+        "elude.v.11490"
+    ]
+}

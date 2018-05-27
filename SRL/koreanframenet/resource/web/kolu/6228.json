@@ -1,0 +1,11 @@
+{
+    "frameName": "Operate_vehicle",
+    "patterns": [],
+    "frameID": 65,
+    "ko_pos": "VV",
+    "ko_lu": "이동식 주택을 끌고 다니다.v.Operate_vehicle",
+    "lu_id": 6228,
+    "en_lus": [
+        "caravan.v.1270"
+    ]
+}

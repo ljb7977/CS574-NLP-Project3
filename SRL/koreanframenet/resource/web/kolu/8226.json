@@ -1,0 +1,34 @@
+{
+    "frameName": "Subordinates_and_superiors",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63648",
+            "examples": [
+                {
+                    "frameName": "Subordinates_and_superiors",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "자식은 모름지기 부모를 잘 섬겨야 한다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.63648",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 530,
+    "ko_pos": "VV",
+    "ko_lu": "섬기다.v.Subordinates_and_superiors",
+    "lu_id": 8226,
+    "en_lus": [
+        "serve.v.17139"
+    ]
+}

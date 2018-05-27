@@ -1,0 +1,56 @@
+{
+    "frameName": "Perception_experience",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.64412",
+            "examples": [
+                {
+                    "frameName": "Perception_experience",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 사람의 이상한 낌새가 우리에게 곧바로 감지되었다.",
+                    "target": "감지되었다",
+                    "ko_annotation_id": "sejong.64412",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.64413",
+            "examples": [
+                {
+                    "frameName": "Perception_experience",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 38,
+                                "end": 42
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "봄철 임금협상 시즌을 앞두고 올해에도 노사간에 심상치 않은 분위기가 감지되고 있다.",
+                    "target": "감지되고",
+                    "ko_annotation_id": "sejong.64413",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 70,
+    "ko_pos": "VV",
+    "ko_lu": "감지되다.v.Perception_experience",
+    "lu_id": 6329,
+    "en_lus": [
+        "detect.v.1530"
+    ]
+}

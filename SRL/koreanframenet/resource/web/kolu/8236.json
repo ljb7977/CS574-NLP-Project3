@@ -1,0 +1,56 @@
+{
+    "frameName": "Treating_and_mistreating",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.92705",
+            "examples": [
+                {
+                    "frameName": "Treating_and_mistreating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "시어머니가 며느리를 심하게 구박하였다.",
+                    "target": "구박하였다",
+                    "ko_annotation_id": "sejong.92705",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.92706",
+            "examples": [
+                {
+                    "frameName": "Treating_and_mistreating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "다른 사람들 앞에서 아이를 너무 심하게 구박하면 안된다.",
+                    "target": "구박하면",
+                    "ko_annotation_id": "sejong.92706",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2770,
+    "ko_pos": "VV",
+    "ko_lu": "구박하다.v.Treating_and_mistreating",
+    "lu_id": 8236,
+    "en_lus": [
+        "mistreat.v.17161"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Cause_change_of_position_on_a_scale",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55341",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "철수는 잔돈을 바꾸러 가게에 갔다.",
+                    "target": "바꾸러",
+                    "ko_annotation_id": "sejong.55341",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 96,
+    "ko_pos": "VV",
+    "ko_lu": "바꾸다.v.Cause_change_of_position_on_a_scale",
+    "lu_id": 7510,
+    "en_lus": [
+        "move.v.11116"
+    ]
+}

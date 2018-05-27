@@ -1,0 +1,78 @@
+{
+    "frameName": "Motion_noise",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.48954",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "밤새 내린 눈을 밟는 소리가 유난히 사각거린다.",
+                    "target": "사각거린다",
+                    "ko_annotation_id": "sejong.48954",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48955",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "눈이 사각거리며 내린다.",
+                    "target": "사각거리며",
+                    "ko_annotation_id": "sejong.48955",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.48956",
+            "examples": [
+                {
+                    "frameName": "Motion_noise",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어둠 속에서 사과 먹는 소리만 사각거린다.",
+                    "target": "사각거린다",
+                    "ko_annotation_id": "sejong.48956",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 60,
+    "ko_pos": "VV",
+    "ko_lu": "사각거리다.v.Motion_noise",
+    "lu_id": 6105,
+    "en_lus": [
+        "crunch.v.1031"
+    ]
+}

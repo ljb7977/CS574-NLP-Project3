@@ -1,0 +1,144 @@
+{
+    "frameName": "Trust",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54569",
+            "examples": [
+                {
+                    "frameName": "Trust",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "사장은 수미를 전적으로 신뢰한다.",
+                    "target": "신뢰한다",
+                    "ko_annotation_id": "sejong.54569",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54570",
+            "examples": [
+                {
+                    "frameName": "Trust",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아버지는 맏아들만을 신뢰하셨다.",
+                    "target": "신뢰하셨다",
+                    "ko_annotation_id": "sejong.54570",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54571",
+            "examples": [
+                {
+                    "frameName": "Trust",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "수미는 준오와 서로 신뢰한다.",
+                    "target": "신뢰한다",
+                    "ko_annotation_id": "sejong.54571",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54572",
+            "examples": [
+                {
+                    "frameName": "Trust",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여당은 야당과 서로 신뢰한다.",
+                    "target": "신뢰한다",
+                    "ko_annotation_id": "sejong.54572",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54573",
+            "examples": [
+                {
+                    "frameName": "Trust",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "수미와 준오는 서로 신뢰한다.",
+                    "target": "신뢰한다",
+                    "ko_annotation_id": "sejong.54573",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54574",
+            "examples": [
+                {
+                    "frameName": "Trust",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여당과 야당은 서로 신뢰한다.",
+                    "target": "신뢰한다",
+                    "ko_annotation_id": "sejong.54574",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1731,
+    "ko_pos": "VV",
+    "ko_lu": "신뢰하다.v.Trust",
+    "lu_id": 7790,
+    "en_lus": [
+        "trust.v.13169"
+    ]
+}

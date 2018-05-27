@@ -1,0 +1,56 @@
+{
+    "frameName": "Impact",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.45931",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "소녀는 물가에서 물을 퐁당거렸다.",
+                    "target": "퐁당거렸다",
+                    "ko_annotation_id": "sejong.45931",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.45932",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "약간만 퐁당거려도 흙탕물이 되어버린다.",
+                    "target": "퐁당거려도",
+                    "ko_annotation_id": "sejong.45932",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 311,
+    "ko_pos": "VV",
+    "ko_lu": "퐁당거리다.v.Impact",
+    "lu_id": 6967,
+    "en_lus": [
+        "plop.v.6841"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Capacity",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.70857",
+            "examples": [
+                {
+                    "frameName": "Capacity",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "포로들을 수용할 수 있는 시설이 절대적으로 부족했다.",
+                    "target": "수용할",
+                    "ko_annotation_id": "sejong.70857",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.70858",
+            "examples": [
+                {
+                    "frameName": "Capacity",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "난민들을 수용할 수 있는 수용소를 더 지어야 합니다.",
+                    "target": "수용할",
+                    "ko_annotation_id": "sejong.70858",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2138,
+    "ko_pos": "VV",
+    "ko_lu": "수용하다.v.Capacity",
+    "lu_id": 8034,
+    "en_lus": [
+        "seat.v.15380"
+    ]
+}

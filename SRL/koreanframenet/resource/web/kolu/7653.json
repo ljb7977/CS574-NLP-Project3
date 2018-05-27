@@ -1,0 +1,11 @@
+{
+    "frameName": "Rejuvenation",
+    "patterns": [],
+    "frameID": 1614,
+    "ko_pos": "VV",
+    "ko_lu": "재충전하다.v.Rejuvenation",
+    "lu_id": 7653,
+    "en_lus": [
+        "refresh.v.12663"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Conquering",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.54452",
+            "examples": [
+                {
+                    "frameName": "Conquering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "군사적 요충지가 함락되자 드디어 적군은 항복을 하였다.",
+                    "target": "함락되자",
+                    "ko_annotation_id": "sejong.54452",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.54453",
+            "examples": [
+                {
+                    "frameName": "Conquering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "성이 함락되면 모든 것이 끝장이다.",
+                    "target": "함락되면",
+                    "ko_annotation_id": "sejong.54453",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2021,
+    "ko_pos": "VV",
+    "ko_lu": "함락되다.v.Conquering",
+    "lu_id": 7951,
+    "en_lus": [
+        "fall.v.14962"
+    ]
+}

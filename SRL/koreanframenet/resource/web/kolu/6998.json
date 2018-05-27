@@ -1,0 +1,56 @@
+{
+    "frameName": "Linguistic_meaning",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68006",
+            "examples": [
+                {
+                    "frameName": "Linguistic_meaning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 33,
+                                "end": 37
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이번 사건은 그 사람이 우리를 얼마나 생각하는지를 단적으로 보여주는 것이었다.",
+                    "target": "보여주는",
+                    "ko_annotation_id": "sejong.68006",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68007",
+            "examples": [
+                {
+                    "frameName": "Linguistic_meaning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 글은 네가 얼마나 무식한지를 보여주는 증거다.",
+                    "target": "보여주는",
+                    "ko_annotation_id": "sejong.68007",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 406,
+    "ko_pos": "VV",
+    "ko_lu": "보여주다.v.Linguistic_meaning",
+    "lu_id": 6998,
+    "en_lus": [
+        "denote.v.7480"
+    ]
+}

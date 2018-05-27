@@ -1,0 +1,56 @@
+{
+    "frameName": "Judgment_direct_address",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.59345",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영수는 이번 계약건에 대해 사장에게 책망당했다.",
+                    "target": "책망당했다",
+                    "ko_annotation_id": "sejong.59345",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.59346",
+            "examples": [
+                {
+                    "frameName": "Judgment_direct_address",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "윗사람들에게 공연히 책망당하느니 차라리 안하겠다.",
+                    "target": "책망당하느니",
+                    "ko_annotation_id": "sejong.59346",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 711,
+    "ko_pos": "VV",
+    "ko_lu": "책망당하다.v.Judgment_direct_address",
+    "lu_id": 7304,
+    "en_lus": [
+        "take to task.v.10553"
+    ]
+}

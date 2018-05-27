@@ -1,0 +1,56 @@
+{
+    "frameName": "Assessing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63441",
+            "examples": [
+                {
+                    "frameName": "Assessing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "행정 전체의 위상에 대해 원점에서 재검토하고 개혁을 단행할 필요가 있습니다.",
+                    "target": "재검토하고",
+                    "ko_annotation_id": "sejong.63441",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63442",
+            "examples": [
+                {
+                    "frameName": "Assessing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 32,
+                                "end": 37
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기존의 잘못된 지하철 정책과 경영구조, 경영마인드를 전면 재검토하고 그 오류를 평가함으로써 지하철 개혁의 미래 청사진이 시급히 수립되어야 할 시점이다.",
+                    "target": "재검토하고",
+                    "ko_annotation_id": "sejong.63442",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 519,
+    "ko_pos": "VV",
+    "ko_lu": "재검토하다.v.Assessing",
+    "lu_id": 7869,
+    "en_lus": [
+        "reappraise.v.13791"
+    ]
+}

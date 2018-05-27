@@ -1,0 +1,87 @@
+{
+    "frameName": "Identicality",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20205",
+            "examples": [
+                {
+                    "frameName": "Identicality",
+                    "denotations": [
+                        {
+                            "obj": "previous_instance",
+                            "span": {
+                                "begin": 4,
+                                "end": 8
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 11,
+                                "end": 13
+                            },
+                            "id": "1"
+                        },
+                        {
+                            "obj": "previous_instance",
+                            "span": {
+                                "begin": 16,
+                                "end": 19
+                            },
+                            "id": "3"
+                        }
+                    ],
+                    "origin_lus": [
+                        "distinct"
+                    ],
+                    "ko_annotation_id": 20205,
+                    "text": "그러나 교육기관과는 별개로, 선생들을 매도하는 것은 부당하다.",
+                    "sent_id": 203,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "3",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 1110
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.43231",
+            "examples": [
+                {
+                    "frameName": "Identicality",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 10,
+                                "end": 12
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "text": "사랑과 우정을 늘 별개의 것으로 생각할 수는 없다.",
+                    "target": "별개",
+                    "ko_annotation_id": "sejong.43231",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1029,
+    "ko_pos": "NNG",
+    "ko_lu": "별개.n.Identicality",
+    "lu_id": 5725,
+    "en_lus": [
+        "distinct"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "frameName": "Perception_body",
+    "patterns": [],
+    "frameID": 68,
+    "ko_pos": "VV",
+    "ko_lu": "작열감을 느끼다.v.Perception_body",
+    "lu_id": 6250,
+    "en_lus": [
+        "burn.v.1331"
+    ]
+}

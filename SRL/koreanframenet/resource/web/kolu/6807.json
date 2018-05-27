@@ -1,0 +1,56 @@
+{
+    "frameName": "Grooming",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.85757",
+            "examples": [
+                {
+                    "frameName": "Grooming",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 오래 신은 구두에 솔질했다.",
+                    "target": "솔질했다",
+                    "ko_annotation_id": "sejong.85757",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.85758",
+            "examples": [
+                {
+                    "frameName": "Grooming",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어머니는 설거지대는 물론 찬장까지 꼼꼼히 솔질하셨다.",
+                    "target": "솔질하셨다",
+                    "ko_annotation_id": "sejong.85758",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 159,
+    "ko_pos": "VV",
+    "ko_lu": "솔질하다.v.Grooming",
+    "lu_id": 6807,
+    "en_lus": [
+        "groom.v.5451"
+    ]
+}

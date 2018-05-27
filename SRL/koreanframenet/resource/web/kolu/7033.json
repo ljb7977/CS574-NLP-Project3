@@ -1,0 +1,78 @@
+{
+    "frameName": "Attack",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.67181",
+            "examples": [
+                {
+                    "frameName": "Attack",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "학교 종이 땡땡 친다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.67181",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67182",
+            "examples": [
+                {
+                    "frameName": "Attack",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 6,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "벌써 종이 치는 것을 보니 한 시간이 지난 모양이다.",
+                    "target": "치는",
+                    "ko_annotation_id": "sejong.67182",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.67183",
+            "examples": [
+                {
+                    "frameName": "Attack",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 14,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "수업 시작을 알리는 종이 치자 운동장에서 놀던 아이들이 교실로 뛰어 들어갔다.",
+                    "target": "치자",
+                    "ko_annotation_id": "sejong.67183",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 424,
+    "ko_pos": "VV",
+    "ko_lu": "치다.v.Attack",
+    "lu_id": 7033,
+    "en_lus": [
+        "strike.v.7770"
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "frameName": "Statement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57332",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 매우 위험한 인물이니 속지 않게 조심해야 한다.",
+                    "target": "조심해야",
+                    "ko_annotation_id": "sejong.57332",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57333",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "공연히 친절한 사람을 특히 조심해라.",
+                    "target": "조심해라",
+                    "ko_annotation_id": "sejong.57333",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57334",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 8
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "산불 조심합시다.",
+                    "target": "조심합시다",
+                    "ko_annotation_id": "sejong.57334",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57335",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "다시는 강의에 늦지 않도록 조심해라.",
+                    "target": "조심해라",
+                    "ko_annotation_id": "sejong.57335",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57336",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "요즘같은 환절기에는 감기에 걸리지 않도록 조심해라.",
+                    "target": "조심해라",
+                    "ko_annotation_id": "sejong.57336",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 43,
+    "ko_pos": "VV",
+    "ko_lu": "조심하다.v.Statement",
+    "lu_id": 5965,
+    "en_lus": [
+        "caution.v.695"
+    ]
+}

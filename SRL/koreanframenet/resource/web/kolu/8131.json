@@ -1,0 +1,100 @@
+{
+    "frameName": "Function",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.87102",
+            "examples": [
+                {
+                    "frameName": "Function",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "돈이 선거에 많이 쓰인다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.87102",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.87103",
+            "examples": [
+                {
+                    "frameName": "Function",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "환자 치료에 신약이 쓰인다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.87103",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.87104",
+            "examples": [
+                {
+                    "frameName": "Function",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선거를 치르는 데 돈이 많이 쓰인다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.87104",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.87105",
+            "examples": [
+                {
+                    "frameName": "Function",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 나무는 통나무 집을 짓는 데 많이 쓰인다고 한다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.87105",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2523,
+    "ko_pos": "VV",
+    "ko_lu": "쓰이다.v.Function",
+    "lu_id": 8131,
+    "en_lus": [
+        "serve.v.16287"
+    ]
+}

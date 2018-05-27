@@ -1,0 +1,11 @@
+{
+    "frameName": "Motion_noise",
+    "patterns": [],
+    "frameID": 60,
+    "ko_pos": "VV",
+    "ko_lu": "웅성거리다.v.Motion_noise",
+    "lu_id": 6125,
+    "en_lus": [
+        "rumble.v.1040"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Change_position_on_a_scale",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79428",
+            "examples": [
+                {
+                    "frameName": "Change_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 13,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "내 아들이 이제 성년에 이르렀다.",
+                    "target": "이르렀다",
+                    "ko_annotation_id": "sejong.79428",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79429",
+            "examples": [
+                {
+                    "frameName": "Change_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 10
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "한밤중에 이르기까지 이야기는 그칠 줄을 몰랐다.",
+                    "target": "이르기까지",
+                    "ko_annotation_id": "sejong.79429",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 91,
+    "ko_pos": "VV",
+    "ko_lu": "이르다.v.Change_position_on_a_scale",
+    "lu_id": 7694,
+    "en_lus": [
+        "reach.v.12879"
+    ]
+}

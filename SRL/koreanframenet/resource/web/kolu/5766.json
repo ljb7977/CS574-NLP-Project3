@@ -1,0 +1,74 @@
+{
+    "frameName": "Buildings",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20301",
+            "examples": [
+                {
+                    "frameName": "Buildings",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 27,
+                                "end": 30
+                            },
+                            "id": "1"
+                        },
+                        {
+                            "obj": "name",
+                            "span": {
+                                "begin": 32,
+                                "end": 48
+                            },
+                            "id": "2"
+                        }
+                    ],
+                    "origin_lus": [
+                        "residence"
+                    ],
+                    "ko_annotation_id": 20301,
+                    "text": "Peak Tram의 하부 터미널에서 전 주지사의 거주지인 Government House 까지는 단지 짧은 도보거리였는데, 지금은 박물관이다.",
+                    "sent_id": 1086,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 5668
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.28006",
+            "examples": [
+                {
+                    "frameName": "Buildings",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 4,
+                                "end": 7
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "text": "정부는 거주지가 불분명한 사람들에 대한 조사를 시작하였다.",
+                    "target": "거주지",
+                    "ko_annotation_id": "sejong.28006",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 173,
+    "ko_pos": "NNG",
+    "ko_lu": "거주지.n.Buildings",
+    "lu_id": 5766,
+    "en_lus": [
+        "residence"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.79770",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 30,
+                                "end": 34
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "많은 팔레스타인 사람들이 자기 집을 잃어버리고 광야를 방랑하고 있다.",
+                    "target": "방랑하고",
+                    "ko_annotation_id": "sejong.79770",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.79771",
+            "examples": [
+                {
+                    "frameName": "Self_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "유비는 자기 수하의 사람들과 함께 허허벌판에서 방랑할 수밖에 없었다.",
+                    "target": "방랑할",
+                    "ko_annotation_id": "sejong.79771",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "방랑하다.v.Self_motion",
+    "lu_id": 7882,
+    "en_lus": [
+        "rove.v.14010"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_bodily_experience",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.76540",
+            "examples": [
+                {
+                    "frameName": "Cause_bodily_experience",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀는 일주일에 한 번 규칙적으로 얼굴을 마사지한다.",
+                    "target": "마사지한다",
+                    "ko_annotation_id": "sejong.76540",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.76541",
+            "examples": [
+                {
+                    "frameName": "Cause_bodily_experience",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 4,
+                                "end": 9
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어깨를 마사지하고 나면 피로가 좀 풀릴게다.",
+                    "target": "마사지하고",
+                    "ko_annotation_id": "sejong.76541",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2320,
+    "ko_pos": "VV",
+    "ko_lu": "마사지하다.v.Cause_bodily_experience",
+    "lu_id": 8105,
+    "en_lus": [
+        "massage.v.15883"
+    ]
+}

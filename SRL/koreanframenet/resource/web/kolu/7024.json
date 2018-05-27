@@ -1,0 +1,56 @@
+{
+    "frameName": "Damaging",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.59834",
+            "examples": [
+                {
+                    "frameName": "Damaging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 29
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리 아이들은 언제나 컴퓨터를 험하게 쓰다가 손상한다.",
+                    "target": "손상한다",
+                    "ko_annotation_id": "sejong.59834",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.59835",
+            "examples": [
+                {
+                    "frameName": "Damaging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 친구는 언제나 물건들을 손상한다.",
+                    "target": "손상한다",
+                    "ko_annotation_id": "sejong.59835",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 415,
+    "ko_pos": "VV",
+    "ko_lu": "손상하다.v.Damaging",
+    "lu_id": 7024,
+    "en_lus": [
+        "mar.v.7595"
+    ]
+}

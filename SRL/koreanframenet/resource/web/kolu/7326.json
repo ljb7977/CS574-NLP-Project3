@@ -1,0 +1,56 @@
+{
+    "frameName": "Distinctiveness",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.51474",
+            "examples": [
+                {
+                    "frameName": "Distinctiveness",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "주거지는 세대수에 따라 네 유형으로 구분된다.",
+                    "target": "구분된다",
+                    "ko_annotation_id": "sejong.51474",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.51475",
+            "examples": [
+                {
+                    "frameName": "Distinctiveness",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "삼은 장삼, 산삼, 인삼으로 크게 구분된다.",
+                    "target": "구분된다",
+                    "ko_annotation_id": "sejong.51475",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1133,
+    "ko_pos": "VV",
+    "ko_lu": "구분되다.v.Distinctiveness",
+    "lu_id": 7326,
+    "en_lus": [
+        "characterize.v.10601"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "frameName": "Forgoing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57780",
+            "examples": [
+                {
+                    "frameName": "Forgoing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 20,
+                                "end": 25
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "건설부는 우리 건설회사에 도굴작업을 중지시켰다.",
+                    "target": "중지시켰다",
+                    "ko_annotation_id": "sejong.57780",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1304,
+    "ko_pos": "VV",
+    "ko_lu": "중지시키다.v.Forgoing",
+    "lu_id": 7544,
+    "en_lus": [
+        "forgo.v.11473"
+    ]
+}

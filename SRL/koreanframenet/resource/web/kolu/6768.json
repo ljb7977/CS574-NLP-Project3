@@ -1,0 +1,56 @@
+{
+    "frameName": "Giving",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.86096",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 0,
+                                "end": 2
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기부 문화에서 선진국이라고 할 수 있는 미국의 경우 지난 한 해에만 약 4조원의 돈이 기부돼 소외된 사회의 어두운 구석을 위해 사용되고 있다.",
+                    "target": "기부",
+                    "ko_annotation_id": "sejong.86096",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.86097",
+            "examples": [
+                {
+                    "frameName": "Giving",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 35,
+                                "end": 38
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "자택 부근 해변 사유지 4에이커가 그녀의 유언에 따라 공유지로 기부돼 보호받게 됐다.",
+                    "target": "기부돼",
+                    "ko_annotation_id": "sejong.86097",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 139,
+    "ko_pos": "VV",
+    "ko_lu": "기부되다.v.Giving",
+    "lu_id": 6768,
+    "en_lus": [
+        "donate.v.5344"
+    ]
+}

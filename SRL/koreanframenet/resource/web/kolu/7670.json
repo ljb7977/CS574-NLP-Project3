@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_change_of_position_on_a_scale",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.81775",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 6
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "값을 깎지는 마십시오.",
+                    "target": "깎지는",
+                    "ko_annotation_id": "sejong.81775",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.81776",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 5,
+                                "end": 7
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "백 원을 깎아 드리겠습니다.",
+                    "target": "깎아",
+                    "ko_annotation_id": "sejong.81776",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 96,
+    "ko_pos": "VV",
+    "ko_lu": "깎다.v.Cause_change_of_position_on_a_scale",
+    "lu_id": 7670,
+    "en_lus": [
+        "knock down.v.12773"
+    ]
+}

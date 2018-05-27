@@ -1,0 +1,11 @@
+{
+    "frameName": "Operate_vehicle",
+    "patterns": [],
+    "frameID": 65,
+    "ko_pos": "VV",
+    "ko_lu": "뗏목을 타고 다니다.v.Operate_vehicle",
+    "lu_id": 6234,
+    "en_lus": [
+        "raft.v.1283"
+    ]
+}

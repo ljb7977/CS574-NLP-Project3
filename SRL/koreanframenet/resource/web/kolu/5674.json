@@ -1,0 +1,122 @@
+{
+    "frameName": "Body_parts",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 19998",
+            "examples": [
+                {
+                    "frameName": "Observable_body_parts",
+                    "denotations": [
+                        {
+                            "obj": "possessor",
+                            "span": {
+                                "begin": 22,
+                                "end": 24
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "descriptor",
+                            "span": {
+                                "begin": 26,
+                                "end": 29
+                            },
+                            "id": "3"
+                        },
+                        {
+                            "obj": "descriptor",
+                            "span": {
+                                "begin": 30,
+                                "end": 34
+                            },
+                            "id": "4"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 35,
+                                "end": 37
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "mane"
+                    ],
+                    "ko_annotation_id": 19998,
+                    "text": "Rastafarianism 추종자들 ( 그들의 독특한 레게머리 갈기를 한 ) 은 1930년대에 자마이카에서 비롯되었고 아직도 대부분 이곳에서 발견된다.",
+                    "sent_id": 915,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "3",
+                            "pred": ""
+                        },
+                        {
+                            "subj": "1",
+                            "obj": "4",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 4729
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.36535",
+            "examples": [
+                {
+                    "frameName": "Body_parts",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 5,
+                                "end": 7
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "text": "수사자의 갈기는 동물의 왕으로서의 위용을 드러내준다.",
+                    "target": "갈기",
+                    "ko_annotation_id": "sejong.36535",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.36536",
+            "examples": [
+                {
+                    "frameName": "Body_parts",
+                    "denotations": [
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 5,
+                                "end": 7
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "text": "이 말의 갈기는 유달리 윤택이 난다.",
+                    "target": "갈기",
+                    "ko_annotation_id": "sejong.36536",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 119,
+    "ko_pos": "NNG",
+    "ko_lu": "갈기.n.Body_parts",
+    "lu_id": 5674,
+    "en_lus": [
+        "mane"
+    ]
+}

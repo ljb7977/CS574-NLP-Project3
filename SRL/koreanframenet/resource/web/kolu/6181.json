@@ -1,0 +1,11 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "보통 구보로 말을 달리다.v.Self_motion",
+    "lu_id": 6181,
+    "en_lus": [
+        "canter.v.1160"
+    ]
+}

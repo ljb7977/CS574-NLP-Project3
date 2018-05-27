@@ -1,0 +1,56 @@
+{
+    "frameName": "Execution",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57771",
+            "examples": [
+                {
+                    "frameName": "Execution",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 48,
+                                "end": 54
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "시추안성 폭발사건과 관련하여 사형 선고를 받았던 롭상 된둡 스님의 사형이 지난 일요일 집형되었다는 소식입니다.",
+                    "target": "집형되었다는",
+                    "ko_annotation_id": "sejong.57771",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57772",
+            "examples": [
+                {
+                    "frameName": "Execution",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "인천 감옥 죄수의 사형은 언제나 오후에 집형되게 되어 있었다.",
+                    "target": "집형되게",
+                    "ko_annotation_id": "sejong.57772",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 225,
+    "ko_pos": "VV",
+    "ko_lu": "집형되다.v.Execution",
+    "lu_id": 6501,
+    "en_lus": [
+        "execute.v.3887"
+    ]
+}

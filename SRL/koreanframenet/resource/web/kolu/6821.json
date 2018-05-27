@@ -1,0 +1,56 @@
+{
+    "frameName": "Becoming_attached",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.46976",
+            "examples": [
+                {
+                    "frameName": "Becoming_attached",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 17,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "자승자박이란 포승으로 제 몸을 옭아 묶는다는 뜻이다.",
+                    "target": "옭아",
+                    "ko_annotation_id": "sejong.46976",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.46977",
+            "examples": [
+                {
+                    "frameName": "Becoming_attached",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 35,
+                                "end": 37
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 다음 청실 홍실의 둥근 타래실로 위쪽으로부터 매듭지지 않게 옭아 묶는다.",
+                    "target": "옭아",
+                    "ko_annotation_id": "sejong.46977",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 306,
+    "ko_pos": "VV",
+    "ko_lu": "옭다.v.Becoming_attached",
+    "lu_id": 6821,
+    "en_lus": [
+        "bind.v.5580"
+    ]
+}

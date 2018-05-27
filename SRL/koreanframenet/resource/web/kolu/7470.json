@@ -1,0 +1,100 @@
+{
+    "frameName": "Impact",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55957",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 26,
+                                "end": 30
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "잔뼈가 굵은 젊은 신임 행장의 탄생은 주가에도 작용했다.",
+                    "target": "작용했다",
+                    "ko_annotation_id": "sejong.55957",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55958",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 42,
+                                "end": 46
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "주가는 8.11% 상승했고 공격적인 자사 주 매입 발표도 주가에 긍정적으로 작용했다.",
+                    "target": "작용했다",
+                    "ko_annotation_id": "sejong.55958",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55959",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 46,
+                                "end": 50
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이런 과정을 통해 맺어진 돈독한 신뢰 관계는 월드컵의 성공적 개최를 이끈 배경으로 작용했다.",
+                    "target": "작용했다",
+                    "ko_annotation_id": "sejong.55959",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55960",
+            "examples": [
+                {
+                    "frameName": "Impact",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 45,
+                                "end": 49
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "1895년 민비 시해 사건은 민중들에게까지 반일감정과 민족의식을 심어주는 계기로 작용했다.",
+                    "target": "작용했다",
+                    "ko_annotation_id": "sejong.55960",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 311,
+    "ko_pos": "VV",
+    "ko_lu": "작용하다.v.Impact",
+    "lu_id": 7470,
+    "en_lus": [
+        "touch.v.11007"
+    ]
+}

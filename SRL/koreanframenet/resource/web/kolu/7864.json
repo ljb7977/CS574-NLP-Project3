@@ -1,0 +1,56 @@
+{
+    "frameName": "Statement",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68717",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 15,
+                                "end": 19
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그의 소설은 하층민의 삶을 묘사하고 있다.",
+                    "target": "묘사하고",
+                    "ko_annotation_id": "sejong.68717",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68718",
+            "examples": [
+                {
+                    "frameName": "Statement",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 23
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그의 무용은 인간의 내면적 갈등을 묘사하고 있다.",
+                    "target": "묘사하고",
+                    "ko_annotation_id": "sejong.68718",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 43,
+    "ko_pos": "VV",
+    "ko_lu": "묘사하다.v.Statement",
+    "lu_id": 7864,
+    "en_lus": [
+        "describe.v.13781"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Dressing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.77015",
+            "examples": [
+                {
+                    "frameName": "Dressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 30,
+                                "end": 35
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "언니는 오랜만에 남자 친구를 만나러 가기 위해 양장을 차려입었다.",
+                    "target": "차려입었다",
+                    "ko_annotation_id": "sejong.77015",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.77016",
+            "examples": [
+                {
+                    "frameName": "Dressing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 22
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "기다리고 있었다는 듯 한복을 잘 차려입은 한 여인이 마루문을 열었다.",
+                    "target": "차려입은",
+                    "ko_annotation_id": "sejong.77016",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1211,
+    "ko_pos": "VV",
+    "ko_lu": "차려입다.v.Dressing",
+    "lu_id": 7445,
+    "en_lus": [
+        "dress up.v.10982"
+    ]
+}

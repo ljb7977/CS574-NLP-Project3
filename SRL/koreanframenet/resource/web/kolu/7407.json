@@ -1,0 +1,56 @@
+{
+    "frameName": "Judgment_communication",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.80048",
+            "examples": [
+                {
+                    "frameName": "Judgment_communication",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 20
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "민희는 아직도 나를 어린애로 취급한다.",
+                    "target": "취급한다",
+                    "ko_annotation_id": "sejong.80048",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.80049",
+            "examples": [
+                {
+                    "frameName": "Judgment_communication",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 14
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그는 나를 우습게 취급한다.",
+                    "target": "취급한다",
+                    "ko_annotation_id": "sejong.80049",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 219,
+    "ko_pos": "VV",
+    "ko_lu": "취급하다.v.Judgment_communication",
+    "lu_id": 7407,
+    "en_lus": [
+        "dump.v.10847"
+    ]
+}

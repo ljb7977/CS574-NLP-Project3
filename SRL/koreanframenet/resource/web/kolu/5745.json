@@ -1,0 +1,58 @@
+{
+    "frameName": "Accomplishment",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20249",
+            "examples": [
+                {
+                    "frameName": "Accomplishment",
+                    "denotations": [
+                        {
+                            "obj": "Means",
+                            "span": {
+                                "begin": 0,
+                                "end": 17
+                            }
+                        },
+                        {
+                            "obj": "Agent",
+                            "span": {
+                                "begin": 23,
+                                "end": 30
+                            }
+                        },
+                        {
+                            "obj": "Goal",
+                            "span": {
+                                "begin": 32,
+                                "end": 38
+                            }
+                        },
+                        {
+                            "obj": "Target",
+                            "span": {
+                                "begin": 39,
+                                "end": 42
+                            }
+                        }
+                    ],
+                    "origin_lus": [
+                        "mattoo .まっとう "
+                    ],
+                    "ko_annotation_id": 20249,
+                    "text": "작품의 중개와 잡무를 떠맡는 것만으로는, 작가 에이전트의 역할을 반도 완수하지 못한 것이다.",
+                    "sent_id": 4998,
+                    "relations": [],
+                    "annotation_id": 0
+                }
+            ]
+        }
+    ],
+    "frameID": 1519,
+    "ko_pos": "VV",
+    "ko_lu": "완수하다.v.Accomplishment",
+    "lu_id": 5745,
+    "en_lus": [
+        "mattoo .まっとう "
+    ]
+}

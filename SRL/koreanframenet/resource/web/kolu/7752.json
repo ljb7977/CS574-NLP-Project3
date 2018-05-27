@@ -1,0 +1,56 @@
+{
+    "frameName": "Imitating",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.72547",
+            "examples": [
+                {
+                    "frameName": "Imitating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": 1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "너 내가 쓴 논문을 베꼈지?",
+                    "target": "",
+                    "ko_annotation_id": "sejong.72547",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.72548",
+            "examples": [
+                {
+                    "frameName": "Imitating",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": 1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "너 내가 쓴 논문에서 이 대목을 베꼈지?",
+                    "target": "",
+                    "ko_annotation_id": "sejong.72548",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1672,
+    "ko_pos": "VV",
+    "ko_lu": "베끼다.v.Imitating",
+    "lu_id": 7752,
+    "en_lus": [
+        "copy.v.13034"
+    ]
+}

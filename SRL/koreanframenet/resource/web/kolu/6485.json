@@ -1,0 +1,11 @@
+{
+    "frameName": "Smuggling",
+    "patterns": [],
+    "frameID": 175,
+    "ko_pos": "VV",
+    "ko_lu": "밀수품을 거래하다.v.Smuggling",
+    "lu_id": 6485,
+    "en_lus": [
+        "smuggle.v.3041"
+    ]
+}

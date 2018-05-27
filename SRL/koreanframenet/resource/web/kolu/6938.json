@@ -1,0 +1,56 @@
+{
+    "frameName": "Grinding",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57728",
+            "examples": [
+                {
+                    "frameName": "Grinding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "고기는 이 칼로 잘 썰린다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.57728",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57729",
+            "examples": [
+                {
+                    "frameName": "Grinding",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "횟감이 칼에 잘 썰리지 않는다.",
+                    "target": "썰리지",
+                    "ko_annotation_id": "sejong.57729",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 351,
+    "ko_pos": "VV",
+    "ko_lu": "썰리다.v.Grinding",
+    "lu_id": 6938,
+    "en_lus": [
+        "shred.v.6185"
+    ]
+}

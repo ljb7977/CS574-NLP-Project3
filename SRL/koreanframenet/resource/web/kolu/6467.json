@@ -1,0 +1,56 @@
+{
+    "frameName": "Filling",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.86501",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 22,
+                                "end": 27
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "전에는 화장실을 소독하기 위하여 석회를 산포하였다.",
+                    "target": "산포하였다",
+                    "ko_annotation_id": "sejong.86501",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.86502",
+            "examples": [
+                {
+                    "frameName": "Filling",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 8,
+                                "end": 12
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "농약을 골고루 산포하지 않으면 멸균 효과를 보기 어렵다.",
+                    "target": "산포하지",
+                    "ko_annotation_id": "sejong.86502",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 59,
+    "ko_pos": "VV",
+    "ko_lu": "산포하다.v.Filling",
+    "lu_id": 6467,
+    "en_lus": [
+        "scatter.v.2627"
+    ]
+}

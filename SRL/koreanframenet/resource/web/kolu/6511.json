@@ -1,0 +1,11 @@
+{
+    "frameName": "Placing",
+    "patterns": [],
+    "frameID": 62,
+    "ko_pos": "VV",
+    "ko_lu": "(창고에)쌓아놓다.v.Placing",
+    "lu_id": 6511,
+    "en_lus": [
+        "warehouse.v.3915"
+    ]
+}

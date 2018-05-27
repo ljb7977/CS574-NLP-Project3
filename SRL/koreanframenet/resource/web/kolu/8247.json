@@ -1,0 +1,56 @@
+{
+    "frameName": "Wagering",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.89879",
+            "examples": [
+                {
+                    "frameName": "Wagering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나는 영수와 이번 축구 경기에 대해서 내기하였다.",
+                    "target": "내기하였다",
+                    "ko_annotation_id": "sejong.89879",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.89880",
+            "examples": [
+                {
+                    "frameName": "Wagering",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 21,
+                                "end": 26
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "나와 영수는 이번 축구 경기에 대해서 내기하였다.",
+                    "target": "내기하였다",
+                    "ko_annotation_id": "sejong.89880",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2241,
+    "ko_pos": "VV",
+    "ko_lu": "내기하다.v.Wagering",
+    "lu_id": 8247,
+    "en_lus": [
+        "bet.v.17214"
+    ]
+}

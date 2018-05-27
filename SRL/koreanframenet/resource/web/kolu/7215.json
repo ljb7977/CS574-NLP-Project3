@@ -1,0 +1,56 @@
+{
+    "frameName": "Arranging",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55659",
+            "examples": [
+                {
+                    "frameName": "Arranging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 25,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "퇴실하실 때에는 이용한 모든 물품을 제자리에 정돈해 주시기 바랍니다.",
+                    "target": "정돈해",
+                    "ko_annotation_id": "sejong.55659",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.55660",
+            "examples": [
+                {
+                    "frameName": "Arranging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 24,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "집안 청소는 시키지도 않을테니 자기 방이나 정돈하고 다녀라.",
+                    "target": "정돈하고",
+                    "ko_annotation_id": "sejong.55660",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 921,
+    "ko_pos": "VV",
+    "ko_lu": "정돈하다.v.Arranging",
+    "lu_id": 7215,
+    "en_lus": [
+        "arrange.v.9975"
+    ]
+}

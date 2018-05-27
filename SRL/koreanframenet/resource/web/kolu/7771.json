@@ -1,0 +1,78 @@
+{
+    "frameName": "Scrutiny",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.49085",
+            "examples": [
+                {
+                    "frameName": "Scrutiny",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 기차는 대구를 거쳐 부산으로 갑니다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.49085",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49086",
+            "examples": [
+                {
+                    "frameName": "Scrutiny",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": 1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 버스는 어디를 거쳐 갑니까?",
+                    "target": "",
+                    "ko_annotation_id": "sejong.49086",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.49087",
+            "examples": [
+                {
+                    "frameName": "Scrutiny",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "우리들은 LA를 거쳐 뉴욕으로 갔다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.49087",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 31,
+    "ko_pos": "VV",
+    "ko_lu": "거치다.v.Scrutiny",
+    "lu_id": 7771,
+    "en_lus": [
+        "go [through].v.13100"
+    ]
+}

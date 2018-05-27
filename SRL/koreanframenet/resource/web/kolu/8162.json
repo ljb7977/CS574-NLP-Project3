@@ -1,0 +1,34 @@
+{
+    "frameName": "Downing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.55774",
+            "examples": [
+                {
+                    "frameName": "Downing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 19,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "소련 전투기가 우리 민간 여객기를 격추시켰다.",
+                    "target": "격추시켰다",
+                    "ko_annotation_id": "sejong.55774",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 2641,
+    "ko_pos": "VV",
+    "ko_lu": "격추시키다.v.Downing",
+    "lu_id": 8162,
+    "en_lus": [
+        "down.v.16571"
+    ]
+}

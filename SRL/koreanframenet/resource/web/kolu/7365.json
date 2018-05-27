@@ -1,0 +1,56 @@
+{
+    "frameName": "Activity_resume",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.78182",
+            "examples": [
+                {
+                    "frameName": "Activity_resume",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "어머니는 보험 계약을 경신해야 한다고 하셨다.",
+                    "target": "경신해야",
+                    "ko_annotation_id": "sejong.78182",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.78183",
+            "examples": [
+                {
+                    "frameName": "Activity_resume",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 29,
+                                "end": 33
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그 선수는 100m 경주에서 세계 최단시간의 기록을 경신했다.",
+                    "target": "경신했다",
+                    "ko_annotation_id": "sejong.78183",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1156,
+    "ko_pos": "VV",
+    "ko_lu": "경신하다.v.Activity_resume",
+    "lu_id": 7365,
+    "en_lus": [
+        "renew.v.10698"
+    ]
+}

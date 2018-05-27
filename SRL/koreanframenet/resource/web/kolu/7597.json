@@ -1,0 +1,56 @@
+{
+    "frameName": "Cause_change_of_consistency",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.59808",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_consistency",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 3,
+                                "end": 6
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이는 농축된 문화적 능력이 아니고는 이룰 수 없는 결과다.",
+                    "target": "농축된",
+                    "ko_annotation_id": "sejong.59808",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.59809",
+            "examples": [
+                {
+                    "frameName": "Cause_change_of_consistency",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 0,
+                                "end": 3
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "농축된 순수 인삼 원액을 마셔라.",
+                    "target": "농축된",
+                    "ko_annotation_id": "sejong.59809",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 383,
+    "ko_pos": "VV",
+    "ko_lu": "농축되다.v.Cause_change_of_consistency",
+    "lu_id": 7597,
+    "en_lus": [
+        "inspissate.v.12020"
+    ]
+}

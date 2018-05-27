@@ -1,0 +1,34 @@
+{
+    "frameName": "Feigning",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.90337",
+            "examples": [
+                {
+                    "frameName": "Feigning",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 36,
+                                "end": 39
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "전래동화를 연구하는 학자들은 전래동화를 가리켜 이름없는 백성들이 지어낸 이야기라고 합니다.",
+                    "target": "지어낸",
+                    "ko_annotation_id": "sejong.90337",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 12,
+    "ko_pos": "VV",
+    "ko_lu": "지어내다.v.Feigning",
+    "lu_id": 8407,
+    "en_lus": [
+        "counterfeit.v.21"
+    ]
+}

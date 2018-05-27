@@ -1,0 +1,78 @@
+{
+    "frameName": "Path_shape",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.68461",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "영희는 그 경계선을 넘어 버렸다.",
+                    "target": "넘어",
+                    "ko_annotation_id": "sejong.68461",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68462",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 13
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "범인은 이미 국경을 넘어 멀리 도망쳤다.",
+                    "target": "넘어",
+                    "ko_annotation_id": "sejong.68462",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.68463",
+            "examples": [
+                {
+                    "frameName": "Path_shape",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그들은 삼팔선을 넘어 이남했다.",
+                    "target": "넘어",
+                    "ko_annotation_id": "sejong.68463",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 61,
+    "ko_pos": "VV",
+    "ko_lu": "넘다.v.Path_shape",
+    "lu_id": 7431,
+    "en_lus": [
+        "pass.v.10920"
+    ]
+}

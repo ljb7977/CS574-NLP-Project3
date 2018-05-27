@@ -1,0 +1,78 @@
+{
+    "frameName": "Cause_motion",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.69064",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "아기는 밥을 먹자마자 다시 아이스크림 그릇을 앞으로 당겼다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.69064",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69065",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "선생님은 몸을 바짝 당겨 내 앞으로 다가오셨다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.69065",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.69066",
+            "examples": [
+                {
+                    "frameName": "Cause_motion",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 선수는 활시위를 힘껏 당겨 과녁을 향했다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.69066",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 55,
+    "ko_pos": "VV",
+    "ko_lu": "당기다.v.Cause_motion",
+    "lu_id": 7428,
+    "en_lus": [
+        "draw.v.10905"
+    ]
+}

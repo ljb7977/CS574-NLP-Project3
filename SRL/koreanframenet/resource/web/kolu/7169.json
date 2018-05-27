@@ -1,0 +1,34 @@
+{
+    "frameName": "Absorb_heat",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.53356",
+            "examples": [
+                {
+                    "frameName": "Absorb_heat",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 18,
+                                "end": 24
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "장인이 문양을 넣기 전에 자기를 애벌구이한다.",
+                    "target": "애벌구이한다",
+                    "ko_annotation_id": "sejong.53356",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 830,
+    "ko_pos": "VV",
+    "ko_lu": "애벌구이하다.v.Absorb_heat",
+    "lu_id": 7169,
+    "en_lus": [
+        "bake.v.9784"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "frameName": "Desiring",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.63487",
+            "examples": [
+                {
+                    "frameName": "Desiring",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "난 널 보면 한숨만 난다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.63487",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.63488",
+            "examples": [
+                {
+                    "frameName": "Desiring",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 9,
+                                "end": 11
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "그녀를 생각하면 나는 웃음이 나서 참기 어렵다.",
+                    "target": "나는",
+                    "ko_annotation_id": "sejong.63488",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 366,
+    "ko_pos": "VV",
+    "ko_lu": "나다.v.Desiring",
+    "lu_id": 6995,
+    "en_lus": [
+        "feel like.v.7430"
+    ]
+}

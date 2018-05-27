@@ -1,0 +1,56 @@
+{
+    "frameName": "Replacing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.75712",
+            "examples": [
+                {
+                    "frameName": "Replacing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 23,
+                                "end": 28
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "양력으로 날짜를 입력하면 저절로 음력으로 변환됩니다.",
+                    "target": "변환됩니다",
+                    "ko_annotation_id": "sejong.75712",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.75713",
+            "examples": [
+                {
+                    "frameName": "Replacing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "이 문서편집기에서는 철자가 틀렸을 경우 자동적으로 맞는 것으로 전환된다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.75713",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1121,
+    "ko_pos": "VV",
+    "ko_lu": "변환되다.v.Replacing",
+    "lu_id": 7378,
+    "en_lus": [
+        "exchange.v.10781"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "frameName": "Vehicle_landing",
+    "patterns": [],
+    "frameID": 2642,
+    "ko_pos": "VV",
+    "ko_lu": "하차시키다.v.Vehicle_landing",
+    "lu_id": 8163,
+    "en_lus": [
+        "set down.v.16575"
+    ]
+}

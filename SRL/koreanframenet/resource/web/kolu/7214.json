@@ -1,0 +1,56 @@
+{
+    "frameName": "Arranging",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.65785",
+            "examples": [
+                {
+                    "frameName": "Arranging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "하루종일 청소를 했더니 방이 정돈되었다.",
+                    "target": "정돈되었다",
+                    "ko_annotation_id": "sejong.65785",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.65786",
+            "examples": [
+                {
+                    "frameName": "Arranging",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 16,
+                                "end": 21
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "당황하지 말고 차분히 마음을 정돈하거라.",
+                    "target": "정돈하거라",
+                    "ko_annotation_id": "sejong.65786",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 921,
+    "ko_pos": "VV",
+    "ko_lu": "정돈되다.v.Arranging",
+    "lu_id": 7214,
+    "en_lus": [
+        "arrange.v.9975"
+    ]
+}

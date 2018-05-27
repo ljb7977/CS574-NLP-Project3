@@ -1,0 +1,56 @@
+{
+    "frameName": "Change_position_on_a_scale",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.57561",
+            "examples": [
+                {
+                    "frameName": "Change_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 10,
+                                "end": 15
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "내일부터 기름값이 내려간다고 한다.",
+                    "target": "내려간다고",
+                    "ko_annotation_id": "sejong.57561",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.57562",
+            "examples": [
+                {
+                    "frameName": "Change_position_on_a_scale",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 11,
+                                "end": 16
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "새해엔 이자율이 좀 내려갔으면 좋겠다.",
+                    "target": "내려갔으면",
+                    "ko_annotation_id": "sejong.57562",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 91,
+    "ko_pos": "VV",
+    "ko_lu": "내려가다.v.Change_position_on_a_scale",
+    "lu_id": 7698,
+    "en_lus": [
+        "dip.v.12886"
+    ]
+}

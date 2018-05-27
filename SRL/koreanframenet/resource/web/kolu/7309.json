@@ -1,0 +1,34 @@
+{
+    "frameName": "Replacing",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.83530",
+            "examples": [
+                {
+                    "frameName": "Replacing",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": 12,
+                                "end": 17
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "가불금은 손익 계정에 대체되었다.",
+                    "target": "대체되었다",
+                    "ko_annotation_id": "sejong.83530",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 1121,
+    "ko_pos": "VV",
+    "ko_lu": "대체되다.v.Replacing",
+    "lu_id": 7309,
+    "en_lus": [
+        "substitute.v.10561"
+    ]
+}

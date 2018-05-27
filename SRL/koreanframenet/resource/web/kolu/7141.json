@@ -1,0 +1,56 @@
+{
+    "frameName": "Amalgamation",
+    "patterns": [
+        {
+            "valenceText": "annotation id: sejong.92221",
+            "examples": [
+                {
+                    "frameName": "Amalgamation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "여러 가지 색을 섞어서 염색을 할 때는 물감을 가루로 섞지 말고 물에 녹여서 섞는 게 좋다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.92221",
+                    "relations": []
+                }
+            ]
+        },
+        {
+            "valenceText": "annotation id: sejong.92222",
+            "examples": [
+                {
+                    "frameName": "Amalgamation",
+                    "denotations": [
+                        {
+                            "id": "1",
+                            "span": {
+                                "begin": -1,
+                                "end": -1
+                            },
+                            "obj": "target"
+                        }
+                    ],
+                    "text": "마늘 된장 덩이 한 개를 잠자기 전에 찻잔에 넣어 뜨거운 물에 녹여 마신다.",
+                    "target": "",
+                    "ko_annotation_id": "sejong.92222",
+                    "relations": []
+                }
+            ]
+        }
+    ],
+    "frameID": 790,
+    "ko_pos": "VV",
+    "ko_lu": "녹이다.v.Amalgamation",
+    "lu_id": 7141,
+    "en_lus": [
+        "fuse.v.9511"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "frameName": "Type",
+    "patterns": [
+        {
+            "valenceText": "annotation id: 20252",
+            "examples": [
+                {
+                    "frameName": "Type",
+                    "denotations": [
+                        {
+                            "obj": "item_property",
+                            "span": {
+                                "begin": 20,
+                                "end": 22
+                            },
+                            "id": "2"
+                        },
+                        {
+                            "obj": "target",
+                            "span": {
+                                "begin": 23,
+                                "end": 25
+                            },
+                            "id": "1"
+                        }
+                    ],
+                    "origin_lus": [
+                        "strains"
+                    ],
+                    "ko_annotation_id": 20252,
+                    "text": "SCQZI 및 SCQZI는 광범위한 독성 염좌 더미를 보관하고 있다.",
+                    "sent_id": 2687,
+                    "relations": [
+                        {
+                            "subj": "1",
+                            "obj": "2",
+                            "pred": ""
+                        }
+                    ],
+                    "annotation_id": 13466
+                }
+            ]
+        }
+    ],
+    "frameID": 128,
+    "ko_pos": "NNG",
+    "ko_lu": "염좌.n.Type",
+    "lu_id": 5747,
+    "en_lus": [
+        "strain"
+    ]
+}

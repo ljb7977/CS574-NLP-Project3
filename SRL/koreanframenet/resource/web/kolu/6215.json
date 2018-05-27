@@ -1,0 +1,11 @@
+{
+    "frameName": "Self_motion",
+    "patterns": [],
+    "frameID": 64,
+    "ko_pos": "VV",
+    "ko_lu": "비틀거리다.v.Self_motion",
+    "lu_id": 6215,
+    "en_lus": [
+        "stumble.v.1242"
+    ]
+}
