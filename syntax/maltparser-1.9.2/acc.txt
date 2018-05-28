@@ -1,0 +1,244 @@
+NivreEager
+accuracy /    Token
+-----------------------
+0.924         Row mean
+64300         Row count
+-----------------------
+
+NivreStandard
+accuracy /    Token
+-----------------------
+0.922         Row mean
+64300         Row count
+-----------------------
+
+addInputLEMMA0
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGFORMInput0
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGFORMInput1
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGI0FORMInput0
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGI0FORMInput1
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGI0FORMStack0
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0FORMInput0
+accuracy /    Token
+-----------------------
+0.927         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0FORMInput1
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0FORMStack0
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0I0FORMInput0
+accuracy /    Token
+-----------------------
+0.927         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0I0FORMInput1
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0I0FORMStack0
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addSplitInputFEATS0
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addSplitStackFEATS0
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addStackLEMMA0
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+backwardHeadIterative
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+backwardInputForm
+accuracy /    Token
+-----------------------
+0.924         Row mean
+64300         Row count
+-----------------------
+
+backwardInputPostag
+accuracy /    Token
+-----------------------
+0.92          Row mean
+64300         Row count
+-----------------------
+
+backwardStackForm
+accuracy /    Token
+-----------------------
+0.922         Row mean
+64300         Row count
+-----------------------
+
+backwardStackPostag
+accuracy /    Token
+-----------------------
+0.92          Row mean
+64300         Row count
+-----------------------
+
+deprelMergeSubtractingFeature1
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+deprelMergeSubtractingFeature2
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+deprelMergeSubtractingFeature3
+accuracy /    Token
+-----------------------
+0.924         Row mean
+64300         Row count
+-----------------------
+
+forwardInputForm1
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+forwardInputPostag1
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+forwardInputPostag2
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+forwardStackForm1
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+forwardStackPostag1
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+forwardStackPostag2
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+predSuccFeaturepredStack
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+replicateDeprelPostagSubtractingFeature1
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+replicateDeprelPostagSubtractingFeature2
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+replicateDeprelPostagSubtractingFeature3
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
