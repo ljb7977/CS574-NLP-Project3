@@ -1,0 +1,700 @@
+NivreEager
+./features/NivreEager.xml
+NivreEager training done
+NivreEager parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.924         Row mean
+64300         Row count
+-----------------------
+
+NivreStandard
+./features/NivreStandard.xml
+NivreStandard training done
+NivreStandard parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.922         Row mean
+64300         Row count
+-----------------------
+
+addInputLEMMA0
+./features/addInputLEMMA0.xml
+addInputLEMMA0 training done
+addInputLEMMA0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGFORMInput0
+./features/addMergPOSTAGFORMInput0.xml
+addMergPOSTAGFORMInput0 training done
+addMergPOSTAGFORMInput0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGFORMInput1
+./features/addMergPOSTAGFORMInput1.xml
+addMergPOSTAGFORMInput1 training done
+addMergPOSTAGFORMInput1 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGI0FORMInput0
+./features/addMergPOSTAGI0FORMInput0.xml
+addMergPOSTAGI0FORMInput0 training done
+addMergPOSTAGI0FORMInput0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGI0FORMInput1
+./features/addMergPOSTAGI0FORMInput1.xml
+addMergPOSTAGI0FORMInput1 training done
+addMergPOSTAGI0FORMInput1 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGI0FORMStack0
+./features/addMergPOSTAGI0FORMStack0.xml
+addMergPOSTAGI0FORMStack0 training done
+addMergPOSTAGI0FORMStack0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0FORMInput0
+./features/addMergPOSTAGS0FORMInput0.xml
+addMergPOSTAGS0FORMInput0 training done
+addMergPOSTAGS0FORMInput0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.927         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0FORMInput1
+./features/addMergPOSTAGS0FORMInput1.xml
+addMergPOSTAGS0FORMInput1 training done
+addMergPOSTAGS0FORMInput1 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0FORMStack0
+./features/addMergPOSTAGS0FORMStack0.xml
+addMergPOSTAGS0FORMStack0 training done
+addMergPOSTAGS0FORMStack0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0I0FORMInput0
+./features/addMergPOSTAGS0I0FORMInput0.xml
+addMergPOSTAGS0I0FORMInput0 training done
+addMergPOSTAGS0I0FORMInput0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.927         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0I0FORMInput1
+./features/addMergPOSTAGS0I0FORMInput1.xml
+addMergPOSTAGS0I0FORMInput1 training done
+addMergPOSTAGS0I0FORMInput1 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addMergPOSTAGS0I0FORMStack0
+./features/addMergPOSTAGS0I0FORMStack0.xml
+addMergPOSTAGS0I0FORMStack0 training done
+addMergPOSTAGS0I0FORMStack0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addSplitInputFEATS0
+./features/addSplitInputFEATS0.xml
+addSplitInputFEATS0 training done
+addSplitInputFEATS0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addSplitStackFEATS0
+./features/addSplitStackFEATS0.xml
+addSplitStackFEATS0 training done
+addSplitStackFEATS0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+addStackLEMMA0
+./features/addStackLEMMA0.xml
+addStackLEMMA0 training done
+addStackLEMMA0 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+backwardHeadIterative
+./features/backwardHeadIterative.xml
+backwardHeadIterative training done
+backwardHeadIterative parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+backwardInputForm
+./features/backwardInputForm.xml
+backwardInputForm training done
+backwardInputForm parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.924         Row mean
+64300         Row count
+-----------------------
+
+backwardInputPostag
+./features/backwardInputPostag.xml
+backwardInputPostag training done
+backwardInputPostag parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.92          Row mean
+64300         Row count
+-----------------------
+
+backwardStackForm
+./features/backwardStackForm.xml
+backwardStackForm training done
+backwardStackForm parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.922         Row mean
+64300         Row count
+-----------------------
+
+backwardStackPostag
+./features/backwardStackPostag.xml
+backwardStackPostag training done
+backwardStackPostag parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.92          Row mean
+64300         Row count
+-----------------------
+
+deprelMergeSubtractingFeature1
+./features/deprelMergeSubtractingFeature1.xml
+deprelMergeSubtractingFeature1 training done
+deprelMergeSubtractingFeature1 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+deprelMergeSubtractingFeature2
+./features/deprelMergeSubtractingFeature2.xml
+deprelMergeSubtractingFeature2 training done
+deprelMergeSubtractingFeature2 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+deprelMergeSubtractingFeature3
+./features/deprelMergeSubtractingFeature3.xml
+deprelMergeSubtractingFeature3 training done
+deprelMergeSubtractingFeature3 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.924         Row mean
+64300         Row count
+-----------------------
+
+forwardInputForm1
+./features/forwardInputForm1.xml
+forwardInputForm1 training done
+forwardInputForm1 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+forwardInputPostag1
+./features/forwardInputPostag1.xml
+forwardInputPostag1 training done
+forwardInputPostag1 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+forwardInputPostag2
+./features/forwardInputPostag2.xml
+forwardInputPostag2 training done
+forwardInputPostag2 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+forwardStackForm1
+./features/forwardStackForm1.xml
+forwardStackForm1 training done
+forwardStackForm1 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+forwardStackPostag1
+./features/forwardStackPostag1.xml
+forwardStackPostag1 training done
+forwardStackPostag1 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+forwardStackPostag2
+./features/forwardStackPostag2.xml
+forwardStackPostag2 training done
+forwardStackPostag2 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+predSuccFeaturepredStack
+./features/predSuccFeaturepredStack.xml
+predSuccFeaturepredStack training done
+predSuccFeaturepredStack parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+replicateDeprelPostagSubtractingFeature1
+./features/replicateDeprelPostagSubtractingFeature1.xml
+replicateDeprelPostagSubtractingFeature1 training done
+replicateDeprelPostagSubtractingFeature1 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.925         Row mean
+64300         Row count
+-----------------------
+
+replicateDeprelPostagSubtractingFeature2
+./features/replicateDeprelPostagSubtractingFeature2.xml
+replicateDeprelPostagSubtractingFeature2 training done
+replicateDeprelPostagSubtractingFeature2 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
+replicateDeprelPostagSubtractingFeature3
+./features/replicateDeprelPostagSubtractingFeature3.xml
+replicateDeprelPostagSubtractingFeature3 training done
+replicateDeprelPostagSubtractingFeature3 parsing done
+Evaluation arguments: -s dev_out.conll -g data/kaist_dev.conll
+====================================================
+Gold:   data/kaist_dev.conll
+Parsed: dev_out.conll
+====================================================
+GroupBy-> Token
+Metric-> LAS
+
+====================================================
+
+accuracy /    Token
+-----------------------
+0.926         Row mean
+64300         Row count
+-----------------------
+
