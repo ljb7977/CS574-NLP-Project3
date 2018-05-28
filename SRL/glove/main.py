@@ -1,13 +1,19 @@
 from sklearn.feature_extraction.text import CountVectorizer
 import operator, pickle
 import glove, os
+from nltk.corpus.reader import propbank
 
-for filename in os.listdir("../UCorpus-DP_SR/"):
-	if filename.endswith(".txt"):
-		with open(os.path.join("../UCorpus-DP_SR/", filename), encoding="utf-16-le") as input_file:
-			corpus = input_file.read().splitlines()
-print("corpus")
-print(corpus)
+
+for filename in os.listdir("../framefiles/"):
+	reader = propbank.PropbankCorpusReader("../framefiles/",
+	)
+
+# for filename in os.listdir("../UCorpus-DP_SR/"):
+# 	if filename.endswith(".txt"):
+# 		with open(os.path.join("../UCorpus-DP_SR/", filename), encoding="utf-16-le") as input_file:
+# 			corpus = input_file.read().splitlines()
+# print("corpus")
+# print(corpus)
 
 vectorizer = CountVectorizer(min_df=10, ngram_range=(1,1))
 X = vectorizer.fit_transform(corpus)
