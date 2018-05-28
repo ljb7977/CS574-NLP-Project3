@@ -1,33 +1,38 @@
 from sklearn.feature_extraction.text import CountVectorizer
 import operator, pickle
-import glove
+import glove, os
 
-with open("../UCorpus-DP_SR/BGAD0038_new.txt", encoding="utf-8") as input_file:
-	lines = input_file.readlines()
-	vectorizer = CountVectorizer(min_df=10, ngram_range=(1,1))
-	X = vectorizer.fit_transform(corpus)
-	Xc = X.T * X             # co-occurrence matrix
-	Xc.setdiag(0)			 # 대각성분을 0으로
-	result = Xc.toarray()    # array로 변환
-	dic = {}
-	for idx1, word1 in enumerate(result):
-		tmpdic = {}
-		for idx2, word2 in enumerate(word1):
-			if word2 > 0:
-				tmpdic[idx2] = word2
-		dic[idx1] = tmpdic
+for filename in os.listdir("../UCorpus-DP_SR/"):
+	if filename.endswith(".txt"):
+		with open(os.path.join("../UCorpus-DP_SR/", filename), encoding="utf-16-le") as input_file:
+			corpus = input_file.read().splitlines()
+print("corpus")
+print(corpus)
 
-	vocab = sorted(vectorizer.vocabulary_.items(), key=operator.itemgetter(1))
-	vocab = [word[0] for word in vocab]
+vectorizer = CountVectorizer(min_df=10, ngram_range=(1,1))
+X = vectorizer.fit_transform(corpus)
+Xc = X.T * X             # co-occurrence matrix
+Xc.setdiag(0)			 # 대각성분을 0으로
+result = Xc.toarray()    # array로 변환
+dic = {}
+for idx1, word1 in enumerate(result):
+	tmpdic = {}
+	for idx2, word2 in enumerate(word1):
+		if word2 > 0:
+			tmpdic[idx2] = word2
+	dic[idx1] = tmpdic
 
-	model = glove.Glove(dic, d=100, alpha=0.75, x_max=100.0)
-	for epoch in range(25):
-		err = model.train(batch_size=200, workers=4)
-		print("epoch %d, error %.3f" % (epoch, err), flush=True)
+vocab = sorted(vectorizer.vocabulary_.items(), key=operator.itemgetter(1))
+vocab = [word[0] for word in vocab]
 
-	# 단어벡터 추출
-	wordvectors = model.W
+model = glove.Glove(dic, d=100, alpha=0.75, x_max=100.0)
+for epoch in range(25):
+	err = model.train(batch_size=200, workers=4)
+	print("epoch %d, error %.3f" % (epoch, err), flush=True)
 
-	# 저장
-	with open('glove', 'wb') as f:
-		pickle.dump([vocab,wordvectors],f)
+# 단어벡터 추출
+wordvectors = model.W
+
+# 저장
+with open('glove', 'wb') as f:
+	pickle.dump([vocab,wordvectors],f)

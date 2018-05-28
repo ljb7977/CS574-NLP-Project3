@@ -11,6 +11,6 @@ do
 	echo $name parsing done
 	head -n -1 dev_out.conll > temp.txt
 	mv temp.txt dev_out.conll
-	java -jar evaluator.jar dev_out.conll data/kaist_dev.conll
-	echo '\n'
+	#java -jar evaluator.jar dev_out.conll data/kaist_dev.conll
+	java -jar MaltEval.jar -s dev_out.conll -g data/kaist_dev.conll
 done
