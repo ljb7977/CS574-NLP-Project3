@@ -402,7 +402,7 @@
 16	다가	다가	ecc	ecc	O	15	FUNC	_	_
 17	가제	가제	ncn	ncn	O	19	NP	_	_
 18	에	에	jca	jca	O	17	FUNC	_	_
-19	싸	싸	pvg	pvg	O	27	VP	_	_
+19	싸	싸	pvg	pvg	O	23	VP	_	_
 20	서	서	ecs	ecs	O	19	FUNC	_	_
 21	얼굴	얼굴	ncn	ncn	O	23	NP	_	_
 22	에	에	jca	jca	O	21	FUNC	_	_
@@ -941,7 +941,7 @@
 5	에	에	jca	jca	O	4	FUNC	_	_
 6	의하	의하	pvg	pvg	O	22	VP	_	_
 7	어	어	ecs	ecs	O	6	FUNC	_	_
-8	남녀	남녀	ncn	ncn	O	10	NP	_	_
+8	남녀	남녀	ncn	ncn	O	22	NP	_	_
 9	두	두	nnc	nnc	O	10	NP	_	_
 10	학교	학교	ncn	ncn	O	22	NP	_	_
 11	가	가	jcs	jcs	O	10	FUNC	_	_
@@ -1117,7 +1117,7 @@
 25	을	을	jco	jco	O	24	FUNC	_	_
 26	팔	팔	pvg	pvg	O	28	VP	_	_
 27	아	아	ecx	ecx	O	26	FUNC	_	_
-28	치우	치우	px	px	O	34	AUXP	_	_
+28	치우	치우	px	px	O	34	ADJP	_	_
 29	고	고	ecs	ecs	O	28	FUNC	_	_
 30	순전하	순전하	paa	paa	O	32	ADJP	_	_
 31	ㄴ	ㄴ	etm	etm	O	30	FUNC	_	_
@@ -1495,7 +1495,7 @@
 14	다르	다르	paa	paa	O	16	ADJP	_	_
 15	ㄹ	ㄹ	etm	etm	O	14	FUNC	_	_
 16	수도	수도	nbn+jxc	nbn+jxc	O	17	NP	_	_
-17	있	있	paa	paa	O	24	ADJP	_	_
+17	있	있	paa	paa	O	24	AUXP	_	_
 18	고	고	ecc	ecc	O	17	FUNC	_	_
 19	잘못	잘못	mag	mag	O	20	ADVP	_	_
 20	기재되	기재되	ncpa+xsv	ncpa+xsv	O	23	VP	_	_
@@ -2289,7 +2289,7 @@
 22	처럼	처럼	jca	jca	O	21	FUNC	_	_
 23	살	살	pvg	pvg	O	25	VP	_	_
 24	려고	려고	ecs	ecs	O	23	FUNC	_	_
-25	하	하	pvg	pvg	O	34	VP	_	_
+25	하	하	pvg	pvg	O	30	VP	_	_
 26	었	었	ep	ep	O	25	FUNC	_	_
 27	지	지	ecs	ecs	O	26	FUNC	_	_
 28	크	크	paa	paa	O	30	ADJP	_	_
@@ -2415,7 +2415,7 @@
 14	전철	전철	ncn	ncn	O	17	NP	_	_
 15	과	과	jcj	jcj	O	14	FUNC	_	_
 16	아파트	아파트	ncn	ncn	O	17	NP	_	_
-17	단지	단지	ncn	ncn	O	19	NP	_	_
+17	단지	단지	ncn	ncn	O	21	NP	_	_
 18	내	내	npp	npp	O	19	NP	_	_
 19	반찬가게	반찬가게	ncn+ncn	ncn+ncn	O	21	NP	_	_
 20	가	가	jcs	jcs	O	19	FUNC	_	_
@@ -2754,7 +2754,7 @@
 10	망하	망하	pvg	pvg	O	0	ROOT	_	_
 11	는가.	는가.	ef+sf	ef+sf	O	10	FUNC	_	_
 
-1	왜	왜	mag	mag	O	17	ADVP	_	_
+1	왜	왜	mag	mag	O	7	ADVP	_	_
 2	더	더	mag	mag	O	3	ADVP	_	_
 3	크	크	paa	paa	O	5	ADJP	_	_
 4	ㄴ	ㄴ	etm	etm	O	3	FUNC	_	_
@@ -2923,7 +2923,7 @@
 10	았	았	ep	ep	O	9	FUNC	_	_
 11	다.	다.	ef+sf	ef+sf	O	10	FUNC	_	_
 
-1	간혹	간혹	mag	mag	O	28	ADVP	_	_
+1	간혹	간혹	mag	mag	O	16	ADVP	_	_
 2	해표몸	해표몸	ncn+ncn	ncn+ncn	O	16	NP	_	_
 3	에는	에는	jca+jxt	jca+jxt	O	2	FUNC	_	_
 4	20,	20,	nnc+sp	nnc+sp	O	5	PUNC	_	_
@@ -2958,7 +2958,7 @@
 3	드물	드물	pvg	pvg	O	15	VP	_	_
 4	기	기	etn	etn	O	3	FUNC	_	_
 5	는	는	jxt	jxt	O	4	FUNC	_	_
-6	하	하	pvg	pvg	O	15	VP	_	_
+6	하	하	pvg	pvg	O	11	VP	_	_
 7	나	나	ecs	ecs	O	6	FUNC	_	_
 8	인간	인간	ncn	ncn	O	11	NP	_	_
 9	을	을	jco	jco	O	8	FUNC	_	_
@@ -3025,7 +3025,7 @@
 3	기	기	etn	etn	O	2	FUNC	_	_
 4	전	전	ncn	ncn	O	17	NP	_	_
 5	에는	에는	jca+jxt	jca+jxt	O	4	FUNC	_	_
-6	주변	주변	ncn	ncn	O	7	NP	_	_
+6	주변	주변	ncn	ncn	O	10	NP	_	_
 7	3,	3,	nnc+sp	nnc+sp	O	8	PUNC	_	_
 8	4	4	nnc	nnc	O	9	NP	_	_
 9	백	백	nnc	nnc	O	10	NP	_	_
@@ -3307,7 +3307,7 @@
 11	나	나	jcj	jcj	O	10	FUNC	_	_
 12	새끼	새끼	ncn	ncn	O	14	NP	_	_
 13	를	를	jco	jco	O	12	FUNC	_	_
-14	데리	데리	pvg	pvg	O	21	VP	_	_
+14	데리	데리	pvg	pvg	O	16	VP	_	_
 15	고	고	ecc	ecc	O	14	FUNC	_	_
 16	있	있	paa	paa	O	18	ADJP	_	_
 17	ㄹ	ㄹ	etm	etm	O	16	FUNC	_	_
@@ -4186,7 +4186,7 @@
 20	ㄴ	ㄴ	etm	etm	O	19	FUNC	_	_
 21	적	적	nbn	nbn	O	23	NP	_	_
 22	이	이	jcs	jcs	O	21	FUNC	_	_
-23	있	있	paa	paa	O	25	AUXP	_	_
+23	있	있	paa	paa	O	25	ADJP	_	_
 24	는데	는데	ecs	ecs	O	23	FUNC	_	_
 25	이들	이들	npd+xsn	npd+xsn	O	26	NP	_	_
 26	가운데	가운데	ncn	ncn	O	34	NP	_	_
@@ -4234,7 +4234,7 @@
 4	아르헨티나기지	아르헨티나기지	nq+ncn	nq+ncn	O	5	NP	_	_
 5	남쪽해안	남쪽해안	ncn+ncn	ncn+ncn	O	17	NP	_	_
 6	에서는	에서는	jca+jxt	jca+jxt	O	5	FUNC	_	_
-7	코끼리해표	코끼리해표	ncn	ncn	O	9	NP	_	_
+7	코끼리해표	코끼리해표	ncn	ncn	O	11	NP	_	_
 8	한	한	nnc	nnc	O	9	NP	_	_
 9	가족	가족	ncn	ncn	O	11	NP	_	_
 10	세	세	nnc	nnc	O	11	NP	_	_
@@ -4273,7 +4273,7 @@
 8	한	한	nnc	nnc	O	9	NP	_	_
 9	마리	마리	nbu	nbu	O	11	NP	_	_
 10	도	도	jxc	jxc	O	9	FUNC	_	_
-11	없	없	paa	paa	O	27	ADJP	_	_
+11	없	없	paa	paa	O	17	ADJP	_	_
 12	었	었	ep	ep	O	11	FUNC	_	_
 13	는데	는데	ecs	ecs	O	12	FUNC	_	_
 14	우연	우연	ncn	ncn	O	17	NP	_	_
@@ -4493,13 +4493,13 @@
 20	는다면	는다면	ecs	ecs	O	19	FUNC	_	_
 21	이	이	npd	npd	O	35	NP	_	_
 22	는	는	jxt	jxt	O	21	FUNC	_	_
-23	남극환경보호	남극환경보호	nq+ncn+ncpa	nq+ncn+ncpa	O	35	NP	_	_
+23	남극환경보호	남극환경보호	nq+ncn+ncpa	nq+ncn+ncpa	O	33	NP	_	_
 24	와	와	jcj	jcj	O	23	FUNC	_	_
 25	1972년	1972년	nno+nbu	nno+nbu	O	26	NP	_	_
 26	체결되	체결되	ncpa+xsv	ncpa+xsv	O	28	VP	_	_
 27	ㄴ	ㄴ	etm	etm	O	26	FUNC	_	_
 28	남극해표보호	남극해표보호	nq+ncn+ncpa	nq+ncn+ncpa	O	29	NP	_	_
-29	협약	협약	ncpa	ncpa	O	35	NP	_	_
+29	협약	협약	ncpa	ncpa	O	31	NP	_	_
 30	에도	에도	jca+jxc	jca+jxc	O	29	FUNC	_	_
 31	위반되	위반되	ncpa+xsv	ncpa+xsv	O	33	VP	_	_
 32	ㄴ	ㄴ	etm	etm	O	31	FUNC	_	_
@@ -4837,7 +4837,7 @@
 15	의	의	jcm	jcm	O	14	FUNC	_	_
 16	정원	정원	ncn	ncn	O	18	NP	_	_
 17	에서도	에서도	jca+jxc	jca+jxc	O	16	FUNC	_	_
-18	크	크	pvg	pvg	O	24	VP	_	_
+18	크	크	pvg	pvg	O	20	VP	_	_
 19	ㄴ다니	ㄴ다니	ecs	ecs	O	18	FUNC	_	_
 20	잘하	잘하	pvg	pvg	O	24	VP	_	_
 21	면	면	ecs	ecs	O	20	FUNC	_	_
@@ -5113,7 +5113,7 @@
 12	의	의	jcm	jcm	O	11	FUNC	_	_
 13	이론	이론	ncn	ncn	O	22	NP	_	_
 14	은	은	jxt	jxt	O	13	FUNC	_	_
-15	결코	결코	mag	mag	O	20	ADVP	_	_
+15	결코	결코	mag	mag	O	16	ADVP	_	_
 16	독특하	독특하	ncps+xsm	ncps+xsm	O	18	ADJP	_	_
 17	ㄴ	ㄴ	etm	etm	O	16	FUNC	_	_
 18	것	것	nbn	nbn	O	20	NP	_	_
@@ -5396,7 +5396,7 @@
 4	뛰어넘	뛰어넘	pvg	pvg	O	7	VP	_	_
 5	ㄴ	ㄴ	etm	etm	O	4	FUNC	_	_
 6	어떤	어떤	mmd	mmd	O	7	MODP	_	_
-7	것	것	nbn	nbn	O	12	NP	_	_
+7	것	것	nbn	nbn	O	20	NP	_	_
 8	또는	또는	maj	maj	O	10	NP	_	_
 9	어떤	어떤	mmd	mmd	O	10	MODP	_	_
 10	분	분	nbu	nbu	O	12	NP	_	_
@@ -5969,7 +5969,7 @@
 6	사회적	사회적	ncn+xsn	ncn+xsn	O	7	NP	_	_
 7	행위	행위	ncn	ncn	O	18	NP	_	_
 8	는	는	jxt	jxt	O	7	FUNC	_	_
-9	주관적	주관적	ncn+xsn	ncn+xsn	O	13	NP	_	_
+9	주관적	주관적	ncn+xsn	ncn+xsn	O	18	NP	_	_
 10	이	이	jp	jp	O	9	FUNC	_	_
 11	면서	면서	ecs	ecs	O	10	FUNC	_	_
 12	동시에	동시에	mag	mag	O	13	ADVP	_	_
@@ -6484,7 +6484,7 @@
 1	그래서	그래서	maj	maj	O	16	IP	_	_
 2	나	나	npp	npp	O	16	NP	_	_
 3	는	는	jxt	jxt	O	2	FUNC	_	_
-4	가끔	가끔	mag	mag	O	8	ADVP	_	_
+4	가끔	가끔	mag	mag	O	16	ADVP	_	_
 5	일본	일본	nq	nq	O	6	NP	_	_
 6	서점	서점	ncn	ncn	O	8	NP	_	_
 7	이	이	jcs	jcs	O	6	FUNC	_	_
@@ -6661,10 +6661,10 @@
 2	을	을	jco	jco	O	1	FUNC	_	_
 3	즐기	즐기	pvg	pvg	O	5	VP	_	_
 4	는	는	etm	etm	O	3	FUNC	_	_
-5	시간	시간	ncn	ncn	O	23	NP	_	_
+5	시간	시간	ncn	ncn	O	26	NP	_	_
 6	에	에	jca	jca	O	5	FUNC	_	_
 7	그	그	mmd	mmd	O	8	MODP	_	_
-8	동안	동안	ncn	ncn	O	23	NP	_	_
+8	동안	동안	ncn	ncn	O	26	NP	_	_
 9	쌓이	쌓이	pvg	pvg	O	11	VP	_	_
 10	ㄴ	ㄴ	etm	etm	O	9	FUNC	_	_
 11	피로와	피로와	ncpa+jcj	ncpa+jcj	O	12	NP	_	_
@@ -6734,8 +6734,8 @@
 8	하	하	px	px	O	0	ROOT	_	_
 9	듯이	듯이	ecs	ecs	O	8	FUNC	_	_
 10	이	이	mmd	mmd	O	11	MODP	_	_
-11	독서	독서	ncpa	ncpa	O	17	NP	_	_
-12	또한	또한	mag	mag	O	15	ADVP	_	_
+11	독서	독서	ncpa	ncpa	O	12	NP	_	_
+12	또한	또한	mag	mag	O	17	ADVP	_	_
 13	평생	평생	ncn	ncn	O	15	NP	_	_
 14	을	을	jco	jco	O	13	FUNC	_	_
 15	두	두	pvg	pvg	O	17	VP	_	_
@@ -7258,7 +7258,7 @@
 2	아무리	아무리	mag	mag	O	3	ADVP	_	_
 3	고상하	고상하	paa	paa	O	5	ADJP	_	_
 4	ㄴ	ㄴ	etm	etm	O	3	FUNC	_	_
-5	쾌락	쾌락	ncn	ncn	O	7	NP	_	_
+5	쾌락	쾌락	ncn	ncn	O	11	NP	_	_
 6	이라	이라	jcr	jcr	O	5	FUNC	_	_
 7	하	하	pvg	pvg	O	11	VP	_	_
 8	더라도	더라도	ecs+jxc	ecs+jxc	O	7	FUNC	_	_
@@ -7460,7 +7460,7 @@
 6	지	지	ecx	ecx	O	5	FUNC	_	_
 7	않	않	px	px	O	9	AUXP	_	_
 8	ㄹ	ㄹ	etm	etm	O	7	FUNC	_	_
-9	때	때	ncn	ncn	O	17	NP	_	_
+9	때	때	ncn	ncn	O	10	NP	_	_
 10	지도	지도	ncpa	ncpa	O	17	NP	_	_
 11	는커녕	는커녕	jxc	jxc	O	10	FUNC	_	_
 12	실저	실저	ncn	ncn	O	14	NP	_	_
@@ -7556,7 +7556,7 @@
 8	를	를	jco	jco	O	7	FUNC	_	_
 9	트	트	pvg	pvg	O	11	VP	_	_
 10	기	기	etn	etn	O	9	FUNC	_	_
-11	위하	위하	pvg	pvg	O	31	VP	_	_
+11	위하	위하	pvg	pvg	O	29	VP	_	_
 12	ㅁ	ㅁ	etn	etn	O	11	FUNC	_	_
 13	이	이	jp	jp	O	12	FUNC	_	_
 14	요,	요,	ecc+sp	ecc+sp	O	13	FUNC	_	_
@@ -7568,7 +7568,7 @@
 20	관철하	관철하	ncpa+xsv	ncpa+xsv	O	22	VP	_	_
 21	ㄹ	ㄹ	etm	etm	O	20	FUNC	_	_
 22	수	수	nbn	nbn	O	23	NP	_	_
-23	있	있	paa	paa	O	25	AUXP	_	_
+23	있	있	paa	paa	O	25	ADJP	_	_
 24	게	게	ecx	ecx	O	23	FUNC	_	_
 25	되	되	px	px	O	27	AUXP	_	_
 26	는	는	etm	etm	O	25	FUNC	_	_
@@ -7652,7 +7652,7 @@
 2	은	은	jxt	jxt	O	1	FUNC	_	_
 3	없	없	paa	paa	O	14	ADJP	_	_
 4	다지만	다지만	ecs	ecs	O	3	FUNC	_	_
-5	저	저	npp	npp	O	9	NP	_	_
+5	저	저	npp	npp	O	14	NP	_	_
 6	마다	마다	jxc	jxc	O	5	FUNC	_	_
 7	지도자	지도자	ncn	ncn	O	9	NP	_	_
 8	로	로	jca	jca	O	7	FUNC	_	_
@@ -8077,7 +8077,7 @@
 24	없	없	paa	paa	O	0	ROOT	_	_
 25	다.	다.	ef+sf	ef+sf	O	24	FUNC	_	_
 
-1	신성불가침하	신성불가침하	ncn+ncn+xsv	ncn+ncn+xsv	O	3	NP	_	_
+1	신성불가침하	신성불가침하	ncn+ncn+xsv	ncn+ncn+xsv	O	3	ADJP	_	_
 2	ㄴ	ㄴ	etm	etm	O	1	FUNC	_	_
 3	재산권	재산권	ncn	ncn	O	7	NP	_	_
 4	을	을	jco	jco	O	3	FUNC	_	_
@@ -8191,13 +8191,13 @@
 23	다.	다.	ef+sf	ef+sf	O	22	FUNC	_	_
 
 1	이	이	mmd	mmd	O	2	MODP	_	_
-2	세상	세상	ncn	ncn	O	18	NP	_	_
+2	세상	세상	ncn	ncn	O	26	NP	_	_
 3	에는	에는	jca+jxt	jca+jxt	O	2	FUNC	_	_
 4	완전하	완전하	paa	paa	O	6	ADJP	_	_
 5	ㄴ	ㄴ	etm	etm	O	4	FUNC	_	_
 6	것	것	nbn	nbn	O	8	NP	_	_
 7	이	이	jcs	jcs	O	6	FUNC	_	_
-8	없	없	paa	paa	O	18	ADJP	_	_
+8	없	없	paa	paa	O	18	AUXP	_	_
 9	고	고	ecc	ecc	O	8	FUNC	_	_
 10	인간	인간	ncn	ncn	O	18	NP	_	_
 11	역시	역시	mag	mag	O	18	ADVP	_	_
@@ -8621,7 +8621,7 @@
 26	를	를	jco	jco	O	25	FUNC	_	_
 27	탐내	탐내	pvg	pvg	O	29	VP	_	_
 28	지	지	ecx	ecx	O	27	FUNC	_	_
-29	말	말	px	px	O	32	AUXP	_	_
+29	말	말	px	px	O	32	NP	_	_
 30	라	라	ef	ef	O	29	FUNC	_	_
 31	고	고	jcr	jcr	O	30	FUNC	_	_
 32	명령하	명령하	ncpa+xsv	ncpa+xsv	O	0	ROOT	_	_
@@ -9173,11 +9173,11 @@
 4	의	의	jcm	jcm	O	3	FUNC	_	_
 5	해	해	ncn	ncn	O	7	NP	_	_
 6	를	를	jco	jco	O	5	FUNC	_	_
-7	맞이하	맞이하	pvg	pvg	O	23	VP	_	_
+7	맞이하	맞이하	pvg	pvg	O	15	VP	_	_
 8	어	어	ecs	ecs	O	7	FUNC	_	_
 9	어둠	어둠	ncn	ncn	O	11	NP	_	_
 10	을	을	jco	jco	O	9	FUNC	_	_
-11	물리치	물리치	pvg	pvg	O	23	VP	_	_
+11	물리치	물리치	pvg	pvg	O	15	VP	_	_
 12	고	고	ecc	ecc	O	11	FUNC	_	_
 13	새벽	새벽	ncn	ncn	O	15	NP	_	_
 14	을	을	jco	jco	O	13	FUNC	_	_
@@ -9608,7 +9608,7 @@
 3	수집	수집	ncpa	ncpa	O	6	NP	_	_
 4	은	은	jxt	jxt	O	3	FUNC	_	_
 5	일차적	일차적	ncn+xsn	ncn+xsn	O	6	NP	_	_
-6	작업	작업	ncpa	ncpa	O	25	NP	_	_
+6	작업	작업	ncpa	ncpa	O	12	NP	_	_
 7	이	이	jp	jp	O	6	FUNC	_	_
 8	므로,	므로,	ecs+sp	ecs+sp	O	7	FUNC	_	_
 9	비평적	비평적	ncpa+xsn	ncpa+xsn	O	10	NP	_	_
@@ -9667,7 +9667,7 @@
 10	,	,	sp	sp	O	9	PUNC	_	_
 11	간결성,	간결성,	ncn+sp	ncn+sp	O	12	PUNC	_	_
 12	전체적	전체적	ncn+xsn	ncn+xsn	O	13	NP	_	_
-13	조화	조화	ncpa	ncpa	O	14	NP	_	_
+13	조화	조화	ncpa	ncpa	O	23	NP	_	_
 14	등	등	nbn	nbn	O	23	NP	_	_
 15	,	,	sp	sp	O	14	PUNC	_	_
 16	이야기	이야기	ncpa	ncpa	O	17	NP	_	_
@@ -9711,9 +9711,9 @@
 6	ㄴ다는	ㄴ다는	etm	etm	O	5	FUNC	_	_
 7	것	것	nbn	nbn	O	24	NP	_	_
 8	은	은	jxt	jxt	O	7	FUNC	_	_
-9	오히려	오히려	mag	mag	O	13	ADVP	_	_
+9	오히려	오히려	mag	mag	O	24	ADVP	_	_
 10	예술적	예술적	ncn+xsn	ncn+xsn	O	11	NP	_	_
-11	의미	의미	ncpa	ncpa	O	13	NP	_	_
+11	의미	의미	ncpa	ncpa	O	24	NP	_	_
 12	에서뿐만	에서뿐만	jca+jxc	jca+jxc	O	11	FUNC	_	_
 13	아니	아니	paa	paa	O	24	ADJP	_	_
 14	라,	라,	ecs+sp	ecs+sp	O	13	FUNC	_	_
@@ -10084,7 +10084,7 @@
 25	든든하	든든하	paa	paa	O	28	ADJP	_	_
 26	어지	어지	ecx+px	ecx+px	O	25	FUNC	_	_
 27	는	는	etm	etm	O	26	FUNC	_	_
-28	셈	셈	nbn	nbn	O	31	NP	_	_
+28	셈	셈	nbn	nbn	O	37	NP	_	_
 29	이	이	jp	jp	O	28	FUNC	_	_
 30	ㄴ지	ㄴ지	ecs	ecs	O	29	FUNC	_	_
 31	만족하	만족하	ncps+xsm	ncps+xsm	O	37	ADJP	_	_
@@ -10185,7 +10185,7 @@
 4	ㄴ	ㄴ	etm	etm	O	3	FUNC	_	_
 5	기술	기술	ncpa	ncpa	O	7	NP	_	_
 6	의	의	jcm	jcm	O	5	FUNC	_	_
-7	개발	개발	ncn	ncn	O	18	NP	_	_
+7	개발	개발	ncn	ncn	O	9	NP	_	_
 8	과	과	jct	jct	O	7	FUNC	_	_
 9	동시	동시	ncn	ncn	O	14	NP	_	_
 10	에	에	jca	jca	O	9	FUNC	_	_
@@ -10200,7 +10200,7 @@
 19	ㄴ다.	ㄴ다.	ef+sf	ef+sf	O	18	FUNC	_	_
 
 1	그러나	그러나	maj	maj	O	24	IP	_	_
-2	아무리	아무리	mag	mag	O	4	ADVP	_	_
+2	아무리	아무리	mag	mag	O	8	ADVP	_	_
 3	과학적	과학적	ncn+xsn	ncn+xsn	O	4	NP	_	_
 4	예측	예측	ncn	ncn	O	8	NP	_	_
 5	이	이	jp	jp	O	4	FUNC	_	_
@@ -10411,7 +10411,7 @@
 
 1	그	그	npp	npp	O	23	NP	_	_
 2	는	는	jxt	jxt	O	1	FUNC	_	_
-3	한때	한때	ncn	ncn	O	17	NP	_	_
+3	한때	한때	ncn	ncn	O	10	NP	_	_
 4	자동차	자동차	ncn	ncn	O	10	NP	_	_
 5	를	를	jco	jco	O	4	FUNC	_	_
 6	문명	문명	ncn	ncn	O	8	NP	_	_
@@ -10425,7 +10425,7 @@
 14	머리	머리	ncpa	ncpa	O	17	NP	_	_
 15	가	가	jcs	jcs	O	14	FUNC	_	_
 16	좀	좀	mag	mag	O	17	ADVP	_	_
-17	돌	돌	pvg	pvg	O	23	VP	_	_
+17	돌	돌	pvg	pvg	O	20	VP	_	_
 18	았	았	ep	ep	O	17	FUNC	_	_
 19	나	나	ecs	ecs	O	18	FUNC	_	_
 20	보	보	pvg	pvg	O	23	VP	_	_
@@ -10507,7 +10507,7 @@
 1	최고	최고	ncn	ncn	O	2	NP	_	_
 2	속력	속력	ncn	ncn	O	7	NP	_	_
 3	도	도	jxc	jxc	O	2	FUNC	_	_
-4	10	10	nnc	nnc	O	5	NP	_	_
+4	10	10	nnc	nnc	O	7	NP	_	_
 5	km	km	su	su	O	7	NP	_	_
 6	에	에	jca	jca	O	5	FUNC	_	_
 7	불과하	불과하	ncps+xsm	ncps+xsm	O	0	ROOT	_	_
@@ -10581,7 +10581,7 @@
 17	있	있	paa	paa	O	0	ROOT	_	_
 18	다.	다.	ef+sf	ef+sf	O	17	FUNC	_	_
 
-1	마치	마치	mag	mag	O	8	ADVP	_	_
+1	마치	마치	mag	mag	O	10	ADVP	_	_
 2	저속	저속	ncn	ncn	O	6	NP	_	_
 3	의	의	jcm	jcm	O	2	FUNC	_	_
 4	롤러	롤러	ncn	ncn	O	5	NP	_	_
@@ -11108,7 +11108,7 @@
 7	ㄴ	ㄴ	etm	etm	O	6	FUNC	_	_
 8	말	말	ncn	ncn	O	14	NP	_	_
 9	을	을	jco	jco	O	8	FUNC	_	_
-10	이튿날	이튿날	ncn	ncn	O	14	NP	_	_
+10	이튿날	이튿날	ncn	ncn	O	11	NP	_	_
 11	멀리	멀리	ncn	ncn	O	14	NP	_	_
 12	서	서	jca	jca	O	11	FUNC	_	_
 13	끌고	끌고	pvg+ecc	pvg+ecc	O	14	VP	_	_
@@ -11275,7 +11275,7 @@
 7	신비	신비	ncn	ncn	O	8	NP	_	_
 8	속	속	ncn	ncn	O	10	NP	_	_
 9	에	에	jca	jca	O	8	FUNC	_	_
-10	싸이	싸이	pvg	pvg	O	12	VP	_	_
+10	싸이	싸이	pvg	pvg	O	17	VP	_	_
 11	ㄴ,	ㄴ,	etm+sp	etm+sp	O	10	FUNC	_	_
 12	평화롭	평화롭	ncn+xsm	ncn+xsm	O	15	ADJP	_	_
 13	었	었	ep	ep	O	12	FUNC	_	_
@@ -11425,7 +11425,7 @@
 7	기술	기술	ncn	ncn	O	15	NP	_	_
 8	로	로	jca	jca	O	7	FUNC	_	_
 9	인류	인류	ncn	ncn	O	10	NP	_	_
-10	역사상	역사상	ncn	ncn	O	15	NP	_	_
+10	역사상	역사상	ncn	ncn	O	11	NP	_	_
 11	최대	최대	ncn	ncn	O	13	NP	_	_
 12	의	의	jcm	jcm	O	11	FUNC	_	_
 13	제국	제국	ncn	ncn	O	15	NP	_	_
@@ -12029,7 +12029,7 @@
 13	노동자	노동자	ncn	ncn	O	16	NP	_	_
 14	의	의	jcm	jcm	O	13	FUNC	_	_
 15	계급적	계급적	ncn+xsn	ncn+xsn	O	16	NP	_	_
-16	이해	이해	ncpa	ncpa	O	29	NP	_	_
+16	이해	이해	ncpa	ncpa	O	25	NP	_	_
 17	보다도	보다도	jca+jxc	jca+jxc	O	16	FUNC	_	_
 18	노동자	노동자	ncn	ncn	O	21	NP	_	_
 19	의	의	jcm	jcm	O	18	FUNC	_	_
@@ -12219,7 +12219,7 @@
 8	이	이	jcs	jcs	O	7	FUNC	_	_
 9	인민	인민	ncn	ncn	O	11	NP	_	_
 10	의	의	jcm	jcm	O	9	FUNC	_	_
-11	법정	법정	ncn	ncn	O	18	NP	_	_
+11	법정	법정	ncn	ncn	O	15	NP	_	_
 12	에서	에서	jca	jca	O	11	FUNC	_	_
 13	유죄판결	유죄판결	ncn+ncpa	ncn+ncpa	O	15	NP	_	_
 14	을	을	jco	jco	O	13	FUNC	_	_
@@ -13252,7 +13252,7 @@
 10	받	받	pvg	pvg	O	17	VP	_	_
 11	고	고	ecc	ecc	O	10	FUNC	_	_
 12	성령	성령	ncn	ncn	O	13	NP	_	_
-13	충만	충만	ncps	ncps	O	17	NP	_	_
+13	충만	충만	ncps	ncps	O	19	NP	_	_
 14	하	하	xsm	xsm	O	13	ADJP	_	_
 15	ㅁ	ㅁ	etn	etn	O	14	FUNC	_	_
 16	을	을	jco	jco	O	15	FUNC	_	_
@@ -13523,7 +13523,7 @@
 2	의	의	jcm	jcm	O	1	FUNC	_	_
 3	15개	15개	nnc+nbu	nnc+nbu	O	4	NP	_	_
 4	교구	교구	ncn	ncn	O	5	NP	_	_
-5	중	중	ncn	ncn	O	14	NP	_	_
+5	중	중	ncn	ncn	O	11	NP	_	_
 6	서울,	서울,	nq+sp	nq+sp	O	7	PUNC	_	_
 7	대구,	대구,	ncn+sp	ncn+sp	O	8	PUNC	_	_
 8	광주	광주	nq	nq	O	9	NP	_	_
@@ -13972,7 +13972,7 @@
 10	고	고	ecc	ecc	O	9	FUNC	_	_
 11	황해안	황해안	ncn	ncn	O	13	NP	_	_
 12	에	에	jca	jca	O	11	FUNC	_	_
-13	도착하	도착하	ncpa+xsv	ncpa+xsv	O	21	VP	_	_
+13	도착하	도착하	ncpa+xsv	ncpa+xsv	O	15	VP	_	_
 14	어	어	ecs	ecs	O	13	FUNC	_	_
 15	짧	짧	paa	paa	O	17	ADJP	_	_
 16	ㄴ	ㄴ	etm	etm	O	15	FUNC	_	_
@@ -14054,7 +14054,7 @@
 25	다.	다.	ef+sf	ef+sf	O	24	FUNC	_	_
 
 1	한편	한편	maj	maj	O	26	IP	_	_
-2	19세기말	19세기말	nno+ncn	nno+ncn	O	4	NP	_	_
+2	19세기말	19세기말	nno+ncn	nno+ncn	O	12	NP	_	_
 3	평안도	평안도	nq	nq	O	4	NP	_	_
 4	지역	지역	ncn	ncn	O	6	NP	_	_
 5	의	의	jcm	jcm	O	4	FUNC	_	_
@@ -14624,11 +14624,11 @@
 8	은	은	jxt	jxt	O	7	FUNC	_	_
 9	주변	주변	ncn	ncn	O	11	NP	_	_
 10	의	의	jcm	jcm	O	9	FUNC	_	_
-11	결격	결격	ncn	ncn	O	21	NP	_	_
+11	결격	결격	ncn	ncn	O	26	NP	_	_
 12	과	과	jcj	jcj	O	11	FUNC	_	_
 13	성품	성품	ncn	ncn	O	15	NP	_	_
 14	의	의	jcm	jcm	O	13	FUNC	_	_
-15	온전하	온전하	ncps+xsm	ncps+xsm	O	18	ADJP	_	_
+15	온전하	온전하	ncps+xsm	ncps+xsm	O	26	ADJP	_	_
 16	ㅁ	ㅁ	etn	etn	O	15	FUNC	_	_
 17	이	이	jcs	jcs	O	16	FUNC	_	_
 18	짝짓	짝짓	pvg	pvg	O	21	VP	_	_
@@ -14784,12 +14784,12 @@
 10	ㄹ	ㄹ	etm	etm	O	9	FUNC	_	_
 11	주인공	주인공	ncn	ncn	O	13	NP	_	_
 12	의	의	jcm	jcm	O	11	FUNC	_	_
-13	성격	성격	ncn	ncn	O	21	NP	_	_
+13	성격	성격	ncn	ncn	O	30	NP	_	_
 14	이	이	jp	jp	O	13	FUNC	_	_
 15	ㄴ	ㄴ	etm	etm	O	14	FUNC	_	_
 16	'	'	sl	sl	O	0	PUNC	_	_
 17	외빈	외빈	ncn	ncn	O	18	NP	_	_
-18	내화	내화	ncn	ncn	O	21	NP	_	_
+18	내화	내화	ncn	ncn	O	30	NP	_	_
 19	'	'	sr	sr	O	0	PUNC	_	_
 20	의	의	jcm	jcm	O	19	FUNC	_	_
 21	원칙	원칙	ncn	ncn	O	30	NP	_	_
@@ -15334,8 +15334,8 @@
 3	이나	이나	jcj	jcj	O	2	FUNC	_	_
 4	선녀	선녀	ncn	ncn	O	13	NP	_	_
 5	나	나	jxc	jxc	O	4	FUNC	_	_
-6	다	다	ncn	ncn	O	8	NP	_	_
-7	같이	같이	mag	mag	O	8	ADVP	_	_
+6	다	다	ncn	ncn	O	7	NP	_	_
+7	같이	같이	mag	mag	O	13	ADVP	_	_
 8	한국적	한국적	nq+xsn	nq+xsn	O	11	NP	_	_
 9	이	이	jp	jp	O	8	FUNC	_	_
 10	ㄴ	ㄴ	etm	etm	O	9	FUNC	_	_
@@ -15754,7 +15754,7 @@
 
 1	동녀	동녀	npp	npp	O	12	NP	_	_
 2	는	는	jxt	jxt	O	1	FUNC	_	_
-3	아예	아예	mag	mag	O	10	ADVP	_	_
+3	아예	아예	mag	mag	O	6	ADVP	_	_
 4	동화	동화	ncn	ncn	O	6	NP	_	_
 5	에	에	jca	jca	O	4	FUNC	_	_
 6	등장하	등장하	ncps+xsm	ncps+xsm	O	8	ADJP	_	_
@@ -15909,7 +15909,7 @@
 3	아침	아침	ncn	ncn	O	4	NP	_	_
 4	잠자리	잠자리	ncn+ncn	ncn+ncn	O	6	NP	_	_
 5	에서	에서	jca	jca	O	4	FUNC	_	_
-6	일어나	일어나	pvg	pvg	O	14	VP	_	_
+6	일어나	일어나	pvg	pvg	O	32	VP	_	_
 7	아	아	ecs	ecs	O	6	FUNC	_	_
 8	'	'	sl	sl	O	0	PUNC	_	_
 9	10억	10억	nnc	nnc	O	10	NP	_	_
@@ -16335,7 +16335,7 @@
 26	었	었	ep	ep	O	25	FUNC	_	_
 27	다.	다.	ef+sf	ef+sf	O	26	FUNC	_	_
 
-1	한동안	한동안	ncn	ncn	O	8	NP	_	_
+1	한동안	한동안	ncn	ncn	O	2	NP	_	_
 2	주가	주가	ncn	ncn	O	8	NP	_	_
 3	가	가	jcs	jcs	O	2	FUNC	_	_
 4	1만	1만	nnc+nnc	nnc+nnc	O	5	NP	_	_
@@ -17532,7 +17532,7 @@
 
 1	이	이	mmd	mmd	O	2	MODP	_	_
 2	사건	사건	ncn	ncn	O	3	NP	_	_
-3	후	후	ncn	ncn	O	10	NP	_	_
+3	후	후	ncn	ncn	O	24	NP	_	_
 4	1세기	1세기	nnc+ncn	nnc+ncn	O	5	NP	_	_
 5	동안	동안	ncn	ncn	O	10	NP	_	_
 6	이나	이나	jxc	jxc	O	5	FUNC	_	_
@@ -17865,7 +17865,7 @@
 7	그러하	그러하	pad	pad	O	15	ADJP	_	_
 8	었	었	ep	ep	O	7	FUNC	_	_
 9	듯이	듯이	ecs	ecs	O	8	FUNC	_	_
-10	그	그	npp	npp	O	11	NP	_	_
+10	그	그	npp	npp	O	15	NP	_	_
 11	역시	역시	mag	mag	O	15	ADVP	_	_
 12	일종	일종	ncn	ncn	O	15	NP	_	_
 13	의	의	jcm	jcm	O	12	FUNC	_	_
@@ -18210,7 +18210,7 @@
 15	않	않	px	px	O	17	AUXP	_	_
 16	ㄹ	ㄹ	etm	etm	O	15	FUNC	_	_
 17	수	수	nbn	nbn	O	18	NP	_	_
-18	없	없	paa	paa	O	34	ADJP	_	_
+18	없	없	paa	paa	O	34	AUXP	_	_
 19	고	고	ecc	ecc	O	18	FUNC	_	_
 20	집안	집안	ncn	ncn	O	34	NP	_	_
 21	에는	에는	jca+jxt	jca+jxt	O	20	FUNC	_	_
@@ -18354,7 +18354,7 @@
 10	ㄴ	ㄴ	etm	etm	O	9	FUNC	_	_
 11	신문들	신문들	ncn+xsn	ncn+xsn	O	25	NP	_	_
 12	은	은	jxt	jxt	O	11	FUNC	_	_
-13	그나마	그나마	mag	mag	O	20	ADVP	_	_
+13	그나마	그나마	mag	mag	O	14	ADVP	_	_
 14	비싸	비싸	paa	paa	O	16	ADJP	_	_
 15	ㄴ	ㄴ	etm	etm	O	14	FUNC	_	_
 16	값	값	ncn	ncn	O	20	NP	_	_
@@ -18733,7 +18733,7 @@
 3	이	이	npd	npd	O	4	NP	_	_
 4	같	같	paa	paa	O	6	ADJP	_	_
 5	은	은	etm	etm	O	4	FUNC	_	_
-6	'	'	sl	sl	O	0	PUNC	_	_
+6	'	'	sl	sl	O	7	NP	_	_
 7	보이	보이	pvg	pvg	O	9	VP	_	_
 8	지	지	ecx	ecx	O	7	FUNC	_	_
 9	않	않	px	px	O	11	AUXP	_	_
@@ -18859,7 +18859,7 @@
 3	의	의	jcm	jcm	O	2	FUNC	_	_
 4	검	검	paa	paa	O	6	ADJP	_	_
 5	ㄴ	ㄴ	etm	etm	O	4	FUNC	_	_
-6	손	손	ncn	ncn	O	11	NP	_	_
+6	손	손	ncn	ncn	O	19	NP	_	_
 7	이	이	jp	jp	O	6	FUNC	_	_
 8	라	라	ef	ef	O	7	FUNC	_	_
 9	지칭하	지칭하	ncpa+xsv	ncpa+xsv	O	11	VP	_	_
@@ -18944,7 +18944,7 @@
 2	가장	가장	mag	mag	O	3	ADVP	_	_
 3	무섭	무섭	paa	paa	O	5	ADJP	_	_
 4	ㄴ	ㄴ	etm	etm	O	3	FUNC	_	_
-5	것	것	nbn	nbn	O	19	NP	_	_
+5	것	것	nbn	nbn	O	15	NP	_	_
 6	은	은	jxt	jxt	O	5	FUNC	_	_
 7	그것	그것	npd	npd	O	15	NP	_	_
 8	이	이	jcs	jcs	O	7	FUNC	_	_
@@ -18965,9 +18965,9 @@
 1	이	이	mmd	mmd	O	2	MODP	_	_
 2	점	점	ncn	ncn	O	4	NP	_	_
 3	과	과	jct	jct	O	2	FUNC	_	_
-4	관련하	관련하	ncpa+xsv	ncpa+xsv	O	11	VP	_	_
+4	관련하	관련하	ncpa+xsv	ncpa+xsv	O	20	VP	_	_
 5	어	어	ecs	ecs	O	4	FUNC	_	_
-6	나	나	npp	npp	O	11	NP	_	_
+6	나	나	npp	npp	O	20	NP	_	_
 7	는	는	jxt	jxt	O	6	FUNC	_	_
 8	아직도	아직도	mag	mag	O	11	ADVP	_	_
 9	모스크바	모스크바	nq	nq	O	11	NP	_	_
@@ -19225,8 +19225,8 @@
 30	것이	것이	nbn+jp	nbn+jp	O	0	ROOT	_	_
 31	다.	다.	ef+sf	ef+sf	O	30	FUNC	_	_
 
-1	우선	우선	mag	mag	O	9	ADVP	_	_
-2	그	그	npp	npp	O	9	NP	_	_
+1	우선	우선	mag	mag	O	7	ADVP	_	_
+2	그	그	npp	npp	O	7	NP	_	_
 3	가	가	jcs	jcs	O	2	FUNC	_	_
 4	발자크	발자크	nq	nq	O	5	NP	_	_
 5	소설	소설	ncn	ncn	O	7	NP	_	_
@@ -19335,7 +19335,7 @@
 18	ㅁ	ㅁ	etn	etn	O	17	FUNC	_	_
 19	으로써	으로써	jca	jca	O	18	FUNC	_	_
 20	전형적	전형적	ncn+xsn	ncn+xsn	O	21	NP	_	_
-21	환경	환경	ncn	ncn	O	27	NP	_	_
+21	환경	환경	ncn	ncn	O	22	NP	_	_
 22	속	속	ncn	ncn	O	27	NP	_	_
 23	에	에	jca	jca	O	22	FUNC	_	_
 24	전형적	전형적	ncn+xsn	ncn+xsn	O	25	NP	_	_
@@ -19365,7 +19365,7 @@
 13	ㄴ	ㄴ	etm	etm	O	12	FUNC	_	_
 14	대	대	nbn	nbn	O	22	NP	_	_
 15	로	로	jca	jca	O	14	FUNC	_	_
-16	바로	바로	mag	mag	O	22	ADVP	_	_
+16	바로	바로	mag	mag	O	20	ADVP	_	_
 17	전형적	전형적	ncn+xsn	ncn+xsn	O	18	NP	_	_
 18	인물	인물	ncn	ncn	O	20	NP	_	_
 19	에	에	jca	jca	O	18	FUNC	_	_
@@ -19627,7 +19627,7 @@
 36	고자	고자	ecx	ecx	O	35	FUNC	_	_
 37	하	하	px	px	O	39	AUXP	_	_
 38	는	는	etm	etm	O	37	FUNC	_	_
-39	데	데	nbn	nbn	O	40	NP	_	_
+39	데	데	nbn	nbn	O	42	NP	_	_
 40	의미	의미	ncpa	ncpa	O	42	NP	_	_
 41	가	가	jcs	jcs	O	40	FUNC	_	_
 42	있	있	paa	paa	O	0	ROOT	_	_
@@ -20022,7 +20022,7 @@
 5	결정적	결정적	ncpa+xsn	ncpa+xsn	O	8	NP	_	_
 6	이	이	jp	jp	O	5	FUNC	_	_
 7	ㄴ	ㄴ	etm	etm	O	6	FUNC	_	_
-8	한계	한계	ncn	ncn	O	11	NP	_	_
+8	한계	한계	ncn	ncn	O	12	NP	_	_
 9	이	이	jp	jp	O	8	FUNC	_	_
 10	ㄴ	ㄴ	etm	etm	O	9	FUNC	_	_
 11	과학적	과학적	ncn+xsn	ncn+xsn	O	12	NP	_	_
@@ -20757,9 +20757,9 @@
 1	이렇게	이렇게	mad	mad	O	2	ADVP	_	_
 2	하	하	pvg	pvg	O	12	VP	_	_
 3	어서	어서	ecs	ecs	O	2	FUNC	_	_
-4	인간화	인간화	ncn	ncn	O	12	NP	_	_
+4	인간화	인간화	ncn	ncn	O	10	NP	_	_
 5	의	의	jcm	jcm	O	4	FUNC	_	_
-6	길	길	paa	paa	O	12	ADJP	_	_
+6	길	길	paa	paa	O	8	ADJP	_	_
 7	고	고	ecc	ecc	O	6	FUNC	_	_
 8	기	기	pvg	pvg	O	10	VP	_	_
 9	ㄴ	ㄴ	etm	etm	O	8	FUNC	_	_
@@ -21175,7 +21175,7 @@
 26	다.	다.	ef+sf	ef+sf	O	25	FUNC	_	_
 
 1	1980년대	1980년대	nno+nbu+nbu	nno+nbu+nbu	O	2	NP	_	_
-2	초	초	ncn	ncn	O	8	NP	_	_
+2	초	초	ncn	ncn	O	4	NP	_	_
 3	이탈리아	이탈리아	nq	nq	O	4	NP	_	_
 4	정부	정부	ncn	ncn	O	8	NP	_	_
 5	가	가	jcs	jcs	O	4	FUNC	_	_
@@ -21256,7 +21256,7 @@
 19	다.	다.	ef+sf	ef+sf	O	18	FUNC	_	_
 
 1	1981년	1981년	nno+nbu	nno+nbu	O	2	NP	_	_
-2	말	말	ncn	ncn	O	26	NP	_	_
+2	말	말	ncn	ncn	O	5	NP	_	_
 3	헝가리	헝가리	nq	nq	O	5	NP	_	_
 4	에서	에서	jca	jca	O	3	FUNC	_	_
 5	개최되	개최되	ncpa+xsv	ncpa+xsv	O	7	VP	_	_
@@ -21450,7 +21450,7 @@
 25	었	었	ep	ep	O	24	FUNC	_	_
 26	다.	다.	ef+sf	ef+sf	O	25	FUNC	_	_
 
-1	특이하고도	특이하고도	ncps+xsm+ecc+jxc	ncps+xsm+ecc+jxc	O	4	NP	_	_
+1	특이하고도	특이하고도	ncps+xsm+ecc+jxc	ncps+xsm+ecc+jxc	O	12	NP	_	_
 2	기이하	기이하	ncps+xsm	ncps+xsm	O	4	ADJP	_	_
 3	ㄴ	ㄴ	etm	etm	O	2	FUNC	_	_
 4	일	일	ncn	ncn	O	12	NP	_	_
@@ -21722,7 +21722,7 @@
 14	었	었	ep	ep	O	13	FUNC	_	_
 15	다.	다.	ef+sf	ef+sf	O	14	FUNC	_	_
 
-1	그들	그들	npp+xsn	npp+xsn	O	24	NP	_	_
+1	그들	그들	npp+xsn	npp+xsn	O	17	NP	_	_
 2	은	은	jxt	jxt	O	1	FUNC	_	_
 3	RTLplus	RTLplus	f+f	f+f	O	7	NP	_	_
 4	와	와	jct	jct	O	3	FUNC	_	_
@@ -22288,7 +22288,7 @@
 3	ㄴ	ㄴ	etm	etm	O	2	FUNC	_	_
 4	바	바	nbn	nbn	O	6	NP	_	_
 5	와	와	jct	jct	O	4	FUNC	_	_
-6	같	같	paa	paa	O	13	ADJP	_	_
+6	같	같	paa	paa	O	20	ADJP	_	_
 7	이	이	ecs	ecs	O	6	FUNC	_	_
 8	시	시	ncn	ncn	O	9	NP	_	_
 9	본질론	본질론	ncn	ncn	O	11	NP	_	_
@@ -22409,7 +22409,7 @@
 7	의	의	jcm	jcm	O	6	FUNC	_	_
 8	정의	정의	ncn	ncn	O	22	NP	_	_
 9	는	는	jxt	jxt	O	8	FUNC	_	_
-10	당시	당시	ncn	ncn	O	16	NP	_	_
+10	당시	당시	ncn	ncn	O	22	NP	_	_
 11	우리	우리	npp	npp	O	12	NP	_	_
 12	주변	주변	ncn	ncn	O	14	NP	_	_
 13	의	의	jcm	jcm	O	12	FUNC	_	_
@@ -22726,7 +22726,7 @@
 14	긴축적	긴축적	ncn+xsn	ncn+xsn	O	17	NP	_	_
 15	이	이	jp	jp	O	14	FUNC	_	_
 16	ㄴ	ㄴ	etm	etm	O	15	FUNC	_	_
-17	사용	사용	ncpa	ncpa	O	26	NP	_	_
+17	사용	사용	ncpa	ncpa	O	21	NP	_	_
 18	이라든가	이라든가	jcj	jcj	O	17	FUNC	_	_
 19	정서	정서	ncn	ncn	O	21	NP	_	_
 20	의	의	jcm	jcm	O	19	FUNC	_	_
@@ -22780,7 +22780,7 @@
 
 1	그	그	npp	npp	O	28	NP	_	_
 2	는	는	jxt	jxt	O	1	FUNC	_	_
-3	당시	당시	ncn	ncn	O	14	NP	_	_
+3	당시	당시	ncn	ncn	O	4	NP	_	_
 4	문단	문단	ncn	ncn	O	6	NP	_	_
 5	의	의	jcm	jcm	O	4	FUNC	_	_
 6	패권	패권	ncn	ncn	O	8	NP	_	_
@@ -23139,14 +23139,14 @@
 16	것이	것이	nbn+jp	nbn+jp	O	0	ROOT	_	_
 17	다.	다.	ef+sf	ef+sf	O	16	FUNC	_	_
 
-1	다음	다음	ncn	ncn	O	8	NP	_	_
+1	다음	다음	ncn	ncn	O	2	NP	_	_
 2	세번째	세번째	nnc+nbu	nnc+nbu	O	3	NP	_	_
-3	길	길	ncn	ncn	O	8	NP	_	_
+3	길	길	ncn	ncn	O	17	NP	_	_
 4	이	이	jcs	jcs	O	3	FUNC	_	_
 5	시와	시와	ncn+jcj	ncn+jcj	O	6	NP	_	_
 6	문학	문학	ncn	ncn	O	8	NP	_	_
 7	을	을	jco	jco	O	6	FUNC	_	_
-8	버리	버리	pvg	pvg	O	19	VP	_	_
+8	버리	버리	pvg	pvg	O	17	VP	_	_
 9	고	고	ecc	ecc	O	8	FUNC	_	_
 10	아예	아예	mag	mag	O	11	ADVP	_	_
 11	다르	다르	paa	paa	O	13	ADJP	_	_
@@ -23870,10 +23870,10 @@
 24	지지	지지	ncpa	ncpa	O	27	NP	_	_
 25	의	의	jcm	jcm	O	24	FUNC	_	_
 26	사회적	사회적	ncn+xsn	ncn+xsn	O	27	NP	_	_
-27	기반확대	기반확대	ncn+ncpa	ncn+ncpa	O	34	NP	_	_
+27	기반확대	기반확대	ncn+ncpa	ncn+ncpa	O	31	NP	_	_
 28	이	이	jp	jp	O	27	FUNC	_	_
 29	라는	라는	etm	etm	O	28	FUNC	_	_
-30	일면	일면	ncn	ncn	O	34	NP	_	_
+30	일면	일면	ncn	ncn	O	31	NP	_	_
 31	진보적	진보적	ncpa+xsn	ncpa+xsn	O	34	NP	_	_
 32	이	이	jp	jp	O	31	FUNC	_	_
 33	ㄴ	ㄴ	etm	etm	O	32	FUNC	_	_
@@ -24384,7 +24384,7 @@
 1	그러나	그러나	maj	maj	O	21	IP	_	_
 2	소련	소련	nq	nq	O	4	NP	_	_
 3	의	의	jcm	jcm	O	2	FUNC	_	_
-4	움직임	움직임	ncn	ncn	O	12	NP	_	_
+4	움직임	움직임	ncn	ncn	O	5	NP	_	_
 5	하나하나	하나하나	ncn+ncn	ncn+ncn	O	7	NP	_	_
 6	에	에	jca	jca	O	5	FUNC	_	_
 7	대하	대하	pvg	pvg	O	12	VP	_	_
@@ -25541,7 +25541,7 @@
 7	속출	속출	ncpa	ncpa	O	27	NP	_	_
 8	,	,	sp	sp	O	7	PUNC	_	_
 9	그	그	mmd	mmd	O	10	MODP	_	_
-10	때문	때문	nbn	nbn	O	13	NP	_	_
+10	때문	때문	nbn	nbn	O	15	NP	_	_
 11	에	에	jca	jca	O	10	FUNC	_	_
 12	병	병	ncn	ncn	O	13	NP	_	_
 13	들	들	pvg	pvg	O	15	VP	_	_
@@ -25622,11 +25622,11 @@
 12	그	그	mmd	mmd	O	13	MODP	_	_
 13	지방문화	지방문화	ncn+ncn	ncn+ncn	O	15	NP	_	_
 14	의	의	jcm	jcm	O	13	FUNC	_	_
-15	산실	산실	ncn	ncn	O	22	NP	_	_
+15	산실	산실	ncn	ncn	O	20	NP	_	_
 16	이자	이자	jcj	jcj	O	15	FUNC	_	_
 17	지식인들	지식인들	ncn+xsn	ncn+xsn	O	19	NP	_	_
 18	의	의	jcm	jcm	O	17	FUNC	_	_
-19	광장	광장	ncn	ncn	O	22	NP	_	_
+19	광장	광장	ncn	ncn	O	20	NP	_	_
 20	역할	역할	ncn	ncn	O	22	NP	_	_
 21	을	을	jco	jco	O	20	FUNC	_	_
 22	담당하	담당하	ncpa+xsv	ncpa+xsv	O	0	ROOT	_	_
@@ -26045,7 +26045,7 @@
 1	16	16	nno	nno	O	2	NP	_	_
 2	세기	세기	ncn	ncn	O	3	NP	_	_
 3	중반	중반	ncn	ncn	O	4	NP	_	_
-4	이후	이후	ncn	ncn	O	11	NP	_	_
+4	이후	이후	ncn	ncn	O	18	NP	_	_
 5	고전작들	고전작들	ncn+xsn	ncn+xsn	O	7	NP	_	_
 6	을	을	jco	jco	O	5	FUNC	_	_
 7	위하	위하	pvg	pvg	O	9	VP	_	_
@@ -26691,9 +26691,9 @@
 
 1	한스삭스	한스삭스	nq	nq	O	21	NP	_	_
 2	는	는	jxt	jxt	O	1	FUNC	_	_
-3	그	그	npp	npp	O	10	NP	_	_
+3	그	그	npp	npp	O	6	NP	_	_
 4	의	의	jcm	jcm	O	3	FUNC	_	_
-5	약	약	mma	mma	O	7	MODP	_	_
+5	약	약	mma	mma	O	6	MODP	_	_
 6	6천	6천	nnc+nnc	nnc+nnc	O	7	NP	_	_
 7	개	개	nbu	nbu	O	10	NP	_	_
 8	의	의	jcm	jcm	O	7	FUNC	_	_
@@ -26830,7 +26830,7 @@
 2	ㄴ	ㄴ	etm	etm	O	1	FUNC	_	_
 3	현상	현상	ncn	ncn	O	11	NP	_	_
 4	은	은	jxt	jxt	O	3	FUNC	_	_
-5	일부계층	일부계층	ncn+ncn	ncn+ncn	O	8	NP	_	_
+5	일부계층	일부계층	ncn+ncn	ncn+ncn	O	7	NP	_	_
 6	의	의	jcm	jcm	O	5	FUNC	_	_
 7	호화외제	호화외제	ncps+ncn	ncps+ncn	O	8	NP	_	_
 8	가구수요	가구수요	ncn+ncn	ncn+ncn	O	11	NP	_	_
@@ -26889,7 +26889,7 @@
 19	었	었	ep	ep	O	18	FUNC	_	_
 20	다.	다.	ef+sf	ef+sf	O	19	FUNC	_	_
 
-1	국내제조업체들	국내제조업체들	ncn+ncpa+ncn+xsn	ncn+ncpa+ncn+xsn	O	22	NP	_	_
+1	국내제조업체들	국내제조업체들	ncn+ncpa+ncn+xsn	ncn+ncpa+ncn+xsn	O	20	NP	_	_
 2	은	은	jxt	jxt	O	1	FUNC	_	_
 3	국제경쟁	국제경쟁	ncn+ncpa	ncn+ncpa	O	5	NP	_	_
 4	에서	에서	jca	jca	O	3	FUNC	_	_
@@ -28025,7 +28025,7 @@
 15	모든	모든	mma	mma	O	16	MODP	_	_
 16	시도	시도	ncpa	ncpa	O	40	NP	_	_
 17	는	는	jxt	jxt	O	16	FUNC	_	_
-18	기껏해야	기껏해야	mag	mag	O	21	ADVP	_	_
+18	기껏해야	기껏해야	mag	mag	O	19	ADVP	_	_
 19	부적절하	부적절하	ncps+xsm	ncps+xsm	O	21	ADJP	_	_
 20	ㄴ	ㄴ	etm	etm	O	19	FUNC	_	_
 21	행위	행위	ncpa	ncpa	O	40	NP	_	_
@@ -28051,7 +28051,7 @@
 41	이	이	jp	jp	O	40	FUNC	_	_
 42	다.	다.	ef+sf	ef+sf	O	41	FUNC	_	_
 
-1	한편	한편	maj	maj	O	20	NP	_	_
+1	한편	한편	maj	maj	O	18	IP	_	_
 2	윔저트와	윔저트와	nq+jcj	nq+jcj	O	3	NP	_	_
 3	먼로우	먼로우	nq	nq	O	18	NP	_	_
 4	는	는	jxt	jxt	O	3	FUNC	_	_
@@ -28068,7 +28068,7 @@
 15	심리적	심리적	ncn+xsn	ncn+xsn	O	16	NP	_	_
 16	반응	반응	ncpa	ncpa	O	18	NP	_	_
 17	을	을	jco	jco	O	16	FUNC	_	_
-18	가리키	가리키	pvg	pvg	O	1	VP	_	_
+18	가리키	가리키	pvg	pvg	O	28	VP	_	_
 19	어서는	어서는	ecs+jxt	ecs+jxt	O	18	FUNC	_	_
 20	'	'	sl	sl	O	0	PUNC	_	_
 21	감정	감정	ncn	ncn	O	23	NP	_	_
@@ -28429,7 +28429,7 @@
 10	는	는	etm	etm	O	9	FUNC	_	_
 11	최고	최고	ncn	ncn	O	13	NP	_	_
 12	의	의	jcm	jcm	O	11	FUNC	_	_
-13	강자	강자	ncn	ncn	O	29	NP	_	_
+13	강자	강자	ncn	ncn	O	25	NP	_	_
 14	이	이	jp	jp	O	13	FUNC	_	_
 15	ㅁ	ㅁ	etn	etn	O	14	FUNC	_	_
 16	을	을	jco	jco	O	15	FUNC	_	_
@@ -28562,8 +28562,8 @@
 25	다.	다.	ef+sf	ef+sf	O	24	FUNC	_	_
 
 1	1월	1월	nno+nbu	nno+nbu	O	2	NP	_	_
-2	27일	27일	nno+nbu	nno+nbu	O	24	NP	_	_
-3	저녁	저녁	ncn	ncn	O	4	NP	_	_
+2	27일	27일	nno+nbu	nno+nbu	O	3	NP	_	_
+3	저녁	저녁	ncn	ncn	O	24	NP	_	_
 4	미야자와리에	미야자와리에	nq	nq	O	24	NP	_	_
 5	는	는	jxt	jxt	O	4	FUNC	_	_
 6	정식	정식	ncn	ncn	O	24	NP	_	_
@@ -28791,7 +28791,7 @@
 19	것이	것이	nbn+jp	nbn+jp	O	0	ROOT	_	_
 20	다.	다.	ef+sf	ef+sf	O	19	FUNC	_	_
 
-1	어쨋든	어쨋든	mag	mag	O	7	ADVP	_	_
+1	어쨋든	어쨋든	mag	mag	O	2	ADVP	_	_
 2	이제	이제	ncn	ncn	O	7	NP	_	_
 3	다카하나다	다카하나다	nq	nq	O	7	NP	_	_
 4	는	는	jxt	jxt	O	3	FUNC	_	_
@@ -28866,7 +28866,7 @@
 1	온	온	mma	mma	O	2	MODP	_	_
 2	국민	국민	ncn	ncn	O	4	NP	_	_
 3	이	이	jcs	jcs	O	2	FUNC	_	_
-4	영웅	영웅	ncn	ncn	O	13	NP	_	_
+4	영웅	영웅	ncn	ncn	O	15	NP	_	_
 5	이	이	jp	jp	O	4	FUNC	_	_
 6	라	라	ef	ef	O	5	FUNC	_	_
 7	생각하	생각하	ncpa+xsv	ncpa+xsv	O	9	VP	_	_
@@ -28921,10 +28921,10 @@
 20	이	이	jp	jp	O	19	FUNC	_	_
 21	ㄴ가.	ㄴ가.	ef+sf	ef+sf	O	20	FUNC	_	_
 
-1	분명	분명	mag	mag	O	10	ADVP	_	_
+1	분명	분명	mag	mag	O	12	ADVP	_	_
 2	사람들	사람들	ncn+xsn	ncn+xsn	O	3	NP	_	_
 3	머리	머리	ncn	ncn	O	4	NP	_	_
-4	속	속	ncn	ncn	O	10	NP	_	_
+4	속	속	ncn	ncn	O	12	NP	_	_
 5	에는	에는	jca+jxt	jca+jxt	O	4	FUNC	_	_
 6	이러하	이러하	pad	pad	O	8	ADJP	_	_
 7	ㄴ	ㄴ	etm	etm	O	6	FUNC	_	_
@@ -28979,7 +28979,7 @@
 18	았	았	ep	ep	O	17	FUNC	_	_
 19	다.	다.	ef+sf	ef+sf	O	18	FUNC	_	_
 
-1	지금	지금	ncn	ncn	O	24	NP	_	_
+1	지금	지금	ncn	ncn	O	3	NP	_	_
 2	이	이	mmd	mmd	O	3	MODP	_	_
 3	시기	시기	ncn	ncn	O	24	NP	_	_
 4	에	에	jca	jca	O	3	FUNC	_	_
@@ -29192,7 +29192,7 @@
 10	의	의	jcm	jcm	O	9	FUNC	_	_
 11	CF	CF	f	f	O	19	NP	_	_
 12	는	는	jxt	jxt	O	11	FUNC	_	_
-13	거의	거의	mag	mag	O	14	ADVP	_	_
+13	거의	거의	mag	mag	O	19	ADVP	_	_
 14	절대적	절대적	ncn+xsn	ncn+xsn	O	17	NP	_	_
 15	이	이	jp	jp	O	14	FUNC	_	_
 16	ㄴ	ㄴ	etm	etm	O	15	FUNC	_	_
@@ -29690,7 +29690,7 @@
 5	이	이	jp	jp	O	4	FUNC	_	_
 6	기	기	etn	etn	O	5	FUNC	_	_
 7	도	도	jxc	jxc	O	6	FUNC	_	_
-8	하	하	pvg	pvg	O	32	VP	_	_
+8	하	하	pvg	pvg	O	26	VP	_	_
 9	지만	지만	ecs	ecs	O	8	FUNC	_	_
 10	도덕경	도덕경	nq	nq	O	12	NP	_	_
 11	에서	에서	jca	jca	O	10	FUNC	_	_
@@ -29859,7 +29859,7 @@
 
 1	인간	인간	ncn	ncn	O	27	NP	_	_
 2	은	은	jxt	jxt	O	1	FUNC	_	_
-3	인식	인식	ncpa	ncpa	O	6	NP	_	_
+3	인식	인식	ncpa	ncpa	O	4	NP	_	_
 4	가능하	가능하	ncps+xsm	ncps+xsm	O	6	ADJP	_	_
 5	ㄴ	ㄴ	etm	etm	O	4	FUNC	_	_
 6	사물	사물	ncn	ncn	O	8	NP	_	_
@@ -29919,7 +29919,7 @@
 11	을	을	jco	jco	O	10	FUNC	_	_
 12	미치	미치	pvg	pvg	O	14	VP	_	_
 13	ㄴ	ㄴ	etm	etm	O	12	FUNC	_	_
-14	나머지	나머지	ncn	ncn	O	22	NP	_	_
+14	나머지	나머지	ncn	ncn	O	15	NP	_	_
 15	인간들	인간들	ncn+xsn	ncn+xsn	O	22	NP	_	_
 16	은	은	jxt	jxt	O	15	FUNC	_	_
 17	실재	실재	ncpa	ncpa	O	22	NP	_	_
@@ -30001,7 +30001,7 @@
 11	양상	양상	ncn	ncn	O	14	NP	_	_
 12	을	을	jco	jco	O	11	FUNC	_	_
 13	아우르고	아우르고	pvg+ecc	pvg+ecc	O	14	VP	_	_
-14	초월하	초월하	ncpa+xsv	ncpa+xsv	O	20	VP	_	_
+14	초월하	초월하	ncpa+xsv	ncpa+xsv	O	17	VP	_	_
 15	는	는	etm	etm	O	14	FUNC	_	_
 16	어떤	어떤	mmd	mmd	O	20	MODP	_	_
 17	궁극적	궁극적	ncps+xsn	ncps+xsn	O	20	NP	_	_
@@ -30106,7 +30106,7 @@
 18	수	수	nbn	nbn	O	19	NP	_	_
 19	없	없	paa	paa	O	21	AUXP	_	_
 20	는	는	etm	etm	O	19	FUNC	_	_
-21	대상	대상	ncn	ncn	O	29	NP	_	_
+21	대상	대상	ncn	ncn	O	27	NP	_	_
 22	이	이	jp	jp	O	21	FUNC	_	_
 23	ㅁ	ㅁ	etn	etn	O	22	FUNC	_	_
 24	을	을	jco	jco	O	23	FUNC	_	_
@@ -30133,7 +30133,7 @@
 12	관련되	관련되	ncpa+xsv	ncpa+xsv	O	15	VP	_	_
 13	ㄴ	ㄴ	etm	etm	O	12	FUNC	_	_
 14	여러	여러	mma	mma	O	15	MODP	_	_
-15	가지	가지	nbu	nbu	O	19	NP	_	_
+15	가지	가지	nbu	nbu	O	17	NP	_	_
 16	신비와	신비와	ncpa+jcj	ncpa+jcj	O	17	NP	_	_
 17	현시	현시	ncn	ncn	O	19	NP	_	_
 18	*LRB*	*LRB*	sl	sl	O	0	PUNC	_	_
@@ -30239,11 +30239,11 @@
 29	뿐이	뿐이	nbn+jp	nbn+jp	O	0	ROOT	_	_
 30	다.	다.	ef+sf	ef+sf	O	29	FUNC	_	_
 
-1	인간	인간	ncn	ncn	O	9	NP	_	_
+1	인간	인간	ncn	ncn	O	11	NP	_	_
 2	이	이	jcs	jcs	O	1	FUNC	_	_
 3	감각	감각	ncpa	ncpa	O	5	NP	_	_
 4	을	을	jco	jco	O	3	FUNC	_	_
-5	통하	통하	pvg	pvg	O	9	VP	_	_
+5	통하	통하	pvg	pvg	O	11	VP	_	_
 6	어서	어서	ecs	ecs	O	5	FUNC	_	_
 7	그것	그것	npd	npd	O	9	NP	_	_
 8	을	을	jco	jco	O	7	FUNC	_	_
@@ -30681,7 +30681,7 @@
 22	자.	자.	ef+sf	ef+sf	O	21	FUNC	_	_
 
 1	평화적	평화적	ncps+xsn	ncps+xsn	O	2	NP	_	_
-2	통일정책	통일정책	ncpa+ncn	ncpa+ncn	O	5	NP	_	_
+2	통일정책	통일정책	ncpa+ncn	ncpa+ncn	O	10	NP	_	_
 3	과	과	jcj	jcj	O	2	FUNC	_	_
 4	핵	핵	ncn	ncn	O	5	NP	_	_
 5	문제	문제	ncn	ncn	O	7	NP	_	_
@@ -30874,7 +30874,7 @@
 8	어지	어지	ecx+px	ecx+px	O	7	FUNC	_	_
 9	ㄴ다.	ㄴ다.	ef+sf	ef+sf	O	8	FUNC	_	_
 
-1	2차	2차	nnc+nbu	nnc+nbu	O	9	NP	_	_
+1	2차	2차	nnc+nbu	nnc+nbu	O	2	NP	_	_
 2	회담	회담	ncpa	ncpa	O	9	NP	_	_
 3	에서부터는	에서부터는	jca+jxc+jxt	jca+jxc+jxt	O	2	FUNC	_	_
 4	이용준	이용준	nq	nq	O	5	NP	_	_
@@ -31197,7 +31197,7 @@
 17	이	이	jp	jp	O	16	FUNC	_	_
 18	다.	다.	ef+sf	ef+sf	O	17	FUNC	_	_
 
-1	굽이치	굽이치	pvg	pvg	O	4	VP	_	_
+1	굽이치	굽이치	pvg	pvg	O	25	VP	_	_
 2	듯	듯	ecs	ecs	O	1	FUNC	_	_
 3	꼬불꼬불	꼬불꼬불	mag	mag	O	4	ADVP	_	_
 4	오르	오르	pvg	pvg	O	6	VP	_	_
@@ -31756,7 +31756,7 @@
 6	지	지	ecx	ecx	O	5	FUNC	_	_
 7	않	않	px	px	O	0	ROOT	_	_
 8	으려고	으려고	ecs	ecs	O	7	FUNC	_	_
-9	얼른	얼른	mag	mag	O	17	ADVP	_	_
+9	얼른	얼른	mag	mag	O	12	ADVP	_	_
 10	등	등	ncn	ncn	O	12	NP	_	_
 11	을	을	jco	jco	O	10	FUNC	_	_
 12	돌리	돌리	pvg	pvg	O	17	VP	_	_
@@ -31858,7 +31858,7 @@
 3	에	에	jca	jca	O	2	FUNC	_	_
 4	사로잡히	사로잡히	pvg	pvg	O	6	VP	_	_
 5	어	어	ecx	ecx	O	4	FUNC	_	_
-6	있	있	px	px	O	8	AUXP	_	_
+6	있	있	px	px	O	9	AUXP	_	_
 7	는	는	etm	etm	O	6	FUNC	_	_
 8	이	이	npd	npd	O	9	NP	_	_
 9	황당무계하	황당무계하	ncps+xsm	ncps+xsm	O	11	ADJP	_	_
@@ -31919,12 +31919,12 @@
 19	하	하	pvg	pvg	O	0	ROOT	_	_
 20	오.	오.	ef+sf	ef+sf	O	19	FUNC	_	_
 
-1	나	나	npp	npp	O	3	NP	_	_
+1	나	나	npp	npp	O	22	NP	_	_
 2	ㄴ	ㄴ	jxt	jxt	O	1	FUNC	_	_
 3	증거인멸하	증거인멸하	ncpa+xsv	ncpa+xsv	O	5	VP	_	_
 4	ㄹ	ㄹ	etm	etm	O	3	FUNC	_	_
 5	수	수	nbn	nbn	O	6	NP	_	_
-6	없	없	paa	paa	O	22	ADJP	_	_
+6	없	없	paa	paa	O	8	ADJP	_	_
 7	고,	고,	ecc+sp	ecc+sp	O	6	FUNC	_	_
 8	도망가	도망가	pvg	pvg	O	10	VP	_	_
 9	ㄹ	ㄹ	etm	etm	O	8	FUNC	_	_
@@ -32050,7 +32050,7 @@
 30	되	되	pvg	pvg	O	32	VP	_	_
 31	ㄹ	ㄹ	etm	etm	O	30	FUNC	_	_
 32	수	수	nbn	nbn	O	33	NP	_	_
-33	없	없	paa	paa	O	35	ADJP	_	_
+33	없	없	paa	paa	O	35	AUXP	_	_
 34	는	는	etm	etm	O	33	FUNC	_	_
 35	사람들	사람들	ncn+xsn	ncn+xsn	O	0	ROOT	_	_
 36	이	이	jp	jp	O	35	FUNC	_	_
@@ -32162,7 +32162,7 @@
 10	]	]	sr	sr	O	0	PUNC	_	_
 11	이	이	jp	jp	O	10	FUNC	_	_
 12	라고	라고	ecs	ecs	O	11	FUNC	_	_
-13	쓰	쓰	pvg	pvg	O	27	VP	_	_
+13	쓰	쓰	pvg	pvg	O	25	VP	_	_
 14	어보	어보	ecx+px	ecx+px	O	13	FUNC	_	_
 15	지만	지만	ecs	ecs	O	14	FUNC	_	_
 16	1992년	1992년	nno+nbu	nno+nbu	O	17	NP	_	_
@@ -32174,9 +32174,9 @@
 22	어느	어느	ncn	ncn	O	23	NP	_	_
 23	페이지	페이지	ncn	ncn	O	25	NP	_	_
 24	에도	에도	jca+jxc	jca+jxc	O	23	FUNC	_	_
-25	존재하	존재하	ncps+xsm	ncps+xsm	O	27	ADVP	_	_
+25	존재하	존재하	ncps+xsm	ncps+xsm	O	27	ADJP	_	_
 26	지	지	ecx	ecx	O	25	FUNC	_	_
-27	않	않	px	px	O	0	AUXP	_	_
+27	않	않	px	px	O	29	AUXP	_	_
 28	ㄹ	ㄹ	etm	etm	O	27	FUNC	_	_
 29	것이	것이	nbn+jp	nbn+jp	O	0	ROOT	_	_
 30	오.	오.	ef+sf	ef+sf	O	29	FUNC	_	_
@@ -32342,10 +32342,10 @@
 5	을	을	jco	jco	O	4	FUNC	_	_
 6	확인받	확인받	pvg	pvg	O	8	VP	_	_
 7	기	기	etn	etn	O	6	FUNC	_	_
-8	위하	위하	pvg	pvg	O	26	VP	_	_
+8	위하	위하	pvg	pvg	O	0	ROOT	_	_
 9	어	어	ecs	ecs	O	8	FUNC	_	_
-10	끊임없이	끊임없이	mag	mag	O	26	ADVP	_	_
-11	무엇	무엇	npd	npd	O	26	NP	_	_
+10	끊임없이	끊임없이	mag	mag	O	0	ROOT	_	_
+11	무엇	무엇	npd	npd	O	0	ROOT	_	_
 12	이	이	jp	jp	O	11	FUNC	_	_
 13	ㄴ가	ㄴ가	ef	ef	O	12	FUNC	_	_
 14	를	를	jco	jco	O	13	FUNC	_	_
@@ -32355,7 +32355,7 @@
 18	고	고	ecc	ecc	O	17	FUNC	_	_
 19	쩝쩝거리	쩝쩝거리	pvg	pvg	O	21	VP	_	_
 20	ㄹ	ㄹ	etm	etm	O	19	FUNC	_	_
-21	때	때	nbn	nbn	O	26	NP	_	_
+21	때	때	nbn	nbn	O	0	ROOT	_	_
 22	저혈압	저혈압	ncn	ncn	O	24	NP	_	_
 23	처럼	처럼	jca	jca	O	22	FUNC	_	_
 24	오	오	pvg	pvg	O	26	VP	_	_
@@ -32507,7 +32507,7 @@
 18	>	>	sr	sr	O	0	PUNC	_	_
 19	이	이	jp	jp	O	18	FUNC	_	_
 20	라는	라는	etm	etm	O	19	FUNC	_	_
-21	말뿐	말뿐	ncps+nbn	ncps+nbn	O	38	NP	_	_
+21	말뿐	말뿐	ncps+nbn	ncps+nbn	O	38	IP	_	_
 22	이	이	jp	jp	O	21	FUNC	_	_
 23	라는	라는	etm	etm	O	22	FUNC	_	_
 24	것	것	nbn	nbn	O	38	NP	_	_
@@ -32517,7 +32517,7 @@
 28	이	이	jcs	jcs	O	27	FUNC	_	_
 29	나	나	npp	npp	O	31	NP	_	_
 30	를	를	jco	jco	O	29	FUNC	_	_
-31	무력하	무력하	ncps+xsm	ncps+xsm	O	33	ADJP	_	_
+31	무력하	무력하	ncps+xsm	ncps+xsm	O	0	ROOT	_	_
 32	게	게	ecx	ecx	O	31	FUNC	_	_
 33	만들	만들	px	px	O	0	ROOT	_	_
 34	고,	고,	ecc+sp	ecc+sp	O	33	FUNC	_	_
@@ -32895,7 +32895,7 @@
 16	었	었	ep	ep	O	15	FUNC	_	_
 17	다.	다.	ef+sf	ef+sf	O	16	FUNC	_	_
 
-1	전국	전국	ncn	ncn	O	7	NP	_	_
+1	전국	전국	ncn	ncn	O	17	NP	_	_
 2	은	은	jxt	jxt	O	1	FUNC	_	_
 3	36개	36개	nnc+nbu	nnc+nbu	O	5	NP	_	_
 4	의	의	jcm	jcm	O	3	FUNC	_	_
@@ -32953,7 +32953,7 @@
 36	었	었	ep	ep	O	35	FUNC	_	_
 37	다.	다.	ef+sf	ef+sf	O	36	FUNC	_	_
 
-1	이제	이제	ncn	ncn	O	7	NP	_	_
+1	이제	이제	ncn	ncn	O	2	NP	_	_
 2	황제	황제	ncn	ncn	O	7	NP	_	_
 3	는	는	jxt	jxt	O	2	FUNC	_	_
 4	백성들	백성들	ncn+xsn	ncn+xsn	O	7	NP	_	_
@@ -33066,7 +33066,7 @@
 5	지배적	지배적	ncpa+xsn	ncpa+xsn	O	8	NP	_	_
 6	이	이	jp	jp	O	5	FUNC	_	_
 7	ㄴ	ㄴ	etm	etm	O	6	FUNC	_	_
-8	법가	법가	ncn	ncn	O	10	NP	_	_
+8	법가	법가	ncn	ncn	O	20	NP	_	_
 9	사상서와	사상서와	ncn+jcj	ncn+jcj	O	10	NP	_	_
 10	실용서적들	실용서적들	ncpa+ncn+xsn	ncpa+ncn+xsn	O	20	NP	_	_
 11	을	을	jco	jco	O	10	FUNC	_	_
@@ -33299,8 +33299,8 @@
 8	을	을	jco	jco	O	7	FUNC	_	_
 9	지르	지르	pvg	pvg	O	27	VP	_	_
 10	며,	며,	ecc+sp	ecc+sp	O	9	FUNC	_	_
-11	곧	곧	mag	mag	O	16	ADVP	_	_
-12	군단	군단	ncn	ncn	O	16	NP	_	_
+11	곧	곧	mag	mag	O	20	ADVP	_	_
+12	군단	군단	ncn	ncn	O	20	NP	_	_
 13	이	이	jcs	jcs	O	12	FUNC	_	_
 14	나팔소리	나팔소리	ncn+ncpa	ncn+ncpa	O	16	NP	_	_
 15	에	에	jca	jca	O	14	FUNC	_	_
@@ -33636,9 +33636,9 @@
 23	은	은	jxt	jxt	O	22	FUNC	_	_
 24	상제	상제	nq	nq	O	26	NP	_	_
 25	의	의	jcm	jcm	O	24	FUNC	_	_
-26	천상공간	천상공간	ncn+ncn	ncn+ncn	O	35	NP	_	_
+26	천상공간	천상공간	ncn+ncn	ncn+ncn	O	31	NP	_	_
 27	을	을	jco	jco	O	26	FUNC	_	_
-28	그대로	그대로	mag	mag	O	33	ADVP	_	_
+28	그대로	그대로	mag	mag	O	31	ADVP	_	_
 29	지상	지상	ncn	ncn	O	31	NP	_	_
 30	에	에	jca	jca	O	29	FUNC	_	_
 31	재현하	재현하	ncpa+xsv	ncpa+xsv	O	33	VP	_	_
@@ -33725,7 +33725,7 @@
 3	갱,	갱,	ncn+sp	ncn+sp	O	4	PUNC	_	_
 4	아방궁,	아방궁,	nq+sp	nq+sp	O	5	PUNC	_	_
 5	그리고	그리고	maj	maj	O	6	NP	_	_
-6	만리장성	만리장성	nq	nq	O	11	NP	_	_
+6	만리장성	만리장성	nq	nq	O	18	NP	_	_
 7	과	과	jcj	jcj	O	6	FUNC	_	_
 8	전국	전국	ncn	ncn	O	9	NP	_	_
 9	도로	도로	ncn	ncn	O	11	NP	_	_
@@ -33819,9 +33819,9 @@
 11	로	로	jca	jca	O	10	FUNC	_	_
 12	잡	잡	pvg	pvg	O	23	VP	_	_
 13	는다면,	는다면,	ecs+sp	ecs+sp	O	12	FUNC	_	_
-14	1호당	1호당	nnc+nbu+xsn	nnc+nbu+xsn	O	23	NP	_	_
+14	1호당	1호당	nnc+nbu+xsn	nnc+nbu+xsn	O	18	NP	_	_
 15	1	1	nnc	nnc	O	16	NP	_	_
-16	명	명	nbu	nbu	O	23	NP	_	_
+16	명	명	nbu	nbu	O	18	NP	_	_
 17	은	은	jxt	jxt	O	16	FUNC	_	_
 18	동원되	동원되	ncpa+xsv	ncpa+xsv	O	21	VP	_	_
 19	었	었	ep	ep	O	18	FUNC	_	_
@@ -33953,7 +33953,7 @@
 5	ㄴ	ㄴ	etm	etm	O	4	FUNC	_	_
 6	운학문	운학문	ncn	ncn	O	18	NP	_	_
 7	*LRB*	*LRB*	sl	sl	O	0	PUNC	_	_
-8	雲鶴紋	雲鶴紋	nq	nq	O	23	NP	_	_
+8	雲鶴紋	雲鶴紋	nq	nq	O	35	NP	_	_
 9	*RRB*	*RRB*	sr	sr	O	0	PUNC	_	_
 10	은	은	jxt	jxt	O	9	FUNC	_	_
 11	하늘	하늘	ncn	ncn	O	13	NP	_	_
@@ -33961,7 +33961,7 @@
 13	내리	내리	pvg	pvg	O	16	VP	_	_
 14	어오	어오	ecx+px	ecx+px	O	13	FUNC	_	_
 15	는	는	etm	etm	O	14	FUNC	_	_
-16	천신	천신	ncn	ncn	O	18	NP	_	_
+16	천신	천신	ncn	ncn	O	35	NP	_	_
 17	*LRB*	*LRB*	sl	sl	O	0	PUNC	_	_
 18	天紳	天紳	nq	nq	O	8	NP	_	_
 19	*RRB*	*RRB*	sr	sr	O	0	PUNC	_	_
@@ -34215,7 +34215,7 @@
 14	었	었	ep	ep	O	13	FUNC	_	_
 15	으며	으며	ecs	ecs	O	14	FUNC	_	_
 16	꿈	꿈	ncn	ncn	O	17	NP	_	_
-17	가운데	가운데	ncn	ncn	O	28	NP	_	_
+17	가운데	가운데	ncn	ncn	O	18	NP	_	_
 18	용꿈	용꿈	ncn	ncn	O	28	NP	_	_
 19	은	은	jxt	jxt	O	18	FUNC	_	_
 20	크	크	paa	paa	O	22	ADJP	_	_
@@ -34239,7 +34239,7 @@
 6	을	을	jco	jco	O	5	FUNC	_	_
 7	몽룡실	몽룡실	nq	nq	O	9	NP	_	_
 8	*LRB*	*LRB*	sl	sl	O	0	PUNC	_	_
-9	夢龍室	夢龍室	nq	nq	O	13	NP	_	_
+9	夢龍室	夢龍室	nq	nq	O	18	NP	_	_
 10	*RRB*	*RRB*	sr	sr	O	0	PUNC	_	_
 11	이	이	jp	jp	O	10	FUNC	_	_
 12	라	라	ef	ef	O	11	FUNC	_	_
@@ -34287,17 +34287,17 @@
 1	박공머리나	박공머리나	ncn+jcj	ncn+jcj	O	2	NP	_	_
 2	대문	대문	ncn	ncn	O	4	NP	_	_
 3	에	에	jca	jca	O	2	FUNC	_	_
-4	지네	지네	ncn	ncn	O	21	NP	_	_
-5	모양	모양	ncn	ncn	O	21	NP	_	_
+4	지네	지네	ncn	ncn	O	18	NP	_	_
+5	모양	모양	ncn	ncn	O	18	NP	_	_
 6	의	의	jcm	jcm	O	5	FUNC	_	_
-7	철판	철판	ncn	ncn	O	21	NP	_	_
+7	철판	철판	ncn	ncn	O	18	NP	_	_
 8	*LRB*	*LRB*	sl	sl	O	0	PUNC	_	_
 9	이	이	npd	npd	O	14	NP	_	_
 10	를	를	jco	jco	O	9	FUNC	_	_
 11	지네철	지네철	ncn+ncn	ncn+ncn	O	14	NP	_	_
 12	이	이	jp	jp	O	11	FUNC	_	_
 13	라	라	ef	ef	O	12	FUNC	_	_
-14	하	하	pvg	pvg	O	21	VP	_	_
+14	하	하	pvg	pvg	O	18	VP	_	_
 15	ㄴ다	ㄴ다	ef	ef	O	14	FUNC	_	_
 16	*RRB*	*RRB*	sr	sr	O	0	PUNC	_	_
 17	을	을	jco	jco	O	16	FUNC	_	_
@@ -34637,7 +34637,7 @@
 7	기	기	etn	etn	O	6	FUNC	_	_
 8	어렵	어렵	paa	paa	O	10	ADJP	_	_
 9	어	어	ecs	ecs	O	8	FUNC	_	_
-10	떠나	떠나	pvg	pvg	O	38	VP	_	_
+10	떠나	떠나	pvg	pvg	O	34	VP	_	_
 11	자	자	ecs	ecs	O	10	FUNC	_	_
 12	이	이	npd	npd	O	14	NP	_	_
 13	를	를	jco	jco	O	12	FUNC	_	_
@@ -34744,7 +34744,7 @@
 11	五音	五音	nq	nq	O	41	NP	_	_
 12	*RRB*	*RRB*	sr	sr	O	0	PUNC	_	_
 13	을	을	jco	jco	O	12	FUNC	_	_
-14	내	내	pvg	pvg	O	26	VP	_	_
+14	내	내	pvg	pvg	O	41	VP	_	_
 15	며	며	ecc	ecc	O	14	FUNC	_	_
 16	오동나무	오동나무	ncn	ncn	O	18	NP	_	_
 17	에	에	jca	jca	O	16	FUNC	_	_
@@ -34758,7 +34758,7 @@
 25	고	고	ecs	ecs	O	24	FUNC	_	_
 26	살	살	pvg	pvg	O	28	VP	_	_
 27	는	는	etm	etm	O	26	FUNC	_	_
-28	새	새	ncn	ncn	O	39	NP	_	_
+28	새	새	ncn	ncn	O	41	NP	_	_
 29	이	이	jp	jp	O	28	FUNC	_	_
 30	라	라	ef	ef	O	29	FUNC	_	_
 31	하	하	pvg	pvg	O	37	VP	_	_
@@ -34985,7 +34985,7 @@
 15	더	더	mag	mag	O	16	ADVP	_	_
 16	좁	좁	paa	paa	O	18	ADJP	_	_
 17	아	아	ecs	ecs	O	16	FUNC	_	_
-18	보이	보이	pvg	pvg	O	32	VP	_	_
+18	보이	보이	pvg	pvg	O	29	VP	_	_
 19	고,	고,	ecc+sp	ecc+sp	O	18	FUNC	_	_
 20	네모	네모	ncn	ncn	O	21	NP	_	_
 21	상자	상자	ncn	ncn	O	23	NP	_	_
@@ -35268,7 +35268,7 @@
 6	에	에	jca	jca	O	5	FUNC	_	_
 7	책임	책임	ncn	ncn	O	9	NP	_	_
 8	을	을	jco	jco	O	7	FUNC	_	_
-9	지	지	pvg	pvg	O	28	VP	_	_
+9	지	지	pvg	pvg	O	12	VP	_	_
 10	ㄴ다	ㄴ다	ef	ef	O	9	FUNC	_	_
 11	는	는	jcm	jcm	O	10	FUNC	_	_
 12	것	것	nbn	nbn	O	28	NP	_	_
@@ -35860,10 +35860,10 @@
 
 1	어리	어리	paa	paa	O	3	ADJP	_	_
 2	ㄹ	ㄹ	etm	etm	O	1	FUNC	_	_
-3	때	때	nbn	nbn	O	6	NP	_	_
+3	때	때	nbn	nbn	O	18	NP	_	_
 4	걸음마	걸음마	ncn	ncn	O	6	NP	_	_
 5	를	를	jco	jco	O	4	FUNC	_	_
-6	배우	배우	pvg	pvg	O	18	VP	_	_
+6	배우	배우	pvg	pvg	O	8	VP	_	_
 7	면서	면서	ecs	ecs	O	6	FUNC	_	_
 8	익히	익히	pvg	pvg	O	10	VP	_	_
 9	ㄴ	ㄴ	etm	etm	O	8	FUNC	_	_
@@ -35991,7 +35991,7 @@
 11	를	를	jco	jco	O	10	FUNC	_	_
 12	가로지르	가로지르	pvg	pvg	O	14	VP	_	_
 13	어	어	ecx	ecx	O	12	FUNC	_	_
-14	가	가	px	px	O	17	AUXP	_	_
+14	가	가	px	px	O	17	ADJP	_	_
 15	기	기	etn	etn	O	14	FUNC	_	_
 16	도	도	jxc	jxc	O	15	FUNC	_	_
 17	하	하	pvg	pvg	O	0	ROOT	_	_
@@ -36035,7 +36035,7 @@
 
 1	이렇	이렇	pad	pad	O	3	ADJP	_	_
 2	게	게	ecs	ecs	O	1	FUNC	_	_
-3	하	하	pvg	pvg	O	21	VP	_	_
+3	하	하	pvg	pvg	O	14	VP	_	_
 4	어서	어서	ecs	ecs	O	3	FUNC	_	_
 5	새로	새로	mag	mag	O	8	ADVP	_	_
 6	길	길	ncn	ncn	O	8	NP	_	_
@@ -36044,7 +36044,7 @@
 9	며	며	ecc	ecc	O	8	FUNC	_	_
 10	걷	걷	pvg	pvg	O	12	VP	_	_
 11	는	는	etm	etm	O	10	FUNC	_	_
-12	재미	재미	ncps	ncps	O	21	NP	_	_
+12	재미	재미	ncps	ncps	O	14	NP	_	_
 13	는	는	jxt	jxt	O	12	FUNC	_	_
 14	하	하	pvg	pvg	O	17	VP	_	_
 15	어보	어보	ecx+px	ecx+px	O	14	FUNC	_	_
@@ -36175,12 +36175,12 @@
 20	신	신	pvg	pvg	O	22	VP	_	_
 21	는	는	etm	etm	O	20	FUNC	_	_
 22	운동화	운동화	ncn	ncn	O	23	NP	_	_
-23	등	등	nbn	nbn	O	25	NP	_	_
+23	등	등	nbn	nbn	O	33	NP	_	_
 24	의	의	jcm	jcm	O	23	FUNC	_	_
 25	밑바닥	밑바닥	ncn	ncn	O	28	NP	_	_
 26	이	이	jcs	jcs	O	25	FUNC	_	_
 27	각각	각각	mag	mag	O	28	ADVP	_	_
-28	다르	다르	paa	paa	O	36	ADJP	_	_
+28	다르	다르	paa	paa	O	35	ADJP	_	_
 29	다	다	ef	ef	O	28	FUNC	_	_
 30	는	는	jcm	jcm	O	29	FUNC	_	_
 31	것	것	nbn	nbn	O	33	NP	_	_
@@ -36235,7 +36235,7 @@
 2	를	를	jco	jco	O	1	FUNC	_	_
 3	치	치	pvg	pvg	O	5	VP	_	_
 4	ㄹ	ㄹ	etm	etm	O	3	FUNC	_	_
-5	때	때	nbn	nbn	O	13	NP	_	_
+5	때	때	nbn	nbn	O	0	ROOT	_	_
 6	코트	코트	ncn	ncn	O	11	NP	_	_
 7	가	가	jcs	jcs	O	6	FUNC	_	_
 8	언제나	언제나	mag	mag	O	11	ADVP	_	_
@@ -36252,7 +36252,7 @@
 19	게	게	ecx	ecx	O	18	FUNC	_	_
 20	만들	만들	px	px	O	22	AUXP	_	_
 21	ㄴ	ㄴ	etm	etm	O	20	FUNC	_	_
-22	것이	것이	nbn+jp	nbn+jp	O	0	ROOT	_	_
+22	것이	것이	nbn+jp	nbn+jp	O	5	ROOT	_	_
 23	ㅂ니다.	ㅂ니다.	ef+sf	ef+sf	O	22	FUNC	_	_
 
 1	조깅화나	조깅화나	ncn+jcj	ncn+jcj	O	2	NP	_	_
@@ -36299,12 +36299,12 @@
 12	ㄴ	ㄴ	etm	etm	O	11	FUNC	_	_
 13	산이나	산이나	ncn+jcj	ncn+jcj	O	14	NP	_	_
 14	개울,	개울,	ncn+sp	ncn+sp	O	15	PUNC	_	_
-15	바다	바다	ncn	ncn	O	35	NP	_	_
+15	바다	바다	ncn	ncn	O	28	NP	_	_
 16	이	이	jp	jp	O	15	FUNC	_	_
 17	면	면	ecs	ecs	O	16	FUNC	_	_
 18	운동화	운동화	ncn	ncn	O	20	NP	_	_
 19	도	도	jxc	jxc	O	18	FUNC	_	_
-20	괜찮	괜찮	paa	paa	O	35	ADJP	_	_
+20	괜찮	괜찮	paa	paa	O	24	ADJP	_	_
 21	지만	지만	ecs	ecs	O	20	FUNC	_	_
 22	1000미터	1000미터	nnc+nbu	nnc+nbu	O	23	NP	_	_
 23	이상	이상	ncn	ncn	O	24	NP	_	_
@@ -36426,7 +36426,7 @@
 5	움직이	움직이	pvg	pvg	O	7	VP	_	_
 6	ㄹ	ㄹ	etm	etm	O	5	FUNC	_	_
 7	수	수	nbn	nbn	O	8	NP	_	_
-8	있	있	paa	paa	O	13	AUXP	_	_
+8	있	있	paa	paa	O	13	ADJP	_	_
 9	으면	으면	ecs	ecs	O	8	FUNC	_	_
 10	제대로	제대로	mag	mag	O	11	ADVP	_	_
 11	맞	맞	pvg	pvg	O	13	VP	_	_
@@ -36445,7 +36445,7 @@
 8	하	하	pvg	pvg	O	10	VP	_	_
 9	ㄹ	ㄹ	etm	etm	O	8	FUNC	_	_
 10	수	수	nbn	nbn	O	11	NP	_	_
-11	없	없	paa	paa	O	15	AUXP	_	_
+11	없	없	paa	paa	O	15	ADJP	_	_
 12	으면	으면	ecs	ecs	O	11	FUNC	_	_
 13	작	작	paa	paa	O	15	ADJP	_	_
 14	ㄴ	ㄴ	etm	etm	O	13	FUNC	_	_
@@ -36599,7 +36599,7 @@
 9	는	는	etm	etm	O	8	FUNC	_	_
 10	듯하	듯하	px	px	O	0	ROOT	_	_
 11	어야	어야	ecs	ecs	O	10	FUNC	_	_
-12	걷	걷	pvg	pvg	O	14	VP	_	_
+12	걷	걷	pvg	pvg	O	16	VP	_	_
 13	으면서	으면서	ecs	ecs	O	12	FUNC	_	_
 14	알맞	알맞	paa	paa	O	16	ADJP	_	_
 15	게	게	ecs	ecs	O	14	FUNC	_	_
@@ -36846,7 +36846,7 @@
 18	만	만	jxc	jxc	O	17	FUNC	_	_
 19	처지	처지	pvg	pvg	O	21	VP	_	_
 20	면	면	ecs	ecs	O	19	FUNC	_	_
-21	안되	안되	paa	paa	O	36	ADJP	_	_
+21	안되	안되	paa	paa	O	25	ADJP	_	_
 22	겠	겠	ep	ep	O	21	FUNC	_	_
 23	다	다	ef	ef	O	22	FUNC	_	_
 24	는	는	jcm	jcm	O	23	FUNC	_	_
@@ -36999,7 +36999,7 @@
 17	좋	좋	paa	paa	O	0	ROOT	_	_
 18	습니다.	습니다.	ef+sf	ef+sf	O	17	FUNC	_	_
 
-1	그리고	그리고	maj	maj	O	16	IP	_	_
+1	그리고	그리고	maj	maj	O	18	IP	_	_
 2	신발	신발	ncn	ncn	O	4	NP	_	_
 3	과	과	jct	jct	O	2	FUNC	_	_
 4	마찬가지	마찬가지	ncn	ncn	O	16	NP	_	_
@@ -37334,7 +37334,7 @@
 2	를	를	jco	jco	O	1	FUNC	_	_
 3	표방하	표방하	ncpa+xsv	ncpa+xsv	O	5	VP	_	_
 4	ㄴ	ㄴ	etm	etm	O	3	FUNC	_	_
-5	경제개발	경제개발	ncn	ncn	O	6	NP	_	_
+5	경제개발	경제개발	ncn	ncn	O	15	NP	_	_
 6	5개년계획	5개년계획	nq	nq	O	15	NP	_	_
 7	으로	으로	jca	jca	O	6	FUNC	_	_
 8	농촌사회	농촌사회	ncn	ncn	O	10	NP	_	_
@@ -37567,7 +37567,7 @@
 2	는	는	jxt	jxt	O	1	FUNC	_	_
 3	경멸하고	경멸하고	ncpa+xsv+ecc	ncpa+xsv+ecc	O	4	VP	_	_
 4	매도하고	매도하고	ncpa+xsv+ecc	ncpa+xsv+ecc	O	5	VP	_	_
-5	거부하	거부하	ncpa+xsv	ncpa+xsv	O	11	VP	_	_
+5	거부하	거부하	ncpa+xsv	ncpa+xsv	O	13	VP	_	_
 6	ㄴ다	ㄴ다	ef	ef	O	5	FUNC	_	_
 7	고	고	jcr	jcr	O	6	FUNC	_	_
 8	하	하	pvg	pvg	O	11	VP	_	_
@@ -37656,10 +37656,10 @@
 14	수	수	nbn	nbn	O	15	NP	_	_
 15	없	없	paa	paa	O	0	ROOT	_	_
 16	게	게	ecx	ecx	O	15	FUNC	_	_
-17	되	되	px	px	O	20	AUXP	_	_
+17	되	되	px	px	O	0	ROOT	_	_
 18	었	었	ep	ep	O	17	FUNC	_	_
 19	다는	다는	etm	etm	O	18	FUNC	_	_
-20	시대적	시대적	ncn+xsn	ncn+xsn	O	21	NP	_	_
+20	시대적	시대적	ncn+xsn	ncn+xsn	O	0	ROOT	_	_
 21	징표	징표	ncn	ncn	O	0	ROOT	_	_
 22	이	이	jp	jp	O	21	FUNC	_	_
 23	었	었	ep	ep	O	22	FUNC	_	_
@@ -37717,7 +37717,7 @@
 2	에서	에서	jca	jca	O	1	FUNC	_	_
 3	뽕짝	뽕짝	ncn	ncn	O	5	NP	_	_
 4	을	을	jco	jco	O	3	FUNC	_	_
-5	부르	부르	pvg	pvg	O	18	VP	_	_
+5	부르	부르	pvg	pvg	O	37	VP	_	_
 6	고	고	ecc	ecc	O	5	FUNC	_	_
 7	친구들	친구들	ncn+xsn	ncn+xsn	O	11	NP	_	_
 8	과	과	jct	jct	O	7	FUNC	_	_
@@ -37877,7 +37877,7 @@
 15	그	그	mmd	mmd	O	16	MODP	_	_
 16	활동내용	활동내용	ncpa+ncn	ncpa+ncn	O	23	NP	_	_
 17	도	도	jxc	jxc	O	16	FUNC	_	_
-18	제	제	mmd	mmd	O	19	MODP	_	_
+18	제	제	mmd	mmd	O	20	MODP	_	_
 19	3	3	nnc	nnc	O	20	NP	_	_
 20	세계	세계	ncn	ncn	O	21	NP	_	_
 21	중심	중심	ncn	ncn	O	23	NP	_	_
@@ -37923,7 +37923,7 @@
 4	과정	과정	ncpa	ncpa	O	12	NP	_	_
 5	은	은	jxt	jxt	O	4	FUNC	_	_
 6	때때로	때때로	mag	mag	O	12	ADVP	_	_
-7	서서히	서서히	mag	mag	O	10	ADVP	_	_
+7	서서히	서서히	mag	mag	O	12	ADVP	_	_
 8	장기간	장기간	ncn+xsn	ncn+xsn	O	10	NP	_	_
 9	에	에	jca	jca	O	8	FUNC	_	_
 10	걸치	걸치	pvg	pvg	O	12	VP	_	_
@@ -38430,9 +38430,9 @@
 2	ㄹ	ㄹ	etm	etm	O	1	FUNC	_	_
 3	때	때	ncn	ncn	O	12	NP	_	_
 4	비로소	비로소	mag	mag	O	12	ADVP	_	_
-5	차례차례	차례차례	ncn	ncn	O	7	NP	_	_
+5	차례차례	차례차례	ncn	ncn	O	8	NP	_	_
 6	한	한	nnc	nnc	O	7	NP	_	_
-7	단계씩	단계씩	ncn+xsn	ncn+xsn	O	10	NP	_	_
+7	단계씩	단계씩	ncn+xsn	ncn+xsn	O	8	NP	_	_
 8	높	높	paa	paa	O	10	ADJP	_	_
 9	ㄴ	ㄴ	etm	etm	O	8	FUNC	_	_
 10	질	질	ncn	ncn	O	12	NP	_	_
@@ -38914,8 +38914,8 @@
 6	을	을	jco	jco	O	5	FUNC	_	_
 7	점령하	점령하	ncpa+xsv	ncpa+xsv	O	27	VP	_	_
 8	고,	고,	ecc+sp	ecc+sp	O	7	FUNC	_	_
-9	이듬해	이듬해	ncn	ncn	O	21	NP	_	_
-10	다시	다시	mag	mag	O	21	ADVP	_	_
+9	이듬해	이듬해	ncn	ncn	O	27	NP	_	_
+10	다시	다시	mag	mag	O	27	ADVP	_	_
 11	요동반도	요동반도	nq	nq	O	13	NP	_	_
 12	의	의	jcm	jcm	O	11	FUNC	_	_
 13	조차권	조차권	ncn	ncn	O	21	NP	_	_
@@ -39008,7 +39008,7 @@
 16	미,	미,	nq+sp	nq+sp	O	17	PUNC	_	_
 17	일	일	nq	nq	O	19	NP	_	_
 18	3	3	nnc	nnc	O	19	NP	_	_
-19	국	국	nbu	nbu	O	26	NP	_	_
+19	국	국	nbu	nbu	O	35	NP	_	_
 20	이	이	jcs	jcs	O	19	FUNC	_	_
 21	다시	다시	mag	mag	O	26	ADVP	_	_
 22	용암포	용암포	nq	nq	O	24	NP	_	_
@@ -39205,7 +39205,7 @@
 14	작	작	paa	paa	O	0	ROOT	_	_
 15	다.	다.	ef+sf	ef+sf	O	14	FUNC	_	_
 
-1	그	그	npp	npp	O	5	NP	_	_
+1	그	그	npp	npp	O	11	NP	_	_
 2	만큼	만큼	jca	jca	O	1	FUNC	_	_
 3	길	길	ncn	ncn	O	5	NP	_	_
 4	도	도	jxc	jxc	O	3	FUNC	_	_
@@ -39338,7 +39338,7 @@
 16	다.	다.	ef+sf	ef+sf	O	15	FUNC	_	_
 
 1	런던	런던	nq	nq	O	2	NP	_	_
-2	대학교	대학교	ncn	ncn	O	5	NP	_	_
+2	대학교	대학교	ncn	ncn	O	21	NP	_	_
 3	리차드	리차드	nq	nq	O	4	NP	_	_
 4	올솝	올솝	nq	nq	O	5	NP	_	_
 5	교수	교수	ncn	ncn	O	21	NP	_	_
@@ -40253,7 +40253,7 @@
 18	다.	다.	ef+sf	ef+sf	O	17	FUNC	_	_
 
 1	연구기간중	연구기간중	ncpa+ncn+xsn	ncpa+ncn+xsn	O	4	NP	_	_
-2	사회	사회	ncn	ncn	O	4	NP	_	_
+2	사회	사회	ncn	ncn	O	3	NP	_	_
 3	경제적	경제적	ncn+xsn	ncn+xsn	O	4	NP	_	_
 4	변화	변화	ncpa	ncpa	O	10	NP	_	_
 5	는	는	jxt	jxt	O	4	FUNC	_	_
@@ -40273,7 +40273,7 @@
 4	아서	아서	ecs	ecs	O	3	FUNC	_	_
 5	농가	농가	ncn	ncn	O	9	NP	_	_
 6	의	의	jcm	jcm	O	5	FUNC	_	_
-7	사회	사회	ncn	ncn	O	9	NP	_	_
+7	사회	사회	ncn	ncn	O	8	NP	_	_
 8	경제적	경제적	ncn+xsn	ncn+xsn	O	9	NP	_	_
 9	조건	조건	ncn	ncn	O	12	NP	_	_
 10	은	은	jxt	jxt	O	9	FUNC	_	_
@@ -41082,8 +41082,8 @@
 7	통합	통합	ncpa	ncpa	O	9	NP	_	_
 8	의	의	jcm	jcm	O	7	FUNC	_	_
 9	메리트	메리트	ncn	ncn	O	10	NP	_	_
-10	중	중	ncn	ncn	O	12	NP	_	_
-11	극히	극히	mag	mag	O	12	ADVP	_	_
+10	중	중	ncn	ncn	O	14	NP	_	_
+11	극히	극히	mag	mag	O	14	ADVP	_	_
 12	일부	일부	ncn	ncn	O	14	NP	_	_
 13	에	에	jca	jca	O	12	FUNC	_	_
 14	불과하	불과하	ncpa+xsv	ncpa+xsv	O	0	ROOT	_	_
@@ -41623,7 +41623,7 @@
 12	존재하	존재하	ncpa+xsv	ncpa+xsv	O	0	ROOT	_	_
 13	ㄴ다.	ㄴ다.	ef+sf	ef+sf	O	12	FUNC	_	_
 
-1	그리고	그리고	maj	maj	O	11	IP	_	_
+1	그리고	그리고	maj	maj	O	13	IP	_	_
 2	전체	전체	ncn	ncn	O	3	NP	_	_
 3	임직원	임직원	ncn	ncn	O	11	NP	_	_
 4	은	은	jxt	jxt	O	3	FUNC	_	_
@@ -42094,7 +42094,7 @@
 12	을	을	jco	jco	O	11	FUNC	_	_
 13	알아차리	알아차리	pvg	pvg	O	15	VP	_	_
 14	는	는	etm	etm	O	13	FUNC	_	_
-15	즉시	즉시	ncn	ncn	O	18	NP	_	_
+15	즉시	즉시	ncn	ncn	O	16	NP	_	_
 16	판매방법	판매방법	ncpa+ncn	ncpa+ncn	O	18	NP	_	_
 17	을	을	jco	jco	O	16	FUNC	_	_
 18	변경하	변경하	ncpa+xsv	ncpa+xsv	O	20	VP	_	_
@@ -42317,7 +42317,7 @@
 5	경우	경우	ncn	ncn	O	14	NP	_	_
 6	영업부나	영업부나	ncn+jcj	ncn+jcj	O	7	NP	_	_
 7	생산부	생산부	ncn	ncn	O	8	NP	_	_
-8	등	등	nbn	nbn	O	12	NP	_	_
+8	등	등	nbn	nbn	O	10	NP	_	_
 9	의	의	jcm	jcm	O	8	FUNC	_	_
 10	경리부	경리부	ncn	ncn	O	12	NP	_	_
 11	의	의	jcm	jcm	O	10	FUNC	_	_
@@ -42456,7 +42456,7 @@
 2	의	의	jcm	jcm	O	1	FUNC	_	_
 3	지급	지급	ncpa	ncpa	O	5	NP	_	_
 4	이	이	jcs	jcs	O	3	FUNC	_	_
-5	줄	줄	pvg	pvg	O	22	VP	_	_
+5	줄	줄	pvg	pvg	O	11	VP	_	_
 6	어	어	ecs	ecs	O	5	FUNC	_	_
 7	자금조달	자금조달	ncn+ncpa	ncn+ncpa	O	11	NP	_	_
 8	에	에	jca	jca	O	7	FUNC	_	_
@@ -42610,11 +42610,11 @@
 7	그	그	mmd	mmd	O	8	MODP	_	_
 8	모습	모습	ncn	ncn	O	10	NP	_	_
 9	이	이	jcs	jcs	O	8	FUNC	_	_
-10	판이하	판이하	ncps+xsm	ncps+xsm	O	18	ADJP	_	_
+10	판이하	판이하	ncps+xsm	ncps+xsm	O	35	ADJP	_	_
 11	ㄴ데도	ㄴ데도	ecs	ecs	O	10	FUNC	_	_
 12	같	같	paa	paa	O	14	ADJP	_	_
 13	ㄴ	ㄴ	etm	etm	O	12	FUNC	_	_
-14	사람	사람	ncn	ncn	O	18	NP	_	_
+14	사람	사람	ncn	ncn	O	35	NP	_	_
 15	이	이	jp	jp	O	14	FUNC	_	_
 16	라	라	ef	ef	O	15	FUNC	_	_
 17	고	고	jcr	jcr	O	16	FUNC	_	_
@@ -43074,11 +43074,11 @@
 20	되	되	px	px	O	0	ROOT	_	_
 21	ㅂ니다.	ㅂ니다.	ef+sf	ef+sf	O	20	FUNC	_	_
 
-1	이	이	mmd	mmd	O	25	MODP	_	_
+1	이	이	mmd	mmd	O	13	MODP	_	_
 2	'	'	sl	sl	O	0	PUNC	_	_
 3	완전하	완전하	ncps+xsm	ncps+xsm	O	5	ADJP	_	_
 4	ㄴ	ㄴ	etm	etm	O	3	FUNC	_	_
-5	존재	존재	ncn	ncn	O	25	NP	_	_
+5	존재	존재	ncn	ncn	O	13	NP	_	_
 6	'	'	sr	sr	O	0	PUNC	_	_
 7	가	가	jcs	jcs	O	6	FUNC	_	_
 8	우리	우리	npp	npp	O	11	NP	_	_
@@ -43268,14 +43268,14 @@
 13	'	'	sl	sl	O	0	PUNC	_	_
 14	완전하	완전하	ncps+xsm	ncps+xsm	O	16	ADJP	_	_
 15	ㄴ	ㄴ	etm	etm	O	14	FUNC	_	_
-16	미인	미인	ncn	ncn	O	23	NP	_	_
+16	미인	미인	ncn	ncn	O	0	NP	_	_
 17	'	'	sr	sr	O	0	PUNC	_	_
 18	이	이	jp	jp	O	17	FUNC	_	_
 19	라	라	ef	ef	O	18	FUNC	_	_
 20	하	하	pvg	pvg	O	22	VP	_	_
 21	ㄹ	ㄹ	etm	etm	O	20	FUNC	_	_
 22	수	수	nbn	nbn	O	23	NP	_	_
-23	있	있	paa	paa	O	0	ROOT	_	_
+23	있	있	paa	paa	O	19	ROOT	_	_
 24	ㄹ까요?	ㄹ까요?	ef+jxf+sf	ef+jxf+sf	O	23	FUNC	_	_
 
 1	그거	그거	npd	npd	O	4	NP	_	_
@@ -43319,12 +43319,12 @@
 5	을	을	jco	jco	O	4	FUNC	_	_
 6	갖	갖	pvg	pvg	O	8	VP	_	_
 7	지	지	ecx	ecx	O	6	FUNC	_	_
-8	않	않	px	px	O	19	AUXP	_	_
+8	않	않	px	px	O	21	AUXP	_	_
 9	는	는	etm	etm	O	8	FUNC	_	_
 10	'	'	sl	sl	O	0	PUNC	_	_
 11	완전하	완전하	ncps+xsm	ncps+xsm	O	13	ADJP	_	_
 12	ㄴ	ㄴ	etm	etm	O	11	FUNC	_	_
-13	존재	존재	ncn	ncn	O	19	NP	_	_
+13	존재	존재	ncn	ncn	O	21	NP	_	_
 14	'	'	sr	sr	O	0	PUNC	_	_
 15	란	란	jxc	jxc	O	14	FUNC	_	_
 16	생각하	생각하	ncpa+xsv	ncpa+xsv	O	18	VP	_	_
@@ -43346,7 +43346,7 @@
 8	더하	더하	pvg	pvg	O	10	VP	_	_
 9	ㄹ	ㄹ	etm	etm	O	8	FUNC	_	_
 10	수	수	nbn	nbn	O	11	NP	_	_
-11	없	없	paa	paa	O	13	AUXP	_	_
+11	없	없	paa	paa	O	13	ADJP	_	_
 12	이	이	ecs	ecs	O	11	FUNC	_	_
 13	완전하	완전하	ncps+xsm	ncps+xsm	O	15	ADJP	_	_
 14	ㄴ	ㄴ	etm	etm	O	13	FUNC	_	_
@@ -43401,14 +43401,14 @@
 4	이	이	jcs	jcs	O	3	FUNC	_	_
 5	없	없	paa	paa	O	7	ADJP	_	_
 6	는	는	etm	etm	O	5	FUNC	_	_
-7	신	신	ncn	ncn	O	25	NP	_	_
+7	신	신	ncn	ncn	O	18	NP	_	_
 8	이란	이란	jxc	jxc	O	7	FUNC	_	_
 9	이미	이미	mag	mag	O	18	ADVP	_	_
-10	'	'	sl	sl	O	9	PUNC	_	_
+10	'	'	sl	sl	O	0	PUNC	_	_
 11	더하	더하	pvg	pvg	O	13	VP	_	_
 12	ㄹ	ㄹ	etm	etm	O	11	FUNC	_	_
 13	수	수	nbn	nbn	O	14	NP	_	_
-14	없	없	paa	paa	O	16	AUXP	_	_
+14	없	없	paa	paa	O	16	ADJP	_	_
 15	이	이	ecs	ecs	O	14	FUNC	_	_
 16	완전하	완전하	ncps+xsm	ncps+xsm	O	18	ADJP	_	_
 17	ㄴ	ㄴ	etm	etm	O	16	FUNC	_	_
@@ -43917,7 +43917,7 @@
 8	과	과	jct	jct	O	7	FUNC	_	_
 9	마찬가지	마찬가지	ncn	ncn	O	11	NP	_	_
 10	로	로	jca	jca	O	9	FUNC	_	_
-11	되	되	pvg	pvg	O	26	VP	_	_
+11	되	되	pvg	pvg	O	31	VP	_	_
 12	도록	도록	ecs	ecs	O	11	FUNC	_	_
 13	빠르	빠르	paa	paa	O	15	ADJP	_	_
 14	ㄴ	ㄴ	etm	etm	O	13	FUNC	_	_
@@ -44000,11 +44000,11 @@
 1	그	그	npp	npp	O	4	NP	_	_
 2	의	의	jcm	jcm	O	1	FUNC	_	_
 3	체계	체계	ncn	ncn	O	4	NP	_	_
-4	구성상	구성상	ncn	ncn	O	7	NP	_	_
+4	구성상	구성상	ncn	ncn	O	8	NP	_	_
 5	의	의	jcm	jcm	O	4	FUNC	_	_
 6	제	제	mma	mma	O	7	MODP	_	_
-7	1	1	nnc	nnc	O	12	NP	_	_
-8	보	보	nbu	nbu	O	7	NP	_	_
+7	1	1	nnc	nnc	O	8	NP	_	_
+8	보	보	nbu	nbu	O	12	NP	_	_
 9	이	이	jp	jp	O	8	FUNC	_	_
 10	ㄴ	ㄴ	etm	etm	O	9	FUNC	_	_
 11	그	그	mmd	mmd	O	12	MODP	_	_
@@ -44148,11 +44148,11 @@
 4	대표적	대표적	ncpa+xsn	ncpa+xsn	O	7	NP	_	_
 5	이	이	jp	jp	O	4	FUNC	_	_
 6	ㄴ	ㄴ	etm	etm	O	5	FUNC	_	_
-7	저술가	저술가	ncn	ncn	O	12	NP	_	_
+7	저술가	저술가	ncn	ncn	O	19	NP	_	_
 8	이	이	jp	jp	O	7	FUNC	_	_
 9	ㄴ	ㄴ	etm	etm	O	8	FUNC	_	_
 10	소위	소위	mag	mag	O	11	ADVP	_	_
-11	판그롯	판그롯	ncn	ncn	O	12	NP	_	_
+11	판그롯	판그롯	ncn	ncn	O	19	NP	_	_
 12	박사	박사	ncn	ncn	O	13	NP	_	_
 13	볼테르	볼테르	nq	nq	O	19	NP	_	_
 14	가	가	jcs	jcs	O	13	FUNC	_	_
@@ -44859,9 +44859,9 @@
 23	아티라	아티라	nq	nq	O	31	NP	_	_
 24	*LRB*	*LRB*	sl	sl	O	0	PUNC	_	_
 25	Athyra,	Athyra,	f+sp	f+sp	O	26	NP	_	_
-26	현	현	ncn	ncn	O	28	NP	_	_
+26	현	현	ncn	ncn	O	31	NP	_	_
 27	이스탄불	이스탄불	nq	nq	O	28	NP	_	_
-28	외곽	외곽	ncn	ncn	O	31	NP	_	_
+28	외곽	외곽	ncn	ncn	O	29	NP	_	_
 29	부육	부육	nq	nq	O	31	NP	_	_
 30	의	의	jcm	jcm	O	29	FUNC	_	_
 31	체크메제	체크메제	nq	nq	O	34	NP	_	_
@@ -44921,7 +44921,7 @@
 3	의	의	jcm	jcm	O	2	FUNC	_	_
 4	테오도시우스	테오도시우스	nq	nq	O	17	NP	_	_
 5	는	는	jxt	jxt	O	4	FUNC	_	_
-6	급기야	급기야	mag	mag	O	17	ADVP	_	_
+6	급기야	급기야	mag	mag	O	11	ADVP	_	_
 7	신하들	신하들	ncn+xsn	ncn+xsn	O	9	NP	_	_
 8	의	의	jcm	jcm	O	7	FUNC	_	_
 9	견해	견해	ncn	ncn	O	11	NP	_	_
@@ -44962,7 +44962,7 @@
 24	다.	다.	ef+sf	ef+sf	O	23	FUNC	_	_
 
 1	사절단	사절단	ncn	ncn	O	2	NP	_	_
-2	중	중	ncn	ncn	O	30	NP	_	_
+2	중	중	ncn	ncn	O	14	NP	_	_
 3	에데콘	에데콘	nq	nq	O	5	NP	_	_
 4	의	의	jcm	jcm	O	3	FUNC	_	_
 5	밀고	밀고	ncpa	ncpa	O	12	NP	_	_
@@ -45403,7 +45403,7 @@
 4	서로마	서로마	nq	nq	O	5	NP	_	_
 5	침공	침공	ncpa	ncpa	O	13	NP	_	_
 6	으로	으로	jca	jca	O	5	FUNC	_	_
-7	로마제국	로마제국	nq	nq	O	10	NP	_	_
+7	로마제국	로마제국	nq	nq	O	11	NP	_	_
 8	의	의	jcm	jcm	O	7	FUNC	_	_
 9	병참	병참	ncn	ncn	O	10	NP	_	_
 10	기지	기지	ncn	ncn	O	11	NP	_	_
@@ -45600,11 +45600,11 @@
 2	는	는	jxt	jxt	O	1	FUNC	_	_
 3	5	5	nnc	nnc	O	4	NP	_	_
 4	년	년	nbu	nbu	O	5	NP	_	_
-5	전	전	ncn	ncn	O	19	NP	_	_
+5	전	전	ncn	ncn	O	39	NP	_	_
 6	콘스탄티노플	콘스탄티노플	nq	nq	O	7	NP	_	_
 7	근교	근교	ncn	ncn	O	9	NP	_	_
 8	까지	까지	jxc	jxc	O	7	FUNC	_	_
-9	진격하	진격하	ncpa+xsv	ncpa+xsv	O	19	VP	_	_
+9	진격하	진격하	ncpa+xsv	ncpa+xsv	O	39	VP	_	_
 10	어	어	ecs	ecs	O	9	FUNC	_	_
 11	비잔틴	비잔틴	nq	nq	O	12	NP	_	_
 12	수도	수도	ncn	ncn	O	13	NP	_	_
@@ -45612,7 +45612,7 @@
 14	을	을	jco	jco	O	13	FUNC	_	_
 15	눈앞	눈앞	ncn	ncn	O	17	NP	_	_
 16	에	에	jca	jca	O	15	FUNC	_	_
-17	두	두	pvg	pvg	O	19	VP	_	_
+17	두	두	pvg	pvg	O	39	VP	_	_
 18	고도	고도	ecc+jxc	ecc+jxc	O	17	FUNC	_	_
 19	철수하	철수하	ncpa+xsv	ncpa+xsv	O	22	VP	_	_
 20	었	었	ep	ep	O	19	FUNC	_	_
@@ -46046,7 +46046,7 @@
 3	는	는	jxt	jxt	O	2	FUNC	_	_
 4	사람	사람	ncn	ncn	O	6	NP	_	_
 5	이	이	jcs	jcs	O	4	FUNC	_	_
-6	변하	변하	pvg	pvg	O	14	VP	_	_
+6	변하	변하	pvg	pvg	O	21	VP	_	_
 7	ㅁ	ㅁ	etn	etn	O	6	FUNC	_	_
 8	에	에	jca	jca	O	7	FUNC	_	_
 9	따르	따르	pvg	pvg	O	14	VP	_	_
@@ -46462,7 +46462,7 @@
 31	것이	것이	nbn+jp	nbn+jp	O	0	ROOT	_	_
 32	다.	다.	ef+sf	ef+sf	O	31	FUNC	_	_
 
-1	현재	현재	ncn	ncn	O	12	NP	_	_
+1	현재	현재	ncn	ncn	O	2	NP	_	_
 2	우리나라	우리나라	ncn	ncn	O	12	NP	_	_
 3	에서도	에서도	jca+jxc	jca+jxc	O	2	FUNC	_	_
 4	백화점이나	백화점이나	ncn+jcj	ncn+jcj	O	5	NP	_	_
@@ -46841,10 +46841,10 @@
 
 1	권리존중	권리존중	ncn+ncpa	ncn+ncpa	O	14	NP	_	_
 2	은	은	jxt	jxt	O	1	FUNC	_	_
-3	본유적	본유적	ncn+xsn	ncn+xsn	O	14	NP	_	_
+3	본유적	본유적	ncn+xsn	ncn+xsn	O	7	NP	_	_
 4	이	이	jp	jp	O	3	FUNC	_	_
 5	며	며	ecc	ecc	O	4	FUNC	_	_
-6	따라서	따라서	mag	mag	O	14	ADVP	_	_
+6	따라서	따라서	mag	mag	O	7	ADVP	_	_
 7	상호적	상호적	ncn+xsn	ncn+xsn	O	10	NP	_	_
 8	이	이	jp	jp	O	7	FUNC	_	_
 9	ㄴ	ㄴ	etm	etm	O	8	FUNC	_	_
@@ -46990,7 +46990,7 @@
 14	전개하	전개하	ncpa+xsv	ncpa+xsv	O	0	ROOT	_	_
 15	ㄴ다.	ㄴ다.	ef+sf	ef+sf	O	14	FUNC	_	_
 
-1	둘째	둘째	nno	nno	O	7	IP	_	_
+1	둘째	둘째	nno	nno	O	7	ADVP	_	_
 2	,	,	sp	sp	O	1	PUNC	_	_
 3	어떻	어떻	pad	pad	O	5	ADJP	_	_
 4	ㄴ	ㄴ	etm	etm	O	3	FUNC	_	_
@@ -47397,7 +47397,7 @@
 
 1	마침내	마침내	mag	mag	O	15	ADVP	_	_
 2	야만스레	야만스레	mag	mag	O	3	ADVP	_	_
-3	외치	외치	pvg	pvg	O	15	VP	_	_
+3	외치	외치	pvg	pvg	O	6	VP	_	_
 4	어대	어대	ecx+px	ecx+px	O	3	FUNC	_	_
 5	면서	면서	ecc	ecc	O	4	FUNC	_	_
 6	그들	그들	npp+xsn	npp+xsn	O	15	NP	_	_
@@ -47592,8 +47592,8 @@
 17	었	었	ep	ep	O	16	FUNC	_	_
 18	다.	다.	ef+sf	ef+sf	O	17	FUNC	_	_
 
-1	좀더	좀더	mag	mag	O	7	ADVP	_	_
-2	생각	생각	ncpa	ncpa	O	4	NP	_	_
+1	좀더	좀더	mag	mag	O	28	ADVP	_	_
+2	생각	생각	ncpa	ncpa	O	28	NP	_	_
 3	이	이	jcs	jcs	O	2	FUNC	_	_
 4	깊	깊	paa	paa	O	6	ADJP	_	_
 5	ㄴ	ㄴ	etm	etm	O	4	FUNC	_	_
@@ -47763,7 +47763,7 @@
 25	었	었	ep	ep	O	24	FUNC	_	_
 26	다.	다.	ef+sf	ef+sf	O	25	FUNC	_	_
 
-1	그들	그들	npp+xsn	npp+xsn	O	5	NP	_	_
+1	그들	그들	npp+xsn	npp+xsn	O	30	NP	_	_
 2	은	은	jxt	jxt	O	1	FUNC	_	_
 3	지구	지구	nq	nq	O	5	NP	_	_
 4	에	에	jca	jca	O	3	FUNC	_	_
@@ -48019,7 +48019,7 @@
 4	나라	나라	ncn	ncn	O	5	NP	_	_
 5	정부	정부	ncn	ncn	O	12	NP	_	_
 6	가	가	jcs	jcs	O	5	FUNC	_	_
-7	모두	모두	ncn	ncn	O	12	NP	_	_
+7	모두	모두	ncn	ncn	O	10	NP	_	_
 8	이러하	이러하	pad	pad	O	10	ADJP	_	_
 9	ㄴ	ㄴ	etm	etm	O	8	FUNC	_	_
 10	정책	정책	ncn	ncn	O	12	NP	_	_
@@ -48093,7 +48093,7 @@
 17	으려는	으려는	etm	etm	O	16	FUNC	_	_
 18	순간	순간	ncn	ncn	O	25	NP	_	_
 19	,	,	sp	sp	O	18	PUNC	_	_
-20	이상하면서도	이상하면서도	ncps+xsm+ecc+jxc	ncps+xsm+ecc+jxc	O	21	PUNC	_	_
+20	이상하면서도	이상하면서도	ncps+xsm+ecc+jxc	ncps+xsm+ecc+jxc	O	21	ADJP	_	_
 21	불길하	불길하	ncps+xsm	ncps+xsm	O	23	ADJP	_	_
 22	ㄴ	ㄴ	etm	etm	O	21	FUNC	_	_
 23	일	일	ncpa	ncpa	O	25	NP	_	_
@@ -48118,7 +48118,7 @@
 14	에서	에서	jca	jca	O	13	FUNC	_	_
 15	펜	펜	ncn	ncn	O	17	NP	_	_
 16	을	을	jco	jco	O	15	FUNC	_	_
-17	빼	빼	pvg	pvg	O	20	VP	_	_
+17	빼	빼	pvg	pvg	O	26	VP	_	_
 18	았	았	ep	ep	O	17	FUNC	_	_
 19	아	아	ecs	ecs	O	18	FUNC	_	_
 20	쥐	쥐	pvg	pvg	O	26	VP	_	_
@@ -48255,7 +48255,7 @@
 4	월	월	nbu	nbu	O	11	NP	_	_
 5	제	제	mma	mma	O	7	MODP	_	_
 6	12	12	nno	nno	O	7	NP	_	_
-7	차	차	nbu	nbu	O	11	NP	_	_
+7	차	차	nbu	nbu	O	8	NP	_	_
 8	당	당	ncn	ncn	O	9	NP	_	_
 9	대회	대회	ncn	ncn	O	11	NP	_	_
 10	가	가	jcs	jcs	O	9	FUNC	_	_
@@ -48940,7 +48940,7 @@
 18	었	었	ep	ep	O	17	FUNC	_	_
 19	습니다.	습니다.	ef+sf	ef+sf	O	18	FUNC	_	_
 
-1	그	그	npp	npp	O	8	NP	_	_
+1	그	그	npp	npp	O	3	NP	_	_
 2	는	는	jxt	jxt	O	1	FUNC	_	_
 3	외롭	외롭	paa	paa	O	8	ADJP	_	_
 4	었	었	ep	ep	O	3	FUNC	_	_
@@ -49200,7 +49200,7 @@
 1	1	1	nno	nno	O	2	NP	_	_
 2	월	월	nbu	nbu	O	4	NP	_	_
 3	18	18	nno	nno	O	4	NP	_	_
-4	일	일	nbu	nbu	O	12	NP	_	_
+4	일	일	nbu	nbu	O	23	NP	_	_
 5	제	제	mma	mma	O	6	MODP	_	_
 6	13	13	nno	nno	O	7	NP	_	_
 7	차	차	nbu	nbu	O	8	NP	_	_
@@ -49513,7 +49513,7 @@
 25	는	는	etm	etm	O	24	FUNC	_	_
 26	것	것	nbn	nbn	O	28	NP	_	_
 27	이	이	jcs	jcs	O	26	FUNC	_	_
-28	필요하	필요하	ncps+xsm	ncps+xsm	O	31	ADJP	_	_
+28	필요하	필요하	ncps+xsm	ncps+xsm	O	33	ADJP	_	_
 29	다	다	ef	ef	O	28	FUNC	_	_
 30	고	고	jcr	jcr	O	29	FUNC	_	_
 31	느끼	느끼	pvg	pvg	O	33	VP	_	_
@@ -49619,13 +49619,13 @@
 14	월권적	월권적	ncpa+xsn	ncpa+xsn	O	15	NP	_	_
 15	행위	행위	ncpa	ncpa	O	17	NP	_	_
 16	에	에	jca	jca	O	15	FUNC	_	_
-17	분격하	분격하	ncpa+xsv	ncpa+xsv	O	34	VP	_	_
+17	분격하	분격하	ncpa+xsv	ncpa+xsv	O	28	VP	_	_
 18	어	어	ecs	ecs	O	17	FUNC	_	_
 19	그	그	npp	npp	O	23	NP	_	_
 20	의	의	jcm	jcm	O	19	FUNC	_	_
 21	호악하	호악하	ncpa+xsv	ncpa+xsv	O	23	VP	_	_
 22	ㄴ	ㄴ	etm	etm	O	21	FUNC	_	_
-23	외교	외교	ncpa	ncpa	O	34	NP	_	_
+23	외교	외교	ncpa	ncpa	O	28	NP	_	_
 24	와	와	jcj	jcj	O	23	FUNC	_	_
 25	군사력	군사력	ncn	ncn	O	26	NP	_	_
 26	동원지시	동원지시	ncpa+ncpa	ncpa+ncpa	O	28	NP	_	_
@@ -50080,7 +50080,7 @@
 8	는	는	etm	etm	O	7	FUNC	_	_
 9	것	것	nbn	nbn	O	11	NP	_	_
 10	이	이	jcs	jcs	O	9	FUNC	_	_
-11	늦	늦	paa	paa	O	13	ADJP	_	_
+11	늦	늦	paa	paa	O	13	AUXP	_	_
 12	ㄴ	ㄴ	etm	etm	O	11	FUNC	_	_
 13	봄	봄	ncn	ncn	O	15	NP	_	_
 14	의	의	jcm	jcm	O	13	FUNC	_	_
@@ -50308,7 +50308,7 @@
 16	없	없	paa	paa	O	0	ROOT	_	_
 17	습니다.	습니다.	ef+sf	ef+sf	O	16	FUNC	_	_
 
-1	더구나	더구나	mag	mag	O	8	ADVP	_	_
+1	더구나	더구나	mag	mag	O	4	ADVP	_	_
 2	시인	시인	ncn	ncn	O	4	NP	_	_
 3	이	이	jcc	jcc	O	2	FUNC	_	_
 4	되	되	pvg	pvg	O	6	VP	_	_
@@ -50667,7 +50667,7 @@
 4	국민	국민	ncn	ncn	O	13	NP	_	_
 5	에게	에게	jca	jca	O	4	FUNC	_	_
 6	정당	정당	ncn	ncn	O	7	NP	_	_
-7	가입	가입	ncpa	ncpa	O	9	NP	_	_
+7	가입	가입	ncpa	ncpa	O	13	NP	_	_
 8	및	및	maj	maj	O	9	NP	_	_
 9	탈퇴	탈퇴	ncpa	ncpa	O	11	NP	_	_
 10	의	의	jcm	jcm	O	9	FUNC	_	_
@@ -51076,7 +51076,7 @@
 1	정치자금법	정치자금법	ncpa+ncn	ncpa+ncn	O	2	NP	_	_
 2	금융실명제	금융실명제	ncn+ncn	ncn+ncn	O	3	NP	_	_
 3	실시	실시	ncpa	ncpa	O	4	NP	_	_
-4	이후	이후	ncn	ncn	O	13	NP	_	_
+4	이후	이후	ncn	ncn	O	17	NP	_	_
 5	음성적	음성적	ncn+xsn	ncn+xsn	O	8	NP	_	_
 6	이	이	jp	jp	O	5	FUNC	_	_
 7	ㄴ	ㄴ	etm	etm	O	6	FUNC	_	_
@@ -51281,7 +51281,7 @@
 19	것이	것이	nbn+jp	nbn+jp	O	0	ROOT	_	_
 20	다.	다.	ef+sf	ef+sf	O	19	FUNC	_	_
 
-1	그때	그때	ncn	ncn	O	27	NP	_	_
+1	그때	그때	ncn	ncn	O	2	NP	_	_
 2	기업	기업	ncn	ncn	O	5	NP	_	_
 3	의	의	jcm	jcm	O	2	FUNC	_	_
 4	사적	사적	ncn+xsn	ncn+xsn	O	5	NP	_	_
@@ -52146,7 +52146,7 @@
 6	ㄴ	ㄴ	etm	etm	O	5	FUNC	_	_
 7	정부	정부	ncn	ncn	O	9	NP	_	_
 8	를	를	jco	jco	O	7	FUNC	_	_
-9	믿	믿	pvg	pvg	O	11	VP	_	_
+9	믿	믿	pvg	pvg	O	17	VP	_	_
 10	고	고	ecc	ecc	O	9	FUNC	_	_
 11	국민들	국민들	ncn+xsn	ncn+xsn	O	19	NP	_	_
 12	이	이	jcs	jcs	O	11	FUNC	_	_
@@ -52214,7 +52214,7 @@
 16	지	지	ecx	ecx	O	15	FUNC	_	_
 17	않	않	px	px	O	19	AUXP	_	_
 18	는	는	etm	etm	O	17	FUNC	_	_
-19	한	한	nbn	nbn	O	22	NP	_	_
+19	한	한	nbn	nbn	O	20	NP	_	_
 20	개선	개선	ncpa	ncpa	O	22	NP	_	_
 21	은	은	jxt	jxt	O	20	FUNC	_	_
 22	불가능하	불가능하	ncps+xsm	ncps+xsm	O	0	ROOT	_	_
@@ -52347,9 +52347,9 @@
 9	어보	어보	ecx+px	ecx+px	O	8	FUNC	_	_
 10	겠	겠	ep	ep	O	9	FUNC	_	_
 11	다는	다는	etm	etm	O	10	FUNC	_	_
-12	마음	마음	ncn	ncn	O	14	NP	_	_
+12	마음	마음	ncn	ncn	O	0	NP	_	_
 13	이	이	jcs	jcs	O	12	FUNC	_	_
-14	있	있	paa	paa	O	0	ROOT	_	_
+14	있	있	paa	paa	O	0	AUXP	_	_
 15	는	는	etm	etm	O	14	FUNC	_	_
 16	것이	것이	nbn+jp	nbn+jp	O	0	ROOT	_	_
 17	다.	다.	ef+sf	ef+sf	O	16	FUNC	_	_
@@ -52498,10 +52498,10 @@
 1	김영삼	김영삼	nq	nq	O	2	NP	_	_
 2	정부	정부	ncn	ncn	O	28	NP	_	_
 3	는	는	jxt	jxt	O	2	FUNC	_	_
-4	아마	아마	mag	mag	O	7	ADVP	_	_
+4	아마	아마	mag	mag	O	9	ADVP	_	_
 5	부정부패	부정부패	ncn	ncn	O	7	NP	_	_
 6	를	를	jco	jco	O	5	FUNC	_	_
-7	없애	없애	pvg	pvg	O	17	VP	_	_
+7	없애	없애	pvg	pvg	O	9	VP	_	_
 8	고	고	ecc	ecc	O	7	FUNC	_	_
 9	노력하	노력하	ncpa+xsv	ncpa+xsv	O	17	VP	_	_
 10	고	고	ecc	ecc	O	9	FUNC	_	_
@@ -52514,7 +52514,7 @@
 17	착취하	착취하	ncpa+xsv	ncpa+xsv	O	19	VP	_	_
 18	는	는	etm	etm	O	17	FUNC	_	_
 19	데	데	nbn	nbn	O	20	NP	_	_
-20	반대하	반대하	ncpa+xsv	ncpa+xsv	O	28	VP	_	_
+20	반대하	반대하	ncpa+xsv	ncpa+xsv	O	26	VP	_	_
 21	어	어	ecs	ecs	O	20	FUNC	_	_
 22	건전하	건전하	ncps+xsm	ncps+xsm	O	24	ADJP	_	_
 23	ㄴ	ㄴ	etm	etm	O	22	FUNC	_	_
@@ -53862,7 +53862,7 @@
 14	을	을	jco	jco	O	13	FUNC	_	_
 15	중심	중심	ncn	ncn	O	32	NP	_	_
 16	으로,	으로,	jca+sp	jca+sp	O	15	FUNC	_	_
-17	그리고	그리고	maj	maj	O	19	ADVP	_	_
+17	그리고	그리고	maj	maj	O	32	IP	_	_
 18	80	80	nnc	nnc	O	19	NP	_	_
 19	년대	년대	nbu	nbu	O	32	NP	_	_
 20	부터는	부터는	jxc	jxc	O	19	FUNC	_	_
@@ -54297,7 +54297,7 @@
 20	었	었	ep	ep	O	19	FUNC	_	_
 21	다.	다.	ef+sf	ef+sf	O	20	FUNC	_	_
 
-1	기원전	기원전	ncn	ncn	O	3	NP	_	_
+1	기원전	기원전	ncn	ncn	O	4	NP	_	_
 2	1	1	nnc	nnc	O	3	NP	_	_
 3	천	천	ncn	ncn	O	4	NP	_	_
 4	년경	년경	nbu+xsn	nbu+xsn	O	17	NP	_	_
@@ -54435,7 +54435,7 @@
 3	를	를	jco	jco	O	2	FUNC	_	_
 4	합치	합치	pvg	pvg	O	12	VP	_	_
 5	어	어	ecs	ecs	O	4	FUNC	_	_
-6	석가국	석가국	nq	nq	O	9	NP	_	_
+6	석가국	석가국	nq	nq	O	12	NP	_	_
 7	이	이	jp	jp	O	6	FUNC	_	_
 8	라	라	ef	ef	O	7	FUNC	_	_
 9	부르	부르	pvg	pvg	O	12	VP	_	_
@@ -54903,7 +54903,7 @@
 7	이름	이름	ncn	ncn	O	10	NP	_	_
 8	이	이	jp	jp	O	7	FUNC	_	_
 9	ㄴ	ㄴ	etm	etm	O	8	FUNC	_	_
-10	속인들	속인들	ncn+xsn	ncn+xsn	O	12	NP	_	_
+10	속인들	속인들	ncn+xsn	ncn+xsn	O	20	NP	_	_
 11	로서는	로서는	jca+jxt	jca+jxt	O	10	FUNC	_	_
 12	난해하	난해하	ncps+xsm	ncps+xsm	O	14	ADJP	_	_
 13	기	기	etn	etn	O	12	FUNC	_	_
@@ -54970,14 +54970,14 @@
 3	이	이	jcs	jcs	O	2	FUNC	_	_
 4	1	1	nnc	nnc	O	5	NP	_	_
 5	미터	미터	nbu	nbu	O	29	NP	_	_
-6	남짓	남짓	nbn	nbn	O	29	NP	_	_
+6	남짓	남짓	nbn	nbn	O	27	NP	_	_
 7	,	,	sp	sp	O	6	PUNC	_	_
 8	길이	길이	ncn	ncn	O	10	NP	_	_
 9	5	5	nnc	nnc	O	10	NP	_	_
-10	미터	미터	nbu	nbu	O	29	NP	_	_
+10	미터	미터	nbu	nbu	O	11	NP	_	_
 11	정도	정도	ncn	ncn	O	13	NP	_	_
 12	의	의	jcm	jcm	O	11	FUNC	_	_
-13	장방형	장방형	ncn	ncn	O	25	NP	_	_
+13	장방형	장방형	ncn	ncn	O	18	NP	_	_
 14	으로	으로	jca	jca	O	13	FUNC	_	_
 15	몸	몸	ncn	ncn	O	18	NP	_	_
 16	에	에	jca	jca	O	15	FUNC	_	_
@@ -55444,7 +55444,7 @@
 2	ㄴ	ㄴ	etm	etm	O	1	FUNC	_	_
 3	성격	성격	ncn	ncn	O	11	NP	_	_
 4	은	은	jxt	jxt	O	3	FUNC	_	_
-5	특히	특히	mag	mag	O	11	ADVP	_	_
+5	특히	특히	mag	mag	O	9	ADVP	_	_
 6	초기	초기	ncn	ncn	O	7	NP	_	_
 7	엑스포	엑스포	ncn	ncn	O	9	NP	_	_
 8	에서	에서	jca	jca	O	7	FUNC	_	_
@@ -55586,7 +55586,7 @@
 2	의	의	jcm	jcm	O	1	FUNC	_	_
 3	통찰	통찰	ncpa	ncpa	O	5	NP	_	_
 4	에	에	jca	jca	O	3	FUNC	_	_
-5	의하	의하	pvg	pvg	O	20	VP	_	_
+5	의하	의하	pvg	pvg	O	29	VP	_	_
 6	어서도	어서도	ecs+jxc	ecs+jxc	O	5	FUNC	_	_
 7	학교	학교	ncn	ncn	O	9	NP	_	_
 8	의	의	jcm	jcm	O	7	FUNC	_	_
@@ -55717,7 +55717,7 @@
 17	다.	다.	ef+sf	ef+sf	O	16	FUNC	_	_
 
 1	서술,	서술,	ncpa+sp	ncpa+sp	O	2	PUNC	_	_
-2	표현	표현	ncpa	ncpa	O	4	NP	_	_
+2	표현	표현	ncpa	ncpa	O	3	NP	_	_
 3	그리고	그리고	maj	maj	O	4	NP	_	_
 4	표현되	표현되	ncpa+xsv	ncpa+xsv	O	6	VP	_	_
 5	고	고	ecx	ecx	O	4	FUNC	_	_
@@ -56503,7 +56503,7 @@
 9	ㄴ	ㄴ	etm	etm	O	8	FUNC	_	_
 10	정도	정도	ncn	ncn	O	12	NP	_	_
 11	의	의	jcm	jcm	O	10	FUNC	_	_
-12	마이크로머신	마이크로머신	ncn+ncn	ncn+ncn	O	28	NP	_	_
+12	마이크로머신	마이크로머신	ncn+ncn	ncn+ncn	O	24	NP	_	_
 13	이	이	jp	jp	O	12	FUNC	_	_
 14	라면	라면	ecs	ecs	O	13	FUNC	_	_
 15	공중	공중	ncn	ncn	O	18	NP	_	_
@@ -56741,18 +56741,18 @@
 17	있	있	px	px	O	0	ROOT	_	_
 18	다.	다.	ef+sf	ef+sf	O	17	FUNC	_	_
 
-1	또한	또한	maj	maj	O	11	IP	_	_
+1	또한	또한	maj	maj	O	14	NP	_	_
 2	작	작	paa	paa	O	4	ADJP	_	_
 3	ㄴ	ㄴ	etm	etm	O	2	FUNC	_	_
-4	쪽	쪽	ncn	ncn	O	11	NP	_	_
+4	쪽	쪽	ncn	ncn	O	12	NP	_	_
 5	으로는	으로는	jca+jxt	jca+jxt	O	4	FUNC	_	_
 6	천분	천분	nnc+xsn	nnc+xsn	O	9	NP	_	_
 7	의	의	jcm	jcm	O	6	FUNC	_	_
 8	1	1	nnc	nnc	O	9	NP	_	_
 9	단위	단위	ncn	ncn	O	11	NP	_	_
 10	로서	로서	jca	jca	O	9	FUNC	_	_
-11	밀리	밀리	nbu	nbu	O	26	NP	_	_
-12	이하	이하	ncn	ncn	O	26	NP	_	_
+11	밀리	밀리	nbu	nbu	O	12	NP	_	_
+12	이하	이하	ncn	ncn	O	1	NP	_	_
 13	에	에	jca	jca	O	12	FUNC	_	_
 14	마이크로	마이크로	ncn	ncn	O	26	NP	_	_
 15	*LRB*	*LRB*	sl	sl	O	0	PUNC	_	_
@@ -57200,8 +57200,8 @@
 1	이들	이들	npd+xsn	npd+xsn	O	2	NP	_	_
 2	장비들	장비들	ncn+xsn	ncn+xsn	O	24	NP	_	_
 3	은	은	jxt	jxt	O	2	FUNC	_	_
-4	특성상	특성상	ncn	ncn	O	18	NP	_	_
-5	송신측과	송신측과	ncpa+xsn+jcj	ncpa+xsn+jcj	O	4	FUNC	_	_
+4	특성상	특성상	ncn	ncn	O	9	NP	_	_
+5	송신측과	송신측과	ncpa+xsn+jcj	ncpa+xsn+jcj	O	6	NP	_	_
 6	수신측	수신측	ncpa+xsn	ncpa+xsn	O	9	NP	_	_
 7	의	의	jcm	jcm	O	6	FUNC	_	_
 8	데이터	데이터	ncn	ncn	O	9	NP	_	_
@@ -57223,7 +57223,7 @@
 24	받	받	pvg	pvg	O	26	VP	_	_
 25	ㄹ	ㄹ	etm	etm	O	24	FUNC	_	_
 26	수	수	nbn	nbn	O	27	NP	_	_
-27	있	있	paa	paa	O	29	AUXP	_	_
+27	있	있	paa	paa	O	29	ADJP	_	_
 28	기	기	etn	etn	O	27	FUNC	_	_
 29	때문이	때문이	nbn+jp	nbn+jp	O	0	ROOT	_	_
 30	다.	다.	ef+sf	ef+sf	O	29	FUNC	_	_
@@ -57547,7 +57547,7 @@
 26	로부터	로부터	jca+jxc	jca+jxc	O	25	FUNC	_	_
 27	시작하	시작하	ncpa+xsv	ncpa+xsv	O	33	VP	_	_
 28	어	어	ecs	ecs	O	27	FUNC	_	_
-29	그	그	mmd	mmd	O	31	MODP	_	_
+29	그	그	mmd	mmd	O	30	MODP	_	_
 30	숙성	숙성	ncpa	ncpa	O	31	NP	_	_
 31	과정	과정	ncn	ncn	O	33	NP	_	_
 32	을	을	jco	jco	O	31	FUNC	_	_
@@ -57979,7 +57979,7 @@
 5	으면	으면	ecs	ecs	O	4	FUNC	_	_
 6	금속	금속	ncn	ncn	O	11	NP	_	_
 7	을	을	jco	jco	O	6	FUNC	_	_
-8	오랫동안	오랫동안	ncn	ncn	O	11	NP	_	_
+8	오랫동안	오랫동안	ncn	ncn	O	9	NP	_	_
 9	부분적	부분적	ncn+xsn	ncn+xsn	O	11	NP	_	_
 10	으로	으로	jca	jca	O	9	FUNC	_	_
 11	조절되	조절되	ncpa+xsv	ncpa+xsv	O	13	VP	_	_
@@ -58069,7 +58069,7 @@
 1	변환	변환	ncpa	ncpa	O	9	NP	_	_
 2	에는	에는	jca+jxt	jca+jxt	O	1	FUNC	_	_
 3	시간과	시간과	ncn+jcj	ncn+jcj	O	4	NP	_	_
-4	노동	노동	ncpa	ncpa	O	5	NP	_	_
+4	노동	노동	ncpa	ncpa	O	6	NP	_	_
 5	및	및	maj	maj	O	6	NP	_	_
 6	비용	비용	ncn	ncn	O	9	NP	_	_
 7	이	이	jcs	jcs	O	6	FUNC	_	_
@@ -58181,7 +58181,7 @@
 23	었	었	ep	ep	O	22	FUNC	_	_
 24	다.	다.	ef+sf	ef+sf	O	23	FUNC	_	_
 
-1	얄궂	얄궂	paa	paa	O	20	ADJP	_	_
+1	얄궂	얄궂	paa	paa	O	18	ADJP	_	_
 2	게도	게도	ecs+jxc	ecs+jxc	O	1	FUNC	_	_
 3	그들	그들	npp+xsn	npp+xsn	O	7	NP	_	_
 4	의	의	jcm	jcm	O	3	FUNC	_	_
@@ -59714,7 +59714,7 @@
 10	며,	며,	ecc+sp	ecc+sp	O	9	FUNC	_	_
 11	순수하	순수하	ncps+xsm	ncps+xsm	O	13	ADJP	_	_
 12	ㄴ	ㄴ	etm	etm	O	11	FUNC	_	_
-13	의미	의미	ncpa	ncpa	O	36	NP	_	_
+13	의미	의미	ncpa	ncpa	O	16	NP	_	_
 14	,	,	sp	sp	O	13	PUNC	_	_
 15	즉	즉	maj	maj	O	16	NP	_	_
 16	실수	실수	ncpa	ncpa	O	17	NP	_	_
@@ -60694,7 +60694,7 @@
 17	었	었	ep	ep	O	16	FUNC	_	_
 18	다.	다.	ef+sf	ef+sf	O	17	FUNC	_	_
 
-1	그러나	그러나	maj	maj	O	9	IP	_	_
+1	그러나	그러나	maj	maj	O	12	IP	_	_
 2	1992년	1992년	nno+nbu	nno+nbu	O	3	NP	_	_
 3	초	초	ncn	ncn	O	6	NP	_	_
 4	정상회담시	정상회담시	ncn	ncn	O	5	NP	_	_
@@ -60702,7 +60702,7 @@
 6	후	후	ncn	ncn	O	9	NP	_	_
 7	이	이	jp	jp	O	6	FUNC	_	_
 8	ㄴ	ㄴ	etm	etm	O	7	FUNC	_	_
-9	2008년	2008년	nno+nbu	nno+nbu	O	14	NP	_	_
+9	2008년	2008년	nno+nbu	nno+nbu	O	12	NP	_	_
 10	에는	에는	jca+jxt	jca+jxt	O	9	FUNC	_	_
 11	ASEAN	ASEAN	f	f	O	12	NP	_	_
 12	자유무역지대	자유무역지대	ncn+ncpa+ncn	ncn+ncpa+ncn	O	14	NP	_	_
@@ -60756,7 +60756,7 @@
 15	어서	어서	ecs	ecs	O	14	FUNC	_	_
 16	역내교역비중	역내교역비중	ncn+ncpa+ncn	ncn+ncpa+ncn	O	23	NP	_	_
 17	이	이	jcs	jcs	O	16	FUNC	_	_
-18	1990년	1990년	nno+nbu	nno+nbu	O	20	NP	_	_
+18	1990년	1990년	nno+nbu	nno+nbu	O	23	NP	_	_
 19	에	에	jca	jca	O	18	FUNC	_	_
 20	19.5%	19.5%	nnc+su	nnc+su	O	23	PUNC	_	_
 21	로	로	jca	jca	O	20	FUNC	_	_
@@ -61006,7 +61006,7 @@
 1	그리고	그리고	maj	maj	O	13	IP	_	_
 2	이것	이것	npd	npd	O	13	NP	_	_
 3	ㄴ	ㄴ	jxt	jxt	O	2	FUNC	_	_
-4	또	또	mag	mag	O	10	ADVP	_	_
+4	또	또	mag	mag	O	13	ADVP	_	_
 5	아주	아주	mag	mag	O	6	ADVP	_	_
 6	놀랍	놀랍	paa	paa	O	8	ADJP	_	_
 7	ㄴ	ㄴ	etm	etm	O	6	FUNC	_	_
@@ -61046,7 +61046,7 @@
 25	바라	바라	pvg	pvg	O	0	ROOT	_	_
 26	ㅂ니다.	ㅂ니다.	ef+sf	ef+sf	O	25	FUNC	_	_
 
-1	그리스도	그리스도	nq	nq	O	5	NP	_	_
+1	그리스도	그리스도	nq	nq	O	9	NP	_	_
 2	는	는	jxt	jxt	O	1	FUNC	_	_
 3	하늘	하늘	ncn	ncn	O	5	NP	_	_
 4	의	의	jcm	jcm	O	3	FUNC	_	_
@@ -61164,10 +61164,10 @@
 5	어보	어보	ecx+px	ecx+px	O	4	FUNC	_	_
 6	ㅂ시다.	ㅂ시다.	ef+sf	ef+sf	O	5	FUNC	_	_
 
-1	여러분	여러분	npp	npp	O	7	NP	_	_
+1	여러분	여러분	npp	npp	O	15	NP	_	_
 2	께서	께서	jcs	jcs	O	1	FUNC	_	_
-3	아주	아주	mag	mag	O	7	ADVP	_	_
-4	오래	오래	mag	mag	O	5	ADVP	_	_
+3	아주	아주	mag	mag	O	9	ADVP	_	_
+4	오래	오래	mag	mag	O	7	ADVP	_	_
 5	전	전	ncn	ncn	O	7	NP	_	_
 6	에	에	jca	jca	O	5	FUNC	_	_
 7	쓰	쓰	pvg	pvg	O	9	VP	_	_
@@ -61902,7 +61902,7 @@
 19	ㄴ	ㄴ	etm	etm	O	18	FUNC	_	_
 20	일	일	ncn	ncn	O	22	NP	_	_
 21	로	로	jca	jca	O	20	FUNC	_	_
-22	받아들이	받아들이	pvg	pvg	O	30	VP	_	_
+22	받아들이	받아들이	pvg	pvg	O	27	VP	_	_
 23	어지	어지	ecx+px	ecx+px	O	22	FUNC	_	_
 24	었	었	ep	ep	O	23	FUNC	_	_
 25	ㅁ	ㅁ	etn	etn	O	24	FUNC	_	_
@@ -61982,7 +61982,7 @@
 25	었	었	ep	ep	O	24	FUNC	_	_
 26	다.	다.	ef+sf	ef+sf	O	25	FUNC	_	_
 
-1	그리고	그리고	maj	maj	O	11	IP	_	_
+1	그리고	그리고	maj	maj	O	0	ROOT	_	_
 2	배불리	배불리	mag	mag	O	3	ADVP	_	_
 3	먹	먹	pvg	pvg	O	5	VP	_	_
 4	는	는	etm	etm	O	3	FUNC	_	_
@@ -62003,7 +62003,7 @@
 3	살	살	pvg	pvg	O	5	VP	_	_
 4	는	는	etm	etm	O	3	FUNC	_	_
 5	것	것	nbn	nbn	O	9	NP	_	_
-6	또한	또한	mag	mag	O	9	ADVP	_	_
+6	또한	또한	mag	mag	O	7	ADVP	_	_
 7	크	크	paa	paa	O	9	ADJP	_	_
 8	ㄴ	ㄴ	etm	etm	O	7	FUNC	_	_
 9	즐겁	즐겁	paa	paa	O	0	ROOT	_	_
@@ -62138,7 +62138,7 @@
 11	위시하	위시하	ncpa+xsv	ncpa+xsv	O	32	VP	_	_
 12	어	어	ecs	ecs	O	11	FUNC	_	_
 13	각종	각종	ncn	ncn	O	14	NP	_	_
-14	기념일	기념일	ncn	ncn	O	17	NP	_	_
+14	기념일	기념일	ncn	ncn	O	32	NP	_	_
 15	등	등	nbn	nbn	O	17	NP	_	_
 16	의	의	jcm	jcm	O	15	FUNC	_	_
 17	모이	모이	pvg	pvg	O	32	VP	_	_
@@ -62378,7 +62378,7 @@
 30	의	의	jcm	jcm	O	29	FUNC	_	_
 31	효용	효용	ncn	ncn	O	35	NP	_	_
 32	은	은	jxt	jxt	O	31	FUNC	_	_
-33	여전히	여전히	ncps+xsa	ncps+xsa	O	35	NP	_	_
+33	여전히	여전히	ncps+xsa	ncps+xsa	O	35	ADVP	_	_
 34	멀리	멀리	mag	mag	O	35	ADVP	_	_
 35	있	있	paa	paa	O	0	ROOT	_	_
 36	었	었	ep	ep	O	35	FUNC	_	_
@@ -62916,15 +62916,15 @@
 25	을	을	jco	jco	O	24	FUNC	_	_
 26	위하	위하	ncpa+xsv	ncpa+xsv	O	28	VP	_	_
 27	어	어	ecs	ecs	O	26	FUNC	_	_
-28	희사	희사	ncpa	ncpa	O	30	NP	_	_
+28	희사	희사	ncpa	ncpa	O	36	NP	_	_
 29	*LRB*	*LRB*	sl	sl	O	0	PUNC	_	_
-30	喜捨	喜捨	ncpa	ncpa	O	36	NP	_	_
+30	喜捨	喜捨	ncpa	ncpa	O	0	NP	_	_
 31	*RRB*	*RRB*	sr	sr	O	0	PUNC	_	_
-32	하	하	xsv	xsv	O	34	NP	_	_
+32	하	하	xsv	xsv	O	31	VP	_	_
 33	는	는	etm	etm	O	32	FUNC	_	_
 34	일	일	ncn	ncn	O	36	NP	_	_
 35	이	이	jcs	jcs	O	34	FUNC	_	_
-36	일반적	일반적	ncn+xsn	ncn+xsn	O	40	NP	_	_
+36	일반적	일반적	ncn+xsn	ncn+xsn	O	30	NP	_	_
 37	이	이	jp	jp	O	36	FUNC	_	_
 38	었	었	ep	ep	O	37	FUNC	_	_
 39	ㄹ	ㄹ	etm	etm	O	38	FUNC	_	_
@@ -63024,7 +63024,7 @@
 1	이	이	mmd	mmd	O	2	MODP	_	_
 2	춤	춤	ncn	ncn	O	10	NP	_	_
 3	은	은	jxt	jxt	O	2	FUNC	_	_
-4	삼한	삼한	nq	nq	O	5	NP	_	_
+4	삼한	삼한	nq	nq	O	6	NP	_	_
 5	그	그	mmd	mmd	O	6	MODP	_	_
 6	중	중	nbn	nbn	O	10	NP	_	_
 7	에서도	에서도	jca+jxc	jca+jxc	O	6	FUNC	_	_
@@ -63220,7 +63220,7 @@
 1	현존하	현존하	ncpa+xsv	ncpa+xsv	O	3	VP	_	_
 2	는	는	etm	etm	O	1	FUNC	_	_
 3	아스카	아스카	nq	nq	O	4	NP	_	_
-4	시대	시대	ncn	ncn	O	5	NP	_	_
+4	시대	시대	ncn	ncn	O	10	NP	_	_
 5	최고,	최고,	ncn+sp	ncn+sp	O	6	PUNC	_	_
 6	최대	최대	ncn	ncn	O	8	NP	_	_
 7	의	의	jcm	jcm	O	6	FUNC	_	_
@@ -63608,7 +63608,7 @@
 2	ㄴ	ㄴ	etm	etm	O	1	FUNC	_	_
 3	사실	사실	ncn	ncn	O	14	NP	_	_
 4	은	은	jxt	jxt	O	3	FUNC	_	_
-5	13세기	13세기	nno+ncn	nno+ncn	O	7	NP	_	_
+5	13세기	13세기	nno+ncn	nno+ncn	O	12	NP	_	_
 6	여몽	여몽	nq	nq	O	7	NP	_	_
 7	연합군	연합군	ncn	ncn	O	9	NP	_	_
 8	의	의	jcm	jcm	O	7	FUNC	_	_
@@ -63819,7 +63819,7 @@
 9	은	은	jxt	jxt	O	8	FUNC	_	_
 10	고려	고려	nq	nq	O	12	NP	_	_
 11	와의	와의	jct+jcm	jct+jcm	O	10	FUNC	_	_
-12	연합군	연합군	ncn	ncn	O	16	NP	_	_
+12	연합군	연합군	ncn	ncn	O	26	NP	_	_
 13	약	약	mma	mma	O	14	MODP	_	_
 14	3만여명	3만여명	nnc+nnc+xsn+nbu	nnc+nnc+xsn+nbu	O	16	NP	_	_
 15	을	을	jco	jco	O	14	FUNC	_	_
@@ -64589,7 +64589,7 @@
 4	의	의	jcm	jcm	O	3	FUNC	_	_
 5	사람	사람	ncn	ncn	O	32	NP	_	_
 6	은	은	jxt	jxt	O	5	FUNC	_	_
-7	은하들	은하들	ncn+xsn	ncn+xsn	O	10	NP	_	_
+7	은하들	은하들	ncn+xsn	ncn+xsn	O	12	NP	_	_
 8	이	이	jcs	jcs	O	7	FUNC	_	_
 9	극히	극히	mag	mag	O	10	ADVP	_	_
 10	무질서하	무질서하	ncpa+xsv	ncpa+xsv	O	12	VP	_	_
@@ -64933,7 +64933,7 @@
 5	는	는	etm	etm	O	4	FUNC	_	_
 6	코빅역	코빅역	ncn	ncn	O	14	NP	_	_
 7	은	은	jxt	jxt	O	6	FUNC	_	_
-8	당시	당시	ncn	ncn	O	14	NP	_	_
+8	당시	당시	ncn	ncn	O	9	NP	_	_
 9	촬영	촬영	ncpa	ncpa	O	10	NP	_	_
 10	직전	직전	ncn	ncn	O	14	NP	_	_
 11	영화화	영화화	ncpa	ncpa	O	12	NP	_	_
@@ -65135,7 +65135,7 @@
 11	ㄴ	ㄴ	etm	etm	O	10	FUNC	_	_
 12	코빅	코빅	nq	nq	O	25	NP	_	_
 13	은	은	jxt	jxt	O	12	FUNC	_	_
-14	1972년	1972년	nno+nbu	nno+nbu	O	17	NP	_	_
+14	1972년	1972년	nno+nbu	nno+nbu	O	19	NP	_	_
 15	마이애미	마이애미	nq	nq	O	16	NP	_	_
 16	공화당	공화당	nq	nq	O	17	NP	_	_
 17	전당대회	전당대회	ncn	ncn	O	19	NP	_	_
@@ -65366,7 +65366,7 @@
 3	평균	평균	ncn	ncn	O	4	NP	_	_
 4	기온	기온	ncn	ncn	O	29	NP	_	_
 5	은	은	jxt	jxt	O	4	FUNC	_	_
-6	그것	그것	npd	npd	O	10	NP	_	_
+6	그것	그것	npd	npd	O	18	NP	_	_
 7	이	이	jcs	jcs	O	6	FUNC	_	_
 8	별	별	ncn	ncn	O	10	NP	_	_
 9	로부터	로부터	jca+jxc	jca+jxc	O	8	FUNC	_	_
@@ -65652,7 +65652,7 @@
 5	을	을	jco	jco	O	4	FUNC	_	_
 6	번식하	번식하	ncpa+xsv	ncpa+xsv	O	8	VP	_	_
 7	는	는	etm	etm	O	6	FUNC	_	_
-8	종	종	ncn	ncn	O	10	NP	_	_
+8	종	종	ncn	ncn	O	12	NP	_	_
 9	이	이	jcs	jcs	O	8	FUNC	_	_
 10	살	살	pvg	pvg	O	12	VP	_	_
 11	아	아	ecs	ecs	O	10	FUNC	_	_
@@ -65733,7 +65733,7 @@
 10	이	이	jp	jp	O	9	FUNC	_	_
 11	ㄹ	ㄹ	etm	etm	O	10	FUNC	_	_
 12	수	수	nbn	nbn	O	13	NP	_	_
-13	있	있	paa	paa	O	23	AUXP	_	_
+13	있	있	paa	paa	O	23	ADJP	_	_
 14	지만	지만	ecs	ecs	O	13	FUNC	_	_
 15	역시	역시	mag	mag	O	23	ADVP	_	_
 16	그	그	mmd	mmd	O	17	MODP	_	_
@@ -65887,7 +65887,7 @@
 10	엿보	엿보	pvg	pvg	O	12	VP	_	_
 11	ㄹ	ㄹ	etm	etm	O	10	FUNC	_	_
 12	수	수	nbn	nbn	O	13	NP	_	_
-13	있	있	paa	paa	O	23	AUXP	_	_
+13	있	있	paa	paa	O	23	ADJP	_	_
 14	듯이	듯이	ecs	ecs	O	13	FUNC	_	_
 15	자가조절	자가조절	ncn+ncpa	ncn+ncpa	O	17	NP	_	_
 16	의	의	jcm	jcm	O	15	FUNC	_	_
@@ -66026,7 +66026,7 @@
 6	생물과	생물과	ncn+jcj	ncn+jcj	O	7	NP	_	_
 7	무생물	무생물	ncn	ncn	O	9	NP	_	_
 8	의	의	jcm	jcm	O	7	FUNC	_	_
-9	구분	구분	ncpa	ncpa	O	11	NP	_	_
+9	구분	구분	ncpa	ncpa	O	15	NP	_	_
 10	이	이	jcs	jcs	O	9	FUNC	_	_
 11	명백하	명백하	ncps+xsm	ncps+xsm	O	13	ADJP	_	_
 12	ㄴ	ㄴ	etm	etm	O	11	FUNC	_	_
@@ -66035,12 +66035,12 @@
 15	없	없	paa	paa	O	0	ROOT	_	_
 16	다.	다.	ef+sf	ef+sf	O	15	FUNC	_	_
 
-1	단지	단지	mag	mag	O	20	ADVP	_	_
+1	단지	단지	mag	mag	O	14	ADVP	_	_
 2	암석과	암석과	ncn+jcj	ncn+jcj	O	3	NP	_	_
-3	대기	대기	ncn	ncn	O	20	NP	_	_
+3	대기	대기	ncn	ncn	O	14	NP	_	_
 4	의	의	jcm	jcm	O	3	FUNC	_	_
 5	'	'	sl	sl	O	0	PUNC	_	_
-6	물질	물질	ncn	ncn	O	20	NP	_	_
+6	물질	물질	ncn	ncn	O	14	NP	_	_
 7	'	'	sr	sr	O	0	PUNC	_	_
 8	환경	환경	ncn	ncn	O	12	NP	_	_
 9	으로부터	으로부터	jca+jxc	jca+jxc	O	8	FUNC	_	_
@@ -66409,7 +66409,7 @@
 2	는	는	jxt	jxt	O	1	FUNC	_	_
 3	우산	우산	ncn	ncn	O	5	NP	_	_
 4	을	을	jco	jco	O	3	FUNC	_	_
-5	접어들	접어들	pvg	pvg	O	12	VP	_	_
+5	접어들	접어들	pvg	pvg	O	16	VP	_	_
 6	고	고	ecc	ecc	O	5	FUNC	_	_
 7	구두	구두	ncn	ncn	O	8	NP	_	_
 8	끝	끝	ncn	ncn	O	10	NP	_	_
@@ -67080,7 +67080,7 @@
 6	'	'	sl	sl	O	0	PUNC	_	_
 7	선행하	선행하	ncpa+xsv	ncpa+xsv	O	9	VP	_	_
 8	ㄴ	ㄴ	etm	etm	O	7	FUNC	_	_
-9	경험	경험	ncpa	ncpa	O	14	NP	_	_
+9	경험	경험	ncpa	ncpa	O	23	NP	_	_
 10	'	'	sr	sr	O	0	PUNC	_	_
 11	에	에	jca	jca	O	10	FUNC	_	_
 12	비추	비추	pvg	pvg	O	14	VP	_	_
