@@ -9,7 +9,7 @@
 			<option name="parsing_algorithm" value="covnonproj"/>
 		</optiongroup>
 		<optiongroup groupname="input">
-			<option name="infile" value="kaist_train_train80.conll"/>
+			<option name="infile" value="kaist_dev_train80.conll"/>
 		</optiongroup>
 		<optiongroup groupname="graph">
 			<option name="root_label" value="ROOT"/>

@@ -18557,26 +18557,6 @@
 31	었	었	ep	ep	O	30	FUNC	_	_
 32	다.	다.	ef+sf	ef+sf	O	31	FUNC	_	_
 
-1	어느날	어느날	ncn	ncn	O	2	NP	_	_
-2	리슈꼬프	리슈꼬프	nq	nq	O	17	NP	_	_
-3	가	가	jcs	jcs	O	2	FUNC	_	_
-4	사색	사색	ncn	ncn	O	6	NP	_	_
-5	*LRB*	*LRB*	sl	sl	O	0	PUNC	_	_
-6	死色	死色	ncn	ncn	O	11	NP	_	_
-7	*RRB*	*RRB*	sr	sr	O	0	PUNC	_	_
-8	이	이	jcs	jcs	O	7	FUNC	_	_
-9	되	되	pvg	pvg	O	11	VP	_	_
-10	어	어	ecs	ecs	O	9	FUNC	_	_
-11	뛰	뛰	pvg	pvg	O	13	VP	_	_
-12	어들	어들	ecx+px	ecx+px	O	11	FUNC	_	_
-13	어오	어오	ecx+px	ecx+px	O	12	FUNC	_	_
-14	아서는	아서는	ecs+jxt	ecs+jxt	O	13	FUNC	_	_
-15	고르비	고르비	nq	nq	O	17	NP	_	_
-16	에게	에게	jca	jca	O	15	FUNC	_	_
-17	말하	말하	pvg	pvg	O	0	ROOT	_	_
-18	었	었	ep	ep	O	17	FUNC	_	_
-19	다.	다.	ef+sf	ef+sf	O	18	FUNC	_	_
-
 1	리슈꼬프	리슈꼬프	nq	nq	O	7	NP	_	_
 2	가	가	jcs	jcs	O	1	FUNC	_	_
 3	고르비	고르비	nq	nq	O	5	NP	_	_
@@ -33003,44 +32983,6 @@
 28	었	었	ep	ep	O	27	FUNC	_	_
 29	다.	다.	ef+sf	ef+sf	O	28	FUNC	_	_
 
-1	수도함양	수도함양	ncn+nq	ncn+nq	O	5	NP	_	_
-2	으로부터	으로부터	jca+jxc	jca+jxc	O	1	FUNC	_	_
-3	지방각지	지방각지	ncn+ncn	ncn+ncn	O	5	NP	_	_
-4	로	로	jca	jca	O	3	FUNC	_	_
-5	뻗	뻗	pvg	pvg	O	7	VP	_	_
-6	어나	어나	ecx+px	ecx+px	O	5	FUNC	_	_
-7	아가	아가	ecx+px	ecx+px	O	6	FUNC	_	_
-8	는	는	etm	etm	O	7	FUNC	_	_
-9	방사선	방사선	ncn	ncn	O	11	NP	_	_
-10	의	의	jcm	jcm	O	9	FUNC	_	_
-11	도로망	도로망	ncn	ncn	O	33	NP	_	_
-12	이	이	jcs	jcs	O	11	FUNC	_	_
-13	정비되	정비되	ncpa+xsv	ncpa+xsv	O	19	VP	_	_
-14	고,	고,	ecc+sp	ecc+sp	O	13	FUNC	_	_
-15	황제	황제	ncn	ncn	O	17	NP	_	_
-16	의	의	jcm	jcm	O	15	FUNC	_	_
-17	명령	명령	ncpa	ncpa	O	19	NP	_	_
-18	이	이	jcs	jcs	O	17	FUNC	_	_
-19	전파되	전파되	ncpa+xsv	ncpa+xsv	O	33	VP	_	_
-20	었	었	ep	ep	O	19	FUNC	_	_
-21	고,	고,	ecc+sp	ecc+sp	O	20	FUNC	_	_
-22	반란군	반란군	ncn	ncn	O	24	NP	_	_
-23	이	이	jcs	jcs	O	22	FUNC	_	_
-24	발생되	발생되	ncpa+xsv	ncpa+xsv	O	27	VP	_	_
-25	었	었	ep	ep	O	24	FUNC	_	_
-26	ㄹ	ㄹ	etm	etm	O	25	FUNC	_	_
-27	때	때	ncn	ncn	O	33	NP	_	_
-28	는	는	jxt	jxt	O	27	FUNC	_	_
-29	신속하	신속하	ncps+xsm	ncps+xsm	O	31	ADJP	_	_
-30	ㄴ	ㄴ	etm	etm	O	29	FUNC	_	_
-31	진압	진압	ncpa	ncpa	O	33	NP	_	_
-32	이	이	jcs	jcs	O	31	FUNC	_	_
-33	가능하	가능하	ncps+xsm	ncps+xsm	O	35	ADJP	_	_
-34	게	게	ecx	ecx	O	33	FUNC	_	_
-35	되	되	px	px	O	0	ROOT	_	_
-36	었	었	ep	ep	O	35	FUNC	_	_
-37	다.	다.	ef+sf	ef+sf	O	36	FUNC	_	_
-
 1	진시황	진시황	nq	nq	O	28	NP	_	_
 2	은	은	jxt	jxt	O	1	FUNC	_	_
 3	전국	전국	ncn	ncn	O	9	NP	_	_
@@ -40528,30 +40470,6 @@
 33	보	보	pvg	pvg	O	0	ROOT	_	_
 34	ㄴ다.	ㄴ다.	ef+sf	ef+sf	O	33	FUNC	_	_
 
-1	다음	다음	ncn	ncn	O	10	NP	_	_
-2	에	에	jca	jca	O	1	FUNC	_	_
-3	우선	우선	mag	mag	O	10	ADVP	_	_
-4	한국	한국	nq	nq	O	5	NP	_	_
-5	정치지도층	정치지도층	ncpa+ncn	ncpa+ncn	O	8	NP	_	_
-6	의	의	jcm	jcm	O	5	FUNC	_	_
-7	역사적	역사적	ncn+xsn	ncn+xsn	O	8	NP	_	_
-8	변천배경	변천배경	ncpa+ncn	ncpa+ncn	O	12	NP	_	_
-9	을	을	jco	jco	O	8	FUNC	_	_
-10	살피	살피	pvg	pvg	O	12	VP	_	_
-11	어보	어보	ecx+px	ecx+px	O	10	FUNC	_	_
-12	고나	고나	ecx+px	ecx+px	O	11	FUNC	_	_
-13	서	서	ecs	ecs	O	12	FUNC	_	_
-14	독립후	독립후	ncn+ncn	ncn+ncn	O	15	NP	_	_
-15	정치지도층	정치지도층	ncpa+ncn	ncpa+ncn	O	16	NP	_	_
-16	형성과정	형성과정	ncn	ncn	O	18	NP	_	_
-17	을	을	jco	jco	O	16	FUNC	_	_
-18	살피	살피	pvg	pvg	O	22	VP	_	_
-19	어보	어보	ecx+px	ecx+px	O	18	FUNC	_	_
-20	기	기	etn	etn	O	19	FUNC	_	_
-21	로	로	jca	jca	O	20	FUNC	_	_
-22	하	하	pvg	pvg	O	0	ROOT	_	_
-23	ㄴ다.	ㄴ다.	ef+sf	ef+sf	O	22	FUNC	_	_
-
 1	조선왕조	조선왕조	ncn	ncn	O	4	NP	_	_
 2	의	의	jcm	jcm	O	1	FUNC	_	_
 3	정치	정치	ncn	ncn	O	4	NP	_	_
@@ -47358,44 +47276,6 @@
 23	었	었	ep	ep	O	22	FUNC	_	_
 24	다.	다.	ef+sf	ef+sf	O	23	FUNC	_	_
 
-1	그리고	그리고	maj	maj	O	35	IP	_	_
-2	진부하	진부하	ncps+xsm	ncps+xsm	O	4	ADJP	_	_
-3	ㄴ	ㄴ	etm	etm	O	2	FUNC	_	_
-4	개회사	개회사	ncn	ncn	O	6	NP	_	_
-5	가	가	jcs	jcs	O	4	FUNC	_	_
-6	끝나	끝나	pvg	pvg	O	9	VP	_	_
-7	기	기	etn	etn	O	6	FUNC	_	_
-8	도	도	jxc	jxc	O	7	FUNC	_	_
-9	전	전	ncn	ncn	O	30	NP	_	_
-10	에,	에,	jca+sp	jca+sp	O	9	FUNC	_	_
-11	어떻	어떻	pad	pad	O	13	ADJP	_	_
-12	ㄴ	ㄴ	etm	etm	O	11	FUNC	_	_
-13	사람	사람	ncn	ncn	O	19	NP	_	_
-14	이	이	jcs	jcs	O	13	FUNC	_	_
-15	우리	우리	npp	npp	O	17	NP	_	_
-16	의	의	jcm	jcm	O	15	FUNC	_	_
-17	대열	대열	ncn	ncn	O	19	NP	_	_
-18	을	을	jco	jco	O	17	FUNC	_	_
-19	빠지	빠지	pvg	pvg	O	21	VP	_	_
-20	어나	어나	ecx+px	ecx+px	O	19	FUNC	_	_
-21	아가	아가	ecx+px	ecx+px	O	20	FUNC	_	_
-22	아	아	ecs	ecs	O	21	FUNC	_	_
-23	줄루	줄루	nq	nq	O	24	NP	_	_
-24	쪽	쪽	ncn	ncn	O	30	NP	_	_
-25	으로	으로	jca	jca	O	24	FUNC	_	_
-26	엄청나	엄청나	paa	paa	O	28	ADJP	_	_
-27	ㄴ	ㄴ	etm	etm	O	26	FUNC	_	_
-28	속도	속도	ncn	ncn	O	30	NP	_	_
-29	로	로	jca	jca	O	28	FUNC	_	_
-30	달리	달리	pvg	pvg	O	33	VP	_	_
-31	어가	어가	ecx+px	ecx+px	O	30	FUNC	_	_
-32	는	는	etm	etm	O	31	FUNC	_	_
-33	것	것	nbn	nbn	O	35	NP	_	_
-34	이	이	jcs	jcs	O	33	FUNC	_	_
-35	보이	보이	pvg	pvg	O	0	ROOT	_	_
-36	었	었	ep	ep	O	35	FUNC	_	_
-37	다.	다.	ef+sf	ef+sf	O	36	FUNC	_	_
-
 1	언뜻	언뜻	mag	mag	O	2	ADVP	_	_
 2	보	보	pvg	pvg	O	18	VP	_	_
 3	아도	아도	ecs+jxc	ecs+jxc	O	2	FUNC	_	_
@@ -51545,28 +51425,6 @@
 16	을	을	jco	jco	O	15	FUNC	_	_
 17	갖	갖	pvg	pvg	O	0	ROOT	_	_
 18	는다.	는다.	ef+sf	ef+sf	O	17	FUNC	_	_
-
-1	그러하	그러하	pad	pad	O	4	ADJP	_	_
-2	ㄴ	ㄴ	etm	etm	O	1	FUNC	_	_
-3	한	한	mma	mma	O	4	MODP	_	_
-4	정부	정부	ncn	ncn	O	6	NP	_	_
-5	에	에	jca	jca	O	4	FUNC	_	_
-6	의하	의하	pvg	pvg	O	8	VP	_	_
-7	ㄴ	ㄴ	etm	etm	O	6	FUNC	_	_
-8	총수요	총수요	ncn	ncn	O	10	NP	_	_
-9	의	의	jcm	jcm	O	8	FUNC	_	_
-10	조정	조정	ncpa	ncpa	O	14	NP	_	_
-11	을	을	jco	jco	O	10	FUNC	_	_
-12	지칭하	지칭하	ncpa+xsv	ncpa+xsv	O	14	VP	_	_
-13	는	는	etm	etm	O	12	FUNC	_	_
-14	거시경제정책	거시경제정책	ncn+ncn+ncn	ncn+ncn+ncn	O	16	NP	_	_
-15	총수요관리정책	총수요관리정책	ncn+ncpa+ncn	ncn+ncpa+ncn	O	21	NP	_	_
-16	*RRB*	*RRB*	sr	sr	O	0	PUNC	_	_
-17	이	이	jcs	jcs	O	17	FUNC	_	_
-18	필요하	필요하	ncps+xsm	ncps+xsm	O	21	ADJP	_	_
-19	게	게	ecx	ecx	O	19	FUNC	_	_
-20	되	되	px	px	O	0	ROOT	_	_
-21	ㄴ다.	ㄴ다.	ef+sf	ef+sf	O	21	FUNC	_	_
 
 1	그렇	그렇	pad	pad	O	3	ADJP	_	_
 2	게	게	ecx	ecx	O	1	FUNC	_	_
@@ -55857,24 +55715,6 @@
 15	고	고	ecx	ecx	O	14	FUNC	_	_
 16	있	있	px	px	O	0	ROOT	_	_
 17	다.	다.	ef+sf	ef+sf	O	16	FUNC	_	_
-
-1	그것	그것	npd	npd	O	15	NP	_	_
-2	은	은	jxt	jxt	O	1	FUNC	_	_
-3	스피노자	스피노자	nq	nq	O	7	NP	_	_
-4	*LRB*	*LRB*	sl	sl	O	0	PUNC	_	_
-5	Baruch	Baruch	f	f	O	6	NP	_	_
-6	de	de	f	f	O	7	NP	_	_
-7	Spinoza	Spinoza	f	f	O	15	NP	_	_
-8	*RRB*	*RRB*	sr	sr	O	0	PUNC	_	_
-9	의	의	jcm	jcm	O	8	FUNC	_	_
-10	표현	표현	ncpa	ncpa	O	12	NP	_	_
-11	exprimere	exprimere	f	f	O	17	NP	_	_
-12	>	>	sr	sr	O	0	PUNC	_	_
-13	과	과	jct	jct	O	13	FUNC	_	_
-14	같	같	paa	paa	O	17	ADJP	_	_
-15	ㄴ	ㄴ	etm	etm	O	15	FUNC	_	_
-16	것이	것이	nbn+jp	nbn+jp	O	0	ROOT	_	_
-17	다.	다.	ef+sf	ef+sf	O	17	FUNC	_	_
 
 1	서술,	서술,	ncpa+sp	ncpa+sp	O	2	PUNC	_	_
 2	표현	표현	ncpa	ncpa	O	3	NP	_	_
@@ -64643,28 +64483,6 @@
 38	아지	아지	ecx+px	ecx+px	O	37	FUNC	_	_
 39	ㄴ다.	ㄴ다.	ef+sf	ef+sf	O	38	FUNC	_	_
 
-1	한편	한편	maj	maj	O	19	IP	_	_
-2	광원	광원	ncn	ncn	O	4	NP	_	_
-3	이	이	jcs	jcs	O	2	FUNC	_	_
-4	멀	멀	paa	paa	O	6	ADJP	_	_
-5	어지	어지	ecx+px	ecx+px	O	4	FUNC	_	_
-6	어가	어가	ecx+px	ecx+px	O	5	FUNC	_	_
-7	ㄹ	ㄹ	etm	etm	O	6	FUNC	_	_
-8	때	때	ncn	ncn	O	19	NP	_	_
-9	는	는	jxt	jxt	O	8	FUNC	_	_
-10	우리	우리	npp	npp	O	12	NP	_	_
-11	가	가	jcs	jcs	O	10	FUNC	_	_
-12	받	받	pvg	pvg	O	14	VP	_	_
-13	는	는	etm	etm	O	12	FUNC	_	_
-14	파동	파동	ncn	ncn	O	16	NP	_	_
-15	의	의	jcm	jcm	O	14	FUNC	_	_
-16	진동수	진동수	ncn	ncn	O	19	NP	_	_
-17	는	는	jxt	jxt	O	16	FUNC	_	_
-18	보다	보다	mag	mag	O	19	ADVP	_	_
-19	낮	낮	paa	paa	O	0	ROOT	_	_
-20	아지	아지	ecx+px	ecx+px	O	19	FUNC	_	_
-21	ㄴ다.	ㄴ다.	ef+sf	ef+sf	O	20	FUNC	_	_
-
 1	진동수와	진동수와	ncn+jcj	ncn+jcj	O	2	NP	_	_
 2	운동	운동	ncpa	ncpa	O	4	NP	_	_
 3	의	의	jcm	jcm	O	2	FUNC	_	_
@@ -64824,19 +64642,6 @@
 22	었	었	ep	ep	O	21	FUNC	_	_
 23	다.	다.	ef+sf	ef+sf	O	22	FUNC	_	_
 
-1	거의	거의	mag	mag	O	3	ADVP	_	_
-2	모든	모든	mma	mma	O	3	MODP	_	_
-3	은하들	은하들	ncn+xsn	ncn+xsn	O	7	NP	_	_
-4	이	이	jcs	jcs	O	3	FUNC	_	_
-5	우리	우리	npp	npp	O	7	NP	_	_
-6	에게서	에게서	jca	jca	O	5	FUNC	_	_
-7	멀	멀	paa	paa	O	9	ADJP	_	_
-8	어지	어지	ecx+px	ecx+px	O	7	FUNC	_	_
-9	어가	어가	ecx+px	ecx+px	O	8	FUNC	_	_
-10	고	고	ecx	ecx	O	9	FUNC	_	_
-11	있	있	px	px	O	0	ROOT	_	_
-12	다니!	다니!	ef+sf	ef+sf	O	11	FUNC	_	_
-
 1	더욱이	더욱이	mag	mag	O	2	ADVP	_	_
 2	놀랍	놀랍	paa	paa	O	4	ADJP	_	_
 3	ㄴ	ㄴ	etm	etm	O	2	FUNC	_	_
@@ -64874,23 +64679,6 @@
 18	사실	사실	ncn	ncn	O	0	ROOT	_	_
 19	이	이	jp	jp	O	18	FUNC	_	_
 20	다.	다.	ef+sf	ef+sf	O	19	FUNC	_	_
-
-1	달리	달리	mag	mag	O	2	ADVP	_	_
-2	말하	말하	pvg	pvg	O	11	VP	_	_
-3	면	면	ecs	ecs	O	2	FUNC	_	_
-4	은하	은하	ncn	ncn	O	6	NP	_	_
-5	가	가	jcs	jcs	O	4	FUNC	_	_
-6	멀	멀	paa	paa	O	9	ADJP	_	_
-7	ㄹ수록	ㄹ수록	ecs	ecs	O	6	FUNC	_	_
-8	더	더	mag	mag	O	9	ADVP	_	_
-9	빠르	빠르	paa	paa	O	11	ADJP	_	_
-10	게	게	ecs	ecs	O	9	FUNC	_	_
-11	멀	멀	paa	paa	O	13	ADJP	_	_
-12	어지	어지	ecx+px	ecx+px	O	11	FUNC	_	_
-13	어가	어가	ecx+px	ecx+px	O	12	FUNC	_	_
-14	고	고	ecx	ecx	O	13	FUNC	_	_
-15	있	있	px	px	O	0	ROOT	_	_
-16	다!	다!	ef+sf	ef+sf	O	15	FUNC	_	_
 
 1	이	이	npd	npd	O	37	NP	_	_
 2	는	는	jxt	jxt	O	1	FUNC	_	_

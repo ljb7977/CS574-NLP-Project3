@@ -1,0 +1,245 @@
+NivreEager
+./features/NivreEager.xml
+NivreEager training done
+NivreEager parsing done
+Accuracy: 92.32
+
+
+NivreStandard
+./features/NivreStandard.xml
+NivreStandard training done
+NivreStandard parsing done
+Accuracy: 92.2
+
+
+addInputLEMMA0
+./features/addInputLEMMA0.xml
+addInputLEMMA0 training done
+addInputLEMMA0 parsing done
+Accuracy: 92.52
+
+
+addMergPOSTAGFORMInput0
+./features/addMergPOSTAGFORMInput0.xml
+addMergPOSTAGFORMInput0 training done
+addMergPOSTAGFORMInput0 parsing done
+Accuracy: 92.56
+
+
+addMergPOSTAGFORMInput1
+./features/addMergPOSTAGFORMInput1.xml
+addMergPOSTAGFORMInput1 training done
+addMergPOSTAGFORMInput1 parsing done
+Accuracy: 92.61
+
+
+addMergPOSTAGI0FORMInput0
+./features/addMergPOSTAGI0FORMInput0.xml
+addMergPOSTAGI0FORMInput0 training done
+addMergPOSTAGI0FORMInput0 parsing done
+Accuracy: 92.56
+
+
+addMergPOSTAGI0FORMInput1
+./features/addMergPOSTAGI0FORMInput1.xml
+addMergPOSTAGI0FORMInput1 training done
+addMergPOSTAGI0FORMInput1 parsing done
+Accuracy: 92.58
+
+
+addMergPOSTAGI0FORMStack0
+./features/addMergPOSTAGI0FORMStack0.xml
+addMergPOSTAGI0FORMStack0 training done
+addMergPOSTAGI0FORMStack0 parsing done
+Accuracy: 92.59
+
+
+addMergPOSTAGS0FORMInput0
+./features/addMergPOSTAGS0FORMInput0.xml
+addMergPOSTAGS0FORMInput0 training done
+addMergPOSTAGS0FORMInput0 parsing done
+Accuracy: 92.63
+
+
+addMergPOSTAGS0FORMInput1
+./features/addMergPOSTAGS0FORMInput1.xml
+addMergPOSTAGS0FORMInput1 training done
+addMergPOSTAGS0FORMInput1 parsing done
+Accuracy: 92.61
+
+
+addMergPOSTAGS0FORMStack0
+./features/addMergPOSTAGS0FORMStack0.xml
+addMergPOSTAGS0FORMStack0 training done
+addMergPOSTAGS0FORMStack0 parsing done
+Accuracy: 92.57
+
+
+addMergPOSTAGS0I0FORMInput0
+./features/addMergPOSTAGS0I0FORMInput0.xml
+addMergPOSTAGS0I0FORMInput0 training done
+addMergPOSTAGS0I0FORMInput0 parsing done
+Accuracy: 92.62
+
+
+addMergPOSTAGS0I0FORMInput1
+./features/addMergPOSTAGS0I0FORMInput1.xml
+addMergPOSTAGS0I0FORMInput1 training done
+addMergPOSTAGS0I0FORMInput1 parsing done
+Accuracy: 92.59
+
+
+addMergPOSTAGS0I0FORMStack0
+./features/addMergPOSTAGS0I0FORMStack0.xml
+addMergPOSTAGS0I0FORMStack0 training done
+addMergPOSTAGS0I0FORMStack0 parsing done
+Accuracy: 92.6
+
+
+addSplitInputFEATS0
+./features/addSplitInputFEATS0.xml
+addSplitInputFEATS0 training done
+addSplitInputFEATS0 parsing done
+Accuracy: 92.57
+
+
+addSplitStackFEATS0
+./features/addSplitStackFEATS0.xml
+addSplitStackFEATS0 training done
+addSplitStackFEATS0 parsing done
+Accuracy: 92.57
+
+
+addStackLEMMA0
+./features/addStackLEMMA0.xml
+addStackLEMMA0 training done
+addStackLEMMA0 parsing done
+Accuracy: 92.54
+
+
+backwardHeadIterative
+./features/backwardHeadIterative.xml
+backwardHeadIterative training done
+backwardHeadIterative parsing done
+Accuracy: 92.48
+
+
+backwardInputForm
+./features/backwardInputForm.xml
+backwardInputForm training done
+backwardInputForm parsing done
+Accuracy: 92.39
+
+
+backwardInputPostag
+./features/backwardInputPostag.xml
+backwardInputPostag training done
+backwardInputPostag parsing done
+Accuracy: 91.97
+
+
+backwardStackForm
+./features/backwardStackForm.xml
+backwardStackForm training done
+backwardStackForm parsing done
+Accuracy: 92.21
+
+
+backwardStackPostag
+./features/backwardStackPostag.xml
+backwardStackPostag training done
+backwardStackPostag parsing done
+Accuracy: 92.01
+
+
+deprelMergeSubtractingFeature1
+./features/deprelMergeSubtractingFeature1.xml
+deprelMergeSubtractingFeature1 training done
+deprelMergeSubtractingFeature1 parsing done
+Accuracy: 92.45
+
+
+deprelMergeSubtractingFeature2
+./features/deprelMergeSubtractingFeature2.xml
+deprelMergeSubtractingFeature2 training done
+deprelMergeSubtractingFeature2 parsing done
+Accuracy: 92.48
+
+
+deprelMergeSubtractingFeature3
+./features/deprelMergeSubtractingFeature3.xml
+deprelMergeSubtractingFeature3 training done
+deprelMergeSubtractingFeature3 parsing done
+Accuracy: 92.39
+
+
+forwardInputForm1
+./features/forwardInputForm1.xml
+forwardInputForm1 training done
+forwardInputForm1 parsing done
+Accuracy: 92.48
+
+
+forwardInputPostag1
+./features/forwardInputPostag1.xml
+forwardInputPostag1 training done
+forwardInputPostag1 parsing done
+Accuracy: 92.53
+
+
+forwardInputPostag2
+./features/forwardInputPostag2.xml
+forwardInputPostag2 training done
+forwardInputPostag2 parsing done
+Accuracy: 92.52
+
+
+forwardStackForm1
+./features/forwardStackForm1.xml
+forwardStackForm1 training done
+forwardStackForm1 parsing done
+Accuracy: 92.51
+
+
+forwardStackPostag1
+./features/forwardStackPostag1.xml
+forwardStackPostag1 training done
+forwardStackPostag1 parsing done
+Accuracy: 92.46
+
+
+forwardStackPostag2
+./features/forwardStackPostag2.xml
+forwardStackPostag2 training done
+forwardStackPostag2 parsing done
+Accuracy: 92.44
+
+
+predSuccFeaturepredStack
+./features/predSuccFeaturepredStack.xml
+predSuccFeaturepredStack training done
+predSuccFeaturepredStack parsing done
+Accuracy: 92.57
+
+
+replicateDeprelPostagSubtractingFeature1
+./features/replicateDeprelPostagSubtractingFeature1.xml
+replicateDeprelPostagSubtractingFeature1 training done
+replicateDeprelPostagSubtractingFeature1 parsing done
+Accuracy: 92.48
+
+
+replicateDeprelPostagSubtractingFeature2
+./features/replicateDeprelPostagSubtractingFeature2.xml
+replicateDeprelPostagSubtractingFeature2 training done
+replicateDeprelPostagSubtractingFeature2 parsing done
+Accuracy: 92.57
+
+
+replicateDeprelPostagSubtractingFeature3
+./features/replicateDeprelPostagSubtractingFeature3.xml
+replicateDeprelPostagSubtractingFeature3 training done
+replicateDeprelPostagSubtractingFeature3 parsing done
+Accuracy: 92.56
+
+
